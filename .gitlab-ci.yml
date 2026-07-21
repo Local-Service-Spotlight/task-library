@@ -1,0 +1,71 @@
+# Build & deploy Task Library — GitLab CI port of .github/workflows/build.yml
+#
+# Jobs:
+#   build  — fetch Asset Tracker CSV (if TRACKER_CSV_URL is set), compose
+#            dashboard/data.json, emit dashboard/packs/*.zip. Pure stdlib Python.
+#   pages  — probe job: publishes dashboard/ as GitLab Pages IF the instance
+#            has Pages configured. allow_failure so a missing Pages setup
+#            never reds the pipeline. GitHub Pages (via the mirror) remains
+#            the production host until this is proven public.
+#
+# Required CI/CD variable (Settings → CI/CD → Variables):
+#   TRACKER_CSV_URL — the Asset Tracker Task Library tab's publish-to-web CSV
+#                     link (masked). Without it the build runs registry-only
+#                     and sheet-onboarded skills are missing (expect ~240 not 253).
+#
+# Daily run: add a pipeline schedule (Build → Pipeline schedules), cron 0 6 * * *.
+
+stages: [build, deploy]
+
+workflow:
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "schedule"'
+    - if: '$CI_PIPELINE_SOURCE == "web"'
+    - if: '$CI_COMMIT_BRANCH == "main" && $CI_PIPELINE_SOURCE == "push"'
+
+build:
+  stage: build
+  image: python:3.12
+  script:
+    # Tracker fetch — visible outcome either way (lesson from the 253→240 incident:
+    # a silent fetch failure must never masquerade as a healthy build).
+    - |
+      python3 - <<'PYEOF'
+      import os, sys, urllib.request
+      url = os.environ.get("TRACKER_CSV_URL", "").strip()
+      if not url:
+          print("TRACKER_CSV_URL not set; building WITHOUT the Asset Tracker sheet "
+                "(sheet-onboarded skills and owners will be missing).")
+          sys.exit(0)
+      try:
+          with urllib.request.urlopen(url, timeout=60) as r:
+              data = r.read()
+          text = data.decode("utf-8-sig", errors="replace")
+          rows = max(0, len([l for l in text.splitlines() if l.strip()]) - 1)
+          if rows < 1 or "," not in text.splitlines()[0]:
+              print(f"ERROR: tracker response does not look like CSV "
+                    f"(first line: {text.splitlines()[0][:80]!r}). Failing loudly.")
+              sys.exit(1)
+          open("tracker.csv", "wb").write(data)
+          print(f"Fetched tracker.csv: {rows} data rows.")
+      except Exception as e:
+          print(f"ERROR: tracker fetch failed: {e}. Failing loudly rather than "
+                f"shipping a silently shrunken library.")
+          sys.exit(1)
+      PYEOF
+    - if [ -f tracker.csv ]; then python3 build/build.py --tracker-csv tracker.csv; else python3 build/build.py; fi
+    - python3 build/build-packs.py
+    - ls -la dashboard/ dashboard/packs/
+  artifacts:
+    paths: [dashboard]
+    expire_in: 1 week
+
+pages:
+  stage: deploy
+  image: alpine:latest
+  script:
+    - mkdir -p public && cp -r dashboard/. public/
+    - echo "Publishing dashboard/ as GitLab Pages (works only if the instance has Pages configured)."
+  artifacts:
+    paths: [public]
+  allow_failure: true
