@@ -15,7 +15,8 @@ Usage:
   python3 build/build.py [--tracker-csv tracker.csv] [--out dashboard/data.json]
 Exit code 1 if any skill fails validation (build still writes valid skills).
 """
-import argparse, csv, json, os, re, sys, urllib.request
+import argparse
+from datetime import datetime, timezone, csv, json, os, re, sys, urllib.request
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BUILD = os.path.join(ROOT, 'build')
@@ -352,7 +353,7 @@ def main():
                       'owners': len({t['owner'] for t in all_tasks if t.get('owner')}),
                       'categories': len(cats_meta)},
             'bundleUrl': 'TaskLibrary-Skills-all.zip', 'metaArticleUrl': site['metaArticleUrl'],
-            'updated': site['updated'],
+            'updated': datetime.now(timezone.utc).strftime('%B %-d, %Y'),  # real build stamp (was a static label from site-meta.json)
             'categories': [dict(c, tasks=by_cat[c['name']]) for c in cats_meta]}
 
     os.makedirs(os.path.dirname(args.out), exist_ok=True)
