@@ -15,8 +15,8 @@ Usage:
   python3 build/build.py [--tracker-csv tracker.csv] [--out dashboard/data.json]
 Exit code 1 if any skill fails validation (build still writes valid skills).
 """
-import argparse
-from datetime import datetime, timezone, csv, json, os, re, sys, urllib.request
+import argparse, csv, json, os, re, sys, urllib.request
+from datetime import datetime, timezone
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BUILD = os.path.join(ROOT, 'build')
