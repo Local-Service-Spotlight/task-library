@@ -246,6 +246,16 @@ def main():
     if args.tracker_csv:
         for row in csv.DictReader(open(args.tracker_csv, encoding='utf-8-sig')):
             overrides[row['Slug'].strip()] = row
+        # A tracker was explicitly requested, so zero rows means the fetch broke
+        # upstream - not that there is nothing to apply. Fail loudly instead of
+        # publishing a silently shrunken library.
+        # (2026-08-05: a hung publish-to-web fetch returned 0 bytes, the GitHub
+        #  build reported SUCCESS, and the live dashboard lost 13 skills and every
+        #  owner. Nothing failed anywhere. This guard is that incident.)
+        if not overrides:
+            sys.exit(f"ERROR: --tracker-csv {args.tracker_csv} parsed 0 data rows. "
+                     f"The Asset Tracker fetch failed upstream. Refusing to build "
+                     f"without it rather than shipping a shrunken library.")
 
     # Sheet-first onboarding: a tracker row with a Source Repo link whose slug
     # is not in the registry becomes a new external skill (format claude-skill).
@@ -345,6 +355,12 @@ def main():
         cat = t.pop('category')
         by_cat[cat].append(t)
     all_tasks = [t for ts in by_cat.values() for t in ts]
+    # Owner attribution comes ONLY from the Asset Tracker. A tracker that parsed
+    # rows but still yields zero owners is a malformed or partial feed - the same
+    # failure class as above, caught one stage later.
+    if args.tracker_csv and not {t['owner'] for t in all_tasks if t.get('owner')}:
+        sys.exit("ERROR: a tracker CSV was supplied but the build produced 0 owners. "
+                 "The Asset Tracker feed is empty or malformed. Refusing to publish.")
     data = {'stats': {'total': len(all_tasks),
                       'complete': sum(t['status'] == 'complete' for t in all_tasks),
                       'needsWork': sum(t['status'] == 'needs-work' for t in all_tasks),
