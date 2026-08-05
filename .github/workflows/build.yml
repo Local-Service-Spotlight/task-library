@@ -26,7 +26,7 @@ jobs:
           TRACKER_CSV_URL: ${{ secrets.TRACKER_CSV_URL }}
         run: |
           if [ -n "$TRACKER_CSV_URL" ]; then
-            curl -sL "$TRACKER_CSV_URL" -o tracker.csv
+            curl -sL --max-time 30 --retry 2 --retry-delay 5 "$TRACKER_CSV_URL" -o tracker.csv
             echo "Fetched tracker.csv ($(wc -l < tracker.csv) lines)."
           else
             echo "TRACKER_CSV_URL secret is empty; building without the sheet."
