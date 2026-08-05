@@ -394,7 +394,7 @@
   <header class="btl-hero btl-wrap">
     <div class="btl-eyebrow"><span class="pulse"></span>Local Service Spotlight Content Factory</div>
     <h1 class="btl-title">Local Service Spotlight <span>Task Library</span></h1>
-    <p class="btl-sub">239 SOPs — every task documented to the definitive-article standard, so humans and AI agents run them the same way.</p>
+    <p class="btl-sub"><span class="btl-live-total">253</span> SOPs — every task documented to the definitive-article standard, so humans and AI agents run them the same way.</p>
     <div class="btl-cta">
       <a id="btl-dl" class="btl-btn btl-btn-primary" href="#">⬇ Download prepared skills (.zip)</a>
       <a id="btl-meta" class="btl-btn btl-btn-ghost" href="#" target="_blank" rel="noopener" hidden>How we built this →</a>
@@ -468,7 +468,7 @@
             <p>Each pass through the loop sharpens the procedure, tightens the checklist, and adds proof. <strong>Nothing is ever done twice from zero. The system compounds.</strong></p>
           </div>
           <ul class="btl-creed">
-            <li><span class="ck">✓</span><span><b>One standard, zero drift</b> — all 239 skills follow the same definitive-article template, section for section.</span></li>
+            <li><span class="ck">✓</span><span><b>One standard, zero drift</b> — all <span class="btl-live-total">253</span> skills follow the same definitive-article template, section for section.</span></li>
             <li><span class="ck">✓</span><span><b>QA gate on every task</b> — a Definition of Done that a stranger (or an agent) can verify without asking.</span></li>
             <li><span class="ck">✓</span><span><b>Example slot in every SOP</b> — each skill links the meta-article that proves the process works.</span></li>
             <li><span class="ck">✓</span><span><b>Self-updating</b> — every run ends by improving the very document it ran from.</span></li>
@@ -509,7 +509,7 @@
   <div class="btl-wrap"><div class="btl-empty" id="btl-empty" hidden>
     <div class="ee">🔍</div>
     <h3>No tasks match</h3>
-    <p>Nothing in 239 SOPs matches that combination of search and status filter.</p>
+    <p>Nothing in <span class="btl-live-total">253</span> SOPs matches that combination of search and status filter.</p>
     <button id="btl-reset" class="btl-mini" type="button">Reset search &amp; filters</button>
   </div></div>
 
@@ -615,5 +615,20 @@ fetch('data.json', {cache: 'no-cache'})
   addEventListener('resize', schedule);
   try { new MutationObserver(schedule).observe(document.body, {subtree:true, childList:true, attributes:true}); } catch(e){}
 })();
-</script></body>
+</script>
+<script>
+(function(){
+  // Keep the prose counts in step with the built library instead of hardcoding them.
+  // Falls back to the number baked in at build time if the fetch fails.
+  fetch("data.json", {cache:"no-store"})
+    .then(function(r){ return r.json(); })
+    .then(function(d){
+      var n = d && d.stats && d.stats.total;
+      if (!n) return;
+      document.querySelectorAll(".btl-live-total").forEach(function(el){ el.textContent = n; });
+    })
+    .catch(function(){});
+})();
+</script>
+</body>
 </html>
