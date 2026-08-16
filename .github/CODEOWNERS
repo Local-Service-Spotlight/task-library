@@ -1,0 +1,3 @@
+# Root rule is what the ownership map reads as "who owns this repo."
+# First individual handle wins for the map; both are required reviewers on Team.
+* @Goodrich-Dev @dennisyu

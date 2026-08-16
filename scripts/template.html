@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Who Owns What — Local Service Spotlight</title>
+<style>
+  .viz-root {
+    color-scheme: light;
+    --surface-1:      #fcfcfb;
+    --plane:          #f9f9f7;
+    --text-primary:   #0b0b0b;
+    --text-secondary: #52514e;
+    --text-muted:     #898781;
+    --grid:           #e1e0d9;
+    --baseline:       #c3c2b7;
+    --border:         rgba(11,11,11,0.10);
+    --series-1:       #2a78d6;
+    --series-2:       #eb6834;
+    --series-3:       #1baf7a;
+    --series-4:       #eda100;
+    --series-5:       #e87ba4;
+    --series-6:       #008300;
+    --series-7:       #4a3aa7;
+    --series-8:       #e34948;
+    --unowned:        #898781;
+    --good:           #0ca30c;
+    --warning:        #fab219;
+    --serious:        #ec835a;
+    --critical:       #d03b3b;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:where(:not([data-theme="light"])) .viz-root {
+      color-scheme: dark;
+      --surface-1:      #1a1a19;
+      --plane:          #0d0d0d;
+      --text-primary:   #ffffff;
+      --text-secondary: #c3c2b7;
+      --text-muted:     #898781;
+      --grid:           #2c2c2a;
+      --baseline:       #383835;
+      --border:         rgba(255,255,255,0.10);
+      --series-1:       #3987e5;
+      --series-2:       #d95926;
+      --series-3:       #199e70;
+      --series-4:       #c98500;
+      --series-5:       #d55181;
+      --series-6:       #008300;
+      --series-7:       #9085e9;
+      --series-8:       #e66767;
+      --unowned:        #898781;
+    }
+  }
+  :root[data-theme="dark"] .viz-root {
+    color-scheme: dark;
+    --surface-1:      #1a1a19;
+    --plane:          #0d0d0d;
+    --text-primary:   #ffffff;
+    --text-secondary: #c3c2b7;
+    --text-muted:     #898781;
+    --grid:           #2c2c2a;
+    --baseline:       #383835;
+    --border:         rgba(255,255,255,0.10);
+    --series-1:       #3987e5;
+    --series-2:       #d95926;
+    --series-3:       #199e70;
+    --series-4:       #c98500;
+    --series-5:       #d55181;
+    --series-6:       #008300;
+    --series-7:       #9085e9;
+    --series-8:       #e66767;
+    --unowned:        #898781;
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    background: var(--plane);
+    color: var(--text-primary);
+    -webkit-font-smoothing: antialiased;
+  }
+  .viz-root { background: var(--plane); color: var(--text-primary); min-height: 100vh; padding: 32px 24px 72px; }
+  .wrap { max-width: 1140px; margin: 0 auto; }
+
+  header.pagehead { display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: space-between; gap: 16px; margin-bottom: 8px; }
+  h1 { font-size: 28px; line-height: 1.2; margin: 0 0 6px; letter-spacing: -0.01em; }
+  .sub { color: var(--text-secondary); font-size: 14px; margin: 0; max-width: 62ch; line-height: 1.5; }
+  .stamp { color: var(--text-muted); font-size: 12px; font-variant-numeric: tabular-nums; white-space: nowrap; }
+
+  .themebtn {
+    font: inherit; font-size: 12px; padding: 6px 12px; border-radius: 999px; cursor: pointer;
+    background: var(--surface-1); color: var(--text-secondary);
+    border: 1px solid var(--border);
+  }
+  .themebtn:hover { color: var(--text-primary); }
+
+  .banner {
+    margin: 20px 0 0; padding: 12px 14px; border-radius: 10px; font-size: 13px; line-height: 1.5;
+    background: var(--surface-1); border: 1px solid var(--border);
+    border-left: 3px solid var(--warning); color: var(--text-secondary);
+  }
+  .banner strong { color: var(--text-primary); }
+
+  section { margin-top: 36px; }
+  h2 { font-size: 13px; text-transform: uppercase; letter-spacing: 0.07em; color: var(--text-muted); margin: 0 0 4px; font-weight: 600; }
+  .sectnote { font-size: 13px; color: var(--text-secondary); margin: 0 0 16px; max-width: 72ch; line-height: 1.5; }
+
+  .kpirow { display: grid; grid-template-columns: repeat(auto-fit, minmax(168px, 1fr)); gap: 12px; }
+  .tile { background: var(--surface-1); border: 1px solid var(--border); border-radius: 12px; padding: 16px 18px; }
+  .tile .label { font-size: 12px; color: var(--text-muted); margin-bottom: 6px; }
+  .tile .value { font-size: 34px; line-height: 1; letter-spacing: -0.02em; }
+  .tile .foot { font-size: 12px; color: var(--text-secondary); margin-top: 8px; line-height: 1.4; }
+  .tile.alert { border-left: 3px solid var(--critical); }
+  .tile.ok { border-left: 3px solid var(--good); }
+
+  .rows { background: var(--surface-1); border: 1px solid var(--border); border-radius: 12px; padding: 20px; }
+  .ownerrow { display: grid; grid-template-columns: 190px 1fr; gap: 18px; align-items: start; padding: 14px 0; border-bottom: 1px solid var(--grid); }
+  .ownerrow:last-child { border-bottom: 0; padding-bottom: 0; }
+  .ownerrow:first-child { padding-top: 0; }
+  .ownerid { display: flex; align-items: baseline; gap: 8px; padding-top: 2px; }
+  .swatch { width: 10px; height: 10px; border-radius: 3px; flex: none; transform: translateY(-1px); }
+  .ownername { font-size: 14px; font-weight: 600; line-height: 1.3; display: block; }
+  .ownermeta { font-size: 12px; color: var(--text-muted); font-variant-numeric: tabular-nums; margin-top: 2px; display: block; }
+  .boxes { display: flex; flex-wrap: wrap; gap: 2px; }
+
+  .box {
+    position: relative; height: 68px; border-radius: 4px; padding: 8px 10px; overflow: hidden;
+    display: flex; flex-direction: column; justify-content: space-between; cursor: default;
+    box-shadow: inset 0 0 0 2px var(--surface-1);
+  }
+  .box:focus-visible { outline: 2px solid var(--text-primary); outline-offset: 2px; }
+  .box .bname { font-size: 12px; font-weight: 600; color: #fff; line-height: 1.25; word-break: break-word;
+                text-shadow: 0 1px 2px rgba(0,0,0,0.45); padding-right: 14px; flex: none;
+                display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  .box .bnum  { font-size: 11px; color: #fff; opacity: 0.94; font-variant-numeric: tabular-nums; flex: none;
+                white-space: nowrap; text-shadow: 0 1px 2px rgba(0,0,0,0.45); }
+  .box.solo::after {
+    content: ""; position: absolute; top: 7px; right: 7px; width: 7px; height: 7px; border-radius: 50%;
+    background: var(--critical); box-shadow: 0 0 0 2px rgba(255,255,255,0.85);
+  }
+
+  .tree { background: var(--surface-1); border: 1px solid var(--border); border-radius: 12px; padding: 22px 20px; overflow-x: auto; }
+  .treecol { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 16px; }
+  .layer { border: 1px solid var(--grid); border-radius: 10px; padding: 14px; }
+  .layer h3 { margin: 0 0 3px; font-size: 13px; }
+  .layer p  { margin: 0 0 10px; font-size: 12px; color: var(--text-muted); line-height: 1.4; }
+  .chip { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; padding: 4px 9px; border-radius: 999px;
+          border: 1px solid var(--border); margin: 0 4px 4px 0; color: var(--text-primary); background: var(--plane); }
+  .chip i { width: 7px; height: 7px; border-radius: 2px; display: inline-block; flex: none; }
+
+  ul.plain { margin: 0; padding-left: 0; list-style: none; }
+  ul.plain > li { padding: 11px 0; border-bottom: 1px solid var(--grid); font-size: 14px; line-height: 1.5; }
+  ul.plain > li:last-child { border-bottom: 0; }
+  ul.plain .repo { font-weight: 600; }
+  ul.plain .who { color: var(--text-secondary); }
+  ul.plain .meta { color: var(--text-muted); font-size: 12px; font-variant-numeric: tabular-nums; display: block; margin-top: 2px; }
+  .listbox { background: var(--surface-1); border: 1px solid var(--border); border-radius: 12px; padding: 6px 20px; }
+
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  caption { text-align: left; font-size: 12px; color: var(--text-muted); padding: 0 0 10px; }
+  th, td { text-align: left; padding: 9px 10px; border-bottom: 1px solid var(--grid); }
+  th { font-size: 12px; color: var(--text-muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; }
+  td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+  .tablebox { background: var(--surface-1); border: 1px solid var(--border); border-radius: 12px; padding: 18px 20px; overflow-x: auto; }
+  .pill { display: inline-block; font-size: 11px; padding: 2px 8px; border-radius: 999px; border: 1px solid var(--border); color: var(--text-secondary); }
+  .pill.pub { border-color: var(--good); color: var(--good); }
+
+  .legend { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 14px; font-size: 12px; color: var(--text-secondary); align-items: center; }
+  .legend span.item { display: inline-flex; align-items: center; gap: 6px; }
+  .legend i { width: 9px; height: 9px; border-radius: 2px; display: inline-block; }
+  .legend i.dot { border-radius: 50%; background: var(--critical); }
+
+  #tip {
+    position: fixed; pointer-events: none; opacity: 0; transition: opacity .09s;
+    background: var(--surface-1); color: var(--text-primary); border: 1px solid var(--border);
+    border-radius: 8px; padding: 9px 11px; font-size: 12px; line-height: 1.45; max-width: 280px;
+    box-shadow: 0 6px 22px rgba(0,0,0,0.16); z-index: 50;
+  }
+  #tip b { display: block; margin-bottom: 3px; font-size: 13px; }
+  #tip .r { color: var(--text-secondary); }
+
+  footer.pagefoot { margin-top: 40px; font-size: 12px; color: var(--text-muted); line-height: 1.6; border-top: 1px solid var(--grid); padding-top: 16px; }
+  footer.pagefoot code { font-size: 11px; }
+  a { color: inherit; }
+
+  @media (max-width: 700px) {
+    .ownerrow { grid-template-columns: 1fr; gap: 10px; }
+    .viz-root { padding: 20px 14px 56px; }
+    h1 { font-size: 22px; }
+  }
+  @media print {
+    .themebtn, #tip { display: none !important; }
+    .viz-root { padding: 0; }
+  }
+</style>
+</head>
+<body>
+<div class="viz-root">
+<div class="wrap">
+
+  <header class="pagehead">
+    <div>
+      <h1>Who owns what</h1>
+      <p class="sub">Every repository in the <span id="orgname"></span> organization, grouped by the person with the most commits in it. Box width is proportional to commit count on the default branch, on one shared scale — so a box twice as wide had roughly twice the commits.</p>
+    </div>
+    <div style="text-align:right">
+      <button class="themebtn" id="themebtn" type="button">Dark</button>
+      <div class="stamp" id="stamp"></div>
+    </div>
+  </header>
+
+  <div class="banner" id="samplebanner" hidden></div>
+
+  <section>
+    <h2>At a glance</h2>
+    <div class="kpirow" id="kpis"></div>
+  </section>
+
+  <section>
+    <h2>Ownership</h2>
+    <p class="sectnote">One row per person. Owner is whoever has the most commits in that repository — it is measured, not declared, unless a CODEOWNERS file says otherwise, in which case CODEOWNERS wins and the row is marked. A red dot means exactly one person has ever committed to that repository.</p>
+    <div class="rows" id="rows"></div>
+    <div class="legend" id="legend"></div>
+  </section>
+
+  <section>
+    <h2>How the tree fits together</h2>
+    <p class="sectnote">Left to right is the direction work flows: shared runtime, then the things built on it, then what the public actually sees.</p>
+    <div class="tree">
+      <div class="treecol" id="tree"></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>The list</h2>
+    <p class="sectnote">Same data, one line per repository, sorted by commit volume.</p>
+    <div class="listbox"><ul class="plain" id="list"></ul></div>
+  </section>
+
+  <section>
+    <h2>Table view</h2>
+    <div class="tablebox">
+      <table>
+        <caption>Every repository with exact figures. This table carries the same information as the diagram above, for screen readers, print, and anyone who would rather read numbers.</caption>
+        <thead>
+          <tr>
+            <th scope="col">Repository</th>
+            <th scope="col">Owner</th>
+            <th scope="col" class="num">Commits</th>
+            <th scope="col" class="num">Contributors</th>
+            <th scope="col">Visibility</th>
+            <th scope="col">Last push</th>
+            <th scope="col">Owner source</th>
+          </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer class="pagefoot" id="foot"></footer>
+</div>
+</div>
+<div id="tip" role="status" aria-live="polite"></div>
+
+<script id="payload" type="application/json">__DATA__</script>
+<script>
+(function () {
+  "use strict";
+  var D = JSON.parse(document.getElementById("payload").textContent);
+  var SLOTS = ["--series-1","--series-2","--series-3","--series-4","--series-5","--series-6","--series-7","--series-8"];
+  var esc = function (s) {
+    return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
+      return ({ "&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;" })[c];
+    });
+  };
+  var fmt = function (n) { return Number(n).toLocaleString("en-US"); };
+  var colorOf = function (p) {
+    return p && p.slot != null && p.slot < SLOTS.length ? "var(" + SLOTS[p.slot] + ")" : "var(--unowned)";
+  };
+
+  var byId = {};
+  D.people.forEach(function (p) { byId[p.id] = p; });
+  var person = function (id) { return byId[id] || { id: "unassigned", name: "No clear owner", slot: null }; };
+
+  document.getElementById("orgname").textContent = D.org;
+  document.getElementById("stamp").textContent = "Generated " + D.generated_at_display;
+
+  if (D.sample) {
+    var b = document.getElementById("samplebanner");
+    b.hidden = false;
+    b.innerHTML = "<strong>Preview with placeholder volumes.</strong> " + esc(D.sample_note);
+  }
+
+  /* ----- KPI tiles ----------------------------------------------- */
+  var totalCommits = D.repos.reduce(function (a, r) { return a + r.commits; }, 0);
+  var allContribs = {};
+  D.repos.forEach(function (r) { (r.contributors || []).forEach(function (c) { allContribs[c.login] = 1; }); });
+  var solo = D.repos.filter(function (r) { return (r.contributors || []).length === 1; });
+  var pub = D.repos.filter(function (r) { return r.visibility === "public"; });
+
+  var tiles = [
+    { label: "Repositories", value: D.repos.length, foot: pub.length + " public · " + (D.repos.length - pub.length) + " private" },
+    { label: "Commits tracked", value: fmt(totalCommits), foot: "Across all default branches" },
+    { label: "People committing", value: Object.keys(allContribs).length,
+      foot: Object.keys(D.repos.reduce(function (a, r) { a[r.owner] = 1; return a; }, {})).length + " of them own a repo outright" },
+    { label: "Single-contributor repos", value: solo.length, foot: solo.length ? "Bus factor 1: " + solo.map(function (r) { return r.name; }).join(", ") : "No repo depends on one person", cls: solo.length ? "alert" : "ok" }
+  ];
+  document.getElementById("kpis").innerHTML = tiles.map(function (t) {
+    return '<div class="tile ' + (t.cls || "") + '"><div class="label">' + esc(t.label) + '</div>' +
+           '<div class="value">' + esc(t.value) + '</div><div class="foot">' + esc(t.foot) + "</div></div>";
+  }).join("");
+
+  /* ----- Owner rows (faceted; adjacent slots only) --------------- */
+  var grouped = {};
+  D.repos.forEach(function (r) { (grouped[r.owner] = grouped[r.owner] || []).push(r); });
+  var order = D.people.map(function (p) { return p.id; }).filter(function (id) { return grouped[id]; });
+  Object.keys(grouped).forEach(function (id) { if (order.indexOf(id) === -1) order.push(id); });
+
+  var maxC = Math.max.apply(null, D.repos.map(function (r) { return r.commits; }).concat([1]));
+  var MAXW = 268, MINW = 126;
+  var widthOf = function (c) { return Math.max(MINW, Math.round((c / maxC) * MAXW)); };
+
+  document.getElementById("rows").innerHTML = order.map(function (id) {
+    var p = person(id);
+    var rs = grouped[id].slice().sort(function (a, b) { return b.commits - a.commits; });
+    var sum = rs.reduce(function (a, r) { return a + r.commits; }, 0);
+    var boxes = rs.map(function (r) {
+      var soloCls = (r.contributors || []).length === 1 ? " solo" : "";
+      return '<div class="box' + soloCls + '" tabindex="0" style="width:' + widthOf(r.commits) + "px;background:" + colorOf(p) + '"' +
+             ' data-repo="' + esc(r.name) + '">' +
+             '<span class="bname">' + esc(r.name) + "</span>" +
+             '<span class="bnum">' + fmt(r.commits) + " commits · " + (r.contributors || []).length + "</span></div>";
+    }).join("");
+    return '<div class="ownerrow"><div><div class="ownerid"><span class="swatch" style="background:' + colorOf(p) + '"></span>' +
+           '<span><span class="ownername">' + esc(p.name) + "</span>" +
+           '<span class="ownermeta">' + rs.length + " repo" + (rs.length === 1 ? "" : "s") + " · " + fmt(sum) + " commits</span></span></div></div>" +
+           '<div class="boxes">' + boxes + "</div></div>";
+  }).join("");
+
+  document.getElementById("legend").innerHTML =
+    order.map(function (id) {
+      var p = person(id);
+      return '<span class="item"><i style="background:' + colorOf(p) + '"></i>' + esc(p.name) + "</span>";
+    }).join("") +
+    '<span class="item"><i class="dot"></i>Only one person has ever committed</span>' +
+    '<span class="item" style="color:var(--text-muted)">Box width ∝ commits, shared scale</span>';
+
+  /* ----- Structure tree ------------------------------------------ */
+  document.getElementById("tree").innerHTML = D.layers.map(function (L) {
+    var chips = L.repos.map(function (n) {
+      var r = D.repos.filter(function (x) { return x.name === n; })[0];
+      var col = r ? colorOf(person(r.owner)) : "var(--unowned)";
+      return '<span class="chip"><i style="background:' + col + '"></i>' + esc(n) + "</span>";
+    }).join("");
+    return '<div class="layer"><h3>' + esc(L.title) + "</h3><p>" + esc(L.note) + "</p><div>" + chips + "</div></div>";
+  }).join("");
+
+  /* ----- List ---------------------------------------------------- */
+  var sorted = D.repos.slice().sort(function (a, b) { return b.commits - a.commits; });
+  document.getElementById("list").innerHTML = sorted.map(function (r) {
+    var p = person(r.owner);
+    var names = (r.contributors || []).map(function (c) { return c.name || c.login; });
+    return "<li><span class=\"repo\">" + esc(r.name) + "</span> <span class=\"who\">— " + esc(p.name) + "</span>" +
+           '<span class="meta">' + fmt(r.commits) + " commits · " + names.length + " contributor" + (names.length === 1 ? "" : "s") +
+           (names.length ? " (" + esc(names.join(", ")) + ")" : "") + " · " + esc(r.visibility) + " · last push " + esc(r.last_push) + "</span></li>";
+  }).join("");
+
+  /* ----- Table --------------------------------------------------- */
+  document.getElementById("tbody").innerHTML = sorted.map(function (r) {
+    var p = person(r.owner);
+    return "<tr><td>" + esc(r.name) + "</td><td>" + esc(p.name) + '</td><td class="num">' + fmt(r.commits) +
+           '</td><td class="num">' + (r.contributors || []).length + "</td><td>" +
+           '<span class="pill' + (r.visibility === "public" ? " pub" : "") + '">' + esc(r.visibility) + "</span></td><td>" +
+           esc(r.last_push) + "</td><td>" + esc(r.owner_source) + "</td></tr>";
+  }).join("");
+
+  /* ----- Tooltip ------------------------------------------------- */
+  var tip = document.getElementById("tip");
+  var show = function (el) {
+    var r = D.repos.filter(function (x) { return x.name === el.getAttribute("data-repo"); })[0];
+    if (!r) return;
+    var p = person(r.owner);
+    var names = (r.contributors || []).map(function (c) { return c.name || c.login; });
+    tip.innerHTML = "<b>" + esc(r.name) + "</b>" +
+      '<span class="r">' + fmt(r.commits) + " commits · " + r.contributors.length + " contributor" + (r.contributors.length === 1 ? "" : "s") + "<br>" +
+      "Owner: " + esc(p.name) + " (" + esc(r.owner_source) + ")<br>" +
+      (names.length ? esc(names.join(", ")) + "<br>" : "") +
+      esc(r.visibility) + " · last push " + esc(r.last_push) + "</span>";
+    var b = el.getBoundingClientRect();
+    tip.style.opacity = "1";
+    var t = tip.getBoundingClientRect();
+    var left = Math.min(Math.max(8, b.left), window.innerWidth - t.width - 8);
+    var top = b.top - t.height - 10;
+    if (top < 8) top = b.bottom + 10;
+    tip.style.left = left + "px";
+    tip.style.top = top + "px";
+  };
+  var hide = function () { tip.style.opacity = "0"; };
+  ["mouseenter", "focus"].forEach(function (ev) {
+    document.querySelectorAll(".box").forEach(function (el) { el.addEventListener(ev, function () { show(el); }); });
+  });
+  ["mouseleave", "blur"].forEach(function (ev) {
+    document.querySelectorAll(".box").forEach(function (el) { el.addEventListener(ev, hide); });
+  });
+  window.addEventListener("scroll", hide, { passive: true });
+
+  /* ----- Theme toggle -------------------------------------------- */
+  var btn = document.getElementById("themebtn");
+  var apply = function (mode) {
+    document.documentElement.setAttribute("data-theme", mode);
+    btn.textContent = mode === "dark" ? "Light" : "Dark";
+  };
+  apply(window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+  btn.addEventListener("click", function () {
+    apply(document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark");
+  });
+
+  document.getElementById("foot").innerHTML =
+    "Regenerated every morning by <code>.github/workflows/ownership-map.yml</code> in " + esc(D.org) + "/task-library. " +
+    "Owner is the top committer on the default branch unless a CODEOWNERS file overrides it. " +
+    "Commit counts come from the GitHub contributors API and count the default branch only, so they will not match a full <code>git rev-list --all</code>. " +
+    "If a name here is wrong, the fix is a CODEOWNERS line in that repository, not an edit to this page.";
+})();
+</script>
+</body>
+</html>

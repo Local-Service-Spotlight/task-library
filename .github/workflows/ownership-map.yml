@@ -1,0 +1,142 @@
+# .github/workflows/ownership-map.yml
+#
+# Regenerates the "who owns what" map every morning, publishes it to GitHub
+# Pages alongside the task-library dashboard, and emails it to the team.
+#
+# ---------------------------------------------------------------------------
+# ONE-TIME SETUP
+# ---------------------------------------------------------------------------
+# 1. This file lives at .github/workflows/ownership-map.yml in
+#    Local-Service-Spotlight/task-library, with the five files from scripts/
+#    in scripts/ in the same repo.
+#
+# 2. Create a fine-grained personal access token that can read the whole org:
+#      github.com/settings/personal-access-tokens/new
+#      Resource owner : Local-Service-Spotlight
+#      Repository access: All repositories
+#      Permissions    : Repository -> Contents: Read-only
+#                       Repository -> Metadata: Read-only
+#    Nothing else. It never needs write.
+#    Save it as an org secret named OWNERSHIP_MAP_TOKEN:
+#      github.com/organizations/Local-Service-Spotlight/settings/secrets/actions
+#
+#    GITHUB_TOKEN alone is not enough -- it is scoped to this one repository and
+#    cannot see the other nine.
+#
+# 3. For the email step, add these secrets (skip the whole step by leaving
+#    MAIL_TO unset -- the job still publishes to Pages):
+#      MAIL_SERVER    smtp.gmail.com
+#      MAIL_PORT      587
+#      MAIL_USERNAME  the sending account
+#      MAIL_PASSWORD  a Google app password, NOT the account password
+#      MAIL_TO        comma-separated recipients
+#
+# 4. Settings -> Pages -> Source: GitHub Actions.
+#
+# IMPORTANT: GitHub Pages has one artifact per repo. This job writes the map
+# into dashboard/ and uploads that whole tree, so it cannot wipe the Task
+# Library dashboard. The dashboard workflow uses the same concurrency group.
+# ---------------------------------------------------------------------------
+
+name: Ownership map
+
+on:
+  schedule:
+    # 13:00 UTC = 06:00 America/Los_Angeles in summer, 05:00 in winter.
+    # GitHub cron has no timezone support, so this drifts an hour at DST.
+    - cron: "0 13 * * *"
+  workflow_dispatch:
+    inputs:
+      skip_email:
+        description: "Publish only, do not email"
+        type: boolean
+        default: true
+  push:
+    paths:
+      - "scripts/build_ownership_map.py"
+      - "scripts/template.html"
+      - ".github/workflows/ownership-map.yml"
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run tests
+        run: python3 -m unittest discover -s scripts -p "test_*.py" -v
+
+      - name: Build the map into the dashboard tree
+        env:
+          GITHUB_TOKEN: ${{ secrets.OWNERSHIP_MAP_TOKEN }}
+        run: |
+          if [ -z "$GITHUB_TOKEN" ]; then
+            echo "::error::OWNERSHIP_MAP_TOKEN is not set. See the setup notes at the top of this workflow."
+            exit 1
+          fi
+          python3 scripts/build_ownership_map.py \
+            --org "${{ github.repository_owner }}" \
+            --out dashboard/ownership-map.html \
+            --json-out dashboard/ownership-map.json
+
+      - name: Summarise into the run page
+        run: |
+          {
+            echo "### Ownership map"
+            python3 - <<'PY'
+          import json
+          d = json.load(open("dashboard/ownership-map.json"))
+          solo = [r["name"] for r in d["repos"] if len(r["contributors"]) == 1]
+          print(f"- {len(d['repos'])} repos, {sum(r['commits'] for r in d['repos'])} commits, {len(d['people'])} owners")
+          print(f"- Bus factor 1: {', '.join(solo) if solo else 'none'}")
+          for r in sorted(d["repos"], key=lambda r: -r["commits"]):
+              owner = next((p["name"] for p in d["people"] if p["id"] == r["owner"]), "unassigned")
+              print(f"  - `{r['name']}` — {owner} — {r['commits']} commits")
+          PY
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dashboard
+
+      - name: Email the map
+        if: ${{ github.event_name == 'schedule' || inputs.skip_email == false }}
+        env:
+          MAIL_SERVER: ${{ secrets.MAIL_SERVER }}
+          MAIL_PORT: ${{ secrets.MAIL_PORT }}
+          MAIL_USERNAME: ${{ secrets.MAIL_USERNAME }}
+          MAIL_PASSWORD: ${{ secrets.MAIL_PASSWORD }}
+          MAIL_TO: ${{ secrets.MAIL_TO }}
+        run: |
+          if [ -z "$MAIL_TO" ]; then
+            echo "MAIL_TO not set — published to Pages, skipping the email."
+            exit 0
+          fi
+          python3 scripts/send_map_email.py \
+            --html dashboard/ownership-map.html \
+            --json dashboard/ownership-map.json \
+            --url "https://${{ github.repository_owner }}.github.io/task-library/ownership-map.html"
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
