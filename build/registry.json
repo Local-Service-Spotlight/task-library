@@ -702,6 +702,10 @@
    "category": "Personal Branding",
    "flag": "weak article backing: /thank-you-machine redirects to /face-socks/ (single tactic page, not a definitive article)"
   },
+  "keep-speaker-bureau-profile-bookable": {
+   "source": "local",
+   "category": "Personal Branding"
+  },
   "secure-guest-appearances-and-speaking-engagements": {
    "source": "local",
    "category": "Personal Branding"

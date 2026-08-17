@@ -43,4 +43,4 @@ See `boil-the-ocean.md` for the full operating principles.
 
 ## Definitive article & links
 - Hub: /knowledge-panel
-- Related: /personal-brand · feeds from: get-mentioned-in-publications · get-featured-on-podcasts · next: implement-technical-schema-markup
+- Related: /personal-brand · /speaker-kit · feeds from: get-mentioned-in-publications · get-featured-on-podcasts · keep-speaker-bureau-profile-bookable · next: implement-technical-schema-markup

@@ -45,5 +45,5 @@ See `boil-the-ocean.md` for the full operating principles.
 
 ## Definitive article & links
 - Hub: GAP — no definitive article yet; this skill flags the missing hub. Until written, ground runs in /social-amplification (Stage 3 endorsements) and /personal-brand (Phase 3 authority building).
-- Related: /personal-brand, /social-amplification, /topic-wheel, /one-minute-video-guide
-- Sibling skills, in run order: this → `step-1-upload-video-to-google-drive-and-descript` → `extract-15-60-second-clips-from-long-form-video`
+- Related: /personal-brand, /speaker-kit, /social-amplification, /topic-wheel, /one-minute-video-guide
+- Sibling skills, in run order: `keep-speaker-bureau-profile-bookable` → `secure-guest-appearances-and-speaking-engagements` → **this** → `step-1-upload-video-to-google-drive-and-descript` → `extract-15-60-second-clips-from-long-form-video`

@@ -13,7 +13,7 @@ status: needs-work
 
 ## Inputs
 - List of conferences, association events, meetups, and webinars in the person's niche — warm relationships first
-- Speaker one-sheet: canonical bio and headshot, 2–3 talk titles drawn from the Topic Wheel's HOW/WHAT rings, proof links (videos, podcast features)
+- Speaker kit already current per `keep-speaker-bureau-profile-bookable` (canonical bio, headshot, published fees, talk titles, proof links)
 - The entity home live at yourname.com
 
 ## Steps
@@ -42,4 +42,4 @@ See `boil-the-ocean.md` for the full operating principles.
 
 ## Definitive article & links
 - Hub: /personal-brand
-- Related: /thank-you-machine · /content-factory · /topic-wheel · previous: get-featured-on-podcasts · next: create-collaborative-content-with-industry-peers
+- Related: /speaker-kit · /thank-you-machine · /content-factory · /topic-wheel · previous: keep-speaker-bureau-profile-bookable · next: film-conference-presentations

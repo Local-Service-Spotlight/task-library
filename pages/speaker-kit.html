@@ -1,0 +1,84 @@
+<p><strong>A speaker kit</strong> is the one git folder that owns every public fact an organizer needs: who you are, what you talk about, what you charge, and the proof you have done it. It is not a PDF one-sheet that goes stale in someone’s downloads. It is not a bureau dashboard you rewrite from memory. Agents and humans both fill eSpeakers, the personal-site speaking page, and association one-sheets from that folder — and nowhere else.</p>
+<p>It is not a personal brand website (that answers who / what / why-trust for Google). It is not the act of pitching a conference (that is a later skill). It is the plumbing that makes those two jobs possible. If the bureau profile is empty, the fee says “inquire,” or the contact form still lists a retired company, you do not have a speaker kit. You have a scavenger hunt, and organizers will book someone else.</p>
+<p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 148" role="img" aria-label="Speaker kit flows into the bureau profile, the speaker page, and the inquiry form" style="width:100%;height:auto;max-width:860px"><rect width="860" height="148" fill="#fcfcfb"/><a href="#the-kit"><rect x="8" y="28" width="190" height="88" rx="10" fill="#0b0b0b"/><text x="103" y="68" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="15" font-weight="700">1. Speaker kit</text><text x="103" y="90" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="12">git source of truth</text></a><path d="M206 72h28" stroke="#0b0b0b" stroke-width="2"/><polygon points="234,72 226,68 226,76" fill="#0b0b0b"/><a href="#bureau"><rect x="242" y="28" width="190" height="88" rx="10" fill="#2a78d6"/><text x="337" y="68" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="15" font-weight="700">2. Bureau profile</text><text x="337" y="90" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="12">eSpeakers / NSA</text></a><path d="M440 72h28" stroke="#0b0b0b" stroke-width="2"/><polygon points="468,72 460,68 460,76" fill="#0b0b0b"/><a href="#speaker-page"><rect x="476" y="28" width="190" height="88" rx="10" fill="#1baf7a"/><text x="571" y="68" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="15" font-weight="700">3. Speaker page</text><text x="571" y="90" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="12">yourname.com/speaking</text></a><path d="M674 72h28" stroke="#0b0b0b" stroke-width="2"/><polygon points="702,72 694,68 694,76" fill="#0b0b0b"/><a href="#book"><rect x="710" y="28" width="140" height="88" rx="10" fill="#eb6834"/><text x="780" y="68" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="15" font-weight="700">4. Book</text><text x="780" y="90" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="12">inquiry form</text></a></svg></p>
+<h2 id="the-kit">What belongs in the kit</h2>
+<p>One public-safe repo. No street addresses, no private phones, no unpublished fees. For Local Service Spotlight the working example is <a href="https://github.com/dennisyu/dennis-yu-speaking">github.com/dennisyu/dennis-yu-speaking</a>.</p>
+<table>
+<thead><tr><th>File</th><th>What an agent pastes</th></tr></thead>
+<tbody>
+<tr><td>positioning, one-liner, bios</td><td>Current title and company. Short bio for cards. Full bio for the bureau.</td></tr>
+<tr><td>fees</td><td>Published numbers only. If the human has not set a number, leave the field empty and stop.</td></tr>
+<tr><td>programs/</td><td>Each talk: title, format, audience, description, takeaways, fee line from the kit.</td></tr>
+<tr><td>testimonials, stages, media</td><td>Named quotes, documented appearances, real stage photos and talk videos.</td></tr>
+<tr><td>bureau field map</td><td>Which kit file fills which bureau screen, plus live bugs to fix this run.</td></tr>
+<tr><td>speaker-page HTML</td><td>The same facts, rewritten for the personal-name domain.</td></tr>
+</tbody>
+</table>
+<p>Lead with the current operating company. Dennis Yu speaks as CEO of Local Service Spotlight. BlitzMetrics is prior history. “Your Content Factory” and a typo domain do not belong on a booking profile.</p>
+<h2>The process (this is the skill)</h2>
+<p>The machine-readable SOP is <a href="https://github.com/Local-Service-Spotlight/task-library/blob/main/skills/personal-branding/keep-speaker-bureau-profile-bookable.md">keep-speaker-bureau-profile-bookable</a> in the Task Library. The steps, in order:</p>
+<ol>
+<li>Read the kit. Do not invent a talk title or a fee.</li>
+<li>Lock the brand and home base (Las Vegas, NV for this kit). No street address on the public profile.</li>
+<li>Publish fees. “Inquire” is how bureau search buries you. Dennis’s published numbers: <strong>$5,000 U.S. + travel</strong>, <strong>$7,500 international + travel</strong>, <strong>$5,000 virtual</strong>.</li>
+<li>Load every program from <code>programs/</code>. Industry rooms get their own talk: funeral homes, landscapers, campuses, affiliates, a live audit. One generic “AI keynote” is not a kit.</li>
+<li>Paste bios, audience benefit, and the one-liner from the kit files.</li>
+<li>Put proof on the profile: canonical headshot, stage photos, one talk video, named testimonials.</li>
+<li>Add three future calendar holds. Empty calendars read as inactive. eSpeakers’ own monthly mail asks for this.</li>
+<li>Mirror the same facts on <a href="https://dennisyu.com/speaking/">dennisyu.com/speaking</a>. Then open the public bureau URL as a stranger.</li>
+<li>Log the run as a meta-article that points back here. After the gig, recordings go to <a href="https://blitzmetrics.com/task-library-dashboard/">film-conference-presentations</a>.</li>
+</ol>
+<h2 id="bureau">The bureau profile</h2>
+<p>NSA Basic accounts land on eSpeakers. The public page for this kit is <a href="https://www.espeakers.com/marketplace/profile/48283">espeakers.com/marketplace/profile/48283</a>. Dashboard: <code>/dashboard/48283/profile</code>.</p>
+<p>eSpeakers grades the profile (their “eSEO”). The mail they send is the punch list: fees, programs, three future dates. A rank of 35 with one impression in a year is what an empty profile looks like. Filling the kit fields is how that number moves — not a different bureau, not a new brand name.</p>
+<p>Video, recommendations, and media kit uploads may be PRO-gated. Do not stall the rest of the profile waiting on a paywall. Publish what Basic allows: basics, topics, bio, programs, fees, calendar, virtual, website.</p>
+<h2 id="speaker-page">The speaker page</h2>
+<p>The entity home is still <a href="https://blitzmetrics.com/personal-brand/">the personal brand site</a>. The speaking page is the booking surface on that domain. It must not contradict the bureau. Same fees, same talks, same company, first person, real photos.</p>
+<p>Inquiry goes to a form the organizer can submit, not a private inbox. Current path: <a href="https://localservicespotlight.com/speaking-inquiry/">localservicespotlight.com/speaking-inquiry</a>.</p>
+<h2>Programs in this kit</h2>
+<table>
+<thead><tr><th>Talk</th><th>Format</th></tr></thead>
+<tbody>
+<tr><td>AI Industry Keynote</td><td>45–60 min main stage, built on a business from the room</td></tr>
+<tr><td>AI Agent Workshop</td><td>Half day, laptops, a working agent by the end</td></tr>
+<tr><td>Campus practicum</td><td>Multi-session, Johns Hopkins-style</td></tr>
+<tr><td>AI for funeral homes</td><td>Association keynote (NFDA and peers)</td></tr>
+<tr><td>AI for landscapers / green industry</td><td>Association keynote and workshop</td></tr>
+<tr><td>AI for affiliates and digital marketers</td><td>Conference session</td></tr>
+<tr><td>Live audit</td><td>On-stage build against a volunteer business</td></tr>
+</tbody>
+</table>
+<h2>Proof, not claims</h2>
+<p>The kit only lists appearances that are public, email-confirmed, or organizer-published. The long inventory is <a href="https://blitzmetrics.com/dennis-yu-conference-speaking-appearances/">Dennis Yu conference speaking appearances</a> (277+ verified; 1,000+ career talks across 17 countries). Booking-relevant rooms include NFDA, JVA ALIGN, Direct Gardening Association, Affiliate World Dubai, Social Media Marketing World, DigiMarCon, DealCon, Johns Hopkins, and TEDxBeaconStreet 2015.</p>
+<blockquote>
+<p>“We applied the techniques that Dennis taught us last year, and we’ve taken that event from being the event with the lowest amount of social media followers in the world to now the event with the largest — 295,000 followers.” — <strong>Dallas Dogger</strong>, Chairman, R6 Digital · Kennards Hire Rally Australia</p>
+</blockquote>
+<blockquote>
+<p>“Thanks for bringing your best to our community.” — <strong>Phil Mershon</strong>, Director of Events, Social Media Examiner (Social Media Marketing World)</p>
+</blockquote>
+<blockquote>
+<p>“Your two presentations specifically were the cream of the crop.” — <strong>Matt Bollinger</strong>, Stark Bro’s Nurseries (Direct Gardening Association)</p>
+</blockquote>
+<p>Named quotes with role and event. No “industry leader” filler. Same rule as every other Task Library page: if you cannot link it, it does not go on the profile.</p>
+<h2>Worked examples</h2>
+<ul>
+<li><a href="https://github.com/dennisyu/dennis-yu-speaking">dennis-yu-speaking on GitHub</a> — the kit this article was written from. Positioning, fees, seven programs, testimonials, stages, media, and the eSpeakers field map live here so an agent does not guess.</li>
+<li><a href="https://www.espeakers.com/marketplace/profile/48283">eSpeakers profile 48283</a> — the NSA Basic bureau surface. Monthly eSEO mail grades fees, programs, and three future dates. This is the dashboard organizers search; it has to match the kit.</li>
+<li><a href="https://dennisyu.com/speaking/">dennisyu.com/speaking</a> — the entity-home speaking page. Same fees, same talks, first person. If this page and the bureau disagree, the organizer will email to “confirm,” which is how bookings die.</li>
+<li><a href="https://blitzmetrics.com/dennis-yu-conference-speaking-appearances/">Conference speaking inventory</a> — 277+ verified appearances used as proof, not as the booking page. The kit pulls named rooms from here (NFDA, JVA ALIGN, Direct Gardening Association, Affiliate World Dubai, SMMW, TEDxBeaconStreet).</li>
+<li><a href="https://blitzmetrics.com/dennis-yu-speaker-reel/">Speaker reel</a> — one talk video the bureau and the speaker page can both embed. Empty video slots are why eSpeakers keeps the profile in the penalty box.</li>
+<li><a href="https://github.com/Local-Service-Spotlight/task-library/blob/main/skills/personal-branding/keep-speaker-bureau-profile-bookable.md">keep-speaker-bureau-profile-bookable</a> — the machine-readable SOP. Agents install this skill and run it against the kit; they do not invent a second process.</li>
+<li><a href="https://localservicespotlight.com/speaking-inquiry/">Speaking inquiry form</a> — the CTA. A private inbox is not a booking path.</li>
+</ul>
+<h2>Related concepts</h2>
+<p>The speaker kit sits on top of <a href="https://blitzmetrics.com/personal-brand/">personal branding</a> and <a href="https://blitzmetrics.com/digital-plumbing/">digital plumbing</a>. After the gig, <a href="https://blitzmetrics.com/content-factory/">the Content Factory</a> turns the recording into clips, articles, and <a href="https://blitzmetrics.com/one-minute-video-guide/">one-minute videos</a> on the <a href="https://blitzmetrics.com/topic-wheel/">Topic Wheel</a>. Proof from the stage feeds <a href="https://blitzmetrics.com/knowledge-panel/">Knowledge Panel</a> validation and <a href="https://blitzmetrics.com/social-amplification/">Social Amplification Engine</a> Stage 3 endorsements. The house spec for this page is the <a href="https://blitzmetrics.com/definitive-article-guide/">definitive article guide</a>. The runnable library is the <a href="https://blitzmetrics.com/task-library-dashboard/">Task Library dashboard</a>.</p>
+<h2>What this is not</h2>
+<ul>
+<li>Not <a href="https://blitzmetrics.com/personal-brand/">personal branding</a> Phase 1 plumbing — that is the website, schema, and sameAs loop. This skill assumes that home exists.</li>
+<li>Not pitching the organizer — that is <a href="https://github.com/Local-Service-Spotlight/task-library/blob/main/skills/personal-branding/secure-guest-appearances-and-speaking-engagements.md">secure-guest-appearances-and-speaking-engagements</a>. You cannot pitch from an empty bureau profile.</li>
+<li>Not filming the talk — that is <a href="https://github.com/Local-Service-Spotlight/task-library/blob/main/skills/content-factory-produce/film-conference-presentations.md">film-conference-presentations</a>, which feeds the Content Factory.</li>
+</ul>
+<h2 id="book">Book, or copy the kit</h2>
+<p>Organizers: <a href="https://dennisyu.com/speaking/">dennisyu.com/speaking</a> or <a href="https://localservicespotlight.com/speaking-inquiry/">the speaking inquiry form</a>. Fees above are the published numbers.</p>
+<p>Operators building this for someone else: copy the kit layout, put it in git, point the bureau and the speaker page at it, and install <code>keep-speaker-bureau-profile-bookable</code> from the <a href="https://blitzmetrics.com/task-library-dashboard/">Task Library</a>. The next agent should be able to fill a bureau dashboard without asking the speaker to remember their own fee.</p>
+<p><em>Drafted by an agent from the public speaker kit, the eSpeakers fill map, and the Task Library SOP. A named human verifies fees and brand names against the kit before this page is treated as current. Byline is the human’s.</em></p>

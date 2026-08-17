@@ -42,4 +42,4 @@ See `boil-the-ocean.md` for the full operating principles.
 
 ## Definitive article & links
 - Hub: /personal-brand
-- Related: /thank-you-machine · /content-factory · /topic-wheel · /knowledge-panel · next: secure-guest-appearances-and-speaking-engagements
+- Related: /thank-you-machine · /content-factory · /topic-wheel · /knowledge-panel · /speaker-kit · next: keep-speaker-bureau-profile-bookable → secure-guest-appearances-and-speaking-engagements

@@ -1,0 +1,66 @@
+<p>This is the companion meta-article for turning Dennis Yu’s speaker kit and eSpeakers fill into a Task Library skill plus a definitive article at <a href="https://blitzmetrics.com/speaker-kit/">/speaker-kit</a>. Documented per the BlitzMetrics meta-article SOP.</p>
+<p>Version 1.0 — August 16, 2026 — Local Service Spotlight</p>
+<h2>1. The Task Summary</h2>
+<p>Assignment: stop treating “fill the speaker dashboard” as a one-off chat. Write the house SOP the way the rest of the Task Library is written — skill.md an agent can run, a definitive article that owns the concept, and a real example (the kit + eSpeakers profile 48283 + dennisyu.com/speaking).</p>
+<p>About: Dennis Yu speaks as CEO of Local Service Spotlight. Fees he set: $5,000 U.S. + travel, $7,500 international + travel, $5,000 virtual. The kit lives at github.com/dennisyu/dennis-yu-speaking. The bureau is eSpeakers (NSA Basic, speaker ID 48283). The booking page is dennisyu.com/speaking. Inquiry: localservicespotlight.com/speaking-inquiry.</p>
+<p>Goal: the next agent can keep the bureau profile bookable without asking Dennis to remember his own fee, brand name, or talk titles.</p>
+<h2>2. Step-by-Step Process</h2>
+<ol>
+<li>Read the Task Library Standard (definitive article + skill.md + examples; nine requirements) and the existing Personal Branding skills so this one slots into run order instead of competing with /personal-brand.</li>
+<li>Read the speaker kit: positioning, fees, seven programs, testimonials, stages, media, eSpeakers field map, speaking-page HTML.</li>
+<li>Author <code>keep-speaker-bureau-profile-bookable.md</code> in house format: Inputs, Steps, Definition of done, Examples, sibling run order.</li>
+<li>Register the slug in <code>build/registry.json</code> under Personal Branding. Wire related links on headshots/bios, podcasts, guest appearances, film-conference-presentations, and third-party validation.</li>
+<li>Write the hub article: definition, what it is not, clickable four-step SVG, kit file table, SOP, bureau, speaker page, programs, named testimonials, worked examples, related hubs, CTA.</li>
+<li>Publish to blitzmetrics.com as a Post, slug <code>speaker-kit</code>, category Definitive Articles (3273), author Dennis Yu (30), excerpt as the meta description, NFDA stage photo as featured image.</li>
+<li>Verify the live URL over REST and HTTP. Then write this meta-article and point the skill’s Example slot at it.</li>
+<li>Rebuild the Task Library dashboard so the new skill shows on the public board.</li>
+</ol>
+<h2>3. Critical Decision-Making</h2>
+<p><strong>Decision 1 — The kit is the source of truth, not the bureau.</strong> eSpeakers is a distribution surface. If the dashboard and the git folder disagree, git wins until a human changes the kit. That is the only way two agents in a row fill the same profile.</p>
+<p><strong>Decision 2 — Publish fees. Never invent them.</strong> “Inquire” is how bureau search buries a speaker. The numbers in this article are the ones Dennis set. An agent that does not see a number in the kit leaves the field empty and stops.</p>
+<p><strong>Decision 3 — Current company first.</strong> CEO of Local Service Spotlight. BlitzMetrics is prior history. “Your Content Factory” and a typo domain do not belong on a booking profile. The skill says this in the Lock-the-brand step so it cannot drift back.</p>
+<p><strong>Decision 4 — Own /speaker-kit as a Post, not a competing Page.</strong> The short URL is the post slug. A stub page on the same slug would be content vandalism against the hub.</p>
+<p><strong>Decision 5 — Do not dump a write-capable GitHub token into Actions to skip a PAT.</strong> The ownership-map job needs read-only org access. GitHub will not mint that token through an API. Using the existing write-scoped <code>gh</code> login as the org secret would violate the Friday rule. The speaker-kit work does not depend on that token, so it shipped without it.</p>
+<h2>4. Effort and Cost Comparison</h2>
+<table>
+<thead><tr><th>Task</th><th>Agent Time</th><th>Human Time</th><th>Agent Cost</th><th>Human Cost ($35/hr)</th></tr></thead>
+<tbody>
+<tr><td>Read kit + Task Library Standard + sibling skills</td><td>~20 min</td><td>2–3 hrs</td><td>~$0.80</td><td>$70–$105</td></tr>
+<tr><td>Author skill.md + registry + sibling links</td><td>~15 min</td><td>2–4 hrs</td><td>~$0.60</td><td>$70–$140</td></tr>
+<tr><td>Write definitive article (nine requirements)</td><td>~25 min</td><td>4–6 hrs</td><td>~$1.20</td><td>$140–$210</td></tr>
+<tr><td>Publish + featured image + live verify</td><td>~10 min</td><td>1–2 hrs</td><td>~$0.40</td><td>$35–$70</td></tr>
+<tr><td>Meta-article + dashboard rebuild</td><td>~15 min</td><td>1–2 hrs</td><td>~$0.50</td><td>$35–$70</td></tr>
+<tr><td>TOTAL</td><td>~85 min</td><td>10–17 hrs</td><td>~$3.50</td><td>$350–$595</td></tr>
+</tbody>
+</table>
+<p>The honest read: this is the same work as documenting any other Task Library concept. Doing it as a chat that dies in history is how the bureau profile went empty in the first place. The cost of writing it down once is smaller than re-briefing the next agent.</p>
+<h2>5. What the Agent Can and Cannot Do</h2>
+<p>Handled autonomously: read the kit and the library standard; write the skill and the hub; wire siblings; publish to blitzmetrics.com with the stored application password; set author 30; verify the live URL; rebuild dashboard data.</p>
+<p>Required Dennis: the fees and the brand name (already in the kit); a GitHub fine-grained read-only token for the separate ownership-map job (GitHub will not mint that via API).</p>
+<p>Couldn’t do: click GitHub’s personal-access-token screen on his behalf. Fine-grained PATs are UI-only. Couldn’t put the existing write-scoped login into Actions without breaking the read-only rule he set.</p>
+<h2>6. Information Ingestion Inventory</h2>
+<ul>
+<li>Local files: Task-Library-Standard.md, Personal Branding skills, dennis-yu-speaking kit (profile, programs, testimonials, media, espeakers map), WP-PUBLISHING-MEMORY.md</li>
+<li>Live systems: blitzmetrics.com REST (publish), GitHub task-library, eSpeakers public profile 48283, dennisyu.com/speaking</li>
+<li>Files created: skill.md, pages/speaker-kit.html, this meta-article, registry + sibling edits</li>
+</ul>
+<h2>7. Guidelines Compliance Scorecard</h2>
+<table>
+<thead><tr><th>Meta-article Guideline</th><th>Status</th><th>Notes</th></tr></thead>
+<tbody>
+<tr><td>Title under 60 characters</td><td>PASS</td><td>How We Documented the Speaker Kit Task</td></tr>
+<tr><td>Meta description under 160 chars</td><td>PASS</td><td>excerpt on the post</td></tr>
+<tr><td>Hook opens with specific person/situation</td><td>PASS</td><td>Dennis’s speaker kit + eSpeakers 48283</td></tr>
+<tr><td>Written in figurehead’s voice</td><td>PASS</td><td>Dennis byline, first-person plural</td></tr>
+<tr><td>Active voice throughout</td><td>PASS</td><td></td></tr>
+<tr><td>No AI fluff phrases</td><td>PASS</td><td></td></tr>
+<tr><td>Short paragraphs</td><td>PASS</td><td></td></tr>
+<tr><td>H2/H3 structure (8 sections)</td><td>PASS</td><td>SOP sections 1–8</td></tr>
+<tr><td>2–3 internal links</td><td>PASS</td><td>/speaker-kit, /personal-brand, Task Library, definitive-article-guide</td></tr>
+<tr><td>Effort/cost table</td><td>PASS</td><td>Section 4</td></tr>
+<tr><td>Reproducible</td><td>PASS</td><td>Sections 2 and 6 name sources and steps</td></tr>
+</tbody>
+</table>
+<h2>8. What’s Next</h2>
+<p>Run <code>keep-speaker-bureau-profile-bookable</code> against the live eSpeakers dashboard until Definition of done passes (fees, programs, three calendar dates, no retired brand). After each booked gig, film-conference-presentations feeds the Content Factory and a new example links back to /speaker-kit.</p>
+<p>Reference links: <a href="https://blitzmetrics.com/speaker-kit/">Speaker kit</a> · <a href="https://blitzmetrics.com/definitive-article-guide/">Definitive article guide</a> · <a href="https://blitzmetrics.com/personal-brand/">Personal brand</a> · <a href="https://blitzmetrics.com/task-library-dashboard/">Task Library</a> · <a href="https://blitzmetrics.com/meta-article-prompt-template/">Meta-article prompt</a></p>
