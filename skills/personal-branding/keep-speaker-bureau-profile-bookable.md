@@ -4,7 +4,7 @@ description: Keep the speaker kit, bureau profile, and speaking page in sync so 
 category: Personal Branding
 stage: —
 definitive_article: /speaker-kit
-status: needs-work
+status: complete
 ---
 
 # Keep speaker bureau profile bookable
@@ -40,6 +40,8 @@ status: needs-work
 - [ ] Complies with Blog Posting Guidelines (if it publishes content)
 
 ## Example(s)
+- Hub — https://blitzmetrics.com/speaker-kit/ — the definitive article this skill mirrors.
+- Meta-article of this run — https://blitzmetrics.com/how-we-documented-the-speaker-kit-task/ — how the kit became a Task Library skill plus the hub.
 - Dennis Yu speaker kit — https://github.com/dennisyu/dennis-yu-speaking — the source of truth this skill reads: fees, seven programs, bios, eSpeakers field map.
 - eSpeakers public profile — https://www.espeakers.com/marketplace/profile/48283 — the bureau surface the monthly eSEO mail grades (fees, programs, calendar).
 - dennisyu.com/speaking — the entity-home speaking page the bureau and Google should both point at.
