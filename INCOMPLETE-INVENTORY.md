@@ -2,13 +2,13 @@
 
 Generated from `build/build.py` after scoring in `build/factory.py`.
 
-Library: **243** tasks — 120 complete, 100 needs-work, 23 gaps.
+Library: **244** tasks — 120 complete, 101 needs-work, 23 gaps.
 
-Importance distribution: 5★=75, 4★=36, 3★=100, 2★=32, 1★=0
+Importance distribution: 5★=75, 4★=36, 3★=101, 2★=32, 1★=0
 
 Scoring: `importance = max(frequency, revenue, gating)`. Ads, pixels, GSC, Descript, WP-author, and Meta BM are 5s even when the task is small, because they unblock the line.
 
-Incomplete: **123**. This file is the work order. Do not re-sample.
+Incomplete: **124**. This file is the work order. Do not re-sample.
 
 | ★ | Status | Phase | Category | Slug | Lane | Why |
 |---|---|---|---|---|---|---|
@@ -77,6 +77,7 @@ Incomplete: **123**. This file is the work order. Do not re-sample.
 | 3 | needs-work | — |  | `build-third-party-validation` | any | supporting |
 | 3 | needs-work | — |  | `check-all-cta-buttons-lead-to-correct-destinations` | any | supporting |
 | 3 | needs-work | — |  | `claim-and-verify-knowledge-panel-when-it-appears` | judgment | supporting |
+| 3 | needs-work | — |  | `classify-and-offer-knowledge-panel` | judgment | supporting |
 | 3 | needs-work | Gate |  | `convert-instagram-to-professional-account` | any | supporting |
 | 3 | needs-work | — |  | `create-collaborative-content-with-industry-peers` | any | supporting |
 | 3 | needs-work | Process |  | `create-social-content-from-video-clips` | any | supporting |

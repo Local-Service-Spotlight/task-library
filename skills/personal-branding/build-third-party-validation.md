@@ -19,7 +19,7 @@ status: needs-work
 ## Steps
 1. Maintain a single validation inventory: every press mention, podcast episode, speaker page, book credit, and directory entry — with URL, date, and whether it links to yourname.com.
 2. Keep earning the staples through the Phase 3 skills: press mentions in recognized publications and podcast features — the trusted-source signals Google weighs most.
-3. Pursue a Wikidata entry when independent sources exist to cite; pursue Wikipedia only if genuine notability and independent coverage support it — never self-promotional editing, which backfires on the entity.
+3. Pursue a Wikidata entry when independent sources exist to cite; pursue Wikipedia only if genuine notability and independent coverage support it — never self-promotional editing, which backfires on the entity. For crowded names, only a **specific** item (role + show/company) with independent refs; never create a generic same-name person (Sean Kelly / Digital Social Hour is the house example).
 4. Add book validation where credible: authored or contributed chapters create durable author-page proof.
 5. Enforce consistency on every validation source: exact canonical name, current headshot where shown, link to yourname.com where editorially possible.
 6. Surface the proof: cite the strongest validation on the brand site's press section and add profile-grade pages to the schema sameAs via implement-technical-schema-markup.

@@ -22,12 +22,14 @@ status: needs-work
 3. Extend the sameAs array beyond the core five profiles to every verified, durable property: GBP, podcast guest profiles, speaker pages, directory listings, Wikidata. Every entry must be live and unmistakably the same person.
 4. Add supporting properties only as facts allow — jobTitle, worksFor, alumniOf, knowsAbout, image — every claim verifiable on the linked pages. Schema is testimony, not marketing.
 5. Validate with Google's Rich Results Test / schema validator to zero errors, and re-check that visible page copy matches every schema claim.
-6. Put schema maintenance on a trigger: any new validated profile, press feature, or role change updates the markup within the week.
+6. When a KGMID appears (Stage 1), record it and keep schema aligned to that entity — this is evidence for the second-half payment on Build tracks, not the finished panel.
+7. Put schema maintenance on a trigger: any new validated profile, press feature, or role change updates the markup within the week.
 
 ## Definition of done (QA checklist)
 - [ ] Correct entity type(s) published; validator returns zero errors
 - [ ] sameAs covers every verified profile and durable validation page — all live, all the same person
 - [ ] Every schema property verifiable; schema matches on-page copy and published bios
+- [ ] KGMID recorded when Stage 1 appears; schema still names the same person
 - [ ] Update trigger documented in the maintenance routine
 - [ ] Linked back to the definitive article and relevant siblings
 - [ ] Complies with Blog Posting Guidelines (if it publishes content)
@@ -43,4 +45,4 @@ See `boil-the-ocean.md` for the full operating principles.
 
 ## Definitive article & links
 - Hub: /knowledge-panel
-- Related: /personal-brand · upgrades: implement-person-schema-with-sameas-links · next: claim-and-verify-knowledge-panel-when-it-appears
+- Related: /personal-brand · upgrades: implement-person-schema-with-sameas-links · previous: classify-and-offer-knowledge-panel · next: claim-and-verify-knowledge-panel-when-it-appears

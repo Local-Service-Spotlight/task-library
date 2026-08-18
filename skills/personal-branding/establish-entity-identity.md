@@ -17,8 +17,8 @@ status: needs-work
 - The Person schema currently live on the entity home
 
 ## Steps
-1. Confirm the canonical identity triplet: one name spelling, one domain (yourname.com), one current headshot. Every decision in this skill enforces those three.
-2. Sweep the web for the person: every profile, bio, directory listing, press mention, podcast page, and speaker page. List each with its name spelling, photo, and link target.
+1. Confirm the canonical identity triplet: one name spelling, one domain (yourname.com), one current headshot. Every decision in this skill enforces those three. If classify-and-offer-knowledge-panel already marked this a crowded name, lock a **specific** description (role + organization/show) — never a generic Wikidata person item for a common name.
+2. Sweep the web for the person: every profile, bio, directory listing, press mention, podcast page, and speaker page. List each with its name spelling, photo, and link target. Separate same-name collisions from this entity.
 3. Fix drift everywhere it is found: variant spellings, old headshots, outdated bios, dead links. Retire or redirect abandoned profiles — fragments split the entity signal.
 4. Verify the entity home still answers who / what / why-trust and remains the page every property points back to.
 5. Check the Person schema name, image, and url match the canonical triplet exactly, and that sameAs covers all live properties (implement-technical-schema-markup handles the full upgrade).
@@ -43,4 +43,4 @@ See `boil-the-ocean.md` for the full operating principles.
 
 ## Definitive article & links
 - Hub: /knowledge-panel
-- Related: /personal-brand · builds on: add-consistent-headshots-and-bios-across-profiles · next: build-third-party-validation
+- Related: /personal-brand · previous: classify-and-offer-knowledge-panel · builds on: add-consistent-headshots-and-bios-across-profiles · next: build-third-party-validation
