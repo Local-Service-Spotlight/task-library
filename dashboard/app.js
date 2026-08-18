@@ -170,6 +170,7 @@ if (!DATA || !DATA.categories || !DATA.categories.length){
    Enrich data once: ids, lowercase haystacks, provenance flags
    ============================================================ */
 const byId = {};
+const bySlug = {};
 DATA.categories.forEach(function(c, ci){
   c._ci = ci;
   c.tasks.forEach(function(t, ti){
@@ -181,6 +182,7 @@ DATA.categories.forEach(function(c, ci){
     t._ex = /^##\s+example/im.test(content) || /meta-article/i.test(content);
     t._vis = true;
     byId[t._id] = t;
+    if (t.slug) bySlug[t.slug] = t;
   });
 });
 
@@ -253,6 +255,38 @@ cards.forEach(function(c){ countUp(el('[data-stat="' + c.k + '"]'), S[c.k] || 0)
     '<span><span class="d d-bad"></span><b>' + fmt(bad) + '</b> gaps</span>';
 })();
 
+(function factoryUI(){
+  const F = DATA.factory || {};
+  const phases = F.phases || [];
+  const host = el('#btl-phases');
+  if (host){
+    const counts = {};
+    DATA.categories.forEach(function(c){
+      c.tasks.forEach(function(t){
+        const p = t.phase || '—';
+        counts[p] = (counts[p] || 0) + 1;
+      });
+    });
+    host.innerHTML = phases.map(function(p){
+      return '<button type="button" class="btl-phase" data-phase="' + esc(p.id) + '" style="--pc:' + esc(p.color || '#4f8cff') + '" aria-pressed="false">' +
+        '<div class="pn">' + esc(p.label) + '</div>' +
+        '<div class="pb">' + esc(p.blurb) + '</div>' +
+        '<div class="pc">' + fmt(counts[p.id] || 0) + ' tasks</div></button>';
+    }).join('');
+  }
+  const rt = el('#btl-routing');
+  if (rt && F.doctrine){
+    rt.innerHTML = '<strong>Single-engine path.</strong> ' + esc(F.doctrine) +
+      (F.scoring ? ' <strong>Scoring:</strong> ' + esc(F.scoring) : '');
+  }
+  const lanes = el('#btl-lanes');
+  if (lanes && F.lanes){
+    lanes.innerHTML = Object.keys(F.lanes).map(function(k){
+      return '<div class="btl-lane"><div class="lk">' + esc(k) + '</div><div class="lv">' + esc(F.lanes[k]) + '</div></div>';
+    }).join('');
+  }
+})();
+
 /* ============================================================
    Status chips
    ============================================================ */
@@ -260,7 +294,9 @@ const CHIPS = [
   { key:'all',        label:'All',        cls:'' },
   { key:'complete',   label:'Complete',   cls:'ch-ok' },
   { key:'needs-work', label:'Needs work', cls:'ch-warn' },
-  { key:'gap',        label:'Gaps',       cls:'ch-bad' }
+  { key:'gap',        label:'Gaps',       cls:'ch-bad' },
+  { key:'vol5',       label:'★5 only',    cls:'ch-vol' },
+  { key:'vol4',       label:'★4+',        cls:'ch-vol' }
 ];
 el('#btl-chips').innerHTML = CHIPS.map(function(c){
   return '<button type="button" class="btl-chip ' + c.cls + '" data-chip="' + c.key + '" aria-pressed="' + (c.key === 'all') + '">' +
@@ -270,20 +306,39 @@ el('#btl-chips').innerHTML = CHIPS.map(function(c){
 /* ============================================================
    Category sections (rows render lazily on first expand)
    ============================================================ */
+function volBar(n){
+  n = Math.max(1, Math.min(5, Number(n) || 1));
+  let html = '<span class="btl-vol" data-n="' + n + '" title="Importance ' + n + '/5 — max of frequency, ads/revenue, and gating">';
+  for (let i = 1; i <= 5; i++) html += '<i' + (i <= n ? ' class="on"' : '') + '></i>';
+  html += '<span class="btl-vol-n">' + n + '</span></span>';
+  return html;
+}
 function rowHTML(t){
   const st = STATUS[t.status] || STATUS.gap;
   let badges = '<span class="btl-tag tag-sop" title="Step-by-step SOP included">SOP</span>';
   if (t._qa) badges += '<span class="btl-tag tag-qa" title="Has a Definition of Done QA gate">QA</span>';
   if (t._ex) badges += '<span class="btl-tag tag-ex" title="Has a worked example / meta-article slot">Example</span>';
+  if (t.lane) badges += '<span class="btl-tag tag-sop" title="' + esc(t.lane_label || t.lane) + '">' + esc(t.lane) + '</span>';
   const stage = (t.stage && t.stage !== '—') ? '<span class="btl-stage">' + esc(t.stage) + '</span>' : '';
   const art = (t.article ? '<a class="btl-art" href="' + esc(t.article) + '" target="_blank" rel="noopener">Definitive article ↗</a>' : '') +
     (t.download ? '<a class="btl-art" href="' + esc(t.download) + '" target="_blank" rel="noopener">Download full skill suite ⬇</a>' : '');
-  return '<article class="btl-row" data-id="' + t._id + '">' +
+  let chain = '';
+  if (t.before || t.after || t.phase){
+    chain = '<p class="btl-chain">' +
+      (t.phase ? '<b>' + esc(t.phase) + '</b> · ' : '') +
+      (t.before ? 'before <button type="button" data-goto="' + esc(t.before) + '">' + esc(t.before) + '</button>' : '') +
+      (t.before && t.after ? ' → ' : '') +
+      (t.after ? 'after <button type="button" data-goto="' + esc(t.after) + '">' + esc(t.after) + '</button>' : '') +
+      '</p>';
+  }
+  return '<article class="btl-row" data-id="' + t._id + '" data-slug="' + esc(t.slug) + '">' +
     '<span class="btl-dot dot-' + esc(t.status) + '" aria-hidden="true"></span>' +
     '<div class="btl-row-main">' +
       '<div class="btl-row-top"><h4 class="btl-row-title">' + esc(t.title) + '</h4>' +
+        volBar(t.importance) +
         '<span class="btl-status st-' + esc(t.status) + '">' + st.label + '</span>' + stage + '</div>' +
       (t.desc ? '<p class="btl-row-desc">' + esc(t.desc) + '</p>' : '') +
+      chain +
       '<div class="btl-row-meta">' + badges + art + '</div>' +
     '</div>' +
     '<div class="btl-row-actions">' +
@@ -316,7 +371,7 @@ function ensureRendered(ci){
 /* ============================================================
    Filtering engine — search (incl. full skill.md text) + chips
    ============================================================ */
-const state = { q: '', status: 'all', open: new Set(), userClosed: new Set() };
+const state = { q: '', status: 'all', open: new Set(), userClosed: new Set(), phase: 'all', minImp: 0 };
 const qInput = el('#btl-q'), clearBtn = el('#btl-clear'), resline = el('#btl-resline'), emptyBox = el('#btl-empty');
 
 function setOpen(ci, open){
@@ -327,7 +382,18 @@ function setOpen(ci, open){
   head.setAttribute('aria-expanded', open ? 'true' : 'false');
   body.hidden = !open;
 }
-function filterActive(){ return !!(state.q.trim() || state.status !== 'all'); }
+function filterActive(){ return !!(state.q.trim() || state.status !== 'all' || state.phase !== 'all' || state.minImp > 0); }
+
+function statusMatch(t){
+  if (state.status === 'all') return true;
+  if (state.status === 'vol5') return (t.importance || 0) >= 5;
+  if (state.status === 'vol4') return (t.importance || 0) >= 4;
+  return t.status === state.status;
+}
+function phaseMatch(t){
+  if (state.phase === 'all') return true;
+  return (t.phase || t.stage) === state.phase;
+}
 
 function applyFilters(){
   const q = state.q.trim().toLowerCase();
@@ -341,8 +407,13 @@ function applyFilters(){
     c.tasks.forEach(function(t){
       total++;
       const qok = !q || t._hay.indexOf(q) !== -1;
-      if (qok){ counts.all++; counts[t.status] = (counts[t.status] || 0) + 1; }
-      t._vis = qok && (state.status === 'all' || t.status === state.status);
+      if (qok){
+        counts.all++;
+        counts[t.status] = (counts[t.status] || 0) + 1;
+        if ((t.importance || 0) >= 5) counts.vol5 = (counts.vol5 || 0) + 1;
+        if ((t.importance || 0) >= 4) counts.vol4 = (counts.vol4 || 0) + 1;
+      }
+      t._vis = qok && statusMatch(t) && phaseMatch(t);
       if (t._vis){ catMatch++; shown++; }
     });
     c._match = catMatch;
@@ -372,7 +443,7 @@ function applyFilters(){
 
   resline.innerHTML = (!active)
     ? '<b>' + fmt(total) + '</b> tasks across <b>' + fmt(DATA.categories.length) + '</b> categories — search runs through the full text of every skill.md'
-    : '<b>' + fmt(shown) + '</b> of <b>' + fmt(total) + '</b> tasks match' + (q ? ' “' + esc(state.q.trim()) + '”' : '') + (state.status !== 'all' ? ' · status: ' + (STATUS[state.status] ? STATUS[state.status].label.toLowerCase() : state.status) : '');
+    : '<b>' + fmt(shown) + '</b> of <b>' + fmt(total) + '</b> tasks match' + (q ? ' “' + esc(state.q.trim()) + '”' : '') + (state.status !== 'all' ? ' · ' + (STATUS[state.status] ? STATUS[state.status].label.toLowerCase() : state.status) : '') + (state.phase !== 'all' ? ' · phase: ' + esc(state.phase) : '');
   emptyBox.hidden = shown !== 0;
 }
 
@@ -382,9 +453,27 @@ function syncChips(){
     if (b) b.setAttribute('aria-pressed', state.status === ch.key ? 'true' : 'false');
   });
 }
+function syncPhases(){
+  root.querySelectorAll('[data-phase]').forEach(function(b){
+    b.setAttribute('aria-pressed', state.phase === b.getAttribute('data-phase') ? 'true' : 'false');
+  });
+}
+function gotoSlug(slug){
+  const t = bySlug[slug];
+  if (!t){ toast('No skill named ' + slug + ' in this build'); return; }
+  state.q = slug; qInput.value = slug; clearBtn.hidden = false;
+  state.status = 'all'; syncChips(); applyFilters();
+  ensureRendered(t._cat._ci);
+  const row = el('[data-slug="' + slug + '"]');
+  if (row){
+    row.scrollIntoView({behavior:'smooth', block:'center'});
+    row.style.outline = '2px solid #4f8cff';
+    setTimeout(function(){ row.style.outline = ''; }, 1600);
+  }
+}
 function resetFilters(){
   state.q = ''; qInput.value = ''; clearBtn.hidden = true;
-  state.status = 'all'; syncChips(); applyFilters();
+  state.status = 'all'; state.phase = 'all'; syncChips(); syncPhases(); applyFilters();
 }
 
 /* ============================================================
@@ -431,8 +520,10 @@ function openModal(t){
   lastFocus = document.activeElement;
   const st = STATUS[t.status] || STATUS.gap;
   mMeta.innerHTML = '<span class="btl-status st-' + esc(t.status) + '">' + st.label + '</span>' +
+    volBar(t.importance) +
     '<span class="btl-m-cat">' + esc((t._cat.icon ? t._cat.icon + ' ' : '') + t._cat.name) + '</span>' +
-    ((t.stage && t.stage !== '—') ? '<span class="btl-stage">' + esc(t.stage) + '</span>' : '');
+    ((t.stage && t.stage !== '—') ? '<span class="btl-stage">' + esc(t.stage) + '</span>' : '') +
+    (t.lane ? '<span class="btl-stage">' + esc(t.lane) + '</span>' : '');
   mTitle.textContent = t.title;
   mSub.innerHTML = '<code class="btl-slug">' + esc(t.slug || 'skill') + '.skill.md</code>' +
     (t.article ? '<a class="btl-art" href="' + esc(t.article) + '" target="_blank" rel="noopener">Definitive article ↗</a>' : '') +
@@ -511,6 +602,19 @@ root.addEventListener('click', function(e){
   if (chip){
     state.status = chip.getAttribute('data-chip');
     syncChips(); applyFilters();
+    return;
+  }
+  const ph = e.target.closest('[data-phase]');
+  if (ph){
+    const id = ph.getAttribute('data-phase');
+    state.phase = state.phase === id ? 'all' : id;
+    syncPhases(); applyFilters();
+    const chips = el('#btl-chips'); if (chips) chips.scrollIntoView({behavior:'smooth', block:'center'});
+    return;
+  }
+  const go = e.target.closest('[data-goto]');
+  if (go){
+    gotoSlug(go.getAttribute('data-goto'));
     return;
   }
 

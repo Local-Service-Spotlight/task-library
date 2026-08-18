@@ -35,8 +35,17 @@ status: needs-work
 - [ ] Files in `04-Promote-Creatives` and tracker rows ready for campaign build
 - [ ] Linked back to the definitive article and relevant siblings
 
+## Failure modes
+- Creative for a post with no organic signal. Dollar a Day amplifies winners; it does not rescue a hook that already failed at $0.
+- Sound-on-only hook. First 3 seconds must work captions-on, sound-off.
+- New messaging that was not in the winning post. You are testing spend, not copy.
+
 ## Example(s)
-- Example needed — run the Meta-Article Prompt after first real run. Candidate: turning a high-engagement one-minute video from a personal brand into a 3-variant $1/day test set.
+- Marko Sipila / HVAC Quote: the ad creative is the conference clip that already performed on YouTube, not a new studio shoot.
+- Public method: https://blitzmetrics.com/content-factory/ (Dollar a Day is taught inside the factory) and `dollar-a-day-strategist` in the skill packs.
+
+## Model routing
+Lane `any` for cutting copy/variants from the winning post's own language. Computer-use to export from Descript. Do not spend a dollar in this skill — that is Promote (`run-dollar-a-day-campaign-on-winning-content`).
 
 ## Run on a persistent agent (Fable 5)
 

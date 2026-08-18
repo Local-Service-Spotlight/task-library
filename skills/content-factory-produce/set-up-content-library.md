@@ -34,9 +34,17 @@ status: needs-work
 - [ ] Produce skills point intake at `01-Raw`; Process pulls only from there
 - [ ] Linked back to the definitive article and relevant siblings
 
+## Failure modes
+- Files only in a Slack thread or a vendor's chat memory. The next engine cannot see them. Drive + tracker is the factory.
+- VA-owned Drive. When they leave, the library leaves.
+- `IMG_4203.mov` in `01-Raw`. Naming is the logging system.
+
 ## Example(s)
-- The Content Library is the fourth Stage 3 asset (with endorsements, WHY video, 3×3 grid) documented at /social-amplification.
-- Example needed — run the Meta-Article Prompt after first real run on a client library build.
+- The four folders *are* the four phases. If Process is looking in Downloads, the factory has already stalled.
+- Overnight writer (`run-overnight-local-writer`) reads the same client folder spine — do not invent a second tree.
+
+## Model routing
+Lane `script` / `any`. Claude-only or Grok-only: create folders and the README, then stop. Humans drop the phone footage in.
 
 ## Run on a persistent agent (Fable 5)
 

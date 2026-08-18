@@ -101,6 +101,21 @@ status: <complete | needs-work | gap>
 - Every skill.md must carry a **Definition of done** checklist (the QA layer) and at least a placeholder **Example** so the meta-article loop has a slot to fill.
 - For **gap** tasks (no article yet), set `definitive_article: GAP — to be written`, write the SOP from the description + method, and flag the missing hub.
 
+## Importance (1–5 volume bar)
+Every task carries an **importance** score, shown as a 1–5 bar on the dashboard. It is `max(frequency, revenue, gating)`, scored from evidence, not vibes:
+
+- **Frequency** — does this run every factory cycle, weekly, monthly, once per client, or yearly?
+- **Revenue** — ads, boosts, pixels, and conversion paths are 5. Publishing the asset ads will amplify is 4. Maintenance is 1–2.
+- **Gating** — a small "get access" task is a **5** if skipping it blocks the chain (GSC, GTM, Meta pixel, Business Manager, Descript, WP author).
+
+The scoring table lives in `build/factory.py`. Do not hand-edit bars on the dashboard.
+
+## Factory chain
+Tasks are stations on Produce → Process → Post → Promote, with Digital Plumbing as Gate. Every skill.md must name **Before** and **After** (sibling run order). The dashboard renders the chain; agents must not start a station as an isolated chat.
+
+## Model routing
+Name the lane: `script` | `local` | `any` | `judgment` | `computer`. **Single-engine is first-class:** an operator with only Grok or only Claude still runs the whole factory. Multi-engine (local overnight writer + frontier Jennifer + REST publish) scales the same line. Pass work as files, never through one vendor's memory. Canonical skill: `run-content-factory-on-any-engine`.
+
 ---
 
 ## Examples = meta-articles

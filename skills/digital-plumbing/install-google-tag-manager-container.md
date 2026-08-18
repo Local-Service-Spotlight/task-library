@@ -33,13 +33,17 @@ status: gap
 - [ ] Linked back to the definitive article and relevant siblings
 - [ ] Complies with Blog Posting Guidelines (if it publishes content)
 
-## Example(s)
-- Example needed — run the Meta-Article Prompt after first real run.
+## Failure modes
+- Installed but never **published**. Tag Assistant shows the ID; nothing fires. Most common silent failure.
+- One container shared across sites. Never. One site, one container, in the *client's* Google account.
+- Hard-coded GA4 left in the theme after migrating to GTM = double counting.
 
-## Run on a persistent agent (Fable 5)
-A persistent agent (Claude Fable 5 or a comparable OpenAI/Google model) catches the classic silent failure — an installed-but-unpublished container — by verifying the container actually fires on every template, and loops through migrating and removing hard-coded tags until the full Definition of done passes with zero double-firing, not 90%.
-It self-verifies in Tag Assistant against that checklist, stores the container ID and tag inventory in memory so the GA4, pixel, and call-tracking runs deploy into the same tap point, and logs a meta-article example each run so the library compounds.
-See `boil-the-ocean.md` for the full operating principles.
+## Example(s)
+- anthonyhilb.com (July 2026): no GTM, no GA4, no pixel. Sixteen articles, zero measurement. GTM is the tap point the other Gate skills deploy into.
+- Website QA Layer 1: "GTM installed and firing on every page" is this skill's DoD, not a later audit surprise.
+
+## Model routing
+Computer-use (GTM + theme/header). Claude-only or Grok-only: browser. Scripts can verify the container ID in page HTML after install.
 
 ## Definitive article & links
 - Hub: GAP — to be written. "How to Install and Configure GTM" is queued (High Priority) in Gaps & Tasks to Create; until it ships, /digital-plumbing is the parent hub.

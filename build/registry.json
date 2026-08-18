@@ -984,6 +984,14 @@
    "status": "complete",
    "flag": "external claude-skill (owner: Daniel Goodrich); repo also holds 5 sibling skills — add entries when mapped",
    "download": "https://github.com/Goodrich-Dev/google-ads-maa-skills/archive/refs/heads/main.zip"
+  },
+  "run-content-factory-on-any-engine": {
+   "source": "local",
+   "category": "Strategy & Measurement"
+  },
+  "run-overnight-local-writer": {
+   "source": "local",
+   "category": "Content Factory — Post"
   }
  }
 }

@@ -21,6 +21,8 @@ from datetime import datetime, timezone
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BUILD = os.path.join(ROOT, 'build')
 CACHE = os.path.join(BUILD, '.cache')
+sys.path.insert(0, BUILD)
+import factory  # noqa: E402
 
 STAGES = {'Produce', 'Process', 'Post', 'Promote', '—', ''}
 STATUSES = {'complete', 'needs-work', 'gap'}
@@ -280,6 +282,7 @@ def main():
         if not src_cell:
             cat = (row.get('Category') or '').strip()
             if cat in valid_cats and slug:
+                rec = factory.annotate(slug, cat, (row.get('Stage') or '').strip())
                 sheet_only[slug] = {
                     'title': (row.get('Task Title') or slug).strip() or slug,
                     'slug': slug, 'status': 'gap',
@@ -288,7 +291,12 @@ def main():
                     'desc': (row.get('Description') or '').strip(),
                     'content': '',
                     'flag': 'defined in sheet — not yet built',
-                    'category': cat}
+                    'category': cat,
+                    'importance': rec['importance'], 'freq': rec['freq'],
+                    'revenue': rec['revenue'], 'gating': rec['gating'],
+                    'phase': rec['phase'], 'before': rec['before'],
+                    'after': rec['after'], 'lane': rec['lane'],
+                    'lane_label': rec['lane_label'], 'why': rec['why']}
                 if (row.get('Owner') or '').strip():
                     sheet_only[slug]['owner'] = row['Owner'].strip()
             continue
@@ -324,9 +332,16 @@ def main():
             status = {'ready': 'complete', 'complete': 'complete', 'wip': 'needs-work', 'needs-work': 'needs-work', 'gap': 'gap'}.get(s, status)
             if (ov.get('Definitive Article URL') or '').strip():
                 art = ov['Definitive Article URL'].strip()   # sheet overrides only when filled; file frontmatter is the default
+        rec = factory.annotate(slug, entry['category'], fm.get('stage') or '', text)
+        content = factory.apply_layer(text.strip(), factory.layer_markdown(slug, rec))
         task = {'title': fm['name'], 'slug': slug, 'status': status,
                 'stage': fm['stage'] or '—', 'article': art,
-                'desc': fm['description'], 'content': text.strip()}
+                'desc': fm['description'], 'content': content,
+                'importance': rec['importance'], 'freq': rec['freq'],
+                'revenue': rec['revenue'], 'gating': rec['gating'],
+                'phase': rec['phase'], 'before': rec['before'],
+                'after': rec['after'], 'lane': rec['lane'],
+                'lane_label': rec['lane_label'], 'why': rec['why']}
         if entry.get('flag'):
             task['flag'] = entry['flag']
         if entry.get('download'):
@@ -370,7 +385,18 @@ def main():
                       'categories': len(cats_meta)},
             'bundleUrl': 'TaskLibrary-Skills-all.zip', 'metaArticleUrl': site['metaArticleUrl'],
             'updated': datetime.now(timezone.utc).strftime('%B %-d, %Y'),  # real build stamp (was a static label from site-meta.json)
+            'factory': factory.factory_meta(),
             'categories': [dict(c, tasks=by_cat[c['name']]) for c in cats_meta]}
+    # Drop dangling before/after pointers that are not in this build.
+    known = {t['slug'] for t in all_tasks}
+    for t in all_tasks:
+        if t.get('before') and t['before'] not in known:
+            t['before'] = None
+        if t.get('after') and t['after'] not in known:
+            t['after'] = None
+    dist = {str(i): sum(t.get('importance') == i for t in all_tasks) for i in range(1, 6)}
+    data['stats']['importance'] = dist
+    data['stats']['fives'] = dist.get('5', 0)
 
     os.makedirs(os.path.dirname(args.out), exist_ok=True)
     json.dump(data, open(args.out, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
@@ -380,6 +406,9 @@ def main():
     nready = write_zip(data, os.path.dirname(args.out), 'TaskLibrary-Skills-ready.zip',
                        'Owner-signed skills only. Rebuilt on every library build.', True)
     print(f'zips: all={nall}, ready={nready}')
+    inv = os.path.join(ROOT, "INCOMPLETE-INVENTORY.md")
+    ninc = factory.write_incomplete_inventory(all_tasks, inv)
+    print(f"incomplete inventory: {ninc} rows -> {os.path.relpath(inv, ROOT)}")
 
     print(f"built {len(all_tasks)}/{len(registry) + len(sheet_only)} skills -> {os.path.relpath(args.out, ROOT)}")
     print(f"stats: {data['stats']}")

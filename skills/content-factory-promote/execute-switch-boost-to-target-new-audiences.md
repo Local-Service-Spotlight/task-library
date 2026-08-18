@@ -32,8 +32,17 @@ status: needs-work
 - [ ] Linked back to the definitive article and relevant siblings
 - [ ] Complies with Blog Posting Guidelines (if it publishes content)
 
+## Failure modes
+- Switching creative AND audience together. The result is unreadable.
+- Boosting a loser to "give it a new audience." Switch-boost is for proven winners only.
+- New post object. Social proof must stack on the same post.
+
 ## Example(s)
-- Example needed — run the Meta-Article Prompt after first real run. Candidate: switching a winning Superior Fence & Rail (Zach Peyton) post from its home metro to an adjacent service-area audience.
+- Dollar a Day method: https://blitzmetrics.com/content-factory/ — $1/day × 7, kill the bottom 90%, then travel the winner to a new saved audience.
+- Candidate worked example: switching a winning Superior Fence & Rail (Zach Peyton) post from its home metro to an adjacent service-area audience.
+
+## Model routing
+Computer-use (Ads Manager). Claude-only or Grok-only: same UI. Scripts can read the CSV export after day 7; they cannot click Boost.
 
 ## Run on a persistent agent (Fable 5)
 A persistent agent (Fable 5 or a comparable OpenAI/Google model) enforces the one-variable rule mechanically: same post object, one new audience, $1/day, 7 untouched days — then compares against the baseline it stored from the original run and self-verifies every Definition-of-done box before logging the verdict.

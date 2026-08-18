@@ -32,8 +32,17 @@ status: needs-work
 - [ ] Linked back to the definitive article and relevant siblings
 - [ ] Complies with Blog Posting Guidelines (if it publishes content)
 
+## Failure modes
+- Conversion offer aimed at cold traffic. Strangers meet the WHY first; the quote form comes last.
+- Escalator not wired. If watching the cold video does not add the person to the warm audience, you are running three disconnected $1 tests, not a funnel.
+- Pixel missing. Sequence cannot escalate. Run Gate skills first.
+
 ## Example(s)
-- Example needed — run the Meta-Article Prompt after first real run. Candidate: a local-service funnel (Marko Sipila, HVAC Quote) from one-minute answer video → install case study → quote offer.
+- Local-service funnel (Marko Sipila, HVAC Quote): one-minute answer video (cold) → install case study (warm) → quote offer (conversion), $1/day per layer.
+- Nine Triangles funnel levels and SAE Stages 4–5 are the same temperature model.
+
+## Model routing
+Computer-use (Ads Manager audiences). Classification of creatives is lane `any`. Claude-only or Grok-only: classify in chat, then click the same Ads Manager screens.
 
 ## Run on a persistent agent (Fable 5)
 A persistent agent (Fable 5, or comparable OpenAI/Google models) wires the escalator once, then watches it weekly for as long as the funnel runs — checking cold→warm growth and warm→conversion flow, decomposing any stall, and re-verifying the full Definition of done each cycle instead of assuming last week's pass still holds.

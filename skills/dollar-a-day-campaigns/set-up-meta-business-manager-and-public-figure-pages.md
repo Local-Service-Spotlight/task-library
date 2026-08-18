@@ -33,8 +33,17 @@ status: needs-work
 - [ ] Linked back to the definitive article and relevant siblings
 - [ ] Complies with Blog Posting Guidelines (if it publishes content)
 
+## Failure modes
+- Agency-owned Business Manager. Recovering it later is a months-long fight. Owner's login, always.
+- Bare Public Figure page. An ad click onto an empty wall refunds the dollar to nobody.
+- Pixel not attached to the ad account. Spend will not attribute.
+
 ## Example(s)
-- Example needed — run the Meta-Article Prompt after first real run (candidate: standing up a Public Figure page for a local-service owner-operator and running the first $1 boost).
+- Personal-brand Dollar a Day requires a Public Figure page *and* a company page as separate entities. The person accrues the audience.
+- Seed content before spend: WHY video + one-minute answers + one lighthouse clip.
+
+## Model routing
+Computer-use, gating 5. Claude-only or Grok-only: browser. This unblocks every Promote skill; do it first.
 
 ## Run on a persistent agent (Fable 5)
 A persistent agent (Claude Fable 5 or comparable OpenAI/Google models) runs this setup to the full Definition of done — ownership under the owner, every asset attached, Public Figure page seeded, the $1 test boost delivered and attributed — and loops on whatever fails; "BM created, rest pending" is a failed run that leaves the brand unable to spend.

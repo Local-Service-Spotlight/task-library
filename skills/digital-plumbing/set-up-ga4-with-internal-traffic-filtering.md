@@ -35,13 +35,17 @@ status: gap
 - [ ] Linked back to the definitive article and relevant siblings
 - [ ] Complies with Blog Posting Guidelines (if it publishes content)
 
-## Example(s)
-- Example needed — run the Meta-Article Prompt after first real run.
+## Failure modes
+- Filter left in **Testing**. Internal visits still count. Flip to Active, then prove it with a cellular visit vs an office IP.
+- GA4 in the agency's account. Same hostage problem as a pixel in the agency BM.
+- Deployed as a hard-coded snippet instead of a GTM tag. You just created a second tap point.
 
-## Run on a persistent agent (Fable 5)
-A persistent agent (Claude Fable 5 or a comparable OpenAI/Google model) does what rushed humans skip: it flips the internal-traffic filter from Testing to Active and then proves it — excluded-IP visits must not appear, a cellular visit must — looping until every Definition-of-done box passes, not 90%.
-It self-verifies in Realtime/DebugView against that checklist, stores the Measurement ID, property details, and excluded IPs in memory for every later analytics run, and logs a meta-article example each run so the library compounds.
-See `boil-the-ocean.md` for the full operating principles.
+## Example(s)
+- Same July 2026 Hilb incident: no GA4 at all. Weekly reports said "needs more time." There was nothing to read.
+- Internal-traffic filter in Testing is the most common GA4 mistake on our own fleet audits.
+
+## Model routing
+Computer-use. Run after GTM. Claude-only or Grok-only: same Admin UI.
 
 ## Definitive article & links
 - Hub: GAP — to be written. "How to Configure GA4 with Internal Traffic Filtering" is queued (High Priority) in Gaps & Tasks to Create; until it ships, /digital-plumbing is the parent hub.

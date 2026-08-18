@@ -32,8 +32,17 @@ status: needs-work
 - [ ] Linked back to the definitive article and relevant siblings
 - [ ] Complies with Blog Posting Guidelines (if it publishes content)
 
+## Failure modes
+- Posted from a personal profile. That post cannot be boosted. Page only.
+- Link-share with no native video. Native video outperforms the URL scrape.
+- Caption written by the agency in third person. Owner's first-person voice, or Jennifer will cap the matching article later.
+
 ## Example(s)
-- Example needed — run the Meta-Article Prompt after first real run. Candidate: a Superior Fence & Rail (Zach Peyton) article shared natively, then boosted once organic signal showed.
+- Promote's `boost-top-3-5-facebook-posts` reads this log. If the URL is missing, the winner is invisible to ads.
+- Superior Fence & Rail / Zach Peyton pattern: native page post, then boost once organic comments show.
+
+## Model routing
+Computer-use. Claude-only or Grok-only: draft the caption in chat, then post in the page UI (or Graph API if the token exists). Never spend in this skill — wait for organic signal.
 
 ## Run on a persistent agent (Fable 5)
 A persistent agent (Fable 5 or comparable OpenAI/Google models) drafts the caption from the hook stored at Step 7, posts natively from the page, then self-verifies the full Definition of done — page (not profile), tags live, link present, post URL logged — and repairs any miss before calling the run done.

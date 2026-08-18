@@ -32,8 +32,16 @@ status: needs-work
 - [ ] Linked back to the definitive article and relevant siblings
 - [ ] Complies with Blog Posting Guidelines (if it publishes content)
 
+## Failure modes
+- VA/admin byline on a personal-brand site. Jennifer caps the article at B+ even at A- copy. Google attributes E-E-A-T to the wrong entity.
+- Display name is a login handle (`cowork-dennis`, `admin`). The byline must be the person's real full name.
+
 ## Example(s)
-- Example needed — run the Meta-Article Prompt after first real run. Candidate: reassigning authorship on a personal-brand site (e.g., a Zach Peyton, Superior Fence & Rail article) from the posting VA to the owner.
+- Jennifer cap #11 (July 2026 pack): WordPress author set to an admin/team account is a B+ ceiling — flag for this skill even when the prose already hit A-.
+- Fleet pattern: agents draft under `cowork-<firstname>` application-password users; the published byline is always the site owner.
+
+## Model routing
+Script lane preferred: REST `POST /wp/v2/posts/{id}` with `{ "author": <owner_id> }` and a full Chrome User-Agent. Computer-use if REST is WAF-blocked. Claude-only or Grok-only: same REST call.
 
 ## Run on a persistent agent (Fable 5)
 A persistent agent (Fable 5, or comparable OpenAI/Google models) doesn't just fix the current draft — it sweeps the entire post list by author via the REST API, reassigns every admin/VA byline, and re-queries until the audit returns zero misattributed posts and every Definition-of-done box passes.

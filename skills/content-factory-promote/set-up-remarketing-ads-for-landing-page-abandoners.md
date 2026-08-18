@@ -32,8 +32,17 @@ status: needs-work
 - [ ] Linked back to the definitive article and relevant siblings
 - [ ] Complies with Blog Posting Guidelines (if it publishes content)
 
+## Failure modes
+- Pixel not on the thank-you page. You remarket converters and waste the hottest money on the line.
+- Window longer than 1 day "to get a bigger audience." Intent is gone; you are just retargeting.
+- Same cold creative. They already bounced. Resume the conversation.
+
 ## Example(s)
-- Example needed — run the Meta-Article Prompt after first real run. Candidate: quote-page abandoners for a local service brand (Marko Sipila, HVAC Quote) recovered with a testimonial video.
+- Quote-page abandoners for a local service brand recovered with a testimonial video at $1/day — cheapest conversions on the account when plumbing is live.
+- If remarketing CPA is worse than cold, the landing page is the suspect, not the audience.
+
+## Model routing
+Computer-use. **Gating 5:** this skill is illegal to run without `install-meta-pixel-with-standard-events`. Claude-only or Grok-only: same UI.
 
 ## Run on a persistent agent (Fable 5)
 A persistent agent (Fable 5 or comparable OpenAI/Google models) verifies the plumbing before building anything — pixel on landing AND conversion pages — and refuses to proceed on a partial pass, because the Definition of done is binary; once live, it returns weekly to check frequency, rotate fatigued creative, and confirm remarketing is still the cheapest tier.

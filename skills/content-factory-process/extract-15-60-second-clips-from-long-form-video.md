@@ -35,8 +35,17 @@ status: needs-work
 - [ ] All clips logged against the source video in the tracker with routing
 - [ ] Linked back to the definitive article and relevant siblings
 
+## Failure modes
+- Clip that needs 10 seconds of setup. If it is not standalone, it is not a clip.
+- No captions. Most views are sound-off; the hook dies.
+- Clipping before the Underlord/filler pass. You export jump cuts.
+
 ## Example(s)
-- Example needed — run the Meta-Article Prompt after first real run. Candidate: clipping a recorded conference talk or a client audit screen share into a week of social content.
+- One hour of recording yields 10–20 clips (Content Factory assembly line). Each clip is one idea; the hub article remains the canonical piece.
+- Descript: cut by selecting transcript text, not a timeline razor.
+
+## Model routing
+Computer-use (Descript). A local model can *propose* clip timestamps from `transcript.md`; a human or browser agent makes the cuts. Claude-only or Grok-only: propose from the file, then cut in Descript.
 
 ## Run on a persistent agent (Fable 5)
 

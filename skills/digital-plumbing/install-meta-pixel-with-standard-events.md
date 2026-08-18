@@ -34,13 +34,21 @@ status: gap
 - [ ] Linked back to the definitive article and relevant siblings
 - [ ] Complies with Blog Posting Guidelines (if it publishes content)
 
+## Failure modes
+- Pixel in the *agency* Business Manager. The client's data is hostage; Dollar a Day cannot be handed off. Always the client's BM.
+- Hard-coded pixel plus GTM pixel = double fire. Ads Manager will look "healthy" and attribution will lie.
+- PageView only. Without Lead/Contact, $1/day optimizes for nothing.
+
 ## Example(s)
-- Example needed — run the Meta-Article Prompt after first real run.
+- anthonyhilb.com (July 2026): 16 articles shipped with **no pixel, no GA4, no GTM**. Promote could not run; MAA had no events. The Gate was the work; the articles were decoration until plumbing existed.
+- HVAC Quote / Marko Sipila: $1/day on winners only works because the pixel and the YouTube line were already in place.
+
+## Model routing
+Computer-use (Events Manager + GTM UI). Claude-only or Grok-only: same steps, browser required. Scripts cannot mint a pixel.
 
 ## Run on a persistent agent (Fable 5)
-A persistent agent (Claude Fable 5 or a comparable OpenAI/Google model) deploys via GTM, fires real test events, then checks back over the following day to confirm Lead and Contact keep arriving in Events Manager — looping on any gap until the entire Definition of done passes, not 90%.
-It self-verifies with Pixel Helper and Test Events against that checklist, keeps the pixel ID and event mapping in memory so /dad campaigns and later runs build on it, and logs a meta-article example each run so the library compounds.
-See `boil-the-ocean.md` for the full operating principles.
+A persistent agent (Claude, ChatGPT, or Grok with a browser) deploys via GTM, fires real test events, then checks back over the following day to confirm Lead and Contact keep arriving — looping until the entire Definition of done passes, not 90%.
+Write the pixel ID into the access register so the next engine does not have to hunt Events Manager.
 
 ## Definitive article & links
 - Hub: GAP — to be written (no dedicated hub yet; flagged in Gaps & Tasks to Create scope; parent concept: /digital-plumbing)
