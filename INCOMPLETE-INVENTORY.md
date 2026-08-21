@@ -2,9 +2,9 @@
 
 Generated from `build/build.py` after scoring in `build/factory.py`.
 
-Library: **244** tasks — 120 complete, 101 needs-work, 23 gaps.
+Library: **248** tasks — 124 complete, 101 needs-work, 23 gaps.
 
-Importance distribution: 5★=75, 4★=36, 3★=101, 2★=32, 1★=0
+Importance distribution: 5★=75, 4★=40, 3★=101, 2★=32, 1★=0
 
 Scoring: `importance = max(frequency, revenue, gating)`. Ads, pixels, GSC, Descript, WP-author, and Meta BM are 5s even when the task is small, because they unblock the line.
 
