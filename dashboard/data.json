@@ -610,6 +610,26 @@
      "articleState": "ready"
     },
     {
+     "title": "run-overnight-local-writer",
+     "slug": "run-overnight-local-writer",
+     "status": "complete",
+     "stage": "Process",
+     "article": "https://blitzmetrics.com/overnight-content-worker",
+     "desc": "Take Blog Posting Guidelines steps 4–7 and 11 off Claude and run them overnight on a Mac with a local model and a shared job queue.",
+     "content": "---\nname: run-overnight-local-writer\ndescription: Take Blog Posting Guidelines steps 4–7 and 11 off Claude and run them overnight on a Mac with a local model and a shared job queue.\ncategory: Content Factory — Process\nstage: Process\ndefinitive_article: /overnight-content-worker\nstatus: complete\n---\n\n# Run overnight local writer\n\n**Use this when** a client backlog would burn frontier tokens if one chat wrote every draft, and a teammate can leave a laptop on overnight.\n\n## Inputs\n- Client folder under `Overnight-Content-Worker/clients/`\n- Queue file `queue/QUEUE.json`\n- Local Qwen with thinking off (or `--dry-run`)\n\n## Steps\n1. Confirm you are Accountable for that client, or Accountable said yes.\n2. Run `status.py`. If the client lock is held, pick another client.\n3. Dinner, then night, then stop. Do not publish live from the Mac worker.\n4. Morning QA is two minutes per article: voice, links, featured image.\n5. `morning.py` POSTs drafts. Rank Math click-path stays human when REST cannot set it.\n6. Hand the draft URLs to `grade-article-using-jennifer`, then `step-12-post-article-on-wordpress` if they are not already drafted. Promote stays a later station.\n\n## Definition of done (QA checklist)\n- [ ] Client lock shows your worker\n- [ ] No duplicate job_id in `claimed` by two workers\n- [ ] Drafts are markdown with YAML, not live posts\n- [ ] `needs_human` rows are in the morning pile, not silently skipped\n- [ ] Linked back to the definitive article and relevant siblings\n- [ ] Complies with Blog Posting Guidelines (if it publishes content)\n\n## Example(s)\n- Public SOP: https://blitzmetrics.com/overnight-content-worker/ — local Qwen drafts; the local model never hits YouTube or WordPress. Same collision rule as Dennis OS \"In flight.\"\n\n\n<!-- factory-layer:start -->\n\n## Factory chain (do not treat this as isolated)\n\n- **Phase:** Process\n- **Importance:** 4/5 `●●●●○` — frequency 4, revenue 3, gating 2 (runs every factory cycle or weekly)\n- **Before:** `step-5-write-article-from-transcript`\n- **After:** `step-6-write-title-and-headings`\n- **Handoff:** Write `transcript.md`, `gct.md`, `article.html` (or overnight draft), `clips/` and `04-Promote-Creatives/`. The next engine opens those files. Do not pass work through one vendor's memory.\n\n## Model routing (same factory, any engine)\n\n- **This task's lane:** `local` — Dumb local model (Qwen overnight, Ollama). First drafts and bulk rewrite only. Never hits ads, WP, or judgment.\n- **Single-engine path:** If you only have Grok, or only have Claude, run this task anyway. Do not wait for a second vendor. Pass the handoff files to the next skill in this same engine.\n- **Optional multi-engine:** local/Qwen can draft Process writing overnight; a frontier model (Claude, ChatGPT, or Grok) does Jennifer + voice; scripts publish. That is the same line, not a second playbook.\n- **Never** store the working state in one vendor's memory. Files in the Content Library are the bridge.\n\n<!-- factory-layer:end -->\n## Definitive article & links\n- Hub: /overnight-content-worker\n- Related: /blog-posting-guidelines · /content-factory · /application-passwords\n- Sibling skills, in run order: `step-4-research-edit-add-timestamps-and-outline` → this → `grade-article-using-jennifer`",
+     "importance": 4,
+     "freq": 4,
+     "revenue": 3,
+     "gating": 2,
+     "phase": "Process",
+     "before": "step-5-write-article-from-transcript",
+     "after": "step-6-write-title-and-headings",
+     "lane": "local",
+     "lane_label": "Dumb local model (Qwen overnight, Ollama). First drafts and bulk rewrite only. Never hits ads, WP, or judgment.",
+     "why": "runs every factory cycle or weekly",
+     "articleState": "ready"
+    },
+    {
      "title": "step-6-write-title-and-headings",
      "slug": "step-6-write-title-and-headings",
      "status": "complete",
@@ -1011,26 +1031,6 @@
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
      "why": "runs every factory cycle or weekly; creates the asset ads amplify",
-     "articleState": "ready"
-    },
-    {
-     "title": "run-overnight-local-writer",
-     "slug": "run-overnight-local-writer",
-     "status": "complete",
-     "stage": "Post",
-     "article": "https://blitzmetrics.com/overnight-content-worker",
-     "desc": "Take Blog Posting Guidelines steps 4–7 and 11 off Claude and run them overnight on a Mac with a local model and a shared job queue.",
-     "content": "---\nname: run-overnight-local-writer\ndescription: Take Blog Posting Guidelines steps 4–7 and 11 off Claude and run them overnight on a Mac with a local model and a shared job queue.\ncategory: Content Factory — Post\nstage: Post\ndefinitive_article: /overnight-content-worker\nstatus: complete\n---\n\n# Run overnight local writer\n\n**Use this when** a client backlog would burn frontier tokens if one chat wrote every draft, and a teammate can leave a laptop on overnight.\n\n## Inputs\n- Client folder under `Overnight-Content-Worker/clients/`\n- Queue file `queue/QUEUE.json`\n- Local Qwen with thinking off (or `--dry-run`)\n\n## Steps\n1. Confirm you are Accountable for that client, or Accountable said yes.\n2. Run `status.py`. If the client lock is held, pick another client.\n3. Dinner, then night, then stop. Do not publish live from the Mac worker.\n4. Morning QA is two minutes per article: voice, links, featured image.\n5. `morning.py` POSTs drafts. Rank Math click-path stays human when REST cannot set it.\n6. Hand the draft URLs to `grade-article-using-jennifer`, then `step-12-post-article-on-wordpress` if they are not already drafted. Promote stays a later station.\n\n## Definition of done (QA checklist)\n- [ ] Client lock shows your worker\n- [ ] No duplicate job_id in `claimed` by two workers\n- [ ] Drafts are markdown with YAML, not live posts\n- [ ] `needs_human` rows are in the morning pile, not silently skipped\n- [ ] Linked back to the definitive article and relevant siblings\n- [ ] Complies with Blog Posting Guidelines (if it publishes content)\n\n## Example(s)\n- Public SOP: https://blitzmetrics.com/overnight-content-worker/ — local Qwen drafts; the local model never hits YouTube or WordPress. Same collision rule as Dennis OS \"In flight.\"\n\n\n<!-- factory-layer:start -->\n\n## Factory chain (do not treat this as isolated)\n\n- **Phase:** Process\n- **Importance:** 4/5 `●●●●○` — frequency 4, revenue 3, gating 2 (runs every factory cycle or weekly)\n- **Before:** `step-5-write-article-from-transcript`\n- **After:** `step-6-write-title-and-headings`\n- **Handoff:** Write `transcript.md`, `gct.md`, `article.html` (or overnight draft), `clips/` and `04-Promote-Creatives/`. The next engine opens those files. Do not pass work through one vendor's memory.\n\n## Model routing (same factory, any engine)\n\n- **This task's lane:** `local` — Dumb local model (Qwen overnight, Ollama). First drafts and bulk rewrite only. Never hits ads, WP, or judgment.\n- **Single-engine path:** If you only have Grok, or only have Claude, run this task anyway. Do not wait for a second vendor. Pass the handoff files to the next skill in this same engine.\n- **Optional multi-engine:** local/Qwen can draft Process writing overnight; a frontier model (Claude, ChatGPT, or Grok) does Jennifer + voice; scripts publish. That is the same line, not a second playbook.\n- **Never** store the working state in one vendor's memory. Files in the Content Library are the bridge.\n\n<!-- factory-layer:end -->\n## Definitive article & links\n- Hub: /overnight-content-worker\n- Related: /blog-posting-guidelines · /content-factory · /application-passwords\n- Sibling skills, in run order: `step-4-research-edit-add-timestamps-and-outline` → this → `grade-article-using-jennifer`",
-     "importance": 4,
-     "freq": 4,
-     "revenue": 3,
-     "gating": 2,
-     "phase": "Process",
-     "before": "step-5-write-article-from-transcript",
-     "after": "step-6-write-title-and-headings",
-     "lane": "local",
-     "lane_label": "Dumb local model (Qwen overnight, Ollama). First drafts and bulk rewrite only. Never hits ads, WP, or judgment.",
-     "why": "runs every factory cycle or weekly",
      "articleState": "ready"
     }
    ]

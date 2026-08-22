@@ -1,8 +1,8 @@
 ---
 name: run-overnight-local-writer
 description: Take Blog Posting Guidelines steps 4–7 and 11 off Claude and run them overnight on a Mac with a local model and a shared job queue.
-category: Content Factory — Post
-stage: Post
+category: Content Factory — Process
+stage: Process
 definitive_article: /overnight-content-worker
 status: complete
 ---

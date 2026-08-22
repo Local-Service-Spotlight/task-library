@@ -119,6 +119,10 @@
    "source": "local",
    "category": "Content Factory — Process"
   },
+  "run-overnight-local-writer": {
+   "source": "local",
+   "category": "Content Factory — Process"
+  },
   "step-6-write-title-and-headings": {
    "source": "local",
    "category": "Content Factory — Process"
@@ -1012,10 +1016,6 @@
   "run-content-factory-on-any-engine": {
    "source": "local",
    "category": "Strategy & Measurement"
-  },
-  "run-overnight-local-writer": {
-   "source": "local",
-   "category": "Content Factory — Post"
   }
  }
 }

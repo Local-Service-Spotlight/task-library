@@ -128,6 +128,18 @@ class DurableArticleStandard(unittest.TestCase):
         self.assertIn('Only a `ready` hub may show', self.standard)
         self.assertIn('Article in progress', self.standard)
 
+    def test_hubs_support_approved_domains_without_premature_remapping(self):
+        self.assertIn('approved canonical domain', self.standard)
+        self.assertIn('Declare one working copy', self.standard)
+        self.assertIn('content parity and passes validation', self.standard)
+        self.assertIn('absolute URL on another approved canonical domain', self.standard)
+
+    def test_article_specific_visual_leads_framework_context(self):
+        self.assertIn('Article-specific lead visual', self.standard)
+        self.assertIn('The framework map is orientation, not generic hero art', self.standard)
+        self.assertIn('must not displace the article\'s primary evidence', self.standard)
+        self.assertIn('do not force a generic Content Factory diagram', self.standard)
+
     def test_taxonomy_is_canonical_and_not_self_declared(self):
         self.assertIn('Definitive Articles** category only after', self.standard)
         self.assertIn('using names from `build/categories.json`', self.standard)

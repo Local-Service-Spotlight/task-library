@@ -9,7 +9,7 @@
 ## The model: three artifacts per concept
 Every concept/task in the library targets **three linked artifacts**, and they point at each other. A missing or incomplete artifact stays visibly in progress; a URL mapping alone never makes a page definitive.
 
-1. **Article hub** — the one canonical page that owns the concept. It becomes a **definitive article** only after the Green/ready validation below. Lives on blitzmetrics.com at a stable short URL.
+1. **Article hub** — the one canonical page that owns the concept. It becomes a **definitive article** only after the Green/ready validation below. It lives at a stable URL on the approved canonical domain for that concept (for example, `blitzmetrics.com` or `localservicespotlight.com`). Declare one working copy; an older-domain page may remain as an archive, but do not map tasks to a replacement until the working copy has content parity and passes validation.
 2. **skill.md** — the machine-readable SOP an AI agent runs to *do* the task. Downloadable, one file per task. References its mapped article hub, or explicitly records a GAP.
 3. **Examples / meta-articles** — real proof the task was done, each documented with the Meta-Article Prompt and linking back up to the article hub.
 
@@ -27,7 +27,7 @@ A page is only "definitive" if it meets **all nine**. Miss one and it's a draft 
 5. **Links to the course/guide/service** — as a CTA near the bottom, not as the core content.
 6. **Compliance with Blog Posting Guidelines** — title <60 chars; meta description <160; primary keyword in first paragraph; H2/H3 structure; short paragraphs; active voice; no AI-fluff phrases; no stock images; entity-linking decision tree for internal links.
 7. **A short URL** — memorable redirect (e.g., `/dad`, `/digital-plumbing`) pointing to the hub, not the homepage or a case study.
-8. **Canonical framework diagram above the fold** — after the 2–3 sentence opening summary, reuse the approved full framework diagram instead of drawing a simplified substitute. For a Content Factory task, show the full canonical Content Factory diagram and outline, shade, or recolor the task's relevant sub-components while leaving the rest visible for context. Make applicable nodes link to their section or sub-concept hub, add descriptive alt text and a caption naming where this task fits, and verify the diagram appears in the first screen on desktop and mobile. If no multi-part framework applies, still put a real, relevant visual above the fold so the opening is not a wall of text.
+8. **Article-specific lead visual, then task-specific framework context near the top** — after the 2–3 sentence opening summary, lead with real visual evidence specific to the article: its workflow, source screenshot, task diagram, result, or canonical diagram when the article itself teaches that framework. If the task belongs to a larger approved framework, place the full canonical framework diagram immediately after that lead visual, still near the top, and outline, shade, or recolor only the task's honest sub-components while leaving the rest visible for context. For a Content Factory task, this context map is the full canonical Content Factory diagram. The framework map is orientation, not generic hero art: it must not displace the article's primary evidence or imply components the task does not use. Make applicable nodes link to their section or sub-concept hub, add descriptive alt text and a caption naming where this task fits, and verify both visuals on desktop and mobile. If no multi-part framework applies, do not force a generic Content Factory diagram; keep the real, relevant lead visual.
 9. **Third-party endorsements / testimonials / E-E-A-T** — media, conference talks, podcasts, practitioner testimonials with proof. Highest-authority first; volume matters. (The `/dad` article is the gold standard.)
 
 ---
@@ -64,7 +64,7 @@ Run in order for any task in a Yellow/Red (Needs Work / Gap) state:
 5. **Cross-link related concepts and entities** using the Entity Destination Rules (other definitive articles, verified personal sites, verified company sites, and internal training for tools).
 6. **Link to the course/service** (CTA).
 7. **Set the short URL** (redirect to the hub).
-8. **Add the canonical above-the-fold diagram** and highlight the task's relevant sub-components without removing the surrounding system context.
+8. **Add the article-specific lead visual, then any applicable canonical framework map** near the top; highlight only the task's honest sub-components without removing surrounding system context, and do not force generic framework art onto an unrelated task.
 9. **Add E-E-A-T** (endorsements, testimonials, media — highest authority first).
 10. **Publish, validate the ready/WIP state, then run the Meta-Article Prompt** to create the companion meta-article that documents how it was built. Add the visible Definitive marker only after the URL-level ready gate passes.
 
@@ -89,7 +89,7 @@ name: <kebab-case-task-slug>
 description: <one sentence — what running this skill accomplishes, and for whom>
 category: <exact canonical category name from build/categories.json>
 stage: <Produce | Process | Post | Promote | — >        # Content Factory stage if applicable
-definitive_article: <short URL, e.g. /blog-posting-guidelines, or "GAP — to be written">
+definitive_article: <short blitzmetrics.com path, absolute URL on another approved canonical domain, or "GAP — to be written">
 status: <complete | needs-work | gap>
 ---
 

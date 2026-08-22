@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Lock factory scoring, spine coverage, and layer insertion."""
+import json
 import os
 import sys
 import unittest
@@ -91,6 +92,31 @@ class FactoryScoring(unittest.TestCase):
     def test_meta_has_four_plus_gate(self):
         ids = [p["id"] for p in factory.factory_meta()["phases"]]
         self.assertEqual(ids, ["Gate", "Produce", "Process", "Post", "Promote"])
+
+    def test_overnight_writer_is_a_process_station(self):
+        root = os.path.dirname(HERE)
+        process_path = os.path.join(
+            root, "skills", "content-factory-process", "run-overnight-local-writer.md")
+        old_post_path = os.path.join(
+            root, "skills", "content-factory-post", "run-overnight-local-writer.md")
+
+        self.assertTrue(os.path.isfile(process_path))
+        self.assertFalse(os.path.exists(old_post_path))
+        with open(process_path, encoding="utf-8") as fh:
+            content = fh.read()
+        self.assertIn("category: Content Factory — Process", content)
+        self.assertIn("stage: Process", content)
+        self.assertIn("Do not publish live from the Mac worker", content)
+
+        with open(os.path.join(root, "build", "registry.json"), encoding="utf-8") as fh:
+            registry = json.load(fh)
+        self.assertEqual(
+            registry["skills"]["run-overnight-local-writer"]["category"],
+            "Content Factory — Process")
+
+        rec = factory.annotate(
+            "run-overnight-local-writer", "Content Factory — Process", "Process")
+        self.assertEqual(rec["phase"], "Process")
 
 
 if __name__ == "__main__":
