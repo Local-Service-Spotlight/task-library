@@ -3,7 +3,7 @@ name: three-pillars-marketing-operations-finance
 description: Map the business onto its Three Pillars — Marketing, Operations, Finance — assign one health metric to each, and rebalance effort toward the weakest pillar.
 category: Strategy & Measurement
 stage: —
-definitive_article: /nine-triangles
+definitive_article: /9-triangles-framework-scalable-home-service-businesses/
 status: complete
 ---
 
@@ -33,7 +33,7 @@ status: complete
 - [ ] Complies with Blog Posting Guidelines (if it publishes content)
 
 ## Example(s)
-- Example needed — run the Meta-Article Prompt after first real run. (The hub at /nine-triangles links live examples; pull the closest match into this slot.)
+- Example needed — run the Meta-Article Prompt after first real run. (The hub at /9-triangles-framework-scalable-home-service-businesses/ links live examples; pull the closest match into this slot.)
 
 ## Run on a persistent agent (Fable 5)
 
@@ -43,5 +43,5 @@ Memory makes the diagnosis longitudinal: the agent runs the MAA loop as a true m
 See `boil-the-ocean.md` for the full operating principles.
 
 ## Definitive article & links
-- Hub: /nine-triangles
+- Hub: /9-triangles-framework-scalable-home-service-businesses/
 - Related: personal-efficiency-do-delegate-delete, maa-cycle-metrics-analysis-action, submit-weekly-maa-report-every-friday

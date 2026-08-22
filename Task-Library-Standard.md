@@ -47,7 +47,8 @@ These links exist to help the reader identify the entity and complete the task. 
 ## When a page may display “Definitive”
 The visible label is a validation result, not a writing style or a manually chosen badge.
 
-- The build groups tasks by normalized article URL. A hub is `ready` only when **every task mapped to that URL is `complete`**. One `needs-work` or `gap` task keeps the entire hub `wip`; a missing article mapping is excluded from article counts.
+- The build groups tasks by normalized article URL. A hub is `ready` only when **every task mapped to that URL is `complete`** and no reviewed semantic-certification hold is active. One `needs-work` or `gap` task keeps the entire hub `wip`; a missing article mapping is excluded from article counts.
+- A semantic mismatch in the live hub may force the URL to `wip` without falsifying any completed task. Reviewed holds live in `build/article-certifications.json`, require a dated reason, and may only downgrade readiness. Remove a hold only after the hub itself is corrected and reviewed against its authoritative framework or SOP.
 - Only a `ready` hub may show the consistent **Definitive article** / **Definitive SOP** marker near the top of the page and the **Definitive article ↗** label in the Task Library.
 - A `wip` hub must show **Article in progress** where a status label is useful. It must not carry a green/definitive badge merely because the page is published or mapped.
 - Re-run live page QA before promotion: the build state is the catalog receipt, while rendered content, links, diagram placement, schema, and mobile layout are the publication receipt.
@@ -149,6 +150,6 @@ Name the lane: `script` | `local` | `any` | `judgment` | `computer`. **Single-en
 ---
 
 ## Status legend (matches the dashboard)
-- **Complete (Green)** — the task's article exists and meets all nine requirements; skill.md present; ≥1 example. A shared article is labeled definitive only when every task mapped to that normalized URL is Complete.
+- **Complete (Green)** — the individual task's SOP/skill is complete and mapped; this task-level status does not by itself certify a shared article hub. A shared article is labeled definitive only when every task mapped to that normalized URL is Complete and no reviewed semantic-certification hold remains.
 - **Needs Work (Yellow)** — a page exists but misses ≥1 requirement, or has no skill.md / no example yet.
 - **Gap (Red)** — no definitive article yet; skill.md is authored from the task definition and flags the missing hub.

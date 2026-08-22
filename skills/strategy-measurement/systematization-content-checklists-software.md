@@ -3,7 +3,7 @@ name: systematization-content-checklists-software
 description: Move any recurring task up the Systematization ladder — from documented content, to a checklist anyone can run, to software/agent automation — so quality stops depending on memory.
 category: Strategy & Measurement
 stage: —
-definitive_article: /nine-triangles
+definitive_article: /9-triangles-framework-scalable-home-service-businesses/
 status: complete
 ---
 
@@ -44,5 +44,5 @@ Memory baselines time-per-run and rework rate and compares them against prior pe
 See `boil-the-ocean.md` for the full operating principles.
 
 ## Definitive article & links
-- Hub: /nine-triangles
+- Hub: /9-triangles-framework-scalable-home-service-businesses/
 - Related: management-communicate-iterate-delegate, learn-do-teach-apprentice-model, /content-factory

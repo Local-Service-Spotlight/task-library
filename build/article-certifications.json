@@ -1,0 +1,10 @@
+{
+ "_format": "Reviewed URL-level holds may only downgrade a hub to wip. Each hold requires a reason and review date; task completion remains unchanged.",
+ "articles": {
+  "https://blitzmetrics.com/9-triangles-framework-scalable-home-service-businesses/": {
+   "state": "wip",
+   "reviewed": "2026-08-22",
+   "reason": "Semantic certification held: the live hub duplicates GCT and DDD and omits the accepted AEC, CID, and SBP triangle labels from Nine Triangles operational version 2026-08-06."
+  }
+ }
+}

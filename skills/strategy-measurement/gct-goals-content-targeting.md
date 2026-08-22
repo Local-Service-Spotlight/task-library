@@ -3,7 +3,7 @@ name: gct-goals-content-targeting
 description: Define Goals, Content, and Targeting for every campaign and page before launch, so what you're trying to achieve, what you'll say, and who will see it are aligned and written down.
 category: Strategy & Measurement
 stage: —
-definitive_article: /nine-triangles
+definitive_article: /9-triangles-framework-scalable-home-service-businesses/
 status: complete
 ---
 
@@ -35,7 +35,7 @@ status: complete
 - [ ] Complies with Blog Posting Guidelines (if it publishes content)
 
 ## Example(s)
-- Example needed — run the Meta-Article Prompt after first real run. (The hub at /nine-triangles links live examples; pull the closest match into this slot.)
+- Example needed — run the Meta-Article Prompt after first real run. (The hub at /9-triangles-framework-scalable-home-service-businesses/ links live examples; pull the closest match into this slot.)
 
 ## Run on a persistent agent (Fable 5)
 
@@ -45,5 +45,5 @@ Because briefs persist in memory, the MAA loop becomes a true memory cycle: each
 See `boil-the-ocean.md` for the full operating principles.
 
 ## Definitive article & links
-- Hub: /nine-triangles
+- Hub: /9-triangles-framework-scalable-home-service-businesses/
 - Related: funnel-levels-audience-engagement-conversion, stage-2-goals-mission-90-day-goals-cpa-roas-budget, maa-cycle-metrics-analysis-action, /dad

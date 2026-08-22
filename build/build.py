@@ -31,6 +31,7 @@ REQUIRED_FM = ['name', 'description', 'category', 'stage', 'definitive_article',
 REQUIRED_SECTIONS = ['## Inputs', '## Steps', '## Definition of done (QA checklist)',
                      '## Example(s)', '## Definitive article & links']
 STUB = re.compile(r'(placeholder|TBD|to be (written|documented|filled)|coming soon|lorem ipsum)', re.I)
+ARTICLE_CERTIFICATIONS = os.path.join(BUILD, 'article-certifications.json')
 
 
 def folder_of(name):
@@ -185,26 +186,79 @@ def normalize_article_url(url):
     return host + path
 
 
-def derive_article_states(tasks):
-    """Label mapped article hubs from the status of *all* mapped tasks.
+def load_article_certifications(path=ARTICLE_CERTIFICATIONS):
+    """Load reviewed URL-level holds that may only downgrade a hub to WIP."""
+    with open(path, encoding='utf-8') as fh:
+        raw = json.load(fh)
+    articles = raw.get('articles') if isinstance(raw, dict) else None
+    if not isinstance(articles, dict):
+        raise ValueError(f'{path}: expected an "articles" object')
+
+    holds = {}
+    for url, review in articles.items():
+        key = normalize_article_url(url)
+        if not key:
+            raise ValueError(f'{path}: invalid article URL "{url}"')
+        if key in holds:
+            raise ValueError(f'{path}: duplicate normalized article URL "{url}"')
+        if not isinstance(review, dict) or review.get('state') != 'wip':
+            raise ValueError(f'{path}: {url} must be a fail-closed "wip" hold')
+        reason = review.get('reason')
+        reviewed = review.get('reviewed')
+        if not isinstance(reason, str) or not reason.strip():
+            raise ValueError(f'{path}: {url} requires a reason')
+        reason = reason.strip()
+        if not isinstance(reviewed, str) or not re.fullmatch(r'\d{4}-\d{2}-\d{2}', reviewed):
+            raise ValueError(f'{path}: {url} requires a YYYY-MM-DD review date')
+        try:
+            datetime.strptime(reviewed, '%Y-%m-%d')
+        except ValueError as exc:
+            raise ValueError(f'{path}: {url} has an invalid review date "{reviewed}"') from exc
+        holds[key] = {'state': 'wip', 'reason': reason, 'reviewed': reviewed}
+    return holds
+
+
+def validate_article_certifications(tasks, certifications):
+    """Fail if a reviewed hold misses the final post-override article mapping."""
+    mapped = {normalize_article_url(t.get('article')) for t in tasks}
+    mapped.discard(None)
+    unused = sorted(set(certifications) - mapped)
+    if unused:
+        raise ValueError('semantic-certification hold(s) do not match any final article URL: ' +
+                         ', '.join(unused))
+
+
+def derive_article_states(tasks, certifications=None):
+    """Label hubs from task status plus reviewed semantic-certification holds.
 
     A hub is ready/definitive only when every task mapped to its normalized
-    URL is complete. One needs-work or gap task keeps the whole hub in
-    progress. Tasks without a valid article mapping are excluded.
+    URL is complete and no URL-level hold is active. Holds only downgrade a
+    hub; they never falsify an individual task's completion status. Tasks
+    without a valid article mapping are excluded.
     """
+    if certifications is None:
+        certifications = load_article_certifications()
     groups = {}
     for task in tasks:
         task.pop('articleState', None)
+        task.pop('articleStateReason', None)
+        task.pop('articleStateReviewed', None)
         key = normalize_article_url(task.get('article'))
         if key:
             groups.setdefault(key, []).append(task)
 
     ready = 0
-    for mapped in groups.values():
+    for key, mapped in groups.items():
         state = 'ready' if all(t.get('status') == 'complete' for t in mapped) else 'wip'
+        review = certifications.get(key)
+        if review:
+            state = 'wip'
         ready += state == 'ready'
         for task in mapped:
             task['articleState'] = state
+            if review:
+                task['articleStateReason'] = review['reason']
+                task['articleStateReviewed'] = review['reviewed']
 
     return {'articleHubs': len(groups), 'definitiveArticles': ready}
 
@@ -227,7 +281,8 @@ def write_library_index(data, out_path):
     L.append(f"<p>The BlitzMetrics Task Library documents <strong>{st['total']} operational tasks</strong> "
              f"across {st['categories']} categories. Its task-to-article mappings resolve to "
              f"<strong>{st['articleHubs']} article hubs</strong>: "
-             f"<strong>{st['definitiveArticles']} definitive</strong> because every mapped task is complete, "
+             f"<strong>{st['definitiveArticles']} definitive</strong> because their mapped tasks are complete "
+             f"and no reviewed semantic hold is active, "
              f"and {st['articleHubs'] - st['definitiveArticles']} still in progress. "
              f"{st['complete']} are ready, {st['needsWork']} in progress, {st['gaps']} identified gaps. "
              f"Updated {html_escape(data['updated'])}.</p>")
@@ -431,7 +486,9 @@ def main():
         cat = t.pop('category')
         by_cat[cat].append(t)
     all_tasks = [t for ts in by_cat.values() for t in ts]
-    article_stats = derive_article_states(all_tasks)
+    certifications = load_article_certifications()
+    validate_article_certifications(all_tasks, certifications)
+    article_stats = derive_article_states(all_tasks, certifications)
     # Owner attribution comes ONLY from the Asset Tracker. A tracker that parsed
     # rows but still yields zero owners is a malformed or partial feed - the same
     # failure class as above, caught one stage later.

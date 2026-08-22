@@ -266,8 +266,9 @@ function articleLink(t){
   if (!t.article) return '';
   const ready = t.articleState === 'ready';
   const label = ready ? 'Definitive article ↗' : 'Article in progress ↗';
-  const title = ready ? 'Every task mapped to this article is complete' : 'At least one task mapped to this article still needs work';
-  return '<a class="btl-art" href="' + esc(t.article) + '" target="_blank" rel="noopener" title="' + title + '">' + label + '</a>';
+  const title = ready ? 'All mapped tasks are complete and no reviewed semantic hold is active' :
+    (t.articleStateReason || 'Article has incomplete mapped work or an active semantic-certification hold');
+  return '<a class="btl-art" href="' + esc(t.article) + '" target="_blank" rel="noopener" title="' + esc(title) + '">' + label + '</a>';
 }
 function rowHTML(t){
   const st = STATUS[t.status] || STATUS.gap;

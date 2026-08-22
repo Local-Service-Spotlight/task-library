@@ -3,7 +3,7 @@ name: personal-efficiency-do-delegate-delete
 description: Apply the Personal Efficiency triangle — Do, Delegate, Delete — so every incoming item is actioned immediately, handed off with instructions, or removed, keeping the operator at inbox zero.
 category: Strategy & Measurement
 stage: —
-definitive_article: /nine-triangles
+definitive_article: /9-triangles-framework-scalable-home-service-businesses/
 status: complete
 ---
 
@@ -34,7 +34,7 @@ status: complete
 - [ ] Complies with Blog Posting Guidelines (if it publishes content)
 
 ## Example(s)
-- Example needed — run the Meta-Article Prompt after first real run. (The hub at /nine-triangles links live examples; pull the closest match into this slot.)
+- Example needed — run the Meta-Article Prompt after first real run. (The hub at /9-triangles-framework-scalable-home-service-businesses/ links live examples; pull the closest match into this slot.)
 
 ## Run on a persistent agent (Fable 5)
 
@@ -44,5 +44,5 @@ Because it keeps memory across runs, it logs the weekly Do/Delegate/Delete count
 See `boil-the-ocean.md` for the full operating principles.
 
 ## Definitive article & links
-- Hub: /nine-triangles
+- Hub: /9-triangles-framework-scalable-home-service-businesses/
 - Related: management-communicate-iterate-delegate, systematization-content-checklists-software, learn-do-teach-apprentice-model, submit-weekly-maa-report-every-friday

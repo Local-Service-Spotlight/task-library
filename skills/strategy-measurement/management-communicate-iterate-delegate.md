@@ -3,7 +3,7 @@ name: management-communicate-iterate-delegate
 description: Run the Management triangle — Communicate, Iterate, Delegate — to catch issues early, improve work through fast feedback, and hand off responsibility progressively.
 category: Strategy & Measurement
 stage: —
-definitive_article: /nine-triangles
+definitive_article: /9-triangles-framework-scalable-home-service-businesses/
 status: complete
 ---
 
@@ -34,7 +34,7 @@ status: complete
 - [ ] Complies with Blog Posting Guidelines (if it publishes content)
 
 ## Example(s)
-- Example needed — run the Meta-Article Prompt after first real run. (The hub at /nine-triangles links live examples; pull the closest match into this slot.)
+- Example needed — run the Meta-Article Prompt after first real run. (The hub at /9-triangles-framework-scalable-home-service-businesses/ links live examples; pull the closest match into this slot.)
 
 ## Run on a persistent agent (Fable 5)
 
@@ -44,5 +44,5 @@ Because it remembers across weeks, the MAA loop becomes a true memory cycle: rew
 See `boil-the-ocean.md` for the full operating principles.
 
 ## Definitive article & links
-- Hub: /nine-triangles
+- Hub: /9-triangles-framework-scalable-home-service-businesses/
 - Related: personal-efficiency-do-delegate-delete, learn-do-teach-apprentice-model, systematization-content-checklists-software, submit-weekly-maa-report-every-friday

@@ -5,6 +5,7 @@ import json
 import os
 import re
 import sys
+import tempfile
 import unittest
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -40,6 +41,73 @@ class ArticleStateDerivation(unittest.TestCase):
         self.assertEqual(stats, {'articleHubs': 1, 'definitiveArticles': 1})
         self.assertEqual({t['articleState'] for t in tasks}, {'ready'})
 
+    def test_reviewed_semantic_hold_downgrades_complete_hub_only(self):
+        url = 'https://example.com/semantically-wrong/'
+        tasks = [
+            {'slug': 'one', 'status': 'complete', 'article': url},
+            {'slug': 'two', 'status': 'complete', 'article': url},
+        ]
+        holds = {
+            task_build.normalize_article_url(url): {
+                'state': 'wip',
+                'reason': 'Reviewed framework labels do not match the canonical source.',
+                'reviewed': '2026-08-22',
+            }
+        }
+
+        stats = task_build.derive_article_states(tasks, certifications=holds)
+
+        self.assertEqual(stats, {'articleHubs': 1, 'definitiveArticles': 0})
+        self.assertEqual({t['status'] for t in tasks}, {'complete'})
+        self.assertEqual({t['articleState'] for t in tasks}, {'wip'})
+        self.assertEqual(
+            {t['articleStateReason'] for t in tasks},
+            {'Reviewed framework labels do not match the canonical source.'})
+        self.assertEqual({t['articleStateReviewed'] for t in tasks}, {'2026-08-22'})
+
+    def test_certification_config_cannot_force_a_hub_ready(self):
+        payload = {
+            'articles': {
+                'https://example.com/not-reviewed/': {
+                    'state': 'ready',
+                    'reason': 'An override must never promote a hub.',
+                    'reviewed': '2026-08-22',
+                }
+            }
+        }
+        with tempfile.TemporaryDirectory() as temp_dir:
+            path = os.path.join(temp_dir, 'article-certifications.json')
+            with open(path, 'w', encoding='utf-8') as fh:
+                json.dump(payload, fh)
+            with self.assertRaisesRegex(ValueError, 'fail-closed "wip" hold'):
+                task_build.load_article_certifications(path)
+
+    def test_unused_hold_is_rejected_after_final_url_resolution(self):
+        tasks = [
+            {'slug': 'tracker-won', 'status': 'complete',
+             'article': 'https://example.com/tracker-override/'},
+        ]
+        holds = {
+            'example.com/canonical': {
+                'state': 'wip', 'reason': 'Reviewed hold.', 'reviewed': '2026-08-22'}
+        }
+
+        with self.assertRaisesRegex(ValueError, 'do not match any final article URL'):
+            task_build.validate_article_certifications(tasks, holds)
+
+    def test_certification_reason_and_date_must_be_valid(self):
+        invalid_entries = (
+            {'state': 'wip', 'reason': 123, 'reviewed': '2026-08-22'},
+            {'state': 'wip', 'reason': 'Reviewed hold.', 'reviewed': '2026-99-99'},
+        )
+        for entry in invalid_entries:
+            with self.subTest(entry=entry), tempfile.TemporaryDirectory() as temp_dir:
+                path = os.path.join(temp_dir, 'article-certifications.json')
+                with open(path, 'w', encoding='utf-8') as fh:
+                    json.dump({'articles': {'https://example.com/held/': entry}}, fh)
+                with self.assertRaises(ValueError):
+                    task_build.load_article_certifications(path)
+
     def test_missing_or_invalid_article_is_excluded(self):
         tasks = [
             {'slug': 'none', 'status': 'complete', 'article': None},
@@ -64,11 +132,11 @@ class BuiltArticleInventory(unittest.TestCase):
 
     def test_current_inventory_has_exact_derived_counts(self):
         self.assertEqual(self.data['stats']['articleHubs'], 23)
-        self.assertEqual(self.data['stats']['definitiveArticles'], 13)
+        self.assertEqual(self.data['stats']['definitiveArticles'], 12)
 
         tasks = copy.deepcopy(self.tasks)
         derived = task_build.derive_article_states(tasks)
-        self.assertEqual(derived, {'articleHubs': 23, 'definitiveArticles': 13})
+        self.assertEqual(derived, {'articleHubs': 23, 'definitiveArticles': 12})
 
     def test_every_mapped_task_has_a_derived_state(self):
         for task in self.tasks:
@@ -84,6 +152,57 @@ class BuiltArticleInventory(unittest.TestCase):
         self.assertEqual(len(mapped), 8)
         self.assertEqual({t['articleState'] for t in mapped}, {'wip'})
 
+    def test_nine_triangles_uses_direct_url_and_semantic_hold(self):
+        direct_url = ('https://blitzmetrics.com/'
+                      '9-triangles-framework-scalable-home-service-businesses/')
+        key = task_build.normalize_article_url(direct_url)
+        mapped = [t for t in self.tasks
+                  if task_build.normalize_article_url(t.get('article')) == key]
+
+        self.assertEqual(len(mapped), 10)
+        self.assertEqual({t['article'] for t in mapped}, {direct_url})
+        self.assertEqual({t['status'] for t in mapped}, {'complete'})
+        self.assertEqual({t['articleState'] for t in mapped}, {'wip'})
+        reasons = {t.get('articleStateReason') for t in mapped}
+        self.assertEqual(len(reasons), 1)
+        reason = reasons.pop()
+        for label in ('AEC', 'CID', 'SBP'):
+            self.assertIn(label, reason)
+        self.assertEqual({t.get('articleStateReviewed') for t in mapped},
+                         {'2026-08-22'})
+        self.assertFalse(any(
+            task_build.normalize_article_url(t.get('article')) ==
+            'blitzmetrics.com/nine-triangles' for t in self.tasks))
+
+    def test_meta_article_mapping_uses_direct_url(self):
+        mapped = [t for t in self.tasks
+                  if t['slug'] == 'write-meta-article-documenting-agent-work']
+        self.assertEqual(len(mapped), 1)
+        self.assertEqual(mapped[0]['article'],
+                         'https://blitzmetrics.com/meta-article-prompt/')
+        self.assertEqual(mapped[0]['articleState'], 'ready')
+        self.assertFalse(any(
+            task_build.normalize_article_url(t.get('article')) ==
+            'blitzmetrics.com/meta-article-prompt-template' for t in self.tasks))
+
+    def test_blog_posting_mappings_remain_on_existing_hub(self):
+        key = 'blitzmetrics.com/blog-posting-guidelines'
+        mapped = [t for t in self.tasks
+                  if task_build.normalize_article_url(t.get('article')) == key]
+        self.assertEqual(len(mapped), 21)
+        self.assertEqual({t['article'] for t in mapped},
+                         {'https://blitzmetrics.com/blog-posting-guidelines'})
+
+    def test_certification_config_is_reviewed_and_fail_closed(self):
+        reviews = task_build.load_article_certifications()
+        key = ('blitzmetrics.com/'
+               '9-triangles-framework-scalable-home-service-businesses')
+        self.assertIn(key, reviews)
+        self.assertEqual(reviews[key]['state'], 'wip')
+        self.assertEqual(reviews[key]['reviewed'], '2026-08-22')
+        self.assertTrue(reviews[key]['reason'])
+        self.assertEqual({review['state'] for review in reviews.values()}, {'wip'})
+
 
 class ArticleLabelUI(unittest.TestCase):
     def test_root_and_dashboard_use_the_same_fail_closed_article_label(self):
@@ -97,6 +216,8 @@ class ArticleLabelUI(unittest.TestCase):
             self.assertIn("t.articleState === 'ready'", source)
             self.assertIn("'Definitive article ↗'", source)
             self.assertIn("'Article in progress ↗'", source)
+            self.assertIn('t.articleStateReason', source)
+            self.assertIn('no reviewed semantic hold is active', source)
             self.assertGreaterEqual(source.count('articleLink(t)'), 3)
         self.assertEqual(blocks[0], blocks[1])
 
@@ -107,6 +228,9 @@ class ArticleLabelUI(unittest.TestCase):
         self.assertIn('stats.definitiveArticles', source)
         self.assertIn('btl-live-article-wip', source)
         self.assertNotIn('every task documented to the definitive-article standard', source)
+        with open(os.path.join(ROOT, 'dashboard', 'library-index.html'), encoding='utf-8') as fh:
+            static_index = fh.read()
+        self.assertIn('no reviewed semantic hold is active', static_index)
 
 
 class DurableArticleStandard(unittest.TestCase):
@@ -125,6 +249,10 @@ class DurableArticleStandard(unittest.TestCase):
     def test_canonical_diagram_and_ready_marker_are_gated(self):
         self.assertIn('full canonical Content Factory diagram', self.standard)
         self.assertIn('every task mapped to that URL is `complete`', self.standard)
+        self.assertIn('no reviewed semantic-certification hold is active', self.standard)
+        self.assertIn('build/article-certifications.json', self.standard)
+        self.assertIn('may only downgrade readiness', self.standard)
+        self.assertIn('does not by itself certify a shared article hub', self.standard)
         self.assertIn('Only a `ready` hub may show', self.standard)
         self.assertIn('Article in progress', self.standard)
 

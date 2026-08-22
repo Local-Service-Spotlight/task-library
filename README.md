@@ -7,6 +7,7 @@ Hub-and-spoke skill library. This repo is the **hub**: the registry, the dashboa
 ```
 skills/<category-folder>/<slug>.md   skill files that live in this repo ("local")
 build/registry.json                  slug -> source; THE index of the library
+build/article-certifications.json    reviewed URL-level semantic holds (can only force WIP)
 build/categories.json                the 13 categories (order, icons, colors)
 build/site-meta.json                 meta-article URL (counts and build date are derived)
 build/build.py                       resolve -> validate -> compose dashboard/data.json
@@ -31,7 +32,7 @@ The precedence rule: **sheet beats registry beats hub file** — a skill has exa
 
 ## Validation
 
-`build/build.py` rejects skills that: lack frontmatter or any required field, have `name` ≠ slug, use an unknown category/stage/status, or miss required sections (Inputs, Steps, Definition of done, Examples, Definitive article & links). It warns (build passes) on: stub language in a `complete` skill, <3 numbered steps, frontmatter/registry category mismatch.
+`build/build.py` rejects skills that: lack frontmatter or any required field, have `name` ≠ slug, use an unknown category/stage/status, or miss required sections (Inputs, Steps, Definition of done, Examples, Definitive article & links). It warns (build passes) on: stub language in a `complete` skill, <3 numbered steps, frontmatter/registry category mismatch. URL readiness also respects reviewed semantic holds in `build/article-certifications.json`; a hold can force a hub to WIP without falsifying its tasks' completion status and can never force a hub ready.
 
 ## Asset Tracker
 
@@ -41,7 +42,7 @@ The sheet is also the **onboarding path**: a row whose Slug isn't in the registr
 
 ## SEO
 
-The dashboard itself is `noindex` (it's a utility, not the ranking surface — and it must never compete with the hub articles from a github.io origin). The build also emits **`dashboard/library-index.html`**: a plain semantic HTML fragment — category H2s, every task with its description, and links to mapped article hubs. Its summary derives the number of mapped hubs and the subset that is actually definitive from task status. Paste it into the WordPress task-library page *below* the iframe (or template it in) so blitzmetrics.com serves an indexable representation of the library with internal links to the hubs. Refresh the paste when categories/articles change materially; the fragment is deterministic, so a diff shows when.
+The dashboard itself is `noindex` (it's a utility, not the ranking surface — and it must never compete with the hub articles from a github.io origin). The build also emits **`dashboard/library-index.html`**: a plain semantic HTML fragment — category H2s, every task with its description, and links to mapped article hubs. Its summary derives the number of mapped hubs and the subset that is actually definitive from task status plus reviewed URL-level semantic holds. Paste it into the WordPress task-library page *below* the iframe (or template it in) so blitzmetrics.com serves an indexable representation of the library with internal links to the hubs. Refresh the paste when categories/articles change materially; the fragment is deterministic, so a diff shows when.
 
 ## Local build
 

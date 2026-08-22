@@ -3,7 +3,7 @@ name: maa-cycle-metrics-analysis-action
 description: Run the continuous MAA cycle — Metrics, Analysis, Action — so every number collected leads to a diagnosis and every diagnosis leads to a concrete change.
 category: Strategy & Measurement
 stage: —
-definitive_article: /nine-triangles
+definitive_article: /9-triangles-framework-scalable-home-service-businesses/
 status: complete
 ---
 
@@ -33,7 +33,7 @@ status: complete
 - [ ] Complies with Blog Posting Guidelines (if it publishes content)
 
 ## Example(s)
-- Example needed — run the Meta-Article Prompt after first real run. (The hub at /nine-triangles links live examples; pull the closest match into this slot.)
+- Example needed — run the Meta-Article Prompt after first real run. (The hub at /9-triangles-framework-scalable-home-service-businesses/ links live examples; pull the closest match into this slot.)
 
 ## Run on a persistent agent (Fable 5)
 
@@ -43,5 +43,5 @@ Memory makes the loop real: the agent opens each cycle by checking last cycle's 
 See `boil-the-ocean.md` for the full operating principles.
 
 ## Definitive article & links
-- Hub: /nine-triangles (parent methodology: /maa)
+- Hub: /9-triangles-framework-scalable-home-service-businesses/ (parent methodology: /maa)
 - Related, in run order: submit-weekly-maa-report-every-friday, show-whats-working-and-what-isnt, analyze-why-underperformers-fail, kill-underperformers-scale-winners, measure-content-rankings-traffic-revenue

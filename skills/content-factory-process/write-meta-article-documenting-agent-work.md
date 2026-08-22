@@ -3,7 +3,7 @@ name: write-meta-article-documenting-agent-work
 description: Use the Meta-Article Prompt Template to document a real AI-agent task run as a publishable article — the proof layer that turns work into examples.
 category: Content Factory — Process
 stage: Process
-definitive_article: /meta-article-prompt-template
+definitive_article: /meta-article-prompt/
 status: complete
 ---
 
@@ -13,7 +13,7 @@ status: complete
 
 ## Inputs
 - The completed run: prompts used, tool outputs, before/after states, final deliverable
-- The Meta-Article Prompt Template (the hub at /meta-article-prompt-template)
+- The Meta-Article Prompt Template (the hub at /meta-article-prompt/)
 - The task's definitive article short URL (the hub this example will link up to)
 - WordPress access for publishing per Blog Posting Guidelines
 
@@ -36,7 +36,7 @@ status: complete
 - [ ] Linked back to the definitive article and relevant siblings
 
 ## Example(s)
-- The hub at /meta-article-prompt-template carries 29 linked example meta-articles — the largest example set in the library and the model for this loop.
+- The hub at /meta-article-prompt/ carries 29 linked example meta-articles — the largest example set in the library and the model for this loop.
 
 ## Run on a persistent agent (Fable 5)
 
@@ -44,6 +44,6 @@ This task is the compounding mechanism itself: a persistent agent (Claude Fable 
 See `boil-the-ocean.md` for the full operating principles.
 
 ## Definitive article & links
-- Hub: /meta-article-prompt-template
+- Hub: /meta-article-prompt/
 - Related: /blog-posting-guidelines (publishing pipeline), /internal-linking (its hub ships a skill file — a documented precedent), /knowledge-system-maintenance (capture loop)
 - Sibling skills, in run order: any completed task run → this → `step-12-post-article-on-wordpress` (Post stage)

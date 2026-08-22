@@ -3,7 +3,7 @@ name: content-strategy-90-greatest-hits-10-new
 description: Allocate 90% of content and promotion effort to proven greatest hits and 10% to new experiments, so budget follows evidence instead of novelty.
 category: Strategy & Measurement
 stage: —
-definitive_article: /nine-triangles
+definitive_article: /9-triangles-framework-scalable-home-service-businesses/
 status: complete
 ---
 
@@ -33,7 +33,7 @@ status: complete
 - [ ] Complies with Blog Posting Guidelines (if it publishes content)
 
 ## Example(s)
-- Example needed — run the Meta-Article Prompt after first real run. (The hub at /nine-triangles links live examples; pull the closest match into this slot.)
+- Example needed — run the Meta-Article Prompt after first real run. (The hub at /9-triangles-framework-scalable-home-service-businesses/ links live examples; pull the closest match into this slot.)
 
 ## Run on a persistent agent (Fable 5)
 
@@ -43,5 +43,5 @@ Memory turns the monthly review into a true MAA memory cycle: the agent compares
 See `boil-the-ocean.md` for the full operating principles.
 
 ## Definitive article & links
-- Hub: /nine-triangles
+- Hub: /9-triangles-framework-scalable-home-service-businesses/
 - Related: kill-underperformers-scale-winners, use-for-content-planning-and-video-topics, /dad, /content-factory, /seo-tree

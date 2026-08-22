@@ -3,7 +3,7 @@ name: learn-do-teach-apprentice-model
 description: Run the Learn, Do, Teach apprentice model — study the canonical material, execute the task under review, then teach it — so skills compound into team capacity instead of staying with one expert.
 category: Strategy & Measurement
 stage: —
-definitive_article: /nine-triangles
+definitive_article: /9-triangles-framework-scalable-home-service-businesses/
 status: complete
 ---
 
@@ -35,7 +35,7 @@ status: complete
 - [ ] Complies with Blog Posting Guidelines (if it publishes content)
 
 ## Example(s)
-- Example needed — run the Meta-Article Prompt after first real run. (The hub at /nine-triangles links live examples; pull the closest match into this slot.)
+- Example needed — run the Meta-Article Prompt after first real run. (The hub at /9-triangles-framework-scalable-home-service-businesses/ links live examples; pull the closest match into this slot.)
 
 ## Run on a persistent agent (Fable 5)
 
@@ -45,5 +45,5 @@ Memory holds the skill-stage roster and QA pass rates across quarters — a true
 See `boil-the-ocean.md` for the full operating principles.
 
 ## Definitive article & links
-- Hub: /nine-triangles
+- Hub: /9-triangles-framework-scalable-home-service-businesses/
 - Related: management-communicate-iterate-delegate, systematization-content-checklists-software, personal-efficiency-do-delegate-delete

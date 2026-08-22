@@ -3,7 +3,7 @@ name: funnel-levels-audience-engagement-conversion
 description: Map every marketing activity into the three funnel levels — Audience, Engagement, Conversion — so each campaign, post, and metric is judged at the stage it actually serves.
 category: Strategy & Measurement
 stage: —
-definitive_article: /nine-triangles
+definitive_article: /9-triangles-framework-scalable-home-service-businesses/
 status: complete
 ---
 
@@ -33,7 +33,7 @@ status: complete
 - [ ] Complies with Blog Posting Guidelines (if it publishes content)
 
 ## Example(s)
-- Example needed — run the Meta-Article Prompt after first real run. (The hub at /nine-triangles links live examples; pull the closest match into this slot.)
+- Example needed — run the Meta-Article Prompt after first real run. (The hub at /9-triangles-framework-scalable-home-service-businesses/ links live examples; pull the closest match into this slot.)
 
 ## Run on a persistent agent (Fable 5)
 
@@ -43,5 +43,5 @@ With memory across runs it holds prior months' per-level baselines and runs the 
 See `boil-the-ocean.md` for the full operating principles.
 
 ## Definitive article & links
-- Hub: /nine-triangles
+- Hub: /9-triangles-framework-scalable-home-service-businesses/
 - Related: gct-goals-content-targeting, maa-cycle-metrics-analysis-action, /dad, /social-amplification
