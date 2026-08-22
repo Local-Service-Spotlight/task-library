@@ -4,7 +4,8 @@
   "complete": 124,
   "needsWork": 101,
   "gaps": 23,
-  "definitiveArticles": 23,
+  "articleHubs": 23,
+  "definitiveArticles": 13,
   "owners": 0,
   "categories": 13,
   "importance": {
@@ -18,7 +19,7 @@
  },
  "bundleUrl": "TaskLibrary-Skills-all.zip",
  "metaArticleUrl": "https://blitzmetrics.com/how-we-turned-239-tasks-into-an-ai-runnable-skill-library/",
- "updated": "August 21, 2026",
+ "updated": "August 22, 2026",
  "factory": {
   "phases": [
    {
@@ -125,7 +126,8 @@
      "after": "create-a-3x3-video-grid",
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "create-a-3x3-video-grid",
@@ -144,7 +146,8 @@
      "after": "step-1-upload-video-to-google-drive-and-descript",
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "film-casual-team-conversations",
@@ -201,7 +204,8 @@
      "after": "batch-record-50-raw-clips-in-one-session",
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "runs every factory cycle or weekly; gates a phase"
+     "why": "runs every factory cycle or weekly; gates a phase",
+     "articleState": "ready"
     },
     {
      "title": "record-one-minute-videos",
@@ -220,7 +224,8 @@
      "after": "capture-client-stories-on-phone",
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "runs every factory cycle or weekly"
+     "why": "runs every factory cycle or weekly",
+     "articleState": "ready"
     },
     {
      "title": "record-screen-shares-of-real-audits",
@@ -258,7 +263,8 @@
      "after": "install-google-tag-manager-container",
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "runs every factory cycle or weekly; unblocks a chain (access/plumbing)"
+     "why": "runs every factory cycle or weekly; unblocks a chain (access/plumbing)",
+     "articleState": "wip"
     }
    ]
   },
@@ -381,7 +387,8 @@
      "after": "how-to-inventory-every-podcast-youve-been-on-and-why-its-one-of-the-highest-roi-things-you-can-do",
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "runs every factory cycle or weekly; creates the asset ads amplify"
+     "why": "runs every factory cycle or weekly; creates the asset ads amplify",
+     "articleState": "ready"
     },
     {
      "title": "how-to-inventory-every-podcast-youve-been-on-and-why-its-one-of-the-highest-roi-things-you-can-do",
@@ -400,7 +407,8 @@
      "after": "step-2-transcribe-video-using-descript",
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "runs every factory cycle or weekly"
+     "why": "runs every factory cycle or weekly",
+     "articleState": "ready"
     },
     {
      "title": "how-we-use-listen-notes-to-find-track-and-repurpose-every-podcast-appearance",
@@ -419,7 +427,8 @@
      "after": "how-we-use-podchaser-to-amplify-authority-and-repurpose-podcast-content",
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "runs every factory cycle or weekly"
+     "why": "runs every factory cycle or weekly",
+     "articleState": "ready"
     },
     {
      "title": "how-we-use-podchaser-to-amplify-authority-and-repurpose-podcast-content",
@@ -438,7 +447,8 @@
      "after": "step-2-transcribe-video-using-descript",
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "runs every factory cycle or weekly"
+     "why": "runs every factory cycle or weekly",
+     "articleState": "ready"
     },
     {
      "title": "process-videos-via-marketscale",
@@ -476,7 +486,8 @@
      "after": "step-2-transcribe-video-using-descript",
      "lane": "computer",
      "lane_label": "Logged-in UI (Meta Ads Manager, Descript, GSC, wp-admin when REST is blocked). Any engine with a browser.",
-     "why": "runs every factory cycle or weekly; unblocks a chain (access/plumbing)"
+     "why": "runs every factory cycle or weekly; unblocks a chain (access/plumbing)",
+     "articleState": "ready"
     },
     {
      "title": "step-10-embed-source-video",
@@ -495,7 +506,8 @@
      "after": "step-11-proofread-with-grammarly-or-chatgpt",
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "runs every factory cycle or weekly"
+     "why": "runs every factory cycle or weekly",
+     "articleState": "ready"
     },
     {
      "title": "step-11-proofread-with-grammarly-or-chatgpt",
@@ -514,7 +526,8 @@
      "after": "grade-article-using-jennifer",
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "runs every factory cycle or weekly"
+     "why": "runs every factory cycle or weekly",
+     "articleState": "ready"
     },
     {
      "title": "step-2-transcribe-video-using-descript",
@@ -533,7 +546,8 @@
      "after": "use-descript-underlord-to-remove-filler-words",
      "lane": "computer",
      "lane_label": "Logged-in UI (Meta Ads Manager, Descript, GSC, wp-admin when REST is blocked). Any engine with a browser.",
-     "why": "runs every factory cycle or weekly; unblocks a chain (access/plumbing)"
+     "why": "runs every factory cycle or weekly; unblocks a chain (access/plumbing)",
+     "articleState": "ready"
     },
     {
      "title": "step-3-watch-video-and-identify-gct",
@@ -552,7 +566,8 @@
      "after": "step-4-research-edit-add-timestamps-and-outline",
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "runs every factory cycle or weekly"
+     "why": "runs every factory cycle or weekly",
+     "articleState": "ready"
     },
     {
      "title": "step-4-research-edit-add-timestamps-and-outline",
@@ -571,7 +586,8 @@
      "after": "extract-15-60-second-clips-from-long-form-video",
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "runs every factory cycle or weekly"
+     "why": "runs every factory cycle or weekly",
+     "articleState": "ready"
     },
     {
      "title": "step-5-write-article-from-transcript",
@@ -590,7 +606,8 @@
      "after": "run-overnight-local-writer",
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "runs every factory cycle or weekly; creates the asset ads amplify"
+     "why": "runs every factory cycle or weekly; creates the asset ads amplify",
+     "articleState": "ready"
     },
     {
      "title": "step-6-write-title-and-headings",
@@ -609,7 +626,8 @@
      "after": "step-7-write-hook-and-establish-context",
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "runs every factory cycle or weekly"
+     "why": "runs every factory cycle or weekly",
+     "articleState": "ready"
     },
     {
      "title": "step-7-write-hook-and-establish-context",
@@ -628,7 +646,8 @@
      "after": "step-8-add-photos-and-featured-image",
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "runs every factory cycle or weekly"
+     "why": "runs every factory cycle or weekly",
+     "articleState": "ready"
     },
     {
      "title": "step-8-add-photos-and-featured-image",
@@ -647,7 +666,8 @@
      "after": "step-9-add-internal-links-with-proper-anchor-text",
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "runs every factory cycle or weekly"
+     "why": "runs every factory cycle or weekly",
+     "articleState": "ready"
     },
     {
      "title": "step-9-add-internal-links-with-proper-anchor-text",
@@ -666,7 +686,8 @@
      "after": "step-10-embed-source-video",
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "runs every factory cycle or weekly"
+     "why": "runs every factory cycle or weekly",
+     "articleState": "ready"
     },
     {
      "title": "use-descript-underlord-to-remove-filler-words",
@@ -685,7 +706,8 @@
      "after": "step-3-watch-video-and-identify-gct",
      "lane": "computer",
      "lane_label": "Logged-in UI (Meta Ads Manager, Descript, GSC, wp-admin when REST is blocked). Any engine with a browser.",
-     "why": "runs every factory cycle or weekly"
+     "why": "runs every factory cycle or weekly",
+     "articleState": "ready"
     },
     {
      "title": "write-email-newsletter-from-video-key-insight",
@@ -723,7 +745,8 @@
      "after": "process-videos-via-marketscale",
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "runs every factory cycle or weekly"
+     "why": "runs every factory cycle or weekly",
+     "articleState": "ready"
     }
    ]
   },
@@ -751,7 +774,8 @@
      "after": "identify-signals-worth-amplifying",
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "runs every factory cycle or weekly; creates the asset ads amplify"
+     "why": "runs every factory cycle or weekly; creates the asset ads amplify",
+     "articleState": "ready"
     },
     {
      "title": "place-content-on-seo-tree-with-proper-links",
@@ -770,7 +794,8 @@
      "after": "step-17-final-formatting-and-qa-checks",
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "runs every factory cycle or weekly; creates the asset ads amplify"
+     "why": "runs every factory cycle or weekly; creates the asset ads amplify",
+     "articleState": "wip"
     },
     {
      "title": "post-to-facebook-page",
@@ -846,7 +871,8 @@
      "after": "email-and-dm-client-about-published-article",
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "runs every factory cycle or weekly; creates the asset ads amplify"
+     "why": "runs every factory cycle or weekly; creates the asset ads amplify",
+     "articleState": "ready"
     },
     {
      "title": "step-12-post-article-on-wordpress",
@@ -865,7 +891,8 @@
      "after": "set-wordpress-author-to-correct-person",
      "lane": "script",
      "lane_label": "No model. Shell, REST, yt-dlp, Descript export, WP application-password publish.",
-     "why": "runs every factory cycle or weekly; creates the asset ads amplify; unblocks a chain (access/plumbing)"
+     "why": "runs every factory cycle or weekly; creates the asset ads amplify; unblocks a chain (access/plumbing)",
+     "articleState": "ready"
     },
     {
      "title": "step-13-categorize-post-and-add-tags",
@@ -884,7 +911,8 @@
      "after": "step-14a-configure-rankmath-seo-plugin",
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "runs every factory cycle or weekly; creates the asset ads amplify"
+     "why": "runs every factory cycle or weekly; creates the asset ads amplify",
+     "articleState": "ready"
     },
     {
      "title": "step-14a-configure-rankmath-seo-plugin",
@@ -903,7 +931,8 @@
      "after": "step-14b-run-linkwhisper-for-internal-links",
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "runs every factory cycle or weekly; creates the asset ads amplify"
+     "why": "runs every factory cycle or weekly; creates the asset ads amplify",
+     "articleState": "ready"
     },
     {
      "title": "step-14b-run-linkwhisper-for-internal-links",
@@ -922,7 +951,8 @@
      "after": "place-content-on-seo-tree-with-proper-links",
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "runs every factory cycle or weekly; creates the asset ads amplify"
+     "why": "runs every factory cycle or weekly; creates the asset ads amplify",
+     "articleState": "ready"
     },
     {
      "title": "step-17-final-formatting-and-qa-checks",
@@ -941,7 +971,8 @@
      "after": "verify-all-items-on-blog-posting-checklist",
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "runs every factory cycle or weekly; creates the asset ads amplify"
+     "why": "runs every factory cycle or weekly; creates the asset ads amplify",
+     "articleState": "ready"
     },
     {
      "title": "upload-processed-video-to-youtube",
@@ -979,7 +1010,8 @@
      "after": "upload-processed-video-to-youtube",
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "runs every factory cycle or weekly; creates the asset ads amplify"
+     "why": "runs every factory cycle or weekly; creates the asset ads amplify",
+     "articleState": "ready"
     },
     {
      "title": "run-overnight-local-writer",
@@ -998,7 +1030,8 @@
      "after": "step-6-write-title-and-headings",
      "lane": "local",
      "lane_label": "Dumb local model (Qwen overnight, Ollama). First drafts and bulk rewrite only. Never hits ads, WP, or judgment.",
-     "why": "runs every factory cycle or weekly"
+     "why": "runs every factory cycle or weekly",
+     "articleState": "ready"
     }
    ]
   },
@@ -1026,7 +1059,8 @@
      "after": "compare-current-vs-last-period-performance",
      "lane": "computer",
      "lane_label": "Logged-in UI (Meta Ads Manager, Descript, GSC, wp-admin when REST is blocked). Any engine with a browser.",
-     "why": "runs every factory cycle or weekly; creates the asset ads amplify"
+     "why": "runs every factory cycle or weekly; creates the asset ads amplify",
+     "articleState": "wip"
     },
     {
      "title": "boost-top-3-5-facebook-posts",
@@ -1045,7 +1079,8 @@
      "after": "boost-one-minute-videos-for-personal-branding",
      "lane": "computer",
      "lane_label": "Logged-in UI (Meta Ads Manager, Descript, GSC, wp-admin when REST is blocked). Any engine with a browser.",
-     "why": "runs every factory cycle or weekly; ads/revenue path"
+     "why": "runs every factory cycle or weekly; ads/revenue path",
+     "articleState": "wip"
     },
     {
      "title": "compare-current-vs-last-period-performance",
@@ -1064,7 +1099,8 @@
      "after": "list-top-3-5-recommendations-for-next-7-days",
      "lane": "computer",
      "lane_label": "Logged-in UI (Meta Ads Manager, Descript, GSC, wp-admin when REST is blocked). Any engine with a browser.",
-     "why": "runs every factory cycle or weekly; ads/revenue path"
+     "why": "runs every factory cycle or weekly; ads/revenue path",
+     "articleState": "wip"
     },
     {
      "title": "create-and-send-thank-you-machine-videos",
@@ -1084,7 +1120,8 @@
      "lane": "computer",
      "lane_label": "Logged-in UI (Meta Ads Manager, Descript, GSC, wp-admin when REST is blocked). Any engine with a browser.",
      "why": "runs every factory cycle or weekly; ads/revenue path",
-     "flag": "weak article backing: /thank-you-machine redirects to /face-socks/ (single tactic page, not a definitive article)"
+     "flag": "weak article backing: /thank-you-machine redirects to /face-socks/ (single tactic page, not a definitive article)",
+     "articleState": "wip"
     },
     {
      "title": "create-new-saved-audiences-from-audience-insights",
@@ -1103,7 +1140,8 @@
      "after": "execute-switch-boost-to-target-new-audiences",
      "lane": "computer",
      "lane_label": "Logged-in UI (Meta Ads Manager, Descript, GSC, wp-admin when REST is blocked). Any engine with a browser.",
-     "why": "runs every factory cycle or weekly; ads/revenue path; gates a phase"
+     "why": "runs every factory cycle or weekly; ads/revenue path; gates a phase",
+     "articleState": "wip"
     },
     {
      "title": "engage-with-social-comments",
@@ -1141,7 +1179,8 @@
      "after": "execute-switch-boosts-to-new-audiences",
      "lane": "computer",
      "lane_label": "Logged-in UI (Meta Ads Manager, Descript, GSC, wp-admin when REST is blocked). Any engine with a browser.",
-     "why": "runs every factory cycle or weekly; ads/revenue path"
+     "why": "runs every factory cycle or weekly; ads/revenue path",
+     "articleState": "wip"
     },
     {
      "title": "list-top-3-5-recommendations-for-next-7-days",
@@ -1160,7 +1199,8 @@
      "after": "use-dollar-a-day-to-influence-media-coverage",
      "lane": "computer",
      "lane_label": "Logged-in UI (Meta Ads Manager, Descript, GSC, wp-admin when REST is blocked). Any engine with a browser.",
-     "why": "runs every factory cycle or weekly; ads/revenue path"
+     "why": "runs every factory cycle or weekly; ads/revenue path",
+     "articleState": "wip"
     },
     {
      "title": "post-roundup-listicle-content",
@@ -1198,7 +1238,8 @@
      "after": "create-youtube-campaigns-using-aducate-model",
      "lane": "computer",
      "lane_label": "Logged-in UI (Meta Ads Manager, Descript, GSC, wp-admin when REST is blocked). Any engine with a browser.",
-     "why": "runs every factory cycle or weekly; ads/revenue path"
+     "why": "runs every factory cycle or weekly; ads/revenue path",
+     "articleState": "wip"
     },
     {
      "title": "run-dollar-a-day-campaign-on-winning-content",
@@ -1217,7 +1258,8 @@
      "after": "boost-top-3-5-facebook-posts",
      "lane": "computer",
      "lane_label": "Logged-in UI (Meta Ads Manager, Descript, GSC, wp-admin when REST is blocked). Any engine with a browser.",
-     "why": "runs every factory cycle or weekly; ads/revenue path; gates a phase"
+     "why": "runs every factory cycle or weekly; ads/revenue path; gates a phase",
+     "articleState": "wip"
     },
     {
      "title": "sequence-content-cold-warm-conversion",
@@ -1236,7 +1278,8 @@
      "after": "sequence-content-from-awareness-to-conversion",
      "lane": "computer",
      "lane_label": "Logged-in UI (Meta Ads Manager, Descript, GSC, wp-admin when REST is blocked). Any engine with a browser.",
-     "why": "runs every factory cycle or weekly; ads/revenue path; gates a phase"
+     "why": "runs every factory cycle or weekly; ads/revenue path; gates a phase",
+     "articleState": "wip"
     },
     {
      "title": "set-up-remarketing-ads-for-landing-page-abandoners",
@@ -1255,7 +1298,8 @@
      "after": "run-multiple-simultaneous-tests",
      "lane": "computer",
      "lane_label": "Logged-in UI (Meta Ads Manager, Descript, GSC, wp-admin when REST is blocked). Any engine with a browser.",
-     "why": "runs every factory cycle or weekly; ads/revenue path; unblocks a chain (access/plumbing)"
+     "why": "runs every factory cycle or weekly; ads/revenue path; unblocks a chain (access/plumbing)",
+     "articleState": "wip"
     }
    ]
   },
@@ -1283,7 +1327,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "add-schema-markup-person-localbusiness",
@@ -1302,7 +1347,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "claim-and-brand-facebook-page",
@@ -1321,7 +1367,8 @@
      "after": "create-xml-sitemap-and-reference-in-robots-txt",
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "ads/revenue path; unblocks a chain (access/plumbing)"
+     "why": "ads/revenue path; unblocks a chain (access/plumbing)",
+     "articleState": "wip"
     },
     {
      "title": "configure-https-with-no-mixed-content",
@@ -1340,7 +1387,8 @@
      "after": "set-up-content-library",
      "lane": "script",
      "lane_label": "No model. Shell, REST, yt-dlp, Descript export, WP application-password publish.",
-     "why": "unblocks a chain (access/plumbing)"
+     "why": "unblocks a chain (access/plumbing)",
+     "articleState": "wip"
     },
     {
      "title": "configure-spf-dkim-dmarc-for-deliverability",
@@ -1378,7 +1426,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "create-clear-conversion-path",
@@ -1397,7 +1446,8 @@
      "after": "map-out-one-minute-video-topics-using-topic-wheel",
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "runs every factory cycle or weekly; ads/revenue path; unblocks a chain (access/plumbing)"
+     "why": "runs every factory cycle or weekly; ads/revenue path; unblocks a chain (access/plumbing)",
+     "articleState": "wip"
     },
     {
      "title": "create-linkedin-page-matching-business-entity",
@@ -1416,7 +1466,8 @@
      "after": null,
      "lane": "judgment",
      "lane_label": "Frontier judgment: honest scoring, entity disambiguation, the subject's voice. Claude, ChatGPT, or Grok — pick the one you have.",
-     "why": "runs every factory cycle or weekly; creates the asset ads amplify"
+     "why": "runs every factory cycle or weekly; creates the asset ads amplify",
+     "articleState": "wip"
     },
     {
      "title": "create-xml-sitemap-and-reference-in-robots-txt",
@@ -1454,7 +1505,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "ensure-proper-dns-records",
@@ -1511,7 +1563,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "ensure-working-contact-form-delivers-notifications",
@@ -1530,7 +1583,8 @@
      "after": "create-clear-conversion-path",
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "runs every factory cycle or weekly; ads/revenue path; unblocks a chain (access/plumbing)"
+     "why": "runs every factory cycle or weekly; ads/revenue path; unblocks a chain (access/plumbing)",
+     "articleState": "wip"
     },
     {
      "title": "install-google-tag-manager-container",
@@ -1587,7 +1641,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "set-favicon",
@@ -1625,7 +1680,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "ads/revenue path; gates a phase"
+     "why": "ads/revenue path; gates a phase",
+     "articleState": "wip"
     },
     {
      "title": "set-up-consistent-headshots-and-bios-across-profiles",
@@ -1701,7 +1757,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "runs every factory cycle or weekly; creates the asset ads amplify"
+     "why": "runs every factory cycle or weekly; creates the asset ads amplify",
+     "articleState": "wip"
     },
     {
      "title": "upload-real-photos-and-set-business-hours",
@@ -1720,7 +1777,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "verify-domain-ownership-and-registrar-access",
@@ -1739,7 +1797,8 @@
      "after": "ensure-proper-dns-records",
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "unblocks a chain (access/plumbing)"
+     "why": "unblocks a chain (access/plumbing)",
+     "articleState": "wip"
     },
     {
      "title": "verify-google-business-profile",
@@ -1758,7 +1817,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "verify-google-search-console-and-connect-to-ga4",
@@ -1777,7 +1837,8 @@
      "after": "install-meta-pixel-with-standard-events",
      "lane": "computer",
      "lane_label": "Logged-in UI (Meta Ads Manager, Descript, GSC, wp-admin when REST is blocked). Any engine with a browser.",
-     "why": "runs every factory cycle or weekly; creates the asset ads amplify; unblocks a chain (access/plumbing)"
+     "why": "runs every factory cycle or weekly; creates the asset ads amplify; unblocks a chain (access/plumbing)",
+     "articleState": "wip"
     },
     {
      "title": "write-proper-title-tags-and-meta-descriptions",
@@ -1796,7 +1857,8 @@
      "after": null,
      "lane": "computer",
      "lane_label": "Logged-in UI (Meta Ads Manager, Descript, GSC, wp-admin when REST is blocked). Any engine with a browser.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     }
    ]
   },
@@ -1824,7 +1886,8 @@
      "after": "kill-underperforming-ads",
      "lane": "computer",
      "lane_label": "Logged-in UI (Meta Ads Manager, Descript, GSC, wp-admin when REST is blocked). Any engine with a browser.",
-     "why": "runs every factory cycle or weekly; ads/revenue path"
+     "why": "runs every factory cycle or weekly; ads/revenue path",
+     "articleState": "wip"
     },
     {
      "title": "boost-one-minute-videos-for-personal-branding",
@@ -1843,7 +1906,8 @@
      "after": "set-1-day-budget-per-ad-set",
      "lane": "computer",
      "lane_label": "Logged-in UI (Meta Ads Manager, Descript, GSC, wp-admin when REST is blocked). Any engine with a browser.",
-     "why": "runs every factory cycle or weekly; ads/revenue path"
+     "why": "runs every factory cycle or weekly; ads/revenue path",
+     "articleState": "wip"
     },
     {
      "title": "build-audience-layers",
@@ -1862,7 +1926,8 @@
      "after": null,
      "lane": "computer",
      "lane_label": "Logged-in UI (Meta Ads Manager, Descript, GSC, wp-admin when REST is blocked). Any engine with a browser.",
-     "why": "runs every factory cycle or weekly; ads/revenue path; gates a phase"
+     "why": "runs every factory cycle or weekly; ads/revenue path; gates a phase",
+     "articleState": "wip"
     },
     {
      "title": "create-facebook-instagram-campaigns-with-location-targeting",
@@ -1881,7 +1946,8 @@
      "after": "create-new-saved-audiences-from-audience-insights",
      "lane": "computer",
      "lane_label": "Logged-in UI (Meta Ads Manager, Descript, GSC, wp-admin when REST is blocked). Any engine with a browser.",
-     "why": "runs every factory cycle or weekly; ads/revenue path; gates a phase"
+     "why": "runs every factory cycle or weekly; ads/revenue path; gates a phase",
+     "articleState": "wip"
     },
     {
      "title": "create-youtube-campaigns-using-aducate-model",
@@ -1900,7 +1966,8 @@
      "after": "set-up-tiktok-campaigns",
      "lane": "computer",
      "lane_label": "Logged-in UI (Meta Ads Manager, Descript, GSC, wp-admin when REST is blocked). Any engine with a browser.",
-     "why": "runs every factory cycle or weekly; creates the asset ads amplify"
+     "why": "runs every factory cycle or weekly; creates the asset ads amplify",
+     "articleState": "wip"
     },
     {
      "title": "execute-switch-boosts-to-new-audiences",
@@ -1919,7 +1986,8 @@
      "after": "sequence-content-cold-warm-conversion",
      "lane": "computer",
      "lane_label": "Logged-in UI (Meta Ads Manager, Descript, GSC, wp-admin when REST is blocked). Any engine with a browser.",
-     "why": "runs every factory cycle or weekly; ads/revenue path"
+     "why": "runs every factory cycle or weekly; ads/revenue path",
+     "articleState": "wip"
     },
     {
      "title": "identify-signals-worth-amplifying",
@@ -1938,7 +2006,8 @@
      "after": "run-dollar-a-day-campaign-on-winning-content",
      "lane": "computer",
      "lane_label": "Logged-in UI (Meta Ads Manager, Descript, GSC, wp-admin when REST is blocked). Any engine with a browser.",
-     "why": "runs every factory cycle or weekly; ads/revenue path; gates a phase"
+     "why": "runs every factory cycle or weekly; ads/revenue path; gates a phase",
+     "articleState": "wip"
     },
     {
      "title": "kill-underperforming-ads",
@@ -1957,7 +2026,8 @@
      "after": "scale-winners-by-increasing-budget-gradually",
      "lane": "computer",
      "lane_label": "Logged-in UI (Meta Ads Manager, Descript, GSC, wp-admin when REST is blocked). Any engine with a browser.",
-     "why": "runs every factory cycle or weekly; ads/revenue path; gates a phase"
+     "why": "runs every factory cycle or weekly; ads/revenue path; gates a phase",
+     "articleState": "wip"
     },
     {
      "title": "run-multiple-simultaneous-tests",
@@ -1976,7 +2046,8 @@
      "after": "analyze-cost-per-result-and-engagement",
      "lane": "computer",
      "lane_label": "Logged-in UI (Meta Ads Manager, Descript, GSC, wp-admin when REST is blocked). Any engine with a browser.",
-     "why": "runs every factory cycle or weekly; ads/revenue path"
+     "why": "runs every factory cycle or weekly; ads/revenue path",
+     "articleState": "wip"
     },
     {
      "title": "run-twitter-x-promotion-for-thought-leader-threads",
@@ -2014,7 +2085,8 @@
      "after": "review-budget-allocation-by-channel",
      "lane": "computer",
      "lane_label": "Logged-in UI (Meta Ads Manager, Descript, GSC, wp-admin when REST is blocked). Any engine with a browser.",
-     "why": "runs every factory cycle or weekly; ads/revenue path"
+     "why": "runs every factory cycle or weekly; ads/revenue path",
+     "articleState": "wip"
     },
     {
      "title": "sequence-content-from-awareness-to-conversion",
@@ -2033,7 +2105,8 @@
      "after": "set-up-remarketing-ads-for-landing-page-abandoners",
      "lane": "computer",
      "lane_label": "Logged-in UI (Meta Ads Manager, Descript, GSC, wp-admin when REST is blocked). Any engine with a browser.",
-     "why": "runs every factory cycle or weekly; ads/revenue path; gates a phase"
+     "why": "runs every factory cycle or weekly; ads/revenue path; gates a phase",
+     "articleState": "wip"
     },
     {
      "title": "set-1-day-budget-per-ad-set",
@@ -2052,7 +2125,8 @@
      "after": "create-facebook-instagram-campaigns-with-location-targeting",
      "lane": "computer",
      "lane_label": "Logged-in UI (Meta Ads Manager, Descript, GSC, wp-admin when REST is blocked). Any engine with a browser.",
-     "why": "runs every factory cycle or weekly; ads/revenue path; gates a phase"
+     "why": "runs every factory cycle or weekly; ads/revenue path; gates a phase",
+     "articleState": "wip"
     },
     {
      "title": "set-up-digital-plumbing-pixels-tracking",
@@ -2071,7 +2145,8 @@
      "after": "set-up-meta-business-manager-and-public-figure-pages",
      "lane": "computer",
      "lane_label": "Logged-in UI (Meta Ads Manager, Descript, GSC, wp-admin when REST is blocked). Any engine with a browser.",
-     "why": "runs every factory cycle or weekly; ads/revenue path; unblocks a chain (access/plumbing)"
+     "why": "runs every factory cycle or weekly; ads/revenue path; unblocks a chain (access/plumbing)",
+     "articleState": "wip"
     },
     {
      "title": "set-up-meta-business-manager-and-public-figure-pages",
@@ -2090,7 +2165,8 @@
      "after": "claim-and-brand-facebook-page",
      "lane": "computer",
      "lane_label": "Logged-in UI (Meta Ads Manager, Descript, GSC, wp-admin when REST is blocked). Any engine with a browser.",
-     "why": "ads/revenue path; unblocks a chain (access/plumbing)"
+     "why": "ads/revenue path; unblocks a chain (access/plumbing)",
+     "articleState": "wip"
     },
     {
      "title": "set-up-tiktok-campaigns",
@@ -2109,7 +2185,8 @@
      "after": "run-twitter-x-promotion-for-thought-leader-threads",
      "lane": "computer",
      "lane_label": "Logged-in UI (Meta Ads Manager, Descript, GSC, wp-admin when REST is blocked). Any engine with a browser.",
-     "why": "runs every factory cycle or weekly; creates the asset ads amplify"
+     "why": "runs every factory cycle or weekly; creates the asset ads amplify",
+     "articleState": "wip"
     },
     {
      "title": "use-dollar-a-day-to-influence-media-coverage",
@@ -2128,7 +2205,8 @@
      "after": null,
      "lane": "computer",
      "lane_label": "Logged-in UI (Meta Ads Manager, Descript, GSC, wp-admin when REST is blocked). Any engine with a browser.",
-     "why": "runs every factory cycle or weekly; ads/revenue path"
+     "why": "runs every factory cycle or weekly; ads/revenue path",
+     "articleState": "wip"
     },
     {
      "title": "verify-prerequisites-product-customers-content",
@@ -2147,7 +2225,8 @@
      "after": null,
      "lane": "computer",
      "lane_label": "Logged-in UI (Meta Ads Manager, Descript, GSC, wp-admin when REST is blocked). Any engine with a browser.",
-     "why": "ads/revenue path; unblocks a chain (access/plumbing)"
+     "why": "ads/revenue path; unblocks a chain (access/plumbing)",
+     "articleState": "wip"
     }
    ]
   },
@@ -2175,7 +2254,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "check-all-cta-buttons-lead-to-correct-destinations",
@@ -2194,7 +2274,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "check-each-homepage-section-includes-relevant-image",
@@ -2213,7 +2294,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "check-favicon-is-set",
@@ -2232,7 +2314,8 @@
      "after": null,
      "lane": "script",
      "lane_label": "No model. Shell, REST, yt-dlp, Descript export, WP application-password publish.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "check-for-broken-links",
@@ -2251,7 +2334,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "check-lead-magnet-section-has-visual-mockup",
@@ -2270,7 +2354,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "check-meta-description-under-160-chars",
@@ -2289,7 +2374,8 @@
      "after": null,
      "lane": "computer",
      "lane_label": "Logged-in UI (Meta Ads Manager, Descript, GSC, wp-admin when REST is blocked). Any engine with a browser.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "check-schema-connects-to-all-verified-profiles",
@@ -2308,7 +2394,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "check-seo-title-under-60-chars-with-focus-keyword",
@@ -2327,7 +2414,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "check-social-profiles-linked-and-prominent",
@@ -2346,7 +2434,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "ensure-no-stock-images-used",
@@ -2365,7 +2454,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "ensure-no-text-only-sections-spanning-full-viewport",
@@ -2384,7 +2474,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "ensure-robots-meta-not-blocking-indexing--qa-audit",
@@ -2404,7 +2495,8 @@
      "lane": "script",
      "lane_label": "No model. Shell, REST, yt-dlp, Descript export, WP application-password publish.",
      "why": "runs every factory cycle or weekly; unblocks a chain (access/plumbing)",
-     "flag": "possible-duplicate: review for merge with ensure-robots-meta-not-blocking-indexing"
+     "flag": "possible-duplicate: review for merge with ensure-robots-meta-not-blocking-indexing",
+     "articleState": "wip"
     },
     {
      "title": "test-mobile-load-time-under-3-seconds",
@@ -2423,7 +2515,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "verify-achievements-are-evidenced-not-just-claimed",
@@ -2442,7 +2535,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "verify-all-images-have-descriptive-alt-text",
@@ -2461,7 +2555,8 @@
      "after": null,
      "lane": "computer",
      "lane_label": "Logged-in UI (Meta Ads Manager, Descript, GSC, wp-admin when REST is blocked). Any engine with a browser.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "verify-all-pages-written-in-first-person",
@@ -2480,7 +2575,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "verify-at-least-one-video-embed-on-homepage",
@@ -2499,7 +2595,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "verify-email-opt-in-form-exists-and-works",
@@ -2518,7 +2615,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "verify-entity-linking-follows-decision-tree",
@@ -2537,7 +2635,8 @@
      "after": null,
      "lane": "judgment",
      "lane_label": "Frontier judgment: honest scoring, entity disambiguation, the subject's voice. Claude, ChatGPT, or Grok — pick the one you have.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "verify-featured-images-unique-per-blog-post",
@@ -2556,7 +2655,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "verify-footer-includes-social-links-and-secondary-nav",
@@ -2575,7 +2675,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "verify-ga4-configured-with-internal-traffic-filtered",
@@ -2594,7 +2695,8 @@
      "after": null,
      "lane": "computer",
      "lane_label": "Logged-in UI (Meta Ads Manager, Descript, GSC, wp-admin when REST is blocked). Any engine with a browser.",
-     "why": "runs every factory cycle or weekly; creates the asset ads amplify; unblocks a chain (access/plumbing)"
+     "why": "runs every factory cycle or weekly; creates the asset ads amplify; unblocks a chain (access/plumbing)",
+     "articleState": "wip"
     },
     {
      "title": "verify-google-business-profile-is-verified",
@@ -2613,7 +2715,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "verify-gtm-installed-and-firing-on-every-page",
@@ -2632,7 +2735,8 @@
      "after": null,
      "lane": "computer",
      "lane_label": "Logged-in UI (Meta Ads Manager, Descript, GSC, wp-admin when REST is blocked). Any engine with a browser.",
-     "why": "runs every factory cycle or weekly; ads/revenue path; unblocks a chain (access/plumbing)"
+     "why": "runs every factory cycle or weekly; ads/revenue path; unblocks a chain (access/plumbing)",
+     "articleState": "wip"
     },
     {
      "title": "verify-hero-section-contains-real-photo-of-person",
@@ -2651,7 +2755,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "verify-https-with-no-mixed-content",
@@ -2670,7 +2775,8 @@
      "after": null,
      "lane": "script",
      "lane_label": "No model. Shell, REST, yt-dlp, Descript export, WP application-password publish.",
-     "why": "unblocks a chain (access/plumbing)"
+     "why": "unblocks a chain (access/plumbing)",
+     "articleState": "wip"
     },
     {
      "title": "verify-meta-pixel-installed-with-lead-events",
@@ -2689,7 +2795,8 @@
      "after": null,
      "lane": "computer",
      "lane_label": "Logged-in UI (Meta Ads Manager, Descript, GSC, wp-admin when REST is blocked). Any engine with a browser.",
-     "why": "runs every factory cycle or weekly; ads/revenue path; unblocks a chain (access/plumbing)"
+     "why": "runs every factory cycle or weekly; ads/revenue path; unblocks a chain (access/plumbing)",
+     "articleState": "wip"
     },
     {
      "title": "verify-minimum-5-distinct-images-on-homepage",
@@ -2708,7 +2815,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "verify-person-schema-with-sameas-links",
@@ -2727,7 +2835,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "verify-rank-math-score-above-70-on-every-page",
@@ -2746,7 +2855,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "verify-social-proof-photos-present",
@@ -2765,7 +2875,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "verify-testimonials-include-headshots-with-attribution",
@@ -2784,7 +2895,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "verify-testimonials-with-full-attribution",
@@ -2803,7 +2915,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "verify-wordpress-author-set-to-site-owner-name",
@@ -2822,7 +2935,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "runs every factory cycle or weekly; creates the asset ads amplify; unblocks a chain (access/plumbing)"
+     "why": "runs every factory cycle or weekly; creates the asset ads amplify; unblocks a chain (access/plumbing)",
+     "articleState": "wip"
     },
     {
      "title": "verify-xml-sitemap-exists-and-in-robotstxt",
@@ -2841,7 +2955,8 @@
      "after": null,
      "lane": "script",
      "lane_label": "No model. Shell, REST, yt-dlp, Descript export, WP application-password publish.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     }
    ]
   },
@@ -2869,7 +2984,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "enhance-existing-articles-before-creating-new-ones",
@@ -2888,7 +3004,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "fit-every-new-piece-into-the-tree-structure",
@@ -2907,7 +3024,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "follow-entity-linking-decision-tree",
@@ -2926,7 +3044,8 @@
      "after": null,
      "lane": "judgment",
      "lane_label": "Frontier judgment: honest scoring, entity disambiguation, the subject's voice. Claude, ChatGPT, or Grok — pick the one you have.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "ready"
     },
     {
      "title": "identify-and-eliminate-orphan-standalone-articles",
@@ -2945,7 +3064,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "link-leaves-to-branches-branches-to-trunk",
@@ -2964,7 +3084,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "map-content-hierarchically-root-trunk-branches-leaves",
@@ -2983,7 +3104,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "remove-duplicate-thin-pages",
@@ -3002,7 +3124,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "replace-ai-looking-content-with-real-eeat",
@@ -3021,7 +3144,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "step-1-inventory-content-and-establish-gct-per-page",
@@ -3040,7 +3164,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "ready"
     },
     {
      "title": "step-2-fix-categories-and-tags-in-wordpress",
@@ -3059,7 +3184,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "runs every factory cycle or weekly; creates the asset ads amplify; unblocks a chain (access/plumbing)"
+     "why": "runs every factory cycle or weekly; creates the asset ads amplify; unblocks a chain (access/plumbing)",
+     "articleState": "ready"
     },
     {
      "title": "step-3-identify-money-pages-and-orphan-pages",
@@ -3078,7 +3204,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "ready"
     },
     {
      "title": "step-4-create-links-with-proper-anchor-text-and-placement",
@@ -3097,7 +3224,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "ready"
     },
     {
      "title": "step-5-qa-links-against-google-guidelines",
@@ -3116,7 +3244,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "ready"
     },
     {
      "title": "step-6-measure-and-iterate-with-maa",
@@ -3135,7 +3264,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "runs every factory cycle or weekly; creates the asset ads amplify"
+     "why": "runs every factory cycle or weekly; creates the asset ads amplify",
+     "articleState": "ready"
     },
     {
      "title": "use-proper-anchor-text-3-6-words-descriptive",
@@ -3154,7 +3284,8 @@
      "after": null,
      "lane": "computer",
      "lane_label": "Logged-in UI (Meta Ads Manager, Descript, GSC, wp-admin when REST is blocked). Any engine with a browser.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "ready"
     }
    ]
   },
@@ -3182,7 +3313,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "build-personal-brand-website",
@@ -3201,7 +3333,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "build-third-party-validation",
@@ -3220,7 +3353,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "claim-and-verify-knowledge-panel-when-it-appears",
@@ -3239,7 +3373,8 @@
      "after": null,
      "lane": "judgment",
      "lane_label": "Frontier judgment: honest scoring, entity disambiguation, the subject's voice. Claude, ChatGPT, or Grok — pick the one you have.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "classify-and-offer-knowledge-panel",
@@ -3258,7 +3393,8 @@
      "after": null,
      "lane": "judgment",
      "lane_label": "Frontier judgment: honest scoring, entity disambiguation, the subject's voice. Claude, ChatGPT, or Grok — pick the one you have.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "create-collaborative-content-with-industry-peers",
@@ -3277,7 +3413,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "create-dollar-a-day-ad-creatives-from-best-content",
@@ -3296,7 +3433,8 @@
      "after": null,
      "lane": "computer",
      "lane_label": "Logged-in UI (Meta Ads Manager, Descript, GSC, wp-admin when REST is blocked). Any engine with a browser.",
-     "why": "runs every factory cycle or weekly; ads/revenue path"
+     "why": "runs every factory cycle or weekly; ads/revenue path",
+     "articleState": "wip"
     },
     {
      "title": "create-social-content-from-video-clips",
@@ -3315,7 +3453,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "establish-entity-identity",
@@ -3334,7 +3473,8 @@
      "after": null,
      "lane": "judgment",
      "lane_label": "Frontier judgment: honest scoring, entity disambiguation, the subject's voice. Claude, ChatGPT, or Grok — pick the one you have.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "generate-backlinks-and-entity-mentions",
@@ -3353,7 +3493,8 @@
      "after": null,
      "lane": "judgment",
      "lane_label": "Frontier judgment: honest scoring, entity disambiguation, the subject's voice. Claude, ChatGPT, or Grok — pick the one you have.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "get-featured-on-podcasts",
@@ -3372,7 +3513,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "get-mentioned-in-publications",
@@ -3410,7 +3552,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "implement-technical-schema-markup",
@@ -3429,7 +3572,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "link-all-content-back-to-personal-brand-site",
@@ -3448,7 +3592,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "measure-search-impressions-traffic-inbound-opportunities",
@@ -3467,7 +3612,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "record-one-minute-videos-answering-customer-questions",
@@ -3486,7 +3632,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "register-personal-name-domain",
@@ -3505,7 +3652,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "unblocks a chain (access/plumbing)"
+     "why": "unblocks a chain (access/plumbing)",
+     "articleState": "wip"
     },
     {
      "title": "repurpose-videos-into-blog-posts-via-content-factory",
@@ -3524,7 +3672,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "run-thank-you-machine-for-every-interaction",
@@ -3544,7 +3693,8 @@
      "lane": "computer",
      "lane_label": "Logged-in UI (Meta Ads Manager, Descript, GSC, wp-admin when REST is blocked). Any engine with a browser.",
      "why": "supporting",
-     "flag": "weak article backing: /thank-you-machine redirects to /face-socks/ (single tactic page, not a definitive article)"
+     "flag": "weak article backing: /thank-you-machine redirects to /face-socks/ (single tactic page, not a definitive article)",
+     "articleState": "wip"
     },
     {
      "title": "keep-speaker-bureau-profile-bookable",
@@ -3563,7 +3713,8 @@
      "after": "build-third-party-validation",
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "ready"
     },
     {
      "title": "secure-guest-appearances-and-speaking-engagements",
@@ -3582,7 +3733,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "set-up-professional-social-profiles",
@@ -3601,7 +3753,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "verify-google-business-profile--personal-brand",
@@ -3621,7 +3774,8 @@
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
      "why": "supporting",
-     "flag": "possible-duplicate: review for merge with ensure-robots-meta-not-blocking-indexing"
+     "flag": "possible-duplicate: review for merge with ensure-robots-meta-not-blocking-indexing",
+     "articleState": "wip"
     }
    ]
   },
@@ -3668,7 +3822,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "ready"
     },
     {
      "title": "funnel-levels-audience-engagement-conversion",
@@ -3687,7 +3842,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "runs every factory cycle or weekly; ads/revenue path"
+     "why": "runs every factory cycle or weekly; ads/revenue path",
+     "articleState": "ready"
     },
     {
      "title": "gct-goals-content-targeting",
@@ -3706,7 +3862,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "ready"
     },
     {
      "title": "kill-underperformers-scale-winners",
@@ -3725,7 +3882,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "ready"
     },
     {
      "title": "learn-do-teach-apprentice-model",
@@ -3744,7 +3902,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "ready"
     },
     {
      "title": "maa-cycle-metrics-analysis-action",
@@ -3763,7 +3922,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "runs every factory cycle or weekly; creates the asset ads amplify"
+     "why": "runs every factory cycle or weekly; creates the asset ads amplify",
+     "articleState": "ready"
     },
     {
      "title": "management-communicate-iterate-delegate",
@@ -3782,7 +3942,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "ready"
     },
     {
      "title": "map-how-ring-methods",
@@ -3801,7 +3962,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "ready"
     },
     {
      "title": "map-what-ring-specific-content",
@@ -3820,7 +3982,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "ready"
     },
     {
      "title": "map-why-ring-core-purpose",
@@ -3839,7 +4002,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "ready"
     },
     {
      "title": "measure-content-rankings-traffic-revenue",
@@ -3877,7 +4041,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "ready"
     },
     {
      "title": "show-whats-working-and-what-isnt",
@@ -3915,7 +4080,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "runs every factory cycle or weekly; ads/revenue path; unblocks a chain (access/plumbing)"
+     "why": "runs every factory cycle or weekly; ads/revenue path; unblocks a chain (access/plumbing)",
+     "articleState": "wip"
     },
     {
      "title": "stage-2-goals-mission-90-day-goals-cpa-roas-budget",
@@ -3934,7 +4100,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "runs every factory cycle or weekly; creates the asset ads amplify"
+     "why": "runs every factory cycle or weekly; creates the asset ads amplify",
+     "articleState": "wip"
     },
     {
      "title": "stage-3-content-endorsements-why-video-3x3-grid-library",
@@ -3953,7 +4120,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "stage-4-targeting-custom-audiences-lookalikes-remarketing",
@@ -3972,7 +4140,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "runs every factory cycle or weekly; ads/revenue path; unblocks a chain (access/plumbing)"
+     "why": "runs every factory cycle or weekly; ads/revenue path; unblocks a chain (access/plumbing)",
+     "articleState": "wip"
     },
     {
      "title": "stage-5-amplification-boost-posts-remarketing-ads",
@@ -3991,7 +4160,8 @@
      "after": null,
      "lane": "computer",
      "lane_label": "Logged-in UI (Meta Ads Manager, Descript, GSC, wp-admin when REST is blocked). Any engine with a browser.",
-     "why": "runs every factory cycle or weekly; ads/revenue path"
+     "why": "runs every factory cycle or weekly; ads/revenue path",
+     "articleState": "wip"
     },
     {
      "title": "stage-6-optimization-metrics-budget-review-recommendations",
@@ -4010,7 +4180,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "runs every factory cycle or weekly; creates the asset ads amplify"
+     "why": "runs every factory cycle or weekly; creates the asset ads amplify",
+     "articleState": "wip"
     },
     {
      "title": "submit-weekly-maa-report-every-friday",
@@ -4048,7 +4219,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "ready"
     },
     {
      "title": "three-pillars-marketing-operations-finance",
@@ -4067,7 +4239,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "ready"
     },
     {
      "title": "use-for-content-planning-and-video-topics",
@@ -4086,7 +4259,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "ready"
     },
     {
      "title": "google-ads-analyzer",
@@ -4126,7 +4300,8 @@
      "after": "run-dollar-a-day-campaign-on-winning-content",
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "runs every factory cycle or weekly; ads/revenue path; unblocks a chain (access/plumbing)"
+     "why": "runs every factory cycle or weekly; ads/revenue path; unblocks a chain (access/plumbing)",
+     "articleState": "ready"
     }
    ]
   },
@@ -4155,7 +4330,8 @@
      "lane": "computer",
      "lane_label": "Logged-in UI (Meta Ads Manager, Descript, GSC, wp-admin when REST is blocked). Any engine with a browser.",
      "why": "runs every factory cycle or weekly; ads/revenue path",
-     "flag": "weak article backing: /thank-you-machine redirects to /face-socks/ (single tactic page, not a definitive article)"
+     "flag": "weak article backing: /thank-you-machine redirects to /face-socks/ (single tactic page, not a definitive article)",
+     "articleState": "wip"
     },
     {
      "title": "build-into-post-project-checklist-and-weekly-routine",
@@ -4174,7 +4350,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "identify-thank-you-triggers",
@@ -4194,7 +4371,8 @@
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
      "why": "supporting",
-     "flag": "weak article backing: /thank-you-machine redirects to /face-socks/ (single tactic page, not a definitive article)"
+     "flag": "weak article backing: /thank-you-machine redirects to /face-socks/ (single tactic page, not a definitive article)",
+     "articleState": "wip"
     },
     {
      "title": "process-through-content-factory",
@@ -4214,7 +4392,8 @@
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
      "why": "supporting",
-     "flag": "weak article backing: /thank-you-machine redirects to /face-socks/ (single tactic page, not a definitive article)"
+     "flag": "weak article backing: /thank-you-machine redirects to /face-socks/ (single tactic page, not a definitive article)",
+     "articleState": "wip"
     },
     {
      "title": "record-one-minute-thank-you-video",
@@ -4234,7 +4413,8 @@
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
      "why": "supporting",
-     "flag": "weak article backing: /thank-you-machine redirects to /face-socks/ (single tactic page, not a definitive article)"
+     "flag": "weak article backing: /thank-you-machine redirects to /face-socks/ (single tactic page, not a definitive article)",
+     "articleState": "wip"
     },
     {
      "title": "tag-the-person-on-social-media",
@@ -4254,7 +4434,8 @@
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
      "why": "supporting",
-     "flag": "weak article backing: /thank-you-machine redirects to /face-socks/ (single tactic page, not a definitive article)"
+     "flag": "weak article backing: /thank-you-machine redirects to /face-socks/ (single tactic page, not a definitive article)",
+     "articleState": "wip"
     }
    ]
   },
@@ -4282,7 +4463,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "add-last-audited-column-to-definitive-article-guide-status-table",
@@ -4301,7 +4483,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "apply-portability-discipline-to-meta-articles",
@@ -4320,7 +4503,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "audit-this-maintenance-article-every-6-months",
@@ -4339,7 +4523,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "check-information-currency-with-latest-data",
@@ -4358,7 +4543,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "check-topic-coherence-for-each-definitive-article",
@@ -4377,7 +4563,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "conduct-first-portability-review-of-blog-posting-guidelines",
@@ -4396,7 +4583,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "create-knowledge-capture-note-template-and-distribute",
@@ -4415,7 +4603,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "create-shared-location-for-sop-amendment-proposals",
@@ -4434,7 +4623,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "create-sop-amendment-proposal-500-words",
@@ -4453,7 +4643,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "generate-knowledge-capture-note-within-24-hours",
@@ -4472,7 +4663,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "provide-knowledge-capture-note-template",
@@ -4491,7 +4683,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "review-existing-sops-for-portability-compliance",
@@ -4510,7 +4703,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "review-past-6-months-of-sop-amendment-proposals-for-patterns",
@@ -4529,7 +4723,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "route-notes-to-sop-update-protocol-or-directly-to-articles",
@@ -4548,7 +4743,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "schedule-and-assign-quarterly-auditors",
@@ -4567,7 +4763,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "schedule-first-6-month-recursive-review",
@@ -4586,7 +4783,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "schedule-first-quarterly-audit-cycle",
@@ -4605,7 +4803,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "senior-team-member-reviews-weekly",
@@ -4624,7 +4823,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "separate-methodology-layer-what-why-from-implementation-layer-how",
@@ -4643,7 +4843,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "set-up-sop-amendment-proposal-tracking-system",
@@ -4662,7 +4863,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "tag-proposal-with-affected-sop-and-queue-for-review",
@@ -4681,7 +4883,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "update-status-table-in-definitive-article-guide",
@@ -4700,7 +4903,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "validate-cross-reference-integrity-across-articles",
@@ -4719,7 +4923,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     },
     {
      "title": "verify-structural-completeness-against-8-step-framework",
@@ -4738,7 +4943,8 @@
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
-     "why": "supporting"
+     "why": "supporting",
+     "articleState": "wip"
     }
    ]
   },

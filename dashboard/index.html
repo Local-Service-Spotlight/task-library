@@ -420,7 +420,7 @@
   <header class="btl-hero btl-wrap">
     <div class="btl-eyebrow"><span class="pulse"></span>Local Service Spotlight Content Factory</div>
     <h1 class="btl-title">Local Service Spotlight <span>Task Library</span></h1>
-    <p class="btl-sub"><span class="btl-live-total">253</span> SOPs — every task documented to the definitive-article standard, so humans and AI agents run them the same way.</p>
+    <p class="btl-sub"><span class="btl-live-total">—</span> SOPs. Their article mappings resolve to <span class="btl-live-article-hubs">—</span> hubs: <span class="btl-live-definitive">—</span> definitive and <span class="btl-live-article-wip">—</span> in progress.</p>
     <div class="btl-cta">
       <a id="btl-dl" class="btl-btn btl-btn-primary" href="#">⬇ Download prepared skills (.zip)</a>
       <a id="btl-meta" class="btl-btn btl-btn-ghost" href="#" target="_blank" rel="noopener" hidden>How we built this →</a>
@@ -506,7 +506,7 @@
             <p>Each pass through the loop sharpens the procedure, tightens the checklist, and adds proof. <strong>Nothing is ever done twice from zero. The system compounds.</strong></p>
           </div>
           <ul class="btl-creed">
-            <li><span class="ck">✓</span><span><b>One standard, zero drift</b> — all <span class="btl-live-total">253</span> skills follow the same definitive-article template, section for section.</span></li>
+            <li><span class="ck">✓</span><span><b>One standard, zero drift</b> — all <span class="btl-live-total">—</span> skills follow the same runnable-task template, section for section.</span></li>
             <li><span class="ck">✓</span><span><b>QA gate on every task</b> — a Definition of Done that a stranger (or an agent) can verify without asking.</span></li>
             <li><span class="ck">✓</span><span><b>Example slot in every SOP</b> — each skill links the meta-article that proves the process works.</span></li>
             <li><span class="ck">✓</span><span><b>Self-updating</b> — every run ends by improving the very document it ran from.</span></li>
@@ -538,7 +538,7 @@
   <div class="btl-wrap"><div class="btl-empty" id="btl-empty" hidden>
     <div class="ee">🔍</div>
     <h3>No tasks match</h3>
-    <p>Nothing in <span class="btl-live-total">253</span> SOPs matches that combination of search and status filter.</p>
+    <p>Nothing in <span class="btl-live-total">—</span> SOPs matches that combination of search and status filter.</p>
     <button id="btl-reset" class="btl-mini" type="button">Reset search &amp; filters</button>
   </div></div>
 
@@ -581,6 +581,16 @@ fetch('data.json', {cache: 'no-cache'})
   .then(function(r){ if(!r.ok) throw new Error('data.json HTTP ' + r.status); return r.json(); })
   .then(function(d){
     window.__TASK_DATA = d;
+    var stats = (d && d.stats) || {};
+    var articleHubs = Number(stats.articleHubs || 0);
+    var definitive = Number(stats.definitiveArticles || 0);
+    function fill(selector, value){
+      document.querySelectorAll(selector).forEach(function(el){ el.textContent = value; });
+    }
+    fill('.btl-live-total', Number(stats.total || 0));
+    fill('.btl-live-article-hubs', articleHubs);
+    fill('.btl-live-definitive', definitive);
+    fill('.btl-live-article-wip', Math.max(0, articleHubs - definitive));
     var s = document.createElement('script');
     s.src = 'app.js';
     document.body.appendChild(s);
@@ -643,20 +653,6 @@ fetch('data.json', {cache: 'no-cache'})
   addEventListener('load', schedule);
   addEventListener('resize', schedule);
   try { new MutationObserver(schedule).observe(document.body, {subtree:true, childList:true, attributes:true}); } catch(e){}
-})();
-</script>
-<script>
-(function(){
-  // Keep the prose counts in step with the built library instead of hardcoding them.
-  // Falls back to the number baked in at build time if the fetch fails.
-  fetch("data.json", {cache:"no-store"})
-    .then(function(r){ return r.json(); })
-    .then(function(d){
-      var n = d && d.stats && d.stats.total;
-      if (!n) return;
-      document.querySelectorAll(".btl-live-total").forEach(function(el){ el.textContent = n; });
-    })
-    .catch(function(){});
 })();
 </script>
 </body>

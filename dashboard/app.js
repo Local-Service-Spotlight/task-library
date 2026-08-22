@@ -313,6 +313,13 @@ function volBar(n){
   html += '<span class="btl-vol-n">' + n + '</span></span>';
   return html;
 }
+function articleLink(t){
+  if (!t.article) return '';
+  const ready = t.articleState === 'ready';
+  const label = ready ? 'Definitive article ↗' : 'Article in progress ↗';
+  const title = ready ? 'Every task mapped to this article is complete' : 'At least one task mapped to this article still needs work';
+  return '<a class="btl-art" href="' + esc(t.article) + '" target="_blank" rel="noopener" title="' + title + '">' + label + '</a>';
+}
 function rowHTML(t){
   const st = STATUS[t.status] || STATUS.gap;
   let badges = '<span class="btl-tag tag-sop" title="Step-by-step SOP included">SOP</span>';
@@ -320,7 +327,7 @@ function rowHTML(t){
   if (t._ex) badges += '<span class="btl-tag tag-ex" title="Has a worked example / meta-article slot">Example</span>';
   if (t.lane) badges += '<span class="btl-tag tag-sop" title="' + esc(t.lane_label || t.lane) + '">' + esc(t.lane) + '</span>';
   const stage = (t.stage && t.stage !== '—') ? '<span class="btl-stage">' + esc(t.stage) + '</span>' : '';
-  const art = (t.article ? '<a class="btl-art" href="' + esc(t.article) + '" target="_blank" rel="noopener">Definitive article ↗</a>' : '') +
+  const art = articleLink(t) +
     (t.download ? '<a class="btl-art" href="' + esc(t.download) + '" target="_blank" rel="noopener">Download full skill suite ⬇</a>' : '');
   let chain = '';
   if (t.before || t.after || t.phase){
@@ -526,7 +533,7 @@ function openModal(t){
     (t.lane ? '<span class="btl-stage">' + esc(t.lane) + '</span>' : '');
   mTitle.textContent = t.title;
   mSub.innerHTML = '<code class="btl-slug">' + esc(t.slug || 'skill') + '.skill.md</code>' +
-    (t.article ? '<a class="btl-art" href="' + esc(t.article) + '" target="_blank" rel="noopener">Definitive article ↗</a>' : '') +
+    articleLink(t) +
     (t.download ? '<a class="btl-art" href="' + esc(t.download) + '" target="_blank" rel="noopener">Download full skill suite ⬇</a>' : '');
   mBody.innerHTML = renderMD(t.content || '*No skill.md captured yet — this task is a gap to close on the next run of the loop.*');
   prevOverflow = document.body.style.overflow;

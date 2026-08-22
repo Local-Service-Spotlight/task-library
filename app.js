@@ -262,13 +262,20 @@ el('#btl-chips').innerHTML = CHIPS.map(function(c){
 /* ============================================================
    Category sections (rows render lazily on first expand)
    ============================================================ */
+function articleLink(t){
+  if (!t.article) return '';
+  const ready = t.articleState === 'ready';
+  const label = ready ? 'Definitive article ↗' : 'Article in progress ↗';
+  const title = ready ? 'Every task mapped to this article is complete' : 'At least one task mapped to this article still needs work';
+  return '<a class="btl-art" href="' + esc(t.article) + '" target="_blank" rel="noopener" title="' + title + '">' + label + '</a>';
+}
 function rowHTML(t){
   const st = STATUS[t.status] || STATUS.gap;
   let badges = '<span class="btl-tag tag-sop" title="Step-by-step SOP included">SOP</span>';
   if (t._qa) badges += '<span class="btl-tag tag-qa" title="Has a Definition of Done QA gate">QA</span>';
   if (t._ex) badges += '<span class="btl-tag tag-ex" title="Has a worked example / meta-article slot">Example</span>';
   const stage = (t.stage && t.stage !== '—') ? '<span class="btl-stage">' + esc(t.stage) + '</span>' : '';
-  const art = (t.article ? '<a class="btl-art" href="' + esc(t.article) + '" target="_blank" rel="noopener">Definitive article ↗</a>' : '') +
+  const art = articleLink(t) +
     (t.download ? '<a class="btl-art" href="' + esc(t.download) + '" target="_blank" rel="noopener">Download full skill suite ⬇</a>' : '');
   return '<article class="btl-row" data-id="' + t._id + '">' +
     '<span class="btl-dot dot-' + esc(t.status) + '" aria-hidden="true"></span>' +
@@ -427,7 +434,7 @@ function openModal(t){
     ((t.stage && t.stage !== '—') ? '<span class="btl-stage">' + esc(t.stage) + '</span>' : '');
   mTitle.textContent = t.title;
   mSub.innerHTML = '<code class="btl-slug">' + esc(t.slug || 'skill') + '.skill.md</code>' +
-    (t.article ? '<a class="btl-art" href="' + esc(t.article) + '" target="_blank" rel="noopener">Definitive article ↗</a>' : '') +
+    articleLink(t) +
     (t.download ? '<a class="btl-art" href="' + esc(t.download) + '" target="_blank" rel="noopener">Download full skill suite ⬇</a>' : '');
   mBody.innerHTML = renderMD(t.content || '*No skill.md captured yet — this task is a gap to close on the next run of the loop.*');
   prevOverflow = document.body.style.overflow;
