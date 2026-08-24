@@ -1013,6 +1013,16 @@
    "flag": "external claude-skill (owner: Daniel Goodrich); repo also holds 5 sibling skills — add entries when mapped",
    "download": "https://github.com/Goodrich-Dev/google-ads-maa-skills/archive/refs/heads/main.zip"
   },
+  "positive-mentions-harvester": {
+   "source": "github:dennisyu/local-service-spotlight-skills@main:skills/positive-mentions-harvester/SKILL.md",
+   "format": "claude-skill",
+   "category": "Personal Branding",
+   "stage": "—",
+   "status": "needs-work",
+   "article": "https://blitzmetrics.com/how-to-collect-organize-positive-mentions-to-build-authority/",
+   "download": "https://github.com/dennisyu/local-service-spotlight-skills/archive/refs/heads/main.zip",
+   "flag": "Needs master-article consolidation and current Dennis worked-example QA before complete."
+  },
   "run-content-factory-on-any-engine": {
    "source": "local",
    "category": "Strategy & Measurement"

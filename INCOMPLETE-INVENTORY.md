@@ -2,13 +2,13 @@
 
 Generated from `build/build.py` after scoring in `build/factory.py`.
 
-Library: **248** tasks — 124 complete, 101 needs-work, 23 gaps.
+Library: **249** tasks — 124 complete, 102 needs-work, 23 gaps.
 
-Importance distribution: 5★=75, 4★=40, 3★=101, 2★=32, 1★=0
+Importance distribution: 5★=75, 4★=40, 3★=102, 2★=32, 1★=0
 
 Scoring: `importance = max(frequency, revenue, gating)`. Ads, pixels, GSC, Descript, WP-author, and Meta BM are 5s even when the task is small, because they unblock the line.
 
-Incomplete: **124**. This file is the work order. Do not re-sample.
+Incomplete: **125**. This file is the work order. Do not re-sample.
 
 | ★ | Status | Phase | Category | Slug | Lane | Why |
 |---|---|---|---|---|---|---|
@@ -93,6 +93,7 @@ Incomplete: **124**. This file is the work order. Do not re-sample.
 | 3 | needs-work | Post |  | `link-all-content-back-to-personal-brand-site` | any | supporting |
 | 3 | needs-work | — |  | `measure-content-rankings-traffic-revenue` | any | supporting |
 | 3 | needs-work | — |  | `measure-search-impressions-traffic-inbound-opportunities` | any | supporting |
+| 3 | needs-work | — |  | `positive-mentions-harvester` | any | supporting |
 | 3 | needs-work | Produce |  | `record-one-minute-videos-answering-customer-questions` | any | supporting |
 | 3 | needs-work | Produce |  | `record-screen-shares-of-real-audits` | any | supporting |
 | 3 | needs-work | — |  | `remove-duplicate-thin-pages` | any | supporting |
