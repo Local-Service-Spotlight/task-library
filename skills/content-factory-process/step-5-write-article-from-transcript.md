@@ -3,7 +3,7 @@ name: step-5-write-article-from-transcript
 description: Transform the cleaned transcript into a structured article that keeps the speaker's voice and stories while following GCT (Blog Posting Guidelines Step 5).
 category: Content Factory — Process
 stage: Process
-definitive_article: /blog-posting-guidelines
+definitive_article: https://localservicespotlight.com/article-guidelines/
 status: complete
 ---
 
@@ -36,7 +36,7 @@ status: complete
 - [ ] Linked back to the definitive article and relevant siblings
 
 ## Example(s)
-- Articles produced for clients like Marko Sipila (HVAC Quote) and Zach Peyton (Superior Fence & Rail) follow this transcript-first drafting method; runs are linked from /blog-posting-guidelines.
+- Articles produced for clients like Marko Sipila (HVAC Quote) and Zach Peyton (Superior Fence & Rail) follow this transcript-first drafting method; runs are linked from https://localservicespotlight.com/article-guidelines/.
 - Example needed as a standalone meta-article — run the Meta-Article Prompt after first documented run.
 
 ## Run on a persistent agent (Fable 5)
@@ -45,6 +45,6 @@ A persistent agent (Claude Fable 5, or a comparable OpenAI/Google model that loo
 See `boil-the-ocean.md` for the full operating principles.
 
 ## Definitive article & links
-- Hub: /blog-posting-guidelines (Step 5 of the 18-step SOP)
+- Hub: https://localservicespotlight.com/article-guidelines/ (Step 5 of the 18-step SOP)
 - Related: /one-minute-video-guide (the source asset), /seo-tree
 - Sibling skills, in run order: `step-4-research-edit-add-timestamps-and-outline` → this → `step-6-write-title-and-headings`

@@ -16,8 +16,9 @@ Usage:
 Exit code 1 if any skill fails validation (build still writes valid skills).
 """
 import argparse, csv, json, os, re, sys, urllib.request
+from collections import Counter
 from datetime import datetime, timezone
-from urllib.parse import urlsplit
+from urllib.parse import urlencode, urlsplit
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BUILD = os.path.join(ROOT, 'build')
@@ -32,6 +33,15 @@ REQUIRED_SECTIONS = ['## Inputs', '## Steps', '## Definition of done (QA checkli
                      '## Example(s)', '## Definitive article & links']
 STUB = re.compile(r'(placeholder|TBD|to be (written|documented|filled)|coming soon|lorem ipsum)', re.I)
 ARTICLE_CERTIFICATIONS = os.path.join(BUILD, 'article-certifications.json')
+ARTICLE_META_ORBITS = os.path.join(BUILD, 'article-meta-orbits.json')
+META_COUNT_STATUSES = {'verified', 'partial'}
+META_ORBIT_TIERS = (
+    (0, 0, 'No verified examples'),
+    (1, 2, 'Emerging'),
+    (3, 5, 'Supported'),
+    (6, 10, 'Strong'),
+    (11, None, 'Deep'),
+)
 
 
 def folder_of(name):
@@ -186,6 +196,352 @@ def normalize_article_url(url):
     return host + path
 
 
+def require_absolute_http_url(value, field):
+    """Return a stripped absolute HTTP(S) URL or fail with field context."""
+    if not isinstance(value, str) or not value.strip():
+        raise ValueError(f'{field} requires a non-empty absolute URL')
+    value = value.strip()
+    parsed = urlsplit(value)
+    if parsed.scheme.lower() not in ('http', 'https') or not parsed.netloc:
+        raise ValueError(f'{field} requires an absolute HTTP(S) URL')
+    if not normalize_article_url(value):
+        raise ValueError(f'{field} has an invalid URL "{value}"')
+    return value
+
+
+def valid_review_date(value, field):
+    if not isinstance(value, str) or not re.fullmatch(r'\d{4}-\d{2}-\d{2}', value):
+        raise ValueError(f'{field} requires a YYYY-MM-DD date')
+    try:
+        datetime.strptime(value, '%Y-%m-%d')
+    except ValueError as exc:
+        raise ValueError(f'{field} has an invalid date "{value}"') from exc
+    return value
+
+
+def adapt_strength_manifest(raw, path, evidence_url=None):
+    """Convert the WordPress inventory receipt into the strict orbit schema."""
+    if not isinstance(raw, dict) or 'schemaVersion' not in raw:
+        return raw
+    if raw.get('schemaVersion') != 1:
+        raise ValueError(f'{path}: unsupported strength manifest schemaVersion')
+    generated = raw.get('generatedAt')
+    if not isinstance(generated, str) or not re.match(r'^\d{4}-\d{2}-\d{2}T', generated):
+        raise ValueError(f'{path}: generatedAt requires an ISO timestamp')
+    audited = valid_review_date(generated[:10], f'{path}.generatedAt')
+    definition = raw.get('countDefinition')
+    if not isinstance(definition, str) or not definition.strip():
+        raise ValueError(f'{path}: countDefinition requires a non-empty method')
+    hubs = raw.get('hubs')
+    if not isinstance(hubs, list):
+        raise ValueError(f'{path}: expected a "hubs" array')
+
+    adapted = []
+    for index, hub in enumerate(hubs):
+        where = f'{path}: hubs[{index}]'
+        if not isinstance(hub, dict):
+            raise ValueError(f'{where} must be an object')
+        hub_url = hub.get('url')
+        manifest_tasks = hub.get('tasks')
+        if not isinstance(manifest_tasks, list):
+            raise ValueError(f'{where}.tasks must be an array')
+        expected_tasks = {}
+        for task_index, task in enumerate(manifest_tasks):
+            twhere = f'{where}.tasks[{task_index}]'
+            if not isinstance(task, dict):
+                raise ValueError(f'{twhere} must be an object')
+            slug = task.get('slug')
+            importance = task.get('importance')
+            if not isinstance(slug, str) or not slug.strip():
+                raise ValueError(f'{twhere}.slug requires a non-empty string')
+            slug = slug.strip()
+            if slug in expected_tasks:
+                raise ValueError(f'{twhere}.slug duplicates "{slug}"')
+            if type(importance) is not int or not 1 <= importance <= 5:
+                raise ValueError(f'{twhere}.importance must be an integer from 1 to 5')
+            expected_tasks[slug] = importance
+        declared_task_count = hub.get('taskCount')
+        declared_importance = hub.get('taskImportanceTotal')
+        if declared_task_count != len(expected_tasks):
+            raise ValueError(f'{where}.taskCount disagrees with tasks')
+        if declared_importance != sum(expected_tasks.values()):
+            raise ValueError(f'{where}.taskImportanceTotal disagrees with tasks')
+        records = hub.get('metaArticles')
+        if not isinstance(records, list):
+            raise ValueError(f'{where}.metaArticles must be an array')
+        adapted_records = []
+        counted_keys = set()
+        for record_index, record in enumerate(records):
+            rwhere = f'{where}.metaArticles[{record_index}]'
+            if not isinstance(record, dict):
+                raise ValueError(f'{rwhere} must be an object')
+            # The reconciled manifest carries both the public post URL and the
+            # explicit source/hub evidence fields. Require those evidence fields
+            # instead of silently reconstructing them from array position.
+            source_url = record.get('sourceUrl')
+            record_url = record.get('url')
+            record_hub_url = record.get('hubUrl')
+            counted = record.get('counted')
+            source_key = normalize_article_url(source_url)
+            if normalize_article_url(record_url) != source_key:
+                raise ValueError(f'{rwhere}.url disagrees with sourceUrl')
+            if normalize_article_url(record_hub_url) != normalize_article_url(hub_url):
+                raise ValueError(f'{rwhere}.hubUrl disagrees with its parent hub')
+            primary_parent = record.get('primaryParentHub')
+            if counted is True and normalize_article_url(primary_parent) != normalize_article_url(hub_url):
+                raise ValueError(f'{rwhere}.primaryParentHub disagrees with its counted hub')
+            if counted is True and source_key:
+                counted_keys.add(source_key)
+            adapted_records.append({
+                'source_url': source_url,
+                'hub_url': record_hub_url,
+                'evidence_method': record.get('evidenceMethod'),
+                'counted': counted,
+                'reason': record.get('reason'),
+                'title': record.get('title'),
+                'post_id': record.get('postId'),
+                'published_at': record.get('publishedAt'),
+                'modified_at': record.get('modifiedAt'),
+                'taxonomy_evidence': record.get('taxonomyEvidence'),
+                'primary_parent_hub': primary_parent,
+            })
+        declared_count = hub.get('metaArticleCount')
+        if type(declared_count) is not int or declared_count < 0:
+            raise ValueError(f'{where}.metaArticleCount must be a non-negative integer')
+        if declared_count != len(counted_keys):
+            raise ValueError(f'{where}.metaArticleCount disagrees with unique counted sources')
+        tier = meta_orbit_tier(declared_count)
+        strength = hub.get('strength')
+        if (not isinstance(strength, dict) or strength.get('score') != tier['level'] or
+                strength.get('label') != tier['label']):
+            raise ValueError(f'{where}.strength disagrees with derived count band')
+        source = evidence_url or hub.get('taskLibrarySourceUrl') or hub_url
+        adapted.append({
+            'hub_url': hub_url,
+            'meta_count_status': hub.get('metaCountStatus'),
+            'audited': audited,
+            'evidence_source_url': source,
+            'evidence_method': definition.strip(),
+            'records': adapted_records,
+            '_expected_task_count': hub.get('taskCount'),
+            '_expected_importance_total': hub.get('taskImportanceTotal'),
+            '_expected_tasks': expected_tasks,
+        })
+    return {'hubs': adapted}
+
+
+def load_article_meta_orbits(path=ARTICLE_META_ORBITS, evidence_url=None):
+    """Load evidence-backed meta-article orbit audits.
+
+    Missing hubs are UNKNOWN, never zero. A hub appears here only after a
+    source-backed audit. ``verified`` means the recorded count is exhaustive as
+    of the audit date; ``partial`` means the count is a proven lower bound.
+    Every candidate record preserves why it did or did not count.
+    """
+    with open(path, encoding='utf-8') as fh:
+        raw = json.load(fh)
+    raw = adapt_strength_manifest(raw, path, evidence_url=evidence_url)
+    hubs = raw.get('hubs') if isinstance(raw, dict) else None
+    if not isinstance(hubs, list):
+        raise ValueError(f'{path}: expected a "hubs" array')
+
+    audited = {}
+    for index, audit in enumerate(hubs):
+        where = f'{path}: hubs[{index}]'
+        if not isinstance(audit, dict):
+            raise ValueError(f'{where} must be an object')
+        required = {'hub_url', 'meta_count_status', 'audited',
+                    'evidence_source_url', 'evidence_method', 'records'}
+        missing = sorted(required - set(audit))
+        if missing:
+            raise ValueError(f'{where} missing required fields {missing}')
+        hub_url = require_absolute_http_url(audit['hub_url'], f'{where}.hub_url')
+        hub_key = normalize_article_url(hub_url)
+        if hub_key in audited:
+            raise ValueError(f'{where} duplicates normalized hub URL "{hub_url}"')
+        status = audit['meta_count_status']
+        if status not in META_COUNT_STATUSES:
+            raise ValueError(f'{where}.meta_count_status must be verified or partial; '
+                             'omit unaudited hubs so they remain unknown')
+        audited_at = valid_review_date(audit['audited'], f'{where}.audited')
+        evidence_source_url = require_absolute_http_url(
+            audit['evidence_source_url'], f'{where}.evidence_source_url')
+        evidence_method = audit['evidence_method']
+        if not isinstance(evidence_method, str) or not evidence_method.strip():
+            raise ValueError(f'{where}.evidence_method requires a non-empty method')
+        records = audit['records']
+        if not isinstance(records, list):
+            raise ValueError(f'{where}.records must be an array')
+        if status == 'partial' and not records:
+            raise ValueError(f'{where}: a partial audit requires at least one source record')
+
+        clean_records = []
+        seen_in_hub = set()
+        for record_index, record in enumerate(records):
+            rwhere = f'{where}.records[{record_index}]'
+            if not isinstance(record, dict):
+                raise ValueError(f'{rwhere} must be an object')
+            required_record = {'source_url', 'hub_url', 'evidence_method',
+                               'counted', 'reason'}
+            missing_record = sorted(required_record - set(record))
+            if missing_record:
+                raise ValueError(f'{rwhere} missing required fields {missing_record}')
+            source_url = require_absolute_http_url(
+                record['source_url'], f'{rwhere}.source_url')
+            record_hub = require_absolute_http_url(
+                record['hub_url'], f'{rwhere}.hub_url')
+            if normalize_article_url(record_hub) != hub_key:
+                raise ValueError(f'{rwhere}.hub_url does not match its normalized parent hub')
+            record_method = record['evidence_method']
+            reason = record['reason']
+            if not isinstance(record_method, str) or not record_method.strip():
+                raise ValueError(f'{rwhere}.evidence_method requires a non-empty method')
+            if type(record['counted']) is not bool:
+                raise ValueError(f'{rwhere}.counted must be true or false')
+            if not isinstance(reason, str) or not reason.strip():
+                raise ValueError(f'{rwhere}.reason requires a non-empty explanation')
+            source_key = normalize_article_url(source_url)
+            if source_key in seen_in_hub:
+                raise ValueError(f'{rwhere} duplicates source URL "{source_url}" in this hub')
+            seen_in_hub.add(source_key)
+            if record['counted']:
+                if source_key == hub_key:
+                    raise ValueError(f'{rwhere}: a hub cannot count itself as its meta-article')
+            task_slugs = record.get('task_slugs')
+            if task_slugs is not None:
+                if (not isinstance(task_slugs, list) or not task_slugs or
+                        any(not isinstance(slug, str) or not slug.strip()
+                            for slug in task_slugs)):
+                    raise ValueError(f'{rwhere}.task_slugs must be a non-empty string array')
+                task_slugs = [slug.strip() for slug in task_slugs]
+                if len(set(task_slugs)) != len(task_slugs):
+                    raise ValueError(f'{rwhere}.task_slugs contains duplicates')
+            clean = {
+                'sourceUrl': source_url,
+                # Preserve the audited canonical URL on every decision record.
+                # The submitted record URL may be an equivalent http/www/hash
+                # variant, but downstream consumers should not have to infer
+                # the normalized parent only from array position.
+                'hubUrl': hub_url,
+                'evidenceMethod': record_method.strip(),
+                'counted': record['counted'],
+                'reason': reason.strip(),
+            }
+            if task_slugs is not None:
+                clean['taskSlugs'] = task_slugs
+            optional_strings = {
+                'title': 'title',
+                'published_at': 'publishedAt',
+                'modified_at': 'modifiedAt',
+            }
+            for source_field, output_field in optional_strings.items():
+                value = record.get(source_field)
+                if value is not None:
+                    if not isinstance(value, str) or not value.strip():
+                        raise ValueError(f'{rwhere}.{source_field} must be a non-empty string')
+                    clean[output_field] = value.strip()
+            post_id = record.get('post_id')
+            if post_id is not None:
+                if type(post_id) is not int or post_id <= 0:
+                    raise ValueError(f'{rwhere}.post_id must be a positive integer')
+                clean['postId'] = post_id
+            taxonomy = record.get('taxonomy_evidence')
+            if taxonomy is not None:
+                if (not isinstance(taxonomy, list) or
+                        any(not isinstance(item, str) or not item.strip()
+                            for item in taxonomy)):
+                    raise ValueError(f'{rwhere}.taxonomy_evidence must be a string array')
+                clean['taxonomyEvidence'] = [item.strip() for item in taxonomy]
+            primary_parent = record.get('primary_parent_hub')
+            if primary_parent is not None:
+                clean['primaryParentHub'] = require_absolute_http_url(
+                    primary_parent, f'{rwhere}.primary_parent_hub')
+                if (record['counted'] and
+                        normalize_article_url(primary_parent) != hub_key):
+                    raise ValueError(
+                        f'{rwhere}.primary_parent_hub does not match its counted hub')
+            clean_records.append(clean)
+
+        audited[hub_key] = {
+            'hubUrl': hub_url,
+            'metaCountStatus': status,
+            'audited': audited_at,
+            'evidenceSourceUrl': evidence_source_url,
+            'evidenceMethod': evidence_method.strip(),
+            'records': clean_records,
+        }
+        if audit.get('_expected_task_count') is not None:
+            audited[hub_key]['expectedTaskCount'] = audit['_expected_task_count']
+        if audit.get('_expected_importance_total') is not None:
+            audited[hub_key]['expectedImportanceTotal'] = audit['_expected_importance_total']
+        if audit.get('_expected_tasks') is not None:
+            audited[hub_key]['expectedTasks'] = audit['_expected_tasks']
+    return audited
+
+
+def validate_article_meta_orbits(tasks, audits):
+    """Fail if an audit or task-level evidence misses the final mappings."""
+    groups = {}
+    for task in tasks:
+        key = normalize_article_url(task.get('article'))
+        if key:
+            groups.setdefault(key, set()).add(task['slug'])
+    unused = sorted(set(audits) - set(groups))
+    if unused:
+        raise ValueError('meta-orbit audit(s) do not match any final article URL: ' +
+                         ', '.join(unused))
+    for key, audit in audits.items():
+        mapped_slugs = groups[key]
+        if ('expectedTaskCount' in audit and
+                audit['expectedTaskCount'] != len(mapped_slugs)):
+            raise ValueError(
+                f'meta-orbit audit task count disagrees with final mapping for {audit["hubUrl"]}')
+        if 'expectedImportanceTotal' in audit:
+            importance_total = sum(int(t.get('importance') or 0) for t in tasks
+                                   if normalize_article_url(t.get('article')) == key)
+            if audit['expectedImportanceTotal'] != importance_total:
+                raise ValueError(
+                    f'meta-orbit audit importance total disagrees with final mapping for '
+                    f'{audit["hubUrl"]}')
+        if 'expectedTasks' in audit:
+            actual_tasks = {
+                t['slug']: int(t.get('importance') or 0) for t in tasks
+                if normalize_article_url(t.get('article')) == key
+            }
+            if audit['expectedTasks'] != actual_tasks:
+                raise ValueError(
+                    f'meta-orbit audit exact task mapping disagrees with final build for '
+                    f'{audit["hubUrl"]}')
+        for record in audit['records']:
+            unknown = sorted(set(record.get('taskSlugs', ())) - mapped_slugs)
+            if unknown:
+                raise ValueError(
+                    f'meta-orbit source {record["sourceUrl"]} names task(s) not mapped '
+                    f'to {audit["hubUrl"]}: {", ".join(unknown)}')
+
+
+def meta_orbit_tier(count):
+    if count is None:
+        return {'level': None, 'label': 'Unknown'}
+    for level, (lower, upper, label) in enumerate(META_ORBIT_TIERS):
+        if count >= lower and (upper is None or count <= upper):
+            return {'level': level, 'label': label}
+    raise AssertionError(f'no meta-orbit tier for count {count}')
+
+
+def preferred_article_url(mapped):
+    """Choose the most common exact mapped URL without inventing a redirect."""
+    counts = Counter(t['article'] for t in mapped)
+    return sorted(counts, key=lambda url: (-counts[url], url))[0]
+
+
+def task_library_route(base_url, parameter, value):
+    route = base_url.rstrip('/') + '/?' + urlencode({parameter: value})
+    if parameter == 'task':
+        route += '#task-' + value
+    return route
+
+
 def load_article_certifications(path=ARTICLE_CERTIFICATIONS):
     """Load reviewed URL-level holds that may only downgrade a hub to WIP."""
     with open(path, encoding='utf-8') as fh:
@@ -263,6 +619,118 @@ def derive_article_states(tasks, certifications=None):
     return {'articleHubs': len(groups), 'definitiveArticles': ready}
 
 
+def derive_article_hub_inventory(tasks, meta_audits=None, task_library_url=None):
+    """Build the bidirectional hub index and attach orbit facts to each task.
+
+    This runs after ``derive_article_states``. Article readiness and meta-orbit
+    strength stay separate: a semantic hold still wins, while a high example
+    count never promotes a WIP hub. An absent meta audit remains UNKNOWN.
+    """
+    if meta_audits is None:
+        meta_audits = load_article_meta_orbits()
+    groups = {}
+    for task in tasks:
+        task.pop('taskLibraryUrl', None)
+        key = normalize_article_url(task.get('article'))
+        if key:
+            groups.setdefault(key, []).append(task)
+
+    hubs = []
+    unique_counted = set()
+    evidenced_hubs = 0
+    for key in sorted(groups):
+        mapped = groups[key]
+        if task_library_url:
+            for task in mapped:
+                task['taskLibraryUrl'] = task_library_route(
+                    task_library_url, 'task', task['slug'])
+        canonical_url = preferred_article_url(mapped)
+        state = mapped[0].get('articleState') or 'wip'
+        if {t.get('articleState') for t in mapped} != {state}:
+            raise ValueError(f'article state drift inside normalized hub {key}')
+        audit = meta_audits.get(key)
+        meta_count = None
+        meta_status = 'unknown'
+        meta_articles = []
+        audited_at = None
+        priority_coverage = None
+        task_meta_counts = None
+        tasks_with_meta = None
+        task_coverage = None
+        if audit:
+            evidenced_hubs += 1
+            meta_status = audit['metaCountStatus']
+            audited_at = audit['audited']
+            meta_articles = sorted({
+                record['sourceUrl'] for record in audit['records'] if record['counted']
+            })
+            meta_count = len(meta_articles)
+            unique_counted.update(normalize_article_url(url) for url in meta_articles)
+            positive_records = [r for r in audit['records'] if r['counted']]
+            if not positive_records:
+                priority_coverage = 0.0
+                task_meta_counts = {t['slug']: 0 for t in mapped}
+            elif len(mapped) == 1:
+                task_meta_counts = {mapped[0]['slug']: meta_count}
+            elif all(r.get('taskSlugs') for r in positive_records):
+                task_meta_counts = {t['slug']: 0 for t in mapped}
+                for record in positive_records:
+                    for slug in record['taskSlugs']:
+                        task_meta_counts[slug] += 1
+            if task_meta_counts is not None:
+                covered = {slug for slug, count in task_meta_counts.items() if count > 0}
+                weight_by_slug = {t['slug']: int(t.get('importance') or 0) for t in mapped}
+                denominator = sum(weight_by_slug.values())
+                priority_coverage = (sum(weight_by_slug[slug] for slug in covered) /
+                                     denominator) if denominator else 0.0
+                tasks_with_meta = len(covered)
+                task_coverage = (tasks_with_meta / len(mapped)) if mapped else 0.0
+        tier = meta_orbit_tier(meta_count)
+        library_route = (task_library_route(task_library_url, 'article', canonical_url)
+                         if task_library_url else None)
+        reason = next((t.get('articleStateReason') for t in mapped
+                       if t.get('articleStateReason')), None)
+        reviewed = next((t.get('articleStateReviewed') for t in mapped
+                         if t.get('articleStateReviewed')), None)
+        hub = {
+            'key': key,
+            'url': canonical_url,
+            'state': state,
+            'taskCount': len(mapped),
+            'completeTaskCount': sum(t.get('status') == 'complete' for t in mapped),
+            'importance': max(int(t.get('importance') or 0) for t in mapped),
+            'importanceTotal': sum(int(t.get('importance') or 0) for t in mapped),
+            'taskSlugs': sorted(t['slug'] for t in mapped),
+            'metaArticleCount': meta_count,
+            'metaCountStatus': meta_status,
+            'metaOrbitStrength': tier['level'],
+            'metaOrbitTier': tier['label'],
+            'metaArticles': meta_articles,
+            'taskMetaCounts': task_meta_counts,
+            'tasksWithMeta': tasks_with_meta,
+            'taskCoverage': task_coverage,
+            'priorityCoverage': priority_coverage,
+        }
+        if library_route:
+            hub['taskLibraryUrl'] = library_route
+        if reason:
+            hub['stateReason'] = reason
+        if reviewed:
+            hub['stateReviewed'] = reviewed
+        if audit:
+            hub['metaOrbitAudited'] = audited_at
+            hub['metaOrbitEvidenceUrl'] = audit['evidenceSourceUrl']
+            hub['metaOrbitEvidenceMethod'] = audit['evidenceMethod']
+        hubs.append(hub)
+
+    stats = {
+        'verifiedMetaArticles': len(unique_counted),
+        'metaOrbitHubsWithEvidence': evidenced_hubs,
+        'metaOrbitHubsUnknown': len(groups) - evidenced_hubs,
+    }
+    return hubs, stats
+
+
 def html_escape(s):
     return (s or '').replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;').replace('"', '&quot;')
 
@@ -294,12 +762,70 @@ def write_library_index(data, out_path):
             label = html_escape(t['title'].replace('-', ' ').capitalize())
             desc = html_escape(t['desc'])
             if t.get('article'):
-                L.append(f'<li><a href="{html_escape(t["article"])}">{label}</a> — {desc}</li>')
+                task_route = html_escape(t.get('taskLibraryUrl') or '')
+                reverse = (f' <a href="{task_route}">View exact Task Library entry</a>.'
+                           if task_route else '')
+                L.append(f'<li><a href="{html_escape(t["article"])}">{label}</a> — '
+                         f'{desc}.{reverse}</li>')
             else:
                 L.append(f'<li>{label} — {desc}</li>')
         L.append('</ul>')
     L.append('</section>')
     open(out_path, 'w', encoding='utf-8').write('\n'.join(L) + '\n')
+
+
+def write_meta_orbit_index(data, audits, out_path):
+    """Write the public, build-reconciled orbit evidence artifact.
+
+    The input inventory can carry a stale snapshot of Task Library stats. This
+    projection always takes hub/task counts and tiers from the same current
+    build as ``data.json`` while preserving each source decision and method.
+    """
+    hubs = []
+    for hub in data['articleHubs']:
+        audit = audits.get(hub['key'])
+        records = []
+        if audit:
+            for record in audit['records']:
+                public = {
+                    'sourceUrl': record['sourceUrl'],
+                    'hubUrl': record['hubUrl'],
+                    'evidenceMethod': record['evidenceMethod'],
+                    'counted': record['counted'],
+                    'reason': record['reason'],
+                }
+                if record.get('taskSlugs'):
+                    public['taskSlugs'] = record['taskSlugs']
+                for field in ('title', 'postId', 'publishedAt', 'modifiedAt',
+                              'taxonomyEvidence', 'primaryParentHub'):
+                    if field in record:
+                        public[field] = record[field]
+                records.append(public)
+        public_hub = dict(hub)
+        public_hub['records'] = records
+        hubs.append(public_hub)
+    payload = {
+        'schemaVersion': 1,
+        'generatedAt': datetime.now(timezone.utc).isoformat(timespec='seconds'),
+        'countDefinition': ('Verified meta-article sources explicitly classified by the '
+                            'recorded evidence method and linked to the normalized canonical '
+                            'hub. Unknown is never coerced to zero.'),
+        'strengthBands': [
+            {'level': level, 'label': label,
+             'minimum': lower, 'maximum': upper}
+            for level, (lower, upper, label) in enumerate(META_ORBIT_TIERS)
+        ],
+        'stats': {
+            'articleHubs': data['stats']['articleHubs'],
+            'definitiveArticles': data['stats']['definitiveArticles'],
+            'verifiedMetaArticles': data['stats']['verifiedMetaArticles'],
+            'metaOrbitHubsWithEvidence': data['stats']['metaOrbitHubsWithEvidence'],
+            'metaOrbitHubsUnknown': data['stats']['metaOrbitHubsUnknown'],
+        },
+        'hubs': hubs,
+    }
+    with open(out_path, 'w', encoding='utf-8') as fh:
+        json.dump(payload, fh, ensure_ascii=False, indent=1)
 
 
 def source_from_repo_url(url, slug):
@@ -489,6 +1015,10 @@ def main():
     certifications = load_article_certifications()
     validate_article_certifications(all_tasks, certifications)
     article_stats = derive_article_states(all_tasks, certifications)
+    meta_audits = load_article_meta_orbits(evidence_url=site['metaOrbitUrl'])
+    validate_article_meta_orbits(all_tasks, meta_audits)
+    article_hubs, meta_stats = derive_article_hub_inventory(
+        all_tasks, meta_audits, site['taskLibraryUrl'])
     # Owner attribution comes ONLY from the Asset Tracker. A tracker that parsed
     # rows but still yields zero owners is a malformed or partial feed - the same
     # failure class as above, caught one stage later.
@@ -500,11 +1030,15 @@ def main():
                       'needsWork': sum(t['status'] == 'needs-work' for t in all_tasks),
                       'gaps': sum(t['status'] == 'gap' for t in all_tasks),
                       **article_stats,
+                      **meta_stats,
                       'owners': len({t['owner'] for t in all_tasks if t.get('owner')}),
                       'categories': len(cats_meta)},
             'bundleUrl': 'TaskLibrary-Skills-all.zip', 'metaArticleUrl': site['metaArticleUrl'],
+            'taskLibraryUrl': site['taskLibraryUrl'],
+            'metaOrbitUrl': site['metaOrbitUrl'],
             'updated': datetime.now(timezone.utc).strftime('%B %-d, %Y'),  # real build stamp (was a static label from site-meta.json)
             'factory': factory.factory_meta(),
+            'articleHubs': article_hubs,
             'categories': [dict(c, tasks=by_cat[c['name']]) for c in cats_meta]}
     # Drop dangling before/after pointers that are not in this build.
     known = {t['slug'] for t in all_tasks}
@@ -519,6 +1053,9 @@ def main():
 
     os.makedirs(os.path.dirname(args.out), exist_ok=True)
     json.dump(data, open(args.out, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+    write_meta_orbit_index(
+        data, meta_audits,
+        os.path.join(os.path.dirname(args.out), 'meta-orbits.json'))
     write_library_index(data, os.path.join(os.path.dirname(args.out), 'library-index.html'))
     nall = write_zip(data, os.path.dirname(args.out), 'TaskLibrary-Skills-all.zip',
                      'The complete Task Library. Rebuilt on every library build.', False)

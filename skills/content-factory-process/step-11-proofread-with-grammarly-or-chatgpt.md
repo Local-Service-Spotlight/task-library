@@ -3,7 +3,7 @@ name: step-11-proofread-with-grammarly-or-chatgpt
 description: Run the finished draft through Grammarly or ChatGPT for grammar, tone, and readability — without letting the tools sand off the speaker's voice (Blog Posting Guidelines Step 11).
 category: Content Factory — Process
 stage: Process
-definitive_article: /blog-posting-guidelines
+definitive_article: https://localservicespotlight.com/article-guidelines/
 status: complete
 ---
 
@@ -36,7 +36,7 @@ status: complete
 - [ ] Linked back to the definitive article and relevant siblings
 
 ## Example(s)
-- The proofread gate is Step 11 of every run documented at /blog-posting-guidelines, immediately before WordPress posting.
+- The proofread gate is Step 11 of every run documented at https://localservicespotlight.com/article-guidelines/, immediately before WordPress posting.
 - Example needed as a standalone meta-article — run the Meta-Article Prompt after first documented run.
 
 ## Run on a persistent agent (Fable 5)
@@ -45,6 +45,6 @@ A persistent agent (Claude Fable 5, or a comparable OpenAI/Google model that loo
 See `boil-the-ocean.md` for the full operating principles.
 
 ## Definitive article & links
-- Hub: /blog-posting-guidelines (Step 11 of the 18-step SOP)
+- Hub: https://localservicespotlight.com/article-guidelines/ (Step 11 of the 18-step SOP)
 - Related: /website-qa-audit (the standards this pass pre-empts)
 - Sibling skills, in run order: `step-10-embed-source-video` → this → `step-12-post-article-on-wordpress` (Post stage)

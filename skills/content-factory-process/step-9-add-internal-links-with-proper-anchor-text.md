@@ -3,7 +3,7 @@ name: step-9-add-internal-links-with-proper-anchor-text
 description: Insert internal links using the entity-linking decision tree — people to personal sites, companies to company sites, concepts to definitive articles — with descriptive 3–6 word anchors (Blog Posting Guidelines Step 9).
 category: Content Factory — Process
 stage: Process
-definitive_article: /blog-posting-guidelines
+definitive_article: https://localservicespotlight.com/article-guidelines/
 status: complete
 ---
 
@@ -36,7 +36,7 @@ status: complete
 - [ ] Linked back to the definitive article and relevant siblings
 
 ## Example(s)
-- The decision tree and anchor standards are documented at /blog-posting-guidelines and in depth at /internal-linking (whose hub ships its own skill file — the model this library copies).
+- The decision tree and anchor standards are documented at https://localservicespotlight.com/article-guidelines/ and in depth at /internal-linking (whose hub ships its own skill file — the model this library copies).
 - Example needed as a standalone meta-article — run the Meta-Article Prompt after first documented run.
 
 ## Run on a persistent agent (Fable 5)
@@ -45,6 +45,6 @@ A persistent agent (Claude Fable 5, or a comparable OpenAI/Google model that loo
 See `boil-the-ocean.md` for the full operating principles.
 
 ## Definitive article & links
-- Hub: /blog-posting-guidelines (Step 9 of the 18-step SOP)
+- Hub: https://localservicespotlight.com/article-guidelines/ (Step 9 of the 18-step SOP)
 - Related: /internal-linking, /entity-linking, /seo-tree, /link-building
 - Sibling skills, in run order: `step-8-add-photos-and-featured-image` → this → `step-10-embed-source-video`

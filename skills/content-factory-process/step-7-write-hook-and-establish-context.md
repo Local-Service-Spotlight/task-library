@@ -3,7 +3,7 @@ name: step-7-write-hook-and-establish-context
 description: Write an opening hook that earns the reader's next paragraph — establishing context, relevance, and the focus keyword in the first lines (Blog Posting Guidelines Step 7).
 category: Content Factory — Process
 stage: Process
-definitive_article: /blog-posting-guidelines
+definitive_article: https://localservicespotlight.com/article-guidelines/
 status: complete
 ---
 
@@ -36,7 +36,7 @@ status: complete
 - [ ] Linked back to the definitive article and relevant siblings
 
 ## Example(s)
-- Hook standards are part of every run documented at /blog-posting-guidelines.
+- Hook standards are part of every run documented at https://localservicespotlight.com/article-guidelines/.
 - Example needed as a standalone meta-article — run the Meta-Article Prompt after first documented run.
 
 ## Run on a persistent agent (Fable 5)
@@ -45,6 +45,6 @@ A persistent agent (Claude Fable 5, or a comparable OpenAI/Google model that loo
 See `boil-the-ocean.md` for the full operating principles.
 
 ## Definitive article & links
-- Hub: /blog-posting-guidelines (Step 7 of the 18-step SOP)
+- Hub: https://localservicespotlight.com/article-guidelines/ (Step 7 of the 18-step SOP)
 - Related: /one-minute-video-guide (the source moment usually IS the hook)
 - Sibling skills, in run order: `step-6-write-title-and-headings` → this → `step-8-add-photos-and-featured-image`

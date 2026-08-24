@@ -3,7 +3,7 @@ name: step-12-post-article-on-wordpress
 description: Publish a finished Content Factory article on the client's WordPress site in the Gutenberg block editor with clean formatting, ready for categorization, SEO, and distribution.
 category: Content Factory — Post
 stage: Post
-definitive_article: /blog-posting-guidelines
+definitive_article: https://localservicespotlight.com/article-guidelines/
 status: complete
 ---
 
@@ -46,6 +46,6 @@ Each run it logs a meta-article example into Example(s), so the next article sta
 See `boil-the-ocean.md` for the full operating principles.
 
 ## Definitive article & links
-- Hub: /blog-posting-guidelines
+- Hub: https://localservicespotlight.com/article-guidelines/
 - Related: /content-factory · /entity-linking · /one-minute-video-guide
 - Run order (Post stage): **step-12-post-article-on-wordpress** → step-13-categorize-post-and-add-tags → step-14a-configure-rankmath-seo-plugin → step-14b-run-linkwhisper-for-internal-links

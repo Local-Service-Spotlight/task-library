@@ -3,7 +3,7 @@ name: use-descript-underlord-to-remove-filler-words
 description: Use Descript's Underlord to strip filler words (uh, um, like, you know) from the video and transcript while preserving natural human cadence.
 category: Content Factory — Process
 stage: Process
-definitive_article: /blog-posting-guidelines
+definitive_article: https://localservicespotlight.com/article-guidelines/
 status: complete
 ---
 
@@ -34,7 +34,7 @@ status: complete
 - [ ] Linked back to the definitive article and relevant siblings
 
 ## Example(s)
-- Filler removal is part of the Descript workflow documented at /blog-posting-guidelines.
+- Filler removal is part of the Descript workflow documented at https://localservicespotlight.com/article-guidelines/.
 - Example needed as a standalone meta-article — run the Meta-Article Prompt after first documented run.
 
 ## Run on a persistent agent (Fable 5)
@@ -43,6 +43,6 @@ A persistent agent (Claude Fable 5, or comparable OpenAI/Google models that loop
 See `boil-the-ocean.md` for the full operating principles.
 
 ## Definitive article & links
-- Hub: /blog-posting-guidelines (Descript processing within the 18-step SOP)
+- Hub: https://localservicespotlight.com/article-guidelines/ (Descript processing within the 18-step SOP)
 - Related: /one-minute-video-guide (the authenticity standard that limits over-editing)
 - Sibling skills, in run order: `step-2-transcribe-video-using-descript` → this → `step-3-watch-video-and-identify-gct` / `extract-15-60-second-clips-from-long-form-video`

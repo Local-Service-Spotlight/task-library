@@ -3,7 +3,7 @@ name: email-and-dm-client-about-published-article
 description: Notify the client by email and direct message that their article is live (Step 15), with the links and a specific ask that turns them into the first amplifier.
 category: Content Factory — Post
 stage: Post
-definitive_article: /blog-posting-guidelines
+definitive_article: https://localservicespotlight.com/article-guidelines/
 status: complete
 ---
 
@@ -42,6 +42,6 @@ Each run logs a meta-article example so the library compounds.
 See `boil-the-ocean.md` for the full operating principles.
 
 ## Definitive article & links
-- Hub: /blog-posting-guidelines
+- Hub: https://localservicespotlight.com/article-guidelines/
 - Related: /thank-you-machine (positive replies trigger gratitude videos) · /content-factory
 - Run order (Post stage): distribution posts live → **email-and-dm-client-about-published-article** (Step 15) → share-in-44k-facebook-group (Step 16)

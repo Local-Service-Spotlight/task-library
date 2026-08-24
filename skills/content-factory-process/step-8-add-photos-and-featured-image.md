@@ -3,7 +3,7 @@ name: step-8-add-photos-and-featured-image
 description: Add real photos — never stock — and set a unique featured image so the article carries visual proof instead of decoration (Blog Posting Guidelines Step 8).
 category: Content Factory — Process
 stage: Process
-definitive_article: /blog-posting-guidelines
+definitive_article: https://localservicespotlight.com/article-guidelines/
 status: complete
 ---
 
@@ -36,7 +36,7 @@ status: complete
 - [ ] Linked back to the definitive article and relevant siblings
 
 ## Example(s)
-- The no-stock and unique-featured-image rules are enforced on every run at /blog-posting-guidelines and re-verified by /website-qa-audit checks.
+- The no-stock and unique-featured-image rules are enforced on every run at https://localservicespotlight.com/article-guidelines/ and re-verified by /website-qa-audit checks.
 - Example needed as a standalone meta-article — run the Meta-Article Prompt after first documented run.
 
 ## Run on a persistent agent (Fable 5)
@@ -45,6 +45,6 @@ A persistent agent (Claude Fable 5, or comparable OpenAI/Google models that loop
 See `boil-the-ocean.md` for the full operating principles.
 
 ## Definitive article & links
-- Hub: /blog-posting-guidelines (Step 8 of the 18-step SOP)
+- Hub: https://localservicespotlight.com/article-guidelines/ (Step 8 of the 18-step SOP)
 - Related: /website-qa-audit (image and alt-text audits), /content-factory
 - Sibling skills, in run order: `step-7-write-hook-and-establish-context` → this → `step-9-add-internal-links-with-proper-anchor-text`

@@ -3,7 +3,7 @@ name: follow-entity-linking-decision-tree
 description: "Route every entity mentioned in a piece of content to its correct destination — people to personal sites, companies to company sites, concepts to definitive articles — so links build the entity graph instead of noise."
 category: SEO & Content Architecture
 stage: —
-definitive_article: /blog-posting-guidelines
+definitive_article: https://localservicespotlight.com/article-guidelines/
 status: complete
 ---
 
@@ -29,7 +29,7 @@ status: complete
 - [ ] Zero generic anchors; first-mention linking only
 - [ ] No concept linked to a non-hub page; missing hubs flagged as gaps
 - [ ] Complies with Blog Posting Guidelines (this is Requirement 6 territory)
-- [ ] Linked back to the definitive article (/blog-posting-guidelines) and relevant siblings
+- [ ] Linked back to the definitive article (https://localservicespotlight.com/article-guidelines/) and relevant siblings
 
 ## Example(s)
 - The /entity-linking definitive article is the standalone hub for the decision tree itself; /website-qa-audit carries the matching site-wide check ("Verify entity linking follows decision tree").
@@ -42,5 +42,5 @@ Each fully-routed article logs a meta-article example via /meta-article-prompt-t
 See `boil-the-ocean.md` for the full operating principles.
 
 ## Definitive article & links
-- Hub: /blog-posting-guidelines
+- Hub: https://localservicespotlight.com/article-guidelines/
 - Related: /entity-linking · step-4-create-links-with-proper-anchor-text-and-placement (/internal-linking) · use-proper-anchor-text-3-6-words-descriptive · build-external-backlinks-from-authoritative-sources (/link-building)

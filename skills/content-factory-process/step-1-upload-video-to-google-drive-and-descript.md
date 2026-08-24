@@ -3,7 +3,7 @@ name: step-1-upload-video-to-google-drive-and-descript
 description: Move a raw video into the designated Google Drive folder and a Descript project so the Content Factory Process stage can begin (Blog Posting Guidelines Step 1).
 category: Content Factory — Process
 stage: Process
-definitive_article: /blog-posting-guidelines
+definitive_article: https://localservicespotlight.com/article-guidelines/
 status: complete
 ---
 
@@ -36,7 +36,7 @@ status: complete
 - [ ] Linked back to the definitive article and relevant siblings
 
 ## Example(s)
-- Every published Content Factory article began with this step; worked runs are linked from the hub at /blog-posting-guidelines.
+- Every published Content Factory article began with this step; worked runs are linked from the hub at https://localservicespotlight.com/article-guidelines/.
 - Example needed as a standalone meta-article — run the Meta-Article Prompt after first documented run.
 
 ## Run on a persistent agent (Fable 5)
@@ -45,6 +45,6 @@ This step is fully agent-runnable: a persistent agent (Claude Fable 5, or a comp
 See `boil-the-ocean.md` for the full operating principles.
 
 ## Definitive article & links
-- Hub: /blog-posting-guidelines (Step 1 of the 18-step SOP)
+- Hub: https://localservicespotlight.com/article-guidelines/ (Step 1 of the 18-step SOP)
 - Related: /content-factory, /one-minute-video-guide
 - Sibling skills, in run order: `set-up-content-library` → this → `step-2-transcribe-video-using-descript`
