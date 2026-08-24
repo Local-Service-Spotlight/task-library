@@ -118,6 +118,17 @@ class FactoryScoring(unittest.TestCase):
             "run-overnight-local-writer", "Content Factory — Process", "Process")
         self.assertEqual(rec["phase"], "Process")
 
+    def test_positive_mentions_has_an_authority_handoff_not_a_content_handoff(self):
+        rec = factory.annotate(
+            "positive-mentions-harvester", "Personal Branding", "—")
+
+        self.assertEqual(rec["phase"], "—")
+        self.assertEqual(rec["before"], "business-brand-strategist")
+        self.assertEqual(rec["after"], "reputation-gap-analyzer")
+        self.assertEqual(rec["lane"], "judgment")
+        self.assertIn("canonical mentions inventory", rec["handoff"])
+        self.assertNotIn("transcript.md", rec["handoff"])
+
 
 if __name__ == "__main__":
     unittest.main()

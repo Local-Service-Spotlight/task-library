@@ -479,6 +479,14 @@ function gotoSlug(slug){
     setTimeout(function(){ row.style.outline = ''; }, 1600);
   }
 }
+function taskFromUrl(){
+  try { return new URLSearchParams(window.location.search).get('task') || ''; }
+  catch(e) { return ''; }
+}
+window.addEventListener('message', function(e){
+  if (e.origin !== 'https://blitzmetrics.com') return;
+  if (e.data && typeof e.data.btlTask === 'string') gotoSlug(e.data.btlTask);
+});
 function resetFilters(){
   state.q = ''; qInput.value = ''; clearBtn.hidden = true;
   state.status = 'all'; state.phase = 'all'; syncChips(); syncPhases(); applyFilters();
@@ -672,4 +680,6 @@ document.addEventListener('keydown', function(e){
    Go
    ============================================================ */
 applyFilters();
+const linkedTask = taskFromUrl();
+if (linkedTask) gotoSlug(linkedTask);
 })();

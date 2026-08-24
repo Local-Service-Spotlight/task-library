@@ -131,12 +131,12 @@ class BuiltArticleInventory(unittest.TestCase):
         cls.tasks = [t for c in cls.data['categories'] for t in c['tasks']]
 
     def test_current_inventory_has_exact_derived_counts(self):
-        self.assertEqual(self.data['stats']['articleHubs'], 23)
+        self.assertEqual(self.data['stats']['articleHubs'], 24)
         self.assertEqual(self.data['stats']['definitiveArticles'], 12)
 
         tasks = copy.deepcopy(self.tasks)
         derived = task_build.derive_article_states(tasks)
-        self.assertEqual(derived, {'articleHubs': 23, 'definitiveArticles': 12})
+        self.assertEqual(derived, {'articleHubs': 24, 'definitiveArticles': 12})
 
     def test_every_mapped_task_has_a_derived_state(self):
         for task in self.tasks:

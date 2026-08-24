@@ -44,6 +44,21 @@ The sheet is also the **onboarding path**: a row whose Slug isn't in the registr
 
 The dashboard itself is `noindex` (it's a utility, not the ranking surface — and it must never compete with the hub articles from a github.io origin). The build also emits **`dashboard/library-index.html`**: a plain semantic HTML fragment — category H2s, every task with its description, and links to mapped article hubs. Its summary derives the number of mapped hubs and the subset that is actually definitive from task status plus reviewed URL-level semantic holds. Paste it into the WordPress task-library page *below* the iframe (or template it in) so blitzmetrics.com serves an indexable representation of the library with internal links to the hubs. Refresh the paste when categories/articles change materially; the fragment is deterministic, so a diff shows when.
 
+## Stable links to one task
+
+The dashboard accepts a permanent `?task=<slug>` query and opens the matching task in
+context. For example:
+
+```text
+https://local-service-spotlight.github.io/task-library/?task=positive-mentions-harvester
+```
+
+The WordPress dashboard page embeds this app across origins, so an outer-page query is
+not inherited by the iframe. A same-domain wrapper may forward its validated `task`
+value after the iframe loads with
+`postMessage({btlTask: slug}, 'https://local-service-spotlight.github.io')`; the app
+accepts that message only from `https://blitzmetrics.com`.
+
 ## Local build
 
 ```
