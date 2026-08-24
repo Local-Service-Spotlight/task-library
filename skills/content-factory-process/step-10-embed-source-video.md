@@ -3,7 +3,7 @@ name: step-10-embed-source-video
 description: Embed the original source video in the article so readers get the first-hand footage alongside the written version (Blog Posting Guidelines Step 10).
 category: Content Factory — Process
 stage: Process
-definitive_article: /blog-posting-guidelines
+definitive_article: https://localservicespotlight.com/article-guidelines/
 status: complete
 ---
 
@@ -35,7 +35,7 @@ status: complete
 - [ ] Linked back to the definitive article and relevant siblings
 
 ## Example(s)
-- Every Content Factory article embeds its source video per /blog-posting-guidelines; the homepage video-embed requirement in /website-qa-audit applies the same principle site-wide.
+- Every Content Factory article embeds its source video per https://localservicespotlight.com/article-guidelines/; the homepage video-embed requirement in /website-qa-audit applies the same principle site-wide.
 - Example needed as a standalone meta-article — run the Meta-Article Prompt after first documented run.
 
 ## Run on a persistent agent (Fable 5)
@@ -44,6 +44,6 @@ A persistent agent (Claude Fable 5, or comparable long-horizon OpenAI/Google mod
 See `boil-the-ocean.md` for the full operating principles.
 
 ## Definitive article & links
-- Hub: /blog-posting-guidelines (Step 10 of the 18-step SOP)
+- Hub: https://localservicespotlight.com/article-guidelines/ (Step 10 of the 18-step SOP)
 - Related: /website-qa-audit (video-embed checks), /content-factory
 - Sibling skills, in run order: `step-9-add-internal-links-with-proper-anchor-text` → this → `step-11-proofread-with-grammarly-or-chatgpt`

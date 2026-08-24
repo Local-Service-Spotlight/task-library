@@ -3,7 +3,7 @@ name: step-14a-configure-rankmath-seo-plugin
 description: Set the focus keyword, SEO title, and meta description in RankMath and tune the post until it scores 70+ so the article competes in search from day one.
 category: Content Factory — Post
 stage: Post
-definitive_article: /blog-posting-guidelines
+definitive_article: https://localservicespotlight.com/article-guidelines/
 status: complete
 ---
 
@@ -42,6 +42,6 @@ It remembers which fixes moved the score on prior posts (thin sections vs missin
 See `boil-the-ocean.md` for the full operating principles.
 
 ## Definitive article & links
-- Hub: /blog-posting-guidelines
+- Hub: https://localservicespotlight.com/article-guidelines/
 - Related: /website-qa-audit · /seo-audit
 - Run order (Post stage): step-13-categorize-post-and-add-tags → **step-14a-configure-rankmath-seo-plugin** → step-14b-run-linkwhisper-for-internal-links

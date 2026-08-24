@@ -3,7 +3,7 @@ name: verify-all-items-on-blog-posting-checklist
 description: Walk the complete Blog Posting verification checklist item by item as a binary gate, so nothing publishes (or ships to Promote) with a known miss.
 category: Content Factory — Post
 stage: Post
-definitive_article: /blog-posting-guidelines
+definitive_article: https://localservicespotlight.com/article-guidelines/
 status: complete
 ---
 
@@ -13,7 +13,7 @@ status: complete
 
 ## Inputs
 - The staged or live post URL
-- The Blog Posting Guidelines checklist (hub: /blog-posting-guidelines)
+- The Blog Posting Guidelines checklist (hub: https://localservicespotlight.com/article-guidelines/)
 - Access to fix failures or route them back to the owning step
 
 ## Steps
@@ -41,6 +41,6 @@ It logs a meta-article example per run so the library compounds.
 See `boil-the-ocean.md` for the full operating principles.
 
 ## Definitive article & links
-- Hub: /blog-posting-guidelines
+- Hub: https://localservicespotlight.com/article-guidelines/
 - Related: /website-qa-audit · /entity-linking · /seo-tree
 - Run order (Post stage): runs before publish and again inside **step-17-final-formatting-and-qa-checks** as the closing gate

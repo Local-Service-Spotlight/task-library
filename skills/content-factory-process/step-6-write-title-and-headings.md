@@ -3,7 +3,7 @@ name: step-6-write-title-and-headings
 description: Write an SEO title under 60 characters, a meta description under 160, and descriptive H2/H3 subheadings built on the focus keyword (Blog Posting Guidelines Step 6).
 category: Content Factory — Process
 stage: Process
-definitive_article: /blog-posting-guidelines
+definitive_article: https://localservicespotlight.com/article-guidelines/
 status: complete
 ---
 
@@ -35,7 +35,7 @@ status: complete
 - [ ] Linked back to the definitive article and relevant siblings
 
 ## Example(s)
-- Title and heading specs are enforced on every run documented at /blog-posting-guidelines and audited later by the Website QA Audit title/meta checks.
+- Title and heading specs are enforced on every run documented at https://localservicespotlight.com/article-guidelines/ and audited later by the Website QA Audit title/meta checks.
 - Example needed as a standalone meta-article — run the Meta-Article Prompt after first documented run.
 
 ## Run on a persistent agent (Fable 5)
@@ -44,6 +44,6 @@ Character counts make this step machine-checkable: a persistent agent (Claude Fa
 See `boil-the-ocean.md` for the full operating principles.
 
 ## Definitive article & links
-- Hub: /blog-posting-guidelines (Step 6 of the 18-step SOP)
+- Hub: https://localservicespotlight.com/article-guidelines/ (Step 6 of the 18-step SOP)
 - Related: /website-qa-audit (the downstream title/meta audits), /seo-tree
 - Sibling skills, in run order: `step-5-write-article-from-transcript` → this → `step-7-write-hook-and-establish-context`

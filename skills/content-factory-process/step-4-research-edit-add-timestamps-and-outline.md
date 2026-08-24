@@ -3,7 +3,7 @@ name: step-4-research-edit-add-timestamps-and-outline
 description: Research the topic, clean the transcript, mark timestamps at topic shifts, and build the H2/H3 outline that the article will be written into (Blog Posting Guidelines Step 4).
 category: Content Factory — Process
 stage: Process
-definitive_article: /blog-posting-guidelines
+definitive_article: https://localservicespotlight.com/article-guidelines/
 status: complete
 ---
 
@@ -36,7 +36,7 @@ status: complete
 - [ ] Linked back to the definitive article and relevant siblings
 
 ## Example(s)
-- Step 4 of every article run documented at /blog-posting-guidelines; the timestamp work also powers `extract-15-60-second-clips-from-long-form-video`.
+- Step 4 of every article run documented at https://localservicespotlight.com/article-guidelines/; the timestamp work also powers `extract-15-60-second-clips-from-long-form-video`.
 - Example needed as a standalone meta-article — run the Meta-Article Prompt after first documented run.
 
 ## Run on a persistent agent (Fable 5)
@@ -45,6 +45,6 @@ A persistent agent (Claude Fable 5, or comparable OpenAI/Google models that loop
 See `boil-the-ocean.md` for the full operating principles.
 
 ## Definitive article & links
-- Hub: /blog-posting-guidelines (Step 4 of the 18-step SOP)
+- Hub: https://localservicespotlight.com/article-guidelines/ (Step 4 of the 18-step SOP)
 - Related: /seo-tree (placement), /internal-linking (link candidates)
 - Sibling skills, in run order: `step-3-watch-video-and-identify-gct` → this → `step-5-write-article-from-transcript`

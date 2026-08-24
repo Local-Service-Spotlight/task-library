@@ -3,7 +3,7 @@ name: step-13-categorize-post-and-add-tags
 description: Assign the WordPress post to its SEO Tree branch category and add attribute tags so readers, agents, and the REST API can pull it by topic, stage, and entity.
 category: Content Factory — Post
 stage: Post
-definitive_article: /blog-posting-guidelines
+definitive_article: https://localservicespotlight.com/article-guidelines/
 status: complete
 ---
 
@@ -42,6 +42,6 @@ Each run it logs a meta-article example so the library compounds.
 See `boil-the-ocean.md` for the full operating principles.
 
 ## Definitive article & links
-- Hub: /blog-posting-guidelines
+- Hub: https://localservicespotlight.com/article-guidelines/
 - Related: /seo-tree · /internal-linking
 - Run order (Post stage): step-12-post-article-on-wordpress → **step-13-categorize-post-and-add-tags** → step-14a-configure-rankmath-seo-plugin

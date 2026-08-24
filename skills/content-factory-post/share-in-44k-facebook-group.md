@@ -3,7 +3,7 @@ name: share-in-44k-facebook-group
 description: Post the new piece into the 44,000-member Facebook group as a lesson for the community (Step 16), generating the first wave of organic engagement signal.
 category: Content Factory — Post
 stage: Post
-definitive_article: /blog-posting-guidelines
+definitive_article: https://localservicespotlight.com/article-guidelines/
 status: complete
 ---
 
@@ -42,6 +42,6 @@ A meta-article example is logged per run so the library compounds.
 See `boil-the-ocean.md` for the full operating principles.
 
 ## Definitive article & links
-- Hub: /blog-posting-guidelines
+- Hub: https://localservicespotlight.com/article-guidelines/
 - Related: /social-amplification (Stage 5 boosts pull from this signal) · /topic-wheel (comments seed new topics)
 - Run order (Post stage): email-and-dm-client-about-published-article (Step 15) → **share-in-44k-facebook-group** (Step 16) → step-17-final-formatting-and-qa-checks

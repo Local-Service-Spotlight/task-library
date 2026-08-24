@@ -1,0 +1,2111 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-24T07:25:54+00:00",
+  "countDefinition": "One published post that documents a completed observable run whose main deliverable materially executes this hub, is explicitly classified by taxonomy or authored meta language, and links to the exact canonical hub in task-specific narrative or receipt. Shared maps, compliance tables, related-reading lists, indexes, instructions, archives, self-links and incidental cross-links do not count. Each post has one reviewed primary parent.",
+  "strengthBands": [
+    {
+      "score": 0,
+      "label": "No verified examples",
+      "count": "0"
+    },
+    {
+      "score": 1,
+      "label": "Emerging",
+      "count": "1-2"
+    },
+    {
+      "score": 2,
+      "label": "Supported",
+      "count": "3-5"
+    },
+    {
+      "score": 3,
+      "label": "Strong",
+      "count": "6-10"
+    },
+    {
+      "score": 4,
+      "label": "Deep",
+      "count": "11+"
+    }
+  ],
+  "taskLibraryStats": {
+    "total": 249,
+    "complete": 125,
+    "needsWork": 101,
+    "gaps": 23,
+    "articleHubs": 24,
+    "definitiveArticles": 13,
+    "verifiedMetaArticles": 0,
+    "metaOrbitHubsWithEvidence": 0,
+    "metaOrbitHubsUnknown": 24,
+    "owners": 0,
+    "categories": 13,
+    "importance": {
+      "1": 0,
+      "2": 32,
+      "3": 102,
+      "4": 40,
+      "5": 75
+    },
+    "fives": 75
+  },
+  "metaCorpus": {
+    "taxonomyUnionCount": 98,
+    "eligibleCount": 97,
+    "excludedCount": 1,
+    "taxonomy": {
+      "categoryIds": [
+        3693
+      ],
+      "tagIds": [
+        2523,
+        2732,
+        3162
+      ]
+    },
+    "excluded": [
+      {
+        "postId": 105645,
+        "url": "https://blitzmetrics.com/meta-article-prompt/",
+        "title": "How Meta Articles Let My AI Agents Document and Improve Themselves",
+        "publishedAt": "2026-04-19T15:40:49",
+        "modifiedAt": "2026-08-22T21:30:49",
+        "taxonomyEvidence": [
+          "tag:3162"
+        ],
+        "links": [
+          "https://blitzmetrics.com/access-content-factory-photos-videos/",
+          "https://blitzmetrics.com/ai-agent-audit-terry-shintani-million-follower-doctor/",
+          "https://blitzmetrics.com/ai-agent-built-justen-martin-personal-brand-website/",
+          "https://blitzmetrics.com/audit-subscription-matt-bodnar/",
+          "https://blitzmetrics.com/blog-posting-guidelines/",
+          "https://blitzmetrics.com/boost-your-social-media-engagement/",
+          "https://blitzmetrics.com/claude-ai-agent-built-roofinglaunch-co/",
+          "https://blitzmetrics.com/claude-max-plan-200-dollars-biggest-discount-ai-token-math/",
+          "https://blitzmetrics.com/content-factory/",
+          "https://blitzmetrics.com/creating-winning-documents-that-drive-conversions/",
+          "https://blitzmetrics.com/cross-post-content/",
+          "https://blitzmetrics.com/derive-dont-maintain/",
+          "https://blitzmetrics.com/dollar-a-day/",
+          "https://blitzmetrics.com/everything-you-need-to-know-to-have-a-successful-podcast-the-definitive-guide/",
+          "https://blitzmetrics.com/how-agents-qa-a-partner-local-audit/",
+          "https://blitzmetrics.com/how-claude-agent-redesigned-veteran-homepage-trevor-blaszczyk/",
+          "https://blitzmetrics.com/how-i-closed-the-skill-pack-gap-my-agent-flagged/",
+          "https://blitzmetrics.com/how-i-use-ai-agents-to-do-my-marketing/",
+          "https://blitzmetrics.com/how-to-cross-post-for-gmb-and-get-people-to-know-more-about-your-local-business/",
+          "https://blitzmetrics.com/how-to-crosspost-an-article-on-fb/",
+          "https://blitzmetrics.com/how-to-do-better-internal-link-building-for-free-with-your-favorite-ai-agent/",
+          "https://blitzmetrics.com/how-we-automated-quick-audit-follow-ups-with-zapier/",
+          "https://blitzmetrics.com/how-we-built-gavan-thorpes-personal-brand-site-using-ai-agents-in-850-steps/",
+          "https://blitzmetrics.com/how-we-built-george-leiths-podcast-inventory/",
+          "https://blitzmetrics.com/how-we-built-ibrahim-awads-personal-brand-site/",
+          "https://blitzmetrics.com/how-we-built-jason-amatos-personal-brand-site/",
+          "https://blitzmetrics.com/how-we-harmonized-skills-and-routines/",
+          "https://blitzmetrics.com/how-we-qad-marko-sipilas-personal-brand-site/",
+          "https://blitzmetrics.com/how-we-tuned-up-david-carrolls-personal-brand-site/",
+          "https://blitzmetrics.com/inventory-youtube-channel/",
+          "https://blitzmetrics.com/jack-hughes-personal-brand-site-youtube-blog-posts/",
+          "https://blitzmetrics.com/julian-david-entity-home-build/",
+          "https://blitzmetrics.com/kimi-k3-vs-claude-content-factory-math/",
+          "https://blitzmetrics.com/law-firm-spotlight-internal-link-harvest/",
+          "https://blitzmetrics.com/pbsb/",
+          "https://blitzmetrics.com/post-article-wordpress/",
+          "https://blitzmetrics.com/quick-audit/",
+          "https://blitzmetrics.com/setting-entity-home-schema-settings-using-rankmath/",
+          "https://blitzmetrics.com/skill-pack-pages-that-linked-to-nothing/",
+          "https://blitzmetrics.com/skill-publishing-standard/",
+          "https://blitzmetrics.com/skills-and-routines/",
+          "https://blitzmetrics.com/somba-members-area-consistency-fix/",
+          "https://blitzmetrics.com/tanner-laycock-personal-brand-site/",
+          "https://blitzmetrics.com/task-library-dashboard/",
+          "https://blitzmetrics.com/team-board-clients-never-see/",
+          "https://blitzmetrics.com/the-path-ahead-for-chatgpt-my-6-month-forecast-and-immediate-game-plan/",
+          "https://blitzmetrics.com/the-system/",
+          "https://blitzmetrics.com/transcribe-pillar-content-descript/",
+          "https://blitzmetrics.com/update-content-library/",
+          "https://blitzmetrics.com/why-i-switched-from-chatgpt-to-claude-for-chrome-and-what-72-hours-without-sleep-taught-me-about-ai-agents/",
+          "https://blitzmetrics.com/you-got-featured/",
+          "https://coatinglaunch.com/",
+          "https://dennisyu.com/dealcon/matt-bodnar/",
+          "https://ethanvandehey.com/",
+          "https://gavanthorpe.com/",
+          "https://github.com/Local-Service-Spotlight/agent-runtime/",
+          "https://hvacquote.ai/",
+          "https://jackhughes.me/",
+          "https://jasongamato.com/",
+          "https://lawfirmspotlight.com/",
+          "https://localservicespotlight.com/asset-tracker/",
+          "https://localservicespotlight.com/i-love-to-eeat/",
+          "https://markosipila.com/",
+          "https://sandcdigital.com/",
+          "https://sigrun.com/",
+          "https://tannerlaycock.com/",
+          "https://theawadlawfirm.com/",
+          "https://thedavidcarroll.com/",
+          "https://trevorblaszczyk.com/"
+        ],
+        "counted": false,
+        "reason": "semantically certified definitive hub; visible definitive marker"
+      }
+    ],
+    "primaryAuditScope": {
+      "site": "blitzmetrics.com",
+      "source": "Authenticated WordPress REST context=edit",
+      "publishedPosts": 1849,
+      "publishedPages": 1005,
+      "taskLibraryReadyHubs": 13,
+      "candidateInboundPairs": 858
+    },
+    "primaryAuditEligibilityRule": [
+      "Source is a published WordPress post; pages never count.",
+      "Source is not the hub itself, another ready definitive hub, or any post carrying data-definitive-article=true.",
+      "The authored post_content contains a normalized direct link to the hub; theme navigation and widgets are outside the REST source and cannot count.",
+      "The source documents a completed, observable run whose main deliverable materially executes that hub's task.",
+      "A shared Content Factory map, compliance row, related-reading list, directory link, instructional mention, or output leaf is supporting evidence only.",
+      "Each meta article has exactly one reviewed primaryParentHub and counts once there; supporting links to sibling hubs do not inflate strength.",
+      "Ambiguous task fit remains held and contributes neither zero-evidence certainty nor a count."
+    ],
+    "primaryAuditTaxonomyEvidence": {
+      "explicitMetaCategoryId": 3693,
+      "explicitMetaTagIds": [
+        2523,
+        2732,
+        3162
+      ],
+      "publishedExplicitMetaUnion": 98,
+      "knownFalsePositive": {
+        "postId": 105645,
+        "url": "https://blitzmetrics.com/meta-article-prompt/",
+        "reason": "Tag 3162 overlaps a ready definitive hub carrying data-definitive-article=true; excluded from meta inventory."
+      },
+      "category3273PublishedPosts": 41,
+      "category3273ReadyIntersection": 12,
+      "category3273UnapprovedOrSupport": 29,
+      "readyHubsMissingCategory3273": [
+        "https://localservicespotlight.com/article-guidelines/"
+      ],
+      "countedMetaMissingExplicitTaxonomy": 55
+    },
+    "primaryAuditSource": "orbit-audit-primary.json",
+    "uniqueCountedPrimaryMetaArticles": 84
+  },
+  "hubs": [
+    {
+      "url": "https://localservicespotlight.com/article-guidelines/",
+      "label": "Article Guidelines",
+      "kind": "Definitive guidelines",
+      "domain": "localservicespotlight.com",
+      "endpoint": "pages",
+      "postId": 75654,
+      "wordpressSha256": "99661b8462dbfd776b6d0d02e0b6b04fef6dc45d5bfd056bc8ab9b7b7d6e0279",
+      "taskLibrarySourceUrl": "https://localservicespotlight.com/article-guidelines/",
+      "taskCount": 21,
+      "taskImportanceTotal": 89,
+      "tasks": [
+        {
+          "slug": "step-1-upload-video-to-google-drive-and-descript",
+          "title": "step-1-upload-video-to-google-drive-and-descript",
+          "importance": 5
+        },
+        {
+          "slug": "step-11-proofread-with-grammarly-or-chatgpt",
+          "title": "step-11-proofread-with-grammarly-or-chatgpt",
+          "importance": 5
+        },
+        {
+          "slug": "step-12-post-article-on-wordpress",
+          "title": "step-12-post-article-on-wordpress",
+          "importance": 5
+        },
+        {
+          "slug": "step-2-transcribe-video-using-descript",
+          "title": "step-2-transcribe-video-using-descript",
+          "importance": 5
+        },
+        {
+          "slug": "step-5-write-article-from-transcript",
+          "title": "step-5-write-article-from-transcript",
+          "importance": 5
+        },
+        {
+          "slug": "use-descript-underlord-to-remove-filler-words",
+          "title": "use-descript-underlord-to-remove-filler-words",
+          "importance": 5
+        },
+        {
+          "slug": "email-and-dm-client-about-published-article",
+          "title": "email-and-dm-client-about-published-article",
+          "importance": 4
+        },
+        {
+          "slug": "share-in-44k-facebook-group",
+          "title": "share-in-44k-facebook-group",
+          "importance": 4
+        },
+        {
+          "slug": "step-10-embed-source-video",
+          "title": "step-10-embed-source-video",
+          "importance": 4
+        },
+        {
+          "slug": "step-13-categorize-post-and-add-tags",
+          "title": "step-13-categorize-post-and-add-tags",
+          "importance": 4
+        },
+        {
+          "slug": "step-14a-configure-rankmath-seo-plugin",
+          "title": "step-14a-configure-rankmath-seo-plugin",
+          "importance": 4
+        },
+        {
+          "slug": "step-14b-run-linkwhisper-for-internal-links",
+          "title": "step-14b-run-linkwhisper-for-internal-links",
+          "importance": 4
+        },
+        {
+          "slug": "step-17-final-formatting-and-qa-checks",
+          "title": "step-17-final-formatting-and-qa-checks",
+          "importance": 4
+        },
+        {
+          "slug": "step-3-watch-video-and-identify-gct",
+          "title": "step-3-watch-video-and-identify-gct",
+          "importance": 4
+        },
+        {
+          "slug": "step-4-research-edit-add-timestamps-and-outline",
+          "title": "step-4-research-edit-add-timestamps-and-outline",
+          "importance": 4
+        },
+        {
+          "slug": "step-6-write-title-and-headings",
+          "title": "step-6-write-title-and-headings",
+          "importance": 4
+        },
+        {
+          "slug": "step-7-write-hook-and-establish-context",
+          "title": "step-7-write-hook-and-establish-context",
+          "importance": 4
+        },
+        {
+          "slug": "step-8-add-photos-and-featured-image",
+          "title": "step-8-add-photos-and-featured-image",
+          "importance": 4
+        },
+        {
+          "slug": "step-9-add-internal-links-with-proper-anchor-text",
+          "title": "step-9-add-internal-links-with-proper-anchor-text",
+          "importance": 4
+        },
+        {
+          "slug": "verify-all-items-on-blog-posting-checklist",
+          "title": "verify-all-items-on-blog-posting-checklist",
+          "importance": 4
+        },
+        {
+          "slug": "follow-entity-linking-decision-tree",
+          "title": "follow-entity-linking-decision-tree",
+          "importance": 3
+        }
+      ],
+      "metaCountStatus": "verified",
+      "metaArticleCount": 3,
+      "strength": {
+        "score": 2,
+        "label": "Supported",
+        "band": "3-5"
+      },
+      "metaArticles": [
+        {
+          "postId": 104302,
+          "url": "https://blitzmetrics.com/how-we-built-the-anthony-hilb-article-using-ai/",
+          "sourceUrl": "https://blitzmetrics.com/how-we-built-the-anthony-hilb-article-using-ai/",
+          "hubUrl": "https://localservicespotlight.com/article-guidelines/",
+          "title": "How We Built the Anthony Hilb Article Using AI",
+          "publishedAt": "2026-04-02T04:04:13",
+          "modifiedAt": "2026-08-24T07:16:38",
+          "taxonomyEvidence": [
+            "tag:2523"
+          ],
+          "explicitMetaTaxonomy": true,
+          "explicitMetaLanguage": true,
+          "primaryParentHub": "https://localservicespotlight.com/article-guidelines/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        },
+        {
+          "postId": 103332,
+          "url": "https://blitzmetrics.com/how-we-created-an-article-honoring-nathaniel-stevens/",
+          "sourceUrl": "https://blitzmetrics.com/how-we-created-an-article-honoring-nathaniel-stevens/",
+          "hubUrl": "https://localservicespotlight.com/article-guidelines/",
+          "title": "How We Created an Article Honoring Nathaniel Stevens",
+          "publishedAt": "2026-03-23T07:32:39",
+          "modifiedAt": "2026-08-24T07:16:34",
+          "taxonomyEvidence": [
+            "tag:2523"
+          ],
+          "explicitMetaTaxonomy": true,
+          "explicitMetaLanguage": true,
+          "primaryParentHub": "https://localservicespotlight.com/article-guidelines/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        },
+        {
+          "postId": 102763,
+          "url": "https://blitzmetrics.com/how-we-wrote-the-please-and-thank-you-article-using-ai/",
+          "sourceUrl": "https://blitzmetrics.com/how-we-wrote-the-please-and-thank-you-article-using-ai/",
+          "hubUrl": "https://localservicespotlight.com/article-guidelines/",
+          "title": "How We Wrote the Please and Thank You Article Using AI",
+          "publishedAt": "2026-03-20T07:35:29",
+          "modifiedAt": "2026-08-24T07:16:23",
+          "taxonomyEvidence": [],
+          "explicitMetaTaxonomy": false,
+          "explicitMetaLanguage": true,
+          "primaryParentHub": "https://localservicespotlight.com/article-guidelines/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        }
+      ]
+    },
+    {
+      "url": "https://blitzmetrics.com/internal-linking/",
+      "label": "Internal Linking",
+      "kind": "Definitive SOP",
+      "domain": "blitzmetrics.com",
+      "endpoint": "posts",
+      "postId": 104583,
+      "wordpressSha256": "e6380d16e6fc8a968fb2b6d00f4fceb2f64dd9c5154d81849c1733a59e147962",
+      "taskLibrarySourceUrl": "https://blitzmetrics.com/internal-linking/",
+      "taskCount": 7,
+      "taskImportanceTotal": 24,
+      "tasks": [
+        {
+          "slug": "step-2-fix-categories-and-tags-in-wordpress",
+          "title": "step-2-fix-categories-and-tags-in-wordpress",
+          "importance": 5
+        },
+        {
+          "slug": "step-6-measure-and-iterate-with-maa",
+          "title": "step-6-measure-and-iterate-with-maa",
+          "importance": 4
+        },
+        {
+          "slug": "step-1-inventory-content-and-establish-gct-per-page",
+          "title": "step-1-inventory-content-and-establish-gct-per-page",
+          "importance": 3
+        },
+        {
+          "slug": "step-3-identify-money-pages-and-orphan-pages",
+          "title": "step-3-identify-money-pages-and-orphan-pages",
+          "importance": 3
+        },
+        {
+          "slug": "step-4-create-links-with-proper-anchor-text-and-placement",
+          "title": "step-4-create-links-with-proper-anchor-text-and-placement",
+          "importance": 3
+        },
+        {
+          "slug": "step-5-qa-links-against-google-guidelines",
+          "title": "step-5-qa-links-against-google-guidelines",
+          "importance": 3
+        },
+        {
+          "slug": "use-proper-anchor-text-3-6-words-descriptive",
+          "title": "use-proper-anchor-text-3-6-words-descriptive",
+          "importance": 3
+        }
+      ],
+      "metaCountStatus": "verified",
+      "metaArticleCount": 1,
+      "strength": {
+        "score": 1,
+        "label": "Emerging",
+        "band": "1-2"
+      },
+      "metaArticles": [
+        {
+          "postId": 104652,
+          "url": "https://blitzmetrics.com/how-an-ai-agent-audited-and-fixed-internal-linking-across-blitzmetrics/",
+          "sourceUrl": "https://blitzmetrics.com/how-an-ai-agent-audited-and-fixed-internal-linking-across-blitzmetrics/",
+          "hubUrl": "https://blitzmetrics.com/internal-linking/",
+          "title": "How an AI Agent Audited and Fixed Internal Linking Across BlitzMetrics.com",
+          "publishedAt": "2026-04-06T09:38:45",
+          "modifiedAt": "2026-08-24T07:16:44",
+          "taxonomyEvidence": [
+            "tag:2523"
+          ],
+          "explicitMetaTaxonomy": true,
+          "explicitMetaLanguage": true,
+          "primaryParentHub": "https://blitzmetrics.com/internal-linking/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        }
+      ]
+    },
+    {
+      "url": "https://blitzmetrics.com/topic-wheel/",
+      "label": "Topic Wheel",
+      "kind": "Definitive framework",
+      "domain": "blitzmetrics.com",
+      "endpoint": "posts",
+      "postId": 103351,
+      "wordpressSha256": "b3da115b25bbf2fb8f215056ae9bd593ce04cca67bd486de2cfc77b7232ed922",
+      "taskLibrarySourceUrl": "https://blitzmetrics.com/topic-wheel/",
+      "taskCount": 5,
+      "taskImportanceTotal": 17,
+      "tasks": [
+        {
+          "slug": "map-out-one-minute-video-topics-using-topic-wheel",
+          "title": "map-out-one-minute-video-topics-using-topic-wheel",
+          "importance": 5
+        },
+        {
+          "slug": "map-how-ring-methods",
+          "title": "map-how-ring-methods",
+          "importance": 3
+        },
+        {
+          "slug": "map-what-ring-specific-content",
+          "title": "map-what-ring-specific-content",
+          "importance": 3
+        },
+        {
+          "slug": "map-why-ring-core-purpose",
+          "title": "map-why-ring-core-purpose",
+          "importance": 3
+        },
+        {
+          "slug": "use-for-content-planning-and-video-topics",
+          "title": "use-for-content-planning-and-video-topics",
+          "importance": 3
+        }
+      ],
+      "metaCountStatus": "verified",
+      "metaArticleCount": 2,
+      "strength": {
+        "score": 1,
+        "label": "Emerging",
+        "band": "1-2"
+      },
+      "metaArticles": [
+        {
+          "postId": 112377,
+          "url": "https://blitzmetrics.com/how-we-put-greatest-hits-on-every-topic-wheel-and-money-tree/",
+          "sourceUrl": "https://blitzmetrics.com/how-we-put-greatest-hits-on-every-topic-wheel-and-money-tree/",
+          "hubUrl": "https://blitzmetrics.com/topic-wheel/",
+          "title": "How we put Greatest Hits on every topic wheel and money tree",
+          "publishedAt": "2026-08-18T19:18:19",
+          "modifiedAt": "2026-08-18T19:18:19",
+          "taxonomyEvidence": [],
+          "explicitMetaTaxonomy": false,
+          "explicitMetaLanguage": true,
+          "primaryParentHub": "https://blitzmetrics.com/topic-wheel/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        },
+        {
+          "postId": 112345,
+          "url": "https://blitzmetrics.com/topic-wheel-on-every-personal-brand-site/",
+          "sourceUrl": "https://blitzmetrics.com/topic-wheel-on-every-personal-brand-site/",
+          "hubUrl": "https://blitzmetrics.com/topic-wheel/",
+          "title": "How we put a topic wheel on every personal brand site",
+          "publishedAt": "2026-08-18T18:01:51",
+          "modifiedAt": "2026-08-18T18:01:51",
+          "taxonomyEvidence": [],
+          "explicitMetaTaxonomy": false,
+          "explicitMetaLanguage": true,
+          "primaryParentHub": "https://blitzmetrics.com/topic-wheel/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        }
+      ]
+    },
+    {
+      "url": "https://blitzmetrics.com/meta-article-prompt/",
+      "label": "Meta Article Prompt",
+      "kind": "Definitive SOP",
+      "domain": "blitzmetrics.com",
+      "endpoint": "posts",
+      "postId": 105645,
+      "wordpressSha256": "6c772ad22c1aa91bec45bab1041fe2f94c9f6aeed733132a7c1c84f31ae901cc",
+      "taskLibrarySourceUrl": "https://blitzmetrics.com/meta-article-prompt/",
+      "taskCount": 1,
+      "taskImportanceTotal": 5,
+      "tasks": [
+        {
+          "slug": "write-meta-article-documenting-agent-work",
+          "title": "write-meta-article-documenting-agent-work",
+          "importance": 5
+        }
+      ],
+      "metaCountStatus": "verified",
+      "metaArticleCount": 59,
+      "strength": {
+        "score": 4,
+        "label": "Deep",
+        "band": "11+"
+      },
+      "metaArticles": [
+        {
+          "postId": 112405,
+          "url": "https://blitzmetrics.com/the-local-quick-audit-is-not-a-swapped-headline/",
+          "sourceUrl": "https://blitzmetrics.com/the-local-quick-audit-is-not-a-swapped-headline/",
+          "hubUrl": "https://blitzmetrics.com/meta-article-prompt/",
+          "title": "The Local Quick Audit Is Not a Swapped Headline",
+          "publishedAt": "2026-08-19T18:41:49",
+          "modifiedAt": "2026-08-20T21:07:24",
+          "taxonomyEvidence": [
+            "category:3693"
+          ],
+          "explicitMetaTaxonomy": true,
+          "explicitMetaLanguage": true,
+          "primaryParentHub": "https://blitzmetrics.com/meta-article-prompt/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        },
+        {
+          "postId": 112150,
+          "url": "https://blitzmetrics.com/the-five-minute-brief-dennis-yu-dictated-before-the-ai-agent-did-anything/",
+          "sourceUrl": "https://blitzmetrics.com/the-five-minute-brief-dennis-yu-dictated-before-the-ai-agent-did-anything/",
+          "hubUrl": "https://blitzmetrics.com/meta-article-prompt/",
+          "title": "The Five-Minute Brief Dennis Yu Dictated Before the AI Agent Did Anything",
+          "publishedAt": "2026-08-19T17:30:58",
+          "modifiedAt": "2026-08-20T22:03:16",
+          "taxonomyEvidence": [],
+          "explicitMetaTaxonomy": false,
+          "explicitMetaLanguage": true,
+          "primaryParentHub": "https://blitzmetrics.com/meta-article-prompt/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        },
+        {
+          "postId": 112392,
+          "url": "https://blitzmetrics.com/how-agents-qa-a-partner-local-audit/",
+          "sourceUrl": "https://blitzmetrics.com/how-agents-qa-a-partner-local-audit/",
+          "hubUrl": "https://blitzmetrics.com/meta-article-prompt/",
+          "title": "How Agents QA a Partner Local Audit (and Write It to GitHub)",
+          "publishedAt": "2026-08-19T06:04:25",
+          "modifiedAt": "2026-08-20T21:03:55",
+          "taxonomyEvidence": [
+            "category:3693"
+          ],
+          "explicitMetaTaxonomy": true,
+          "explicitMetaLanguage": true,
+          "primaryParentHub": "https://blitzmetrics.com/meta-article-prompt/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        },
+        {
+          "postId": 112389,
+          "url": "https://blitzmetrics.com/how-we-stopped-handing-agents-a-paste/",
+          "sourceUrl": "https://blitzmetrics.com/how-we-stopped-handing-agents-a-paste/",
+          "hubUrl": "https://blitzmetrics.com/meta-article-prompt/",
+          "title": "How We Stopped Handing Agents a Paste",
+          "publishedAt": "2026-08-18T22:02:46",
+          "modifiedAt": "2026-08-18T22:02:46",
+          "taxonomyEvidence": [],
+          "explicitMetaTaxonomy": false,
+          "explicitMetaLanguage": true,
+          "primaryParentHub": "https://blitzmetrics.com/meta-article-prompt/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        },
+        {
+          "postId": 112350,
+          "url": "https://blitzmetrics.com/how-we-harmonized-skills-and-routines/",
+          "sourceUrl": "https://blitzmetrics.com/how-we-harmonized-skills-and-routines/",
+          "hubUrl": "https://blitzmetrics.com/meta-article-prompt/",
+          "title": "How We Harmonized Skills and Routines",
+          "publishedAt": "2026-08-18T18:25:41",
+          "modifiedAt": "2026-08-18T20:04:29",
+          "taxonomyEvidence": [],
+          "explicitMetaTaxonomy": false,
+          "explicitMetaLanguage": true,
+          "primaryParentHub": "https://blitzmetrics.com/meta-article-prompt/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        },
+        {
+          "postId": 112210,
+          "url": "https://blitzmetrics.com/personal-brand-fleet-money-pages/",
+          "sourceUrl": "https://blitzmetrics.com/personal-brand-fleet-money-pages/",
+          "hubUrl": "https://blitzmetrics.com/meta-article-prompt/",
+          "title": "How we put a money page on the right of every personal brand site",
+          "publishedAt": "2026-08-18T04:55:43",
+          "modifiedAt": "2026-08-18T18:02:29",
+          "taxonomyEvidence": [],
+          "explicitMetaTaxonomy": false,
+          "explicitMetaLanguage": true,
+          "primaryParentHub": "https://blitzmetrics.com/meta-article-prompt/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        },
+        {
+          "postId": 112196,
+          "url": "https://blitzmetrics.com/how-we-mapped-the-usage-buckets/",
+          "sourceUrl": "https://blitzmetrics.com/how-we-mapped-the-usage-buckets/",
+          "hubUrl": "https://blitzmetrics.com/meta-article-prompt/",
+          "title": "How We Mapped the Usage Buckets",
+          "publishedAt": "2026-08-18T04:38:57",
+          "modifiedAt": "2026-08-20T07:35:38",
+          "taxonomyEvidence": [],
+          "explicitMetaTaxonomy": false,
+          "explicitMetaLanguage": true,
+          "primaryParentHub": "https://blitzmetrics.com/meta-article-prompt/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        },
+        {
+          "postId": 112162,
+          "url": "https://blitzmetrics.com/how-we-rewrote-the-agency-audit-page/",
+          "sourceUrl": "https://blitzmetrics.com/how-we-rewrote-the-agency-audit-page/",
+          "hubUrl": "https://blitzmetrics.com/meta-article-prompt/",
+          "title": "A 14-Day QA Note Is a Spec \u2014 We Closed the Agency-Audit Page",
+          "publishedAt": "2026-08-18T03:38:39",
+          "modifiedAt": "2026-08-20T21:04:35",
+          "taxonomyEvidence": [
+            "category:3693"
+          ],
+          "explicitMetaTaxonomy": true,
+          "explicitMetaLanguage": true,
+          "primaryParentHub": "https://blitzmetrics.com/meta-article-prompt/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        },
+        {
+          "postId": 112156,
+          "url": "https://blitzmetrics.com/how-we-stood-up-a-special-project-for-superseed/",
+          "sourceUrl": "https://blitzmetrics.com/how-we-stood-up-a-special-project-for-superseed/",
+          "hubUrl": "https://blitzmetrics.com/meta-article-prompt/",
+          "title": "How We Stood Up a Special Project for SuperSeed",
+          "publishedAt": "2026-08-18T02:25:47",
+          "modifiedAt": "2026-08-18T03:30:59",
+          "taxonomyEvidence": [],
+          "explicitMetaTaxonomy": false,
+          "explicitMetaLanguage": true,
+          "primaryParentHub": "https://blitzmetrics.com/meta-article-prompt/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        },
+        {
+          "postId": 111073,
+          "url": "https://blitzmetrics.com/derive-dont-maintain/",
+          "sourceUrl": "https://blitzmetrics.com/derive-dont-maintain/",
+          "hubUrl": "https://blitzmetrics.com/meta-article-prompt/",
+          "title": "The Pack Was Perfect. Every Sentence About It Was Wrong.",
+          "publishedAt": "2026-08-03T12:18:51",
+          "modifiedAt": "2026-08-03T12:18:51",
+          "taxonomyEvidence": [],
+          "explicitMetaTaxonomy": false,
+          "explicitMetaLanguage": false,
+          "primaryParentHub": "https://blitzmetrics.com/meta-article-prompt/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        },
+        {
+          "postId": 110554,
+          "url": "https://blitzmetrics.com/video-schema-root-cause/",
+          "sourceUrl": "https://blitzmetrics.com/video-schema-root-cause/",
+          "hubUrl": "https://blitzmetrics.com/meta-article-prompt/",
+          "title": "A Search Console Email Said 3 Problems. We Found 720 \u2014 And Three Hacked Client Sites.",
+          "publishedAt": "2026-07-27T18:31:26",
+          "modifiedAt": "2026-07-27T18:48:25",
+          "taxonomyEvidence": [],
+          "explicitMetaTaxonomy": false,
+          "explicitMetaLanguage": true,
+          "primaryParentHub": "https://blitzmetrics.com/meta-article-prompt/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        },
+        {
+          "postId": 110409,
+          "url": "https://blitzmetrics.com/open-ai-knowledge-base-team-contributions/",
+          "sourceUrl": "https://blitzmetrics.com/open-ai-knowledge-base-team-contributions/",
+          "hubUrl": "https://blitzmetrics.com/meta-article-prompt/",
+          "title": "How We Opened Our AI Knowledge Base to Team Contributions",
+          "publishedAt": "2026-07-26T20:37:34",
+          "modifiedAt": "2026-07-27T03:22:10",
+          "taxonomyEvidence": [],
+          "explicitMetaTaxonomy": false,
+          "explicitMetaLanguage": true,
+          "primaryParentHub": "https://blitzmetrics.com/meta-article-prompt/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        },
+        {
+          "postId": 110391,
+          "url": "https://blitzmetrics.com/spp-to-keap-migration/",
+          "sourceUrl": "https://blitzmetrics.com/spp-to-keap-migration/",
+          "hubUrl": "https://blitzmetrics.com/meta-article-prompt/",
+          "title": "How our AI Agent Migrated SPP Automations to Keap",
+          "publishedAt": "2026-07-23T16:25:04",
+          "modifiedAt": "2026-07-29T22:12:41",
+          "taxonomyEvidence": [
+            "category:3693",
+            "tag:2523"
+          ],
+          "explicitMetaTaxonomy": true,
+          "explicitMetaLanguage": true,
+          "primaryParentHub": "https://blitzmetrics.com/meta-article-prompt/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        },
+        {
+          "postId": 110243,
+          "url": "https://blitzmetrics.com/give-your-ai-team-one-shared-brain/",
+          "sourceUrl": "https://blitzmetrics.com/give-your-ai-team-one-shared-brain/",
+          "hubUrl": "https://blitzmetrics.com/meta-article-prompt/",
+          "title": "How I Built Shared AI Memory Without Lock-In",
+          "publishedAt": "2026-07-22T07:55:18",
+          "modifiedAt": "2026-08-24T07:17:23",
+          "taxonomyEvidence": [],
+          "explicitMetaTaxonomy": false,
+          "explicitMetaLanguage": true,
+          "primaryParentHub": "https://blitzmetrics.com/meta-article-prompt/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        },
+        {
+          "postId": 110118,
+          "url": "https://blitzmetrics.com/consent-scanner-blank-dashboard-token-links/",
+          "sourceUrl": "https://blitzmetrics.com/consent-scanner-blank-dashboard-token-links/",
+          "hubUrl": "https://blitzmetrics.com/meta-article-prompt/",
+          "title": "The Cookie Banner Ate the Dashboard: a Debugging Story With Two Reusable Patterns",
+          "publishedAt": "2026-07-20T09:37:07",
+          "modifiedAt": "2026-07-20T09:37:07",
+          "taxonomyEvidence": [],
+          "explicitMetaTaxonomy": false,
+          "explicitMetaLanguage": true,
+          "primaryParentHub": "https://blitzmetrics.com/meta-article-prompt/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        },
+        {
+          "postId": 110090,
+          "url": "https://blitzmetrics.com/kimi-k3-vs-claude-content-factory-math/",
+          "sourceUrl": "https://blitzmetrics.com/kimi-k3-vs-claude-content-factory-math/",
+          "hubUrl": "https://blitzmetrics.com/meta-article-prompt/",
+          "title": "Kimi K3 Just Dropped. We Ran the Price Sheets Before the Hot Takes.",
+          "publishedAt": "2026-07-20T05:51:56",
+          "modifiedAt": "2026-07-20T09:37:27",
+          "taxonomyEvidence": [],
+          "explicitMetaTaxonomy": false,
+          "explicitMetaLanguage": true,
+          "primaryParentHub": "https://blitzmetrics.com/meta-article-prompt/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        },
+        {
+          "postId": 109821,
+          "url": "https://blitzmetrics.com/first-group-website-request-processed/",
+          "sourceUrl": "https://blitzmetrics.com/first-group-website-request-processed/",
+          "hubUrl": "https://blitzmetrics.com/meta-article-prompt/",
+          "title": "One Form Row to a Working Intake System: Processing Sigrun's First Website Request",
+          "publishedAt": "2026-07-17T02:23:37",
+          "modifiedAt": "2026-07-17T02:23:37",
+          "taxonomyEvidence": [],
+          "explicitMetaTaxonomy": false,
+          "explicitMetaLanguage": true,
+          "primaryParentHub": "https://blitzmetrics.com/meta-article-prompt/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        },
+        {
+          "postId": 109815,
+          "url": "https://blitzmetrics.com/audit-subscription-matt-bodnar/",
+          "sourceUrl": "https://blitzmetrics.com/audit-subscription-matt-bodnar/",
+          "hubUrl": "https://blitzmetrics.com/meta-article-prompt/",
+          "title": "The audit that sold itself: how a one-time DealCon report became our first monthly audit subscription",
+          "publishedAt": "2026-07-17T01:38:32",
+          "modifiedAt": "2026-08-20T21:01:24",
+          "taxonomyEvidence": [],
+          "explicitMetaTaxonomy": false,
+          "explicitMetaLanguage": true,
+          "primaryParentHub": "https://blitzmetrics.com/meta-article-prompt/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        },
+        {
+          "postId": 109793,
+          "url": "https://blitzmetrics.com/how-claude-agent-built-ensitefulmarketing-com/",
+          "sourceUrl": "https://blitzmetrics.com/how-claude-agent-built-ensitefulmarketing-com/",
+          "hubUrl": "https://blitzmetrics.com/meta-article-prompt/",
+          "title": "How a Claude Agent Built EnsitefulMarketing.com End to End",
+          "publishedAt": "2026-07-16T22:41:11",
+          "modifiedAt": "2026-07-19T20:44:00",
+          "taxonomyEvidence": [],
+          "explicitMetaTaxonomy": false,
+          "explicitMetaLanguage": false,
+          "primaryParentHub": "https://blitzmetrics.com/meta-article-prompt/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        },
+        {
+          "postId": 109735,
+          "url": "https://blitzmetrics.com/how-a-claude-agent-migrated-junks-above-off-godaddy/",
+          "sourceUrl": "https://blitzmetrics.com/how-a-claude-agent-migrated-junks-above-off-godaddy/",
+          "hubUrl": "https://blitzmetrics.com/meta-article-prompt/",
+          "title": "How a Claude Agent Migrated Junk's Above off GoDaddy",
+          "publishedAt": "2026-07-15T08:33:02",
+          "modifiedAt": "2026-07-19T20:44:03",
+          "taxonomyEvidence": [],
+          "explicitMetaTaxonomy": false,
+          "explicitMetaLanguage": true,
+          "primaryParentHub": "https://blitzmetrics.com/meta-article-prompt/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        },
+        {
+          "postId": 109584,
+          "url": "https://blitzmetrics.com/system-front-door/",
+          "sourceUrl": "https://blitzmetrics.com/system-front-door/",
+          "hubUrl": "https://blitzmetrics.com/meta-article-prompt/",
+          "title": "How We Gave the System a Front Door: One Map, One Registry, Twelve Ways In",
+          "publishedAt": "2026-07-10T20:13:19",
+          "modifiedAt": "2026-08-03T12:20:12",
+          "taxonomyEvidence": [],
+          "explicitMetaTaxonomy": false,
+          "explicitMetaLanguage": true,
+          "primaryParentHub": "https://blitzmetrics.com/meta-article-prompt/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        },
+        {
+          "postId": 109566,
+          "url": "https://blitzmetrics.com/how-i-built-bing-webmaster-import/",
+          "sourceUrl": "https://blitzmetrics.com/how-i-built-bing-webmaster-import/",
+          "hubUrl": "https://blitzmetrics.com/meta-article-prompt/",
+          "title": "How a Claude Agent Imported Every Client Site into Bing",
+          "publishedAt": "2026-07-10T08:16:41",
+          "modifiedAt": "2026-07-10T08:16:42",
+          "taxonomyEvidence": [
+            "category:3693",
+            "tag:2523"
+          ],
+          "explicitMetaTaxonomy": true,
+          "explicitMetaLanguage": true,
+          "primaryParentHub": "https://blitzmetrics.com/meta-article-prompt/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        },
+        {
+          "postId": 109554,
+          "url": "https://blitzmetrics.com/knowledge-graph-explorer-every-spotlight-site/",
+          "sourceUrl": "https://blitzmetrics.com/knowledge-graph-explorer-every-spotlight-site/",
+          "hubUrl": "https://blitzmetrics.com/meta-article-prompt/",
+          "title": "How a Hard-to-See Search Box Uncovered a Bug Freezing Our Knowledge Graph Explorer",
+          "publishedAt": "2026-07-09T22:54:47",
+          "modifiedAt": "2026-07-09T22:54:47",
+          "taxonomyEvidence": [],
+          "explicitMetaTaxonomy": false,
+          "explicitMetaLanguage": false,
+          "primaryParentHub": "https://blitzmetrics.com/meta-article-prompt/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        },
+        {
+          "postId": 109548,
+          "url": "https://blitzmetrics.com/how-we-published-the-client-tracker/",
+          "sourceUrl": "https://blitzmetrics.com/how-we-published-the-client-tracker/",
+          "hubUrl": "https://blitzmetrics.com/meta-article-prompt/",
+          "title": "How We Turned Our Internal Client Tracker Into a Public Playbook",
+          "publishedAt": "2026-07-09T11:27:57",
+          "modifiedAt": "2026-07-09T11:27:57",
+          "taxonomyEvidence": [
+            "category:3693"
+          ],
+          "explicitMetaTaxonomy": true,
+          "explicitMetaLanguage": false,
+          "primaryParentHub": "https://blitzmetrics.com/meta-article-prompt/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        },
+        {
+          "postId": 109525,
+          "url": "https://blitzmetrics.com/how-we-finished-the-knowledge-panel-book/",
+          "sourceUrl": "https://blitzmetrics.com/how-we-finished-the-knowledge-panel-book/",
+          "hubUrl": "https://blitzmetrics.com/meta-article-prompt/",
+          "title": "606 Days Stuck, One Session to Ship: How We Finished the Knowledge Panel Book",
+          "publishedAt": "2026-07-09T01:00:38",
+          "modifiedAt": "2026-07-09T10:52:30",
+          "taxonomyEvidence": [
+            "category:3693"
+          ],
+          "explicitMetaTaxonomy": true,
+          "explicitMetaLanguage": true,
+          "primaryParentHub": "https://blitzmetrics.com/meta-article-prompt/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        },
+        {
+          "postId": 109321,
+          "url": "https://blitzmetrics.com/file-that-wouldnt-attach-boomerang-gmail-dom-fix/",
+          "sourceUrl": "https://blitzmetrics.com/file-that-wouldnt-attach-boomerang-gmail-dom-fix/",
+          "hubUrl": "https://blitzmetrics.com/meta-article-prompt/",
+          "title": "The File That Wouldn't Attach: How Boomerang Blocks AI Agents in Gmail (and the DOM Fix)",
+          "publishedAt": "2026-07-05T08:49:25",
+          "modifiedAt": "2026-07-05T08:51:25",
+          "taxonomyEvidence": [
+            "category:3693"
+          ],
+          "explicitMetaTaxonomy": true,
+          "explicitMetaLanguage": false,
+          "primaryParentHub": "https://blitzmetrics.com/meta-article-prompt/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        },
+        {
+          "postId": 108890,
+          "url": "https://blitzmetrics.com/how-we-built-avery-young-authority-package/",
+          "sourceUrl": "https://blitzmetrics.com/how-we-built-avery-young-authority-package/",
+          "hubUrl": "https://blitzmetrics.com/meta-article-prompt/",
+          "title": "How We Built Avery Young's Authority Package Live on Zoom",
+          "publishedAt": "2026-07-03T04:45:00",
+          "modifiedAt": "2026-07-03T04:45:00",
+          "taxonomyEvidence": [],
+          "explicitMetaTaxonomy": false,
+          "explicitMetaLanguage": true,
+          "primaryParentHub": "https://blitzmetrics.com/meta-article-prompt/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        },
+        {
+          "postId": 108734,
+          "url": "https://blitzmetrics.com/how-we-propagated-dollar-a-day-across-the-fleet/",
+          "sourceUrl": "https://blitzmetrics.com/how-we-propagated-dollar-a-day-across-the-fleet/",
+          "hubUrl": "https://blitzmetrics.com/meta-article-prompt/",
+          "title": "How We Propagated Dollar a Day Across 8 Vertical Sites",
+          "publishedAt": "2026-07-02T02:20:26",
+          "modifiedAt": "2026-08-24T07:17:12",
+          "taxonomyEvidence": [],
+          "explicitMetaTaxonomy": false,
+          "explicitMetaLanguage": true,
+          "primaryParentHub": "https://blitzmetrics.com/meta-article-prompt/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        },
+        {
+          "postId": 108678,
+          "url": "https://blitzmetrics.com/how-we-launched-athlete-spotlight/",
+          "sourceUrl": "https://blitzmetrics.com/how-we-launched-athlete-spotlight/",
+          "hubUrl": "https://blitzmetrics.com/meta-article-prompt/",
+          "title": "How We Launched Athlete Spotlight as a Repeatable Spotlight Vertical",
+          "publishedAt": "2026-07-01T07:01:40",
+          "modifiedAt": "2026-08-24T07:17:10",
+          "taxonomyEvidence": [
+            "tag:3162"
+          ],
+          "explicitMetaTaxonomy": true,
+          "explicitMetaLanguage": true,
+          "primaryParentHub": "https://blitzmetrics.com/meta-article-prompt/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        },
+        {
+          "postId": 108247,
+          "url": "https://blitzmetrics.com/how-a-claude-agent-fixed-blitzmetrics-404s/",
+          "sourceUrl": "https://blitzmetrics.com/how-a-claude-agent-fixed-blitzmetrics-404s/",
+          "hubUrl": "https://blitzmetrics.com/meta-article-prompt/",
+          "title": "How a Claude Agent Fixed 149 BlitzMetrics 404s in One Session",
+          "publishedAt": "2026-06-17T17:43:40",
+          "modifiedAt": "2026-06-17T17:57:59",
+          "taxonomyEvidence": [],
+          "explicitMetaTaxonomy": false,
+          "explicitMetaLanguage": true,
+          "primaryParentHub": "https://blitzmetrics.com/meta-article-prompt/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        },
+        {
+          "postId": 108256,
+          "url": "https://blitzmetrics.com/how-a-claude-agent-audited-blitzmetrics-gsc-cleared-404-monitor/",
+          "sourceUrl": "https://blitzmetrics.com/how-a-claude-agent-audited-blitzmetrics-gsc-cleared-404-monitor/",
+          "hubUrl": "https://blitzmetrics.com/meta-article-prompt/",
+          "title": "How a Claude Agent Audited the BlitzMetrics GSC and Cleared the 404 Monitor",
+          "publishedAt": "2026-06-17T15:00:00",
+          "modifiedAt": "2026-08-20T21:03:52",
+          "taxonomyEvidence": [
+            "tag:2523"
+          ],
+          "explicitMetaTaxonomy": true,
+          "explicitMetaLanguage": true,
+          "primaryParentHub": "https://blitzmetrics.com/meta-article-prompt/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        },
+        {
+          "postId": 108254,
+          "url": "https://blitzmetrics.com/how-a-claude-agent-collapsed-13-redirect-chains-on-blitzmetrics/",
+          "sourceUrl": "https://blitzmetrics.com/how-a-claude-agent-collapsed-13-redirect-chains-on-blitzmetrics/",
+          "hubUrl": "https://blitzmetrics.com/meta-article-prompt/",
+          "title": "How a Claude Agent Collapsed 13 Redirect Chains on BlitzMetrics",
+          "publishedAt": "2026-06-17T10:00:00",
+          "modifiedAt": "2026-06-18T03:21:17",
+          "taxonomyEvidence": [
+            "tag:2523"
+          ],
+          "explicitMetaTaxonomy": true,
+          "explicitMetaLanguage": true,
+          "primaryParentHub": "https://blitzmetrics.com/meta-article-prompt/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        },
+        {
+          "postId": 108229,
+          "url": "https://blitzmetrics.com/how-we-automated-quick-audit-follow-ups-with-zapier/",
+          "sourceUrl": "https://blitzmetrics.com/how-we-automated-quick-audit-follow-ups-with-zapier/",
+          "hubUrl": "https://blitzmetrics.com/meta-article-prompt/",
+          "title": "How We Automated Quick Audit Follow-Ups with Zapier",
+          "publishedAt": "2026-06-16T08:50:23",
+          "modifiedAt": "2026-08-20T21:04:25",
+          "taxonomyEvidence": [
+            "tag:2523"
+          ],
+          "explicitMetaTaxonomy": true,
+          "explicitMetaLanguage": true,
+          "primaryParentHub": "https://blitzmetrics.com/meta-article-prompt/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        },
+        {
+          "postId": 108028,
+          "url": "https://blitzmetrics.com/jim-klauck-radio-pitchman-brand-audit/",
+          "sourceUrl": "https://blitzmetrics.com/jim-klauck-radio-pitchman-brand-audit/",
+          "hubUrl": "https://blitzmetrics.com/meta-article-prompt/",
+          "title": "How an AI Agent Audited Jim Klauck's Radio Empire",
+          "publishedAt": "2026-06-12T08:03:13",
+          "modifiedAt": "2026-08-20T21:04:53",
+          "taxonomyEvidence": [],
+          "explicitMetaTaxonomy": false,
+          "explicitMetaLanguage": true,
+          "primaryParentHub": "https://blitzmetrics.com/meta-article-prompt/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        },
+        {
+          "postId": 108046,
+          "url": "https://blitzmetrics.com/julian-david-entity-home-build/",
+          "sourceUrl": "https://blitzmetrics.com/julian-david-entity-home-build/",
+          "hubUrl": "https://blitzmetrics.com/meta-article-prompt/",
+          "title": "How an AI Agent Built an Olympic Speed Climber\u2019s Entity Home in One Day",
+          "publishedAt": "2026-06-12T06:12:07",
+          "modifiedAt": "2026-06-12T17:27:08",
+          "taxonomyEvidence": [],
+          "explicitMetaTaxonomy": false,
+          "explicitMetaLanguage": false,
+          "primaryParentHub": "https://blitzmetrics.com/meta-article-prompt/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        },
+        {
+          "postId": 107968,
+          "url": "https://blitzmetrics.com/ai-agent-audit-hunter-terpenny-humm-accounting/",
+          "sourceUrl": "https://blitzmetrics.com/ai-agent-audit-hunter-terpenny-humm-accounting/",
+          "hubUrl": "https://blitzmetrics.com/meta-article-prompt/",
+          "title": "An AI Agent Audited a 15-Person Accounting Firm in One Sitting: Every Step, Token, and Dollar",
+          "publishedAt": "2026-06-12T04:08:15",
+          "modifiedAt": "2026-08-20T21:00:38",
+          "taxonomyEvidence": [],
+          "explicitMetaTaxonomy": false,
+          "explicitMetaLanguage": true,
+          "primaryParentHub": "https://blitzmetrics.com/meta-article-prompt/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        },
+        {
+          "postId": 107964,
+          "url": "https://blitzmetrics.com/ai-agent-audit-naz-electric-flagstaff-electrician/",
+          "sourceUrl": "https://blitzmetrics.com/ai-agent-audit-naz-electric-flagstaff-electrician/",
+          "hubUrl": "https://blitzmetrics.com/meta-article-prompt/",
+          "title": "How an AI Agent Audited a 15-Truck Electrician\u2019s \u201cSEO\u201d in One Afternoon \u2014 and What It Found",
+          "publishedAt": "2026-06-12T03:39:47",
+          "modifiedAt": "2026-08-20T21:00:41",
+          "taxonomyEvidence": [],
+          "explicitMetaTaxonomy": false,
+          "explicitMetaLanguage": true,
+          "primaryParentHub": "https://blitzmetrics.com/meta-article-prompt/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        },
+        {
+          "postId": 107962,
+          "url": "https://blitzmetrics.com/ai-agent-audit-terry-shintani-million-follower-doctor/",
+          "sourceUrl": "https://blitzmetrics.com/ai-agent-audit-terry-shintani-million-follower-doctor/",
+          "hubUrl": "https://blitzmetrics.com/meta-article-prompt/",
+          "title": "An AI Agent Audited a Million-Follower Doctor in One Afternoon \u2014 Every Step, Connector, and Token",
+          "publishedAt": "2026-06-12T01:29:00",
+          "modifiedAt": "2026-08-20T21:00:46",
+          "taxonomyEvidence": [],
+          "explicitMetaTaxonomy": false,
+          "explicitMetaLanguage": true,
+          "primaryParentHub": "https://blitzmetrics.com/meta-article-prompt/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        },
+        {
+          "postId": 107937,
+          "url": "https://blitzmetrics.com/how-we-connected-basecamp-to-blitzbase-knowledge-base/",
+          "sourceUrl": "https://blitzmetrics.com/how-we-connected-basecamp-to-blitzbase-knowledge-base/",
+          "hubUrl": "https://blitzmetrics.com/meta-article-prompt/",
+          "title": "How We Connected Basecamp to BlitzBase, Our AI Knowledge Base",
+          "publishedAt": "2026-06-11T20:14:17",
+          "modifiedAt": "2026-07-30T06:14:31",
+          "taxonomyEvidence": [],
+          "explicitMetaTaxonomy": false,
+          "explicitMetaLanguage": true,
+          "primaryParentHub": "https://blitzmetrics.com/meta-article-prompt/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        },
+        {
+          "postId": 108044,
+          "url": "https://blitzmetrics.com/ai-agent-audit-ben-forstie-durafoam/",
+          "sourceUrl": "https://blitzmetrics.com/ai-agent-audit-ben-forstie-durafoam/",
+          "hubUrl": "https://blitzmetrics.com/meta-article-prompt/",
+          "title": "Five Duplicate Knowledge Graph IDs and an Invisible Family Business: The Ben Forstie Audit",
+          "publishedAt": "2026-06-11T15:30:00",
+          "modifiedAt": "2026-08-20T21:00:29",
+          "taxonomyEvidence": [],
+          "explicitMetaTaxonomy": false,
+          "explicitMetaLanguage": true,
+          "primaryParentHub": "https://blitzmetrics.com/meta-article-prompt/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        },
+        {
+          "postId": 108043,
+          "url": "https://blitzmetrics.com/ai-agent-audit-ryan-white-social-revelation/",
+          "sourceUrl": "https://blitzmetrics.com/ai-agent-audit-ryan-white-social-revelation/",
+          "hubUrl": "https://blitzmetrics.com/meta-article-prompt/",
+          "title": "3 Million Followers, Zero Search Keywords: Inside the AI Audit of Ryan White\u2019s Digital Footprint",
+          "publishedAt": "2026-06-10T22:30:00",
+          "modifiedAt": "2026-08-20T21:00:43",
+          "taxonomyEvidence": [],
+          "explicitMetaTaxonomy": false,
+          "explicitMetaLanguage": true,
+          "primaryParentHub": "https://blitzmetrics.com/meta-article-prompt/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        },
+        {
+          "postId": 107906,
+          "url": "https://blitzmetrics.com/how-we-turned-239-tasks-into-an-ai-runnable-skill-library/",
+          "sourceUrl": "https://blitzmetrics.com/how-we-turned-239-tasks-into-an-ai-runnable-skill-library/",
+          "hubUrl": "https://blitzmetrics.com/meta-article-prompt/",
+          "title": "How We Turned 239 Tasks Into an AI-Runnable Skill Library",
+          "publishedAt": "2026-06-10T07:18:09",
+          "modifiedAt": "2026-08-22T21:17:10",
+          "taxonomyEvidence": [],
+          "explicitMetaTaxonomy": false,
+          "explicitMetaLanguage": true,
+          "primaryParentHub": "https://blitzmetrics.com/meta-article-prompt/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        },
+        {
+          "postId": 108042,
+          "url": "https://blitzmetrics.com/ai-agent-audit-garrett-mcclure-born-and-bred/",
+          "sourceUrl": "https://blitzmetrics.com/ai-agent-audit-garrett-mcclure-born-and-bred/",
+          "hubUrl": "https://blitzmetrics.com/meta-article-prompt/",
+          "title": "An AI Agent Audited a $3.5M Agency Roll-Up President \u2014 and Found Lorem Ipsum on the Homepage",
+          "publishedAt": "2026-06-09T22:30:00",
+          "modifiedAt": "2026-08-20T21:00:34",
+          "taxonomyEvidence": [],
+          "explicitMetaTaxonomy": false,
+          "explicitMetaLanguage": true,
+          "primaryParentHub": "https://blitzmetrics.com/meta-article-prompt/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        },
+        {
+          "postId": 107830,
+          "url": "https://blitzmetrics.com/how-we-redesigned-cody-jones-funeral-home-exit-website/",
+          "sourceUrl": "https://blitzmetrics.com/how-we-redesigned-cody-jones-funeral-home-exit-website/",
+          "hubUrl": "https://blitzmetrics.com/meta-article-prompt/",
+          "title": "How We Redesigned Cody Jones' Funeral Home Exit Website With a Claude Agent",
+          "publishedAt": "2026-06-09T08:14:44",
+          "modifiedAt": "2026-06-12T08:30:08",
+          "taxonomyEvidence": [
+            "tag:2523"
+          ],
+          "explicitMetaTaxonomy": true,
+          "explicitMetaLanguage": true,
+          "primaryParentHub": "https://blitzmetrics.com/meta-article-prompt/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        },
+        {
+          "postId": 107775,
+          "url": "https://blitzmetrics.com/how-we-built-carol-hasegawa-personal-brand-site/",
+          "sourceUrl": "https://blitzmetrics.com/how-we-built-carol-hasegawa-personal-brand-site/",
+          "hubUrl": "https://blitzmetrics.com/meta-article-prompt/",
+          "title": "How We Built Carol Hasegawa's Brand Site With a Claude Agent",
+          "publishedAt": "2026-06-08T07:09:19",
+          "modifiedAt": "2026-06-12T08:30:04",
+          "taxonomyEvidence": [],
+          "explicitMetaTaxonomy": false,
+          "explicitMetaLanguage": true,
+          "primaryParentHub": "https://blitzmetrics.com/meta-article-prompt/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        },
+        {
+          "postId": 107351,
+          "url": "https://blitzmetrics.com/building-dennis-yu-speaker-reel-for-event-organizers/",
+          "sourceUrl": "https://blitzmetrics.com/building-dennis-yu-speaker-reel-for-event-organizers/",
+          "hubUrl": "https://blitzmetrics.com/meta-article-prompt/",
+          "title": "Building Dennis Yu' Speaker Reel for Event Organizers",
+          "publishedAt": "2026-06-06T16:56:57",
+          "modifiedAt": "2026-06-12T08:30:32",
+          "taxonomyEvidence": [],
+          "explicitMetaTaxonomy": false,
+          "explicitMetaLanguage": false,
+          "primaryParentHub": "https://blitzmetrics.com/meta-article-prompt/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        },
+        {
+          "postId": 107413,
+          "url": "https://blitzmetrics.com/how-we-built-cam-hazzard-personal-brand-ai/",
+          "sourceUrl": "https://blitzmetrics.com/how-we-built-cam-hazzard-personal-brand-ai/",
+          "hubUrl": "https://blitzmetrics.com/meta-article-prompt/",
+          "title": "How We Built Cam Hazzard's Personal Brand Site With a Claude Agent",
+          "publishedAt": "2026-06-03T06:58:30",
+          "modifiedAt": "2026-07-21T07:41:19",
+          "taxonomyEvidence": [],
+          "explicitMetaTaxonomy": false,
+          "explicitMetaLanguage": true,
+          "primaryParentHub": "https://blitzmetrics.com/meta-article-prompt/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        },
+        {
+          "postId": 106877,
+          "url": "https://blitzmetrics.com/how-we-restructured-dennisyu-com-to-practice-what-we-preach/",
+          "sourceUrl": "https://blitzmetrics.com/how-we-restructured-dennisyu-com-to-practice-what-we-preach/",
+          "hubUrl": "https://blitzmetrics.com/meta-article-prompt/",
+          "title": "How We Restructured dennisyu.com to Practice What We Preach",
+          "publishedAt": "2026-05-19T05:59:38",
+          "modifiedAt": "2026-06-04T23:38:08",
+          "taxonomyEvidence": [
+            "tag:2523"
+          ],
+          "explicitMetaTaxonomy": true,
+          "explicitMetaLanguage": true,
+          "primaryParentHub": "https://blitzmetrics.com/meta-article-prompt/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        },
+        {
+          "postId": 106767,
+          "url": "https://blitzmetrics.com/how-we-embedded-google-reviews-faqs-home-services-wordpress/",
+          "sourceUrl": "https://blitzmetrics.com/how-we-embedded-google-reviews-faqs-home-services-wordpress/",
+          "hubUrl": "https://blitzmetrics.com/meta-article-prompt/",
+          "title": "How We Embedded Google Reviews and FAQs on a Home Services WordPress Site",
+          "publishedAt": "2026-05-16T20:17:31",
+          "modifiedAt": "2026-08-24T07:17:05",
+          "taxonomyEvidence": [],
+          "explicitMetaTaxonomy": false,
+          "explicitMetaLanguage": true,
+          "primaryParentHub": "https://blitzmetrics.com/meta-article-prompt/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        },
+        {
+          "postId": 106766,
+          "url": "https://blitzmetrics.com/how-we-built-custom-wordpress-plugin-global-css-no-page-builder/",
+          "sourceUrl": "https://blitzmetrics.com/how-we-built-custom-wordpress-plugin-global-css-no-page-builder/",
+          "hubUrl": "https://blitzmetrics.com/meta-article-prompt/",
+          "title": "How We Built a Custom WordPress Plugin for Global CSS Without a Page Builder",
+          "publishedAt": "2026-05-16T20:17:30",
+          "modifiedAt": "2026-08-24T07:17:03",
+          "taxonomyEvidence": [],
+          "explicitMetaTaxonomy": false,
+          "explicitMetaLanguage": true,
+          "primaryParentHub": "https://blitzmetrics.com/meta-article-prompt/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        },
+        {
+          "postId": 106765,
+          "url": "https://blitzmetrics.com/how-we-rebuilt-financing-page-themed-enhancify-contractor/",
+          "sourceUrl": "https://blitzmetrics.com/how-we-rebuilt-financing-page-themed-enhancify-contractor/",
+          "hubUrl": "https://blitzmetrics.com/meta-article-prompt/",
+          "title": "How We Rebuilt a Financing Page and Themed Enhancify for a Contractor",
+          "publishedAt": "2026-05-16T20:17:29",
+          "modifiedAt": "2026-08-24T07:17:00",
+          "taxonomyEvidence": [],
+          "explicitMetaTaxonomy": false,
+          "explicitMetaLanguage": true,
+          "primaryParentHub": "https://blitzmetrics.com/meta-article-prompt/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        },
+        {
+          "postId": 106764,
+          "url": "https://blitzmetrics.com/how-we-set-up-rankmath-pro-local-service-business-wp-engine/",
+          "sourceUrl": "https://blitzmetrics.com/how-we-set-up-rankmath-pro-local-service-business-wp-engine/",
+          "hubUrl": "https://blitzmetrics.com/meta-article-prompt/",
+          "title": "How We Set Up RankMath Pro for a Local Service Business on WP Engine",
+          "publishedAt": "2026-05-16T20:17:28",
+          "modifiedAt": "2026-08-24T07:16:58",
+          "taxonomyEvidence": [],
+          "explicitMetaTaxonomy": false,
+          "explicitMetaLanguage": true,
+          "primaryParentHub": "https://blitzmetrics.com/meta-article-prompt/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        },
+        {
+          "postId": 106762,
+          "url": "https://blitzmetrics.com/how-we-built-geo-targeted-location-pages-florida-contractor/",
+          "sourceUrl": "https://blitzmetrics.com/how-we-built-geo-targeted-location-pages-florida-contractor/",
+          "hubUrl": "https://blitzmetrics.com/meta-article-prompt/",
+          "title": "How We Built Geo-Targeted Location Pages for a Florida Contractor",
+          "publishedAt": "2026-05-16T20:17:27",
+          "modifiedAt": "2026-08-24T07:16:56",
+          "taxonomyEvidence": [],
+          "explicitMetaTaxonomy": false,
+          "explicitMetaLanguage": true,
+          "primaryParentHub": "https://blitzmetrics.com/meta-article-prompt/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        },
+        {
+          "postId": 106760,
+          "url": "https://blitzmetrics.com/how-we-integrated-jobber-wordpress-home-services/",
+          "sourceUrl": "https://blitzmetrics.com/how-we-integrated-jobber-wordpress-home-services/",
+          "hubUrl": "https://blitzmetrics.com/meta-article-prompt/",
+          "title": "How We Integrated Jobber Into a WordPress Site for a Home Services Company",
+          "publishedAt": "2026-05-16T20:17:26",
+          "modifiedAt": "2026-05-25T07:07:26",
+          "taxonomyEvidence": [],
+          "explicitMetaTaxonomy": false,
+          "explicitMetaLanguage": false,
+          "primaryParentHub": "https://blitzmetrics.com/meta-article-prompt/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        },
+        {
+          "postId": 106758,
+          "url": "https://blitzmetrics.com/how-we-migrated-cheetah-screens-squarespace-to-wordpress/",
+          "sourceUrl": "https://blitzmetrics.com/how-we-migrated-cheetah-screens-squarespace-to-wordpress/",
+          "hubUrl": "https://blitzmetrics.com/meta-article-prompt/",
+          "title": "How We Migrated Cheetah Screens from Squarespace to WordPress",
+          "publishedAt": "2026-05-16T20:17:24",
+          "modifiedAt": "2026-06-02T08:57:36",
+          "taxonomyEvidence": [],
+          "explicitMetaTaxonomy": false,
+          "explicitMetaLanguage": true,
+          "primaryParentHub": "https://blitzmetrics.com/meta-article-prompt/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        },
+        {
+          "postId": 106531,
+          "url": "https://blitzmetrics.com/how-claude-built-keap-quiz-pass-fail-campaigns/",
+          "sourceUrl": "https://blitzmetrics.com/how-claude-built-keap-quiz-pass-fail-campaigns/",
+          "hubUrl": "https://blitzmetrics.com/meta-article-prompt/",
+          "title": "How a Claude Agent Built Three Keap Quiz Pass/Fail Automation Campaigns",
+          "publishedAt": "2026-05-10T07:07:04",
+          "modifiedAt": "2026-05-10T07:07:05",
+          "taxonomyEvidence": [
+            "tag:2523"
+          ],
+          "explicitMetaTaxonomy": true,
+          "explicitMetaLanguage": true,
+          "primaryParentHub": "https://blitzmetrics.com/meta-article-prompt/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        },
+        {
+          "postId": 106532,
+          "url": "https://blitzmetrics.com/content-factory-academy-free-course-migration/",
+          "sourceUrl": "https://blitzmetrics.com/content-factory-academy-free-course-migration/",
+          "hubUrl": "https://blitzmetrics.com/meta-article-prompt/",
+          "title": "How We Migrated Content Factory Academy Courses to Free Access",
+          "publishedAt": "2026-05-10T07:06:24",
+          "modifiedAt": "2026-05-10T07:06:25",
+          "taxonomyEvidence": [
+            "tag:2523"
+          ],
+          "explicitMetaTaxonomy": true,
+          "explicitMetaLanguage": true,
+          "primaryParentHub": "https://blitzmetrics.com/meta-article-prompt/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        },
+        {
+          "postId": 103553,
+          "url": "https://blitzmetrics.com/how-we-built-nathanielstevens-com-a-personal-brand-website-in-under-4-hours-using-ai/",
+          "sourceUrl": "https://blitzmetrics.com/how-we-built-nathanielstevens-com-a-personal-brand-website-in-under-4-hours-using-ai/",
+          "hubUrl": "https://blitzmetrics.com/meta-article-prompt/",
+          "title": "How We Built NathanielStevens.com: A Personal Brand Website in Under 4 Hours Using AI",
+          "publishedAt": "2026-04-15T11:03:25",
+          "modifiedAt": "2026-06-12T17:27:11",
+          "taxonomyEvidence": [],
+          "explicitMetaTaxonomy": false,
+          "explicitMetaLanguage": true,
+          "primaryParentHub": "https://blitzmetrics.com/meta-article-prompt/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        },
+        {
+          "postId": 104748,
+          "url": "https://blitzmetrics.com/josh-collier-brand-ecosystem-build/",
+          "sourceUrl": "https://blitzmetrics.com/josh-collier-brand-ecosystem-build/",
+          "hubUrl": "https://blitzmetrics.com/meta-article-prompt/",
+          "title": "Building Josh Collier's Entire Brand Ecosystem \u2014 Every Step Documented",
+          "publishedAt": "2026-04-08T17:45:23",
+          "modifiedAt": "2026-06-12T08:28:42",
+          "taxonomyEvidence": [],
+          "explicitMetaTaxonomy": false,
+          "explicitMetaLanguage": true,
+          "primaryParentHub": "https://blitzmetrics.com/meta-article-prompt/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        }
+      ]
+    },
+    {
+      "url": "https://blitzmetrics.com/content-factory/",
+      "label": "Content Factory",
+      "kind": "Definitive framework",
+      "domain": "blitzmetrics.com",
+      "endpoint": "posts",
+      "postId": 102836,
+      "wordpressSha256": "94e5a48034b32469df671b8dcc638662138833741496c1149f7dea09591c4c67",
+      "taskLibrarySourceUrl": "https://blitzmetrics.com/content-factory/",
+      "taskCount": 1,
+      "taskImportanceTotal": 5,
+      "tasks": [
+        {
+          "slug": "run-content-factory-on-any-engine",
+          "title": "run-content-factory-on-any-engine",
+          "importance": 5
+        }
+      ],
+      "metaCountStatus": "verified",
+      "metaArticleCount": 10,
+      "strength": {
+        "score": 3,
+        "label": "Strong",
+        "band": "6-10"
+      },
+      "metaArticles": [
+        {
+          "postId": 110127,
+          "url": "https://blitzmetrics.com/how-we-absorbed-the-repurposing-suite/",
+          "sourceUrl": "https://blitzmetrics.com/how-we-absorbed-the-repurposing-suite/",
+          "hubUrl": "https://blitzmetrics.com/content-factory/",
+          "title": "How We Absorbed the Repurposing Suite Into Every Skill Pack",
+          "publishedAt": "2026-07-20T09:49:22",
+          "modifiedAt": "2026-08-24T07:17:21",
+          "taxonomyEvidence": [
+            "category:3693"
+          ],
+          "explicitMetaTaxonomy": true,
+          "explicitMetaLanguage": true,
+          "primaryParentHub": "https://blitzmetrics.com/content-factory/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        },
+        {
+          "postId": 108083,
+          "url": "https://blitzmetrics.com/how-i-built-matt-bodnar-builds-his-personal-brand-by-co-creating-content/",
+          "sourceUrl": "https://blitzmetrics.com/how-i-built-matt-bodnar-builds-his-personal-brand-by-co-creating-content/",
+          "hubUrl": "https://blitzmetrics.com/content-factory/",
+          "title": "How We Built the Matt Bodnar Co-Creation Article",
+          "publishedAt": "2026-06-12T17:04:25",
+          "modifiedAt": "2026-08-24T07:17:08",
+          "taxonomyEvidence": [
+            "tag:2523"
+          ],
+          "explicitMetaTaxonomy": true,
+          "explicitMetaLanguage": true,
+          "primaryParentHub": "https://blitzmetrics.com/content-factory/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        },
+        {
+          "postId": 107926,
+          "url": "https://blitzmetrics.com/how-a-claude-agent-automated-paul-ryazanovs-content-pipeline/",
+          "sourceUrl": "https://blitzmetrics.com/how-a-claude-agent-automated-paul-ryazanovs-content-pipeline/",
+          "hubUrl": "https://blitzmetrics.com/content-factory/",
+          "title": "How a Claude Agent Automated Paul Ryazanov's Content Pipeline",
+          "publishedAt": "2026-06-10T21:11:48",
+          "modifiedAt": "2026-08-24T07:17:06",
+          "taxonomyEvidence": [
+            "tag:3162"
+          ],
+          "explicitMetaTaxonomy": true,
+          "explicitMetaLanguage": true,
+          "primaryParentHub": "https://blitzmetrics.com/content-factory/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        },
+        {
+          "postId": 107829,
+          "url": "https://blitzmetrics.com/how-we-repurposed-cody-jones-coach-yu-show-across-four-sites/",
+          "sourceUrl": "https://blitzmetrics.com/how-we-repurposed-cody-jones-coach-yu-show-across-four-sites/",
+          "hubUrl": "https://blitzmetrics.com/content-factory/",
+          "title": "How We Repurposed Cody Jones' Coach Yu Show Episode Across Four Sites",
+          "publishedAt": "2026-06-09T07:56:34",
+          "modifiedAt": "2026-06-12T08:30:10",
+          "taxonomyEvidence": [
+            "tag:2523"
+          ],
+          "explicitMetaTaxonomy": true,
+          "explicitMetaLanguage": true,
+          "primaryParentHub": "https://blitzmetrics.com/content-factory/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        },
+        {
+          "postId": 105997,
+          "url": "https://blitzmetrics.com/how-we-used-an-ai-agent-to-inventory-paul-ryazanovs-content/",
+          "sourceUrl": "https://blitzmetrics.com/how-we-used-an-ai-agent-to-inventory-paul-ryazanovs-content/",
+          "hubUrl": "https://blitzmetrics.com/content-factory/",
+          "title": "How We Used an AI Agent to Inventory Paul Ryazanov's Content",
+          "publishedAt": "2026-04-24T23:47:50",
+          "modifiedAt": "2026-08-24T07:16:55",
+          "taxonomyEvidence": [],
+          "explicitMetaTaxonomy": false,
+          "explicitMetaLanguage": true,
+          "primaryParentHub": "https://blitzmetrics.com/content-factory/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        },
+        {
+          "postId": 105335,
+          "url": "https://blitzmetrics.com/fire-your-agency-book-ai-process/",
+          "sourceUrl": "https://blitzmetrics.com/fire-your-agency-book-ai-process/",
+          "hubUrl": "https://blitzmetrics.com/content-factory/",
+          "title": "How We Used AI to Write a Book Without Losing the Author's Voice",
+          "publishedAt": "2026-04-16T05:54:01",
+          "modifiedAt": "2026-04-17T04:30:11",
+          "taxonomyEvidence": [],
+          "explicitMetaTaxonomy": false,
+          "explicitMetaLanguage": true,
+          "primaryParentHub": "https://blitzmetrics.com/content-factory/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        },
+        {
+          "postId": 103865,
+          "url": "https://blitzmetrics.com/how-we-tuned-up-ethan-van-de-heys-personal-brand-site/",
+          "sourceUrl": "https://blitzmetrics.com/how-we-tuned-up-ethan-van-de-heys-personal-brand-site/",
+          "hubUrl": "https://blitzmetrics.com/content-factory/",
+          "title": "How We Tuned Up Ethan Van De Hey's Personal Brand Site",
+          "publishedAt": "2026-04-15T11:03:43",
+          "modifiedAt": "2026-06-12T17:27:13",
+          "taxonomyEvidence": [
+            "tag:2523"
+          ],
+          "explicitMetaTaxonomy": true,
+          "explicitMetaLanguage": true,
+          "primaryParentHub": "https://blitzmetrics.com/content-factory/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        },
+        {
+          "postId": 105239,
+          "url": "https://blitzmetrics.com/how-we-optimized-the-harry-gold-article/",
+          "sourceUrl": "https://blitzmetrics.com/how-we-optimized-the-harry-gold-article/",
+          "hubUrl": "https://blitzmetrics.com/content-factory/",
+          "title": "How We Optimized the Harry Gold Article for Ecosystem Value",
+          "publishedAt": "2026-04-14T20:22:33",
+          "modifiedAt": "2026-06-12T08:28:41",
+          "taxonomyEvidence": [
+            "tag:2523"
+          ],
+          "explicitMetaTaxonomy": true,
+          "explicitMetaLanguage": true,
+          "primaryParentHub": "https://blitzmetrics.com/content-factory/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        },
+        {
+          "postId": 103679,
+          "url": "https://blitzmetrics.com/how-we-updated-youtube-descriptions-pinned-comments-35-videos/",
+          "sourceUrl": "https://blitzmetrics.com/how-we-updated-youtube-descriptions-pinned-comments-35-videos/",
+          "hubUrl": "https://blitzmetrics.com/content-factory/",
+          "title": "How We Updated YouTube Descriptions and Pinned Comments Across 35 Videos",
+          "publishedAt": "2026-03-25T05:19:49",
+          "modifiedAt": "2026-04-16T06:19:51",
+          "taxonomyEvidence": [
+            "tag:2523"
+          ],
+          "explicitMetaTaxonomy": true,
+          "explicitMetaLanguage": true,
+          "primaryParentHub": "https://blitzmetrics.com/content-factory/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        },
+        {
+          "postId": 103157,
+          "url": "https://blitzmetrics.com/how-we-built-three-articles-three-youtube-videos/",
+          "sourceUrl": "https://blitzmetrics.com/how-we-built-three-articles-three-youtube-videos/",
+          "hubUrl": "https://blitzmetrics.com/content-factory/",
+          "title": "How We Built Three Articles From Three YouTube Videos",
+          "publishedAt": "2026-03-22T11:33:56",
+          "modifiedAt": "2026-08-24T07:16:27",
+          "taxonomyEvidence": [],
+          "explicitMetaTaxonomy": false,
+          "explicitMetaLanguage": true,
+          "primaryParentHub": "https://blitzmetrics.com/content-factory/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        }
+      ]
+    },
+    {
+      "url": "https://blitzmetrics.com/one-minute-video-guide/",
+      "label": "One-Minute Video",
+      "kind": "Definitive SOP",
+      "domain": "blitzmetrics.com",
+      "endpoint": "posts",
+      "postId": 102882,
+      "wordpressSha256": "2385bfb8967c2b8f139f9a13feab2aed9330bcd80f54a3becf5b3e80978beef9",
+      "taskLibrarySourceUrl": "https://blitzmetrics.com/one-minute-video-guide/",
+      "taskCount": 1,
+      "taskImportanceTotal": 5,
+      "tasks": [
+        {
+          "slug": "record-one-minute-videos",
+          "title": "record-one-minute-videos",
+          "importance": 5
+        }
+      ],
+      "metaCountStatus": "verified",
+      "metaArticleCount": 0,
+      "strength": {
+        "score": 0,
+        "label": "No verified examples",
+        "band": "0"
+      },
+      "metaArticles": []
+    },
+    {
+      "url": "https://blitzmetrics.com/how-we-use-listen-notes-to-find-track-and-repurpose-every-podcast-appearance/",
+      "label": "Listen Notes Podcast Inventory",
+      "kind": "Definitive SOP",
+      "domain": "blitzmetrics.com",
+      "endpoint": "posts",
+      "postId": 101813,
+      "wordpressSha256": "97d738d2d6cf1e38c72d6dadc9e9c08c503f88d92b36fa5a9b0926c5d099f9df",
+      "taskLibrarySourceUrl": "https://blitzmetrics.com/how-we-use-listen-notes-to-find-track-and-repurpose-every-podcast-appearance/",
+      "taskCount": 1,
+      "taskImportanceTotal": 4,
+      "tasks": [
+        {
+          "slug": "how-we-use-listen-notes-to-find-track-and-repurpose-every-podcast-appearance",
+          "title": "how-we-use-listen-notes-to-find-track-and-repurpose-every-podcast-appearance",
+          "importance": 4
+        }
+      ],
+      "metaCountStatus": "verified",
+      "metaArticleCount": 1,
+      "strength": {
+        "score": 1,
+        "label": "Emerging",
+        "band": "1-2"
+      },
+      "metaArticles": [
+        {
+          "postId": 113084,
+          "url": "https://blitzmetrics.com/george-leith-listen-notes-podcast-inventory/",
+          "sourceUrl": "https://blitzmetrics.com/george-leith-listen-notes-podcast-inventory/",
+          "hubUrl": "https://blitzmetrics.com/how-we-use-listen-notes-to-find-track-and-repurpose-every-podcast-appearance/",
+          "title": "How We Use Listen Notes to Find, Track, and Repurpose Every George Leith Podcast Appearance",
+          "publishedAt": "2026-08-22T22:11:19",
+          "modifiedAt": "2026-08-22T22:11:21",
+          "taxonomyEvidence": [],
+          "explicitMetaTaxonomy": false,
+          "explicitMetaLanguage": false,
+          "primaryParentHub": "https://blitzmetrics.com/how-we-use-listen-notes-to-find-track-and-repurpose-every-podcast-appearance/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        }
+      ]
+    },
+    {
+      "url": "https://blitzmetrics.com/how-to-inventory-every-podcast-youve-been-on-and-why-its-one-of-the-highest-roi-things-you-can-do/",
+      "label": "Multi-platform Podcast Inventory",
+      "kind": "Definitive SOP",
+      "domain": "blitzmetrics.com",
+      "endpoint": "posts",
+      "postId": 101808,
+      "wordpressSha256": "25c04749913981a52ecac29898735c36c9ef2274c6a9d2c94fabc1a29ce2ad58",
+      "taskLibrarySourceUrl": "https://blitzmetrics.com/how-to-inventory-every-podcast-youve-been-on-and-why-its-one-of-the-highest-roi-things-you-can-do/",
+      "taskCount": 1,
+      "taskImportanceTotal": 4,
+      "tasks": [
+        {
+          "slug": "how-to-inventory-every-podcast-youve-been-on-and-why-its-one-of-the-highest-roi-things-you-can-do",
+          "title": "how-to-inventory-every-podcast-youve-been-on-and-why-its-one-of-the-highest-roi-things-you-can-do",
+          "importance": 4
+        }
+      ],
+      "metaCountStatus": "verified",
+      "metaArticleCount": 1,
+      "strength": {
+        "score": 1,
+        "label": "Emerging",
+        "band": "1-2"
+      },
+      "metaArticles": [
+        {
+          "postId": 103309,
+          "url": "https://blitzmetrics.com/how-we-inventoried-700-podcast-appearances-across-5-platforms-and-what-we-learned/",
+          "sourceUrl": "https://blitzmetrics.com/how-we-inventoried-700-podcast-appearances-across-5-platforms-and-what-we-learned/",
+          "hubUrl": "https://blitzmetrics.com/how-to-inventory-every-podcast-youve-been-on-and-why-its-one-of-the-highest-roi-things-you-can-do/",
+          "title": "How We Inventoried 700+ Podcast Appearances Across 5 Platforms (And What We Learned)",
+          "publishedAt": "2026-03-23T04:59:57",
+          "modifiedAt": "2026-08-24T07:16:32",
+          "taxonomyEvidence": [],
+          "explicitMetaTaxonomy": false,
+          "explicitMetaLanguage": true,
+          "primaryParentHub": "https://blitzmetrics.com/how-to-inventory-every-podcast-youve-been-on-and-why-its-one-of-the-highest-roi-things-you-can-do/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        }
+      ]
+    },
+    {
+      "url": "https://blitzmetrics.com/overnight-content-worker/",
+      "label": "Overnight Content Worker",
+      "kind": "Definitive SOP",
+      "domain": "blitzmetrics.com",
+      "endpoint": "posts",
+      "postId": 112164,
+      "wordpressSha256": "7a294ff4127eded4544ffbda56e1bbdbb164faf2abed755d7bc90dc67967251d",
+      "taskLibrarySourceUrl": "https://blitzmetrics.com/overnight-content-worker/",
+      "taskCount": 1,
+      "taskImportanceTotal": 4,
+      "tasks": [
+        {
+          "slug": "run-overnight-local-writer",
+          "title": "run-overnight-local-writer",
+          "importance": 4
+        }
+      ],
+      "metaCountStatus": "verified",
+      "metaArticleCount": 1,
+      "strength": {
+        "score": 1,
+        "label": "Emerging",
+        "band": "1-2"
+      },
+      "metaArticles": [
+        {
+          "postId": 112165,
+          "url": "https://blitzmetrics.com/how-we-put-the-factory-on-night-shift/",
+          "sourceUrl": "https://blitzmetrics.com/how-we-put-the-factory-on-night-shift/",
+          "hubUrl": "https://blitzmetrics.com/overnight-content-worker/",
+          "title": "How We Put the Factory on Night Shift",
+          "publishedAt": "2026-08-18T03:40:41",
+          "modifiedAt": "2026-08-18T04:39:15",
+          "taxonomyEvidence": [],
+          "explicitMetaTaxonomy": false,
+          "explicitMetaLanguage": true,
+          "primaryParentHub": "https://blitzmetrics.com/overnight-content-worker/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        }
+      ]
+    },
+    {
+      "url": "https://blitzmetrics.com/how-to-inventory-a-podcast-on-youtube/",
+      "label": "YouTube Podcast Inventory",
+      "kind": "Definitive SOP",
+      "domain": "blitzmetrics.com",
+      "endpoint": "posts",
+      "postId": 103161,
+      "wordpressSha256": "223b624ff7a3c7afc3c9135449db61dc98a2fff10cf4bb0db7c8ce0b21403b41",
+      "taskLibrarySourceUrl": "https://blitzmetrics.com/how-to-inventory-a-podcast-on-youtube/",
+      "taskCount": 1,
+      "taskImportanceTotal": 4,
+      "tasks": [
+        {
+          "slug": "how-to-inventory-a-podcast-on-youtube",
+          "title": "how-to-inventory-a-podcast-on-youtube",
+          "importance": 4
+        }
+      ],
+      "metaCountStatus": "verified",
+      "metaArticleCount": 1,
+      "strength": {
+        "score": 1,
+        "label": "Emerging",
+        "band": "1-2"
+      },
+      "metaArticles": [
+        {
+          "postId": 107412,
+          "url": "https://blitzmetrics.com/how-we-built-dunk-talk-podcast-guest-list/",
+          "sourceUrl": "https://blitzmetrics.com/how-we-built-dunk-talk-podcast-guest-list/",
+          "hubUrl": "https://blitzmetrics.com/how-to-inventory-a-podcast-on-youtube/",
+          "title": "How We Built the Dunk Talk Podcast\u2019s Guest List Page",
+          "publishedAt": "2026-06-03T06:54:33",
+          "modifiedAt": "2026-06-12T08:30:13",
+          "taxonomyEvidence": [
+            "tag:2523"
+          ],
+          "explicitMetaTaxonomy": true,
+          "explicitMetaLanguage": true,
+          "primaryParentHub": "https://blitzmetrics.com/how-to-inventory-a-podcast-on-youtube/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        }
+      ]
+    },
+    {
+      "url": "https://blitzmetrics.com/how-we-use-podchaser-to-amplify-authority-and-repurpose-podcast-content/",
+      "label": "Podchaser Podcast Inventory",
+      "kind": "Definitive SOP",
+      "domain": "blitzmetrics.com",
+      "endpoint": "posts",
+      "postId": 101782,
+      "wordpressSha256": "ff201c17aeb6539c7d553dfabf5fd054ad3f17e7798f8fa0a03d6ff547d32317",
+      "taskLibrarySourceUrl": "https://blitzmetrics.com/how-we-use-podchaser-to-amplify-authority-and-repurpose-podcast-content/",
+      "taskCount": 1,
+      "taskImportanceTotal": 4,
+      "tasks": [
+        {
+          "slug": "how-we-use-podchaser-to-amplify-authority-and-repurpose-podcast-content",
+          "title": "how-we-use-podchaser-to-amplify-authority-and-repurpose-podcast-content",
+          "importance": 4
+        }
+      ],
+      "metaCountStatus": "verified",
+      "metaArticleCount": 0,
+      "strength": {
+        "score": 0,
+        "label": "No verified examples",
+        "band": "0"
+      },
+      "metaArticles": []
+    },
+    {
+      "url": "https://blitzmetrics.com/how-to-collect-organize-positive-mentions-to-build-authority/",
+      "label": "Positive Mentions",
+      "kind": "Definitive SOP",
+      "domain": "blitzmetrics.com",
+      "endpoint": "posts",
+      "postId": 104460,
+      "wordpressSha256": "7d0a17453c49339bbff88d9639fbd4ed41f2774f0a7c14e3d906c405cfa527f6",
+      "taskLibrarySourceUrl": "https://blitzmetrics.com/how-to-collect-organize-positive-mentions-to-build-authority/",
+      "taskCount": 1,
+      "taskImportanceTotal": 3,
+      "tasks": [
+        {
+          "slug": "positive-mentions-harvester",
+          "title": "positive-mentions-harvester",
+          "importance": 3
+        }
+      ],
+      "metaCountStatus": "verified",
+      "metaArticleCount": 4,
+      "strength": {
+        "score": 2,
+        "label": "Supported",
+        "band": "3-5"
+      },
+      "metaArticles": [
+        {
+          "postId": 112231,
+          "url": "https://blitzmetrics.com/how-we-taught-magic-berry-by-example/",
+          "sourceUrl": "https://blitzmetrics.com/how-we-taught-magic-berry-by-example/",
+          "hubUrl": "https://blitzmetrics.com/how-to-collect-organize-positive-mentions-to-build-authority/",
+          "title": "How We Taught Magic Berry by Example",
+          "publishedAt": "2026-08-18T05:24:36",
+          "modifiedAt": "2026-08-19T18:34:22",
+          "taxonomyEvidence": [
+            "category:3693"
+          ],
+          "explicitMetaTaxonomy": true,
+          "explicitMetaLanguage": false,
+          "primaryParentHub": "https://blitzmetrics.com/how-to-collect-organize-positive-mentions-to-build-authority/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        },
+        {
+          "postId": 112188,
+          "url": "https://blitzmetrics.com/how-we-turned-30-mentions-into-a-factory/",
+          "sourceUrl": "https://blitzmetrics.com/how-we-turned-30-mentions-into-a-factory/",
+          "hubUrl": "https://blitzmetrics.com/how-to-collect-organize-positive-mentions-to-build-authority/",
+          "title": "How We Turned 30 Positive Mentions Into a Factory",
+          "publishedAt": "2026-08-18T04:38:08",
+          "modifiedAt": "2026-08-24T04:06:32",
+          "taxonomyEvidence": [
+            "category:3693"
+          ],
+          "explicitMetaTaxonomy": true,
+          "explicitMetaLanguage": true,
+          "primaryParentHub": "https://blitzmetrics.com/how-to-collect-organize-positive-mentions-to-build-authority/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        },
+        {
+          "postId": 107899,
+          "url": "https://blitzmetrics.com/how-we-built-justin-sonnenreich-positive-mentions-tracker/",
+          "sourceUrl": "https://blitzmetrics.com/how-we-built-justin-sonnenreich-positive-mentions-tracker/",
+          "hubUrl": "https://blitzmetrics.com/how-to-collect-organize-positive-mentions-to-build-authority/",
+          "title": "How We Built Justin Sonnenreich's Positive Mentions Tracker",
+          "publishedAt": "2026-06-10T04:52:38",
+          "modifiedAt": "2026-06-12T08:30:27",
+          "taxonomyEvidence": [],
+          "explicitMetaTaxonomy": false,
+          "explicitMetaLanguage": true,
+          "primaryParentHub": "https://blitzmetrics.com/how-to-collect-organize-positive-mentions-to-build-authority/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        },
+        {
+          "postId": 107890,
+          "url": "https://blitzmetrics.com/how-we-built-jonathan-mast-positive-mentions-tracker/",
+          "sourceUrl": "https://blitzmetrics.com/how-we-built-jonathan-mast-positive-mentions-tracker/",
+          "hubUrl": "https://blitzmetrics.com/how-to-collect-organize-positive-mentions-to-build-authority/",
+          "title": "How We Built Jonathan Mast's Positive Mentions Tracker With AI",
+          "publishedAt": "2026-06-10T02:52:03",
+          "modifiedAt": "2026-06-12T08:30:25",
+          "taxonomyEvidence": [],
+          "explicitMetaTaxonomy": false,
+          "explicitMetaLanguage": true,
+          "primaryParentHub": "https://blitzmetrics.com/how-to-collect-organize-positive-mentions-to-build-authority/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        }
+      ]
+    },
+    {
+      "url": "https://blitzmetrics.com/speaker-kit/",
+      "label": "Speaker Kit",
+      "kind": "Definitive SOP",
+      "domain": "blitzmetrics.com",
+      "endpoint": "posts",
+      "postId": 112065,
+      "wordpressSha256": "c3239cffc0c3fc42e0caaeeb36d2dd00617c098c54c90fe5d2c53ef5ad61a7d2",
+      "taskLibrarySourceUrl": "https://blitzmetrics.com/speaker-kit/",
+      "taskCount": 1,
+      "taskImportanceTotal": 3,
+      "tasks": [
+        {
+          "slug": "keep-speaker-bureau-profile-bookable",
+          "title": "keep-speaker-bureau-profile-bookable",
+          "importance": 3
+        }
+      ],
+      "metaCountStatus": "verified",
+      "metaArticleCount": 1,
+      "strength": {
+        "score": 1,
+        "label": "Emerging",
+        "band": "1-2"
+      },
+      "metaArticles": [
+        {
+          "postId": 112066,
+          "url": "https://blitzmetrics.com/how-we-documented-the-speaker-kit-task/",
+          "sourceUrl": "https://blitzmetrics.com/how-we-documented-the-speaker-kit-task/",
+          "hubUrl": "https://blitzmetrics.com/speaker-kit/",
+          "title": "How We Documented the Speaker Kit Task",
+          "publishedAt": "2026-08-17T07:10:45",
+          "modifiedAt": "2026-08-17T15:55:12",
+          "taxonomyEvidence": [],
+          "explicitMetaTaxonomy": false,
+          "explicitMetaLanguage": true,
+          "primaryParentHub": "https://blitzmetrics.com/speaker-kit/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        }
+      ]
+    }
+  ]
+}

@@ -3,7 +3,7 @@ name: step-17-final-formatting-and-qa-checks
 description: Run the final formatting, link, and quality pass across the live article and its distribution so the piece is verifiably done before handing off to the Promote stage.
 category: Content Factory — Post
 stage: Post
-definitive_article: /blog-posting-guidelines
+definitive_article: https://localservicespotlight.com/article-guidelines/
 status: complete
 ---
 
@@ -44,6 +44,6 @@ Each gate run is logged as a meta-article example so the library compounds.
 See `boil-the-ocean.md` for the full operating principles.
 
 ## Definitive article & links
-- Hub: /blog-posting-guidelines
+- Hub: https://localservicespotlight.com/article-guidelines/
 - Related: /website-qa-audit (the site-wide audit this per-post QA rolls up into) · /content-factory
 - Run order (Post stage): share-in-44k-facebook-group → **step-17-final-formatting-and-qa-checks** → Promote stage (boost-top-3-5-facebook-posts)

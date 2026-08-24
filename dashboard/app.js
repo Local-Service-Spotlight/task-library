@@ -171,6 +171,23 @@ if (!DATA || !DATA.categories || !DATA.categories.length){
    ============================================================ */
 const byId = Object.create(null);
 const bySlug = Object.create(null);
+const byArticle = Object.create(null);
+const hubByArticle = Object.create(null);
+function normalizeArticleUrl(url){
+  try {
+    const u = new URL(String(url || '').trim());
+    let host = u.hostname.toLowerCase().replace(/^www\./, '');
+    if (u.port && !((u.protocol === 'http:' && u.port === '80') ||
+                    (u.protocol === 'https:' && u.port === '443'))) host += ':' + u.port;
+    let path = (u.pathname || '/').replace(/\/{2,}/g, '/');
+    if (path !== '/') path = path.replace(/\/+$/, '');
+    return host + path;
+  } catch(e) { return ''; }
+}
+(DATA.articleHubs || []).forEach(function(hub){
+  const key = normalizeArticleUrl(hub.url);
+  if (key) hubByArticle[key] = hub;
+});
 DATA.categories.forEach(function(c, ci){
   c._ci = ci;
   c.tasks.forEach(function(t, ti){
@@ -179,10 +196,23 @@ DATA.categories.forEach(function(c, ci){
     const content = t.content || '';
     t._hay = ((t.title || '') + ' ' + (t.desc || '') + ' ' + (t.slug || '') + ' ' + content).toLowerCase();
     t._qa = /definition of done/i.test(content);
-    t._ex = /^##\s+example/im.test(content) || /meta-article/i.test(content);
+    t._exampleCount = null;
+    t._exampleStatus = 'unknown';
     t._vis = true;
     byId[t._id] = t;
     if (t.slug) bySlug[t.slug] = t;
+    const articleKey = normalizeArticleUrl(t.article);
+    if (articleKey){
+      t._articleKey = articleKey;
+      t._hub = hubByArticle[articleKey] || null;
+      if (t._hub && t._hub.taskMetaCounts &&
+          Object.prototype.hasOwnProperty.call(t._hub.taskMetaCounts, t.slug)){
+        t._exampleCount = Number(t._hub.taskMetaCounts[t.slug]);
+        t._exampleStatus = t._hub.metaCountStatus || 'unknown';
+      }
+      if (!byArticle[articleKey]) byArticle[articleKey] = [];
+      byArticle[articleKey].push(t);
+    }
   });
 });
 
@@ -315,17 +345,34 @@ function volBar(n){
 }
 function articleLink(t){
   if (!t.article) return '';
+  const orbitData = t._hub || t;
   const ready = t.articleState === 'ready';
   const label = ready ? 'Definitive article ↗' : 'Article in progress ↗';
   const title = ready ? 'All mapped tasks are complete and no reviewed semantic hold is active' :
     (t.articleStateReason || 'Article has incomplete mapped work or an active semantic-certification hold');
-  return '<a class="btl-art" href="' + esc(t.article) + '" target="_blank" rel="noopener" title="' + esc(title) + '">' + label + '</a>';
+  let orbit = '';
+  if (orbitData.metaCountStatus === 'verified' || orbitData.metaCountStatus === 'partial'){
+    const count = Number(orbitData.metaArticleCount || 0);
+    const plus = orbitData.metaCountStatus === 'partial' ? '+' : '';
+    orbit = '<span class="btl-orbit" title="' + esc((orbitData.metaOrbitTier || '') +
+      ' orbit strength; verified example volume only, not quality, traffic, freshness, or accuracy') + '">' +
+      fmt(count) + plus + ' verified meta-' + (count === 1 ? 'article' : 'articles') + '</span>';
+  } else {
+    orbit = '<span class="btl-orbit is-unknown" title="No source-backed orbit audit is recorded; unknown is not zero">Meta count unknown</span>';
+  }
+  return '<a class="btl-art" href="' + esc(t.article) + '" target="_blank" rel="noopener" title="' + esc(title) + '">' + label + '</a>' + orbit;
 }
 function rowHTML(t){
   const st = STATUS[t.status] || STATUS.gap;
   let badges = '<span class="btl-tag tag-sop" title="Step-by-step SOP included">SOP</span>';
   if (t._qa) badges += '<span class="btl-tag tag-qa" title="Has a Definition of Done QA gate">QA</span>';
-  if (t._ex) badges += '<span class="btl-tag tag-ex" title="Has a worked example / meta-article slot">Example</span>';
+  if (t._exampleCount == null){
+    badges += '<span class="btl-tag tag-ex is-unknown" title="No verified task-level example assignment is recorded; unknown is not zero">Examples unknown</span>';
+  } else {
+    const examplePlus = t._exampleStatus === 'partial' ? '+' : '';
+    badges += '<span class="btl-tag tag-ex" title="Derived from verified meta-article source records">' +
+      (t._exampleCount ? fmt(t._exampleCount) + examplePlus + ' verified ' + (t._exampleCount === 1 ? 'example' : 'examples') : 'Examples 0') + '</span>';
+  }
   if (t.lane) badges += '<span class="btl-tag tag-sop" title="' + esc(t.lane_label || t.lane) + '">' + esc(t.lane) + '</span>';
   const stage = (t.stage && t.stage !== '—') ? '<span class="btl-stage">' + esc(t.stage) + '</span>' : '';
   const art = articleLink(t) +
@@ -339,7 +386,7 @@ function rowHTML(t){
       (t.after ? 'after <button type="button" data-goto="' + esc(t.after) + '">' + esc(t.after) + '</button>' : '') +
       '</p>';
   }
-  return '<article class="btl-row" data-id="' + t._id + '" data-slug="' + esc(t.slug) + '">' +
+  return '<article class="btl-row" id="task-' + esc(t.slug) + '" data-id="' + t._id + '" data-slug="' + esc(t.slug) + '">' +
     '<span class="btl-dot dot-' + esc(t.status) + '" aria-hidden="true"></span>' +
     '<div class="btl-row-main">' +
       '<div class="btl-row-top"><h4 class="btl-row-title">' + esc(t.title) + '</h4>' +
@@ -379,7 +426,7 @@ function ensureRendered(ci){
 /* ============================================================
    Filtering engine — search (incl. full skill.md text) + chips
    ============================================================ */
-const state = { q: '', status: 'all', open: new Set(), userClosed: new Set(), phase: 'all', minImp: 0 };
+const state = { q: '', status: 'all', open: new Set(), userClosed: new Set(), phase: 'all', minImp: 0, articleKey: '' };
 const qInput = el('#btl-q'), clearBtn = el('#btl-clear'), resline = el('#btl-resline'), emptyBox = el('#btl-empty');
 
 function setOpen(ci, open){
@@ -390,7 +437,7 @@ function setOpen(ci, open){
   head.setAttribute('aria-expanded', open ? 'true' : 'false');
   body.hidden = !open;
 }
-function filterActive(){ return !!(state.q.trim() || state.status !== 'all' || state.phase !== 'all' || state.minImp > 0); }
+function filterActive(){ return !!(state.q.trim() || state.status !== 'all' || state.phase !== 'all' || state.minImp > 0 || state.articleKey); }
 
 function statusMatch(t){
   if (state.status === 'all') return true;
@@ -421,7 +468,8 @@ function applyFilters(){
         if ((t.importance || 0) >= 5) counts.vol5 = (counts.vol5 || 0) + 1;
         if ((t.importance || 0) >= 4) counts.vol4 = (counts.vol4 || 0) + 1;
       }
-      t._vis = qok && statusMatch(t) && phaseMatch(t);
+      const articleOk = !state.articleKey || t._articleKey === state.articleKey;
+      t._vis = qok && articleOk && statusMatch(t) && phaseMatch(t);
       if (t._vis){ catMatch++; shown++; }
     });
     c._match = catMatch;
@@ -451,7 +499,7 @@ function applyFilters(){
 
   resline.innerHTML = (!active)
     ? '<b>' + fmt(total) + '</b> tasks across <b>' + fmt(DATA.categories.length) + '</b> categories — search runs through the full text of every skill.md'
-    : '<b>' + fmt(shown) + '</b> of <b>' + fmt(total) + '</b> tasks match' + (q ? ' “' + esc(state.q.trim()) + '”' : '') + (state.status !== 'all' ? ' · ' + (STATUS[state.status] ? STATUS[state.status].label.toLowerCase() : state.status) : '') + (state.phase !== 'all' ? ' · phase: ' + esc(state.phase) : '');
+    : '<b>' + fmt(shown) + '</b> of <b>' + fmt(total) + '</b> tasks match' + (q ? ' “' + esc(state.q.trim()) + '”' : '') + (state.articleKey ? ' · article hub: ' + esc(state.articleKey) : '') + (state.status !== 'all' ? ' · ' + (STATUS[state.status] ? STATUS[state.status].label.toLowerCase() : state.status) : '') + (state.phase !== 'all' ? ' · phase: ' + esc(state.phase) : '');
   emptyBox.hidden = shown !== 0;
 }
 
@@ -469,6 +517,7 @@ function syncPhases(){
 function gotoSlug(slug){
   const t = Object.prototype.hasOwnProperty.call(bySlug, slug) ? bySlug[slug] : null;
   if (!t){ toast('No skill named ' + slug + ' in this build'); return; }
+  state.articleKey = '';
   state.q = slug; qInput.value = slug; clearBtn.hidden = false;
   state.status = 'all'; syncChips(); applyFilters();
   ensureRendered(t._cat._ci);
@@ -479,17 +528,35 @@ function gotoSlug(slug){
     setTimeout(function(){ row.style.outline = ''; }, 1600);
   }
 }
-function taskFromUrl(){
-  try { return new URLSearchParams(window.location.search).get('task') || ''; }
-  catch(e) { return ''; }
+function gotoArticle(url){
+  const key = normalizeArticleUrl(url);
+  const mapped = key && Object.prototype.hasOwnProperty.call(byArticle, key) ? byArticle[key] : null;
+  if (!mapped || !mapped.length){ toast('No article hub named ' + url + ' in this build'); return; }
+  state.q = ''; qInput.value = ''; clearBtn.hidden = false;
+  state.articleKey = key; state.status = 'all'; state.phase = 'all';
+  syncChips(); syncPhases(); applyFilters();
+  mapped.forEach(function(t){ ensureRendered(t._cat._ci); });
+  const first = el('[data-slug="' + mapped[0].slug + '"]');
+  if (first){
+    first.scrollIntoView({behavior:'smooth', block:'center'});
+    first.style.outline = '2px solid #4f8cff';
+    setTimeout(function(){ first.style.outline = ''; }, 1600);
+  }
+}
+function routeFromUrl(){
+  try {
+    const params = new URLSearchParams(window.location.search);
+    return { task: params.get('task') || '', article: params.get('article') || '' };
+  } catch(e) { return {task:'', article:''}; }
 }
 window.addEventListener('message', function(e){
   if (e.origin !== 'https://blitzmetrics.com') return;
   if (e.data && typeof e.data.btlTask === 'string') gotoSlug(e.data.btlTask);
+  if (e.data && typeof e.data.btlArticle === 'string') gotoArticle(e.data.btlArticle);
 });
 function resetFilters(){
   state.q = ''; qInput.value = ''; clearBtn.hidden = true;
-  state.status = 'all'; state.phase = 'all'; syncChips(); syncPhases(); applyFilters();
+  state.status = 'all'; state.phase = 'all'; state.articleKey = ''; syncChips(); syncPhases(); applyFilters();
 }
 
 /* ============================================================
@@ -648,7 +715,7 @@ root.addEventListener('click', function(e){
   }
   if (e.target.closest('#btl-reset')){ resetFilters(); return; }
   if (e.target.closest('#btl-clear')){
-    state.q = ''; qInput.value = ''; clearBtn.hidden = true;
+    state.q = ''; state.articleKey = ''; qInput.value = ''; clearBtn.hidden = true;
     applyFilters(); qInput.focus();
     return;
   }
@@ -660,11 +727,13 @@ root.addEventListener('click', function(e){
 });
 
 qInput.addEventListener('input', debounce(function(){
+  state.articleKey = '';
   state.q = qInput.value;
   clearBtn.hidden = !qInput.value;
   applyFilters();
 }, 120));
 qInput.addEventListener('search', function(){
+  state.articleKey = '';
   state.q = qInput.value;
   clearBtn.hidden = !qInput.value;
   applyFilters();
@@ -680,6 +749,7 @@ document.addEventListener('keydown', function(e){
    Go
    ============================================================ */
 applyFilters();
-const linkedTask = taskFromUrl();
-if (linkedTask) gotoSlug(linkedTask);
+const linkedRoute = routeFromUrl();
+if (linkedRoute.task) gotoSlug(linkedRoute.task);
+else if (linkedRoute.article) gotoArticle(linkedRoute.article);
 })();

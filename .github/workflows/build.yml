@@ -21,6 +21,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Run Task Library tests
+        run: python3 -m unittest discover -s build -p "test_*.py" -v
+
       # Pull the Asset Tracker's published-to-web CSV for status/owner overrides
       # and sheet-onboarded skills. Value is stored as the TRACKER_CSV_URL *secret*.
       # (Checked in the shell, not in `if:`, because a secret isn't reliably

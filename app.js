@@ -170,6 +170,22 @@ if (!DATA || !DATA.categories || !DATA.categories.length){
    Enrich data once: ids, lowercase haystacks, provenance flags
    ============================================================ */
 const byId = {};
+const hubByArticle = Object.create(null);
+function normalizeArticleUrl(url){
+  try {
+    const u = new URL(String(url || '').trim());
+    let host = u.hostname.toLowerCase().replace(/^www\./, '');
+    if (u.port && !((u.protocol === 'http:' && u.port === '80') ||
+                    (u.protocol === 'https:' && u.port === '443'))) host += ':' + u.port;
+    let path = (u.pathname || '/').replace(/\/{2,}/g, '/');
+    if (path !== '/') path = path.replace(/\/+$/, '');
+    return host + path;
+  } catch(e) { return ''; }
+}
+(DATA.articleHubs || []).forEach(function(hub){
+  const key = normalizeArticleUrl(hub.url);
+  if (key) hubByArticle[key] = hub;
+});
 DATA.categories.forEach(function(c, ci){
   c._ci = ci;
   c.tasks.forEach(function(t, ti){
@@ -178,7 +194,15 @@ DATA.categories.forEach(function(c, ci){
     const content = t.content || '';
     t._hay = ((t.title || '') + ' ' + (t.desc || '') + ' ' + (t.slug || '') + ' ' + content).toLowerCase();
     t._qa = /definition of done/i.test(content);
-    t._ex = /^##\s+example/im.test(content) || /meta-article/i.test(content);
+    t._exampleCount = null;
+    t._exampleStatus = 'unknown';
+    const articleKey = normalizeArticleUrl(t.article);
+    t._hub = articleKey ? (hubByArticle[articleKey] || null) : null;
+    if (t._hub && t._hub.taskMetaCounts &&
+        Object.prototype.hasOwnProperty.call(t._hub.taskMetaCounts, t.slug)){
+      t._exampleCount = Number(t._hub.taskMetaCounts[t.slug]);
+      t._exampleStatus = t._hub.metaCountStatus || 'unknown';
+    }
     t._vis = true;
     byId[t._id] = t;
   });
@@ -264,21 +288,38 @@ el('#btl-chips').innerHTML = CHIPS.map(function(c){
    ============================================================ */
 function articleLink(t){
   if (!t.article) return '';
+  const orbitData = t._hub || t;
   const ready = t.articleState === 'ready';
   const label = ready ? 'Definitive article ↗' : 'Article in progress ↗';
   const title = ready ? 'All mapped tasks are complete and no reviewed semantic hold is active' :
     (t.articleStateReason || 'Article has incomplete mapped work or an active semantic-certification hold');
-  return '<a class="btl-art" href="' + esc(t.article) + '" target="_blank" rel="noopener" title="' + esc(title) + '">' + label + '</a>';
+  let orbit = '';
+  if (orbitData.metaCountStatus === 'verified' || orbitData.metaCountStatus === 'partial'){
+    const count = Number(orbitData.metaArticleCount || 0);
+    const plus = orbitData.metaCountStatus === 'partial' ? '+' : '';
+    orbit = '<span class="btl-orbit" title="' + esc((orbitData.metaOrbitTier || '') +
+      ' orbit strength; verified example volume only, not quality, traffic, freshness, or accuracy') + '">' +
+      fmt(count) + plus + ' verified meta-' + (count === 1 ? 'article' : 'articles') + '</span>';
+  } else {
+    orbit = '<span class="btl-orbit is-unknown" title="No source-backed orbit audit is recorded; unknown is not zero">Meta count unknown</span>';
+  }
+  return '<a class="btl-art" href="' + esc(t.article) + '" target="_blank" rel="noopener" title="' + esc(title) + '">' + label + '</a>' + orbit;
 }
 function rowHTML(t){
   const st = STATUS[t.status] || STATUS.gap;
   let badges = '<span class="btl-tag tag-sop" title="Step-by-step SOP included">SOP</span>';
   if (t._qa) badges += '<span class="btl-tag tag-qa" title="Has a Definition of Done QA gate">QA</span>';
-  if (t._ex) badges += '<span class="btl-tag tag-ex" title="Has a worked example / meta-article slot">Example</span>';
+  if (t._exampleCount == null){
+    badges += '<span class="btl-tag tag-ex is-unknown" title="No verified task-level example assignment is recorded; unknown is not zero">Examples unknown</span>';
+  } else {
+    const examplePlus = t._exampleStatus === 'partial' ? '+' : '';
+    badges += '<span class="btl-tag tag-ex" title="Derived from verified meta-article source records">' +
+      (t._exampleCount ? fmt(t._exampleCount) + examplePlus + ' verified ' + (t._exampleCount === 1 ? 'example' : 'examples') : 'Examples 0') + '</span>';
+  }
   const stage = (t.stage && t.stage !== '—') ? '<span class="btl-stage">' + esc(t.stage) + '</span>' : '';
   const art = articleLink(t) +
     (t.download ? '<a class="btl-art" href="' + esc(t.download) + '" target="_blank" rel="noopener">Download full skill suite ⬇</a>' : '');
-  return '<article class="btl-row" data-id="' + t._id + '">' +
+  return '<article class="btl-row" id="task-' + esc(t.slug) + '" data-id="' + t._id + '" data-slug="' + esc(t.slug) + '">' +
     '<span class="btl-dot dot-' + esc(t.status) + '" aria-hidden="true"></span>' +
     '<div class="btl-row-main">' +
       '<div class="btl-row-top"><h4 class="btl-row-title">' + esc(t.title) + '</h4>' +

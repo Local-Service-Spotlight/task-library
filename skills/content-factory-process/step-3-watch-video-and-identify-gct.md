@@ -3,7 +3,7 @@ name: step-3-watch-video-and-identify-gct
 description: Watch the full video and pin down Goals, Content, and Targeting — in that order — so every downstream writing decision serves a defined purpose (Blog Posting Guidelines Step 3).
 category: Content Factory — Process
 stage: Process
-definitive_article: /blog-posting-guidelines
+definitive_article: https://localservicespotlight.com/article-guidelines/
 status: complete
 ---
 
@@ -36,7 +36,7 @@ status: complete
 - [ ] Linked back to the definitive article and relevant siblings
 
 ## Example(s)
-- GCT-before-writing is the discipline behind every article documented at /blog-posting-guidelines; the framework itself is one of the Nine Triangles (/nine-triangles).
+- GCT-before-writing is the discipline behind every article documented at https://localservicespotlight.com/article-guidelines/; the framework itself is one of the Nine Triangles (/nine-triangles).
 - Example needed as a standalone meta-article — run the Meta-Article Prompt after first documented run.
 
 ## Run on a persistent agent (Fable 5)
@@ -45,6 +45,6 @@ A persistent agent (Claude Fable 5, or a comparable OpenAI/Google model that loo
 See `boil-the-ocean.md` for the full operating principles.
 
 ## Definitive article & links
-- Hub: /blog-posting-guidelines (Step 3 of the 18-step SOP)
+- Hub: https://localservicespotlight.com/article-guidelines/ (Step 3 of the 18-step SOP)
 - Related: /nine-triangles (GCT triangle), /topic-wheel (where the question came from)
 - Sibling skills, in run order: `step-2-transcribe-video-using-descript` → this → `step-4-research-edit-add-timestamps-and-outline`

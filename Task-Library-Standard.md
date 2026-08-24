@@ -13,7 +13,15 @@ Every concept/task in the library targets **three linked artifacts**, and they p
 2. **skill.md** — the machine-readable SOP an AI agent runs to *do* the task. Downloadable, one file per task. References its mapped article hub, or explicitly records a GAP.
 3. **Examples / meta-articles** — real proof the task was done, each documented with the Meta-Article Prompt and linking back up to the article hub.
 
-> Relationship (one direction up): **examples / meta-articles → article hub → course/service**, and a ready definitive hub links **across** to related definitive articles. Never publish a second page that competes with a hub (that's "content vandalism").
+> Relationship: **examples / meta-articles → article hub → course/service**, and a ready definitive hub links **across** to related definitive articles. The Task Library card links to the canonical article, while the article links back to its exact Task Library task or normalized hub route. Never publish a second page that competes with a hub (that's "content vandalism").
+
+## Bidirectional Task Library links
+
+- **Task → article:** every mapped Task Library card links to its final canonical article URL. The visible label is derived from the URL-level ready/WIP state; a mapping alone cannot produce a definitive label.
+- **Article → exact task:** use `https://local-service-spotlight.github.io/task-library/?task=<permanent-task-slug>#task-<permanent-task-slug>` when an article names one exact SOP. The query drives filtering; the stable fragment identifies the row.
+- **Article → all mapped tasks:** use `https://local-service-spotlight.github.io/task-library/?article=<URL-encoded-canonical-article-URL>` in the definitive marker or evidence footer. The dashboard normalizes scheme, `www`, trailing slash, query, and fragment exactly as the build does, then shows every task mapped to that hub.
+- The generated `articleHubs[]` index and each task's `taskLibraryUrl` are the machine-readable owners of these reverse URLs. Do not hand-build a second mapping in WordPress.
+- An archive or redirecting alias may point readers to the current standard, but tasks and reverse links map only to the approved canonical URL. An archive leaf never receives a Definitive badge.
 
 ---
 
@@ -145,7 +153,19 @@ Name the lane: `script` | `local` | `any` | `judgment` | `computer`. **Single-en
 ---
 
 ## Examples = meta-articles
-"Lots of real examples" (Requirement 3) is satisfied by **meta-articles** — each documents one real run of the task via the Meta-Article Prompt and links back to the definitive article. A task is fully "Green" when its definitive article exists, its skill.md is published, and it has at least one linked example/meta-article. The `/meta-article-prompt-template` (29 linked examples) and `/internal-linking` ("includes skill file for AI agents") are the models to copy.
+"Lots of real examples" (Requirement 3) is satisfied by **meta-articles** — each documents one real run of the task via the Meta-Article Prompt and links back to the definitive article. A task is fully "Green" when its definitive article exists, its skill.md is published, and it has at least one linked example/meta-article. The canonical `/meta-article-prompt/` and `/internal-linking` hubs are the models to copy; their current example totals come from the orbit inventory below.
+
+Meta-article strength is derived from `build/article-meta-orbits.json`; never type a count into an article or dashboard card. Each audited hub and candidate source preserves the public source URL, normalized hub URL, evidence method, date, counted decision, and reason. Hubs absent from that evidence file are **unknown**, never zero. `partial` counts render with a plus sign because they are a verified lower bound; `verified` counts may render as exact, including a source-backed zero.
+
+The count bands measure documented example volume only—not accuracy, quality, traffic, freshness, or conversion:
+
+- Level 0 — No verified examples: 0
+- Level 1 — Emerging: 1–2
+- Level 2 — Supported: 3–5
+- Level 3 — Strong: 6–10
+- Level 4 — Deep: 11+
+
+Keep breadth separate from volume. `priorityCoverage` is the importance-weighted share of mapped task slugs that have at least one verified meta-article; it remains unknown when source records do not name the task slugs they prove.
 
 ---
 

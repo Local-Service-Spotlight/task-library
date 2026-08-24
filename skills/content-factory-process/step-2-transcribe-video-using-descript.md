@@ -3,7 +3,7 @@ name: step-2-transcribe-video-using-descript
 description: Produce a clean, accurate verbatim transcript in Descript — correcting every blue-underlined low-confidence word — so the article is written from what was actually said (Blog Posting Guidelines Step 2).
 category: Content Factory — Process
 stage: Process
-definitive_article: /blog-posting-guidelines
+definitive_article: https://localservicespotlight.com/article-guidelines/
 status: complete
 ---
 
@@ -36,7 +36,7 @@ status: complete
 - [ ] Linked back to the definitive article and relevant siblings
 
 ## Example(s)
-- Transcription is Step 2 of every article run documented at /blog-posting-guidelines.
+- Transcription is Step 2 of every article run documented at https://localservicespotlight.com/article-guidelines/.
 - Example needed as a standalone meta-article — run the Meta-Article Prompt after first documented run.
 
 ## Run on a persistent agent (Fable 5)
@@ -45,6 +45,6 @@ Zero blue underlines is a number an agent can verify: a persistent agent (Claude
 See `boil-the-ocean.md` for the full operating principles.
 
 ## Definitive article & links
-- Hub: /blog-posting-guidelines (Step 2 of the 18-step SOP)
+- Hub: https://localservicespotlight.com/article-guidelines/ (Step 2 of the 18-step SOP)
 - Related: /content-factory
 - Sibling skills, in run order: `step-1-upload-video-to-google-drive-and-descript` → this → `use-descript-underlord-to-remove-filler-words` → `step-3-watch-video-and-identify-gct`

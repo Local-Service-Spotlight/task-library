@@ -3,7 +3,7 @@ name: step-14b-run-linkwhisper-for-internal-links
 description: Use LinkWhisper to surface and implement internal link suggestions in both directions, so the new post is woven into the SEO Tree instead of published as an orphan.
 category: Content Factory — Post
 stage: Post
-definitive_article: /blog-posting-guidelines
+definitive_article: https://localservicespotlight.com/article-guidelines/
 status: complete
 ---
 
@@ -43,6 +43,6 @@ It closes each run by logging a meta-article example so the library compounds.
 See `boil-the-ocean.md` for the full operating principles.
 
 ## Definitive article & links
-- Hub: /blog-posting-guidelines
+- Hub: https://localservicespotlight.com/article-guidelines/
 - Related: /internal-linking · /entity-linking · /seo-tree · /link-building
 - Run order (Post stage): step-14a-configure-rankmath-seo-plugin → **step-14b-run-linkwhisper-for-internal-links** → set-wordpress-author-to-correct-person
