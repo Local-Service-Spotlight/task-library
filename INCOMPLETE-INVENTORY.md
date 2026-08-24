@@ -93,7 +93,7 @@ Incomplete: **125**. This file is the work order. Do not re-sample.
 | 3 | needs-work | Post |  | `link-all-content-back-to-personal-brand-site` | any | supporting |
 | 3 | needs-work | — |  | `measure-content-rankings-traffic-revenue` | any | supporting |
 | 3 | needs-work | — |  | `measure-search-impressions-traffic-inbound-opportunities` | any | supporting |
-| 3 | needs-work | — |  | `positive-mentions-harvester` | any | supporting |
+| 3 | needs-work | — |  | `positive-mentions-harvester` | judgment | supporting |
 | 3 | needs-work | Produce |  | `record-one-minute-videos-answering-customer-questions` | any | supporting |
 | 3 | needs-work | Produce |  | `record-screen-shares-of-real-audits` | any | supporting |
 | 3 | needs-work | — |  | `remove-duplicate-thin-pages` | any | supporting |

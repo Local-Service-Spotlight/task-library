@@ -264,6 +264,22 @@ SLUG_LANES = {
     "run-content-factory-on-any-engine": "any",
 }
 
+# Tasks outside the four Content Factory phases still need an honest chain and
+# handoff. Without an explicit record they inherit the generic Process handoff,
+# which can demand transcripts and clips from a task that produces neither.
+TASK_OVERRIDES = {
+    "positive-mentions-harvester": {
+        "before": "business-brand-strategist",
+        "after": "reputation-gap-analyzer",
+        "lane": "judgment",
+        "handoff": (
+            "Update the canonical mentions inventory in place, then leave the ranked "
+            "public-serving queue, candidate/blocker queue, reputation-gap list, and "
+            "timestamped run receipt. The next skill reads those records, not this chat."
+        ),
+    },
+}
+
 HANDOFF = {
     "Produce": "Raw files in Content Library `01-Raw/` plus a tracker row (question, date, speaker). Next skill never needs the chat — it needs the files.",
     "Process": "Write `transcript.md`, `gct.md`, `article.html` (or overnight draft), `clips/` and `04-Promote-Creatives/`. The next engine opens those files. Do not pass work through one vendor's memory.",
@@ -431,6 +447,10 @@ def annotate(slug: str, category: str, stage: str, content: str = ""):
     siblings = parse_siblings(content or "")
     before, after = neighbors(slug, phase, siblings)
     lane = lane_for(slug, stage or "", category or "", phase)
+    task_override = TASK_OVERRIDES.get(slug, {})
+    before = task_override.get("before", before)
+    after = task_override.get("after", after)
+    lane = task_override.get("lane", lane)
     why = []
     if freq >= 4:
         why.append("runs every factory cycle or weekly")
@@ -453,7 +473,10 @@ def annotate(slug: str, category: str, stage: str, content: str = ""):
         "lane": lane,
         "lane_label": LANES.get(lane, lane),
         "why": "; ".join(why) or "supporting",
-        "handoff": HANDOFF.get(phase if phase in HANDOFF else stage, HANDOFF.get("Process")),
+        "handoff": task_override.get(
+            "handoff",
+            HANDOFF.get(phase if phase in HANDOFF else stage, HANDOFF.get("Process")),
+        ),
     }
 
 
