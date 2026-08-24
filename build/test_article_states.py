@@ -185,6 +185,21 @@ class BuiltArticleInventory(unittest.TestCase):
             task_build.normalize_article_url(t.get('article')) ==
             'blitzmetrics.com/meta-article-prompt-template' for t in self.tasks))
 
+    def test_positive_mentions_task_and_article_have_reviewed_hold(self):
+        mapped = [t for t in self.tasks
+                  if t['slug'] == 'positive-mentions-harvester']
+
+        self.assertEqual(len(mapped), 1)
+        self.assertEqual(mapped[0]['status'], 'needs-work')
+        self.assertEqual(mapped[0]['articleState'], 'wip')
+        self.assertEqual(
+            mapped[0]['article'],
+            'https://blitzmetrics.com/how-to-collect-organize-positive-mentions-to-build-authority/')
+        self.assertIn('22-point', mapped[0]['flag'])
+        self.assertIn('15–23', mapped[0]['articleStateReason'])
+        self.assertIn('promotion gate', mapped[0]['articleStateReason'])
+        self.assertEqual(mapped[0]['articleStateReviewed'], '2026-08-23')
+
     def test_blog_posting_mappings_remain_on_existing_hub(self):
         key = 'blitzmetrics.com/blog-posting-guidelines'
         mapped = [t for t in self.tasks

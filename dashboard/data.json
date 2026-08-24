@@ -3795,9 +3795,11 @@
      "lane": "judgment",
      "lane_label": "Frontier judgment: honest scoring, entity disambiguation, the subject's voice. Claude, ChatGPT, or Grok — pick the one you have.",
      "why": "supporting",
-     "flag": "Master article still needs parity with canonical roles, promotion gate, and current 24/15 score bands.",
+     "flag": "Semantic certification held 2026-08-23: the live article gives a 22-point supporting record immediate-amplification treatment and contains ungated boost/re-share instructions, conflicting with the canonical 15–23 band and promotion gate.",
      "download": "https://github.com/dennisyu/local-service-spotlight-skills/archive/refs/heads/main.zip",
-     "articleState": "wip"
+     "articleState": "wip",
+     "articleStateReason": "Semantic certification held: the live article gives a 22-point supporting record immediate-amplification treatment and contains ungated boost/re-share instructions, conflicting with the canonical 15–23 band and promotion gate.",
+     "articleStateReviewed": "2026-08-23"
     }
    ]
   },
