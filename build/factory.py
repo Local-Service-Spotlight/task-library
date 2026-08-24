@@ -277,6 +277,21 @@ TASK_OVERRIDES = {
             "public-serving queue, candidate/blocker queue, reputation-gap list, and "
             "timestamped run receipt. The next skill reads those records, not this chat."
         ),
+        "single_engine": (
+            "If you only have Grok, or only have Claude, run the task anyway. Write "
+            "every candidate and adjudication back to the canonical mentions inventory "
+            "before handing off to the next skill."
+        ),
+        "multi_engine": (
+            "A lower-cost agent may sweep and normalize candidates; a judgment model "
+            "resolves identity, evidence, permission, and Who / Where / What. Both write "
+            "to the same canonical mentions inventory."
+        ),
+        "state_bridge": (
+            "The canonical mentions inventory is the bridge across models and runs. Do "
+            "not create a parallel Content Library ledger or pass state through vendor "
+            "memory."
+        ),
     },
 }
 
@@ -477,6 +492,19 @@ def annotate(slug: str, category: str, stage: str, content: str = ""):
             "handoff",
             HANDOFF.get(phase if phase in HANDOFF else stage, HANDOFF.get("Process")),
         ),
+        "single_engine": task_override.get(
+            "single_engine",
+            "If you only have Grok, or only have Claude, run this task anyway. Do not "
+            "wait for a second vendor. Pass the handoff files to the next skill in this "
+            "same engine.",
+        ),
+        "multi_engine": task_override.get(
+            "multi_engine",
+            "local/Qwen can draft Process writing overnight; a frontier model (Claude, "
+            "ChatGPT, or Grok) does Jennifer + voice; scripts publish. That is the same "
+            "line, not a second playbook.",
+        ),
+        "state_bridge": task_override.get("state_bridge"),
     }
 
 
@@ -502,9 +530,10 @@ def layer_markdown(slug: str, rec: dict) -> str:
         "## Model routing (same factory, any engine)",
         "",
         f"- **This task's lane:** `{rec['lane']}` — {rec['lane_label']}",
-        "- **Single-engine path:** If you only have Grok, or only have Claude, run this task anyway. Do not wait for a second vendor. Pass the handoff files to the next skill in this same engine.",
-        "- **Optional multi-engine:** local/Qwen can draft Process writing overnight; a frontier model (Claude, ChatGPT, or Grok) does Jennifer + voice; scripts publish. That is the same line, not a second playbook.",
-        "- **Never** store the working state in one vendor's memory. Files in the Content Library are the bridge.",
+        f"- **Single-engine path:** {rec['single_engine']}",
+        f"- **Optional multi-engine:** {rec['multi_engine']}",
+        (f"- **State bridge:** {rec['state_bridge']}" if rec.get("state_bridge") else
+         "- **Never** store the working state in one vendor's memory. Files in the Content Library are the bridge."),
         "",
         MARKER_END,
     ]
