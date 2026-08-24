@@ -128,6 +128,11 @@ class FactoryScoring(unittest.TestCase):
         self.assertEqual(rec["lane"], "judgment")
         self.assertIn("canonical mentions inventory", rec["handoff"])
         self.assertNotIn("transcript.md", rec["handoff"])
+        block = factory.layer_markdown("positive-mentions-harvester", rec)
+        self.assertIn("canonical mentions inventory", block)
+        self.assertNotIn("Process writing", block)
+        self.assertNotIn("Jennifer", block)
+        self.assertNotIn("Files in the Content Library are the bridge", block)
 
 
 if __name__ == "__main__":
