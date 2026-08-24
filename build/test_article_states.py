@@ -502,7 +502,7 @@ class BuiltArticleInventory(unittest.TestCase):
             'blitzmetrics.com/how-we-use-podchaser-to-amplify-authority-and-repurpose-podcast-content':
                 (0, 'No verified examples'),
             'blitzmetrics.com/internal-linking': (1, 'Emerging'),
-            'blitzmetrics.com/meta-article-prompt': (59, 'Deep'),
+            'blitzmetrics.com/meta-article-prompt': (60, 'Deep'),
             'blitzmetrics.com/one-minute-video-guide':
                 (0, 'No verified examples'),
             'blitzmetrics.com/overnight-content-worker': (1, 'Emerging'),
@@ -511,7 +511,7 @@ class BuiltArticleInventory(unittest.TestCase):
         }
         hubs = {hub['key']: hub for hub in self.data['articleHubs']}
 
-        self.assertEqual(self.data['stats']['verifiedMetaArticles'], 84)
+        self.assertEqual(self.data['stats']['verifiedMetaArticles'], 85)
         self.assertEqual(self.data['stats']['metaOrbitHubsWithEvidence'], 13)
         self.assertEqual(self.data['stats']['metaOrbitHubsUnknown'], 11)
         self.assertEqual({key for key, hub in hubs.items()
@@ -526,6 +526,12 @@ class BuiltArticleInventory(unittest.TestCase):
         self.assertTrue(all(hub['metaArticleCount'] is None
                             for hub in hubs.values() if hub['state'] == 'wip'))
         self.assertNotIn('blitzmetrics.com/blog-posting-guidelines', hubs)
+
+        new_meta = 'https://blitzmetrics.com/how-we-made-definitive-article-strength-measurable/'
+        self.assertIn(new_meta, hubs['blitzmetrics.com/meta-article-prompt']['metaArticles'])
+        self.assertNotIn(
+            new_meta,
+            hubs['localservicespotlight.com/article-guidelines']['metaArticles'])
 
         # Multi-task hubs need record-level task assignments before claiming
         # breadth. Their verified volume is still exact, but coverage is UNKNOWN.

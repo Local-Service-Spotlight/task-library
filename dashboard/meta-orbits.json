@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-08-24T07:30:03+00:00",
+ "generatedAt": "2026-08-24T07:46:22+00:00",
  "countDefinition": "Verified meta-article sources explicitly classified by the recorded evidence method and linked to the normalized canonical hub. Unknown is never coerced to zero.",
  "strengthBands": [
   {
@@ -37,7 +37,7 @@
  "stats": {
   "articleHubs": 24,
   "definitiveArticles": 13,
-  "verifiedMetaArticles": 84,
+  "verifiedMetaArticles": 85,
   "metaOrbitHubsWithEvidence": 13,
   "metaOrbitHubsUnknown": 11
  },
@@ -753,7 +753,7 @@
    "taskSlugs": [
     "write-meta-article-documenting-agent-work"
    ],
-   "metaArticleCount": 59,
+   "metaArticleCount": 60,
    "metaCountStatus": "verified",
    "metaOrbitStrength": 4,
    "metaOrbitTier": "Deep",
@@ -793,6 +793,7 @@
     "https://blitzmetrics.com/how-we-harmonized-skills-and-routines/",
     "https://blitzmetrics.com/how-we-integrated-jobber-wordpress-home-services/",
     "https://blitzmetrics.com/how-we-launched-athlete-spotlight/",
+    "https://blitzmetrics.com/how-we-made-definitive-article-strength-measurable/",
     "https://blitzmetrics.com/how-we-mapped-the-usage-buckets/",
     "https://blitzmetrics.com/how-we-migrated-cheetah-screens-squarespace-to-wordpress/",
     "https://blitzmetrics.com/how-we-propagated-dollar-a-day-across-the-fleet/",
@@ -819,7 +820,7 @@
     "https://blitzmetrics.com/video-schema-root-cause/"
    ],
    "taskMetaCounts": {
-    "write-meta-article-documenting-agent-work": 59
+    "write-meta-article-documenting-agent-work": 60
    },
    "tasksWithMeta": 1,
    "taskCoverage": 1.0,
@@ -829,6 +830,22 @@
    "metaOrbitEvidenceUrl": "https://local-service-spotlight.github.io/task-library/meta-orbits.json",
    "metaOrbitEvidenceMethod": "One published post that documents a completed observable run whose main deliverable materially executes this hub, is explicitly classified by taxonomy or authored meta language, and links to the exact canonical hub in task-specific narrative or receipt. Shared maps, compliance tables, related-reading lists, indexes, instructions, archives, self-links and incidental cross-links do not count. Each post has one reviewed primary parent.",
    "records": [
+    {
+     "sourceUrl": "https://blitzmetrics.com/how-we-made-definitive-article-strength-measurable/",
+     "hubUrl": "https://blitzmetrics.com/meta-article-prompt/",
+     "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+     "counted": true,
+     "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it.",
+     "title": "How We Made Definitive-Article Strength Measurable",
+     "postId": 113204,
+     "publishedAt": "2026-08-24T07:42:05",
+     "modifiedAt": "2026-08-24T07:42:05",
+     "taxonomyEvidence": [
+      "category:3693",
+      "tag:2523"
+     ],
+     "primaryParentHub": "https://blitzmetrics.com/meta-article-prompt/"
+    },
     {
      "sourceUrl": "https://blitzmetrics.com/the-local-quick-audit-is-not-a-swapped-headline/",
      "hubUrl": "https://blitzmetrics.com/meta-article-prompt/",

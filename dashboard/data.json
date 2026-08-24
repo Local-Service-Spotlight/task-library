@@ -6,7 +6,7 @@
   "gaps": 23,
   "articleHubs": 24,
   "definitiveArticles": 13,
-  "verifiedMetaArticles": 84,
+  "verifiedMetaArticles": 85,
   "metaOrbitHubsWithEvidence": 13,
   "metaOrbitHubsUnknown": 11,
   "owners": 0,
@@ -505,7 +505,7 @@
    "taskSlugs": [
     "write-meta-article-documenting-agent-work"
    ],
-   "metaArticleCount": 59,
+   "metaArticleCount": 60,
    "metaCountStatus": "verified",
    "metaOrbitStrength": 4,
    "metaOrbitTier": "Deep",
@@ -545,6 +545,7 @@
     "https://blitzmetrics.com/how-we-harmonized-skills-and-routines/",
     "https://blitzmetrics.com/how-we-integrated-jobber-wordpress-home-services/",
     "https://blitzmetrics.com/how-we-launched-athlete-spotlight/",
+    "https://blitzmetrics.com/how-we-made-definitive-article-strength-measurable/",
     "https://blitzmetrics.com/how-we-mapped-the-usage-buckets/",
     "https://blitzmetrics.com/how-we-migrated-cheetah-screens-squarespace-to-wordpress/",
     "https://blitzmetrics.com/how-we-propagated-dollar-a-day-across-the-fleet/",
@@ -571,7 +572,7 @@
     "https://blitzmetrics.com/video-schema-root-cause/"
    ],
    "taskMetaCounts": {
-    "write-meta-article-documenting-agent-work": 59
+    "write-meta-article-documenting-agent-work": 60
    },
    "tasksWithMeta": 1,
    "taskCoverage": 1.0,
