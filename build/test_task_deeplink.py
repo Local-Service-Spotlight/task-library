@@ -20,6 +20,12 @@ class StableTaskDeepLink(unittest.TestCase):
         self.assertIn("e.origin !== 'https://blitzmetrics.com'", app)
         self.assertIn("gotoSlug(e.data.btlTask)", app)
 
+    def test_crafted_inherited_property_is_not_treated_as_a_task(self):
+        app = (ROOT / "dashboard" / "app.js").read_text(encoding="utf-8")
+
+        self.assertIn("const bySlug = Object.create(null);", app)
+        self.assertIn("Object.prototype.hasOwnProperty.call(bySlug, slug)", app)
+
 
 if __name__ == "__main__":
     unittest.main()

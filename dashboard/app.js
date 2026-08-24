@@ -169,8 +169,8 @@ if (!DATA || !DATA.categories || !DATA.categories.length){
 /* ============================================================
    Enrich data once: ids, lowercase haystacks, provenance flags
    ============================================================ */
-const byId = {};
-const bySlug = {};
+const byId = Object.create(null);
+const bySlug = Object.create(null);
 DATA.categories.forEach(function(c, ci){
   c._ci = ci;
   c.tasks.forEach(function(t, ti){
@@ -467,7 +467,7 @@ function syncPhases(){
   });
 }
 function gotoSlug(slug){
-  const t = bySlug[slug];
+  const t = Object.prototype.hasOwnProperty.call(bySlug, slug) ? bySlug[slug] : null;
   if (!t){ toast('No skill named ' + slug + ' in this build'); return; }
   state.q = slug; qInput.value = slug; clearBtn.hidden = false;
   state.status = 'all'; syncChips(); applyFilters();
