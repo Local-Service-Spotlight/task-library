@@ -1018,10 +1018,9 @@
    "format": "claude-skill",
    "category": "Personal Branding",
    "stage": "—",
-   "status": "needs-work",
+   "status": "complete",
    "article": "https://blitzmetrics.com/how-to-collect-organize-positive-mentions-to-build-authority/",
-   "download": "https://github.com/dennisyu/local-service-spotlight-skills/archive/refs/heads/main.zip",
-   "flag": "Master article still needs parity with canonical roles, promotion gate, and current 24/15 score bands."
+   "download": "https://github.com/dennisyu/local-service-spotlight-skills/archive/refs/heads/main.zip"
   },
   "run-content-factory-on-any-engine": {
    "source": "local",

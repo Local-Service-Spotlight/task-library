@@ -1,11 +1,11 @@
 {
  "stats": {
   "total": 249,
-  "complete": 124,
-  "needsWork": 102,
+  "complete": 125,
+  "needsWork": 101,
   "gaps": 23,
   "articleHubs": 24,
-  "definitiveArticles": 12,
+  "definitiveArticles": 13,
   "owners": 0,
   "categories": 13,
   "importance": {
@@ -3780,7 +3780,7 @@
     {
      "title": "positive-mentions-harvester",
      "slug": "positive-mentions-harvester",
-     "status": "needs-work",
+     "status": "complete",
      "stage": "—",
      "article": "https://blitzmetrics.com/how-to-collect-organize-positive-mentions-to-build-authority/",
      "desc": "Find, verify, deduplicate, record permission for, and score positive mentions on the Who / Where / What 30-point scale, then maintain one canonical proof inventory that feeds public authority pages, schema, and amplification.",
@@ -3795,9 +3795,8 @@
      "lane": "judgment",
      "lane_label": "Frontier judgment: honest scoring, entity disambiguation, the subject's voice. Claude, ChatGPT, or Grok — pick the one you have.",
      "why": "supporting",
-     "flag": "Master article still needs parity with canonical roles, promotion gate, and current 24/15 score bands.",
      "download": "https://github.com/dennisyu/local-service-spotlight-skills/archive/refs/heads/main.zip",
-     "articleState": "wip"
+     "articleState": "ready"
     }
    ]
   },
