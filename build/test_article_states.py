@@ -132,11 +132,11 @@ class BuiltArticleInventory(unittest.TestCase):
 
     def test_current_inventory_has_exact_derived_counts(self):
         self.assertEqual(self.data['stats']['articleHubs'], 24)
-        self.assertEqual(self.data['stats']['definitiveArticles'], 12)
+        self.assertEqual(self.data['stats']['definitiveArticles'], 13)
 
         tasks = copy.deepcopy(self.tasks)
         derived = task_build.derive_article_states(tasks)
-        self.assertEqual(derived, {'articleHubs': 24, 'definitiveArticles': 12})
+        self.assertEqual(derived, {'articleHubs': 24, 'definitiveArticles': 13})
 
     def test_every_mapped_task_has_a_derived_state(self):
         for task in self.tasks:
@@ -184,6 +184,19 @@ class BuiltArticleInventory(unittest.TestCase):
         self.assertFalse(any(
             task_build.normalize_article_url(t.get('article')) ==
             'blitzmetrics.com/meta-article-prompt-template' for t in self.tasks))
+
+    def test_positive_mentions_task_and_article_are_certified(self):
+        mapped = [t for t in self.tasks
+                  if t['slug'] == 'positive-mentions-harvester']
+
+        self.assertEqual(len(mapped), 1)
+        self.assertEqual(mapped[0]['status'], 'complete')
+        self.assertEqual(mapped[0]['articleState'], 'ready')
+        self.assertEqual(
+            mapped[0]['article'],
+            'https://blitzmetrics.com/how-to-collect-organize-positive-mentions-to-build-authority/')
+        self.assertNotIn('flag', mapped[0])
+        self.assertNotIn('articleStateReason', mapped[0])
 
     def test_blog_posting_mappings_remain_on_existing_hub(self):
         key = 'blitzmetrics.com/blog-posting-guidelines'
