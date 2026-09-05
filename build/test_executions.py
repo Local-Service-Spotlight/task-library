@@ -157,6 +157,25 @@ class ExecutionLedgerTests(unittest.TestCase):
             executions.upsert(self.path, r, KNOWN)
         self.assertEqual(self.path.read_bytes(), before)
 
+    def test_ended_partial_run_has_its_own_count_not_completed(self):
+        r = record('partial-run', 'partial')
+        executions.upsert(self.path, r, KNOWN)
+        tasks = [{'slug': s} for s in KNOWN]
+        public = executions.attach(tasks, [r], NOW)
+        self.assertEqual(public['completedExecutions'], 0)
+        self.assertEqual(public['partialExecutions'], 1)
+        task = next(t for t in tasks if t['slug'] == 'first-task')
+        self.assertEqual(task['executionHistory']['partialRuns'], 1)
+        self.assertEqual(task['executionHistory']['completedRuns'], 0)
+        self.assertEqual(public['executions'][0]['status'], 'partial')
+
+    def test_partial_is_terminal_and_requires_finish_time(self):
+        r = record('partial-run', 'partial'); del r['finishedAt']
+        before = self.path.read_bytes()
+        with self.assertRaisesRegex(ValueError, 'terminal status requires finishedAt'):
+            executions.upsert(self.path, r, KNOWN)
+        self.assertEqual(self.path.read_bytes(), before)
+
 
 if __name__ == '__main__':
     unittest.main()

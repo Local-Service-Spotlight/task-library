@@ -15,8 +15,8 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from urllib.parse import parse_qsl, urlsplit
 
-STATUSES = {'running', 'completed', 'failed', 'blocked', 'cancelled'}
-TERMINAL = {'completed', 'failed', 'cancelled'}
+STATUSES = {'running', 'completed', 'partial', 'failed', 'blocked', 'cancelled'}
+TERMINAL = {'completed', 'partial', 'failed', 'cancelled'}
 META_STATES = {'draft', 'published', 'withheld'}
 ID = re.compile(r'^[A-Za-z0-9][A-Za-z0-9._:-]{2,159}$')
 FIELDS = {'executionId', 'taskSlugs', 'startedAt', 'finishedAt', 'status',
@@ -194,6 +194,7 @@ def attach(tasks, records, as_of=None):
             'recordedRuns': len(runs) if runs else None,
             'completedRuns': len(completed) if runs else None,
             'failedRuns': sum(r['status'] == 'failed' for r in runs) if runs else None,
+            'partialRuns': sum(r['status'] == 'partial' for r in runs) if runs else None,
             'completedLast30Days': sum(recent <= timestamp(r['finishedAt'], 'finishedAt') <= now
                                        for r in completed) if runs else None,
             'lastCompletedAt': max((r['finishedAt'] for r in completed),
@@ -204,6 +205,7 @@ def attach(tasks, records, as_of=None):
             'countDefinition': 'Distinct recorded execution IDs, separate from meta-article URLs. History is partial; absent history is unknown, not zero. The last-30-day count is a documented lower bound, not total task frequency.',
             'recordedExecutions': len(records) if records else None,
             'completedExecutions': sum(r['status'] == 'completed' for r in records) if records else None,
+            'partialExecutions': sum(r['status'] == 'partial' for r in records) if records else None,
             'executions': [public_record(r) for r in records]}
 
 

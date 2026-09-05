@@ -763,9 +763,10 @@ def write_library_index(data, out_path):
     L.append(f"<p>The BlitzMetrics Task Library documents <strong>{st['total']} operational tasks</strong> "
              f"across {st['categories']} categories. Its task-to-article mappings resolve to "
              f"<strong>{st['articleHubs']} article hubs</strong>: "
-             f"<strong>{st['definitiveArticles']} definitive</strong> because their mapped tasks are complete "
+             f"<strong>{st['definitiveArticles']} catalog-ready</strong> because their mapped tasks are complete "
              f"and no reviewed semantic hold is active, "
              f"and {st['articleHubs'] - st['definitiveArticles']} still in progress. "
+             f"A Definitive marker also requires semantic review of the actual page. "
              f"{st['complete']} are ready, {st['needsWork']} in progress, {st['gaps']} identified gaps. "
              f"Updated {html_escape(data['updated'])}.</p>")
     for c in data['categories']:

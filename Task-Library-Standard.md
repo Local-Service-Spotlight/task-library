@@ -32,12 +32,12 @@ A page is only "definitive" if it meets **all nine**. Miss one and it's a draft 
 
 1. **Specific Goal, Content and Targeting in the opening** — explain what the reader will do, why it matters, who it serves, what they need and the expected result. Use two or three short sentences at grade 8 or below. Explain unfamiliar terms on their first mention and link the maintained owned explanation.
 2. **The complete process / framework for the declared page role** — a task recipe must name its trigger or starting state, inputs and required access, prerequisite tasks and their checked outputs, ordered steps with expected results, measurable completion criteria, and the receiving task or handoff. A topic hub may teach a framework and link its recipes. Do not give a reference or story a page-wide recipe label.
-3. **Lots of real examples** — link *every* example that exists, not three or five. Each with a 1–2 sentence note on why it's relevant.
+3. **Relevant verified examples** — link the real evidence that demonstrates this method or task, with a brief explanation of what each source proves. A count, copied story or unrelated mention is not completion evidence. Preserve failures and incomplete results honestly.
 4. **Links to related concepts and entities** — cross-link the other definitive articles and route named people, companies, tools, and concepts through the Entity Destination Rules below (builds the entity graph).
 5. **Links to the course/guide/service** — as a CTA near the bottom, not as the core content.
-6. **Compliance with Blog Posting Guidelines** — title <60 chars; meta description <160; primary keyword in first paragraph; H2/H3 structure; short paragraphs; active voice; no AI-fluff phrases; no stock images; entity-linking decision tree for internal links.
+6. **Compliance with the [maintained Article Guidelines](https://localservicespotlight.com/article-guidelines/)** — title <60 chars; meta description <160; primary keyword in first paragraph; H2/H3 structure; short paragraphs; active voice; no AI-fluff phrases; no stock images; entity-linking decision tree for internal links.
 7. **A short URL** — memorable redirect (e.g., `/dad`, `/digital-plumbing`) pointing to the hub, not the homepage or a case study.
-8. **Article-specific lead visual above the fold, then lower task context** — place a meaningful real photo, source screenshot or task diagram beside or just after the short opening. Verify that useful content and readable labels, not an empty border, are visible on the first anonymous visit at desktop 1440 × 860 and mobile 390 × 844. Further down each actual task recipe, show its honest place in the Content Factory: Produce → Process → Post → Promote, plus its actual inputs, outputs and handoff. For a Content Factory task, use the full canonical Content Factory diagram when it is needed to explain the workflow, highlight only the relevant parts, and keep surrounding context readable. Support tasks may support several stages without pretending to produce a content asset. The framework map is orientation, not generic hero art; it must not displace the article's primary evidence. Link the relevant task or method nodes and add an accurate caption or text equivalent. For pages that are not task recipes, do not force a generic Content Factory diagram. All media checks remain muted with volume zero; use a silent alternative if that state cannot be verified before playback.
+8. **Article-specific lead visual above the fold, then lower task context** — place a meaningful real photo, source screenshot or task diagram beside or just after the short opening. Verify that useful content and readable labels, not an empty border, are visible on the first anonymous visit at desktop 1440 × 860 and mobile 390 × 844. Every actual task recipe must show a truthful lower task map. Further down each actual task recipe, show its honest place in the Content Factory: Produce → Process → Post → Promote, plus its actual inputs, outputs and handoff. For a Content Factory task, use the full canonical Content Factory diagram when it is needed to explain the workflow, highlight only the relevant parts, and keep surrounding context readable. Support tasks may support several stages without pretending to produce a content asset. The framework map is orientation, not generic hero art; it must not displace the article's primary evidence. Link the relevant task or method nodes and add an accurate caption or text equivalent. For pages that are not task recipes, do not force a generic Content Factory diagram. All media checks remain muted with volume zero; use a silent alternative if that state cannot be verified before playback.
 9. **Third-party endorsements / testimonials / E-E-A-T** — media, conference talks, podcasts, practitioner testimonials with proof. Highest-authority first; volume matters. (The `/dad` article is the gold standard.)
 
 ---
@@ -61,6 +61,7 @@ The visible label is a validation result, not a writing style or a manually chos
 - A semantic mismatch in the live hub may force the URL to `wip` without falsifying any completed task. Reviewed holds live in `build/article-certifications.json`, require a dated reason, and may only downgrade readiness. Remove a hold only after the hub itself is corrected and reviewed against its authoritative framework or SOP.
 - A task-recipe label requires an actual recipe contract; a topic/entity hub, reference or supporting article keeps its own role. Only a task recipe may use **Definitive SOP**. Only a `ready` hub may show the consistent **Definitive article** marker near the top of the page and the **Definitive article ↗** label in the Task Library.
 - A `wip` hub must show **Article in progress** where a status label is useful. It must not carry a green/definitive badge merely because the page is published or mapped.
+- Catalog readiness and absence of a hold are necessary, not positive semantic certification. Before a Definitive marker, an actual reviewer must confirm the declared role and scope, owner, detailed steps, links, source evidence and acceptance results for that exact revision. Record the reviewer and evidence; neither a mapping nor the build supplies that judgment.
 - Re-run live page QA before promotion: the build state is the catalog receipt, while rendered content, links, diagram placement, schema, and mobile layout are the publication receipt.
 
 ---
@@ -69,9 +70,9 @@ The visible label is a validation result, not a writing style or a manually chos
 Run in order for any task in a Yellow/Red (Needs Work / Gap) state:
 
 1. **Identify the concept** and find every existing article that mentions it (the hub organizes them, doesn't replace them).
-2. **Write the definition** (2 paragraphs; model on `/dad`).
+2. **Write the specific GCT opening** in two or three short sentences at grade 8 or below. Explain who, what, why and the expected result; a meaningful task visual may lead.
 3. **Document the process/framework** (the SOP — this is what the skill.md mirrors).
-4. **Link every example** (1–2 sentences each).
+4. **Link the relevant verified examples** (1–2 sentences explaining what each source proves).
 5. **Cross-link related concepts and entities** using the Entity Destination Rules (other definitive articles, verified personal sites, verified company sites, and internal training for tools).
 6. **Link to the course/service** (CTA).
 7. **Set the short URL** (redirect to the hub).
@@ -82,12 +83,12 @@ Run in order for any task in a Yellow/Red (Needs Work / Gap) state:
 ---
 
 ## Where definitive articles live in WordPress
-- Published as a **Post** (not a Page).
+- Default new editorial guides to a **Post** when appropriate. Preserve the type, stable URL and durable source of an existing canonical **Page** or Post; this standard does not authorize migration or replacement.
 - Assigned to the **Definitive Articles** category only after the URL-level hub is `ready`. A published WIP article stays in its operating/topic category and is not taxonomically presented as definitive.
 - Carries the canonical Task Library category or categories represented by its mapped tasks, using names from `build/categories.json`; do not invent a near-duplicate category. Each task has exactly one library category, but a shared hub may represent several.
 - Tagged with every **Content Factory stage** represented by its mapped tasks (`Stage: Produce | Process | Post | Promote`) and no others, plus the smallest useful set of existing cross-cutting **Topic:** tags. A hub with no task in the four phases omits the Stage tag. Reuse canonical tag slugs; do not create spelling, punctuation, singular/plural, or capitalization variants.
 - The category, stage, article URL, and task status must agree with the corresponding `skill.md` frontmatter and registry entry. This lets agents query the REST API without translating competing taxonomies.
-- Authored in the **standard block editor (Gutenberg)** — **not Cornerstone** or any proprietary builder (builder content is opaque to AI agents and hard to update programmatically).
+- Prefer the **standard block editor (Gutenberg)** for a new editorial guide when appropriate. Preserve an existing Cornerstone or other builder page and use its supported durable save pipeline. Verify both the stored source and anonymous public result; editing an empty raw post body is not a builder save.
 
 ---
 
@@ -119,7 +120,7 @@ status: <complete | needs-work | gap>
 ## Definition of done (QA checklist)
 - [ ] <objective, checkable pass criteria — what "good" looks like>
 - [ ] Linked back to the definitive article and relevant siblings
-- [ ] Complies with Blog Posting Guidelines (if it publishes content)
+- [ ] Complies with [Article Guidelines](https://localservicespotlight.com/article-guidelines/) (if it publishes content)
 
 ## Example(s)
 - <link to a real example / meta-article demonstrating this task>, 1–2 sentences on why it's relevant.
@@ -155,7 +156,7 @@ Name the lane: `script` | `local` | `any` | `judgment` | `computer`. **Single-en
 ---
 
 ## Examples = meta-articles
-"Lots of real examples" (Requirement 3) is satisfied by **meta-articles** — each documents one real run of the task via the Meta-Article Prompt and links back to the definitive article. A task is fully "Green" when its definitive article exists, its skill.md is published, and it has at least one linked example/meta-article. The canonical `/meta-article-prompt/` and `/internal-linking` hubs are the models to copy; their historical published-example totals come from the dated orbit inventory below, not an execution counter.
+"Lots of real examples" (Requirement 3) is satisfied by **meta-articles** — each documents one real run of the task via the Meta-Article Prompt and links back to the definitive article. A canonical task article, published skill.md and at least one relevant linked example/meta-article are minimum artifacts; acceptance checks and semantic review must also pass before a task is fully "Green". The canonical `/meta-article-prompt/` and `/internal-linking` hubs are the models to copy; their historical published-example totals come from the dated orbit inventory below, not an execution counter.
 
 Meta-article strength is derived from `build/article-meta-orbits.json`; never type a count into an article or dashboard card. Each audited hub and candidate source preserves the public source URL, normalized hub URL, evidence method, date, counted decision, and reason. Hubs absent from that evidence file are **unknown**, never zero. `partial` counts render with a plus sign because they are a verified lower bound; `verified` counts may render as exact, including a source-backed zero.
 

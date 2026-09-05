@@ -320,7 +320,7 @@ function executionHistoryHTML(t, detail){
     fmt(h.completedRuns) + ' recorded completed ' + (h.completedRuns === 1 ? 'run' : 'runs') + '</span>';
   if (detail) {
     html += '<p class="btl-chain">Recorded in the last 30 days: ' + fmt(h.completedLast30Days) +
-      ' completed; ' + fmt(h.failedRuns) + ' failed in the recorded history. These are lower bounds from recorded work, not total task frequency.</p>';
+      ' completed; ' + fmt(h.partialRuns || 0) + ' ended partial and ' + fmt(h.failedRuns) + ' failed in the recorded history. These are lower bounds from recorded work, not total task frequency.</p>';
     const ids = h.executionIds || [];
     const runs = ((DATA.executionHistory || {}).executions || []).filter(function(r){ return ids.indexOf(r.executionId) !== -1; });
     html += '<ul>' + runs.map(function(r){

@@ -1631,10 +1631,11 @@
  ],
  "executionHistory": {
   "schemaVersion": 1,
-  "asOf": "2026-09-05T08:47:57.831416+00:00",
+  "asOf": "2026-09-05T08:55:01.669956+00:00",
   "countDefinition": "Distinct recorded execution IDs, separate from meta-article URLs. History is partial; absent history is unknown, not zero. The last-30-day count is a documented lower bound, not total task frequency.",
   "recordedExecutions": null,
   "completedExecutions": null,
+  "partialExecutions": null,
   "executions": []
  },
  "categories": [
@@ -1669,6 +1670,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -1698,6 +1700,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -1729,6 +1732,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -1760,6 +1764,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -1789,6 +1794,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -1818,6 +1824,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -1849,6 +1856,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -1880,6 +1888,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -1909,6 +1918,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -1940,6 +1950,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -1972,6 +1983,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -2010,6 +2022,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -2039,6 +2052,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -2068,6 +2082,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -2097,6 +2112,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -2126,6 +2142,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -2157,6 +2174,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -2188,6 +2206,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -2219,6 +2238,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -2250,6 +2270,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -2279,6 +2300,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -2310,6 +2332,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -2341,6 +2364,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -2372,6 +2396,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -2403,6 +2428,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -2434,6 +2460,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -2465,6 +2492,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -2496,6 +2524,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -2527,6 +2556,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -2558,6 +2588,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -2589,6 +2620,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -2620,6 +2652,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -2651,6 +2684,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -2682,6 +2716,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -2711,6 +2746,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -2742,6 +2778,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -2755,7 +2792,7 @@
      "article": "https://blitzmetrics.com/definitive-article-guide/",
      "articleKind": "task-recipe",
      "desc": "Create or update the maintained guide for a real task, with clear steps, useful proof, and a next owner who can check the result.",
-     "content": "---\nname: create-or-update-a-definitive-article\ndescription: Create or update the maintained guide for a real task, with clear steps, useful proof, and a next owner who can check the result.\ncategory: Content Factory — Process\nstage: Process\ndefinitive_article: https://blitzmetrics.com/definitive-article-guide/\nstatus: needs-work\n---\n\n# Create or update a definitive task article\n\nUse this when a source review finds a missing or incomplete task guide, or a real run shows that an existing recipe needs to change. First decide whether the page is a task recipe, a topic/entity hub, or supporting content. Improve the current owner; do not turn every page into a task recipe.\n\nThis task is registered as WIP. Registration, a clear opening, and an execution record do not certify the whole guide.\n\n## Inputs\n\n- The task or topic, its current owner URL, and the version being reviewed.\n- Source material and proof from real work, with permission and public/private limits recorded.\n- A specific [Goals, Content, Targeting brief](https://blitzmetrics.com/gct-business-strategy/): the result we want, what we have to work with, and who it serves.\n- Current [article guidelines](https://localservicespotlight.com/article-guidelines/), [canonical directory](https://blitzmetrics.com/canonical/), and [Task Library](https://blitzmetrics.com/task-library/).\n- Any actual prerequisite tasks and their checked outputs. The library's neighboring tasks are not automatically prerequisites.\n- Access and existing authority for the proposed CMS or redirect action. Writing is required; public publication follows its existing authority and review rules.\n\n## Steps\n\n1. Search the directory, Task Library, and live site. Identify the current owner and declared page role. Record any missing owner instead of creating a competing page.\n2. Write the specific GCT and a two- or three-sentence opening at grade 8 or below. Explain unfamiliar terms on first mention and link their verified owned explainers. Have another reviewer check the meaning.\n3. For a task recipe, state the trigger, starting state, inputs, linked prerequisite tasks, ordered steps and decisions, measurable output, pass/fail checks, and downstream owner and artifact. Preserve unsupported fields as gaps. For a topic hub, explain the method and link its actual recipes.\n4. Find real executions and proof. Keep the run ID, task slug, article revision, and evidence together. A copy, revision, or derivative article is not another execution. Keep legacy meta-article volume separate from execution frequency.\n5. Connect the [SEO Tree](https://blitzmetrics.com/seo-tree/): one parent, useful proof, and related guides for the next task. Prefer the relevant owned lesson for explanation; retain exact sources and tool access/download links where useful. Verify destinations.\n6. Link an applicable course or service as a next step when one exists. Do not invent an offer or make unsupported outcome claims.\n7. Verify the canonical and short URLs. Change a redirect only within the authorized scope and check its final destination.\n8. Keep the opening and a meaningful lead picture or diagram together. Lower in a task recipe, show its actual place in [Produce → Process → Post → Promote](https://blitzmetrics.com/content-factory/), including the known input and handoff. Preserve original proof media. Check the anonymous first screen at 1440×860 and 390×844; no empty visual, unreadable labels, or horizontal page overflow. Keep media muted at volume zero; use a silent check when playback cannot be controlled.\n9. Add relevant third-party proof with source context and attribution when it exists. A mention is not automatically an endorsement. Record evidence gaps without inventing testimonials.\n10. After any authorized publish, reopen the canonical URL and verify the live content, media, links, and task contract. Write this execution's [meta article](https://localservicespotlight.com/meta-articles/) with the [Meta-Article Prompt](https://blitzmetrics.com/meta-article-prompt/), even if the run failed or remains partial. Save a draft when publication is not authorized or public-safe. Record the result and evidence in the execution ledger, and send supported recipe improvements to the existing review rail.\n\n## Definition of done (QA checklist)\n\n- [ ] The current owner, role, and recipe revision are recorded; no duplicate owner was created.\n- [ ] The opening explains who, what, why, and outcome at grade 8 or below; the reviewer confirms its meaning.\n- [ ] A task recipe has all supported start/input/steps/output/check/handoff fields. Missing evidence stays a gap.\n- [ ] The owned concept links and SEO Tree routes resolve to the intended pages.\n- [ ] The lead visual and page fit are verified anonymously at both required viewport sizes, with evidence tied to the published revision.\n- [ ] The lower Content Factory context uses accepted stage names and actual dependencies, not inferred list neighbors.\n- [ ] Any publish or redirect has exact read-back and live verification; authorization and certification remain separate.\n- [ ] A real meta article is written, with public URL or saved-draft hash, and the execution record names its result and proof.\n- [ ] The next owner receives the checked artifact, remaining gaps, and supported changes for review.\n\n## Example(s)\n\nThe current article-quality cleanup is in progress. Its parent execution and meta article will be registered only from the final source-backed record. No completed example or execution count is claimed here yet.\n\n## Factory context and handoff\n\nSource material enters from Produce. Drafting and review are Process. Authorized publication and live QA are Post. Promotion is a separate downstream decision. Hand the guide, review checklist, canonical URL or staged draft, execution record, and remaining issues to the publishing owner or the next named task. Compare the run's lessons with the recipe and propose only supported updates.\n\nRelated QA tasks: [final formatting and QA](https://local-service-spotlight.github.io/task-library/?task=step-17-final-formatting-and-qa-checks#task-step-17-final-formatting-and-qa-checks) and [article checklist verification](https://local-service-spotlight.github.io/task-library/?task=verify-all-items-on-blog-posting-checklist#task-verify-all-items-on-blog-posting-checklist). They may be parts of this parent execution; links do not create separate completed runs.\n\n\n<!-- factory-layer:start -->\n\n## Factory chain (do not treat this as isolated)\n\n- **Phase:** Process\n- **Importance:** 4/5 `●●●●○` — frequency 4, revenue 3, gating 2 (runs every factory cycle or weekly)\n- **Suggested previous station:** —\n- **Suggested next station:** —\nThese stations are generated neighbors, not verified prerequisites or handoffs. Follow the task’s actual Inputs and Handoff sections.\n- **Handoff:** Write `transcript.md`, `gct.md`, `article.html` (or overnight draft), `clips/` and `04-Promote-Creatives/`. The next engine opens those files. Do not pass work through one vendor's memory.\n\n## Model routing (same factory, any engine)\n\n- **This task's lane:** `any` — Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.\n- **Single-engine path:** If you only have Grok, or only have Claude, run this task anyway. Do not wait for a second vendor. Pass the handoff files to the next skill in this same engine.\n- **Optional multi-engine:** local/Qwen can draft Process writing overnight; a frontier model (Claude, ChatGPT, or Grok) does Jennifer + voice; scripts publish. That is the same line, not a second playbook.\n- **Never** store the working state in one vendor's memory. Files in the Content Library are the bridge.\n\n<!-- factory-layer:end -->\n## Definitive article & links\n\n- Canonical guide: https://blitzmetrics.com/definitive-article-guide/\n- Task record: https://local-service-spotlight.github.io/task-library/?task=create-or-update-a-definitive-article#task-create-or-update-a-definitive-article\n- Maintained writing rules: https://localservicespotlight.com/article-guidelines/\n- Meta article explanation: https://localservicespotlight.com/meta-articles/\n- Meta-writing task: https://local-service-spotlight.github.io/task-library/?task=write-meta-article-documenting-agent-work#task-write-meta-article-documenting-agent-work\n\nSource: reviewed guide draft for the current update, with certification remaining WIP until the full review and runtime checks support more.",
+     "content": "---\nname: create-or-update-a-definitive-article\ndescription: Create or update the maintained guide for a real task, with clear steps, useful proof, and a next owner who can check the result.\ncategory: Content Factory — Process\nstage: Process\ndefinitive_article: https://blitzmetrics.com/definitive-article-guide/\nstatus: needs-work\n---\n\n# Create or update a definitive task article\n\nUse this when a source review finds a missing or incomplete task guide, or a real run shows that an existing recipe needs to change. First decide whether the page is a task recipe, a topic/entity hub, or supporting content. Improve the current owner; do not turn every page into a task recipe.\n\nThis task is registered as WIP. Registration, a clear opening, and an execution record do not certify the whole guide.\n\n## Inputs\n\n- The task or topic, its current owner URL, and the version being reviewed.\n- Source material and proof from real work, with permission and public/private limits recorded.\n- A specific [Goals, Content, Targeting brief](https://blitzmetrics.com/gct-business-strategy/): the result we want, what we have to work with, and who it serves.\n- Current [article guidelines](https://localservicespotlight.com/article-guidelines/), [canonical directory](https://blitzmetrics.com/canonical/), and [Task Library](https://local-service-spotlight.github.io/task-library/).\n- Any actual prerequisite tasks and their checked outputs. The library's neighboring tasks are not automatically prerequisites.\n- Access and existing authority for the proposed CMS or redirect action. Writing is required; public publication follows its existing authority and review rules.\n\n## Steps\n\n1. Search the directory, Task Library, and live site. Identify the current owner and declared page role. Record any missing owner instead of creating a competing page.\n2. Write the specific GCT and a two- or three-sentence opening at grade 8 or below. Explain unfamiliar terms on first mention and link their verified owned explainers. Have another reviewer check the meaning.\n3. For a task recipe, state the trigger, starting state, inputs, linked prerequisite tasks, ordered steps and decisions, measurable output, pass/fail checks, and downstream owner and artifact. Preserve unsupported fields as gaps. For a topic hub, explain the method and link its actual recipes.\n4. Find real executions and proof. Keep the run ID, task slug, article revision, and evidence together. A copy, revision, or derivative article is not another execution. Keep legacy meta-article volume separate from execution frequency.\n5. Connect the [SEO Tree](https://blitzmetrics.com/seo-tree/): one parent, useful proof, and related guides for the next task. Prefer the relevant owned lesson for explanation; retain exact sources and tool access/download links where useful. Verify destinations.\n6. Link an applicable course or service as a next step when one exists. Do not invent an offer or make unsupported outcome claims.\n7. Verify the canonical and short URLs. Change a redirect only within the authorized scope and check its final destination.\n8. Keep the opening and a meaningful lead picture or diagram together. Lower in a task recipe, show its actual place in [Produce → Process → Post → Promote](https://blitzmetrics.com/content-factory/), including the known input and handoff. Preserve original proof media. Check the anonymous first screen at 1440×860 and 390×844; no empty visual, unreadable labels, or horizontal page overflow. Keep media muted at volume zero; use a silent check when playback cannot be controlled.\n9. Add relevant third-party proof with source context and attribution when it exists. A mention is not automatically an endorsement. Record evidence gaps without inventing testimonials.\n10. After any authorized publish, reopen the canonical URL and verify the live content, media, links, and task contract. Write this execution's [meta article](https://localservicespotlight.com/meta-articles/) with the [Meta-Article Prompt](https://blitzmetrics.com/meta-article-prompt/), even if the run failed or remains partial. Save a draft when publication is not authorized or public-safe. Record the result and evidence in the execution ledger, and send supported recipe improvements to the existing review rail.\n\n## Definition of done (QA checklist)\n\n- [ ] The current owner, role, and recipe revision are recorded; no duplicate owner was created.\n- [ ] The opening explains who, what, why, and outcome at grade 8 or below; the reviewer confirms its meaning.\n- [ ] A task recipe has all supported start/input/steps/output/check/handoff fields. Missing evidence stays a gap.\n- [ ] The owned concept links and SEO Tree routes resolve to the intended pages.\n- [ ] The lead visual and page fit are verified anonymously at both required viewport sizes, with evidence tied to the published revision.\n- [ ] The lower Content Factory context uses accepted stage names and actual dependencies, not inferred list neighbors.\n- [ ] Any publish or redirect has exact read-back and live verification; authorization and certification remain separate.\n- [ ] A real meta article is written, with public URL or saved-draft hash, and the execution record names its result and proof.\n- [ ] The next owner receives the checked artifact, remaining gaps, and supported changes for review.\n\n## Example(s)\n\nThe current article-quality cleanup is in progress. Its parent execution and meta article will be registered only from the final source-backed record. No completed example or execution count is claimed here yet.\n\n## Factory context and handoff\n\nSource material enters from Produce. Drafting and review are Process. Authorized publication and live QA are Post. Promotion is a separate downstream decision. Hand the guide, review checklist, canonical URL or staged draft, execution record, and remaining issues to the publishing owner or the next named task. Compare the run's lessons with the recipe and propose only supported updates.\n\nRelated QA tasks: [final formatting and QA](https://local-service-spotlight.github.io/task-library/?task=step-17-final-formatting-and-qa-checks#task-step-17-final-formatting-and-qa-checks) and [article checklist verification](https://local-service-spotlight.github.io/task-library/?task=verify-all-items-on-blog-posting-checklist#task-verify-all-items-on-blog-posting-checklist). They may be parts of this parent execution; links do not create separate completed runs.\n\n\n<!-- factory-layer:start -->\n\n## Factory chain (do not treat this as isolated)\n\n- **Phase:** Process\n- **Importance:** 4/5 `●●●●○` — frequency 4, revenue 3, gating 2 (runs every factory cycle or weekly)\n- **Suggested previous station:** —\n- **Suggested next station:** —\nThese stations are generated neighbors, not verified prerequisites or handoffs. Follow the task’s actual Inputs and Handoff sections.\n- **Handoff:** Write `transcript.md`, `gct.md`, `article.html` (or overnight draft), `clips/` and `04-Promote-Creatives/`. The next engine opens those files. Do not pass work through one vendor's memory.\n\n## Model routing (same factory, any engine)\n\n- **This task's lane:** `any` — Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.\n- **Single-engine path:** If you only have Grok, or only have Claude, run this task anyway. Do not wait for a second vendor. Pass the handoff files to the next skill in this same engine.\n- **Optional multi-engine:** local/Qwen can draft Process writing overnight; a frontier model (Claude, ChatGPT, or Grok) does Jennifer + voice; scripts publish. That is the same line, not a second playbook.\n- **Never** store the working state in one vendor's memory. Files in the Content Library are the bridge.\n\n<!-- factory-layer:end -->\n## Definitive article & links\n\n- Canonical guide: https://blitzmetrics.com/definitive-article-guide/\n- Task record: https://local-service-spotlight.github.io/task-library/?task=create-or-update-a-definitive-article#task-create-or-update-a-definitive-article\n- Maintained writing rules: https://localservicespotlight.com/article-guidelines/\n- Meta article explanation: https://localservicespotlight.com/meta-articles/\n- Meta-writing task: https://local-service-spotlight.github.io/task-library/?task=write-meta-article-documenting-agent-work#task-write-meta-article-documenting-agent-work\n\nSource: reviewed guide draft for the current update, with certification remaining WIP until the full review and runtime checks support more.",
      "importance": 4,
      "freq": 4,
      "revenue": 3,
@@ -2774,6 +2811,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -2806,6 +2844,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -2846,6 +2885,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -2877,6 +2917,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -2906,6 +2947,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -2935,6 +2977,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -2964,6 +3007,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -2995,6 +3039,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -3026,6 +3071,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -3057,6 +3103,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -3088,6 +3135,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -3119,6 +3167,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -3150,6 +3199,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -3179,6 +3229,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -3210,6 +3261,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -3242,6 +3294,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -3282,6 +3335,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -3313,6 +3367,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -3344,6 +3399,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -3376,6 +3432,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -3407,6 +3464,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -3436,6 +3494,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -3467,6 +3526,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -3498,6 +3558,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -3527,6 +3588,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -3558,6 +3620,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -3589,6 +3652,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -3620,6 +3684,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -3651,6 +3716,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -3691,6 +3757,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -3722,6 +3789,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -3753,6 +3821,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -3784,6 +3853,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -3813,6 +3883,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -3844,6 +3915,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -3875,6 +3947,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -3906,6 +3979,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -3935,6 +4009,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -3966,6 +4041,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -3995,6 +4071,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -4024,6 +4101,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -4055,6 +4133,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -4086,6 +4165,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -4115,6 +4195,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -4144,6 +4225,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -4175,6 +4257,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -4204,6 +4287,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -4235,6 +4319,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -4264,6 +4349,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -4293,6 +4379,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -4322,6 +4409,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -4353,6 +4441,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -4384,6 +4473,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -4415,6 +4505,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -4446,6 +4537,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -4477,6 +4569,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -4508,6 +4601,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -4540,6 +4634,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -4580,6 +4675,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -4611,6 +4707,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -4642,6 +4739,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -4673,6 +4771,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -4704,6 +4803,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -4735,6 +4835,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -4766,6 +4867,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -4797,6 +4899,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -4828,6 +4931,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -4857,6 +4961,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -4888,6 +4993,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -4919,6 +5025,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -4950,6 +5057,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -4981,6 +5089,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -5012,6 +5121,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -5043,6 +5153,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -5074,6 +5185,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -5105,6 +5217,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -5145,6 +5258,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -5176,6 +5290,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -5207,6 +5322,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -5238,6 +5354,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -5269,6 +5386,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -5300,6 +5418,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -5331,6 +5450,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -5362,6 +5482,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -5393,6 +5514,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -5424,6 +5546,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -5455,6 +5578,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -5486,6 +5610,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -5518,6 +5643,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -5549,6 +5675,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -5580,6 +5707,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -5611,6 +5739,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -5642,6 +5771,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -5673,6 +5803,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -5704,6 +5835,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -5735,6 +5867,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -5766,6 +5899,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -5797,6 +5931,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -5828,6 +5963,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -5859,6 +5995,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -5890,6 +6027,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -5921,6 +6059,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -5952,6 +6091,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -5983,6 +6123,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -6014,6 +6155,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -6045,6 +6187,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -6076,6 +6219,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -6107,6 +6251,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -6138,6 +6283,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -6169,6 +6315,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -6200,6 +6347,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -6231,6 +6379,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -6263,6 +6412,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -6295,6 +6445,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -6327,6 +6478,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -6367,6 +6519,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -6398,6 +6551,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -6429,6 +6583,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -6462,6 +6617,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -6493,6 +6649,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -6524,6 +6681,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -6555,6 +6713,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -6586,6 +6745,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -6617,6 +6777,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -6648,6 +6809,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -6679,6 +6841,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -6710,6 +6873,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -6741,6 +6905,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -6772,6 +6937,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -6803,6 +6969,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -6834,6 +7001,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -6866,6 +7034,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -6898,6 +7067,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -6930,6 +7100,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -6970,6 +7141,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -7001,6 +7173,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -7032,6 +7205,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -7063,6 +7237,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -7094,6 +7269,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -7125,6 +7301,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -7156,6 +7333,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -7187,6 +7365,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -7218,6 +7397,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -7249,6 +7429,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -7280,6 +7461,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -7309,6 +7491,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -7340,6 +7523,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -7371,6 +7555,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -7402,6 +7587,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -7433,6 +7619,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -7464,6 +7651,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -7495,6 +7683,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -7526,6 +7715,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -7558,6 +7748,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -7589,6 +7780,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -7620,6 +7812,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -7651,6 +7844,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -7683,6 +7877,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -7715,6 +7910,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -7747,6 +7943,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -7779,6 +7976,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -7817,6 +8015,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -7850,6 +8049,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -7883,6 +8083,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -7916,6 +8117,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -7949,6 +8151,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -7982,6 +8185,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -8015,6 +8219,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -8048,6 +8253,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -8079,6 +8285,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -8110,6 +8317,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -8141,6 +8349,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -8170,6 +8379,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -8203,6 +8413,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -8232,6 +8443,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -8263,6 +8475,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -8294,6 +8507,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -8325,6 +8539,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -8356,6 +8571,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -8387,6 +8603,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -8418,6 +8635,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -8449,6 +8667,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -8482,6 +8701,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -8515,6 +8735,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -8546,6 +8767,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -8577,6 +8799,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -8608,6 +8831,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -8640,6 +8864,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -8672,6 +8897,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -8704,6 +8930,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -8745,6 +8972,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -8776,6 +9004,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -8808,6 +9037,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -8840,6 +9070,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -8872,6 +9103,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -8904,6 +9136,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -8944,6 +9177,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -8975,6 +9209,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -9006,6 +9241,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -9037,6 +9273,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -9068,6 +9305,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -9099,6 +9337,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -9130,6 +9369,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -9161,6 +9401,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -9192,6 +9433,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -9223,6 +9465,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -9254,6 +9497,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -9285,6 +9529,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -9316,6 +9561,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -9347,6 +9593,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -9378,6 +9625,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -9409,6 +9657,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -9440,6 +9689,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -9471,6 +9721,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -9502,6 +9753,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -9533,6 +9785,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -9564,6 +9817,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -9595,6 +9849,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -9626,6 +9881,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -9657,6 +9913,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -9688,6 +9945,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -9720,6 +9978,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -9752,6 +10011,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -9784,6 +10044,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -9816,6 +10077,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -9848,6 +10110,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -9880,6 +10143,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -9912,6 +10176,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -9944,6 +10209,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -9976,6 +10242,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -10008,6 +10275,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -10040,6 +10308,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -10078,6 +10347,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -10107,6 +10377,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -10136,6 +10407,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -10165,6 +10437,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -10194,6 +10467,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -10223,6 +10497,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -10252,6 +10527,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []
@@ -10281,6 +10557,7 @@
       "recordedRuns": null,
       "completedRuns": null,
       "failedRuns": null,
+      "partialRuns": null,
       "completedLast30Days": null,
       "lastCompletedAt": null,
       "executionIds": []

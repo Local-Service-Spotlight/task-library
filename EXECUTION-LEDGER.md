@@ -9,7 +9,7 @@ One parent job remains one execution. Internal QA checks, agent contributions, r
 ## Three independent measures
 
 - **Historical verified meta articles:** distinct public URLs in `build/article-meta-orbits.json`, with the recorded audit date and primary parent hub. The existing 85-source inventory is a historical article-volume audit, not 85 executions.
-- **Recorded executions:** distinct execution IDs in the new ledger. Completed, failed, running, blocked and cancelled remain separate. Last-30-day completions use `finishedAt`, not the latest edit or publication date. History is partial: counts are documented lower bounds; an untracked task shows **Run frequency unknown**, never zero.
+- **Recorded executions:** distinct execution IDs in the new ledger. Completed, ended partial, failed, running, blocked and cancelled remain separate. Last-30-day completions use `finishedAt`, not the latest edit or publication date. History is partial: counts are documented lower bounds; an untracked task shows **Run frequency unknown**, never zero.
 - **Importance:** the existing ordinal estimate based on recurrence, revenue and gating. This is a planning score, not observed task frequency.
 
 None changes task completion, article certification, or a semantic HOLD. Registry `article_kind` may distinguish `task-recipe`, `topic-hub`, `entity-hub`, `reference`, `supporting`, or `unknown` without promoting readiness. Existing `before` and `after` values are generated neighboring stations, not verified prerequisite or handoff contracts; use the recipe's actual inputs and checked output links.
@@ -25,8 +25,8 @@ The ledger contains exactly `schemaVersion: 1` and an `executions` array. Each r
 | `recipeRevisions` | Object keyed by every named task slug; each has the public canonical `articleUrl` and actual `sourceSha256` followed in this attempt. |
 | `parentExecutionId` | Optional existing execution ID for a separately scoped and documented child run. No self-link or cycle. |
 | `startedAt` | Actual ISO timestamp with timezone. |
-| `finishedAt` | Required only for completed, failed or cancelled attempts; absent while running or blocked. |
-| `status` | `running`, `completed`, `failed`, `blocked`, or `cancelled`. |
+| `finishedAt` | Required only for completed, partial, failed or cancelled attempts; absent while running or blocked. |
+| `status` | `running`, `completed`, `partial`, `failed`, `blocked`, or `cancelled`. Use terminal `partial` when an attempt has ended with some required outcomes incomplete, and record `finishedAt`; use `blocked` while it still awaits a dependency. |
 | `result` | Short public-safe result, maximum 600 characters. Do not include private client facts. |
 | `evidence` | Array of public URL references or private-content hashes. At least one is required for completed work. |
 | `metaArticle` | Written draft, withheld written draft, or published article; see below. |

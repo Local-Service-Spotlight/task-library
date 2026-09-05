@@ -18,7 +18,7 @@ This task is registered as WIP. Registration, a clear opening, and an execution 
 - The task or topic, its current owner URL, and the version being reviewed.
 - Source material and proof from real work, with permission and public/private limits recorded.
 - A specific [Goals, Content, Targeting brief](https://blitzmetrics.com/gct-business-strategy/): the result we want, what we have to work with, and who it serves.
-- Current [article guidelines](https://localservicespotlight.com/article-guidelines/), [canonical directory](https://blitzmetrics.com/canonical/), and [Task Library](https://blitzmetrics.com/task-library/).
+- Current [article guidelines](https://localservicespotlight.com/article-guidelines/), [canonical directory](https://blitzmetrics.com/canonical/), and [Task Library](https://local-service-spotlight.github.io/task-library/).
 - Any actual prerequisite tasks and their checked outputs. The library's neighboring tasks are not automatically prerequisites.
 - Access and existing authority for the proposed CMS or redirect action. Writing is required; public publication follows its existing authority and review rules.
 
