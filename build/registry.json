@@ -4,7 +4,8 @@
   "pin": "use a branch for auto-updating skills, a commit SHA to freeze",
   "flag": "optional review note passed through to data.json and the dashboard",
   "format": "omit for Task-Library-Standard files; 'claude-skill' for standard Claude SKILL.md (library metadata then comes from this entry: category required, stage/status/article optional)",
-  "download": "optional URL for downloading the complete skill package (e.g. the repo's archive zip or a release asset); rendered as a per-skill download link"
+  "download": "optional URL for downloading the complete skill package (e.g. the repo's archive zip or a release asset); rendered as a per-skill download link",
+  "article_kind": "optional reviewed role: task-recipe, topic-hub, entity-hub, reference, supporting or unknown; never promotes readiness"
  },
  "skills": {
   "batch-record-50-raw-clips-in-one-session": {
@@ -17,11 +18,13 @@
   },
   "create-a-3-minute-why-video": {
    "source": "local",
-   "category": "Content Factory — Produce"
+   "category": "Content Factory — Produce",
+   "article_kind": "task-recipe"
   },
   "create-a-3x3-video-grid": {
    "source": "local",
-   "category": "Content Factory — Produce"
+   "category": "Content Factory — Produce",
+   "article_kind": "task-recipe"
   },
   "film-casual-team-conversations": {
    "source": "local",
@@ -33,11 +36,13 @@
   },
   "map-out-one-minute-video-topics-using-topic-wheel": {
    "source": "local",
-   "category": "Content Factory — Produce"
+   "category": "Content Factory — Produce",
+   "article_kind": "task-recipe"
   },
   "record-one-minute-videos": {
    "source": "local",
-   "category": "Content Factory — Produce"
+   "category": "Content Factory — Produce",
+   "article_kind": "task-recipe"
   },
   "record-screen-shares-of-real-audits": {
    "source": "local",
@@ -45,7 +50,8 @@
   },
   "set-up-content-library": {
    "source": "local",
-   "category": "Content Factory — Produce"
+   "category": "Content Factory — Produce",
+   "article_kind": "task-recipe"
   },
   "create-dollar-a-day-ad-creatives": {
    "source": "local",
@@ -70,22 +76,26 @@
   "how-to-inventory-a-podcast-on-youtube": {
    "source": "local",
    "category": "Content Factory — Process",
-   "article": "https://blitzmetrics.com/how-to-inventory-a-podcast-on-youtube/"
+   "article": "https://blitzmetrics.com/how-to-inventory-a-podcast-on-youtube/",
+   "article_kind": "task-recipe"
   },
   "how-to-inventory-every-podcast-youve-been-on-and-why-its-one-of-the-highest-roi-things-you-can-do": {
    "source": "local",
    "category": "Content Factory — Process",
-   "article": "https://blitzmetrics.com/how-to-inventory-every-podcast-youve-been-on-and-why-its-one-of-the-highest-roi-things-you-can-do/"
+   "article": "https://blitzmetrics.com/how-to-inventory-every-podcast-youve-been-on-and-why-its-one-of-the-highest-roi-things-you-can-do/",
+   "article_kind": "task-recipe"
   },
   "how-we-use-listen-notes-to-find-track-and-repurpose-every-podcast-appearance": {
    "source": "local",
    "category": "Content Factory — Process",
-   "article": "https://blitzmetrics.com/how-we-use-listen-notes-to-find-track-and-repurpose-every-podcast-appearance/"
+   "article": "https://blitzmetrics.com/how-we-use-listen-notes-to-find-track-and-repurpose-every-podcast-appearance/",
+   "article_kind": "task-recipe"
   },
   "how-we-use-podchaser-to-amplify-authority-and-repurpose-podcast-content": {
    "source": "local",
    "category": "Content Factory — Process",
-   "article": "https://blitzmetrics.com/how-we-use-podchaser-to-amplify-authority-and-repurpose-podcast-content/"
+   "article": "https://blitzmetrics.com/how-we-use-podchaser-to-amplify-authority-and-repurpose-podcast-content/",
+   "article_kind": "task-recipe"
   },
   "process-videos-via-marketscale": {
    "source": "local",
@@ -93,55 +103,68 @@
   },
   "step-1-upload-video-to-google-drive-and-descript": {
    "source": "local",
-   "category": "Content Factory — Process"
+   "category": "Content Factory — Process",
+   "article_kind": "reference"
   },
   "step-10-embed-source-video": {
    "source": "local",
-   "category": "Content Factory — Process"
+   "category": "Content Factory — Process",
+   "article_kind": "reference"
   },
   "step-11-proofread-with-grammarly-or-chatgpt": {
    "source": "local",
-   "category": "Content Factory — Process"
+   "category": "Content Factory — Process",
+   "article_kind": "reference"
   },
   "step-2-transcribe-video-using-descript": {
    "source": "local",
-   "category": "Content Factory — Process"
+   "category": "Content Factory — Process",
+   "article_kind": "reference"
   },
   "step-3-watch-video-and-identify-gct": {
    "source": "local",
-   "category": "Content Factory — Process"
+   "category": "Content Factory — Process",
+   "article_kind": "reference"
   },
   "step-4-research-edit-add-timestamps-and-outline": {
    "source": "local",
-   "category": "Content Factory — Process"
+   "category": "Content Factory — Process",
+   "article_kind": "reference"
   },
   "step-5-write-article-from-transcript": {
    "source": "local",
-   "category": "Content Factory — Process"
+   "category": "Content Factory — Process",
+   "article_kind": "reference"
   },
   "run-overnight-local-writer": {
    "source": "local",
-   "category": "Content Factory — Process"
+   "category": "Content Factory — Process",
+   "article_kind": "task-recipe"
   },
   "step-6-write-title-and-headings": {
    "source": "local",
-   "category": "Content Factory — Process"
+   "category": "Content Factory — Process",
+   "article_kind": "reference"
   },
   "step-7-write-hook-and-establish-context": {
    "source": "local",
-   "category": "Content Factory — Process"
+   "category": "Content Factory — Process",
+   "article_kind": "reference"
   },
   "step-8-add-photos-and-featured-image": {
    "source": "local",
-   "category": "Content Factory — Process"
+   "category": "Content Factory — Process",
+   "article_kind": "reference"
   },
   "step-9-add-internal-links-with-proper-anchor-text": {
    "source": "local",
-   "category": "Content Factory — Process"
+   "category": "Content Factory — Process",
+   "article_kind": "reference"
   },
   "use-descript-underlord-to-remove-filler-words": {
    "source": "local",
-   "category": "Content Factory — Process"
+   "category": "Content Factory — Process",
+   "article_kind": "reference"
   },
   "write-email-newsletter-from-video-key-insight": {
    "source": "local",
@@ -149,15 +172,18 @@
   },
   "write-meta-article-documenting-agent-work": {
    "source": "local",
-   "category": "Content Factory — Process"
+   "category": "Content Factory — Process",
+   "article_kind": "task-recipe"
   },
   "email-and-dm-client-about-published-article": {
    "source": "local",
-   "category": "Content Factory — Post"
+   "category": "Content Factory — Post",
+   "article_kind": "reference"
   },
   "place-content-on-seo-tree-with-proper-links": {
    "source": "local",
-   "category": "Content Factory — Post"
+   "category": "Content Factory — Post",
+   "article_kind": "topic-hub"
   },
   "post-to-facebook-page": {
    "source": "local",
@@ -173,27 +199,33 @@
   },
   "share-in-44k-facebook-group": {
    "source": "local",
-   "category": "Content Factory — Post"
+   "category": "Content Factory — Post",
+   "article_kind": "reference"
   },
   "step-12-post-article-on-wordpress": {
    "source": "local",
-   "category": "Content Factory — Post"
+   "category": "Content Factory — Post",
+   "article_kind": "reference"
   },
   "step-13-categorize-post-and-add-tags": {
    "source": "local",
-   "category": "Content Factory — Post"
+   "category": "Content Factory — Post",
+   "article_kind": "reference"
   },
   "step-14a-configure-rankmath-seo-plugin": {
    "source": "local",
-   "category": "Content Factory — Post"
+   "category": "Content Factory — Post",
+   "article_kind": "reference"
   },
   "step-14b-run-linkwhisper-for-internal-links": {
    "source": "local",
-   "category": "Content Factory — Post"
+   "category": "Content Factory — Post",
+   "article_kind": "reference"
   },
   "step-17-final-formatting-and-qa-checks": {
    "source": "local",
-   "category": "Content Factory — Post"
+   "category": "Content Factory — Post",
+   "article_kind": "reference"
   },
   "upload-processed-video-to-youtube": {
    "source": "local",
@@ -201,19 +233,23 @@
   },
   "verify-all-items-on-blog-posting-checklist": {
    "source": "local",
-   "category": "Content Factory — Post"
+   "category": "Content Factory — Post",
+   "article_kind": "reference"
   },
   "apply-metrics-decomposition": {
    "source": "local",
-   "category": "Content Factory — Promote"
+   "category": "Content Factory — Promote",
+   "article_kind": "task-recipe"
   },
   "boost-top-3-5-facebook-posts": {
    "source": "local",
-   "category": "Content Factory — Promote"
+   "category": "Content Factory — Promote",
+   "article_kind": "task-recipe"
   },
   "compare-current-vs-last-period-performance": {
    "source": "local",
-   "category": "Content Factory — Promote"
+   "category": "Content Factory — Promote",
+   "article_kind": "task-recipe"
   },
   "create-and-send-thank-you-machine-videos": {
    "source": "local",
@@ -222,7 +258,8 @@
   },
   "create-new-saved-audiences-from-audience-insights": {
    "source": "local",
-   "category": "Content Factory — Promote"
+   "category": "Content Factory — Promote",
+   "article_kind": "task-recipe"
   },
   "engage-with-social-comments": {
    "source": "local",
@@ -234,7 +271,8 @@
   },
   "list-top-3-5-recommendations-for-next-7-days": {
    "source": "local",
-   "category": "Content Factory — Promote"
+   "category": "Content Factory — Promote",
+   "article_kind": "task-recipe"
   },
   "post-roundup-listicle-content": {
    "source": "local",
@@ -242,7 +280,8 @@
   },
   "review-budget-allocation-by-channel": {
    "source": "local",
-   "category": "Content Factory — Promote"
+   "category": "Content Factory — Promote",
+   "article_kind": "task-recipe"
   },
   "run-dollar-a-day-campaign-on-winning-content": {
    "source": "local",
@@ -254,23 +293,28 @@
   },
   "set-up-remarketing-ads-for-landing-page-abandoners": {
    "source": "local",
-   "category": "Content Factory — Promote"
+   "category": "Content Factory — Promote",
+   "article_kind": "task-recipe"
   },
   "add-click-to-call-links-for-mobile": {
    "source": "local",
-   "category": "Digital Plumbing"
+   "category": "Digital Plumbing",
+   "article_kind": "topic-hub"
   },
   "add-schema-markup-person-localbusiness": {
    "source": "local",
-   "category": "Digital Plumbing"
+   "category": "Digital Plumbing",
+   "article_kind": "topic-hub"
   },
   "claim-and-brand-facebook-page": {
    "source": "local",
-   "category": "Digital Plumbing"
+   "category": "Digital Plumbing",
+   "article_kind": "topic-hub"
   },
   "configure-https-with-no-mixed-content": {
    "source": "local",
-   "category": "Digital Plumbing"
+   "category": "Digital Plumbing",
+   "article_kind": "topic-hub"
   },
   "configure-spf-dkim-dmarc-for-deliverability": {
    "source": "local",
@@ -278,15 +322,18 @@
   },
   "convert-instagram-to-professional-account": {
    "source": "local",
-   "category": "Digital Plumbing"
+   "category": "Digital Plumbing",
+   "article_kind": "topic-hub"
   },
   "create-clear-conversion-path": {
    "source": "local",
-   "category": "Digital Plumbing"
+   "category": "Digital Plumbing",
+   "article_kind": "topic-hub"
   },
   "create-linkedin-page-matching-business-entity": {
    "source": "local",
-   "category": "Digital Plumbing"
+   "category": "Digital Plumbing",
+   "article_kind": "topic-hub"
   },
   "create-xml-sitemap-and-reference-in-robots-txt": {
    "source": "local",
@@ -294,7 +341,8 @@
   },
   "ensure-nap-consistency-across-platforms": {
    "source": "local",
-   "category": "Digital Plumbing"
+   "category": "Digital Plumbing",
+   "article_kind": "topic-hub"
   },
   "ensure-proper-dns-records": {
    "source": "local",
@@ -306,11 +354,13 @@
   },
   "ensure-site-loads-under-3-seconds-on-mobile": {
    "source": "local",
-   "category": "Digital Plumbing"
+   "category": "Digital Plumbing",
+   "article_kind": "topic-hub"
   },
   "ensure-working-contact-form-delivers-notifications": {
    "source": "local",
-   "category": "Digital Plumbing"
+   "category": "Digital Plumbing",
+   "article_kind": "topic-hub"
   },
   "install-google-tag-manager-container": {
    "source": "local",
@@ -322,7 +372,8 @@
   },
   "set-correct-business-categories": {
    "source": "local",
-   "category": "Digital Plumbing"
+   "category": "Digital Plumbing",
+   "article_kind": "topic-hub"
   },
   "set-favicon": {
    "source": "local",
@@ -330,7 +381,8 @@
   },
   "set-up-call-tracking-for-phone-conversions": {
    "source": "local",
-   "category": "Digital Plumbing"
+   "category": "Digital Plumbing",
+   "article_kind": "topic-hub"
   },
   "set-up-consistent-headshots-and-bios-across-profiles": {
    "source": "local",
@@ -346,27 +398,33 @@
   },
   "set-up-youtube-channel-with-proper-branding": {
    "source": "local",
-   "category": "Digital Plumbing"
+   "category": "Digital Plumbing",
+   "article_kind": "topic-hub"
   },
   "upload-real-photos-and-set-business-hours": {
    "source": "local",
-   "category": "Digital Plumbing"
+   "category": "Digital Plumbing",
+   "article_kind": "topic-hub"
   },
   "verify-domain-ownership-and-registrar-access": {
    "source": "local",
-   "category": "Digital Plumbing"
+   "category": "Digital Plumbing",
+   "article_kind": "topic-hub"
   },
   "verify-google-business-profile": {
    "source": "local",
-   "category": "Digital Plumbing"
+   "category": "Digital Plumbing",
+   "article_kind": "topic-hub"
   },
   "verify-google-search-console-and-connect-to-ga4": {
    "source": "local",
-   "category": "Digital Plumbing"
+   "category": "Digital Plumbing",
+   "article_kind": "topic-hub"
   },
   "write-proper-title-tags-and-meta-descriptions": {
    "source": "local",
-   "category": "Digital Plumbing"
+   "category": "Digital Plumbing",
+   "article_kind": "topic-hub"
   },
   "analyze-cost-per-result-and-engagement": {
    "source": "local",
@@ -442,256 +500,319 @@
   },
   "audit-internal-links-between-all-blog-posts": {
    "source": "local",
-   "category": "Website QA Audit"
+   "category": "Website QA Audit",
+   "article_kind": "task-recipe"
   },
   "check-all-cta-buttons-lead-to-correct-destinations": {
    "source": "local",
-   "category": "Website QA Audit"
+   "category": "Website QA Audit",
+   "article_kind": "task-recipe"
   },
   "check-each-homepage-section-includes-relevant-image": {
    "source": "local",
-   "category": "Website QA Audit"
+   "category": "Website QA Audit",
+   "article_kind": "task-recipe"
   },
   "check-favicon-is-set": {
    "source": "local",
-   "category": "Website QA Audit"
+   "category": "Website QA Audit",
+   "article_kind": "task-recipe"
   },
   "check-for-broken-links": {
    "source": "local",
-   "category": "Website QA Audit"
+   "category": "Website QA Audit",
+   "article_kind": "task-recipe"
   },
   "check-lead-magnet-section-has-visual-mockup": {
    "source": "local",
-   "category": "Website QA Audit"
+   "category": "Website QA Audit",
+   "article_kind": "task-recipe"
   },
   "check-meta-description-under-160-chars": {
    "source": "local",
-   "category": "Website QA Audit"
+   "category": "Website QA Audit",
+   "article_kind": "task-recipe"
   },
   "check-schema-connects-to-all-verified-profiles": {
    "source": "local",
-   "category": "Website QA Audit"
+   "category": "Website QA Audit",
+   "article_kind": "task-recipe"
   },
   "check-seo-title-under-60-chars-with-focus-keyword": {
    "source": "local",
-   "category": "Website QA Audit"
+   "category": "Website QA Audit",
+   "article_kind": "task-recipe"
   },
   "check-social-profiles-linked-and-prominent": {
    "source": "local",
-   "category": "Website QA Audit"
+   "category": "Website QA Audit",
+   "article_kind": "task-recipe"
   },
   "ensure-no-stock-images-used": {
    "source": "local",
-   "category": "Website QA Audit"
+   "category": "Website QA Audit",
+   "article_kind": "task-recipe"
   },
   "ensure-no-text-only-sections-spanning-full-viewport": {
    "source": "local",
-   "category": "Website QA Audit"
+   "category": "Website QA Audit",
+   "article_kind": "task-recipe"
   },
   "ensure-robots-meta-not-blocking-indexing--qa-audit": {
    "source": "local",
    "category": "Website QA Audit",
-   "flag": "possible-duplicate: review for merge with ensure-robots-meta-not-blocking-indexing"
+   "flag": "possible-duplicate: review for merge with ensure-robots-meta-not-blocking-indexing",
+   "article_kind": "task-recipe"
   },
   "test-mobile-load-time-under-3-seconds": {
    "source": "local",
-   "category": "Website QA Audit"
+   "category": "Website QA Audit",
+   "article_kind": "task-recipe"
   },
   "verify-achievements-are-evidenced-not-just-claimed": {
    "source": "local",
-   "category": "Website QA Audit"
+   "category": "Website QA Audit",
+   "article_kind": "task-recipe"
   },
   "verify-all-images-have-descriptive-alt-text": {
    "source": "local",
-   "category": "Website QA Audit"
+   "category": "Website QA Audit",
+   "article_kind": "task-recipe"
   },
   "verify-all-pages-written-in-first-person": {
    "source": "local",
-   "category": "Website QA Audit"
+   "category": "Website QA Audit",
+   "article_kind": "task-recipe"
   },
   "verify-at-least-one-video-embed-on-homepage": {
    "source": "local",
-   "category": "Website QA Audit"
+   "category": "Website QA Audit",
+   "article_kind": "task-recipe"
   },
   "verify-email-opt-in-form-exists-and-works": {
    "source": "local",
-   "category": "Website QA Audit"
+   "category": "Website QA Audit",
+   "article_kind": "task-recipe"
   },
   "verify-entity-linking-follows-decision-tree": {
    "source": "local",
-   "category": "Website QA Audit"
+   "category": "Website QA Audit",
+   "article_kind": "task-recipe"
   },
   "verify-featured-images-unique-per-blog-post": {
    "source": "local",
-   "category": "Website QA Audit"
+   "category": "Website QA Audit",
+   "article_kind": "task-recipe"
   },
   "verify-footer-includes-social-links-and-secondary-nav": {
    "source": "local",
-   "category": "Website QA Audit"
+   "category": "Website QA Audit",
+   "article_kind": "task-recipe"
   },
   "verify-ga4-configured-with-internal-traffic-filtered": {
    "source": "local",
-   "category": "Website QA Audit"
+   "category": "Website QA Audit",
+   "article_kind": "task-recipe"
   },
   "verify-google-business-profile-is-verified": {
    "source": "local",
-   "category": "Website QA Audit"
+   "category": "Website QA Audit",
+   "article_kind": "task-recipe"
   },
   "verify-gtm-installed-and-firing-on-every-page": {
    "source": "local",
-   "category": "Website QA Audit"
+   "category": "Website QA Audit",
+   "article_kind": "task-recipe"
   },
   "verify-hero-section-contains-real-photo-of-person": {
    "source": "local",
-   "category": "Website QA Audit"
+   "category": "Website QA Audit",
+   "article_kind": "task-recipe"
   },
   "verify-https-with-no-mixed-content": {
    "source": "local",
-   "category": "Website QA Audit"
+   "category": "Website QA Audit",
+   "article_kind": "task-recipe"
   },
   "verify-meta-pixel-installed-with-lead-events": {
    "source": "local",
-   "category": "Website QA Audit"
+   "category": "Website QA Audit",
+   "article_kind": "task-recipe"
   },
   "verify-minimum-5-distinct-images-on-homepage": {
    "source": "local",
-   "category": "Website QA Audit"
+   "category": "Website QA Audit",
+   "article_kind": "task-recipe"
   },
   "verify-person-schema-with-sameas-links": {
    "source": "local",
-   "category": "Website QA Audit"
+   "category": "Website QA Audit",
+   "article_kind": "task-recipe"
   },
   "verify-rank-math-score-above-70-on-every-page": {
    "source": "local",
-   "category": "Website QA Audit"
+   "category": "Website QA Audit",
+   "article_kind": "task-recipe"
   },
   "verify-social-proof-photos-present": {
    "source": "local",
-   "category": "Website QA Audit"
+   "category": "Website QA Audit",
+   "article_kind": "task-recipe"
   },
   "verify-testimonials-include-headshots-with-attribution": {
    "source": "local",
-   "category": "Website QA Audit"
+   "category": "Website QA Audit",
+   "article_kind": "task-recipe"
   },
   "verify-testimonials-with-full-attribution": {
    "source": "local",
-   "category": "Website QA Audit"
+   "category": "Website QA Audit",
+   "article_kind": "task-recipe"
   },
   "verify-wordpress-author-set-to-site-owner-name": {
    "source": "local",
-   "category": "Website QA Audit"
+   "category": "Website QA Audit",
+   "article_kind": "task-recipe"
   },
   "verify-xml-sitemap-exists-and-in-robotstxt": {
    "source": "local",
-   "category": "Website QA Audit"
+   "category": "Website QA Audit",
+   "article_kind": "task-recipe"
   },
   "build-external-backlinks-from-authoritative-sources": {
    "source": "local",
-   "category": "SEO & Content Architecture"
+   "category": "SEO & Content Architecture",
+   "article_kind": "reference"
   },
   "enhance-existing-articles-before-creating-new-ones": {
    "source": "local",
-   "category": "SEO & Content Architecture"
+   "category": "SEO & Content Architecture",
+   "article_kind": "topic-hub"
   },
   "fit-every-new-piece-into-the-tree-structure": {
    "source": "local",
-   "category": "SEO & Content Architecture"
+   "category": "SEO & Content Architecture",
+   "article_kind": "topic-hub"
   },
   "follow-entity-linking-decision-tree": {
    "source": "local",
-   "category": "SEO & Content Architecture"
+   "category": "SEO & Content Architecture",
+   "article_kind": "reference"
   },
   "identify-and-eliminate-orphan-standalone-articles": {
    "source": "local",
-   "category": "SEO & Content Architecture"
+   "category": "SEO & Content Architecture",
+   "article_kind": "topic-hub"
   },
   "link-leaves-to-branches-branches-to-trunk": {
    "source": "local",
-   "category": "SEO & Content Architecture"
+   "category": "SEO & Content Architecture",
+   "article_kind": "topic-hub"
   },
   "map-content-hierarchically-root-trunk-branches-leaves": {
    "source": "local",
-   "category": "SEO & Content Architecture"
+   "category": "SEO & Content Architecture",
+   "article_kind": "topic-hub"
   },
   "remove-duplicate-thin-pages": {
    "source": "local",
-   "category": "SEO & Content Architecture"
+   "category": "SEO & Content Architecture",
+   "article_kind": "topic-hub"
   },
   "replace-ai-looking-content-with-real-eeat": {
    "source": "local",
-   "category": "SEO & Content Architecture"
+   "category": "SEO & Content Architecture",
+   "article_kind": "topic-hub"
   },
   "step-1-inventory-content-and-establish-gct-per-page": {
    "source": "local",
-   "category": "SEO & Content Architecture"
+   "category": "SEO & Content Architecture",
+   "article_kind": "task-recipe"
   },
   "step-2-fix-categories-and-tags-in-wordpress": {
    "source": "local",
-   "category": "SEO & Content Architecture"
+   "category": "SEO & Content Architecture",
+   "article_kind": "task-recipe"
   },
   "step-3-identify-money-pages-and-orphan-pages": {
    "source": "local",
-   "category": "SEO & Content Architecture"
+   "category": "SEO & Content Architecture",
+   "article_kind": "task-recipe"
   },
   "step-4-create-links-with-proper-anchor-text-and-placement": {
    "source": "local",
-   "category": "SEO & Content Architecture"
+   "category": "SEO & Content Architecture",
+   "article_kind": "task-recipe"
   },
   "step-5-qa-links-against-google-guidelines": {
    "source": "local",
-   "category": "SEO & Content Architecture"
+   "category": "SEO & Content Architecture",
+   "article_kind": "task-recipe"
   },
   "step-6-measure-and-iterate-with-maa": {
    "source": "local",
-   "category": "SEO & Content Architecture"
+   "category": "SEO & Content Architecture",
+   "article_kind": "task-recipe"
   },
   "use-proper-anchor-text-3-6-words-descriptive": {
    "source": "local",
-   "category": "SEO & Content Architecture"
+   "category": "SEO & Content Architecture",
+   "article_kind": "task-recipe"
   },
   "add-consistent-headshots-and-bios-across-profiles": {
    "source": "local",
-   "category": "Personal Branding"
+   "category": "Personal Branding",
+   "article_kind": "topic-hub"
   },
   "build-personal-brand-website": {
    "source": "local",
-   "category": "Personal Branding"
+   "category": "Personal Branding",
+   "article_kind": "topic-hub"
   },
   "build-third-party-validation": {
    "source": "local",
-   "category": "Personal Branding"
+   "category": "Personal Branding",
+   "article_kind": "task-recipe"
   },
   "claim-and-verify-knowledge-panel-when-it-appears": {
    "source": "local",
-   "category": "Personal Branding"
+   "category": "Personal Branding",
+   "article_kind": "task-recipe"
   },
   "classify-and-offer-knowledge-panel": {
    "source": "local",
-   "category": "Personal Branding"
+   "category": "Personal Branding",
+   "article_kind": "task-recipe"
   },
   "create-collaborative-content-with-industry-peers": {
    "source": "local",
-   "category": "Personal Branding"
+   "category": "Personal Branding",
+   "article_kind": "topic-hub"
   },
   "create-dollar-a-day-ad-creatives-from-best-content": {
    "source": "local",
-   "category": "Personal Branding"
+   "category": "Personal Branding",
+   "article_kind": "topic-hub"
   },
   "create-social-content-from-video-clips": {
    "source": "local",
-   "category": "Personal Branding"
+   "category": "Personal Branding",
+   "article_kind": "topic-hub"
   },
   "establish-entity-identity": {
    "source": "local",
-   "category": "Personal Branding"
+   "category": "Personal Branding",
+   "article_kind": "task-recipe"
   },
   "generate-backlinks-and-entity-mentions": {
    "source": "local",
-   "category": "Personal Branding"
+   "category": "Personal Branding",
+   "article_kind": "topic-hub"
   },
   "get-featured-on-podcasts": {
    "source": "local",
-   "category": "Personal Branding"
+   "category": "Personal Branding",
+   "article_kind": "topic-hub"
   },
   "get-mentioned-in-publications": {
    "source": "local",
@@ -699,31 +820,38 @@
   },
   "implement-person-schema-with-sameas-links": {
    "source": "local",
-   "category": "Personal Branding"
+   "category": "Personal Branding",
+   "article_kind": "topic-hub"
   },
   "implement-technical-schema-markup": {
    "source": "local",
-   "category": "Personal Branding"
+   "category": "Personal Branding",
+   "article_kind": "task-recipe"
   },
   "link-all-content-back-to-personal-brand-site": {
    "source": "local",
-   "category": "Personal Branding"
+   "category": "Personal Branding",
+   "article_kind": "topic-hub"
   },
   "measure-search-impressions-traffic-inbound-opportunities": {
    "source": "local",
-   "category": "Personal Branding"
+   "category": "Personal Branding",
+   "article_kind": "task-recipe"
   },
   "record-one-minute-videos-answering-customer-questions": {
    "source": "local",
-   "category": "Personal Branding"
+   "category": "Personal Branding",
+   "article_kind": "topic-hub"
   },
   "register-personal-name-domain": {
    "source": "local",
-   "category": "Personal Branding"
+   "category": "Personal Branding",
+   "article_kind": "topic-hub"
   },
   "repurpose-videos-into-blog-posts-via-content-factory": {
    "source": "local",
-   "category": "Personal Branding"
+   "category": "Personal Branding",
+   "article_kind": "topic-hub"
   },
   "run-thank-you-machine-for-every-interaction": {
    "source": "local",
@@ -732,20 +860,24 @@
   },
   "keep-speaker-bureau-profile-bookable": {
    "source": "local",
-   "category": "Personal Branding"
+   "category": "Personal Branding",
+   "article_kind": "task-recipe"
   },
   "secure-guest-appearances-and-speaking-engagements": {
    "source": "local",
-   "category": "Personal Branding"
+   "category": "Personal Branding",
+   "article_kind": "topic-hub"
   },
   "set-up-professional-social-profiles": {
    "source": "local",
-   "category": "Personal Branding"
+   "category": "Personal Branding",
+   "article_kind": "topic-hub"
   },
   "verify-google-business-profile--personal-brand": {
    "source": "local",
    "category": "Personal Branding",
-   "flag": "possible-duplicate: review for merge with ensure-robots-meta-not-blocking-indexing"
+   "flag": "possible-duplicate: review for merge with ensure-robots-meta-not-blocking-indexing",
+   "article_kind": "topic-hub"
   },
   "analyze-why-underperformers-fail": {
    "source": "local",
@@ -753,43 +885,53 @@
   },
   "content-strategy-90-greatest-hits-10-new": {
    "source": "local",
-   "category": "Strategy & Measurement"
+   "category": "Strategy & Measurement",
+   "article_kind": "topic-hub"
   },
   "funnel-levels-audience-engagement-conversion": {
    "source": "local",
-   "category": "Strategy & Measurement"
+   "category": "Strategy & Measurement",
+   "article_kind": "topic-hub"
   },
   "gct-goals-content-targeting": {
    "source": "local",
-   "category": "Strategy & Measurement"
+   "category": "Strategy & Measurement",
+   "article_kind": "topic-hub"
   },
   "kill-underperformers-scale-winners": {
    "source": "local",
-   "category": "Strategy & Measurement"
+   "category": "Strategy & Measurement",
+   "article_kind": "topic-hub"
   },
   "learn-do-teach-apprentice-model": {
    "source": "local",
-   "category": "Strategy & Measurement"
+   "category": "Strategy & Measurement",
+   "article_kind": "topic-hub"
   },
   "maa-cycle-metrics-analysis-action": {
    "source": "local",
-   "category": "Strategy & Measurement"
+   "category": "Strategy & Measurement",
+   "article_kind": "topic-hub"
   },
   "management-communicate-iterate-delegate": {
    "source": "local",
-   "category": "Strategy & Measurement"
+   "category": "Strategy & Measurement",
+   "article_kind": "topic-hub"
   },
   "map-how-ring-methods": {
    "source": "local",
-   "category": "Strategy & Measurement"
+   "category": "Strategy & Measurement",
+   "article_kind": "task-recipe"
   },
   "map-what-ring-specific-content": {
    "source": "local",
-   "category": "Strategy & Measurement"
+   "category": "Strategy & Measurement",
+   "article_kind": "task-recipe"
   },
   "map-why-ring-core-purpose": {
    "source": "local",
-   "category": "Strategy & Measurement"
+   "category": "Strategy & Measurement",
+   "article_kind": "task-recipe"
   },
   "measure-content-rankings-traffic-revenue": {
    "source": "local",
@@ -797,7 +939,8 @@
   },
   "personal-efficiency-do-delegate-delete": {
    "source": "local",
-   "category": "Strategy & Measurement"
+   "category": "Strategy & Measurement",
+   "article_kind": "topic-hub"
   },
   "show-whats-working-and-what-isnt": {
    "source": "local",
@@ -805,43 +948,53 @@
   },
   "stage-1-plumbing-fb-ads-google-ads-analytics": {
    "source": "local",
-   "category": "Strategy & Measurement"
+   "category": "Strategy & Measurement",
+   "article_kind": "task-recipe"
   },
   "stage-2-goals-mission-90-day-goals-cpa-roas-budget": {
    "source": "local",
-   "category": "Strategy & Measurement"
+   "category": "Strategy & Measurement",
+   "article_kind": "task-recipe"
   },
   "stage-3-content-endorsements-why-video-3x3-grid-library": {
    "source": "local",
-   "category": "Strategy & Measurement"
+   "category": "Strategy & Measurement",
+   "article_kind": "task-recipe"
   },
   "stage-4-targeting-custom-audiences-lookalikes-remarketing": {
    "source": "local",
-   "category": "Strategy & Measurement"
+   "category": "Strategy & Measurement",
+   "article_kind": "task-recipe"
   },
   "stage-5-amplification-boost-posts-remarketing-ads": {
    "source": "local",
-   "category": "Strategy & Measurement"
+   "category": "Strategy & Measurement",
+   "article_kind": "task-recipe"
   },
   "stage-6-optimization-metrics-budget-review-recommendations": {
    "source": "local",
-   "category": "Strategy & Measurement"
+   "category": "Strategy & Measurement",
+   "article_kind": "task-recipe"
   },
   "submit-weekly-maa-report-every-friday": {
    "source": "local",
-   "category": "Strategy & Measurement"
+   "category": "Strategy & Measurement",
+   "article_kind": "task-recipe"
   },
   "systematization-content-checklists-software": {
    "source": "local",
-   "category": "Strategy & Measurement"
+   "category": "Strategy & Measurement",
+   "article_kind": "topic-hub"
   },
   "three-pillars-marketing-operations-finance": {
    "source": "local",
-   "category": "Strategy & Measurement"
+   "category": "Strategy & Measurement",
+   "article_kind": "topic-hub"
   },
   "use-for-content-planning-and-video-topics": {
    "source": "local",
-   "category": "Strategy & Measurement"
+   "category": "Strategy & Measurement",
+   "article_kind": "task-recipe"
   },
   "boost-with-dollar-a-day": {
    "source": "local",
@@ -874,103 +1027,128 @@
   },
   "add-knowledge-capture-to-existing-workflows": {
    "source": "local",
-   "category": "Knowledge System Maintenance"
+   "category": "Knowledge System Maintenance",
+   "article_kind": "topic-hub"
   },
   "add-last-audited-column-to-definitive-article-guide-status-table": {
    "source": "local",
-   "category": "Knowledge System Maintenance"
+   "category": "Knowledge System Maintenance",
+   "article_kind": "topic-hub"
   },
   "apply-portability-discipline-to-meta-articles": {
    "source": "local",
-   "category": "Knowledge System Maintenance"
+   "category": "Knowledge System Maintenance",
+   "article_kind": "topic-hub"
   },
   "audit-this-maintenance-article-every-6-months": {
    "source": "local",
-   "category": "Knowledge System Maintenance"
+   "category": "Knowledge System Maintenance",
+   "article_kind": "topic-hub"
   },
   "check-information-currency-with-latest-data": {
    "source": "local",
-   "category": "Knowledge System Maintenance"
+   "category": "Knowledge System Maintenance",
+   "article_kind": "topic-hub"
   },
   "check-topic-coherence-for-each-definitive-article": {
    "source": "local",
-   "category": "Knowledge System Maintenance"
+   "category": "Knowledge System Maintenance",
+   "article_kind": "topic-hub"
   },
   "conduct-first-portability-review-of-blog-posting-guidelines": {
    "source": "local",
-   "category": "Knowledge System Maintenance"
+   "category": "Knowledge System Maintenance",
+   "article_kind": "topic-hub"
   },
   "create-knowledge-capture-note-template-and-distribute": {
    "source": "local",
-   "category": "Knowledge System Maintenance"
+   "category": "Knowledge System Maintenance",
+   "article_kind": "topic-hub"
   },
   "create-shared-location-for-sop-amendment-proposals": {
    "source": "local",
-   "category": "Knowledge System Maintenance"
+   "category": "Knowledge System Maintenance",
+   "article_kind": "topic-hub"
   },
   "create-sop-amendment-proposal-500-words": {
    "source": "local",
-   "category": "Knowledge System Maintenance"
+   "category": "Knowledge System Maintenance",
+   "article_kind": "topic-hub"
   },
   "generate-knowledge-capture-note-within-24-hours": {
    "source": "local",
-   "category": "Knowledge System Maintenance"
+   "category": "Knowledge System Maintenance",
+   "article_kind": "topic-hub"
   },
   "provide-knowledge-capture-note-template": {
    "source": "local",
-   "category": "Knowledge System Maintenance"
+   "category": "Knowledge System Maintenance",
+   "article_kind": "topic-hub"
   },
   "review-existing-sops-for-portability-compliance": {
    "source": "local",
-   "category": "Knowledge System Maintenance"
+   "category": "Knowledge System Maintenance",
+   "article_kind": "topic-hub"
   },
   "review-past-6-months-of-sop-amendment-proposals-for-patterns": {
    "source": "local",
-   "category": "Knowledge System Maintenance"
+   "category": "Knowledge System Maintenance",
+   "article_kind": "topic-hub"
   },
   "route-notes-to-sop-update-protocol-or-directly-to-articles": {
    "source": "local",
-   "category": "Knowledge System Maintenance"
+   "category": "Knowledge System Maintenance",
+   "article_kind": "topic-hub"
   },
   "schedule-and-assign-quarterly-auditors": {
    "source": "local",
-   "category": "Knowledge System Maintenance"
+   "category": "Knowledge System Maintenance",
+   "article_kind": "topic-hub"
   },
   "schedule-first-6-month-recursive-review": {
    "source": "local",
-   "category": "Knowledge System Maintenance"
+   "category": "Knowledge System Maintenance",
+   "article_kind": "topic-hub"
   },
   "schedule-first-quarterly-audit-cycle": {
    "source": "local",
-   "category": "Knowledge System Maintenance"
+   "category": "Knowledge System Maintenance",
+   "article_kind": "topic-hub"
   },
   "senior-team-member-reviews-weekly": {
    "source": "local",
-   "category": "Knowledge System Maintenance"
+   "category": "Knowledge System Maintenance",
+   "article_kind": "topic-hub"
   },
   "separate-methodology-layer-what-why-from-implementation-layer-how": {
    "source": "local",
-   "category": "Knowledge System Maintenance"
+   "category": "Knowledge System Maintenance",
+   "article_kind": "topic-hub"
   },
   "set-up-sop-amendment-proposal-tracking-system": {
    "source": "local",
-   "category": "Knowledge System Maintenance"
+   "category": "Knowledge System Maintenance",
+   "article_kind": "topic-hub"
   },
   "tag-proposal-with-affected-sop-and-queue-for-review": {
    "source": "local",
-   "category": "Knowledge System Maintenance"
+   "category": "Knowledge System Maintenance",
+   "article_kind": "topic-hub"
   },
   "update-status-table-in-definitive-article-guide": {
    "source": "local",
-   "category": "Knowledge System Maintenance"
+   "category": "Knowledge System Maintenance",
+   "article_kind": "topic-hub"
   },
   "validate-cross-reference-integrity-across-articles": {
    "source": "local",
-   "category": "Knowledge System Maintenance"
+   "category": "Knowledge System Maintenance",
+   "article_kind": "topic-hub"
   },
   "verify-structural-completeness-against-8-step-framework": {
    "source": "local",
-   "category": "Knowledge System Maintenance"
+   "category": "Knowledge System Maintenance",
+   "article_kind": "topic-hub"
   },
   "how-to-configure-ga4-with-internal-traffic-filtering": {
    "source": "local",
@@ -1020,11 +1198,175 @@
    "stage": "—",
    "status": "complete",
    "article": "https://blitzmetrics.com/how-to-collect-organize-positive-mentions-to-build-authority/",
-   "download": "https://github.com/dennisyu/local-service-spotlight-skills/archive/refs/heads/main.zip"
+   "download": "https://github.com/dennisyu/local-service-spotlight-skills/archive/refs/heads/main.zip",
+   "article_kind": "task-recipe"
   },
   "run-content-factory-on-any-engine": {
    "source": "local",
-   "category": "Strategy & Measurement"
+   "category": "Strategy & Measurement",
+   "article_kind": "topic-hub"
+  },
+  "create-or-update-a-definitive-article": {
+   "source": "local",
+   "category": "Content Factory — Process",
+   "article_kind": "task-recipe",
+   "flag": "New task record; WIP until full source and runtime review. Related QA/meta steps do not imply independent execution counts."
+  },
+  "update-client-success-tracker": {
+   "source": "local",
+   "category": "Strategy & Measurement",
+   "article_kind": "task-recipe",
+   "flag": "New reviewed source mapping; WIP. No independent execution or runtime certification claimed."
+  },
+  "document-a-task": {
+   "source": "local",
+   "category": "Knowledge System Maintenance",
+   "article_kind": "task-recipe",
+   "flag": "New reviewed source mapping; WIP. No independent execution or runtime certification claimed."
+  },
+  "collect-verified-weekly-measurements": {
+   "source": "local",
+   "category": "Strategy & Measurement",
+   "article_kind": "task-recipe",
+   "flag": "New reviewed source mapping; WIP. No independent execution or runtime certification claimed."
+  },
+  "install-canonical-skill-packs": {
+   "source": "local",
+   "category": "Knowledge System Maintenance",
+   "article_kind": "task-recipe",
+   "flag": "New reviewed source mapping; WIP. No independent execution or runtime certification claimed."
+  },
+  "audit-local-service-website": {
+   "source": "local",
+   "category": "Website QA Audit",
+   "article_kind": "task-recipe",
+   "flag": "New reviewed source mapping; WIP. No independent execution or runtime certification claimed."
+  },
+  "access-content-factory-source-assets": {
+   "source": "local",
+   "category": "Content Factory — Produce",
+   "article_kind": "task-recipe",
+   "flag": "New reviewed source mapping; WIP. No independent execution or runtime certification claimed."
+  },
+  "publish-seo-tree-site-directory": {
+   "source": "local",
+   "category": "SEO & Content Architecture",
+   "article_kind": "task-recipe",
+   "flag": "New reviewed source mapping; WIP. No independent execution or runtime certification claimed."
+  },
+  "run-weekly-client-seo-audits": {
+   "source": "local",
+   "category": "Website QA Audit",
+   "article_kind": "task-recipe",
+   "flag": "New reviewed source mapping; WIP. No independent execution or runtime certification claimed."
+  },
+  "add-homepage-blog-card-thumbnails": {
+   "source": "local",
+   "category": "Website QA Audit",
+   "article_kind": "task-recipe",
+   "flag": "New reviewed source mapping; WIP. No independent execution or runtime certification claimed."
+  },
+  "deliver-personal-brand-site-from-request": {
+   "source": "local",
+   "category": "Personal Branding",
+   "article_kind": "task-recipe",
+   "flag": "New reviewed source mapping; WIP. No independent execution or runtime certification claimed."
+  },
+  "build-and-maintain-ai-knowledge-base": {
+   "source": "local",
+   "category": "Knowledge System Maintenance",
+   "article_kind": "task-recipe",
+   "flag": "New reviewed source mapping; WIP. No independent execution or runtime certification claimed."
+  },
+  "build-agency-website-for-vertical": {
+   "source": "local",
+   "category": "Digital Plumbing",
+   "article_kind": "task-recipe",
+   "flag": "New reviewed source mapping; WIP. No independent execution or runtime certification claimed."
+  },
+  "measure-ai-citations-for-brand": {
+   "source": "local",
+   "category": "Strategy & Measurement",
+   "article_kind": "task-recipe",
+   "flag": "New reviewed source mapping; WIP. No independent execution or runtime certification claimed."
+  },
+  "manage-group-member-website-request": {
+   "source": "local",
+   "category": "Personal Branding",
+   "article_kind": "task-recipe",
+   "flag": "New reviewed source mapping; WIP. No independent execution or runtime certification claimed."
+  },
+  "coordinate-agents-with-shared-memory": {
+   "source": "local",
+   "category": "Knowledge System Maintenance",
+   "article_kind": "task-recipe",
+   "flag": "New reviewed source mapping; WIP. No independent execution or runtime certification claimed."
+  },
+  "configure-and-verify-recurring-agent-job": {
+   "source": "local",
+   "category": "Knowledge System Maintenance",
+   "article_kind": "task-recipe",
+   "flag": "New reviewed source mapping; WIP. No independent execution or runtime certification claimed."
+  },
+  "publish-skill-and-task-page": {
+   "source": "local",
+   "category": "Knowledge System Maintenance",
+   "article_kind": "task-recipe",
+   "flag": "New reviewed source mapping; WIP. No independent execution or runtime certification claimed."
+  },
+  "build-money-tree-site-diagram": {
+   "source": "local",
+   "category": "SEO & Content Architecture",
+   "article_kind": "task-recipe",
+   "flag": "New reviewed source mapping; WIP. No independent execution or runtime certification claimed."
+  },
+  "set-up-business-ai-work-environment": {
+   "source": "local",
+   "category": "Knowledge System Maintenance",
+   "article_kind": "task-recipe",
+   "flag": "New reviewed source mapping; WIP. No independent execution or runtime certification claimed."
+  },
+  "set-up-special-project-workspace": {
+   "source": "local",
+   "category": "Knowledge System Maintenance",
+   "article_kind": "task-recipe",
+   "flag": "New reviewed source mapping; WIP. No independent execution or runtime certification claimed."
+  },
+  "reply-with-task-status-in-origin-thread": {
+   "source": "local",
+   "category": "Knowledge System Maintenance",
+   "article_kind": "task-recipe",
+   "flag": "New reviewed source mapping; WIP. No independent execution or runtime certification claimed."
+  },
+  "onboard-agent-for-first-scoped-task": {
+   "source": "local",
+   "category": "Knowledge System Maintenance",
+   "article_kind": "task-recipe",
+   "flag": "New reviewed source mapping; WIP. No independent execution or runtime certification claimed."
+  },
+  "install-local-qwen": {
+   "source": "local",
+   "category": "Knowledge System Maintenance",
+   "article_kind": "task-recipe",
+   "flag": "New reviewed source mapping; WIP. No independent execution or runtime certification claimed."
+  },
+  "enable-youtube-captions-by-default": {
+   "source": "local",
+   "category": "Content Factory — Post",
+   "article_kind": "task-recipe",
+   "flag": "New reviewed source mapping; WIP. No independent execution or runtime certification claimed."
+  },
+  "close-ended-relationship-endorsement-links": {
+   "source": "local",
+   "category": "SEO & Content Architecture",
+   "article_kind": "task-recipe",
+   "flag": "New reviewed source mapping; WIP. No independent execution or runtime certification claimed."
+  },
+  "maintain-canonical-honor-and-story-leaves": {
+   "source": "local",
+   "category": "Content Factory — Process",
+   "article_kind": "task-recipe",
+   "flag": "New reviewed source mapping; WIP. No independent execution or runtime certification claimed."
   }
  }
 }

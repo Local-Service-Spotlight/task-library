@@ -2,13 +2,13 @@
 
 Generated from `build/build.py` after scoring in `build/factory.py`.
 
-Library: **249** tasks — 125 complete, 101 needs-work, 23 gaps.
+Library: **276** tasks — 125 complete, 128 needs-work, 23 gaps.
 
-Importance distribution: 5★=75, 4★=40, 3★=102, 2★=32, 1★=0
+Importance distribution: 5★=75, 4★=43, 3★=115, 2★=43, 1★=0
 
 Scoring: `importance = max(frequency, revenue, gating)`. Ads, pixels, GSC, Descript, WP-author, and Meta BM are 5s even when the task is small, because they unblock the line.
 
-Incomplete: **124**. This file is the work order. Do not re-sample.
+Incomplete: **151**. This file is the work order. Do not re-sample.
 
 | ★ | Status | Phase | Category | Slug | Lane | Why |
 |---|---|---|---|---|---|---|
@@ -55,10 +55,13 @@ Incomplete: **124**. This file is the work order. Do not re-sample.
 | 4 | needs-work | Produce |  | `capture-client-stories-on-phone` | any | runs every factory cycle or weekly |
 | 4 | needs-work | Gate |  | `configure-spf-dkim-dmarc-for-deliverability` | any | gates a phase |
 | 4 | needs-work | Gate |  | `create-linkedin-page-matching-business-entity` | judgment | runs every factory cycle or weekly; creates the asset ads amplify |
+| 4 | needs-work | Process |  | `create-or-update-a-definitive-article` | any | runs every factory cycle or weekly |
 | 4 | needs-work | Process |  | `create-quote-cards-from-strongest-statements` | any | runs every factory cycle or weekly |
 | 4 | needs-work | Gate |  | `create-xml-sitemap-and-reference-in-robots-txt` | script | runs every factory cycle or weekly; gates a phase |
 | 4 | needs-work | Promote |  | `create-youtube-campaigns-using-aducate-model` | computer | runs every factory cycle or weekly; creates the asset ads amplify |
+| 4 | needs-work | Post |  | `enable-youtube-captions-by-default` | any | runs every factory cycle or weekly; creates the asset ads amplify |
 | 4 | needs-work | Produce |  | `film-conference-presentations` | any | creates the asset ads amplify |
+| 4 | needs-work | Post |  | `maintain-canonical-honor-and-story-leaves` | any | runs every factory cycle or weekly |
 | 4 | needs-work | Post |  | `post-to-linkedin` | any | runs every factory cycle or weekly; creates the asset ads amplify |
 | 4 | needs-work | Gate |  | `set-up-professional-email-on-domain` | any | gates a phase |
 | 4 | needs-work | Promote |  | `set-up-tiktok-campaigns` | computer | runs every factory cycle or weekly; creates the asset ads amplify |
@@ -67,20 +70,28 @@ Incomplete: **124**. This file is the work order. Do not re-sample.
 | 4 | needs-work | Post |  | `upload-processed-video-to-youtube` | any | runs every factory cycle or weekly; creates the asset ads amplify |
 | 4 | needs-work | Process |  | `write-email-newsletter-from-video-key-insight` | any | runs every factory cycle or weekly |
 | 3 | gap | — |  | `how-to-set-up-schema-markup-for-personal-brand-site` | any | supporting |
+| 3 | needs-work | Produce |  | `access-content-factory-source-assets` | any | supporting |
 | 3 | needs-work | Gate |  | `add-click-to-call-links-for-mobile` | any | supporting |
 | 3 | needs-work | — |  | `add-consistent-headshots-and-bios-across-profiles` | any | supporting |
+| 3 | needs-work | Post |  | `add-homepage-blog-card-thumbnails` | any | supporting |
 | 3 | needs-work | Gate |  | `add-schema-markup-person-localbusiness` | any | supporting |
 | 3 | needs-work | — |  | `analyze-why-underperformers-fail` | any | supporting |
+| 3 | needs-work | — |  | `audit-local-service-website` | any | supporting |
+| 3 | needs-work | Gate |  | `build-agency-website-for-vertical` | any | supporting |
 | 3 | needs-work | — |  | `build-external-backlinks-from-authoritative-sources` | any | supporting |
 | 3 | needs-work | — |  | `build-into-post-project-checklist-and-weekly-routine` | any | supporting |
+| 3 | needs-work | Post |  | `build-money-tree-site-diagram` | any | supporting |
 | 3 | needs-work | — |  | `build-personal-brand-website` | any | supporting |
 | 3 | needs-work | — |  | `build-third-party-validation` | any | supporting |
 | 3 | needs-work | — |  | `check-all-cta-buttons-lead-to-correct-destinations` | any | supporting |
 | 3 | needs-work | — |  | `claim-and-verify-knowledge-panel-when-it-appears` | judgment | supporting |
 | 3 | needs-work | — |  | `classify-and-offer-knowledge-panel` | judgment | supporting |
+| 3 | needs-work | — |  | `close-ended-relationship-endorsement-links` | any | supporting |
+| 3 | needs-work | — |  | `collect-verified-weekly-measurements` | any | supporting |
 | 3 | needs-work | Gate |  | `convert-instagram-to-professional-account` | any | supporting |
 | 3 | needs-work | — |  | `create-collaborative-content-with-industry-peers` | any | supporting |
 | 3 | needs-work | Process |  | `create-social-content-from-video-clips` | any | supporting |
+| 3 | needs-work | — |  | `deliver-personal-brand-site-from-request` | any | supporting |
 | 3 | needs-work | Gate |  | `ensure-site-loads-under-3-seconds-on-mobile` | any | supporting |
 | 3 | needs-work | — |  | `establish-entity-identity` | judgment | supporting |
 | 3 | needs-work | Produce |  | `film-casual-team-conversations` | any | supporting |
@@ -91,18 +102,23 @@ Incomplete: **124**. This file is the work order. Do not re-sample.
 | 3 | needs-work | — |  | `implement-person-schema-with-sameas-links` | any | supporting |
 | 3 | needs-work | — |  | `implement-technical-schema-markup` | any | supporting |
 | 3 | needs-work | Post |  | `link-all-content-back-to-personal-brand-site` | any | supporting |
+| 3 | needs-work | — |  | `manage-group-member-website-request` | any | supporting |
+| 3 | needs-work | — |  | `measure-ai-citations-for-brand` | any | supporting |
 | 3 | needs-work | — |  | `measure-content-rankings-traffic-revenue` | any | supporting |
 | 3 | needs-work | — |  | `measure-search-impressions-traffic-inbound-opportunities` | any | supporting |
+| 3 | needs-work | Post |  | `publish-seo-tree-site-directory` | any | supporting |
 | 3 | needs-work | Produce |  | `record-one-minute-videos-answering-customer-questions` | any | supporting |
 | 3 | needs-work | Produce |  | `record-screen-shares-of-real-audits` | any | supporting |
 | 3 | needs-work | — |  | `remove-duplicate-thin-pages` | any | supporting |
 | 3 | needs-work | — |  | `replace-ai-looking-content-with-real-eeat` | any | supporting |
 | 3 | needs-work | Process |  | `repurpose-videos-into-blog-posts-via-content-factory` | any | supporting |
+| 3 | needs-work | — |  | `run-weekly-client-seo-audits` | any | supporting |
 | 3 | needs-work | — |  | `secure-guest-appearances-and-speaking-engagements` | any | supporting |
 | 3 | needs-work | Gate |  | `set-correct-business-categories` | any | supporting |
 | 3 | needs-work | Gate |  | `set-up-consistent-headshots-and-bios-across-profiles` | any | supporting |
 | 3 | needs-work | — |  | `set-up-professional-social-profiles` | any | supporting |
 | 3 | needs-work | — |  | `show-whats-working-and-what-isnt` | any | supporting |
+| 3 | needs-work | — |  | `update-client-success-tracker` | any | supporting |
 | 3 | needs-work | Gate |  | `upload-real-photos-and-set-business-hours` | any | supporting |
 | 3 | needs-work | — |  | `verify-google-business-profile--personal-brand` | any | supporting |
 | 3 | needs-work | — |  | `verify-person-schema-with-sameas-links` | any | supporting |
@@ -123,16 +139,27 @@ Incomplete: **124**. This file is the work order. Do not re-sample.
 | 2 | gap | — |  | `set-up-sop-amendment-proposal-tracking-system` | any | supporting |
 | 2 | needs-work | — |  | `apply-portability-discipline-to-meta-articles` | any | supporting |
 | 2 | needs-work | — |  | `audit-this-maintenance-article-every-6-months` | any | supporting |
+| 2 | needs-work | — |  | `build-and-maintain-ai-knowledge-base` | any | supporting |
 | 2 | needs-work | — |  | `check-favicon-is-set` | script | supporting |
 | 2 | needs-work | — |  | `check-information-currency-with-latest-data` | any | supporting |
+| 2 | needs-work | — |  | `configure-and-verify-recurring-agent-job` | any | supporting |
+| 2 | needs-work | — |  | `coordinate-agents-with-shared-memory` | any | supporting |
+| 2 | needs-work | Process |  | `document-a-task` | any | supporting |
 | 2 | needs-work | Gate |  | `ensure-nap-consistency-across-platforms` | any | supporting |
 | 2 | needs-work | — |  | `generate-knowledge-capture-note-within-24-hours` | any | supporting |
+| 2 | needs-work | — |  | `install-canonical-skill-packs` | any | supporting |
+| 2 | needs-work | — |  | `install-local-qwen` | any | supporting |
+| 2 | needs-work | — |  | `onboard-agent-for-first-scoped-task` | any | supporting |
+| 2 | needs-work | Post |  | `publish-skill-and-task-page` | any | supporting |
+| 2 | needs-work | — |  | `reply-with-task-status-in-origin-thread` | any | supporting |
 | 2 | needs-work | — |  | `review-existing-sops-for-portability-compliance` | any | supporting |
 | 2 | needs-work | — |  | `review-past-6-months-of-sop-amendment-proposals-for-patterns` | any | supporting |
 | 2 | needs-work | — |  | `route-notes-to-sop-update-protocol-or-directly-to-articles` | any | supporting |
 | 2 | needs-work | — |  | `senior-team-member-reviews-weekly` | any | supporting |
 | 2 | needs-work | — |  | `separate-methodology-layer-what-why-from-implementation-layer-how` | any | supporting |
 | 2 | needs-work | Gate |  | `set-favicon` | script | supporting |
+| 2 | needs-work | — |  | `set-up-business-ai-work-environment` | any | supporting |
+| 2 | needs-work | — |  | `set-up-special-project-workspace` | any | supporting |
 | 2 | needs-work | — |  | `tag-proposal-with-affected-sop-and-queue-for-review` | any | supporting |
 | 2 | needs-work | — |  | `update-status-table-in-definitive-article-guide` | any | supporting |
 | 2 | needs-work | — |  | `validate-cross-reference-integrity-across-articles` | any | supporting |

@@ -338,7 +338,7 @@ el('#btl-chips').innerHTML = CHIPS.map(function(c){
    ============================================================ */
 function volBar(n){
   n = Math.max(1, Math.min(5, Number(n) || 1));
-  let html = '<span class="btl-vol" data-n="' + n + '" title="Importance ' + n + '/5 — max of frequency, ads/revenue, and gating">';
+  let html = '<span class="btl-vol" data-n="' + n + '" title="Importance ' + n + '/5 — max of estimated recurrence, ads/revenue, and gating; not observed run frequency">';
   for (let i = 1; i <= 5; i++) html += '<i' + (i <= n ? ' class="on"' : '') + '></i>';
   html += '<span class="btl-vol-n">' + n + '</span></span>';
   return html;
@@ -347,7 +347,11 @@ function articleLink(t){
   if (!t.article) return '';
   const orbitData = t._hub || t;
   const ready = t.articleState === 'ready';
-  const label = ready ? 'Definitive article ↗' : 'Article in progress ↗';
+  const kindLabels = {'task-recipe':'Task recipe', 'topic-hub':'Topic guide',
+    'entity-hub':'Entity guide', 'reference':'Reference', 'supporting':'Supporting article'};
+  const kindLabel = kindLabels[t.articleKind];
+  const label = kindLabel ? kindLabel + (ready ? ' ↗' : ' in progress ↗') :
+    (ready ? 'Definitive article ↗' : 'Article in progress ↗');
   const title = ready ? 'All mapped tasks are complete and no reviewed semantic hold is active' :
     (t.articleStateReason || 'Article has incomplete mapped work or an active semantic-certification hold');
   let orbit = '';
@@ -355,12 +359,37 @@ function articleLink(t){
     const count = Number(orbitData.metaArticleCount || 0);
     const plus = orbitData.metaCountStatus === 'partial' ? '+' : '';
     orbit = '<span class="btl-orbit" title="' + esc((orbitData.metaOrbitTier || '') +
-      ' orbit strength; verified example volume only, not quality, traffic, freshness, or accuracy') + '">' +
-      fmt(count) + plus + ' verified meta-' + (count === 1 ? 'article' : 'articles') + '</span>';
+      ' orbit strength; article-volume audit as of ' + (orbitData.metaOrbitAudited || 'unknown date') +
+      '; not execution frequency, quality, traffic, freshness, or accuracy') + '">' +
+      fmt(count) + plus + ' verified meta-' + (count === 1 ? 'article' : 'articles') +
+      (orbitData.metaOrbitAudited ? ' · ' + esc(orbitData.metaOrbitAudited) : '') + '</span>';
   } else {
     orbit = '<span class="btl-orbit is-unknown" title="No source-backed orbit audit is recorded; unknown is not zero">Meta count unknown</span>';
   }
   return '<a class="btl-art" href="' + esc(t.article) + '" target="_blank" rel="noopener" title="' + esc(title) + '">' + label + '</a>' + orbit;
+}
+function executionHistoryHTML(t, detail){
+  const h = t.executionHistory;
+  if (!h || h.status === 'unknown') {
+    return '<span class="btl-orbit is-unknown" title="No run records exist for this task. Meta-article counts and importance scores do not measure execution frequency.">Run frequency unknown</span>';
+  }
+  let html = '<span class="btl-orbit" title="Distinct recorded execution IDs. Partial history, separate from published meta-article volume.">' +
+    fmt(h.completedRuns) + ' recorded completed ' + (h.completedRuns === 1 ? 'run' : 'runs') + '</span>';
+  if (detail) {
+    html += '<p class="btl-chain">Recorded in the last 30 days: ' + fmt(h.completedLast30Days) +
+      ' completed; ' + fmt(h.failedRuns) + ' failed in the recorded history. These are lower bounds from recorded work, not total task frequency.</p>';
+    const ids = h.executionIds || [];
+    const runs = ((DATA.executionHistory || {}).executions || []).filter(function(r){ return ids.indexOf(r.executionId) !== -1; });
+    html += '<ul>' + runs.map(function(r){
+      const meta = r.metaArticle || {};
+      return '<li><code>' + esc(r.executionId) + '</code> · ' + esc(r.status) +
+        ' · ' + esc(r.finishedAt || r.startedAt) + '<br>' + esc(r.result) +
+        (meta.status === 'published' ? ' <a href="' + esc(meta.url) + '" target="_blank" rel="noopener">Read the run’s meta article ↗</a>' : ' · Meta article ' + esc(meta.status || 'unknown')) +
+        (r.evidenceUrls || []).map(function(url, i){ return ' <a href="' + esc(url) + '" target="_blank" rel="noopener">Evidence ' + (i + 1) + ' ↗</a>'; }).join('') +
+        (r.privateEvidenceRecorded ? ' · Private evidence retained' : '') + '</li>';
+    }).join('') + '</ul>';
+  }
+  return html;
 }
 function rowHTML(t){
   const st = STATUS[t.status] || STATUS.gap;
@@ -375,15 +404,15 @@ function rowHTML(t){
   }
   if (t.lane) badges += '<span class="btl-tag tag-sop" title="' + esc(t.lane_label || t.lane) + '">' + esc(t.lane) + '</span>';
   const stage = (t.stage && t.stage !== '—') ? '<span class="btl-stage">' + esc(t.stage) + '</span>' : '';
-  const art = articleLink(t) +
+  const art = articleLink(t) + executionHistoryHTML(t, false) +
     (t.download ? '<a class="btl-art" href="' + esc(t.download) + '" target="_blank" rel="noopener">Download full skill suite ⬇</a>' : '');
   let chain = '';
   if (t.before || t.after || t.phase){
     chain = '<p class="btl-chain">' +
       (t.phase ? '<b>' + esc(t.phase) + '</b> · ' : '') +
-      (t.before ? 'before <button type="button" data-goto="' + esc(t.before) + '">' + esc(t.before) + '</button>' : '') +
+      (t.before ? 'suggested previous station <button type="button" data-goto="' + esc(t.before) + '">' + esc(t.before) + '</button>' : '') +
       (t.before && t.after ? ' → ' : '') +
-      (t.after ? 'after <button type="button" data-goto="' + esc(t.after) + '">' + esc(t.after) + '</button>' : '') +
+      (t.after ? 'suggested next station <button type="button" data-goto="' + esc(t.after) + '">' + esc(t.after) + '</button>' : '') +
       '</p>';
   }
   return '<article class="btl-row" id="task-' + esc(t.slug) + '" data-id="' + t._id + '" data-slug="' + esc(t.slug) + '">' +
@@ -611,7 +640,8 @@ function openModal(t){
   mSub.innerHTML = '<code class="btl-slug">' + esc(t.slug || 'skill') + '.skill.md</code>' +
     articleLink(t) +
     (t.download ? '<a class="btl-art" href="' + esc(t.download) + '" target="_blank" rel="noopener">Download full skill suite ⬇</a>' : '');
-  mBody.innerHTML = renderMD(t.content || '*No skill.md captured yet — this task is a gap to close on the next run of the loop.*');
+  mBody.innerHTML = '<section aria-label="Recorded execution history">' + executionHistoryHTML(t, true) + '</section>' +
+    renderMD(t.content || '*No skill.md captured yet — this task is a gap to close on the next run of the loop.*');
   prevOverflow = document.body.style.overflow;
   const embedded = window.self !== window.top;
   if (embedded){

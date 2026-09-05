@@ -1,0 +1,8 @@
+{
+  "schemaVersion": 1,
+  "asOf": "2026-09-05T08:47:57.831416+00:00",
+  "countDefinition": "Distinct recorded execution IDs, separate from meta-article URLs. History is partial; absent history is unknown, not zero. The last-30-day count is a documented lower bound, not total task frequency.",
+  "recordedExecutions": null,
+  "completedExecutions": null,
+  "executions": []
+}

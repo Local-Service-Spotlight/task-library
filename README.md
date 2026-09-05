@@ -7,6 +7,7 @@ Hub-and-spoke skill library. This repo is the **hub**: the registry, the dashboa
 ```
 skills/<category-folder>/<slug>.md   skill files that live in this repo ("local")
 build/registry.json                  slug -> source; THE index of the library
+build/task-executions.json           distinct real executions, not article revisions
 build/article-certifications.json    reviewed URL-level semantic holds (can only force WIP)
 build/categories.json                the 13 categories (order, icons, colors)
 build/site-meta.json                 meta-article URL (counts and build date are derived)
@@ -64,3 +65,7 @@ accepts that message only from `https://blitzmetrics.com`.
 ```
 python3 build/build.py          # writes dashboard/data.json + library-index.html, exit 1 on validation errors
 ```
+
+## Recorded executions
+
+[EXECUTION-LEDGER.md](EXECUTION-LEDGER.md) defines the additive run ledger and review CLI. Task slugs remain owned by the registry and tracker. Published meta-article volume and expected recurrence used in the importance score are separate from real recorded executions. An absent run history is unknown, not zero.
