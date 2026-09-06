@@ -27,7 +27,33 @@ status: complete
 8. Mark each item pass/fail in the tracker. A single fail blocks publication — fix it now or send it back to the owning step: story/voice to Step 5 or Step 7, grading to Jennifer, media to Step 8, WordPress to Steps 12–14b, and sitewide proof to the Website QA checks.
 9. Re-run until every item passes, then record the completed checklist with date and operator so the audit trail exists.
 
+## Required first-screen visual gate
+
+Every visitor-facing page, including home, money, relationship, archive and
+utility pages, must show a relevant authentic photograph, source-video poster
+or useful diagram above the fold. At 390x844 and 1280x800, test the anonymous
+unscrolled first visit with JavaScript on and off. A logo, social icon, decorative
+background, thin strip, broken image or empty player rectangle fails.
+
+Use the [canonical numeric standard](https://github.com/dennisyu/local-service-spotlight-skills/blob/main/standards/visuals-above-the-fold.md) and its
+[shared browser checker](https://github.com/dennisyu/local-service-spotlight-skills/blob/main/scripts/rendered_visual_check.mjs) in the real builder/publisher:
+`rendered_visual_check.mjs --url URL --selector CSS --output DIRECTORY`.
+Measure the complete preview with site chrome before release and the ordinary
+public URL after the authorized release. Save both screenshot/JSON receipts.
+The checker can measure a loaded photographic CSS background as well as images,
+diagrams and video posters. Its geometry pass remains `REVIEW_REQUIRED` until
+an independent reviewer opens the actual screenshots and source evidence and
+accepts the relevance, authentic moment, useful crop, labels and permission.
+A source-order regex or an `<img>` count cannot mark this gate complete.
+
+YouTube uses youtube-nocookie.com with rel=0, cc_load_policy=1 and cc_lang_pref.
+No media autoplays on first paint. Before any separate playback verification,
+mute and set volume zero; if that cannot be verified, use metadata, captions,
+frames or a loaded poster and record playback NOT_TESTED. Never play through
+the user's speakers without their explicit current request.
+
 ## Definition of done (QA checklist)
+- [ ] Preview and ordinary-live first-screen geometry plus source-backed screenshot review pass on both viewports; actual evidence stored
 - [ ] Every checklist item explicitly marked pass — zero skipped, zero "close enough"
 - [ ] Story/authority voice passed: first-person personal site, sourced scenes, compact receipts, no trophy-name paragraphs, and evidence-bound relationship nouns
 - [ ] Zero repeated defensive caveats or stray internal production metadata; any retained legal/compliance disclosure is materially necessary and scoped

@@ -25,7 +25,7 @@ Revision budgets before human escalation: STRONG 3 rounds (target A-), MODERATE 
 4. ChatGPT giveaway language ("X doesn't just Y. It's also Z."): lose one full letter.
 5. Any typo: lose one full letter per occurrence.
 6. Repurposed from video but source video not embedded: max C.
-7. Lead visual missing from the first 2–3 paragraphs: max B+.
+7. A meaningful loaded visual fails the [canonical rendered first-screen gate](https://github.com/dennisyu/local-service-spotlight-skills/blob/main/standards/visuals-above-the-fold.md) at 390x844 or 1280x800: `publish_ready: false`. First 2–3 paragraphs, an image tag or a letter grade cannot substitute for the actual first-screen screenshot and source-backed review.
 8. POV mismatch (third person on a personal-brand site, or first person on a company site): max B.
 9. WordPress author set to an admin/team account: max B+ — flag even at A- and run `set-wordpress-author-to-correct-person`.
 10. Banned AI-tell words: "honest," "honestly," "quietly."

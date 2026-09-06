@@ -24,7 +24,33 @@ status: complete
 5. Re-check long blog posts specifically — body copy between images must not exceed one full viewport on mobile (matches the visual-rhythm intent of /blog-posting-guidelines).
 6. Log violations and fixes in the audit report.
 
+## Required first-screen visual gate
+
+Every visitor-facing page, including home, money, relationship, archive and
+utility pages, must show a relevant authentic photograph, source-video poster
+or useful diagram above the fold. At 390x844 and 1280x800, test the anonymous
+unscrolled first visit with JavaScript on and off. A logo, social icon, decorative
+background, thin strip, broken image or empty player rectangle fails.
+
+Use the [canonical numeric standard](https://github.com/dennisyu/local-service-spotlight-skills/blob/main/standards/visuals-above-the-fold.md) and its
+[shared browser checker](https://github.com/dennisyu/local-service-spotlight-skills/blob/main/scripts/rendered_visual_check.mjs) in the real builder/publisher:
+`rendered_visual_check.mjs --url URL --selector CSS --output DIRECTORY`.
+Measure the complete preview with site chrome before release and the ordinary
+public URL after the authorized release. Save both screenshot/JSON receipts.
+The checker can measure a loaded photographic CSS background as well as images,
+diagrams and video posters. Its geometry pass remains `REVIEW_REQUIRED` until
+an independent reviewer opens the actual screenshots and source evidence and
+accepts the relevance, authentic moment, useful crop, labels and permission.
+A source-order regex or an `<img>` count cannot mark this gate complete.
+
+YouTube uses youtube-nocookie.com with rel=0, cc_load_policy=1 and cc_lang_pref.
+No media autoplays on first paint. Before any separate playback verification,
+mute and set volume zero; if that cannot be verified, use metadata, captions,
+frames or a loaded poster and record playback NOT_TESTED. Never play through
+the user's speakers without their explicit current request.
+
 ## Definition of done (QA checklist)
+- [ ] Preview and ordinary-live first-screen geometry plus source-backed screenshot review pass on both viewports; actual evidence stored
 - [ ] Zero sections on audited pages span a full viewport with text only, on both desktop and mobile
 - [ ] Every violation has a named visual fix queued or applied
 - [ ] Scroll-audit results logged per page in the audit report, linked back to /website-qa-audit
