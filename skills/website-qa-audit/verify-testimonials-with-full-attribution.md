@@ -17,15 +17,16 @@ status: complete
 - The audit report/spreadsheet for logging results
 
 ## Steps
-1. Take every testimonial on the site and score it against all four attribution fields: full name, title/role, company (or city for consumer clients), and real headshot.
-2. Fail any testimonial missing one or more fields — Layer 2 passed "name plus face"; Layer 3 requires the complete set.
+1. Take every testimonial on the site and score it against all four attribution fields: full name, title/role, company (or city for consumer clients), and real headshot. Also capture the primary source URL and permission state.
+2. Fail any testimonial missing one or more fields — Layer 2 passed "name plus face"; Layer 3 requires the complete set. A company or domain by itself names an organization, not the person who supplied the praise; keep it HOLD.
 3. Verify a sample: look up the named person (LinkedIn or their company site) and confirm they exist and plausibly match the headshot and title.
-4. Prefer linked attribution where the person agreed — name linking to their LinkedIn or company turns the testimonial into checkable evidence.
+4. Compare the published words with the primary source. The quote must be exact; do not put a paraphrase or composite inside quotation marks. Prefer linked attribution where the person agreed — name linking to their LinkedIn or company turns the testimonial into checkable evidence.
 5. For each incomplete testimonial, list exactly which field to collect from the client, with the owner's outreach note.
 6. Log the four-field scorecard per testimonial in the audit report.
 
 ## Definition of done (QA checklist)
-- [ ] 100% of testimonials carry all four fields — full name, title, company, headshot — with zero anonymous or partial entries
+- [ ] 100% of testimonials carry all four fields — full name, title, company, headshot — plus an exact source-linked quote and any required permission, with zero anonymous, domain-only, or partial entries
+- [ ] Incomplete or unverified praise remains HOLD and is not rendered as a testimonial
 - [ ] Spot-checked people are real and findable; fabricated-looking entries removed
 - [ ] Four-field scorecard logged in the audit report, linked back to /website-qa-audit
 

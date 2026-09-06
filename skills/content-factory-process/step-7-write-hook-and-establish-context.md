@@ -18,20 +18,24 @@ status: complete
 - The strongest specific moment from the video (a number, a story beat, a blunt statement)
 
 ## Steps
-1. Lead with the most concrete thing the video offers: the result, the mistake, the number, the question itself. Specifics hook; generalities bounce.
+1. Lead with the most concrete moment the video offers: the result, mistake, number, exchange, or question itself. Show the scene before explaining the speaker's credentials. Specifics hook; generalities and resumes bounce.
 2. Establish relevance in the first two or three sentences: the target reader should recognize their own situation ("you got three quotes and they're $4,000 apart").
 3. Keep the focus keyword in the first paragraph, placed naturally inside the hook — not bolted on.
-4. Establish who is speaking and why they have standing within the opening section: name, role, and the first-hand experience behind the answer. This is E-E-A-T, not throat-clearing.
-5. Ban the AI-fluff openers outright: no "In today's digital landscape," no rhetorical-question stacks, no dictionary definitions of common words.
-6. Set up the article's promise in one line — what the reader will know or be able to do by the end — matching the title's promise exactly.
-7. Read the opening aloud. If the first sentence could open a hundred other articles, rewrite it until it could only open this one.
-8. Update the tracker ("Step 7 done") and hand off to `step-8-add-photos-and-featured-image`.
+4. Establish who is speaking and why they have standing within the opening section using one relevant first-hand detail. On a personal site, use "I" and "my." Do not stack famous names, employers, titles, or awards to ask the reader for belief before the story begins.
+5. If a recognizable person appears, explain the shared moment and the lesson. The name is context. Link the primary photo, video, event page, or quote in a compact caption or receipt rather than adding a paragraph about what the evidence does or does not prove.
+6. Ban the AI-fluff openers outright: no "In today's digital landscape," no rhetorical-question stacks, no dictionary definitions of common words. Also ban verification theater in the opener: no confidence scores, "every claim is sourced," "no endorsement is implied," or similar internal process language.
+7. Keep a materially necessary legal, regulatory, or compliance disclosure; place it next to the claim it governs and make it only as long as required. Do not treat an editorial fear of sounding boastful as a compliance requirement.
+8. Set up the article's promise in one line — what the reader will know or be able to do by the end — matching the title's promise exactly.
+9. Read the opening aloud. If the first sentence could open a hundred other articles, or the first paragraph sounds like a speaker introduction, rewrite it until it could only open this story.
+10. Update the tracker ("Step 7 done") and hand off to `step-8-add-photos-and-featured-image`.
 
 ## Definition of done (QA checklist)
 - [ ] First sentence is specific to this video/story — fails the "could open any article" test
 - [ ] Target reader's situation named within the first three sentences
 - [ ] Focus keyword present and natural in the first paragraph
-- [ ] Speaker's identity and first-hand standing established early
+- [ ] Personal-brand opening uses first person and establishes standing with one relevant first-hand detail, not a credential stack
+- [ ] Any notable person is tied to a sourced scene and useful lesson; no trophy-name paragraph or verification theater
+- [ ] No defensive caveat remains unless it is a materially necessary legal/compliance disclosure scoped to the claim
 - [ ] No AI-fluff phrases or generic openers anywhere in the intro
 - [ ] Linked back to the definitive article and relevant siblings
 
