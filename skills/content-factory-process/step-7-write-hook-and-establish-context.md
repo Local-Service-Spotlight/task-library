@@ -34,7 +34,16 @@ Readers need a reason to stay on your page. This guide helps you show who it is 
 7. Read the opening for jargon, long clauses and generic filler. Screen every document opening at grade 5 or below. State the value, audience, first action and useful result in plain words. A formula helps flag problems but does not replace human clarity review.
 8. Compare the opening with the source, GCT and next section. Remove resume-style claims and defensive verification language. Retain a materially required disclosure close to its claim. Save the opening with the source anchor and visual placement note.
 
+## Opening meaning review
+
+Keep the opening to two or three short sentences at grade 5 or below. It must show the actual reader’s situation, why the subject matters, the useful result, and how this page helps. A source-backed moment or useful finding can lead. Keep its relevant visual in the first screen; check that the body delivers the opening’s promise.
+
+Save the exact opening and artifact revision in the existing run receipt. Have the reviewer quote the words that establish the situation, reason to care, result and method. Record PASS, FAIL or UNKNOWN with reasons and a readability diagnostic. A grade score, keyword, generic audience label or unsupported conversion promise cannot approve meaning. Follow [Step 7: write and review the opening](https://local-service-spotlight.github.io/task-library/?task=step-7-write-hook-and-establish-context#task-step-7-write-hook-and-establish-context) and the [maintained opening standard](https://github.com/dennisyu/local-service-spotlight-skills/blob/main/standards/every-article-and-project-starts-with-specific-gct.md).
+
 ## Definition of done (QA checklist)
+
+- [ ] The same short opening explains the reason to care, useful outcome and supporting mechanism; the body delivers that promise and the existing tracker retains quoted reviewer evidence
+- [ ] Relevant authentic visual is useful in the first screen; background and context do not bury it
 
 - [ ] The first two or three sentences make who, what and useful outcome clear.
 - [ ] The hook is true to the source and uses the correct voice.
@@ -48,6 +57,8 @@ Readers need a reason to stay on your page. This guide helps you show who it is 
 “A blurry bike photo can leave the shop guessing. This guide shows riders which photos and notes help us prepare for a repair quote. Start with a full view of the bike, then show the issue up close.”
 
 A simple three-part diagram below it reads “Whole bike → Close-up → Short note.” It supports the promise without pretending the shop can diagnose every fault from a photo. The writer rejects “Our world-class experts transform your cycling journey” because it gives no useful answer or real scene.
+
+- Money Tree correction, 2026-09-06: replace the vague "A useful conversation becomes a story" orientation with the actual reader value: "Your best customer stories should help your next customer decide to buy. A Money Tree connects those stories, interviews and useful articles to the services you sell, so people can see your work and take the next step." This is a writing example, not a measured conversion result or text to duplicate across unrelated pages.
 
 ## Handoff and Content Factory context
 

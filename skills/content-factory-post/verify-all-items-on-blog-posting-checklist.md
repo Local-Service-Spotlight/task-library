@@ -30,14 +30,42 @@ Small missed details can make a good article hard to trust or use. This guide he
 2. Check the reader’s start. Does the title match the answer? Does the short opening explain who, why, the work and the useful result in plain words? Apply the maintained grade-5-or-lower opening rule to every document. A reading score flags difficulty; also check that a person new to the subject can explain the value and first action.
 3. Check facts, voice and proof against the source. Use first person on a personal-brand site when the evidence supports that person’s authorship. Keep named scenes, exact quotes, proper attribution and evidence-limited relationship language. Require no trophy-name paragraph and no repeated defensive caveats. Remove unsupported claims and public internal scoring labels unrelated to the article’s subject.
 4. Check identity, permission and testimonials. Verify the speaker’s identity, primary source and needed permission for each quote. Missing proof and domain/company-only attribution fail publication; keep the claim on HOLD. Do not repair it with invented reassurance. Preserve any materially necessary legal, regulatory, or compliance disclosure, scoped to the claim it qualifies.
-5. Check the meaningful lead visual at 1440×860 and 390×844 before scrolling. It must have real visible content and readable labels, not just a border. Review other media, captions, alt text and source players. Keep agent playback muted at zero volume; record untested sound or player behavior.
+5. Check the meaningful lead visual at 1280×800 and 390×844 before scrolling. It must have real visible content and readable labels, not just a border. Review other media, captions, alt text and source players. Keep agent playback muted at zero volume; record untested sound or player behavior.
 6. Check body links and the [SEO Tree](https://blitzmetrics.com/seo-tree/): the correct parent, useful related pages, accurate first-mention term explanations and verified identity destinations. Read each new target and named anchor. Keep exact official proof/download links when needed; do not replace them solely to reach an internal-link count. Check the useful course/service or do-it-yourself action link when the maintained role requires one.
 7. Check the saved site fields and visible page: intended author, category/tags where supported, stable URL, metadata and supported Page/Post/builder source. Treat a Rank Math score as the agreed internal target, not proof of article quality or Google ranking.
 8. For a task recipe, check trigger, inputs/access, source-backed prerequisites, ordered method, measurable result, acceptance and handoff. Check the lower Content Factory context, bidirectional exact-task link, and relevant verified execution examples or an explicit example gap. Preserve the contributor task status separately: it does not certify the current article or candidate revision. A better opening alone does not certify a task guide.
 9. Record PASS, FAIL, UNKNOWN or NOT APPLICABLE with a reason and evidence for each check. UNKNOWN on a required item is unfinished; NOT APPLICABLE needs a real role/scope reason. Fix failures within the existing authority and recheck the affected item and anything the fix could break.
 10. Make the decision for this actual stage. A passed draft checklist means ready for the already-authorized publishing step, not proof of public delivery. Save the final checklist, revision, date, operator and unresolved owner/actions; write the run’s meta record even if the result is partial or blocked.
 
+## Required first-screen visual gate
+
+Every visitor-facing page, including home, money, relationship, archive and
+utility pages, must show a relevant authentic photograph, source-video poster
+or useful diagram above the fold. At 390x844 and 1280x800, test the anonymous
+unscrolled first visit with JavaScript on and off. A logo, social icon, decorative
+background, thin strip, broken image or empty player rectangle fails.
+
+Use the [canonical numeric standard](https://github.com/dennisyu/local-service-spotlight-skills/blob/main/standards/visuals-above-the-fold.md) and its
+[shared browser checker](https://github.com/dennisyu/local-service-spotlight-skills/blob/main/scripts/rendered_visual_check.mjs) in the real builder/publisher:
+`rendered_visual_check.mjs --url URL --selector CSS --output DIRECTORY`.
+Measure the complete preview with site chrome before release and the ordinary
+public URL after the authorized release. Save both screenshot/JSON receipts.
+The checker can measure a loaded photographic CSS background as well as images,
+diagrams and video posters. Its geometry pass remains `REVIEW_REQUIRED` until
+an independent reviewer opens the actual screenshots and source evidence and
+accepts the relevance, authentic moment, useful crop, labels and permission.
+A source-order regex or an `<img>` count cannot mark this gate complete.
+
+YouTube uses youtube-nocookie.com with rel=0, cc_load_policy=1 and cc_lang_pref.
+No media autoplays on first paint. Before any separate playback verification,
+mute and set volume zero; if that cannot be verified, use metadata, captions,
+frames or a loaded poster and record playback NOT_TESTED. Never play through
+the user's speakers without their explicit current request.
+
 ## Definition of done (QA checklist)
+
+- [ ] The live first 2–3 sentences pass `step-7-write-hook-and-establish-context`: actual reader/situation, reason to care, useful outcome and supporting mechanism; exact text and quoted reviewer evidence retained, and the body delivers its promise
+- [ ] Preview and ordinary-live first-screen geometry plus source-backed screenshot review pass on both viewports; actual evidence stored
 
 - [ ] The rule version, page role and exact source revision are recorded.
 - [ ] Each required item has evidence and a truthful state; no required UNKNOWN or FAIL is hidden.

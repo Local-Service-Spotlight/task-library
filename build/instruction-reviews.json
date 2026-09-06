@@ -127,7 +127,7 @@
       "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
     },
     "step-17-final-formatting-and-qa-checks": {
-      "source_sha256": "8aa2af19aa37fc03b66683f85ee03f7c3a436ed2a7ccc8b3dfaf6c5694580841",
+      "source_sha256": "01eb04ab0229310b0ef4a0a29799a0cace96c7003fd1d18e7634f5eb25b7fbc7",
       "reviewed_at": "2026-09-06",
       "reviewer": "Codex editorial review",
       "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
@@ -139,7 +139,7 @@
       "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
     },
     "verify-all-items-on-blog-posting-checklist": {
-      "source_sha256": "578eb81f017bdb39f76ba0f1b00dde0b789f8a84f861eeeffabfabb3eecf7b96",
+      "source_sha256": "7bb52173e57290d00b20c165f01c609b66c5c44e5700ccf51e34cc6107443bf5",
       "reviewed_at": "2026-09-06",
       "reviewer": "Codex editorial review",
       "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
@@ -193,7 +193,7 @@
       "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
     },
     "step-5-write-article-from-transcript": {
-      "source_sha256": "cc0dedee8a1bfe8dcdd76abd602ecebfa761bf570c7669a61953e7f6a4adcb20",
+      "source_sha256": "a5fdf80502cf5bec5c35a7ef6c003487cc80332553c17111ec3fd683394fe4eb",
       "reviewed_at": "2026-09-06",
       "reviewer": "Codex editorial review",
       "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
@@ -205,7 +205,7 @@
       "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
     },
     "step-7-write-hook-and-establish-context": {
-      "source_sha256": "3d2f13900a464895ba6c8b25b23d8c46c21c2cc056f86f57a5fb20f79362e496",
+      "source_sha256": "2a3b3f665c3c2f628ce352d95644c041a91aea6bcf0107000b91933d4ebeb5a7",
       "reviewed_at": "2026-09-06",
       "reviewer": "Codex editorial review",
       "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
@@ -319,7 +319,7 @@
       "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
     },
     "document-a-task": {
-      "source_sha256": "a8cb2098bf918ab2cbf3fe162c668631843450adb9f6b2f082e035357b97aff7",
+      "source_sha256": "73e81be87288b2db0aafaac95cf1701a58bbc79c43f866b6db4630a24a0f03fc",
       "reviewed_at": "2026-09-06",
       "reviewer": "Codex editorial review",
       "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
@@ -463,7 +463,7 @@
       "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
     },
     "grade-article-using-jennifer": {
-      "source_sha256": "765d475e6dac428099cd976c744aee5c9a563d352cf3073c64b9620df67ce144",
+      "source_sha256": "033672d450ae259e969fa2ae99dd431b557930fb71c4a35128d6793ce480d061",
       "reviewed_at": "2026-09-06",
       "reviewer": "Codex editorial review",
       "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
@@ -517,7 +517,7 @@
       "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
     },
     "create-or-update-a-definitive-article": {
-      "source_sha256": "b59346ff0250c3a362a2d730c5b1b9ba3b72d5813116eab5199e596c4a60bff7",
+      "source_sha256": "023c3a1d3171dac1d5a29e3391e472248c7337ac0249fc08846a20891fd819f2",
       "reviewed_at": "2026-09-06",
       "reviewer": "Codex editorial review",
       "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
@@ -595,7 +595,7 @@
       "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
     },
     "ensure-no-text-only-sections-spanning-full-viewport": {
-      "source_sha256": "0b1a66f8e4ee8d8b5d0fd3ee001478987239fcf70d6019276de1578593a35712",
+      "source_sha256": "560a13b937425967007f5cce2d251b860e0a0442fe7031c2ada4f4fd40f8ae84",
       "reviewed_at": "2026-09-06",
       "reviewer": "Codex editorial review",
       "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."

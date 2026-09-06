@@ -18,7 +18,7 @@ A wall of text can make a useful page hard to follow. This guide helps you give 
 ## Inputs
 - The canonical pages in scope, their intended readers and current full content.
 - Real relevant photos, diagrams or source screenshots with appropriate rights.
-- Views at 1440×860 and 390×844, the supported editor and authorized layout/edit scope.
+- Views at 1280×800 and 390×844, the supported editor and authorized layout/edit scope.
 - The current [Article Guidelines](https://localservicespotlight.com/article-guidelines/) and an issue log for exact sections and missing assets.
 
 ## First-run prompt
@@ -35,7 +35,35 @@ A wall of text can make a useful page hard to follow. This guide helps you give 
 7. Apply authorized text/layout changes in the supported source, preserving useful media and factual meaning. Give any missing real asset an owner rather than inventing proof.
 8. Recheck the first screen and repaired sections on normal canonical desktop and phone pages. Save exact observations and remaining gaps. This house layout check does not by itself measure bounce rate, engagement or conversion.
 
+## Required first-screen visual gate
+
+Every visitor-facing page, including home, money, relationship, archive and
+utility pages, must show a relevant authentic photograph, source-video poster
+or useful diagram above the fold. At 390x844 and 1280x800, test the anonymous
+unscrolled first visit with JavaScript on and off. A logo, social icon, decorative
+background, thin strip, broken image or empty player rectangle fails.
+
+Use the [canonical numeric standard](https://github.com/dennisyu/local-service-spotlight-skills/blob/main/standards/visuals-above-the-fold.md) and its
+[shared browser checker](https://github.com/dennisyu/local-service-spotlight-skills/blob/main/scripts/rendered_visual_check.mjs) in the real builder/publisher:
+`rendered_visual_check.mjs --url URL --selector CSS --output DIRECTORY`.
+Measure the complete preview with site chrome before release and the ordinary
+public URL after the authorized release. Save both screenshot/JSON receipts.
+The checker can measure a loaded photographic CSS background as well as images,
+diagrams and video posters. Its geometry pass remains `REVIEW_REQUIRED` until
+an independent reviewer opens the actual screenshots and source evidence and
+accepts the relevance, authentic moment, useful crop, labels and permission.
+A source-order regex or an `<img>` count cannot mark this gate complete.
+
+YouTube uses youtube-nocookie.com with rel=0, cc_load_policy=1 and cc_lang_pref.
+No media autoplays on first paint. Before any separate playback verification,
+mute and set volume zero; if that cannot be verified, use metadata, captions,
+frames or a loaded poster and record playback NOT_TESTED. Never play through
+the user's speakers without their explicit current request.
+
 ## Definition of done (QA checklist)
+
+- [ ] The opening earns attention and explains this reader's situation, reason to care, useful outcome and mechanism under `step-7-write-hook-and-establish-context`; saved quoted meaning review is separate from image geometry
+- [ ] Preview and ordinary-live first-screen geometry plus source-backed screenshot review pass on both viewports; actual evidence stored
 
 - [ ] Both first viewports show a meaningful readable visual with clear opening context.
 - [ ] The full scoped body is reviewed for long unbroken text stretches at both widths.

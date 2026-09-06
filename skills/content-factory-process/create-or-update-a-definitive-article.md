@@ -37,6 +37,12 @@ Your team needs one clear place to learn a task. This guide helps you create tha
 9. Publish/update through the supported route when already authorized and checks pass, or finish the reviewable draft when staging is the scope. Read back the saved source and normal public canonical URL separately. Check meaningful lead visibility/no overflow at 1440×860 and 390×844, with silent media and evidence tied to the final revision.
 10. Write this actual execution’s meta, register its real state through the existing ledger rail, and give the next owner the artifact, acceptance evidence and gaps. Certification requires actual semantic review and evidence; authoring or registration alone does not promote the source status.
 
+## Opening meaning review
+
+Keep the opening to two or three short sentences at grade 5 or below. It must show the actual reader’s situation, why the subject matters, the useful result, and how this page helps. A source-backed moment or useful finding can lead. Keep its relevant visual in the first screen; check that the body delivers the opening’s promise.
+
+Save the exact opening and artifact revision in the existing run receipt. Have the reviewer quote the words that establish the situation, reason to care, result and method. Record PASS, FAIL or UNKNOWN with reasons and a readability diagnostic. A grade score, keyword, generic audience label or unsupported conversion promise cannot approve meaning. Follow [Step 7: write and review the opening](https://local-service-spotlight.github.io/task-library/?task=step-7-write-hook-and-establish-context#task-step-7-write-hook-and-establish-context) and the [maintained opening standard](https://github.com/dennisyu/local-service-spotlight-skills/blob/main/standards/every-article-and-project-starts-with-specific-gct.md).
+
 ## Definition of done (QA checklist)
 
 - [ ] One canonical owner and correct page role are preserved.

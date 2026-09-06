@@ -36,6 +36,12 @@ Your article should sound like the person in the video. This guide helps you tur
 8. Make each section fulfill its heading. A task recipe must describe the start, inputs/access, ordered work, measurable output, checks and next step. A story or reference page keeps its own role; do not invent completed work to make it look like a recipe.
 9. Compare the whole draft with the GCT and source map. Remove unsupported statements, preserve needed legal disclosures, and mark remaining source gaps in review notes. Save the complete draft for titles and headings.
 
+## Opening meaning review
+
+Keep the opening to two or three short sentences at grade 5 or below. It must show the actual reader’s situation, why the subject matters, the useful result, and how this page helps. A source-backed moment or useful finding can lead. Keep its relevant visual in the first screen; check that the body delivers the opening’s promise.
+
+Save the exact opening and artifact revision in the existing run receipt. Have the reviewer quote the words that establish the situation, reason to care, result and method. Record PASS, FAIL or UNKNOWN with reasons and a readability diagnostic. A grade score, keyword, generic audience label or unsupported conversion promise cannot approve meaning. Follow [Step 7: write and review the opening](https://local-service-spotlight.github.io/task-library/?task=step-7-write-hook-and-establish-context#task-step-7-write-hook-and-establish-context) and the [maintained opening standard](https://github.com/dennisyu/local-service-spotlight-skills/blob/main/standards/every-article-and-project-starts-with-specific-gct.md).
+
 ## Definition of done (QA checklist)
 
 - [ ] Every factual claim and quote has a source; no invented scene, result or testimonial is present.
