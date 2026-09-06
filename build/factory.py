@@ -265,8 +265,8 @@ SLUG_LANES = {
 }
 
 # Tasks outside the four Content Factory phases still need an honest chain and
-# handoff. Without an explicit record they inherit the generic Process handoff,
-# which can demand transcripts and clips from a task that produces neither.
+# handoff. Explicit records take precedence over generic stage artifact examples;
+# the task’s actual Inputs and Handoff define its required outputs.
 TASK_OVERRIDES = {
     "positive-mentions-harvester": {
         "before": "business-brand-strategist",
@@ -297,7 +297,7 @@ TASK_OVERRIDES = {
 
 HANDOFF = {
     "Produce": "Raw files in Content Library `01-Raw/` plus a tracker row (question, date, speaker). Next skill never needs the chat — it needs the files.",
-    "Process": "Write `transcript.md`, `gct.md`, `article.html` (or overnight draft), `clips/` and `04-Promote-Creatives/`. The next engine opens those files. Do not pass work through one vendor's memory.",
+    "Process": "Process-stage artifact examples include `transcript.md`, `gct.md`, `article.html` (or a staged draft), `clips/`, or `04-Promote-Creatives/`. These are examples, not requirements for every task. Follow this task's actual Inputs and Handoff sections for the required output, evidence, and next owner. Pass the files or records, not one vendor's memory.",
     "Post": "Draft URL or WP post ID, slug, author user ID, featured-image media ID. Promote reads the live URL, not the draft.",
     "Promote": "Organic metrics CSV (or Ads Manager export), pixel ID, creative filenames, kill/scale log. Next week's ranking starts from this file.",
     "Gate": "Record the property IDs (GTM-…, G-…, pixel, GSC) in the client access register. Nothing ships until those IDs exist.",

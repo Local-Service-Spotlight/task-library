@@ -49,7 +49,7 @@ This task is registered as WIP. Registration, a clear opening, and an execution 
 
 ## Example(s)
 
-The current article-quality cleanup is in progress. Its parent execution and meta article will be registered only from the final source-backed record. No completed example or execution count is claimed here yet.
+The article-quality cleanup has one registered execution, `recipe-audit-20260905-080140`. Its written meta article remains a saved draft. Use that execution record for the current status and evidence. Registration alone is not proof of completion; revisions and retries keep the same ID.
 
 ## Factory context and handoff
 
