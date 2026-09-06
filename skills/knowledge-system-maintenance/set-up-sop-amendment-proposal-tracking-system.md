@@ -1,51 +1,78 @@
 ---
 name: set-up-sop-amendment-proposal-tracking-system
-description: Stand up the end-to-end SOP Amendment tracking system — shared location, tracking fields, weekly review slot, and a verified dry run — so Process 2 operates from day one.
+description: Your team needs to know which fixes are waiting and which are live.
 category: Knowledge System Maintenance
 stage: —
 definitive_article: /knowledge-system-maintenance
 status: gap
 ---
 
-# Set up SOP Amendment Proposal tracking system
+# Set up task guide Amendment Proposal tracking system
 
-**Use this when** implementing the maintenance system — this task is the Implementation Checklist milestone that turns the SOP Update Protocol from documentation into a running pipeline. It is a gap: no tracking system exists yet.
+Your team needs to know which fixes are waiting and which are live. This guide sets up that record from request to result. Start with the shared proposal home and the person who reviews it.
+
+**The path:** Shared queue → Tracking fields → Test cycle → Real review setup
+
+**Start when:** The shared proposal home exists but needs decision metadata, a test loop and a review workflow.
 
 ## Inputs
-- The shared location decision or the skill that creates it (`create-shared-location-for-sop-amendment-proposals`)
-- The named senior reviewer and a weekly review slot candidate
-- The proposal format standard (≤500 words: problem, affected SOP, proposed language, ≥2 examples)
+
+- [The checked proposal location](https://local-service-spotlight.github.io/task-library/?task=create-shared-location-for-sop-amendment-proposals#task-create-shared-location-for-sop-amendment-proposals) or its existing equivalent.
+- The four-part/500-word format, named reviewer and agreed weekly review window.
+- Authority for metadata, access, calendar changes and team notices.
 
 ## Steps
-1. Create the shared location first — run `create-shared-location-for-sop-amendment-proposals` (Google Doc, WordPress draft, or project board; exactly one).
-2. Define the tracking fields every proposal carries: title, affected-SOP tag, submitter, submission date, priority, status (queued / approved / rejected / returned), resolution note, and the SOP version the approval produced. These fields are what make the 6-month pattern review possible — skimp now, fly blind later.
-3. Pin the proposal format at the top of the system so the entry bar is self-explanatory.
-4. Lock in the weekly review: a named senior reviewer and a fixed recurring slot on their calendar (see `senior-team-member-reviews-weekly` for the session SOP).
-5. Dry-run one test proposal through the complete loop: draft → tag → queue → weekly review → approve with version increment + changelog (or reject with reason) → archive. Fix every snag the dry run exposes before announcing.
-6. Announce the system to the team with the one-line rule: SOPs change only through this pipeline — no drive-by edits.
-7. Link the system from /knowledge-system-maintenance so the hub points at the live infrastructure.
+
+1. Reuse the approved location and preserve existing proposal IDs and history. Verify the current submit/review roles before adding fields.
+2. Create or map title, affected guide, submitter, submission date, priority, decision state, resolution note and resulting source version. Add decision/release dates and evidence links so later metrics have actual timestamps.
+3. Keep queued, returned, approved, rejected and awaiting evidence distinct; track release separately from approval. Preserve earlier decisions instead of overwriting them with the latest status.
+4. Pin the format and seed a labeled test proposal. Check a full sample loop through tagging, review and resolution on test records, including a test-only version/changelog if used.
+5. Agree the weekly reviewer and save any authorized event/job. Read back identifier, date/timezone and agenda; the saved review slot is not an observed review.
+6. Test a small export and verify that real proposal IDs, submission/decision dates and states remain usable for later analysis. Exclude test proposals from production counts.
+7. Link the maintained workflow to the system and issue only authorized notices. Record the real readiness gaps and the owner of the first live review.
 
 ## Definition of done (QA checklist)
-- [ ] One canonical location live with all eight tracking fields and the format pinned
-- [ ] Named senior reviewer holding a recurring weekly review slot
-- [ ] Dry-run proposal completed the full loop, producing a version increment + changelog entry on a test SOP
-- [ ] Team announced and the no-drive-by-edits rule communicated
-- [ ] System linked from the hub; pattern-review fields confirmed queryable for the 6-month cycle
-- [ ] Linked back to the definitive article and relevant siblings
-- [ ] Complies with Blog Posting Guidelines (if it publishes content)
+
+[Quality assurance (QA)](https://localservicespotlight.com/article-guidelines/) means checking the work against the agreed result.
+
+- [ ] Required metadata and history are retained in one accessible system.
+- [ ] A test round trip and export work, with samples excluded from real counts.
+- [ ] Review slot and real review/release outcomes are kept separate.
 
 ## Example(s)
-- /knowledge-system-maintenance — the Implementation Checklist requires this tracking system as the operational backbone of Process 2. Gap: not yet built — running this skill closes it.
-- Example needed — run the Meta-Article Prompt (/meta-article-prompt-template) after the first real proposals flow through, then link the meta-article here.
 
-## Run on a persistent agent (Fable 5)
+**Fictional teaching example. This is not a client result or proof of a completed run.**
 
-A persistent, max-effort agent (Claude Fable 5 or comparable OpenAI/Google models) stands up the full pipeline — canonical location, all eight tracking fields, pinned format, named reviewer with a recurring slot — and loops until the Definition of done fully passes, with the dry run as the gate: one test proposal driven through draft → tag → queue → review → resolve, producing a real version increment and changelog entry on a test SOP.
-It self-verifies by querying the tracking fields the way the 6-month pattern review will, confirming proposals-per-SOP, approval rate, and decision time are actually answerable from the data the system records.
-The eight fields are memory infrastructure, and the agent treats them that way across audit cycles: it remembers why each field exists, watches that the data keeps accumulating cleanly, and escalates field rot before it blinds the recursive review — "skimp now, fly blind later" is the failure it is built to prevent.
-Each run it logs a meta-article example via the Meta-Article Prompt, so the build and its dry run become documented, repeatable knowledge.
-See `boil-the-ocean.md` for the full operating principles.
+A fictional test proposal is approved against a test guide, creating a test version and changelog. Its row is marked sample. The first real proposal is still queued. The tracking system test passed; no real process improvement has been released yet.
+
+## Handoff and Content Factory context
+
+This work supports the [Content Factory, our four stages of using real content](https://blitzmetrics.com/content-factory/): Produce → Process → Post → Promote. Use the specific inputs and next task below to place the work; a maintenance task does not manufacture transcripts, clips or other stage outputs it does not call for.
+
+[Review queued changes](https://local-service-spotlight.github.io/task-library/?task=senior-team-member-reviews-weekly#task-senior-team-member-reviews-weekly) handles live proposals; [the later pattern review](https://local-service-spotlight.github.io/task-library/?task=review-past-6-months-of-sop-amendment-proposals-for-patterns#task-review-past-6-months-of-sop-amendment-proposals-for-patterns) reads the retained metadata.
+
+## Run with an agent
+
+Give the AI worker this recipe, the real Inputs above, the intended result and the actions already authorized. Ask it to return the saved output, checks, evidence and remaining owner. Check its work against this guide; loading a skill does not prove access, installation of a job, or successful execution. Keep media muted with volume at zero if playback is needed.
+
+For recurring work, keep the actual trigger, owner and runtime in the job record. Scheduling and observed firings are separate. Do not create a schedule merely because this guide mentions a review interval.
+
+## Record the real execution
+
+Open the run record when the work starts. Keep the exact starting recipe revision, one execution ID, source evidence and actual state. Write a [meta article, the record of one run](https://blitzmetrics.com/meta-article-prompt/) with decisions, results, checks, failures and next owner. Link it to this task and register it through the [Task Library](https://local-service-spotlight.github.io/task-library/) execution process. Writing is part of the work; public release follows existing authority.
+
+Reuse the same execution ID for revisions, QA, meta writing and retries within that run. A blocked run stays open with its dependency and next owner; do not invent a finish time. Use supported findings to propose and verify a better recipe. A historical public-example count without distinct run IDs remains dated article volume, not verified execution frequency.
 
 ## Definitive article & links
-- Hub: /knowledge-system-maintenance
-- Related: create-shared-location-for-sop-amendment-proposals (component) → set-up-sop-amendment-proposal-tracking-system (system) → Process 2 run order: create-sop-amendment-proposal-500-words → tag-proposal-with-affected-sop-and-queue-for-review → senior-team-member-reviews-weekly.
+
+- [Maintained source guide](https://blitzmetrics.com/knowledge-system-maintenance/)
+- [This task in the Task Library](https://local-service-spotlight.github.io/task-library/?task=set-up-sop-amendment-proposal-tracking-system#task-set-up-sop-amendment-proposal-tracking-system)
+- [Article Guidelines](https://localservicespotlight.com/article-guidelines/)
+- [current article guide](https://blitzmetrics.com/definitive-article-guide/)
+- [How recipes and run records work together](https://localservicespotlight.com/meta-articles/)
+
+## Review and evidence still needed
+
+The inherited contributor status is `gap`. It is preserved, not promoted by this rewrite. That label alone does not verify document readiness, a client outcome, access or an executed task.
+
+A real execution still needs its own source, reviewer, saved result and handoff evidence. The fictional example teaches the method; a real example with relevant proof is still needed where required. The task-specific flow above is source guidance; its visible presentation and the full document need a named reviewer and desktop/mobile checks.

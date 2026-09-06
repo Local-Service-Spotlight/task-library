@@ -73,11 +73,15 @@ def write_pack_zip(pack, slugs, by, out_dir, updated):
         f"# {pack.get('name', pid)}\n\n{pack.get('blurb','')}\n\n"
         f"{len(present)} skills from the Local Service Spotlight Task Library "
         f"(library updated {updated}).\n\n"
-        "Regenerated automatically every build — always current.\n\n## Skills\n\n"
+        "This download is a dated snapshot. Open START-HERE.md for one useful first job. "
+        "A status is a contributor claim, not proof of installation or completed client work.\n\n## Skills\n\n"
         + "\n".join(f"- **{by[s]['title']}** (`{s}`) — {by[s]['status']}" for s in present)
         + "\n"
     )
+    with open(os.path.join(BUILD, 'pack-start-here.md'), encoding='utf-8') as source:
+        start_here = source.read()
     with zipfile.ZipFile(path, 'w', zipfile.ZIP_DEFLATED) as z:
+        z.writestr(f"{pid}/START-HERE.md", start_here)
         z.writestr(f"{pid}/README.md", readme)
         z.writestr(f"{pid}/MANIFEST.json", json.dumps(manifest, ensure_ascii=False, indent=1))
         for s in present:

@@ -1,6 +1,6 @@
 ---
 name: access-content-factory-source-assets
-description: "Confirmed access to the required source assets and the assigned project."
+description: "Get the right access to the photos and videos for your task. Check that you can open the actual files."
 category: Content Factory — Produce
 stage: Produce
 definitive_article: https://blitzmetrics.com/access-content-factory-photos-videos/
@@ -9,62 +9,83 @@ status: needs-work
 
 # Access Content Factory source assets
 
-**Use this when:** Assigned Content Factory work needs access to specific raw photos or videos.
+You need the right files before you can start a job. This guide helps you find the photos and clips your team needs. Start with the job name and file list, then check that each file will open.
 
-This is a registered recipe in review. A published guide or this new record does not certify its runtime behavior. Read the current [canonical procedure](https://blitzmetrics.com/access-content-factory-photos-videos/) before executing; it contains the detailed actions and current source-specific instructions.
+**The path:** Known task and files → Approved access → Open real sources → Handoff.
+
+**Use this when:** An assigned content task needs specific photos, videos, or project files that are not yet accessible.
 
 ## Inputs
-- Role, project and email for the access request
-- Authorized shared credentials or invitation
-- The relevant Basecamp project and asset location
+- The assigned project and task, your work email, the files or dates you need, and the intended use.
+- The project’s current access contact and approved invitation or credential-sharing method. The public guide names an operations contact and LastPass; confirm that this is still the approved route for this project.
+- The exact Basecamp project and known asset locations. The source names Google Photos, Drive, and Dropbox, but this task grants no access to unrelated libraries.
+- A way to record safe file references, access results, and blockers without copying passwords, recovery codes, or private customer content.
 
-## Prerequisite tasks
-- No separate mandatory task is established by the reviewed source; use the explicit starting condition and inputs above.
-## Input references
-- [Basecamp Basics – The Foundation of How We Work](https://localservicespotlight.com/basecamp-basics-the-foundation-of-how-we-work/)
+## First-run prompt
+
+> Use my assigned project, file list, and approved access method to build an access checklist. Prepare a narrow request if needed, but do not send without authority. Check each actual file and separate viewing, downloading, editing, and publication rights. Report exact blockers without storing or exposing secrets.
+
 ## Steps
-1. Request access from operations.
-2. Create or connect the authorized LastPass account.
-3. Log in to the assigned content systems.
-4. Find the needed assets and verify project access.
+1. Write the access scope before asking: project, task, work email, specific source files, intended use, and the role you need. Ask the project’s known access owner to confirm the current method. Do not use a public article’s historical shared-login email as a credential instruction.
+2. Prepare the request for the approved operations contact. Send it only within the authority of the actual job. A draft request is not an invitation, and an invitation is not working access.
+3. Accept the genuine project invitation. If the access owner confirms LastPass is still used, accept that invitation into the approved account and use the shared item for this project. If the project uses direct account access instead, follow that invitation. Do not create a second credential store or put secrets in the tracker.
+4. Open the assigned Basecamp project through the confirmed link. Check the task, source-file instructions, and allowed uses. Use [Basecamp Basics](https://localservicespotlight.com/basecamp-basics-the-foundation-of-how-we-work/) for the team’s project workflow; it is a reference, not a grant of access.
+5. Open the confirmed source location. In Photos, search by the supplied person, date, place, or event; in Drive or Dropbox, follow the exact project folder. A search result with a similar name is only a candidate: compare the source date, subject, and task.
+6. Check the actual required files one by one. Confirm the photo or video is the intended source, the original or allowed copy is available, and your role permits the needed next action. Keep video muted at volume zero; use metadata, still frames, or captions if silence cannot be verified before playback.
+7. Log file reference, system, expected action, observed access, date, and any use limits. Distinguish “can view” from “can download,” “can edit,” or “may publish.” These are separate checks, not one yes/no permission.
+8. For missing access, record the exact denied location or missing file and send the smallest request through the current authorized project route. Do not widen sharing, seek another person’s login, or infer that every asset is cleared.
+9. Hand the verified source list to [Upload the source to Drive and Descript](https://local-service-spotlight.github.io/task-library/?task=step-1-upload-video-to-google-drive-and-descript#task-step-1-upload-video-to-google-drive-and-descript) or the specific assigned processing task. Report completion in the project thread only when sending is authorized. Keep inaccessible files as blockers, and write the run record even when access is incomplete.
 
 ## Definition of done (QA checklist)
 
-**Expected result:** Confirmed access to the required source assets and the assigned project.
+- [ ] The project, task, files, intended use, and requested role are explicit.
+- [ ] The assigned project opens and the actual required source files have been checked.
+- [ ] View, download, edit, and publication rights are distinguished according to the task.
+- [ ] Missing files or access are recorded precisely; no historical login detail is treated as current proof.
+- [ ] The handoff contains safe file references and limits, with no secrets.
 
-- [ ] The operator can open the actual source files
-- [ ] The relevant Basecamp project is accessible
-- [ ] Any missing access is reported rather than assumed
-- [ ] Record the exact source revision, actual result and evidence; retain failure, partial, blocked and unknown states.
-- [ ] Write the execution's meta article and link the canonical task. Publication is a separate action under the current authority.
-- [ ] Keep this parent job's internal retries, checks and agent contributions on the same execution ID; derivatives and revisions add no runs. A separately scoped and documented child execution may have its own ID with parentExecutionId, without adding a second completion to this parent recipe.
-- [ ] Verify permissions for publishing, sending, spending, scheduling or changing access before that action. A task record does not grant them.
-
-## Child or companion tasks
-- No separate mandatory task is established by the reviewed source; use the explicit starting condition and inputs above.
-## Handoff and Content Factory context
-
-Report completion in the project thread; move needed source files to the upload or transcription task.
-
-The Content Factory turns source material into useful work through Produce, Process, Post and Promote. This recipe's reviewed placement is **produce**. Support tasks help the relevant stages; do not force a support operation into a production stage. The canonical article's lower diagram should show the same context while its lead visual explains this particular task.
-
-### Downstream tasks
-- [step 1 upload video to google drive and descript](https://local-service-spotlight.github.io/task-library/?task=step-1-upload-video-to-google-drive-and-descript#task-step-1-upload-video-to-google-drive-and-descript)
 ## Example(s)
 
-No independently verified completed execution has been assigned to this new task record. Historical examples in the article remain source material, not reconstructed execution counts. Write the meta article for each real attempt, including failed or blocked work, and register only its actual identity and result.
+**Fictional teaching example — no access was requested or granted.** A sample assignment asks an editor to use two Maple Cycle photos and one recorded shop tour.
 
-## Open review items
-- Current login details may be historical. Verify the operations-approved access method before rewriting exact platform steps.
-- This is WIP until the current source procedure, access, linked task outputs and live acceptance checks have been independently reviewed. A workflow-summary addition alone does not pass those checks.
-- All media tests stay muted with volume zero; if silence cannot be verified before playback, inspect captions, metadata or frames instead.
+| Needed item | Sample observed state | Next action |
+| --- | --- | --- |
+| Shop front photo | Can open the intended file; use approved for the draft | Pass its private file reference to the editor |
+| Owner photo | Search finds two people with the same first name | Ask the project owner to confirm identity |
+| Shop tour | Folder opens, but the video cannot be downloaded | Ask for the role needed for the stated editing task |
+
+The sample result is one verified source, one identity question, and one access blocker. “The folder opens” would hide two unfinished checks. No password, shared-login address, or private file URL belongs in a public meta article.
+
+## Handoff and Content Factory context
+
+The assigned editor gets the verified source references and use limits. [Upload the source to Drive and Descript](https://local-service-spotlight.github.io/task-library/?task=step-1-upload-video-to-google-drive-and-descript#task-step-1-upload-video-to-google-drive-and-descript) is the common next task; use another processing task only when the assignment names it. The project access owner resolves permissions, not the drafting agent.
+
+This task serves **Produce** in the [Content Factory](https://blitzmetrics.com/content-factory/). Produce makes or prepares source material. Process edits it, Post puts approved work on a channel, and Promote helps it reach people. Only the steps and handoff above are part of this task.
+
+## When this runs
+
+Run for each new task or changed access need. Recheck required files when permissions change. The source establishes no automatic access-monitoring schedule.
+
+## Run with an agent
+
+The agent can prepare the plan, organize allowed files, and check the evidence it can actually access. A person records real stories, supplies permission, or resolves an account step when needed. Save the current state in the project files and tracker. A model name does not create memory, access, a scheduler, or permission to act.
+
+For all agent media checks, keep the player muted and its volume at zero before playback. If that cannot be checked, use captions, metadata, or still frames. Do not claim sound quality was heard when it was not.
+
+## Write up the real run
+
+For every actual attempt, [write the run’s meta article](https://blitzmetrics.com/meta-article-prompt/). Link this exact task and its source revision. State the start, work done, evidence, result, gaps, and next owner. Keep failed, partial, and blocked work visible. Writing the record does not authorize publishing it.
+
+Use one stable execution ID for this task’s actual run. Internal retries, checks, and new versions do not add runs. A separately scoped child task may have its own ID linked to the parent. A teaching example has no real execution ID and must not enter the run count. Follow the [recipe and meta-article guide](https://localservicespotlight.com/meta-articles/) for that distinction.
 
 ## Definitive article & links
-- Canonical task procedure: https://blitzmetrics.com/access-content-factory-photos-videos/
-- Exact Task Library record: https://local-service-spotlight.github.io/task-library/?task=access-content-factory-source-assets#task-access-content-factory-source-assets
-- Meta-article method: https://blitzmetrics.com/meta-article-prompt/
-- Recipe and execution relationship: https://localservicespotlight.com/meta-articles/
-- Content Factory context: https://blitzmetrics.com/content-factory/
-- Article and task recipe standard: https://blitzmetrics.com/definitive-article-guide/
 
-Source basis: canonical article WordPress ID 103220; reviewed source SHA-256 `c6919281815a8c54967c46e3853fa828189220e0820fa81edeb66a61f57ff4b9`. The task record summarizes that source and keeps its unresolved items visible. It does not certify installations, provider commands, source-system access or a completed run.
+- Canonical article: https://blitzmetrics.com/access-content-factory-photos-videos/
+- Exact task: [Access Content Factory source assets](https://local-service-spotlight.github.io/task-library/?task=access-content-factory-source-assets#task-access-content-factory-source-assets)
+- Publishing standard: [Article Guidelines](https://localservicespotlight.com/article-guidelines/)
+
+## Review and evidence still needed
+
+The contributor status in the source header is preserved. It is not a claim that this draft has been independently accepted or that a real run has passed. The worked example above is for teaching only.
+- The current operations contact, credential method and account permissions require confirmation by the real project access owner.
+- No live account access or invitation was tested in this draft batch.

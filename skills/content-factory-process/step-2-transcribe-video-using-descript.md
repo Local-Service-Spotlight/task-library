@@ -1,6 +1,6 @@
 ---
 name: step-2-transcribe-video-using-descript
-description: Produce a clean, accurate verbatim transcript in Descript — correcting every blue-underlined low-confidence word — so the article is written from what was actually said (Blog Posting Guidelines Step 2).
+description: "Turn speech into checked text. Fix names and words so the article says what the speaker meant."
 category: Content Factory — Process
 stage: Process
 definitive_article: https://localservicespotlight.com/article-guidelines/
@@ -9,42 +9,80 @@ status: complete
 
 # Step 2: Transcribe video using Descript
 
-**Use this when** the video is loaded into its Descript project (Step 1 complete) and needs a transcript before any watching, outlining, or writing.
+A wrong word can change your whole story. This guide helps you turn a video into text you can trust. Start with the full source and a list of the people who speak.
+
+**The path:** Full source → Draft transcript → Word and speaker checks → Verified text or clear gaps.
+
+**Use this when:** The source is imported into the correct Descript project and needs a faithful transcript.
 
 ## Inputs
-- The Descript project from `step-1-upload-video-to-google-drive-and-descript`
-- Descript Enterprise transcription access
-- Correct spellings of all people, companies, and product names likely mentioned (e.g., Marko Sipila, Zach Peyton, Superior Fence & Rail, NaiL AI)
-- The Content Library tracker
+- The completed source composition from [Step 1](https://local-service-spotlight.github.io/task-library/?task=step-1-upload-video-to-google-drive-and-descript#task-step-1-upload-video-to-google-drive-and-descript) and access to the original recording.
+- A Descript role and usage balance that permit transcription for the source language; confirm actual plan support rather than assuming an Enterprise subscription.
+- Verified names, companies, places and specialist terms from project records, plus known speaker identities.
+- A place to save the original transcript, corrections, unclear timestamps and review coverage.
+
+## First-run prompt
+
+> Make or review the transcript for this exact source. Use text-correction mode, preserve the media, and check speaker names, numbers and negatives. Keep source versions and timestamp every uncertainty. Report actual review coverage; never call blue-underlined words a complete error list or claim an audio review you did not perform.
 
 ## Steps
-1. Run Descript's transcription on the project media.
-2. Assign speaker labels correctly (interviewer vs. client, each team member by name).
-3. Work through every blue-underlined word — Descript's low-confidence flags — playing the audio at each one and correcting to what was actually said.
-4. Pay special attention to proper nouns: client names, company names, place names, and jargon are the most common mis-transcriptions ("Marco" for Marko Sipila, "nail AI" for NaiL AI). Fix against the provided spelling list.
-5. Keep the transcript verbatim at this step — do not paraphrase, reorder, or "improve" the speech. Cleaning happens in Step 4; voice preservation depends on an honest source transcript.
-6. Read the full transcript top to bottom once while the audio plays to catch errors Descript did not flag.
-7. Update the tracker: "Step 2 done — transcript verified."
-8. Hand off to `step-3-watch-video-and-identify-gct` (and run `use-descript-underlord-to-remove-filler-words` when filler cleanup is wanted before editing).
+1. Confirm the source is in the script and select the correct language when transcription is requested. Let the job finish. Check whether a transcript already exists before consuming usage again.
+2. Save the initial transcript as a source version. Identify each speaker from actual evidence. If identity is unknown, mark it unresolved in the working transcript; do not assign a famous name by guess.
+3. Use Descript’s Correct text action for transcription mistakes. Ordinary text deletion can cut the underlying video; correction mode fixes the words without making that media edit.
+4. Check names, numbers, negatives and technical terms against the source. Use the verified spelling list for identity, but do not replace a different spoken person merely because a familiar name is in that list.
+5. Review the whole recording and transcript with an authorized speech-review method. Agents keep speaker output muted; if no suitable silent audio analysis or prior reviewer evidence exists, retain the exact unverified intervals for that review. Do not claim a listen-through from a skim or frames.
+6. Do not use blue underlines as an accuracy score: current Descript uses light-blue marks for fillers and also has separate alignment/error indicators. Check unmarked words too. Mark unclear speech with its timestamp instead of inventing a clean sentence.
+7. Keep this transcript faithful to the recording. Put later summary, grammar edits and filler cuts in a separate working version. Do not generate replacement speech to make an uncertain quote sound correct.
+8. Save the checked version with source ID, language, speaker map, review coverage and remaining uncertainties. Only label it verified to the extent supported, then send it to GCT review.
 
 ## Definition of done (QA checklist)
-- [ ] Zero blue-underlined words remain unreviewed
-- [ ] All names of people and companies spelled correctly throughout
-- [ ] Speaker labels accurate for every segment
-- [ ] Transcript is verbatim — no paraphrasing introduced
-- [ ] Full-pass listen-through completed
-- [ ] Linked back to the definitive article and relevant siblings
+
+- [ ] The transcript covers the full source with correct language and evidence-backed speaker labels.
+- [ ] Names, numbers, negatives and quotations are checked against the recording, with unclear spans flagged.
+- [ ] Text corrections have not silently changed the source media.
+- [ ] Review coverage and remaining gaps are recorded; zero colored underlines is not the acceptance test.
 
 ## Example(s)
-- Transcription is Step 2 of every article run documented at https://localservicespotlight.com/article-guidelines/.
-- Example needed as a standalone meta-article — run the Meta-Article Prompt after first documented run.
 
-## Run on a persistent agent (Fable 5)
+**Fictional teaching example — no transcript was processed.** The sample audio says, “We do not give a final quote from one photo.” The draft transcript drops “not.” The reviewer restores that word with Correct text and keeps the source video unchanged.
 
-Zero blue underlines is a number an agent can verify: a persistent agent (Claude Fable 5, or comparable long-horizon OpenAI/Google models) works the low-confidence flags one by one and loops until none remain unreviewed and every proper noun matches the spellings list — "mostly corrected" ships wrong names. Memory compounds here: each new name a run verifies (client, company, product) joins the spelling list for every future transcript. Close the run with a logged meta-article example.
-See `boil-the-ocean.md` for the full operating principles.
+At 02:18, “gear hanger” is unclear. The working row records `02:18 — term unresolved; ask source reviewer`, rather than silently changing it to a familiar part. A transcript with this gap may support other checked passages, but cannot support a precise quote of that term. Blue filler marks on “um” do not alter this decision.
+
+## Handoff and Content Factory context
+
+The writer receives checked text and explicit source-review gaps for [Step 3: review the source and set GCT](https://local-service-spotlight.github.io/task-library/?task=step-3-watch-video-and-identify-gct#task-step-3-watch-video-and-identify-gct). Filler editing is optional and uses a separate cut.
+
+Produce supplies the real source. **Process**, this stage of the [Content Factory](https://blitzmetrics.com/content-factory/), turns it into useful finished assets. Post saves or publishes them on the agreed channels. Promote tests and distributes suitable work within its own scope. The handoff above names this task’s actual next step; catalog neighbors alone are not prerequisites.
+
+## When this runs
+
+Once per source transcript. Recheck the affected spans when the recording or transcript changes; do not retranscribe every retry.
+
+## First-run setup and continuity
+
+Open the supplied task file and its linked source. Verify the project’s real inputs, account, access and output folder before work. This Markdown file is a guide; it does not install an app, connect an account, supply a subscription or create a schedule. Carry out work already authorized; do not ask for the same approval again. Keep any unsupplied destination or new action outside that scope clearly pending.
+
+Save source IDs, versions, decisions, checked outputs and next owner in the project tracker. Before a retry, check the saved state and other workers’ changes. A model name does not guarantee memory or a running timer. Repeated work needs an actual configured trigger and durable state; one-off work can be started by the prompt above.
+
+Keep agent media muted with volume zero before playback. If mute cannot be verified, use captions, metadata or still frames. State the limit: silent visual checks do not prove spoken-word accuracy or audio quality. Do not start sound through the user’s speakers unless explicitly asked.
+
+## Write up the real run
+
+For every actual attempt, [write its meta article](https://blitzmetrics.com/meta-article-prompt/) with this recipe and revision, trigger, steps performed, output evidence, measured result, gaps and next owner. Failed, blocked and partial attempts also get a written record. A draft can satisfy writing; publishing it follows the existing job scope.
+
+Keep one stable execution ID across retries and edits. A separately scoped child task may have its own ID linked to its parent. Writing the parent’s meta record is part of that run, not an endless new chain. The [recipe and meta-article guide](https://localservicespotlight.com/meta-articles/) explains this distinction. Teaching examples are not real executions and must not enter the run count.
 
 ## Definitive article & links
-- Hub: https://localservicespotlight.com/article-guidelines/ (Step 2 of the 18-step SOP)
-- Related: /content-factory
-- Sibling skills, in run order: `step-1-upload-video-to-google-drive-and-descript` → this → `use-descript-underlord-to-remove-filler-words` → `step-3-watch-video-and-identify-gct`
+
+- Canonical article: https://localservicespotlight.com/article-guidelines/
+- Exact task: [Step 2: Transcribe video using Descript](https://local-service-spotlight.github.io/task-library/?task=step-2-transcribe-video-using-descript#task-step-2-transcribe-video-using-descript)
+- Writing standard: [Article Guidelines](https://localservicespotlight.com/article-guidelines/)
+- [Descript transcript corrections](https://help.descript.com/hc/en-us/articles/23054692507661-Unable-to-toggle-capitalization-or-punctuation-on-Windows)
+- [Descript text edits and media](https://help.descript.com/hc/en-us/articles/10164808475149-Inline-notes)
+- [Descript filler-word choices](https://help.descript.com/script-editing/filler-words)
+- [Descript media minutes and AI credits](https://help.descript.com/hc/en-us/articles/27841674958221-Track-and-understand-your-Media-minutes-and-AI-Credits)
+
+## Review and evidence still needed
+
+The source contributor status is preserved. It is not certification of this draft or proof of account access, completed work or a live outcome. The worked example teaches the method and is explicitly fictional.
+- Real speech accuracy and identity need source review; unsupported language/usage or inaudible passages remain explicit.

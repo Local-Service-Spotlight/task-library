@@ -4,3 +4,4 @@ build/task-executions.lock
 build/.cache/
 dashboard/TaskLibrary-Skills-all.zip
 dashboard/TaskLibrary-Skills-ready.zip
+dashboard/packs/*.zip

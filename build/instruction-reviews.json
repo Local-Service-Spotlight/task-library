@@ -1,0 +1,610 @@
+{
+  "reviews": {
+    "batch-record-50-raw-clips-in-one-session": {
+      "source_sha256": "4e1bf704e84618823b4279b03c9ecd32f90e10ea810a345b9cf266500ef9d6bb",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "capture-client-stories-on-phone": {
+      "source_sha256": "ea67b5076e805bb72dc00b4a471d3cb700f1acd6f5685928e41b55123cee11b5",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "create-a-3-minute-why-video": {
+      "source_sha256": "91f7d6cc83a0b7a5bfb0e3fb1971dce1b4d26eb672ed0d77e35c084848d6b96f",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "create-a-3x3-video-grid": {
+      "source_sha256": "74f5e7a53b55c9f361312d411aa2b23ee7845660fd9cf62fe81f363434eb1a5b",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "film-casual-team-conversations": {
+      "source_sha256": "eb9c07ffbf6b288544f94ef06d32c85fe5a60b23122c270dd33d5d33062d6e1a",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "film-conference-presentations": {
+      "source_sha256": "f5b1512084e55753cceefd417bcc5678f7f839d2169f78a27fc5889b620dd4f4",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "map-out-one-minute-video-topics-using-topic-wheel": {
+      "source_sha256": "94182b94f3916c6da4019ece2d6024979ccd1bafeb5886fdc359f377a8a0d75c",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "record-one-minute-videos": {
+      "source_sha256": "7f922f63ec0246dafaba8f0274c0230ce9f695d55d0f9925f1fed2d5033a4027",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "record-screen-shares-of-real-audits": {
+      "source_sha256": "dfc866956901289a2a4d8103bd8cbcd29d8b3d74754359de52116adb79627dce",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "set-up-content-library": {
+      "source_sha256": "0be7bf7981ce624c355f56ddb80501c4c296bd64bce43a2a88f6089391acb3aa",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "access-content-factory-source-assets": {
+      "source_sha256": "ab3e46e69cfa0db336c0acdefbaa7938d03b090ca4871c6dc6a34ee108b7f361",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "email-and-dm-client-about-published-article": {
+      "source_sha256": "32fa4c6a36dd3ad6f7695e36ac811acd3bab30319bbc5aa2145381459d5d5322",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "place-content-on-seo-tree-with-proper-links": {
+      "source_sha256": "953166073f0d98c82a3788534cdfed2a990f00436461f3bc6c0c61616b0c26e2",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "post-to-facebook-page": {
+      "source_sha256": "aa215bbfff060a8b740a807aa23e1b3fb8ee3306b4c636055331070392b0220b",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "post-to-linkedin": {
+      "source_sha256": "166c021acc726baedcc60073d1c899df8d7c3f13ccb7e7aaa067dc8beae983e9",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "set-wordpress-author-to-correct-person": {
+      "source_sha256": "a816d8587734d5c28f81d41425c60d2e52876a342eca745af5823a77c4efb781",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "share-in-44k-facebook-group": {
+      "source_sha256": "92cd7464bc85504a0ad7262630e37caae6073d699f3c7d71ee1a501108215f83",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "step-12-post-article-on-wordpress": {
+      "source_sha256": "40a2dd9f31975663518823e89aced2a2b59f0b076fcbc6d780bb9f1e8c9b63f8",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "step-13-categorize-post-and-add-tags": {
+      "source_sha256": "179d28d5036d28e141b1691c9d5f9870ce514b9cd158a90226fcdf3742205586",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "step-14a-configure-rankmath-seo-plugin": {
+      "source_sha256": "162c048e93bab9f294180a048f4c38dbd821854a384ba05a566ca67b8d762c3c",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "step-14b-run-linkwhisper-for-internal-links": {
+      "source_sha256": "03a59f9cf722ee7cf7802b7b4021b160e558a56cf7256dd932373358f65f6425",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "step-17-final-formatting-and-qa-checks": {
+      "source_sha256": "01eb04ab0229310b0ef4a0a29799a0cace96c7003fd1d18e7634f5eb25b7fbc7",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "upload-processed-video-to-youtube": {
+      "source_sha256": "40f3657d12b510b16fecf5c9268de5c6e7a43f2a18b8f62f4e938aff44094104",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "verify-all-items-on-blog-posting-checklist": {
+      "source_sha256": "7bb52173e57290d00b20c165f01c609b66c5c44e5700ccf51e34cc6107443bf5",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "enable-youtube-captions-by-default": {
+      "source_sha256": "de8f16f07f63d8fa3bdee2d42f6f791e70b1c117c8f8746ce0457e12903bab21",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "extract-15-60-second-clips-from-long-form-video": {
+      "source_sha256": "4e5cfc35fe5f9ed4452831e1ceddaaac1432920ef4ba1bbe9db69e61942dce21",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "step-1-upload-video-to-google-drive-and-descript": {
+      "source_sha256": "aad264f359b5d2d53b010acae0d3db0e5d2f0ee3ee136479b7b8367485870d9b",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "step-10-embed-source-video": {
+      "source_sha256": "f94e5fe66c1628483a0c84507a7a5af075412bed511becbc7bc42a9092bf9184",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "step-11-proofread-with-grammarly-or-chatgpt": {
+      "source_sha256": "c3c5f21956caced7216ab4b64c910e5771f81da9a798edcf0fc56b21142257c8",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "step-2-transcribe-video-using-descript": {
+      "source_sha256": "6571350beafd4b8e37394cc64e7c4cd5a6098845615392d12b6e6ffc28558323",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "step-3-watch-video-and-identify-gct": {
+      "source_sha256": "4a44d393aa97086cdf4a64cd82ac67c180a21100efe03766c531e3d1c9ef72cd",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "step-4-research-edit-add-timestamps-and-outline": {
+      "source_sha256": "4c8f25a2af3ac3fe8ffe1405c22e1c2e3000797ad961a02aa59c20e44da8b347",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "step-5-write-article-from-transcript": {
+      "source_sha256": "a5fdf80502cf5bec5c35a7ef6c003487cc80332553c17111ec3fd683394fe4eb",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "step-6-write-title-and-headings": {
+      "source_sha256": "63d8a255a39dbe4e1039b8a1b75789095e802e7b54b0a30c2d9541e43615b361",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "step-7-write-hook-and-establish-context": {
+      "source_sha256": "2a3b3f665c3c2f628ce352d95644c041a91aea6bcf0107000b91933d4ebeb5a7",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "step-8-add-photos-and-featured-image": {
+      "source_sha256": "4644714b8ad9a9cf7a45a88cb0f5c4da471e8dbcbf0b8b238bd1ac9ef72935e1",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "step-9-add-internal-links-with-proper-anchor-text": {
+      "source_sha256": "ee68093d6ad3a8621e6923fc5ad2dd6162a862ac5b1c5dfcba79829389164c10",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "use-descript-underlord-to-remove-filler-words": {
+      "source_sha256": "f311d4648581fea5855b1835f04b11d3d974d0c1ffb394e7722b1b6189935d7b",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "provide-knowledge-capture-note-template": {
+      "source_sha256": "aef7ef2c3bc8827ff71c5ea02150565161d29f10821c6923de220424a00f92e9",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "generate-knowledge-capture-note-within-24-hours": {
+      "source_sha256": "7b7f49e8c59e6e173d3484d7471fe47474949afe9cd7a1246a9c1848765ae275",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "add-knowledge-capture-to-existing-workflows": {
+      "source_sha256": "07ffe3231ef058200e4563e076d1e2b366ad2f7500cf7766d790b470906dd111",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "add-last-audited-column-to-definitive-article-guide-status-table": {
+      "source_sha256": "a3fea85fb5649ee5e8a81a5fd9c2c0e3214f1edcec204f11df6cd1570154b2c8",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "apply-portability-discipline-to-meta-articles": {
+      "source_sha256": "9919e609ca7aec250365d2f0a7f00bed6fc792d80280c62243ce7ac2664a019d",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "audit-this-maintenance-article-every-6-months": {
+      "source_sha256": "8c3246e135376a23a604cc8ef87e7af34753810d66edb6083de15d8d9fefe28b",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "build-and-maintain-ai-knowledge-base": {
+      "source_sha256": "e5fa30e08fe224bb65a295741988f05f069773d1a76721f3a4ac5a594c748ec0",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "check-information-currency-with-latest-data": {
+      "source_sha256": "a1214bbd4179ca414fdd801719371409d83d392a3ac45b9010cf8f29572de308",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "check-topic-coherence-for-each-definitive-article": {
+      "source_sha256": "4ea1e3a849f9e79dc244f11d4470e2ec243ad1fa58979c1f9a5200beebad0349",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "conduct-first-portability-review-of-blog-posting-guidelines": {
+      "source_sha256": "6bb5013c42e867c160d27fa1892d368a071112feac444bb12733e1d041407d00",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "configure-and-verify-recurring-agent-job": {
+      "source_sha256": "93bdea2c918a65c023282f0a5b796f2a9b4992ea5ebc217c0e1e922879b78e71",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "coordinate-agents-with-shared-memory": {
+      "source_sha256": "f3a8d3f1373d13a823923d2d34bdaacba54970b316cc277e8635b6da4eeb8060",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "create-knowledge-capture-note-template-and-distribute": {
+      "source_sha256": "1342d8cdff2a9fe5304629f4482fe1b8b469f68d3634a42adfe0f1c32f3f3b2c",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "create-shared-location-for-sop-amendment-proposals": {
+      "source_sha256": "299724839cfe10da4349a95fcf1a05b03e873dbf9a1dfcf32f381a6025930403",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "create-sop-amendment-proposal-500-words": {
+      "source_sha256": "50f08832cdb10985515679357f3a9ca0f3e65d19b27a18ed72eac00292432ba4",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "document-a-task": {
+      "source_sha256": "73e81be87288b2db0aafaac95cf1701a58bbc79c43f866b6db4630a24a0f03fc",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "install-canonical-skill-packs": {
+      "source_sha256": "6e3a51975bdf2b25c4ad81c7aaa61bc204da368c21dec2948045baf1656df051",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "install-local-qwen": {
+      "source_sha256": "c2ca9ac179a2aa9558cd43e7c922f2cea011ddb769fee8ef2c676703cab1a9f3",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "onboard-agent-for-first-scoped-task": {
+      "source_sha256": "2af74b472902ffbf037b78b8f7499f2e5f106fe6394119f95592d4e875d0567f",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "publish-skill-and-task-page": {
+      "source_sha256": "e1f44043d78b4f0354fb00b213107e461dddac2d5681029378d64ad57cd68a62",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "reply-with-task-status-in-origin-thread": {
+      "source_sha256": "4b323d279c8a21abf4cfd6f9f3c8fdc9379d7d972049acc106b74807220edd71",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "review-existing-sops-for-portability-compliance": {
+      "source_sha256": "0c01d314378460d1c76ef87d50438ab543aee70dfe5f0b7ede6528c148f592d5",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "review-past-6-months-of-sop-amendment-proposals-for-patterns": {
+      "source_sha256": "13648667021aaf4fb7c25ab744e58213c43faf29553c542f3ef05c274de6931c",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "route-notes-to-sop-update-protocol-or-directly-to-articles": {
+      "source_sha256": "2005949a9498696756e12c439ef119f6aa2b90fe6fac8901fabf515b81370546",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "schedule-and-assign-quarterly-auditors": {
+      "source_sha256": "c6afaa4b4e246d568d70c4549f5bee5f1a897b45bf1398a490518073b144b249",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "schedule-first-6-month-recursive-review": {
+      "source_sha256": "3b5978531b3ee1648e8419e7d11a4f40226c84a1690bbcdc4bb71ca791913c3c",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "schedule-first-quarterly-audit-cycle": {
+      "source_sha256": "33f2acbf421f3b5247adf39a9c47f867aec8bfee5fb6ed89edf5b920a88ec5a0",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "senior-team-member-reviews-weekly": {
+      "source_sha256": "4f91861cc0b84e6e105860ba3057e2cb564aa31665a9f1d842345ab23703c226",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "separate-methodology-layer-what-why-from-implementation-layer-how": {
+      "source_sha256": "7ea316bc5d2c6de1fce9148b32c7b07797ecd09ae6fd46a11f2165ca3765ff52",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "set-up-business-ai-work-environment": {
+      "source_sha256": "5929e07c12174f761f4b2c92e6f9319f292a2c5b69f87ce83d1d38baa531430e",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "set-up-sop-amendment-proposal-tracking-system": {
+      "source_sha256": "aaf4687db1429b87dd9a814ca9dbf5769645df084024b168e0d0b194d89f50d2",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "set-up-special-project-workspace": {
+      "source_sha256": "cf3513f809506b374cd4568f98dc7efe6d65609df5bbdd82991bc71acfc27bf0",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "tag-proposal-with-affected-sop-and-queue-for-review": {
+      "source_sha256": "42c83e46dfbdff680bb50b0aae127e9d0edc5208c05af9d4e99602a33bc8bb9f",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "update-status-table-in-definitive-article-guide": {
+      "source_sha256": "4bb4527a43d359641b9e07ff0d633f9622f4061aae035f37040c293c7871af3e",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "validate-cross-reference-integrity-across-articles": {
+      "source_sha256": "16546d4677e9cf176b42ccccddeaa34172d477976490fa402087dfa5bde81743",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "verify-structural-completeness-against-8-step-framework": {
+      "source_sha256": "f7ca11a38cb60c81f86beae4f0b8092fe335c40d7710bdaf6c12c0235f7ab865",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "create-dollar-a-day-ad-creatives": {
+      "source_sha256": "015deb3de7099c5ea7d3ffd76fd902ee3981ddbecfb14790166a3a1b2b992cdc",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "create-quote-cards-from-strongest-statements": {
+      "source_sha256": "bf20dc950c4dbd923022429a826c09687604c9bd323a7e0a059ead3682fae666",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "create-social-media-posts-per-platform": {
+      "source_sha256": "a8833537ad1f8523764f266d82fb53b3b06af6cc061bbf03cc989e836627f7f7",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "grade-article-using-jennifer": {
+      "source_sha256": "033672d450ae259e969fa2ae99dd431b557930fb71c4a35128d6793ce480d061",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "how-to-inventory-a-podcast-on-youtube": {
+      "source_sha256": "a3578df092ec30bdb2f6311571a91140f037e521fe23ad2ad97b3aa007155cd7",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "how-to-inventory-every-podcast-youve-been-on-and-why-its-one-of-the-highest-roi-things-you-can-do": {
+      "source_sha256": "563b7e346f48593900bcda466fff6026cc6926add7c9b8452ae569d64eaeeb0d",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "how-we-use-listen-notes-to-find-track-and-repurpose-every-podcast-appearance": {
+      "source_sha256": "77b6cb011ee3811e38445a83d866e5ed373b6404a8b0d5b215dd450907668186",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "how-we-use-podchaser-to-amplify-authority-and-repurpose-podcast-content": {
+      "source_sha256": "00977a8d30e92ae632be2db14bd37ea479eebefe73030a6d52641c8195157e31",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "process-videos-via-marketscale": {
+      "source_sha256": "bf3168ce3f7ebca90af942af95c993682dd054897b20430923ce59374af9ccdb",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "run-overnight-local-writer": {
+      "source_sha256": "63ee619e018fd848dea9f1a99f4519a749dd85eac164c64348b5287a8ce70e5b",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "write-email-newsletter-from-video-key-insight": {
+      "source_sha256": "cbc1eb332b7706448ed7c193a3cff385ff7866ac0a7377f1fdd1f8d5b90b5e43",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "write-meta-article-documenting-agent-work": {
+      "source_sha256": "38c664a2e14a444929bdeaa98c20407a69371c15082fe6cdcbcc0c04b2b15196",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "create-or-update-a-definitive-article": {
+      "source_sha256": "023c3a1d3171dac1d5a29e3391e472248c7337ac0249fc08846a20891fd819f2",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "maintain-canonical-honor-and-story-leaves": {
+      "source_sha256": "4e272b870e854d8e547111e21f12c3c0d3c419dc6aa96991df661702b9550cae",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "audit-internal-links-between-all-blog-posts": {
+      "source_sha256": "8f84ed2a876b96039c6c22d34d57c381e0705a8b7b9ee9d6128330805fd3bbd3",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "check-all-cta-buttons-lead-to-correct-destinations": {
+      "source_sha256": "2bf606d6155ebd1b9ba997622033f719f900632a5eeb34fc7bd6c7cfb93d7bf2",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "check-each-homepage-section-includes-relevant-image": {
+      "source_sha256": "ae22d94a405f75208026d58012350aea849e25e777692e71751bad5f22fcde59",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "check-favicon-is-set": {
+      "source_sha256": "b05f255eeb66e8908787ce0f4a8c3eaf0be06831f8a7c0ea0504f5faafbe6bd2",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "check-for-broken-links": {
+      "source_sha256": "3a35f3cc1b5aceadd1bf8647839970a48f66a762ddf299fbe54297fce9f3b587",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "check-lead-magnet-section-has-visual-mockup": {
+      "source_sha256": "874b170f685087a059f0746106d33463cfaa0c04b9bc4ee41b2091a9d6c10443",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "check-meta-description-under-160-chars": {
+      "source_sha256": "d1bbeb75cffd8bc5aef21c5ddf5f473a4b52cc7bd2eda660ba3735e48174e802",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "check-schema-connects-to-all-verified-profiles": {
+      "source_sha256": "48481af14905d524c3db3eca1067a1b3a3ff8fcd403aa01fd2523303b744ce54",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "check-seo-title-under-60-chars-with-focus-keyword": {
+      "source_sha256": "edbaa178df56b259389ff7d3f17ee08f0dbd5595f9654e0fd952c3fbfe50919a",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "check-social-profiles-linked-and-prominent": {
+      "source_sha256": "950c9e8cba9b519d158245d336f2ce728792d9c9b54bfefdb643068e4283485e",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "ensure-no-stock-images-used": {
+      "source_sha256": "513bc8c986dd7b4cfceda7dcd81854f01f262813b29d8fbec6f5bd225d3dff42",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "ensure-no-text-only-sections-spanning-full-viewport": {
+      "source_sha256": "560a13b937425967007f5cce2d251b860e0a0442fe7031c2ada4f4fd40f8ae84",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "ensure-robots-meta-not-blocking-indexing--qa-audit": {
+      "source_sha256": "3084f1497c27d18d7f3d2a318aad7ce0c522346674a1936260ff461ef22878ec",
+      "reviewed_at": "2026-09-06",
+      "reviewer": "Codex editorial review",
+      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    }
+  }
+}

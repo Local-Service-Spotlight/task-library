@@ -1,0 +1,50 @@
+{
+ "updated": "September 6, 2026",
+ "packs": [
+  {
+   "id": "wichita-google-ads",
+   "name": "Wichita — Google Ads Workshop",
+   "kind": "workshop",
+   "emoji": "🌾",
+   "blurb": "Paid-ads + measurement bundle for a local-service Google Ads workshop. Anchored on google-ads-analyzer.",
+   "file": "packs/wichita-google-ads.zip",
+   "skill_count": 10
+  },
+  {
+   "id": "dealcon",
+   "name": "DealCon — Personal Brand",
+   "kind": "workshop",
+   "emoji": "🤝",
+   "blurb": "The personal-brand / authority set for a deal-making audience — the live-slug version of the dealcon-10 pack.",
+   "file": "packs/dealcon.zip",
+   "skill_count": 12
+  },
+  {
+   "id": "website-qa",
+   "name": "Website QA Audit",
+   "kind": "category",
+   "emoji": "🔍",
+   "blurb": "The full website QA audit category — real, ship-ready.",
+   "file": "packs/website-qa.zip",
+   "skill_count": 39
+  },
+  {
+   "id": "digital-plumbing",
+   "name": "Digital Plumbing",
+   "kind": "category",
+   "emoji": "🔧",
+   "blurb": "The foundational setup category (tracking, DNS, GBP, schema).",
+   "file": "packs/digital-plumbing.zip",
+   "skill_count": 29
+  },
+  {
+   "id": "dollar-a-day",
+   "name": "Dollar-a-Day Campaigns",
+   "kind": "category",
+   "emoji": "💵",
+   "blurb": "Every Dollar-a-Day campaign skill.",
+   "file": "packs/dollar-a-day.zip",
+   "skill_count": 18
+  }
+ ]
+}

@@ -1,6 +1,6 @@
 ---
 name: separate-methodology-layer-what-why-from-implementation-layer-how
-description: Split a process document into a tool-agnostic methodology layer (what/why) and a platform-specific implementation layer (how) so platform churn never invalidates the method.
+description: A tool may change while the job stays the same.
 category: Knowledge System Maintenance
 stage: —
 definitive_article: /knowledge-system-maintenance
@@ -9,42 +9,69 @@ status: needs-work
 
 # Separate methodology layer (what/why) from implementation layer (how)
 
-**Use this when** writing or restructuring any process document — and whenever a tool change (new editor, dead plugin, renamed platform feature) threatens to invalidate a whole SOP instead of one section.
+A tool may change while the job stays the same. This guide keeps the method clear and the current tool steps easy to update. Start with one task guide and keep the details people need to do it.
+
+**The path:** Current guide → Method and tool map → Layered copy → Reader check
+
+**Start when:** A task guide is being written or revised and its method is mixed with product-specific steps.
 
 ## Inputs
-- The process document to restructure
-- Knowledge of which parts are principle and which are this year's tooling
-- The portability standard from /knowledge-system-maintenance (Process 4)
+
+- The current process guide with its source revision, examples and media.
+- A reviewer who understands the task’s inputs, decisions and expected output.
+- The [knowledge maintenance method](https://blitzmetrics.com/knowledge-system-maintenance/) two-layer rule and authority for proposed source changes.
 
 ## Steps
-1. Read the document and classify every step, sentence, and screenshot into one of two layers: **methodology** — what we do and why, true regardless of tool; **implementation** — how we currently do it, naming specific tools, menus, buttons, prices, and UI paths.
-2. Restructure into clearly labeled layers: methodology first as the spine of the document, implementation second (or as marked tool-specific sub-blocks under each methodology step).
-3. Rewrite mixed sentences so the principle survives a tool swap. "Transcribe the video and correct every error" is methodology; "open Descript and click each blue-underlined word" is implementation. Both belong in the doc — in different layers.
-4. Sweep all tool names, screenshots, UI paths, keyboard shortcuts, and pricing into the implementation layer only. A tool name inside the methodology layer is a defect.
-5. Run the portability test: mentally delete the implementation layer. The methodology that remains must still be executable by a competent operator using any equivalent tool. If it is not, the methodology layer is incomplete — fix the method description, don't lean on the screenshots.
-6. Add a maintenance note to the document: when platforms change, only the implementation layer should need editing. If a platform change forces methodology edits, the separation was done wrong — redo steps 1–5.
-7. Ship the restructure through the SOP Update Protocol (amendment proposal, weekly review, version increment, changelog) — restructuring an SOP is an SOP change.
+
+1. Classify every instruction and image: method means what to do, why and how to judge it; implementation means this product’s controls, commands, versions or screenshots.
+2. Put method steps first or pair each with a clearly marked implementation block. Split mixed sentences instead of deleting the practical instructions.
+3. Preserve the task’s actual constraints. If a named service is the required target of the job, say so; portability does not mean pretending a WordPress-only task has no WordPress dependency.
+4. In a review copy, hide implementation blocks and check whether a reader understands inputs, sequence, decisions, pass/fail and next owner. Then restore the blocks and check today’s concrete steps still work as documented.
+5. Explain which details need rechecking when a tool changes. Some capability changes can also alter the method; use evidence and review rather than assuming separation guarantees an unchanged process forever.
+6. Prepare the exact restructure through the change protocol. Preserve media, links and examples, then compare the saved revision after authorized release.
 
 ## Definition of done (QA checklist)
-- [ ] Every element of the document classified and placed; layers explicitly labeled
-- [ ] Zero tool names, UI paths, or screenshots remaining in the methodology layer
-- [ ] Portability test passed: methodology alone is executable with any equivalent tool
-- [ ] Maintenance note added; restructure shipped via approved SOP Amendment Proposal with version + changelog
-- [ ] Linked back to the definitive article and relevant siblings
-- [ ] Complies with Blog Posting Guidelines (if it publishes content)
+
+[Quality assurance (QA)](https://localservicespotlight.com/article-guidelines/) means checking the work against the agreed result.
+
+- [ ] All instructions are assigned to a clear layer; no useful tool detail is lost.
+- [ ] Method clarity and current implementation are separately checked.
+- [ ] Real platform constraints and unresolved compatibility stay explicit.
 
 ## Example(s)
-- /knowledge-system-maintenance — Process 4 defines the two-layer discipline; /blog-posting-guidelines is the designated pilot document (see conduct-first-portability-review-of-blog-posting-guidelines).
-- Example needed — run the Meta-Article Prompt (/meta-article-prompt-template) after the first full restructure and link the meta-article here.
 
-## Run on a persistent agent (Fable 5)
+**Fictional teaching example. This is not a client result or proof of a completed run.**
 
-A persistent, max-effort agent (Claude Fable 5 or comparable OpenAI/Google models) classifies every sentence, step, and screenshot into methodology or implementation and loops until the Definition of done fully passes — zero tool names left in the methodology layer and the restructure shipped through the SOP Update Protocol with version and changelog.
-It self-verifies by running the portability test mechanically: strip the implementation layer and confirm the remaining method is still executable by a competent operator on any equivalent tool.
-Memory across cycles is where the separation pays off: the agent remembers exactly which tools, UI paths, and prices it swept into each document's implementation layer, so when a platform changes it knows precisely which blocks to refresh — and a platform change that forces methodology edits is remembered as proof the separation failed and must be redone.
-Each run it logs a meta-article example via the Meta-Article Prompt, so each restructure teaches the next one.
-See `boil-the-ocean.md` for the full operating principles.
+A fictional guide says “Click Tool A’s blue words to fix the transcript.” Split it into “Compare the transcript with the recording and correct errors” and a dated Tool A control note. If another app lacks the needed export, that is a real implementation gap; the plain method does not make the export exist.
+
+## Handoff and Content Factory context
+
+This work supports the [Content Factory, our four stages of using real content](https://blitzmetrics.com/content-factory/): Produce → Process → Post → Promote. Use the specific inputs and next task below to place the work; a maintenance task does not manufacture transcripts, clips or other stage outputs it does not call for.
+
+[The library reviewer](https://local-service-spotlight.github.io/task-library/?task=review-existing-sops-for-portability-compliance#task-review-existing-sops-for-portability-compliance) receives the pattern; use [Draft a process-change proposal](https://local-service-spotlight.github.io/task-library/?task=create-sop-amendment-proposal-500-words#task-create-sop-amendment-proposal-500-words) for source changes.
+
+## Run with an agent
+
+Give the AI worker this recipe, the real Inputs above, the intended result and the actions already authorized. Ask it to return the saved output, checks, evidence and remaining owner. Check its work against this guide; loading a skill does not prove access, installation of a job, or successful execution. Keep media muted with volume at zero if playback is needed.
+
+For recurring work, keep the actual trigger, owner and runtime in the job record. Scheduling and observed firings are separate. Do not create a schedule merely because this guide mentions a review interval.
+
+## Record the real execution
+
+Open the run record when the work starts. Keep the exact starting recipe revision, one execution ID, source evidence and actual state. Write a [meta article, the record of one run](https://blitzmetrics.com/meta-article-prompt/) with decisions, results, checks, failures and next owner. Link it to this task and register it through the [Task Library](https://local-service-spotlight.github.io/task-library/) execution process. Writing is part of the work; public release follows existing authority.
+
+Reuse the same execution ID for revisions, QA, meta writing and retries within that run. A blocked run stays open with its dependency and next owner; do not invent a finish time. Use supported findings to propose and verify a better recipe. A historical public-example count without distinct run IDs remains dated article volume, not verified execution frequency.
 
 ## Definitive article & links
-- Hub: /knowledge-system-maintenance
-- Related (Process 4 run order): separate-methodology-layer-what-why-from-implementation-layer-how → review-existing-sops-for-portability-compliance → apply-portability-discipline-to-meta-articles; pilot: conduct-first-portability-review-of-blog-posting-guidelines.
+
+- [Maintained source guide](https://blitzmetrics.com/knowledge-system-maintenance/)
+- [This task in the Task Library](https://local-service-spotlight.github.io/task-library/?task=separate-methodology-layer-what-why-from-implementation-layer-how#task-separate-methodology-layer-what-why-from-implementation-layer-how)
+- [Article Guidelines](https://localservicespotlight.com/article-guidelines/)
+- [current article guide](https://blitzmetrics.com/definitive-article-guide/)
+- [How recipes and run records work together](https://localservicespotlight.com/meta-articles/)
+
+## Review and evidence still needed
+
+The inherited contributor status is `needs-work`. It is preserved, not promoted by this rewrite. That label alone does not verify document readiness, a client outcome, access or an executed task.
+
+A real execution still needs its own source, reviewer, saved result and handoff evidence. The fictional example teaches the method; a real example with relevant proof is still needed where required. The task-specific flow above is source guidance; its visible presentation and the full document need a named reviewer and desktop/mobile checks.

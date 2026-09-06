@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "asOf": "2026-09-06T03:20:14.538911+00:00",
+  "asOf": "2026-09-06T21:35:51.648924+00:00",
   "countDefinition": "Distinct recorded execution IDs, separate from meta-article URLs. History is partial; absent history is unknown, not zero. The last-30-day count is a documented lower bound, not total task frequency.",
   "recordedExecutions": 1,
   "completedExecutions": 0,
@@ -12,8 +12,8 @@
         "create-or-update-a-definitive-article"
       ],
       "startedAt": "2026-09-05T08:01:40Z",
-      "status": "blocked",
-      "result": "80 article revisions saved and read back; 76 verified on desktop and phone (152 viewport checks). Four public copies remain blocked after a rendered-body parity failure and verified four-route rollback. The Task Library is live. This is the same unfinished execution; no completed task is claimed.",
+      "status": "running",
+      "result": "The former four-page publishing block is cleared. All 276 downloads have first-step setup guidance; 101 guide rewrites are locally reviewed and all 90 tests pass. Public release verification and the wider grade-5/article review continue. This is the same unfinished execution; no completed task is claimed.",
       "recipeRevisions": {
         "create-or-update-a-definitive-article": {
           "articleUrl": "https://blitzmetrics.com/definitive-article-guide/",
@@ -26,7 +26,8 @@
         "https://blitzmetrics.com/cursor-and-local-qwen/",
         "https://github.com/Local-Service-Spotlight/task-library/pull/8",
         "https://github.com/Local-Service-Spotlight/task-library/pull/10",
-        "https://github.com/Local-Service-Spotlight/task-library/pull/11"
+        "https://github.com/Local-Service-Spotlight/task-library/pull/11",
+        "https://github.com/dennisyu/local-service-spotlight-skills/pull/44"
       ],
       "privateEvidenceRecorded": true,
       "metaArticle": {

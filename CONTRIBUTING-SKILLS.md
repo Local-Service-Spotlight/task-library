@@ -1,5 +1,8 @@
 # Listing Your Skill Repo in the Task Library
 
+Help a business owner do one job well. Share clear steps, a useful example, and a way to check the result. Keep your guide current so the next person can trust it.
+
+
 How to format a GitHub repo so your skill shows up on the Task Library dashboard with a working "download everything" link — while you keep full ownership of the code in your own repo.
 
 The short version: **you don't reformat your skill, you register it.** If your repo is a normal Claude skill or plugin, it already qualifies. The library just needs to know where your SKILL.md lives and where people download the full package.
@@ -111,7 +114,7 @@ From then on, updating your skill = pushing to your own repo. You never touch th
 
 ## Ownership expectations
 
-Registering a skill makes you its **owner** in the Asset Tracker sense: your name goes in the Owner column, you keep the skill current with how the task is actually done, you close its definitive-article gap, and status `complete` is your signature. The registry's git history is the provenance trail — commits to your repo are your LDT/CCS documentation happening automatically.
+Name the accountable **owner** in the Asset Tracker and verify that the built record displays that name. The owner keeps the instructions current and closes the linked article gap. Status `complete` records the contributor’s claim about the document; it does not prove independent review or a client execution. Record the reviewer, exact revision, examples and acceptance evidence before claiming verified readiness. Git history records source changes. Write the [meta article for the actual run](https://blitzmetrics.com/meta-article-prompt/) separately, using its task link and execution ID.
 
 ## Common rejections
 

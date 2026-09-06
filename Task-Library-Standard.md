@@ -1,8 +1,10 @@
 # The BlitzMetrics Task Library Standard
-### How every task becomes a definitive article + a skill.md + linked examples
+Use this standard to make work clear for your team. Write the steps, show a useful example, and check the result. Link each guide to its real run records so the next person can learn from them.
+
+A [definitive article](https://blitzmetrics.com/definitive-article-guide/) is the main recipe. A skill file holds its steps for an AI app. A [meta article](https://blitzmetrics.com/meta-article-prompt/) records one real run and its proof.
 
 **Source of truth:** [How to Create a Definitive Article for Any BlitzMetrics Concept](https://blitzmetrics.com/definitive-article-guide/) and the [Task Library Dashboard](https://local-service-spotlight.github.io/task-library/). This standard reflects the task-recipe and per-execution feedback requirements reviewed September 2026.
-**Purpose:** a single spec the Fable workers (and any human/agent) follow to bring every registered task up to standard — each one documented, downloadable as a skill, and wired into the SEO Tree. Counts are always derived from the registry/build; never type a task or article count into copy.
+**Purpose:** one standard that writers and AI agents follow to bring every registered task up to standard — each one documented, downloadable as a skill, and wired into the SEO Tree. Counts are always derived from the registry/build; never type a task or article count into copy.
 
 ---
 
@@ -27,17 +29,21 @@ Every actual task in the library targets **three linked artifacts**, and they po
 
 ---
 
+## What a ready document proves
+
+Task status `complete` is the contributor’s recorded claim that the instructions are complete. Independent document review still needs evidence for the exact revision. It does not prove a client task was executed, accounts were connected, a skill was installed, a schedule fired, or an outcome was certified. Keep required access, observed access, human approval and actual execution evidence separate. Every document starts with two or three grade-5 sentences explaining its value to the reader and their first action.
+
 ## The Nine Requirements of a Definitive Article
 A page is only "definitive" if it meets **all nine**. Miss one and it's a draft (Yellow), not done (Green).
 
-1. **Specific Goal, Content and Targeting in the opening** — make the reader's actual situation, reason to care, useful outcome and supporting mechanism clear in the first two or three sentences at grade 8 or below. Lead with a concrete problem, useful finding or true moment. The body must deliver the promise. Explain unfamiliar terms on their first mention and link the maintained owned explanation. A keyword, grade score or generic audience label cannot approve meaning.
+1. **Specific Goal, Content and Targeting in the opening** — make the reader's actual situation, reason to care, useful outcome and supporting mechanism clear in the first two or three sentences at grade 5 or below. Lead with a concrete problem, useful finding or true moment. The body must deliver the promise. Explain unfamiliar terms on their first mention and link the maintained owned explanation. A keyword, grade score or generic audience label cannot approve meaning.
 2. **The complete process / framework for the declared page role** — a task recipe must name its trigger or starting state, inputs and required access, prerequisite tasks and their checked outputs, ordered steps with expected results, measurable completion criteria, and the receiving task or handoff. A topic hub may teach a framework and link its recipes. Do not give a reference or story a page-wide recipe label.
 3. **Relevant verified examples** — link the real evidence that demonstrates this method or task, with a brief explanation of what each source proves. A count, copied story or unrelated mention is not completion evidence. Preserve failures and incomplete results honestly.
 4. **Links to related concepts and entities** — cross-link the other definitive articles and route named people, companies, tools, and concepts through the Entity Destination Rules below (builds the entity graph).
 5. **Links to the course/guide/service** — as a CTA near the bottom, not as the core content.
 6. **Compliance with the [maintained Article Guidelines](https://localservicespotlight.com/article-guidelines/)** — title <60 chars; meta description <160; primary keyword in first paragraph; H2/H3 structure; short paragraphs; active voice; no AI-fluff phrases; no stock images; entity-linking decision tree for internal links.
 7. **A short URL** — memorable redirect (e.g., `/dad`, `/digital-plumbing`) pointing to the hub, not the homepage or a case study.
-8. **Article-specific lead visual above the fold, then lower task context** — place a meaningful real photo, source screenshot or task diagram beside or just after the short opening. Verify that useful content and readable labels, not an empty border, are visible on the first anonymous visit at desktop 1440 × 860 and mobile 390 × 844. Every actual task recipe must show a truthful lower task map. Further down each actual task recipe, show its honest place in the Content Factory: Produce → Process → Post → Promote, plus its actual inputs, outputs and handoff. For a Content Factory task, use the full canonical Content Factory diagram when it is needed to explain the workflow, highlight only the relevant parts, and keep surrounding context readable. Support tasks may support several stages without pretending to produce a content asset. The framework map is orientation, not generic hero art; it must not displace the article's primary evidence. Link the relevant task or method nodes and add an accurate caption or text equivalent. For pages that are not task recipes, do not force a generic Content Factory diagram. All media checks remain muted with volume zero; use a silent alternative if that state cannot be verified before playback.
+8. **Article-specific lead visual above the fold, then lower task context** — place a meaningful real photo, source screenshot or task diagram beside or just after the short opening. Verify that useful content and readable labels, not an empty border, are visible on the first anonymous visit at desktop 1280 × 800 and mobile 390 × 844. Every actual task recipe must show a truthful lower task map. Further down each actual task recipe, show its honest place in the Content Factory: Produce → Process → Post → Promote, plus its actual inputs, outputs and handoff. For a Content Factory task, use the full canonical Content Factory diagram when it is needed to explain the workflow, highlight only the relevant parts, and keep surrounding context readable. Support tasks may support several stages without pretending to produce a content asset. The framework map is orientation, not generic hero art; it must not displace the article's primary evidence. Link the relevant task or method nodes and add an accurate caption or text equivalent. For pages that are not task recipes, do not force a generic Content Factory diagram. All media checks remain muted with volume zero; use a silent alternative if that state cannot be verified before playback.
 9. **Third-party endorsements / testimonials / E-E-A-T** — media, conference talks, podcasts, practitioner testimonials with proof. Highest-authority first; volume matters. (The `/dad` article is the gold standard.)
 
 ---
@@ -70,7 +76,7 @@ The visible label is a validation result, not a writing style or a manually chos
 Run in order for any task in a Yellow/Red (Needs Work / Gap) state:
 
 1. **Identify the concept** and find every existing article that mentions it (the hub organizes them, doesn't replace them).
-2. **Write the specific GCT opening** in two or three short sentences at grade 8 or below. Explain the reader's situation, why this matters, the useful outcome and how the task helps. A meaningful task visual may lead. Save the exact opening and quoted reviewer evidence in the existing run receipt; the body must deliver its promise.
+2. **Write the specific GCT opening** in two or three short sentences at grade 5 or below. Explain the reader's situation, why this matters, the useful outcome and how the task helps. A meaningful task visual may lead. Save the exact opening and quoted reviewer evidence in the existing run receipt; the body must deliver its promise.
 3. **Document the process/framework** (the SOP — this is what the skill.md mirrors).
 4. **Link the relevant verified examples** (1–2 sentences explaining what each source proves).
 5. **Cross-link related concepts and entities** using the Entity Destination Rules (other definitive articles, verified personal sites, verified company sites, and internal training for tools).
@@ -145,7 +151,7 @@ status: <complete | needs-work | gap>
 - Related: <sibling definitive articles / skills, in run order>
 ```
 
-**Rules for skill.md authors (Fable workers):**
+**Rules for guide authors:**
 - The `name` slug is permanent (installs/bundles depend on it). Match the task slug.
 - `category` must exactly match one name in `build/categories.json`; `stage` must be one of `Produce | Process | Post | Promote | —`. Do not create an alias because a WordPress category or tag is spelled differently—fix the taxonomy drift instead.
 - Steps must mirror the task's real SOP — use the definitive article's documented process, Dennis's frameworks (GCT, MAA, the 4 P's, SEO Tree, entity-linking decision tree, Dollar a Day mechanics), and the task description. No invented tools or fabricated URLs — reference only the task's real definitive-article short URL and known BlitzMetrics concepts.
@@ -153,7 +159,7 @@ status: <complete | needs-work | gap>
 - For **gap** tasks (no article yet), set `definitive_article: GAP — to be written`, write the SOP from the description + method, and flag the missing hub.
 
 ## Importance (1–5 volume bar)
-Every task carries an **importance** score, shown as a 1–5 bar on the dashboard. It is `max(frequency, revenue, gating)`, scored from evidence, not vibes:
+Every task carries an **importance** estimate, shown as a 1–5 bar on the dashboard. It is `max(frequency, revenue, gating)`, based on the declared method and role. These estimates help prioritize work; they do not measure observed run frequency or revenue:
 
 - **Frequency** — does this run every factory cycle, weekly, monthly, once per client, or yearly?
 - **Revenue** — ads, boosts, pixels, and conversion paths are 5. Publishing the asset ads will amplify is 4. Maintenance is 1–2.
@@ -162,10 +168,10 @@ Every task carries an **importance** score, shown as a 1–5 bar on the dashboar
 The scoring table lives in `build/factory.py`. Do not hand-edit bars on the dashboard.
 
 ## Factory chain
-Tasks are stations on Produce → Process → Post → Promote, with Digital Plumbing as Gate. Every skill.md must name **Before** and **After** (sibling run order). The dashboard renders the chain; agents must not start a station as an isolated chat.
+Tasks connect to the Content Factory through their real inputs and handoffs. A guide names the prerequisite output it actually needs and the task or owner that receives its result. The dashboard can suggest neighboring stations; catalog order alone does not establish a prerequisite. Setup and support tasks may serve several stages.
 
 ## Model routing
-Name the lane: `script` | `local` | `any` | `judgment` | `computer`. **Single-engine is first-class:** an operator with only Grok or only Claude still runs the whole factory. Multi-engine (local overnight writer + frontier Jennifer + REST publish) scales the same line. Pass work as files, never through one vendor's memory. Canonical skill: `run-content-factory-on-any-engine`.
+Name the lane: `script` | `local` | `any` | `judgment` | `computer`. Choose a worker with the tools, account access and ability that the actual step needs. One app may cover several steps; missing capability remains a specific handoff or setup need. Keep shared work in readable project files with its sources and state. Follow [Run the Content Factory on your available engine](https://local-service-spotlight.github.io/task-library/?task=run-content-factory-on-any-engine#task-run-content-factory-on-any-engine) and test the selected setup.
 
 ---
 
@@ -196,6 +202,6 @@ The `before`/`after` dashboard station suggestions are generated neighbors, not 
 
 
 ## Status legend (matches the dashboard)
-- **Complete (Green)** — the individual task's SOP/skill is complete and mapped; this task-level status does not by itself certify a shared article hub. A shared article is labeled definitive only when every task mapped to that normalized URL is Complete and no reviewed semantic-certification hold remains.
+- **Reported complete** — the contributor claims that the individual task's SOP/skill is complete and mapped; this task-level status does not by itself certify a shared article hub. A shared article is labeled definitive only when every task mapped to that normalized URL is Complete and no reviewed semantic-certification hold remains.
 - **Needs Work (Yellow)** — a page exists but misses ≥1 requirement, or has no skill.md / no example yet.
 - **Gap (Red)** — no definitive article yet; skill.md is authored from the task definition and flags the missing hub.

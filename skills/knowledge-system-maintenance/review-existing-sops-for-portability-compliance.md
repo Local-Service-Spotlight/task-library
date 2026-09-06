@@ -1,51 +1,77 @@
 ---
 name: review-existing-sops-for-portability-compliance
-description: Audit the existing SOP library for methodology/implementation separation, grade each document, and queue the entangled ones for restructuring.
+description: Your team should keep its know-how when an app changes.
 category: Knowledge System Maintenance
 stage: —
 definitive_article: /knowledge-system-maintenance
 status: needs-work
 ---
 
-# Review existing SOPs for portability compliance
+# Review existing task guides for portability compliance
 
-**Use this when** rolling Platform Portability Discipline across the existing SOP library — after the separation method is proven on the pilot (/blog-posting-guidelines) and before the next platform change forces emergency rewrites.
+Your team should keep its know-how when an app changes. This guide finds task guides that mix the method with tool buttons. Start with the guides people use now and the checked pilot example.
+
+**The path:** Guide inventory → Layer review → Graded gaps → Change queue
+
+**Start when:** The pilot is ready to apply to an agreed inventory of existing task guides.
 
 ## Inputs
-- An inventory of all current SOPs and process documents
-- The two-layer standard from Process 4 and the separation skill (`separate-methodology-layer-what-why-from-implementation-layer-how`)
-- Results of the pilot review of Blog Posting Guidelines (the worked pattern)
+
+- An agreed inventory of current task guides and source owners.
+- [The article-guidelines pilot](https://local-service-spotlight.github.io/task-library/?task=conduct-first-portability-review-of-blog-posting-guidelines#task-conduct-first-portability-review-of-blog-posting-guidelines) and [Separate the method from tool steps](https://local-service-spotlight.github.io/task-library/?task=separate-methodology-layer-what-why-from-implementation-layer-how#task-separate-methodology-layer-what-why-from-implementation-layer-how).
+- Read access and the approved review/changes register.
 
 ## Steps
-1. Build the SOP inventory: every process document the team actually runs — content factory steps, audit checklists, campaign SOPs, this maintenance system's own processes. An SOP not on the list is an SOP that never gets reviewed.
-2. For each SOP, run the tool-dependence scan: strike out every named tool, menu path, and screenshot, and ask whether the remaining document still teaches the method. Note where logic collapses without the tool references.
-3. Grade each SOP: **compliant** — layers already separated and labeled; **mixed** — separable with moderate edits; **entangled** — methodology and tooling so interwoven a rewrite is needed.
-4. For mixed SOPs, apply the separation skill directly and ship the edits through the SOP Update Protocol.
-5. For entangled SOPs, queue a full restructure as an SOP Amendment Proposal with priority based on how exposed the SOP is to platform churn (ad platforms and editors churn fastest).
-6. Record the grade and review date per SOP alongside the inventory, and recheck grades during quarterly audits — compliance is a state that decays, not a one-time stamp.
-7. Close the loop for new documents: add a portability check to the SOP authoring checklist so nothing newly published starts life entangled (file the amendment to that checklist).
+
+1. Build the in-scope list from current operating references, not only search results. Record source revision, owner, use and any inaccessible guide.
+2. For each, classify decisions/checks and tool-specific instructions. In a review copy, hide the implementation and inspect where the method becomes unclear.
+3. Grade compliant, mixed or entangled with cited passages. Use unknown for an unreadable or insufficiently reviewed source; a label alone is not evidence.
+4. Prepare narrow layering changes for mixed guides. Queue a larger rewrite for an entangled guide, explaining which inputs, decisions or checks would otherwise be lost.
+5. Prioritize from actual use, known upcoming tool changes and demonstrated failures. Do not assume every ad or editor guide is more urgent than a blocked client task.
+6. Route exact proposals through the existing amendment process. Record reviewed revisions and next owners; recheck released changes and propose a portability check for new guides if it is missing.
 
 ## Definition of done (QA checklist)
-- [ ] Complete SOP inventory built — no actively-used process document missing
-- [ ] Every SOP graded compliant / mixed / entangled with the failing sections noted
-- [ ] All mixed SOPs restructured or in the amendment queue; all entangled SOPs queued with churn-based priority
-- [ ] Grades and review dates recorded; recheck wired into the quarterly audit
-- [ ] Authoring checklist updated so new SOPs must pass portability before publishing
-- [ ] Linked back to the definitive article and relevant siblings
-- [ ] Complies with Blog Posting Guidelines (if it publishes content)
+
+[Quality assurance (QA)](https://localservicespotlight.com/article-guidelines/) means checking the work against the agreed result.
+
+- [ ] Every guide in scope has evidence-backed classification or explicit unknown.
+- [ ] Restructures preserve runnable detail and have owned next actions.
+- [ ] Reviewed dates and any released revisions are recorded; no auto-certification occurs.
 
 ## Example(s)
-- /knowledge-system-maintenance — Process 4 mandates reviewing existing SOPs for compliance, naming Blog Posting Guidelines as the worked starting point.
-- Example needed — run the Meta-Article Prompt (/meta-article-prompt-template) after the first library-wide review and link the meta-article here.
 
-## Run on a persistent agent (Fable 5)
+**Fictional teaching example. This is not a client result or proof of a completed run.**
 
-A persistent, max-effort agent (Claude Fable 5 or comparable OpenAI/Google models) builds the complete SOP inventory, runs the tool-dependence scan on every document, grades each compliant / mixed / entangled, and loops until the Definition of done fully passes — every mixed SOP restructured or queued, every entangled one queued with churn-based priority, the authoring checklist updated.
-It self-verifies by re-running the strike-out test on its own grades: delete the tool references and confirm the document still teaches (or provably fails to teach) the method as graded.
-Memory across audit cycles treats compliance as the decaying state it is: the agent retains every SOP's grade and review date, rechecks them each quarter, and catches regressions the cycle they happen — an SOP sliding from compliant to mixed is a remembered trend, not a surprise at the next platform change.
-Each run it logs a meta-article example via the Meta-Article Prompt, so the library-wide review compounds on the pilot's worked pattern.
-See `boil-the-ocean.md` for the full operating principles.
+A fictional list has ten guides: six separate method/tool steps, three mix them, and one cannot be opened. Report 6 compliant, 3 mixed, 1 unknown. The unreadable guide is not counted as entangled or passed. A promised restructure is not a completed rewrite.
+
+## Handoff and Content Factory context
+
+This work supports the [Content Factory, our four stages of using real content](https://blitzmetrics.com/content-factory/): Produce → Process → Post → Promote. Use the specific inputs and next task below to place the work; a maintenance task does not manufacture transcripts, clips or other stage outputs it does not call for.
+
+[Separate the method from tool steps](https://local-service-spotlight.github.io/task-library/?task=separate-methodology-layer-what-why-from-implementation-layer-how#task-separate-methodology-layer-what-why-from-implementation-layer-how) handles restructures; [review the run records](https://local-service-spotlight.github.io/task-library/?task=apply-portability-discipline-to-meta-articles#task-apply-portability-discipline-to-meta-articles) applies the same method to examples.
+
+## Run with an agent
+
+Give the AI worker this recipe, the real Inputs above, the intended result and the actions already authorized. Ask it to return the saved output, checks, evidence and remaining owner. Check its work against this guide; loading a skill does not prove access, installation of a job, or successful execution. Keep media muted with volume at zero if playback is needed.
+
+For recurring work, keep the actual trigger, owner and runtime in the job record. Scheduling and observed firings are separate. Do not create a schedule merely because this guide mentions a review interval.
+
+## Record the real execution
+
+Open the run record when the work starts. Keep the exact starting recipe revision, one execution ID, source evidence and actual state. Write a [meta article, the record of one run](https://blitzmetrics.com/meta-article-prompt/) with decisions, results, checks, failures and next owner. Link it to this task and register it through the [Task Library](https://local-service-spotlight.github.io/task-library/) execution process. Writing is part of the work; public release follows existing authority.
+
+Reuse the same execution ID for revisions, QA, meta writing and retries within that run. A blocked run stays open with its dependency and next owner; do not invent a finish time. Use supported findings to propose and verify a better recipe. A historical public-example count without distinct run IDs remains dated article volume, not verified execution frequency.
 
 ## Definitive article & links
-- Hub: /knowledge-system-maintenance
-- Related (Process 4 run order): conduct-first-portability-review-of-blog-posting-guidelines (pilot) → review-existing-sops-for-portability-compliance → apply-portability-discipline-to-meta-articles; method: separate-methodology-layer-what-why-from-implementation-layer-how. Concept: /blog-posting-guidelines.
+
+- [Maintained source guide](https://blitzmetrics.com/knowledge-system-maintenance/)
+- [This task in the Task Library](https://local-service-spotlight.github.io/task-library/?task=review-existing-sops-for-portability-compliance#task-review-existing-sops-for-portability-compliance)
+- [Article Guidelines](https://localservicespotlight.com/article-guidelines/)
+- [current article guide](https://blitzmetrics.com/definitive-article-guide/)
+- [How recipes and run records work together](https://localservicespotlight.com/meta-articles/)
+
+## Review and evidence still needed
+
+The inherited contributor status is `needs-work`. It is preserved, not promoted by this rewrite. That label alone does not verify document readiness, a client outcome, access or an executed task.
+
+A real execution still needs its own source, reviewer, saved result and handoff evidence. The fictional example teaches the method; a real example with relevant proof is still needed where required. The task-specific flow above is source guidance; its visible presentation and the full document need a named reviewer and desktop/mobile checks.

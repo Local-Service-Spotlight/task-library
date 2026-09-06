@@ -1,6 +1,6 @@
 ---
 name: record-screen-shares-of-real-audits
-description: Capture screen recordings walking through actual client audits so the analysis work you already do becomes teachable, publishable proof of expertise.
+description: "Record a real review of approved work. Show what you checked, what you found, and what needs to happen next."
 category: Content Factory — Produce
 stage: Produce
 definitive_article: GAP — to be written
@@ -9,41 +9,81 @@ status: needs-work
 
 # Record screen shares of real audits
 
-**Use this when** you are about to perform a real audit or analysis for a client — a Website QA Audit, digital plumbing check, or campaign review — and can narrate while you work.
+A screen full of charts can be hard to understand. This guide helps an owner or reviewer explain a real check in plain words. Start with the goal, then show what you found and what should happen next.
+
+**The path:** Approved audit → Clear screen and narration → Findings and edit notes → Editor.
+
+**Use this when:** An approved real audit is about to happen and it may be recorded for teaching or review.
 
 ## Inputs
-- A real client audit to perform (not a staged demo) — e.g., the Website QA Audit layers or Digital Plumbing checks
-- Screen recording via Zoom or Descript with microphone narration
-- Client permission to record, and a plan for redacting sensitive data (ad spend, emails, revenue) before publishing
-- Access to the Content Library Google Drive folder
+- The actual audit task and checklist, the property to review, and authorization for that read or work. This recording guide does not grant permission to test or change systems.
+- Permission to record and the agreed later uses. List private names, emails, account data, and other details to keep out.
+- An approved screen recorder with microphone and screen-capture access; enough local storage. For the Zoom method below, use the desktop app and a host role or host-granted recording privilege.
+- The approved raw folder, tracker, reviewer, and editor. Keep credentials out of the recording and all public evidence.
+
+## First-run prompt
+
+> Use the approved audit scope and checklist I provide to plan a clear screen recording. Give me a short goal statement, section prompts, and a privacy check. After capture, organize actual findings and time ranges. Do not run changes, assume a passed check, or expose private account details.
 
 ## Steps
-1. Confirm with the client that the audit may be recorded and used as content; agree on what must be redacted or blurred.
-2. Start a Zoom or Descript screen recording with mic on before you begin the audit — capture the real first-pass reactions, not a re-enactment.
-3. Narrate GCT as you work: the Goal of each check, the Content of what you find on screen, and who this matters to (Targeting).
-4. Work through the audit checklist out loud: state what you are checking, why it matters, what you found, and what you would do about it.
-5. Pause briefly between checklist sections — clean topic boundaries make Process's clip extraction and timestamping faster.
-6. After recording, note any frames containing sensitive client data so Process can cut or blur them.
-7. Name the file `YYYY-MM-DD-clientname-audit-topic` and upload to the Content Library Drive folder.
-8. Log in the Content Library tracker with status "Raw — ready for Process" plus the redaction notes.
+1. Name the goal, what this recording will show, and who needs it. These are [Goals, Content, and Targeting](https://blitzmetrics.com/gct-business-strategy/). Link the exact audit checklist instead of improvising a new audit from this filming guide.
+2. Close private tabs, notifications, password tools, and unrelated windows. Share only the needed window when possible. Choose examples and views the client has allowed. Keep a private list of any remaining redaction risks.
+3. For an approved Zoom recording, start the meeting as host or get host permission to record. Select the intended screen or window and check that the needed text is readable. Check microphone input without playing sound through speakers.
+4. Use Record, then Record on this Computer if offered. Confirm the recording indicator before beginning. If the approved recorder is Descript instead, use its current recording controls and verify the same screen, microphone, and file checks; do not assume Zoom’s controls apply.
+5. For each real checklist item, say what you are checking, why it matters, what the screen shows, and the next action. Keep observations separate from guesses. An inaccessible view is “not checked,” not a pass.
+6. Pause between sections and when private content may appear. Note time ranges for useful findings and sections that must be removed. A recording is not permission to click a live change or run an intrusive test.
+7. For Zoom, stop recording, then end the meeting to begin local conversion. Wait for conversion to finish before moving or renaming the file; keep it on a local drive during conversion. For Descript or another approved recorder, verify its processing has finished before copying the saved file to the approved raw folder.
+8. Name it YYYY-MM-DD-clientname-audit-topic. Save checklist results, evidence references, time ranges, and privacy notes with the tracker row. Review a redacted copy before public use; keep the original in its approved restricted location.
+9. Hand the source and findings to [Upload the source to Drive and Descript](https://local-service-spotlight.github.io/task-library/?task=step-1-upload-video-to-google-drive-and-descript#task-step-1-upload-video-to-google-drive-and-descript). The actual audit’s own acceptance checks determine whether the audit passed. This task checks the recording package.
 
 ## Definition of done (QA checklist)
-- [ ] Recording covers a real audit on a real client property, narrated end to end
-- [ ] Each check states what/why/finding/action (teachable, not just clicking around)
-- [ ] Sensitive data identified and flagged for redaction before any publishing
-- [ ] Clean section boundaries exist for clip extraction
-- [ ] File uploaded to the Content Library and logged for the Process stage
-- [ ] Linked back to the definitive article and relevant siblings
+
+- [ ] The audit property, checklist, scope, and permitted recording use are stated.
+- [ ] The saved recording shows readable evidence and explains observation, meaning, and next action.
+- [ ] Missing checks are visible; the narration does not claim a result from a screen it could not inspect.
+- [ ] The file has finished processing, is saved, and has time-based privacy and highlight notes.
+- [ ] The named editor can access the allowed package; public-use clearance and sound review are explicit.
 
 ## Example(s)
-- Example needed — run the Meta-Article Prompt after first real run. Candidate: a recorded Website QA Audit of a personal brand site such as those built for DealCon attendees.
 
-## Run on a persistent agent (Fable 5)
+**Fictional teaching example — not an audit of a real site.** In a sample page review for Maple Cycle, a reviewer checks whether the “Book a visit” link reaches the intended booking page.
 
-A persistent agent (Claude Fable 5, or a comparable OpenAI/Google model that loops and holds memory) can drive the audit checklist itself, then self-verify the recording: redaction flags noted, section boundaries clean, file named and logged — looping until every Definition-of-done box checks, because one unflagged client number is a publishing incident. Memory keeps each client's redaction list and audit history, so repeat audits start from prior findings instead of zero. Log a meta-article example each run.
-See `boil-the-ocean.md` for the full operating principles.
+The narration is: “The goal is to help a rider book a visit. At 02:10, this button opens an old page. I checked the new page separately and it loads. The site editor should update the button and test it again.”
+
+The sample result is one failed link check and one proposed fix. It is not “the site passed” or “bookings increased.” The cut list marks 04:15–04:25 for removal because a private email appears. A real handoff needs the actual page references, recording, permission, and retest evidence.
+
+## Handoff and Content Factory context
+
+The editor takes the recording through [Upload the source to Drive and Descript](https://local-service-spotlight.github.io/task-library/?task=step-1-upload-video-to-google-drive-and-descript#task-step-1-upload-video-to-google-drive-and-descript). The audit owner keeps the findings and any repair tasks; they are not complete merely because a teaching clip was made.
+
+This task serves **Produce** in the [Content Factory](https://blitzmetrics.com/content-factory/). Produce makes or prepares source material. Process edits it, Post puts approved work on a channel, and Promote helps it reach people. Only the steps and handoff above are part of this task.
+
+## When this runs
+
+Run when an authorized audit needs a recording. A recurring audit may use this task for each actual session, but this guide does not schedule audits or start automatic recording.
+
+## Run with an agent
+
+The agent can prepare the plan, organize allowed files, and check the evidence it can actually access. A person records real stories, supplies permission, or resolves an account step when needed. Save the current state in the project files and tracker. A model name does not create memory, access, a scheduler, or permission to act.
+
+For all agent media checks, keep the player muted and its volume at zero before playback. If that cannot be checked, use captions, metadata, or still frames. Do not claim sound quality was heard when it was not.
+
+## Write up the real run
+
+For every actual attempt, [write the run’s meta article](https://blitzmetrics.com/meta-article-prompt/). Link this exact task and its source revision. State the start, work done, evidence, result, gaps, and next owner. Keep failed, partial, and blocked work visible. Writing the record does not authorize publishing it.
+
+Use one stable execution ID for this task’s actual run. Internal retries, checks, and new versions do not add runs. A separately scoped child task may have its own ID linked to the parent. A teaching example has no real execution ID and must not enter the run count. Follow the [recipe and meta-article guide](https://localservicespotlight.com/meta-articles/) for that distinction.
 
 ## Definitive article & links
-- Hub: GAP — no definitive article yet; this skill flags the missing hub. Until written, ground runs in /website-qa-audit and /digital-plumbing (the audits being recorded).
-- Related: /website-qa-audit, /digital-plumbing, /content-factory
-- Sibling skills, in run order: this → `step-1-upload-video-to-google-drive-and-descript` → `extract-15-60-second-clips-from-long-form-video`
+
+- Dedicated canonical article: not mapped in the current task source. Use the owned teaching references below while that article gap is reviewed.
+- Exact task: [Record screen shares of real audits](https://local-service-spotlight.github.io/task-library/?task=record-screen-shares-of-real-audits#task-record-screen-shares-of-real-audits)
+- Publishing standard: [Article Guidelines](https://localservicespotlight.com/article-guidelines/)
+- [Zoom’s current local-recording controls](https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0076922)
+
+## Review and evidence still needed
+
+The contributor status in the source header is preserved. It is not a claim that this draft has been independently accepted or that a real run has passed. The worked example above is for teaching only.
+- No dedicated recording guide is mapped in the source.
+- Descript UI details are not specified or claimed verified here; the full concrete provider route uses current official Zoom documentation.
+- Real audit scope, sound check and redacted-copy review are still required.

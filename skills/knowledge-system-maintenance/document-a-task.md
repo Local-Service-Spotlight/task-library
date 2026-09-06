@@ -1,6 +1,6 @@
 ---
 name: document-a-task
-description: "A task guide that a new person can use to reach and verify the same outcome."
+description: Your team should be able to repeat good work without guessing.
 category: Knowledge System Maintenance
 stage: Process
 definitive_article: https://blitzmetrics.com/how-to-document-a-task/
@@ -9,68 +9,76 @@ status: needs-work
 
 # Document a task
 
-**Use this when:** A real task is being performed and needs to become a reusable guide.
+Your team should be able to repeat good work without guessing. This guide turns one real job into clear steps and checks. Start while you do the work, so you can save the details that matter.
 
-This is a registered recipe in review. A published guide or this new record does not certify its runtime behavior. Read the current [canonical procedure](https://blitzmetrics.com/how-to-document-a-task/) before executing; it contains the detailed actions and current source-specific instructions.
+**The path:** Real task → Steps and proof → Fresh-reader check → Published guide
+
+**Start when:** Real work reveals a task recipe that is missing or too unclear for someone else to follow.
 
 ## Inputs
-- The actual task and source evidence
-- Steps and screenshots captured during execution
-- Required tools and authorized publishing/library access
 
-## Prerequisite tasks
-- No separate mandatory task is established by the reviewed source; use the explicit starting condition and inputs above.
-## Input references
-- [How to Create a Definitive Article for Any BlitzMetrics Concept](https://blitzmetrics.com/definitive-article-guide/)
-- [Article guidelines (how we write, and how your agent should)](https://localservicespotlight.com/article-guidelines/)
-- [Learn, Do, Teach](https://blitzmetrics.com/learn-do-teach/)
+- The actual task, starting state, required sources and authorized actions.
+- Permission to retain screenshots or recordings, with private details excluded.
+- A maintained guide if one exists, [current article guide](https://blitzmetrics.com/definitive-article-guide/), and [Article Guidelines](https://localservicespotlight.com/article-guidelines/).
+
 ## Steps
-1. Perform the task and capture each step.
-2. Open with the operator's actual starting situation, why this task matters and what they can produce or verify by following the guide. Use the first 2–3 sentences and a task-specific visual to orient them before the process checklist. Apply `step-7-write-hook-and-establish-context` for meaning review; retain the exact text and quoted reviewer evidence in the existing receipt.
-3. Explain ordered steps and expected outputs.
-4. Add source screenshots and error prevention.
-5. Test the verification checklist.
-6. Link the guide in the Task Library.
+
+1. Name the trigger, reader, useful result and boundary of the task in plain words. Search the Task Library and site for an existing recipe before creating a second guide.
+2. As the real work proceeds, capture inputs, decisions, actions, expected results and failures. Keep exact source references and timestamps; a reconstructed success is not evidence.
+3. Write ordered steps that another operator can follow. For each, state the input, action and observable result. Add current tool instructions beneath the method, with version/date where relevant.
+4. Add real annotated screenshots or a truthful task diagram beside the grade 5 opening. Explain jargon on first use and link owned prerequisite guides. Preserve existing media and body content when editing.
+5. Create completion checks for the saved result, not just the presence of headings. Include downstream task, receiving owner and how to handle a missing input or failed check.
+6. Ask a fresh reviewer to follow the recipe with appropriate test inputs. Record ambiguous steps and actual proof; a desk review alone is not a completed client execution.
+7. Prepare the readable page and matching skill through [the skill-publishing task](https://local-service-spotlight.github.io/task-library/?task=publish-skill-and-task-page#task-publish-skill-and-task-page). Preserve the owning format; a builder page must use its supported builder save, not an overwrite of generated HTML.
+
+## Opening meaning review
+
+Keep the opening to two or three short sentences at grade 5 or below. It must show the actual reader’s situation, why the subject matters, the useful result, and how this page helps. A source-backed moment or useful finding can lead. Keep its relevant visual in the first screen; check that the body delivers the opening’s promise.
+
+Save the exact opening and artifact revision in the existing run receipt. Have the reviewer quote the words that establish the situation, reason to care, result and method. Record PASS, FAIL or UNKNOWN with reasons and a readability diagnostic. A grade score, keyword, generic audience label or unsupported conversion promise cannot approve meaning. Follow [Step 7: write and review the opening](https://local-service-spotlight.github.io/task-library/?task=step-7-write-hook-and-establish-context#task-step-7-write-hook-and-establish-context) and the [maintained opening standard](https://github.com/dennisyu/local-service-spotlight-skills/blob/main/standards/every-article-and-project-starts-with-specific-gct.md).
 
 ## Definition of done (QA checklist)
 
-**Expected result:** A task guide that a new person can use to reach and verify the same outcome.
+[Quality assurance (QA)](https://localservicespotlight.com/article-guidelines/) means checking the work against the agreed result.
 
-- [ ] Inputs and access methods are explicit
-- [ ] Each step states its expected output
-- [ ] The verification checklist checks the actual result
-- [ ] The guide links its parent and owned prerequisite training
-- [ ] The Task Library exposes the guide
-- [ ] Record the exact source revision, actual result and evidence; retain failure, partial, blocked and unknown states.
-- [ ] Write the execution's meta article and link the canonical task. Publication is a separate action under the current authority.
-- [ ] Keep this parent job's internal retries, checks and agent contributions on the same execution ID; derivatives and revisions add no runs. A separately scoped and documented child execution may have its own ID with parentExecutionId, without adding a second completion to this parent recipe.
-- [ ] Verify permissions for publishing, sending, spending, scheduling or changing access before that action. A task record does not grant them.
+- [ ] Trigger, inputs, exact steps, measurable output and downstream handoff are explicit.
+- [ ] Real proof is relevant and private material stays protected; teaching examples are labeled.
+- [ ] Source/page/skill agree after any authorized release and the fresh-reader review is recorded.
 
-## Child or companion tasks
-- No separate mandatory task is established by the reviewed source; use the explicit starting condition and inputs above.
-## Handoff and Content Factory context
-
-Publish through the authorized guide workflow and use execution feedback to improve the canonical task.
-
-The Content Factory turns source material into useful work through Produce, Process, Post and Promote. This recipe's reviewed placement is **process**. Support tasks help the relevant stages; do not force a support operation into a production stage. The canonical article's lower diagram should show the same context while its lead visual explains this particular task.
-
-### Downstream tasks
-- [The Publisher — Every Skill Has a Webpage](https://blitzmetrics.com/skill-publishing-standard/) — Task Library: [publish-skill-and-task-page](https://local-service-spotlight.github.io/task-library/?task=publish-skill-and-task-page#task-publish-skill-and-task-page)
 ## Example(s)
 
-No independently verified completed execution has been assigned to this new task record. Historical examples in the article remain source material, not reconstructed execution counts. Write the meta article for each real attempt, including failed or blocked work, and register only its actual identity and result.
+**Fictional teaching example. This is not a client result or proof of a completed run.**
 
-## Open review items
-- Builder document fields require the durable editor save pipeline; raw post body alone is not the content authority.
-- This is WIP until the current source procedure, access, linked task outputs and live acceptance checks have been independently reviewed. A workflow-summary addition alone does not pass those checks.
-- All media tests stay muted with volume zero; if silence cannot be verified before playback, inspect captions, metadata or frames instead.
+A fictional editor documents a broken booking-link repair. The recipe begins with the old page URL, names the correct target source, shows the link edit and checks the anonymous page afterward. The example’s “saved” state is separate from its “public page works” check. This is a teaching outline, not evidence of a repaired site.
+
+## Handoff and Content Factory context
+
+The [Content Factory, our four stages of using real content](https://blitzmetrics.com/content-factory/) goes Produce → Process → Post → Promote. Capture the real work in Produce, turn it into a usable recipe in Process, then release and connect the approved guide in Post. The same recipe can support later work in any of the four stages.
+
+[Publish the skill and task page](https://local-service-spotlight.github.io/task-library/?task=publish-skill-and-task-page#task-publish-skill-and-task-page) receives the guide, example, review findings and exact source revision.
+
+## Run with an agent
+
+Give the AI worker this recipe, the real Inputs above, the intended result and the actions already authorized. Ask it to return the saved output, checks, evidence and remaining owner. Check its work against this guide; loading a skill does not prove access, installation of a job, or successful execution. Keep media muted with volume at zero if playback is needed.
+
+For recurring work, keep the actual trigger, owner and runtime in the job record. Scheduling and observed firings are separate. Do not create a schedule merely because this guide mentions a review interval.
+
+## Record the real execution
+
+Open the run record when the work starts. Keep the exact starting recipe revision, one execution ID, source evidence and actual state. Write a [meta article, the record of one run](https://blitzmetrics.com/meta-article-prompt/) with decisions, results, checks, failures and next owner. Link it to this task and register it through the [Task Library](https://local-service-spotlight.github.io/task-library/) execution process. Writing is part of the work; public release follows existing authority.
+
+Reuse the same execution ID for revisions, QA, meta writing and retries within that run. A blocked run stays open with its dependency and next owner; do not invent a finish time. Use supported findings to propose and verify a better recipe. A historical public-example count without distinct run IDs remains dated article volume, not verified execution frequency.
 
 ## Definitive article & links
-- Canonical task procedure: https://blitzmetrics.com/how-to-document-a-task/
-- Exact Task Library record: https://local-service-spotlight.github.io/task-library/?task=document-a-task#task-document-a-task
-- Meta-article method: https://blitzmetrics.com/meta-article-prompt/
-- Recipe and execution relationship: https://localservicespotlight.com/meta-articles/
-- Content Factory context: https://blitzmetrics.com/content-factory/
-- Article and task recipe standard: https://blitzmetrics.com/definitive-article-guide/
 
-Source basis: canonical article WordPress ID 62422; reviewed source SHA-256 `685db03854c88542bb889b90ca20e9eb59939dcebb901247dec1c51ce7f4f690`. The task record summarizes that source and keeps its unresolved items visible. It does not certify installations, provider commands, source-system access or a completed run.
+- [Maintained source guide](https://blitzmetrics.com/how-to-document-a-task/)
+- [This task in the Task Library](https://local-service-spotlight.github.io/task-library/?task=document-a-task#task-document-a-task)
+- [Article Guidelines](https://localservicespotlight.com/article-guidelines/)
+- [current article guide](https://blitzmetrics.com/definitive-article-guide/)
+- [How recipes and run records work together](https://localservicespotlight.com/meta-articles/)
+
+## Review and evidence still needed
+
+The inherited contributor status is `needs-work`. It is preserved, not promoted by this rewrite. That label alone does not verify document readiness, a client outcome, access or an executed task.
+
+A real execution still needs its own source, reviewer, saved result and handoff evidence. The fictional example teaches the method; a real example with relevant proof is still needed where required. The task-specific flow above is source guidance; its visible presentation and the full document need a named reviewer and desktop/mobile checks.

@@ -18,7 +18,7 @@ function debounce(fn, ms){ let t; return function(){ clearTimeout(t); const a = 
 const reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 const STATUS = {
-  'complete':   { label: 'Complete' },
+  'complete':   { label: 'Reported complete' },
   'needs-work': { label: 'Needs work' },
   'gap':        { label: 'Gap' }
 };
@@ -86,7 +86,7 @@ function renderMD(src){
         if (m) rows.push('<div class="fm-row"><span class="fm-k">' + esc(m[1]) + '</span><span class="fm-v">' + inline(m[2].replace(/^["']|["']$/g, '')) + '</span></div>');
         else if (lines[k].trim()) rows.push('<div class="fm-row"><span class="fm-k"></span><span class="fm-v">' + inline(lines[k].trim()) + '</span></div>');
       }
-      if (rows.length) out.push('<div class="btl-fm"><div class="fm-t">skill.md frontmatter</div>' + rows.join('') + '</div>');
+      if (rows.length) out.push('<details class="btl-fm"><summary class="fm-t">Source fields for this guide</summary>' + rows.join('') + '</details>');
       i = j + 1;
     }
   }
@@ -222,12 +222,12 @@ DATA.categories.forEach(function(c, ci){
 const dl = el('#btl-dl');
 if (DATA.bundleUrl){
   dl.href = DATA.bundleUrl;
-  dl.textContent = '⬇ Download all ' + (DATA.stats.total || 0) + ' skills (.zip)';
+  dl.textContent = '⬇ All ' + (DATA.stats.total || 0) + ' guides + first steps (.zip)';
   var readyLink = document.createElement('a');
   readyLink.href = 'TaskLibrary-Skills-ready.zip';
   readyLink.className = 'btl-btn';
-  readyLink.textContent = 'Owner-signed only (' + (DATA.stats.complete || 0) + ') ⬇';
-  dl.parentNode.insertBefore(readyLink, dl.nextSibling);
+  readyLink.textContent = 'Reported complete (' + (DATA.stats.complete || 0) + ') + first steps ⬇';
+  el('#btl-download-options').appendChild(readyLink);
 } else { dl.hidden = true; }
 const metaBtn = el('#btl-meta');
 if (DATA.metaArticleUrl){ metaBtn.href = DATA.metaArticleUrl; metaBtn.hidden = false; }
@@ -252,10 +252,10 @@ function countUp(node, val){
 }
 const cards = [
   { k:'total',              label:'Total tasks',         cls:'c-total', icon:'🗂️' },
-  { k:'complete',           label:'Complete',            cls:'c-ok',    icon:'✅', chip:'complete' },
+  { k:'complete',           label:'Reported complete',            cls:'c-ok',    icon:'✅', chip:'complete' },
   { k:'needsWork',          label:'Needs work',          cls:'c-warn',  icon:'🛠️', chip:'needs-work' },
   { k:'gaps',               label:'Gaps',                cls:'c-bad',   icon:'⛳', chip:'gap' },
-  { k:'owners',             label:'Owners',              cls:'c-art',   icon:'👤' },
+  { k:'owners',             label:'Owners recorded',              cls:'c-art',   icon:'👤' },
   { k:'categories',         label:'Categories',          cls:'c-cat',   icon:'🧭' }
 ];
 el('#btl-statgrid').innerHTML = cards.map(function(c){
@@ -275,12 +275,12 @@ cards.forEach(function(c){ countUp(el('[data-stat="' + c.k + '"]'), S[c.k] || 0)
   const ok = S.complete || 0, warn = S.needsWork || 0, bad = S.gaps || 0;
   const pc = function(n){ return Math.max(n > 0 ? 1.5 : 0, n / total * 100); };
   el('#btl-health-bar').innerHTML =
-    '<span class="hb-ok" style="width:' + pc(ok) + '%" title="Complete: ' + ok + '"></span>' +
+    '<span class="hb-ok" style="width:' + pc(ok) + '%" title="Reported complete: ' + ok + '"></span>' +
     '<span class="hb-warn" style="width:' + pc(warn) + '%" title="WIP: ' + warn + '"></span>' +
     '<span class="hb-bad" style="width:' + pc(bad) + '%" title="Gaps: ' + bad + '"></span>';
-  el('#btl-health-pct').textContent = Math.round(ok / total * 100) + '% complete';
+  el('#btl-health-pct').textContent = Math.round(ok / total * 100) + '% reported complete';
   el('#btl-health-legend').innerHTML =
-    '<span><span class="d d-ok"></span><b>' + fmt(ok) + '</b> complete</span>' +
+    '<span><span class="d d-ok"></span><b>' + fmt(ok) + '</b> reported complete</span>' +
     '<span><span class="d d-warn"></span><b>' + fmt(warn) + '</b> needs work</span>' +
     '<span><span class="d d-bad"></span><b>' + fmt(bad) + '</b> gaps</span>';
 })();
@@ -322,7 +322,8 @@ cards.forEach(function(c){ countUp(el('[data-stat="' + c.k + '"]'), S[c.k] || 0)
    ============================================================ */
 const CHIPS = [
   { key:'all',        label:'All',        cls:'' },
-  { key:'complete',   label:'Complete',   cls:'ch-ok' },
+  { key:'reviewed',   label:'Steps reviewed', cls:'ch-ok' },
+  { key:'complete',   label:'Reported complete',   cls:'ch-ok' },
   { key:'needs-work', label:'Needs work', cls:'ch-warn' },
   { key:'gap',        label:'Gaps',       cls:'ch-bad' },
   { key:'vol5',       label:'★5 only',    cls:'ch-vol' },
@@ -352,7 +353,7 @@ function articleLink(t){
   const kindLabel = kindLabels[t.articleKind];
   const label = kindLabel ? kindLabel + (ready ? ' ↗' : ' in progress ↗') :
     (ready ? 'Definitive article ↗' : 'Article in progress ↗');
-  const title = ready ? 'All mapped tasks are complete and no reviewed semantic hold is active' :
+  const title = ready ? 'All mapped tasks carry contributor complete labels and no reviewed semantic hold is active; this alone does not certify the article' :
     (t.articleStateReason || 'Article has incomplete mapped work or an active semantic-certification hold');
   let orbit = '';
   if (orbitData.metaCountStatus === 'verified' || orbitData.metaCountStatus === 'partial'){
@@ -394,6 +395,7 @@ function executionHistoryHTML(t, detail){
 function rowHTML(t){
   const st = STATUS[t.status] || STATUS.gap;
   let badges = '<span class="btl-tag tag-sop" title="Step-by-step SOP included">SOP</span>';
+  if (t.instructionReview) badges += '<span class="btl-tag tag-sop" title="' + esc(t.instructionReview.scope) + '">Steps reviewed ' + esc(t.instructionReview.reviewed_at) + '</span>';
   if (t._qa) badges += '<span class="btl-tag tag-qa" title="Has a Definition of Done QA gate">QA</span>';
   if (t._exampleCount == null){
     badges += '<span class="btl-tag tag-ex is-unknown" title="No verified task-level example assignment is recorded; unknown is not zero">Examples unknown</span>';
@@ -426,7 +428,7 @@ function rowHTML(t){
       '<div class="btl-row-meta">' + badges + art + '</div>' +
     '</div>' +
     '<div class="btl-row-actions">' +
-      '<button type="button" class="btl-mini btl-view" data-view="' + t._id + '">View skill</button>' +
+      '<button type="button" class="btl-mini btl-view" data-view="' + t._id + '">Open guide</button>' +
       '<button type="button" class="btl-mini" data-copy="' + t._id + '">Copy</button>' +
     '</div></article>';
 }
@@ -470,6 +472,7 @@ function filterActive(){ return !!(state.q.trim() || state.status !== 'all' || s
 
 function statusMatch(t){
   if (state.status === 'all') return true;
+  if (state.status === 'reviewed') return !!t.instructionReview;
   if (state.status === 'vol5') return (t.importance || 0) >= 5;
   if (state.status === 'vol4') return (t.importance || 0) >= 4;
   return t.status === state.status;
@@ -493,6 +496,7 @@ function applyFilters(){
       const qok = !q || t._hay.indexOf(q) !== -1;
       if (qok){
         counts.all++;
+        if (t.instructionReview) counts.reviewed = (counts.reviewed || 0) + 1;
         counts[t.status] = (counts[t.status] || 0) + 1;
         if ((t.importance || 0) >= 5) counts.vol5 = (counts.vol5 || 0) + 1;
         if ((t.importance || 0) >= 4) counts.vol4 = (counts.vol4 || 0) + 1;
@@ -599,6 +603,13 @@ function toast(msg){
   clearTimeout(toastTimer);
   toastTimer = setTimeout(function(){ toastEl.classList.remove('show'); }, 2400);
 }
+function copyGuide(t){
+  if (!(t.content || '').trim()){
+    toast('Guide missing — open this task to see what is needed');
+    return;
+  }
+  copyText(t.content, 'Copied “' + trunc(t.title, 44) + '” skill.md');
+}
 function copyText(txt, msg){
   function fallback(){
     try{
@@ -625,6 +636,37 @@ const modal = el('#btl-modal'), mPanel = root.querySelector('.btl-m-panel'),
       mSub = el('#btl-m-sub'), mBody = el('#btl-m-body'),
       mCopy = el('#btl-m-copy'), mClose = root.querySelector('.btl-m-close');
 let modalTask = null, lastFocus = null, prevOverflow = '';
+el('#btl-m-start').addEventListener('click', function(){ if (modalTask) copyText(starterPrompt(modalTask), 'First-run prompt and guide copied'); });
+
+function starterPrompt(t){
+  return 'Help me with this task: ' + (t.title || t.slug || 'selected task') + '.\n' +
+    'My business and the result I want: [fill in].\n' +
+    'My source files or facts: [add links or attach files].\n' +
+    'Read the guide below. Explain the value and first step in plain words. Check the starting condition, inputs, and required account access. Name any exact missing item. If the guide is missing or unclear, say what needs fixing.\n' +
+    'Use the task-specific first-run prompt when provided. Start with one draft or read-only check. Confirm the scope before a step that publishes, sends, spends, changes access, or sets a schedule. Do the work already covered by my instructions.\n' +
+    'Check the output against the guide. Save the result, evidence, missing checks, and next owner or task. Write one meta article for this real run with its execution ID and link to the recipe. Do not call a draft, download, or teaching example a completed production result. Schedule repeated work only when I ask for it, and verify its first firing.\n\n' +
+    'Task: ' + (t.taskLibraryUrl || 'https://local-service-spotlight.github.io/task-library/?task=' + encodeURIComponent(t.slug || '') + '#task-' + encodeURIComponent(t.slug || '')) + '\n\nGUIDE\n' +
+    (t.content || 'Guide missing: ask for the maintained instructions before doing this task.');
+}
+function firstRunHTML(t){
+  const missingExample = /example (?:needed|to be added)|examples?[^\n]{0,30}(?:coming soon|placeholder)|run the meta.article prompt after (?:the )?first real run/i.test(t.content || '');
+  const path = (t.content || '').match(/^\*\*The path:\*\*\s*(.+)$/m);
+  const steps = path ? path[1].replace(/\.$/, '').split(/\s*→\s*/) : [];
+  const diagram = steps.length > 1 && steps.length <= 7 ?
+    '<figure class="btl-task-path" aria-label="The path for this task"><ol>' + steps.map(function(step){ return '<li>' + esc(step) + '</li>'; }).join('') + '</ol><figcaption>The path in this guide</figcaption></figure>' : '';
+  return '<section class="btl-first-run" aria-label="Start this task"><h2>Try it once</h2>' +
+    (t.desc ? '<p>' + esc(t.desc) + '</p>' : '') + diagram +
+    '<p>Copy the first-run prompt above. Paste it into your AI app. Add your files and facts, then follow the checks below.</p>' +
+    '<details class="btl-prompt-preview"><summary>View or save the first-run prompt</summary><p>If copying does not work, save this text file and give it to your AI app, or select the text below.</p>' +
+    '<a class="btl-art" download="' + esc(t.slug || 'task') + '-first-run.txt" href="data:text/plain;charset=utf-8,' + encodeURIComponent(starterPrompt(t)) + '">Save first-run prompt (.txt)</a>' +
+    '<textarea readonly rows="7" aria-label="First-run prompt text">' + esc(starterPrompt(t)) + '</textarea><button class="btl-btn-small" data-select-prompt>Select prompt text</button></details>' +
+    (missingExample ? '<p><b>This guide still asks for an example.</b></p>' : '') +
+    '<p>Need app or account setup? Use the <a href="https://localservicespotlight.com/install/" target="_blank" rel="noopener">setup guide</a>. Test one run before you set work to repeat.</p>' +
+    '<details><summary>Review and guide status</summary>' +
+    (t.instructionReview ? '<p><b>Steps reviewed.</b> The instructions and teaching example were checked on ' + esc(t.instructionReview.reviewed_at) + '. Check your own result before using it.</p>' : '') +
+    '<p>' + esc((STATUS[t.status] || STATUS.gap).label) +
+    '. This is a contributor claim; independent guide review is not supplied by that label. Your installation and account access are not checked here. A copied guide is reference material. A schedule is needed only for work you choose to repeat.</p></details></section>';
+}
 
 function openModal(t){
   if (!t) return;
@@ -640,7 +682,7 @@ function openModal(t){
   mSub.innerHTML = '<code class="btl-slug">' + esc(t.slug || 'skill') + '.skill.md</code>' +
     articleLink(t) +
     (t.download ? '<a class="btl-art" href="' + esc(t.download) + '" target="_blank" rel="noopener">Download full skill suite ⬇</a>' : '');
-  mBody.innerHTML = '<section aria-label="Recorded execution history">' + executionHistoryHTML(t, true) + '</section>' +
+  mBody.innerHTML = firstRunHTML(t) + '<details class="btl-run-details"><summary>Recorded execution history</summary>' + executionHistoryHTML(t, true) + '</details>' +
     renderMD(t.content || '*No skill.md captured yet — this task is a gap to close on the next run of the loop.*');
   prevOverflow = document.body.style.overflow;
   const embedded = window.self !== window.top;
@@ -676,7 +718,7 @@ function closeModal(){
   if (lastFocus && lastFocus.focus) lastFocus.focus();
 }
 function trapFocus(e){
-  const items = modal.querySelectorAll('button, a[href], [tabindex]:not([tabindex="-1"])');
+  const items = modal.querySelectorAll('button, a[href], summary, textarea, input, select, [tabindex]:not([tabindex="-1"])');
   const list = Array.prototype.filter.call(items, function(n){ return n.offsetParent !== null || n === mBody; });
   if (!list.length) return;
   const first = list[0], last = list[list.length - 1];
@@ -688,13 +730,14 @@ function trapFocus(e){
    Events — one delegated listener keeps the DOM light
    ============================================================ */
 root.addEventListener('click', function(e){
+  if (e.target.closest('[data-select-prompt]')){ const prompt = mBody.querySelector('.btl-prompt-preview textarea'); if (prompt){ prompt.focus(); prompt.select(); } return; }
   const view = e.target.closest('[data-view]');
   if (view){ openModal(byId[view.getAttribute('data-view')]); return; }
 
   const cp = e.target.closest('[data-copy]');
   if (cp){
     const t = byId[cp.getAttribute('data-copy')];
-    if (t) copyText(t.content || '', 'Copied “' + trunc(t.title, 44) + '” skill.md');
+    if (t) copyGuide(t);
     return;
   }
 
@@ -750,7 +793,7 @@ root.addEventListener('click', function(e){
     return;
   }
   if (e.target.closest('#btl-m-copy')){
-    if (modalTask) copyText(modalTask.content || '', 'Copied “' + trunc(modalTask.title, 44) + '” skill.md');
+    if (modalTask) copyGuide(modalTask);
     return;
   }
   if (e.target.closest('[data-close]')){ closeModal(); return; }

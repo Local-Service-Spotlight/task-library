@@ -1,6 +1,6 @@
 ---
 name: check-information-currency-with-latest-data
-description: Refresh a definitive article's facts, numbers, and tool steps against the latest GBP, Ahrefs, client Zoom, and campaign data so the page never teaches stale reality.
+description: Old facts can send a customer or teammate down the wrong path.
 category: Knowledge System Maintenance
 stage: —
 definitive_article: /knowledge-system-maintenance
@@ -9,43 +9,69 @@ status: needs-work
 
 # Check information currency with latest data
 
-**Use this when** running the quarterly audit's third check — the article is coherent and structurally complete, but its facts may have drifted since the last audit.
+Old facts can send a customer or teammate down the wrong path. This guide checks the claims that may have changed. Start with one page and the sources that can prove its facts today.
+
+**The path:** Claims → Relevant sources → Current or stale → Repair handoff
+
+**Start when:** The audit reaches its facts check, or new credible evidence may change a published claim.
 
 ## Inputs
-- The definitive article under audit, plus its last audit date
-- Access to the four named data sources: Google Business Profile, Ahrefs, client Zoom call recordings/notes, and campaign results
-- The audit notes for this article and quarter
+
+- The current article revision, prior audit evidence and agreed scope.
+- Access to relevant source systems: listing records, analytics/research exports, calls or campaign results when those claims occur.
+- Official product documentation for current tool instructions and the authority for any source edits.
 
 ## Steps
-1. Inventory every claim in the article that can drift: metrics, dates, prices, screenshots, tool names, UI steps, rankings, and "currently" statements. List them with their location.
-2. Pull the freshest data from each named source: GBP (listings, reviews, profile facts), Ahrefs (rankings, traffic, backlinks the article cites), client Zoom calls (what clients are actually experiencing now), and campaign results (what the method currently produces).
-3. Compare each inventoried claim against current data and mark it current, stale, or wrong.
-4. Update stale and wrong items in the article: refresh numbers, replace outdated screenshots, correct tool steps. Touch only the implementation facts — keep the methodology layer (what/why) intact per Platform Portability Discipline (Process 4).
-5. If a Zoom call or campaign surfaced a reusable insight that belongs in the article but is not yet there, generate a Knowledge Capture Note within 24 hours and route it (Process 3) rather than improvising new content mid-audit.
-6. If the *process the article teaches* has materially changed — not just its data — do not silently rewrite it: file an SOP Amendment Proposal (Process 2) so the change gets reviewed, versioned, and changelogged.
-7. Record the data-refresh date and what changed in the audit notes; pass the result to the status-table update.
+
+1. List changeable claims with exact locations: dates, prices, counts, roles, screenshots, rankings and tool steps. Separate dated historical examples from claims about now.
+2. For each claim, identify its strongest relevant source and required date range. The maintenance hub names Google Business Profile, Ahrefs, calls and campaign data as examples; do not require all four for a page that makes none of those claims.
+3. Read the source and retain date, scope and evidence. Use current official docs for a provider’s controls. If access fails, mark not checked instead of inferring the value.
+4. Mark each claim current, stale, contradicted or unknown. A newer page is not automatically more authoritative; compare the source’s role and what it actually measures.
+5. Prepare narrow corrections to stale wording or screenshots. Preserve historical measurements as dated history rather than rewriting them as current results. Method changes require a reviewed [Draft a process-change proposal](https://local-service-spotlight.github.io/task-library/?task=create-sop-amendment-proposal-500-words#task-create-sop-amendment-proposal-500-words).
+6. Capture reusable new lessons through [Capture a lesson within 24 hours](https://local-service-spotlight.github.io/task-library/?task=generate-knowledge-capture-note-within-24-hours#task-generate-knowledge-capture-note-within-24-hours). Save the exact changed version, recheck affected claims after any authorized release, and report unresolved items with owners.
 
 ## Definition of done (QA checklist)
-- [ ] Drift inventory built and every item dispositioned current / stale / wrong — none left unmarked
-- [ ] All four data sources actually consulted (GBP, Ahrefs, client Zooms, campaign results), not just the convenient ones
-- [ ] Every stale/wrong item updated in the article or ticketed with owner; methodology layer left intact
-- [ ] New insights routed as Knowledge Capture Notes; process changes routed as SOP Amendment Proposals — no silent process edits
-- [ ] Refresh date recorded for the status table
-- [ ] Linked back to the definitive article and relevant siblings
-- [ ] Complies with Blog Posting Guidelines (if it publishes content)
+
+[Quality assurance (QA)](https://localservicespotlight.com/article-guidelines/) means checking the work against the agreed result.
+
+- [ ] Every in-scope changeable claim has a source and disposition.
+- [ ] Historical facts and current facts remain distinct; inaccessible sources are unknown.
+- [ ] Corrections and remaining gaps have saved evidence and a next owner.
 
 ## Example(s)
-- /knowledge-system-maintenance — Process 1 names GBP, Ahrefs, client Zoom calls, and campaign results as the currency sources for this exact check.
-- Example needed — run the Meta-Article Prompt (/meta-article-prompt-template) after the first real quarterly run and link the meta-article here.
 
-## Run on a persistent agent (Fable 5)
+**Fictional teaching example. This is not a client result or proof of a completed run.**
 
-A persistent, max-effort agent (Claude Fable 5 or comparable OpenAI/Google models) builds the full drift inventory, pulls fresh data from all four named sources (GBP, Ahrefs, client Zooms, campaign results) — not just the convenient ones — and loops until the Definition of done fully passes: every claim dispositioned current, stale, or wrong, and every stale item updated or ticketed.
-It self-verifies by diffing the article before and after the refresh to confirm only implementation facts changed and the methodology layer survived untouched.
-Memory across audit cycles is what makes this check compound: the agent carries last quarter's claim inventory and refresh dates forward, starts each audit from remembered state instead of re-discovering the page, and flags claims that go stale every single cycle as candidates to restructure rather than re-refresh.
-Each run it logs a meta-article example via the Meta-Article Prompt, so the knowledge base records how the refresh was actually done.
-See `boil-the-ocean.md` for the full operating principles.
+A fictional help page says a button is called Import. Current official help says Add files; a dated screenshot from last year still shows Import. Update the present-day instructions, label or replace the old screenshot, and keep the old run receipt unchanged. No campaign dashboard is needed for this UI-only claim.
+
+## Handoff and Content Factory context
+
+This work supports the [Content Factory, our four stages of using real content](https://blitzmetrics.com/content-factory/): Produce → Process → Post → Promote. Use the specific inputs and next task below to place the work; a maintenance task does not manufacture transcripts, clips or other stage outputs it does not call for.
+
+[Check links and their meaning](https://local-service-spotlight.github.io/task-library/?task=validate-cross-reference-integrity-across-articles#task-validate-cross-reference-integrity-across-articles) checks the changed page’s references, then [Record the audit result](https://local-service-spotlight.github.io/task-library/?task=update-status-table-in-definitive-article-guide#task-update-status-table-in-definitive-article-guide) records the combined audit result.
+
+## Run with an agent
+
+Give the AI worker this recipe, the real Inputs above, the intended result and the actions already authorized. Ask it to return the saved output, checks, evidence and remaining owner. Check its work against this guide; loading a skill does not prove access, installation of a job, or successful execution. Keep media muted with volume at zero if playback is needed.
+
+For recurring work, keep the actual trigger, owner and runtime in the job record. Scheduling and observed firings are separate. Do not create a schedule merely because this guide mentions a review interval.
+
+## Record the real execution
+
+Open the run record when the work starts. Keep the exact starting recipe revision, one execution ID, source evidence and actual state. Write a [meta article, the record of one run](https://blitzmetrics.com/meta-article-prompt/) with decisions, results, checks, failures and next owner. Link it to this task and register it through the [Task Library](https://local-service-spotlight.github.io/task-library/) execution process. Writing is part of the work; public release follows existing authority.
+
+Reuse the same execution ID for revisions, QA, meta writing and retries within that run. A blocked run stays open with its dependency and next owner; do not invent a finish time. Use supported findings to propose and verify a better recipe. A historical public-example count without distinct run IDs remains dated article volume, not verified execution frequency.
 
 ## Definitive article & links
-- Hub: /knowledge-system-maintenance
-- Related (Process 1 run order): verify-structural-completeness-against-8-step-framework → check-information-currency-with-latest-data → validate-cross-reference-integrity-across-articles → update-status-table-in-definitive-article-guide; feeds: generate-knowledge-capture-note-within-24-hours, create-sop-amendment-proposal-500-words.
+
+- [Maintained source guide](https://blitzmetrics.com/knowledge-system-maintenance/)
+- [This task in the Task Library](https://local-service-spotlight.github.io/task-library/?task=check-information-currency-with-latest-data#task-check-information-currency-with-latest-data)
+- [Article Guidelines](https://localservicespotlight.com/article-guidelines/)
+- [current article guide](https://blitzmetrics.com/definitive-article-guide/)
+- [How recipes and run records work together](https://localservicespotlight.com/meta-articles/)
+
+## Review and evidence still needed
+
+The inherited contributor status is `needs-work`. It is preserved, not promoted by this rewrite. That label alone does not verify document readiness, a client outcome, access or an executed task.
+
+A real execution still needs its own source, reviewer, saved result and handoff evidence. The fictional example teaches the method; a real example with relevant proof is still needed where required. The task-specific flow above is source guidance; its visible presentation and the full document need a named reviewer and desktop/mobile checks.

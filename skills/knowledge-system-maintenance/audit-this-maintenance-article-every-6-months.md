@@ -1,6 +1,6 @@
 ---
 name: audit-this-maintenance-article-every-6-months
-description: Run the 6-month recursive audit of /knowledge-system-maintenance itself — test its five processes against six months of reality and amend, add, or retire them through their own protocol.
+description: Rules can get old too.
 category: Knowledge System Maintenance
 stage: —
 definitive_article: /knowledge-system-maintenance
@@ -9,43 +9,70 @@ status: needs-work
 
 # Audit this maintenance article every 6 months
 
-**Use this when** the scheduled 6-month recursive review arrives (see `schedule-first-6-month-recursive-review`) — the maintenance system must pass the same tests it imposes on everything else, or it has no authority to impose them.
+Rules can get old too. This guide checks whether your team’s guide system still helps people do good work. Start with the last six months of records and look for what worked, failed, or was never checked.
+
+**The path:** Six-month evidence → Five processes → Decisions → Next review
+
+**Start when:** The agreed six-month system review is due, with actual records for a declared period.
 
 ## Inputs
-- /knowledge-system-maintenance (the article under audit) and its version/changelog history
-- Six months of operating evidence: status table audit dates, the SOP Amendment Proposal tracker, Knowledge Capture Note volume, portability review grades
-- The pattern review output (`review-past-6-months-of-sop-amendment-proposals-for-patterns`)
+
+- The current maintenance article and revision history, with an agreed review period.
+- Audit receipts, proposal records, capture notes and portability results for that period.
+- [The proposal-pattern review](https://local-service-spotlight.github.io/task-library/?task=review-past-6-months-of-sop-amendment-proposals-for-patterns#task-review-past-6-months-of-sop-amendment-proposals-for-patterns) and named review/approval owners.
 
 ## Steps
-1. Run the full Process 1 audit on /knowledge-system-maintenance itself: topic coherence (SEO Tree test), structural completeness, information currency, and cross-reference integrity. The maintenance article gets no exemption from its own checks.
-2. Test each of the five processes against six months of reality, not theory: Did quarterly audits actually run and stamp the status table? Did amendment proposals flow and get weekly review? Were Knowledge Capture Notes generated within 24 hours? Did portability reviews happen? Is this recursive cycle itself running on schedule?
-3. Disposition every process explicitly: **keep** (working as written), **modify** (works but the article describes it wrong — or it needs adjustment), or **remove** (cost exceeds value). Silence is not a disposition.
-4. Identify missing processes: recurring problems from the past six months that none of the five processes addresses are candidates for a new sixth process.
-5. Ship every change to the article through its own Process 2: SOP Amendment Proposal(s), weekly senior review, version increment, changelog entry. The system editing itself outside its own protocol is the first sign of rot.
-6. Update the article's row in the status table with this audit's date and status, and update the corresponding Task Library skills if any process changed — the skills must mirror the hub.
-7. Before closing, schedule the next 6-month review with named reviewers. A recursive cycle that does not schedule its own next iteration has terminated.
+
+1. Record the period and source coverage. If six months of records do not exist, state the actual window and missing evidence; do not backfill fictional history.
+2. Run [Check whether the page stays on topic](https://local-service-spotlight.github.io/task-library/?task=check-topic-coherence-for-each-definitive-article#task-check-topic-coherence-for-each-definitive-article), [Check the current article structure](https://local-service-spotlight.github.io/task-library/?task=verify-structural-completeness-against-8-step-framework#task-verify-structural-completeness-against-8-step-framework), [Check facts against current sources](https://local-service-spotlight.github.io/task-library/?task=check-information-currency-with-latest-data#task-check-information-currency-with-latest-data) and [Check links and their meaning](https://local-service-spotlight.github.io/task-library/?task=validate-cross-reference-integrity-across-articles#task-validate-cross-reference-integrity-across-articles) against the maintenance article itself. Apply current article requirements to its hub and task sections.
+3. Assess all five processes: quarterly audits, proposal review, lesson capture, method/tool separation and this recursive review. Compare planned events to actual receipts, delays, outputs and unresolved gaps.
+4. Give each process a reasoned disposition: keep, propose a change, propose retirement, or evidence insufficient. Missing records do not prove success or justify removal.
+5. Use repeated problems to propose a missing process only when evidence supports it. Draft exact changes through [Draft a process-change proposal](https://local-service-spotlight.github.io/task-library/?task=create-sop-amendment-proposal-500-words#task-create-sop-amendment-proposal-500-words) and retain review decisions; do not silently change the rules being used to judge the system.
+6. Apply approved changes through the owning sources and reconcile affected Task Library guides. Record the audit result and changed revisions in the current register.
+7. Name the next review owner and agreed six-month date. Verify any saved calendar/job separately; keep completion of that later review unclaimed.
 
 ## Definition of done (QA checklist)
-- [ ] All four Process 1 checks run against /knowledge-system-maintenance with findings recorded
-- [ ] Each of the five processes explicitly dispositioned keep/modify/remove with six months of evidence cited
-- [ ] All article changes shipped via approved SOP Amendment Proposals with version increment and changelog
-- [ ] Status table stamped; affected Task Library skills updated to mirror the revised hub
-- [ ] Next 6-month review scheduled with named reviewers before this one closes
-- [ ] Linked back to the definitive article and relevant siblings
-- [ ] Complies with Blog Posting Guidelines (if it publishes content)
+
+[Quality assurance (QA)](https://localservicespotlight.com/article-guidelines/) means checking the work against the agreed result.
+
+- [ ] Four article checks and all five process assessments have evidence or explicit gaps.
+- [ ] Every proposed change has scope, reason and owner; approved releases have readback.
+- [ ] Current audit record and next review handoff are saved without invented dates or runs.
 
 ## Example(s)
-- /knowledge-system-maintenance — Process 5 defines this self-audit; the article is both the subject and the standard, which is the point of the recursive layer.
-- Example needed — run the Meta-Article Prompt (/meta-article-prompt-template) after the first 6-month review and link the meta-article here.
 
-## Run on a persistent agent (Fable 5)
+**Fictional teaching example. This is not a client result or proof of a completed run.**
 
-A persistent, max-effort agent (Claude Fable 5 or comparable OpenAI/Google models) is the natural owner of this skill, because the 6-month recursive audit is exactly what a long-horizon agent with memory is for: it runs all four Process 1 checks on /knowledge-system-maintenance itself, tests each of the five processes against six months of remembered evidence, and loops until the Definition of done fully passes — every process explicitly dispositioned keep / modify / remove, no silence.
-It self-verifies by shipping every change through the article's own Process 2 and then confirming the version incremented, the changelog recorded it, and the affected Task Library skills were updated to mirror the revised hub — the system editing itself outside its own protocol is the exact failure this audit exists to prevent.
-Memory across audit cycles is the entire point: the agent arrives with the status-table dates, amendment flow, capture volume, and portability grades already held from living through them, compares this cycle against the last one, and schedules the next review before closing — a recursive loop that cannot forget is a recursive loop that cannot quietly terminate.
-Each run it logs a meta-article example via the Meta-Article Prompt, so the system's self-audits become part of the knowledge base they audit.
-See `boil-the-ocean.md` for the full operating principles.
+A fictional six-month review finds two of two planned article audits, six capture notes, and no proposal export. Keep the audit method based on its receipts; mark proposal review unverified and ask the queue owner for the missing export. “No export” is not “no proposals” or a reason to remove the process.
+
+## Handoff and Content Factory context
+
+This work supports the [Content Factory, our four stages of using real content](https://blitzmetrics.com/content-factory/): Produce → Process → Post → Promote. Use the specific inputs and next task below to place the work; a maintenance task does not manufacture transcripts, clips or other stage outputs it does not call for.
+
+[Record the audit result](https://local-service-spotlight.github.io/task-library/?task=update-status-table-in-definitive-article-guide#task-update-status-table-in-definitive-article-guide) records the result. The named maintenance owner handles approved changes and [the next review setup](https://local-service-spotlight.github.io/task-library/?task=schedule-first-6-month-recursive-review#task-schedule-first-6-month-recursive-review) if no cycle exists.
+
+## Run with an agent
+
+Give the AI worker this recipe, the real Inputs above, the intended result and the actions already authorized. Ask it to return the saved output, checks, evidence and remaining owner. Check its work against this guide; loading a skill does not prove access, installation of a job, or successful execution. Keep media muted with volume at zero if playback is needed.
+
+For recurring work, keep the actual trigger, owner and runtime in the job record. Scheduling and observed firings are separate. Do not create a schedule merely because this guide mentions a review interval.
+
+## Record the real execution
+
+Open the run record when the work starts. Keep the exact starting recipe revision, one execution ID, source evidence and actual state. Write a [meta article, the record of one run](https://blitzmetrics.com/meta-article-prompt/) with decisions, results, checks, failures and next owner. Link it to this task and register it through the [Task Library](https://local-service-spotlight.github.io/task-library/) execution process. Writing is part of the work; public release follows existing authority.
+
+Reuse the same execution ID for revisions, QA, meta writing and retries within that run. A blocked run stays open with its dependency and next owner; do not invent a finish time. Use supported findings to propose and verify a better recipe. A historical public-example count without distinct run IDs remains dated article volume, not verified execution frequency.
 
 ## Definitive article & links
-- Hub: /knowledge-system-maintenance
-- Related (Process 5 run order): review-past-6-months-of-sop-amendment-proposals-for-patterns → audit-this-maintenance-article-every-6-months → schedule the next cycle (schedule-first-6-month-recursive-review for the inaugural one). Concept: /seo-tree.
+
+- [Maintained source guide](https://blitzmetrics.com/knowledge-system-maintenance/)
+- [This task in the Task Library](https://local-service-spotlight.github.io/task-library/?task=audit-this-maintenance-article-every-6-months#task-audit-this-maintenance-article-every-6-months)
+- [Article Guidelines](https://localservicespotlight.com/article-guidelines/)
+- [current article guide](https://blitzmetrics.com/definitive-article-guide/)
+- [How recipes and run records work together](https://localservicespotlight.com/meta-articles/)
+
+## Review and evidence still needed
+
+The inherited contributor status is `needs-work`. It is preserved, not promoted by this rewrite. That label alone does not verify document readiness, a client outcome, access or an executed task.
+
+A real execution still needs its own source, reviewer, saved result and handoff evidence. The fictional example teaches the method; a real example with relevant proof is still needed where required. The task-specific flow above is source guidance; its visible presentation and the full document need a named reviewer and desktop/mobile checks.

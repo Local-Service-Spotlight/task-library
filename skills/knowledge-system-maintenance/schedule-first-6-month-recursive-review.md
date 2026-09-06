@@ -1,6 +1,6 @@
 ---
 name: schedule-first-6-month-recursive-review
-description: Put the first 6-month recursive review of the knowledge maintenance system on the calendar with named reviewers and a prep package, arming the self-improvement loop.
+description: Your guide system needs a date to check itself.
 category: Knowledge System Maintenance
 stage: —
 definitive_article: /knowledge-system-maintenance
@@ -9,41 +9,69 @@ status: gap
 
 # Schedule first 6-month recursive review
 
-**Use this when** the knowledge maintenance system goes live — this task is a gap: the first recursive review is not yet on any calendar, and an unscheduled recursive loop is a loop that never starts.
+Your guide system needs a date to check itself. This task sets up that first review with the right people and records. Start with when the system was adopted and who owns it.
+
+**The path:** Adoption date → Review owners → Saved agenda → Verified handoff
+
+**Start when:** No checked first system-review plan exists, or its adoption date and ownership need reconciliation.
 
 ## Inputs
-- The adoption date of the maintenance system (sets the 6-month mark)
-- Team calendar and roster (a review lead plus a senior reviewer)
-- Locations of the evidence sources: status table, SOP Amendment tracker, Knowledge Capture location
+
+- Evidence of the maintenance system’s actual adoption date and any existing review schedule.
+- A review lead, approving reviewer, availability and timezone.
+- The audit register, proposal tracker, capture records and portability-review locations.
 
 ## Steps
-1. Set the date six months out from the system's adoption. Pick a real date now and defend it — "in about six months" is how recursive reviews become annual, then never.
-2. Name the reviewers: a review lead to run the cycle and a senior reviewer with authority to approve resulting amendments (the weekly SOP reviewer is the natural fit). Named people, not roles-to-be-determined.
-3. Create the calendar event with the agenda baked in: run `review-past-6-months-of-sop-amendment-proposals-for-patterns` first, then `audit-this-maintenance-article-every-6-months`, then schedule the next cycle.
-4. Attach the prep list to the invite so evidence is pulled before the session: current status table with audit dates, full amendment-tracker export, Knowledge Capture Note volume and routing stats, portability review grades.
-5. Confirm both reviewers accepted and the date does not collide with a quarterly audit crunch — the recursive review needs attention, not leftovers.
-6. Record in the hub's audit record that the cycle is armed: date, reviewers, agenda link. From here on, each review schedules its successor before closing — this skill only fires the first shot.
+
+1. Check for an existing review event or job and its owner before creating another. Preserve it if it already meets the need.
+2. Use six months from documented adoption as the first planning date. If adoption is unknown, ask the owner to set a transparent baseline; do not invent it or backdate an event.
+3. Agree the real review date and participants. Record a separate preparer if exports need advance work.
+4. Build an agenda: first analyze the proposal history, then audit the maintenance article and its five processes, then agree the next cycle. Attach source locations and required evidence periods.
+5. Save through the authorized calendar/task system. Read back date, timezone, recurrence if any, participants and agenda link. Confirm availability or leave acceptance pending.
+6. Record the scheduled state in the maintained audit system. Assign prep collection and the later review; this setup task does not claim the meeting has happened.
 
 ## Definition of done (QA checklist)
-- [ ] A specific date ~6 months from adoption is on the team calendar, accepted by a named lead and a named senior reviewer
-- [ ] Agenda embeds the two Process 5 skills in run order plus "schedule the next cycle"
-- [ ] Prep list attached covering status table, amendment tracker, capture stats, and portability grades
-- [ ] The armed cycle recorded in the hub's audit record (date, reviewers, agenda)
-- [ ] Linked back to the definitive article and relevant siblings
-- [ ] Complies with Blog Posting Guidelines (if it publishes content)
+
+[Quality assurance (QA)](https://localservicespotlight.com/article-guidelines/) means checking the work against the agreed result.
+
+- [ ] Date is based on a real adoption record or an explicitly agreed new baseline.
+- [ ] Named reviewers can access the saved agenda and evidence list.
+- [ ] Existing schedules are reconciled; scheduled, accepted and held are distinct states.
 
 ## Example(s)
-- /knowledge-system-maintenance — Process 5 requires putting the first recursive review on the calendar with assigned reviewers. Gap: not yet scheduled — running this skill closes the gap.
-- Example needed — run the Meta-Article Prompt (/meta-article-prompt-template) after the first review actually convenes and link the meta-article here.
 
-## Run on a persistent agent (Fable 5)
+**Fictional teaching example. This is not a client result or proof of a completed run.**
 
-A persistent, max-effort agent (Claude Fable 5 or comparable OpenAI/Google models) is the guarantee that "in about six months" never decays into never: it sets the real date, names the lead and senior reviewer, builds the agenda from the two Process 5 skills in run order, and loops until the Definition of done fully passes — invite accepted, prep list attached, the armed cycle recorded in the hub's audit record.
-It self-verifies by confirming both reviewers actually accepted and the date avoids the quarterly audit crunch.
-Memory across the six-month gap is the job itself: the agent holds the date, assembles the prep package continuously as evidence accrues (status-table dates, tracker exports, capture stats, portability grades), and fires the review on time — then enforces the standing rule that each review schedules its successor before closing, so the loop self-perpetuates.
-Each run it logs a meta-article example via the Meta-Article Prompt, so even the scheduling step leaves compounding documentation.
-See `boil-the-ocean.md` for the full operating principles.
+A fictional system was adopted on 10 January, making 10 July the six-month point. One reviewer is unavailable that day; the team agrees 12 July and records the reason. If the event is saved but the second reviewer has not replied, acceptance remains pending. No six-month audit is counted.
+
+## Handoff and Content Factory context
+
+This work supports the [Content Factory, our four stages of using real content](https://blitzmetrics.com/content-factory/): Produce → Process → Post → Promote. Use the specific inputs and next task below to place the work; a maintenance task does not manufacture transcripts, clips or other stage outputs it does not call for.
+
+[Prepare the pattern review](https://local-service-spotlight.github.io/task-library/?task=review-past-6-months-of-sop-amendment-proposals-for-patterns#task-review-past-6-months-of-sop-amendment-proposals-for-patterns) feeds [the actual maintenance audit](https://local-service-spotlight.github.io/task-library/?task=audit-this-maintenance-article-every-6-months#task-audit-this-maintenance-article-every-6-months).
+
+## Run with an agent
+
+Give the AI worker this recipe, the real Inputs above, the intended result and the actions already authorized. Ask it to return the saved output, checks, evidence and remaining owner. Check its work against this guide; loading a skill does not prove access, installation of a job, or successful execution. Keep media muted with volume at zero if playback is needed.
+
+For recurring work, keep the actual trigger, owner and runtime in the job record. Scheduling and observed firings are separate. Do not create a schedule merely because this guide mentions a review interval.
+
+## Record the real execution
+
+Open the run record when the work starts. Keep the exact starting recipe revision, one execution ID, source evidence and actual state. Write a [meta article, the record of one run](https://blitzmetrics.com/meta-article-prompt/) with decisions, results, checks, failures and next owner. Link it to this task and register it through the [Task Library](https://local-service-spotlight.github.io/task-library/) execution process. Writing is part of the work; public release follows existing authority.
+
+Reuse the same execution ID for revisions, QA, meta writing and retries within that run. A blocked run stays open with its dependency and next owner; do not invent a finish time. Use supported findings to propose and verify a better recipe. A historical public-example count without distinct run IDs remains dated article volume, not verified execution frequency.
 
 ## Definitive article & links
-- Hub: /knowledge-system-maintenance
-- Related (Process 5 run order): schedule-first-6-month-recursive-review (arms the loop) → review-past-6-months-of-sop-amendment-proposals-for-patterns → audit-this-maintenance-article-every-6-months → next cycle self-schedules.
+
+- [Maintained source guide](https://blitzmetrics.com/knowledge-system-maintenance/)
+- [This task in the Task Library](https://local-service-spotlight.github.io/task-library/?task=schedule-first-6-month-recursive-review#task-schedule-first-6-month-recursive-review)
+- [Article Guidelines](https://localservicespotlight.com/article-guidelines/)
+- [current article guide](https://blitzmetrics.com/definitive-article-guide/)
+- [How recipes and run records work together](https://localservicespotlight.com/meta-articles/)
+
+## Review and evidence still needed
+
+The inherited contributor status is `gap`. It is preserved, not promoted by this rewrite. That label alone does not verify document readiness, a client outcome, access or an executed task.
+
+A real execution still needs its own source, reviewer, saved result and handoff evidence. The fictional example teaches the method; a real example with relevant proof is still needed where required. The task-specific flow above is source guidance; its visible presentation and the full document need a named reviewer and desktop/mobile checks.

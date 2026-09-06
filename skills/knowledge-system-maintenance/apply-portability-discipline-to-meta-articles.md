@@ -1,6 +1,6 @@
 ---
 name: apply-portability-discipline-to-meta-articles
-description: Ensure meta-articles separate the transferable general approach from the platform-specific details of that particular run, so documented agent work stays useful after tools change.
+description: A good run note helps the next person use what you learned.
 category: Knowledge System Maintenance
 stage: —
 definitive_article: /knowledge-system-maintenance
@@ -9,42 +9,69 @@ status: needs-work
 
 # Apply portability discipline to meta-articles
 
-**Use this when** writing or auditing meta-articles — the documented runs of real work created via /meta-article-prompt-template — so each one teaches a reusable method, not just a tour of one tool on one day.
+A good run note helps the next person use what you learned. This guide keeps the lesson clear and saves the exact steps as proof. Start with one real run and its source files.
+
+**The path:** Run evidence → Method → Tool details → Checked record
+
+**Start when:** You are writing or reviewing a real run record whose reusable method is mixed with its tool details.
 
 ## Inputs
-- The meta-article(s) to review, or the run about to be documented
-- The two-layer standard from Process 4 (methodology = what/why; implementation = how)
-- The Meta-Article Prompt Template (/meta-article-prompt-template)
+
+- The in-scope run records, their execution IDs, source revisions and evidence.
+- [meta article, the record of one run](https://blitzmetrics.com/meta-article-prompt/) and the two-layer [knowledge maintenance method](https://blitzmetrics.com/knowledge-system-maintenance/).
+- Editing authority and the record’s current private, draft or public state.
 
 ## Steps
-1. Pull the meta-articles in scope: existing ones linked from definitive articles as examples, and any new one being written from a fresh run.
-2. For each, check that it distinguishes the two layers: the **general approach** — what was done and why, the decisions and method any reader could transfer; and the **platform-specific execution** — the exact tools, versions, and steps used in this particular run.
-3. Where the layers are blended, add explicit framing rather than deleting detail: a short "the approach" passage stating the transferable method, and a clearly marked "how we ran it this time" passage holding the tool specifics. Meta-articles need the specifics — they are the proof — but labeled as that run's implementation.
-4. Run the reader test: someone on a different platform (different editor, ad manager, transcription tool) must still be able to extract and apply the method. If the method only makes sense inside the named tool, the methodology framing is missing.
-5. For future runs, push the fix upstream: if the Meta-Article Prompt Template does not already ask for approach-vs-execution separation, propose that addition via an SOP Amendment Proposal so every future meta-article is born portable.
-6. Record reviewed meta-articles and their fixes in the audit notes; recheck new meta-articles as part of the quarterly audit's example checks.
+
+1. List each record in scope and its actual outcome. Keep the same execution ID when improving the wording; a rewrite is not a new run.
+2. Extract the decisions and reasons another operator can reuse. Label this the approach. Avoid turning one result into a universal promise.
+3. Keep exact tool names, versions, commands, dates and failures in a separate “How this run worked” passage. Link retained private proof safely; do not expose credentials or replace a failed attempt with a successful teaching story.
+4. Test the approach with the tools hidden in a review copy. A reader should see the inputs, decisions, checks and handoff; this does not prove a different platform has the required features.
+5. Recheck each factual sentence against the original evidence, then save through the record’s existing editing route. Keep old evidence links and outcome states.
+6. Check whether the current meta prompt already asks for this separation. If not, propose the exact missing instruction through [Draft a process-change proposal](https://local-service-spotlight.github.io/task-library/?task=create-sop-amendment-proposal-500-words#task-create-sop-amendment-proposal-500-words). Record the reviewed IDs and changed revisions.
 
 ## Definition of done (QA checklist)
-- [ ] Every in-scope meta-article has clearly framed approach (transferable) and execution (this run's tools) layers
-- [ ] Reader test passed: the method is extractable by someone on a different platform
-- [ ] No proof-level detail deleted — specifics retained but labeled as implementation
-- [ ] Template-level fix proposed via SOP Amendment if the Meta-Article Prompt lacks the separation requirement
-- [ ] Reviewed articles and fixes recorded for the quarterly audit trail
-- [ ] Linked back to the definitive article and relevant siblings
-- [ ] Complies with Blog Posting Guidelines (if it publishes content)
+
+[Quality assurance (QA)](https://localservicespotlight.com/article-guidelines/) means checking the work against the agreed result.
+
+- [ ] Approach and actual implementation are clearly separated.
+- [ ] Dates, tools, failure evidence and same execution identity are retained.
+- [ ] A reader can state the method without assuming another app works; saved copy matches the review.
 
 ## Example(s)
-- /meta-article-prompt-template — the canonical meta-article system this discipline applies to; /knowledge-system-maintenance Process 4 extends portability to these documents explicitly.
-- Example needed — run the Meta-Article Prompt (/meta-article-prompt-template) after the first portability pass over a meta-article and link it here.
 
-## Run on a persistent agent (Fable 5)
+**Fictional teaching example. This is not a client result or proof of a completed run.**
 
-A persistent, max-effort agent (Claude Fable 5 or comparable OpenAI/Google models) reviews every in-scope meta-article for the two layers — transferable approach versus this run's tooling — and loops until the Definition of done fully passes: layers explicitly framed, no proof-level detail deleted, reader test passed.
-It self-verifies by masking the implementation passages and confirming the method still extracts cleanly for someone on a different platform.
-This is the recursion folding back on itself: meta-articles are the agent's own logged runs, so memory across cycles means the agent audits the documentation of its own remembered work — and it pushes the approach-vs-execution requirement upstream into the Meta-Article Prompt Template once, via SOP Amendment Proposal, so every future run is born portable instead of being fixed after the fact.
-Each run it logs a new meta-article example, which is itself immediately subject to this discipline — that is how the knowledge base compounds.
-See `boil-the-ocean.md` for the full operating principles.
+A fictional run corrected a transcript in Tool A but failed to upload it. The approach says to check spoken claims against the recording. The run details retain Tool A’s version and the failed upload. The improved record still says upload blocked; changing its headings does not make the run successful.
+
+## Handoff and Content Factory context
+
+The [Content Factory, our four stages of using real content](https://blitzmetrics.com/content-factory/) runs through Produce → Process → Post → Promote. This review improves a run record in Process; any public release belongs to Post and follows its existing authority. The record can describe work from any stage.
+
+The record owner keeps the checked revision. Process improvements go to [Tag and queue the proposal](https://local-service-spotlight.github.io/task-library/?task=tag-proposal-with-affected-sop-and-queue-for-review#task-tag-proposal-with-affected-sop-and-queue-for-review); future authors use the maintained meta prompt.
+
+## Run with an agent
+
+Give the AI worker this recipe, the real Inputs above, the intended result and the actions already authorized. Ask it to return the saved output, checks, evidence and remaining owner. Check its work against this guide; loading a skill does not prove access, installation of a job, or successful execution. Keep media muted with volume at zero if playback is needed.
+
+For recurring work, keep the actual trigger, owner and runtime in the job record. Scheduling and observed firings are separate. Do not create a schedule merely because this guide mentions a review interval.
+
+## Record the real execution
+
+Open the run record when the work starts. Keep the exact starting recipe revision, one execution ID, source evidence and actual state. Write a [meta article, the record of one run](https://blitzmetrics.com/meta-article-prompt/) with decisions, results, checks, failures and next owner. Link it to this task and register it through the [Task Library](https://local-service-spotlight.github.io/task-library/) execution process. Writing is part of the work; public release follows existing authority.
+
+Reuse the same execution ID for revisions, QA, meta writing and retries within that run. A blocked run stays open with its dependency and next owner; do not invent a finish time. Use supported findings to propose and verify a better recipe. A historical public-example count without distinct run IDs remains dated article volume, not verified execution frequency.
 
 ## Definitive article & links
-- Hub: /knowledge-system-maintenance
-- Related (Process 4 run order): separate-methodology-layer-what-why-from-implementation-layer-how → review-existing-sops-for-portability-compliance → apply-portability-discipline-to-meta-articles. Concepts: /meta-article-prompt-template, /blog-posting-guidelines.
+
+- [Maintained source guide](https://blitzmetrics.com/knowledge-system-maintenance/)
+- [This task in the Task Library](https://local-service-spotlight.github.io/task-library/?task=apply-portability-discipline-to-meta-articles#task-apply-portability-discipline-to-meta-articles)
+- [Article Guidelines](https://localservicespotlight.com/article-guidelines/)
+- [current article guide](https://blitzmetrics.com/definitive-article-guide/)
+- [How recipes and run records work together](https://localservicespotlight.com/meta-articles/)
+
+## Review and evidence still needed
+
+The inherited contributor status is `needs-work`. It is preserved, not promoted by this rewrite. That label alone does not verify document readiness, a client outcome, access or an executed task.
+
+A real execution still needs its own source, reviewer, saved result and handoff evidence. The fictional example teaches the method; a real example with relevant proof is still needed where required. The task-specific flow above is source guidance; its visible presentation and the full document need a named reviewer and desktop/mobile checks.

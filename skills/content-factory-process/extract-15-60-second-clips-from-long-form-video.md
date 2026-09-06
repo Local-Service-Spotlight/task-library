@@ -1,6 +1,6 @@
 ---
 name: extract-15-60-second-clips-from-long-form-video
-description: Cut a long-form recording into 15–60 second standalone clips that feed social posts, quote cards, and Dollar a Day creatives.
+description: "Cut one useful idea from a long video. Give it clear captions and a link to the source."
 category: Content Factory — Process
 stage: Process
 definitive_article: GAP — to be written
@@ -9,50 +9,81 @@ status: needs-work
 
 # Extract 15–60 second clips from long-form video
 
-**Use this when** a long-form asset — conference talk, audit screen share, team conversation, client interview — is transcribed and timestamped and needs to become short-form content.
+A long video may hold a short answer worth sharing. This guide helps you cut one clear point that can stand on its own. Start with the source and the place where the clip will be used.
+
+**The path:** Source moment → Complete short idea → Captioned export → Checked clip list.
+
+**Use this when:** A timestamped source has useful standalone moments for a defined short-clip deliverable.
 
 ## Inputs
-- The Descript project with verified transcript and Step 4 timestamps (run `use-descript-underlord-to-remove-filler-words` first)
-- The GCT statement for the source video
-- The Content Library tracker
-- Platform specs for the intended destinations (vertical for Reels/TikTok-style placement, square/landscape for feed)
+- The source recording, verified timestamped transcript, GCT and rights to edit/reuse it.
+- The exact source version or cleaned cut, with a mapping to original time if editing changed its clock.
+- A working editor such as Descript, actual export access, and current requirements for the planned destination.
+- The clip tracker, intended count if agreed, named editor and posting/promotion owner.
+
+## First-run prompt
+
+> Find and prepare standalone 15–60-second clips for the specified channels from this real source. Check surrounding context, preserve source times, add accurate captions and verify actual exports. Record the real number made and pending audio checks. Do not invent highlights, guarantee reach, publish or launch ads outside the job’s scope.
 
 ## Steps
-1. Re-read the timestamped transcript and mark every candidate moment: a complete thought with a strong first line — one idea per clip, no setup required to understand it.
-2. Apply the hook test: the first 3 seconds must earn attention on their own (a claim, a number, a question). If the moment needs 10 seconds of context, it is not a clip.
-3. Cut each clip in Descript by selecting the transcript text — trim to the idea's boundaries, 15–60 seconds, never longer.
-4. Start the clip on the speaker mid-energy (just before the key line), and end on the punch, not the trail-off.
-5. Add captions to every clip — most social viewing is sound-off — and verify caption text against the transcript.
-6. Export in the destination aspect ratios; name each `YYYY-MM-DD-source-clipNN-hookphrase`.
-7. Log every clip in the Content Library tracker, linked to its source video row, with its GCT note and intended destination (social post, quote card source, or Dollar a Day creative).
-8. Route the strongest clips onward: `create-social-media-posts-per-platform` and `create-dollar-a-day-ad-creatives`.
+1. Read the full timestamped source and list candidate ideas with start/end times. Choose a point that helps the intended reader; do not promise ten or twenty clips from an hour regardless of its content.
+2. Check context before and after each candidate. Preserve conditions, speaker identity and meaning. A dramatic sentence that reverses the full discussion is not a good standalone clip.
+3. For this task, target 15–60 seconds as the house brief, not a universal platform limit. If a complete useful idea cannot fit, choose another moment or explicitly propose a longer asset instead of cutting away the necessary qualification.
+4. Create a separate composition for each selected clip. Trim near natural phrase boundaries and check the opening quickly states a useful point. The first few seconds matter editorially, but no three-second hook test guarantees views.
+5. Use any filler cleanup selectively. It is optional, not a prerequisite that must consume AI credits before every cut. Preserve the source version and avoid synthetic speech that misrepresents what was recorded.
+6. Frame for the actual destination: choose an agreed portrait, square or landscape layout, and keep the speaker, key action and readable captions inside it. Verify current destination requirements rather than assuming all feeds use the same dimensions.
+7. Add accurate visible captions or the requested subtitle track. Descript SRT/VTT export is a separate artifact; it does not by itself burn captions into the video. Check names, line breaks and the final exported frame.
+8. Export a local finished file or the specifically authorized share destination. Confirm duration, dimensions, complete idea, caption readability and file integrity. A plan-dependent export setting cannot create detail missing from the original.
+9. Save one row per actual clip with source ID/times, cut version, hook, duration, dimensions, output path and next use. Record actual count and any audio review still pending. Route suitable clips to posts or ad-creative preparation; exporting a clip does not publish it or authorize spend.
 
 ## Definition of done (QA checklist)
-- [ ] Every clip is one complete, standalone idea, 15–60 seconds
-- [ ] First 3 seconds of each clip pass the hook test
-- [ ] Captions present and accurate on all clips
-- [ ] Exports match destination specs and naming convention
-- [ ] All clips logged against the source video in the tracker with routing
-- [ ] Linked back to the definitive article and relevant siblings
 
-## Failure modes
-- Clip that needs 10 seconds of setup. If it is not standalone, it is not a clip.
-- No captions. Most views are sound-off; the hook dies.
-- Clipping before the Underlord/filler pass. You export jump cuts.
+- [ ] Each clip is a complete source-faithful idea in the agreed 15–60-second brief or has an explicit exception.
+- [ ] Source/cut timestamps and rights are recorded.
+- [ ] Final exports have checked dimensions, duration and accurate readable captions.
+- [ ] Actual exported count, audio review state and next owner are logged without performance or publication claims.
 
 ## Example(s)
-- One hour of recording yields 10–20 clips (Content Factory assembly line). Each clip is one idea; the hub article remains the canonical piece.
-- Descript: cut by selecting transcript text, not a timeline razor.
 
-## Model routing
-Computer-use (Descript). A local model can *propose* clip timestamps from `transcript.md`; a human or browser agent makes the cuts. Claude-only or Grok-only: propose from the file, then cut in Descript.
+**Fictional teaching example — no clips were made.** A sample source has a useful passage from 03:10 to 03:42: “Tell us when the noise happens. A noise while braking gives us a different starting point from a noise while pedaling.” That is a 32-second candidate with one complete idea.
 
-## Run on a persistent agent (Fable 5)
+The clip title is “Say when the noise starts.” Its row records original source 03:10–03:42, the separate cut version, portrait layout if the planned channel calls for it, and “caption/export checks pending” until the file exists. A separate sentence saying “we can quote from a photo” is rejected if the next line limits that claim. One good clip is a truthful result; a template quota is not.
 
-A persistent agent (Claude Fable 5, or a comparable OpenAI/Google model that loops and holds memory) sweeps the full timestamped transcript, hook-tests every candidate, captions everything, and loops until every clip is exported to spec, logged, and routed — not just the three obvious moments. Memory records which moments of each source are already clipped, so re-runs extend the clip set instead of duplicating it. Log a meta-article example per run.
-See `boil-the-ocean.md` for the full operating principles.
+## Handoff and Content Factory context
+
+The content owner receives clip files and the source map for [Prepare platform posts](https://local-service-spotlight.github.io/task-library/?task=create-social-media-posts-per-platform#task-create-social-media-posts-per-platform) or [Prepare Dollar a Day creatives](https://local-service-spotlight.github.io/task-library/?task=create-dollar-a-day-ad-creatives#task-create-dollar-a-day-ad-creatives) when appropriate. These are separate scoped deliverables.
+
+Produce supplies the real source. **Process**, this stage of the [Content Factory](https://blitzmetrics.com/content-factory/), turns it into useful finished assets. Post saves or publishes them on the agreed channels. Promote tests and distributes suitable work within its own scope. The handoff above names this task’s actual next step; catalog neighbors alone are not prerequisites.
+
+## When this runs
+
+One extraction pass per source and agreed deliverable. A later run can add new moments after checking the existing clip ledger; it should not duplicate earlier exports.
+
+## First-run setup and continuity
+
+Open the supplied task file and its linked source. Verify the project’s real inputs, account, access and output folder before work. This Markdown file is a guide; it does not install an app, connect an account, supply a subscription or create a schedule. Carry out work already authorized; do not ask for the same approval again. Keep any unsupplied destination or new action outside that scope clearly pending.
+
+Save source IDs, versions, decisions, checked outputs and next owner in the project tracker. Before a retry, check the saved state and other workers’ changes. A model name does not guarantee memory or a running timer. Repeated work needs an actual configured trigger and durable state; one-off work can be started by the prompt above.
+
+Keep agent media muted with volume zero before playback. If mute cannot be verified, use captions, metadata or still frames. State the limit: silent visual checks do not prove spoken-word accuracy or audio quality. Do not start sound through the user’s speakers unless explicitly asked.
+
+## Write up the real run
+
+For every actual attempt, [write its meta article](https://blitzmetrics.com/meta-article-prompt/) with this recipe and revision, trigger, steps performed, output evidence, measured result, gaps and next owner. Failed, blocked and partial attempts also get a written record. A draft can satisfy writing; publishing it follows the existing job scope.
+
+Keep one stable execution ID across retries and edits. A separately scoped child task may have its own ID linked to its parent. Writing the parent’s meta record is part of that run, not an endless new chain. The [recipe and meta-article guide](https://localservicespotlight.com/meta-articles/) explains this distinction. Teaching examples are not real executions and must not enter the run count.
 
 ## Definitive article & links
-- Hub: GAP — no definitive article yet; this skill flags the missing hub. Until written, ground runs in /blog-posting-guidelines (Descript workflow) and /one-minute-video-guide (what a strong 60 seconds looks like).
-- Related: /one-minute-video-guide, /social-amplification, /dad
-- Sibling skills, in run order: `use-descript-underlord-to-remove-filler-words` → this → `create-quote-cards-from-strongest-statements` / `create-social-media-posts-per-platform`
+
+- Dedicated canonical article: not mapped in this source record. Use the maintained owned training below until that article gap is reviewed.
+- Exact task: [Extract 15–60 second clips from long-form video](https://local-service-spotlight.github.io/task-library/?task=extract-15-60-second-clips-from-long-form-video#task-extract-15-60-second-clips-from-long-form-video)
+- Writing standard: [Article Guidelines](https://localservicespotlight.com/article-guidelines/)
+- [Descript text edits and media](https://help.descript.com/hc/en-us/articles/10164808475149-Inline-notes)
+- [Descript subtitle exports](https://help.descript.com/hc/en-us/articles/10255811669773-Exporting-subtitles)
+- [Descript export quality](https://help.descript.com/hc/en-us/articles/28868035473421)
+- [Descript composition copies](https://help.descript.com/hc/en-us/articles/10612359826061-Duplicating-a-composition)
+
+## Review and evidence still needed
+
+The source contributor status is preserved. It is not certification of this draft or proof of account access, completed work or a live outcome. The worked example teaches the method and is explicitly fictional.
+- No dedicated canonical article is mapped; actual source moments, destination specs and sound review require a real run.

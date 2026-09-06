@@ -13,8 +13,8 @@
         }
       },
       "startedAt": "2026-09-05T08:01:40Z",
-      "status": "blocked",
-      "result": "80 article revisions saved and read back; 76 verified on desktop and phone (152 viewport checks). Four public copies remain blocked after a rendered-body parity failure and verified four-route rollback. The Task Library is live. This is the same unfinished execution; no completed task is claimed.",
+      "status": "running",
+      "result": "The former four-page publishing block is cleared. All 276 downloads have first-step setup guidance; 101 guide rewrites are locally reviewed and all 90 tests pass. Public release verification and the wider grade-5/article review continue. This is the same unfinished execution; no completed task is claimed.",
       "evidence": [
         {
           "visibility": "public",
@@ -59,14 +59,30 @@
         {
           "visibility": "private",
           "sha256": "f4e70634db330dce32ce2b26a643b54351f6b0ce299d46d0c7903f9e82219f14"
+        },
+        {
+          "visibility": "private",
+          "sha256": "3c50e78e29ae05647afc9a1c948bf83fd6c8506d5c699404f6995672dda0e1f4"
+        },
+        {
+          "visibility": "private",
+          "sha256": "86d100a2eff4edfa1cb6c258e9833574cb4113f11becfd112df60b7a1f30aef8"
+        },
+        {
+          "visibility": "public",
+          "url": "https://github.com/dennisyu/local-service-spotlight-skills/pull/44"
+        },
+        {
+          "visibility": "private",
+          "sha256": "199a7000812910dc28195dd41c16da08d4bff770aa16564e2e14179965de55f6"
         }
       ],
       "metaArticle": {
         "status": "draft",
-        "draftSha256": "ec1d44b1537516bac43311eaca9c422421f0bcb3cf2e3f9ee1836ba7350cfa05"
+        "draftSha256": "57f782eb7490f14ab5f45b2a6fcf38e38c8d8fc4134db3c85246080a6e674718"
       },
       "recordedAt": "2026-09-06T01:18:27.649605+00:00",
-      "updatedAt": "2026-09-06T03:20:06.514224+00:00"
+      "updatedAt": "2026-09-06T21:20:33.507665+00:00"
     }
   ]
 }
