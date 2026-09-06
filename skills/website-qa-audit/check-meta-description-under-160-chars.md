@@ -1,6 +1,6 @@
 ---
 name: check-meta-description-under-160-chars
-description: Audits every page's meta description for the under-160-character limit and keyword relevance so search snippets display fully and earn the click.
+description: "Give each page a clear short search summary. Check what the live page actually sends."
 category: Website QA Audit
 stage: —
 definitive_article: /website-qa-audit
@@ -9,35 +9,81 @@ status: complete
 
 # Check meta description under 160 chars
 
-**Use this when** running Layer 2 (Content Architecture Checks) of the Website QA Audit — the meta description is the ad copy that wins or loses the click in search results.
+A clear search summary helps people know what a page offers. This guide helps you check that summary and trim weak words. Start with the live page, since a saved draft may say something else.
+
+**The path:** Page purpose → Served summary → Useful wording → Saved and live check.
+
+**Use this when:** A defined set of public pages needs its meta descriptions checked. A meta description is the page’s suggested search summary.
 
 ## Inputs
-- WordPress admin access with RankMath active (or a Screaming Frog crawl export of meta descriptions)
-- Each page's focus keyword for the relevance check
-- The audit report/spreadsheet for logging results
+- The exact public pages and intended search topics, with intentional private/non-indexable pages identified.
+- Public source inspection and supported CMS/SEO metadata access for authorized changes.
+- The actual page content and any current house length target.
+- A report with URL, served description, character-count method and result.
+
+## First-run prompt
+
+> Read each supplied page and its actual served description. Draft or apply authorized specific summaries, record the house length target separately from Google behavior, and verify the canonical result. Return exact text, count method and unresolved delivery issues without promising search display.
 
 ## Steps
-1. Crawl the site with Screaming Frog (or export via RankMath) to get every meta description and its character count in one table.
-2. Flag every description over 160 characters (truncates in results) and every page with no description at all (Google improvises one).
-3. Confirm each description contains or closely matches the page's focus keyword — Google bolds the match, which lifts click-through.
-4. Read each one as ad copy: it should state what the page delivers and for whom, not restate the title or read as filler.
-5. Flag duplicate descriptions across pages — each page needs its own.
-6. Log every failure with page URL, current description, and character count in the audit report.
+1. Define the page set. A page listed by a crawler is not proof that Google indexed it. Separate intended public search pages from private or deliberately excluded pages.
+2. Read the actual meta name="description" content in the served page and compare it with the saved source setting where access is available. Note blank, duplicate or conflicting declarations and site templates that generate unexpected text.
+3. Read the page’s purpose and proposed summary together. Write a specific truthful sentence or two that tells the reader what is useful. Use the topic’s normal words naturally; a plugin’s focus keyword is not a compulsory phrase in every description.
+4. Treat roughly 160 characters as the existing house brevity target, not a Google technical maximum. Google has no fixed meta-description length limit and may use page text or truncate a snippet to the display width. Keep any justified longer description distinct from a factual failure.
+5. Count the decoded text using a stated method, then review clarity, repeated boilerplate and misleading claims. Duplicate summaries deserve page-context review; do not force meaningless unique wording on equivalent variants just to satisfy a count.
+6. Update the correct supported metadata source for authorized pages. Preserve canonical URLs, titles and visibility unless those changes are separately part of the job. Avoid writing a second description tag into body content.
+7. Reopen the canonical page and verify the actual served description. Record saved-but-stale delivery separately if a cache or static layer still shows the old tag.
+8. Save the before/after summary, count, reason for any house-target exception and public check date. Observed search snippets are a separate dated observation; this edit cannot promise a specific snippet or click-through increase.
 
 ## Definition of done (QA checklist)
-- [ ] 100% of indexed pages have a unique meta description of 160 characters or fewer
-- [ ] Every description includes or closely matches the page's focus keyword
-- [ ] Full description table logged in the audit report, linked back to /website-qa-audit
+
+- [ ] Each intended page has a truthful useful served description or a precise unresolved issue.
+- [ ] The house length target is recorded separately from Google requirements.
+- [ ] Descriptions fit page content and are not keyword-stuffed or copied blindly.
+- [ ] Changes preserve unrelated URL/visibility settings and are checked on canonical source.
+- [ ] Search display and traffic claims are not inferred from the metadata edit.
 
 ## Example(s)
-- Example needed — run the Meta-Article Prompt after first real run.
 
-## Run on a persistent agent (Fable 5)
-On a persistent agent (Claude Fable 5 / comparable OpenAI or Google models), this becomes a full-inventory loop: crawl every indexed page's description, flag over-160s, blanks, duplicates, and keyword misses, rewrite, re-crawl, and repeat until every page carries its own compliant description.
-Memory stores the passing description per URL, so each re-run diffs against the last pass and only reworks changed or new pages.
-Each run logs one before/after example to ## Example(s) so the audit library compounds.
-See `boil-the-ocean.md` for the full operating principles.
+**Fictional teaching example — no search metadata was saved.** Maple Cycle’s quote guide has the summary “Welcome to our website, the best service for everyone.” It says little about this page.
+
+The teaching replacement is “See which bike photos to send for a repair quote, what details to include, and when the shop needs to inspect it.” The editor counts the actual decoded string and checks the house target. The main test is that the sentence accurately describes the guide.
+
+If Google later shows a different excerpt for one query, that alone does not mean the description tag was missing or broken.
+
+## Handoff and Content Factory context
+
+The content owner receives the metadata report. [Check page titles](https://local-service-spotlight.github.io/task-library/?task=check-seo-title-under-60-chars-with-focus-keyword#task-check-seo-title-under-60-chars-with-focus-keyword) is a related check, not evidence that descriptions have been tested.
+
+This is a supporting quality check for the [Content Factory](https://blitzmetrics.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. This check does not automatically execute all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
+
+## When this runs
+
+Run at page launch or when its purpose or summary changes. Search-result observations follow an existing review cadence rather than a guaranteed instant update.
+
+## First-run setup and continuity
+
+Open the supplied task file and its linked source. Verify the project’s real inputs, account, access and output folder before work. This Markdown file is a guide; it does not install an app, connect an account, supply a subscription or create a schedule. Carry out work already authorized; do not ask for the same approval again. Keep any unsupplied destination or new action outside that scope clearly pending.
+
+Save source IDs, versions, decisions, checked outputs and next owner in the project tracker. Before a retry, check the saved state and other workers’ changes. A model name does not guarantee memory or a running timer. Repeated work needs an actual configured trigger and durable state; one-off work can be started by the prompt above.
+
+Keep agent media muted with volume zero before playback. If mute cannot be verified, use captions, metadata or still frames. State the limit: silent visual checks do not prove spoken-word accuracy or audio quality. Do not start sound through the user’s speakers unless explicitly asked.
+
+## Write up the real run
+
+For every actual attempt, [write its meta article](https://blitzmetrics.com/meta-article-prompt/) with this recipe and revision, trigger, steps performed, output evidence, measured result, gaps and next owner. Failed, blocked and partial attempts also get a written record. A draft can satisfy writing; publishing it follows the existing job scope.
+
+Keep one stable execution ID across retries and edits. A separately scoped child task may have its own ID linked to its parent. Writing the parent’s meta record is part of that run, not an endless new chain. The [recipe and meta-article guide](https://localservicespotlight.com/meta-articles/) explains this distinction. Teaching examples are not real executions and must not enter the run count.
 
 ## Definitive article & links
-- Hub: /website-qa-audit
-- Related: /blog-posting-guidelines (meta description rules) · previous: check-seo-title-under-60-chars-with-focus-keyword · next check: verify-rank-math-score-above-70-on-every-page
+
+- Canonical article: https://blitzmetrics.com/website-qa-audit
+- Exact task: [Check meta description under 160 chars](https://local-service-spotlight.github.io/task-library/?task=check-meta-description-under-160-chars#task-check-meta-description-under-160-chars)
+- Writing standard: [Article Guidelines](https://localservicespotlight.com/article-guidelines/)
+- [Website QA Audit](https://blitzmetrics.com/website-qa-audit/)
+- [Google snippets](https://developers.google.com/search/docs/appearance/snippet)
+
+## Review and evidence still needed
+
+The source contributor status is preserved. It is not certification of this draft or proof of account access, completed work or a live outcome. The worked example teaches the method and is explicitly fictional.
+- The actual page set, current metadata and canonical readback require the site.

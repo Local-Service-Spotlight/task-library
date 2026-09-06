@@ -1,6 +1,6 @@
 ---
 name: install-canonical-skill-packs
-description: "A useful first output and a verified skill installation; any recurring job has its own observed run."
+description: You can try one useful task before adding more tools.
 category: Knowledge System Maintenance
 stage: —
 definitive_article: https://localservicespotlight.com/install/
@@ -9,65 +9,74 @@ status: needs-work
 
 # Install the canonical skill packs
 
-**Use this when:** A user wants an initial useful result and a supported installation of the canonical skills.
+You can try one useful task before adding more tools. This guide helps you choose the right skill pack and check that it works in your app. Start with the task you want done and the files it needs.
 
-This is a registered recipe in review. A published guide or this new record does not certify its runtime behavior. Read the current [canonical procedure](https://localservicespotlight.com/install/) before executing; it contains the detailed actions and current source-specific instructions.
+**The path:** Choose one task → Verify package → Install supported parts → Check result
+
+**Start when:** The user wants a supported package available for one bounded task in their actual app.
 
 ## Inputs
-- Public business URL and confirmed goal
-- Chosen runtime and supported capabilities
-- Approved setup scope and any required account access
 
-## Prerequisite tasks
-- No separate mandatory task is established by the reviewed source; use the explicit starting condition and inputs above.
-## Input references
-- [How Our AI Agents Share Memory and Coordinate Work](https://blitzmetrics.com/set-up-cross-agent-shared-memory/)
-- [What You Are Installing: The Local Service Spotlight Claude Plugin Explained](https://localservicespotlight.com/plugin/)
+- One bounded draft task, its real sources and intended result.
+- The chosen product/surface/plan and authority for installation or account changes.
+- Current [install guide](https://localservicespotlight.com/install/) and [plugin explainer](https://localservicespotlight.com/plugin/).
+
 ## Steps
-1. SCAN the public facts.
-2. AIM at a confirmed useful goal.
-3. MAP an evidence-backed action.
-4. INSTALL only supported approved parts.
-5. RUN one task and verify the output.
+
+1. Open the maintained install guide and identify the path for the actual app. A guide ZIP and a platform-installable plugin are different packages. A read of a public URL is neither installation nor source-account access.
+2. Inspect the current installed package, version and dependent jobs before replacing anything. Preserve a recovery copy and do not uninstall an unknown working setup.
+3. For the Claude marketplace path, use the supported marketplace control to add https://github.com/dennisyu/local-service-spotlight-skills and install the reviewed lss-everything package. Confirm this surface and account support that route using current official help; do not substitute a GitHub upload page.
+4. Record the package identity and manifest revision. Verify the needed skills are actually listed and enabled; a broad task-library count is not the installed package count.
+5. In a fresh task, explicitly select or ask for the intended installed skill. Supply the allowed inputs and request one bounded draft. Record which skill loaded and inspect the actual output against its checks.
+6. If the source files cannot be reached, record the exact access gap. Do not copy secrets into prompts or assume an installed skill grants its connectors.
+7. Report downloaded, installed, enabled and tested states separately. Set up a recurring job only if requested, through its separate recipe; the first useful manual result is still useful without a schedule.
+
+## Current implementation
+
+For the current Claude marketplace route, open Customize, then Plugins. Under Personal plugins, use the plus control, choose Add marketplace, then Add from a repository. Add [the maintained marketplace](https://github.com/dennisyu/local-service-spotlight-skills), inspect its package, and install `lss-everything`. In Cowork, enter the Cowork tab before opening Customize. Then use `/` or the plus control in a fresh task to select the intended skill. Confirm the actual account has these controls; plugins and every feature they can carry do not have identical support on every surface. [Current official Claude plugin instructions](https://support.claude.com/en/articles/13837440-use-plugins-in-claude).
 
 ## Definition of done (QA checklist)
 
-**Expected result:** A useful first output and a verified skill installation; any recurring job has its own observed run.
+[Quality assurance (QA)](https://localservicespotlight.com/article-guidelines/) means checking the work against the agreed result.
 
-- [ ] Source and version are recorded
-- [ ] A URL read is not mistaken for installation or access
-- [ ] The bounded test leaves output or an honest error
-- [ ] Scheduled and Observed remain separate states
-- [ ] Record the exact source revision, actual result and evidence; retain failure, partial, blocked and unknown states.
-- [ ] Write the execution's meta article and link the canonical task. Publication is a separate action under the current authority.
-- [ ] Keep this parent job's internal retries, checks and agent contributions on the same execution ID; derivatives and revisions add no runs. A separately scoped and documented child execution may have its own ID with parentExecutionId, without adding a second completion to this parent recipe.
-- [ ] Verify permissions for publishing, sending, spending, scheduling or changing access before that action. A task record does not grant them.
+- [ ] Canonical package/revision and actual app/account are recorded.
+- [ ] The intended skill is observed loading and produces a checked result or an honest failure.
+- [ ] Existing setup and access boundaries are preserved; no automatic schedule or update is claimed.
 
-## Child or companion tasks
-- No separate mandatory task is established by the reviewed source; use the explicit starting condition and inputs above.
-## Handoff and Content Factory context
-
-Continue with one chosen job and verify its first scheduled firing before expanding.
-
-The Content Factory turns source material into useful work through Produce, Process, Post and Promote. This recipe's reviewed placement is **cross stage support**. Support tasks help the relevant stages; do not force a support operation into a production stage. The canonical article's lower diagram should show the same context while its lead visual explains this particular task.
-
-### Downstream tasks
-- [Persistent Agents: Why a Skill Pack Does No Work](https://blitzmetrics.com/persistent-agents/) — Task Library: [configure-and-verify-recurring-agent-job](https://local-service-spotlight.github.io/task-library/?task=configure-and-verify-recurring-agent-job#task-configure-and-verify-recurring-agent-job)
 ## Example(s)
 
-No independently verified completed execution has been assigned to this new task record. Historical examples in the article remain source material, not reconstructed execution counts. Write the meta article for each real attempt, including failed or blocked work, and register only its actual identity and result.
+**Fictional teaching example. This is not a client result or proof of a completed run.**
 
-## Open review items
-- Coordinate changes with the install task owner and preserve its recent runtime-capability and bootstrap corrections.
-- This is WIP until the current source procedure, access, linked task outputs and live acceptance checks have been independently reviewed. A workflow-summary addition alone does not pass those checks.
-- All media tests stay muted with volume zero; if silence cannot be verified before playback, inspect captions, metadata or frames instead.
+A fictional user can read a guide ZIP and gets a draft from a chat. No installed skill is selected. The result is “guide used for one draft,” not “plugin installed.” After a supported install, a fresh task shows the named skill loaded and its result passes the selected task’s checks; that is separate activation evidence.
+
+## Handoff and Content Factory context
+
+This work supports the [Content Factory, our four stages of using real content](https://blitzmetrics.com/content-factory/): Produce → Process → Post → Promote. Use the specific inputs and next task below to place the work; a maintenance task does not manufacture transcripts, clips or other stage outputs it does not call for.
+
+The user continues with the tested task. [Configure a recurring job](https://local-service-spotlight.github.io/task-library/?task=configure-and-verify-recurring-agent-job#task-configure-and-verify-recurring-agent-job) is optional when repeat work is authorized.
+
+## Run with an agent
+
+Give the AI worker this recipe, the real Inputs above, the intended result and the actions already authorized. Ask it to return the saved output, checks, evidence and remaining owner. Check its work against this guide; loading a skill does not prove access, installation of a job, or successful execution. Keep media muted with volume at zero if playback is needed.
+
+For recurring work, keep the actual trigger, owner and runtime in the job record. Scheduling and observed firings are separate. Do not create a schedule merely because this guide mentions a review interval.
+
+## Record the real execution
+
+Open the run record when the work starts. Keep the exact starting recipe revision, one execution ID, source evidence and actual state. Write a [meta article, the record of one run](https://blitzmetrics.com/meta-article-prompt/) with decisions, results, checks, failures and next owner. Link it to this task and register it through the [Task Library](https://local-service-spotlight.github.io/task-library/) execution process. Writing is part of the work; public release follows existing authority.
+
+Reuse the same execution ID for revisions, QA, meta writing and retries within that run. A blocked run stays open with its dependency and next owner; do not invent a finish time. Use supported findings to propose and verify a better recipe. A historical public-example count without distinct run IDs remains dated article volume, not verified execution frequency.
 
 ## Definitive article & links
-- Canonical task procedure: https://localservicespotlight.com/install/
-- Exact Task Library record: https://local-service-spotlight.github.io/task-library/?task=install-canonical-skill-packs#task-install-canonical-skill-packs
-- Meta-article method: https://blitzmetrics.com/meta-article-prompt/
-- Recipe and execution relationship: https://localservicespotlight.com/meta-articles/
-- Content Factory context: https://blitzmetrics.com/content-factory/
-- Article and task recipe standard: https://blitzmetrics.com/definitive-article-guide/
 
-Source basis: canonical article WordPress ID 73841; reviewed source SHA-256 `cd0c1c48be262f9e662097cb04526562781207bc64d1dd65b28be7c7342537cb`. The task record summarizes that source and keeps its unresolved items visible. It does not certify installations, provider commands, source-system access or a completed run.
+- [Maintained source guide](https://localservicespotlight.com/install/)
+- [This task in the Task Library](https://local-service-spotlight.github.io/task-library/?task=install-canonical-skill-packs#task-install-canonical-skill-packs)
+- [Article Guidelines](https://localservicespotlight.com/article-guidelines/)
+- [current article guide](https://blitzmetrics.com/definitive-article-guide/)
+- [How recipes and run records work together](https://localservicespotlight.com/meta-articles/)
+
+## Review and evidence still needed
+
+The inherited contributor status is `needs-work`. It is preserved, not promoted by this rewrite. That label alone does not verify document readiness, a client outcome, access or an executed task.
+
+Actual install controls vary by app and plan. No account installation or activation is performed by authoring this guide. The fictional example teaches the method; a real example with relevant proof is still needed where required. The task-specific flow above is source guidance; its visible presentation and the full document need a named reviewer and desktop/mobile checks.

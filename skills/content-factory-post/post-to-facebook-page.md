@@ -1,6 +1,6 @@
 ---
 name: post-to-facebook-page
-description: Share the new article or video natively on the Facebook business page in the owner's voice, creating the page post that Dollar a Day boosts will later run behind.
+description: "Share a useful article or clip from the right business Page. Check the post and save its link."
 category: Content Factory — Post
 stage: Post
 definitive_article: GAP — to be written
@@ -9,48 +9,80 @@ status: needs-work
 
 # Post to Facebook page
 
-**Use this when** the article is live (and/or the video is processed) and needs native Facebook distribution from the business or Public Figure page.
+Your page can help customers find a useful answer. This guide shows you how to share a clear post from the right business. Start with the real article or clip and one point worth sharing.
+
+**The path:** Approved source → Correct Page → Clear post → Live link and comments.
+
+**Use this when:** The distribution plan calls for a post on a specific Facebook Page and the source is ready.
 
 ## Inputs
-- Published article URL and/or the processed video file
-- Admin/editor access to the Facebook business page or Public Figure page (claimed per /digital-plumbing)
-- The hook from Step 7 and the names of people/companies featured
+- The exact Facebook Page, approved posting scope and access to create its content. Facebook access and task access are different; task access may use Meta Business Suite.
+- The checked article URL and/or finished media, rights, source facts, caption notes, and intended audience.
+- The real voice and attribution of the speaker or business. First person must refer to a real supported speaker, not a fabricated personal experience.
+- The content tracker, current posting history, named comment owner, and a named receiver for any scheduled-post check.
+
+## First-run prompt
+
+> Use the exact Page and source I provide to prepare a short factual post. Check the current posting history and media rights. Publish, schedule, or save only as already requested, verify the resulting state, and log the direct link. Do not start ads or claim reach from a post existing.
 
 ## Steps
-1. Post from the **page**, not a personal profile — only page posts can be boosted later with Dollar a Day.
-2. Write a 2–4 sentence caption in the owner's first-person voice: lead with the hook or the customer question the piece answers, then one concrete takeaway. Conversational, no corporate-speak, no hashtag walls.
-3. Prefer native media: upload the video file directly (native video outperforms shared links) or attach a real photo from the article. Put the article link in the caption or first comment.
-4. Tag the people and companies featured so they see it and share it — their shares are the first organic amplification signal.
-5. Publish, then reply to early comments within the first hours (hand off to engage-with-social-comments for ongoing).
-6. Log the post URL plus date in the content tracker — Promote's boost-top-3-5-facebook-posts pulls candidates from this log based on organic engagement.
+1. Open the specified Page or its Meta Business Suite workspace. Verify the selected business and account identity before creating anything. Use the existing approved route; possession of a token alone is not a posting instruction.
+2. Check the recent content list for the same article or clip so retries do not create duplicate posts. Confirm the article is publicly readable if the caption says it is live.
+3. Write two to four short sentences: the real question or point, one supported takeaway, and a helpful next step. Keep the wording true to the actual speaker. Use the owner’s first person only where the source and assignment support it.
+4. Open the create-post composer for that Page. Add the caption and the selected real photo or video. Choose the available media/post format shown by the Page. Native media is an editorial choice, not a promise of higher reach.
+5. Include the specific article link where readers can find it. If the plan uses a first comment, that comment is part of the handoff and must actually be added and checked. Tag only confirmed featured people or Pages when the mention is relevant and available.
+6. Preview the source, crop, text, link, and selected destinations. Add accurate photo alt text or usable video captions where the composer supports them; otherwise record the accessibility limit. Keep any media preview muted at volume zero. Publish when already authorized, or save the in-scope draft/scheduled post. Do not add a boost, spend, or another platform just because the composer offers it.
+7. Open the resulting post as the intended viewer where possible. Check the Page name, caption, media, link, and mentions. Copy its direct URL and record the observed status and time. For a scheduled item, give a named receiver the scheduled time and timezone; that receiver checks the first firing and public URL after the due time.
+8. Hand a verified live post to [Engage with social comments](https://local-service-spotlight.github.io/task-library/?task=engage-with-social-comments#task-engage-with-social-comments) under the agreed response scope. A scheduled or failed item stays with its firing-check receiver until its public state is known. Later measurement can inform [the Facebook boost shortlist](https://local-service-spotlight.github.io/task-library/?task=boost-top-3-5-facebook-posts#task-boost-top-3-5-facebook-posts); a Page post is not automatically eligible or approved for an ad.
 
 ## Definition of done (QA checklist)
-- [ ] Post is live on the page (boostable), not on a personal profile
-- [ ] Caption is first-person, hook-led, 2–4 sentences; media is native (video or real photo, no stock)
-- [ ] Featured people/companies tagged; article link present
-- [ ] Post URL logged for the Promote stage boost shortlist
-- [ ] Linked back to the definitive article and relevant siblings
-- [ ] Complies with Blog Posting Guidelines (if it publishes content)
 
-## Failure modes
-- Posted from a personal profile. That post cannot be boosted. Page only.
-- Link-share with no native video. Native video outperforms the URL scrape.
-- Caption written by the agency in third person. Owner's first-person voice, or Jennifer will cap the matching article later.
+- [ ] The post belongs to the specified Page and has the intended draft/scheduled/live state; scheduled is not called live and has a named first-firing receiver.
+- [ ] The caption and media match the actual source and rights; accessibility support or its exact limitation is recorded, with no unsupported reach claim or personal story.
+- [ ] The article link and intended mentions work, or a specific limitation is recorded.
+- [ ] The direct URL, time, channel, and correct next owner for the current state are saved once.
+- [ ] No ad spend or extra distribution is implied by the organic post.
 
 ## Example(s)
-- Promote's `boost-top-3-5-facebook-posts` reads this log. If the URL is missing, the winner is invisible to ads.
-- Superior Fence & Rail / Zach Peyton pattern: native page post, then boost once organic comments show.
 
-## Model routing
-Computer-use. Claude-only or Grok-only: draft the caption in chat, then post in the page UI (or Graph API if the token exists). Never spend in this skill — wait for organic signal.
+**Fictional teaching example — no Facebook post exists.** Maple Cycle’s sample caption reads:
 
-## Run on a persistent agent (Fable 5)
-A persistent agent (Fable 5 or comparable OpenAI/Google models) drafts the caption from the hook stored at Step 7, posts natively from the page, then self-verifies the full Definition of done — page (not profile), tags live, link present, post URL logged — and repairs any miss before calling the run done.
-Across runs it remembers which hooks and formats earned engagement on this page, so each caption starts from evidence rather than instinct.
-It writes a meta-article example into the log each run — the same log boost-top-3-5-facebook-posts later reads — so the library compounds.
-See `boil-the-ocean.md` for the full operating principles.
+“Not sure what to send us for a repair quote? A clear photo and a short note about the problem help us plan the next step. Our guide explains what a photo can tell us and what needs a shop visit: `https://maplecycle.example/repair-quote/`.”
+
+The planned image is the shop owner beside an actual workbench. In a real run it must be the real authorized photo. If the post is scheduled for tomorrow, the tracker must say “scheduled,” not “live.” This invented post supplies no engagement or boost evidence.
+
+## Handoff and Content Factory context
+
+The firing-check receiver gets any scheduled item, time and timezone. After the first firing is publicly verified, the named comment owner receives the direct post link and source facts. The promotion owner receives actual later measurements, not an assumed winning post.
+
+This task serves **Post** in the [Content Factory](https://blitzmetrics.com/content-factory/). Produce supplies the source, Process prepares it, Post places and checks it on the agreed channels, and Promote distributes proven work under its own scope. The task’s actual handoff above defines the next step; list order alone does not create a prerequisite.
+
+## When this runs
+
+One post per agreed distribution item. Scheduling is optional and needs the chosen time, timezone and named receiver who checks the first firing. Early comment review follows the actual response plan; this guide installs no timer.
+
+## First-run setup and continuity
+
+Use the exact account, source, destination and authority recorded for the job. Carry out publication, messages or repairs already authorized once their required checks pass; do not ask for the same approval again. If an action is outside that scope, finish the authorized work and state the specific remaining need. A login, plugin, or task file does not itself grant new authority.
+
+Keep the latest state, record IDs, revisions and next owner in the project tracker or files. Before a retry, check the current saved/sent/published item to avoid duplicates or overwriting another edit. A model has no guaranteed memory, scheduler or account access just because it is called persistent. A future check needs a configured timer or a named person.
+
+Keep all agent media previews muted with volume zero before playback. If this cannot be verified, use captions, metadata or still frames and state what was not tested. No first-load autoplay is part of these page instructions.
+
+## Write up the real run
+
+For each actual attempt, [write its meta article](https://blitzmetrics.com/meta-article-prompt/) with this exact task, source revision, trigger, work, decisions, evidence, result and next owner. Failed, partial and blocked attempts still get a written record. A private draft is a valid writing outcome; public publication follows the existing scope.
+
+Keep one stable execution ID for the actual task run. Retries, checks and changed artifacts do not add runs. A separately scoped child task may have its own ID linked to its parent; writing the parent’s meta record is part of that same run. The [recipe and meta-article guide](https://localservicespotlight.com/meta-articles/) explains the distinction. Teaching examples below or above are not execution evidence and must not enter the run count.
 
 ## Definitive article & links
-- Hub: GAP — to be written (interim grounding: /social-amplification Stage 5 and /dad — boosts run behind these page posts)
-- Related: /blog-posting-guidelines · /thank-you-machine (tag-and-thank posts follow the same native pattern)
-- Run order (Post stage): upload-processed-video-to-youtube → **post-to-facebook-page** → post-to-linkedin → email-and-dm-client-about-published-article
+
+- Dedicated canonical article: not mapped in this source record. The owned training references below remain the method until that gap is reviewed.
+- Exact Task Library record: [Post to Facebook page](https://local-service-spotlight.github.io/task-library/?task=post-to-facebook-page#task-post-to-facebook-page)
+- Working writing standard: [Article Guidelines](https://localservicespotlight.com/article-guidelines/)
+- [Meta’s Page access roles](https://www.facebook.com/help/289207354498410/)
+
+## Review and evidence still needed
+
+The original contributor status in the header is preserved. It does not certify this proposed rewrite or prove that this account, publication, message, player or check has run. Every worked teaching example is explicitly invented; replace it with actual evidence when documenting a real execution.
+- The exact Page composer, permissions, media options and live state must be checked in the real account; no login was used for this draft.

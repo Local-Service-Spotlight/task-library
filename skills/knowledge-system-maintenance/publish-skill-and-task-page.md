@@ -1,6 +1,6 @@
 ---
 name: publish-skill-and-task-page
-description: "A matched runnable skill, canonical human-readable page and registry record."
+description: A useful guide should be easy for people and AI to find.
 category: Knowledge System Maintenance
 stage: Post
 definitive_article: https://blitzmetrics.com/skill-publishing-standard/
@@ -9,66 +9,70 @@ status: needs-work
 
 # Publish a skill and its task page
 
-**Use this when:** A skill is created, renamed, or materially changed.
+A useful guide should be easy for people and AI to find. This task keeps the web page, skill file, and task entry in sync. Start with the reviewed guide and its real example.
 
-This is a registered recipe in review. A published guide or this new record does not certify its runtime behavior. Read the current [canonical procedure](https://blitzmetrics.com/skill-publishing-standard/) before executing; it contains the detailed actions and current source-specific instructions.
+**The path:** Checked recipe → Matched files → Authorized release → Live readback
+
+**Start when:** A reviewed task method needs a maintained skill and matching readable page.
 
 ## Inputs
-- Canonical skill source and permanent name
-- Real example and task requirements
-- Correct publishing site and authorized editor
-- The existing roster/task registration
 
-## Prerequisite tasks
-- [How to Document a Task](https://blitzmetrics.com/how-to-document-a-task/) — Task Library: [document-a-task](https://local-service-spotlight.github.io/task-library/?task=document-a-task#task-document-a-task)
-## Input references
-- [How to Create a Definitive Article for Any BlitzMetrics Concept](https://blitzmetrics.com/definitive-article-guide/)
-- [Article guidelines (how we write, and how your agent should)](https://localservicespotlight.com/article-guidelines/)
+- [The documented task](https://local-service-spotlight.github.io/task-library/?task=document-a-task#task-document-a-task) with its trigger, inputs, ordered steps, checks and handoff.
+- The canonical source repository, permanent task name, existing page and correct registry.
+- A real relevant example or an explicit example gap, plus publishing authority and supported editor access.
+
 ## Steps
-1. Search for the existing canonical page.
-2. Prepare the runnable file and human-readable task page.
-3. Include setup, rules, example and QA.
-4. Update the matching registry entry.
-5. Create the reviewable draft and publish through the authorized rail.
+
+1. Search the site and Task Library for the existing task. Preserve its URL, name and page type; a rename needs a migration plan for links and installed references.
+2. Prepare a complete skill file and human-readable page from the same reviewed method. Include plain grade 5 context, meaningful lead visual, owned prerequisite links, example and lower task context.
+3. Keep task registration separate from AI-worker and job registration. Update the actual task/skill entry; do not create an Agent Roster row merely because a new skill exists.
+4. Check exact source-file, page and registry links in both directions. The downloadable instructions must match the reviewed revision; a short summary wrapper is not the full recipe.
+5. Use the repository’s branch/review/check workflow and the page’s supported editor or generator. Preserve existing media, builder state, categories and concurrent edits. Keep the full reviewable draft before publication.
+6. After the authorized release, read back the saved source and open the ordinary anonymous URL on desktop/mobile. Inspect the lead visual, links, task context and download; clear or fix stale public copies through their owning publisher.
+7. Record source available, page public, file downloadable and installed activation separately. Leave certification gaps visible; writing the run’s meta record is required even when public release is pending.
 
 ## Definition of done (QA checklist)
 
-**Expected result:** A matched runnable skill, canonical human-readable page and registry record.
+[Quality assurance (QA)](https://localservicespotlight.com/article-guidelines/) means checking the work against the agreed result.
 
-- [ ] The file, page and registry refer to the same skill
-- [ ] The complete runnable instructions are available
-- [ ] The real run links back to the task
-- [ ] Draft and published state are reported separately
-- [ ] Record the exact source revision, actual result and evidence; retain failure, partial, blocked and unknown states.
-- [ ] Write the execution's meta article and link the canonical task. Publication is a separate action under the current authority.
-- [ ] Keep this parent job's internal retries, checks and agent contributions on the same execution ID; derivatives and revisions add no runs. A separately scoped and documented child execution may have its own ID with parentExecutionId, without adding a second completion to this parent recipe.
-- [ ] Verify permissions for publishing, sending, spending, scheduling or changing access before that action. A task record does not grant them.
+- [ ] Page, full skill and registry refer to the same canonical task/revision.
+- [ ] All released destinations are read back and the rendered guide is usable.
+- [ ] Missing real examples, private access or installed activation remain explicit.
 
-## Child or companion tasks
-- No separate mandatory task is established by the reviewed source; use the explicit starting condition and inputs above.
-## Handoff and Content Factory context
-
-Return the saved draft or authorized public URL and connect the execution meta article to this task.
-
-The Content Factory turns source material into useful work through Produce, Process, Post and Promote. This recipe's reviewed placement is **post**. Support tasks help the relevant stages; do not force a support operation into a production stage. The canonical article's lower diagram should show the same context while its lead visual explains this particular task.
-
-### Downstream tasks
-- No separate mandatory task is established by the reviewed source; use the explicit starting condition and inputs above.
 ## Example(s)
 
-No independently verified completed execution has been assigned to this new task record. Historical examples in the article remain source material, not reconstructed execution counts. Write the meta article for each real attempt, including failed or blocked work, and register only its actual identity and result.
+**Fictional teaching example. This is not a client result or proof of a completed run.**
 
-## Open review items
-- Old body requires an Agent Roster row for every skill. Reconcile task/skill/agent/job identities with the updated registry rule; do not create a fake agent for a skill.
-- This is WIP until the current source procedure, access, linked task outputs and live acceptance checks have been independently reviewed. A workflow-summary addition alone does not pass those checks.
-- All media tests stay muted with volume zero; if silence cannot be verified before playback, inspect captions, metadata or frames instead.
+A fictional guide is merged and its page saved, but the public URL still serves yesterday’s download. Report source released and public copy stale. Fix the owning cache/publisher, then verify the same revision before calling the page current. No agent or recurring job is created by registering the skill.
+
+## Handoff and Content Factory context
+
+The [Content Factory, our four stages of using real content](https://blitzmetrics.com/content-factory/) goes Produce → Process → Post → Promote. The source method is prepared and checked in Process. Its authorized page release and links belong to Post. Promotion is a separate decision after the published result is checked.
+
+The task owner receives the public/draft state and remaining gaps. Consumers use the exact guide; any installed-package update needs its own activation check.
+
+## Run with an agent
+
+Give the AI worker this recipe, the real Inputs above, the intended result and the actions already authorized. Ask it to return the saved output, checks, evidence and remaining owner. Check its work against this guide; loading a skill does not prove access, installation of a job, or successful execution. Keep media muted with volume at zero if playback is needed.
+
+For recurring work, keep the actual trigger, owner and runtime in the job record. Scheduling and observed firings are separate. Do not create a schedule merely because this guide mentions a review interval.
+
+## Record the real execution
+
+Open the run record when the work starts. Keep the exact starting recipe revision, one execution ID, source evidence and actual state. Write a [meta article, the record of one run](https://blitzmetrics.com/meta-article-prompt/) with decisions, results, checks, failures and next owner. Link it to this task and register it through the [Task Library](https://local-service-spotlight.github.io/task-library/) execution process. Writing is part of the work; public release follows existing authority.
+
+Reuse the same execution ID for revisions, QA, meta writing and retries within that run. A blocked run stays open with its dependency and next owner; do not invent a finish time. Use supported findings to propose and verify a better recipe. A historical public-example count without distinct run IDs remains dated article volume, not verified execution frequency.
 
 ## Definitive article & links
-- Canonical task procedure: https://blitzmetrics.com/skill-publishing-standard/
-- Exact Task Library record: https://local-service-spotlight.github.io/task-library/?task=publish-skill-and-task-page#task-publish-skill-and-task-page
-- Meta-article method: https://blitzmetrics.com/meta-article-prompt/
-- Recipe and execution relationship: https://localservicespotlight.com/meta-articles/
-- Content Factory context: https://blitzmetrics.com/content-factory/
-- Article and task recipe standard: https://blitzmetrics.com/definitive-article-guide/
 
-Source basis: canonical article WordPress ID 111031; reviewed source SHA-256 `522ae64def610ef6ba1c366791d70f81e375373737c46e449cb807c5334054fe`. The task record summarizes that source and keeps its unresolved items visible. It does not certify installations, provider commands, source-system access or a completed run.
+- [Maintained source guide](https://blitzmetrics.com/skill-publishing-standard/)
+- [This task in the Task Library](https://local-service-spotlight.github.io/task-library/?task=publish-skill-and-task-page#task-publish-skill-and-task-page)
+- [Article Guidelines](https://localservicespotlight.com/article-guidelines/)
+- [current article guide](https://blitzmetrics.com/definitive-article-guide/)
+- [How recipes and run records work together](https://localservicespotlight.com/meta-articles/)
+
+## Review and evidence still needed
+
+The inherited contributor status is `needs-work`. It is preserved, not promoted by this rewrite. That label alone does not verify document readiness, a client outcome, access or an executed task.
+
+A real execution still needs its own source, reviewer, saved result and handoff evidence. The fictional example teaches the method; a real example with relevant proof is still needed where required. The task-specific flow above is source guidance; its visible presentation and the full document need a named reviewer and desktop/mobile checks.

@@ -18,9 +18,9 @@ function debounce(fn, ms){ let t; return function(){ clearTimeout(t); const a = 
 const reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 const STATUS = {
-  'complete':   { label: 'Ready' },
-  'needs-work': { label: 'WIP' },
-  'gap':        { label: 'Unclaimed' }
+  'complete':   { label: 'Reported complete' },
+  'needs-work': { label: 'Needs work' },
+  'gap':        { label: 'Gap' }
 };
 
 /* ============================================================
@@ -212,7 +212,7 @@ DATA.categories.forEach(function(c, ci){
    Hero, footer, stats, health bar
    ============================================================ */
 const dl = el('#btl-dl');
-if (DATA.bundleUrl){ dl.href = DATA.bundleUrl; dl.textContent = '⬇ Download ' + (DATA.stats.complete || 0) + ' prepared skills (.zip)'; } else { dl.hidden = true; }
+if (DATA.bundleUrl){ dl.href = DATA.bundleUrl; dl.textContent = '⬇ Download ' + (DATA.stats.total || 0) + ' guides + first steps (.zip)'; } else { dl.hidden = true; }
 const metaBtn = el('#btl-meta');
 if (DATA.metaArticleUrl){ metaBtn.href = DATA.metaArticleUrl; metaBtn.hidden = false; }
 el('#btl-updated').textContent = DATA.updated || '—';
@@ -236,10 +236,10 @@ function countUp(node, val){
 }
 const cards = [
   { k:'total',              label:'Total tasks',         cls:'c-total', icon:'🗂️' },
-  { k:'complete',           label:'Ready',               cls:'c-ok',    icon:'✅', chip:'complete' },
-  { k:'needsWork',          label:'WIP',                 cls:'c-warn',  icon:'🛠️', chip:'needs-work' },
-  { k:'gaps',               label:'Unclaimed',           cls:'c-bad',   icon:'⛳', chip:'gap' },
-  { k:'owners',             label:'Owners',              cls:'c-art',   icon:'👤' },
+  { k:'complete',           label:'Reported complete',               cls:'c-ok',    icon:'✅', chip:'complete' },
+  { k:'needsWork',          label:'Needs work',                 cls:'c-warn',  icon:'🛠️', chip:'needs-work' },
+  { k:'gaps',               label:'Gap',           cls:'c-bad',   icon:'⛳', chip:'gap' },
+  { k:'owners',             label:'Owners recorded',              cls:'c-art',   icon:'👤' },
   { k:'categories',         label:'Categories',          cls:'c-cat',   icon:'🧭' }
 ];
 el('#btl-statgrid').innerHTML = cards.map(function(c){
@@ -259,10 +259,10 @@ cards.forEach(function(c){ countUp(el('[data-stat="' + c.k + '"]'), S[c.k] || 0)
   const ok = S.complete || 0, warn = S.needsWork || 0, bad = S.gaps || 0;
   const pc = function(n){ return Math.max(n > 0 ? 1.5 : 0, n / total * 100); };
   el('#btl-health-bar').innerHTML =
-    '<span class="hb-ok" style="width:' + pc(ok) + '%" title="Complete: ' + ok + '"></span>' +
+    '<span class="hb-ok" style="width:' + pc(ok) + '%" title="Reported complete: ' + ok + '"></span>' +
     '<span class="hb-warn" style="width:' + pc(warn) + '%" title="WIP: ' + warn + '"></span>' +
     '<span class="hb-bad" style="width:' + pc(bad) + '%" title="Gaps: ' + bad + '"></span>';
-  el('#btl-health-pct').textContent = Math.round(ok / total * 100) + '% complete';
+  el('#btl-health-pct').textContent = Math.round(ok / total * 100) + '% reported complete';
   el('#btl-health-legend').innerHTML =
     '<span><span class="d d-ok"></span><b>' + fmt(ok) + '</b> complete</span>' +
     '<span><span class="d d-warn"></span><b>' + fmt(warn) + '</b> needs work</span>' +
@@ -274,9 +274,9 @@ cards.forEach(function(c){ countUp(el('[data-stat="' + c.k + '"]'), S[c.k] || 0)
    ============================================================ */
 const CHIPS = [
   { key:'all',        label:'All',        cls:'' },
-  { key:'complete',   label:'Ready',      cls:'ch-ok' },
-  { key:'needs-work', label:'WIP',        cls:'ch-warn' },
-  { key:'gap',        label:'Unclaimed',  cls:'ch-bad' }
+  { key:'complete',   label:'Reported complete',      cls:'ch-ok' },
+  { key:'needs-work', label:'Needs work',        cls:'ch-warn' },
+  { key:'gap',        label:'Gap',  cls:'ch-bad' }
 ];
 el('#btl-chips').innerHTML = CHIPS.map(function(c){
   return '<button type="button" class="btl-chip ' + c.cls + '" data-chip="' + c.key + '" aria-pressed="' + (c.key === 'all') + '">' +
@@ -295,7 +295,7 @@ function articleLink(t){
   const kindLabel = kindLabels[t.articleKind];
   const label = kindLabel ? kindLabel + (ready ? ' ↗' : ' in progress ↗') :
     (ready ? 'Definitive article ↗' : 'Article in progress ↗');
-  const title = ready ? 'All mapped tasks are complete and no reviewed semantic hold is active' :
+  const title = ready ? 'All mapped tasks carry contributor complete labels and no reviewed semantic hold is active; this alone does not certify the article' :
     (t.articleStateReason || 'Article has incomplete mapped work or an active semantic-certification hold');
   let orbit = '';
   if (orbitData.metaCountStatus === 'verified' || orbitData.metaCountStatus === 'partial'){
@@ -468,6 +468,13 @@ function toast(msg){
   clearTimeout(toastTimer);
   toastTimer = setTimeout(function(){ toastEl.classList.remove('show'); }, 2400);
 }
+function copyGuide(t){
+  if (!(t.content || '').trim()){
+    toast('Guide missing — open this task to see what is needed');
+    return;
+  }
+  copyText(t.content, 'Copied “' + trunc(t.title, 44) + '” skill.md');
+}
 function copyText(txt, msg){
   function fallback(){
     try{
@@ -560,7 +567,7 @@ root.addEventListener('click', function(e){
   const cp = e.target.closest('[data-copy]');
   if (cp){
     const t = byId[cp.getAttribute('data-copy')];
-    if (t) copyText(t.content || '', 'Copied “' + trunc(t.title, 44) + '” skill.md');
+    if (t) copyGuide(t);
     return;
   }
 
@@ -603,7 +610,7 @@ root.addEventListener('click', function(e){
     return;
   }
   if (e.target.closest('#btl-m-copy')){
-    if (modalTask) copyText(modalTask.content || '', 'Copied “' + trunc(modalTask.title, 44) + '” skill.md');
+    if (modalTask) copyGuide(modalTask);
     return;
   }
   if (e.target.closest('[data-close]')){ closeModal(); return; }

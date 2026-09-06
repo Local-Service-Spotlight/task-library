@@ -1,6 +1,6 @@
 ---
 name: coordinate-agents-with-shared-memory
-description: "A shared-memory system from which a fresh agent can recover the task and verify what has happened."
+description: Two AI workers should not undo each other’s work.
 category: Knowledge System Maintenance
 stage: —
 definitive_article: https://blitzmetrics.com/set-up-cross-agent-shared-memory/
@@ -9,66 +9,70 @@ status: needs-work
 
 # Coordinate agents with shared memory
 
-**Use this when:** More than one authorized agent needs to share durable context and resume the same work.
+Two AI workers should not undo each other’s work. This guide gives them shared notes and a clear owner for each change. Start with one real task and the sources that hold its facts.
 
-This is a registered recipe in review. A published guide or this new record does not certify its runtime behavior. Read the current [canonical procedure](https://blitzmetrics.com/set-up-cross-agent-shared-memory/) before executing; it contains the detailed actions and current source-specific instructions.
+**The path:** Source owners → Task claim → Verified work → Fresh handoff
+
+**Start when:** More than one authorized worker needs to contribute to or resume the same real task.
 
 ## Inputs
-- Owned Markdown/Obsidian vault
-- Canonical method and team repositories
-- Authorized source systems and credential store
-- A task claim and checkpoint format
 
-## Prerequisite tasks
-- No separate mandatory task is established by the reviewed source; use the explicit starting condition and inputs above.
-## Input references
-- [What You Are Installing: The Local Service Spotlight Claude Plugin Explained](https://localservicespotlight.com/plugin/)
+- An owned shared folder or [Obsidian, a workspace for shared notes](https://blitzmetrics.com/obsidian-cowork-layer-shared-memory-across-agents/) with agreed read/write access.
+- The task, allowed actions, actual source systems and a shared claim/checkpoint format.
+- Canonical skill sources and a designated secret store; no credential values in the working notes.
+
 ## Steps
-1. Assign each fact to its real source of truth.
-2. Create filtered task context and claim the write targets.
-3. Work and verify in the source system.
-4. Checkpoint before handoff.
-5. Write the run record and promote reviewed learning.
+
+1. Map each record type to its authority: task/source system for live work, repository for maintained instructions, shared notes for context, secret store for credentials. Vendor memory and copied packs are caches.
+2. Prepare only the context needed for the task: current goal, relevant source links/revisions, evidence, constraints and next action. Keep unrelated client records out of the packet.
+3. Read active task claims before editing. Claim the exact targets with owner, task ID and timestamp using the team’s supported shared mechanism. If another claim overlaps, coordinate or choose independent work; a timestamp alone is not permission to overwrite.
+4. Read the current source just before writing and compare its revision to the claimed base. Preserve concurrent edits. Perform only the task’s authorized actions through the source system.
+5. Check the saved result where it lives. Update the checkpoint with completed work, output references, failures, remaining decisions and next owner. Release or hand off the claim explicitly.
+6. Have a fresh authorized agent read the packet, identify the live authorities and resume a bounded next step. Compare its understanding against the source; access to the folder alone does not prove a successful handoff.
+7. Write the run record and required private team note. Propose reusable changes to the canonical skill, then verify its separate distribution/activation state.
 
 ## Definition of done (QA checklist)
 
-**Expected result:** A shared-memory system from which a fresh agent can recover the task and verify what has happened.
+[Quality assurance (QA)](https://localservicespotlight.com/article-guidelines/) means checking the work against the agreed result.
 
-- [ ] A new agent identifies the correct source for each record type
-- [ ] Competing task claims are detected before both agents write
-- [ ] A handoff resumes from evidence
-- [ ] Credential values do not appear in ordinary notes or packs
-- [ ] Source change, installation and activation have separate checks
-- [ ] Record the exact source revision, actual result and evidence; retain failure, partial, blocked and unknown states.
-- [ ] Write the execution's meta article and link the canonical task. Publication is a separate action under the current authority.
-- [ ] Keep this parent job's internal retries, checks and agent contributions on the same execution ID; derivatives and revisions add no runs. A separately scoped and documented child execution may have its own ID with parentExecutionId, without adding a second completion to this parent recipe.
-- [ ] Verify permissions for publishing, sending, spending, scheduling or changing access before that action. A task record does not grant them.
+- [ ] Each fact type has one identified authority and privacy boundary.
+- [ ] Overlap is detected before writes; current-source revision guards preserve other work.
+- [ ] A fresh agent can recover the real task state and find its checked result.
 
-## Child or companion tasks
-- No separate mandatory task is established by the reviewed source; use the explicit starting condition and inputs above.
-## Handoff and Content Factory context
-
-The next agent resumes from the checkpoint; reviewed reusable lessons update the canonical skill.
-
-The Content Factory turns source material into useful work through Produce, Process, Post and Promote. This recipe's reviewed placement is **cross stage support**. Support tasks help the relevant stages; do not force a support operation into a production stage. The canonical article's lower diagram should show the same context while its lead visual explains this particular task.
-
-### Downstream tasks
-- [New Agents Start Here](https://blitzmetrics.com/new-agents-start-here/) — Task Library: [onboard-agent-for-first-scoped-task](https://local-service-spotlight.github.io/task-library/?task=onboard-agent-for-first-scoped-task#task-onboard-agent-for-first-scoped-task)
 ## Example(s)
 
-No independently verified completed execution has been assigned to this new task record. Historical examples in the article remain source material, not reconstructed execution counts. Write the meta article for each real attempt, including failed or blocked work, and register only its actual identity and result.
+**Fictional teaching example. This is not a client result or proof of a completed run.**
 
-## Open review items
-- Align every-execution meta-writing clause with the updated meta standard; private receipt alone is not the whole feedback task.
-- This is WIP until the current source procedure, access, linked task outputs and live acceptance checks have been independently reviewed. A workflow-summary addition alone does not pass those checks.
-- All media tests stay muted with volume zero; if silence cannot be verified before playback, inspect captions, metadata or frames instead.
+Two fictional workers plan to edit the same page. Worker A has a current claim. Worker B reviews links in a separate file, then sends findings to A. A’s checkpoint records the saved page hash and two open checks. The next worker resumes those two checks instead of starting a second rewrite.
+
+## Handoff and Content Factory context
+
+This work supports the [Content Factory, our four stages of using real content](https://blitzmetrics.com/content-factory/): Produce → Process → Post → Promote. Use the specific inputs and next task below to place the work; a maintenance task does not manufacture transcripts, clips or other stage outputs it does not call for.
+
+[The receiving agent](https://local-service-spotlight.github.io/task-library/?task=onboard-agent-for-first-scoped-task#task-onboard-agent-for-first-scoped-task) reads the checkpoint and executes only its assigned next task.
+
+## Run with an agent
+
+Give the AI worker this recipe, the real Inputs above, the intended result and the actions already authorized. Ask it to return the saved output, checks, evidence and remaining owner. Check its work against this guide; loading a skill does not prove access, installation of a job, or successful execution. Keep media muted with volume at zero if playback is needed.
+
+For recurring work, keep the actual trigger, owner and runtime in the job record. Scheduling and observed firings are separate. Do not create a schedule merely because this guide mentions a review interval.
+
+## Record the real execution
+
+Open the run record when the work starts. Keep the exact starting recipe revision, one execution ID, source evidence and actual state. Write a [meta article, the record of one run](https://blitzmetrics.com/meta-article-prompt/) with decisions, results, checks, failures and next owner. Link it to this task and register it through the [Task Library](https://local-service-spotlight.github.io/task-library/) execution process. Writing is part of the work; public release follows existing authority.
+
+Reuse the same execution ID for revisions, QA, meta writing and retries within that run. A blocked run stays open with its dependency and next owner; do not invent a finish time. Use supported findings to propose and verify a better recipe. A historical public-example count without distinct run IDs remains dated article volume, not verified execution frequency.
 
 ## Definitive article & links
-- Canonical task procedure: https://blitzmetrics.com/set-up-cross-agent-shared-memory/
-- Exact Task Library record: https://local-service-spotlight.github.io/task-library/?task=coordinate-agents-with-shared-memory#task-coordinate-agents-with-shared-memory
-- Meta-article method: https://blitzmetrics.com/meta-article-prompt/
-- Recipe and execution relationship: https://localservicespotlight.com/meta-articles/
-- Content Factory context: https://blitzmetrics.com/content-factory/
-- Article and task recipe standard: https://blitzmetrics.com/definitive-article-guide/
 
-Source basis: canonical article WordPress ID 110262; reviewed source SHA-256 `14e28891736a42b8fe75c6519e75fe96094a91c53d2ad704750fa5c1dd7d8d67`. The task record summarizes that source and keeps its unresolved items visible. It does not certify installations, provider commands, source-system access or a completed run.
+- [Maintained source guide](https://blitzmetrics.com/set-up-cross-agent-shared-memory/)
+- [This task in the Task Library](https://local-service-spotlight.github.io/task-library/?task=coordinate-agents-with-shared-memory#task-coordinate-agents-with-shared-memory)
+- [Article Guidelines](https://localservicespotlight.com/article-guidelines/)
+- [current article guide](https://blitzmetrics.com/definitive-article-guide/)
+- [How recipes and run records work together](https://localservicespotlight.com/meta-articles/)
+
+## Review and evidence still needed
+
+The inherited contributor status is `needs-work`. It is preserved, not promoted by this rewrite. That label alone does not verify document readiness, a client outcome, access or an executed task.
+
+A real execution still needs its own source, reviewer, saved result and handoff evidence. The fictional example teaches the method; a real example with relevant proof is still needed where required. The task-specific flow above is source guidance; its visible presentation and the full document need a named reviewer and desktop/mobile checks.

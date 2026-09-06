@@ -1,6 +1,6 @@
 ---
 name: step-11-proofread-with-grammarly-or-chatgpt
-description: Run the finished draft through Grammarly or ChatGPT for grammar, tone, and readability — without letting the tools sand off the speaker's voice (Blog Posting Guidelines Step 11).
+description: "Check the whole draft for clear words and true facts. Fix mistakes while keeping the real voice."
 category: Content Factory — Process
 stage: Process
 definitive_article: https://localservicespotlight.com/article-guidelines/
@@ -9,42 +9,80 @@ status: complete
 
 # Step 11: Proofread with Grammarly or ChatGPT
 
-**Use this when** the article is complete with links, images, and embed (Step 10 done) — the final Process-stage pass before the Post stage takes over.
+Small errors can make a good article hard to trust. This guide helps you fix the words and check the facts before the next step. Start with the full draft and the source it came from.
+
+**The path:** Complete draft → Suggested fixes → Source and voice check → Ready draft or clear gaps.
+
+**Use this when:** The article has its planned text, links, visuals and source player and needs the final Process proofreading pass.
 
 ## Inputs
-- The complete article draft
-- Grammarly or ChatGPT access
-- The verified transcript (fact-check source) and the GCT statement
-- The correct spellings list (Marko Sipila, Zach Peyton, George Paladichuk, NaiL AI, etc.)
+- The complete versioned draft, [Goals, Content, and Targeting](https://blitzmetrics.com/gct-business-strategy/) brief, verified transcript and source proof.
+- The actual spelling/identity list for this project, not a generic list of unrelated client names.
+- An approved proofreading tool or manual workflow, with permission to send the draft’s data to that tool.
+- The title/headings/search fields, link and media evidence, and next publisher.
+
+## First-run prompt
+
+> Proofread this full draft against the supplied source and project spelling list. Propose small fixes, review each for meaning and voice, and check facts separately. Keep media and text-to-speech silent. Return the corrected revision, key decisions and any unresolved evidence; do not call the article ready from a grammar score alone.
 
 ## Steps
-1. Run the draft through Grammarly or ChatGPT scoped to grammar, punctuation, readability, and tone consistency — explicitly instruct the tool NOT to rewrite voice, add content, or "enhance" phrasing.
-2. Review every suggestion individually. Accept mechanical fixes; reject any change that genericizes the speaker's phrasing or injects AI-fluff vocabulary.
-3. Fact-check against the transcript: every number, name, claim, and quote in the article must match what was actually said or the cited research.
-4. Verify all proper nouns against the spellings list — proofreading tools routinely "correct" real names into wrong ones.
-5. Read the article aloud (or via text-to-speech) top to bottom — the strongest catch for clunky sentences, repeated words, and broken flow.
-6. Re-verify the load-bearing SEO elements survived editing: focus keyword still in the first paragraph, title under 60 characters, meta under 160, headings intact.
-7. Check formatting hygiene: short paragraphs held, no double spaces, consistent capitalization in headings, captions present.
-8. Update the tracker ("Step 11 done — Process stage complete") and hand off to the Post stage (`step-12-post-article-on-wordpress`).
+1. Save the current draft so each change can be reviewed. If using Grammarly or ChatGPT, request suggestions for grammar, clarity and consistency only. Do not upload private content to an unapproved service or ask for fabricated expansion.
+2. Review changes individually. Accept a typo fix or shorter clear sentence; reject a rewrite that changes voice, certainty, chronology, attribution or the actual lesson. Do not bulk-accept every suggestion.
+3. Check every name, number, quote and material factual claim against the source or cited primary research. A fluent rewrite is not a fact check. Preserve unresolved claims as explicit editorial gaps rather than guessing.
+4. Compare several representative passages with the source voice, including the opening and a direct quote. Ensure personal first person belongs to the real author and company/reference voice remains appropriate.
+5. Read the full text in order, including captions, headings and link anchors. Check for repeated words, missing context, abrupt transitions and broken formatting. Use a silent read; do not start text-to-speech through the user’s speakers.
+6. Recheck the specific GCT opening and plain first-use term explanations. Use a readability screen to find long sentences, then judge clarity. Keep the meaningful lead visual and page-role requirements intact.
+7. Verify that title and description still match the final body and headings remain logical. Google does not impose hard 60/160-character rules, and an exact keyword in the first paragraph is not this proofreading pass’s universal acceptance test.
+8. Review the whole-page checklist state. Mark Process ready only for the checked revision and completed applicable work. Keep an unavailable caption/source fact or unresolved rights issue as a specific handoff gap.
+9. Save the corrected draft, change notes and evidence references. Hand it to the publisher with the actual scope: draft placement, update or publication already authorized for that job.
 
 ## Definition of done (QA checklist)
-- [ ] Grammar/readability pass completed with each suggestion reviewed, not bulk-accepted
-- [ ] Speaker's voice intact — spot-check 3 passages against the transcript
-- [ ] All facts, numbers, and names verified (spellings list applied)
-- [ ] Keyword, title, and meta specs still satisfied post-edit
-- [ ] Read-aloud pass completed with fixes applied
-- [ ] Linked back to the definitive article and relevant siblings
+
+- [ ] Each accepted change preserves meaning, attribution and real voice.
+- [ ] Material facts and proper names are source-checked or clearly unresolved.
+- [ ] The full draft, captions/headings and first-use terms have been read.
+- [ ] The exact final revision and applicable ready/pending checks are recorded without invented SEO or audio guarantees.
 
 ## Example(s)
-- The proofread gate is Step 11 of every run documented at https://localservicespotlight.com/article-guidelines/, immediately before WordPress posting.
-- Example needed as a standalone meta-article — run the Meta-Article Prompt after first documented run.
 
-## Run on a persistent agent (Fable 5)
+**Fictional teaching example — no actual draft was reviewed.** A proofreading tool changes “The photo helps us prepare” to “The photo lets us diagnose the fault.” The editor rejects it because the sample source requires an inspection.
 
-A persistent agent (Claude Fable 5, or a comparable OpenAI/Google model that loops and holds memory) reviews every suggestion individually — never bulk-accepts — and loops the fact-check until each number, name, and quote matches the transcript and the SEO specs still hold after edits. Memory keeps the growing correct-spellings list, so every name a past run verified protects every future article. Log a meta-article example each run.
-See `boil-the-ocean.md` for the full operating principles.
+The editor accepts “bring you bike” → “bring your bike.” They retain the mechanic’s plain phrase “show us what happens” instead of “provide a comprehensive operational demonstration.” The review note lists those decisions and keeps an unclear source term at 02:18 pending. Better grammar does not erase that evidence gap.
+
+## Handoff and Content Factory context
+
+The assigned publisher receives the exact checked revision for [Step 12: place the article in WordPress](https://local-service-spotlight.github.io/task-library/?task=step-12-post-article-on-wordpress#task-step-12-post-article-on-wordpress). Outstanding checks remain attached to that handoff.
+
+Produce supplies the real source. **Process**, this stage of the [Content Factory](https://blitzmetrics.com/content-factory/), turns it into useful finished assets. Post saves or publishes them on the agreed channels. Promote tests and distributes suitable work within its own scope. The handoff above names this task’s actual next step; catalog neighbors alone are not prerequisites.
+
+## When this runs
+
+One proofreading pass per completed draft, with targeted rechecks after later substantive edits.
+
+## First-run setup and continuity
+
+Open the supplied task file and its linked source. Verify the project’s real inputs, account, access and output folder before work. This Markdown file is a guide; it does not install an app, connect an account, supply a subscription or create a schedule. Carry out work already authorized; do not ask for the same approval again. Keep any unsupplied destination or new action outside that scope clearly pending.
+
+Save source IDs, versions, decisions, checked outputs and next owner in the project tracker. Before a retry, check the saved state and other workers’ changes. A model name does not guarantee memory or a running timer. Repeated work needs an actual configured trigger and durable state; one-off work can be started by the prompt above.
+
+Keep agent media muted with volume zero before playback. If mute cannot be verified, use captions, metadata or still frames. State the limit: silent visual checks do not prove spoken-word accuracy or audio quality. Do not start sound through the user’s speakers unless explicitly asked.
+
+## Write up the real run
+
+For every actual attempt, [write its meta article](https://blitzmetrics.com/meta-article-prompt/) with this recipe and revision, trigger, steps performed, output evidence, measured result, gaps and next owner. Failed, blocked and partial attempts also get a written record. A draft can satisfy writing; publishing it follows the existing job scope.
+
+Keep one stable execution ID across retries and edits. A separately scoped child task may have its own ID linked to its parent. Writing the parent’s meta record is part of that run, not an endless new chain. The [recipe and meta-article guide](https://localservicespotlight.com/meta-articles/) explains this distinction. Teaching examples are not real executions and must not enter the run count.
 
 ## Definitive article & links
-- Hub: https://localservicespotlight.com/article-guidelines/ (Step 11 of the 18-step SOP)
-- Related: /website-qa-audit (the standards this pass pre-empts)
-- Sibling skills, in run order: `step-10-embed-source-video` → this → `step-12-post-article-on-wordpress` (Post stage)
+
+- Canonical article: https://localservicespotlight.com/article-guidelines/
+- Exact task: [Step 11: Proofread with Grammarly or ChatGPT](https://local-service-spotlight.github.io/task-library/?task=step-11-proofread-with-grammarly-or-chatgpt#task-step-11-proofread-with-grammarly-or-chatgpt)
+- Writing standard: [Article Guidelines](https://localservicespotlight.com/article-guidelines/)
+- [Task recipe and publishing standard](https://blitzmetrics.com/definitive-article-guide/)
+- [Google’s title-link rules](https://developers.google.com/search/docs/appearance/title-link)
+- [Google’s snippet rules](https://developers.google.com/search/docs/appearance/snippet)
+
+## Review and evidence still needed
+
+The source contributor status is preserved. It is not certification of this draft or proof of account access, completed work or a live outcome. The worked example teaches the method and is explicitly fictional.
+- The real source, tool data scope and final revision need actual checking; this proposal does not certify a published article.

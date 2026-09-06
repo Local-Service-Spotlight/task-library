@@ -412,6 +412,34 @@
 @media (prefers-reduced-motion:reduce){
   #btl-app *,#btl-app *::before,#btl-app *::after{animation:none !important;transition:none !important}
 }
+
+#btl-app .btl-start-map{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:8px;align-items:center;max-width:760px;margin:22px auto;text-align:center}
+#btl-app .btl-start-map div{padding:14px 9px;border:1px solid rgba(125,211,252,.35);border-radius:12px;background:rgba(16,36,58,.75);min-width:0}
+#btl-app .btl-start-map b,#btl-app .btl-start-map div span{display:block;overflow-wrap:anywhere}
+#btl-app .btl-start-map b{font-size:16px;color:var(--ink)}
+#btl-app .btl-start-map div span{font-size:13px;color:var(--mut);margin-top:5px}
+#btl-app .btl-start-map figcaption{grid-column:1/-1;font-size:13px;color:var(--mut);margin-top:4px}
+#btl-app .btl-start{margin-top:24px;margin-bottom:24px}
+#btl-app .btl-start li{margin:0 0 12px;line-height:1.6}
+#btl-app .btl-start p,#btl-app .btl-first-run p{line-height:1.6}
+#btl-app .btl-first-run{border:1px solid var(--line);border-radius:10px;padding:16px;margin-bottom:20px;background:rgba(16,36,58,.65)}
+#btl-app .btl-first-run h2{margin-top:0;font-size:20px}
+#btl-app .btl-task-path{margin:12px 0;padding:0}
+#btl-app .btl-task-path ol{list-style:none;counter-reset:path;display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:8px;padding:0;margin:0}
+#btl-app .btl-task-path li{counter-increment:path;border:1px solid rgba(158,193,255,.35);border-radius:8px;padding:10px;font-size:13px;line-height:1.45;color:#edf4ff;background:rgba(79,140,255,.08)}
+#btl-app .btl-task-path li::before{content:counter(path) ". ";font-weight:800;color:#a9c9ff}
+#btl-app .btl-task-path figcaption{font-size:12px;color:var(--mut);margin-top:7px}
+#btl-app .btl-run-details{font-size:13px;margin:0 0 16px;color:var(--mut)}
+#btl-app .btl-fm summary{cursor:pointer}
+#btl-app .btl-prompt-preview{margin:12px 0;font-size:13px}
+#btl-app .btl-prompt-preview textarea{display:block;width:100%;margin:12px 0;padding:10px;border:1px solid var(--line);border-radius:8px;color:#e3eaff;background:#0b1428;resize:vertical;font:12px/1.5 var(--mono)}
+
+#btl-app .btl-start summary{cursor:pointer;font-weight:700;padding:12px 0}
+@media(max-width:600px){#btl-app .btl-hero{padding-top:32px}#btl-app .btl-start-map{gap:4px}#btl-app .btl-start-map div{padding:10px 4px}#btl-app .btl-start-map b{font-size:14px}#btl-app .btl-start-map div span{font-size:12px}}
+
+#btl-app .btl-library-details{margin:15px auto;color:var(--mut);max-width:860px;font-size:13px}
+#btl-app .btl-library-details summary{cursor:pointer;padding:8px}
+#btl-app .btl-library-details p{line-height:1.5}
 </style>
 <div id="btl-app">
   <div class="btl-bg" aria-hidden="true"><i class="b1"></i><i class="b2"></i><i class="b3"></i><span class="grid"></span></div>
@@ -426,21 +454,74 @@
   <header class="btl-hero btl-wrap">
     <div class="btl-eyebrow"><span class="pulse"></span>Local Service Spotlight Content Factory</div>
     <h1 class="btl-title">Local Service Spotlight <span>Task Library</span></h1>
-    <p class="btl-sub"><span class="btl-live-total">—</span> SOPs. Their article mappings resolve to <span class="btl-live-article-hubs">—</span> hubs: <span class="btl-live-definitive">—</span> catalog-ready and <span class="btl-live-article-wip">—</span> in progress. A Definitive marker also requires review of the actual page.</p>
+    <p class="btl-sub">Use these guides to save time on work that helps your business grow. Pick one job, give AI the right facts, and check what it makes. Start with one draft you can review.</p>
+    <figure class="btl-start-map" aria-label="Pick a job, give it facts, check the result">
+      <div><b>1. Pick a job</b><span>Find its guide</span></div><span aria-hidden="true">→</span>
+      <div><b>2. Give it facts</b><span>Use the first prompt</span></div><span aria-hidden="true">→</span>
+      <div><b>3. Check the work</b><span>Save proof and next steps</span></div>
+      <figcaption>A guide gives the steps. You choose the job and check the result.</figcaption>
+    </figure>
     <div class="btl-cta">
-      <a id="btl-dl" class="btl-btn btl-btn-primary" href="#">⬇ Download prepared skills (.zip)</a>
-      <a id="btl-meta" class="btl-btn btl-btn-ghost" href="#" target="_blank" rel="noopener" hidden>How we built this →</a>
+      <a class="btl-btn btl-btn-primary" href="#btl-controls">Find a job ↓</a>
+      <a id="btl-dl" class="btl-btn btl-btn-ghost" href="#">⬇ Download guides + first steps (.zip)</a>
     </div>
+    <p class="btl-updated">New here? <a href="#btl-start-h">See how to start one job</a>. The ZIP includes START-HERE.md.</p>
+    <details class="btl-library-details"><summary>Library counts and other downloads</summary>
+    <p class="btl-updated"><span class="btl-live-total">—</span> SOPs. Their article mappings resolve to <span class="btl-live-article-hubs">—</span> hubs: <span class="btl-live-definitive">—</span> catalog-ready and <span class="btl-live-article-wip">—</span> in progress. A Definitive marker also requires review of the actual page.</p>
+      <div id="btl-download-options"></div>
+      <a id="btl-meta" class="btl-btn btl-btn-ghost" href="#" target="_blank" rel="noopener" hidden>How we built this →</a>
+    </details>
     <div class="btl-updated">Last updated: <span id="btl-updated">—</span></div>
   </header>
+
+  <!-- ============ 4. CONTROLS ============ -->
+  <div class="btl-controls" id="btl-controls">
+    <div class="btl-wrap btl-controls-in">
+      <label class="btl-search">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20.5 20.5-4-4" stroke-linecap="round"></path></svg>
+        <input id="btl-q" type="search" placeholder="Find a job: video, website, weekly report…" aria-label="Search tasks by title, description, or full skill content" autocomplete="off">
+        <button id="btl-clear" type="button" aria-label="Clear search" hidden>✕</button>
+      </label>
+      <div class="btl-chips" id="btl-chips" role="group" aria-label="Filter by status"></div>
+      <div class="btl-xc">
+        <button id="btl-expand" class="btl-mini" type="button">Expand all</button>
+        <button id="btl-collapse" class="btl-mini" type="button">Collapse all</button>
+      </div>
+    </div>
+    <div class="btl-wrap"><div class="btl-resline" id="btl-resline" role="status" aria-live="polite"></div></div>
+  </div>
+
+  <!-- ============ 5. CATEGORIES ============ -->
+  <main class="btl-wrap btl-cats" id="btl-cats"></main>
+  <div class="btl-wrap"><div class="btl-empty" id="btl-empty" hidden>
+    <div class="ee">🔍</div>
+    <h3>No tasks match</h3>
+    <p>Nothing in <span class="btl-live-total">—</span> SOPs matches that combination of search and status filter.</p>
+    <button id="btl-reset" class="btl-mini" type="button">Reset search &amp; filters</button>
+  </div></div>
+
 
   <!-- ============ 2. STATS ============ -->
   <section class="btl-wrap btl-stats" aria-label="Library statistics">
     <div class="btl-statgrid" id="btl-statgrid"></div>
     <div class="btl-health">
-      <div class="btl-health-top"><span class="btl-health-label">Library health</span><span id="btl-health-pct"></span></div>
+      <div class="btl-health-top"><span class="btl-health-label">Reported guide status</span><span id="btl-health-pct"></span></div>
       <div class="btl-health-bar" id="btl-health-bar"></div>
       <div class="btl-health-legend" id="btl-health-legend"></div>
+    </div>
+  </section>
+
+  <section class="btl-wrap btl-start" aria-labelledby="btl-start-h">
+    <div class="btl-factory-card">
+      <h2 id="btl-start-h">Start one job</h2>
+      <ol>
+        <li><b>Pick the result you need.</b> Search the tasks above. Open a guide and choose “Copy first-run prompt.” Paste it into the AI app you use, then add your business facts.</li>
+        <li><b>Give it what the job needs.</b> Add the files named in the guide. Connect an account only if the task needs it. Ask the AI to name any missing file or access before it starts.</li>
+        <li><b>Try once and check the result.</b> Start with a draft. Use the guide’s checklist, open the output, and save the proof and next step. A downloaded file has not done the job.</li>
+        <li><b>Set repeats only if needed.</b> After one run works, agree on a time, time zone, where it will run, and who gets the result. Check that the first timed run really happened. See <a href="https://localservicespotlight.com/install/" target="_blank" rel="noopener">setup and access steps</a>.</li>
+      </ol>
+      <p>A <a href="https://localservicespotlight.com/plugin/" target="_blank" rel="noopener">skill is a written recipe</a>; a pack groups recipes. A plugin is a package an app can load. An <a href="https://blitzmetrics.com/build-agents/" target="_blank" rel="noopener">agent is the AI worker</a> that uses them. This ZIP is a set of guides. Use the <a href="https://localservicespotlight.com/install/" target="_blank" rel="noopener">install guide</a> for a supported app package.</p>
+      <details><summary>What do the status labels mean?</summary><p>“Reported complete” is the contributor’s saved label. It does not prove that we checked every part of the guide. It also does not mean a skill is installed, an account is connected, a job has run, or a business result was reached. Each needs its own evidence. Missing evidence stays unknown.</p><p>Every real run gets a <a href="https://blitzmetrics.com/meta-article-prompt/" target="_blank" rel="noopener">meta article: a record of the work and its proof</a>. Run records link to the recipe so we can improve it. Rechecking or editing the same run does not add a new run.</p></details>
     </div>
   </section>
 
@@ -449,7 +530,7 @@
     <div class="btl-factory-card">
       <span class="btl-overline">The line, not a list</span>
       <h2 id="btl-factory-h">Content Factory — four phases</h2>
-      <p class="lead">Never treat a task as isolated. Gather (Produce) → Process in Descript → Post → Promote with ads. Digital Plumbing sits under the line as gates: a $1/day boost with no pixel is spend you cannot retarget. Click a phase to filter the library.</p>
+      <p class="lead">The <a href="https://blitzmetrics.com/content-factory/" target="_blank" rel="noopener">Content Factory</a> turns real stories into content that can help your business. Produce: gather the source. Process: shape it. Post: publish it. Promote: share what works. Setup and support tasks help these stages. Click a stage to find its tasks; read each guide for the actual inputs and next step.</p>
       <div class="btl-phases" id="btl-phases"></div>
       <div class="btl-routing" id="btl-routing"></div>
       <div class="btl-lanes" id="btl-lanes"></div>
@@ -461,7 +542,7 @@
     <div class="btl-loop-card">
       <div class="btl-loop-head">
         <span class="btl-overline">⭐ The engine</span>
-        <h2 id="btl-loop-h">Recursive <em>self-improvement</em></h2>
+        <h2 id="btl-loop-h">Use each run to <em>improve the guide</em></h2>
         <p>Use each real run to check the recipe. Record what happened, including failed or blocked work, then review any lesson before changing the shared instructions. Writing the run record is required; public release needs its own authority.</p>
       </div>
       <div class="btl-loop-grid">
@@ -522,32 +603,6 @@
     </div>
   </section>
 
-  <!-- ============ 4. CONTROLS ============ -->
-  <div class="btl-controls" id="btl-controls">
-    <div class="btl-wrap btl-controls-in">
-      <label class="btl-search">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20.5 20.5-4-4" stroke-linecap="round"></path></svg>
-        <input id="btl-q" type="search" placeholder="Search every SOP — titles, descriptions, full skill.md text…" aria-label="Search tasks by title, description, or full skill content" autocomplete="off">
-        <button id="btl-clear" type="button" aria-label="Clear search" hidden>✕</button>
-      </label>
-      <div class="btl-chips" id="btl-chips" role="group" aria-label="Filter by status"></div>
-      <div class="btl-xc">
-        <button id="btl-expand" class="btl-mini" type="button">Expand all</button>
-        <button id="btl-collapse" class="btl-mini" type="button">Collapse all</button>
-      </div>
-    </div>
-    <div class="btl-wrap"><div class="btl-resline" id="btl-resline" role="status" aria-live="polite"></div></div>
-  </div>
-
-  <!-- ============ 5. CATEGORIES ============ -->
-  <main class="btl-wrap btl-cats" id="btl-cats"></main>
-  <div class="btl-wrap"><div class="btl-empty" id="btl-empty" hidden>
-    <div class="ee">🔍</div>
-    <h3>No tasks match</h3>
-    <p>Nothing in <span class="btl-live-total">—</span> SOPs matches that combination of search and status filter.</p>
-    <button id="btl-reset" class="btl-mini" type="button">Reset search &amp; filters</button>
-  </div></div>
-
   <!-- ============ 6. FOOTER ============ -->
   <footer class="btl-foot">
     <div class="btl-foot-line"></div>
@@ -571,7 +626,8 @@
           <div class="btl-m-sub" id="btl-m-sub"></div>
         </div>
         <div class="btl-m-actions">
-          <button class="btl-btn-small" id="btl-m-copy" type="button">Copy skill.md</button>
+          <button class="btl-btn-small" id="btl-m-copy" type="button">Copy guide</button>
+          <button class="btl-btn-small" id="btl-m-start" type="button">Copy first-run prompt</button>
           <button class="btl-m-close" data-close aria-label="Close dialog" type="button">✕</button>
         </div>
       </header>

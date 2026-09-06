@@ -1,6 +1,6 @@
 ---
 name: process-videos-via-marketscale
-description: Use the MarketScale platform to process and distribute raw video as an alternate Process-stage path, returning finished assets to the Content Library.
+description: "Send a clear video brief to MarketScale. Check the returned cut and save the files your team needs."
 category: Content Factory — Process
 stage: Process
 definitive_article: GAP — to be written
@@ -9,43 +9,81 @@ status: gap
 
 # Process videos via MarketScale
 
-**Use this when** a raw video is designated for the MarketScale processing/distribution path instead of (or alongside) the in-house Descript pipeline.
+An outside editor needs to know what you want the video to do. This guide helps you send a clear brief and check the finished cut. Start with the real source and the result you need.
 
-> **Gap notice:** this task has no definitive article and no documented house SOP yet. The steps below are the provisional process from the task definition; the FIRST real run must be documented with the Meta-Article Prompt to seed the definitive article and harden this skill.
+**The path:** Archived source → Clear edit brief → Reviewed cut → Saved master and handoff.
+
+**Use this when:** The project has chosen MarketScale for a specific video edit, with its account and service scope available.
 
 ## Inputs
-- The raw video file from the Content Library `01-Raw` folder (already archived in Google Drive per Step 1 — Drive remains the system of record)
-- MarketScale platform access (account credentials held by the brand, not an individual VA)
-- The video's GCT statement, title, and description copy (so distribution carries correct framing)
-- The Content Library tracker
+- The original archived media, source transcript, rights and [Goals, Content, and Targeting](https://blitzmetrics.com/gct-business-strategy/) brief.
+- The exact brand workspace, account role, included edit service and real approver. A brand-held account does not imply password sharing.
+- The requested length, orientation, destination, captions, branding and deliverable files.
+- The tracker, original-source link, review owner and actual publication/distribution scope.
+
+## First-run prompt
+
+> Prepare and carry out the scoped MarketScale edit request using this archive and brief. Confirm the actual workspace controls, avoid duplicate orders, and check the returned media against the source. Keep audio silent. Return the master/captions, request states and any real distribution URLs; do not equate auto-completion with quality review.
 
 ## Steps
-1. Confirm why this video routes through MarketScale rather than the standard Descript path (e.g., client mandate or distribution reach) and note the reason in the tracker — routing decisions are knowledge to capture.
-2. Upload the raw video from Drive to MarketScale; never let MarketScale hold the only copy.
-3. Submit it for MarketScale's processing (editing/captioning per the platform's workflow), supplying the GCT-derived title, description, and the brand/speaker attribution.
-4. Review the processed cut before any distribution: names spelled correctly, captions accurate, nothing cut that changes the speaker's meaning. Apply the same authenticity bar as the Descript path.
-5. Approve distribution targets in line with the video's Targeting — and record exactly where MarketScale publishes it.
-6. Download the processed master and captions back into the Content Library (`02-In-Process` → `03-Published`), so the article pipeline (Steps 2–11) can still run off the same asset.
-7. Update the tracker: processed-asset links, distribution URLs, and status. Embed/link distribution URLs from the eventual article where appropriate.
-8. Document this run via `write-meta-article-documenting-agent-work` — the gap closes only when a real run is published and the definitive article gets written.
+1. Record why this source uses MarketScale and what is being requested. Keep the original in the project archive; the provider must not hold the only copy.
+2. Confirm current workspace controls and the edit service available. Official help currently documents both a brief-form route and a Request edit conversation. Use the interface actually present and record the chosen route rather than inventing buttons.
+3. Upload the correct source into its designated folder and select the actual approver. Complete the platform’s upload-approval step within existing authority. Approval into a workspace/feed is not proof of publication on every external channel.
+4. Open the media in Media Studio. Start the current Request edit flow and supply the goal, audience, desired cut length/orientation, source facts and exact caption/branding needs. Check supplied brand assets rather than assuming inherited settings are correct.
+5. Review the completed brief and submit once when in scope. Save the video/order reference and requested deliverables. If an active edit conversation already exists, continue it instead of making a duplicate order.
+6. When the cut returns, compare it with the source: meaning, names, quotes, captions, framing and agreed output. Keep agent playback silent and record any remaining audio-quality review. Use timestamped feedback and the current revision control for actual defects.
+7. Record actual state: uploaded, approved into workspace, in editing, edited, revision requested or complete. Provider auto-completion or elapsed time is not evidence that a human approved the quality. Do not promise the provider’s usual turnaround as this job’s guaranteed deadline.
+8. Save the finished master and available captions to the Content Library, with source mapping and checked file properties. If a required download or caption artifact is unavailable, keep that specific deliverable pending.
+9. Distribute only to the actual channels in the existing scope through their supported publishing tasks. Save real URLs and visibility. A field named Publishing destination in an edit brief is an instruction, not a public distribution receipt.
+10. Write the real run record, including the observed interface, service limits and fixes. The missing house-specific SOP can then be improved from evidence; writing this draft alone does not close its runtime gap.
 
 ## Definition of done (QA checklist)
-- [ ] Routing reason recorded; Drive still holds the master copy
-- [ ] Processed cut reviewed and approved against transcript-accuracy and authenticity standards
-- [ ] Distribution destinations recorded with URLs in the tracker
-- [ ] Processed assets returned to the Content Library for the article pipeline
-- [ ] First-run meta-article created (Meta-Article Prompt) to seed the missing definitive article
-- [ ] Linked back to the definitive article and relevant siblings (hub pending)
+
+- [ ] The source archive, routing reason and approved edit brief are recorded.
+- [ ] One actual request/order is tracked with true current state.
+- [ ] Returned files satisfy the source/branding/caption checks or have precise pending issues.
+- [ ] Archive return and any actual distribution are evidenced separately.
 
 ## Example(s)
-- Example needed — run the Meta-Article Prompt after first real run. No documented MarketScale run exists in the library yet; the first one defines the standard.
 
-## Run on a persistent agent (Fable 5)
+**Fictional teaching example — no provider request was sent.** Maple Cycle asks for a 40-second portrait cut from a six-minute source: show the whole-bike photo, then the close-up, and retain the statement that an inspection may be needed.
 
-A gap task is the ideal persistent-agent assignment: the agent (Claude Fable 5, or a comparable OpenAI/Google model that loops and holds memory) documents the run while executing it — routing reason, processing notes, distribution URLs — so the first pass produces both the deliverable and the meta-article that seeds the missing definitive article. It loops until assets are back in the Content Library and every tracker field is filled, never "distributed, details later." Memory carries each run's routing decisions forward into the SOP this task still lacks.
-See `boil-the-ocean.md` for the full operating principles.
+The sample brief says “Use the existing shop branding; captions must preserve ‘may need an inspection.’ Return a master file and captions.” A returned cut drops “may,” so the reviewer leaves a timestamped correction. Even if the provider marks the order Complete automatically, the local record keeps “meaning correction pending.” No Facebook URL is logged until an actual post exists.
+
+## Handoff and Content Factory context
+
+The content owner receives the master and review log. [Transcript review](https://local-service-spotlight.github.io/task-library/?task=step-2-transcribe-video-using-descript#task-step-2-transcribe-video-using-descript) or [WordPress placement](https://local-service-spotlight.github.io/task-library/?task=step-12-post-article-on-wordpress#task-step-12-post-article-on-wordpress) follows only when its own required article/material is ready. Distribution is a separate Post handoff.
+
+Produce supplies the real source. **Process**, this stage of the [Content Factory](https://blitzmetrics.com/content-factory/), turns it into useful finished assets. Post saves or publishes them on the agreed channels. Promote tests and distributes suitable work within its own scope. The handoff above names this task’s actual next step; catalog neighbors alone are not prerequisites.
+
+## When this runs
+
+One bounded provider request per scoped video/edit order. Revision and status follow-up use the existing owner and provider state; no recurring uploads or extra orders are installed.
+
+## First-run setup and continuity
+
+Open the supplied task file and its linked source. Verify the project’s real inputs, account, access and output folder before work. This Markdown file is a guide; it does not install an app, connect an account, supply a subscription or create a schedule. Carry out work already authorized; do not ask for the same approval again. Keep any unsupplied destination or new action outside that scope clearly pending.
+
+Save source IDs, versions, decisions, checked outputs and next owner in the project tracker. Before a retry, check the saved state and other workers’ changes. A model name does not guarantee memory or a running timer. Repeated work needs an actual configured trigger and durable state; one-off work can be started by the prompt above.
+
+Keep agent media muted with volume zero before playback. If mute cannot be verified, use captions, metadata or still frames. State the limit: silent visual checks do not prove spoken-word accuracy or audio quality. Do not start sound through the user’s speakers unless explicitly asked.
+
+## Write up the real run
+
+For every actual attempt, [write its meta article](https://blitzmetrics.com/meta-article-prompt/) with this recipe and revision, trigger, steps performed, output evidence, measured result, gaps and next owner. Failed, blocked and partial attempts also get a written record. A draft can satisfy writing; publishing it follows the existing job scope.
+
+Keep one stable execution ID across retries and edits. A separately scoped child task may have its own ID linked to its parent. Writing the parent’s meta record is part of that run, not an endless new chain. The [recipe and meta-article guide](https://localservicespotlight.com/meta-articles/) explains this distinction. Teaching examples are not real executions and must not enter the run count.
 
 ## Definitive article & links
-- Hub: GAP — to be written ("How to Process Videos via MarketScale" is on the Gaps & Tasks to Create list, low priority).
-- Related: /content-factory, /blog-posting-guidelines (the parallel in-house path), /meta-article-prompt-template
-- Sibling skills, in run order: `step-1-upload-video-to-google-drive-and-descript` → this (alternate path) → `step-12-post-article-on-wordpress` (Post stage)
+
+- Dedicated canonical article: not mapped in this source record. Use the maintained owned training below until that article gap is reviewed.
+- Exact task: [Process videos via MarketScale](https://local-service-spotlight.github.io/task-library/?task=process-videos-via-marketscale#task-process-videos-via-marketscale)
+- Writing standard: [Article Guidelines](https://localservicespotlight.com/article-guidelines/)
+- [MarketScale current edit-request flow](https://help.marketscale.com/en/articles/16004078-how-to-request-a-video-edit-with-marketscale)
+- [MarketScale first upload and request](https://help.marketscale.com/en/articles/14537742-getting-started-submit-your-first-edit-request-on-marketscale)
+- [MarketScale edited/completed states](https://help.marketscale.com/en/articles/14603884-why-don-t-i-see-the-request-edit-now-button-on-my-video)
+
+## Review and evidence still needed
+
+The source contributor status is preserved. It is not certification of this draft or proof of account access, completed work or a live outcome. The worked example teaches the method and is explicitly fictional.
+- Dedicated article and a verified house run remain absent. Actual workspace version, plan, download/caption options and provider response need an authorized real request.

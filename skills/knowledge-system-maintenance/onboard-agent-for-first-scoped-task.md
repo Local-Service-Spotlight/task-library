@@ -1,6 +1,6 @@
 ---
 name: onboard-agent-for-first-scoped-task
-description: "An agent’s first scoped, verified run using the team’s existing system."
+description: A new AI worker needs the same clear brief as a new teammate.
 category: Knowledge System Maintenance
 stage: —
 definitive_article: https://blitzmetrics.com/new-agents-start-here/
@@ -9,68 +9,70 @@ status: needs-work
 
 # Onboard an agent for its first scoped task
 
-**Use this when:** A new agent is about to begin team, client or site work.
+A new AI worker needs the same clear brief as a new teammate. This guide helps it find the right rules and do one useful job. Start with the team’s current notes, client status, and task.
 
-This is a registered recipe in review. A published guide or this new record does not certify its runtime behavior. Read the current [canonical procedure](https://blitzmetrics.com/new-agents-start-here/) before executing; it contains the detailed actions and current source-specific instructions.
+**The path:** Operating context → Client state → Scoped claim → Checked first task
+
+**Start when:** A new or returning AI worker needs current context before its first assigned task.
 
 ## Inputs
-- Private START HERE and roster access
-- Published canonical skills
-- Specific task, GCT and authority
-- Shared task-claim record
 
-## Prerequisite tasks
-- No separate mandatory task is established by the reviewed source; use the explicit starting condition and inputs above.
-## Input references
-- [The Client Roster: The Safety Gate for Every Client Operation](https://localservicespotlight.com/client-roster/)
-- [How Our AI Agents Share Memory and Coordinate Work](https://blitzmetrics.com/set-up-cross-agent-shared-memory/)
-- [Canonical Skill Rule](https://localservicespotlight.com/canonical-skill-rule/)
+- The private START HERE, current client roster and live work-state location.
+- One assigned task, its goal, sources, intended audience and authority.
+- Canonical skills and verified access to the files needed for this task.
+
 ## Steps
-1. Read the operating context.
-2. Check the roster state.
-3. Load the canonical skill and specific GCT.
-4. Claim the task and avoid competing writes.
-5. Execute and verify in the source system.
-6. Write the execution record and handoff.
+
+1. Read the public onboarding guide, private START HERE and current operating instructions. Verify which sources own methods, client status, live tasks and credentials.
+2. Before client/site work, check the actual roster: Active Client, Special Project or Not Active. Stop Not Active work. Billing, an old project title or a missing invoice does not set the status; never delete a roster row to resolve uncertainty.
+3. Choose the current canonical task and record its revision. Read only relevant client context. Explain [Goals, Content and Targeting](https://blitzmetrics.com/gct-business-strategy/) in plain terms: result, material and people this work serves.
+4. Inspect task claims and claim the exact write targets using the shared mechanism. Coordinate overlaps. Read-only orientation needs no competing write claim.
+5. Perform one bounded authorized task using the real source systems. If a capability is missing, retain the exact gap and continue independent safe work; do not infer permission from a connection.
+6. Verify the output where it was saved or delivered. Record draft/public, pass/fail and unresolved checks separately, including the next owner.
+7. Write the execution’s meta record plus any required private team note. Update the checkpoint and hand off remaining work without copying private client data into public instructions.
 
 ## Definition of done (QA checklist)
 
-**Expected result:** An agent’s first scoped, verified run using the team’s existing system.
+[Quality assurance (QA)](https://localservicespotlight.com/article-guidelines/) means checking the work against the agreed result.
 
-- [ ] Not Active work stops
-- [ ] A task claim identifies owner and target
-- [ ] The correct canonical skill is used
-- [ ] Outcome evidence and the next step are recorded
-- [ ] Record the exact source revision, actual result and evidence; retain failure, partial, blocked and unknown states.
-- [ ] Write the execution's meta article and link the canonical task. Publication is a separate action under the current authority.
-- [ ] Keep this parent job's internal retries, checks and agent contributions on the same execution ID; derivatives and revisions add no runs. A separately scoped and documented child execution may have its own ID with parentExecutionId, without adding a second completion to this parent recipe.
-- [ ] Verify permissions for publishing, sending, spending, scheduling or changing access before that action. A task record does not grant them.
+- [ ] Current context, roster state and exact task source are checked.
+- [ ] No competing writes or unauthorized scope are introduced.
+- [ ] First result and handoff are independently inspectable, with blockers preserved.
 
-## Child or companion tasks
-- [How to Install Our Claude Skill Packs](https://localservicespotlight.com/install/) — Task Library: [install-canonical-skill-packs](https://local-service-spotlight.github.io/task-library/?task=install-canonical-skill-packs#task-install-canonical-skill-packs)
-## Handoff and Content Factory context
-
-Leave the result in the actual project/source system and write the execution’s meta article and private record.
-
-The Content Factory turns source material into useful work through Produce, Process, Post and Promote. This recipe's reviewed placement is **cross stage support**. Support tasks help the relevant stages; do not force a support operation into a production stage. The canonical article's lower diagram should show the same context while its lead visual explains this particular task.
-
-### Downstream tasks
-- No separate mandatory task is established by the reviewed source; use the explicit starting condition and inputs above.
 ## Example(s)
 
-No independently verified completed execution has been assigned to this new task record. Historical examples in the article remain source material, not reconstructed execution counts. Write the meta article for each real attempt, including failed or blocked work, and register only its actual identity and result.
+**Fictional teaching example. This is not a client result or proof of a completed run.**
 
-## Open review items
-- Replace receipt-only/optional-meta wording with every-execution meta writing and a separate publication decision.
-- This is WIP until the current source procedure, access, linked task outputs and live acceptance checks have been independently reviewed. A workflow-summary addition alone does not pass those checks.
-- All media tests stay muted with volume zero; if silence cannot be verified before playback, inspect captions, metadata or frames instead.
+A fictional new worker finds a website task under an old paying-client project, but the roster says Not Active. It stops the site work and records the mismatch for the relationship owner. That is a correctly blocked onboarding run, not a failed reason to invent another status.
+
+## Handoff and Content Factory context
+
+This work supports the [Content Factory, our four stages of using real content](https://blitzmetrics.com/content-factory/): Produce → Process → Post → Promote. Use the specific inputs and next task below to place the work; a maintenance task does not manufacture transcripts, clips or other stage outputs it does not call for.
+
+The task owner receives the result in the actual project. Use [the shared-memory handoff](https://local-service-spotlight.github.io/task-library/?task=coordinate-agents-with-shared-memory#task-coordinate-agents-with-shared-memory) for the next worker and the original thread for authorized updates.
+
+## Run with an agent
+
+Give the AI worker this recipe, the real Inputs above, the intended result and the actions already authorized. Ask it to return the saved output, checks, evidence and remaining owner. Check its work against this guide; loading a skill does not prove access, installation of a job, or successful execution. Keep media muted with volume at zero if playback is needed.
+
+For recurring work, keep the actual trigger, owner and runtime in the job record. Scheduling and observed firings are separate. Do not create a schedule merely because this guide mentions a review interval.
+
+## Record the real execution
+
+Open the run record when the work starts. Keep the exact starting recipe revision, one execution ID, source evidence and actual state. Write a [meta article, the record of one run](https://blitzmetrics.com/meta-article-prompt/) with decisions, results, checks, failures and next owner. Link it to this task and register it through the [Task Library](https://local-service-spotlight.github.io/task-library/) execution process. Writing is part of the work; public release follows existing authority.
+
+Reuse the same execution ID for revisions, QA, meta writing and retries within that run. A blocked run stays open with its dependency and next owner; do not invent a finish time. Use supported findings to propose and verify a better recipe. A historical public-example count without distinct run IDs remains dated article volume, not verified execution frequency.
 
 ## Definitive article & links
-- Canonical task procedure: https://blitzmetrics.com/new-agents-start-here/
-- Exact Task Library record: https://local-service-spotlight.github.io/task-library/?task=onboard-agent-for-first-scoped-task#task-onboard-agent-for-first-scoped-task
-- Meta-article method: https://blitzmetrics.com/meta-article-prompt/
-- Recipe and execution relationship: https://localservicespotlight.com/meta-articles/
-- Content Factory context: https://blitzmetrics.com/content-factory/
-- Article and task recipe standard: https://blitzmetrics.com/definitive-article-guide/
 
-Source basis: canonical article WordPress ID 112481; reviewed source SHA-256 `48df3d1472cdb8baaf17c11ae9eb5a21d496d7cad1bfc86edce7493a06d6af43`. The task record summarizes that source and keeps its unresolved items visible. It does not certify installations, provider commands, source-system access or a completed run.
+- [Maintained source guide](https://blitzmetrics.com/new-agents-start-here/)
+- [This task in the Task Library](https://local-service-spotlight.github.io/task-library/?task=onboard-agent-for-first-scoped-task#task-onboard-agent-for-first-scoped-task)
+- [Article Guidelines](https://localservicespotlight.com/article-guidelines/)
+- [current article guide](https://blitzmetrics.com/definitive-article-guide/)
+- [How recipes and run records work together](https://localservicespotlight.com/meta-articles/)
+
+## Review and evidence still needed
+
+The inherited contributor status is `needs-work`. It is preserved, not promoted by this rewrite. That label alone does not verify document readiness, a client outcome, access or an executed task.
+
+A real execution still needs its own source, reviewer, saved result and handoff evidence. The fictional example teaches the method; a real example with relevant proof is still needed where required. The task-specific flow above is source guidance; its visible presentation and the full document need a named reviewer and desktop/mobile checks.

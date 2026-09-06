@@ -1,6 +1,6 @@
 ---
 name: configure-and-verify-recurring-agent-job
-description: "One configured job with retained state and an observed, independently checkable run or failure."
+description: A task on a calendar has not done the work yet.
 category: Knowledge System Maintenance
 stage: —
 definitive_article: https://blitzmetrics.com/persistent-agents/
@@ -9,69 +9,74 @@ status: needs-work
 
 # Configure and verify a recurring agent job
 
-**Use this when:** A documented task should run on a real trigger without someone remembering to start it.
+A task on a calendar has not done the work yet. This guide helps you set up one repeat job and check its first result. Start with a task that already has clear steps and a way to judge the work.
 
-This is a registered recipe in review. A published guide or this new record does not certify its runtime behavior. Read the current [canonical procedure](https://blitzmetrics.com/persistent-agents/) before executing; it contains the detailed actions and current source-specific instructions.
+**The path:** Tested recipe → Saved trigger → Real firing → Checked result
+
+**Start when:** A clear recipe needs repeat execution and the selected job, runtime and schedule are authorized.
 
 ## Inputs
-- One documented skill and its acceptance checks
-- Authorized runtime and schedule
-- Persistent working state
-- A verified output and failure destination
 
-## Prerequisite tasks
-- No separate mandatory task is established by the reviewed source; use the explicit starting condition and inputs above.
-## Input references
-- [A Skill Is How. A Routine Is When.](https://blitzmetrics.com/skills-and-routines/)
-- [How Our AI Agents Share Memory and Coordinate Work](https://blitzmetrics.com/set-up-cross-agent-shared-memory/)
+- One task recipe, exact source revision, allowed inputs and pass criteria.
+- The chosen app, account, plan, machine/cloud location and authority to save a recurring job.
+- A state folder, output destination, failure route and named owner, each with verified access.
+
 ## Steps
-1. Write the task standard.
-2. Choose and configure a real recurring trigger.
-3. Give the job a working folder.
-4. Read the previous state before acting.
-5. Verify the outcome from the outside.
-6. Record failures and feed learning back.
+
+1. Write the job contract: scope, sources, actions, output, pass checks and what to do on failure. Keep secrets in the designated store; ordinary state notes contain references only.
+2. Check the selected runtime’s current official scheduling docs. Choose a supported trigger and record timezone, recurrence, resource limits and availability needs. A local-file job needs access to its actual machine; a cloud label alone does not establish it.
+3. Inspect existing jobs for overlap. Preserve a working job and its state; update the intended record instead of creating a duplicate.
+4. Using the supported scheduler, save the exact job with its owner, source version, output and failure destination. Read back its identifier and next expected firing. At this point it is scheduled, not observed.
+5. Run one bounded test, then check the next actual scheduled firing. Verify the result at the receiving destination and compare against the recipe. A manual test does not prove the clock fired.
+6. Test an agreed non-destructive failure case or inspect a real failure. Confirm it is visible to the owner. Record last attempt, last success/failure and next expected run separately.
+7. Open the previous state from a fresh run and verify it avoids duplicate work. Keep unresolved runtime, delivery or failure checks blocked; do not widen access to force a pass.
+
+## Current implementation
+
+For a supported Claude Cowork account, the current manual setup is Scheduled → New task → Set up manually. Fill the task name, prompt, approval mode and cadence; choose a model or working folder only where needed and supported. Save, reopen the entry, and check its next run and actual output. Official help describes remote jobs that use connectors and files saved to the Claude account; it says those jobs run even when the computer sleeps or the desktop app is closed. The same page separately describes jobs needing local files or apps as local. For that local mode, keep the required computer and apps available and test the actual job. Check which mode the current account and task support; do not apply the remote sleep behavior to a job with local dependencies. This is one platform implementation, not an instruction to move an existing working job into Cowork. [Current official scheduling instructions](https://support.claude.com/en/articles/13854387-schedule-recurring-tasks-in-claude-cowork).
 
 ## Definition of done (QA checklist)
 
-**Expected result:** One configured job with retained state and an observed, independently checkable run or failure.
+[Quality assurance (QA)](https://localservicespotlight.com/article-guidelines/) means checking the work against the agreed result.
 
-- [ ] The trigger exists in the runtime
-- [ ] A firing leaves timestamped evidence
-- [ ] Output is checked where its reader receives it
-- [ ] A failed or missing result is visible to the owner
-- [ ] The next run can read the previous state
-- [ ] Record the exact source revision, actual result and evidence; retain failure, partial, blocked and unknown states.
-- [ ] Write the execution's meta article and link the canonical task. Publication is a separate action under the current authority.
-- [ ] Keep this parent job's internal retries, checks and agent contributions on the same execution ID; derivatives and revisions add no runs. A separately scoped and documented child execution may have its own ID with parentExecutionId, without adding a second completion to this parent recipe.
-- [ ] Verify permissions for publishing, sending, spending, scheduling or changing access before that action. A task record does not grant them.
+- [ ] Saved job identity, trigger/timezone, account and exact task version are verified.
+- [ ] At least one real firing has an independently checked output or failure receipt.
+- [ ] Next-run state and failure visibility are tested; manual tests and scheduled runs are separate.
 
-## Child or companion tasks
-- No separate mandatory task is established by the reviewed source; use the explicit starting condition and inputs above.
-## Handoff and Content Factory context
-
-Deliver the result or honest error to the configured destination, then write the run’s meta record and review useful changes.
-
-The Content Factory turns source material into useful work through Produce, Process, Post and Promote. This recipe's reviewed placement is **cross stage support**. Support tasks help the relevant stages; do not force a support operation into a production stage. The canonical article's lower diagram should show the same context while its lead visual explains this particular task.
-
-### Downstream tasks
-- No separate mandatory task is established by the reviewed source; use the explicit starting condition and inputs above.
 ## Example(s)
 
-No independently verified completed execution has been assigned to this new task record. Historical examples in the article remain source material, not reconstructed execution counts. Write the meta article for each real attempt, including failed or blocked work, and register only its actual identity and result.
+**Fictional teaching example. This is not a client result or proof of a completed run.**
 
-## Open review items
-- Replace optional-public-artifact language with required writing for each execution while retaining the publication gate.
-- Working-state examples must keep credentials in the designated secret store, not ordinary notes.
-- This is WIP until the current source procedure, access, linked task outputs and live acceptance checks have been independently reviewed. A workflow-summary addition alone does not pass those checks.
-- All media tests stay muted with volume zero; if silence cannot be verified before playback, inspect captions, metadata or frames instead.
+A fictional report job is saved for Monday at 09:00 in the team’s timezone. A manual test succeeds on Sunday. Monday’s run fails to read its source, and the owner sees the error. The job is scheduled and observed, but its Monday report failed; it is not a successful weekly report.
+
+## Handoff and Content Factory context
+
+This work supports the [Content Factory, our four stages of using real content](https://blitzmetrics.com/content-factory/): Produce → Process → Post → Promote. Use the specific inputs and next task below to place the work; a maintenance task does not manufacture transcripts, clips or other stage outputs it does not call for.
+
+The job owner retains the operating record. Use [the original-thread status task](https://local-service-spotlight.github.io/task-library/?task=reply-with-task-status-in-origin-thread#task-reply-with-task-status-in-origin-thread) for an authorized status reply and review changes before the next firing.
+
+## Run with an agent
+
+Give the AI worker this recipe, the real Inputs above, the intended result and the actions already authorized. Ask it to return the saved output, checks, evidence and remaining owner. Check its work against this guide; loading a skill does not prove access, installation of a job, or successful execution. Keep media muted with volume at zero if playback is needed.
+
+For recurring work, keep the actual trigger, owner and runtime in the job record. Scheduling and observed firings are separate. Do not create a schedule merely because this guide mentions a review interval.
+
+## Record the real execution
+
+Open the run record when the work starts. Keep the exact starting recipe revision, one execution ID, source evidence and actual state. Write a [meta article, the record of one run](https://blitzmetrics.com/meta-article-prompt/) with decisions, results, checks, failures and next owner. Link it to this task and register it through the [Task Library](https://local-service-spotlight.github.io/task-library/) execution process. Writing is part of the work; public release follows existing authority.
+
+Reuse the same execution ID for revisions, QA, meta writing and retries within that run. A blocked run stays open with its dependency and next owner; do not invent a finish time. Use supported findings to propose and verify a better recipe. A historical public-example count without distinct run IDs remains dated article volume, not verified execution frequency.
 
 ## Definitive article & links
-- Canonical task procedure: https://blitzmetrics.com/persistent-agents/
-- Exact Task Library record: https://local-service-spotlight.github.io/task-library/?task=configure-and-verify-recurring-agent-job#task-configure-and-verify-recurring-agent-job
-- Meta-article method: https://blitzmetrics.com/meta-article-prompt/
-- Recipe and execution relationship: https://localservicespotlight.com/meta-articles/
-- Content Factory context: https://blitzmetrics.com/content-factory/
-- Article and task recipe standard: https://blitzmetrics.com/definitive-article-guide/
 
-Source basis: canonical article WordPress ID 110662; reviewed source SHA-256 `de27b82e0edeea7771e4fdddb97bc4d34159dad54e5433ea8c797888ec3802c4`. The task record summarizes that source and keeps its unresolved items visible. It does not certify installations, provider commands, source-system access or a completed run.
+- [Maintained source guide](https://blitzmetrics.com/persistent-agents/)
+- [This task in the Task Library](https://local-service-spotlight.github.io/task-library/?task=configure-and-verify-recurring-agent-job#task-configure-and-verify-recurring-agent-job)
+- [Article Guidelines](https://localservicespotlight.com/article-guidelines/)
+- [current article guide](https://blitzmetrics.com/definitive-article-guide/)
+- [How recipes and run records work together](https://localservicespotlight.com/meta-articles/)
+
+## Review and evidence still needed
+
+The inherited contributor status is `needs-work`. It is preserved, not promoted by this rewrite. That label alone does not verify document readiness, a client outcome, access or an executed task.
+
+Actual runtime access, supported schedule configuration, first firing and failure-route test remain unverified until executed. Official scheduling controls depend on the selected surface and plan. The fictional example teaches the method; a real example with relevant proof is still needed where required. The task-specific flow above is source guidance; its visible presentation and the full document need a named reviewer and desktop/mobile checks.

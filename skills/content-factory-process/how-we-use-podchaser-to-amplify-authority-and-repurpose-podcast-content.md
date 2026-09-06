@@ -1,6 +1,6 @@
 ---
 name: how-we-use-podchaser-to-amplify-authority-and-repurpose-podcast-content
-description: Verify a person's Podchaser creator profile, adjudicate every suggested credit, add evidence-backed missing credits, and sync confirmed appearances to the master podcast inventory.
+description: "Check the podcast credits listed for a person. Keep real roles and remove false matches from your work list."
 category: Content Factory — Process
 stage: Process
 definitive_article: https://blitzmetrics.com/how-we-use-podchaser-to-amplify-authority-and-repurpose-podcast-content/
@@ -9,51 +9,80 @@ status: complete
 
 # How we use Podchaser to amplify authority and repurpose podcast content
 
-**Use this when** a person needs an accurate public Podchaser record of the shows they hosted or appeared on, and those credits must feed a verified podcast inventory.
+A podcast credit should show work a person really did. This guide helps you check the profile and each episode tied to it. Start with the right person and the proof for their role.
+
+**The path:** Correct creator → Evidence per credit → Submitted or confirmed state → Master inventory.
+
+**Use this when:** A Podchaser profile or suggested-credit list needs verified identity and episode-role review.
 
 ## Inputs
-- The person's canonical name and known shows, appearances, roles, companies, co-hosts, and topics
-- Canonical profile photo, bio, personal-brand website, LinkedIn, Facebook, and the person's X/Twitter handle
-- Owner authorization and the required account access for profile creation, verification, or credit changes
-- The master podcast inventory and companion Listen Notes/YouTube results
+- Canonical identity details and the existing profile URL if any.
+- Episode/show evidence, known roles and companion inventory results.
+- Actual owner authorization/account access for profile or credit changes; read-only triage can proceed without a claim.
+- A triage sheet with old/new counts, decision, evidence, submission state and reviewer.
 
-## Tools
-- A Podchaser account in a browser
-- The person's X/Twitter account when Podchaser requires it for identity verification
-- Google Sheets for credit triage and master-inventory updates
-- Listen Notes, YouTube, show notes, and browser search for evidence
-- An authorized browser agent may accelerate repetitive review, but it must preserve one-credit-at-a-time judgment and a human-review queue
+## First-run prompt
+
+> Review this exact Podchaser creator and credit list against primary episode evidence. Keep one decision per credit and distinguish mentions, roles and same-name matches. Carry out profile/credit changes already authorized, then read back their true moderation state. Merge only verified appearances and do not infer media rights or contact authority.
 
 ## Steps
-1. Search Podchaser for the person's exact name and known shows. Determine whether a creator profile already exists and whether it is verified; do not create a duplicate profile.
-2. If no profile exists, create one only with owner authorization and canonical identity data. If Podchaser places a new creator or credit into manual review, record the pending state and return after approval rather than claiming it is live.
-3. Verify the creator profile through the person's own X/Twitter identity when Podchaser requires it. If owner access is unavailable, record verification as blocked; never substitute a teammate's identity or ask for credentials in the work log.
-4. Add and reconcile the canonical website, X/Twitter, LinkedIn, Facebook, name, photo, and bio. Each value must match a source the owner controls or has approved so the profile strengthens one entity rather than creating a conflicting one.
-5. Record the current confirmed-credit total and suggested-credit total in the triage sheet. For every suggestion, retain episode URL, show, title, date, proposed role, decision, evidence, and reviewer notes.
-6. Review suggested credits one by one. Confirm the person's actual presence and role using the episode description, show notes, transcript, media, or another authoritative source plus known context. Reject rows where the name is only mentioned or belongs to someone else; send ambiguous rows to human review. Never bulk-confirm suggestions.
-7. Cross-reference Listen Notes, YouTube, and the master inventory for verified appearances Podchaser did not suggest. Add missing credits with the correct role (`Host`, `Guest`, or another documented role) and source evidence; preserve Podchaser's approval status until the change is live.
-8. Recount confirmed credits after processing and reconcile the number to the triage log. Add or update every confirmed appearance in the master inventory, merging duplicates while preserving the Podchaser URL and any other platform links.
-9. Route newly confirmed priority episodes into the Content Factory for transcription, articles, clips, and linked authority assets. Link the person's site and profile consistently, but do not imply that a Podchaser credit by itself grants media-reuse rights.
-10. Repeat the credit review as new episodes publish. Each cycle must process suggestions, missing credits, inventory sync, and repurposing handoff as one closed loop.
+1. Find the existing creator before creating another. Check name, bio, links and actual work to avoid a same-name collision.
+2. If claiming is in scope, use the current Claim Profile process and record its verification request state. Current official help describes team verification; do not assume every user must connect X or substitute someone else’s identity.
+3. Create a missing profile only with the appropriate job scope and supplied identity evidence. Use the current My Creators/Add Creator flow and keep moderation pending until actually approved.
+4. Record confirmed and suggested counts as a dated baseline. For each suggestion, capture episode, show, date, proposed role and primary evidence. A suggested credit is not an appearance record yet.
+5. Judge each credit independently. Confirm host, guest, producer or another actual role only where evidence supports it. Reject same-name and mention-only matches in the work list; keep ambiguous items unresolved. Apply platform changes only through the in-scope route.
+6. Compare verified missing appearances with the platform. Submit supported missing credits using the correct episode and role, and save the submission reference. A moderation submission must not be counted as already public.
+7. Reopen relevant profiles/episode pages after changes. Reconcile actual accepted/removed/pending credits with the before count; distinguish a show-level recurring role from individually verified guest episodes.
+8. Sync confirmed appearances and their sources to the master inventory. Preserve pending submissions and unresolved identity separately. Credit visibility does not grant rights to reuse the media.
+9. Return the triage log, actual profile state and next owner. A future credit review needs a real agreed trigger; do not promise the profile will grow automatically or send outreach from this task.
 
 ## Definition of done (QA checklist)
-- [ ] One creator profile exists and its verified, pending, or blocked state is accurately documented
-- [ ] Canonical name, photo, bio, website, and social links are reconciled across the profile
-- [ ] Every suggested credit has an individual decision, evidence, and reviewer note
-- [ ] Actual appearances are confirmed; mention-only and same-name false positives are rejected
-- [ ] Ambiguous credits remain in a human-review queue and were not bulk-approved
-- [ ] Verified missing credits from Listen Notes, YouTube, or show pages were submitted with the correct documented role
-- [ ] Pending submissions remain marked pending until Podchaser approves them
-- [ ] Before/after confirmed-credit totals reconcile to the triage log
-- [ ] All confirmed credits are deduplicated into the master podcast inventory with Podchaser URLs
-- [ ] Priority episodes are queued for repurposing without asserting unsupported media rights
-- [ ] Linked back to the definitive article and relevant siblings
+
+- [ ] The correct creator is identified with no duplicate profile.
+- [ ] Each reviewed credit has individual role/identity evidence and a decision.
+- [ ] Submitted, pending moderation and confirmed public states remain distinct.
+- [ ] Before/after totals reconcile and the master inventory keeps rights/uncertainty visible.
 
 ## Example(s)
-- The live SOP documents the review of 500+ suggested credits for Dennis Yu and explains the decisive false-positive pattern: an episode that merely mentions his name is not a guest appearance. Confirmed credits were synchronized into the broader authority inventory.
-- Dan Leibrandt's setup is the article's profile-creation example: existing episodes had no associated creator, so the team created the host record, added canonical links, and submitted credits through Podchaser's review process.
+
+**Fictional teaching example — no credits were changed.** A sample profile has ten confirmed credits and three suggestions. One suggestion is a real guest appearance, one only mentions the name, and one belongs to a different person.
+
+The reviewer submits the supported credit and rejects the other two in the work list. While moderation is pending, the public confirmed count remains ten. Only a later verified acceptance can make it eleven. The triage sheet preserves all three decisions instead of bulk-confirming them.
+
+## Handoff and Content Factory context
+
+The inventory owner receives the reconciled log for [the master appearance inventory](https://local-service-spotlight.github.io/task-library/?task=how-to-inventory-every-podcast-youve-been-on-and-why-its-one-of-the-highest-roi-things-you-can-do#task-how-to-inventory-every-podcast-youve-been-on-and-why-its-one-of-the-highest-roi-things-you-can-do). The content owner can later obtain permitted media for transcription; profile approval is not permission to edit a podcast.
+
+Produce supplies the real source. **Process**, this stage of the [Content Factory](https://blitzmetrics.com/content-factory/), turns it into useful finished assets. Post saves or publishes them on the agreed channels. Promote tests and distributes suitable work within its own scope. The handoff above names this task’s actual next step; catalog neighbors alone are not prerequisites.
+
+## When this runs
+
+Initial profile/credit review, then an agreed new-credit check. A pending moderation request is monitored by the actual owner rather than resubmitted repeatedly.
+
+## First-run setup and continuity
+
+Open the supplied task file and its linked source. Verify the project’s real inputs, account, access and output folder before work. This Markdown file is a guide; it does not install an app, connect an account, supply a subscription or create a schedule. Carry out work already authorized; do not ask for the same approval again. Keep any unsupplied destination or new action outside that scope clearly pending.
+
+Save source IDs, versions, decisions, checked outputs and next owner in the project tracker. Before a retry, check the saved state and other workers’ changes. A model name does not guarantee memory or a running timer. Repeated work needs an actual configured trigger and durable state; one-off work can be started by the prompt above.
+
+Keep agent media muted with volume zero before playback. If mute cannot be verified, use captions, metadata or still frames. State the limit: silent visual checks do not prove spoken-word accuracy or audio quality. Do not start sound through the user’s speakers unless explicitly asked.
+
+## Write up the real run
+
+For every actual attempt, [write its meta article](https://blitzmetrics.com/meta-article-prompt/) with this recipe and revision, trigger, steps performed, output evidence, measured result, gaps and next owner. Failed, blocked and partial attempts also get a written record. A draft can satisfy writing; publishing it follows the existing job scope.
+
+Keep one stable execution ID across retries and edits. A separately scoped child task may have its own ID linked to its parent. Writing the parent’s meta record is part of that run, not an endless new chain. The [recipe and meta-article guide](https://localservicespotlight.com/meta-articles/) explains this distinction. Teaching examples are not real executions and must not enter the run count.
 
 ## Definitive article & links
-- Hub: https://blitzmetrics.com/how-we-use-podchaser-to-amplify-authority-and-repurpose-podcast-content/
-- Related: https://blitzmetrics.com/how-we-use-listen-notes-to-find-track-and-repurpose-every-podcast-appearance/ · https://blitzmetrics.com/how-to-inventory-every-podcast-youve-been-on-and-why-its-one-of-the-highest-roi-things-you-can-do/ · https://blitzmetrics.com/how-to-inventory-a-podcast-on-youtube/ · /content-factory · /knowledge-panel
-- Sibling skills, in run order: `how-we-use-listen-notes-to-find-track-and-repurpose-every-podcast-appearance` → this → `step-2-transcribe-video-using-descript`
+
+- Canonical article: https://blitzmetrics.com/how-we-use-podchaser-to-amplify-authority-and-repurpose-podcast-content/
+- Exact task: [How we use Podchaser to amplify authority and repurpose podcast content](https://local-service-spotlight.github.io/task-library/?task=how-we-use-podchaser-to-amplify-authority-and-repurpose-podcast-content#task-how-we-use-podchaser-to-amplify-authority-and-repurpose-podcast-content)
+- Writing standard: [Article Guidelines](https://localservicespotlight.com/article-guidelines/)
+- [Claim an existing Podchaser creator](https://support.podchaser.com/en/articles/5090508-claiming-a-creator-profile)
+- [Create a Podchaser profile](https://support.podchaser.com/en/articles/5436512-adding-a-new-creator-profile)
+- [Podchaser credit meanings](https://support.podchaser.com/en/articles/6555701-what-is-a-credit)
+
+## Review and evidence still needed
+
+The source contributor status is preserved. It is not certification of this draft or proof of account access, completed work or a live outcome. The worked example teaches the method and is explicitly fictional.
+- Actual profile access, moderator decisions and source presence must be verified; no live credits were changed in this draft.

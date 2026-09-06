@@ -1,6 +1,6 @@
 ---
 name: grade-article-using-jennifer
-description: Run a finished article through the Jennifer grading system for a quality score and fix what it flags before the piece moves to the Post stage.
+description: "Check the words and proof in a draft. List what needs a fix."
 category: Content Factory — Process
 stage: Process
 definitive_article: GAP — to be written
@@ -9,72 +9,78 @@ status: gap
 
 # Grade article using Jennifer
 
-**Use this when** an article has cleared proofreading (Step 11) and you want an objective quality score before WordPress posting.
+A polished article can still have a wrong fact or weak proof. This guide helps you check it with a named set of rules. Start with the full draft, its source, and the rules you will use.
 
-The rubric lives in the Local Service Spotlight pack as `jennifer` (DealCon-Skills). This Task Library skill is the station on the factory line that *calls* it. Hub article still pending — until it ships, run from this file plus `/blog-posting-guidelines`.
+**The path:** Exact draft and rubric → Evidence-based findings → Bounded fixes → Clear readiness decision.
 
-## The A- terminator (publish bar)
-A- is the publish bar after every hard publish gate passes. **Do not iterate past A-.** When an article hits A- with no `publish_ready: false` cap, return `publish_ready: true` and zero further suggestions. A score never overrides a failed proof, relationship, attribution, or compliance gate. Chasing an A traps agents in infinite revision loops. An A stays reserved for world-class national-publication journalism.
-
-Revision budgets before human escalation: STRONG 3 rounds (target A-), MODERATE 2 (target B+), LIGHT 1 (target B). Below a C after the budget: stop and escalate with the penalty list. Never regrade an article that already earned A- in this run.
-
-## Caps that stack (do not invent a friendlier grader)
-1. Promotional or flowery sales tone: cannot score higher than a C.
-2. Fewer than 10 specific experience references (names, quotes, places, events): lose one full letter; max B.
-3. Fewer than 3 in-network related links: lose one full letter.
-4. ChatGPT giveaway language ("X doesn't just Y. It's also Z."): lose one full letter.
-5. Any typo: lose one full letter per occurrence.
-6. Repurposed from video but source video not embedded: max C.
-7. Lead visual missing from the first 2–3 paragraphs: max B+.
-8. POV mismatch (third person on a personal-brand site, or first person on a company site): max B.
-9. WordPress author set to an admin/team account: max B+ — flag even at A- and run `set-wordpress-author-to-correct-person`.
-10. Banned AI-tell words: "honest," "honestly," "quietly."
-11. Trophy-name paragraph: two or more recognizable people, brands, titles, awards, or logos appear without a specific shared scene, reader-relevant lesson, and primary source: max C.
-12. Relationship noun outruns the evidence (for example, "friend," "partner," "mentor," "client," "endorsed," or "collaborated" when the source proves only an appearance, interview, meeting, or photo): `publish_ready: false` until narrowed or supported.
-13. Repeated defensive caveats or verification theater (for example, "this does not prove friendship," "no endorsement is implied," or "every claim below is sourced"): max B. Exempt language that is materially required for a legal, regulatory, or compliance disclosure; keep that disclosure scoped to the triggering claim.
-14. Public copy exposes internal scoring or production metadata, including confidence grades, proof-record IDs, harvester/canonical-inventory labels, or repurposing instructions when those systems are not the article's topic: max C.
-15. Praise is anonymous, attributed only to a domain/company, paraphrased inside quotation marks, or missing a primary source: `publish_ready: false`; mark the item HOLD. A publishable testimonial is an exact quote from a named person with applicable role/company or city, source link, and permission where required.
-
-Jennifer grades; she does not rewrite. Send rewrites to `step-5-write-article-from-transcript` (or Brandon / `definitive-article-writer`), then bring the draft back.
+**Use this when:** A finished draft needs a bounded, recorded quality review before its next publishing step.
 
 ## Inputs
-- The finished article draft (post-Step 11, pre-posting)
-- The Jennifer skill file from the installed pack (or this section if the pack is not installed)
-- The article's GCT statement and transcript
-- The Content Library tracker
+- The complete versioned article, GCT, page role, transcript/primary proof, visuals, links and author context.
+- The actual Jennifer rubric file/version and current [Article Guidelines](https://localservicespotlight.com/article-guidelines/) plus task standard. Jennifer is the named review rubric, not proof of a running installed agent.
+- The requested review tier and revision budget, a writer for corrections, and a tracker for findings.
+- Rendered page evidence when available; draft-only checks stay separate from public checks.
+
+## First-run prompt
+
+> Review this exact article and source using the supplied Jennifer version plus current owned standards. First list rubric conflicts. Return quoted, located findings and hard-gate states; give a letter only when the rubric supports it. Keep fixes bounded, do not manufacture proof to meet quotas, and do not equate A- with publication authority.
 
 ## Steps
-1. Submit the complete article — title, meta, body, captions, testimonial attribution, image alt text, and rendered page when available — to Jennifer. If you are an orchestrator, demand the structured JSON (grade, `publish_ready`, example count, link list, every penalty quoted).
-2. Record the score and the full rubric feedback verbatim in the tracker; the score is a Metric in the MAA loop, not a verdict to skim.
-3. If the grade is A- or A and every hard publish gate passes: stop. Set `publish_ready`. Hand the file to `step-12-post-article-on-wordpress`. If a hard gate fails, keep `publish_ready: false` regardless of the letter grade.
-4. If below A- and rounds remain: fix every stacked cap, stay faithful to the transcript, regrade.
-5. If below C after the budget: escalate to a human with the penalty list. Do not keep prompting.
-6. Cross-check hard specs after edits: title under 60, meta under 160, keyword in first paragraph, links intact.
-7. Attach the final grade to the post record so Rank Math, Jennifer, and the audit travel together.
+1. Record the exact draft and rubric versions. Check the rubric against current standards before grading. The inspected legacy skill has conflicts: unconditional A- readiness, arbitrary ten-reference/three-link quotas and claims that every personal article proves a personal relationship. Preserve those conflicts as findings instead of inventing evidence to satisfy them.
+2. Use the maintained role-specific standard for hard decisions: truthful facts/relationships, attributed permitted praise, clear GCT, meaningful lead visual, correct voice, useful links, and complete task contract where applicable. A score never overrides a failed proof, relationship, attribution, or compliance gate. Apply the named credibility caps from the canonical source: a Trophy-name paragraph without a specific shared scene, reader lesson, and primary source is capped; a Relationship noun outruns the evidence when the article claims a stronger bond than its source proves; Repeated defensive caveats or verification theater are capped unless a legal, regulatory, or compliance disclosure materially requires them; Public copy exposes internal scoring or production metadata when it publishes internal proof IDs, scores, or repurposing instructions that are not the article's topic; and praise that is anonymous or attributed only to a domain/company remains `publish_ready: false` and HOLD until it has the required named source, exact quote, and permission. Do not silently call a revised rubric the unchanged legacy Jennifer.
+3. Review the full article, media/alt/caption context, source and available rendering. Quote each real defect and identify its location, violated rule, severity, evidence and requested fix. A count of names or links is not proof of quality.
+4. Return structured review fields: draft revision, rubric revision, rubric conflicts, grade if a consistent rubric supports one, publish_ready, hard-gate states and actionable findings. Use grade UNKNOWN when unresolved rubric conflicts prevent a defensible letter; do not mint a flattering substitute score.
+5. Keep publish_ready false while a hard gate fails or required evidence is untested. Under a reconciled Jennifer rubric, A- or A can end cosmetic iteration only after applicable hard checks pass. A letter never grants publication authority.
+6. Send exact defects to the writer. Preserve the source budget when used: STRONG up to three rounds, MODERATE two, LIGHT one; tier targets do not waive hard gates. At the budget limit, return the remaining list and next decision rather than looping indefinitely.
+7. Recheck the changed revision and affected sources. Do not regrade unchanged accepted copy to chase an A, but a substantive new change or newly failed hard gate requires a new check of the current revision.
+8. Save findings, fixes, unresolved conflicts, actual round count and readiness. If the installed rubric remains inconsistent, hand its exact source clauses to the standards owner and use the clearly labeled maintained article checklist for useful review meanwhile.
 
 ## Definition of done (QA checklist)
-- [ ] Article graded; score and full feedback recorded verbatim
-- [ ] A- terminator honored after every hard gate passes — no extra polish after publish_ready and no score-based waiver of a failed gate
-- [ ] Every flag below A- fixed or explicitly accepted with a written reason
-- [ ] Fixes verified against transcript and GCT (no invented content)
-- [ ] Personal-brand copy shows sourced moments in first person; no trophy-name paragraphs
-- [ ] Relationship nouns are evidence-bound and every notable name supplies context for a scene or lesson
-- [ ] Zero repeated defensive caveats or public internal scoring/repurposing metadata; any retained legal/compliance disclosure is materially necessary and scoped
-- [ ] Published praise is exact, named, attributable, and source-linked; anonymous/domain-only claims remain HOLD
-- [ ] Author is the site owner or a B+ cap is flagged for `set-wordpress-author-to-correct-person`
-- [ ] Linked back to the definitive article and relevant siblings
-- [ ] Complies with Blog Posting Guidelines (if it publishes content)
+
+- [ ] Exact article/rubric revisions and any conflicts are recorded.
+- [ ] Findings quote actual text and distinguish evidence gates from style preferences.
+- [ ] Readiness is never inferred solely from a grade or contributor status.
+- [ ] Revision budget and remaining owner/action are explicit; no fabricated grade or proof count is used.
 
 ## Example(s)
-- May 2026, Daniel Goodrich's repurposing pipeline grading "per Jennifer rubric": pass one caught 2 banned constructions, 5 non-verb-led H2s, and 2 preposition endings; pass two terminated at A-. That is the loop this station runs.
-- Hub article still a gap — first public meta-article that ships a full JSON grade should be linked here.
 
-## Run on a persistent agent (Fable 5)
+**Fictional teaching example — no article was scored by Jennifer.** A sample review finds: “exact price from one photo” conflicts with the source’s inspection requirement. It records a hard factual failure at the opening. The draft also lacks a meaningful lead visual.
 
-The grade-fix-regrade cycle is a loop by design, and a persistent agent (Claude Fable 5, or comparable OpenAI/Google models that loop and hold memory) runs it without fatigue: every flag fixed or explicitly accepted with a written reason, hard specs re-verified after each edit, iterating until the checklist closes — never stopping at a "good enough" score. Memory accumulates Jennifer's recurring findings across articles, so future drafts pre-empt the flags before submission. Log each run's meta-article — the first one defines the rubric for everyone after.
-See `boil-the-ocean.md` for the full operating principles.
+The review output is `grade: UNKNOWN`, `publish_ready: false`, with the unresolved legacy rubric version conflict and those two precise issues. The writer fixes the promise and adds a relevant diagram. That improves the article, but does not retroactively prove the legacy grader ran or that a public page passed. A consistent reviewed rubric and current evidence are needed for a letter-grade claim.
+
+## Handoff and Content Factory context
+
+The writer uses [Write from the checked source](https://local-service-spotlight.github.io/task-library/?task=step-5-write-article-from-transcript#task-step-5-write-article-from-transcript) for substantive fixes. The publisher gets the reviewed revision through [the maintained article checklist](https://local-service-spotlight.github.io/task-library/?task=verify-all-items-on-blog-posting-checklist#task-verify-all-items-on-blog-posting-checklist) and [WordPress placement](https://local-service-spotlight.github.io/task-library/?task=step-12-post-article-on-wordpress#task-step-12-post-article-on-wordpress) when applicable.
+
+Produce supplies the real source. **Process**, this stage of the [Content Factory](https://blitzmetrics.com/content-factory/), turns it into useful finished assets. Post saves or publishes them on the agreed channels. Promote tests and distributes suitable work within its own scope. The handoff above names this task’s actual next step; catalog neighbors alone are not prerequisites.
+
+## When this runs
+
+Per substantive draft review, within the chosen round budget. Recheck after material changes, not indefinitely after an accepted unchanged draft.
+
+## First-run setup and continuity
+
+Open the supplied task file and its linked source. Verify the project’s real inputs, account, access and output folder before work. This Markdown file is a guide; it does not install an app, connect an account, supply a subscription or create a schedule. Carry out work already authorized; do not ask for the same approval again. Keep any unsupplied destination or new action outside that scope clearly pending.
+
+Save source IDs, versions, decisions, checked outputs and next owner in the project tracker. Before a retry, check the saved state and other workers’ changes. A model name does not guarantee memory or a running timer. Repeated work needs an actual configured trigger and durable state; one-off work can be started by the prompt above.
+
+Keep agent media muted with volume zero before playback. If mute cannot be verified, use captions, metadata or still frames. State the limit: silent visual checks do not prove spoken-word accuracy or audio quality. Do not start sound through the user’s speakers unless explicitly asked.
+
+## Write up the real run
+
+For every actual attempt, [write its meta article](https://blitzmetrics.com/meta-article-prompt/) with this recipe and revision, trigger, steps performed, output evidence, measured result, gaps and next owner. Failed, blocked and partial attempts also get a written record. A draft can satisfy writing; publishing it follows the existing job scope.
+
+Keep one stable execution ID across retries and edits. A separately scoped child task may have its own ID linked to its parent. Writing the parent’s meta record is part of that run, not an endless new chain. The [recipe and meta-article guide](https://localservicespotlight.com/meta-articles/) explains this distinction. Teaching examples are not real executions and must not enter the run count.
 
 ## Definitive article & links
-- Hub: GAP — to be written ("How to Grade an Article Using Jennifer" is on the Gaps & Tasks to Create list, low priority).
-- Related: /blog-posting-guidelines (the standards Jennifer scores against), /website-qa-audit, /maa
-- Sibling skills, in run order: `step-11-proofread-with-grammarly-or-chatgpt` → this → `step-12-post-article-on-wordpress` (Post stage)
+
+- Dedicated canonical article: not mapped in this source record. Use the maintained owned training below until that article gap is reviewed.
+- Exact task: [Grade article using Jennifer](https://local-service-spotlight.github.io/task-library/?task=grade-article-using-jennifer#task-grade-article-using-jennifer)
+- Writing standard: [Article Guidelines](https://localservicespotlight.com/article-guidelines/)
+- [Task recipe and publishing standard](https://blitzmetrics.com/definitive-article-guide/)
+- [Jennifer rubric source and conflict review](https://localservicespotlight.com/jennifer-our-article-grader-skill-file-for-claude/)
+
+## Review and evidence still needed
+
+The source contributor status is preserved. It is not certification of this draft or proof of account access, completed work or a live outcome. The worked example teaches the method and is explicitly fictional.
+- The upstream Jennifer rubric needs reviewed synchronization with current standards before a consistent named grade is claimed. Dedicated canonical task article remains unmapped.

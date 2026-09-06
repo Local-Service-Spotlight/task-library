@@ -232,10 +232,10 @@ CAT_DEFAULTS = {
 # the whole factory if they have files + a browser. Multi-engine is optional.
 LANES = {
     "script": "No model. Shell, REST, yt-dlp, Descript export, WP application-password publish.",
-    "local": "Dumb local model (Qwen overnight, Ollama). First drafts and bulk rewrite only. Never hits ads, WP, or judgment.",
+    "local": "Local model for first drafts and bulk writing. Review its output before use; tools and access depend on the setup.",
     "any": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
     "judgment": "Frontier judgment: honest scoring, entity disambiguation, the subject's voice. Claude, ChatGPT, or Grok — pick the one you have.",
-    "computer": "Logged-in UI (Meta Ads Manager, Descript, GSC, wp-admin when REST is blocked). Any engine with a browser.",
+    "computer": "Logged-in UI (Meta Ads Manager, Descript, GSC, wp-admin when REST is blocked). Requires a supported browser tool and the right account access.",
 }
 
 SLUG_LANES = {
@@ -278,7 +278,7 @@ TASK_OVERRIDES = {
             "timestamped run receipt. The next skill reads those records, not this chat."
         ),
         "single_engine": (
-            "If you only have Grok, or only have Claude, run the task anyway. Write "
+            "Use your current AI app after checking the required tools and access. Write "
             "every candidate and adjudication back to the canonical mentions inventory "
             "before handing off to the next skill."
         ),
@@ -300,14 +300,14 @@ HANDOFF = {
     "Process": "Process-stage artifact examples include `transcript.md`, `gct.md`, `article.html` (or a staged draft), `clips/`, or `04-Promote-Creatives/`. These are examples, not requirements for every task. Follow this task's actual Inputs and Handoff sections for the required output, evidence, and next owner. Pass the files or records, not one vendor's memory.",
     "Post": "Draft URL or WP post ID, slug, author user ID, featured-image media ID. Promote reads the live URL, not the draft.",
     "Promote": "Organic metrics CSV (or Ads Manager export), pixel ID, creative filenames, kill/scale log. Next week's ranking starts from this file.",
-    "Gate": "Record the property IDs (GTM-…, G-…, pixel, GSC) in the client access register. Nothing ships until those IDs exist.",
+    "Gate": "Record only the property IDs, access and checks required by this task in the client register. Pass the verified result to the task that needs it.",
 }
 
 DOCTRINE = (
-    "People who arrive with ONLY Grok or ONLY Claude still run the whole factory. "
-    "The playbook does not fork by vendor. Multi-engine (local Qwen overnight + Claude "
-    "voice pass + ChatGPT proofread) is optional sophistication that scales the SAME "
-    "line. Bridge through files, never through one vendor's memory."
+    "People with ONLY Grok or ONLY Claude can follow the same task methods. "
+    "Check that the app has the tools and access each step needs. Using more than one "
+    "model is optional. Share the actual source files, decisions and results so the "
+    "next worker can pick up the job."
 )
 
 MARKER_START = "<!-- factory-layer:start -->"
@@ -490,19 +490,18 @@ def annotate(slug: str, category: str, stage: str, content: str = ""):
         "why": "; ".join(why) or "supporting",
         "handoff": task_override.get(
             "handoff",
-            HANDOFF.get(phase if phase in HANDOFF else stage, HANDOFF.get("Process")),
+            HANDOFF.get(phase if phase in HANDOFF else stage, "Save this task’s actual output, source, date and checks where the receiving owner can read them. Follow the Inputs and Handoff sections for its next step."),
         ),
         "single_engine": task_override.get(
             "single_engine",
-            "If you only have Grok, or only have Claude, run this task anyway. Do not "
-            "wait for a second vendor. Pass the handoff files to the next skill in this "
-            "same engine.",
+            "Use the capable AI app you already have. Check its required tools and access "
+            "before starting. Pass the actual result and proof to the next task.",
         ),
         "multi_engine": task_override.get(
             "multi_engine",
-            "local/Qwen can draft Process writing overnight; a frontier model (Claude, "
-            "ChatGPT, or Grok) does Jennifer + voice; scripts publish. That is the same "
-            "line, not a second playbook.",
+            "A tested local model may draft; a stronger model may review facts and voice. "
+            "Use supported tools for approved actions. Pick models from observed "
+            "quality and cost; a model name does not prove it can run this task.",
         ),
         "state_bridge": task_override.get("state_bridge"),
     }
@@ -608,7 +607,7 @@ def factory_meta():
             {
                 "id": "Gate",
                 "label": "Gate / Plumbing",
-                "blurb": "Access, pixels, GSC, GTM, GA4, Meta BM. A $1/day campaign with no pixel is money you cannot follow.",
+                "blurb": "Check the access, site setup and tracking that the next task actually needs.",
                 "color": "#8b5cf6",
             },
             {
@@ -619,29 +618,29 @@ def factory_meta():
             },
             {
                 "id": "Process",
-                "label": "2 · Process (Descript)",
-                "blurb": "Transcribe, clean filler, GCT, write the hub, cut clips, grade with Jennifer, cut ad creatives.",
+                "label": "2 · Process (edit)",
+                "blurb": "Turn the source into useful articles, clips and images. Check the facts and the voice.",
                 "color": "#f97316",
             },
             {
                 "id": "Post",
                 "label": "3 · Post",
-                "blurb": "WordPress (right author), YouTube, Facebook, LinkedIn, SEO Tree. Draft URL is the handoff.",
+                "blurb": "Publish the approved work on the right page or channel. Check the live result and links.",
                 "color": "#3b82f6",
             },
             {
                 "id": "Promote",
                 "label": "4 · Promote (ads)",
-                "blurb": "Boost only proven organic. $1/day × 7, kill the bottom 90%, $30/30 on winners. Highest money.",
+                "blurb": "Share content that has earned a response. Use approved ad tests and measure the result.",
                 "color": "#14b8a6",
             },
         ],
         "doctrine": DOCTRINE,
         "lanes": LANES,
         "scoring": (
-            "Importance is max(frequency, revenue, gating), scored 1–5 from evidence: "
-            "daily factory / scheduled jobs, ads-and-pixel revenue path, and tasks that "
-            "unblock a chain (a small get-access task can be a 5)."
+            "Importance is an estimate from 1–5. It uses the highest estimate for how "
+            "often a task may recur, its role in earning revenue, or the work it may "
+            "unblock. It does not measure actual runs or revenue."
         ),
     }
 

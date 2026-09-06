@@ -1,5 +1,10 @@
 # BlitzMetrics Task Library
 
+Use these guides to save time on work that helps your business. Pick one job and follow its steps. Check the result before you use it or pass it to the next person.
+
+New here? Open a guide on the [Task Library](https://local-service-spotlight.github.io/task-library/) and copy its first-run prompt. Downloaded packs include `START-HERE.md`. A ZIP gives you guides; app setup, account access, and optional schedules each need their own check.
+
+
 Hub-and-spoke skill library. This repo is the **hub**: the registry, the dashboard, and the default home for skill files. Skills can also live in their owner's own repo (the **spokes**) — the build pulls them in at build time.
 
 ## Layout
@@ -17,7 +22,7 @@ Task-Library-Standard.md             the spec every skill.md must meet
 .github/workflows/build.yml          CI: build + deploy to GitHub Pages
 ```
 
-> **Bringing your own skill repo?** See [CONTRIBUTING-SKILLS.md](CONTRIBUTING-SKILLS.md) — the full guide to formatting and registering an external skill (spoiler: if it's a normal Claude skill, it already qualifies).
+> **Bringing your own skill repo?** See [CONTRIBUTING-SKILLS.md](CONTRIBUTING-SKILLS.md) — the full guide to formatting and registering an external skill including the required fields, sections, source ownership and validation.
 
 ## Owning a skill in your own repo
 
@@ -25,7 +30,7 @@ Nobody edits this repo to own a skill. Everything happens in the **Asset Tracker
 
 1. Put your `SKILL.md` in your repo at `skills/<slug>/SKILL.md` (standard Claude skill format — `name` + `description` frontmatter, `name` = the slug).
 2. On your skill's row in the sheet: put your name in **Owner**, your repo URL in **Source Repo**, and set **Status** (`wip` while you work it, `ready` when you stand behind it).
-3. Done. The next build (daily, or manual run) fetches your file, and if a hub draft existed it's superseded automatically. From then on you only ever push to your own repo.
+3. Check the next daily or manual build. Confirm that it fetched the intended source, shows your owner and status, and serves the current guide. After registration, keep the method in your own repo; an unsuccessful fetch may leave the prior cached copy visible.
 
 The precedence rule: **sheet beats registry beats hub file** — a skill has exactly one live source, and the sheet's Source Repo cell is the switch. The Slug column completes the address, so a bare repo URL is enough when you follow the standard layout; use a deeper `/tree/` or `/blob/` link only if your file lives elsewhere.
 
@@ -37,7 +42,7 @@ The precedence rule: **sheet beats registry beats hub file** — a skill has exa
 
 ## Asset Tracker
 
-The Asset Tracker's *Task Library* tab stays the ops-facing index (status, owner, flags). Publish it to web as CSV and set `TRACKER_CSV_URL` repo variable — the build then overrides `status`/`owner`/`article` per slug from the sheet. Content always comes from git; workflow state comes from the sheet.
+The Asset Tracker's *Task Library* tab stays the ops-facing index (status, owner, flags). Publish it to web as CSV and set the `TRACKER_CSV_URL` Actions secret — the build then overrides `status`/`owner`/`article` per slug from the sheet. Content always comes from git; workflow state comes from the sheet.
 
 The sheet is also the **onboarding path**: a row whose Slug isn't in the registry but has a Source Repo link becomes a new external skill on the next build — no PR to this repo needed. See CONTRIBUTING-SKILLS.md.
 

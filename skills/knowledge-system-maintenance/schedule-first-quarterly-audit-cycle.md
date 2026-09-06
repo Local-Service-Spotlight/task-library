@@ -1,6 +1,6 @@
 ---
 name: schedule-first-quarterly-audit-cycle
-description: Launch the first quarterly definitive-article audit cycle — every article assigned to a named auditor with Q3 2026 as the deadline — turning Process 1 from spec into schedule.
+description: The first page review needs more than a date on a calendar.
 category: Knowledge System Maintenance
 stage: —
 definitive_article: /knowledge-system-maintenance
@@ -9,42 +9,70 @@ status: gap
 
 # Schedule first quarterly audit cycle
 
-**Use this when** implementing the maintenance system — this Implementation Checklist task is a gap: no quarterly audit has ever run, every status-table row still reads "Not yet audited," and Q3 2026 is the committed first deadline.
+The first page review needs more than a date on a calendar. This guide sets the list, people, and checks for that first cycle. Start with the current pages and the place that will hold the results.
+
+**The path:** Current register → Review assignments → Audit window → First-cycle closeout
+
+**Start when:** The audit system needs its first agreed cycle, or an unfinished initial cycle must be resumed.
 
 ## Inputs
-- The Definitive Article Guide status table with the Last Audited column in place (`add-last-audited-column-to-definitive-article-guide-status-table`)
-- The team roster and the assignment method (`schedule-and-assign-quarterly-auditors`)
-- The four Process 1 audit skills, ready to hand to auditors
+
+- The current article inventory/register with an audit-date field or a clear schema gap.
+- [The assignment method](https://local-service-spotlight.github.io/task-library/?task=schedule-and-assign-quarterly-auditors#task-schedule-and-assign-quarterly-auditors) and available reviewers.
+- An agreed initial window, timezone and authority for task/calendar changes.
 
 ## Steps
-1. Verify the prerequisite: the status table has its Last Audited column, initialized to "Not yet audited." If not, run that skill first — the cycle needs somewhere to write its results.
-2. Pull the complete definitive article list from the table and assign every article to a named team auditor using the assignment SOP: one auditor per article, balanced load, fresh eyes preferred over authors auditing their own work.
-3. Set **Q3 2026** as the first cycle's deadline, per the Implementation Checklist, and calendar the audit window with a midpoint reminder so misses surface early.
-4. Equip each auditor with the Process 1 run order: `check-topic-coherence-for-each-definitive-article` → `verify-structural-completeness-against-8-step-framework` → `check-information-currency-with-latest-data` → `validate-cross-reference-integrity-across-articles` → `update-status-table-in-definitive-article-guide`.
-5. Set the completion bar explicitly: an article counts as audited only when all four checks ran and the status table row shows this cycle's date and a defensible Green/Yellow/Red.
-6. At the Q3 2026 deadline, verify coverage: every article stamped, every Yellow/Red carrying a follow-up owner. Carry misses visibly into Q4 with reassigned auditors — quietly dropping them resets the system to zero.
-7. Close the first cycle by capturing what broke (load, unclear checks, tooling) as Knowledge Capture Notes and amendments, so the second cycle runs smoother — the recursive loop applies to the cycle itself.
+
+1. Inspect existing audit history and plans. If a cycle already exists, reconcile or resume it rather than calling this the first audit ever.
+2. Confirm the register can retain date, reviewer, source revision, result and evidence. Use [the audit-date setup task](https://local-service-spotlight.github.io/task-library/?task=add-last-audited-column-to-definitive-article-guide-status-table#task-add-last-audited-column-to-definitive-article-guide-status-table) only if the field is missing; preserve real prior dates.
+3. Assign every page in scope with the assignment method. Record exclusions and unresolved ownership instead of quietly reducing the denominator.
+4. Agree a real first-cycle deadline and midpoint check. The source’s Q3 2026 target is historical context, not a perpetual deadline. Retain any missed original target beside the revised plan.
+5. Equip reviewers with the four checks: topic, structure, currency and references. State that a complete audit needs evidence from all four; a failed page can still have a completed audit.
+6. At close, reconcile pages reviewed, partially reviewed and not reviewed. Make fixes and their owners visible; scheduling an audit or filing a defect does not repair the page.
+7. Capture real launch lessons and hand unfinished work into the next cycle without erasing the original commitment.
 
 ## Definition of done (QA checklist)
-- [ ] Every definitive article assigned to a named auditor with the Q3 2026 deadline calendared (window + midpoint reminder)
-- [ ] All auditors equipped with the four-check run order and the completion bar
-- [ ] At deadline: 100% of articles stamped with date + status, or misses visibly carried into Q4 with new owners
-- [ ] First-cycle friction captured as Knowledge Capture Notes / SOP Amendment Proposals
-- [ ] Linked back to the definitive article and relevant siblings
-- [ ] Complies with Blog Posting Guidelines (if it publishes content)
+
+[Quality assurance (QA)](https://localservicespotlight.com/article-guidelines/) means checking the work against the agreed result.
+
+- [ ] Inventory, register and named assignments are ready for the initial window.
+- [ ] Actual four-check receipts determine audit coverage.
+- [ ] First-cycle outcome and carried gaps retain honest dates and owners.
 
 ## Example(s)
-- /knowledge-system-maintenance — the Implementation Checklist sets Q3 2026 as the first audit deadline with articles assigned to team members. Gap: cycle not yet scheduled — running this skill closes it.
-- Example needed — run the Meta-Article Prompt (/meta-article-prompt-template) after the Q3 2026 cycle completes and link the meta-article here.
 
-## Run on a persistent agent (Fable 5)
+**Fictional teaching example. This is not a client result or proof of a completed run.**
 
-A persistent, max-effort agent (Claude Fable 5 or comparable OpenAI/Google models) verifies the Last Audited column exists, assigns every definitive article to a named auditor, calendars the Q3 2026 window with its midpoint reminder, equips each auditor with the four-check run order, and loops until the Definition of done fully passes — 100% assignment coverage and the completion bar stated explicitly.
-It self-verifies by counting assignments against the article list, then again at the midpoint and the deadline: every article stamped with date and a defensible status, or the miss carried visibly into Q4 with a reassigned owner.
-Memory across the cycle is what makes a first launch survivable: the agent holds the assignment state for the whole quarter, never loses a miss, and remembers the first cycle's friction — load imbalance, unclear checks, tooling gaps — so the second cycle is designed from evidence, which is the recursive loop applied to the cycle itself.
-Each run it logs a meta-article example via the Meta-Article Prompt, replacing this skill's "Example needed" with the documented Q3 2026 run.
-See `boil-the-ocean.md` for the full operating principles.
+A fictional first cycle covers five pages. Four have all checks; one lacks a source read. Of the four reviewed pages, two need repairs. Report 4/5 audits complete and 2 reviewed pages needing work. Do not equate audit completion with every page passing.
+
+## Handoff and Content Factory context
+
+This work supports the [Content Factory, our four stages of using real content](https://blitzmetrics.com/content-factory/): Produce → Process → Post → Promote. Use the specific inputs and next task below to place the work; a maintenance task does not manufacture transcripts, clips or other stage outputs it does not call for.
+
+Auditors use [Check whether the page stays on topic](https://local-service-spotlight.github.io/task-library/?task=check-topic-coherence-for-each-definitive-article#task-check-topic-coherence-for-each-definitive-article) through [Record the audit result](https://local-service-spotlight.github.io/task-library/?task=update-status-table-in-definitive-article-guide#task-update-status-table-in-definitive-article-guide). The cycle owner tracks repairs and the next quarter.
+
+## Run with an agent
+
+Give the AI worker this recipe, the real Inputs above, the intended result and the actions already authorized. Ask it to return the saved output, checks, evidence and remaining owner. Check its work against this guide; loading a skill does not prove access, installation of a job, or successful execution. Keep media muted with volume at zero if playback is needed.
+
+For recurring work, keep the actual trigger, owner and runtime in the job record. Scheduling and observed firings are separate. Do not create a schedule merely because this guide mentions a review interval.
+
+## Record the real execution
+
+Open the run record when the work starts. Keep the exact starting recipe revision, one execution ID, source evidence and actual state. Write a [meta article, the record of one run](https://blitzmetrics.com/meta-article-prompt/) with decisions, results, checks, failures and next owner. Link it to this task and register it through the [Task Library](https://local-service-spotlight.github.io/task-library/) execution process. Writing is part of the work; public release follows existing authority.
+
+Reuse the same execution ID for revisions, QA, meta writing and retries within that run. A blocked run stays open with its dependency and next owner; do not invent a finish time. Use supported findings to propose and verify a better recipe. A historical public-example count without distinct run IDs remains dated article volume, not verified execution frequency.
 
 ## Definitive article & links
-- Hub: /knowledge-system-maintenance
-- Related: add-last-audited-column-to-definitive-article-guide-status-table (prerequisite) → schedule-and-assign-quarterly-auditors (assignment method) → schedule-first-quarterly-audit-cycle (first launch) → Process 1 audit skills in run order.
+
+- [Maintained source guide](https://blitzmetrics.com/knowledge-system-maintenance/)
+- [This task in the Task Library](https://local-service-spotlight.github.io/task-library/?task=schedule-first-quarterly-audit-cycle#task-schedule-first-quarterly-audit-cycle)
+- [Article Guidelines](https://localservicespotlight.com/article-guidelines/)
+- [current article guide](https://blitzmetrics.com/definitive-article-guide/)
+- [How recipes and run records work together](https://localservicespotlight.com/meta-articles/)
+
+## Review and evidence still needed
+
+The inherited contributor status is `gap`. It is preserved, not promoted by this rewrite. That label alone does not verify document readiness, a client outcome, access or an executed task.
+
+A real execution still needs its own source, reviewer, saved result and handoff evidence. The fictional example teaches the method; a real example with relevant proof is still needed where required. The task-specific flow above is source guidance; its visible presentation and the full document need a named reviewer and desktop/mobile checks.

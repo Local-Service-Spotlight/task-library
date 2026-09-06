@@ -1,50 +1,77 @@
 ---
 name: review-past-6-months-of-sop-amendment-proposals-for-patterns
-description: Mine six months of SOP Amendment Proposals for patterns — repeatedly-patched SOPs, missing processes, proposal friction — and convert each pattern into a system-level fix.
+description: Repeated fixes can show where a guide needs more work.
 category: Knowledge System Maintenance
 stage: —
 definitive_article: /knowledge-system-maintenance
 status: needs-work
 ---
 
-# Review past 6 months of SOP Amendment Proposals for patterns
+# Review past 6 months of task guide Amendment Proposals for patterns
 
-**Use this when** the 6-month recursive review cycle opens — run this analysis first, because its patterns are the evidence the maintenance-article audit needs.
+Repeated fixes can show where a guide needs more work. This task looks across past change requests for the cause. Start with the real records for a clear six-month period.
+
+**The path:** Complete period → Distinct proposals → Checked patterns → Owned actions
+
+**Start when:** The system review needs a source-backed pattern report for its stated six-month period.
 
 ## Inputs
-- The complete SOP Amendment Proposal tracker for the past six months: approved, rejected, and returned proposals
-- SOP version histories and changelogs for the same period
-- The five-process map from /knowledge-system-maintenance
+
+- The proposal tracker export for an explicit six-month period, including returned/rejected items.
+- Related guide versions, review dates and a prior-period export if one exists.
+- The maintenance process map and a reviewer for the analysis.
 
 ## Steps
-1. Export every proposal from the past six months from the shared tracker — including rejected and format-returned ones; failures carry as much signal as approvals.
-2. Categorize each proposal three ways: by affected SOP, by problem type (outdated tool step, missing step, wrong sequence, unclear language), and by outcome (approved, rejected, returned).
-3. Hunt the known pattern shapes: **same SOP amended repeatedly** — structural weakness; it needs a rewrite or layer separation, not more patches; **clusters around work no process covers** — a candidate new process for the hub; **repeated format rejections** — proposal friction; fix the template, the examples, or the training, not the proposers; **near-zero proposals overall** — pipeline failure, not perfection; SOPs do not stop drifting just because nobody files paperwork.
-4. Quantify the basics so trends compare across cycles: proposals per SOP, approval rate, median time from submission to decision.
-5. Convert every confirmed pattern into exactly one action: a proposed new/modified process for /knowledge-system-maintenance, a queued SOP rewrite with owner, or a pipeline fix (template, queue, review cadence). A pattern observed but not actioned is trivia, not analysis.
-6. Write up findings and actions as the evidence package for `audit-this-maintenance-article-every-6-months`, and file the actions through the SOP Update Protocol where they change documented process.
+
+1. Record the exact time window and export coverage. Include all known states; list missing records and tests separately. Deduplicate versions by proposal ID instead of counting each edit as a new request.
+2. Classify each real proposal by affected guide, problem type and outcome. Retain the source and decision evidence for each classification.
+3. Calculate proposals per guide; approved divided by decided proposals for approval rate; and median elapsed submission-to-decision time for records with both dates. State denominators, excluded missing dates and open proposals.
+4. Compare with a prior period only when definitions and coverage match. Do not turn a larger collected sample into a growth claim.
+5. Investigate repeated guide changes, missing-process clusters and returned-format patterns. Zero proposals may reflect low activity, good methods, missing capture or queue friction; test the possibilities before calling it failure.
+6. Give each supported pattern a specific proposed action, owner and evidence. Keep uncertain explanations as questions. Feed method changes through [Draft a process-change proposal](https://local-service-spotlight.github.io/task-library/?task=create-sop-amendment-proposal-500-words#task-create-sop-amendment-proposal-500-words).
 
 ## Definition of done (QA checklist)
-- [ ] 100% of the period's proposals reviewed and categorized — including rejections and returns
-- [ ] Metrics computed (proposals per SOP, approval rate, median decision time) and compared to the prior cycle where one exists
-- [ ] Every identified pattern paired with exactly one concrete action and owner
-- [ ] Zero-proposal or low-flow finding treated as pipeline failure and actioned accordingly
-- [ ] Findings handed to the 6-month article audit as its evidence base
-- [ ] Linked back to the definitive article and relevant siblings
-- [ ] Complies with Blog Posting Guidelines (if it publishes content)
+
+[Quality assurance (QA)](https://localservicespotlight.com/article-guidelines/) means checking the work against the agreed result.
+
+- [ ] Distinct real proposals and coverage are reconciled; samples/versions are excluded.
+- [ ] Metric formulas, denominators and missing data are visible.
+- [ ] Each supported pattern has an owner and next action, without automatic cause claims.
 
 ## Example(s)
-- /knowledge-system-maintenance — Process 5 prescribes this pattern review to spot needed new processes and proposal friction across the amendment history.
-- Example needed — run the Meta-Article Prompt (/meta-article-prompt-template) after the first 6-month pattern review and link the meta-article here.
 
-## Run on a persistent agent (Fable 5)
+**Fictional teaching example. This is not a client result or proof of a completed run.**
 
-A persistent, max-effort agent (Claude Fable 5 or comparable OpenAI/Google models) takes 100% of the period's proposals — approved, rejected, and returned — categorizes each three ways, computes the metrics, and loops until the Definition of done fully passes: every confirmed pattern paired with exactly one concrete action and owner, zero patterns left as trivia.
-It self-verifies by reconciling counts (categorized total equals tracker total) and by treating near-zero proposal flow as the pipeline failure the hub says it is, never as good news.
-Memory across cycles converts this from archaeology into a query: the agent lived through the weekly reviews and remembers every decision and reason as it happened, so the 6-month pattern hunt runs over held history, and proposals-per-SOP, approval rate, and decision time compare cycle over cycle automatically — the system measuring its own improvement.
-Each run it logs a meta-article example via the Meta-Article Prompt, handing the article audit its evidence package and the library a documented run.
-See `boil-the-ocean.md` for the full operating principles.
+A fictional export contains 8 real proposals: 4 approved, 2 rejected and 2 pending. Approval rate among decided proposals is 4/6, not 4/8. Two approved proposals concern the same confusing field, so the review proposes a field-definition fix. The eight proposals do not establish eight completed client jobs.
+
+## Handoff and Content Factory context
+
+This work supports the [Content Factory, our four stages of using real content](https://blitzmetrics.com/content-factory/): Produce → Process → Post → Promote. Use the specific inputs and next task below to place the work; a maintenance task does not manufacture transcripts, clips or other stage outputs it does not call for.
+
+[The six-month system review](https://local-service-spotlight.github.io/task-library/?task=audit-this-maintenance-article-every-6-months#task-audit-this-maintenance-article-every-6-months) receives the pattern report, evidence and unresolved questions.
+
+## Run with an agent
+
+Give the AI worker this recipe, the real Inputs above, the intended result and the actions already authorized. Ask it to return the saved output, checks, evidence and remaining owner. Check its work against this guide; loading a skill does not prove access, installation of a job, or successful execution. Keep media muted with volume at zero if playback is needed.
+
+For recurring work, keep the actual trigger, owner and runtime in the job record. Scheduling and observed firings are separate. Do not create a schedule merely because this guide mentions a review interval.
+
+## Record the real execution
+
+Open the run record when the work starts. Keep the exact starting recipe revision, one execution ID, source evidence and actual state. Write a [meta article, the record of one run](https://blitzmetrics.com/meta-article-prompt/) with decisions, results, checks, failures and next owner. Link it to this task and register it through the [Task Library](https://local-service-spotlight.github.io/task-library/) execution process. Writing is part of the work; public release follows existing authority.
+
+Reuse the same execution ID for revisions, QA, meta writing and retries within that run. A blocked run stays open with its dependency and next owner; do not invent a finish time. Use supported findings to propose and verify a better recipe. A historical public-example count without distinct run IDs remains dated article volume, not verified execution frequency.
 
 ## Definitive article & links
-- Hub: /knowledge-system-maintenance
-- Related (Process 5 run order): review-past-6-months-of-sop-amendment-proposals-for-patterns → audit-this-maintenance-article-every-6-months; upstream data: senior-team-member-reviews-weekly, set-up-sop-amendment-proposal-tracking-system.
+
+- [Maintained source guide](https://blitzmetrics.com/knowledge-system-maintenance/)
+- [This task in the Task Library](https://local-service-spotlight.github.io/task-library/?task=review-past-6-months-of-sop-amendment-proposals-for-patterns#task-review-past-6-months-of-sop-amendment-proposals-for-patterns)
+- [Article Guidelines](https://localservicespotlight.com/article-guidelines/)
+- [current article guide](https://blitzmetrics.com/definitive-article-guide/)
+- [How recipes and run records work together](https://localservicespotlight.com/meta-articles/)
+
+## Review and evidence still needed
+
+The inherited contributor status is `needs-work`. It is preserved, not promoted by this rewrite. That label alone does not verify document readiness, a client outcome, access or an executed task.
+
+A real execution still needs its own source, reviewer, saved result and handoff evidence. The fictional example teaches the method; a real example with relevant proof is still needed where required. The task-specific flow above is source guidance; its visible presentation and the full document need a named reviewer and desktop/mobile checks.

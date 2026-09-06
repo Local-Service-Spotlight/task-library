@@ -15,7 +15,7 @@ Usage:
   python3 build/build.py [--tracker-csv tracker.csv] [--out dashboard/data.json]
 Exit code 1 if any skill fails validation (build still writes valid skills).
 """
-import argparse, csv, json, os, re, sys, urllib.request
+import argparse, csv, hashlib, json, os, re, sys, urllib.request
 from collections import Counter
 from datetime import datetime, timezone
 from urllib.parse import urlencode, urlsplit
@@ -69,6 +69,38 @@ def parse_frontmatter(text):
             key = k.strip()
             fm[key] = v
     return fm, text[m.end():]
+
+
+def current_instruction_review(slug, text, reviews):
+    """A source edit expires its review; this never promotes task or article status."""
+    review = reviews.get(slug)
+    if review is None:
+        return None
+    if not isinstance(review, dict) or not re.fullmatch(r'[0-9a-f]{64}', review.get('source_sha256', '')):
+        raise ValueError(f'{slug}: invalid instruction review source hash')
+    valid_review_date(review.get('reviewed_at'), f'{slug}: instruction review date')
+    if not review.get('reviewer') or not review.get('scope'):
+        raise ValueError(f'{slug}: instruction review needs reviewer and scope')
+    if hashlib.sha256(text.encode('utf-8')).hexdigest() != review['source_sha256']:
+        return None
+    return dict(review)
+
+
+def display_title(text, slug):
+    """Use the maintained heading for readers; keep the registry slug for identity."""
+    _, body = parse_frontmatter(text)
+    fence = None
+    for line in body.splitlines():
+        marker = re.match(r'^\s*(`{3,}|~{3,})', line)
+        if marker:
+            kind = marker.group(1)[0]
+            fence = None if fence == kind else (kind if fence is None else fence)
+            continue
+        if fence is None:
+            heading = re.match(r'^#\s+(.+?)\s*#*\s*$', line)
+            if heading:
+                return heading.group(1).strip()
+    return slug.replace('-', ' ').capitalize()
 
 
 def resolve(slug, entry, errors, warnings):
@@ -767,14 +799,15 @@ def write_library_index(data, out_path):
              f"and no reviewed semantic hold is active, "
              f"and {st['articleHubs'] - st['definitiveArticles']} still in progress. "
              f"A Definitive marker also requires semantic review of the actual page. "
-             f"{st['complete']} are ready, {st['needsWork']} in progress, {st['gaps']} identified gaps. "
+             f"Contributors report {st['complete']} complete guides, {st['needsWork']} in progress, and {st['gaps']} identified gaps. "
+             f"These labels do not prove independent review, installed skills or completed client work. "
              f"Updated {html_escape(data['updated'])}.</p>")
     for c in data['categories']:
         L.append(f"<h2>{html_escape(c['name'])}</h2>")
         L.append(f"<p>{html_escape(c['description'])}</p>")
         L.append('<ul>')
         for t in c['tasks']:
-            label = html_escape(t['title'].replace('-', ' ').capitalize())
+            label = html_escape(t['title'])
             desc = html_escape(t['desc'])
             if t.get('article'):
                 task_route = html_escape(t.get('taskLibraryUrl') or '')
@@ -880,7 +913,18 @@ def write_zip(data, out_dir, fname, note, only_complete):
     ready = [(c, t) for c in data['categories'] for t in c['tasks']
              if (t.get('content') or '').strip() and (t['status'] == 'complete' or not only_complete)]
     path = os.path.join(out_dir, fname)
+    with open(os.path.join(BUILD, 'pack-start-here.md'), encoding='utf-8') as source:
+        start_here = source.read()
     with zipfile.ZipFile(path, 'w', zipfile.ZIP_DEFLATED) as z:
+        z.writestr('TaskLibrary-Skills/START-HERE.md', start_here)
+        z.writestr('TaskLibrary-Skills/README.md',
+                   '# Use one guide for one business job\n\n'
+                   'Choose a job, share its guide and your files, then check one result. '
+                   'Open START-HERE.md for the first steps and a prompt to copy.\n\n'
+                   f'Library snapshot: {data.get("updated", "not recorded")}. '
+                   f'This archive holds {len(ready)} guides. '
+                   'See manifest.json for their paths and contributor status claims. '
+                   'The archive is separate from the curated plugin and does not install or schedule itself.\n')
         manifest = {'total': len(ready), 'note': note, 'tasks': []}
         for c, t in ready:
             cf = folder_of(c['name'])
@@ -898,6 +942,8 @@ def main():
     args = ap.parse_args()
 
     registry = json.load(open(os.path.join(BUILD, 'registry.json'), encoding='utf-8'))['skills']
+    with open(os.path.join(BUILD, 'instruction-reviews.json'), encoding='utf-8') as fh:
+        instruction_reviews = json.load(fh)['reviews']
     cats_meta = json.load(open(os.path.join(BUILD, 'categories.json'), encoding='utf-8'))
     site = json.load(open(os.path.join(BUILD, 'site-meta.json'), encoding='utf-8'))
 
@@ -994,7 +1040,7 @@ def main():
                 art = ov['Definitive Article URL'].strip()   # sheet overrides only when filled; file frontmatter is the default
         rec = factory.annotate(slug, entry['category'], fm.get('stage') or '', text)
         content = factory.apply_layer(text.strip(), factory.layer_markdown(slug, rec))
-        task = {'title': fm['name'], 'slug': slug, 'status': status,
+        task = {'title': display_title(text, slug), 'slug': slug, 'status': status,
                 'stage': fm['stage'] or '—', 'article': art,
                 'articleKind': (entry.get('article_kind', 'unknown') if
                                 normalize_article_url(art) == normalize_article_url(article_url(fm['definitive_article']))
@@ -1005,6 +1051,9 @@ def main():
                 'phase': rec['phase'], 'before': rec['before'],
                 'after': rec['after'], 'lane': rec['lane'],
                 'lane_label': rec['lane_label'], 'why': rec['why']}
+        review = current_instruction_review(slug, text, instruction_reviews)
+        if review:
+            task['instructionReview'] = review
         if entry.get('flag'):
             task['flag'] = entry['flag']
         if entry.get('download'):
@@ -1051,6 +1100,7 @@ def main():
                  "The Asset Tracker feed is empty or malformed. Refusing to publish.")
     data = {'stats': {'total': len(all_tasks),
                       'complete': sum(t['status'] == 'complete' for t in all_tasks),
+                      'reviewedInstructions': sum(bool(t.get('instructionReview')) for t in all_tasks),
                       'needsWork': sum(t['status'] == 'needs-work' for t in all_tasks),
                       'gaps': sum(t['status'] == 'gap' for t in all_tasks),
                       **article_stats,
@@ -1085,9 +1135,9 @@ def main():
         os.path.join(os.path.dirname(args.out), 'meta-orbits.json'))
     write_library_index(data, os.path.join(os.path.dirname(args.out), 'library-index.html'))
     nall = write_zip(data, os.path.dirname(args.out), 'TaskLibrary-Skills-all.zip',
-                     'The complete Task Library. Rebuilt on every library build.', False)
+                     'All registered guide files. Dated snapshot; includes contributor-reported complete, needs-work and gap entries.', False)
     nready = write_zip(data, os.path.dirname(args.out), 'TaskLibrary-Skills-ready.zip',
-                       'Owner-signed skills only. Rebuilt on every library build.', True)
+                       'Guides with contributor-reported complete status. Owner sign-off, independent review and actual execution are not established by this label.', True)
     print(f'zips: all={nall}, ready={nready}')
     inv = os.path.join(ROOT, "INCOMPLETE-INVENTORY.md")
     ninc = factory.write_incomplete_inventory(all_tasks, inv)

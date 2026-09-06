@@ -1,50 +1,77 @@
 ---
 name: create-sop-amendment-proposal-500-words
-description: Turn a real-world SOP failure into a ≤500-word amendment proposal — problem, affected SOP, exact proposed language, and at least two real examples — ready for weekly senior review.
+description: If a guide keeps causing trouble, write down the fix.
 category: Knowledge System Maintenance
 stage: —
 definitive_article: /knowledge-system-maintenance
 status: complete
 ---
 
-# Create SOP Amendment Proposal (≤500 words)
+# Create task guide Amendment Proposal (≤500 words)
 
-**Use this when** you hit a point in real work where an SOP is wrong, outdated, or missing a step — and you can point to at least two real occurrences, not one bad day.
+If a guide keeps causing trouble, write down the fix. This guide helps you show the problem, proof, and exact new words. Start with the current guide and two real examples.
+
+**The path:** Two real examples → Exact change → 500-word check → Review queue
+
+**Start when:** Two real cases show a repeatable method defect that needs a formal proposed correction.
 
 ## Inputs
-- The affected SOP's name and the exact section that failed
-- At least two real examples of the failure (dates, clients, runs, or links)
-- The shared SOP Amendment Proposal location (see `create-shared-location-for-sop-amendment-proposals`)
+
+- The affected [standard operating procedure, or task guide](https://blitzmetrics.com/how-to-document-a-task/) and its current revision.
+- At least two source-backed cases showing the problem, plus the shared proposal location.
+- The applicable change authority and a named reviewer.
 
 ## Steps
-1. Confirm the trigger is real: the SOP failed, drifted from reality, or lacked a needed step in at least two actual runs. One occurrence may be noise — log it as a Knowledge Capture Note and wait for a second before proposing.
-2. Draft the proposal with exactly four parts: **(a) the problem** — what failed or drifted, stated plainly; **(b) the affected SOP** — name plus the specific section/step; **(c) proposed language** — the exact replacement or added text, ready to paste in; **(d) examples** — at least two real cases with dates/links where the current SOP failed.
-3. Write the proposed language in the SOP's own voice: imperative, concrete steps. Respect Platform Portability Discipline (Process 4) — keep methodology (what/why) separate from tool-specific implementation (how).
-4. Enforce the budget: 500 words maximum across all four parts. Cut backstory and justification prose; keep the problem, the text, and the proof. If it cannot fit, you are proposing more than one amendment — split it.
-5. Self-check against the reviewer's criteria: Would the proposed text drop into the SOP without breaking surrounding steps? Do the examples actually demonstrate the problem?
-6. Save the proposal to the shared location, then hand off to tagging and queueing (`tag-proposal-with-affected-sop-and-queue-for-review`). Do not edit the live SOP yourself — that is the reviewer's call.
+
+1. Check whether the current guide already covers the issue or has changed since the examples. Identify the exact faulty or missing step; a stale local copy may need updating instead.
+2. Draft four parts: problem; affected guide and section; exact added/replacement wording; at least two real examples with dates and sources. If only one exists, capture that lesson and mark the evidence gap. Do not wait for a second harm when an urgent correction is already authorized through the proper route.
+3. Write one coherent change in the guide’s voice. Separate the method from product controls, and describe the expected result and failure behavior.
+4. Count the whole proposal body against the 500-word maximum. Trim background before evidence or exact wording. Split unrelated guide changes into linked proposals.
+5. Compare the proposed text with adjacent steps and current shared rules. Confirm the examples support the claimed defect rather than merely mentioning the subject.
+6. Save the proposal and its source revision in the shared location, then read it back. Queue it for review; a proposal saved is not a live procedure change.
 
 ## Definition of done (QA checklist)
-- [ ] All four parts present: problem, affected SOP + section, paste-ready proposed language, ≥2 real examples with dates/links
-- [ ] Total length ≤500 words (counted, not eyeballed)
-- [ ] Proposed language is imperative, concrete, and preserves methodology/implementation separation
-- [ ] Exactly one SOP and one coherent change per proposal
-- [ ] Filed in the shared location; live SOP left untouched pending review
-- [ ] Linked back to the definitive article and relevant siblings
-- [ ] Complies with Blog Posting Guidelines (if it publishes content)
+
+[Quality assurance (QA)](https://localservicespotlight.com/article-guidelines/) means checking the work against the agreed result.
+
+- [ ] Four parts, exact affected revision and two real examples are present, or the proposal remains evidence-incomplete.
+- [ ] The body has 500 words or fewer and one coherent proposed change.
+- [ ] Saved proposal is readable and ready for the named reviewer; live state is reported separately.
 
 ## Example(s)
-- /knowledge-system-maintenance — Process 2 defines this exact format (≤500 words: problem, SOP, proposed language, ≥2 real examples) as the only entry path for SOP changes.
-- Example needed — run the Meta-Article Prompt (/meta-article-prompt-template) after the first approved amendment and link the meta-article here.
 
-## Run on a persistent agent (Fable 5)
+**Fictional teaching example. This is not a client result or proof of a completed run.**
 
-A persistent, max-effort agent (Claude Fable 5 or comparable OpenAI/Google models) drafts the four-part proposal and loops until the Definition of done fully passes — counting the 500-word budget literally, verifying both examples carry dates or links, and splitting anything that covers more than one coherent change.
-It self-verifies by paste-testing the proposed language against the live SOP's surrounding steps to confirm it drops in without breaking them.
-Memory across cycles is what powers the two-example threshold: the agent remembers every failure it has logged, so the moment a second real occurrence appears it pairs the two into a proposal automatically — single incidents wait as remembered Knowledge Capture Notes instead of being lost or prematurely escalated.
-Each run it logs a meta-article example via the Meta-Article Prompt, so approved amendments arrive with their own documented origin story.
-See `boil-the-ocean.md` for the full operating principles.
+A fictional proposal has: Problem—two reports used the wrong week. Guide—weekly reporting, date check. Wording—“Compare export start/end dates with the report title before computing totals.” Evidence—two labeled sample report/export pairs. This teaches the four-part form; real use requires actual records, not the invented reports.
+
+## Handoff and Content Factory context
+
+This work supports the [Content Factory, our four stages of using real content](https://blitzmetrics.com/content-factory/): Produce → Process → Post → Promote. Use the specific inputs and next task below to place the work; a maintenance task does not manufacture transcripts, clips or other stage outputs it does not call for.
+
+[Tag and queue the proposal](https://local-service-spotlight.github.io/task-library/?task=tag-proposal-with-affected-sop-and-queue-for-review#task-tag-proposal-with-affected-sop-and-queue-for-review) receives the saved proposal. One-off lessons without the evidence for a proposal go through [Capture a lesson within 24 hours](https://local-service-spotlight.github.io/task-library/?task=generate-knowledge-capture-note-within-24-hours#task-generate-knowledge-capture-note-within-24-hours).
+
+## Run with an agent
+
+Give the AI worker this recipe, the real Inputs above, the intended result and the actions already authorized. Ask it to return the saved output, checks, evidence and remaining owner. Check its work against this guide; loading a skill does not prove access, installation of a job, or successful execution. Keep media muted with volume at zero if playback is needed.
+
+For recurring work, keep the actual trigger, owner and runtime in the job record. Scheduling and observed firings are separate. Do not create a schedule merely because this guide mentions a review interval.
+
+## Record the real execution
+
+Open the run record when the work starts. Keep the exact starting recipe revision, one execution ID, source evidence and actual state. Write a [meta article, the record of one run](https://blitzmetrics.com/meta-article-prompt/) with decisions, results, checks, failures and next owner. Link it to this task and register it through the [Task Library](https://local-service-spotlight.github.io/task-library/) execution process. Writing is part of the work; public release follows existing authority.
+
+Reuse the same execution ID for revisions, QA, meta writing and retries within that run. A blocked run stays open with its dependency and next owner; do not invent a finish time. Use supported findings to propose and verify a better recipe. A historical public-example count without distinct run IDs remains dated article volume, not verified execution frequency.
 
 ## Definitive article & links
-- Hub: /knowledge-system-maintenance
-- Related (Process 2 run order): create-sop-amendment-proposal-500-words → tag-proposal-with-affected-sop-and-queue-for-review → senior-team-member-reviews-weekly; infrastructure: create-shared-location-for-sop-amendment-proposals; upstream feeder: route-notes-to-sop-update-protocol-or-directly-to-articles.
+
+- [Maintained source guide](https://blitzmetrics.com/knowledge-system-maintenance/)
+- [This task in the Task Library](https://local-service-spotlight.github.io/task-library/?task=create-sop-amendment-proposal-500-words#task-create-sop-amendment-proposal-500-words)
+- [Article Guidelines](https://localservicespotlight.com/article-guidelines/)
+- [current article guide](https://blitzmetrics.com/definitive-article-guide/)
+- [How recipes and run records work together](https://localservicespotlight.com/meta-articles/)
+
+## Review and evidence still needed
+
+The inherited contributor status is `complete`. It is preserved, not promoted by this rewrite. That label alone does not verify document readiness, a client outcome, access or an executed task.
+
+A real execution still needs its own source, reviewer, saved result and handoff evidence. The fictional example teaches the method; a real example with relevant proof is still needed where required. The task-specific flow above is source guidance; its visible presentation and the full document need a named reviewer and desktop/mobile checks.
