@@ -1,4 +1,52 @@
 {
   "schemaVersion": 1,
-  "executions": []
+  "executions": [
+    {
+      "executionId": "recipe-audit-20260905-080140",
+      "taskSlugs": [
+        "create-or-update-a-definitive-article"
+      ],
+      "recipeRevisions": {
+        "create-or-update-a-definitive-article": {
+          "articleUrl": "https://blitzmetrics.com/definitive-article-guide/",
+          "sourceSha256": "73c6c011d5fe83b152a2192b175f320b7a6470ca81b4f71672332ae899f10b9b"
+        }
+      },
+      "startedAt": "2026-09-05T08:01:40Z",
+      "status": "running",
+      "result": "80 article revisions saved and read back; 76 checked on desktop and phone. Four public copies still show older content and need a refresh. The Task Library update is live. This is one continuing execution.",
+      "evidence": [
+        {
+          "visibility": "public",
+          "url": "https://github.com/dennisyu/local-service-spotlight-skills/pull/39"
+        },
+        {
+          "visibility": "public",
+          "url": "https://localservicespotlight.com/article-guidelines/"
+        },
+        {
+          "visibility": "public",
+          "url": "https://blitzmetrics.com/cursor-and-local-qwen/"
+        },
+        {
+          "visibility": "private",
+          "sha256": "9beba4a6b89c0a87fb5fac757b13b668460500bb85ed4b8ea70b0929394168de"
+        },
+        {
+          "visibility": "public",
+          "url": "https://github.com/Local-Service-Spotlight/task-library/pull/8"
+        },
+        {
+          "visibility": "private",
+          "sha256": "cd0a53ba800617cceb2a2402840d1bbbf02f52768527a7624496c11ad5abb6cd"
+        }
+      ],
+      "metaArticle": {
+        "status": "draft",
+        "draftSha256": "ad9179aed3a2c4ad47d4e27fda1db933791c95fd5852e420c7d1066e022c543c"
+      },
+      "recordedAt": "2026-09-06T01:18:27.649605+00:00",
+      "updatedAt": "2026-09-06T01:21:35.670999+00:00"
+    }
+  ]
 }
