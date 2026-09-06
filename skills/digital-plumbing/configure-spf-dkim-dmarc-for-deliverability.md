@@ -1,6 +1,6 @@
 ---
 name: configure-spf-dkim-dmarc-for-deliverability
-description: Publish SPF, DKIM, and DMARC records so the domain's email authenticates, lands in inboxes instead of spam, and can't be trivially spoofed.
+description: "Help real mail from your business pass sender checks. Test each mail service you use."
 category: Digital Plumbing
 stage: —
 definitive_article: GAP — to be written
@@ -9,39 +9,79 @@ status: needs-work
 
 # Configure SPF/DKIM/DMARC for Deliverability
 
-**Use this when** business email lands in spam, the domain has no authentication records, or a new domain mailbox was just created (run set-up-professional-email-on-domain first).
+Do your real emails land in spam? This guide helps a business owner set up checks that show who sent the mail. Start by listing each service that sends mail for your business.
+
+**The path:** Sender list → DNS records → Received headers → Policy review.
+
+**Use this when:** domain email is new, a sender is added, messages fail authentication, or the business reviews its email protection.
 
 ## Inputs
-- DNS access for the domain (TXT/CNAME record management)
-- Mail provider admin access (Google Workspace / Microsoft 365) for DKIM keys
-- Inventory of every service that sends as the domain: mail provider, newsletter tool, CRM, form/SMTP plugin
+- The real sending services, visible From domains and envelope-sender domains, including forms and customer-management tools.
+- Access to the authoritative DNS zone and each sender’s domain settings; existing records, policy and rollback evidence. Keep secrets in the approved store, not this guide.
+- A controlled receiving inbox and authorized test scope for each service, plus an approved destination and owner for any aggregate DMARC reports.
+
+## First-run prompt
+
+> Map actual senders and existing mail-authentication policy. Prepare or apply the authorized provider-specific SPF, DKIM and DMARC changes. Test controlled messages at a receiver and report alignment and delivery separately. Do not weaken an existing policy or send a campaign as a test.
 
 ## Steps
-1. Publish SPF: one TXT record on the root domain listing every authorized sender (provider include plus any newsletter/CRM includes), ending in ~all. Exactly one SPF record — merge includes into it; two SPF records fail authentication outright.
-2. Enable DKIM: in the mail provider's admin, generate the DKIM key and publish the selector record DNS entry it gives you. Repeat for third-party senders (newsletter/CRM) using their own selectors.
-3. Publish DMARC: TXT record at _dmarc.yourdomain with p=none and a rua= reporting address to start — observe reports first, then tighten to quarantine/reject once legitimate senders all pass.
-4. Wait for DNS propagation, then test: send from the domain mailbox to a Gmail account, open the message, and use "Show original" — SPF, DKIM, and DMARC must each show PASS.
-5. Test every other sender the same way (newsletter blast, CRM email, website form notification). Anything failing gets added to SPF/DKIM properly — not worked around.
-6. After 2–4 weeks of clean DMARC reports, raise the policy from none toward quarantine/reject and document the final records in the client record.
+1. Inventory each sending service, its From domain, envelope domain and DKIM signing domain where known. Read the current records first. An unused guessed service must not be added just because it appears in a generic setup example.
+2. SPF is the sender list checked against the envelope domain. Publish one SPF TXT policy per applicable DNS name using the actual providers’ current instructions. Preserve valid senders and verify recursive DNS-query terms stay within the SPF limit of ten; ten visible include entries is not a safe shortcut.
+3. DKIM is a signed-mail check. In each provider, obtain its public selector record and follow its exact TXT or CNAME instructions. Keep private signing keys private. Confirm the public record resolves, then enable signing in the provider where that separate step is required.
+4. DMARC checks whether a passing SPF or DKIM identity aligns with the visible From domain. Read the existing DMARC policy before editing it. Preserve an established enforcement policy; do not automatically replace it with p=none.
+5. For a new policy, choose the authorized monitoring or enforcement plan based on actual sender readiness. A p=none policy requests no DMARC enforcement; the optional rua field requests aggregate reports. Add aggregate reports only to an approved receiving destination, accounting for the information those reports disclose.
+6. Send clearly marked controlled messages through each in-scope service to the agreed receiver. Inspect Authentication-Results and the relevant domains. A message can pass DMARC through aligned DKIM even when SPF fails after forwarding; inspect the cause instead of declaring every such message broken.
+7. Check whether each test reached the intended inbox, spam folder or failed delivery. Authentication helps establish sender legitimacy but does not guarantee inbox placement. Use real receiver evidence, not merely a saved DNS screen.
+8. Save a sender-by-sender result table and exact changed public records. Review report coverage and legitimate failures before any later policy change; no fixed number of weeks guarantees safe enforcement. Route unresolved sender configuration to its actual owner.
 
 ## Definition of done (QA checklist)
-- [ ] Exactly one SPF record, covering all real senders
-- [ ] DKIM signing enabled and selector records published for the mail provider and third-party senders
-- [ ] DMARC record live at _dmarc with reporting configured
-- [ ] Gmail "Show original" shows SPF=PASS, DKIM=PASS, DMARC=PASS for the mailbox and each sending service
-- [ ] Records and policy plan documented in the client record
-- [ ] Linked back to the definitive article and relevant siblings
-- [ ] Complies with Blog Posting Guidelines (if it publishes content)
+
+- [ ] The sender inventory covers all known in-scope services and applicable domains.
+- [ ] SPF is syntactically valid, single per name and within lookup limits; DKIM signing is actually enabled where applicable.
+- [ ] DMARC policy and report handling match the authorized plan, with existing protections preserved.
+- [ ] Each tested service has receiving-header alignment evidence and a separate delivery result.
+- [ ] Untested services, propagation state and policy follow-up have named owners; no campaign was sent as a test.
 
 ## Example(s)
-- Example needed — run the Meta-Article Prompt after first real run.
 
-## Run on a persistent agent (Fable 5)
-This task is inherently long-horizon — publish records, confirm PASS on every sender, then watch DMARC reports for 2–4 weeks before tightening the policy — so a persistent agent (Claude Fable 5 or a comparable OpenAI/Google model) runs the whole arc, looping until every Definition-of-done item passes, not 90%.
-It self-verifies SPF, DKIM, and DMARC all show PASS per sending service against that checklist, keeps the sender inventory and report history in memory across runs, and logs a meta-article example each run so the library compounds.
-See `boil-the-ocean.md` for the full operating principles.
+**Fictional teaching example.** Oak Repair uses a mailbox service and a quote tool. A lesson test from the mailbox has aligned SPF and DKIM, so DMARC passes. The quote tool passes SPF for the vendor’s domain but has no aligned DKIM; DMARC fails for Oak Repair’s From address. The useful next action is to configure that tool’s supported domain signing, not add a second SPF record or weaken DMARC. These are invented teaching results, not real messages or a ready-to-paste DNS policy.
+
+## Handoff and Content Factory context
+
+Give the sender matrix and policy decision to the domain and mail owners. Continue with [ensure working contact form delivers notifications](https://local-service-spotlight.github.io/task-library/?task=ensure-working-contact-form-delivers-notifications#task-ensure-working-contact-form-delivers-notifications) for website form delivery, or [set up professional email on domain](https://local-service-spotlight.github.io/task-library/?task=set-up-professional-email-on-domain#task-set-up-professional-email-on-domain) if the mailbox itself is missing.
+
+This setup supports the [Content Factory](https://blitzmetrics.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. This check does not automatically execute all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
+
+## When this runs
+
+Run at setup and after changes to a sender, domain or policy. Report review can recur on an agreed configured schedule; policy enforcement is a separate evidence-based change, not an automatic timed transition.
+
+## First-run setup and continuity
+
+Open the supplied task file and its linked source. Verify the project’s real inputs, account, access and output folder before work. This Markdown file is a guide; it does not install an app, connect an account, supply a subscription or create a schedule. Carry out work already authorized; do not ask for the same approval again. Keep any unsupplied destination or new action outside that scope clearly pending.
+
+Save source IDs, versions, decisions, checked outputs and next owner in the project tracker. Before a retry, check the saved state and other workers’ changes. A model name does not guarantee memory or a running timer. Repeated work needs an actual configured trigger and durable state; one-off work can be started by the prompt above.
+
+Keep agent media muted with volume zero before playback. If mute cannot be verified, use captions, metadata or still frames. State the limit: silent visual checks do not prove spoken-word accuracy or audio quality. Do not start sound through the user’s speakers unless explicitly asked.
+
+## Write up the real run
+
+For every actual attempt, [write its meta article](https://blitzmetrics.com/meta-article-prompt/) with this recipe and revision, trigger, steps performed, output evidence, measured result, gaps and next owner. Failed, blocked and partial attempts also get a written record. A draft can satisfy writing; publishing it follows the existing job scope.
+
+Keep one stable execution ID across retries and edits. A separately scoped child task may have its own ID linked to its parent. Writing the parent’s meta record is part of that run, not an endless new chain. The [recipe and meta-article guide](https://localservicespotlight.com/meta-articles/) explains this distinction. Teaching examples are not real executions and must not enter the run count.
 
 ## Definitive article & links
-- Hub: GAP — to be written (no dedicated hub yet; parent concept: /digital-plumbing)
-- Related (run order): set-up-professional-email-on-domain → this → ensure-working-contact-form-delivers-notifications (form notifications ride on this)
-- Cross-links: ensure-proper-dns-records (these are TXT/CNAME entries in the same zone)
+
+- Dedicated canonical article: not mapped in this source record. Use the maintained owned training below until that article gap is reviewed.
+- Exact task: [Configure SPF/DKIM/DMARC for Deliverability](https://local-service-spotlight.github.io/task-library/?task=configure-spf-dkim-dmarc-for-deliverability#task-configure-spf-dkim-dmarc-for-deliverability)
+- Writing standard: [Article Guidelines](https://localservicespotlight.com/article-guidelines/)
+- [Digital Plumbing training](https://blitzmetrics.com/digital-plumbing/)
+- [Google Workspace SPF setup](https://knowledge.workspace.google.com/admin/security/set-up-spf)
+- [Google Workspace DKIM setup](https://knowledge.workspace.google.com/admin/security/set-up-dkim)
+- [Google Workspace DMARC setup](https://knowledge.workspace.google.com/admin/security/set-up-dmarc)
+- [SPF standard, sections 3 and 4.6.4](https://www.rfc-editor.org/info/rfc7208/)
+
+## Review and evidence still needed
+
+The source contributor status is preserved. It is not certification of this draft or proof of account access, completed work or a live outcome. The worked example teaches the method and is explicitly fictional.
+- Provider-specific record values and the approved reporting receiver must come from the actual project. No real sending or DNS changes were performed while drafting.

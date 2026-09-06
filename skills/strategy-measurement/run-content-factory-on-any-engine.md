@@ -1,91 +1,79 @@
 ---
 name: run-content-factory-on-any-engine
-description: Run the whole Content Factory — Produce → Process → Post → Promote — on whichever engine you have. Claude-only and Grok-only are first-class. Multi-engine is optional sophistication, not a second playbook.
+description: "Use the tools you have to turn real work into content people can trust."
 category: Strategy & Measurement
 stage: —
 definitive_article: /content-factory
 status: complete
 ---
 
-# Run the Content Factory on any engine
+# Run the Content Factory with your available tools
 
-**Use this when** you are about to process a recording (or a backlog of recordings) and need the line, the handoff files, and the model routing — including the case where the operator only has Grok, or only has Claude.
+Use the tools you have to turn real work into content people can trust. This guide shows the steps and the files each person or tool needs next. Start with one real source and the result you want to make.
 
-This is the operating system for the Task Library. Every other Content Factory skill is a station on this line. Do not start a station as if it were a standalone chat.
+**The path:** Produce → Process → Post → Promote → Learn from results
+
+**Start when:** One recording or source set needs a coordinated Content Factory plan using the operator’s actual tools.
 
 ## Inputs
-- One raw recording (or a batch in the Content Library) plus the client's positioning and hub URLs
-- Access register for the destination site (GSC, GA4, GTM, Meta pixel, WP application password) — run the Gate skills first if any ID is missing
-- One engine the operator actually has: Claude, ChatGPT, Grok, or a local Qwen. Not a wishlist.
 
-## The line (never skip a phase)
-
-1. **Gate / Plumbing** — pixels, GTM, GA4, GSC, Meta Business Manager, domain. A Dollar-a-Day campaign with no pixel is spend you cannot retarget. See `install-meta-pixel-with-standard-events` and `verify-google-search-console-and-connect-to-ga4`.
-2. **Produce (gather)** — Topic Wheel questions, one-minute videos, conference clips, a 50-clip batch. Human on camera. Agent preps the list and logs the files.
-3. **Process (Descript)** — upload → transcribe → filler pass → GCT → article from transcript → Jennifer grade → clips → ad creatives. This is where a local model can take the overnight writing slice.
-4. **Post** — WordPress draft with the *owner* as author, Rank Math, SEO Tree, YouTube, Facebook, LinkedIn. The live URL is the handoff, not the chat.
-5. **Promote (ads)** — boost only proven organic. $1/day × 7, kill the bottom 90%, $30 over 30 days on winners. Highest money on the line.
-
-Map to the public 4 P's without forking the playbook: **Plumbing = Gate**, **Publish = Produce+Process+Post**, **Promote = Promote**, **Perform = MAA** (`maa-cycle-metrics-analysis-action`). The 6-stage assembly line (capture → transcribe → hub → atomize → distribute → boost) is the same line with finer Process grains.
-
-## Single-engine path (first-class)
-
-People who arrive with ONLY Grok, or ONLY Claude, still execute the whole factory.
-
-1. Open this skill. Confirm the Gate IDs exist. If not, run the Gate skills in this same engine with a browser.
-2. Produce: human records; you log files into `01-Raw/`.
-3. Process: you drive Descript (browser) and write `transcript.md`, `gct.md`, `article.html` in the client folder. If the engine cannot talk to Descript, export the transcript from Descript once and keep working from the file.
-4. Grade with Jennifer in the same engine (`grade-article-using-jennifer`). A- is the publish bar — do not iterate past it.
-5. Post via WordPress REST with a full Chrome User-Agent (BlitzMetrics WAF 403s a minimal UA) or via wp-admin if REST is blocked.
-6. Promote in Meta Ads Manager (browser). Same engine. Same kill/scale rules.
-
-Do not wait for a second vendor. Do not keep a "Claude version" and a "Grok version" of this SOP.
-
-## Optional multi-engine (same line, more throughput)
-
-- **Tier 0 / script:** yt-dlp, WP REST, sitemap checks, zip builds. No model.
-- **Tier 1 / local:** overnight Qwen (`run-overnight-local-writer`) drafts Process writing. It never hits YouTube, WordPress, or ads.
-- **Tier 1 / any chat model:** social copy, title options, clip-selection lists.
-- **Tier 2 / judgment:** Jennifer, entity disambiguation, the subject's voice. Claude, ChatGPT, or Grok — whichever you have that clears the bar.
-- **Computer-use:** Descript, Ads Manager, GSC, GTM. Any engine with a browser.
-
-That split is how you scale the SAME factory when you have extra engines. It is not a second playbook.
-
-## Handoff packets (files, never vendor memory)
-
-| From | Write these files | Next skill reads |
-|---|---|---|
-| Gate | Access register row: GTM-ID, G-ID, pixel ID, GSC property | Every later skill |
-| Produce | `01-Raw/YYYY-MM-DD-*.mp4` + tracker row | `step-1-upload-video-to-google-drive-and-descript` |
-| Process | `transcript.md`, `gct.md`, `article.html`, `clips/`, `04-Promote-Creatives/` | `step-12-post-article-on-wordpress` |
-| Post | Live URL, post ID, author user, featured-image media ID | Promote ranking |
-| Promote | Organic metrics + kill/scale log + pixel ID | Next week's five |
-
-If the work only exists in a chat thread, the next engine (or the next person) starts from zero. That is how factories stall.
+- One real recording or source set, use rights, goal, audience and owned page map.
+- [Content Factory: Produce, Process, Post and Promote](https://blitzmetrics.com/content-factory/) current method and the relevant task recipes.
+- Actual supported tools, file access, verified release gates, named owners and the allowed scope for each stage.
 
 ## Steps
-1. Check Gate IDs. Stop and run plumbing if GSC, GTM, GA4, or the Meta pixel is missing — this is a 5 even though the task is small.
-2. Confirm there is raw media in `01-Raw/` or record it (`record-one-minute-videos` / `batch-record-50-raw-clips-in-one-session`).
-3. Run Process in order: Descript transcription → GCT → article → Jennifer (stop at A-) → clips → Dollar-a-Day creatives.
-4. Post to WordPress as a draft, set the owner as author, then the Rank Math / SEO Tree / checklist skills. Publish only when the checklist is green.
-5. Wait for organic signal. Rank the last 60–90 days. Boost the top 5 at $1/day for 7 days. Kill the bottom 90%. Scale winners.
-6. Write the meta-article for the run so the next recording starts from a sharper SOP.
+
+1. Write the specific goal and outputs first. Confirm the accepted business scope and which actions are authorized. Source drafting can proceed where allowed; current engine plumbing gates apply before shipping or amplification.
+2. Produce gathers real source material. Verify the original file, speaker, date, permission and tracker entry. An AI worker can plan and inspect supported sources, but it does not become the person who performed the work.
+3. Process turns the source into the selected useful outputs: transcript where needed, [Goals, Content, Targeting: the result, proof and people for this work](https://blitzmetrics.com/gct-business-strategy/) brief, article, clips or creative as the assignment requires. Use the actual available editor or a verified transcript export; a model name does not establish browser or media-tool access.
+4. Apply the current writing and [article review](https://local-service-spotlight.github.io/task-library/?task=grade-article-using-jennifer#task-grade-article-using-jennifer) checks. Keep the person’s voice, sources and proof, a grade-five opening and a useful first-screen visual. An A-minus editorial grade is one gate, not permission to ignore factual, media or release defects.
+5. Post uses the destination’s supported editor/source rail. Preserve existing builder data, page type and media. Check authorship, metadata, owned links and the [SEO Tree, the map of related pages](https://blitzmetrics.com/seo-tree/). Save drafts or publish only under current authority, then verify source and public rendering separately.
+6. Promote reviews actual organic evidence and prepares the relevant [Dollar a Day, small paid tests of proven content](https://blitzmetrics.com/dollar-a-day/) test or other accepted distribution task. Do not prescribe paid spend for every content job; a live URL alone does not establish campaign readiness or authority.
+7. Pass a concrete packet between stages: source files and rights; selected edited outputs and checks; exact saved/live destinations; then distribution settings and measured results. One usable shared file trail can support multiple tools, but each receiving worker must prove it can read it.
+8. Record actual tools, file paths, checks and blockers in the run record. Reuse the same four-stage method without promising every provider or local model can perform every action. Next work starts from the retained evidence, not an assumed cross-vendor memory.
 
 ## Definition of done (QA checklist)
-- [ ] Gate IDs recorded (GTM, GA4, GSC, pixel) or an explicit blocker named with the Gate skill to run
-- [ ] Files exist on disk for every completed phase — not only in a chat
-- [ ] Article graded to A- (or the run is still in Process with the grade attached)
-- [ ] Live URL exists before any dollar is spent
-- [ ] Boosts, if any, are on proven organic only, $1/day, with a day-7 kill date
-- [ ] Linked back to the definitive article and relevant siblings
-- [ ] Complies with Blog Posting Guidelines (if it publishes content)
+
+Quality assurance (QA) means checking the result against its agreed requirements; see the [Article Guidelines](https://localservicespotlight.com/article-guidelines/).
+
+- [ ] All completed stage outputs are real, source-backed and readable by the next owner.
+- [ ] The four stages are Produce, Process, Post and Promote; plumbing and measurement support them.
+- [ ] Actual tool access, release authority and observed results are distinct; blocked stages are not called complete.
 
 ## Example(s)
-- Overnight local writer SOP: https://blitzmetrics.com/overnight-content-worker/ — Qwen drafts; a human (or Claude/Grok) does the morning voice pass; scripts post drafts. Promote stays a separate station.
-- Marko Sipila / HVAC Quote: phone-shot conference interviews → YouTube → $1/day on winners. That is this line with no second vendor required.
-- Anthony Hilb (July 2026): 16 articles shipped to a site with no GSC. Six never indexed. The Gate was skipped; the factory looked busy and produced nothing measurable. See `verify-google-search-console-and-connect-to-ga4`.
+
+**Fictional teaching example. This is not a client result or proof of a completed run.**
+
+A fictional owner has one recording and an AI app that can read text but cannot control the video editor. A teammate provides a checked transcript. The app drafts the article from it and saves the source links. Publishing and paid promotion remain with their authorized owners; one engine has not been claimed to run the whole line.
+
+## Handoff and Content Factory context
+
+The next real stage owner receives its exact packet. [Write the agreed weekly report](https://local-service-spotlight.github.io/task-library/?task=submit-weekly-maa-report-every-friday#task-submit-weekly-maa-report-every-friday) receives any measured business results; recipe changes follow the recorded review path.
+
+This recipe coordinates the four stages in the [Content Factory: Produce, Process, Post and Promote](https://blitzmetrics.com/content-factory/). Each stage produces only its actual assigned outputs, and each handoff preserves source evidence and authority.
+
+## Start with an agent
+
+Give the AI worker this recipe, the real Inputs, the desired result and the actions already authorized. Ask for the saved output, source evidence, passed and failed checks, and the next owner. A skill is a set of instructions. Loading it does not prove access, install a scheduled job or complete the work. Use the [current installation guide](https://localservicespotlight.com/install/) only if reusable setup is needed; a ZIP contains instructions and is not an access grant.
+
+Use the actual supported app and verified source access. A model name is not a promise of browser control, memory or unattended work. For recurring work, inspect the real job’s trigger, owner, timezone and observed firing; this recipe creates no schedule. Before any media playback, mute the player and set volume to zero. A silent review does not prove sound was heard.
+
+## Record the real execution
+
+Open the run record when work begins. Keep one execution ID, the exact starting recipe revision, input sources and actual state. Write a [meta article, the record of one real execution](https://blitzmetrics.com/meta-article-prompt/) with results, checks, failures and next owner. Link it to this task in the [Task Library](https://local-service-spotlight.github.io/task-library/). Writing is required; public release follows existing authority.
+
+Reuse the same execution ID for internal reviews, meta writing, revisions and retries. A blocked run stays open with its dependency and owner, without an invented finish time. Keep historical public examples as dated evidence; article counts alone are not verified execution frequency. Use supported findings to propose and verify a recipe improvement.
 
 ## Definitive article & links
-- Hub: /content-factory
-- Related: /dad · /blog-posting-guidelines · /overnight-content-worker · /digital-plumbing · /model-judgment
-- Sibling skills, in run order: `verify-google-search-console-and-connect-to-ga4` → `step-1-upload-video-to-google-drive-and-descript` → `grade-article-using-jennifer` → `step-12-post-article-on-wordpress` → `run-dollar-a-day-campaign-on-winning-content`
+
+- [Maintained source guide](https://blitzmetrics.com/content-factory/)
+- [This task in the Task Library](https://local-service-spotlight.github.io/task-library/?task=run-content-factory-on-any-engine#task-run-content-factory-on-any-engine)
+- [Article Guidelines](https://localservicespotlight.com/article-guidelines/)
+- [Definitive article and task recipe standard](https://blitzmetrics.com/definitive-article-guide/)
+- [How recipes and run records work together](https://localservicespotlight.com/meta-articles/)
+
+## Review and evidence still needed
+
+The inherited contributor status is `complete`. It is preserved, not promoted by this rewrite. That label alone does not verify document readiness, account access, an actual execution or a client outcome.
+
+A relevant real execution, source evidence, independent reviewer and accepted handoff remain to be recorded. The fictional example teaches the method and does not fill a real-run evidence gap. The opening and full method need a named semantic reviewer; the task-specific path is source guidance, with visible desktop/mobile presentation still to check.

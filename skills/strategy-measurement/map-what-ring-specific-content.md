@@ -1,49 +1,77 @@
 ---
 name: map-what-ring-specific-content
-description: Define the outer ring of the Topic Wheel — the specific topics, customer questions, examples, and stories — so the brand has a concrete, mission-anchored content backlog.
+description: "Make it clear what your business sells before you plan more content."
 category: Strategy & Measurement
 stage: —
 definitive_article: /topic-wheel
 status: complete
 ---
 
-# Map WHAT ring (specific content)
+# Map the WHAT offer at the center
 
-**Use this when** the WHY center and HOW spokes exist and you need the outer ring — the actual content pieces — so nobody ever again asks "what should we post?"
+Make it clear what your business sells before you plan more content. This guide defines the center of your topic map. Start with the real offer, who buys it and the problem it solves.
+
+**The path:** Real offer → Clear WHAT → Evidence check → HOW topics
+
+**Start when:** A new or revised Topic Wheel needs its central offer defined.
 
 ## Inputs
-- The completed WHY ring and HOW spokes
-- Real customer questions: sales calls, support emails, social comments, reviews, search queries
-- Real proof assets: client stories, before/afters, mistakes seen in the field
+
+- [Topic Wheel, the map of your offer, topics and real stories](https://blitzmetrics.com/topic-wheel/) current source and any existing wheel.
+- The actual service or product, buyer, service area and supporting business records.
+- Current customer language and the owner’s accepted scope.
 
 ## Steps
-1. Define the ring: the WHAT is the outer ring of the Topic Wheel — specific topics, examples, and content pieces. Each WHAT item hangs off exactly one HOW spoke, and each should be answerable in a single one-minute video.
-2. For each HOW spoke, harvest real customer questions verbatim — what people actually ask before, during, and after buying. Verbatim beats invented; customers' words are the keywords.
-3. Add example-type items per spoke: a client story, a common mistake, a how-to, a price/cost answer, a "what to expect" walkthrough. Aim for 5–10 WHAT items per spoke.
-4. Scope-check every item: if it can't be answered in about a minute, split it; if it's too thin to sustain a minute, merge it into a neighbor.
-5. Trace-check every item: WHAT → its HOW spoke → the WHY must read as a straight line. Items that don't trace get cut, however clickable they look.
-6. Record the populated wheel as the master topic inventory — the direct input for use-for-content-planning-and-video-topics.
-7. Measure it: track WHAT items recorded vs remaining per spoke; the wheel is a backlog, and an untouched ring after a month means planning isn't connected to production.
+
+1. Follow the maintained geometry: WHAT is the center, HOW is the middle ring of useful topics, and WHY is the outer ring of people and real stories. The stable task slug contains “ring”; it does not make WHAT an outer content backlog.
+2. List what the business actually offers. Separate a current offer from an aspiration or a past service, and name the buyer problem it solves.
+3. Draft one plain sentence stating the offer and who it serves. Use a specific customer-facing description rather than a broad mission slogan.
+4. Check that sentence against the service page, real work and the owner’s accepted scope. Resolve conflicting claims or geography; do not make the offering broader to fill a wheel.
+5. Place the checked WHAT in the center with source links and date. Put proposed questions in a separate backlog; they will connect to HOW topics and WHY stories, not replace the central offer.
+6. Hand the center statement to the HOW task. Keep the existing canonical offer page as the trunk of the [SEO Tree, the map of related pages](https://blitzmetrics.com/seo-tree/); propose a missing page only after checking for an existing owner.
 
 ## Definition of done (QA checklist)
-- [ ] Every HOW spoke has 5–10 WHAT items
-- [ ] Each item phrased as a real customer question or concrete example (verbatim where possible)
-- [ ] Each item scoped to one-minute-video size
-- [ ] Every item traces WHAT → HOW → WHY with no orphans
-- [ ] Wheel saved as the master topic inventory for content planning
-- [ ] Linked back to the definitive article and relevant siblings
-- [ ] Complies with Blog Posting Guidelines (if it publishes content)
+
+Quality assurance (QA) means checking the result against its agreed requirements; see the [Article Guidelines](https://localservicespotlight.com/article-guidelines/).
+
+- [ ] The WHAT center states a real specific offer and customer problem.
+- [ ] The saved wheel uses WHAT center/HOW middle/WHY outer consistently.
+- [ ] Sources and the next topic-mapping task are linked.
 
 ## Example(s)
-- Example needed — run the Meta-Article Prompt after first real run. (The hub at /topic-wheel links live examples; pull the closest match into this slot.)
 
-## Run on a persistent agent (Fable 5)
+**Fictional teaching example. This is not a client result or proof of a completed run.**
 
-This is where a max-effort agent (Claude Fable 5 or comparable OpenAI/Google models) outworks a human: it reads every sales call note, support email, comment, and review to harvest customer questions verbatim, and loops until the Definition of done fully passes — 5–10 items per spoke, each one-minute-scoped, each tracing WHAT → HOW → WHY with zero orphans.
-It self-verifies by re-running the trace and scope checks on the finished ring before saving it as the master topic inventory.
-Memory keeps the wheel a living backlog: recorded-vs-remaining counts per spoke are compared against prior months in the MAA loop — a true memory cycle — and a meta-article example is logged each run.
-See `boil-the-ocean.md` for the full operating principles.
+A fictional plumbing firm offers emergency repair and heater installation in one city. That is its WHAT. “Why does my heater leak?” is a useful recording question, but it is not the center of the wheel. The question belongs under a heater topic connected back to the actual service.
+
+## Handoff and Content Factory context
+
+[Map HOW topics](https://local-service-spotlight.github.io/task-library/?task=map-how-ring-methods#task-map-how-ring-methods) receives the checked WHAT and service proof.
+
+This work supports Produce in the [Content Factory: Produce, Process, Post and Promote](https://blitzmetrics.com/content-factory/). The selected sources pass to Process, approved outputs go to Post, and useful proven work can enter Promote. The real inputs and handoff above set this task’s scope.
+
+## Start with an agent
+
+Give the AI worker this recipe, the real Inputs, the desired result and the actions already authorized. Ask for the saved output, source evidence, passed and failed checks, and the next owner. A skill is a set of instructions. Loading it does not prove access, install a scheduled job or complete the work. Use the [current installation guide](https://localservicespotlight.com/install/) only if reusable setup is needed; a ZIP contains instructions and is not an access grant.
+
+Use the actual supported app and verified source access. A model name is not a promise of browser control, memory or unattended work. For recurring work, inspect the real job’s trigger, owner, timezone and observed firing; this recipe creates no schedule. Before any media playback, mute the player and set volume to zero. A silent review does not prove sound was heard.
+
+## Record the real execution
+
+Open the run record when work begins. Keep one execution ID, the exact starting recipe revision, input sources and actual state. Write a [meta article, the record of one real execution](https://blitzmetrics.com/meta-article-prompt/) with results, checks, failures and next owner. Link it to this task in the [Task Library](https://local-service-spotlight.github.io/task-library/). Writing is required; public release follows existing authority.
+
+Reuse the same execution ID for internal reviews, meta writing, revisions and retries. A blocked run stays open with its dependency and owner, without an invented finish time. Keep historical public examples as dated evidence; article counts alone are not verified execution frequency. Use supported findings to propose and verify a recipe improvement.
 
 ## Definitive article & links
-- Hub: /topic-wheel
-- Related, in run order: map-why-ring-core-purpose, map-how-ring-methods, use-for-content-planning-and-video-topics, /one-minute-video-guide
+
+- [Maintained source guide](https://blitzmetrics.com/topic-wheel/)
+- [This task in the Task Library](https://local-service-spotlight.github.io/task-library/?task=map-what-ring-specific-content#task-map-what-ring-specific-content)
+- [Article Guidelines](https://localservicespotlight.com/article-guidelines/)
+- [Definitive article and task recipe standard](https://blitzmetrics.com/definitive-article-guide/)
+- [How recipes and run records work together](https://localservicespotlight.com/meta-articles/)
+
+## Review and evidence still needed
+
+The inherited contributor status is `complete`. It is preserved, not promoted by this rewrite. That label alone does not verify document readiness, account access, an actual execution or a client outcome.
+
+A relevant real execution, source evidence, independent reviewer and accepted handoff remain to be recorded. The fictional example teaches the method and does not fill a real-run evidence gap. The opening and full method need a named semantic reviewer; the task-specific path is source guidance, with visible desktop/mobile presentation still to check.

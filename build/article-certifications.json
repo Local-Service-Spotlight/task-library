@@ -10,6 +10,11 @@
    "state": "wip",
    "reviewed": "2026-09-05",
    "reason": "Existing completed entity-linking task now maps to its precise standalone recipe. This mapping review is not independent runtime or semantic certification of the newly mapped article."
+  },
+  "https://blitzmetrics.com/thank-you-machine/": {
+   "state": "wip",
+   "reviewed": "2026-09-06",
+   "reason": "Semantic certification held: the ordinary public URL redirects to /face-socks/ (How to Order Custom Face Socks, post 103160). That gift-ordering recipe does not certify the mapped thank-you video, tagging and paid-test workflows. The canonical video destination needs owner reconciliation; contributor task states are unchanged."
   }
  }
 }

@@ -1,6 +1,6 @@
 ---
 name: systematization-content-checklists-software
-description: Move any recurring task up the Systematization ladder — from documented content, to a checklist anyone can run, to software/agent automation — so quality stops depending on memory.
+description: "Turn a job your team knows into steps others can use."
 category: Strategy & Measurement
 stage: —
 definitive_article: /9-triangles-framework-scalable-home-service-businesses/
@@ -9,40 +9,70 @@ status: complete
 
 # Systematization (Content → Checklists → Software)
 
-**Use this when** a task is done repeatedly but lives in someone's head, results vary by who does it, or you're correcting the same mistake for the third time.
+Turn a job your team knows into steps others can use. This guide helps you test the steps before you build tools around them. Start with one real task and the person who can show it well.
+
+**The path:** Real work → Canonical guide → Tested checklist → Bounded software
+
+**Start when:** A repeated task needs a reliable documented method and evidence for any automation decision.
 
 ## Inputs
-- One recurring task that currently runs ad-hoc
-- The person who does it best (their walkthrough is the raw material)
-- A home for the artifacts: the definitive article hub and the Task Library skills folder
+
+- A real repeated task, current source guide if one exists and an experienced operator.
+- Actual input/output examples, errors and review criteria; permission to record or inspect the work.
+- The maintained task/document sources, a reviewer and an authorized scope for any later software change.
 
 ## Steps
-1. Define the ladder: **Content** (the knowledge is written down once, canonically), **Checklists** (the knowledge becomes numbered steps with pass/fail criteria), **Software** (the stable steps run automatically). Never skip a rung — automating an undocumented process automates the errors.
-2. **Content:** record the best operator doing the task while narrating; turn it into (or fold it into) the concept's definitive article so there is one canonical write-up, not competing versions.
-3. **Checklists:** extract the SOP into a skill.md per the Task Library Standard — inputs, imperative steps, and a Definition-of-done checklist an agent or new hire can run without asking questions.
-4. Run the checklist manually at least three times with different operators; every question they ask is a missing step — edit the checklist until runs are question-free.
-5. **Software:** automate only the steps that survived unchanged across runs (e.g., agent runs the skill.md, scripts handle the repetitive parts); keep judgment steps human until they stabilize.
-6. Measure it: track time-per-run, error/rework rate, and what fraction of runs are done by someone other than the original expert — all three should improve as the task climbs the ladder.
+
+1. Observe a real execution and capture the goal, inputs, decisions, steps, result and exceptions. Preserve actual work evidence; an imagined clean path misses the problems this process must handle.
+2. Use [Document a task](https://local-service-spotlight.github.io/task-library/?task=document-a-task#task-document-a-task) to create or update its single canonical recipe. Separate a task guide from a topic hub, and connect supporting articles through the [SEO Tree, the map of related pages](https://blitzmetrics.com/seo-tree/).
+3. Extract a checklist with explicit inputs, ordered actions, pass criteria and next handoff. Package it as a skill, meaning reusable task instructions, using the current [skill publishing standard](https://blitzmetrics.com/skill-publishing-standard/).
+4. Test the checklist on actual authorized work with different operators. The prior local recipe calls for at least three runs including someone other than the expert; record that agreed gate and the actual distinct executions. A question can reveal missing context, an exception or an execution mistake; diagnose it before editing.
+5. Compare the runs for stable mechanical steps and judgment points. Propose automation only where inputs, failure handling, access, authority and observable outputs are defined. Software use is not automatically a scheduled job.
+6. Implement only the approved bounded tool or worker. Test success, missing-input and failure paths without hidden live effects, and retain the actual result. Keep a manual handoff where judgment or access remains human.
+7. Compare time, rework and output quality against the baseline after use. A new script, skill or plugin is an artifact; do not call the method improved until its evidence supports that claim.
 
 ## Definition of done (QA checklist)
-- [ ] The task has a single canonical write-up on its definitive article (no competing docs)
-- [ ] A skill.md exists with inputs, steps, and an objective Definition-of-done
-- [ ] Checklist validated by 3+ runs, including by someone other than the expert
-- [ ] Stable steps automated or assigned to an agent; judgment steps explicitly flagged
-- [ ] Time-per-run and rework rate baselined and tracked
-- [ ] Linked back to the definitive article and relevant siblings
-- [ ] Complies with Blog Posting Guidelines (if it publishes content)
+
+Quality assurance (QA) means checking the result against its agreed requirements; see the [Article Guidelines](https://localservicespotlight.com/article-guidelines/).
+
+- [ ] One canonical recipe and usable checklist trace to real work.
+- [ ] The agreed multi-operator test gate has distinct run evidence or remains unfinished.
+- [ ] Any automated portion has authorized scope, failure handling and observed tests; unresolved judgment is explicit.
 
 ## Example(s)
-- Example needed — run the Meta-Article Prompt after first real run. (The Task Library itself — definitive article → skill.md → examples — is this triangle applied to Local Service Spotlight' own SOPs.)
 
-## Run on a persistent agent (Fable 5)
+**Fictional teaching example. This is not a client result or proof of a completed run.**
 
-This triangle is what a persistent, max-effort agent (Claude Fable 5 or comparable OpenAI/Google models) embodies: it drafts the canonical write-up, extracts the skill.md, then runs the checklist itself repeatedly — treating every question it has to ask as a missing step — and loops until the Definition of done fully passes, including validated runs by operators other than the expert.
-It self-verifies by re-running the finished checklist cold and refusing to mark Software-rung steps automated until they survive unchanged across runs.
-Memory baselines time-per-run and rework rate and compares them against prior periods in the MAA loop — a true memory cycle — with a meta-article example logged each run.
-See `boil-the-ocean.md` for the full operating principles.
+A fictional team records three real invoice-check attempts in its practice setting. Two operators miss a field that the guide never named, so the guide changes. A fourth attempt has not happened. The new checklist is saved, but the team does not claim its revised process has passed or that a new script can send invoices.
+
+## Handoff and Content Factory context
+
+[Publish the reviewed skill and task page](https://local-service-spotlight.github.io/task-library/?task=publish-skill-and-task-page#task-publish-skill-and-task-page) handles the approved document; the implementation owner receives any separate software proposal.
+
+This work supports the [Content Factory: Produce, Process, Post and Promote](https://blitzmetrics.com/content-factory/) across its relevant stages. It uses the actual inputs and next owner above; a strategy or measurement guide does not manufacture transcripts, clips or other unrelated stage outputs.
+
+## Start with an agent
+
+Give the AI worker this recipe, the real Inputs, the desired result and the actions already authorized. Ask for the saved output, source evidence, passed and failed checks, and the next owner. A skill is a set of instructions. Loading it does not prove access, install a scheduled job or complete the work. Use the [current installation guide](https://localservicespotlight.com/install/) only if reusable setup is needed; a ZIP contains instructions and is not an access grant.
+
+Use the actual supported app and verified source access. A model name is not a promise of browser control, memory or unattended work. For recurring work, inspect the real job’s trigger, owner, timezone and observed firing; this recipe creates no schedule. Before any media playback, mute the player and set volume to zero. A silent review does not prove sound was heard.
+
+## Record the real execution
+
+Open the run record when work begins. Keep one execution ID, the exact starting recipe revision, input sources and actual state. Write a [meta article, the record of one real execution](https://blitzmetrics.com/meta-article-prompt/) with results, checks, failures and next owner. Link it to this task in the [Task Library](https://local-service-spotlight.github.io/task-library/). Writing is required; public release follows existing authority.
+
+Reuse the same execution ID for internal reviews, meta writing, revisions and retries. A blocked run stays open with its dependency and owner, without an invented finish time. Keep historical public examples as dated evidence; article counts alone are not verified execution frequency. Use supported findings to propose and verify a recipe improvement.
 
 ## Definitive article & links
-- Hub: /9-triangles-framework-scalable-home-service-businesses/
-- Related: management-communicate-iterate-delegate, learn-do-teach-apprentice-model, /content-factory
+
+- [Maintained source guide](https://blitzmetrics.com/9-triangles-framework-scalable-home-service-businesses/)
+- [This task in the Task Library](https://local-service-spotlight.github.io/task-library/?task=systematization-content-checklists-software#task-systematization-content-checklists-software)
+- [Article Guidelines](https://localservicespotlight.com/article-guidelines/)
+- [Definitive article and task recipe standard](https://blitzmetrics.com/definitive-article-guide/)
+- [How recipes and run records work together](https://localservicespotlight.com/meta-articles/)
+
+## Review and evidence still needed
+
+The inherited contributor status is `complete`. It is preserved, not promoted by this rewrite. That label alone does not verify document readiness, account access, an actual execution or a client outcome.
+
+A relevant real execution, source evidence, independent reviewer and accepted handoff remain to be recorded. The fictional example teaches the method and does not fill a real-run evidence gap. The opening and full method need a named semantic reviewer; the task-specific path is source guidance, with visible desktop/mobile presentation still to check.

@@ -1,6 +1,6 @@
 ---
 name: show-whats-working-and-what-isnt
-description: Present performance data as an explicit two-column verdict — winners with evidence, underperformers with evidence — so the weekly report drives kill/scale decisions instead of hiding them.
+description: "Give your team a clear view of which work helps and which needs a closer look."
 category: Strategy & Measurement
 stage: —
 definitive_article: GAP — to be written
@@ -9,40 +9,70 @@ status: needs-work
 
 # Show what's working and what isn't
 
-**Use this when** assembling the weekly MAA report, or any time a stakeholder asks "how's it going?" and deserves a straight answer instead of a wall of screenshots.
+Give your team a clear view of which work helps and which needs a closer look. This guide puts each result next to its goal and proof. Start with the full list, so weak results do not get left out.
+
+**The path:** Full inventory → Agreed targets → Evidence verdicts → Diagnosis
+
+**Start when:** A performance review needs a fair verdict on all in-scope active work.
 
 ## Inputs
-- Current-period metrics for every active item: campaigns, boosted posts, articles, pages
-- The thresholds that define "working" — target CPA/ROAS, engagement benchmarks, ranking/traffic goals (from GCT and SAE Stage 2)
-- Last period's numbers for trend context
+
+- [Collect verified weekly measurements](https://local-service-spotlight.github.io/task-library/?task=collect-verified-weekly-measurements#task-collect-verified-weekly-measurements) and the current active inventory, with periods and launch dates.
+- [Goals, Content, Targeting: the result, proof and people for this work](https://blitzmetrics.com/gct-business-strategy/) targets, evaluation windows and relevant sample limits.
+- Prior comparable results and known recent changes.
 
 ## Steps
-1. Fix the verdict thresholds first: an item is "working" only if it meets its stated target (e.g., at-or-under target CPA, at-or-above engagement benchmark). Write the threshold at the top of the report so the verdicts are checkable.
-2. Score every active item against its threshold — no item gets to be "too new to judge" for more than one cycle.
-3. Build two lists. **Working:** each item with the one metric that proves it, plus trend vs last period. **Not working:** same evidence standard — no euphemisms, no burying.
-4. Lead with winners (they get scaled), follow with losers (they get diagnosed and killed) — but never omit the losers; hiding them is how budgets die.
-5. Keep each line to one sentence: item, verdict metric, trend. Detail lives in the linked dashboards, not the verdict page.
-6. Hand both lists downstream: losers go to analyze-why-underperformers-fail; the combined picture feeds kill-underperformers-scale-winners and the Friday report.
+
+1. State each item’s goal and evidence rule before assigning a verdict. Judge an awareness asset and a lead asset by their different jobs; do not use one blended threshold.
+2. Reconcile the actual active inventory with the report. Retain items whose source is missing or whose results are weak instead of quietly omitting them.
+3. For comparable, sufficient data, mark working or not meeting target with the value, threshold, source and trend. For an immature test or incomplete source, use not yet assessable and name the missing evidence or review window.
+4. Make the winners and weak results equally clear. Keep the unresolved group visible; the source’s two main verdict lists do not justify forcing unknown data into either.
+5. Write each line as item, job, actual result and trend. Link detailed reports and sample limitations. Observed direction alone does not prove a cause or a profitable outcome.
+6. Hand evaluated weak cases to diagnosis. Hand supported winners to the action owner for a bounded decision, and unresolved cases to an evidence check with owner and due condition.
+7. Save the dated verdict page and the full inventory reconciliation. Carry it into the weekly report and compare against the same rules next cycle.
 
 ## Definition of done (QA checklist)
-- [ ] Verdict thresholds stated explicitly at the top
-- [ ] Every active item appears in exactly one list — working or not working
-- [ ] Each line carries its proof metric and period-over-period trend
-- [ ] Underperformers are as visible as winners (equal evidence, equal prominence)
-- [ ] Both lists handed into the Friday MAA report unedited
-- [ ] Linked back to the definitive article and relevant siblings
-- [ ] Complies with Blog Posting Guidelines (if it publishes content)
+
+Quality assurance (QA) means checking the result against its agreed requirements; see the [Article Guidelines](https://localservicespotlight.com/article-guidelines/).
+
+- [ ] All active items are accounted for, including not-yet-assessable cases.
+- [ ] Every verdict cites the right target, period and evidence.
+- [ ] Diagnosis, action and missing-data handoffs are separate and owned.
 
 ## Example(s)
-- Example needed — run the Meta-Article Prompt after first real run.
 
-## Run on a persistent agent (Fable 5)
+**Fictional teaching example. This is not a client result or proof of a completed run.**
 
-A persistent, max-effort agent (Claude Fable 5 or comparable OpenAI/Google models) has no favorites: it scores every active item against the stated thresholds and loops until the Definition of done fully passes — every item in exactly one list with its proof metric and trend, underperformers as visible as winners.
-It self-verifies by reconciling both lists against the full active inventory so nothing gets quietly omitted.
-Memory supplies the period-over-period trend column and tracks each item's launch date, so nothing hides behind "too new to judge" past one cycle — the MAA loop runs as a true memory cycle — and a meta-article example is logged each run.
-See `boil-the-ocean.md` for the full operating principles.
+A fictional weekly review has three tests. One meets its cost-per-qualified-lead target, one misses after its full window, and one has only a day of data. The first two receive supported verdicts. The third remains not yet assessable with a planned review date; it is neither a hidden loss nor a claimed winner.
+
+## Handoff and Content Factory context
+
+[Diagnose weak results](https://local-service-spotlight.github.io/task-library/?task=analyze-why-underperformers-fail#task-analyze-why-underperformers-fail) receives evaluated weak cases; [Pause weak tests and scale proven winners](https://local-service-spotlight.github.io/task-library/?task=kill-underperformers-scale-winners#task-kill-underperformers-scale-winners) receives supported decisions and [Write the agreed weekly report](https://local-service-spotlight.github.io/task-library/?task=submit-weekly-maa-report-every-friday#task-submit-weekly-maa-report-every-friday) receives the full picture.
+
+This work supports the [Content Factory: Produce, Process, Post and Promote](https://blitzmetrics.com/content-factory/) across its relevant stages. It uses the actual inputs and next owner above; a strategy or measurement guide does not manufacture transcripts, clips or other unrelated stage outputs.
+
+## Start with an agent
+
+Give the AI worker this recipe, the real Inputs, the desired result and the actions already authorized. Ask for the saved output, source evidence, passed and failed checks, and the next owner. A skill is a set of instructions. Loading it does not prove access, install a scheduled job or complete the work. Use the [current installation guide](https://localservicespotlight.com/install/) only if reusable setup is needed; a ZIP contains instructions and is not an access grant.
+
+Use the actual supported app and verified source access. A model name is not a promise of browser control, memory or unattended work. For recurring work, inspect the real job’s trigger, owner, timezone and observed firing; this recipe creates no schedule. Before any media playback, mute the player and set volume to zero. A silent review does not prove sound was heard.
+
+## Record the real execution
+
+Open the run record when work begins. Keep one execution ID, the exact starting recipe revision, input sources and actual state. Write a [meta article, the record of one real execution](https://blitzmetrics.com/meta-article-prompt/) with results, checks, failures and next owner. Link it to this task in the [Task Library](https://local-service-spotlight.github.io/task-library/). Writing is required; public release follows existing authority.
+
+Reuse the same execution ID for internal reviews, meta writing, revisions and retries. A blocked run stays open with its dependency and owner, without an invented finish time. Keep historical public examples as dated evidence; article counts alone are not verified execution frequency. Use supported findings to propose and verify a recipe improvement.
 
 ## Definitive article & links
-- Hub: GAP — to be written (parent methodology: /maa; framework context: /nine-triangles)
-- Related, in run order: submit-weekly-maa-report-every-friday, analyze-why-underperformers-fail, kill-underperformers-scale-winners
+
+- A dedicated canonical article is not mapped in this task’s source. Use the linked method references above and resolve the correct existing owner before creating another page.
+- [This task in the Task Library](https://local-service-spotlight.github.io/task-library/?task=show-whats-working-and-what-isnt#task-show-whats-working-and-what-isnt)
+- [Article Guidelines](https://localservicespotlight.com/article-guidelines/)
+- [Definitive article and task recipe standard](https://blitzmetrics.com/definitive-article-guide/)
+- [How recipes and run records work together](https://localservicespotlight.com/meta-articles/)
+
+## Review and evidence still needed
+
+The inherited contributor status is `needs-work`. It is preserved, not promoted by this rewrite. That label alone does not verify document readiness, account access, an actual execution or a client outcome.
+
+A relevant real execution, source evidence, independent reviewer and accepted handoff remain to be recorded. The fictional example teaches the method and does not fill a real-run evidence gap. The opening and full method need a named semantic reviewer; the task-specific path is source guidance, with visible desktop/mobile presentation still to check.

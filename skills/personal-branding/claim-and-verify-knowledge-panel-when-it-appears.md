@@ -1,6 +1,6 @@
 ---
 name: claim-and-verify-knowledge-panel-when-it-appears
-description: After Stage 1 (KGMID or thin card) or a live panel, claim and verify under the person's own Google account; we may be second manager and they can revoke us.
+description: "Check the facts people see about you on Google."
 category: Personal Branding
 stage: —
 definitive_article: /knowledge-panel
@@ -9,40 +9,75 @@ status: needs-work
 
 # Claim and verify Knowledge Panel when it appears
 
-**Use this when** this engagement is already classified (see classify-and-offer-knowledge-panel) and Stage 1 exists — a KGMID, a thin card, or a full panel — including Claim/correct clients who already have a panel.
+Check the facts people see about you on Google. This guide helps you claim a panel when Google offers that option. Start with the live panel for the right person and the account that person controls.
+
+**The path:** Correct panel → Offered claim flow → Owner verification → Checked claim and edits
+
+**Start when:** Google displays the correct person’s panel and offers a claim flow, or an existing claim needs correction.
 
 ## Inputs
-- The fork from classify-and-offer-knowledge-panel (Claim vs Build)
-- A monitoring routine: logged-out/incognito searches of the exact canonical name
-- The person's own Google account (the one tied to Search Console / GBP) — they own the claim
-- Live, accurate entity home, schema, and profiles — the panel is built from them
+
+- [Classify the current panel state](https://local-service-spotlight.github.io/task-library/?task=classify-and-offer-knowledge-panel#task-classify-and-offer-knowledge-panel) with dated search evidence.
+- The person’s authorized Google account and access to the official sites/profiles Google offers for verification.
+- Accurate identity facts and evidence for requested corrections; [Google’s panel claim instructions](https://support.google.com/knowledgepanel/answer/7534902?hl=en).
 
 ## Steps
-1. Monitor weekly: search the exact canonical name logged out and in incognito; watch for Stage 1 (thin card / KGMID) and Stage 2 (full right-rail panel). Log the first sighting of each. Do not promise a 15-day clock.
-2. Do not wait passively on Build tracks — keep Phases 1–3 compounding. Nobody can pay Google; the panel appears when Google has enough consistent, validated entity signal.
-3. When a panel or claimable card appears, use Google's "Claim this knowledge panel" flow, signed into the **person's own** Google account. We may be added as a second manager; they can revoke us.
-4. Complete Google's identity verification — the connected, verified profiles from Phase 1 are exactly what this step checks.
-5. Once verified, suggest edits for accuracy: the canonical headshot, an accurate description, correct social links.
-6. Fix facts at the source, not just on the panel: the panel mirrors the web, so correct the site, schema, and profiles first — then suggested edits stick.
-7. Log the claim date and report it as the Phase 4 milestone; keep monitoring monthly for accuracy after the claim. If this was a Claim/correct engagement, Stage 1 second-half payment is due when verification or corrections are live.
+
+1. Find the correct panel in a current search and record the query, date, device and observed identity. An entity ID, sometimes called a KGMID, or a thin card does not by itself prove a claim flow exists. Keep not claimable as the current state.
+2. Confirm the account and representative authority before taking the claim action. Use the person’s owner-controlled account and the verified public profiles requested by the offered flow. Helpers need their actual permitted role; the recipe does not grant account access.
+3. Open the displayed claim control and follow [Google’s panel claim instructions](https://support.google.com/knowledgepanel/answer/7534902?hl=en). Google may request a connected official profile or more evidence. Let the account owner complete identity or recovery steps that require them, and keep sensitive verification material out of public run notes.
+4. Read the result after submission. Submitted, pending, verified and already managed are distinct states. If the panel belongs to a different person or the account is already managed, use the documented support path rather than creating another identity or repeating blind submissions.
+5. After verification, compare visible panel facts with current reliable sources. Correct owned source errors first, then suggest only supported panel changes through the offered control. A suggested edit is not an accepted edit; save each result separately.
+6. Save the claim evidence, date, current facts, unresolved edits and next check owner. Use the existing review cadence only if it is actually assigned. A payment milestone is governed by the accepted engagement terms, not inferred from a search card or this checklist.
 
 ## Definition of done (QA checklist)
-- [ ] Panel claimed and verified under the person's own Google account (they own it; we are optional second manager)
-- [ ] Photo, description, and links accurate; wrong facts corrected at their source
-- [ ] Monthly accuracy monitoring continues post-claim
-- [ ] Claim date logged and reported as the Phase 4 milestone
-- [ ] Linked back to the definitive article and relevant siblings
-- [ ] Complies with Blog Posting Guidelines (if it publishes content)
+
+Quality assurance (QA) means checking the actual result against its agreed requirements. Follow the [Article Guidelines](https://localservicespotlight.com/article-guidelines/).
+
+- [ ] The correct person’s claim state has direct current evidence; pending is not called verified.
+- [ ] Requested and accepted fact changes are separate, supported and checked.
+- [ ] Ownership, remaining human action and the next review are recorded without private verification data.
+- [ ] The exact output, source revision, reviewer evidence and remaining owner action are saved.
+- [ ] For any reader-facing output, the short grade-five opening states the reader’s useful outcome and supporting method or proof. The body delivers that promise; a useful authentic visual appears in the first screen. Retain exact text and quoted reviewer evidence.
 
 ## Example(s)
-- Example needed — run the Meta-Article Prompt after first real run.
 
-## Run on a persistent agent (Fable 5)
-This is the canonical persistent-agent task: a long-horizon agent (Claude Fable 5 or a comparable OpenAI/Google model) runs the weekly logged-out name search indefinitely, logs the first sighting, and drives the claim flow the moment a panel appears — looping until the Definition-of-done fully passes, not 90%.
-It self-verifies panel facts against the canonical identity held in memory and fixes errors at their source — site, schema, profiles — rather than only suggesting edits.
-The claim is the milestone the whole Plumbing → Content → Authority → Knowledge Panel chain in memory has been compounding toward; log it, keep monitoring monthly, and record a meta-article example each run so the brand compounds.
-See `boil-the-ocean.md` for the full operating principles.
+**Fictional teaching example. This is not a client result or proof of a completed run.**
+
+A fictional founder’s information card shows her name but no claim button. The team records that card and its date, then continues the identity work. A later search offers claiming, so the owner completes the offered check. Until Google confirms that result, the record says pending rather than claimed.
+
+## Handoff and Content Factory context
+
+[Review search and real inquiries](https://local-service-spotlight.github.io/task-library/?task=measure-search-impressions-traffic-inbound-opportunities#task-measure-search-impressions-traffic-inbound-opportunities) receives the observed panel state. [Check identity facts](https://local-service-spotlight.github.io/task-library/?task=establish-entity-identity#task-establish-entity-identity) receives source corrections; the owner retains any pending verification step.
+
+This task supports the [Content Factory: Produce, Process, Post and Promote](https://blitzmetrics.com/content-factory/). Identity, proof, access or coordination can support several stages. Use the real inputs and receiving owner above; this task does not create unrelated transcripts, clips or ads merely because the diagram has four stages.
+
+## Start with an agent
+
+Give the [AI worker](https://blitzmetrics.com/build-agents/) this recipe, the real inputs, desired result and actions already authorized. Ask for the saved output, sources, checks and next owner. A [skill is a written recipe](https://localservicespotlight.com/plugin/); loading one does not prove account access or perform the task. Use the [installation guide](https://localservicespotlight.com/install/) if reusable setup is needed. A ZIP is a source snapshot, not an access grant or automatic update.
+
+Use the app’s actual supported tools and verified file/account access. Keep a missing human verification step with its real owner. Recurring work needs its own configured job, trigger, timezone and observed result; this guide creates no schedule. Before any media playback, mute the player and set its volume to zero. If silence cannot be verified first, use captions, frames, metadata or another silent check.
+
+## Record the real execution
+
+Open the run record when work begins. Keep one execution ID, starting recipe revision, real inputs and current state. Write the [meta article, the record of this execution](https://blitzmetrics.com/meta-article-prompt/) with actual steps, results, checks, failures and next owner. Writing is required; public release follows existing authority. Link it to this recipe and the [Task Library](https://local-service-spotlight.github.io/task-library/).
+
+Reuse the same execution ID for internal checks, revisions, retries and meta writing. A blocked run stays open with its dependency and owner, without an invented finish time. Dated public examples and distinct verified execution counts remain separate. Propose the smallest source-backed recipe improvement when the actual evidence reveals a defect.
 
 ## Definitive article & links
-- Hub: /knowledge-panel
-- Related: /personal-brand · previous: classify-and-offer-knowledge-panel · implement-technical-schema-markup · next: measure-search-impressions-traffic-inbound-opportunities
+
+- [Maintained source guide](https://blitzmetrics.com/knowledge-panel/)
+- [This task in the Task Library](https://local-service-spotlight.github.io/task-library/?task=claim-and-verify-knowledge-panel-when-it-appears#task-claim-and-verify-knowledge-panel-when-it-appears)
+- [Article Guidelines](https://localservicespotlight.com/article-guidelines/)
+- [Definitive article and task recipe standard](https://blitzmetrics.com/definitive-article-guide/)
+- [How recipes and run records fit together](https://localservicespotlight.com/meta-articles/)
+
+### Primary method references
+
+- [Google panel claim](https://support.google.com/knowledgepanel/answer/7534902?hl=en)
+
+## Review and evidence still needed
+
+The inherited contributor status is `needs-work`. It is preserved, not promoted by this rewrite. That label alone does not prove document readiness, account access, an actual execution or a client result.
+
+The fictional example teaches the method and does not fill a real-run evidence gap. A named semantic reviewer must check the actual opening, full method, sources and handoff. Check the useful opening visual in the normal rendered guide at the current required desktop and mobile sizes, including 1280 × 800 and 390 × 844. Source readability checks do not prove public presentation or task execution.

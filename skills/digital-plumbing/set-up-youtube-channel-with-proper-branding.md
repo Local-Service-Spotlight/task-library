@@ -1,6 +1,6 @@
 ---
 name: set-up-youtube-channel-with-proper-branding
-description: Create and brand a YouTube channel connected to the website, ready to host the one-minute videos the Content Factory produces.
+description: "Set up a clear YouTube home for your real videos. Check the brand, links and first video state."
 category: Digital Plumbing
 stage: —
 definitive_article: /digital-plumbing
@@ -9,39 +9,78 @@ status: needs-work
 
 # Set Up YouTube Channel With Proper Branding
 
-**Use this when** the business has no YouTube channel, an unbranded default channel, or a channel stranded in a personal account nobody controls.
+Your videos need a home people can trust. This guide helps you set up a clear YouTube page for your work. Start with the right account, real photos and a useful clip.
+
+**The path:** Channel control → Brand setup → Real first video → Public handoff.
+
+**Use this when:** the project needs a new channel or an existing channel has unclear control or outdated branding.
 
 ## Inputs
-- Business owner's Google account (use a Brand Account or grant the owner channel access — never a VA's personal channel)
-- Canonical headshot/logo, a real banner image, and the canonical bio copy
-- At least one real video to publish (a one-minute video or the WHY video)
+- The exact existing channel, if any, and legitimate business-controlled access or authorized channel-creation scope.
+- Approved real image/logo, banner, factual bio, public website and appropriate contact email.
+- A rights-cleared real starter video and its agreed upload/publication scope, with title, description, captions and audience settings ready for review.
+
+## First-run prompt
+
+> Reuse or create the intended channel, set its approved branding and website link, and complete the first-video work already authorized. Verify channel identity, public appearance and video visibility separately. Keep missing media or publication scope explicit rather than inventing a filler upload.
 
 ## Steps
-1. Create or claim the channel under the owner's Google account. If others must manage it, use a Brand Account / channel permissions rather than sharing passwords.
-2. Set the channel name to match the business entity (or the person, for personal brands) and claim a handle as close to the canon as available.
-3. Brand it: profile photo = the canonical headshot/logo; banner = a real photo of the business or person at work, not stock.
-4. Write the channel description in first person with the core topics and service area, and add the canonical contact email.
-5. Add the website link in the channel's links section so the channel points home.
-6. Publish at least one real video — a one-minute video answering a customer question is the standard starter — so the channel isn't an empty shell.
-7. Add the channel URL to the schema sameAs list and the website footer (sibling skills).
+1. Find the existing channel and confirm its stable ID, handle and business relationship. Inspect actual access; a familiar channel name or an invitation is not proof of control. Do not create a duplicate just because the current login lacks access.
+2. Use the supported create-channel or legitimate recovery/access process for the actual account. YouTube channel permissions support assigned roles without shared passwords, but a Studio Owner role is not the same as transferring underlying ownership. Record the actual control arrangement.
+3. Set the channel name and an available suitable handle. Use the personal brand for the individual or the company identity for the business; do not promise the exact handle will be available.
+4. Set the approved profile image and real banner in the channel’s customization controls. Check crops on phone and desktop so important faces, logos and words are not cut off. Do not infer image identity by facial recognition.
+5. Write a short description with truthful topics and audience, using individual or company voice as appropriate. Add the canonical website and only a contact address approved for public display. Verify the link destination.
+6. Prepare the first useful real video using the maintained publishing task: supported source, accurate title, description, rights, captions and audience choices. Upload or publish within the existing authority; do not put a made-up video live just to satisfy a non-empty-channel check.
+7. Check the actual video visibility and accessible captions. Keep media muted with volume zero for testing. A private draft can prove upload preparation, but a claim that the channel is publicly launched needs an actually public video and the authorized publication receipt.
+8. Read back the public channel and any published video. Add the correct channel identity to the website’s profile references when included, keeping person and company schema separate. Save channel ID, roles, asset versions and video state for the next content owner.
 
 ## Definition of done (QA checklist)
-- [ ] Channel exists under owner-controlled access (no password-sharing, no VA-owned channel)
-- [ ] Name/handle, photo, and banner match the brand canon; no stock imagery
-- [ ] Description in first person; website link live on the channel
-- [ ] At least one real video published; channel URL added to sameAs and footer
-- [ ] Linked back to the definitive article and relevant siblings
-- [ ] Complies with Blog Posting Guidelines (if it publishes content)
+
+- [ ] The intended channel has documented legitimate control and usable roles.
+- [ ] Name, handle, description, image, banner and website link match the approved entity.
+- [ ] A real first video has a truthful prepared/uploaded/published state and rights/caption checks.
+- [ ] Public launch is claimed only when the channel and video are actually public within scope.
+- [ ] Website references and the next content owner use the correct channel identity.
 
 ## Example(s)
-- Example needed — run the Meta-Article Prompt after first real run.
 
-## Run on a persistent agent (Fable 5)
-A persistent agent (Claude Fable 5 or a comparable OpenAI/Google model) does not stop at a branded empty shell: it loops through access setup, canon branding, the website link, and a first real published video until the entire Definition of done passes, not 90%.
-It self-verifies against that checklist from a logged-out view, carries the canon assets and channel URL in memory for the sameAs/footer siblings and future Content Factory uploads, and logs a meta-article example each run so the library compounds.
-See `boil-the-ocean.md` for the full operating principles.
+**Fictional teaching example.** Oak Repair already has a channel under its business control. The lesson fixes the banner crop and links to its real planned quote page. A one-minute roof-care video is uploaded privately because that is the supplied stage of work. The handoff says “branding saved; first video private; public launch pending.” It does not mark the channel publicly launched simply because the upload exists.
+
+## Handoff and Content Factory context
+
+Give the channel ID and media state to the content owner. Use [upload processed video to youtube](https://local-service-spotlight.github.io/task-library/?task=upload-processed-video-to-youtube#task-upload-processed-video-to-youtube) for later uploads and [add schema markup person localbusiness](https://local-service-spotlight.github.io/task-library/?task=add-schema-markup-person-localbusiness#task-add-schema-markup-person-localbusiness) for a scoped website identity update.
+
+This setup supports the [Content Factory](https://blitzmetrics.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. This check does not automatically execute all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
+
+## When this runs
+
+Set up once and review after branding or control changes. Recurring uploads need actual prepared content, tools and a configured cadence; this task does not create a posting schedule.
+
+## First-run setup and continuity
+
+Open the supplied task file and its linked source. Verify the project’s real inputs, account, access and output folder before work. This Markdown file is a guide; it does not install an app, connect an account, supply a subscription or create a schedule. Carry out work already authorized; do not ask for the same approval again. Keep any unsupplied destination or new action outside that scope clearly pending.
+
+Save source IDs, versions, decisions, checked outputs and next owner in the project tracker. Before a retry, check the saved state and other workers’ changes. A model name does not guarantee memory or a running timer. Repeated work needs an actual configured trigger and durable state; one-off work can be started by the prompt above.
+
+Keep agent media muted with volume zero before playback. If mute cannot be verified, use captions, metadata or still frames. State the limit: silent visual checks do not prove spoken-word accuracy or audio quality. Do not start sound through the user’s speakers unless explicitly asked.
+
+## Write up the real run
+
+For every actual attempt, [write its meta article](https://blitzmetrics.com/meta-article-prompt/) with this recipe and revision, trigger, steps performed, output evidence, measured result, gaps and next owner. Failed, blocked and partial attempts also get a written record. A draft can satisfy writing; publishing it follows the existing job scope.
+
+Keep one stable execution ID across retries and edits. A separately scoped child task may have its own ID linked to its parent. Writing the parent’s meta record is part of that run, not an endless new chain. The [recipe and meta-article guide](https://localservicespotlight.com/meta-articles/) explains this distinction. Teaching examples are not real executions and must not enter the run count.
 
 ## Definitive article & links
-- Hub: /digital-plumbing
-- Related (run order): convert-instagram-to-professional-account → this → create-linkedin-page-matching-business-entity
-- Cross-links: /one-minute-video-guide (what to publish first) · /content-factory (videos flow here) · /dad (YouTube campaigns need a real channel)
+
+- Canonical article: https://blitzmetrics.com/digital-plumbing
+- Exact task: [Set Up YouTube Channel With Proper Branding](https://local-service-spotlight.github.io/task-library/?task=set-up-youtube-channel-with-proper-branding#task-set-up-youtube-channel-with-proper-branding)
+- Writing standard: [Article Guidelines](https://localservicespotlight.com/article-guidelines/)
+- [Digital Plumbing training](https://blitzmetrics.com/digital-plumbing/)
+- [YouTube channel creation](https://support.google.com/youtube/answer/1646861?hl=en)
+- [YouTube channel permissions](https://support.google.com/youtube/answer/9481328?hl=en)
+- [YouTube player parameters](https://developers.google.com/youtube/player_parameters)
+
+## Review and evidence still needed
+
+The source contributor status is preserved. It is not certification of this draft or proof of account access, completed work or a live outcome. The worked example teaches the method and is explicitly fictional.
+- Actual channel capabilities and the first media source must be supplied. No channel was created or video played/uploaded during drafting.

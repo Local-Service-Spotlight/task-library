@@ -1,6 +1,6 @@
 ---
 name: implement-person-schema-with-sameas-links
-description: Add Person schema JSON-LD to the entity home with a sameAs array binding every verified profile into one Google-readable entity.
+description: "Help search tools tell which profiles belong to you."
 category: Personal Branding
 stage: —
 definitive_article: /personal-brand
@@ -9,39 +9,78 @@ status: needs-work
 
 # Implement Person schema with sameAs links
 
-**Use this when** the entity home and all core profiles are live with consistent headshots and bios — the closing step of Phase 1 (Digital Plumbing).
+Help search tools tell which profiles belong to you. This guide adds a clear set of facts to your site and checks each profile link. Start with your true name, your site and the profiles you have verified.
+
+**The path:** Visible facts + verified profiles → One Person ID → Valid markup → Live identity check
+
+**Start when:** The site and accepted profiles are ready for structured Person identity markup.
 
 ## Inputs
-- Live entity home at yourname.com
-- Canonical name, job title, and the URL of the canonical headshot hosted on the domain
-- The complete list of live profile URLs (LinkedIn, Facebook, Instagram, YouTube, Twitter/X, GBP if applicable)
+
+- [Build the personal brand site](https://local-service-spotlight.github.io/task-library/?task=build-personal-brand-website#task-build-personal-brand-website) and [Align photos and bio facts](https://local-service-spotlight.github.io/task-library/?task=add-consistent-headshots-and-bios-across-profiles#task-add-consistent-headshots-and-bios-across-profiles) with accepted facts and actual live profile URLs.
+- The current site source, theme/plugin markup owners and authorized edit rail.
+- Approved public name, image URL, role, site URL and identity evidence; [Schema.org’s sameAs definition](https://schema.org/sameAs).
 
 ## Steps
-1. Assemble the facts: exact canonical name, url (https://yourname.com), image (headshot URL on the domain), jobTitle, and every live profile URL.
-2. Write JSON-LD with @type Person containing name, url, image, jobTitle, and a sameAs array listing every verified profile — this is the wiring that tells Google all of these are the same person.
-3. Install the JSON-LD so it renders on the entity home's homepage (site-wide header or homepage block; on WordPress, a schema-capable SEO plugin or a custom HTML block).
-4. Validate with Google's Rich Results Test / schema validator until there are zero errors.
-5. Spot-check the loop: every sameAs URL resolves to a live profile, and that profile's website field points back to yourname.com. One-way links are half a loop.
-6. Make every schema claim match the visible site copy and published bios exactly — schema that contradicts the page is worse than no schema.
-7. Set a standing rule: any new verified profile or profile-grade feature page gets appended to sameAs when it goes live.
+
+1. Inspect all structured data already emitted on the relevant page. Find the existing Person ID, theme/plugin owner and graph relationships. Reuse or reconcile the maintained identity instead of pasting a second conflicting block just because its syntax is valid.
+2. List only facts visible on the site or supported by current public evidence: name, site URL, real image and role where known. Person describes the human; a separate business profile describes the business. Do not use the business’s identity URL as the person’s sameAs by default.
+3. Build the sameAs list from pages that unambiguously identify the same person, following [Schema.org’s sameAs definition](https://schema.org/sameAs). Inspect each target’s identity and current accessibility. A news story mentioning the person is normally a citation; a wrong-person URL or uncertain profile remains excluded.
+4. Prepare JSON-LD, the structured-data format, with @context, Person type and one stable @id for the person. Include the verified fields and accepted URLs. Preserve existing WebSite, WebPage, Organization and other valid graph nodes and their distinct IDs.
+5. Validate JSON syntax and Schema.org vocabulary with an appropriate schema validator. Google’s Rich Results Test covers its supported search features; a bare Person can be valid without a detected rich-result type. Use ProfilePage only where the actual page meets [Google’s ProfilePage requirements](https://developers.google.com/search/docs/appearance/structured-data/profile-page).
+6. Apply the reviewed change through the supported source owner when authorized. Read back the actual public markup, count unique Person IDs for this person and verify visible facts and links. A reciprocal profile link is useful when supported, not a requirement imposed by sameAs itself.
+7. Save the exact before/after revision, validator outputs, accepted identity URLs and remaining gaps. Use [Google’s structured data rules](https://developers.google.com/search/docs/appearance/structured-data/sd-policies) for search requirements. Valid markup is a checked description, not a promise of indexing, rich results or a Knowledge Panel.
 
 ## Definition of done (QA checklist)
-- [ ] Person JSON-LD live on the entity home; validator returns zero errors
-- [ ] sameAs lists every active profile; no dead or wrong-person URLs
-- [ ] Every sameAs target links back to yourname.com (reciprocal loop verified)
-- [ ] Schema facts identical to on-page copy and published bios
-- [ ] Linked back to the definitive article and relevant siblings
-- [ ] Complies with Blog Posting Guidelines (if it publishes content)
+
+Quality assurance (QA) means checking the actual result against its agreed requirements. Follow the [Article Guidelines](https://localservicespotlight.com/article-guidelines/).
+
+- [ ] The intended person has one stable identity ID and no competing or wrong-person claims.
+- [ ] Markup is syntactically valid and its fields and sameAs identities are verified against visible evidence.
+- [ ] Saved and public markup match; feature eligibility and actual search appearance remain separate.
+- [ ] The exact output, source revision, reviewer evidence and remaining owner action are saved.
+- [ ] For any reader-facing output, the short grade-five opening states the reader’s useful outcome and supporting method or proof. The body delivers that promise; a useful authentic visual appears in the first screen. Retain exact text and quoted reviewer evidence.
 
 ## Example(s)
-- Example needed — run the Meta-Article Prompt after first real run.
 
-## Run on a persistent agent (Fable 5)
-A persistent agent (Claude Fable 5 or a comparable OpenAI/Google model) assembles the JSON-LD entirely from memory — canonical name, headshot URL, and the profile list saved by the earlier Plumbing runs — installs it, and loops validate → fix → revalidate until zero errors and every Definition-of-done box passes, not 90%.
-It self-verifies the whole loop, not just the markup: every sameAs URL live, every profile linking back to yourname.com, every schema claim matching visible copy.
-It stores the validated schema in memory as the entity baseline that Phase 4's technical-schema upgrade extends, and logs a meta-article example each run so the brand compounds.
-See `boil-the-ocean.md` for the full operating principles.
+**Fictional teaching example. This is not a client result or proof of a completed run.**
+
+A fictional architect’s theme already creates a Person node. A proposed custom block would create another ID, so the developer updates the existing node instead. Her own profile is accepted as sameAs; an article about her firm stays a normal citation. A valid schema result is saved without claiming that Google displayed a panel.
+
+## Handoff and Content Factory context
+
+[Maintain the fuller identity graph](https://local-service-spotlight.github.io/task-library/?task=implement-technical-schema-markup#task-implement-technical-schema-markup) receives the source owner, stable ID and accepted URLs; [Review search and real inquiries](https://local-service-spotlight.github.io/task-library/?task=measure-search-impressions-traffic-inbound-opportunities#task-measure-search-impressions-traffic-inbound-opportunities) records any later search observations.
+
+This task supports the [Content Factory: Produce, Process, Post and Promote](https://blitzmetrics.com/content-factory/). Identity, proof, access or coordination can support several stages. Use the real inputs and receiving owner above; this task does not create unrelated transcripts, clips or ads merely because the diagram has four stages.
+
+## Start with an agent
+
+Give the [AI worker](https://blitzmetrics.com/build-agents/) this recipe, the real inputs, desired result and actions already authorized. Ask for the saved output, sources, checks and next owner. A [skill is a written recipe](https://localservicespotlight.com/plugin/); loading one does not prove account access or perform the task. Use the [installation guide](https://localservicespotlight.com/install/) if reusable setup is needed. A ZIP is a source snapshot, not an access grant or automatic update.
+
+Use the app’s actual supported tools and verified file/account access. Keep a missing human verification step with its real owner. Recurring work needs its own configured job, trigger, timezone and observed result; this guide creates no schedule. Before any media playback, mute the player and set its volume to zero. If silence cannot be verified first, use captions, frames, metadata or another silent check.
+
+## Record the real execution
+
+Open the run record when work begins. Keep one execution ID, starting recipe revision, real inputs and current state. Write the [meta article, the record of this execution](https://blitzmetrics.com/meta-article-prompt/) with actual steps, results, checks, failures and next owner. Writing is required; public release follows existing authority. Link it to this recipe and the [Task Library](https://local-service-spotlight.github.io/task-library/).
+
+Reuse the same execution ID for internal checks, revisions, retries and meta writing. A blocked run stays open with its dependency and owner, without an invented finish time. Dated public examples and distinct verified execution counts remain separate. Propose the smallest source-backed recipe improvement when the actual evidence reveals a defect.
 
 ## Definitive article & links
-- Hub: /personal-brand
-- Related: /digital-plumbing · /knowledge-panel · previous: add-consistent-headshots-and-bios-across-profiles · Phase 4 upgrade: implement-technical-schema-markup
+
+- [Maintained source guide](https://blitzmetrics.com/personal-brand/)
+- [This task in the Task Library](https://local-service-spotlight.github.io/task-library/?task=implement-person-schema-with-sameas-links#task-implement-person-schema-with-sameas-links)
+- [Article Guidelines](https://localservicespotlight.com/article-guidelines/)
+- [Definitive article and task recipe standard](https://blitzmetrics.com/definitive-article-guide/)
+- [How recipes and run records fit together](https://localservicespotlight.com/meta-articles/)
+
+### Primary method references
+
+- [Schema.org sameAs](https://schema.org/sameAs)
+- [Google ProfilePage](https://developers.google.com/search/docs/appearance/structured-data/profile-page)
+- [Google structured data policies](https://developers.google.com/search/docs/appearance/structured-data/sd-policies)
+
+## Review and evidence still needed
+
+The inherited contributor status is `needs-work`. It is preserved, not promoted by this rewrite. That label alone does not prove document readiness, account access, an actual execution or a client result.
+
+The fictional example teaches the method and does not fill a real-run evidence gap. A named semantic reviewer must check the actual opening, full method, sources and handoff. Check the useful opening visual in the normal rendered guide at the current required desktop and mobile sizes, including 1280 × 800 and 390 × 844. Source readability checks do not prove public presentation or task execution.

@@ -1,6 +1,6 @@
 ---
 name: map-how-ring-methods
-description: Define the middle ring of the Topic Wheel — the named methods, frameworks, and approaches that deliver the WHY — creating the spokes every content topic will hang from.
+description: "Show the topics your business knows well."
 category: Strategy & Measurement
 stage: —
 definitive_article: /topic-wheel
@@ -9,40 +9,69 @@ status: complete
 
 # Map HOW ring (methods)
 
-**Use this when** the WHY ring is set and you need the middle layer — the repeatable ways this brand delivers on its purpose — before brainstorming any content topics.
+Show the topics your business knows well. This guide links those topics to the service you sell, so your team can choose useful content. Start with the offer at the center of your topic map.
+
+**The path:** WHAT offer → Real expertise → HOW topics → Story links
+
+**Start when:** The WHAT offer is checked and the Topic Wheel needs its supporting topics.
 
 ## Inputs
-- The completed WHY ring (center of the wheel)
-- A list of how the work actually gets done: processes, frameworks, signature techniques, service steps
-- Customer language: how clients describe what you did for them (reviews, testimonials, call notes)
+
+- [The checked WHAT center](https://local-service-spotlight.github.io/task-library/?task=map-what-ring-specific-content#task-map-what-ring-specific-content) and current offer page.
+- [Topic Wheel, the map of your offer, topics and real stories](https://blitzmetrics.com/topic-wheel/) plus real service methods, customer questions and existing topic pages.
+- Proof of the team’s expertise; any current wheel and [SEO Tree, the map of related pages](https://blitzmetrics.com/seo-tree/).
 
 ## Steps
-1. Define the ring: the HOW is the middle ring of the Topic Wheel — the methods, frameworks, and approaches that turn the WHY into results. These become the brand's content pillars.
-2. List every distinct method the brand uses; name each one in customer language (e.g., a fence company's "one-day clean install process," Local Service Spotlight' Dollar a Day or Content Factory) rather than internal jargon.
-3. Consolidate to roughly 3–9 spokes: too few and the content repeats; too many and the brand stands for nothing. Merge overlapping methods, cut incidental ones.
-4. Test each spoke against the center: "we use [HOW] because [WHY]" must read as an honest sentence. A method that doesn't serve the WHY doesn't belong on the wheel.
-5. Write one plain sentence per spoke describing the method and the result it produces — this sentence seeds future definitive articles and video topics.
-6. Arrange the spokes around the WHY in the Topic Wheel document, ready for the WHAT ring to populate each one.
-7. Measure it: each HOW spoke should accumulate published content (WHAT items shipped per spoke); empty spokes after a quarter signal a method that's claimed but not real.
+
+1. Use HOW for the middle ring: topics, methods and areas of expertise that support the WHAT offer. WHY belongs outside as real people and stories, not in the center.
+2. List the subjects customers need to understand and the methods the business actually uses. Use source-backed customer language and retain the example or question behind each candidate.
+3. Consolidate around the maintained guide’s three to seven useful topics. Treat that as a planning range; never invent expertise to reach a count. Note when a smaller supported map needs more research.
+4. For each HOW, write a sentence explaining its relationship to the WHAT and the evidence that the business knows it. Merge overlaps, narrow vague labels, and set aside topics outside the real offer.
+5. Map each HOW to its existing canonical topic or service page. Check the [SEO Tree, the map of related pages](https://blitzmetrics.com/seo-tree/) so a new topic does not create a duplicate competing owner.
+6. Place the topics around WHAT and link any real stories already known. Save source links and missing story needs for the WHY task; an empty story list means evidence is missing, not proof that the method is fake.
 
 ## Definition of done (QA checklist)
-- [ ] 3–9 named HOW spokes, each in customer language
-- [ ] Every spoke passes the "we use [HOW] because [WHY]" test
-- [ ] One-sentence description per spoke (method + result)
-- [ ] Spokes documented on the wheel between the WHY center and the WHAT ring
-- [ ] Linked back to the definitive article and relevant siblings
-- [ ] Complies with Blog Posting Guidelines (if it publishes content)
+
+Quality assurance (QA) means checking the result against its agreed requirements; see the [Article Guidelines](https://localservicespotlight.com/article-guidelines/).
+
+- [ ] HOW is the middle ring around the real WHAT offer.
+- [ ] Each topic has expertise support and a clear owned page or explicit mapping gap.
+- [ ] The topic count is honest and the next story requirements are usable.
 
 ## Example(s)
-- Example needed — run the Meta-Article Prompt after first real run. (The hub at /topic-wheel links live examples; pull the closest match into this slot.)
 
-## Run on a persistent agent (Fable 5)
+**Fictional teaching example. This is not a client result or proof of a completed run.**
 
-A persistent, max-effort agent (Claude Fable 5 or comparable OpenAI/Google models) harvests method candidates from process docs, reviews, and call notes, consolidates them into 3–9 customer-language spokes, and loops until the Definition of done fully passes — every spoke reading true as "we use [HOW] because [WHY]," each with its one-sentence method-plus-result description.
-It self-verifies by running that sentence test on every spoke and cutting any that fail, however cherished.
-Memory then audits the ring over time: WHAT items shipped per spoke are compared quarter over quarter in the MAA loop — a true memory cycle that exposes claimed-but-not-real methods — with a meta-article example logged each run.
-See `boil-the-ocean.md` for the full operating principles.
+A fictional plumber’s WHAT is home plumbing repair. Its supported HOW topics are drain cleaning, leak checks and heater repair. A proposed commercial-fire-system topic has no source support, so it stays out. Each of the three topics maps to its real service page, ready for related job stories.
+
+## Handoff and Content Factory context
+
+[Map WHY stories and people](https://local-service-spotlight.github.io/task-library/?task=map-why-ring-core-purpose#task-map-why-ring-core-purpose) receives the topics and source gaps.
+
+This work supports Produce in the [Content Factory: Produce, Process, Post and Promote](https://blitzmetrics.com/content-factory/). The selected sources pass to Process, approved outputs go to Post, and useful proven work can enter Promote. The real inputs and handoff above set this task’s scope.
+
+## Start with an agent
+
+Give the AI worker this recipe, the real Inputs, the desired result and the actions already authorized. Ask for the saved output, source evidence, passed and failed checks, and the next owner. A skill is a set of instructions. Loading it does not prove access, install a scheduled job or complete the work. Use the [current installation guide](https://localservicespotlight.com/install/) only if reusable setup is needed; a ZIP contains instructions and is not an access grant.
+
+Use the actual supported app and verified source access. A model name is not a promise of browser control, memory or unattended work. For recurring work, inspect the real job’s trigger, owner, timezone and observed firing; this recipe creates no schedule. Before any media playback, mute the player and set volume to zero. A silent review does not prove sound was heard.
+
+## Record the real execution
+
+Open the run record when work begins. Keep one execution ID, the exact starting recipe revision, input sources and actual state. Write a [meta article, the record of one real execution](https://blitzmetrics.com/meta-article-prompt/) with results, checks, failures and next owner. Link it to this task in the [Task Library](https://local-service-spotlight.github.io/task-library/). Writing is required; public release follows existing authority.
+
+Reuse the same execution ID for internal reviews, meta writing, revisions and retries. A blocked run stays open with its dependency and owner, without an invented finish time. Keep historical public examples as dated evidence; article counts alone are not verified execution frequency. Use supported findings to propose and verify a recipe improvement.
 
 ## Definitive article & links
-- Hub: /topic-wheel
-- Related, in run order: map-why-ring-core-purpose, map-what-ring-specific-content, use-for-content-planning-and-video-topics
+
+- [Maintained source guide](https://blitzmetrics.com/topic-wheel/)
+- [This task in the Task Library](https://local-service-spotlight.github.io/task-library/?task=map-how-ring-methods#task-map-how-ring-methods)
+- [Article Guidelines](https://localservicespotlight.com/article-guidelines/)
+- [Definitive article and task recipe standard](https://blitzmetrics.com/definitive-article-guide/)
+- [How recipes and run records work together](https://localservicespotlight.com/meta-articles/)
+
+## Review and evidence still needed
+
+The inherited contributor status is `complete`. It is preserved, not promoted by this rewrite. That label alone does not verify document readiness, account access, an actual execution or a client outcome.
+
+A relevant real execution, source evidence, independent reviewer and accepted handoff remain to be recorded. The fictional example teaches the method and does not fill a real-run evidence gap. The opening and full method need a named semantic reviewer; the task-specific path is source guidance, with visible desktop/mobile presentation still to check.

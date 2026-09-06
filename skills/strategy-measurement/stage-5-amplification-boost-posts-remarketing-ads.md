@@ -1,6 +1,6 @@
 ---
 name: stage-5-amplification-boost-posts-remarketing-ads
-description: Complete Stage 5 of the Social Amplification Engine — boost the top 3–5 proven posts, run the 4-stage boost optimization, and switch on remarketing ads — putting paid spend only behind organic winners.
+description: "Use small ad tests to give proven content more reach."
 category: Strategy & Measurement
 stage: —
 definitive_article: /social-amplification
@@ -9,40 +9,70 @@ status: complete
 
 # Stage 5: Amplification (boost posts, remarketing ads)
 
-**Use this when** Stages 1–4 are verified and it's finally time to spend — amplification is Stage 5 of 6 precisely because money multiplies whatever it touches, including mistakes.
+Use small ad tests to give proven content more reach. This guide helps your team set the limit and check what actually went live. Start with the winning posts, the right audience and the spend already approved.
+
+**The path:** Organic proof → Bounded test → Live readback → Measured decision
+
+**Start when:** Engine readiness, goals, source content and targeting are checked and a specific paid test is authorized.
 
 ## Inputs
-- Organic performance data identifying the top posts (engagement, watch time, shares)
-- The Stage 4 audience map (cold/warm/hot audiences, named and documented)
-- Stage 2 budget and target CPA/ROAS to govern spend
+
+- The passed required engine gates and exact approved budget, dates, action scope and owner.
+- [The checked audience map](https://local-service-spotlight.github.io/task-library/?task=stage-4-targeting-custom-audiences-lookalikes-remarketing#task-stage-4-targeting-custom-audiences-lookalikes-remarketing) and organic result evidence for usable published content.
+- [Dollar a Day, small paid tests of proven content](https://blitzmetrics.com/dollar-a-day/) current method, target result and campaign/source access.
 
 ## Steps
-1. Identify the **top 3–5 posts** by real engagement signals — watch time, shares, comments — not by which post the owner likes best. Organic performance is the audition; boosting is the contract.
-2. **Boost** those winners at Dollar-a-Day scale: small daily budgets per ad set (see /dad), one variable per ad set, so each boost is a clean test rather than a blended guess.
-3. Run the **4-stage boost optimization** sequence from the /social-amplification playbook: progress each boosted post through the stages — widening from engagement-optimized delivery toward your conversion goal as the post proves itself at each step — killing posts that stall between stages.
-4. Set up **remarketing ads** on both Google and Facebook for 1-day landing page abandoners: people who hit the page and left see follow-up proof (endorsements, WHY video) while the visit is still fresh.
-5. Sequence audiences cold → warm → conversion using the Stage 4 map: cold sees the WHY and grid content; engagers graduate to deeper proof; hot pools get the offer.
-6. Watch cost per result daily against the Stage 2 target; kill what misses, scale winners gradually (no more than 2× per adjustment) — handing the data to Stage 6 weekly.
+
+1. Rank relevant organic content by the job and signals that matter, including watch quality, useful engagement or qualified response. Select a small supported test set; the old 3–5-post suggestion is not permission to invent winners.
+2. Prepare the source’s small-test pattern: typically $1 per day for seven days, with the exact total portfolio exposure, audience, result and end/review condition stated. Check the platform’s supported budget rules and minimums; do not silently increase spend to satisfy a control.
+3. Document the test variable and goal. Use the maintained Dollar-a-Day procedure for the chosen test rather than inventing a universal four-stage optimization sequence that the current operating hub does not define.
+4. Include remarketing only when its source, rights, eligibility and actual campaign support are verified. Choose a justified window; 1-day abandoners on both Google and Meta are not a universal prerequisite.
+5. Create or launch only the exact campaign covered by authority through the supported account workflow. Keep the correct post identity, destination, budget, audience, optimization goal and schedule. A green checklist alone does not grant publication or spending authority.
+6. Read back live settings and delivery state. Record rejected, pending-review, active and non-delivering states as observed; a saved campaign is not proof that an ad was served.
+7. Monitor on the agreed cadence and evaluate after the relevant window and conversion delay. Apply the current stop rules through [Pause weak tests and scale proven winners](https://local-service-spotlight.github.io/task-library/?task=kill-underperformers-scale-winners#task-kill-underperformers-scale-winners). Save spend, result, changes and next review for optimization; a nominal daily budget is not always the platform’s daily billing cap.
 
 ## Definition of done (QA checklist)
-- [ ] Top 3–5 posts selected on engagement evidence and boosted
-- [ ] Boosts structured at $1/day-scale, one variable per ad set
-- [ ] 4-stage boost optimization running with stall-outs killed
-- [ ] Remarketing live on Google and Facebook for 1-day page abandoners
-- [ ] Spend tracked daily against target CPA/ROAS; kills and scales logged
-- [ ] Linked back to the definitive article and relevant siblings
-- [ ] Complies with Blog Posting Guidelines (if it publishes content)
+
+Quality assurance (QA) means checking the result against its agreed requirements; see the [Article Guidelines](https://localservicespotlight.com/article-guidelines/).
+
+- [ ] The test set has organic proof and exact approved settings and total exposure.
+- [ ] Saved and live account state match the authorized plan; delivery is separately observed.
+- [ ] Review/stop conditions and actual spend are recorded without promises of return.
 
 ## Example(s)
-- Example needed — run the Meta-Article Prompt after first real run. (The hub at /social-amplification links live examples; pull the closest match into this slot.)
 
-## Run on a persistent agent (Fable 5)
+**Fictional teaching example. This is not a client result or proof of a completed run.**
 
-A persistent, max-effort agent (Claude Fable 5 or comparable OpenAI/Google models) picks the top 3–5 posts on engagement evidence alone — it has no favorite posts — structures the boosts at $1/day scale with one variable per ad set, and actually checks cost per result every day without fail, looping until the Definition of done fully passes.
-It self-verifies that the live ad account matches the plan: budgets, audiences, and the one-variable rule.
-Memory runs the 4-stage boost progression as a true MAA memory cycle — each post's stage history and cost per result compared against prior periods, stall-outs killed on rule, scales capped at 2× — with every kill/scale decision and a meta-article example logged each run.
-See `boil-the-ocean.md` for the full operating principles.
+A fictional team selects two proven posts for two approved $7 tests. One is active; the other is still under review. The launch receipt records those two states and the total planned $14 exposure. It does not call both delivered, and no extra money moves to the active test without authority.
+
+## Handoff and Content Factory context
+
+[Review the engine results](https://local-service-spotlight.github.io/task-library/?task=stage-6-optimization-metrics-budget-review-recommendations#task-stage-6-optimization-metrics-budget-review-recommendations) receives the settings, spend and outcome records.
+
+This work supports Promote in the [Content Factory: Produce, Process, Post and Promote](https://blitzmetrics.com/content-factory/). It follows the source, editing and publishing work of Produce, Process and Post; the actual campaign evidence feeds the next review.
+
+## Start with an agent
+
+Give the AI worker this recipe, the real Inputs, the desired result and the actions already authorized. Ask for the saved output, source evidence, passed and failed checks, and the next owner. A skill is a set of instructions. Loading it does not prove access, install a scheduled job or complete the work. Use the [current installation guide](https://localservicespotlight.com/install/) only if reusable setup is needed; a ZIP contains instructions and is not an access grant.
+
+Use the actual supported app and verified source access. A model name is not a promise of browser control, memory or unattended work. For recurring work, inspect the real job’s trigger, owner, timezone and observed firing; this recipe creates no schedule. Before any media playback, mute the player and set volume to zero. A silent review does not prove sound was heard.
+
+## Record the real execution
+
+Open the run record when work begins. Keep one execution ID, the exact starting recipe revision, input sources and actual state. Write a [meta article, the record of one real execution](https://blitzmetrics.com/meta-article-prompt/) with results, checks, failures and next owner. Link it to this task in the [Task Library](https://local-service-spotlight.github.io/task-library/). Writing is required; public release follows existing authority.
+
+Reuse the same execution ID for internal reviews, meta writing, revisions and retries. A blocked run stays open with its dependency and owner, without an invented finish time. Keep historical public examples as dated evidence; article counts alone are not verified execution frequency. Use supported findings to propose and verify a recipe improvement.
 
 ## Definitive article & links
-- Hub: /social-amplification
-- Related, in run order: stage-4-targeting-custom-audiences-lookalikes-remarketing, stage-6-optimization-metrics-budget-review-recommendations, kill-underperformers-scale-winners, /dad
+
+- [Maintained source guide](https://blitzmetrics.com/social-amplification/)
+- [This task in the Task Library](https://local-service-spotlight.github.io/task-library/?task=stage-5-amplification-boost-posts-remarketing-ads#task-stage-5-amplification-boost-posts-remarketing-ads)
+- [Article Guidelines](https://localservicespotlight.com/article-guidelines/)
+- [Definitive article and task recipe standard](https://blitzmetrics.com/definitive-article-guide/)
+- [How recipes and run records work together](https://localservicespotlight.com/meta-articles/)
+
+## Review and evidence still needed
+
+The inherited contributor status is `complete`. It is preserved, not promoted by this rewrite. That label alone does not verify document readiness, account access, an actual execution or a client outcome.
+
+A relevant real execution, source evidence, independent reviewer and accepted handoff remain to be recorded. The fictional example teaches the method and does not fill a real-run evidence gap. The opening and full method need a named semantic reviewer; the task-specific path is source guidance, with visible desktop/mobile presentation still to check.

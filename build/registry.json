@@ -1192,13 +1192,13 @@
    "download": "https://github.com/Goodrich-Dev/google-ads-maa-skills/archive/refs/heads/main.zip"
   },
   "positive-mentions-harvester": {
-   "source": "github:dennisyu/local-service-spotlight-skills@main:skills/positive-mentions-harvester/SKILL.md",
+   "source": "github:dennisyu/local-service-spotlight-skills@86e7acdd22325566203e213b8c0c86e8583576e9:skills/positive-mentions-harvester/SKILL.md",
    "format": "claude-skill",
    "category": "Personal Branding",
    "stage": "—",
    "status": "complete",
    "article": "https://blitzmetrics.com/how-to-collect-organize-positive-mentions-to-build-authority/",
-   "download": "https://github.com/dennisyu/local-service-spotlight-skills/archive/refs/heads/main.zip",
+   "download": "https://github.com/dennisyu/local-service-spotlight-skills/archive/86e7acdd22325566203e213b8c0c86e8583576e9.zip",
    "article_kind": "task-recipe"
   },
   "run-content-factory-on-any-engine": {
