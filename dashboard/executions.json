@@ -1,9 +1,35 @@
 {
   "schemaVersion": 1,
-  "asOf": "2026-09-05T08:55:01.669956+00:00",
+  "asOf": "2026-09-06T01:21:36.199346+00:00",
   "countDefinition": "Distinct recorded execution IDs, separate from meta-article URLs. History is partial; absent history is unknown, not zero. The last-30-day count is a documented lower bound, not total task frequency.",
-  "recordedExecutions": null,
-  "completedExecutions": null,
-  "partialExecutions": null,
-  "executions": []
+  "recordedExecutions": 1,
+  "completedExecutions": 0,
+  "partialExecutions": 0,
+  "executions": [
+    {
+      "executionId": "recipe-audit-20260905-080140",
+      "taskSlugs": [
+        "create-or-update-a-definitive-article"
+      ],
+      "startedAt": "2026-09-05T08:01:40Z",
+      "status": "running",
+      "result": "80 article revisions saved and read back; 76 checked on desktop and phone. Four public copies still show older content and need a refresh. The Task Library update is live. This is one continuing execution.",
+      "recipeRevisions": {
+        "create-or-update-a-definitive-article": {
+          "articleUrl": "https://blitzmetrics.com/definitive-article-guide/",
+          "sourceSha256": "73c6c011d5fe83b152a2192b175f320b7a6470ca81b4f71672332ae899f10b9b"
+        }
+      },
+      "evidenceUrls": [
+        "https://github.com/dennisyu/local-service-spotlight-skills/pull/39",
+        "https://localservicespotlight.com/article-guidelines/",
+        "https://blitzmetrics.com/cursor-and-local-qwen/",
+        "https://github.com/Local-Service-Spotlight/task-library/pull/8"
+      ],
+      "privateEvidenceRecorded": true,
+      "metaArticle": {
+        "status": "draft"
+      }
+    }
+  ]
 }
