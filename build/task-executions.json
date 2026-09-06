@@ -13,8 +13,8 @@
         }
       },
       "startedAt": "2026-09-05T08:01:40Z",
-      "status": "running",
-      "result": "80 article revisions saved and read back; 76 checked on desktop and phone. Four public copies still show older content and need a refresh. The Task Library update is live. This is one continuing execution.",
+      "status": "blocked",
+      "result": "80 article revisions saved and read back; 76 verified on desktop and phone (152 viewport checks). Four public copies remain blocked after a rendered-body parity failure and verified four-route rollback. The Task Library is live. This is the same unfinished execution; no completed task is claimed.",
       "evidence": [
         {
           "visibility": "public",
@@ -39,14 +39,34 @@
         {
           "visibility": "private",
           "sha256": "cd0a53ba800617cceb2a2402840d1bbbf02f52768527a7624496c11ad5abb6cd"
+        },
+        {
+          "visibility": "public",
+          "url": "https://github.com/Local-Service-Spotlight/task-library/pull/10"
+        },
+        {
+          "visibility": "public",
+          "url": "https://github.com/Local-Service-Spotlight/task-library/pull/11"
+        },
+        {
+          "visibility": "private",
+          "sha256": "91fa2b827aa44be5c41b4236b66b156f368cbb783532f344b8482e3f5619312d"
+        },
+        {
+          "visibility": "private",
+          "sha256": "66d2fd75e3f8ae77fd2a6bd0c40ffaba4035cdd1af6fd61b6c48fb7eb6ca2bf3"
+        },
+        {
+          "visibility": "private",
+          "sha256": "f4e70634db330dce32ce2b26a643b54351f6b0ce299d46d0c7903f9e82219f14"
         }
       ],
       "metaArticle": {
         "status": "draft",
-        "draftSha256": "ad9179aed3a2c4ad47d4e27fda1db933791c95fd5852e420c7d1066e022c543c"
+        "draftSha256": "ec1d44b1537516bac43311eaca9c422421f0bcb3cf2e3f9ee1836ba7350cfa05"
       },
       "recordedAt": "2026-09-06T01:18:27.649605+00:00",
-      "updatedAt": "2026-09-06T01:21:35.670999+00:00"
+      "updatedAt": "2026-09-06T03:20:06.514224+00:00"
     }
   ]
 }
