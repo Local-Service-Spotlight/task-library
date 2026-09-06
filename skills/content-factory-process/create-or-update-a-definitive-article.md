@@ -25,7 +25,7 @@ This task is registered as WIP. Registration, a clear opening, and an execution 
 ## Steps
 
 1. Search the directory, Task Library, and live site. Identify the current owner and declared page role. Record any missing owner instead of creating a competing page.
-2. Write the specific GCT and a two- or three-sentence opening at grade 8 or below. Explain unfamiliar terms on first mention and link their verified owned explainers. Have another reviewer check the meaning.
+2. Write the specific GCT and a two- or three-sentence opening at grade 8 or below. Make the reader's situation, reason to care, useful outcome and supporting mechanism clear under `step-7-write-hook-and-establish-context`. Explain unfamiliar terms on first mention and link their verified owned explainers. Retain the exact opening and another reviewer's quoted evidence in the existing receipt; check that the body delivers the promise.
 3. For a task recipe, state the trigger, starting state, inputs, linked prerequisite tasks, ordered steps and decisions, measurable output, pass/fail checks, and downstream owner and artifact. Preserve unsupported fields as gaps. For a topic hub, explain the method and link its actual recipes.
 4. Find real executions and proof. Keep the run ID, task slug, article revision, and evidence together. A copy, revision, or derivative article is not another execution. Keep legacy meta-article volume separate from execution frequency.
 5. Connect the [SEO Tree](https://blitzmetrics.com/seo-tree/): one parent, useful proof, and related guides for the next task. Prefer the relevant owned lesson for explanation; retain exact sources and tool access/download links where useful. Verify destinations.

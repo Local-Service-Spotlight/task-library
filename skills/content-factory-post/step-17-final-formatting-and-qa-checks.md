@@ -53,6 +53,7 @@ frames or a loaded poster and record playback NOT_TESTED. Never play through
 the user's speakers without their explicit current request.
 
 ## Definition of done (QA checklist)
+- [ ] The live first 2–3 sentences pass `step-7-write-hook-and-establish-context`: actual reader/situation, reason to care, useful outcome and supporting mechanism; exact text and quoted reviewer evidence retained, and the body delivers its promise
 - [ ] Preview and ordinary-live first-screen geometry plus source-backed screenshot review pass on both viewports; actual evidence stored
 - [ ] Live post renders cleanly on desktop and mobile; zero broken links or blocks
 - [ ] Video plays; featured image and alt text intact; authority/story proof blocks show real scenes with compact receipts

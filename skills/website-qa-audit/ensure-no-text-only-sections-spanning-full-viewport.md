@@ -50,6 +50,7 @@ frames or a loaded poster and record playback NOT_TESTED. Never play through
 the user's speakers without their explicit current request.
 
 ## Definition of done (QA checklist)
+- [ ] The opening earns attention and explains this reader's situation, reason to care, useful outcome and mechanism under `step-7-write-hook-and-establish-context`; saved quoted meaning review is separate from image geometry
 - [ ] Preview and ordinary-live first-screen geometry plus source-backed screenshot review pass on both viewports; actual evidence stored
 - [ ] Zero sections on audited pages span a full viewport with text only, on both desktop and mobile
 - [ ] Every violation has a named visual fix queued or applied

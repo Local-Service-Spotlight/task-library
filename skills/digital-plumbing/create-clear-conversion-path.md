@@ -26,6 +26,7 @@ status: needs-work
 7. Walk the path on a phone as a cold visitor: land on a blog post, find your way to converting. If you hesitate anywhere, fix that step.
 
 ## Definition of done (QA checklist)
+- [ ] Each money-page opening makes the customer's situation, supported value and next buying step clear in the first 2–3 sentences, with relevant authentic proof; `step-7-write-hook-and-establish-context` review is recorded, not inferred from a CTA or unmeasured conversion promise
 - [ ] One primary conversion defined and documented (GCT)
 - [ ] Conversion reachable in ≤2 clicks from the homepage and every service page
 - [ ] Primary CTA visible above the fold on home and service pages, on mobile

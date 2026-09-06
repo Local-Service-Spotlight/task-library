@@ -60,6 +60,7 @@ unavailable source, private evidence, unknown facts and deployment holds explici
 A merged standard or saved prompt is not live enforcement or observed operation.
 
 ## Definition of done (QA checklist)
+- [ ] Audited page openings pass `step-7-write-hook-and-establish-context` for actual reader/situation, reason to care, useful outcome and mechanism; exact revision and quoted review are in the existing page inventory, with unsampled pages UNKNOWN and failures assigned to their existing owner
 
 **Expected result:** A dated per-client pass/fail audit, with recurring failures distinguished from new findings.
 

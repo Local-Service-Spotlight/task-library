@@ -31,7 +31,7 @@ status: complete
 11. Write short paragraphs (2–4 sentences), active voice, plain language. No AI-fluff phrases — "in today's fast-paced world," "delve," "game-changer" and kin are banned by the guidelines.
 12. Weave research in as support, clearly framed ("according to…"), keeping the speaker's first-hand experience as the spine.
 13. Expand each section to fully answer its heading's promise — a reader landing on any H2 from search should get a complete answer.
-14. Read the draft against the GCT statement once: does it serve the Goal, deliver the Content, speak to the Target? Fix or cut what fails. Update the tracker and hand off to `step-6-write-title-and-headings`.
+14. Read the draft against the GCT statement: do the first 2–3 sentences make the reader's situation, reason to care, useful outcome and supporting mechanism clear, and does the body deliver that promise? Apply `step-7-write-hook-and-establish-context`; keep the source-backed moment and useful visual with the opening. Save the exact opening and quoted review evidence in the tracker. Fix or cut what fails, then hand off to `step-6-write-title-and-headings`.
 
 ## Definition of done (QA checklist)
 - [ ] Every claim traces to the transcript or cited research — nothing invented

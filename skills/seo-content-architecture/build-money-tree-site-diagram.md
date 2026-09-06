@@ -67,6 +67,9 @@ other eligible site trees monthly through their existing owning function.
 - [ ] Every branch in the service/navigation scope is represented
 - [ ] Counts are reproducible and links resolve or are flagged
 - [ ] Diagram, outline and schema agree
+- [ ] A simplified opening map states its selection and coverage and leads directly to the complete tree; meaningful groups preserve the scoped tree's actual breadth without invented nodes or decorative leaves
+- [ ] Each count states its source-defined measure and date; "published posts linking to this offer" is not presented as all relevant proof, all customers or all published content
+- [ ] The first 2–3 sentences explain the reader's situation, why the tree matters and how connecting relevant proof to real offers helps the reader choose a next step; no unmeasured conversion or revenue promise
 - [ ] Private metrics never enter public markup
 - [ ] Each defect has a destination and next action
 - [ ] Record the exact source revision, actual result and evidence; retain failure, partial, blocked and unknown states.

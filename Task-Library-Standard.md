@@ -30,7 +30,7 @@ Every actual task in the library targets **three linked artifacts**, and they po
 ## The Nine Requirements of a Definitive Article
 A page is only "definitive" if it meets **all nine**. Miss one and it's a draft (Yellow), not done (Green).
 
-1. **Specific Goal, Content and Targeting in the opening** — explain what the reader will do, why it matters, who it serves, what they need and the expected result. Use two or three short sentences at grade 8 or below. Explain unfamiliar terms on their first mention and link the maintained owned explanation.
+1. **Specific Goal, Content and Targeting in the opening** — make the reader's actual situation, reason to care, useful outcome and supporting mechanism clear in the first two or three sentences at grade 8 or below. Lead with a concrete problem, useful finding or true moment. The body must deliver the promise. Explain unfamiliar terms on their first mention and link the maintained owned explanation. A keyword, grade score or generic audience label cannot approve meaning.
 2. **The complete process / framework for the declared page role** — a task recipe must name its trigger or starting state, inputs and required access, prerequisite tasks and their checked outputs, ordered steps with expected results, measurable completion criteria, and the receiving task or handoff. A topic hub may teach a framework and link its recipes. Do not give a reference or story a page-wide recipe label.
 3. **Relevant verified examples** — link the real evidence that demonstrates this method or task, with a brief explanation of what each source proves. A count, copied story or unrelated mention is not completion evidence. Preserve failures and incomplete results honestly.
 4. **Links to related concepts and entities** — cross-link the other definitive articles and route named people, companies, tools, and concepts through the Entity Destination Rules below (builds the entity graph).
@@ -70,7 +70,7 @@ The visible label is a validation result, not a writing style or a manually chos
 Run in order for any task in a Yellow/Red (Needs Work / Gap) state:
 
 1. **Identify the concept** and find every existing article that mentions it (the hub organizes them, doesn't replace them).
-2. **Write the specific GCT opening** in two or three short sentences at grade 8 or below. Explain who, what, why and the expected result; a meaningful task visual may lead.
+2. **Write the specific GCT opening** in two or three short sentences at grade 8 or below. Explain the reader's situation, why this matters, the useful outcome and how the task helps. A meaningful task visual may lead. Save the exact opening and quoted reviewer evidence in the existing run receipt; the body must deliver its promise.
 3. **Document the process/framework** (the SOP — this is what the skill.md mirrors).
 4. **Link the relevant verified examples** (1–2 sentences explaining what each source proves).
 5. **Cross-link related concepts and entities** using the Entity Destination Rules (other definitive articles, verified personal sites, verified company sites, and internal training for tools).
@@ -95,6 +95,18 @@ Run in order for any task in a Yellow/Red (Needs Work / Gap) state:
 ## The skill.md standard (one file per task)
 Every task gets a `skill.md` an agent can run. House format — keep it tight, SOP-grade, and grounded in the definitive article:
 
+For any task that creates a document, report, presentation, page, article or landing page,
+the opening and QA inherit the [maintained specific-GCT source
+rule](https://github.com/dennisyu/local-service-spotlight-skills/blob/main/standards/every-article-and-project-starts-with-specific-gct.md).
+Use `step-7-write-hook-and-establish-context` as the detailed writing/review station.
+Adapt the value to the actual reader: an audit supports a decision, a guide enables a
+task, and a money page connects relevant proof to the offer and buying action. Do not
+paste an entrepreneur pitch or unsupported conversion promise onto every artifact.
+The first page/screen pairs that short opening with a meaningful authentic visual;
+later document pages lead with their own useful takeaway. Retain the exact text,
+revision, reviewer quotations and PASS/FAIL/UNKNOWN reasons in the existing receipt.
+This changes the content contract, not publishing, delivery or scheduling authority.
+
 ```markdown
 ---
 name: <kebab-case-task-slug>
@@ -111,6 +123,7 @@ status: <complete | needs-work | gap>
 
 ## Inputs
 - <what the agent/operator needs before starting>
+- <for a reader-facing artifact: actual reader/situation, useful outcome, source evidence and relevant opening visual>
 
 ## Steps
 1. <imperative, concrete step>
@@ -121,6 +134,7 @@ status: <complete | needs-work | gap>
 - [ ] <objective, checkable pass criteria — what "good" looks like>
 - [ ] Linked back to the definitive article and relevant siblings
 - [ ] Complies with [Article Guidelines](https://localservicespotlight.com/article-guidelines/) (if it publishes content)
+- [ ] If it creates a reader-facing artifact, the short opening makes relevance, useful outcome and supporting mechanism clear; quoted reviewer evidence is retained and the artifact delivers its promise
 
 ## Example(s)
 - <link to a real example / meta-article demonstrating this task>, 1–2 sentences on why it's relevant.
