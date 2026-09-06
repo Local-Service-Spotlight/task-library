@@ -33,7 +33,34 @@ This is a registered recipe in review. A published guide or this new record does
 5. Post findings to the existing project thread.
 6. Repeat and recheck the next cycle.
 
+## First-screen, money-page and relationship enforcement
+
+Resolve the canonical fleet registry and Client Roster first; preserve Not Active
+stops and site-specific HOLDs. Work from the existing ownership and execution
+record so a second agent or clock does not repeat an active rollout. Inventory
+all public HTML routes from current sitemap/CMS source. Report total discovered,
+measured, reviewed, failed, held and not yet checked separately; a homepage sample
+cannot prove every page on a site passes.
+
+Run `ensure-no-text-only-sections-spanning-full-viewport` before scrolling, with
+its shared rendered first-screen checker and actual screenshot/source review.
+Review priority relationships and buying pages weekly; cover the remaining
+eligible routes monthly in bounded batches with the next exact due date recorded.
+A relationship refresh needs a newly verified source moment or useful lesson,
+not stronger friendship/endorsement wording. Include the public Money Tree and
+proof beside material outcome claims. Reconcile the existing relationship,
+Money Tree and website audit jobs before registering a schedule. A quiet unchanged
+run should not page Dennis; notify on a meaningful change, failure or required
+human-only action under the current communication authority.
+
+Every defect keeps URL, observed failure, source/CMS/deployment/rollback state,
+owning function, next action, due date and before/after evidence in the existing
+record. Apply safe authorized repairs, re-read the ordinary public page, and keep
+unavailable source, private evidence, unknown facts and deployment holds explicit.
+A merged standard or saved prompt is not live enforcement or observed operation.
+
 ## Definition of done (QA checklist)
+- [ ] Audited page openings pass `step-7-write-hook-and-establish-context` for actual reader/situation, reason to care, useful outcome and mechanism; exact revision and quoted review are in the existing page inventory, with unsampled pages UNKNOWN and failures assigned to their existing owner
 
 **Expected result:** A dated per-client pass/fail audit, with recurring failures distinguished from new findings.
 

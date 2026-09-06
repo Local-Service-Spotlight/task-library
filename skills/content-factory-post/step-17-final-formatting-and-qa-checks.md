@@ -27,7 +27,34 @@ status: complete
 8. Verify the distribution loop is closed: article embeds the YouTube video; YouTube description links the article; Facebook, LinkedIn, and group posts are live and logged.
 9. Run verify-all-items-on-blog-posting-checklist as the formal item-by-item gate, fix any failure at its owning step, then mark the piece **done** in the tracker and hand the post URL set to the Promote stage.
 
+## Required first-screen visual gate
+
+Every visitor-facing page, including home, money, relationship, archive and
+utility pages, must show a relevant authentic photograph, source-video poster
+or useful diagram above the fold. At 390x844 and 1280x800, test the anonymous
+unscrolled first visit with JavaScript on and off. A logo, social icon, decorative
+background, thin strip, broken image or empty player rectangle fails.
+
+Use the [canonical numeric standard](https://github.com/dennisyu/local-service-spotlight-skills/blob/main/standards/visuals-above-the-fold.md) and its
+[shared browser checker](https://github.com/dennisyu/local-service-spotlight-skills/blob/main/scripts/rendered_visual_check.mjs) in the real builder/publisher:
+`rendered_visual_check.mjs --url URL --selector CSS --output DIRECTORY`.
+Measure the complete preview with site chrome before release and the ordinary
+public URL after the authorized release. Save both screenshot/JSON receipts.
+The checker can measure a loaded photographic CSS background as well as images,
+diagrams and video posters. Its geometry pass remains `REVIEW_REQUIRED` until
+an independent reviewer opens the actual screenshots and source evidence and
+accepts the relevance, authentic moment, useful crop, labels and permission.
+A source-order regex or an `<img>` count cannot mark this gate complete.
+
+YouTube uses youtube-nocookie.com with rel=0, cc_load_policy=1 and cc_lang_pref.
+No media autoplays on first paint. Before any separate playback verification,
+mute and set volume zero; if that cannot be verified, use metadata, captions,
+frames or a loaded poster and record playback NOT_TESTED. Never play through
+the user's speakers without their explicit current request.
+
 ## Definition of done (QA checklist)
+- [ ] The live first 2–3 sentences pass `step-7-write-hook-and-establish-context`: actual reader/situation, reason to care, useful outcome and supporting mechanism; exact text and quoted reviewer evidence retained, and the body delivers its promise
+- [ ] Preview and ordinary-live first-screen geometry plus source-backed screenshot review pass on both viewports; actual evidence stored
 - [ ] Live post renders cleanly on desktop and mobile; zero broken links or blocks
 - [ ] Video plays; featured image and alt text intact; authority/story proof blocks show real scenes with compact receipts
 - [ ] First-person personal-brand voice; zero trophy-name paragraphs, repeated defensive caveats, or public internal production metadata

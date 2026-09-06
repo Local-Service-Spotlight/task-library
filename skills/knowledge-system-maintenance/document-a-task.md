@@ -26,7 +26,7 @@ This is a registered recipe in review. A published guide or this new record does
 - [Learn, Do, Teach](https://blitzmetrics.com/learn-do-teach/)
 ## Steps
 1. Perform the task and capture each step.
-2. Write a plain-language introduction and process checklist.
+2. Open with the operator's actual starting situation, why this task matters and what they can produce or verify by following the guide. Use the first 2–3 sentences and a task-specific visual to orient them before the process checklist. Apply `step-7-write-hook-and-establish-context` for meaning review; retain the exact text and quoted reviewer evidence in the existing receipt.
 3. Explain ordered steps and expected outputs.
 4. Add source screenshots and error prevention.
 5. Test the verification checklist.

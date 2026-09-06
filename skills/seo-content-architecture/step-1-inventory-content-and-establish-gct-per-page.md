@@ -25,6 +25,7 @@ status: complete
 6. Save the inventory as the single working document for Steps 2–6 of the internal linking process.
 
 ## Definition of done (QA checklist)
+- [ ] Existing page rows retain the exact opening/revision and `step-7-write-hook-and-establish-context` review for reader/situation, reason to care, useful outcome and supporting mechanism; unchecked pages stay UNKNOWN, and failures route to the existing owner
 - [ ] Every published URL present in one inventory — nothing missing from the sitemap or crawl
 - [ ] GCT written for every major page; no blanks on money pages
 - [ ] SEO Tree role marked for every URL; links in/out counts populated

@@ -25,7 +25,7 @@ Revision budgets before human escalation: STRONG 3 rounds (target A-), MODERATE 
 4. ChatGPT giveaway language ("X doesn't just Y. It's also Z."): lose one full letter.
 5. Any typo: lose one full letter per occurrence.
 6. Repurposed from video but source video not embedded: max C.
-7. Lead visual missing from the first 2–3 paragraphs: max B+.
+7. A meaningful loaded visual fails the [canonical rendered first-screen gate](https://github.com/dennisyu/local-service-spotlight-skills/blob/main/standards/visuals-above-the-fold.md) at 390x844 or 1280x800: `publish_ready: false`. First 2–3 paragraphs, an image tag or a letter grade cannot substitute for the actual first-screen screenshot and source-backed review.
 8. POV mismatch (third person on a personal-brand site, or first person on a company site): max B.
 9. WordPress author set to an admin/team account: max B+ — flag even at A- and run `set-wordpress-author-to-correct-person`.
 10. Banned AI-tell words: "honest," "honestly," "quietly."
@@ -34,6 +34,7 @@ Revision budgets before human escalation: STRONG 3 rounds (target A-), MODERATE 
 13. Repeated defensive caveats or verification theater (for example, "this does not prove friendship," "no endorsement is implied," or "every claim below is sourced"): max B. Exempt language that is materially required for a legal, regulatory, or compliance disclosure; keep that disclosure scoped to the triggering claim.
 14. Public copy exposes internal scoring or production metadata, including confidence grades, proof-record IDs, harvester/canonical-inventory labels, or repurposing instructions when those systems are not the article's topic: max C.
 15. Praise is anonymous, attributed only to a domain/company, paraphrased inside quotation marks, or missing a primary source: `publish_ready: false`; mark the item HOLD. A publishable testimonial is an exact quote from a named person with applicable role/company or city, source link, and permission where required.
+16. The first 2–3 sentences do not make the actual reader/situation, reason to care, useful outcome and supporting mechanism clear, or the body does not deliver the opening's promise: `publish_ready: false`. Apply `step-7-write-hook-and-establish-context` and the shared specific-GCT opening standard. Record the exact text and quoted reviewer evidence in the existing tracker. A grade, word count, generic audience label or conversion claim cannot substitute for meaning; unsupported promises also fail.
 
 Jennifer grades; she does not rewrite. Send rewrites to `step-5-write-article-from-transcript` (or Brandon / `definitive-article-writer`), then bring the draft back.
 

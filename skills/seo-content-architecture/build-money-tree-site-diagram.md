@@ -34,6 +34,32 @@ This is a registered recipe in review. A published guide or this new record does
 6. Publish safe structure and keep client measurements private.
 7. Record defects, deltas and owned next actions.
 
+## Fleet rollout and money-page proof
+
+Keep one current public-safe Money Tree per eligible managed site, using the
+existing agent-runtime `money-tree/` renderer, source contracts and accepted
+run identity. The actual home/domain is the trunk, buying/service destinations
+are branches, and relevant published supporting articles/videos are leaves.
+Link real nodes to their canonical destinations and retain unknown branches.
+The tree is evidence of site structure; it must never imply unmeasured results.
+
+Each buying page has meaningful relevant proof above the fold, evidence beside
+material outcome claims, and relevant proof near its primary buying action.
+Use the full tree or its useful branch where it explains the offer, alongside
+real project scenes, attributable results and source videos. Give supporting
+leaves a relevant buying destination and a practical how-to link when useful.
+Keep public wording confident and specific: state the sourced moment once;
+remove repeated caveats, internal review scores and unsupported claims.
+
+Public trees contain public structure and content counts only. Private sessions,
+leads, bookings, conversion rates, revenue, finances and priorities stay behind
+authenticated client access, including alt text, metadata, hidden DOM and JSON-LD.
+NOT_CONNECTED is not zero. Preserve the existing roster, site authorization,
+CMS/deployment/rollback and public/private gates; a schedule or current recipe
+is not a release receipt. Reconcile `monthly-client-money-tree-maa` before adding
+any clock. Check priority buying pages and named relationships weekly; rebuild
+other eligible site trees monthly through their existing owning function.
+
 ## Definition of done (QA checklist)
 
 **Expected result:** A dated Money Tree diagram, text outline, schema, findings and action list.
@@ -41,6 +67,9 @@ This is a registered recipe in review. A published guide or this new record does
 - [ ] Every branch in the service/navigation scope is represented
 - [ ] Counts are reproducible and links resolve or are flagged
 - [ ] Diagram, outline and schema agree
+- [ ] A simplified opening map states its selection and coverage and leads directly to the complete tree; meaningful groups preserve the scoped tree's actual breadth without invented nodes or decorative leaves
+- [ ] Each count states its source-defined measure and date; "published posts linking to this offer" is not presented as all relevant proof, all customers or all published content
+- [ ] The first 2–3 sentences explain the reader's situation, why the tree matters and how connecting relevant proof to real offers helps the reader choose a next step; no unmeasured conversion or revenue promise
 - [ ] Private metrics never enter public markup
 - [ ] Each defect has a destination and next action
 - [ ] Record the exact source revision, actual result and evidence; retain failure, partial, blocked and unknown states.
