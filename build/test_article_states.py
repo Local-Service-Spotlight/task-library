@@ -432,7 +432,7 @@ class BuiltArticleInventory(unittest.TestCase):
         derived = task_build.derive_article_states(tasks)
         self.assertEqual(derived, {'articleHubs': 53, 'definitiveArticles': 13})
 
-    def test_registered_recipes_keep_wip_and_history_unknown(self):
+    def test_registered_recipes_keep_wip_and_ledger_backed_history(self):
         by_slug = {t['slug']: t for t in self.tasks}
         self.assertEqual(self.data['stats']['total'], 276)
         self.assertEqual(self.data['stats']['complete'], 125)
@@ -441,13 +441,42 @@ class BuiltArticleInventory(unittest.TestCase):
                      'submit-weekly-maa-report-every-friday', 'deliver-personal-brand-site-from-request'):
             self.assertEqual(by_slug[slug]['status'], 'needs-work')
             self.assertEqual(by_slug[slug]['articleState'], 'wip')
-            self.assertEqual(by_slug[slug]['executionHistory']['status'], 'unknown')
         linked = by_slug['follow-entity-linking-decision-tree']
         self.assertEqual(linked['status'], 'complete')
         self.assertEqual(linked['articleState'], 'wip')
         self.assertEqual(linked['article'], 'https://blitzmetrics.com/entity-linking/')
-        self.assertIsNone(self.data['executionHistory']['recordedExecutions'])
-        self.assertEqual(self.data['executionHistory']['executions'], [])
+        # Generated history must reflect real ledger IDs, without promoting
+        # recipe readiness or treating an unrecorded task as having zero runs.
+        with open(os.path.join(HERE, 'task-executions.json'), encoding='utf-8') as fh:
+            records = json.load(fh)['executions']
+        record_ids = [record['executionId'] for record in records]
+        self.assertEqual(len(record_ids), len(set(record_ids)))
+        history = self.data['executionHistory']
+        self.assertEqual(history['recordedExecutions'], len(records) if records else None)
+        for field, status in (('completedExecutions', 'completed'),
+                              ('partialExecutions', 'partial')):
+            self.assertEqual(history[field],
+                             sum(r['status'] == status for r in records) if records else None)
+        self.assertCountEqual(
+            [(r['executionId'], r['status'], tuple(sorted(r['taskSlugs'])))
+             for r in history['executions']],
+            [(r['executionId'], r['status'], tuple(sorted(r['taskSlugs'])))
+             for r in records])
+        for task in self.tasks:
+            with self.subTest(slug=task['slug']):
+                runs = [r for r in records if task['slug'] in r['taskSlugs']]
+                task_history = task['executionHistory']
+                self.assertEqual(task_history['status'], 'partial' if runs else 'unknown')
+                self.assertEqual(task_history['executionIds'],
+                                 sorted(r['executionId'] for r in runs))
+                self.assertEqual(task_history['recordedRuns'], len(runs) if runs else None)
+                for field, status in (('completedRuns', 'completed'),
+                                      ('failedRuns', 'failed'), ('partialRuns', 'partial')):
+                    self.assertEqual(task_history[field],
+                                     sum(r['status'] == status for r in runs) if runs else None)
+                if not runs:
+                    self.assertIsNone(task_history['completedLast30Days'])
+                    self.assertIsNone(task_history['lastCompletedAt'])
         for hub in self.data['articleHubs']:
             if hub['metaCountStatus'] == 'verified':
                 self.assertEqual(hub['metaOrbitAudited'], '2026-08-24')
