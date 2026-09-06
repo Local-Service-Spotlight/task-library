@@ -17,17 +17,23 @@ status: complete
 - Editor access to fix anything found
 
 ## Steps
-1. Open the live post on desktop **and** mobile. Check heading hierarchy, paragraph spacing, image rendering, and that no Gutenberg block broke after publish.
+1. Open the live post on desktop **and** mobile. Check heading hierarchy, paragraph spacing, image rendering, and that no Gutenberg block broke after publish. Read the rendered copy, not only the editor text.
 2. Click-test every link: internal links (anchors and targets per the entity-linking decision tree), external links, and any CTA. Fix or remove broken ones immediately.
-3. Confirm the embedded video plays, the featured image renders in social share previews, and all images still carry alt text.
-4. Re-check RankMath after any post-publish edits — score must still be 70+, SEO title under 60 characters, meta description under 160.
-5. Verify housekeeping: author = site owner, category = correct SEO Tree branch, tags intact, permalink unchanged since indexing.
-6. Verify the distribution loop is closed: article embeds the YouTube video; YouTube description links the article; Facebook, LinkedIn, and group posts are live and logged.
-7. Run verify-all-items-on-blog-posting-checklist as the formal item-by-item gate, fix any failure at its owning step, then mark the piece **done** in the tracker and hand the post URL set to the Promote stage.
+3. Confirm the embedded video plays, the featured image renders in social share previews, and all images still carry alt text. On an authority, relationship, or story page, confirm each material proof block includes a real scene in photo/video/primary record form and a compact source receipt.
+4. Fail public copy that contains a trophy-name paragraph, repeated defensive caveats, or internal scoring/inventory/repurposing language. Also fail relationship nouns stronger than their source and anonymous or domain-only testimonials. A materially necessary legal, regulatory, or compliance disclosure remains allowed when it is scoped to the claim it governs.
+5. On a personal-brand site, confirm the narrative is first person. Route a voice failure back to Step 5 or Step 7, and route a proof/attribution failure to its Website QA owner. Do not "fix" a weak claim by adding more reassurance; narrow it, source it, or place it on HOLD.
+6. Re-check RankMath after any post-publish edits — score must still be 70+, SEO title under 60 characters, meta description under 160.
+7. Verify housekeeping: author = site owner, category = correct SEO Tree branch, tags intact, permalink unchanged since indexing.
+8. Verify the distribution loop is closed: article embeds the YouTube video; YouTube description links the article; Facebook, LinkedIn, and group posts are live and logged.
+9. Run verify-all-items-on-blog-posting-checklist as the formal item-by-item gate, fix any failure at its owning step, then mark the piece **done** in the tracker and hand the post URL set to the Promote stage.
 
 ## Definition of done (QA checklist)
 - [ ] Live post renders cleanly on desktop and mobile; zero broken links or blocks
-- [ ] Video plays; featured image and alt text intact; RankMath still 70+
+- [ ] Video plays; featured image and alt text intact; authority/story proof blocks show real scenes with compact receipts
+- [ ] First-person personal-brand voice; zero trophy-name paragraphs, repeated defensive caveats, or public internal production metadata
+- [ ] Relationship language matches evidence; published testimonials are exact, named, attributable, and source-linked; anonymous/domain-only praise is HOLD
+- [ ] Any retained legal/compliance disclosure is materially necessary, scoped, and not counted as a voice failure
+- [ ] RankMath still 70+
 - [ ] Author, category, tags, and permalink verified correct
 - [ ] Distribution loop closed and logged (YouTube ↔ article, FB, LinkedIn, 44K group)
 - [ ] Full Blog Posting checklist passed; piece marked done and handed to Promote

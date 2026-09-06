@@ -19,14 +19,15 @@ status: complete
 ## Steps
 1. Inventory every testimonial across the site, including sliders and carousels (advance them — hidden slides count).
 2. For each testimonial, check for a headshot: a real photo of the actual person quoted, not an initials avatar, a logo, or a stock face.
-3. Check for attribution: at minimum the person's real full name; flag "J.D.", "Happy Customer", or first-name-only entries.
+3. Check for attribution: at minimum the person's real full name; flag "J.D.", "Happy Customer", first-name-only entries, and a company/domain presented without a named speaker.
 4. Reverse-search any headshot that looks like a stock model — a stock face on a testimonial fails the whole block's credibility.
-5. Where headshot or attribution is missing, note what to collect from the client (photo permission, full name) as the fix.
+5. Where headshot or attribution is missing, note what to collect from the client (photo permission, full name, exact source quote) as the fix. Keep the praise HOLD and off the public testimonial block until those fields are verified.
 6. Log each testimonial with headshot and attribution verdicts in the audit report.
 
 ## Definition of done (QA checklist)
 - [ ] 100% of testimonials display a real, non-stock headshot of the person quoted
-- [ ] 100% of testimonials carry at least a verifiable full name — zero anonymous or initials-only quotes
+- [ ] 100% of testimonials carry at least a verifiable full name — zero anonymous, initials-only, first-name-only, or domain/company-only quotes
+- [ ] Incomplete praise is marked HOLD and is not rendered as a testimonial
 - [ ] Testimonial inventory logged in the audit report, linked back to /website-qa-audit
 
 ## Example(s)

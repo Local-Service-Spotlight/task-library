@@ -21,12 +21,18 @@ status: complete
 2. For each, record whether it includes a real photo or visual artifact — client headshot, before/after job photo, screenshot of an actual review or analytics result, event photo.
 3. Fail any social proof section that is text-only (quotes with no faces, claims with no captures).
 4. Verify the photos are real: reverse-search suspect headshots; a "client" who appears on stock sites fails the section.
-5. Confirm visuals match the claim — a review screenshot must show the named platform and reviewer, a results image must show the metric claimed.
-6. Log each social proof element, its visual evidence, and verdict in the audit report.
+5. Confirm visuals match the claim — a review screenshot must show the named platform and reviewer, a results image must show the metric claimed, and an event or meal photo must match the named people and setting. A photo proves the depicted moment; it does not by itself prove friendship, partnership, mentorship, client status, or endorsement.
+6. Read the public caption and surrounding copy. Pass a compact receipt that identifies the person, scene/event, date when known, source link, and useful lesson. Fail a trophy-name wall, name-dropping caption, or paragraph that explains at length what the evidence does or does not prove.
+7. Verify every quote attached to the visual is exact and comes from the named person. A logo, domain, company name, initials, first name, or "happy customer" is not testimonial attribution; keep that item HOLD until full attribution, source, and any required permission exist.
+8. Fail public confidence scores, proof-record IDs, inventory/harvester labels, and repurposing instructions when those systems are not the page's topic. Preserve a materially necessary legal, regulatory, or compliance disclosure and scope it to the triggering claim.
+9. Log each social proof element, its visual evidence, caption, and verdict in the internal audit report.
 
 ## Definition of done (QA checklist)
 - [ ] Every social proof section includes at least one real photo or screenshot artifact — zero text-only proof blocks
 - [ ] All proof photos verified non-stock and consistent with the claims they support
+- [ ] Captions show a real scene and useful lesson with a compact receipt; no trophy-name wall, inflated relationship noun, or repeated defensive caveat
+- [ ] Every attached quote is exact, named, attributable, and source-linked; anonymous/domain-only praise remains HOLD
+- [ ] Zero public internal scoring/inventory/repurposing metadata; any retained legal/compliance disclosure is materially necessary and scoped
 - [ ] Element-by-element verdicts logged in the audit report, linked back to /website-qa-audit
 
 ## Example(s)
