@@ -309,6 +309,36 @@ class MetaOrbitEvidenceSchema(unittest.TestCase):
                   'importance': 5}]
         task_build.validate_article_meta_orbits(tasks, audits)
 
+    def test_strength_adapter_retains_optional_task_assignment(self):
+        raw = json.load(open(os.path.join(ROOT, 'build', 'article-meta-orbits.json'), encoding='utf-8'))
+        hub = next(h for h in raw['hubs'] if h['metaArticles'])
+        slug = hub['tasks'][0]['slug']
+        for spelling in ('taskSlugs', 'task_slugs'):
+            payload = copy.deepcopy(raw)
+            chosen = next(h for h in payload['hubs'] if h['metaArticles'])
+            chosen['metaArticles'][0][spelling] = [slug]
+            with self.subTest(spelling=spelling), tempfile.TemporaryDirectory() as tmp:
+                path = self.write_manifest(payload, tmp)
+                audits = task_build.load_article_meta_orbits(path)
+                key = task_build.normalize_article_url(chosen['url'])
+                self.assertEqual(audits[key]['records'][0]['taskSlugs'], [slug])
+        hub['metaArticles'][0].update(taskSlugs=[slug], task_slugs=['wrong'])
+        with tempfile.TemporaryDirectory() as tmp:
+            with self.assertRaisesRegex(ValueError, 'conflicting'):
+                task_build.load_article_meta_orbits(self.write_manifest(raw, tmp))
+
+    def test_article_role_does_not_promote_readiness_and_conflicts_fail(self):
+        tasks = [{'slug': 'one', 'article': 'https://example.com/hub/',
+                  'status': 'needs-work', 'articleKind': 'task-recipe'}]
+        task_build.derive_article_states(tasks, certifications={})
+        hubs, _ = task_build.derive_article_hub_inventory(tasks, {})
+        self.assertEqual(hubs[0]['articleKind'], 'task-recipe')
+        self.assertEqual(tasks[0]['articleState'], 'wip')
+        tasks.append({'slug': 'two', 'article': 'https://example.com/hub/',
+                      'status': 'complete', 'articleKind': 'topic-hub'})
+        with self.assertRaisesRegex(ValueError, 'conflicting'):
+            task_build.derive_article_hub_inventory(tasks, {})
+
     def test_one_meta_article_may_prove_multiple_hubs_but_global_count_is_unique(self):
         tasks = [
             {'slug': 'one', 'status': 'complete', 'article': 'https://example.com/a/',
@@ -395,12 +425,32 @@ class BuiltArticleInventory(unittest.TestCase):
         cls.tasks = [t for c in cls.data['categories'] for t in c['tasks']]
 
     def test_current_inventory_has_exact_derived_counts(self):
-        self.assertEqual(self.data['stats']['articleHubs'], 24)
+        self.assertEqual(self.data['stats']['articleHubs'], 53)
         self.assertEqual(self.data['stats']['definitiveArticles'], 13)
 
         tasks = copy.deepcopy(self.tasks)
         derived = task_build.derive_article_states(tasks)
-        self.assertEqual(derived, {'articleHubs': 24, 'definitiveArticles': 13})
+        self.assertEqual(derived, {'articleHubs': 53, 'definitiveArticles': 13})
+
+    def test_registered_recipes_keep_wip_and_history_unknown(self):
+        by_slug = {t['slug']: t for t in self.tasks}
+        self.assertEqual(self.data['stats']['total'], 276)
+        self.assertEqual(self.data['stats']['complete'], 125)
+        self.assertEqual(self.data['stats']['gaps'], 23)
+        for slug in ('create-or-update-a-definitive-article', 'document-a-task', 'install-local-qwen',
+                     'submit-weekly-maa-report-every-friday', 'deliver-personal-brand-site-from-request'):
+            self.assertEqual(by_slug[slug]['status'], 'needs-work')
+            self.assertEqual(by_slug[slug]['articleState'], 'wip')
+            self.assertEqual(by_slug[slug]['executionHistory']['status'], 'unknown')
+        linked = by_slug['follow-entity-linking-decision-tree']
+        self.assertEqual(linked['status'], 'complete')
+        self.assertEqual(linked['articleState'], 'wip')
+        self.assertEqual(linked['article'], 'https://blitzmetrics.com/entity-linking/')
+        self.assertIsNone(self.data['executionHistory']['recordedExecutions'])
+        self.assertEqual(self.data['executionHistory']['executions'], [])
+        for hub in self.data['articleHubs']:
+            if hub['metaCountStatus'] == 'verified':
+                self.assertEqual(hub['metaOrbitAudited'], '2026-08-24')
 
     def test_every_mapped_task_has_a_derived_state(self):
         for task in self.tasks:
@@ -466,7 +516,7 @@ class BuiltArticleInventory(unittest.TestCase):
         key = 'localservicespotlight.com/article-guidelines'
         mapped = [t for t in self.tasks
                   if task_build.normalize_article_url(t.get('article')) == key]
-        self.assertEqual(len(mapped), 21)
+        self.assertEqual(len(mapped), 20)
         self.assertEqual({t['article'] for t in mapped},
                          {'https://localservicespotlight.com/article-guidelines/'})
         self.assertEqual({t['articleState'] for t in mapped}, {'ready'})
@@ -475,7 +525,7 @@ class BuiltArticleInventory(unittest.TestCase):
             'blitzmetrics.com/blog-posting-guidelines' for t in self.tasks))
 
     def test_every_hub_has_a_reverse_article_route(self):
-        self.assertEqual(len(self.data['articleHubs']), 24)
+        self.assertEqual(len(self.data['articleHubs']), 53)
         for hub in self.data['articleHubs']:
             self.assertTrue(hub['taskLibraryUrl'].startswith(
                 'https://local-service-spotlight.github.io/task-library/?article='))
@@ -513,7 +563,7 @@ class BuiltArticleInventory(unittest.TestCase):
 
         self.assertEqual(self.data['stats']['verifiedMetaArticles'], 85)
         self.assertEqual(self.data['stats']['metaOrbitHubsWithEvidence'], 13)
-        self.assertEqual(self.data['stats']['metaOrbitHubsUnknown'], 11)
+        self.assertEqual(self.data['stats']['metaOrbitHubsUnknown'], 40)
         self.assertEqual({key for key, hub in hubs.items()
                           if hub['state'] == 'ready'}, set(expected))
         for key, (count, tier) in expected.items():

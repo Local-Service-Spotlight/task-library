@@ -3,13 +3,15 @@ name: submit-weekly-maa-report-every-friday
 description: Deliver the weekly MAA report every Friday — same metrics, what's working vs not, why, and the actions taken — so clients and the team see decisions, not just numbers.
 category: Strategy & Measurement
 stage: —
-definitive_article: GAP — to be written
+definitive_article: https://blitzmetrics.com/how-to-write-weekly-maa-reports-for-local-service-businesses/
 status: needs-work
 ---
 
 # Submit weekly MAA report every Friday
 
-**Use this when** it's Friday — the report ships every week, on the same day, whether the news is good or bad. No-skip is the rule that makes it work.
+**Use this when** the engagement’s agreed weekly cadence is Friday and it's Friday — the report ships every week, on the same day, whether the news is good or bad. No-skip is the rule that makes it work.
+
+This record is the Friday variant of the linked weekly MAA recipe. It does not change a client’s agreed reporting day or create a schedule. Use the accepted client definition of a qualified lead; a call-length example does not replace that measurement contract.
 
 ## Inputs
 - Access to the measurement stack: analytics, search console, ad platforms, CRM/revenue
@@ -37,13 +39,12 @@ status: needs-work
 ## Example(s)
 - Example needed — run the Meta-Article Prompt after first real run.
 
-## Run on a persistent agent (Fable 5)
+## Run with an observed recurring job
 
-The no-skip rule is exactly what a persistent agent (Claude Fable 5 or comparable OpenAI/Google models) guarantees: it runs every Friday on schedule, pulls the same standing metric set, and loops until the Definition of done fully passes — both sections present, every underperformer diagnosed, every action owned and dated — before the report sends.
-It self-verifies against the QA checklist and refuses to ship a numbers-only report.
-Because last Friday's archived report lives in its memory, the comparison is genuinely like-for-like — the MAA loop runs as a true memory cycle against prior weeks — and a meta-article example is logged from each run.
-See `boil-the-ocean.md` for the full operating principles.
+Use the client's existing agreed cadence. A recurring job must have a real configured trigger, explicit source access, retained comparison reports and an owner for failures. A model or skill file alone does not schedule, guarantee or remember a run. Verify the trigger, a timestamped firing, the sources and periods used, and the report in its intended destination before calling that cycle complete. The next run reads the retained prior report from its actual source. Sending still follows the existing communication authority.
+
+Write the meta article for every execution using https://blitzmetrics.com/meta-article-prompt/, including failed or blocked cycles. Keep the parent execution ID for internal checks and revisions; do not infer executions from the number of reports or articles.
 
 ## Definitive article & links
-- Hub: GAP — to be written (parent methodology: /maa; framework context: /nine-triangles)
+- Hub: https://blitzmetrics.com/how-to-write-weekly-maa-reports-for-local-service-businesses/ (parent methodology: https://blitzmetrics.com/maa/; source metric definitions remain client-specific)
 - Related, in run order: show-whats-working-and-what-isnt, analyze-why-underperformers-fail, kill-underperformers-scale-winners, measure-content-rankings-traffic-revenue

@@ -5,6 +5,11 @@
    "state": "wip",
    "reviewed": "2026-08-22",
    "reason": "Semantic certification held: the live hub duplicates GCT and DDD and omits the accepted AEC, CID, and SBP triangle labels from Nine Triangles operational version 2026-08-06."
+  },
+  "https://blitzmetrics.com/entity-linking/": {
+   "state": "wip",
+   "reviewed": "2026-09-05",
+   "reason": "Existing completed entity-linking task now maps to its precise standalone recipe. This mapping review is not independent runtime or semantic certification of the newly mapped article."
   }
  }
 }

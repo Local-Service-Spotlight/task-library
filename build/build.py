@@ -25,9 +25,11 @@ BUILD = os.path.join(ROOT, 'build')
 CACHE = os.path.join(BUILD, '.cache')
 sys.path.insert(0, BUILD)
 import factory  # noqa: E402
+import executions  # noqa: E402
 
 STAGES = {'Produce', 'Process', 'Post', 'Promote', '—', ''}
 STATUSES = {'complete', 'needs-work', 'gap'}
+ARTICLE_KINDS = {'task-recipe', 'topic-hub', 'entity-hub', 'reference', 'supporting', 'unknown'}
 REQUIRED_FM = ['name', 'description', 'category', 'stage', 'definitive_article', 'status']
 REQUIRED_SECTIONS = ['## Inputs', '## Steps', '## Definition of done (QA checklist)',
                      '## Example(s)', '## Definitive article & links']
@@ -228,7 +230,7 @@ def adapt_strength_manifest(raw, path, evidence_url=None):
     generated = raw.get('generatedAt')
     if not isinstance(generated, str) or not re.match(r'^\d{4}-\d{2}-\d{2}T', generated):
         raise ValueError(f'{path}: generatedAt requires an ISO timestamp')
-    audited = valid_review_date(generated[:10], f'{path}.generatedAt')
+    audited = valid_review_date(raw.get('metaAuditedAt', generated[:10]), f'{path}.metaAuditedAt')
     definition = raw.get('countDefinition')
     if not isinstance(definition, str) or not definition.strip():
         raise ValueError(f'{path}: countDefinition requires a non-empty method')
@@ -292,6 +294,9 @@ def adapt_strength_manifest(raw, path, evidence_url=None):
                 raise ValueError(f'{rwhere}.primaryParentHub disagrees with its counted hub')
             if counted is True and source_key:
                 counted_keys.add(source_key)
+            if ('taskSlugs' in record and 'task_slugs' in record and
+                    record['taskSlugs'] != record['task_slugs']):
+                raise ValueError(f'{rwhere}: conflicting taskSlugs and task_slugs')
             adapted_records.append({
                 'source_url': source_url,
                 'hub_url': record_hub_url,
@@ -304,6 +309,8 @@ def adapt_strength_manifest(raw, path, evidence_url=None):
                 'modified_at': record.get('modifiedAt'),
                 'taxonomy_evidence': record.get('taxonomyEvidence'),
                 'primary_parent_hub': primary_parent,
+                **({'task_slugs': record.get('taskSlugs', record.get('task_slugs'))}
+                   if 'taskSlugs' in record or 'task_slugs' in record else {}),
             })
         declared_count = hub.get('metaArticleCount')
         if type(declared_count) is not int or declared_count < 0:
@@ -640,6 +647,12 @@ def derive_article_hub_inventory(tasks, meta_audits=None, task_library_url=None)
     evidenced_hubs = 0
     for key in sorted(groups):
         mapped = groups[key]
+        kinds = {t.get('articleKind', 'unknown') for t in mapped} - {'unknown'}
+        if len(kinds) > 1:
+            raise ValueError(f'conflicting article roles for {key}')
+        article_kind = next(iter(kinds), 'unknown')
+        for task in mapped:
+            task['articleKind'] = article_kind
         if task_library_url:
             for task in mapped:
                 task['taskLibraryUrl'] = task_library_route(
@@ -696,6 +709,7 @@ def derive_article_hub_inventory(tasks, meta_audits=None, task_library_url=None)
             'key': key,
             'url': canonical_url,
             'state': state,
+            'articleKind': article_kind,
             'taskCount': len(mapped),
             'completeTaskCount': sum(t.get('status') == 'complete' for t in mapped),
             'importance': max(int(t.get('importance') or 0) for t in mapped),
@@ -749,9 +763,10 @@ def write_library_index(data, out_path):
     L.append(f"<p>The BlitzMetrics Task Library documents <strong>{st['total']} operational tasks</strong> "
              f"across {st['categories']} categories. Its task-to-article mappings resolve to "
              f"<strong>{st['articleHubs']} article hubs</strong>: "
-             f"<strong>{st['definitiveArticles']} definitive</strong> because their mapped tasks are complete "
+             f"<strong>{st['definitiveArticles']} catalog-ready</strong> because their mapped tasks are complete "
              f"and no reviewed semantic hold is active, "
              f"and {st['articleHubs'] - st['definitiveArticles']} still in progress. "
+             f"A Definitive marker also requires semantic review of the actual page. "
              f"{st['complete']} are ready, {st['needsWork']} in progress, {st['gaps']} identified gaps. "
              f"Updated {html_escape(data['updated'])}.</p>")
     for c in data['categories']:
@@ -961,6 +976,9 @@ def main():
         registry[slug] = entry
     by_cat = {c['name'] for c in cats_meta} and {c['name']: [] for c in cats_meta}
     for slug, entry in registry.items():
+        if entry.get('article_kind', 'unknown') not in ARTICLE_KINDS:
+            errors.append(f'{slug}: unknown article_kind')
+            continue
         text = resolve(slug, entry, errors, warnings)
         if text is None:
             continue
@@ -978,6 +996,9 @@ def main():
         content = factory.apply_layer(text.strip(), factory.layer_markdown(slug, rec))
         task = {'title': fm['name'], 'slug': slug, 'status': status,
                 'stage': fm['stage'] or '—', 'article': art,
+                'articleKind': (entry.get('article_kind', 'unknown') if
+                                normalize_article_url(art) == normalize_article_url(article_url(fm['definitive_article']))
+                                else 'unknown'),
                 'desc': fm['description'], 'content': content,
                 'importance': rec['importance'], 'freq': rec['freq'],
                 'revenue': rec['revenue'], 'gating': rec['gating'],
@@ -1019,6 +1040,9 @@ def main():
     validate_article_meta_orbits(all_tasks, meta_audits)
     article_hubs, meta_stats = derive_article_hub_inventory(
         all_tasks, meta_audits, site['taskLibraryUrl'])
+    execution_records = executions.load(os.path.join(BUILD, 'task-executions.json'),
+                                        {t['slug'] for t in all_tasks})
+    execution_history = executions.attach(all_tasks, execution_records)
     # Owner attribution comes ONLY from the Asset Tracker. A tracker that parsed
     # rows but still yields zero owners is a malformed or partial feed - the same
     # failure class as above, caught one stage later.
@@ -1039,6 +1063,7 @@ def main():
             'updated': datetime.now(timezone.utc).strftime('%B %-d, %Y'),  # real build stamp (was a static label from site-meta.json)
             'factory': factory.factory_meta(),
             'articleHubs': article_hubs,
+            'executionHistory': execution_history,
             'categories': [dict(c, tasks=by_cat[c['name']]) for c in cats_meta]}
     # Drop dangling before/after pointers that are not in this build.
     known = {t['slug'] for t in all_tasks}
@@ -1053,6 +1078,8 @@ def main():
 
     os.makedirs(os.path.dirname(args.out), exist_ok=True)
     json.dump(data, open(args.out, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+    with open(os.path.join(os.path.dirname(args.out), 'executions.json'), 'w', encoding='utf-8') as fh:
+        json.dump(execution_history, fh, ensure_ascii=False, indent=2)
     write_meta_orbit_index(
         data, meta_audits,
         os.path.join(os.path.dirname(args.out), 'meta-orbits.json'))

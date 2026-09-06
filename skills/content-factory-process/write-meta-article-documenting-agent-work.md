@@ -1,49 +1,43 @@
 ---
 name: write-meta-article-documenting-agent-work
-description: Use the Meta-Article Prompt Template to document a real AI-agent task run as a publishable article — the proof layer that turns work into examples.
+description: Write the evidence-backed record of each task execution and connect it to its canonical recipe and Task Library record.
 category: Content Factory — Process
 stage: Process
-definitive_article: /meta-article-prompt/
+definitive_article: https://blitzmetrics.com/meta-article-prompt/
 status: complete
 ---
 
-# Write meta-article documenting agent work
-
-**Use this when** an AI agent (or human + agent) has just completed a real task run — any Task Library skill execution — and the run should become a linked example for its definitive article.
+# Write a meta article documenting a task execution
 
 ## Inputs
-- The completed run: prompts used, tool outputs, before/after states, final deliverable
-- The Meta-Article Prompt Template (the hub at /meta-article-prompt/)
-- The task's definitive article short URL (the hub this example will link up to)
-- WordPress access for publishing per Blog Posting Guidelines
+Run this as part of closing each task execution, including partial and failed results. Have the stable task ID, execution ID, recipe URL and revision, starting state, inputs, actual output, checks, decisions, failures, owner, and next task. Use UNKNOWN for unmeasured time, tokens, costs, or outcomes. Publication authority is an input to release, not to writing the record.
 
 ## Steps
-1. Gather the artifacts of the run while fresh: the exact prompts, key decisions, screenshots of before/after, the output, time taken, and anything that went wrong.
-2. Run the Meta-Article Prompt against those artifacts to draft the article: what the task was, why it was run, what the agent actually did step by step, and what resulted.
-3. Show the real work — include the actual prompts and honest friction points. The value is reproducibility, not a polished success story.
-4. State results concretely: what shipped, what changed, what was measured (feed numbers into MAA where they exist).
-5. Link the meta-article UP to its definitive article (one direction: example → hub). Never write the meta-article as a competing explanation of the concept — that is content vandalism; it documents one run.
-6. Apply the entity-linking decision tree for every person, company, and concept mentioned.
-7. Publish per the Blog Posting Guidelines pipeline (title <60, meta <160, keyword in first paragraph, real screenshots as images, RankMath 70+ at the Post stage).
-8. Register the example: add it to the definitive article's examples section and the Task Library tracker — this is what moves a task toward Green (article + skill + ≥1 example).
+1. Preserve the execution evidence and the private organization agent-note when required.
+2. Write the meta article: who/what the task served, why it started, the starting condition, inputs, recipe followed, actual steps, decisions, output, acceptance evidence, failures, lessons, and next handoff.
+3. Explain unfamiliar terms on first mention and link to the maintained owned guide. Link to the one primary task recipe, detailed sub-tasks used, and the exact Task Library record.
+4. Show the real result with meaningful images or diagrams, clear captions, and an accessible link to the deliverable when sharing it is authorized. Follow https://localservicespotlight.com/article-guidelines/.
+5. Check the article against this recipe. Record PASS, PARTIAL, FAIL, NOT CHECKED, or NEEDS HUMAN from evidence. Do not copy a pre-passed scorecard.
+6. Register the execution ID and its task mapping, recipe revision, result, evidence, and meta article state. Revisions and internal retries keep the same parent execution ID; a separately scoped later attempt needs its own actual evidence and ID. The writing step is part of its original run, not a new meta-of-meta task unless separately scoped.
+7. Keep the article private or in draft when needed. Publish a public-safe version only under the recorded authority; verify the exact live page and update the publication state. Do not place private evidence URLs in a public registry.
+8. Send the verified result to the next task or receiving function under the required communication authority. Turn a supported lesson into a proposed recipe/skill change; review and test it before making the accepted revision current.
 
 ## Definition of done (QA checklist)
-- [ ] Documents one real run with actual prompts and honest results — no hypotheticals
-- [ ] Links up to the task's definitive article; does not compete with the hub
-- [ ] Concrete outcomes stated (deliverable, metrics, time)
-- [ ] Complies with Blog Posting Guidelines (it publishes content)
-- [ ] Example registered on the hub's examples list and in the tracker
-- [ ] Linked back to the definitive article and relevant siblings
+- One execution record has a stable task and execution ID and links the canonical recipe revision.
+- The meta article states the actual result and evidence for each acceptance check; partial and failed results stay visible.
+- Inputs, decisions, failures, unavailable telemetry, and next owner/action are stated.
+- The public/private/draft state is explicit, and a published page has a verified live read-back.
+- The required internal agent-note is written and verified separately.
+- The Task Library can link this run to its recipe. One run's revisions do not increase execution frequency.
+
+## What happens next
+The receiving task starts only after its own prerequisites are met. Review repeated failures and useful lessons to improve the canonical method. The next execution uses that accepted revision.
 
 ## Example(s)
-- The hub at /meta-article-prompt/ carries 29 linked example meta-articles — the largest example set in the library and the model for this loop.
-
-## Run on a persistent agent (Fable 5)
-
-This task is the compounding mechanism itself: a persistent agent (Claude Fable 5, or comparable long-horizon OpenAI/Google models) runs it automatically at the end of every other skill run, while the exact prompts, friction points, and results are still in working memory. It loops until the example is published per Blog Posting Guidelines and registered on the hub and tracker — an unregistered example fails the Definition of done. Every pass adds one more linked example, which is exactly how the library compounds run over run.
-See `boil-the-ocean.md` for the full operating principles.
+The current article-cleanup run is still in progress. Its agent notes support one parent execution; no completed count is claimed here.
 
 ## Definitive article & links
-- Hub: /meta-article-prompt/
-- Related: /blog-posting-guidelines (publishing pipeline), /internal-linking (its hub ships a skill file — a documented precedent), /knowledge-system-maintenance (capture loop)
-- Sibling skills, in run order: any completed task run → this → `step-12-post-article-on-wordpress` (Post stage)
+- Relationship explainer: https://localservicespotlight.com/meta-articles/
+- Recipe standard: https://blitzmetrics.com/definitive-article-guide/
+- Factory context: https://blitzmetrics.com/content-factory/
+- Task Library: https://local-service-spotlight.github.io/task-library/?task=write-meta-article-documenting-agent-work

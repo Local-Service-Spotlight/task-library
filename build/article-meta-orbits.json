@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-24T07:45:45+00:00",
+  "generatedAt": "2026-09-05T08:37:31.270494+00:00",
   "countDefinition": "One published post that documents a completed observable run whose main deliverable materially executes this hub, is explicitly classified by taxonomy or authored meta language, and links to the exact canonical hub in task-specific narrative or receipt. Shared maps, compliance tables, related-reading lists, indexes, instructions, archives, self-links and incidental cross-links do not count. Each post has one reviewed primary parent.",
   "strengthBands": [
     {
@@ -252,8 +252,8 @@
       "postId": 75654,
       "wordpressSha256": "a73cb5ddfe384a9d7bcace0520e0cd704e506cb73222dbdd50cfb4e8fae57659",
       "taskLibrarySourceUrl": "https://localservicespotlight.com/article-guidelines/",
-      "taskCount": 21,
-      "taskImportanceTotal": 89,
+      "taskCount": 20,
+      "taskImportanceTotal": 86,
       "tasks": [
         {
           "slug": "step-1-upload-video-to-google-drive-and-descript",
@@ -354,11 +354,6 @@
           "slug": "verify-all-items-on-blog-posting-checklist",
           "title": "verify-all-items-on-blog-posting-checklist",
           "importance": 4
-        },
-        {
-          "slug": "follow-entity-linking-decision-tree",
-          "title": "follow-entity-linking-decision-tree",
-          "importance": 3
         }
       ],
       "metaCountStatus": "verified",
@@ -2178,5 +2173,7 @@
         }
       ]
     }
-  ]
+  ],
+  "metaAuditedAt": "2026-08-24",
+  "taskMappingUpdatedAt": "2026-09-05T08:37:31.270494+00:00"
 }
