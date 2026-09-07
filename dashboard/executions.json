@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "asOf": "2026-09-06T21:35:51.648924+00:00",
+  "asOf": "2026-09-06T23:01:57.587517+00:00",
   "countDefinition": "Distinct recorded execution IDs, separate from meta-article URLs. History is partial; absent history is unknown, not zero. The last-30-day count is a documented lower bound, not total task frequency.",
   "recordedExecutions": 1,
   "completedExecutions": 0,
@@ -13,7 +13,7 @@
       ],
       "startedAt": "2026-09-05T08:01:40Z",
       "status": "running",
-      "result": "The former four-page publishing block is cleared. All 276 downloads have first-step setup guidance; 101 guide rewrites are locally reviewed and all 90 tests pass. Public release verification and the wider grade-5/article review continue. This is the same unfinished execution; no completed task is claimed.",
+      "result": "The former publishing block is cleared. Public PR15 delivered startup guidance and seven checked ZIPs. The next candidate contains 275 reviewed instruction sources; the remaining external Google Ads contribution needs exact-destination approval and upstream release. All 86 current article URLs match saved text; current visual and source consistency repairs continue. This is one unfinished execution, not 276 completed client tasks.",
       "recipeRevisions": {
         "create-or-update-a-definitive-article": {
           "articleUrl": "https://blitzmetrics.com/definitive-article-guide/",
@@ -27,7 +27,9 @@
         "https://github.com/Local-Service-Spotlight/task-library/pull/8",
         "https://github.com/Local-Service-Spotlight/task-library/pull/10",
         "https://github.com/Local-Service-Spotlight/task-library/pull/11",
-        "https://github.com/dennisyu/local-service-spotlight-skills/pull/44"
+        "https://github.com/dennisyu/local-service-spotlight-skills/pull/44",
+        "https://github.com/Local-Service-Spotlight/task-library/pull/15",
+        "https://github.com/dennisyu/local-service-spotlight-skills/pull/46"
       ],
       "privateEvidenceRecorded": true,
       "metaArticle": {

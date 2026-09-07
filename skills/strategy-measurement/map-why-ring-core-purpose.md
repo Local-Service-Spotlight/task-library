@@ -1,48 +1,77 @@
 ---
 name: map-why-ring-core-purpose
-description: Define the innermost ring of the Topic Wheel — the core mission and reason the brand exists — so every method and content piece in the outer rings traces back to one purpose.
+description: "Use real stories to show why people trust your work."
 category: Strategy & Measurement
 stage: —
 definitive_article: /topic-wheel
 status: complete
 ---
 
-# Map WHY ring (core purpose)
+# Map WHY stories in the outer ring
 
-**Use this when** starting a Topic Wheel for a brand, or when content has drifted into random topics and needs to be re-anchored to the mission.
+Use real stories to show why people trust your work. This guide adds the people and moments that support each topic on your map. Start with real jobs, shared work and stories you have the right to use.
+
+**The path:** Real story → Relevant HOW → WHAT offer → Content brief
+
+**Start when:** The WHAT and HOW are mapped and the Topic Wheel needs real supporting people and stories.
 
 ## Inputs
-- The owner's honest answers to "why do you do this work?" (interview or self-interview, recorded)
-- Real client stories — moments the owner is proudest of and the problem that drove them
-- Any existing mission/WHY statements, to be tested rather than assumed
+
+- [The checked WHAT offer](https://local-service-spotlight.github.io/task-library/?task=map-what-ring-specific-content#task-map-what-ring-specific-content) and [HOW topics](https://local-service-spotlight.github.io/task-library/?task=map-how-ring-methods#task-map-how-ring-methods).
+- Real interviews, jobs, reviews, events and collaborations with dated sources and use rights.
+- [Topic Wheel, the map of your offer, topics and real stories](https://blitzmetrics.com/topic-wheel/) and current story assets in the content library.
 
 ## Steps
-1. Define the ring: the WHY is the center of the Topic Wheel — the core purpose and mission, the reason the brand exists beyond making money. It is not a service list and not a tagline.
-2. Interview the owner on camera or voice: why this work, who it serves, what injustice or problem makes it matter. Push past first answers ("to help businesses grow") to the personal driver underneath.
-3. Draft the WHY as one or two plain sentences a customer would actually believe — specific enough that a competitor couldn't paste it onto their site.
-4. Validate it against evidence: at least three real client stories should embody this WHY. If the stories don't match the statement, the statement is aspiration, not purpose — rewrite it.
-5. Place the WHY at the center of the Topic Wheel document; every HOW spoke and WHAT topic added later must trace back to it or be cut.
-6. Reuse it downstream: this same WHY scripts the 3-minute WHY video (SAE Stage 3) and anchors the mission in SAE Stage 2 goals.
-7. Measure it: in content reviews, check what share of published pieces still trace to the WHY; drift below ~90% means the wheel (or the content calendar) needs correcting.
+
+1. Place WHY in the outer ring. It contains real people, stories and collaborations that connect to a HOW topic and the WHAT offer. Personal purpose can inform a story, but the maintained wheel does not place a mission statement in its center.
+2. Inventory moments that show the work: a customer problem and outcome, a learned lesson, a shared project or an event. Record the people’s real roles and the exact source.
+3. Verify what each source proves. A shared photo proves that moment, not a business partnership, endorsement or result. Get the permission required for any private customer story before public use.
+4. Connect each supported story to the relevant HOW topic and WHAT. Leave unsupported claims or unrelated famous names out; reputation is not created by drawing a line.
+5. Write a short story prompt: who, what happened, useful lesson and source evidence. Label a proposed interview as a plan until it is actually recorded.
+6. Save the WHY ring with source links, permission state and missing evidence. Keep the mission consistent with the goals brief while preserving the distinction between a WHY video and the wheel’s full outer story ring.
 
 ## Definition of done (QA checklist)
-- [ ] WHY written in 1–2 plain sentences, specific to this person/brand
-- [ ] Backed by at least three real client stories that embody it
-- [ ] Placed at the center of the Topic Wheel document
-- [ ] Consistent with the SAE Stage 2 mission and the WHY video script
-- [ ] Linked back to the definitive article and relevant siblings
-- [ ] Complies with Blog Posting Guidelines (if it publishes content)
+
+Quality assurance (QA) means checking the result against its agreed requirements; see the [Article Guidelines](https://localservicespotlight.com/article-guidelines/).
+
+- [ ] WHY is the outer ring of relevant, supported people and stories.
+- [ ] Every claimed relationship or result is scoped to its actual proof.
+- [ ] Recording prompts and rights gaps are clear enough for the next owner.
 
 ## Example(s)
-- Example needed — run the Meta-Article Prompt after first real run. (The hub at /topic-wheel links live examples; pull the closest match into this slot.)
 
-## Run on a persistent agent (Fable 5)
+**Fictional teaching example. This is not a client result or proof of a completed run.**
 
-A persistent, max-effort agent (Claude Fable 5 or comparable OpenAI/Google models) drafts the WHY from the full interview transcript and loops until the Definition of done fully passes — 1–2 plain sentences backed by at least three real client stories, placed at the wheel's center, consistent with the Stage 2 mission — not a statement that merely sounds right.
-It self-verifies with the competitor-paste test: if another brand could claim the sentence, it rewrites.
-Memory keeps the WHY enforced long after the workshop: in each content review the agent computes the share of published pieces tracing to the WHY and compares it against prior periods — a true MAA memory cycle that catches drift below ~90% — logging a meta-article example each run.
-See `boil-the-ocean.md` for the full operating principles.
+A fictional roofer has a homeowner’s approved story about a repaired leak and a photo from a trade event. The repair story supports its leak-diagnosis topic. The event photo supports attendance only; it does not prove the speaker endorsed the roofer. Both claims stay as narrow as their sources.
+
+## Handoff and Content Factory context
+
+[Plan the next recording session](https://local-service-spotlight.github.io/task-library/?task=use-for-content-planning-and-video-topics#task-use-for-content-planning-and-video-topics) receives the story prompts and source rights; the goals task receives any supported purpose clarification.
+
+This work supports Produce in the [Content Factory: Produce, Process, Post and Promote](https://blitzmetrics.com/content-factory/). The selected sources pass to Process, approved outputs go to Post, and useful proven work can enter Promote. The real inputs and handoff above set this task’s scope.
+
+## Start with an agent
+
+Give the AI worker this recipe, the real Inputs, the desired result and the actions already authorized. Ask for the saved output, source evidence, passed and failed checks, and the next owner. A skill is a set of instructions. Loading it does not prove access, install a scheduled job or complete the work. Use the [current installation guide](https://localservicespotlight.com/install/) only if reusable setup is needed; a ZIP contains instructions and is not an access grant.
+
+Use the actual supported app and verified source access. A model name is not a promise of browser control, memory or unattended work. For recurring work, inspect the real job’s trigger, owner, timezone and observed firing; this recipe creates no schedule. Before any media playback, mute the player and set volume to zero. A silent review does not prove sound was heard.
+
+## Record the real execution
+
+Open the run record when work begins. Keep one execution ID, the exact starting recipe revision, input sources and actual state. Write a [meta article, the record of one real execution](https://blitzmetrics.com/meta-article-prompt/) with results, checks, failures and next owner. Link it to this task in the [Task Library](https://local-service-spotlight.github.io/task-library/). Writing is required; public release follows existing authority.
+
+Reuse the same execution ID for internal reviews, meta writing, revisions and retries. A blocked run stays open with its dependency and owner, without an invented finish time. Keep historical public examples as dated evidence; article counts alone are not verified execution frequency. Use supported findings to propose and verify a recipe improvement.
 
 ## Definitive article & links
-- Hub: /topic-wheel
-- Related, in run order: map-how-ring-methods, map-what-ring-specific-content, use-for-content-planning-and-video-topics, stage-2-goals-mission-90-day-goals-cpa-roas-budget
+
+- [Maintained source guide](https://blitzmetrics.com/topic-wheel/)
+- [This task in the Task Library](https://local-service-spotlight.github.io/task-library/?task=map-why-ring-core-purpose#task-map-why-ring-core-purpose)
+- [Article Guidelines](https://localservicespotlight.com/article-guidelines/)
+- [Definitive article and task recipe standard](https://blitzmetrics.com/definitive-article-guide/)
+- [How recipes and run records work together](https://localservicespotlight.com/meta-articles/)
+
+## Review and evidence still needed
+
+The inherited contributor status is `complete`. It is preserved, not promoted by this rewrite. That label alone does not verify document readiness, account access, an actual execution or a client outcome.
+
+A relevant real execution, source evidence, independent reviewer and accepted handoff remain to be recorded. The fictional example teaches the method and does not fill a real-run evidence gap. The opening and full method need a named semantic reviewer; the task-specific path is source guidance, with visible desktop/mobile presentation still to check.

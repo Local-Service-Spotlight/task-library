@@ -1,6 +1,6 @@
 ---
 name: measure-ai-citations-for-brand
-description: "A dated AI-answer grid with raw evidence and ranked source improvements."
+description: "See what AI tools say when people look for a business like yours."
 category: Strategy & Measurement
 stage: —
 definitive_article: https://blitzmetrics.com/how-to-track-if-ai-cites-you/
@@ -9,64 +9,70 @@ status: needs-work
 
 # Measure AI citations for a brand
 
-**Use this when:** A brand needs a baseline or repeat check of what AI answers say about it.
+See what AI tools say when people look for a business like yours. This guide helps your team keep a fair record and find claims to fix. Start with the brand, the buyer’s problem and the same set of questions.
 
-This is a registered recipe in review. A published guide or this new record does not certify its runtime behavior. Read the current [canonical procedure](https://blitzmetrics.com/how-to-track-if-ai-cites-you/) before executing; it contains the detailed actions and current source-specific instructions.
+**The path:** Fixed questions → Observed answers → Separate scores → Source fixes
+
+**Start when:** A brand needs a first baseline or a comparable repeat check of AI answers.
 
 ## Inputs
-- Brand name, category and real buyer problems
-- Chosen engines and repeatable prompts
-- A dated result grid
 
-## Prerequisite tasks
-- No separate mandatory task is established by the reviewed source; use the explicit starting condition and inputs above.
-## Input references
-- [Knowledge Panels: How to Get Google to Recognize You as a Trusted Entity](https://blitzmetrics.com/knowledge-panel/)
+- The resolved business identity, category, service area and real buyer questions.
+- Selected AI tools the operator can actually access, with exact prompts and a comparison grid.
+- [The AI-citation measurement method](https://blitzmetrics.com/how-to-track-if-ai-cites-you/) and any prior raw answers.
+
 ## Steps
-1. Write the name, category and problem prompts.
-2. Run the same prompts on the selected engines.
-3. Save raw answers and source links.
-4. Score mentions, citations and recommendations separately.
-5. Repeat key prompts and choose evidence-backed source fixes.
+
+1. Write prompts for the exact brand, its category and the problem a buyer wants solved. Record them before the check. Keep branded prompts separate from discovery prompts that do not name the brand.
+2. Define the repeat conditions: selected tool, visible model/version when known, mode, date, location/account context and whether browsing is used. Do not invent a model version hidden by the interface.
+3. Run the bounded prompt set through available supported access. Retain the exact raw answers and any visible citation URLs; a tool failure is not a negative brand result.
+4. Score three separate outcomes: a mention names the brand, a citation links a source, and a recommendation suggests the business for the buyer’s need. Inspect the cited page and whether it supports the actual statement.
+5. Repeat key prompts under comparable conditions and retain all observations. Distinguish stable patterns from variation; a small prompt sample is not market share or a universal rank.
+6. Compare the observations with authoritative brand facts and the previous grid. Prioritize source corrections that address a verified error or evidence gap, such as a wrong service area or unclear offer page.
+7. Save the grid, method and limitations. Hand exact source improvements to the appropriate owner; do not claim that a citation can be guaranteed by a content change.
 
 ## Definition of done (QA checklist)
 
-**Expected result:** A dated AI-answer grid with raw evidence and ranked source improvements.
+Quality assurance (QA) means checking the result against its agreed requirements; see the [Article Guidelines](https://localservicespotlight.com/article-guidelines/).
 
-- [ ] Engine and exact prompt are recorded
-- [ ] Raw answers are retained without cherry-picking
-- [ ] Mentions, citations and recommendations are separate
-- [ ] Repeated checks distinguish stable results from variation
-- [ ] Record the exact source revision, actual result and evidence; retain failure, partial, blocked and unknown states.
-- [ ] Write the execution's meta article and link the canonical task. Publication is a separate action under the current authority.
-- [ ] Keep this parent job's internal retries, checks and agent contributions on the same execution ID; derivatives and revisions add no runs. A separately scoped and documented child execution may have its own ID with parentExecutionId, without adding a second completion to this parent recipe.
-- [ ] Verify permissions for publishing, sending, spending, scheduling or changing access before that action. A task record does not grant them.
+- [ ] All prompts, tool conditions, answers and failures are retained.
+- [ ] Mentions, citations and recommendations are scored separately and source claims checked.
+- [ ] The comparison states its sample limits and gives specific evidence-backed next work.
 
-## Child or companion tasks
-- No separate mandatory task is established by the reviewed source; use the explicit starting condition and inputs above.
-## Handoff and Content Factory context
-
-Use the AI-search-visibility task to improve the underlying sources, and carry trends into the weekly report.
-
-The Content Factory turns source material into useful work through Produce, Process, Post and Promote. This recipe's reviewed placement is **cross stage support**. Support tasks help the relevant stages; do not force a support operation into a production stage. The canonical article's lower diagram should show the same context while its lead visual explains this particular task.
-
-### Downstream tasks
-- [How To Write Weekly MAA Reports For Local Service Businesses](https://blitzmetrics.com/how-to-write-weekly-maa-reports-for-local-service-businesses/) — Task Library: [submit-weekly-maa-report-every-friday](https://local-service-spotlight.github.io/task-library/?task=submit-weekly-maa-report-every-friday#task-submit-weekly-maa-report-every-friday)
 ## Example(s)
 
-No independently verified completed execution has been assigned to this new task record. Historical examples in the article remain source material, not reconstructed execution counts. Write the meta article for each real attempt, including failed or blocked work, and register only its actual identity and result.
+**Fictional teaching example. This is not a client result or proof of a completed run.**
 
-## Open review items
-- Tool prices and capabilities are dated reference material; do not copy them into evergreen acceptance criteria.
-- This is WIP until the current source procedure, access, linked task outputs and live acceptance checks have been independently reviewed. A workflow-summary addition alone does not pass those checks.
-- All media tests stay muted with volume zero; if silence cannot be verified before playback, inspect captions, metadata or frames instead.
+In a fictional test, one tool names a shop but links no source. Another links the shop’s hours page without recommending it. The grid records a mention in the first answer and a citation in the second. A later answer differs, so the report shows variation instead of one claimed ranking.
+
+## Handoff and Content Factory context
+
+[Write the agreed weekly report](https://local-service-spotlight.github.io/task-library/?task=submit-weekly-maa-report-every-friday#task-submit-weekly-maa-report-every-friday) receives the trend; the source-page owner receives exact fact or evidence corrections through the [SEO Tree, the map of related pages](https://blitzmetrics.com/seo-tree/).
+
+This work supports the [Content Factory: Produce, Process, Post and Promote](https://blitzmetrics.com/content-factory/) across its relevant stages. It uses the actual inputs and next owner above; a strategy or measurement guide does not manufacture transcripts, clips or other unrelated stage outputs.
+
+## Start with an agent
+
+Give the AI worker this recipe, the real Inputs, the desired result and the actions already authorized. Ask for the saved output, source evidence, passed and failed checks, and the next owner. A skill is a set of instructions. Loading it does not prove access, install a scheduled job or complete the work. Use the [current installation guide](https://localservicespotlight.com/install/) only if reusable setup is needed; a ZIP contains instructions and is not an access grant.
+
+Use the actual supported app and verified source access. A model name is not a promise of browser control, memory or unattended work. For recurring work, inspect the real job’s trigger, owner, timezone and observed firing; this recipe creates no schedule. Before any media playback, mute the player and set volume to zero. A silent review does not prove sound was heard.
+
+## Record the real execution
+
+Open the run record when work begins. Keep one execution ID, the exact starting recipe revision, input sources and actual state. Write a [meta article, the record of one real execution](https://blitzmetrics.com/meta-article-prompt/) with results, checks, failures and next owner. Link it to this task in the [Task Library](https://local-service-spotlight.github.io/task-library/). Writing is required; public release follows existing authority.
+
+Reuse the same execution ID for internal reviews, meta writing, revisions and retries. A blocked run stays open with its dependency and owner, without an invented finish time. Keep historical public examples as dated evidence; article counts alone are not verified execution frequency. Use supported findings to propose and verify a recipe improvement.
 
 ## Definitive article & links
-- Canonical task procedure: https://blitzmetrics.com/how-to-track-if-ai-cites-you/
-- Exact Task Library record: https://local-service-spotlight.github.io/task-library/?task=measure-ai-citations-for-brand#task-measure-ai-citations-for-brand
-- Meta-article method: https://blitzmetrics.com/meta-article-prompt/
-- Recipe and execution relationship: https://localservicespotlight.com/meta-articles/
-- Content Factory context: https://blitzmetrics.com/content-factory/
-- Article and task recipe standard: https://blitzmetrics.com/definitive-article-guide/
 
-Source basis: canonical article WordPress ID 109814; reviewed source SHA-256 `8ce4e2ca43f3643376d90c77cccfa94095fc98e422be710e63f26807d904fdad`. The task record summarizes that source and keeps its unresolved items visible. It does not certify installations, provider commands, source-system access or a completed run.
+- [Maintained source guide](https://blitzmetrics.com/how-to-track-if-ai-cites-you/)
+- [This task in the Task Library](https://local-service-spotlight.github.io/task-library/?task=measure-ai-citations-for-brand#task-measure-ai-citations-for-brand)
+- [Article Guidelines](https://localservicespotlight.com/article-guidelines/)
+- [Definitive article and task recipe standard](https://blitzmetrics.com/definitive-article-guide/)
+- [How recipes and run records work together](https://localservicespotlight.com/meta-articles/)
+
+## Review and evidence still needed
+
+The inherited contributor status is `needs-work`. It is preserved, not promoted by this rewrite. That label alone does not verify document readiness, account access, an actual execution or a client outcome.
+
+A relevant real execution, source evidence, independent reviewer and accepted handoff remain to be recorded. The fictional example teaches the method and does not fill a real-run evidence gap. The opening and full method need a named semantic reviewer; the task-specific path is source guidance, with visible desktop/mobile presentation still to check.

@@ -1,6 +1,6 @@
 ---
 name: convert-instagram-to-professional-account
-description: Switch Instagram to a professional account connected to the Facebook page, with handle, bio, and photo matching the brand canon.
+description: "Set up the right Instagram account type for your work. Check the public profile and its tools."
 category: Digital Plumbing
 stage: —
 definitive_article: /digital-plumbing
@@ -9,39 +9,77 @@ status: needs-work
 
 # Convert Instagram to Professional Account
 
-**Use this when** the business's Instagram is still a personal account, isn't connected to the Facebook page, or carries an off-canon handle, bio, or photo.
+Do you use Instagram for your work but lack the tools you need? This guide helps you choose and set up the right account type. Start with your current account and the job it needs to do.
+
+**The path:** Account purpose → Account type → Public profile → Tool check.
+
+**Use this when:** an existing account needs business or creator tools, or a brand account needs a clear professional setup.
 
 ## Inputs
-- Login to the Instagram account (owner-held credentials)
-- Claimed, branded Facebook page (run claim-and-brand-facebook-page first)
-- Canonical headshot/logo and bio copy, plus the canonical NAP contact details
+- The exact account handle, legitimate account access and the owner’s intended public business or creator role.
+- Approved bio, website link, category, public contact fields and rights-cleared profile image.
+- The actual reason for a Facebook Page connection, if needed, and the relevant Page access. Do not assume it is required for every Instagram use.
+
+## First-run prompt
+
+> Inspect the supplied account and choose the business or creator setup that fits its purpose. Complete authorized changes and check what is publicly shown. Keep optional linked accounts, ads and schedules separate from this profile setup.
 
 ## Steps
-1. In Instagram settings, switch the account type to Professional (Business for a company; Creator fits some personal brands). This unlocks insights, contact buttons, and ad eligibility.
-2. Connect the account to the business's Facebook page during the professional setup (via the client's Business Manager / Meta Business Suite). Without this link, Dollar a Day can't run placements or use the account properly.
-3. Set the username and display name to match the business entity as closely as the platform allows — same spelling as the canon.
-4. Apply the canonical profile photo (same headshot or logo used everywhere) and write the bio in first person: who you help, where, with what proof. Add the website link.
-5. Add contact options — the canonical email and phone from the NAP record.
-6. Confirm in Business Manager/Business Suite that the IG account appears alongside the page, and verify the public profile from a logged-out view.
-7. Add the Instagram URL to the schema sameAs list (sibling skill).
+1. Confirm the exact handle and current account type. Read the current account’s conversion prompts, including visibility effects and available tools, before changing it. Do not convert a personal-use account merely because it shares an owner’s name.
+2. Choose Business for the company workflow or Creator for the individual creator workflow when those choices fit the owner’s purpose. Do not promise that switching types unlocks every feature or monetization option.
+3. In the account’s settings, open the account-type/tools control and follow the professional-account flow; select the truthful category and type. The exact labels vary by current interface. Record the resulting type after save.
+4. Set the approved name, available handle, short bio and website. Explain the person or business in plain words. Keep claims and relationship language supported by evidence, and do not publish private contact details just to fill every field.
+5. Check which contact and category fields will be visible, and use only those appropriate for this account. Confirm the profile photo’s crop on a phone and that it represents the right person or company.
+6. Connect a Facebook Page only if the intended cross-platform workflow needs it and the proper access exists. Check the exact account and Page identities before linking; a pending connection is not a completed one.
+7. Open the professional dashboard or relevant tool to verify the requested capability. Treat absent historical data as absent data, not zero performance. Some business or commercial uses have music restrictions; do not assume music available in the app is licensed for every use.
+8. Read back the public profile and test the website destination without sending messages or launching ads. Save the account type, public fields, linked-account state and any capability still unavailable.
 
 ## Definition of done (QA checklist)
-- [ ] Account shows as Professional with insights available
-- [ ] Connected to the correct Facebook page under the client's Business Manager
-- [ ] Handle, display name, photo, and bio match the brand canon; website link works
-- [ ] Contact options show canonical email/phone
-- [ ] Linked back to the definitive article and relevant siblings
-- [ ] Complies with Blog Posting Guidelines (if it publishes content)
+
+- [ ] The intended account has the chosen type, with its actual visibility effects reviewed.
+- [ ] Public name, bio, image, category and contact fields match the owner’s approved facts.
+- [ ] The website link resolves and any requested Page connection has verified state.
+- [ ] The desired professional tool is available or its exact limitation is recorded.
+- [ ] No ad launch, message send, music-rights claim or posting schedule is implied by the setup.
 
 ## Example(s)
-- Example needed — run the Meta-Article Prompt after first real run.
 
-## Run on a persistent agent (Fable 5)
-A persistent agent (Claude Fable 5 or a comparable OpenAI/Google model) runs the conversion, the Business Manager connection, and the canon pass — handle, photo, bio, contacts — as one loop, re-checking the public profile logged-out until every Definition-of-done box passes, not 90%.
-It pulls the canonical headshot and bio from memory of prior runs, records the IG URL for the schema sameAs step that follows, self-verifies against that checklist, and logs a meta-article example each run so the library compounds.
-See `boil-the-ocean.md` for the full operating principles.
+**Fictional teaching example.** Oak Repair needs a business profile with a quote-page link. The guide selects Business, uses “Roof repairs in the local area” as its supported short bio and hides a private owner phone number. The professional dashboard opens, but it has no past results to show. The lesson record says “type and profile checked; historical insights unavailable.” The company’s Facebook Page is left as a separate planned connection because this job only requested the profile setup.
+
+## Handoff and Content Factory context
+
+Give the account owner the checked profile and actual tool limits. Use [set up consistent headshots and bios across profiles](https://local-service-spotlight.github.io/task-library/?task=set-up-consistent-headshots-and-bios-across-profiles#task-set-up-consistent-headshots-and-bios-across-profiles) for the wider profile set, or [claim and brand facebook page](https://local-service-spotlight.github.io/task-library/?task=claim-and-brand-facebook-page#task-claim-and-brand-facebook-page) when that Page connection is required.
+
+This setup supports the [Content Factory](https://blitzmetrics.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. This check does not automatically execute all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
+
+## When this runs
+
+Run once for the account setup and after a material purpose or branding change. Publishing, messaging and any recurring review use their own supplied scope and configured tools.
+
+## First-run setup and continuity
+
+Open the supplied task file and its linked source. Verify the project’s real inputs, account, access and output folder before work. This Markdown file is a guide; it does not install an app, connect an account, supply a subscription or create a schedule. Carry out work already authorized; do not ask for the same approval again. Keep any unsupplied destination or new action outside that scope clearly pending.
+
+Save source IDs, versions, decisions, checked outputs and next owner in the project tracker. Before a retry, check the saved state and other workers’ changes. A model name does not guarantee memory or a running timer. Repeated work needs an actual configured trigger and durable state; one-off work can be started by the prompt above.
+
+Keep agent media muted with volume zero before playback. If mute cannot be verified, use captions, metadata or still frames. State the limit: silent visual checks do not prove spoken-word accuracy or audio quality. Do not start sound through the user’s speakers unless explicitly asked.
+
+## Write up the real run
+
+For every actual attempt, [write its meta article](https://blitzmetrics.com/meta-article-prompt/) with this recipe and revision, trigger, steps performed, output evidence, measured result, gaps and next owner. Failed, blocked and partial attempts also get a written record. A draft can satisfy writing; publishing it follows the existing job scope.
+
+Keep one stable execution ID across retries and edits. A separately scoped child task may have its own ID linked to its parent. Writing the parent’s meta record is part of that run, not an endless new chain. The [recipe and meta-article guide](https://localservicespotlight.com/meta-articles/) explains this distinction. Teaching examples are not real executions and must not enter the run count.
 
 ## Definitive article & links
-- Hub: /digital-plumbing
-- Related (run order): claim-and-brand-facebook-page → this → set-up-youtube-channel-with-proper-branding → set-up-consistent-headshots-and-bios-across-profiles
-- Cross-links: /dad (IG placements) · /personal-brand (Phase 1 social profiles)
+
+- Canonical article: https://blitzmetrics.com/digital-plumbing
+- Exact task: [Convert Instagram to Professional Account](https://local-service-spotlight.github.io/task-library/?task=convert-instagram-to-professional-account#task-convert-instagram-to-professional-account)
+- Writing standard: [Article Guidelines](https://localservicespotlight.com/article-guidelines/)
+- [Digital Plumbing training](https://blitzmetrics.com/digital-plumbing/)
+- [Instagram creator-account setup](https://www.facebook.com/help/instagram/2358103564437429)
+- [Instagram music permissions](https://www.facebook.com/help/instagram/402084904469945)
+
+## Review and evidence still needed
+
+The source contributor status is preserved. It is not certification of this draft or proof of account access, completed work or a live outcome. The worked example teaches the method and is explicitly fictional.
+- An English current general professional-account help page was not retrievable in this authoring pass. The actual account prompts must resolve current visibility and eligibility before conversion; official creator setup and music references are qualified in sources.

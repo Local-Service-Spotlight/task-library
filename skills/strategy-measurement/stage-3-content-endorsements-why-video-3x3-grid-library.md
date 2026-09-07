@@ -1,6 +1,6 @@
 ---
 name: stage-3-content-endorsements-why-video-3x3-grid-library
-description: Complete Stage 3 of the Social Amplification Engine — assemble endorsements, produce the WHY video and 3×3 video grid, and organize everything into a Content Library ready to amplify.
+description: "Give your team real stories and proof to share."
 category: Strategy & Measurement
 stage: —
 definitive_article: /social-amplification
@@ -9,40 +9,70 @@ status: complete
 
 # Stage 3: Content (endorsements, WHY video, 3×3 grid, library)
 
-**Use this when** Stages 1–2 are done and the engine needs its fuel — the proof, story, and topic videos that Stages 4–5 will target and amplify.
+Give your team real stories and proof to share. This guide gathers the files and plans the clips you still need. Start with the goal, the offer and the work the business has done.
+
+**The path:** Goal + real proof → WHY story + grid → Usable library → Processing
+
+**Start when:** The accepted goals brief is ready and the engine needs a usable set of source content.
 
 ## Inputs
-- Stage 2 goals doc (the mission/WHY scripts the WHY video)
-- The completed Topic Wheel (HOW spokes and WHAT items map directly onto the 3×3 grid)
-- Contactable sources of proof: happy clients, peers, mentors, press mentions
+
+- [The accepted goal and offer brief](https://local-service-spotlight.github.io/task-library/?task=stage-2-goals-mission-90-day-goals-cpa-roas-budget#task-stage-2-goals-mission-90-day-goals-cpa-roas-budget).
+- [Topic Wheel, the map of your offer, topics and real stories](https://blitzmetrics.com/topic-wheel/) with WHAT center, HOW middle and WHY outer; current source library and page map.
+- Real customer stories, endorsements and event or work media, with attribution and permission; a recording owner and editor.
 
 ## Steps
-1. Collect **endorsements**: gather testimonials and third-party validation, highest authority first — recognized names, media, and documented client results carry more weight than volume alone. Get each as video where possible, written with name/title/photo otherwise.
-2. Produce the **WHY video** (~3 minutes): the owner tells the mission from Stage 2 — why they do this work, who it's for, with a story that proves it. Unscripted and real beats polished; this is the anchor asset for cold audiences.
-3. Build the **3×3 grid**: nine one-minute videos covering the brand's core topics — three columns (e.g., WHY/HOW/WHAT, mirroring the Topic Wheel rings) by three rows, so every funnel level has native content. Record phone-style per /one-minute-video-guide.
-4. Organize the **Content Library**: every raw and processed asset (videos, endorsements, articles, clips) in one structured, shared location with consistent naming — Stage 5 boosting fails when nobody can find the winning asset.
-5. Process the best pieces through the Content Factory (/content-factory) so each video also exists as an article, clips, and posts before amplification starts.
-6. Gate progression: do not start Stage 4 targeting until the WHY video, at least nine grid videos, and a populated Content Library exist.
+
+1. Inventory existing relevant sources before asking for more. Record file, topic, person, date, claim supported, permission and usable state. Do not treat an authority’s photograph as their endorsement.
+2. Prepare a real WHY story using [Create a three-minute WHY video](https://local-service-spotlight.github.io/task-library/?task=create-a-3-minute-why-video#task-create-a-3-minute-why-video). The owner tells a specific moment and useful reason behind the work; the target length is guidance, not license to invent a story.
+3. Build the agreed nine-cell plan through [Create a 3×3 video grid](https://local-service-spotlight.github.io/task-library/?task=create-a-3x3-video-grid#task-create-a-3x3-video-grid). Name its variant: three topic rows by story/WHY, teaching/HOW and offer/proof/WHAT purpose columns. These purposes are not the Topic Wheel’s physical ring positions.
+4. Use actual questions and proof for each prompt. If a proof cell lacks evidence, leave the gap and agree a truthful offer explanation; never fill it with a made-up customer win.
+5. Record and inspect the selected takes. Count nine distinct usable files only when they exist and the editor can access them. An agent uses muted frames, captions and metadata unless silent playback is verified; it cannot claim it heard sound from a silent check.
+6. Store raw files and selected takes through [Set up the Content Library](https://local-service-spotlight.github.io/task-library/?task=set-up-content-library#task-set-up-content-library). Keep names, versions, source links, rights and the grid IDs aligned.
+7. Hand the best supported sources to Process with the intended outputs. The editor selects useful derivatives; every source need not become every format. Mark unmet content inputs explicitly before the engine’s next gate.
 
 ## Definition of done (QA checklist)
-- [ ] Endorsements collected and filed, ordered by authority, with attribution
-- [ ] WHY video produced and consistent with the Stage 2 mission
-- [ ] 3×3 grid complete: nine one-minute videos covering the core topics
-- [ ] Content Library organized, named consistently, and accessible to the team
-- [ ] Top assets processed into multiple formats via the Content Factory
-- [ ] Linked back to the definitive article and relevant siblings
-- [ ] Complies with Blog Posting Guidelines (if it publishes content)
+
+Quality assurance (QA) means checking the result against its agreed requirements; see the [Article Guidelines](https://localservicespotlight.com/article-guidelines/).
+
+- [ ] WHY story and agreed grid cells have real sources and usable selected takes, or specific gaps.
+- [ ] Topic Wheel labels and the chosen grid variant are correct and distinct.
+- [ ] The editor can open the library and knows the supported claims, rights and intended outputs.
 
 ## Example(s)
-- Example needed — run the Meta-Article Prompt after first real run. (The hub at /social-amplification links live examples; pull the closest match into this slot.)
 
-## Run on a persistent agent (Fable 5)
+**Fictional teaching example. This is not a client result or proof of a completed run.**
 
-A persistent, max-effort agent (Claude Fable 5 or comparable OpenAI/Google models) project-manages the fuel build: it chases endorsements to completion, checks the WHY video against the Stage 2 mission, tracks the grid, and loops until the gate fully passes — WHY video plus all nine grid videos plus a populated, consistently named Content Library, not seven of nine.
-It self-verifies by auditing the library file-by-file against the checklist before unlocking Stage 4.
-Memory then feeds back which assets won in Stage 5, so each new content round is steered by prior-period performance in the MAA loop — a true memory cycle — with a meta-article example logged each run.
-See `boil-the-ocean.md` for the full operating principles.
+A fictional shop plans a nine-cell grid but has only eight usable takes. The ninth was meant to claim a customer result without a source. The team replaces that prompt with a true offer explanation and still marks its recording pending. Eight files are handed over as eight, not a complete nine-video set.
+
+## Handoff and Content Factory context
+
+[Upload the sources for processing](https://local-service-spotlight.github.io/task-library/?task=step-1-upload-video-to-google-drive-and-descript#task-step-1-upload-video-to-google-drive-and-descript) receives files and brief. [Plan targeting](https://local-service-spotlight.github.io/task-library/?task=stage-4-targeting-custom-audiences-lookalikes-remarketing#task-stage-4-targeting-custom-audiences-lookalikes-remarketing) receives the actual available content and gaps.
+
+This work supports Produce in the [Content Factory: Produce, Process, Post and Promote](https://blitzmetrics.com/content-factory/). The selected sources pass to Process, approved outputs go to Post, and useful proven work can enter Promote. The real inputs and handoff above set this task’s scope.
+
+## Start with an agent
+
+Give the AI worker this recipe, the real Inputs, the desired result and the actions already authorized. Ask for the saved output, source evidence, passed and failed checks, and the next owner. A skill is a set of instructions. Loading it does not prove access, install a scheduled job or complete the work. Use the [current installation guide](https://localservicespotlight.com/install/) only if reusable setup is needed; a ZIP contains instructions and is not an access grant.
+
+Use the actual supported app and verified source access. A model name is not a promise of browser control, memory or unattended work. For recurring work, inspect the real job’s trigger, owner, timezone and observed firing; this recipe creates no schedule. Before any media playback, mute the player and set volume to zero. A silent review does not prove sound was heard.
+
+## Record the real execution
+
+Open the run record when work begins. Keep one execution ID, the exact starting recipe revision, input sources and actual state. Write a [meta article, the record of one real execution](https://blitzmetrics.com/meta-article-prompt/) with results, checks, failures and next owner. Link it to this task in the [Task Library](https://local-service-spotlight.github.io/task-library/). Writing is required; public release follows existing authority.
+
+Reuse the same execution ID for internal reviews, meta writing, revisions and retries. A blocked run stays open with its dependency and owner, without an invented finish time. Keep historical public examples as dated evidence; article counts alone are not verified execution frequency. Use supported findings to propose and verify a recipe improvement.
 
 ## Definitive article & links
-- Hub: /social-amplification
-- Related, in run order: stage-2-goals-mission-90-day-goals-cpa-roas-budget, stage-4-targeting-custom-audiences-lookalikes-remarketing, map-what-ring-specific-content, /one-minute-video-guide, /content-factory
+
+- [Maintained source guide](https://blitzmetrics.com/social-amplification/)
+- [This task in the Task Library](https://local-service-spotlight.github.io/task-library/?task=stage-3-content-endorsements-why-video-3x3-grid-library#task-stage-3-content-endorsements-why-video-3x3-grid-library)
+- [Article Guidelines](https://localservicespotlight.com/article-guidelines/)
+- [Definitive article and task recipe standard](https://blitzmetrics.com/definitive-article-guide/)
+- [How recipes and run records work together](https://localservicespotlight.com/meta-articles/)
+
+## Review and evidence still needed
+
+The inherited contributor status is `complete`. It is preserved, not promoted by this rewrite. That label alone does not verify document readiness, account access, an actual execution or a client outcome.
+
+A relevant real execution, source evidence, independent reviewer and accepted handoff remain to be recorded. The fictional example teaches the method and does not fill a real-run evidence gap. The opening and full method need a named semantic reviewer; the task-specific path is source guidance, with visible desktop/mobile presentation still to check.

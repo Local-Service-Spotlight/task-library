@@ -1,6 +1,6 @@
 ---
 name: set-up-call-tracking-for-phone-conversions
-description: Implement call tracking with dynamic number insertion so phone calls — often the real conversion for local businesses — get measured without breaking NAP.
+description: "Track calls from your site without losing the right phone route. Check the call and its record."
 category: Digital Plumbing
 stage: —
 definitive_article: /digital-plumbing
@@ -9,39 +9,76 @@ status: needs-work
 
 # Set Up Call Tracking for Phone Conversions
 
-**Use this when** phone calls are a primary way this business wins customers and nobody can say how many calls the website or campaigns generate.
+Do calls bring your business work, but no one knows where they came from? This guide helps an owner set up a clear call record. Start with the real phone line and the sources you need to measure.
+
+**The path:** Call plan → Number routing → Controlled call → Measured outcome.
+
+**Use this when:** phone calls matter to the business and the agreed measurement plan needs reliable source or outcome tracking.
 
 ## Inputs
-- Confirmation from the owner that calls are a primary conversion (GCT Goals — if calls don't matter, skip this task)
-- Canonical NAP phone number and the line calls should forward to
-- A call tracking platform with dynamic number insertion (DNI), plus GTM access for events
+- The actual business line, receiving team, hours and approved public number policy.
+- An existing or authorized call-tracking provider and budget, number availability, supported website integration and account access. A purchase or new subscription is not implied by downloading this guide.
+- The attribution design, approved controlled-test window, reporting destination and recording/consent policy. Keep caller details and recordings in the approved private system.
+
+## First-run prompt
+
+> Configure the scoped call-tracking path with the actual provider. Check visible numbers and telephone links, forwarding and received call records. Distinguish clicks, connected calls and qualified outcomes. Do not enable recording or send new customer data to other platforms outside the approved design.
 
 ## Steps
-1. Confirm the business case: if calls are a primary conversion method, track them; if not, stop here and rely on form tracking.
-2. Provision a tracking number (local area code) in the call tracking platform, forwarding to the real business line. Test the forward with a live call before going further.
-3. Use dynamic number insertion on the website: the DNI script swaps the displayed number (and tel: links) per visitor/source while the underlying canonical number stays the business's own. Never paste raw tracking numbers into GBP, citations, or schema — that breaks NAP consistency.
-4. Install the DNI script via GTM on all pages and verify the swap happens on desktop and mobile, including the tel: links.
-5. Wire measurement: send call events into GA4 (key event) and, if running ads, to the Meta pixel — calls from Dollar a Day traffic must be attributable.
-6. Configure sensible call handling: business-hours routing, voicemail fallback, and recording only as permitted by local consent law.
-7. Place a test call from the website number end-to-end: phone rings, call logs in the platform, event lands in GA4. Document numbers and routing in the client record.
+1. Define the question to answer: calls by page, campaign, source or actual qualified outcome. Record the limits of that attribution design and whether dynamic number insertion is appropriate. A form-only business may not need this task.
+2. Confirm the stable business number and the intended receiving line. Reuse or provision the authorized tracking number or pool in the actual provider, accounting for the agreed cost and ownership. Do not purchase numbers without that scope.
+3. Configure forwarding, business-hours routing and fallback behavior in the provider. Keep recording off unless it is part of the authorized, reviewed policy and necessary notices/consent handling are in place. This guide does not supply a legal determination.
+4. Install the provider’s supported number-swap integration at the intended source. Dynamic number insertion replaces a displayed number for a visitor or source; test that telephone-link targets change with the visible text. GTM is one possible delivery route, not a mandatory dependency.
+5. Preserve the underlying identity and approved profile-number strategy. Do not blindly paste changing session numbers into schema or citations. A stable approved tracking number may be allowed by a platform’s actual rules; document the reason rather than claiming all tracking numbers always break identity.
+6. Place a marked controlled test within the agreed window. Check that the intended line rings, routing and fallback work, and a matching call record appears. A telephone tap alone does not prove connection or answer.
+7. Connect only the approved reporting integration. Map call states to their actual meanings and inspect received events. A browser Pixel event on a link click does not by itself attribute an offline completed call; missing provider support is a concrete integration gap.
+8. Record the number map, tested source rules, call IDs, outcome definitions and privacy settings. Separate test calls from customer reports and keep unsupported attribution unknown. Hand the receiving team the actual follow-up process.
 
 ## Definition of done (QA checklist)
-- [ ] Test call via the website's displayed number rings through to the real line and logs in the platform
-- [ ] DNI swaps displayed numbers and tel: links; canonical NAP number untouched on GBP, citations, schema
-- [ ] Call event appears in GA4 as a key event (and in Meta Events Manager if ads run)
-- [ ] Routing, hours, and consent-compliant recording settings documented
-- [ ] Linked back to the definitive article and relevant siblings
-- [ ] Complies with Blog Posting Guidelines (if it publishes content)
+
+- [ ] The tracking design and provider scope answer a defined business question.
+- [ ] Visible numbers and telephone targets agree for tested source/device cases.
+- [ ] A controlled call reaches the right line and has a matching provider record.
+- [ ] Connected, answered and qualified calls use distinct verified meanings in reports.
+- [ ] Recording, customer-data handling, costs and any external event integration follow the actual approved design.
 
 ## Example(s)
-- Example needed — run the Meta-Article Prompt after first real run.
 
-## Run on a persistent agent (Fable 5)
-A max-effort agent (Claude Fable 5 or a comparable OpenAI/Google model) tests the whole chain — DNI swap on desktop and mobile, live call forwarding, platform log, GA4 key event — and loops on any broken link until every Definition-of-done item passes, not 90%.
-It self-verifies against that checklist that the canonical NAP number stayed untouched on GBP, citations, and schema — pulling that canon from memory of prior runs — and logs a meta-article example each run so the library compounds.
-See `boil-the-ocean.md` for the full operating principles.
+**Fictional teaching example.** Oak Repair uses one tracked website number that forwards to its existing line. A lesson call record shows “answered, 42 seconds”; the website click log only shows that a phone link was tapped. The report counts one answered test call, not a qualified customer. Qualification remains unknown until the responsible team supplies the real outcome. No number is bought or called for this teaching example.
+
+## Handoff and Content Factory context
+
+Give the routing map to the phone owner and the outcome definitions to the reporting owner. Use [add click to call links for mobile](https://local-service-spotlight.github.io/task-library/?task=add-click-to-call-links-for-mobile#task-add-click-to-call-links-for-mobile) for a broken tap target or [ensure nap consistency across platforms](https://local-service-spotlight.github.io/task-library/?task=ensure-nap-consistency-across-platforms#task-ensure-nap-consistency-across-platforms) for an identity mismatch.
+
+This setup supports the [Content Factory](https://blitzmetrics.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. This check does not automatically execute all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
+
+## When this runs
+
+Run at installation and after routing, number, website or attribution changes. Optional recurring call checks need a real test window and receiving owner; no unannounced periodic calls are created.
+
+## First-run setup and continuity
+
+Open the supplied task file and its linked source. Verify the project’s real inputs, account, access and output folder before work. This Markdown file is a guide; it does not install an app, connect an account, supply a subscription or create a schedule. Carry out work already authorized; do not ask for the same approval again. Keep any unsupplied destination or new action outside that scope clearly pending.
+
+Save source IDs, versions, decisions, checked outputs and next owner in the project tracker. Before a retry, check the saved state and other workers’ changes. A model name does not guarantee memory or a running timer. Repeated work needs an actual configured trigger and durable state; one-off work can be started by the prompt above.
+
+Keep agent media muted with volume zero before playback. If mute cannot be verified, use captions, metadata or still frames. State the limit: silent visual checks do not prove spoken-word accuracy or audio quality. Do not start sound through the user’s speakers unless explicitly asked.
+
+## Write up the real run
+
+For every actual attempt, [write its meta article](https://blitzmetrics.com/meta-article-prompt/) with this recipe and revision, trigger, steps performed, output evidence, measured result, gaps and next owner. Failed, blocked and partial attempts also get a written record. A draft can satisfy writing; publishing it follows the existing job scope.
+
+Keep one stable execution ID across retries and edits. A separately scoped child task may have its own ID linked to its parent. Writing the parent’s meta record is part of that run, not an endless new chain. The [recipe and meta-article guide](https://localservicespotlight.com/meta-articles/) explains this distinction. Teaching examples are not real executions and must not enter the run count.
 
 ## Definitive article & links
-- Hub: /digital-plumbing
-- Related (run order): add-click-to-call-links-for-mobile → install-meta-pixel-with-standard-events → this
-- Cross-links: ensure-nap-consistency-across-platforms (protect NAP while tracking) · /maa (calls are Metrics) · /dad (attribute calls to $1/day ad sets)
+
+- Canonical article: https://blitzmetrics.com/digital-plumbing
+- Exact task: [Set Up Call Tracking for Phone Conversions](https://local-service-spotlight.github.io/task-library/?task=set-up-call-tracking-for-phone-conversions#task-set-up-call-tracking-for-phone-conversions)
+- Writing standard: [Article Guidelines](https://localservicespotlight.com/article-guidelines/)
+- [Digital Plumbing training](https://blitzmetrics.com/digital-plumbing/)
+- [Google business representation rules](https://support.google.com/business/answer/3038177?hl=en)
+
+## Review and evidence still needed
+
+The source contributor status is preserved. It is not certification of this draft or proof of account access, completed work or a live outcome. The worked example teaches the method and is explicitly fictional.
+- The provider-specific integration and attribution limits must be checked against the chosen product’s current documentation before configuration. No calls, purchases or legal consent determinations occurred during drafting.

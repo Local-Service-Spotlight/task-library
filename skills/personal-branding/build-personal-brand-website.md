@@ -1,6 +1,6 @@
 ---
 name: build-personal-brand-website
-description: Build the entity-home website on yourname.com that answers who this person is, what they do, and why to trust them.
+description: "Give people one place to check who you are and what you do."
 category: Personal Branding
 stage: —
 definitive_article: /personal-brand
@@ -9,41 +9,72 @@ status: needs-work
 
 # Build personal brand website
 
-**Use this when** yourname.com is registered and the person needs their entity home — Phase 1 (Digital Plumbing) of the personal brand build.
+Give people one place to check who you are and what you do. This guide helps you build a site with real work, clear facts and a way to reach you. Start with the name you use and proof you can share.
+
+**The path:** Facts + real proof → Site preview → Content and function checks → Approved launch
+
+**Start when:** The person controls the chosen domain and needs a new or improved public home for their work.
 
 ## Inputs
-- Registered personal name domain with hosting (WordPress preferred — agents can read and update it)
-- Professional headshots and real photos (no stock, ever)
-- Short and long bios in first person, plus proof assets: testimonials with names and headshots, media mentions, talks
-- List of live social profile URLs
+
+- [Register or verify the name domain](https://local-service-spotlight.github.io/task-library/?task=register-personal-name-domain#task-register-personal-name-domain) with its actual owner and hosting plan.
+- Approved bio, real headshots, work stories, permission for named proof, current social URLs and public contact path.
+- [Goals, Content, Targeting: the result, source material and people served](https://blitzmetrics.com/gct-business-strategy/) brief, accepted build/deployment scope, current source or builder, and measurement requirements.
 
 ## Steps
-1. Frame the build correctly: this is a facts page, not a sales page. Its one job is to answer — who is this person, what do they do, why should anyone trust them.
-2. Put a real photo of the person in the hero and answer all three questions above the fold, in first person.
-3. Build the core sections: About (story plus credentials with evidence, never bare claims), what they do and who they serve, and proof — testimonials with full attribution, media and speaking mentions, results.
-4. Embed at least one video of the person (a one-minute video or WHY video) on the homepage.
-5. Link every social profile from the site (header, footer, or About) so Person schema can close the entity loop in a later skill.
-6. Run the Digital Plumbing basics before calling it live: HTTPS with no mixed content, sub-3-second mobile load, favicon set, indexing not blocked, working contact path.
-7. Hand off to implement-person-schema-with-sameas-links to wire the entity together.
+
+1. Inspect any existing site, source owner, pages, mail setup and current links before planning changes. Improve the maintained site in place when possible. Separate the content build from domain registration, DNS changes, hosting charges and public launch authority.
+2. Build the first screen around who the person is, what they do and useful proof for the intended reader. Use two or three plain sentences at grade five or below, a real photo or evidence-backed diagram, and one clear next step. Preserve the person’s authentic voice.
+3. Build About, work/method, evidence and contact sections from verified source material. Explain each named result with its scope and source. Keep first person for the person’s own account, attributed quotes for others, and remove empty promises rather than inventing testimonials.
+4. Use real photos and relevant usable video when available, with captions and context. Keep a missing video as an asset gap. Check embeds silently, muted at zero volume; a working embed is not proof that an unheard audio track is intelligible.
+5. Add useful routes to the person’s verified profiles and related work. Apply [entity linking, choosing the right home for a named person or topic](https://blitzmetrics.com/entity-linking/) and the [SEO Tree, the map from proof pages to main topics and offers](https://blitzmetrics.com/seo-tree/). Prepare the structured identity markup through its dedicated task so a theme, plugin and custom block do not create competing Person identities.
+6. Check a preview at desktop, laptop and mobile widths: readable first screen, useful visual, unclipped face and buttons, valid links, clear contact path and no horizontal overflow. Check HTTPS, indexing controls and the actual measurement plan before launch; a performance score is a measurement, not a universal three-second guarantee.
+7. When launch is authorized, use the supported source/deployment rail and verify the normal public URL, saved content, media and contact behavior. Retain the exact revision and any failed gate. A preview remains a preview until the live domain passes.
 
 ## Definition of done (QA checklist)
-- [ ] Site live on yourname.com and answers who / what / why-trust without scrolling
-- [ ] All copy first person; all images real; testimonials carry names, titles, headshots
-- [ ] At least one video embedded; social profiles linked; contact path works
-- [ ] Reads as a facts page — no hard-sell landing-page patterns
-- [ ] Linked back to the definitive article and relevant siblings
-- [ ] Complies with Blog Posting Guidelines (if it publishes content)
+
+Quality assurance (QA) means checking the actual result against its agreed requirements. Follow the [Article Guidelines](https://localservicespotlight.com/article-guidelines/).
+
+- [ ] The first screen gives the intended reader useful facts, proof and a next step with a meaningful visual.
+- [ ] Claims, media rights, author voice and entity links match evidence; the actual source is retained.
+- [ ] Preview and live states, domain dependencies and function checks are recorded separately.
+- [ ] The exact output, source revision, reviewer evidence and remaining owner action are saved.
+- [ ] For any reader-facing output, the short grade-five opening states the reader’s useful outcome and supporting method or proof. The body delivers that promise; a useful authentic visual appears in the first screen. Retain exact text and quoted reviewer evidence.
 
 ## Example(s)
-- Cam Hazzard — camhazzard.com: the entity-home model — a facts page that establishes who/what/why-trust and anchors every other profile.
-- Harry Gold — harryjgold.com: a complete entity home produced from a single Zoom call, proof the build does not require months of asset production.
 
-## Run on a persistent agent (Fable 5)
-A persistent agent (Claude Fable 5 or a comparable OpenAI/Google model) builds the entity home in one long-horizon session: it pulls the canonical name and domain saved by the registration run from memory, drafts and publishes every section, and loops until the full Definition-of-done passes — who/what/why-trust above the fold, video embedded, contact path tested — not 90%.
-It self-verifies by loading the live site as a stranger would and checking HTTPS, mobile load speed, and every link.
-It stores the page inventory and proof assets in memory for the profile and Person-schema skills that follow, and logs a meta-article example each run so the brand compounds.
-See `boil-the-ocean.md` for the full operating principles.
+**Fictional teaching example. This is not a client result or proof of a completed run.**
+
+A fictional builder has a name domain, three project photos and two approved customer quotes. The site preview shows those projects and a contact button. The old domain still hosts email, so the preview can pass design review while the web team prepares a separate domain change. Nobody calls the site live from the preview alone.
+
+## Handoff and Content Factory context
+
+[Add verified Person markup](https://local-service-spotlight.github.io/task-library/?task=implement-person-schema-with-sameas-links#task-implement-person-schema-with-sameas-links) receives the approved identity graph; [Set up the agreed public profiles](https://local-service-spotlight.github.io/task-library/?task=set-up-professional-social-profiles#task-set-up-professional-social-profiles) receives the site URL. The authorized launch owner receives the checked preview and exact remaining deployment work.
+
+This task supports the [Content Factory: Produce, Process, Post and Promote](https://blitzmetrics.com/content-factory/). Identity, proof, access or coordination can support several stages. Use the real inputs and receiving owner above; this task does not create unrelated transcripts, clips or ads merely because the diagram has four stages.
+
+## Start with an agent
+
+Give the [AI worker](https://blitzmetrics.com/build-agents/) this recipe, the real inputs, desired result and actions already authorized. Ask for the saved output, sources, checks and next owner. A [skill is a written recipe](https://localservicespotlight.com/plugin/); loading one does not prove account access or perform the task. Use the [installation guide](https://localservicespotlight.com/install/) if reusable setup is needed. A ZIP is a source snapshot, not an access grant or automatic update.
+
+Use the app’s actual supported tools and verified file/account access. Keep a missing human verification step with its real owner. Recurring work needs its own configured job, trigger, timezone and observed result; this guide creates no schedule. Before any media playback, mute the player and set its volume to zero. If silence cannot be verified first, use captions, frames, metadata or another silent check.
+
+## Record the real execution
+
+Open the run record when work begins. Keep one execution ID, starting recipe revision, real inputs and current state. Write the [meta article, the record of this execution](https://blitzmetrics.com/meta-article-prompt/) with actual steps, results, checks, failures and next owner. Writing is required; public release follows existing authority. Link it to this recipe and the [Task Library](https://local-service-spotlight.github.io/task-library/).
+
+Reuse the same execution ID for internal checks, revisions, retries and meta writing. A blocked run stays open with its dependency and owner, without an invented finish time. Dated public examples and distinct verified execution counts remain separate. Propose the smallest source-backed recipe improvement when the actual evidence reveals a defect.
 
 ## Definitive article & links
-- Hub: /personal-brand
-- Related: /digital-plumbing · /one-minute-video-guide · previous: register-personal-name-domain · next: set-up-professional-social-profiles → implement-person-schema-with-sameas-links
+
+- [Maintained source guide](https://blitzmetrics.com/personal-brand/)
+- [This task in the Task Library](https://local-service-spotlight.github.io/task-library/?task=build-personal-brand-website#task-build-personal-brand-website)
+- [Article Guidelines](https://localservicespotlight.com/article-guidelines/)
+- [Definitive article and task recipe standard](https://blitzmetrics.com/definitive-article-guide/)
+- [How recipes and run records fit together](https://localservicespotlight.com/meta-articles/)
+
+## Review and evidence still needed
+
+The inherited contributor status is `needs-work`. It is preserved, not promoted by this rewrite. That label alone does not prove document readiness, account access, an actual execution or a client result.
+
+The fictional example teaches the method and does not fill a real-run evidence gap. A named semantic reviewer must check the actual opening, full method, sources and handoff. Check the useful opening visual in the normal rendered guide at the current required desktop and mobile sizes, including 1280 × 800 and 390 × 844. Source readability checks do not prove public presentation or task execution.

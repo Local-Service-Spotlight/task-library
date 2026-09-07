@@ -413,11 +413,12 @@
   #btl-app *,#btl-app *::before,#btl-app *::after{animation:none !important;transition:none !important}
 }
 
-#btl-app .btl-start-map{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:8px;align-items:center;max-width:760px;margin:22px auto;text-align:center}
-#btl-app .btl-start-map div{min-height:132px;display:flex;flex-direction:column;justify-content:center;padding:14px 9px;border:1px solid rgba(125,211,252,.35);border-radius:12px;background:rgba(16,36,58,.75);min-width:0}
-#btl-app .btl-start-map b,#btl-app .btl-start-map div span{display:block;overflow-wrap:anywhere}
-#btl-app .btl-start-map b{font-size:16px;color:var(--ink)}
-#btl-app .btl-start-map div span{font-size:13px;color:var(--mut);margin-top:5px}
+#btl-app .btl-start-map{max-width:760px;margin:22px auto;text-align:center}
+#btl-app .btl-start-map svg{display:block;width:100%;height:168px}
+#btl-app .btl-start-map rect{fill:rgba(16,36,58,.75);stroke:rgba(125,211,252,.35)}
+#btl-app .btl-start-map text{fill:var(--mut);font-family:inherit;font-size:13px;text-anchor:middle}
+#btl-app .btl-start-map .btl-map-main{fill:var(--ink);font-size:15px;font-weight:750}
+#btl-app .btl-start-map .btl-map-arrow{fill:var(--ink);font-size:20px}
 #btl-app .btl-start-map figcaption{grid-column:1/-1;font-size:13px;color:var(--mut);margin-top:4px}
 #btl-app .btl-start{margin-top:24px;margin-bottom:24px}
 #btl-app .btl-start li{margin:0 0 12px;line-height:1.6}
@@ -435,7 +436,7 @@
 #btl-app .btl-prompt-preview textarea{display:block;width:100%;margin:12px 0;padding:10px;border:1px solid var(--line);border-radius:8px;color:#e3eaff;background:#0b1428;resize:vertical;font:12px/1.5 var(--mono)}
 
 #btl-app .btl-start summary{cursor:pointer;font-weight:700;padding:12px 0}
-@media(max-width:600px){#btl-app .btl-hero{padding-top:32px}#btl-app .btl-start-map{gap:4px}#btl-app .btl-start-map div{padding:10px 4px}#btl-app .btl-start-map b{font-size:14px}#btl-app .btl-start-map div span{font-size:12px}}
+@media(max-width:600px){#btl-app .btl-hero{padding-top:32px}#btl-app .btl-start-map .btl-map-main{font-size:14px}#btl-app .btl-start-map text{font-size:12px}}
 
 #btl-app .btl-library-details{margin:15px auto;color:var(--mut);max-width:860px;font-size:13px}
 #btl-app .btl-library-details summary{cursor:pointer;padding:8px}
@@ -455,17 +456,30 @@
     <div class="btl-eyebrow"><span class="pulse"></span>Local Service Spotlight Content Factory</div>
     <h1 class="btl-title">Local Service Spotlight <span>Task Library</span></h1>
     <p class="btl-sub">Use these guides to save time on work that helps your business grow. Pick one job, give AI the right facts, and check what it makes. Start with one draft you can review.</p>
-    <figure class="btl-start-map" aria-label="Pick a job, give it facts, check the result">
-      <div><b>1. Pick a job</b><span>Find its guide</span></div><span aria-hidden="true">→</span>
-      <div><b>2. Give it facts</b><span>Use the first prompt</span></div><span aria-hidden="true">→</span>
-      <div><b>3. Check the work</b><span>Save proof and next steps</span></div>
+    <figure class="btl-start-map">
+      <svg width="100%" height="168" role="img" aria-label="Pick a job and find its guide. Give it facts using the first prompt. Check the work and save proof and next steps.">
+        <rect x="0" y="2" width="28.5%" height="160" rx="12"/>
+        <rect x="35.75%" y="2" width="28.5%" height="160" rx="12"/>
+        <rect x="71.5%" y="2" width="28.5%" height="160" rx="12"/>
+        <text x="14.25%" y="65" class="btl-map-main">1. Pick a job</text>
+        <text x="14.25%" y="103">Find its guide</text>
+        <text x="32.125%" y="88" class="btl-map-arrow" aria-hidden="true">→</text>
+        <text x="50%" y="55" class="btl-map-main">2. Give it</text>
+        <text x="50%" y="75" class="btl-map-main">facts</text>
+        <text x="50%" y="110">Use the first</text><text x="50%" y="128">prompt</text>
+        <text x="67.875%" y="88" class="btl-map-arrow" aria-hidden="true">→</text>
+        <text x="85.75%" y="55" class="btl-map-main">3. Check</text>
+        <text x="85.75%" y="75" class="btl-map-main">the work</text>
+        <text x="85.75%" y="110">Save proof</text><text x="85.75%" y="128">and next steps</text>
+      </svg>
       <figcaption>A guide gives the steps. You choose the job and check the result.</figcaption>
     </figure>
     <div class="btl-cta">
       <a class="btl-btn btl-btn-primary" href="#btl-controls">Find a job ↓</a>
-      <a id="btl-dl" class="btl-btn btl-btn-ghost" href="#">⬇ Download guides + first steps (.zip)</a>
+      <a id="btl-dl" class="btl-btn btl-btn-ghost" href="TaskLibrary-Skills-all.zip">⬇ Download guides + first steps (.zip)</a>
     </div>
     <p class="btl-updated">New here? <a href="#btl-start-h">See how to start one job</a>. The ZIP includes START-HERE.md.</p>
+    <noscript><p class="btl-updated">Scripts are off. The ZIP above still works. Open START-HERE.md, then choose one guide. You can also <a href="library-index.html">see the task list</a>.</p></noscript>
     <details class="btl-library-details"><summary>Library counts and other downloads</summary>
     <p class="btl-updated"><span class="btl-live-total">—</span> SOPs. Their article mappings resolve to <span class="btl-live-article-hubs">—</span> hubs: <span class="btl-live-definitive">—</span> catalog-ready and <span class="btl-live-article-wip">—</span> in progress. A Definitive marker also requires review of the actual page.</p>
       <div id="btl-download-options"></div>

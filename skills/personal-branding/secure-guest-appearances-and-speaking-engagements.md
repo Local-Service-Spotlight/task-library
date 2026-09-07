@@ -1,6 +1,6 @@
 ---
 name: secure-guest-appearances-and-speaking-engagements
-description: Land speaking slots at conferences, webinars, and events that build verifiable third-party authority for the personal brand.
+description: "Find a stage where your work can help the room."
 category: Personal Branding
 stage: —
 definitive_article: /personal-brand
@@ -9,37 +9,72 @@ status: needs-work
 
 # Secure guest appearances and speaking engagements
 
-**Use this when** the brand has content and proof to point to and needs stage-level credibility — Phase 3 (Authority Building).
+Find a stage where your work can help the room. This guide prepares a clear talk pitch and tracks what happens next. Start with the right event and a real lesson its guests can use.
+
+**The path:** Audience fit → Specific talk pitch → Confirmed event → Delivered talk and proof
+
+**Start when:** The speaker has a checked kit and a suitable event may benefit from a proposed talk or guest session.
 
 ## Inputs
-- List of conferences, association events, meetups, and webinars in the person's niche — warm relationships first
-- Speaker kit already current per `keep-speaker-bureau-profile-bookable` (canonical bio, headshot, published fees, talk titles, proof links)
-- The entity home live at yourname.com
+
+- [Keep the speaker kit ready](https://local-service-spotlight.github.io/task-library/?task=keep-speaker-bureau-profile-bookable#task-keep-speaker-bureau-profile-bookable) with approved bio, talks, public fee terms and relevant real footage.
+- Verified event list, audience needs, submission process and actual organizer route.
+- Speaker availability, outreach authority, commercial decision owner and recording/use permissions.
 
 ## Steps
-1. List target events where the person's buyers or peers gather; rank by audience fit and whether the event publishes speaker pages — those links persist for years.
-2. Build the speaker one-sheet from existing assets: canonical bio, headshot, talk titles from the Topic Wheel, and links to videos and podcast features as proof of stage ability.
-3. Pitch organizers a specific talk that solves their audience's problems, not a company pitch; warm introductions from peers and past hosts convert best.
-4. Before the event, confirm the speaker page lists the exact canonical name, the canonical headshot, and a link to yourname.com.
-5. Get the talk recorded — conference footage is premium Content Factory raw material — and capture photos of the person on stage for the site's proof sections.
-6. Afterward: publish a recap article on the brand site embedding the talk, cut clips for social, thank the organizer with a Thank You Machine video, and log the speaking credit in the validation inventory.
+
+1. Inspect the event’s current audience, program and speaker-submission rules. Rank opportunities by the lesson the speaker can contribute and the people it serves. An event with a speaker page is useful evidence, but a listing or warm introduction does not guarantee a booking.
+2. Adapt one real approved talk to that audience using the kit. State the problem, practical takeaways, format and relevant source proof. Do not invent a new credential, imply a prior event booked this talk without evidence or use generic fame as its only value.
+3. Draft the precise organizer proposal and send only under existing authority. Track the original thread and real response. If fees, travel, rights or scope differ from the kit, prepare the exact terms for the authorized decision owner rather than accepting them implicitly.
+4. After acceptance, confirm date, timezone, location or virtual platform, format, audience, fee terms and required assets. Save the actual confirmation. A tentative hold is not a public announced appearance or a delivered talk.
+5. Check any permitted speaker page for correct identity, title, photo and useful home/booking link. Arrange real recording and photography rights with the organizer. A promise of footage is a dependency until the file is delivered and readable.
+6. After the session, record what actually occurred and acquire the permitted source files. Hand off recording, photos, date, event context and use rights to the content team. Preserve a cancellation, missing footage or changed program honestly.
+7. Prepare a useful recap, selected clips and specific acknowledgment through their own authorized release steps. Add the real appearance to the evidence record; a delivered talk is not automatically praise or proof of a wider partnership.
 
 ## Definition of done (QA checklist)
-- [ ] Talk delivered; speaker page live with exact name and link to yourname.com
-- [ ] Recording and stage photos captured and fed into the Content Factory
-- [ ] Recap published; organizer thanked publicly; credit logged in the validation inventory
-- [ ] Linked back to the definitive article and relevant siblings
-- [ ] Complies with Blog Posting Guidelines (if it publishes content)
+
+Quality assurance (QA) means checking the actual result against its agreed requirements. Follow the [Article Guidelines](https://localservicespotlight.com/article-guidelines/).
+
+- [ ] The talk proposal fits the verified audience and approved expertise/terms.
+- [ ] Pitched, booked, delivered and published states have actual evidence.
+- [ ] Real footage, rights, credits and next ownership are recorded without guaranteed media or booking claims.
+- [ ] The exact output, source revision, reviewer evidence and remaining owner action are saved.
+- [ ] For any reader-facing output, the short grade-five opening states the reader’s useful outcome and supporting method or proof. The body delivers that promise; a useful authentic visual appears in the first screen. Retain exact text and quoted reviewer evidence.
 
 ## Example(s)
-- Example needed — run the Meta-Article Prompt after first real run.
 
-## Run on a persistent agent (Fable 5)
-A persistent agent (Claude Fable 5 or a comparable OpenAI/Google model) works the event pipeline across months: it ranks targets, builds the one-sheet from the bio, headshot, and talk titles held in memory, pitches organizers, and follows every thread until each engagement's Definition-of-done fully passes — not 90%.
-It self-verifies the speaker page before and after the event: exact canonical name, canonical headshot, live link to yourname.com.
-Recordings, stage photos, and speaking credits flow into memory for the Content Factory and the Phase 4 validation inventory, and a meta-article example is logged each run (this file still needs its first) so the brand compounds.
-See `boil-the-ocean.md` for the full operating principles.
+**Fictional teaching example. This is not a client result or proof of a completed run.**
+
+A fictional safety trainer is accepted for a 20-minute trade event talk. The organizer approves a public speaker listing but declines recording. The trainer delivers the talk and obtains a permitted stage photo. The inventory records the actual talk and photo, while the recap avoids claiming a video that was never made.
+
+## Handoff and Content Factory context
+
+[Capture and hand off permitted event footage](https://local-service-spotlight.github.io/task-library/?task=film-conference-presentations#task-film-conference-presentations) receives actual recording needs; [Turn the source into an article](https://local-service-spotlight.github.io/task-library/?task=repurpose-videos-into-blog-posts-via-content-factory#task-repurpose-videos-into-blog-posts-via-content-factory) receives the available source, and [Check outside proof](https://local-service-spotlight.github.io/task-library/?task=build-third-party-validation#task-build-third-party-validation) receives the checked appearance.
+
+This task supports the [Content Factory: Produce, Process, Post and Promote](https://blitzmetrics.com/content-factory/). Identity, proof, access or coordination can support several stages. Use the real inputs and receiving owner above; this task does not create unrelated transcripts, clips or ads merely because the diagram has four stages.
+
+## Start with an agent
+
+Give the [AI worker](https://blitzmetrics.com/build-agents/) this recipe, the real inputs, desired result and actions already authorized. Ask for the saved output, sources, checks and next owner. A [skill is a written recipe](https://localservicespotlight.com/plugin/); loading one does not prove account access or perform the task. Use the [installation guide](https://localservicespotlight.com/install/) if reusable setup is needed. A ZIP is a source snapshot, not an access grant or automatic update.
+
+Use the app’s actual supported tools and verified file/account access. Keep a missing human verification step with its real owner. Recurring work needs its own configured job, trigger, timezone and observed result; this guide creates no schedule. Before any media playback, mute the player and set its volume to zero. If silence cannot be verified first, use captions, frames, metadata or another silent check.
+
+## Record the real execution
+
+Open the run record when work begins. Keep one execution ID, starting recipe revision, real inputs and current state. Write the [meta article, the record of this execution](https://blitzmetrics.com/meta-article-prompt/) with actual steps, results, checks, failures and next owner. Writing is required; public release follows existing authority. Link it to this recipe and the [Task Library](https://local-service-spotlight.github.io/task-library/).
+
+Reuse the same execution ID for internal checks, revisions, retries and meta writing. A blocked run stays open with its dependency and owner, without an invented finish time. Dated public examples and distinct verified execution counts remain separate. Propose the smallest source-backed recipe improvement when the actual evidence reveals a defect.
 
 ## Definitive article & links
-- Hub: /personal-brand
-- Related: /speaker-kit · /thank-you-machine · /content-factory · /topic-wheel · previous: keep-speaker-bureau-profile-bookable · next: film-conference-presentations
+
+- [Maintained source guide](https://blitzmetrics.com/personal-brand/)
+- [This task in the Task Library](https://local-service-spotlight.github.io/task-library/?task=secure-guest-appearances-and-speaking-engagements#task-secure-guest-appearances-and-speaking-engagements)
+- [Article Guidelines](https://localservicespotlight.com/article-guidelines/)
+- [Definitive article and task recipe standard](https://blitzmetrics.com/definitive-article-guide/)
+- [How recipes and run records fit together](https://localservicespotlight.com/meta-articles/)
+
+## Review and evidence still needed
+
+The inherited contributor status is `needs-work`. It is preserved, not promoted by this rewrite. That label alone does not prove document readiness, account access, an actual execution or a client result.
+
+The fictional example teaches the method and does not fill a real-run evidence gap. A named semantic reviewer must check the actual opening, full method, sources and handoff. Check the useful opening visual in the normal rendered guide at the current required desktop and mobile sizes, including 1280 × 800 and 390 × 844. Source readability checks do not prove public presentation or task execution.

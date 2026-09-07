@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-09-06T21:35:51+00:00",
+ "generatedAt": "2026-09-06T23:01:57+00:00",
  "countDefinition": "Verified meta-article sources explicitly classified by the recorded evidence method and linked to the normalized canonical hub. Unknown is never coerced to zero.",
  "strengthBands": [
   {
@@ -2473,6 +2473,8 @@
    "taskCoverage": null,
    "priorityCoverage": null,
    "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?article=https%3A%2F%2Fblitzmetrics.com%2Fthank-you-machine",
+   "stateReason": "Semantic certification held: the ordinary public URL redirects to /face-socks/ (How to Order Custom Face Socks, post 103160). That gift-ordering recipe does not certify the mapped thank-you video, tagging and paid-test workflows. The canonical video destination needs owner reconciliation; contributor task states are unchanged.",
+   "stateReviewed": "2026-09-06",
    "records": []
   },
   {

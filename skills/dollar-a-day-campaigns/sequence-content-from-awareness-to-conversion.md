@@ -1,6 +1,6 @@
 ---
 name: sequence-content-from-awareness-to-conversion
-description: Chain audiences cold → engagement → warm → conversion so $1/day viewers are remarketed down the funnel instead of being pitched on first touch.
+description: "Give each post a clear job. Help people learn, see proof and take a useful next step."
 category: Dollar a Day Campaigns
 stage: Promote
 definitive_article: /dad
@@ -9,40 +9,81 @@ status: needs-work
 
 # Sequence content from awareness to conversion
 
-**Use this when** individual ad sets are winning and it's time to connect them into a funnel — most ad waste comes from showing the offer to strangers.
+People need different help at each stage of a choice. Some need a clear answer. Others need proof or a way to get help. This guide helps you put the right posts in a useful order.
+
+**The path:** Helpful introduction → deeper proof → fitting offer → stage review.
+
+**Use this when:** The campaign has proven posts for more than one stage and needs a coherent path toward the business goal.
 
 ## Inputs
-- Proven cold creatives (one-minute videos, organic winners) and warm proof content (client stories, testimonials, WHY video)
-- Custom audiences live and populating (video viewers, engagers, site visitors)
-- The funnel levels from Nine Triangles: Audience → Engagement → Conversion
+- Proven source posts, their goals, rights and metrics; actual offer and working next-step destination.
+- Current eligible audience sources, retention windows, exclusions and tracking limits.
+- Stage targets, total budget, dates, current account roles and action scope; a tracker that relates posts and audiences without claiming person-by-person knowledge.
+
+## First-run prompt
+
+> Map these approved posts into an introduction, proof and offer path. Use actual supported audience rules and one clear metric per stage. Show any missing proof or audience eligibility. Do not promise every viewer moves through the sequence or create new spending outside scope.
 
 ## Steps
-1. Assign every active creative a funnel level — cold (awareness), warm (engagement/trust), or conversion (offer). A creative without a level is a creative without a job.
-2. **Cold stage**: run $1/day one-minute videos and proven winners to interest/geo layers. The goal is cheap genuine attention — video views and engagement — never the sale.
-3. Harvest the cold stage into audiences: video viewers (weight toward higher-percentage viewers), page engagers, site visitors. The real product of cold ads is these custom audiences.
-4. **Warm stage**: retarget those engagers at $1/day with deeper proof — client stories, testimonials, the WHY video. Familiarity first, credibility second.
-5. **Conversion stage**: only the warm audience sees the offer — quote, consult, booking, lead form — plus remarketing to recent landing-page abandoners. Strangers never see the pitch.
-6. Keep the stages clean with exclusions: warm audiences excluded from cold prospecting, converters excluded from conversion ads. Leaky stages double-spend.
-7. Read the funnel weekly with MAA, one metric per stage: cost per view (cold), cost per engaged visitor (warm), cost per lead/sale (conversion). Fix the stage that breaks — not the whole funnel.
+1. Write the path in plain terms: introduce why this matters, show how the work helps, then offer a fitting next step. The owned 3×3 method collects three WHY, three HOW and three WHAT pieces; do not fill missing slots with weak or invented proof.
+2. Assign each existing post a primary job and source link. WHY content may introduce the person or purpose; HOW teaches and builds trust; WHAT explains the offer. Choose by what the actual post does, not an automatic label based on who appears.
+3. Match one main metric to each job, such as a defined view measure, a useful engagement or a qualified lead. Record definitions and targets so a cheap awareness result is not mistaken for profitable conversion.
+4. List the actual eligible audience source and time window for the next stage. Platform consent, matching, format and minimum-size rules can limit remarketing. A viewer is not automatically an identifiable or reachable lead.
+5. Use the supported inclusion and exclusion settings needed for the plan. Read whether an audience is a strict rule or only a suggestion. Do not claim a perfectly isolated sequence when expansion, overlap or unavailable controls prevent it.
+6. Pair deeper proof with people for whom it is relevant, and connect the offer to a clear need. The default nurture path is useful, but “strangers must never see an offer” is not a universal rule; high-intent goals may call for a direct relevant offer within the plan.
+7. Price every active stage and verify the chosen budget controls and dates. $1/day per eligible small test is the method’s starting idea, not proof every platform or small warm group can deliver it. Keep an unavailable stage pending instead of broadening it without scope.
+8. Review stage costs and actual downstream quality together. Find the specific weak link and name one next action. Do not add reach, views and leads together as unique people or attribute every sale to the sequence.
 
 ## Definition of done (QA checklist)
-- [ ] Every active creative assigned a funnel level; no offer creative targeting cold audiences
-- [ ] Custom audiences chained cold → warm → conversion with exclusions in place
-- [ ] $1/day per ad set maintained at every stage until a winner earns scaling
-- [ ] Stage-level metrics reviewed weekly with one corrective action named
-- [ ] Linked back to the definitive article and relevant siblings
-- [ ] Complies with Blog Posting Guidelines (if it publishes content)
+
+- [ ] Every used post has a source-backed stage job and metric.
+- [ ] Missing 3×3 pieces remain gaps rather than fabricated winners.
+- [ ] Audience eligibility, controls and overlap limits are explicit.
+- [ ] Each stage fits the actual budget and dates.
+- [ ] The review identifies a specific weak link and next owner without overstating attribution.
 
 ## Example(s)
-- Example needed — run the Meta-Article Prompt after first real run (candidate: a local-service funnel — answer video → testimonial retarget → quote offer — with stage costs).
 
-## Run on a persistent agent (Fable 5)
-The funnel is a standing system, so run it on a persistent agent (Claude Fable 5 or comparable OpenAI/Google models) that re-verifies the full Definition of done weekly — every creative leveled, exclusions intact, stage metrics read, one corrective action named; a leaky exclusion or a skipped weekly stage review is a missed check, and in Dollar a Day a missed check is a failed run.
-It self-verifies that no offer creative can reach a cold audience and keeps stage-cost history in memory, so it fixes the one stage that broke instead of rebuilding the funnel on instinct.
-Log each weekly read and its fix as a meta-article example so the library compounds.
-See `boil-the-ocean.md` for the full operating principles.
+**Fictional teaching example:** A repair shop has an owner’s WHY story, a seat-fix HOW clip and a WHAT post explaining a tune-up appointment. It has only these three qualified pieces, so the 3×3 plan records six open slots. An eligible engaged-viewer audience can receive the deeper proof, but a site-visitor group is too small for the intended offer test. That stage stays pending. The team can still check the offer page and gather organic proof; it does not claim everyone who watched the first clip saw all three.
+
+## Handoff and Content Factory context
+
+Send missing source content to its content owner through [record one minute videos](https://local-service-spotlight.github.io/task-library/?task=record-one-minute-videos#task-record-one-minute-videos). Give the stage report to [analyze cost per result and engagement](https://local-service-spotlight.github.io/task-library/?task=analyze-cost-per-result-and-engagement#task-analyze-cost-per-result-and-engagement) and any budget decision to the campaign owner.
+
+This task is in Promote within the [Content Factory](https://blitzmetrics.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. Use the proof and checked posts from earlier stages; a Promote task does not automatically redo all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
+
+## When this runs
+
+Design once, then review on the active campaign’s agreed weekly cadence when one exists. Actual audience and budget checks need a configured owner/trigger; this file does not create a perpetual funnel.
+
+## First-run setup and continuity
+
+Open the supplied task file and its linked source. Verify the project’s real inputs, account, access and output folder before work. This Markdown file is a guide; it does not install an app, connect an account, supply a subscription or create a schedule. Carry out work already authorized; do not ask for the same approval again. Keep any unsupplied destination or new action outside that scope clearly pending.
+
+Save source IDs, versions, decisions, checked outputs and next owner in the project tracker. Before a retry, check the saved state and other workers’ changes. A model name does not guarantee memory or a running timer. Repeated work needs an actual configured trigger and durable state; one-off work can be started by the prompt above.
+
+Keep agent media muted with volume zero before playback. If mute cannot be verified, use captions, metadata or still frames. State the limit: silent visual checks do not prove spoken-word accuracy or audio quality. Do not start sound through the user’s speakers unless explicitly asked.
+
+## Write up the real run
+
+For every actual attempt, [write its meta article](https://blitzmetrics.com/meta-article-prompt/) with this recipe and revision, trigger, steps performed, output evidence, measured result, gaps and next owner. Failed, blocked and partial attempts also get a written record. A draft can satisfy writing; publishing it follows the existing job scope.
+
+Keep one stable execution ID across retries and edits. A separately scoped child task may have its own ID linked to its parent. Writing the parent’s meta record is part of that run, not an endless new chain. The [recipe and meta-article guide](https://localservicespotlight.com/meta-articles/) explains this distinction. Teaching examples are not real executions and must not enter the run count.
 
 ## Definitive article & links
-- Hub: /dad
-- Related: /nine-triangles (funnel levels: Audience, Engagement, Conversion) · /social-amplification (Stage 5 remarketing) · /one-minute-video-guide (the cold-stage fuel)
-- Run order (DAD core): execute-switch-boosts-to-new-audiences → **sequence-content-from-awareness-to-conversion** (the standing end-state of the system)
+
+- Maintained method: https://blitzmetrics.com/dollar-a-day/
+- Source mapping needs reconciliation: the preserved `definitive_article: /dad` points to the coaching program. The method page above is `/dollar-a-day/`; this record does not certify the coaching page as a task recipe.
+- Exact task: [Sequence content from awareness to conversion](https://local-service-spotlight.github.io/task-library/?task=sequence-content-from-awareness-to-conversion#task-sequence-content-from-awareness-to-conversion)
+- Writing standard: [Article Guidelines](https://localservicespotlight.com/article-guidelines/)
+- [Dollar-a-Day method](https://blitzmetrics.com/dollar-a-day/)
+- [Goals, Content, and Targeting](https://blitzmetrics.com/gct-business-strategy/)
+- [Metrics, Analysis, and Action](https://blitzmetrics.com/maa/)
+- [Meta Advantage+ audience help](https://www.facebook.com/business/ads/meta-advantage-plus/audience)
+- [Google video ad formats](https://support.google.com/google-ads/answer/2375464?hl=en)
+
+## Review and evidence still needed
+
+The source contributor status is preserved. It is not certification of this draft or proof of account access, completed work or a live outcome. The worked example teaches the method and is explicitly fictional.
+- No real audience eligibility or complete nine-piece winner set is supplied.
+- The owned article’s universal viewer-retargeting wording needs its own correction; this draft does not certify that body claim.

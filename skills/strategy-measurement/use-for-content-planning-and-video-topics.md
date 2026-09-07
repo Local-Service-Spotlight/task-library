@@ -1,6 +1,6 @@
 ---
 name: use-for-content-planning-and-video-topics
-description: Turn the completed Topic Wheel into a prioritized one-minute video recording plan, so content production runs from a mission-anchored backlog instead of day-of improvisation.
+description: "Make a useful plan for your next set of clips."
 category: Strategy & Measurement
 stage: —
 definitive_article: /topic-wheel
@@ -9,41 +9,70 @@ status: complete
 
 # Use for content planning and video topics
 
-**Use this when** all three rings of the Topic Wheel are mapped and it's time to convert the wheel into recording sessions, a content calendar, and shipped videos.
+Make a useful plan for your next set of clips. This guide turns your topic map and real questions into a short list of clips to make. Start with the offer, the stories you can prove and the time you have.
+
+**The path:** Wheel + demand → Clear prompts → Recording plan → Editor
+
+**Start when:** A checked Topic Wheel needs to become a bounded recording plan.
 
 ## Inputs
-- The completed Topic Wheel (WHY center, HOW spokes, WHAT items)
-- Signal on which questions matter most: frequency in sales calls, search/keyword data, past content performance
-- The owner's recording availability (phone, no studio needed — see /one-minute-video-guide)
+
+- [The WHAT offer](https://local-service-spotlight.github.io/task-library/?task=map-what-ring-specific-content#task-map-what-ring-specific-content), [HOW topics](https://local-service-spotlight.github.io/task-library/?task=map-how-ring-methods#task-map-how-ring-methods) and [WHY stories](https://local-service-spotlight.github.io/task-library/?task=map-why-ring-core-purpose#task-map-why-ring-core-purpose).
+- Real customer questions, source proof, current content results and the [SEO Tree, the map of related pages](https://blitzmetrics.com/seo-tree/).
+- The speaker’s availability, recording setup, existing library and receiving editor.
 
 ## Steps
-1. Export the WHAT ring into a flat topic list, keeping each item tagged with its HOW spoke so coverage per pillar stays visible.
-2. Prioritize by demand: questions customers ask most (and searches with real volume) first. The wheel says what's on-mission; demand says what's next.
-3. Balance across spokes: schedule so every HOW pillar ships content each month rather than exhausting one spoke while others sit empty.
-4. Batch topics into recording sessions — a prioritized list of titles per session so the owner answers question after question on camera in one sitting (one take, one minute, unscripted, per /one-minute-video-guide).
-5. Feed recorded videos into the Content Factory pipeline (/content-factory) so each becomes an article, clips, and social posts — one wheel item, many assets.
-6. Mark items shipped on the wheel and refill: new customer questions get added to the WHAT ring as they appear, keeping the backlog alive.
-7. Measure it: apply the 90/10 content strategy and MAA — topics that perform earn follow-ups and promotion; spokes that consistently underperform get re-examined at the next wheel review.
+
+1. Read the current wheel with WHAT in the center, HOW in the middle and WHY stories outside. Use its relevant stories and topic-linked questions to make a separate recording backlog; do not export an imaginary outer WHAT ring.
+2. For each prompt, record the source, topic, intended viewer, purpose and owned destination page. Keep real questions in the customer’s language where appropriate and distinguish a proposed story from existing proof.
+3. Prioritize by the current business goal, repeated customer need, usable proof and production effort. Search volume or last period’s winner is a signal, not a guaranteed future outcome.
+4. Check for relevant existing assets that can be reused. Apply the source’s 90/10 greatest-hits principle to the declared effort unit, leaving a bounded portion for new tests.
+5. Prepare one session’s prompts that fit the available time. Give the speaker a question and source reminders rather than invented first-person claims. Use the [one-minute guide](https://blitzmetrics.com/one-minute-video-guide/) for a clear short answer; split a topic that needs more.
+6. Agree the actual recording owner, date and file handoff. A plan is not a scheduled calendar event until saved and verified, and a planned clip is not recorded.
+7. After the authorized session, link the selected takes and actual remaining gaps in the library. Hand only real available sources to the editor and use later results to refine the next plan.
 
 ## Definition of done (QA checklist)
-- [ ] Flat, prioritized topic list exported from the WHAT ring with spoke tags
-- [ ] Next recording session scheduled with its batch of titles
-- [ ] Monthly coverage across all HOW spokes (no dead pillars)
-- [ ] Shipped items marked on the wheel; new questions added to the backlog
-- [ ] Topic performance reviewed in the MAA cycle to steer future priority
-- [ ] Linked back to the definitive article and relevant siblings
-- [ ] Complies with Blog Posting Guidelines (if it publishes content)
+
+Quality assurance (QA) means checking the result against its agreed requirements; see the [Article Guidelines](https://localservicespotlight.com/article-guidelines/).
+
+- [ ] Prompts use correct wheel relationships and trace to real questions or proof.
+- [ ] The bounded session plan has a speaker, time, sources and editor handoff.
+- [ ] Planned, recorded, usable and published states remain distinct in the backlog.
 
 ## Example(s)
-- Example needed — run the Meta-Article Prompt after first real run. (The hub at /topic-wheel links live examples; pull the closest match into this slot.)
 
-## Run on a persistent agent (Fable 5)
+**Fictional teaching example. This is not a client result or proof of a completed run.**
 
-A persistent, max-effort agent (Claude Fable 5 or comparable OpenAI/Google models) converts the wheel into production on a standing cadence: it exports and prioritizes by demand, balances coverage across spokes, batches the recording sessions, and loops until the Definition of done fully passes — no dead pillars, next session scheduled, shipped items marked.
-It self-verifies monthly spoke coverage before closing rather than assuming the calendar held.
-Memory makes the priority self-correcting: topic performance is compared against prior periods in the MAA loop — a true memory cycle feeding the 90/10 rule — new customer questions refill the WHAT ring as they appear, and a meta-article example is logged each run.
-See `boil-the-ocean.md` for the full operating principles.
+A fictional bike shop has five source-backed questions but time for three clips. It picks the three that match its current service goal and saves the other two as pending. After recording, one take has no usable picture. The editor gets two selected files, and the plan records that the third still needs a take.
+
+## Handoff and Content Factory context
+
+[Record the planned clips](https://local-service-spotlight.github.io/task-library/?task=record-one-minute-videos#task-record-one-minute-videos) receives the prompts; [Process the saved source files](https://local-service-spotlight.github.io/task-library/?task=step-1-upload-video-to-google-drive-and-descript#task-step-1-upload-video-to-google-drive-and-descript) receives the actual usable takes.
+
+This work supports Produce in the [Content Factory: Produce, Process, Post and Promote](https://blitzmetrics.com/content-factory/). The selected sources pass to Process, approved outputs go to Post, and useful proven work can enter Promote. The real inputs and handoff above set this task’s scope.
+
+## Start with an agent
+
+Give the AI worker this recipe, the real Inputs, the desired result and the actions already authorized. Ask for the saved output, source evidence, passed and failed checks, and the next owner. A skill is a set of instructions. Loading it does not prove access, install a scheduled job or complete the work. Use the [current installation guide](https://localservicespotlight.com/install/) only if reusable setup is needed; a ZIP contains instructions and is not an access grant.
+
+Use the actual supported app and verified source access. A model name is not a promise of browser control, memory or unattended work. For recurring work, inspect the real job’s trigger, owner, timezone and observed firing; this recipe creates no schedule. Before any media playback, mute the player and set volume to zero. A silent review does not prove sound was heard.
+
+## Record the real execution
+
+Open the run record when work begins. Keep one execution ID, the exact starting recipe revision, input sources and actual state. Write a [meta article, the record of one real execution](https://blitzmetrics.com/meta-article-prompt/) with results, checks, failures and next owner. Link it to this task in the [Task Library](https://local-service-spotlight.github.io/task-library/). Writing is required; public release follows existing authority.
+
+Reuse the same execution ID for internal reviews, meta writing, revisions and retries. A blocked run stays open with its dependency and owner, without an invented finish time. Keep historical public examples as dated evidence; article counts alone are not verified execution frequency. Use supported findings to propose and verify a recipe improvement.
 
 ## Definitive article & links
-- Hub: /topic-wheel
-- Related, in run order: map-why-ring-core-purpose, map-how-ring-methods, map-what-ring-specific-content, /one-minute-video-guide, /content-factory
+
+- [Maintained source guide](https://blitzmetrics.com/topic-wheel/)
+- [This task in the Task Library](https://local-service-spotlight.github.io/task-library/?task=use-for-content-planning-and-video-topics#task-use-for-content-planning-and-video-topics)
+- [Article Guidelines](https://localservicespotlight.com/article-guidelines/)
+- [Definitive article and task recipe standard](https://blitzmetrics.com/definitive-article-guide/)
+- [How recipes and run records work together](https://localservicespotlight.com/meta-articles/)
+
+## Review and evidence still needed
+
+The inherited contributor status is `complete`. It is preserved, not promoted by this rewrite. That label alone does not verify document readiness, account access, an actual execution or a client outcome.
+
+A relevant real execution, source evidence, independent reviewer and accepted handoff remain to be recorded. The fictional example teaches the method and does not fill a real-run evidence gap. The opening and full method need a named semantic reviewer; the task-specific path is source guidance, with visible desktop/mobile presentation still to check.

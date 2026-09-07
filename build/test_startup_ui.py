@@ -27,6 +27,13 @@ class StartupUI(unittest.TestCase):
         self.assertIn('This is a contributor claim',got['html'])
         self.assertIn('installation and account access are not checked here',got['html'])
 
+    def test_script_free_download_has_a_real_target_and_start_instructions(self):
+        html=(ROOT/'dashboard/index.html').read_text()
+        link=re.search(r'<a\b[^>]*id="btl-dl"[^>]*>',html).group()
+        self.assertIn('href="TaskLibrary-Skills-all.zip"',link)
+        fallback=re.search(r'<noscript>(.*?)</noscript>',html,re.S).group(1)
+        self.assertIn('Open START-HERE.md',fallback)
+
     def test_empty_guide_copy_reports_the_gap_without_writing_clipboard(self):
         source=(ROOT/'dashboard/app.js').read_text()
         fn=re.search(r'function copyGuide\([^)]*\)\{.*?\n\}',source,re.S).group()

@@ -14,7 +14,7 @@
       },
       "startedAt": "2026-09-05T08:01:40Z",
       "status": "running",
-      "result": "The former four-page publishing block is cleared. All 276 downloads have first-step setup guidance; 101 guide rewrites are locally reviewed and all 90 tests pass. Public release verification and the wider grade-5/article review continue. This is the same unfinished execution; no completed task is claimed.",
+      "result": "The former publishing block is cleared. Public PR15 delivered startup guidance and seven checked ZIPs. The next candidate contains 275 reviewed instruction sources; the remaining external Google Ads contribution needs exact-destination approval and upstream release. All 86 current article URLs match saved text; current visual and source consistency repairs continue. This is one unfinished execution, not 276 completed client tasks.",
       "evidence": [
         {
           "visibility": "public",
@@ -75,14 +75,38 @@
         {
           "visibility": "private",
           "sha256": "199a7000812910dc28195dd41c16da08d4bff770aa16564e2e14179965de55f6"
+        },
+        {
+          "visibility": "public",
+          "url": "https://github.com/Local-Service-Spotlight/task-library/pull/15"
+        },
+        {
+          "visibility": "public",
+          "url": "https://github.com/dennisyu/local-service-spotlight-skills/pull/46"
+        },
+        {
+          "visibility": "private",
+          "sha256": "07136c3769437e1155eaf89ac53e2909951fcce071806764c5414e3779f7d3bb"
+        },
+        {
+          "visibility": "private",
+          "sha256": "c39cab35b3005736b139cd35682790ffc5a9c36b0fe911c54715dacfcb1d1b24"
+        },
+        {
+          "visibility": "private",
+          "sha256": "e44254aed8500daeb3e071550765e861e978c0f3123fa49266298a964f3353ff"
+        },
+        {
+          "visibility": "private",
+          "sha256": "5630116f875d672d36a26e8ddef9856c5cf074e0b3a0f74bc96e9c1397e11be0"
         }
       ],
       "metaArticle": {
         "status": "draft",
-        "draftSha256": "57f782eb7490f14ab5f45b2a6fcf38e38c8d8fc4134db3c85246080a6e674718"
+        "draftSha256": "17218b97daa945dc6324ba2652db75807662d9d7fe4f93b5507be6c343b797fa"
       },
       "recordedAt": "2026-09-06T01:18:27.649605+00:00",
-      "updatedAt": "2026-09-06T21:20:33.507665+00:00"
+      "updatedAt": "2026-09-06T23:01:18.143212+00:00"
     }
   ]
 }

@@ -1,6 +1,6 @@
 ---
 name: use-dollar-a-day-to-influence-media-coverage
-description: Aim $1/day ad sets at the journalists, editors, podcasters, and producers who cover your space, so your proof and stories earn familiarity first and press mentions second.
+description: "Share useful proof with the right readers. Keep a clear record of real press links."
 category: Dollar a Day Campaigns
 stage: Promote
 definitive_article: /dad
@@ -9,40 +9,80 @@ status: needs-work
 
 # Use Dollar a Day to influence media coverage
 
-**Use this when** earned media is the goal — press, podcasts, trade coverage — and cold pitching alone isn't landing; $1/day makes you familiar before you ever ask.
+You have a useful story that could help a writer’s readers. This guide helps you share that proof and track real interest. Start with the story and the kind of reader it serves.
+
+**The path:** Useful proof → relevant readership → bounded test → verified mention.
+
+**Use this when:** Earned coverage is a stated goal and the business has relevant, quotable evidence fit for public use.
 
 ## Inputs
-- A named media list: 10–30 journalists, editors, podcasters, producers who cover the beat
-- Quotable proof content: client results, contrarian one-minute takes, data, the WHY story
-- Press-list custom audiences (site visitors from press pages, engaged media contacts, uploaded press emails)
+- A verified story, underlying sources and permission for public claims, media and data.
+- A researched list of relevant outlets/beats and public professional contact context; no scraped private-contact audience is assumed.
+- Campaign goal, permitted audience options, exact budget/dates and separate authority for any outreach, posting or paid action.
+
+## First-run prompt
+
+> Review this story’s proof and build a relevant readership plan for the stated coverage goal. Keep ad distribution separate from journalist outreach and earned coverage. Use only authorized audience sources and actions. Report observed mentions with dates and links, without claiming a named person saw an ad.
 
 ## Steps
-1. Define the Goal precisely (GCT): which coverage — trade press, local news, podcasts, industry newsletters — and name the 10–30 people who write it. "The media" is not a target; a list of names is.
-2. Choose Content a journalist could quote, not an ad: strongest client results, a contrarian one-minute take, original data, the founder's WHY. Material that makes their story better.
-3. Build narrow layers that proxy the media audience: interest clusters around the publications and the beat, geo around their media markets, custom audiences from your press list and press-page visitors, lookalikes of engaged journalist contacts.
-4. Run **$1/day per ad set** into these tiny audiences. At this audience size, a dollar a day buys repeated, familiar presence — the journalist keeps seeing your name until you're "that person everyone in the space is talking about."
-5. Pair ads with genuine human touch: thank-you videos to writers whose coverage you appreciated (/thank-you-machine), thoughtful comments, shares of their work. Ads warm the room; humans close it.
-6. When coverage lands, amplify the coverage itself with $1/day — publications notice who drives their numbers — and add the mention to the E-E-A-T sections of your definitive articles and personal brand site.
-7. Run MAA monthly: media-list engagement, replies, inbound press inquiries, earned mentions. Rotate stories monthly so familiarity builds without fatigue.
+1. Define the desired coverage by topic and outlet fit. Research a manageable list of journalists, editors or hosts whose actual work serves that audience. Names are editorial context, not a promise that the ad system can reach each person.
+2. Choose something useful to their readers: a documented method, a real result with its limits, or original data with a clear method. Do not manufacture a controversy, testimonial or relationship to make the pitch stronger.
+3. Check every public claim against the actual source. A mention, interview or shared stage proves only that event. Preserve permission and confidentiality; a client result cannot be reused merely because it exists in a private file.
+4. Map available broad professional/topic or market audiences to the readership. Use any custom audience only with the required rights and current platform eligibility. Do not scrape press emails or assume a tiny named list can deliver ads.
+5. If a paid test is in scope, use the real supported minimum, budget controls and dates. Record the audience as a proxy or look-alike where that is what the platform provides. $1/day does not guarantee repeated exposure to a specific journalist.
+6. Prepare useful outreach separately: a relevant source, brief explanation or genuine response to published work. Send only when that message is authorized. Ads do not authorize email, comments, tags or thank-you videos to anyone.
+7. When a mention is observed, read the exact public source and capture its date, wording and relationship strength. Keep paid placements, contributed material and independent editorial coverage distinct. Reuse or amplify only the material and excerpt rights actually allowed.
+8. Review observed inquiries, replies and verified coverage on the agreed cycle. A mention after an ad is a sequence in time, not proof the ad caused it. Name the next story or follow-up from actual evidence rather than promising press results.
 
 ## Definition of done (QA checklist)
-- [ ] Named media list documented with beat and outlet per person
-- [ ] Quotable proof content selected (not promotional creative)
-- [ ] Narrow media-proxy layers running at $1/day with monthly story rotation
-- [ ] Human outreach paired with the ads; earned mentions logged, re-amplified, and added to E-E-A-T sections
-- [ ] Linked back to the definitive article and relevant siblings
-- [ ] Complies with Blog Posting Guidelines (if it publishes content)
+
+- [ ] The story is relevant and every public proof claim is source-backed.
+- [ ] Named media research is not mislabeled as exact-person ad delivery.
+- [ ] Audience data rights and real budget controls are checked.
+- [ ] Outreach, publication and spending remain within their distinct existing scopes.
+- [ ] Verified coverage, paid placement and causal uncertainty are accurately recorded.
 
 ## Example(s)
-- Example needed — run the Meta-Article Prompt after first real run (candidate: a $1/day media-familiarity campaign that preceded a trade-press mention, with the engagement-to-coverage timeline).
 
-## Run on a persistent agent (Fable 5)
-Familiarity with 10–30 named journalists is built over months of small checks — exactly what a persistent agent (Claude Fable 5 or comparable OpenAI/Google models) is for: hold the $1/day layers, rotate stories monthly, run the MAA on media-list engagement, and loop until the Definition of done fully passes; a missed monthly kill/rotate check lets fatigue burn the very list you're courting, which by the Dollar a Day rule is a failed run.
-It keeps the media list, story rotations, and every earned mention in memory, so each cycle deepens specific relationships instead of re-warming the room from zero, and it self-verifies that mentions actually got re-amplified and added to E-E-A-T sections.
-Log each engagement-to-coverage sequence as a meta-article example so the library compounds.
-See `boil-the-ocean.md` for the full operating principles.
+**Fictional teaching example:** A repair shop publishes a documented guide to common school-bike faults using permissioned, anonymous aggregate service data. A local transport newsletter is a relevant reader match. The paid test targets an available local topic audience, not a promise to reach its editor. Later, the newsletter links the guide. The record keeps the link and date, calls it an observed mention and says attribution is unknown. It does not turn the mention into an endorsement or claim a private friendship with the editor.
+
+## Handoff and Content Factory context
+
+Give verified public mentions to the content owner for source-accurate use. Give paid results to [analyze cost per result and engagement](https://local-service-spotlight.github.io/task-library/?task=analyze-cost-per-result-and-engagement#task-analyze-cost-per-result-and-engagement). The assigned relationship owner handles only the specific outreach or follow-up already authorized.
+
+This task is in Promote within the [Content Factory](https://blitzmetrics.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. Use the proof and checked posts from earlier stages; a Promote task does not automatically redo all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
+
+## When this runs
+
+One story plan and its bounded test. The source suggests a monthly media review; use it only when adopted for an actual campaign with a named owner and trigger. Monthly rotation is not a license for automatic messages or spend.
+
+## First-run setup and continuity
+
+Open the supplied task file and its linked source. Verify the project’s real inputs, account, access and output folder before work. This Markdown file is a guide; it does not install an app, connect an account, supply a subscription or create a schedule. Carry out work already authorized; do not ask for the same approval again. Keep any unsupplied destination or new action outside that scope clearly pending.
+
+Save source IDs, versions, decisions, checked outputs and next owner in the project tracker. Before a retry, check the saved state and other workers’ changes. A model name does not guarantee memory or a running timer. Repeated work needs an actual configured trigger and durable state; one-off work can be started by the prompt above.
+
+Keep agent media muted with volume zero before playback. If mute cannot be verified, use captions, metadata or still frames. State the limit: silent visual checks do not prove spoken-word accuracy or audio quality. Do not start sound through the user’s speakers unless explicitly asked.
+
+## Write up the real run
+
+For every actual attempt, [write its meta article](https://blitzmetrics.com/meta-article-prompt/) with this recipe and revision, trigger, steps performed, output evidence, measured result, gaps and next owner. Failed, blocked and partial attempts also get a written record. A draft can satisfy writing; publishing it follows the existing job scope.
+
+Keep one stable execution ID across retries and edits. A separately scoped child task may have its own ID linked to its parent. Writing the parent’s meta record is part of that run, not an endless new chain. The [recipe and meta-article guide](https://localservicespotlight.com/meta-articles/) explains this distinction. Teaching examples are not real executions and must not enter the run count.
 
 ## Definitive article & links
-- Hub: /dad
-- Related: /thank-you-machine (gratitude as media outreach) · /personal-brand (Phase 3: get mentioned in publications) · /knowledge-panel (press is third-party validation)
-- Run order (platform setup): boost-one-minute-videos-for-personal-branding → **use-dollar-a-day-to-influence-media-coverage** (the earned-media end-game)
+
+- Maintained method: https://blitzmetrics.com/dollar-a-day/
+- Source mapping needs reconciliation: the preserved `definitive_article: /dad` points to the coaching program. The method page above is `/dollar-a-day/`; this record does not certify the coaching page as a task recipe.
+- Exact task: [Use Dollar a Day to influence media coverage](https://local-service-spotlight.github.io/task-library/?task=use-dollar-a-day-to-influence-media-coverage#task-use-dollar-a-day-to-influence-media-coverage)
+- Writing standard: [Article Guidelines](https://localservicespotlight.com/article-guidelines/)
+- [Dollar-a-Day method](https://blitzmetrics.com/dollar-a-day/)
+- [Goals, Content, and Targeting](https://blitzmetrics.com/gct-business-strategy/)
+- [X interest and follower look-alike targeting](https://business.x.com/en/help/campaign-setup/campaign-targeting/interest-and-follower-targeting)
+- [Meta Advantage+ audience help](https://www.facebook.com/business/ads/meta-advantage-plus/audience)
+
+## Review and evidence still needed
+
+The source contributor status is preserved. It is not certification of this draft or proof of account access, completed work or a live outcome. The worked example teaches the method and is explicitly fictional.
+- No actual media-contact data, outreach authority or earned coverage is supplied by this teaching guide.
+- The owned article’s exact-follower and universal retargeting claims need correction at their source.
