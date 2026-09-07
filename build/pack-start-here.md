@@ -10,6 +10,8 @@ If you run a business, pick one job from these guides. Use the steps to make one
 4. Open the result and check it against the guide. Save the output, source version, checks, and any unfinished work. A good answer alone does not prove an installed skill was selected.
 5. If you want a reusable setup, follow our [current installation guide](https://localservicespotlight.com/install/). Check the package, enabled skill, fresh-task load, access, and result in your actual app.
 
+If a guide calls for another file, script, or template, open that guide in the [Task Library](https://local-service-spotlight.github.io/task-library/). If it has a **Download full skill suite** link, use that download and keep its folders together. Ask your app to check that all required files are present before starting. If the full suite is not linked, use the guide's named source or keep the missing file as an unfinished step.
+
 ## Copy this first-run prompt
 
 > Use the attached guide for one job in my business.
