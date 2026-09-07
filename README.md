@@ -2,7 +2,10 @@
 
 Use these guides to save time on work that helps your business. Pick one job and follow its steps. Check the result before you use it or pass it to the next person.
 
-New here? Open a guide on the [Task Library](https://local-service-spotlight.github.io/task-library/) and copy its first-run prompt. Downloaded packs include `START-HERE.md`. A ZIP gives you guides; app setup, account access, and optional schedules each need their own check.
+New here? Open a guide on the [Task Library Dashboard](https://blitzmetrics.com/task-library-dashboard/) (public entry; this GitHub Pages app is embedded there) and copy its first-run prompt. Downloaded packs include `START-HERE.md`. A ZIP gives you guides; app setup, account access, and optional schedules each need their own check.
+
+**Public canon (hub lists):** [blitzmetrics.com/task-library-dashboard/](https://blitzmetrics.com/task-library-dashboard/). This GitHub Pages app is the embedded runtime (and stays `noindex`); do not list `github.io/task-library` as a separate public hub. The dated archive post is [blitzmetrics.com/task-library/](https://blitzmetrics.com/task-library/).
+
 
 
 Hub-and-spoke skill library. This repo is the **hub**: the registry, the dashboard, and the default home for skill files. Skills can also live in their owner's own repo (the **spokes**) — the build pulls them in at build time.
@@ -58,6 +61,8 @@ context. For example:
 ```text
 https://local-service-spotlight.github.io/task-library/?task=positive-mentions-harvester
 ```
+
+Prefer hub lists and human entry via `https://blitzmetrics.com/task-library-dashboard/` (embeds this app). Keep github.io deep-links for iframe/`postMessage` plumbing.
 
 The WordPress dashboard page embeds this app across origins, so an outer-page query is
 not inherited by the iframe. A same-domain wrapper may forward its validated `task`
