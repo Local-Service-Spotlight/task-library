@@ -13,8 +13,8 @@
         }
       },
       "startedAt": "2026-09-05T08:01:40Z",
-      "status": "running",
-      "result": "Public PR16 delivered 275 reviewed instruction sources and seven verified ZIPs. The first screen passes phone/desktop checks with scripts on and off. All 86 selected/related pages have grade-five openings; focused body, visual and maintained-source repairs continue. The external Google Ads source remains unreviewed upstream. The published meta article documents this same ongoing execution, without claiming completed client jobs.",
+      "status": "partial",
+      "result": "Ended partial: 275 of 276 guide instructions reviewed. Published diagram and setup repairs, 72 checked image descriptions, three replacement diagrams and one duplicate removal. Added truthful progress labels and maintenance rules. The same public meta article records the work. One instruction source, shared video deployment approval, public font/rendering checks and evidence of real recipe use remain open. This is one maintenance attempt, not 275 completed business jobs.",
       "evidence": [
         {
           "visibility": "public",
@@ -135,6 +135,30 @@
         {
           "visibility": "private",
           "sha256": "edc3bd0f5a80bba143d3221520ce7c6d5d2a8d4d0034c957726cf334b1231f3a"
+        },
+        {
+          "visibility": "public",
+          "url": "https://github.com/Local-Service-Spotlight/task-library/pull/20"
+        },
+        {
+          "visibility": "public",
+          "url": "https://github.com/Local-Service-Spotlight/task-library/pull/21"
+        },
+        {
+          "visibility": "public",
+          "url": "https://github.com/Local-Service-Spotlight/task-library/pull/22"
+        },
+        {
+          "visibility": "public",
+          "url": "https://blitzmetrics.com/seo-tree/"
+        },
+        {
+          "visibility": "private",
+          "sha256": "1f63c25efedb282dcb5c2ac271faf5e8d1c8619258d0799c9cee8344559926b8"
+        },
+        {
+          "visibility": "private",
+          "sha256": "3a480e803222b52d6db883548f7d014b4de4b2b4ad25e756685008c621e49266"
         }
       ],
       "metaArticle": {
@@ -142,7 +166,8 @@
         "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/"
       },
       "recordedAt": "2026-09-06T01:18:27.649605+00:00",
-      "updatedAt": "2026-09-07T03:30:45.421725+00:00"
+      "updatedAt": "2026-09-10T17:06:47.713448+00:00",
+      "finishedAt": "2026-09-10T17:01:27Z"
     }
   ]
 }
