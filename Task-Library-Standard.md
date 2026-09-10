@@ -3,7 +3,7 @@ Use this standard to make work clear for your team. Write the steps, show a usef
 
 A [definitive article](https://blitzmetrics.com/definitive-article-guide/) is the main recipe. A skill file holds its steps for an AI app. A [meta article](https://blitzmetrics.com/meta-article-prompt/) records one real run and its proof.
 
-**Source of truth:** [How to Create a Definitive Article for Any BlitzMetrics Concept](https://blitzmetrics.com/definitive-article-guide/) and the [Task Library Dashboard](https://local-service-spotlight.github.io/task-library/). This standard reflects the task-recipe and per-execution feedback requirements reviewed September 2026.
+**Source of truth:** [How to Create a Definitive Article for Any BlitzMetrics Concept](https://blitzmetrics.com/definitive-article-guide/) and the [Task Library Dashboard](https://blitzmetrics.com/task-library-dashboard/). This standard reflects the task-recipe and per-execution feedback requirements reviewed September 2026.
 **Purpose:** one standard that writers and AI agents follow to bring every registered task up to standard — each one documented, downloadable as a skill, and wired into the SEO Tree. Counts are always derived from the registry/build; never type a task or article count into copy.
 
 ---
@@ -193,6 +193,8 @@ Keep breadth separate from volume. `priorityCoverage` is the importance-weighted
 ---
 
 ## Every execution feeds the next one
+
+Use [Keep the Task Library useful](MAINTAINING-THE-LIBRARY.md) to run this loop in small, verified batches and measure instruction quality separately from real execution success.
 
 Write the meta article for every real execution. A meta article documents what actually happened in one run; a definitive task article is the reusable recipe. Link both ways through the exact task slug. The meta article identifies the starting state, recipe revision, actual inputs and decisions, output and check evidence, failures, lessons, next owner and handoff. Private or draft publication states remain explicit. Review a proposed lesson before changing the canonical recipe or runnable skill; the next real execution checks that revised method.
 
