@@ -479,7 +479,7 @@ class BuiltArticleInventory(unittest.TestCase):
                     self.assertIsNone(task_history['lastCompletedAt'])
         for hub in self.data['articleHubs']:
             if hub['metaCountStatus'] == 'verified':
-                self.assertEqual(hub['metaOrbitAudited'], '2026-08-24')
+                self.assertEqual(hub['metaOrbitAudited'], '2026-09-10')
 
     def test_every_mapped_task_has_a_derived_state(self):
         for task in self.tasks:
@@ -579,18 +579,18 @@ class BuiltArticleInventory(unittest.TestCase):
             'blitzmetrics.com/how-we-use-listen-notes-to-find-track-and-repurpose-every-podcast-appearance':
                 (1, 'Emerging'),
             'blitzmetrics.com/how-we-use-podchaser-to-amplify-authority-and-repurpose-podcast-content':
-                (0, 'No verified examples'),
-            'blitzmetrics.com/internal-linking': (1, 'Emerging'),
+                (1, 'Emerging'),
+            'blitzmetrics.com/internal-linking': (2, 'Emerging'),
             'blitzmetrics.com/meta-article-prompt': (60, 'Deep'),
             'blitzmetrics.com/one-minute-video-guide':
-                (0, 'No verified examples'),
+                (1, 'Emerging'),
             'blitzmetrics.com/overnight-content-worker': (1, 'Emerging'),
             'blitzmetrics.com/speaker-kit': (1, 'Emerging'),
-            'blitzmetrics.com/topic-wheel': (2, 'Emerging'),
+            'blitzmetrics.com/topic-wheel': (3, 'Supported'),
         }
         hubs = {hub['key']: hub for hub in self.data['articleHubs']}
 
-        self.assertEqual(self.data['stats']['verifiedMetaArticles'], 85)
+        self.assertEqual(self.data['stats']['verifiedMetaArticles'], 89)
         self.assertEqual(self.data['stats']['metaOrbitHubsWithEvidence'], 13)
         self.assertEqual(self.data['stats']['metaOrbitHubsUnknown'], 40)
         self.assertEqual({key for key, hub in hubs.items()

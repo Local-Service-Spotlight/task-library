@@ -7,7 +7,7 @@
   "gaps": 23,
   "articleHubs": 53,
   "definitiveArticles": 13,
-  "verifiedMetaArticles": 85,
+  "verifiedMetaArticles": 89,
   "metaOrbitHubsWithEvidence": 13,
   "metaOrbitHubsUnknown": 40,
   "owners": 0,
@@ -25,7 +25,7 @@
  "metaArticleUrl": "https://blitzmetrics.com/how-we-turned-239-tasks-into-an-ai-runnable-skill-library/",
  "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/",
  "metaOrbitUrl": "https://local-service-spotlight.github.io/task-library/meta-orbits.json",
- "updated": "September 7, 2026",
+ "updated": "September 10, 2026",
  "factory": {
   "phases": [
    {
@@ -231,7 +231,7 @@
    "taskCoverage": 1.0,
    "priorityCoverage": 1.0,
    "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?article=https%3A%2F%2Fblitzmetrics.com%2Fcontent-factory",
-   "metaOrbitAudited": "2026-08-24",
+   "metaOrbitAudited": "2026-09-10",
    "metaOrbitEvidenceUrl": "https://local-service-spotlight.github.io/task-library/meta-orbits.json",
    "metaOrbitEvidenceMethod": "One published post that documents a completed observable run whose main deliverable materially executes this hub, is explicitly classified by taxonomy or authored meta language, and links to the exact canonical hub in task-specific narrative or receipt. Shared maps, compliance tables, related-reading lists, indexes, instructions, archives, self-links and incidental cross-links do not count. Each post has one reviewed primary parent."
   },
@@ -463,7 +463,7 @@
    "taskCoverage": 1.0,
    "priorityCoverage": 1.0,
    "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?article=https%3A%2F%2Fblitzmetrics.com%2Fhow-to-collect-organize-positive-mentions-to-build-authority%2F",
-   "metaOrbitAudited": "2026-08-24",
+   "metaOrbitAudited": "2026-09-10",
    "metaOrbitEvidenceUrl": "https://local-service-spotlight.github.io/task-library/meta-orbits.json",
    "metaOrbitEvidenceMethod": "One published post that documents a completed observable run whose main deliverable materially executes this hub, is explicitly classified by taxonomy or authored meta language, and links to the exact canonical hub in task-specific narrative or receipt. Shared maps, compliance tables, related-reading lists, indexes, instructions, archives, self-links and incidental cross-links do not count. Each post has one reviewed primary parent."
   },
@@ -516,7 +516,7 @@
    "taskCoverage": 1.0,
    "priorityCoverage": 1.0,
    "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?article=https%3A%2F%2Fblitzmetrics.com%2Fhow-to-inventory-a-podcast-on-youtube%2F",
-   "metaOrbitAudited": "2026-08-24",
+   "metaOrbitAudited": "2026-09-10",
    "metaOrbitEvidenceUrl": "https://local-service-spotlight.github.io/task-library/meta-orbits.json",
    "metaOrbitEvidenceMethod": "One published post that documents a completed observable run whose main deliverable materially executes this hub, is explicitly classified by taxonomy or authored meta language, and links to the exact canonical hub in task-specific narrative or receipt. Shared maps, compliance tables, related-reading lists, indexes, instructions, archives, self-links and incidental cross-links do not count. Each post has one reviewed primary parent."
   },
@@ -546,7 +546,7 @@
    "taskCoverage": 1.0,
    "priorityCoverage": 1.0,
    "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?article=https%3A%2F%2Fblitzmetrics.com%2Fhow-to-inventory-every-podcast-youve-been-on-and-why-its-one-of-the-highest-roi-things-you-can-do%2F",
-   "metaOrbitAudited": "2026-08-24",
+   "metaOrbitAudited": "2026-09-10",
    "metaOrbitEvidenceUrl": "https://local-service-spotlight.github.io/task-library/meta-orbits.json",
    "metaOrbitEvidenceMethod": "One published post that documents a completed observable run whose main deliverable materially executes this hub, is explicitly classified by taxonomy or authored meta language, and links to the exact canonical hub in task-specific narrative or receipt. Shared maps, compliance tables, related-reading lists, indexes, instructions, archives, self-links and incidental cross-links do not count. Each post has one reviewed primary parent."
   },
@@ -645,7 +645,7 @@
    "taskCoverage": 1.0,
    "priorityCoverage": 1.0,
    "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?article=https%3A%2F%2Fblitzmetrics.com%2Fhow-we-use-listen-notes-to-find-track-and-repurpose-every-podcast-appearance%2F",
-   "metaOrbitAudited": "2026-08-24",
+   "metaOrbitAudited": "2026-09-10",
    "metaOrbitEvidenceUrl": "https://local-service-spotlight.github.io/task-library/meta-orbits.json",
    "metaOrbitEvidenceMethod": "One published post that documents a completed observable run whose main deliverable materially executes this hub, is explicitly classified by taxonomy or authored meta language, and links to the exact canonical hub in task-specific narrative or receipt. Shared maps, compliance tables, related-reading lists, indexes, instructions, archives, self-links and incidental cross-links do not count. Each post has one reviewed primary parent."
   },
@@ -661,19 +661,21 @@
    "taskSlugs": [
     "how-we-use-podchaser-to-amplify-authority-and-repurpose-podcast-content"
    ],
-   "metaArticleCount": 0,
+   "metaArticleCount": 1,
    "metaCountStatus": "verified",
-   "metaOrbitStrength": 0,
-   "metaOrbitTier": "No verified examples",
-   "metaArticles": [],
+   "metaOrbitStrength": 1,
+   "metaOrbitTier": "Emerging",
+   "metaArticles": [
+    "https://blitzmetrics.com/how-we-built-dan-leibrandts-podchaser-profile/"
+   ],
    "taskMetaCounts": {
-    "how-we-use-podchaser-to-amplify-authority-and-repurpose-podcast-content": 0
+    "how-we-use-podchaser-to-amplify-authority-and-repurpose-podcast-content": 1
    },
-   "tasksWithMeta": 0,
-   "taskCoverage": 0.0,
-   "priorityCoverage": 0.0,
+   "tasksWithMeta": 1,
+   "taskCoverage": 1.0,
+   "priorityCoverage": 1.0,
    "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?article=https%3A%2F%2Fblitzmetrics.com%2Fhow-we-use-podchaser-to-amplify-authority-and-repurpose-podcast-content%2F",
-   "metaOrbitAudited": "2026-08-24",
+   "metaOrbitAudited": "2026-09-10",
    "metaOrbitEvidenceUrl": "https://local-service-spotlight.github.io/task-library/meta-orbits.json",
    "metaOrbitEvidenceMethod": "One published post that documents a completed observable run whose main deliverable materially executes this hub, is explicitly classified by taxonomy or authored meta language, and links to the exact canonical hub in task-specific narrative or receipt. Shared maps, compliance tables, related-reading lists, indexes, instructions, archives, self-links and incidental cross-links do not count. Each post has one reviewed primary parent."
   },
@@ -718,11 +720,12 @@
     "step-6-measure-and-iterate-with-maa",
     "use-proper-anchor-text-3-6-words-descriptive"
    ],
-   "metaArticleCount": 1,
+   "metaArticleCount": 2,
    "metaCountStatus": "verified",
    "metaOrbitStrength": 1,
    "metaOrbitTier": "Emerging",
    "metaArticles": [
+    "https://blitzmetrics.com/8-links-8-minutes-27-cents-ai-agent-cross-linking/",
     "https://blitzmetrics.com/how-an-ai-agent-audited-and-fixed-internal-linking-across-blitzmetrics/"
    ],
    "taskMetaCounts": null,
@@ -730,7 +733,7 @@
    "taskCoverage": null,
    "priorityCoverage": null,
    "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?article=https%3A%2F%2Fblitzmetrics.com%2Finternal-linking",
-   "metaOrbitAudited": "2026-08-24",
+   "metaOrbitAudited": "2026-09-10",
    "metaOrbitEvidenceUrl": "https://local-service-spotlight.github.io/task-library/meta-orbits.json",
    "metaOrbitEvidenceMethod": "One published post that documents a completed observable run whose main deliverable materially executes this hub, is explicitly classified by taxonomy or authored meta language, and links to the exact canonical hub in task-specific narrative or receipt. Shared maps, compliance tables, related-reading lists, indexes, instructions, archives, self-links and incidental cross-links do not count. Each post has one reviewed primary parent."
   },
@@ -917,7 +920,7 @@
    "taskCoverage": 1.0,
    "priorityCoverage": 1.0,
    "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?article=https%3A%2F%2Fblitzmetrics.com%2Fmeta-article-prompt%2F",
-   "metaOrbitAudited": "2026-08-24",
+   "metaOrbitAudited": "2026-09-10",
    "metaOrbitEvidenceUrl": "https://local-service-spotlight.github.io/task-library/meta-orbits.json",
    "metaOrbitEvidenceMethod": "One published post that documents a completed observable run whose main deliverable materially executes this hub, is explicitly classified by taxonomy or authored meta language, and links to the exact canonical hub in task-specific narrative or receipt. Shared maps, compliance tables, related-reading lists, indexes, instructions, archives, self-links and incidental cross-links do not count. Each post has one reviewed primary parent."
   },
@@ -1002,19 +1005,21 @@
    "taskSlugs": [
     "record-one-minute-videos"
    ],
-   "metaArticleCount": 0,
+   "metaArticleCount": 1,
    "metaCountStatus": "verified",
-   "metaOrbitStrength": 0,
-   "metaOrbitTier": "No verified examples",
-   "metaArticles": [],
+   "metaOrbitStrength": 1,
+   "metaOrbitTier": "Emerging",
+   "metaArticles": [
+    "https://blitzmetrics.com/how-we-spent-6-on-youtube-ads-and-reached-real-hvac-owners-a-simple-one-hour-video-recipe/"
+   ],
    "taskMetaCounts": {
-    "record-one-minute-videos": 0
+    "record-one-minute-videos": 1
    },
-   "tasksWithMeta": 0,
-   "taskCoverage": 0.0,
-   "priorityCoverage": 0.0,
+   "tasksWithMeta": 1,
+   "taskCoverage": 1.0,
+   "priorityCoverage": 1.0,
    "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?article=https%3A%2F%2Fblitzmetrics.com%2Fone-minute-video-guide",
-   "metaOrbitAudited": "2026-08-24",
+   "metaOrbitAudited": "2026-09-10",
    "metaOrbitEvidenceUrl": "https://local-service-spotlight.github.io/task-library/meta-orbits.json",
    "metaOrbitEvidenceMethod": "One published post that documents a completed observable run whose main deliverable materially executes this hub, is explicitly classified by taxonomy or authored meta language, and links to the exact canonical hub in task-specific narrative or receipt. Shared maps, compliance tables, related-reading lists, indexes, instructions, archives, self-links and incidental cross-links do not count. Each post has one reviewed primary parent."
   },
@@ -1044,7 +1049,7 @@
    "taskCoverage": 1.0,
    "priorityCoverage": 1.0,
    "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?article=https%3A%2F%2Fblitzmetrics.com%2Fovernight-content-worker",
-   "metaOrbitAudited": "2026-08-24",
+   "metaOrbitAudited": "2026-09-10",
    "metaOrbitEvidenceUrl": "https://local-service-spotlight.github.io/task-library/meta-orbits.json",
    "metaOrbitEvidenceMethod": "One published post that documents a completed observable run whose main deliverable materially executes this hub, is explicitly classified by taxonomy or authored meta language, and links to the exact canonical hub in task-specific narrative or receipt. Shared maps, compliance tables, related-reading lists, indexes, instructions, archives, self-links and incidental cross-links do not count. Each post has one reviewed primary parent."
   },
@@ -1271,7 +1276,7 @@
    "taskCoverage": 1.0,
    "priorityCoverage": 1.0,
    "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?article=https%3A%2F%2Fblitzmetrics.com%2Fspeaker-kit",
-   "metaOrbitAudited": "2026-08-24",
+   "metaOrbitAudited": "2026-09-10",
    "metaOrbitEvidenceUrl": "https://local-service-spotlight.github.io/task-library/meta-orbits.json",
    "metaOrbitEvidenceMethod": "One published post that documents a completed observable run whose main deliverable materially executes this hub, is explicitly classified by taxonomy or authored meta language, and links to the exact canonical hub in task-specific narrative or receipt. Shared maps, compliance tables, related-reading lists, indexes, instructions, archives, self-links and incidental cross-links do not count. Each post has one reviewed primary parent."
   },
@@ -1369,20 +1374,21 @@
     "map-why-ring-core-purpose",
     "use-for-content-planning-and-video-topics"
    ],
-   "metaArticleCount": 2,
+   "metaArticleCount": 3,
    "metaCountStatus": "verified",
-   "metaOrbitStrength": 1,
-   "metaOrbitTier": "Emerging",
+   "metaOrbitStrength": 2,
+   "metaOrbitTier": "Supported",
    "metaArticles": [
     "https://blitzmetrics.com/how-we-put-greatest-hits-on-every-topic-wheel-and-money-tree/",
-    "https://blitzmetrics.com/topic-wheel-on-every-personal-brand-site/"
+    "https://blitzmetrics.com/topic-wheel-on-every-personal-brand-site/",
+    "https://blitzmetrics.com/topic-wheel-strengthened-four-definitive-articles/"
    ],
    "taskMetaCounts": null,
    "tasksWithMeta": null,
    "taskCoverage": null,
    "priorityCoverage": null,
    "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?article=https%3A%2F%2Fblitzmetrics.com%2Ftopic-wheel",
-   "metaOrbitAudited": "2026-08-24",
+   "metaOrbitAudited": "2026-09-10",
    "metaOrbitEvidenceUrl": "https://local-service-spotlight.github.io/task-library/meta-orbits.json",
    "metaOrbitEvidenceMethod": "One published post that documents a completed observable run whose main deliverable materially executes this hub, is explicitly classified by taxonomy or authored meta language, and links to the exact canonical hub in task-specific narrative or receipt. Shared maps, compliance tables, related-reading lists, indexes, instructions, archives, self-links and incidental cross-links do not count. Each post has one reviewed primary parent."
   },
@@ -1558,7 +1564,7 @@
    "taskCoverage": null,
    "priorityCoverage": null,
    "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?article=https%3A%2F%2Flocalservicespotlight.com%2Farticle-guidelines%2F",
-   "metaOrbitAudited": "2026-08-24",
+   "metaOrbitAudited": "2026-09-10",
    "metaOrbitEvidenceUrl": "https://local-service-spotlight.github.io/task-library/meta-orbits.json",
    "metaOrbitEvidenceMethod": "One published post that documents a completed observable run whose main deliverable materially executes this hub, is explicitly classified by taxonomy or authored meta language, and links to the exact canonical hub in task-specific narrative or receipt. Shared maps, compliance tables, related-reading lists, indexes, instructions, archives, self-links and incidental cross-links do not count. Each post has one reviewed primary parent."
   },
@@ -1634,7 +1640,7 @@
  ],
  "executionHistory": {
   "schemaVersion": 1,
-  "asOf": "2026-09-07T03:33:04.923617+00:00",
+  "asOf": "2026-09-10T08:58:48.955515+00:00",
   "countDefinition": "Distinct recorded execution IDs, separate from meta-article URLs. History is partial; absent history is unknown, not zero. The last-30-day count is a documented lower bound, not total task frequency.",
   "recordedExecutions": 1,
   "completedExecutions": 0,
