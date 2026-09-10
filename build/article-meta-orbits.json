@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-05T08:37:31.270494+00:00",
+  "generatedAt": "2026-09-10T08:43:49+00:00",
   "countDefinition": "One published post that documents a completed observable run whose main deliverable materially executes this hub, is explicitly classified by taxonomy or authored meta language, and links to the exact canonical hub in task-specific narrative or receipt. Shared maps, compliance tables, related-reading lists, indexes, instructions, archives, self-links and incidental cross-links do not count. Each post has one reviewed primary parent.",
   "strengthBands": [
     {
@@ -30,29 +30,30 @@
     }
   ],
   "taskLibraryStats": {
-    "total": 249,
+    "total": 276,
     "complete": 125,
-    "needsWork": 101,
+    "reviewedInstructions": 275,
+    "needsWork": 128,
     "gaps": 23,
-    "articleHubs": 24,
+    "articleHubs": 53,
     "definitiveArticles": 13,
-    "verifiedMetaArticles": 84,
+    "verifiedMetaArticles": 85,
     "metaOrbitHubsWithEvidence": 13,
-    "metaOrbitHubsUnknown": 11,
+    "metaOrbitHubsUnknown": 40,
     "owners": 0,
     "categories": 13,
     "importance": {
       "1": 0,
-      "2": 32,
-      "3": 102,
-      "4": 40,
+      "2": 43,
+      "3": 115,
+      "4": 43,
       "5": 75
     },
     "fives": 75
   },
   "metaCorpus": {
-    "taxonomyUnionCount": 99,
-    "eligibleCount": 98,
+    "taxonomyUnionCount": 104,
+    "eligibleCount": 103,
     "excludedCount": 1,
     "taxonomy": {
       "categoryIds": [
@@ -70,12 +71,11 @@
         "url": "https://blitzmetrics.com/meta-article-prompt/",
         "title": "How Meta Articles Let My AI Agents Document and Improve Themselves",
         "publishedAt": "2026-04-19T15:40:49",
-        "modifiedAt": "2026-08-24T07:37:12",
+        "modifiedAt": "2026-09-07T04:09:14",
         "taxonomyEvidence": [
           "tag:3162"
         ],
         "links": [
-          "https://blitzmetrics.com/access-content-factory-photos-videos/",
           "https://blitzmetrics.com/ai-agent-audit-ben-forstie-durafoam/",
           "https://blitzmetrics.com/ai-agent-audit-garrett-mcclure-born-and-bred/",
           "https://blitzmetrics.com/ai-agent-audit-hunter-terpenny-humm-accounting/",
@@ -84,19 +84,15 @@
           "https://blitzmetrics.com/ai-agent-audit-terry-shintani-million-follower-doctor/",
           "https://blitzmetrics.com/ai-agent-built-justen-martin-personal-brand-website/",
           "https://blitzmetrics.com/audit-subscription-matt-bodnar/",
-          "https://blitzmetrics.com/blog-posting-guidelines/",
-          "https://blitzmetrics.com/boost-your-social-media-engagement/",
+          "https://blitzmetrics.com/build-agents/",
           "https://blitzmetrics.com/building-dennis-yu-speaker-reel-for-event-organizers/",
           "https://blitzmetrics.com/claude-ai-agent-built-roofinglaunch-co/",
           "https://blitzmetrics.com/claude-max-plan-200-dollars-biggest-discount-ai-token-math/",
           "https://blitzmetrics.com/consent-scanner-blank-dashboard-token-links/",
           "https://blitzmetrics.com/content-factory-academy-free-course-migration/",
           "https://blitzmetrics.com/content-factory/",
-          "https://blitzmetrics.com/creating-winning-documents-that-drive-conversions/",
-          "https://blitzmetrics.com/cross-post-content/",
+          "https://blitzmetrics.com/definitive-article-guide/",
           "https://blitzmetrics.com/derive-dont-maintain/",
-          "https://blitzmetrics.com/dollar-a-day/",
-          "https://blitzmetrics.com/everything-you-need-to-know-to-have-a-successful-podcast-the-definitive-guide/",
           "https://blitzmetrics.com/file-that-wouldnt-attach-boomerang-gmail-dom-fix/",
           "https://blitzmetrics.com/first-group-website-request-processed/",
           "https://blitzmetrics.com/give-your-ai-team-one-shared-brain/",
@@ -111,8 +107,6 @@
           "https://blitzmetrics.com/how-i-built-bing-webmaster-import/",
           "https://blitzmetrics.com/how-i-closed-the-skill-pack-gap-my-agent-flagged/",
           "https://blitzmetrics.com/how-i-use-ai-agents-to-do-my-marketing/",
-          "https://blitzmetrics.com/how-to-cross-post-for-gmb-and-get-people-to-know-more-about-your-local-business/",
-          "https://blitzmetrics.com/how-to-crosspost-an-article-on-fb/",
           "https://blitzmetrics.com/how-to-do-better-internal-link-building-for-free-with-your-favorite-ai-agent/",
           "https://blitzmetrics.com/how-we-automated-quick-audit-follow-ups-with-zapier/",
           "https://blitzmetrics.com/how-we-built-avery-young-authority-package/",
@@ -131,6 +125,7 @@
           "https://blitzmetrics.com/how-we-harmonized-skills-and-routines/",
           "https://blitzmetrics.com/how-we-integrated-jobber-wordpress-home-services/",
           "https://blitzmetrics.com/how-we-launched-athlete-spotlight/",
+          "https://blitzmetrics.com/how-we-made-definitive-article-strength-measurable/",
           "https://blitzmetrics.com/how-we-mapped-the-usage-buckets/",
           "https://blitzmetrics.com/how-we-migrated-cheetah-screens-squarespace-to-wordpress/",
           "https://blitzmetrics.com/how-we-propagated-dollar-a-day-across-the-fleet/",
@@ -145,16 +140,19 @@
           "https://blitzmetrics.com/how-we-stopped-handing-agents-a-paste/",
           "https://blitzmetrics.com/how-we-tuned-up-david-carrolls-personal-brand-site/",
           "https://blitzmetrics.com/how-we-turned-239-tasks-into-an-ai-runnable-skill-library/",
-          "https://blitzmetrics.com/inventory-youtube-channel/",
           "https://blitzmetrics.com/jack-hughes-personal-brand-site-youtube-blog-posts/",
           "https://blitzmetrics.com/jim-klauck-radio-pitchman-brand-audit/",
           "https://blitzmetrics.com/josh-collier-brand-ecosystem-build/",
           "https://blitzmetrics.com/julian-david-entity-home-build/",
           "https://blitzmetrics.com/kimi-k3-vs-claude-content-factory-math/",
           "https://blitzmetrics.com/knowledge-graph-explorer-every-spotlight-site/",
+          "https://blitzmetrics.com/knowledge-system-maintenance/",
           "https://blitzmetrics.com/law-firm-spotlight-internal-link-harvest/",
+          "https://blitzmetrics.com/maa/",
+          "https://blitzmetrics.com/meta-article-prompt/",
           "https://blitzmetrics.com/open-ai-knowledge-base-team-contributions/",
           "https://blitzmetrics.com/pbsb/",
+          "https://blitzmetrics.com/persistent-agents/",
           "https://blitzmetrics.com/personal-brand-fleet-money-pages/",
           "https://blitzmetrics.com/post-article-wordpress/",
           "https://blitzmetrics.com/quick-audit/",
@@ -170,11 +168,10 @@
           "https://blitzmetrics.com/team-board-clients-never-see/",
           "https://blitzmetrics.com/the-five-minute-brief-dennis-yu-dictated-before-the-ai-agent-did-anything/",
           "https://blitzmetrics.com/the-local-quick-audit-is-not-a-swapped-headline/",
-          "https://blitzmetrics.com/the-path-ahead-for-chatgpt-my-6-month-forecast-and-immediate-game-plan/",
           "https://blitzmetrics.com/the-system/",
-          "https://blitzmetrics.com/transcribe-pillar-content-descript/",
           "https://blitzmetrics.com/update-content-library/",
           "https://blitzmetrics.com/video-schema-root-cause/",
+          "https://blitzmetrics.com/when-trust-ends-the-link-ends/",
           "https://blitzmetrics.com/why-i-switched-from-chatgpt-to-claude-for-chrome-and-what-72-hours-without-sleep-taught-me-about-ai-agents/",
           "https://blitzmetrics.com/you-got-featured/",
           "https://coatinglaunch.com/",
@@ -187,8 +184,13 @@
           "https://jasongamato.com/",
           "https://lawfirmspotlight.com/",
           "https://local-service-spotlight.github.io/task-library/",
+          "https://localservicespotlight.com/article-guidelines/",
           "https://localservicespotlight.com/asset-tracker/",
           "https://localservicespotlight.com/i-love-to-eeat/",
+          "https://localservicespotlight.com/install/",
+          "https://localservicespotlight.com/meta-articles/",
+          "https://localservicespotlight.com/plugin/",
+          "https://localservicespotlight.com/skill-packs/",
           "https://markosipila.com/",
           "https://sandcdigital.com/",
           "https://sigrun.com/",
@@ -204,10 +206,12 @@
     "primaryAuditScope": {
       "site": "blitzmetrics.com",
       "source": "Authenticated WordPress REST context=edit",
-      "publishedPosts": 1850,
-      "publishedPages": 1005,
+      "publishedPosts": 1881,
+      "publishedPages": 1007,
       "taskLibraryReadyHubs": 13,
-      "candidateInboundPairs": 860
+      "candidateInboundPairs": null,
+      "candidateInboundPairsStatus": "Not recomputed in the September 10 targeted four-orbit refresh; the prior exhaustive candidate records from 2026-08-24T07:45:06.478736+00:00 were retained.",
+      "refreshMode": "Targeted source-backed refresh of Podchaser, One-Minute Video, Internal Linking, and Topic Wheel after live post readback."
     },
     "primaryAuditEligibilityRule": [
       "Source is a published WordPress post; pages never count.",
@@ -225,22 +229,22 @@
         2732,
         3162
       ],
-      "publishedExplicitMetaUnion": 99,
+      "publishedExplicitMetaUnion": 104,
       "knownFalsePositive": {
         "postId": 105645,
         "url": "https://blitzmetrics.com/meta-article-prompt/",
         "reason": "Tag 3162 overlaps a ready definitive hub carrying data-definitive-article=true; excluded from meta inventory."
       },
-      "category3273PublishedPosts": 41,
+      "category3273PublishedPosts": 46,
       "category3273ReadyIntersection": 12,
-      "category3273UnapprovedOrSupport": 29,
+      "category3273UnapprovedOrSupport": 34,
       "readyHubsMissingCategory3273": [
         "https://localservicespotlight.com/article-guidelines/"
       ],
       "countedMetaMissingExplicitTaxonomy": 55
     },
     "primaryAuditSource": "orbit-audit-primary.json",
-    "uniqueCountedPrimaryMetaArticles": 85
+    "uniqueCountedPrimaryMetaArticles": 89
   },
   "hubs": [
     {
@@ -250,109 +254,109 @@
       "domain": "localservicespotlight.com",
       "endpoint": "pages",
       "postId": 75654,
-      "wordpressSha256": "a73cb5ddfe384a9d7bcace0520e0cd704e506cb73222dbdd50cfb4e8fae57659",
+      "wordpressSha256": "0e2aee657bc957367ab227ee58ab7cbb3fe6b8c7b575f9516d64b9a3285a0bf0",
       "taskLibrarySourceUrl": "https://localservicespotlight.com/article-guidelines/",
       "taskCount": 20,
       "taskImportanceTotal": 86,
       "tasks": [
         {
           "slug": "step-1-upload-video-to-google-drive-and-descript",
-          "title": "step-1-upload-video-to-google-drive-and-descript",
+          "title": "Step 1: Upload video to Google Drive and Descript",
           "importance": 5
         },
         {
           "slug": "step-11-proofread-with-grammarly-or-chatgpt",
-          "title": "step-11-proofread-with-grammarly-or-chatgpt",
+          "title": "Step 11: Proofread with Grammarly or ChatGPT",
           "importance": 5
         },
         {
           "slug": "step-12-post-article-on-wordpress",
-          "title": "step-12-post-article-on-wordpress",
+          "title": "Step 12: Post article on WordPress",
           "importance": 5
         },
         {
           "slug": "step-2-transcribe-video-using-descript",
-          "title": "step-2-transcribe-video-using-descript",
+          "title": "Step 2: Transcribe video using Descript",
           "importance": 5
         },
         {
           "slug": "step-5-write-article-from-transcript",
-          "title": "step-5-write-article-from-transcript",
+          "title": "Step 5: Write article from transcript",
           "importance": 5
         },
         {
           "slug": "use-descript-underlord-to-remove-filler-words",
-          "title": "use-descript-underlord-to-remove-filler-words",
+          "title": "Use Descript Underlord to remove filler words",
           "importance": 5
         },
         {
           "slug": "email-and-dm-client-about-published-article",
-          "title": "email-and-dm-client-about-published-article",
+          "title": "Email and DM client about published article",
           "importance": 4
         },
         {
           "slug": "share-in-44k-facebook-group",
-          "title": "share-in-44k-facebook-group",
+          "title": "Share in 44K Facebook group",
           "importance": 4
         },
         {
           "slug": "step-10-embed-source-video",
-          "title": "step-10-embed-source-video",
+          "title": "Step 10: Embed source video",
           "importance": 4
         },
         {
           "slug": "step-13-categorize-post-and-add-tags",
-          "title": "step-13-categorize-post-and-add-tags",
+          "title": "Step 13: Categorize post and add tags",
           "importance": 4
         },
         {
           "slug": "step-14a-configure-rankmath-seo-plugin",
-          "title": "step-14a-configure-rankmath-seo-plugin",
+          "title": "Step 14a: Configure RankMath SEO plugin",
           "importance": 4
         },
         {
           "slug": "step-14b-run-linkwhisper-for-internal-links",
-          "title": "step-14b-run-linkwhisper-for-internal-links",
+          "title": "Step 14b: Run LinkWhisper for internal links",
           "importance": 4
         },
         {
           "slug": "step-17-final-formatting-and-qa-checks",
-          "title": "step-17-final-formatting-and-qa-checks",
+          "title": "Step 17: Final formatting and QA checks",
           "importance": 4
         },
         {
           "slug": "step-3-watch-video-and-identify-gct",
-          "title": "step-3-watch-video-and-identify-gct",
+          "title": "Step 3: Watch video and identify GCT",
           "importance": 4
         },
         {
           "slug": "step-4-research-edit-add-timestamps-and-outline",
-          "title": "step-4-research-edit-add-timestamps-and-outline",
+          "title": "Step 4: Research, edit, add timestamps and outline",
           "importance": 4
         },
         {
           "slug": "step-6-write-title-and-headings",
-          "title": "step-6-write-title-and-headings",
+          "title": "Step 6: Write title and headings",
           "importance": 4
         },
         {
           "slug": "step-7-write-hook-and-establish-context",
-          "title": "step-7-write-hook-and-establish-context",
+          "title": "Step 7: Write hook and establish context",
           "importance": 4
         },
         {
           "slug": "step-8-add-photos-and-featured-image",
-          "title": "step-8-add-photos-and-featured-image",
+          "title": "Step 8: Add photos and featured image",
           "importance": 4
         },
         {
           "slug": "step-9-add-internal-links-with-proper-anchor-text",
-          "title": "step-9-add-internal-links-with-proper-anchor-text",
+          "title": "Step 9: Add internal links with proper anchor text",
           "importance": 4
         },
         {
           "slug": "verify-all-items-on-blog-posting-checklist",
-          "title": "verify-all-items-on-blog-posting-checklist",
+          "title": "Verify all items on Blog Posting checklist",
           "importance": 4
         }
       ],
@@ -425,49 +429,49 @@
       "domain": "blitzmetrics.com",
       "endpoint": "posts",
       "postId": 104583,
-      "wordpressSha256": "4e6118078f7546947181b60db1c9ab5263b7853245a3b563c0674d7f8ab82cf6",
+      "wordpressSha256": "2409c4f8636c729bc06d256fca68b3bff4c20145ebf1d0bc897963aa9c642755",
       "taskLibrarySourceUrl": "https://blitzmetrics.com/internal-linking/",
       "taskCount": 7,
       "taskImportanceTotal": 24,
       "tasks": [
         {
           "slug": "step-2-fix-categories-and-tags-in-wordpress",
-          "title": "step-2-fix-categories-and-tags-in-wordpress",
+          "title": "Step 2: Fix categories and tags in WordPress",
           "importance": 5
         },
         {
           "slug": "step-6-measure-and-iterate-with-maa",
-          "title": "step-6-measure-and-iterate-with-maa",
+          "title": "Step 6: Measure and iterate with MAA",
           "importance": 4
         },
         {
           "slug": "step-1-inventory-content-and-establish-gct-per-page",
-          "title": "step-1-inventory-content-and-establish-gct-per-page",
+          "title": "Step 1: Inventory content and establish GCT per page",
           "importance": 3
         },
         {
           "slug": "step-3-identify-money-pages-and-orphan-pages",
-          "title": "step-3-identify-money-pages-and-orphan-pages",
+          "title": "Step 3: Identify money pages and orphan pages",
           "importance": 3
         },
         {
           "slug": "step-4-create-links-with-proper-anchor-text-and-placement",
-          "title": "step-4-create-links-with-proper-anchor-text-and-placement",
+          "title": "Step 4: Create links with proper anchor text and placement",
           "importance": 3
         },
         {
           "slug": "step-5-qa-links-against-google-guidelines",
-          "title": "step-5-qa-links-against-google-guidelines",
+          "title": "Step 5: QA links against Google guidelines",
           "importance": 3
         },
         {
           "slug": "use-proper-anchor-text-3-6-words-descriptive",
-          "title": "use-proper-anchor-text-3-6-words-descriptive",
+          "title": "Use proper anchor text (3\u20136 words, descriptive)",
           "importance": 3
         }
       ],
       "metaCountStatus": "verified",
-      "metaArticleCount": 1,
+      "metaArticleCount": 2,
       "strength": {
         "score": 1,
         "label": "Emerging",
@@ -491,6 +495,24 @@
           "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
           "counted": true,
           "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        },
+        {
+          "postId": 103142,
+          "url": "https://blitzmetrics.com/8-links-8-minutes-27-cents-ai-agent-cross-linking/",
+          "sourceUrl": "https://blitzmetrics.com/8-links-8-minutes-27-cents-ai-agent-cross-linking/",
+          "hubUrl": "https://blitzmetrics.com/internal-linking/",
+          "title": "8 Links in 8 Minutes: An Estimated 27-Cent Internal-Linking Run",
+          "publishedAt": "2026-03-23T02:33:37",
+          "modifiedAt": "2026-09-10T08:37:27",
+          "taxonomyEvidence": [
+            "tag:2523"
+          ],
+          "explicitMetaTaxonomy": true,
+          "explicitMetaLanguage": true,
+          "primaryParentHub": "https://blitzmetrics.com/internal-linking/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed observable run materially executes this hub, declares this sole primary parent, and the editable body links to the exact canonical URL."
         }
       ]
     },
@@ -501,45 +523,64 @@
       "domain": "blitzmetrics.com",
       "endpoint": "posts",
       "postId": 103351,
-      "wordpressSha256": "239d6d850d8a72bf7685afc3fa7d0f0822f1ce4bd11f3af31ecf8929a147923f",
+      "wordpressSha256": "0ca414cc08dbbfaab57dee24a6531bba1be4cf05697792ab32a44272d893d54a",
       "taskLibrarySourceUrl": "https://blitzmetrics.com/topic-wheel/",
       "taskCount": 5,
       "taskImportanceTotal": 17,
       "tasks": [
         {
           "slug": "map-out-one-minute-video-topics-using-topic-wheel",
-          "title": "map-out-one-minute-video-topics-using-topic-wheel",
+          "title": "Map out one-minute video topics using Topic Wheel",
           "importance": 5
         },
         {
           "slug": "map-how-ring-methods",
-          "title": "map-how-ring-methods",
+          "title": "Map HOW ring (methods)",
           "importance": 3
         },
         {
           "slug": "map-what-ring-specific-content",
-          "title": "map-what-ring-specific-content",
+          "title": "Map the WHAT offer at the center",
           "importance": 3
         },
         {
           "slug": "map-why-ring-core-purpose",
-          "title": "map-why-ring-core-purpose",
+          "title": "Map WHY stories in the outer ring",
           "importance": 3
         },
         {
           "slug": "use-for-content-planning-and-video-topics",
-          "title": "use-for-content-planning-and-video-topics",
+          "title": "Use for content planning and video topics",
           "importance": 3
         }
       ],
       "metaCountStatus": "verified",
-      "metaArticleCount": 2,
+      "metaArticleCount": 3,
       "strength": {
-        "score": 1,
-        "label": "Emerging",
-        "band": "1-2"
+        "score": 2,
+        "label": "Supported",
+        "band": "3-5"
       },
       "metaArticles": [
+        {
+          "postId": 115280,
+          "url": "https://blitzmetrics.com/topic-wheel-strengthened-four-definitive-articles/",
+          "sourceUrl": "https://blitzmetrics.com/topic-wheel-strengthened-four-definitive-articles/",
+          "hubUrl": "https://blitzmetrics.com/topic-wheel/",
+          "title": "How We Used a Topic Wheel to Strengthen Four Definitive Articles",
+          "publishedAt": "2026-09-10T08:38:05",
+          "modifiedAt": "2026-09-10T08:38:05",
+          "taxonomyEvidence": [
+            "category:3693",
+            "tag:2523"
+          ],
+          "explicitMetaTaxonomy": true,
+          "explicitMetaLanguage": true,
+          "primaryParentHub": "https://blitzmetrics.com/topic-wheel/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed observable run materially executes this hub, declares this sole primary parent, and the editable body links to the exact canonical URL."
+        },
         {
           "postId": 112377,
           "url": "https://blitzmetrics.com/how-we-put-greatest-hits-on-every-topic-wheel-and-money-tree/",
@@ -581,14 +622,14 @@
       "domain": "blitzmetrics.com",
       "endpoint": "posts",
       "postId": 105645,
-      "wordpressSha256": "2950b8a78aa2f29377bcb8a5c81bec2b4b104fb8edbe8e4246837e5424ce9543",
+      "wordpressSha256": "2a255751b376ea92df2c42c739785255985fec356b3c8bec87bb2ecb844beb4d",
       "taskLibrarySourceUrl": "https://blitzmetrics.com/meta-article-prompt/",
       "taskCount": 1,
       "taskImportanceTotal": 5,
       "tasks": [
         {
           "slug": "write-meta-article-documenting-agent-work",
-          "title": "write-meta-article-documenting-agent-work",
+          "title": "Write a meta article documenting a task execution",
           "importance": 5
         }
       ],
@@ -644,7 +685,7 @@
           "hubUrl": "https://blitzmetrics.com/meta-article-prompt/",
           "title": "The Five-Minute Brief Dennis Yu Dictated Before the AI Agent Did Anything",
           "publishedAt": "2026-08-19T17:30:58",
-          "modifiedAt": "2026-08-20T22:03:16",
+          "modifiedAt": "2026-08-31T01:28:59",
           "taxonomyEvidence": [],
           "explicitMetaTaxonomy": false,
           "explicitMetaLanguage": true,
@@ -875,7 +916,7 @@
           "hubUrl": "https://blitzmetrics.com/meta-article-prompt/",
           "title": "Kimi K3 Just Dropped. We Ran the Price Sheets Before the Hot Takes.",
           "publishedAt": "2026-07-20T05:51:56",
-          "modifiedAt": "2026-07-20T09:37:27",
+          "modifiedAt": "2026-08-25T12:28:12",
           "taxonomyEvidence": [],
           "explicitMetaTaxonomy": false,
           "explicitMetaLanguage": true,
@@ -1308,7 +1349,7 @@
           "hubUrl": "https://blitzmetrics.com/meta-article-prompt/",
           "title": "How We Turned 239 Tasks Into an AI-Runnable Skill Library",
           "publishedAt": "2026-06-10T07:18:09",
-          "modifiedAt": "2026-08-22T21:17:10",
+          "modifiedAt": "2026-08-27T02:47:27",
           "taxonomyEvidence": [],
           "explicitMetaTaxonomy": false,
           "explicitMetaLanguage": true,
@@ -1374,7 +1415,7 @@
           "hubUrl": "https://blitzmetrics.com/meta-article-prompt/",
           "title": "Building Dennis Yu' Speaker Reel for Event Organizers",
           "publishedAt": "2026-06-06T16:56:57",
-          "modifiedAt": "2026-06-12T08:30:32",
+          "modifiedAt": "2026-08-31T01:30:11",
           "taxonomyEvidence": [],
           "explicitMetaTaxonomy": false,
           "explicitMetaLanguage": false,
@@ -1606,14 +1647,14 @@
       "domain": "blitzmetrics.com",
       "endpoint": "posts",
       "postId": 102836,
-      "wordpressSha256": "7d36bd89246c3fb5e22762870b640f6153ba3a28565cfa41f1b3030621a58b46",
+      "wordpressSha256": "3c4d30fdd177a6b71fa90910db085f6a1ce151ea9328ce32b2708f58d237bb79",
       "taskLibrarySourceUrl": "https://blitzmetrics.com/content-factory/",
       "taskCount": 1,
       "taskImportanceTotal": 5,
       "tasks": [
         {
           "slug": "run-content-factory-on-any-engine",
-          "title": "run-content-factory-on-any-engine",
+          "title": "Run the Content Factory with your available tools",
           "importance": 5
         }
       ],
@@ -1686,7 +1727,7 @@
           "hubUrl": "https://blitzmetrics.com/content-factory/",
           "title": "How We Repurposed Cody Jones' Coach Yu Show Episode Across Four Sites",
           "publishedAt": "2026-06-09T07:56:34",
-          "modifiedAt": "2026-06-12T08:30:10",
+          "modifiedAt": "2026-08-31T01:30:08",
           "taxonomyEvidence": [
             "tag:2523"
           ],
@@ -1704,7 +1745,7 @@
           "hubUrl": "https://blitzmetrics.com/content-factory/",
           "title": "How We Used an AI Agent to Inventory Paul Ryazanov's Content",
           "publishedAt": "2026-04-24T23:47:50",
-          "modifiedAt": "2026-08-24T07:16:55",
+          "modifiedAt": "2026-08-31T01:31:05",
           "taxonomyEvidence": [],
           "explicitMetaTaxonomy": false,
           "explicitMetaLanguage": true,
@@ -1808,25 +1849,44 @@
       "domain": "blitzmetrics.com",
       "endpoint": "posts",
       "postId": 102882,
-      "wordpressSha256": "ad895fb4eea4ddae5aba41921dae2f629d4aa21db0a3617273eb80bfabafcbb0",
+      "wordpressSha256": "b1b1634d3276edba873aac8ce292a5f1af143dd129c93bd55fa1ea0f0c900af4",
       "taskLibrarySourceUrl": "https://blitzmetrics.com/one-minute-video-guide/",
       "taskCount": 1,
       "taskImportanceTotal": 5,
       "tasks": [
         {
           "slug": "record-one-minute-videos",
-          "title": "record-one-minute-videos",
+          "title": "Record one-minute videos",
           "importance": 5
         }
       ],
       "metaCountStatus": "verified",
-      "metaArticleCount": 0,
+      "metaArticleCount": 1,
       "strength": {
-        "score": 0,
-        "label": "No verified examples",
-        "band": "0"
+        "score": 1,
+        "label": "Emerging",
+        "band": "1-2"
       },
-      "metaArticles": []
+      "metaArticles": [
+        {
+          "postId": 99575,
+          "url": "https://blitzmetrics.com/how-we-spent-6-on-youtube-ads-and-reached-real-hvac-owners-a-simple-one-hour-video-recipe/",
+          "sourceUrl": "https://blitzmetrics.com/how-we-spent-6-on-youtube-ads-and-reached-real-hvac-owners-a-simple-one-hour-video-recipe/",
+          "hubUrl": "https://blitzmetrics.com/one-minute-video-guide/",
+          "title": "How We Recorded 14 One-Minute HVAC Videos and Tested One for $6.68",
+          "publishedAt": "2026-04-15T11:03:07",
+          "modifiedAt": "2026-09-10T08:37:21",
+          "taxonomyEvidence": [
+            "category:3693"
+          ],
+          "explicitMetaTaxonomy": true,
+          "explicitMetaLanguage": true,
+          "primaryParentHub": "https://blitzmetrics.com/one-minute-video-guide/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed observable run materially executes this hub, declares this sole primary parent, and the editable body links to the exact canonical URL."
+        }
+      ]
     },
     {
       "url": "https://blitzmetrics.com/how-we-use-listen-notes-to-find-track-and-repurpose-every-podcast-appearance/",
@@ -1835,14 +1895,14 @@
       "domain": "blitzmetrics.com",
       "endpoint": "posts",
       "postId": 101813,
-      "wordpressSha256": "0b7f5bc1623dd657eb7e81bb4887140c039b7fe0bf22b5dc59c49813efaa828e",
+      "wordpressSha256": "fedc906323b6c6a8de9c628397b67d9254d512821bca7dc631eb0a40a702ec7b",
       "taskLibrarySourceUrl": "https://blitzmetrics.com/how-we-use-listen-notes-to-find-track-and-repurpose-every-podcast-appearance/",
       "taskCount": 1,
       "taskImportanceTotal": 4,
       "tasks": [
         {
           "slug": "how-we-use-listen-notes-to-find-track-and-repurpose-every-podcast-appearance",
-          "title": "how-we-use-listen-notes-to-find-track-and-repurpose-every-podcast-appearance",
+          "title": "How we use Listen Notes to find, track, and repurpose every podcast appearance",
           "importance": 4
         }
       ],
@@ -1879,14 +1939,14 @@
       "domain": "blitzmetrics.com",
       "endpoint": "posts",
       "postId": 101808,
-      "wordpressSha256": "14ce8b29c4beb6d4a36cd420545ddbdacccfa214402cb43850a223ebe5cdd358",
+      "wordpressSha256": "478e54beb929fd8e3ebc6d727fc3f7e2c08f6f45bf6f83e67cf607a9ffb34bd0",
       "taskLibrarySourceUrl": "https://blitzmetrics.com/how-to-inventory-every-podcast-youve-been-on-and-why-its-one-of-the-highest-roi-things-you-can-do/",
       "taskCount": 1,
       "taskImportanceTotal": 4,
       "tasks": [
         {
           "slug": "how-to-inventory-every-podcast-youve-been-on-and-why-its-one-of-the-highest-roi-things-you-can-do",
-          "title": "how-to-inventory-every-podcast-youve-been-on-and-why-its-one-of-the-highest-roi-things-you-can-do",
+          "title": "How to inventory every podcast you've been on",
           "importance": 4
         }
       ],
@@ -1923,14 +1983,14 @@
       "domain": "blitzmetrics.com",
       "endpoint": "posts",
       "postId": 112164,
-      "wordpressSha256": "389b9072659a1a5e17870478a56411978ea66702ca0ac9eb5a1826d5dd355250",
+      "wordpressSha256": "3c2e05e4ae2b89f06b53a9b9ccd0666232f3c3882098018460edf859698d0356",
       "taskLibrarySourceUrl": "https://blitzmetrics.com/overnight-content-worker/",
       "taskCount": 1,
       "taskImportanceTotal": 4,
       "tasks": [
         {
           "slug": "run-overnight-local-writer",
-          "title": "run-overnight-local-writer",
+          "title": "Run overnight local writer",
           "importance": 4
         }
       ],
@@ -1961,20 +2021,67 @@
       ]
     },
     {
+      "url": "https://blitzmetrics.com/how-we-use-podchaser-to-amplify-authority-and-repurpose-podcast-content/",
+      "label": "Podchaser Podcast Inventory",
+      "kind": "Definitive SOP",
+      "domain": "blitzmetrics.com",
+      "endpoint": "posts",
+      "postId": 101782,
+      "wordpressSha256": "20405ce0b8ac42361601e9e82af80c8a770256c8fcd7f6b1015e2f5b0961758f",
+      "taskLibrarySourceUrl": "https://blitzmetrics.com/how-we-use-podchaser-to-amplify-authority-and-repurpose-podcast-content/",
+      "taskCount": 1,
+      "taskImportanceTotal": 4,
+      "tasks": [
+        {
+          "slug": "how-we-use-podchaser-to-amplify-authority-and-repurpose-podcast-content",
+          "title": "How we use Podchaser to amplify authority and repurpose podcast content",
+          "importance": 4
+        }
+      ],
+      "metaCountStatus": "verified",
+      "metaArticleCount": 1,
+      "strength": {
+        "score": 1,
+        "label": "Emerging",
+        "band": "1-2"
+      },
+      "metaArticles": [
+        {
+          "postId": 115275,
+          "url": "https://blitzmetrics.com/how-we-built-dan-leibrandts-podchaser-profile/",
+          "sourceUrl": "https://blitzmetrics.com/how-we-built-dan-leibrandts-podchaser-profile/",
+          "hubUrl": "https://blitzmetrics.com/how-we-use-podchaser-to-amplify-authority-and-repurpose-podcast-content/",
+          "title": "How We Built Dan Leibrandt's Source-Backed Podchaser Record",
+          "publishedAt": "2026-09-10T08:36:56",
+          "modifiedAt": "2026-09-10T08:36:56",
+          "taxonomyEvidence": [
+            "category:3693",
+            "tag:2523"
+          ],
+          "explicitMetaTaxonomy": true,
+          "explicitMetaLanguage": true,
+          "primaryParentHub": "https://blitzmetrics.com/how-we-use-podchaser-to-amplify-authority-and-repurpose-podcast-content/",
+          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "counted": true,
+          "reason": "Counted: published meta/worked-example post; completed observable run materially executes this hub, declares this sole primary parent, and the editable body links to the exact canonical URL."
+        }
+      ]
+    },
+    {
       "url": "https://blitzmetrics.com/how-to-inventory-a-podcast-on-youtube/",
       "label": "YouTube Podcast Inventory",
       "kind": "Definitive SOP",
       "domain": "blitzmetrics.com",
       "endpoint": "posts",
       "postId": 103161,
-      "wordpressSha256": "29ea25a1035b28fe93f75c2d35421cf9f55f31e86ce0f1f16a15299b8833636e",
+      "wordpressSha256": "5f241dba323fef0fc153b7a4acacc1b79fd15fdb4cedcfa448e8805db4b1e672",
       "taskLibrarySourceUrl": "https://blitzmetrics.com/how-to-inventory-a-podcast-on-youtube/",
       "taskCount": 1,
       "taskImportanceTotal": 4,
       "tasks": [
         {
           "slug": "how-to-inventory-a-podcast-on-youtube",
-          "title": "how-to-inventory-a-podcast-on-youtube",
+          "title": "How to inventory a podcast on YouTube",
           "importance": 4
         }
       ],
@@ -2007,47 +2114,20 @@
       ]
     },
     {
-      "url": "https://blitzmetrics.com/how-we-use-podchaser-to-amplify-authority-and-repurpose-podcast-content/",
-      "label": "Podchaser Podcast Inventory",
-      "kind": "Definitive SOP",
-      "domain": "blitzmetrics.com",
-      "endpoint": "posts",
-      "postId": 101782,
-      "wordpressSha256": "aa2acae38505aa1d9c1203264a742e0c097f6717c1ab65e0c3a13e7e4f74e2e8",
-      "taskLibrarySourceUrl": "https://blitzmetrics.com/how-we-use-podchaser-to-amplify-authority-and-repurpose-podcast-content/",
-      "taskCount": 1,
-      "taskImportanceTotal": 4,
-      "tasks": [
-        {
-          "slug": "how-we-use-podchaser-to-amplify-authority-and-repurpose-podcast-content",
-          "title": "how-we-use-podchaser-to-amplify-authority-and-repurpose-podcast-content",
-          "importance": 4
-        }
-      ],
-      "metaCountStatus": "verified",
-      "metaArticleCount": 0,
-      "strength": {
-        "score": 0,
-        "label": "No verified examples",
-        "band": "0"
-      },
-      "metaArticles": []
-    },
-    {
       "url": "https://blitzmetrics.com/how-to-collect-organize-positive-mentions-to-build-authority/",
       "label": "Positive Mentions",
       "kind": "Definitive SOP",
       "domain": "blitzmetrics.com",
       "endpoint": "posts",
       "postId": 104460,
-      "wordpressSha256": "18927fa9de887208a0028f637c0aabd844ad374364789e42a2c2c8423337ab88",
+      "wordpressSha256": "bdd6a99000becf0598d766ff07279c3d8a4cb72b5ee3f998865825af71ef0142",
       "taskLibrarySourceUrl": "https://blitzmetrics.com/how-to-collect-organize-positive-mentions-to-build-authority/",
       "taskCount": 1,
       "taskImportanceTotal": 3,
       "tasks": [
         {
           "slug": "positive-mentions-harvester",
-          "title": "positive-mentions-harvester",
+          "title": "Positive Mentions Harvester",
           "importance": 3
         }
       ],
@@ -2102,7 +2182,7 @@
           "hubUrl": "https://blitzmetrics.com/how-to-collect-organize-positive-mentions-to-build-authority/",
           "title": "How We Built Justin Sonnenreich's Positive Mentions Tracker",
           "publishedAt": "2026-06-10T04:52:38",
-          "modifiedAt": "2026-06-12T08:30:27",
+          "modifiedAt": "2026-08-31T01:30:05",
           "taxonomyEvidence": [],
           "explicitMetaTaxonomy": false,
           "explicitMetaLanguage": true,
@@ -2136,14 +2216,14 @@
       "domain": "blitzmetrics.com",
       "endpoint": "posts",
       "postId": 112065,
-      "wordpressSha256": "c67ca49589bb462d61be6015bfde78a3e850050aab831f18d204ec26018abb83",
+      "wordpressSha256": "ba8d5102b729dce13cf4be62c5c8a722c6f9caf3c320a0b6ee5499bd3c8b9e3d",
       "taskLibrarySourceUrl": "https://blitzmetrics.com/speaker-kit/",
       "taskCount": 1,
       "taskImportanceTotal": 3,
       "tasks": [
         {
           "slug": "keep-speaker-bureau-profile-bookable",
-          "title": "keep-speaker-bureau-profile-bookable",
+          "title": "Keep speaker bureau profile bookable",
           "importance": 3
         }
       ],
@@ -2173,7 +2253,5 @@
         }
       ]
     }
-  ],
-  "metaAuditedAt": "2026-08-24",
-  "taskMappingUpdatedAt": "2026-09-05T08:37:31.270494+00:00"
+  ]
 }
