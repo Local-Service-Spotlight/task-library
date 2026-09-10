@@ -1640,11 +1640,11 @@
  ],
  "executionHistory": {
   "schemaVersion": 1,
-  "asOf": "2026-09-10T08:58:48.955515+00:00",
+  "asOf": "2026-09-10T17:18:10.319095+00:00",
   "countDefinition": "Distinct recorded execution IDs, separate from meta-article URLs. History is partial; absent history is unknown, not zero. The last-30-day count is a documented lower bound, not total task frequency.",
   "recordedExecutions": 1,
   "completedExecutions": 0,
-  "partialExecutions": 0,
+  "partialExecutions": 1,
   "executions": [
    {
     "executionId": "recipe-audit-20260905-080140",
@@ -1652,14 +1652,15 @@
      "create-or-update-a-definitive-article"
     ],
     "startedAt": "2026-09-05T08:01:40Z",
-    "status": "running",
-    "result": "Public PR16 delivered 275 reviewed instruction sources and seven verified ZIPs. The first screen passes phone/desktop checks with scripts on and off. All 86 selected/related pages have grade-five openings; focused body, visual and maintained-source repairs continue. The external Google Ads source remains unreviewed upstream. The published meta article documents this same ongoing execution, without claiming completed client jobs.",
+    "status": "partial",
+    "result": "Ended partial: 275 of 276 guide instructions reviewed. Published diagram and setup repairs, 72 checked image descriptions, three replacement diagrams and one duplicate removal. Added truthful progress labels and maintenance rules. The same public meta article records the work. One instruction source, shared video deployment approval, public font/rendering checks and evidence of real recipe use remain open. This is one maintenance attempt, not 275 completed business jobs.",
     "recipeRevisions": {
      "create-or-update-a-definitive-article": {
       "articleUrl": "https://blitzmetrics.com/definitive-article-guide/",
       "sourceSha256": "73c6c011d5fe83b152a2192b175f320b7a6470ca81b4f71672332ae899f10b9b"
      }
     },
+    "finishedAt": "2026-09-10T17:01:27Z",
     "evidenceUrls": [
      "https://github.com/dennisyu/local-service-spotlight-skills/pull/39",
      "https://localservicespotlight.com/article-guidelines/",
@@ -1672,7 +1673,11 @@
      "https://github.com/dennisyu/local-service-spotlight-skills/pull/46",
      "https://github.com/Local-Service-Spotlight/task-library/pull/16",
      "https://github.com/dennisyu/local-service-spotlight-skills/pull/47",
-     "https://blitzmetrics.com/making-task-guides-easier-to-use/"
+     "https://blitzmetrics.com/making-task-guides-easier-to-use/",
+     "https://github.com/Local-Service-Spotlight/task-library/pull/20",
+     "https://github.com/Local-Service-Spotlight/task-library/pull/21",
+     "https://github.com/Local-Service-Spotlight/task-library/pull/22",
+     "https://blitzmetrics.com/seo-tree/"
     ],
     "privateEvidenceRecorded": true,
     "metaArticle": {
@@ -3077,7 +3082,7 @@
       "recordedRuns": 1,
       "completedRuns": 0,
       "failedRuns": 0,
-      "partialRuns": 0,
+      "partialRuns": 1,
       "completedLast30Days": 0,
       "lastCompletedAt": null,
       "executionIds": [
