@@ -240,6 +240,10 @@ if (DATA.metaArticleUrl){
 }
 
 const S = DATA.stats || {};
+const reviewedStatsValid = Number.isInteger(S.reviewedInstructions) && S.reviewedInstructions >= 0 &&
+  Number.isInteger(S.total) && S.total >= S.reviewedInstructions;
+el('#btl-reviewed-count').textContent = reviewedStatsValid ? fmt(S.reviewedInstructions) : '—';
+el('#btl-reviewed-total').textContent = reviewedStatsValid ? fmt(S.total) : '—';
 function countUp(node, val){
   if (reduced || !val){ node.textContent = fmt(val); return; }
   const t0 = performance.now(), dur = 950;
