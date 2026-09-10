@@ -47,9 +47,11 @@ Build current task data first, including the Asset Tracker CSV when applicable, 
 python3 build/build.py
 python3 scripts/record_execution.py /path/to/real-run.json --check
 python3 scripts/record_execution.py /path/to/real-run.json
-python3 -m unittest discover -s build -p 'test_*.py' -v
 python3 build/build.py
+python3 -m unittest discover -s build -p 'test_*.py' -v
 ```
+
+After every ledger insert or revision, rebuild the checked-in dashboard data and execution projection before running the tests. Commit the source ledger and its generated projections together. The tests compare those records and correctly fail if a projection still shows an older status. Run the checks against the final files you will commit.
 
 The CLI records only data; it does not run the task, publish a meta article, merge a change, schedule work or grant authority. Review and deploy through the repository's existing pull request and GitHub Pages workflow.
 
