@@ -33,9 +33,10 @@
 #
 # 4. Settings -> Pages -> Source: GitHub Actions.
 #
-# IMPORTANT: GitHub Pages has one artifact per repo. This job writes the map
-# into dashboard/ and uploads that whole tree, so it cannot wipe the Task
-# Library dashboard. The dashboard workflow uses the same concurrency group.
+# IMPORTANT: GitHub Pages has one artifact per repo. This job must rebuild and
+# validate the complete dashboard before adding the map and deploying it. A
+# checkout plus map alone would replace the complete site with an incomplete
+# artifact. The dashboard workflow uses the same concurrency group.
 # ---------------------------------------------------------------------------
 
 name: Ownership map
@@ -52,6 +53,7 @@ on:
         type: boolean
         default: true
   push:
+    branches: [main]
     paths:
       - "scripts/build_ownership_map.py"
       - "scripts/template.html"
@@ -140,7 +142,7 @@ jobs:
           path: dashboard
 
       - name: Email the map
-        if: ${{ github.event_name == 'schedule' || inputs.skip_email == false }}
+        if: ${{ github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.skip_email == false) }}
         env:
           MAIL_SERVER: ${{ secrets.MAIL_SERVER }}
           MAIL_PORT: ${{ secrets.MAIL_PORT }}
