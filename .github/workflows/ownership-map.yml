@@ -80,6 +80,32 @@ jobs:
       - name: Run tests
         run: python3 -m unittest discover -s scripts -p "test_*.py" -v
 
+      - name: Run Task Library tests
+        run: python3 -m unittest discover -s build -p "test_*.py" -v
+
+      - name: Fetch Asset Tracker CSV
+        env:
+          TRACKER_CSV_URL: ${{ secrets.TRACKER_CSV_URL }}
+        run: |
+          if [ -n "$TRACKER_CSV_URL" ]; then
+            curl -sL "$TRACKER_CSV_URL" -o tracker.csv
+            echo "Fetched tracker.csv ($(wc -l < tracker.csv) lines)."
+          else
+            echo "TRACKER_CSV_URL secret is empty; building without the sheet."
+          fi
+
+      - name: Build Task Library dashboard
+        env:
+          SKILLS_READ_TOKEN: ${{ secrets.SKILLS_READ_TOKEN }}
+        run: |
+          if [ -f tracker.csv ]; then
+            python3 build/build.py --tracker-csv tracker.csv
+          else
+            python3 build/build.py
+          fi
+          python3 build/build-packs.py
+          python3 scripts/check_published_archives.py --dashboard-dir dashboard
+
       - name: Build the map into the dashboard tree
         env:
           GITHUB_TOKEN: ${{ secrets.OWNERSHIP_MAP_TOKEN }}
@@ -138,5 +164,12 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      - uses: actions/checkout@v4
       - id: deployment
         uses: actions/deploy-pages@v4
+      - name: Verify deployed archive downloads
+        run: >-
+          python3 scripts/check_published_archives.py
+          --base-url "${{ steps.deployment.outputs.page_url }}"
+          --retries 6
+          --retry-delay 10
