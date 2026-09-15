@@ -1,5 +1,6 @@
 import json
 from datetime import datetime, timezone
+import importlib.util
 from pathlib import Path
 import sys
 import tempfile
@@ -7,9 +8,11 @@ import unittest
 
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
-import build as task_build  # noqa: E402
 import executions  # noqa: E402
 import standard_verification as verification  # noqa: E402
+SPEC = importlib.util.spec_from_file_location('task_library_builder', HERE / 'build.py')
+task_build = importlib.util.module_from_spec(SPEC)
+SPEC.loader.exec_module(task_build)
 
 
 def task(slug, status='complete', article='https://example.com/hub/', importance=3,

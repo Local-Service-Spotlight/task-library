@@ -293,7 +293,7 @@ def write_artifacts(payload, out_dir):
               'unmetStandardGates', 'heldStandardGates', 'unknownStandardGates',
               'nextAction'] + list(GATE_ORDER)
     with open(csv_path, 'w', encoding='utf-8', newline='') as target:
-        writer = csv.DictWriter(target, fieldnames=fields)
+        writer = csv.DictWriter(target, fieldnames=fields, lineterminator='\n')
         writer.writeheader()
         for row in payload['queue']:
             verification = row['standardVerification']
