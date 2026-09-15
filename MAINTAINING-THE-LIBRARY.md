@@ -52,7 +52,7 @@ Keep these measures separate, with a date and source:
 
 | Measure | What it proves |
 |---|---|
-| Reviewed instructions | The exact guide revision passed document review |
+| Reviewed instructions | The exact guide revision was examined; its review may record failed or unknown requirements. This does not certify that the task passes every standard. |
 | Reported complete | The contributor's recorded status; not independent execution proof |
 | Verified real runs | Distinct executions with output and acceptance evidence |
 | Setup success | A new user loaded the needed files, had access, and completed the first task |
