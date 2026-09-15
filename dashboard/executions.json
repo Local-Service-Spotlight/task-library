@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "asOf": "2026-09-15T01:33:29.660385+00:00",
+  "asOf": "2026-09-15T02:23:51.476844+00:00",
   "countDefinition": "Distinct recorded execution IDs, separate from meta-article URLs. History is partial; absent history is unknown, not zero. The last-30-day count is a documented lower bound, not total task frequency.",
-  "recordedExecutions": 1,
+  "recordedExecutions": 2,
   "completedExecutions": 0,
-  "partialExecutions": 1,
+  "partialExecutions": 2,
   "executions": [
     {
       "executionId": "recipe-audit-20260905-080140",
@@ -43,6 +43,34 @@
       "metaArticle": {
         "status": "published",
         "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/"
+      }
+    },
+    {
+      "executionId": "task-standards-20260915-215131",
+      "taskSlugs": [
+        "create-or-update-a-definitive-article"
+      ],
+      "startedAt": "2026-09-14T21:51:31Z",
+      "status": "partial",
+      "result": "Ended partial: published clearer article openings, the per-task verification queue and seven repaired ZIP downloads. Public source, archive and viewport checks passed. Reviewed the last unreviewed instruction source with failed requirements preserved. Full catalog certification still lacks exact article reviews, setup and accepted-result evidence. The canonical article hash was captured during final review, not at the start. This is one maintenance batch, not 276 business jobs.",
+      "recipeRevisions": {
+        "create-or-update-a-definitive-article": {
+          "articleUrl": "https://blitzmetrics.com/definitive-article-guide/",
+          "sourceSha256": "be544b8ad0d81921fe2cf865ebde323f58384bd6dfa88c0dd0d637f11f69f07f"
+        }
+      },
+      "finishedAt": "2026-09-15T02:23:47.632018+00:00",
+      "evidenceUrls": [
+        "https://github.com/Local-Service-Spotlight/task-library/pull/26",
+        "https://github.com/dennisyu/local-service-spotlight-skills/pull/51",
+        "https://local-service-spotlight.github.io/task-library/verification-queue.html",
+        "https://localservicespotlight.com/article-guidelines/",
+        "https://blitzmetrics.com/content-factory/"
+      ],
+      "privateEvidenceRecorded": true,
+      "metaArticle": {
+        "status": "published",
+        "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#task-standards-20260915-215131"
       }
     }
   ]

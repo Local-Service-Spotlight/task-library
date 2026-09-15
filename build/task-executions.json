@@ -168,6 +168,66 @@
       "recordedAt": "2026-09-06T01:18:27.649605+00:00",
       "updatedAt": "2026-09-10T17:06:47.713448+00:00",
       "finishedAt": "2026-09-10T17:01:27Z"
+    },
+    {
+      "executionId": "task-standards-20260915-215131",
+      "taskSlugs": [
+        "create-or-update-a-definitive-article"
+      ],
+      "recipeRevisions": {
+        "create-or-update-a-definitive-article": {
+          "articleUrl": "https://blitzmetrics.com/definitive-article-guide/",
+          "sourceSha256": "be544b8ad0d81921fe2cf865ebde323f58384bd6dfa88c0dd0d637f11f69f07f"
+        }
+      },
+      "startedAt": "2026-09-14T21:51:31Z",
+      "finishedAt": "2026-09-15T02:23:47.632018+00:00",
+      "status": "partial",
+      "result": "Ended partial: published clearer article openings, the per-task verification queue and seven repaired ZIP downloads. Public source, archive and viewport checks passed. Reviewed the last unreviewed instruction source with failed requirements preserved. Full catalog certification still lacks exact article reviews, setup and accepted-result evidence. The canonical article hash was captured during final review, not at the start. This is one maintenance batch, not 276 business jobs.",
+      "evidence": [
+        {
+          "visibility": "public",
+          "url": "https://github.com/Local-Service-Spotlight/task-library/pull/26"
+        },
+        {
+          "visibility": "public",
+          "url": "https://github.com/dennisyu/local-service-spotlight-skills/pull/51"
+        },
+        {
+          "visibility": "public",
+          "url": "https://local-service-spotlight.github.io/task-library/verification-queue.html"
+        },
+        {
+          "visibility": "public",
+          "url": "https://localservicespotlight.com/article-guidelines/"
+        },
+        {
+          "visibility": "public",
+          "url": "https://blitzmetrics.com/content-factory/"
+        },
+        {
+          "visibility": "private",
+          "sha256": "5bbc6bc518cbfa3784bd84ba39de760c903a2187bd5474b2ff98a3fefd1b56f4"
+        },
+        {
+          "visibility": "private",
+          "sha256": "1be3da44fe19834d0985e0a05a3e33d78c52f3636d577c2f34d850518208dbe7"
+        },
+        {
+          "visibility": "private",
+          "sha256": "0eb3790b2bfeb21709674be6a5c94694c3708f1f4caf98d36a5ab1a926d6870e"
+        },
+        {
+          "visibility": "private",
+          "sha256": "cc7f06b98c6fa1c0d3617f962818d46c6bbbd8c07ed5f961555adb99e9e1b81d"
+        }
+      ],
+      "metaArticle": {
+        "status": "published",
+        "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#task-standards-20260915-215131"
+      },
+      "recordedAt": "2026-09-15T02:23:47.632018+00:00",
+      "updatedAt": "2026-09-15T02:23:47.632018+00:00"
     }
   ]
 }

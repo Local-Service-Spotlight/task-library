@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-09-15T02:07:00Z",
+  "taskSlug": "google-ads-analyzer",
+  "taskLibrary": {
+    "commit": "a212ac8449bbb1f9f75767501eeaaf7de78384ff",
+    "registrySource": "github:Goodrich-Dev/google-ads-maa-skills@main:skills/google-ads-analyzer/SKILL.md",
+    "dashboardDataSha256": "713339a5af023ab4d8fd7d0c57bfc00edda54f158a40bc1382c0aab1c5e534d9",
+    "catalogStatus": "complete",
+    "article": null,
+    "executionHistory": "unknown"
+  },
+  "source": {
+    "repository": "https://github.com/Goodrich-Dev/google-ads-maa-skills",
+    "requestedRef": "main",
+    "resolvedCommit": "e55015f30b8ddbb9bea1a252905fa664d2f4e98a",
+    "path": "skills/google-ads-analyzer/SKILL.md",
+    "immutableUrl": "https://github.com/Goodrich-Dev/google-ads-maa-skills/blob/e55015f30b8ddbb9bea1a252905fa664d2f4e98a/skills/google-ads-analyzer/SKILL.md",
+    "gitBlobSha1": "2a283f7a79c5eb0609c3db76d363643dea6a4f51",
+    "sha256": "ef314fb17b24ee47a5f8842c8ef4709f6f66ef6c222b64edb506d7ba7e89ea99",
+    "bytes": 45667,
+    "lines": 883,
+    "matchesTaskLibrarySourceBeforeGeneratedFactoryLayer": true
+  },
+  "referencedPackageFilesChecked": {
+    "CONFIGURATION.md": true,
+    "shared/frameworks/gaql-query-pack.md": true,
+    "shared/frameworks/data-pipeline-contract.md": true,
+    "shared/scripts/correct_qs_columns.py": true,
+    "skills/google-ads-analyzer/references/gaql-queries.md": true,
+    "skills/google-ads-analyzer/references/coaching-guide.md": true,
+    "skills/google-ads-copy-optimizer/SKILL.md": true,
+    "skills/google-ads-change-scripts/SKILL.md": true,
+    "skills/google-ads-lp-auditor/SKILL.md": true,
+    "shared/examples/SummitDumpster_MAA_2026-06-26.md": true
+  },
+  "method": "Read-only shallow clone of the maintained upstream, exact byte/hash comparison to Task Library dashboard data, and file-existence checks. No Google Ads data, account, export, access, message, publication, or upstream mutation was used."
+}
