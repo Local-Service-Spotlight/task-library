@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-15T01:32:13+00:00",
+  "generatedAt": "2026-09-15T01:33:29+00:00",
   "definition": "Per-task standard gates derived from exact instruction reviews, contributor status, article mapping/catalog holds, task-attributed examples and the execution ledger. Unknown proof is never turned into a pass.",
   "stats": {
     "tasks": 276,
