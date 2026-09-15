@@ -153,19 +153,32 @@ class StandardVerificationTests(unittest.TestCase):
 
     def test_checked_in_queue_matches_current_evidence_boundaries(self):
         payload = json.loads((HERE.parent / 'dashboard' / 'verification-queue.json').read_text())
+        data = json.loads((HERE.parent / 'dashboard' / 'data.json').read_text())
+        tasks = [task for category in data['categories'] for task in category['tasks']]
         counts = payload['stats']['gateCounts']
-        self.assertEqual(payload['stats']['tasks'], 276)
+        self.assertEqual(payload['stats']['tasks'], len(tasks))
         self.assertEqual(payload['stats']['fullyVerifiedTasks'], 0)
-        self.assertEqual(payload['stats']['semanticHoldHubs'], 3)
-        self.assertEqual(counts['instructionRevisionReviewed']['pass'], 275)
-        self.assertEqual(counts['contributorComplete']['pass'], 125)
-        self.assertEqual(counts['articleMapped']['pass'], 234)
-        self.assertEqual(counts['articleCatalogGate']['pass'], 42)
+        self.assertEqual(
+            payload['stats']['semanticHoldHubs'],
+            len({task['standardVerification']['articleKey'] for task in tasks
+                 if task.get('articleStateReason')}))
+        self.assertEqual(counts['instructionRevisionReviewed']['pass'],
+                         sum(bool(task.get('instructionReview')) for task in tasks))
+        self.assertEqual(counts['contributorComplete']['pass'],
+                         sum(task['status'] == 'complete' for task in tasks))
+        self.assertEqual(counts['articleMapped']['pass'],
+                         sum(bool(task.get('article')) for task in tasks))
+        self.assertEqual(counts['articleCatalogGate']['pass'],
+                         sum(task.get('articleState') == 'ready' for task in tasks))
         self.assertEqual(counts['articleSemanticCertification']['pass'], 0)
-        self.assertEqual(counts['taskExampleEvidence']['pass'], 10)
-        self.assertEqual(counts['recordedExecution']['pass'], 1)
-        self.assertEqual(counts['acceptedExecution']['unknown'], 276)
-        self.assertEqual(counts['setupSuccess']['unknown'], 276)
+        exact_examples = {
+            slug for hub in data['articleHubs'] for slug, count in
+            (hub.get('taskMetaCounts') or {}).items() if count > 0}
+        self.assertEqual(counts['taskExampleEvidence']['pass'], len(exact_examples))
+        self.assertEqual(counts['recordedExecution']['pass'],
+                         sum(bool(task['executionHistory']['executionIds']) for task in tasks))
+        self.assertEqual(counts['acceptedExecution']['unknown'], len(tasks))
+        self.assertEqual(counts['setupSuccess']['unknown'], len(tasks))
 
     def test_normal_dashboard_and_static_index_link_to_queue(self):
         dashboard = (HERE.parent / 'dashboard' / 'index.html').read_text()
