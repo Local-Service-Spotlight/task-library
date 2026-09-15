@@ -1649,6 +1649,12 @@
       "reviewed_at": "2026-09-06",
       "reviewer": "Codex editorial review",
       "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+    },
+    "google-ads-analyzer": {
+      "source_sha256": "ef314fb17b24ee47a5f8842c8ef4709f6f66ef6c222b64edb506d7ba7e89ea99",
+      "reviewed_at": "2026-09-15",
+      "reviewer": "Codex independent instruction review",
+      "scope": "Exact instructions and packaged dependencies reviewed. PASS: trigger, ordered analysis, output format, read-only boundary and conditional sibling dispatch. FAIL: no article mapping, house Inputs/Definition-of-done/Example/links contract, final acceptance/handoff, plain opening connection or lead-visual rule. UNKNOWN: article semantics, task-level meta evidence, real execution and setup success. Review does not change contributor status or external holds. Requirement report: reviews/google-ads-analyzer-2026-09-15.md."
     }
   }
 }

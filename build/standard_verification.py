@@ -63,7 +63,8 @@ def derive(tasks, instruction_reviews, meta_audits, normalize_url):
         if review:
             checks['instructionRevisionReviewed'] = gate(
                 'instructionRevisionReviewed', 'pass',
-                f'Current source bytes match the review recorded {review["reviewed_at"]}.',
+                f'Current source bytes match the review recorded {review["reviewed_at"]}. '
+                f'Review scope and limits: {review["scope"]}',
                 reviewedAt=review['reviewed_at'], reviewer=review['reviewer'],
                 sourceSha256=review['source_sha256'])
         else:
