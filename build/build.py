@@ -26,6 +26,7 @@ CACHE = os.path.join(BUILD, '.cache')
 sys.path.insert(0, BUILD)
 import factory  # noqa: E402
 import executions  # noqa: E402
+import standard_verification  # noqa: E402
 
 STAGES = {'Produce', 'Process', 'Post', 'Promote', '—', ''}
 STATUSES = {'complete', 'needs-work', 'gap'}
@@ -802,6 +803,14 @@ def write_library_index(data, out_path):
              f"Contributors report {st['complete']} complete guides, {st['needsWork']} in progress, and {st['gaps']} identified gaps. "
              f"These labels do not prove independent review, installed skills or completed client work. "
              f"Updated {html_escape(data['updated'])}.</p>")
+    verification_route = (data['taskLibraryUrl'].rstrip('/') + '/' +
+                          data['verificationQueueUrl'])
+    verification_stats = data['verificationSummary']
+    L.append(
+        f'<p><a href="{html_escape(verification_route)}">Open the per-task standard verification queue</a>. '
+        f'It shows the recorded gate evidence and next review for all {verification_stats["tasks"]} tasks. '
+        f'<strong>{verification_stats["fullyVerifiedTasks"]} currently pass every gate</strong>; '
+        f'unknown proof remains visible instead of becoming a green status.</p>')
     for c in data['categories']:
         L.append(f"<h2>{html_escape(c['name'])}</h2>")
         L.append(f"<p>{html_escape(c['description'])}</p>")
@@ -994,6 +1003,7 @@ def main():
                     'desc': (row.get('Description') or '').strip(),
                     'content': '',
                     'flag': 'defined in sheet — not yet built',
+                    '_sourceSha256': None,
                     'category': cat,
                     'importance': rec['importance'], 'freq': rec['freq'],
                     'revenue': rec['revenue'], 'gating': rec['gating'],
@@ -1046,6 +1056,8 @@ def main():
                                 normalize_article_url(art) == normalize_article_url(article_url(fm['definitive_article']))
                                 else 'unknown'),
                 'desc': fm['description'], 'content': content,
+                'category': entry['category'],
+                '_sourceSha256': hashlib.sha256(text.encode('utf-8')).hexdigest(),
                 'importance': rec['importance'], 'freq': rec['freq'],
                 'revenue': rec['revenue'], 'gating': rec['gating'],
                 'phase': rec['phase'], 'before': rec['before'],
@@ -1079,7 +1091,7 @@ def main():
                 warnings.append(f'{slug}: same source file as "{seen_src[src]}" ({src}) — two rows, one file')
             seen_src[src] = slug
     for slug, t in sheet_only.items():
-        cat = t.pop('category')
+        cat = t['category']
         by_cat[cat].append(t)
     all_tasks = [t for ts in by_cat.values() for t in ts]
     certifications = load_article_certifications()
@@ -1092,6 +1104,9 @@ def main():
     execution_records = executions.load(os.path.join(BUILD, 'task-executions.json'),
                                         {t['slug'] for t in all_tasks})
     execution_history = executions.attach(all_tasks, execution_records)
+    verification_queue = standard_verification.derive(
+        all_tasks, instruction_reviews, meta_audits, normalize_article_url)
+    verification_report = standard_verification.report(verification_queue)
     # Owner attribution comes ONLY from the Asset Tracker. A tracker that parsed
     # rows but still yields zero owners is a malformed or partial feed - the same
     # failure class as above, caught one stage later.
@@ -1110,6 +1125,8 @@ def main():
             'bundleUrl': 'TaskLibrary-Skills-all.zip', 'metaArticleUrl': site['metaArticleUrl'],
             'taskLibraryUrl': site['taskLibraryUrl'],
             'metaOrbitUrl': site['metaOrbitUrl'],
+            'verificationQueueUrl': 'verification-queue.html',
+            'verificationSummary': verification_report['stats'],
             'updated': datetime.now(timezone.utc).strftime('%B %-d, %Y'),  # real build stamp (was a static label from site-meta.json)
             'factory': factory.factory_meta(),
             'articleHubs': article_hubs,
@@ -1126,6 +1143,10 @@ def main():
     data['stats']['importance'] = dist
     data['stats']['fives'] = dist.get('5', 0)
 
+    for task in all_tasks:
+        task.pop('_sourceSha256', None)
+        task.pop('category', None)
+
     os.makedirs(os.path.dirname(args.out), exist_ok=True)
     json.dump(data, open(args.out, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
     with open(os.path.join(os.path.dirname(args.out), 'executions.json'), 'w', encoding='utf-8') as fh:
@@ -1134,6 +1155,7 @@ def main():
         data, meta_audits,
         os.path.join(os.path.dirname(args.out), 'meta-orbits.json'))
     write_library_index(data, os.path.join(os.path.dirname(args.out), 'library-index.html'))
+    standard_verification.write_artifacts(verification_report, os.path.dirname(args.out))
     nall = write_zip(data, os.path.dirname(args.out), 'TaskLibrary-Skills-all.zip',
                      'All registered guide files. Dated snapshot; includes contributor-reported complete, needs-work and gap entries.', False)
     nready = write_zip(data, os.path.dirname(args.out), 'TaskLibrary-Skills-ready.zip',

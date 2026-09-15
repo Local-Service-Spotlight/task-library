@@ -202,6 +202,18 @@ Write the meta article for every real execution. A meta article documents what a
 
 The `before`/`after` dashboard station suggestions are generated neighbors, not source-verified prerequisites. Label actual prerequisite, input reference, companion, child and downstream links by their real role and condition. Do not expand every task under a referenced hub into a prerequisite list.
 
+## Per-task verification queue
+
+Use the generated [standard verification queue](https://local-service-spotlight.github.io/task-library/verification-queue.html) to choose the next review. Its JSON and CSV exports are generated from the same resolved source files, registry, article evidence and execution ledger as the dashboard. Do not hand-edit queue rows.
+
+Each task keeps these checks separate: exact instruction revision reviewed, contributor-complete claim, article mapping, article catalog gate, exact-revision article semantic review, task-attributed example, recorded execution, accepted execution and new-user setup. Every check is `pass`, `unmet`, `hold` or `unknown`, with a reason. A task is fully verified only when every check passes. Never turn catalog readiness, a review hash, historical article volume or a completed-run label into a green overall result.
+
+The current instruction-review record proves only that a reviewer signed the exact skill-file bytes and left its recorded scope. It does not contain a pass/fail result for every recipe requirement above. Editing the maintained skill bytes expires that review. The canonical article has a separate revision and review trail; never compare its revision hash with the skill-file hash.
+
+The current execution ledger records attempts and evidence but has no structured acceptance or first-user setup result tied to an exact current canonical article revision. Those two checks therefore remain `unknown`, even for a completed execution. Before either can pass, extend the existing ledger with a narrowly validated, public-safe result that names the exact task, canonical article revision, reviewer/tester, date, criteria and evidence. Keep private proof behind the existing allowlist. Do not create a second run or setup registry.
+
+Work down the queue in this order: recorded setup failures, explicit evidence holds and known gaps, importance-5 tasks, then the remaining unknown proof. For each selected task, re-resolve the maintained source, record the exact revisions reviewed, run the semantic checks that require judgment, and save only evidence that belongs to that task slug. A shared-hub example counts for one task only when the hub maps to that task alone or the audited source record names the matching task slug.
+
 
 ## Status legend (matches the dashboard)
 - **Reported complete** — the contributor claims that the individual task's SOP/skill is complete and mapped; this task-level status does not by itself certify a shared article hub. A shared article is labeled definitive only when every task mapped to that normalized URL is Complete and no reviewed semantic-certification hold remains.
