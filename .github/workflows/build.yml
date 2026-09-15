@@ -52,6 +52,9 @@ jobs:
       - name: Build pack zips
         run: python3 build/build-packs.py
 
+      - name: Validate published archive payload
+        run: python3 scripts/check_published_archives.py --dashboard-dir dashboard
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
@@ -64,5 +67,12 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      - uses: actions/checkout@v4
       - id: deployment
         uses: actions/deploy-pages@v4
+      - name: Verify deployed archive downloads
+        run: >-
+          python3 scripts/check_published_archives.py
+          --base-url "${{ steps.deployment.outputs.page_url }}"
+          --retries 6
+          --retry-delay 10

@@ -1,0 +1,367 @@
+"""Truthful per-task projection of the Task Library standard gates.
+
+This module derives a review queue from the existing task, article, example and
+execution records. It never promotes a missing proof item from a nearby proxy.
+"""
+import csv
+import html
+import json
+import os
+from collections import Counter
+from datetime import datetime, timezone
+
+
+GATE_ORDER = (
+    'instructionRevisionReviewed',
+    'contributorComplete',
+    'articleMapped',
+    'articleCatalogGate',
+    'articleSemanticCertification',
+    'taskExampleEvidence',
+    'recordedExecution',
+    'acceptedExecution',
+    'setupSuccess',
+)
+
+GATE_LABELS = {
+    'instructionRevisionReviewed': 'Exact instruction revision reviewed',
+    'contributorComplete': 'Contributor reports guide complete',
+    'articleMapped': 'Canonical article mapped',
+    'articleCatalogGate': 'Article catalog gate',
+    'articleSemanticCertification': 'Article semantic certification',
+    'taskExampleEvidence': 'Task-attributed example evidence',
+    'recordedExecution': 'Recorded real execution',
+    'acceptedExecution': 'Accepted execution result',
+    'setupSuccess': 'New-user setup success',
+}
+
+
+def gate(gate_id, state, reason, **evidence):
+    if state not in {'pass', 'unmet', 'hold', 'unknown'}:
+        raise ValueError(f'{gate_id}: invalid standard-verification state {state}')
+    result = {'id': gate_id, 'label': GATE_LABELS[gate_id],
+              'state': state, 'reason': reason}
+    result.update({key: value for key, value in evidence.items()
+                   if value is not None and value != []})
+    return result
+
+
+def derive(tasks, instruction_reviews, meta_audits, normalize_url):
+    """Attach ``standardVerification`` and return a deterministic review queue."""
+    groups = {}
+    for task in tasks:
+        key = normalize_url(task.get('article'))
+        if key:
+            groups.setdefault(key, []).append(task)
+
+    for task in tasks:
+        slug = task['slug']
+        key = normalize_url(task.get('article'))
+        checks = {}
+
+        review = task.get('instructionReview')
+        if review:
+            checks['instructionRevisionReviewed'] = gate(
+                'instructionRevisionReviewed', 'pass',
+                f'Current source bytes match the review recorded {review["reviewed_at"]}.',
+                reviewedAt=review['reviewed_at'], reviewer=review['reviewer'],
+                sourceSha256=review['source_sha256'])
+        else:
+            prior = instruction_reviews.get(slug)
+            reason = ('The recorded instruction review expired because its source hash no longer '
+                      'matches the current bytes.' if prior else
+                      'No exact-byte instruction review is recorded for this task.')
+            checks['instructionRevisionReviewed'] = gate(
+                'instructionRevisionReviewed', 'unmet', reason,
+                sourceSha256=task.get('_sourceSha256'))
+
+        complete = task.get('status') == 'complete'
+        checks['contributorComplete'] = gate(
+            'contributorComplete', 'pass' if complete else 'unmet',
+            ('The contributor status is complete; this is a source claim, not execution proof.'
+             if complete else
+             f'The contributor status is {task.get("status", "unknown")}; finish and review the guide.'))
+
+        checks['articleMapped'] = gate(
+            'articleMapped', 'pass' if key else 'unmet',
+            ('The task maps to a normalized canonical article URL.' if key else
+             'No valid canonical article URL is mapped for this task.'),
+            articleUrl=task.get('article') if key else None)
+
+        if not key:
+            catalog = gate('articleCatalogGate', 'unmet',
+                           'The catalog gate cannot pass until the task has a valid article mapping.')
+        elif task.get('articleStateReason'):
+            catalog = gate('articleCatalogGate', 'hold', task['articleStateReason'],
+                           reviewedAt=task.get('articleStateReviewed'))
+        elif task.get('articleState') == 'ready':
+            catalog = gate(
+                'articleCatalogGate', 'pass',
+                'Every task mapped to this hub is contributor-complete and no reviewed hold is active. '
+                'This is catalog readiness only.')
+        else:
+            catalog = gate(
+                'articleCatalogGate', 'unmet',
+                'At least one task mapped to this hub is not contributor-complete.')
+        checks['articleCatalogGate'] = catalog
+
+        if key and task.get('articleStateReason'):
+            semantic = gate('articleSemanticCertification', 'hold',
+                            task['articleStateReason'],
+                            reviewedAt=task.get('articleStateReviewed'))
+        else:
+            semantic = gate(
+                'articleSemanticCertification', 'unknown',
+                ('No exact-revision positive semantic review is recorded for this article.' if key else
+                 'There is no mapped article revision to review semantically.'))
+        checks['articleSemanticCertification'] = semantic
+
+        audit = meta_audits.get(key) if key else None
+        exact_examples = []
+        if audit:
+            mapped = groups[key]
+            for record in audit['records']:
+                if not record['counted']:
+                    continue
+                # A one-task hub is exact by construction. Shared hubs require the
+                # evidence record to name this task slug explicitly.
+                if len(mapped) == 1 or slug in record.get('taskSlugs', ()):
+                    exact_examples.append(record['sourceUrl'])
+        if exact_examples:
+            example = gate(
+                'taskExampleEvidence', 'pass',
+                f'{len(set(exact_examples))} audited example URL(s) are attributable to this task.',
+                exampleUrls=sorted(set(exact_examples)), auditedAt=audit['audited'])
+        elif not audit:
+            example = gate(
+                'taskExampleEvidence', 'unknown',
+                'No source-backed example audit exists for the mapped hub.' if key else
+                'No mapped article exists from which to audit task examples.')
+        else:
+            positive = [r for r in audit['records'] if r['counted']]
+            all_explicit = all(r.get('taskSlugs') for r in positive)
+            if audit['metaCountStatus'] == 'verified' and (not positive or all_explicit):
+                example = gate(
+                    'taskExampleEvidence', 'unmet',
+                    'The verified audit contains no counted example attributable to this task.',
+                    auditedAt=audit['audited'])
+            else:
+                example = gate(
+                    'taskExampleEvidence', 'unknown',
+                    'The hub has historical example volume, but no audited record attributes an '
+                    'example to this task slug.', auditedAt=audit['audited'])
+        checks['taskExampleEvidence'] = example
+
+        history = task.get('executionHistory') or {}
+        run_ids = history.get('executionIds') or []
+        if run_ids:
+            recorded = gate(
+                'recordedExecution', 'pass',
+                f'{len(run_ids)} distinct execution ID(s) name this task; outcomes remain separate.',
+                executionIds=run_ids, historyStatus=history.get('status'))
+        else:
+            recorded = gate(
+                'recordedExecution', 'unknown',
+                'No execution ledger record names this task. Historical run frequency is unknown.')
+        checks['recordedExecution'] = recorded
+        checks['acceptedExecution'] = gate(
+            'acceptedExecution', 'unknown',
+            'The current ledger has no structured acceptance result tied to this task and '
+            'the exact canonical article revision. A completed run label is not acceptance.')
+        checks['setupSuccess'] = gate(
+            'setupSuccess', 'unknown',
+            'No structured receipt shows a new user loaded the needed files, had access and '
+            'completed this task successfully.')
+
+        ordered = [checks[gate_id] for gate_id in GATE_ORDER]
+        unmet = [item['id'] for item in ordered if item['state'] == 'unmet']
+        held = [item['id'] for item in ordered if item['state'] == 'hold']
+        unknown = [item['id'] for item in ordered if item['state'] == 'unknown']
+        task['standardVerification'] = {
+            'instructionSourceSha256': task.get('_sourceSha256'),
+            'articleKey': key,
+            'gates': {item['id']: item for item in ordered},
+            'unmetStandardGates': unmet,
+            'heldStandardGates': held,
+            'unknownStandardGates': unknown,
+            'fullyVerified': not unmet and not held and not unknown,
+        }
+
+    rows = sorted(tasks, key=_queue_sort_key)
+    for index, task in enumerate(rows, 1):
+        verification = task['standardVerification']
+        priority, priority_reason = _queue_priority(task)
+        verification['queuePosition'] = index
+        verification['priority'] = priority
+        verification['priorityReason'] = priority_reason
+        verification['nextAction'] = _next_action(verification)
+    return rows
+
+
+def _queue_priority(task):
+    verification = task['standardVerification']
+    gates = verification['gates']
+    if gates['setupSuccess']['state'] in {'unmet', 'hold'}:
+        return 'P0', 'Recorded setup failure or hold'
+    if verification['heldStandardGates']:
+        return 'P0', 'Explicit evidence hold'
+    if verification['unmetStandardGates']:
+        return 'P1', 'Known standard gap'
+    if int(task.get('importance') or 0) == 5:
+        return 'P2', 'Importance 5; missing proof remains'
+    return 'P3', 'Missing proof remains'
+
+
+def _queue_sort_key(task):
+    verification = task['standardVerification']
+    priority, _ = _queue_priority(task)
+    return (
+        {'P0': 0, 'P1': 1, 'P2': 2, 'P3': 3}[priority],
+        0 if task.get('status') == 'gap' else 1,
+        -len(verification['heldStandardGates']),
+        -len(verification['unmetStandardGates']),
+        -int(task.get('importance') or 0),
+        task['slug'],
+    )
+
+
+def _next_action(verification):
+    gates = verification['gates']
+    order = (
+        'articleSemanticCertification', 'instructionRevisionReviewed',
+        'articleMapped', 'contributorComplete', 'articleCatalogGate',
+        'taskExampleEvidence', 'recordedExecution', 'acceptedExecution', 'setupSuccess')
+    for state in ('hold', 'unmet', 'unknown'):
+        for gate_id in order:
+            if gates[gate_id]['state'] == state:
+                return gates[gate_id]['reason']
+    return 'All recorded standard gates pass for the current revisions.'
+
+
+def report(tasks, generated_at=None):
+    """Return a compact public queue; full guide content stays in data.json."""
+    generated_at = generated_at or datetime.now(timezone.utc).isoformat(timespec='seconds')
+    gate_counts = {}
+    for gate_id in GATE_ORDER:
+        counts = Counter(t['standardVerification']['gates'][gate_id]['state'] for t in tasks)
+        gate_counts[gate_id] = {state: counts.get(state, 0)
+                                for state in ('pass', 'unmet', 'hold', 'unknown')}
+    rows = []
+    for task in tasks:
+        rows.append({
+            'queuePosition': task['standardVerification']['queuePosition'],
+            'priority': task['standardVerification']['priority'],
+            'priorityReason': task['standardVerification']['priorityReason'],
+            'slug': task['slug'], 'title': task['title'],
+            'category': task.get('category'), 'importance': task.get('importance'),
+            'status': task.get('status'), 'articleUrl': task.get('article'),
+            'taskLibraryUrl': task.get('taskLibraryUrl'),
+            'nextAction': task['standardVerification']['nextAction'],
+            'standardVerification': task['standardVerification'],
+        })
+    return {
+        'schemaVersion': 1,
+        'generatedAt': generated_at,
+        'definition': ('Per-task standard gates derived from exact instruction reviews, contributor '
+                       'status, article mapping/catalog holds, task-attributed examples and the '
+                       'execution ledger. Unknown proof is never turned into a pass.'),
+        'stats': {
+            'tasks': len(tasks),
+            'fullyVerifiedTasks': sum(t['standardVerification']['fullyVerified'] for t in tasks),
+            'semanticHoldHubs': len({normalize for t in tasks
+                                     if t['standardVerification']['gates']['articleSemanticCertification']['state'] == 'hold'
+                                     for normalize in [t['standardVerification'].get('articleKey')] if normalize}),
+            'tasksWithHolds': sum(bool(t['standardVerification']['heldStandardGates']) for t in tasks),
+            'tasksWithUnmetGates': sum(bool(t['standardVerification']['unmetStandardGates']) for t in tasks),
+            'tasksWithUnknownGates': sum(bool(t['standardVerification']['unknownStandardGates']) for t in tasks),
+            'gateCounts': gate_counts,
+        },
+        'queue': rows,
+    }
+
+
+def write_artifacts(payload, out_dir):
+    """Write JSON, CSV and an accessible human review page from one payload."""
+    json_path = os.path.join(out_dir, 'verification-queue.json')
+    csv_path = os.path.join(out_dir, 'verification-queue.csv')
+    html_path = os.path.join(out_dir, 'verification-queue.html')
+    with open(json_path, 'w', encoding='utf-8') as target:
+        json.dump(payload, target, ensure_ascii=False, indent=2)
+        target.write('\n')
+    fields = ['queuePosition', 'priority', 'priorityReason', 'slug', 'title',
+              'category', 'importance', 'status', 'articleUrl', 'taskLibraryUrl',
+              'unmetStandardGates', 'heldStandardGates', 'unknownStandardGates',
+              'nextAction'] + list(GATE_ORDER)
+    with open(csv_path, 'w', encoding='utf-8', newline='') as target:
+        writer = csv.DictWriter(target, fieldnames=fields, lineterminator='\n')
+        writer.writeheader()
+        for row in payload['queue']:
+            verification = row['standardVerification']
+            writer.writerow({
+                **{key: row.get(key) for key in fields},
+                'unmetStandardGates': ';'.join(verification['unmetStandardGates']),
+                'heldStandardGates': ';'.join(verification['heldStandardGates']),
+                'unknownStandardGates': ';'.join(verification['unknownStandardGates']),
+                **{gate_id: verification['gates'][gate_id]['state']
+                   for gate_id in GATE_ORDER},
+            })
+    with open(html_path, 'w', encoding='utf-8') as target:
+        target.write(_html_report(payload))
+
+
+def _html_report(payload):
+    esc = lambda value: html.escape(str(value or ''), quote=True)
+    stats = payload['stats']
+    rows = []
+    for row in payload['queue']:
+        verification = row['standardVerification']
+        state_set = set()
+        cells = []
+        for gate_id in GATE_ORDER:
+            item = verification['gates'][gate_id]
+            state_set.add(item['state'])
+            cells.append(
+                f'<li><strong>{esc(item["label"])}</strong>: '
+                f'<span class="state {esc(item["state"])}">{esc(item["state"])}</span> '
+                f'{esc(item["reason"])}</li>')
+        task_link = row.get('taskLibraryUrl') or row.get('articleUrl')
+        title = (f'<a href="{esc(task_link)}">{esc(row["title"])}</a>' if task_link else
+                 esc(row['title']))
+        rows.append(
+            f'<tr data-priority="{esc(row["priority"])}" '
+            f'data-states="{esc(" ".join(sorted(state_set)))}" '
+            f'data-search="{esc((row["slug"] + " " + row["title"] + " " + (row.get("category") or "")).lower())}">'
+            f'<td data-label="Queue">{row["queuePosition"]}</td><td data-label="Priority"><strong>{esc(row["priority"])}</strong><br>'
+            f'<small>{esc(row["priorityReason"])}</small></td>'
+            f'<td data-label="Task">{title}<br><code>{esc(row["slug"])}</code><br><small>{esc(row.get("category"))}</small></td>'
+            f'<td data-label="Importance">{esc(row.get("importance"))}</td>'
+            f'<td data-label="Checks"><span class="state unmet">{len(verification["unmetStandardGates"])} unmet</span> '
+            f'<span class="state hold">{len(verification["heldStandardGates"])} held</span> '
+            f'<span class="state unknown">{len(verification["unknownStandardGates"])} unknown</span>'
+            f'<details><summary>Read all nine gates</summary><ul>{"".join(cells)}</ul></details></td>'
+            f'<td data-label="Next action">{esc(row["nextAction"])}</td></tr>')
+    gate_cards = []
+    for gate_id in GATE_ORDER:
+        counts = stats['gateCounts'][gate_id]
+        gate_cards.append(
+            f'<li><strong>{esc(GATE_LABELS[gate_id])}</strong><br>'
+            f'{counts["pass"]} pass · {counts["unmet"]} unmet · '
+            f'{counts["hold"]} held · {counts["unknown"]} unknown</li>')
+    return f'''<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex"><title>Task Library standard verification queue</title>
+<style>
+:root{{--ink:#18212f;--muted:#5c6779;--line:#d8dee8;--paper:#fff;--wash:#f5f7fb;--hold:#8b2d2d;--unmet:#8a4b08;--pass:#17613a;--unknown:#586174}}*{{box-sizing:border-box}}body{{margin:0;background:var(--wash);color:var(--ink);font:16px/1.5 system-ui,-apple-system,sans-serif}}main{{max-width:1500px;margin:auto;padding:clamp(20px,4vw,52px)}}h1{{font-size:clamp(2rem,5vw,3.6rem);line-height:1.05;margin:.2em 0}}.lead{{max-width:850px;font-size:1.15rem;color:var(--muted)}}.process{{display:flex;align-items:center;gap:8px;flex-wrap:wrap;list-style:none;padding:0;margin:22px 0}}.process li{{background:#e9eef8;border:1px solid var(--line);border-radius:999px;padding:8px 12px;font-weight:700}}.process li+li::before{{content:'→';margin-right:14px;color:var(--muted)}}.summary,.filters,.table-wrap{{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:18px;margin-top:22px}}.summary ul{{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;list-style:none;padding:0}}.summary li{{border-left:4px solid var(--line);padding:8px 12px}}.filters{{display:flex;gap:14px;flex-wrap:wrap;align-items:end}}label{{font-weight:700}}input,select{{display:block;margin-top:5px;padding:9px;border:1px solid #aab4c4;border-radius:7px;font:inherit;min-width:180px}}.table-wrap{{overflow:auto;padding:0}}table{{border-collapse:collapse;width:100%;min-width:1050px}}caption{{text-align:left;font-weight:700;padding:16px}}th,td{{padding:12px;border-top:1px solid var(--line);text-align:left;vertical-align:top}}th{{position:sticky;top:0;background:#eef2f8}}td:first-child{{font-variant-numeric:tabular-nums}}code{{font-size:.82em}}small{{color:var(--muted)}}.state{{display:inline-block;border:1px solid currentColor;border-radius:999px;padding:1px 7px;font-size:.78rem;font-weight:700;margin:2px}}.pass{{color:var(--pass)}}.unmet{{color:var(--unmet)}}.hold{{color:var(--hold)}}.unknown{{color:var(--unknown)}}details{{margin-top:8px}}details ul{{padding-left:20px}}details li{{margin:.45em 0}}a{{color:#174ea6}}[hidden]{{display:none!important}}@media(max-width:760px){{.process{{display:grid;grid-template-columns:1fr}}.process li+li::before{{content:'↓';margin-right:10px}}.table-wrap{{background:transparent;border:0;overflow:visible}}table,tbody,tr,td{{display:block;width:100%}}table{{min-width:0}}thead{{position:absolute;left:-9999px}}caption{{background:var(--paper);border:1px solid var(--line);border-radius:12px;margin-bottom:12px}}tr{{background:var(--paper);border:1px solid var(--line);border-radius:12px;margin:0 0 14px;padding:10px}}td{{border:0;padding:8px}}td::before{{content:attr(data-label);display:block;color:var(--muted);font-size:.75rem;font-weight:800;text-transform:uppercase;letter-spacing:.05em;margin-bottom:3px}}}}
+</style></head><body><main>
+<h1>Task Library standard verification queue</h1>
+<p class="lead">Use this list to find which work guides in the <a href="./">Task Library</a> still need checks before your team relies on them. It shows what we know, what is missing, and what to check next. These checks help keep the Task Library useful as each real job teaches us more.</p>
+<ol class="process" aria-label="How real work improves a guide"><li>Read guide</li><li>Try task</li><li>Check result</li><li>Improve guide</li></ol>
+<p><strong>{stats['fullyVerifiedTasks']} of {stats['tasks']} tasks currently pass every check.</strong> A guide can be listed and reviewed while its real result or first-user setup is still unknown. Generated {esc(payload['generatedAt'])}. Download the <a href="verification-queue.json">JSON report</a> or <a href="verification-queue.csv">CSV queue</a>.</p>
+<section class="summary" aria-labelledby="gate-summary"><h2 id="gate-summary">Gate counts</h2><ul>{''.join(gate_cards)}</ul></section>
+<section class="filters" aria-label="Queue filters"><label>Search tasks<input id="search" type="search" autocomplete="off" placeholder="Name, slug or category"></label><label>Priority<select id="priority"><option value="">All priorities</option><option>P0</option><option>P1</option><option>P2</option><option>P3</option></select></label><label>Evidence state<select id="state"><option value="">All states</option><option value="hold">Has a hold</option><option value="unmet">Has an unmet gate</option><option value="unknown">Has an unknown gate</option><option value="pass">Has a passing gate</option></select></label><p id="shown" aria-live="polite"></p></section>
+<div class="table-wrap"><table><caption>Tasks sorted by setup failures, evidence holds, known gaps, importance and slug.</caption><thead><tr><th>Queue</th><th>Priority</th><th>Task</th><th>Importance</th><th>Gate states</th><th>Next action</th></tr></thead><tbody>{''.join(rows)}</tbody></table></div>
+<script>
+const rows=[...document.querySelectorAll('tbody tr')], search=document.querySelector('#search'), priority=document.querySelector('#priority'), state=document.querySelector('#state'), shown=document.querySelector('#shown');
+function apply(){{const q=search.value.trim().toLowerCase();let count=0;for(const row of rows){{const visible=(!q||row.dataset.search.includes(q))&&(!priority.value||row.dataset.priority===priority.value)&&(!state.value||row.dataset.states.split(' ').includes(state.value));row.hidden=!visible;if(visible)count++;}}shown.textContent=count+' of '+rows.length+' tasks shown';}}
+for(const control of [search,priority,state])control.addEventListener('input',apply);apply();
+</script></main></body></html>'''

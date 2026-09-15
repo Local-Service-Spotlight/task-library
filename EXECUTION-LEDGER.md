@@ -14,6 +14,8 @@ One parent job remains one execution. Internal QA checks, agent contributions, r
 
 None changes task completion, article certification, or a semantic HOLD. Registry `article_kind` may distinguish `task-recipe`, `topic-hub`, `entity-hub`, `reference`, `supporting`, or `unknown` without promoting readiness. Existing `before` and `after` values are generated neighboring stations, not verified prerequisite or handoff contracts; use the recipe's actual inputs and checked output links.
 
+The version 1 ledger does not record a structured acceptance result or new-user setup success. A `completed` status and linked evidence therefore do not pass those checks in the per-task verification queue. A future schema change must bind each result to the exact task and current canonical article revision, keep the skill instruction hash separate, require named criteria, reviewer/tester, date and evidence, and preserve the public/private evidence allowlist.
+
 ## Record schema, version 1
 
 The ledger contains exactly `schemaVersion: 1` and an `executions` array. Each record has:
