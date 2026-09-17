@@ -9,24 +9,24 @@ status: complete
 
 # Step 7: Write hook and establish context
 
-Readers need a reason to stay on your page. This guide helps you show who it is for and what they will learn. Start with one true point from the source, then make its value clear.
+Help readers see what your page is about and why it matters. A clear start helps them choose their next step. Start with a true point from your source; this step in our [Content Factory](https://blitzmetrics.com/content-factory/) helps turn real work into useful pages.
 
 **The path:** Real source moment → Reader’s need → Plain promise → Lead visual.
 
 **Use this when:** The full draft and title are ready, but the opening needs a clear source-specific hook and context.
 
 ## Inputs
-- The full article, title, [Goals, Content, and Targeting](https://blitzmetrics.com/gct-business-strategy/) brief and actual page role.
+- The full article, title and actual page role, plus a brief naming the goal, source content and audience: [Goals, Content, and Targeting (GCT)](https://blitzmetrics.com/gct-business-strategy/).
 - The strongest relevant source scene, question or result, with its exact evidence.
 - The intended author voice, source identity and planned meaningful first-screen visual.
 
 ## First-run prompt
 
-> Rewrite only the opening from this source, title and GCT. Give the reader a true specific point, who this helps and what they can do next in two or three plain sentences. Add a meaningful lead-visual plan. Preserve actual voice and evidence; do not invent a result or force a keyword.
+> Rewrite only the opening from this source, title and brief. In two or three plain sentences, say what this helps the reader do, why it matters, and how it connects to the larger process or the next task. Explain and link that connection. Add a meaningful lead-visual plan. Preserve actual voice and evidence; do not invent a result or force a keyword.
 
 ## Steps
 1. Choose the true source moment that best connects to the reader’s problem. A precise question or lesson can lead when there is no dramatic story. Do not manufacture a surprising number to create a hook.
-2. Draft two or three short opening sentences that explain who this helps, what the piece covers and the practical result. Make the specific GCT understandable without requiring readers to know the abbreviation.
+2. Draft two or three short opening sentences that explain what this helps the reader do, why it matters, and one useful connection to a larger process, a needed earlier task, or the next step. Explain the connection in those same sentences and link its maintained guide when one exists. Make the goal, source content and audience clear without requiring readers to know an abbreviation.
 3. Match the real author voice. Use first person for a supported personal-brand story, or the appropriate company/reference voice. Establish relevant experience through the source scene, not a stack of employers or famous names.
 4. Keep the title’s promise honest. A source showing how to prepare for a quote does not support a hook promising a guaranteed price. Explain necessary limits in plain language where they matter.
 5. Use the reader’s topic words naturally. Do not force an exact keyword string into the first sentence when it makes the opening hard to read. Explain a new specialist term at first use and link the maintained owned explanation.
@@ -36,13 +36,13 @@ Readers need a reason to stay on your page. This guide helps you show who it is 
 
 ## Opening meaning review
 
-Keep the opening to two or three short sentences at grade 5 or below. It must show the actual reader’s situation, why the subject matters, the useful result, and how this page helps. A source-backed moment or useful finding can lead. Keep its relevant visual in the first screen; check that the body delivers the opening’s promise.
+Keep the opening to two or three short sentences at grade 5 or below. It must show what this is, why the actual reader needs it, and one useful connection to a larger process, a prerequisite or the next task. Explain that relationship in the opening and link the maintained guide when one exists. A source-backed moment or useful finding can lead. Keep its relevant visual in the first screen; check that the body delivers the opening’s promise.
 
-Save the exact opening and artifact revision in the existing run receipt. Have the reviewer quote the words that establish the situation, reason to care, result and method. Record PASS, FAIL or UNKNOWN with reasons and a readability diagnostic. A grade score, keyword, generic audience label or unsupported conversion promise cannot approve meaning. Follow [Step 7: write and review the opening](https://local-service-spotlight.github.io/task-library/?task=step-7-write-hook-and-establish-context#task-step-7-write-hook-and-establish-context) and the [maintained opening standard](https://github.com/dennisyu/local-service-spotlight-skills/blob/main/standards/every-article-and-project-starts-with-specific-gct.md).
+Save the exact opening and artifact revision in the existing run receipt. Have the reviewer quote the words that establish the task, reason to care and connection, then check that the linked page supports that connection. Record PASS, FAIL or UNKNOWN with reasons and a readability diagnostic. A grade score, keyword, generic audience label or unsupported conversion promise cannot approve meaning. Follow the [maintained opening standard](https://github.com/dennisyu/local-service-spotlight-skills/blob/main/standards/every-article-and-project-starts-with-specific-gct.md).
 
 ## Definition of done (QA checklist)
 
-- [ ] The same short opening explains the reason to care, useful outcome and supporting mechanism; the body delivers that promise and the existing tracker retains quoted reviewer evidence
+- [ ] The same short opening explains what this is, why it matters and a useful linked connection; the body delivers that promise and the existing tracker retains quoted reviewer evidence
 - [ ] Relevant authentic visual is useful in the first screen; background and context do not bury it
 
 - [ ] The first two or three sentences make who, what and useful outcome clear.
@@ -54,7 +54,9 @@ Save the exact opening and artifact revision in the existing run receipt. Have t
 
 **Fictional teaching example — no real article or customer claim.** A sample opening reads:
 
-“A blurry bike photo can leave the shop guessing. This guide shows riders which photos and notes help us prepare for a repair quote. Start with a full view of the bike, then show the issue up close.”
+“A blurry bike photo can leave the shop guessing. This guide shows riders which photos and notes help us prepare for a repair quote. These photos are the first step in getting a quote, so show the whole bike and the issue up close.”
+
+The connection is the next task: getting a repair quote. In a real article, link the shop's maintained quote guide after checking it; this fictional example does not invent a shop URL.
 
 A simple three-part diagram below it reads “Whole bike → Close-up → Short note.” It supports the promise without pretending the shop can diagnose every fault from a photo. The writer rejects “Our world-class experts transform your cycling journey” because it gives no useful answer or real scene.
 

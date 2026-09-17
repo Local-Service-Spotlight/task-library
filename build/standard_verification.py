@@ -13,6 +13,7 @@ from datetime import datetime, timezone
 
 GATE_ORDER = (
     'instructionRevisionReviewed',
+    'instructionStandards',
     'contributorComplete',
     'articleMapped',
     'articleCatalogGate',
@@ -25,6 +26,7 @@ GATE_ORDER = (
 
 GATE_LABELS = {
     'instructionRevisionReviewed': 'Exact instruction revision reviewed',
+    'instructionStandards': 'Instruction requirements checked',
     'contributorComplete': 'Contributor reports guide complete',
     'articleMapped': 'Canonical article mapped',
     'articleCatalogGate': 'Article catalog gate',
@@ -34,6 +36,8 @@ GATE_LABELS = {
     'acceptedExecution': 'Accepted execution result',
     'setupSuccess': 'New-user setup success',
 }
+
+INSTRUCTION_CHECK_ORDER = ('opening', 'recipe', 'links', 'evidence', 'handoff')
 
 
 def gate(gate_id, state, reason, **evidence):
@@ -59,7 +63,9 @@ def derive(tasks, instruction_reviews, meta_audits, normalize_url):
         key = normalize_url(task.get('article'))
         checks = {}
 
-        review = task.get('instructionReview')
+        candidate_review = task.get('instructionReview')
+        review = (candidate_review if candidate_review and
+                  candidate_review.get('source_sha256') == task.get('_sourceSha256') else None)
         if review:
             checks['instructionRevisionReviewed'] = gate(
                 'instructionRevisionReviewed', 'pass',
@@ -75,6 +81,45 @@ def derive(tasks, instruction_reviews, meta_audits, normalize_url):
             checks['instructionRevisionReviewed'] = gate(
                 'instructionRevisionReviewed', 'unmet', reason,
                 sourceSha256=task.get('_sourceSha256'))
+
+        standards = review.get('standards') if review else None
+        if standards:
+            criterion_states = [standards['checks'][name]['state']
+                                for name in INSTRUCTION_CHECK_ORDER]
+            standard_state = next(
+                (state for state in ('hold', 'unmet', 'unknown')
+                 if state in criterion_states), 'pass')
+            affected = [name for name in INSTRUCTION_CHECK_ORDER
+                        if standards['checks'][name]['state'] == standard_state]
+            if standard_state == 'pass':
+                standard_reason = ('All five instruction requirements have explicit passing '
+                                   'checks for the current source revision.')
+            else:
+                standard_reason = (
+                    f'Current-revision instruction requirements are {standard_state}: '
+                    f'{", ".join(affected)}.')
+            checks['instructionStandards'] = gate(
+                'instructionStandards', standard_state, standard_reason,
+                reviewedAt=review['reviewed_at'], reviewer=review['reviewer'],
+                reviewScope=review['scope'], sourceSha256=review['source_sha256'],
+                standards=standards)
+        else:
+            prior = instruction_reviews.get(slug)
+            stale_standards = (prior.get('standards') if isinstance(prior, dict) and
+                               prior.get('source_sha256') != task.get('_sourceSha256') else None)
+            if stale_standards:
+                checks['instructionStandards'] = gate(
+                    'instructionStandards', 'unmet',
+                    'The recorded instruction-requirements checklist expired because its source '
+                    'hash no longer matches the current bytes.',
+                    sourceSha256=task.get('_sourceSha256'))
+            else:
+                checks['instructionStandards'] = gate(
+                    'instructionStandards', 'unknown',
+                    ('The current exact-byte review has no structured instruction-requirements '
+                     'checklist.' if review else
+                     'No current exact-byte instruction-requirements checklist is recorded.'),
+                    sourceSha256=task.get('_sourceSha256'))
 
         complete = task.get('status') == 'complete'
         checks['contributorComplete'] = gate(
@@ -230,7 +275,7 @@ def _next_action(verification):
     gates = verification['gates']
     order = (
         'articleSemanticCertification', 'instructionRevisionReviewed',
-        'articleMapped', 'contributorComplete', 'articleCatalogGate',
+        'instructionStandards', 'articleMapped', 'contributorComplete', 'articleCatalogGate',
         'taskExampleEvidence', 'recordedExecution', 'acceptedExecution', 'setupSuccess')
     for state in ('hold', 'unmet', 'unknown'):
         for gate_id in order:
@@ -263,9 +308,10 @@ def report(tasks, generated_at=None):
     return {
         'schemaVersion': 1,
         'generatedAt': generated_at,
-        'definition': ('Per-task standard gates derived from exact instruction reviews, contributor '
-                       'status, article mapping/catalog holds, task-attributed examples and the '
-                       'execution ledger. Unknown proof is never turned into a pass.'),
+        'definition': ('Per-task standard gates derived from exact instruction reviews, explicit '
+                       'instruction-requirement checks, contributor status, article mapping/catalog '
+                       'holds, task-attributed examples and the execution ledger. Unknown proof is '
+                       'never turned into a pass.'),
         'stats': {
             'tasks': len(tasks),
             'fullyVerifiedTasks': sum(t['standardVerification']['fullyVerified'] for t in tasks),
@@ -321,10 +367,21 @@ def _html_report(payload):
         for gate_id in GATE_ORDER:
             item = verification['gates'][gate_id]
             state_set.add(item['state'])
+            checklist = ''
+            if gate_id == 'instructionStandards' and item.get('standards'):
+                criteria = []
+                for check_name in INSTRUCTION_CHECK_ORDER:
+                    check = item['standards']['checks'][check_name]
+                    criteria.append(
+                        f'<li><strong>{esc(check_name.title())}</strong>: '
+                        f'<span class="state {esc(check["state"])}">'
+                        f'{esc(check["state"])}</span> {esc(check["reason"])} '
+                        f'<small>Evidence: {esc(check["evidence"])}</small></li>')
+                checklist = f'<ul class="criteria">{"".join(criteria)}</ul>'
             cells.append(
                 f'<li><strong>{esc(item["label"])}</strong>: '
                 f'<span class="state {esc(item["state"])}">{esc(item["state"])}</span> '
-                f'{esc(item["reason"])}</li>')
+                f'{esc(item["reason"])}{checklist}</li>')
         task_link = row.get('taskLibraryUrl') or row.get('articleUrl')
         title = (f'<a href="{esc(task_link)}">{esc(row["title"])}</a>' if task_link else
                  esc(row['title']))
@@ -339,7 +396,7 @@ def _html_report(payload):
             f'<td data-label="Checks"><span class="state unmet">{len(verification["unmetStandardGates"])} unmet</span> '
             f'<span class="state hold">{len(verification["heldStandardGates"])} held</span> '
             f'<span class="state unknown">{len(verification["unknownStandardGates"])} unknown</span>'
-            f'<details><summary>Read all nine gates</summary><ul>{"".join(cells)}</ul></details></td>'
+            f'<details><summary>Read all gates</summary><ul>{"".join(cells)}</ul></details></td>'
             f'<td data-label="Next action">{esc(row["nextAction"])}</td></tr>')
     gate_cards = []
     for gate_id in GATE_ORDER:

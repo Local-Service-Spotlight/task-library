@@ -1,6 +1,6 @@
 # Keep the Task Library useful
 
-These guides help you get work done without starting from scratch. Each time you use one, check the result and save what you learned. Fix a confusing step so the next business owner has an easier time.
+These guides help you get work done without starting from scratch. Each time you use one, check the result and save a [record of the run](EXECUTION-LEDGER.md). Use that proof to fix a confusing step so the next business owner has an easier time.
 
 ```mermaid
 flowchart LR
@@ -24,7 +24,7 @@ Before editing, collect the exact task slug, current recipe revision, latest run
 ## Work in small batches
 
 1. Read the last maintenance checkpoint, generated verification row and new run records. Reuse successful checks only when their exact skill and article revisions, output, and relevant dependencies are unchanged. If evidence is stale or absent, keep the queue state unmet, held or unknown and say why.
-2. Put broken setup, missing files, misleading instructions, and failed results first. Next, improve the most-used tasks with verified failures. When actual use is unknown, use the documented importance estimate and label that choice.
+2. Put broken setup, missing files, misleading instructions, and failed results first. Next, improve the most-used tasks with verified failures. When actual use is unknown, use the documented importance estimate and label that choice. If a held row has no new evidence or available action, retain the hold and its next checkpoint, then work on the next actionable row. Do not spend every daily batch repeating the same unavailable lookup.
 3. Select at most three related guides for one batch. Finish their review and save a checkpoint before selecting another batch. A daily scheduled pass should normally stop after one batch; a longer requested project may continue with a new checkpoint.
 4. Fix the cause in the maintained source. A real task recipe needs a starting condition, inputs and access, prerequisites with checked outputs, ordered steps with expected results, a measurable final result, and the next task or owner. Explain unfamiliar terms and link their maintained guides. Keep the first two or three sentences clear for a fifth grader: what this is, why it matters, and one useful connection to a larger process, a prerequisite, or the next task. Explain that connection, link its maintained guide when available, and show a useful first-screen picture or diagram.
 5. Check the change. Use scripts for counts, links, archive contents, and exact-source comparisons. Use human or agent judgment for meaning, source quality, voice, and whether the steps will work. Escalate only the step that needs more capable reasoning.
@@ -32,6 +32,8 @@ Before editing, collect the exact task slug, current recipe revision, latest run
 7. Record the lesson, changed revision, checks, and next action. The next real use must test the revised steps; a promising edit is not a proven outcome.
 
 Rebuild after each batch. Confirm that `dashboard/verification-queue.json`, `.csv` and `.html` agree, that the changed task moved only when its evidence supports the new state, and that the queue remains linked from the normal dashboard and static library index. A skill-file review hash is separate from the canonical article revision. Shared-hub article volume is not task-level proof unless the audited record names the matching task slug or the hub has only that one mapped task.
+
+Record the five explicit instruction checks from [the Task Library Standard](Task-Library-Standard.md#record-which-instruction-requirements-passed) in the existing instruction review. Preserve any failed or unknown check even when other checks pass. Inspect changed upstream source bytes before renewing an expired review; restoring yesterday's review count is not a reason to approve today's source.
 
 ## Check what a new user receives
 
@@ -53,6 +55,7 @@ Keep these measures separate, with a date and source:
 | Measure | What it proves |
 |---|---|
 | Reviewed instructions | The exact guide revision was examined; its review may record failed or unknown requirements. This does not certify that the task passes every standard. |
+| Instruction requirements checked | The current source has explicit verdicts for opening, recipe, links, evidence and handoff. All five must pass to pass this gate; it does not certify the article or actual use. |
 | Reported complete | The contributor's recorded status; not independent execution proof |
 | Verified real runs | Distinct executions with output and acceptance evidence |
 | Setup success | A new user loaded the needed files, had access, and completed the first task |
