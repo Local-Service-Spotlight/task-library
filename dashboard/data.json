@@ -41,10 +41,10 @@
     "unknown": 0
    },
    "instructionStandards": {
-    "pass": 0,
+    "pass": 3,
     "unmet": 0,
     "hold": 0,
-    "unknown": 276
+    "unknown": 273
    },
    "contributorComplete": {
     "pass": 125,
@@ -1711,7 +1711,7 @@
  ],
  "executionHistory": {
   "schemaVersion": 1,
-  "asOf": "2026-09-17T01:55:22.161655+00:00",
+  "asOf": "2026-09-17T03:17:00.490023+00:00",
   "countDefinition": "Distinct recorded execution IDs, separate from meta-article URLs. History is partial; absent history is unknown, not zero. The last-30-day count is a documented lower bound, not total task frequency.",
   "recordedExecutions": 2,
   "completedExecutions": 0,
@@ -5595,7 +5595,7 @@
       "source_sha256": "2118243b8b030d5738fe83d3514f2f5e792e9f8d0b4457e59999a3b8ae9fee3b",
       "reviewed_at": "2026-09-17",
       "reviewer": "Codex editorial author and independent instruction reviewer",
-      "scope": "Exact current instruction file, with five explicit requirement checks. Links remain UNKNOWN; article semantics, rendered output, setup and real execution acceptance are not certified.",
+      "scope": "Exact current instruction file, with five explicit requirement checks. All five instruction checks pass. Link checks combine current public HTTP/index reads with ordinary anonymous-browser bodies; earlier HTTP 403 challenges are preserved as checking-method limits. Article semantics, rendered output, setup and real execution acceptance are not certified.",
       "standards": {
        "version": 1,
        "checks": {
@@ -5610,9 +5610,9 @@
          "evidence": "Use this when requires a full draft and title. Inputs name source evidence and voice. Steps 1-8 end with a saved opening, source anchor and visual placement note. First-run setup says the file does not install an app, connect an account or create a schedule."
         },
         "links": {
-         "state": "unknown",
-         "reason": "Link roles and local task identities are coherent; all live targets and anchors have not yet been verified. Preserve the remaining link checks.",
-         "evidence": "Reviewed named links in the opening, Inputs, Handoff and Definitive article & links. Browser readbacks confirmed the definitive guide and Content Factory connection; direct network checks failed and the full target set remains unchecked."
+         "state": "pass",
+         "reason": "Combined current-page checks cover every maintained concept and task target named by this exact revision. Initial HTTP 403 responses were automated-checker limits, not bad-link evidence.",
+         "evidence": "2026-09-17 direct HTTP and deployed-index review matched the maintained opening standard, recipe/meta guide, Article Guidelines, exact Step 8 and self task routes. Same-day ordinary anonymous browser DOM review confirmed the final URL, heading and visible body support the stated purpose for Content Factory, GCT, Meta Article Prompt, Definitive Article Guide and Entity Linking. The earlier 403 observations remain recorded as a fetch-method limitation."
         },
         "evidence": {
          "state": "pass",
@@ -5647,7 +5647,7 @@
         "id": "instructionRevisionReviewed",
         "label": "Exact instruction revision reviewed",
         "state": "pass",
-        "reason": "Current source bytes match the review recorded 2026-09-17. Review scope and limits: Exact current instruction file, with five explicit requirement checks. Links remain UNKNOWN; article semantics, rendered output, setup and real execution acceptance are not certified.",
+        "reason": "Current source bytes match the review recorded 2026-09-17. Review scope and limits: Exact current instruction file, with five explicit requirement checks. All five instruction checks pass. Link checks combine current public HTTP/index reads with ordinary anonymous-browser bodies; earlier HTTP 403 challenges are preserved as checking-method limits. Article semantics, rendered output, setup and real execution acceptance are not certified.",
         "reviewedAt": "2026-09-17",
         "reviewer": "Codex editorial author and independent instruction reviewer",
         "sourceSha256": "2118243b8b030d5738fe83d3514f2f5e792e9f8d0b4457e59999a3b8ae9fee3b"
@@ -5655,11 +5655,11 @@
        "instructionStandards": {
         "id": "instructionStandards",
         "label": "Instruction requirements checked",
-        "state": "unknown",
-        "reason": "Current-revision instruction requirements are unknown: links.",
+        "state": "pass",
+        "reason": "All five instruction requirements have explicit passing checks for the current source revision.",
         "reviewedAt": "2026-09-17",
         "reviewer": "Codex editorial author and independent instruction reviewer",
-        "reviewScope": "Exact current instruction file, with five explicit requirement checks. Links remain UNKNOWN; article semantics, rendered output, setup and real execution acceptance are not certified.",
+        "reviewScope": "Exact current instruction file, with five explicit requirement checks. All five instruction checks pass. Link checks combine current public HTTP/index reads with ordinary anonymous-browser bodies; earlier HTTP 403 challenges are preserved as checking-method limits. Article semantics, rendered output, setup and real execution acceptance are not certified.",
         "sourceSha256": "2118243b8b030d5738fe83d3514f2f5e792e9f8d0b4457e59999a3b8ae9fee3b",
         "standards": {
          "version": 1,
@@ -5675,9 +5675,9 @@
            "evidence": "Use this when requires a full draft and title. Inputs name source evidence and voice. Steps 1-8 end with a saved opening, source anchor and visual placement note. First-run setup says the file does not install an app, connect an account or create a schedule."
           },
           "links": {
-           "state": "unknown",
-           "reason": "Link roles and local task identities are coherent; all live targets and anchors have not yet been verified. Preserve the remaining link checks.",
-           "evidence": "Reviewed named links in the opening, Inputs, Handoff and Definitive article & links. Browser readbacks confirmed the definitive guide and Content Factory connection; direct network checks failed and the full target set remains unchecked."
+           "state": "pass",
+           "reason": "Combined current-page checks cover every maintained concept and task target named by this exact revision. Initial HTTP 403 responses were automated-checker limits, not bad-link evidence.",
+           "evidence": "2026-09-17 direct HTTP and deployed-index review matched the maintained opening standard, recipe/meta guide, Article Guidelines, exact Step 8 and self task routes. Same-day ordinary anonymous browser DOM review confirmed the final URL, heading and visible body support the stated purpose for Content Factory, GCT, Meta Article Prompt, Definitive Article Guide and Entity Linking. The earlier 403 observations remain recorded as a fetch-method limitation."
           },
           "evidence": {
            "state": "pass",
@@ -5746,7 +5746,6 @@
       "unmetStandardGates": [],
       "heldStandardGates": [],
       "unknownStandardGates": [
-       "instructionStandards",
        "articleSemanticCertification",
        "taskExampleEvidence",
        "recordedExecution",
@@ -6283,7 +6282,7 @@
       "source_sha256": "d442d8bcb0a667057a12814afc16d0d23545601eea6433ff1e16405d1f5ef88e",
       "reviewed_at": "2026-09-17",
       "reviewer": "Codex editorial author and independent instruction reviewer",
-      "scope": "Exact current instruction file, with five explicit requirement checks. Links remain UNKNOWN; article semantics, rendered output, setup and real execution acceptance are not certified.",
+      "scope": "Exact current instruction file, with five explicit requirement checks. All five instruction checks pass. Link checks combine current public HTTP/index reads with ordinary anonymous-browser bodies; earlier HTTP 403 challenges are preserved as checking-method limits. Article semantics, rendered output, setup and real execution acceptance are not certified.",
       "standards": {
        "version": 1,
        "checks": {
@@ -6298,9 +6297,9 @@
          "evidence": "Use this when covers actual attempts. Inputs and Steps 1-9 require exact task/revision, evidence, real lifecycle state, a saved draft and ledger validation. First-run setup says the file does not install an app, connect an account or create a schedule."
         },
         "links": {
-         "state": "unknown",
-         "reason": "Link roles and local task identities are coherent; all live targets and anchors have not yet been verified. Preserve the remaining link checks.",
-         "evidence": "Reviewed named links in the opening, Inputs, Handoff and Definitive article & links. Browser readbacks confirmed the definitive guide and Content Factory connection; direct network checks failed and the full target set remains unchecked."
+         "state": "pass",
+         "reason": "Combined current-page checks cover every maintained concept and task target named by this exact revision. Initial HTTP 403 responses were automated-checker limits, not bad-link evidence.",
+         "evidence": "2026-09-17 direct HTTP and deployed-index review matched Article Guidelines, the recipe/meta guide, execution ledger, exact update-guide and self task routes. Same-day ordinary anonymous browser DOM review confirmed the final URL, heading and visible body support the stated purpose for Content Factory, Meta Article Prompt and Definitive Article Guide. The earlier 403 observations remain recorded as a fetch-method limitation."
         },
         "evidence": {
          "state": "pass",
@@ -6335,7 +6334,7 @@
         "id": "instructionRevisionReviewed",
         "label": "Exact instruction revision reviewed",
         "state": "pass",
-        "reason": "Current source bytes match the review recorded 2026-09-17. Review scope and limits: Exact current instruction file, with five explicit requirement checks. Links remain UNKNOWN; article semantics, rendered output, setup and real execution acceptance are not certified.",
+        "reason": "Current source bytes match the review recorded 2026-09-17. Review scope and limits: Exact current instruction file, with five explicit requirement checks. All five instruction checks pass. Link checks combine current public HTTP/index reads with ordinary anonymous-browser bodies; earlier HTTP 403 challenges are preserved as checking-method limits. Article semantics, rendered output, setup and real execution acceptance are not certified.",
         "reviewedAt": "2026-09-17",
         "reviewer": "Codex editorial author and independent instruction reviewer",
         "sourceSha256": "d442d8bcb0a667057a12814afc16d0d23545601eea6433ff1e16405d1f5ef88e"
@@ -6343,11 +6342,11 @@
        "instructionStandards": {
         "id": "instructionStandards",
         "label": "Instruction requirements checked",
-        "state": "unknown",
-        "reason": "Current-revision instruction requirements are unknown: links.",
+        "state": "pass",
+        "reason": "All five instruction requirements have explicit passing checks for the current source revision.",
         "reviewedAt": "2026-09-17",
         "reviewer": "Codex editorial author and independent instruction reviewer",
-        "reviewScope": "Exact current instruction file, with five explicit requirement checks. Links remain UNKNOWN; article semantics, rendered output, setup and real execution acceptance are not certified.",
+        "reviewScope": "Exact current instruction file, with five explicit requirement checks. All five instruction checks pass. Link checks combine current public HTTP/index reads with ordinary anonymous-browser bodies; earlier HTTP 403 challenges are preserved as checking-method limits. Article semantics, rendered output, setup and real execution acceptance are not certified.",
         "sourceSha256": "d442d8bcb0a667057a12814afc16d0d23545601eea6433ff1e16405d1f5ef88e",
         "standards": {
          "version": 1,
@@ -6363,9 +6362,9 @@
            "evidence": "Use this when covers actual attempts. Inputs and Steps 1-9 require exact task/revision, evidence, real lifecycle state, a saved draft and ledger validation. First-run setup says the file does not install an app, connect an account or create a schedule."
           },
           "links": {
-           "state": "unknown",
-           "reason": "Link roles and local task identities are coherent; all live targets and anchors have not yet been verified. Preserve the remaining link checks.",
-           "evidence": "Reviewed named links in the opening, Inputs, Handoff and Definitive article & links. Browser readbacks confirmed the definitive guide and Content Factory connection; direct network checks failed and the full target set remains unchecked."
+           "state": "pass",
+           "reason": "Combined current-page checks cover every maintained concept and task target named by this exact revision. Initial HTTP 403 responses were automated-checker limits, not bad-link evidence.",
+           "evidence": "2026-09-17 direct HTTP and deployed-index review matched Article Guidelines, the recipe/meta guide, execution ledger, exact update-guide and self task routes. Same-day ordinary anonymous browser DOM review confirmed the final URL, heading and visible body support the stated purpose for Content Factory, Meta Article Prompt and Definitive Article Guide. The earlier 403 observations remain recorded as a fetch-method limitation."
           },
           "evidence": {
            "state": "pass",
@@ -6496,7 +6495,6 @@
       "unmetStandardGates": [],
       "heldStandardGates": [],
       "unknownStandardGates": [
-       "instructionStandards",
        "articleSemanticCertification",
        "recordedExecution",
        "acceptedExecution",
@@ -6532,7 +6530,7 @@
       "source_sha256": "790c9779a5e71b48fe2a982f52781e96f5085038dea232055793588a656c2b77",
       "reviewed_at": "2026-09-17",
       "reviewer": "Codex editorial author and independent instruction reviewer",
-      "scope": "Exact current instruction file, with five explicit requirement checks. Links remain UNKNOWN; article semantics, rendered output, setup and real execution acceptance are not certified.",
+      "scope": "Exact current instruction file, with five explicit requirement checks. All five instruction checks pass. Link checks combine current public HTTP/index reads with ordinary anonymous-browser bodies; earlier HTTP 403 challenges are preserved as checking-method limits. Article semantics, rendered output, setup and real execution acceptance are not certified.",
       "standards": {
        "version": 1,
        "checks": {
@@ -6547,9 +6545,9 @@
          "evidence": "Use this when; Inputs; Steps 1-10; Definition of done. Source ownership, supported publication and first-run access are explicit. First-run setup says the file does not install an app, connect an account or create a schedule."
         },
         "links": {
-         "state": "unknown",
-         "reason": "Link roles and local task identities are coherent; all live targets and anchors have not yet been verified. Preserve the remaining link checks.",
-         "evidence": "Reviewed named links in the opening, Inputs, Handoff and Definitive article & links. Browser readbacks confirmed the definitive guide and Content Factory connection; direct network checks failed and the full target set remains unchecked."
+         "state": "pass",
+         "reason": "Combined current-page checks cover every maintained concept and task target named by this exact revision. Initial HTTP 403 responses were automated-checker limits, not bad-link evidence.",
+         "evidence": "2026-09-17 direct HTTP and deployed-index review matched Article Guidelines, the maintained opening standard, recipe/meta guide, execution ledger, exact Step 7, checklist, final-QA and self task routes. Same-day ordinary anonymous browser DOM review confirmed the final URL, heading and visible body support the stated purpose for Content Factory, GCT, Meta Article Prompt, Entity Linking, SEO Tree and Definitive Article Guide. The earlier 403 observations remain recorded as a fetch-method limitation."
         },
         "evidence": {
          "state": "pass",
@@ -6588,7 +6586,7 @@
         "id": "instructionRevisionReviewed",
         "label": "Exact instruction revision reviewed",
         "state": "pass",
-        "reason": "Current source bytes match the review recorded 2026-09-17. Review scope and limits: Exact current instruction file, with five explicit requirement checks. Links remain UNKNOWN; article semantics, rendered output, setup and real execution acceptance are not certified.",
+        "reason": "Current source bytes match the review recorded 2026-09-17. Review scope and limits: Exact current instruction file, with five explicit requirement checks. All five instruction checks pass. Link checks combine current public HTTP/index reads with ordinary anonymous-browser bodies; earlier HTTP 403 challenges are preserved as checking-method limits. Article semantics, rendered output, setup and real execution acceptance are not certified.",
         "reviewedAt": "2026-09-17",
         "reviewer": "Codex editorial author and independent instruction reviewer",
         "sourceSha256": "790c9779a5e71b48fe2a982f52781e96f5085038dea232055793588a656c2b77"
@@ -6596,11 +6594,11 @@
        "instructionStandards": {
         "id": "instructionStandards",
         "label": "Instruction requirements checked",
-        "state": "unknown",
-        "reason": "Current-revision instruction requirements are unknown: links.",
+        "state": "pass",
+        "reason": "All five instruction requirements have explicit passing checks for the current source revision.",
         "reviewedAt": "2026-09-17",
         "reviewer": "Codex editorial author and independent instruction reviewer",
-        "reviewScope": "Exact current instruction file, with five explicit requirement checks. Links remain UNKNOWN; article semantics, rendered output, setup and real execution acceptance are not certified.",
+        "reviewScope": "Exact current instruction file, with five explicit requirement checks. All five instruction checks pass. Link checks combine current public HTTP/index reads with ordinary anonymous-browser bodies; earlier HTTP 403 challenges are preserved as checking-method limits. Article semantics, rendered output, setup and real execution acceptance are not certified.",
         "sourceSha256": "790c9779a5e71b48fe2a982f52781e96f5085038dea232055793588a656c2b77",
         "standards": {
          "version": 1,
@@ -6616,9 +6614,9 @@
            "evidence": "Use this when; Inputs; Steps 1-10; Definition of done. Source ownership, supported publication and first-run access are explicit. First-run setup says the file does not install an app, connect an account or create a schedule."
           },
           "links": {
-           "state": "unknown",
-           "reason": "Link roles and local task identities are coherent; all live targets and anchors have not yet been verified. Preserve the remaining link checks.",
-           "evidence": "Reviewed named links in the opening, Inputs, Handoff and Definitive article & links. Browser readbacks confirmed the definitive guide and Content Factory connection; direct network checks failed and the full target set remains unchecked."
+           "state": "pass",
+           "reason": "Combined current-page checks cover every maintained concept and task target named by this exact revision. Initial HTTP 403 responses were automated-checker limits, not bad-link evidence.",
+           "evidence": "2026-09-17 direct HTTP and deployed-index review matched Article Guidelines, the maintained opening standard, recipe/meta guide, execution ledger, exact Step 7, checklist, final-QA and self task routes. Same-day ordinary anonymous browser DOM review confirmed the final URL, heading and visible body support the stated purpose for Content Factory, GCT, Meta Article Prompt, Entity Linking, SEO Tree and Definitive Article Guide. The earlier 403 observations remain recorded as a fetch-method limitation."
           },
           "evidence": {
            "state": "pass",
@@ -6694,7 +6692,6 @@
       ],
       "heldStandardGates": [],
       "unknownStandardGates": [
-       "instructionStandards",
        "articleSemanticCertification",
        "taskExampleEvidence",
        "acceptedExecution",

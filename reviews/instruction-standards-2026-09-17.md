@@ -23,13 +23,13 @@ The existing instruction-review records now support five checks: opening, recipe
 
 | Guide | Exact source SHA-256 | Opening | Recipe | Links | Evidence | Handoff |
 |---|---|---|---|---|---|---|
-| Create or update a definitive article | `790c9779a5e71b48fe2a982f52781e96f5085038dea232055793588a656c2b77` | Pass | Pass | Unknown | Pass | Pass |
-| Write the opening and context | `2118243b8b030d5738fe83d3514f2f5e792e9f8d0b4457e59999a3b8ae9fee3b` | Pass | Pass | Unknown | Pass | Pass |
-| Write a meta article | `d442d8bcb0a667057a12814afc16d0d23545601eea6433ff1e16405d1f5ef88e` | Pass | Pass | Unknown | Pass | Pass |
+| Create or update a definitive article | `790c9779a5e71b48fe2a982f52781e96f5085038dea232055793588a656c2b77` | Pass | Pass | Pass | Pass | Pass |
+| Write the opening and context | `2118243b8b030d5738fe83d3514f2f5e792e9f8d0b4457e59999a3b8ae9fee3b` | Pass | Pass | Pass | Pass | Pass |
+| Write a meta article | `d442d8bcb0a667057a12814afc16d0d23545601eea6433ff1e16405d1f5ef88e` | Pass | Pass | Pass | Pass | Pass |
 
 An independent reviewer inspected all three files and their contracts. The openings explain a real task, benefit and connection. Their approximate reading diagnostics were 3.27, 3.92 and 2.90, using the Flesch–Kincaid formula with Pyphen's US-English syllable approximation. These scores are screening aids; the quoted meaning reviews in `build/instruction-reviews.json` are the actual editorial judgments.
 
-Browser readbacks confirmed the main guide and Content Factory's purpose, and several other owned pages loaded. Some navigations timed out, and the complete set of task links and anchors was not verified. **Links remain unknown for all three reviews.** The maintenance process now carries such holds forward and continues with other actionable work instead of repeating one unavailable lookup every day.
+The first review kept links unknown because some browser navigations timed out and the full set was not checked. A later independent check verified the Local Service Spotlight and GitHub destinations and all six Task Library query/fragment routes against the deployed index. Direct requests to six BlitzMetrics pages received HTTP 403 challenges. Ordinary anonymous-browser reads then confirmed the current final URL, heading and relevant body of each page: Content Factory, GCT, Meta Article Prompt, Entity Linking, SEO Tree and the Definitive Article Guide. The reviewer reconciled both sets of evidence. **All five instruction checks now pass for these three exact revisions.** Earlier transport failures remain part of the record; a successful link check does not certify the whole linked article. The maintenance process now carries such holds forward and continues with other actionable work instead of repeating one unavailable lookup every day.
 
 The local build also fetched changed Google Ads instructions from the existing external source. Its earlier review no longer matches. That expires its reviewed status without changing the contributor's status or editing the upstream repository.
 
@@ -39,8 +39,8 @@ The local build also fetched changed Google Ads instructions from the existing e
 - All seven generated archives passed integrity and expected-file checks. A valid archive is not proof that someone installed it, connected accounts or completed a first job.
 - Search and the expanded checklist were tested in the actual generated page. The expanded evidence was visually reviewed at 390 × 844 and 1280 × 800; the phone view had no horizontal overflow.
 - Task identities, contributor statuses, article mappings, owners and stages did not change. No article semantic hold was lifted and no accepted execution or setup success was invented.
-- The build and ordinary public queue observed during this review show 275 current instruction reviews, 125 contributor-complete labels, and zero fully verified tasks. The three new checklists are partial reviews, not three overall passes. Deployment and public readback require their own receipts.
+- The build and ordinary public queue observed during this review show 275 current instruction reviews, 125 contributor-complete labels, and zero fully verified tasks. The three new checklists pass instruction requirements, not all task gates. The initial release was merged in [PR 29](https://github.com/Local-Service-Spotlight/task-library/pull/29); its [deployment](https://github.com/Local-Service-Spotlight/task-library/actions/runs/35176245417) and live archive checks passed. Ordinary public data matched the reviewed build except its generation timestamps. The subsequent link-review update requires its own deployment readback.
 
 ## What happens next
 
-Finish the named link checks, then use the generated queue to review the next actionable guide. Extend the existing evidence records to capture exact-revision article acceptance, actual setup and accepted results before those gates can pass. Test those records on one authorized real task, with its starting conditions, measured result, acceptance and next handoff. Preserve every failure and use it to improve the recipe before the next run.
+Use the generated queue to review the next actionable guide. Extend the existing evidence records to capture exact-revision article acceptance, actual setup and accepted results before those gates can pass. Test those records on one authorized real task, with its starting conditions, measured result, acceptance and next handoff. Preserve every failure and use it to improve the recipe before the next run.
