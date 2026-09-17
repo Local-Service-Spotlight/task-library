@@ -38,6 +38,8 @@ STUB = re.compile(r'(placeholder|TBD|to be (written|documented|filled)|coming so
 ARTICLE_CERTIFICATIONS = os.path.join(BUILD, 'article-certifications.json')
 ARTICLE_META_ORBITS = os.path.join(BUILD, 'article-meta-orbits.json')
 META_COUNT_STATUSES = {'verified', 'partial'}
+INSTRUCTION_STANDARD_CHECKS = {'opening', 'recipe', 'links', 'evidence', 'handoff'}
+REVIEW_STATES = {'pass', 'unmet', 'hold', 'unknown'}
 META_ORBIT_TIERS = (
     (0, 0, 'No verified examples'),
     (1, 2, 'Emerging'),
@@ -82,9 +84,44 @@ def current_instruction_review(slug, text, reviews):
     valid_review_date(review.get('reviewed_at'), f'{slug}: instruction review date')
     if not review.get('reviewer') or not review.get('scope'):
         raise ValueError(f'{slug}: instruction review needs reviewer and scope')
+    if 'standards' in review:
+        validate_instruction_standards(slug, review['standards'])
     if hashlib.sha256(text.encode('utf-8')).hexdigest() != review['source_sha256']:
         return None
     return dict(review)
+
+
+def _public_review_text(slug, check, field, value, limit):
+    if not isinstance(value, str) or not value.strip():
+        raise ValueError(f'{slug}: standards {check}.{field} must be a nonempty string')
+    if len(value) > limit:
+        raise ValueError(f'{slug}: standards {check}.{field} exceeds {limit} characters')
+    if re.search(r'[\x00-\x08\x0b\x0c\x0e-\x1f\x7f]', value):
+        raise ValueError(f'{slug}: standards {check}.{field} contains control characters')
+    if re.search(r'(?:file://|(?:^|[\s`"\'(])(?:/Users/|/home/|~/)|[A-Za-z]:[\\/]+Users[\\/])',
+                 value, re.I):
+        raise ValueError(f'{slug}: standards {check}.{field} contains a private path')
+
+
+def validate_instruction_standards(slug, standards):
+    """Validate the optional exact-revision instruction-requirements checklist."""
+    if not isinstance(standards, dict) or set(standards) != {'version', 'checks'}:
+        raise ValueError(f'{slug}: standards must contain exactly version and checks')
+    if type(standards['version']) is not int or standards['version'] != 1:
+        raise ValueError(f'{slug}: standards version must be 1')
+    checks = standards['checks']
+    if not isinstance(checks, dict) or set(checks) != INSTRUCTION_STANDARD_CHECKS:
+        raise ValueError(
+            f'{slug}: standards checks must be exactly {sorted(INSTRUCTION_STANDARD_CHECKS)}')
+    for check_name in sorted(INSTRUCTION_STANDARD_CHECKS):
+        check = checks[check_name]
+        if not isinstance(check, dict) or set(check) != {'state', 'reason', 'evidence'}:
+            raise ValueError(
+                f'{slug}: standards {check_name} must contain exactly state, reason and evidence')
+        if not isinstance(check['state'], str) or check['state'] not in REVIEW_STATES:
+            raise ValueError(f'{slug}: standards {check_name}.state is invalid')
+        _public_review_text(slug, check_name, 'reason', check['reason'], 600)
+        _public_review_text(slug, check_name, 'evidence', check['evidence'], 1200)
 
 
 def display_title(text, slug):

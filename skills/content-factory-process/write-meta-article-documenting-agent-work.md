@@ -9,7 +9,7 @@ status: complete
 
 # Write a meta article documenting a task execution
 
-The next person should not have to guess what you did. This guide helps you write a clear record of the work and its result. Start with the task, the real evidence, and what is still left.
+Write a short record of what happened when your team did a job. It helps the next person learn from the work and avoid the same mistakes. Link the record to the [main task guide](https://blitzmetrics.com/definitive-article-guide/) so you can improve its steps with proof.
 
 **The path:** Actual task evidence → Clear run story → Same execution record → Checked handoff.
 
@@ -27,7 +27,7 @@ The next person should not have to guess what you did. This guide helps you writ
 
 ## Steps
 1. Read the real run evidence and existing record before writing. Separate the intended outcome from what actually happened. Keep one ID across retries, checks and derivative artifacts; a genuinely separate performed child can have its own parent-linked ID.
-2. Write a plain opening with who needed the work, why it started and the useful result or remaining blocker. Describe the starting condition, source material and actual recipe revision.
+2. Write two or three opening sentences at grade 5 or below. Say what work was attempted, why it mattered, and how this record helps improve the main task guide; link that guide in the opening. Preserve the real result, including a remaining blocker. Describe the starting condition, source material and actual recipe revision in the body.
 3. Explain the steps actually performed, important decisions and checks. Use dated evidence and concrete observed results. Mark untested or unavailable fields; never fill time, cost, tokens or completion counts from estimates.
 4. Show a meaningful real artifact or a clearly labeled diagram of the observed workflow/result. Link the canonical task and exact Task Library route, and explain new terms with owned guides. Keep secrets, private paths and private evidence URLs out of a public-safe version.
 5. Record acceptance state from evidence: passed checks, failures, not-checked items, partial work and next owner. The story can be useful even when the task is blocked. Do not turn a written meta into automatic task certification.
@@ -38,6 +38,7 @@ The next person should not have to guess what you did. This guide helps you writ
 
 ## Definition of done (QA checklist)
 
+- [ ] The first two or three sentences explain what, why and the connection to the linked main task guide in plain words. Save the exact opening, readability result and the reviewer's quoted meaning check with the artifact revision.
 - [ ] The written record links the actual task/revision and stable execution ID.
 - [ ] Result, telemetry, evidence and remaining work are truthful and public-safe.
 - [ ] Draft/published and ongoing/ended states match actual evidence; ledger validation passes before registration.

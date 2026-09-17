@@ -9,7 +9,7 @@ status: needs-work
 
 # Create or update a definitive task article
 
-Your team needs one clear place to learn a task. This guide helps you create that page or fix the one you have. Start by finding its current owner and the real work it should teach.
+Use this guide to give your team one clear set of steps for a job. That saves time and helps people check their work. It is part of our [Content Factory](https://blitzmetrics.com/content-factory/): turn what you know into a guide others can use.
 
 **The path:** Current owner and source → Usable recipe → Independent checks → Published or staged guide.
 
@@ -17,7 +17,7 @@ Your team needs one clear place to learn a task. This guide helps you create tha
 
 ## Inputs
 - The task, existing canonical owner URL/source revision and declared page role.
-- Actual source material, examples and permissions, plus the [Goals, Content, and Targeting](https://blitzmetrics.com/gct-business-strategy/) brief.
+- Actual source material, examples and permissions, plus a brief naming the goal, source content and audience: [Goals, Content, and Targeting (GCT)](https://blitzmetrics.com/gct-business-strategy/).
 - Maintained [Article Guidelines](https://localservicespotlight.com/article-guidelines/), the Task Library and actual prerequisite outputs/access.
 - The supported CMS/builder or repository source, edit/publication scope, independent reviewer and next owner.
 
@@ -28,25 +28,25 @@ Your team needs one clear place to learn a task. This guide helps you create tha
 ## Steps
 1. Search the live site, canonical directory and Task Library. Improve the current owner when it exists. Keep a topic hub, story, reference and task recipe distinct; do not create a new definitive page simply because an old article lacks a wrapper.
 2. Read the full current procedure and available execution proof. Identify what is missing or false. Verify changing technical claims against current primary product docs while linking owned training for explanations.
-3. Write a specific GCT opening in two or three plain sentences at grade 5. Say who the page helps, why the task matters, and what useful result the reader will get. Explain first-use jargon and include a topic-specific meaningful lead visual.
+3. Write a specific opening in two or three plain sentences at grade 5. Say what the page helps the reader do and why it matters. In those same sentences, explain one useful connection to the larger process, a needed earlier task, or the next step, and link its maintained guide when available. Explain first-use terms and include a topic-specific meaningful lead visual.
 4. Write the full task contract: trigger/start, inputs/access, true prerequisite outputs, ordered decisions, measurable deliverable, acceptance checks and the actual next task/owner. Fix bad old steps rather than preserving them inside a new template.
 5. Include a useful worked example. Prefer relevant verified run evidence; when none exists, label a concrete teaching example as fictional and keep the real-run evidence gap explicit. Neither a fictional result nor a contributor label certifies execution.
 6. Connect the page to its actual SEO Tree parent, useful proof stories and next guides. Verify every new target and named anchor. Keep a needed primary proof/download/sign-in link where its purpose is clear, without routing every tool explanation to the provider.
 7. Preserve the canonical URL, existing Page/builder and original proof media. Change source type, redirects or identity only where the job authorizes it. Stage exact before/after files and protect newer concurrent changes.
 8. Place the lower Content Factory map after the main task explanation, showing true inputs/handoff and stage. Keep the topic lead visual distinct. Check the applicable article standards and have an independent reviewer inspect meaning and source fidelity.
-9. Publish/update through the supported route when already authorized and checks pass, or finish the reviewable draft when staging is the scope. Read back the saved source and normal public canonical URL separately. Check meaningful lead visibility/no overflow at 1440×860 and 390×844, with silent media and evidence tied to the final revision.
+9. Publish/update through the supported route when already authorized and checks pass, or finish the reviewable draft when staging is the scope. Read back the saved source and normal public canonical URL separately. Check meaningful lead visibility/no overflow at 1280×800 and 390×844, including first paint without JavaScript, with silent media and evidence tied to the final revision.
 10. Write this actual execution’s meta, register its real state through the existing ledger rail, and give the next owner the artifact, acceptance evidence and gaps. Certification requires actual semantic review and evidence; authoring or registration alone does not promote the source status.
 
 ## Opening meaning review
 
-Keep the opening to two or three short sentences at grade 5 or below. It must show the actual reader’s situation, why the subject matters, the useful result, and how this page helps. A source-backed moment or useful finding can lead. Keep its relevant visual in the first screen; check that the body delivers the opening’s promise.
+Keep the opening to two or three short sentences at grade 5 or below. It must show what this is, why the actual reader needs it, and one useful connection to a larger process, a prerequisite or the next task. Explain that relationship in the opening and link the maintained guide when one exists. A source-backed moment or useful finding can lead. Keep its relevant visual in the first screen; check that the body delivers the opening’s promise.
 
-Save the exact opening and artifact revision in the existing run receipt. Have the reviewer quote the words that establish the situation, reason to care, result and method. Record PASS, FAIL or UNKNOWN with reasons and a readability diagnostic. A grade score, keyword, generic audience label or unsupported conversion promise cannot approve meaning. Follow [Step 7: write and review the opening](https://local-service-spotlight.github.io/task-library/?task=step-7-write-hook-and-establish-context#task-step-7-write-hook-and-establish-context) and the [maintained opening standard](https://github.com/dennisyu/local-service-spotlight-skills/blob/main/standards/every-article-and-project-starts-with-specific-gct.md).
+Save the exact opening and artifact revision in the existing run receipt. Have the reviewer quote the words that establish the task, reason to care and connection, then check that the linked page supports that connection. Record PASS, FAIL or UNKNOWN with reasons and a readability diagnostic. A grade score, keyword, generic audience label or unsupported conversion promise cannot approve meaning. Follow [Step 7: write and review the opening](https://local-service-spotlight.github.io/task-library/?task=step-7-write-hook-and-establish-context#task-step-7-write-hook-and-establish-context) and the [maintained opening standard](https://github.com/dennisyu/local-service-spotlight-skills/blob/main/standards/every-article-and-project-starts-with-specific-gct.md).
 
 ## Definition of done (QA checklist)
 
 - [ ] One canonical owner and correct page role are preserved.
-- [ ] The full useful recipe, grade-5 opening and worked example are source-grounded; real-run gaps remain explicit.
+- [ ] The full useful recipe, grade-5 opening and worked example are source-grounded; real-run gaps remain explicit. The first two or three sentences explain what, why and a useful linked connection.
 - [ ] Owned links, lead visual, lower context and supported publishing source are checked.
 - [ ] Independent review and actual save/public evidence match the final revision, with truthful execution/meta state.
 

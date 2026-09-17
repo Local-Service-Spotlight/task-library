@@ -205,10 +205,40 @@
       "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
     },
     "step-7-write-hook-and-establish-context": {
-      "source_sha256": "2a3b3f665c3c2f628ce352d95644c041a91aea6bcf0107000b91933d4ebeb5a7",
-      "reviewed_at": "2026-09-06",
-      "reviewer": "Codex editorial review",
-      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+      "source_sha256": "2118243b8b030d5738fe83d3514f2f5e792e9f8d0b4457e59999a3b8ae9fee3b",
+      "reviewed_at": "2026-09-17",
+      "reviewer": "Codex editorial author and independent instruction reviewer",
+      "scope": "Exact current instruction file, with five explicit requirement checks. Links remain UNKNOWN; article semantics, rendered output, setup and real execution acceptance are not certified.",
+      "standards": {
+        "version": 1,
+        "checks": {
+          "opening": {
+            "state": "pass",
+            "reason": "Make the page clear; help readers choose their next step; explain how real sources become useful pages. Independent meaning review passed.",
+            "evidence": "Help readers see what your page is about and why it matters. A clear start helps them choose their next step. Start with a true point from your source; this step in our Content Factory helps turn real work into useful pages. Approximate reading diagnostic: 3.92; Flesch-Kincaid with Pyphen syllable approximation, not grade certification. Three sentences."
+          },
+          "recipe": {
+            "state": "pass",
+            "reason": "The instructions state a repeatable contract with inputs, checks and a setup boundary. This is a document review, not proof of a successful run.",
+            "evidence": "Use this when requires a full draft and title. Inputs name source evidence and voice. Steps 1-8 end with a saved opening, source anchor and visual placement note. First-run setup says the file does not install an app, connect an account or create a schedule."
+          },
+          "links": {
+            "state": "unknown",
+            "reason": "Link roles and local task identities are coherent; all live targets and anchors have not yet been verified. Preserve the remaining link checks.",
+            "evidence": "Reviewed named links in the opening, Inputs, Handoff and Definitive article & links. Browser readbacks confirmed the definitive guide and Content Factory connection; direct network checks failed and the full target set remains unchecked."
+          },
+          "evidence": {
+            "state": "pass",
+            "reason": "Examples are labeled as teaching material and actual-run proof is required. Fictional examples do not count as completed tasks.",
+            "evidence": "Example(s) explicitly says fictional. Write up the real run requires exact recipe revision, observed results, honest partial/failed states and one stable execution ID. Real-example and setup gaps remain separate."
+          },
+          "handoff": {
+            "state": "pass",
+            "reason": "The checked artifact, receiving function and actual Process-stage context are explicit.",
+            "evidence": "The visual editor receives the opening and placement plan for Step 8: add photos and featured image. Handoff and Content Factory context distinguishes Produce, Process, Post and Promote."
+          }
+        }
+      }
     },
     "step-8-add-photos-and-featured-image": {
       "source_sha256": "4644714b8ad9a9cf7a45a88cb0f5c4da471e8dbcbf0b8b238bd1ac9ef72935e1",
@@ -511,16 +541,76 @@
       "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
     },
     "write-meta-article-documenting-agent-work": {
-      "source_sha256": "38c664a2e14a444929bdeaa98c20407a69371c15082fe6cdcbcc0c04b2b15196",
-      "reviewed_at": "2026-09-06",
-      "reviewer": "Codex editorial review",
-      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+      "source_sha256": "d442d8bcb0a667057a12814afc16d0d23545601eea6433ff1e16405d1f5ef88e",
+      "reviewed_at": "2026-09-17",
+      "reviewer": "Codex editorial author and independent instruction reviewer",
+      "scope": "Exact current instruction file, with five explicit requirement checks. Links remain UNKNOWN; article semantics, rendered output, setup and real execution acceptance are not certified.",
+      "standards": {
+        "version": 1,
+        "checks": {
+          "opening": {
+            "state": "pass",
+            "reason": "Write a record of a job; help the next person avoid mistakes; use proof to improve the linked main guide. Independent meaning review passed.",
+            "evidence": "Write a short record of what happened when your team did a job. It helps the next person learn from the work and avoid the same mistakes. Link the record to the main task guide so you can improve its steps with proof. Approximate reading diagnostic: 2.9; Flesch-Kincaid with Pyphen syllable approximation, not grade certification. Three sentences."
+          },
+          "recipe": {
+            "state": "pass",
+            "reason": "The instructions state a repeatable contract with inputs, checks and a setup boundary. This is a document review, not proof of a successful run.",
+            "evidence": "Use this when covers actual attempts. Inputs and Steps 1-9 require exact task/revision, evidence, real lifecycle state, a saved draft and ledger validation. First-run setup says the file does not install an app, connect an account or create a schedule."
+          },
+          "links": {
+            "state": "unknown",
+            "reason": "Link roles and local task identities are coherent; all live targets and anchors have not yet been verified. Preserve the remaining link checks.",
+            "evidence": "Reviewed named links in the opening, Inputs, Handoff and Definitive article & links. Browser readbacks confirmed the definitive guide and Content Factory connection; direct network checks failed and the full target set remains unchecked."
+          },
+          "evidence": {
+            "state": "pass",
+            "reason": "Examples are labeled as teaching material and actual-run proof is required. Fictional examples do not count as completed tasks.",
+            "evidence": "Example(s) explicitly says fictional. Write up the real run requires exact recipe revision, observed results, honest partial/failed states and one stable execution ID. Real-example and setup gaps remain separate."
+          },
+          "handoff": {
+            "state": "pass",
+            "reason": "The checked artifact, receiving function and actual Process-stage context are explicit.",
+            "evidence": "The task owner receives the written meta and validated candidate; the standards owner receives supported recipe changes. No automatic endless meta loop. Handoff and Content Factory context distinguishes Produce, Process, Post and Promote."
+          }
+        }
+      }
     },
     "create-or-update-a-definitive-article": {
-      "source_sha256": "023c3a1d3171dac1d5a29e3391e472248c7337ac0249fc08846a20891fd819f2",
-      "reviewed_at": "2026-09-06",
-      "reviewer": "Codex editorial review",
-      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+      "source_sha256": "790c9779a5e71b48fe2a982f52781e96f5085038dea232055793588a656c2b77",
+      "reviewed_at": "2026-09-17",
+      "reviewer": "Codex editorial author and independent instruction reviewer",
+      "scope": "Exact current instruction file, with five explicit requirement checks. Links remain UNKNOWN; article semantics, rendered output, setup and real execution acceptance are not certified.",
+      "standards": {
+        "version": 1,
+        "checks": {
+          "opening": {
+            "state": "pass",
+            "reason": "Give the team steps; save time and check work; connect the guide to turning knowledge into useful content. Independent meaning review passed.",
+            "evidence": "Use this guide to give your team one clear set of steps for a job. That saves time and helps people check their work. It is part of our Content Factory: turn what you know into a guide others can use. Approximate reading diagnostic: 3.27; Flesch-Kincaid with Pyphen syllable approximation, not grade certification. Three sentences."
+          },
+          "recipe": {
+            "state": "pass",
+            "reason": "The instructions state a repeatable contract with inputs, checks and a setup boundary. This is a document review, not proof of a successful run.",
+            "evidence": "Use this when; Inputs; Steps 1-10; Definition of done. Source ownership, supported publication and first-run access are explicit. First-run setup says the file does not install an app, connect an account or create a schedule."
+          },
+          "links": {
+            "state": "unknown",
+            "reason": "Link roles and local task identities are coherent; all live targets and anchors have not yet been verified. Preserve the remaining link checks.",
+            "evidence": "Reviewed named links in the opening, Inputs, Handoff and Definitive article & links. Browser readbacks confirmed the definitive guide and Content Factory connection; direct network checks failed and the full target set remains unchecked."
+          },
+          "evidence": {
+            "state": "pass",
+            "reason": "Examples are labeled as teaching material and actual-run proof is required. Fictional examples do not count as completed tasks.",
+            "evidence": "Example(s) explicitly says fictional. Write up the real run requires exact recipe revision, observed results, honest partial/failed states and one stable execution ID. Real-example and setup gaps remain separate."
+          },
+          "handoff": {
+            "state": "pass",
+            "reason": "The checked artifact, receiving function and actual Process-stage context are explicit.",
+            "evidence": "The publishing/task owner receives the checked guide and evidence; checklist and final formatting tasks are named components. Handoff and Content Factory context distinguishes Produce, Process, Post and Promote."
+          }
+        }
+      }
     },
     "maintain-canonical-honor-and-story-leaves": {
       "source_sha256": "4e272b870e854d8e547111e21f12c3c0d3c419dc6aa96991df661702b9550cae",

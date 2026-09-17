@@ -1,5 +1,5 @@
 # The BlitzMetrics Task Library Standard
-Use this standard to make work clear for your team. Write the steps, show a useful example, and check the result. Link each guide to its real run records so the next person can learn from them.
+Use this standard to make work clear for your team. Write the steps, show a useful example, and check the result. Link each guide to its [real run records](EXECUTION-LEDGER.md) so the next person can learn from them.
 
 A [definitive article](https://blitzmetrics.com/definitive-article-guide/) is the main recipe. A skill file holds its steps for an AI app. A [meta article](https://blitzmetrics.com/meta-article-prompt/) records one real run and its proof.
 
@@ -32,6 +32,24 @@ Every actual task in the library targets **three linked artifacts**, and they po
 ## What a ready document proves
 
 Task status `complete` is the contributor’s recorded claim that the instructions are complete. Independent document review still needs evidence for the exact revision. It does not prove a client task was executed, accounts were connected, a skill was installed, a schedule fired, or an outcome was certified. Keep required access, observed access, human approval and actual execution evidence separate. Every document starts with two or three grade-5 sentences explaining what it is, why it helps the reader, and how it connects to a larger process, a prerequisite, or the next task. Explain that relationship and link its maintained guide when one exists. Name the reader's first action.
+
+## Record which instruction requirements passed
+
+An exact-file review proves that someone examined the guide. The separate **Instruction requirements checked** gate shows what that review found. Record its checklist in the existing `build/instruction-reviews.json` entry, next to the source hash, review date, reviewer and scope. This is evidence about a task already in the registry, not a new task list.
+
+Use `standards: {"version": 1, "checks": {...}}` with exactly these five named checks:
+
+| Check | What the reviewer must establish |
+|---|---|
+| `opening` | The first two or three sentences explain what, why and a useful connection in plain words, with a maintained link when available. Quote the opening and explain its meaning; save a readability diagnostic. Require the useful first-screen visual and its actual review where this task produces a page. |
+| `recipe` | The trigger, inputs, access, prerequisites, ordered steps and measurable done state let another worker repeat the task. Installation, account access, a checked first run and optional scheduling are distinct. |
+| `links` | Named concepts, prerequisite tasks and the next task point to the intended maintained sources. Check the target's meaning and availability; preserve UNKNOWN when it cannot be checked. A plausible URL is not evidence. |
+| `evidence` | Claims and examples agree with the available source. Teaching examples are labeled, real-run gaps remain visible, and the guide requires truthful proof from actual work. This instruction check does not create a real example or accepted execution. |
+| `handoff` | The guide names the checked artifact, receiving task or function, remaining issues and true place in the Content Factory. A list of neighboring tasks is not a handoff. |
+
+Each check has exactly `state`, `reason` and `evidence`. Use `pass`, `unmet`, `hold` or `unknown`; include a specific reason (up to 600 characters) and public-safe quoted text or section reference (up to 1,200 characters). Keep private paths and client evidence outside the public repository. The validator checks structure, not whether a reviewer's claim is true; an independent reviewer must inspect the source and evidence.
+
+All five explicit passes are required to pass this instruction gate. Holds, failures and unknowns remain visible. A source edit expires the checklist; do not copy its old verdict onto new bytes. Older reviews without a checklist retain their exact-file review status and get UNKNOWN for instruction requirements. Contributor status, article certification, real examples, accepted results and new-user setup still need their own evidence.
 
 ## The Nine Requirements of a Definitive Article
 A page is only "definitive" if it meets **all nine**. Miss one and it's a draft (Yellow), not done (Green).
