@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "asOf": "2026-09-17T03:17:00.490023+00:00",
+  "asOf": "2026-09-18T07:34:23.600570+00:00",
   "countDefinition": "Distinct recorded execution IDs, separate from meta-article URLs. History is partial; absent history is unknown, not zero. The last-30-day count is a documented lower bound, not total task frequency.",
-  "recordedExecutions": 2,
+  "recordedExecutions": 3,
   "completedExecutions": 0,
-  "partialExecutions": 2,
+  "partialExecutions": 3,
   "executions": [
     {
       "executionId": "recipe-audit-20260905-080140",
@@ -71,6 +71,27 @@
       "metaArticle": {
         "status": "published",
         "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#task-standards-20260915-215131"
+      }
+    },
+    {
+      "executionId": "article-review-20260918-063904",
+      "taskSlugs": [
+        "create-or-update-a-definitive-article"
+      ],
+      "startedAt": "2026-09-18T06:39:04Z",
+      "status": "partial",
+      "result": "Prepared and independently reviewed a clearer definitive-guide opening and more compact lead diagram. Article remains staged after a browser connection failure interrupted final phone/link verification. Added exact-revision article review support; all 210 tests pass. No task certification or successful business run claimed.",
+      "recipeRevisions": {
+        "create-or-update-a-definitive-article": {
+          "articleUrl": "https://blitzmetrics.com/definitive-article-guide/",
+          "sourceSha256": "be544b8ad0d81921fe2cf865ebde323f58384bd6dfa88c0dd0d637f11f69f07f"
+        }
+      },
+      "finishedAt": "2026-09-18T07:31:56.660109Z",
+      "evidenceUrls": [],
+      "privateEvidenceRecorded": true,
+      "metaArticle": {
+        "status": "draft"
       }
     }
   ]

@@ -228,6 +228,38 @@
       },
       "recordedAt": "2026-09-15T02:23:47.632018+00:00",
       "updatedAt": "2026-09-15T02:23:47.632018+00:00"
+    },
+    {
+      "executionId": "article-review-20260918-063904",
+      "taskSlugs": [
+        "create-or-update-a-definitive-article"
+      ],
+      "startedAt": "2026-09-18T06:39:04Z",
+      "finishedAt": "2026-09-18T07:31:56.660109Z",
+      "status": "partial",
+      "result": "Prepared and independently reviewed a clearer definitive-guide opening and more compact lead diagram. Article remains staged after a browser connection failure interrupted final phone/link verification. Added exact-revision article review support; all 210 tests pass. No task certification or successful business run claimed.",
+      "evidence": [
+        {
+          "visibility": "private",
+          "sha256": "5f4a981dd5d5b3ed52ea6eca4179a1ea872da25b6f728e782c4b5a652ab7a6a8"
+        },
+        {
+          "visibility": "private",
+          "sha256": "489bb155125c3847272c7b06daf86a8ff9b43b639f26b4ac4cea6bd7b5a09320"
+        }
+      ],
+      "metaArticle": {
+        "status": "draft",
+        "draftSha256": "4d163c1d49ddda21c410e1f58e03d69e5f7d4c0ee8ccf1635b7bdfc075b1b82e"
+      },
+      "recipeRevisions": {
+        "create-or-update-a-definitive-article": {
+          "articleUrl": "https://blitzmetrics.com/definitive-article-guide/",
+          "sourceSha256": "be544b8ad0d81921fe2cf865ebde323f58384bd6dfa88c0dd0d637f11f69f07f"
+        }
+      },
+      "recordedAt": "2026-09-18T07:31:56.660109Z",
+      "updatedAt": "2026-09-18T07:31:56.660109Z"
     }
   ]
 }
