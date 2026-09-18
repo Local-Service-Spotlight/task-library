@@ -27,6 +27,7 @@ sys.path.insert(0, BUILD)
 import factory  # noqa: E402
 import executions  # noqa: E402
 import standard_verification  # noqa: E402
+import article_semantic_reviews  # noqa: E402
 
 STAGES = {'Produce', 'Process', 'Post', 'Promote', '—', ''}
 STATUSES = {'complete', 'needs-work', 'gap'}
@@ -651,6 +652,11 @@ def load_article_certifications(path=ARTICLE_CERTIFICATIONS):
     return holds
 
 
+def load_article_semantic_evidence(path=ARTICLE_CERTIFICATIONS):
+    """Load optional task-specific reviews and independent revision observations."""
+    return article_semantic_reviews.load(path)
+
+
 def validate_article_certifications(tasks, certifications):
     """Fail if a reviewed hold misses the final post-override article mapping."""
     mapped = {normalize_article_url(t.get('article')) for t in tasks}
@@ -659,6 +665,11 @@ def validate_article_certifications(tasks, certifications):
     if unused:
         raise ValueError('semantic-certification hold(s) do not match any final article URL: ' +
                          ', '.join(unused))
+
+
+def validate_article_semantic_evidence(tasks, evidence):
+    """Fail if semantic evidence misses an exact final task/article mapping."""
+    article_semantic_reviews.validate_task_mappings(tasks, evidence, normalize_article_url)
 
 
 def derive_article_states(tasks, certifications=None):
@@ -1133,6 +1144,8 @@ def main():
     all_tasks = [t for ts in by_cat.values() for t in ts]
     certifications = load_article_certifications()
     validate_article_certifications(all_tasks, certifications)
+    semantic_evidence = load_article_semantic_evidence()
+    validate_article_semantic_evidence(all_tasks, semantic_evidence)
     article_stats = derive_article_states(all_tasks, certifications)
     meta_audits = load_article_meta_orbits(evidence_url=site['metaOrbitUrl'])
     validate_article_meta_orbits(all_tasks, meta_audits)
@@ -1142,7 +1155,8 @@ def main():
                                         {t['slug'] for t in all_tasks})
     execution_history = executions.attach(all_tasks, execution_records)
     verification_queue = standard_verification.derive(
-        all_tasks, instruction_reviews, meta_audits, normalize_article_url)
+        all_tasks, instruction_reviews, meta_audits, normalize_article_url,
+        article_evidence=semantic_evidence)
     verification_report = standard_verification.report(verification_queue)
     # Owner attribution comes ONLY from the Asset Tracker. A tracker that parsed
     # rows but still yields zero owners is a malformed or partial feed - the same

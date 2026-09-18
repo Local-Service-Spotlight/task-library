@@ -16,7 +16,8 @@ Hub-and-spoke skill library. This repo is the **hub**: the registry, the dashboa
 skills/<category-folder>/<slug>.md   skill files that live in this repo ("local")
 build/registry.json                  slug -> source; THE index of the library
 build/task-executions.json           distinct real executions, not article revisions
-build/article-certifications.json    reviewed URL-level semantic holds (can only force WIP)
+build/article-certifications.json    URL holds plus optional exact-revision semantic evidence
+build/ARTICLE-SEMANTIC-REVIEWS.md    versioned semantic review/observation schema
 build/standard_verification.py       derived per-task standard checks and review queue
 build/categories.json                the 13 categories (order, icons, colors)
 build/site-meta.json                 meta-article URL (counts and build date are derived)
@@ -42,7 +43,7 @@ The precedence rule: **sheet beats registry beats hub file** — a skill has exa
 
 ## Validation
 
-`build/build.py` rejects skills that: lack frontmatter or any required field, have `name` ≠ slug, use an unknown category/stage/status, or miss required sections (Inputs, Steps, Definition of done, Examples, Definitive article & links). It warns (build passes) on: stub language in a `complete` skill, <3 numbered steps, frontmatter/registry category mismatch. URL readiness also respects reviewed semantic holds in `build/article-certifications.json`; a hold can force a hub to WIP without falsifying its tasks' completion status and can never force a hub ready.
+`build/build.py` rejects skills that: lack frontmatter or any required field, have `name` ≠ slug, use an unknown category/stage/status, or miss required sections (Inputs, Steps, Definition of done, Examples, Definitive article & links). It warns (build passes) on: stub language in a `complete` skill, <3 numbered steps, frontmatter/registry category mismatch. URL readiness also respects reviewed semantic holds in `build/article-certifications.json`; a hold can force a hub to WIP without falsifying its tasks' completion status and can never force a hub ready. Optional task-specific semantic reviews in that same file require a separate observation of the exact current article representation, renewed within 24 hours; see `build/ARTICLE-SEMANTIC-REVIEWS.md`.
 
 The same build writes `dashboard/verification-queue.html`, `.json` and `.csv`. This per-task projection keeps document review, contributor status, article mapping/catalog state, semantic holds, attributed examples, execution records, acceptance and setup evidence separate. Unknown proof stays unknown. Use the queue to select the next bounded review; do not hand-edit it or infer a full pass from a nearby metric.
 

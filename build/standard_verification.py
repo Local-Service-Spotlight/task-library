@@ -10,6 +10,8 @@ import os
 from collections import Counter
 from datetime import datetime, timezone
 
+import article_semantic_reviews
+
 
 GATE_ORDER = (
     'instructionRevisionReviewed',
@@ -38,6 +40,18 @@ GATE_LABELS = {
 }
 
 INSTRUCTION_CHECK_ORDER = ('opening', 'recipe', 'links', 'evidence', 'handoff')
+ARTICLE_CRITERION_LABELS = {
+    'openingContext': 'Opening and useful connection',
+    'roleScope': 'Role and scope',
+    'owner': 'Owner',
+    'steps': 'Detailed steps',
+    'links': 'Links',
+    'sourceEvidence': 'Source evidence',
+    'handoffContext': 'Content Factory and handoff',
+    'visualAndLayout': 'Visual and layout',
+    'publicationStandards': 'Publication standards',
+    'acceptanceResults': 'Acceptance results',
+}
 
 
 def gate(gate_id, state, reason, **evidence):
@@ -50,8 +64,11 @@ def gate(gate_id, state, reason, **evidence):
     return result
 
 
-def derive(tasks, instruction_reviews, meta_audits, normalize_url):
+def derive(tasks, instruction_reviews, meta_audits, normalize_url,
+           article_evidence=None, now=None):
     """Attach ``standardVerification`` and return a deterministic review queue."""
+    article_evidence = article_evidence or {
+        'semanticReviews': [], 'revisionObservations': []}
     groups = {}
     for task in tasks:
         key = normalize_url(task.get('article'))
@@ -155,11 +172,14 @@ def derive(tasks, instruction_reviews, meta_audits, normalize_url):
             semantic = gate('articleSemanticCertification', 'hold',
                             task['articleStateReason'],
                             reviewedAt=task.get('articleStateReviewed'))
+        elif key:
+            result = article_semantic_reviews.evaluate(task, article_evidence, now=now)
+            semantic = gate('articleSemanticCertification', result.pop('state'),
+                            result.pop('reason'), **result)
         else:
             semantic = gate(
                 'articleSemanticCertification', 'unknown',
-                ('No exact-revision positive semantic review is recorded for this article.' if key else
-                 'There is no mapped article revision to review semantically.'))
+                'There is no mapped article revision to review semantically.')
         checks['articleSemanticCertification'] = semantic
 
         audit = meta_audits.get(key) if key else None
@@ -310,8 +330,8 @@ def report(tasks, generated_at=None):
         'generatedAt': generated_at,
         'definition': ('Per-task standard gates derived from exact instruction reviews, explicit '
                        'instruction-requirement checks, contributor status, article mapping/catalog '
-                       'holds, task-attributed examples and the execution ledger. Unknown proof is '
-                       'never turned into a pass.'),
+                       'holds, exact-revision article semantic reviews, task-attributed examples '
+                       'and the execution ledger. Unknown proof is never turned into a pass.'),
         'stats': {
             'tasks': len(tasks),
             'fullyVerifiedTasks': sum(t['standardVerification']['fullyVerified'] for t in tasks),
@@ -377,6 +397,17 @@ def _html_report(payload):
                         f'<span class="state {esc(check["state"])}">'
                         f'{esc(check["state"])}</span> {esc(check["reason"])} '
                         f'<small>Evidence: {esc(check["evidence"])}</small></li>')
+                checklist = f'<ul class="criteria">{"".join(criteria)}</ul>'
+            elif gate_id == 'articleSemanticCertification' and item.get('semanticReview'):
+                criteria = []
+                for check_name in article_semantic_reviews.CRITERION_ORDER:
+                    check = item['semanticReview']['criteria'][check_name]
+                    refs = ', '.join(check['evidenceRefs'])
+                    criteria.append(
+                        f'<li><strong>{esc(ARTICLE_CRITERION_LABELS[check_name])}</strong>: '
+                        f'<span class="state {esc(check["state"])}">'
+                        f'{esc(check["state"])}</span> {esc(check["reason"])} '
+                        f'<small>Evidence: {esc(refs)}</small></li>')
                 checklist = f'<ul class="criteria">{"".join(criteria)}</ul>'
             cells.append(
                 f'<li><strong>{esc(item["label"])}</strong>: '
