@@ -96,7 +96,7 @@
    }
   }
  },
- "updated": "September 18, 2026",
+ "updated": "September 20, 2026",
  "factory": {
   "phases": [
    {
@@ -1711,7 +1711,7 @@
  ],
  "executionHistory": {
   "schemaVersion": 1,
-  "asOf": "2026-09-18T07:34:23.600570+00:00",
+  "asOf": "2026-09-20T03:36:22.372709+00:00",
   "countDefinition": "Distinct recorded execution IDs, separate from meta-article URLs. History is partial; absent history is unknown, not zero. The last-30-day count is a documented lower bound, not total task frequency.",
   "recordedExecutions": 3,
   "completedExecutions": 0,
@@ -6676,7 +6676,113 @@
         "id": "articleSemanticCertification",
         "label": "Article semantic certification",
         "state": "unknown",
-        "reason": "No exact-revision positive semantic review is recorded for this article."
+        "reason": "Current article semantic criteria are unknown: roleScope, owner, steps, links, sourceEvidence, handoffContext, visualAndLayout, publicationStandards, acceptanceResults.",
+        "semanticReview": {
+         "version": 1,
+         "taskSlug": "create-or-update-a-definitive-article",
+         "canonicalURL": "https://blitzmetrics.com/definitive-article-guide/",
+         "sourceSha256": "5f4a981dd5d5b3ed52ea6eca4179a1ea872da25b6f728e782c4b5a652ab7a6a8",
+         "representation": "wordpress-content-html",
+         "reviewedAt": "2026-09-20T03:35:44.954292Z",
+         "reviewer": "Codex; independent opening and SVG editorial review retained",
+         "criteria": {
+          "openingContext": {
+           "state": "pass",
+           "reason": "The first three sentences explain turning a business job into clear team steps, why a checked result helps, and how the linked Content Factory turns real work into guides and posts. Exact words, destination content and body promise were checked.",
+           "evidenceRefs": [
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/definitive-opening-2026-09-20.md",
+            "sha256:477248981497caf622a1ccb79fb84f82b5c62c85e2a241e8694fe44322969372"
+           ]
+          },
+          "roleScope": {
+           "state": "unknown",
+           "reason": "This scoped opening review did not complete an independent review of the whole article role and scope.",
+           "evidenceRefs": [
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/definitive-opening-2026-09-20.md",
+            "sha256:477248981497caf622a1ccb79fb84f82b5c62c85e2a241e8694fe44322969372"
+           ]
+          },
+          "owner": {
+           "state": "unknown",
+           "reason": "The maintained ownership evidence was not fully reviewed in this opening release.",
+           "evidenceRefs": [
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/definitive-opening-2026-09-20.md",
+            "sha256:477248981497caf622a1ccb79fb84f82b5c62c85e2a241e8694fe44322969372"
+           ]
+          },
+          "steps": {
+           "state": "unknown",
+           "reason": "The opening promise is supported by the recipe fields and creation steps, but complete step-by-step execution was not tested.",
+           "evidenceRefs": [
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/definitive-opening-2026-09-20.md",
+            "sha256:477248981497caf622a1ccb79fb84f82b5c62c85e2a241e8694fe44322969372"
+           ]
+          },
+          "links": {
+           "state": "unknown",
+           "reason": "The opening Content Factory destination was checked; the complete body link set was not reverified.",
+           "evidenceRefs": [
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/definitive-opening-2026-09-20.md",
+            "sha256:477248981497caf622a1ccb79fb84f82b5c62c85e2a241e8694fe44322969372"
+           ]
+          },
+          "sourceEvidence": {
+           "state": "unknown",
+           "reason": "Real examples and their source claims were not independently re-audited in this scoped release.",
+           "evidenceRefs": [
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/definitive-opening-2026-09-20.md",
+            "sha256:477248981497caf622a1ccb79fb84f82b5c62c85e2a241e8694fe44322969372"
+           ]
+          },
+          "handoffContext": {
+           "state": "unknown",
+           "reason": "The existing context and handoff text were preserved, but all linked prerequisite and receiving-task contracts were not reverified.",
+           "evidenceRefs": [
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/definitive-opening-2026-09-20.md",
+            "sha256:477248981497caf622a1ccb79fb84f82b5c62c85e2a241e8694fe44322969372"
+           ]
+          },
+          "visualAndLayout": {
+           "state": "unknown",
+           "reason": "First-screen diagram and complete opening passed phone and desktop with scripts on and off; all lower-page visual and layout requirements were not reverified.",
+           "evidenceRefs": [
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/definitive-opening-2026-09-20.md",
+            "sha256:477248981497caf622a1ccb79fb84f82b5c62c85e2a241e8694fe44322969372"
+           ]
+          },
+          "publicationStandards": {
+           "state": "unknown",
+           "reason": "This opening release did not re-audit every CTA, short URL, metadata and E-E-A-T requirement.",
+           "evidenceRefs": [
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/definitive-opening-2026-09-20.md",
+            "sha256:477248981497caf622a1ccb79fb84f82b5c62c85e2a241e8694fe44322969372"
+           ]
+          },
+          "acceptanceResults": {
+           "state": "unknown",
+           "reason": "No independent real-user setup or accepted business-result evidence was established by this opening repair.",
+           "evidenceRefs": [
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/definitive-opening-2026-09-20.md",
+            "sha256:477248981497caf622a1ccb79fb84f82b5c62c85e2a241e8694fe44322969372"
+           ]
+          }
+         }
+        },
+        "revisionObservation": {
+         "version": 1,
+         "taskSlug": "create-or-update-a-definitive-article",
+         "canonicalURL": "https://blitzmetrics.com/definitive-article-guide/",
+         "sourceSha256": "5f4a981dd5d5b3ed52ea6eca4179a1ea872da25b6f728e782c4b5a652ab7a6a8",
+         "representation": "wordpress-content-html",
+         "observedAt": "2026-09-20T03:35:45.596606Z",
+         "observer": "Codex WordPress source readback with separate anonymous public QA",
+         "state": "observed",
+         "reason": "Fresh WordPress content matched the reviewed source. Separate ordinary public full-text/media and four first-screen checks passed after cache expiry.",
+         "evidenceRefs": [
+          "sha256:6341f95c45eb081e2ce0afc4e4a8adf96051d28e2389c9a271953c56121929c5",
+          "sha256:14fabe631b4d1bb3596a8e4640ad6d82d28c7a7b634ad9e098e6b31f3e628039"
+         ]
+        }
        },
        "taskExampleEvidence": {
         "id": "taskExampleEvidence",
