@@ -100,10 +100,20 @@ class ArticleSemanticEvidenceTests(unittest.TestCase):
 
     def test_all_criteria_need_fresh_separate_matching_observation_to_pass(self):
         evidence = self.load([review()], [observation()])
-        gate = self.derive(evidence)
+        current = task()
+        current.update(status='needs-work', articleState='wip')
+        gate = self.derive(evidence, current)
         self.assertEqual(gate['state'], 'pass')
         self.assertEqual(gate['semanticReview']['sourceSha256'], SOURCE_HASH)
         self.assertEqual(gate['revisionObservation']['sourceSha256'], SOURCE_HASH)
+        self.assertEqual(current['status'], 'needs-work')
+        self.assertEqual(current['articleState'], 'wip')
+        checks = current['standardVerification']['gates']
+        for name in ('contributorComplete', 'articleCatalogGate'):
+            self.assertEqual(checks[name]['state'], 'unmet')
+        for name in ('acceptedExecution', 'setupSuccess'):
+            self.assertEqual(checks[name]['state'], 'unknown')
+        self.assertFalse(current['standardVerification']['fullyVerified'])
 
     def test_semantic_criteria_render_with_public_evidence_safely_escaped(self):
         row = review()
@@ -228,11 +238,11 @@ class ArticleSemanticEvidenceTests(unittest.TestCase):
                   for item in tasks]
         self.assertEqual(states.count('hold'), 19)
 
-    def test_production_file_has_no_positive_semantic_review_records(self):
-        path = Path(__file__).with_name('article-certifications.json')
-        evidence = semantic.load(path)
-        self.assertEqual(evidence['semanticReviews'], [])
-        self.assertEqual(evidence['revisionObservations'], [])
+    def test_production_evidence_matches_final_task_mappings(self):
+        evidence = semantic.load(HERE / 'article-certifications.json')
+        payload = json.loads((HERE.parent / 'dashboard/data.json').read_text())
+        tasks = [item for category in payload['categories'] for item in category['tasks']]
+        semantic.validate_task_mappings(tasks, evidence, task_build.normalize_article_url)
 
 
 if __name__ == '__main__':
