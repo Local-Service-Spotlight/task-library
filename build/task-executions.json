@@ -316,6 +316,62 @@
       },
       "recordedAt": "2026-09-22T04:40:02.094620+00:00",
       "updatedAt": "2026-09-22T04:40:02.094620+00:00"
+    },
+    {
+      "executionId": "lss-meta-consistency-20260922-125016",
+      "taskSlugs": [
+        "create-or-update-a-definitive-article"
+      ],
+      "recipeRevisions": {
+        "create-or-update-a-definitive-article": {
+          "articleUrl": "https://blitzmetrics.com/definitive-article-guide/",
+          "sourceSha256": "5f4a981dd5d5b3ed52ea6eca4179a1ea872da25b6f728e782c4b5a652ab7a6a8"
+        }
+      },
+      "startedAt": "2026-09-22T12:50:16Z",
+      "finishedAt": "2026-09-22T13:16:53.277175+00:00",
+      "status": "partial",
+      "result": "Ended partial: published a plain linked opening, compact diagram and consistent start-of-task work-record instructions on the LSS framework page. Exact saved source, ordinary public text/media and four first-screen states passed. Added independently reviewed manual-guide setup evidence support; 238 software tests pass. No novice-human trial or accepted business result was performed. Whole-page claims and full task certification remain unverified. This is one authoring attempt.",
+      "evidence": [
+        {
+          "visibility": "public",
+          "url": "https://localservicespotlight.com/meta-articles/"
+        },
+        {
+          "visibility": "private",
+          "sha256": "79a6c01162b609406b22605d9ba45e93064a2a5dd542b39e213bdaaafcf89f2b"
+        },
+        {
+          "visibility": "private",
+          "sha256": "6c9708b89a992791a7995fb358b71e4824d0a8c2bfeed5ec6409f4c66b720a36"
+        },
+        {
+          "visibility": "private",
+          "sha256": "17ba50c1c7ffd17fb074e753f5da2647b7180482a6a29471f85998c4106dc3b6"
+        },
+        {
+          "visibility": "private",
+          "sha256": "64477a6e847f80e10077a9d71a7849658b2db0b8ecb96ed511127909ae5b7516"
+        },
+        {
+          "visibility": "private",
+          "sha256": "3f71d8bbe9f88c841715545fc52187a27fb5c5d49ad2c5af2f7be34e2559da7b"
+        },
+        {
+          "visibility": "private",
+          "sha256": "1ee4ebeea12f0a42f64623c5cee1d51106d6c3f4ec818ae88c250091758a6da9"
+        },
+        {
+          "visibility": "private",
+          "sha256": "82a2b7596ad772bbfdee76cbfd08bc8144708a6d589e887274d2d767f4d6715f"
+        }
+      ],
+      "metaArticle": {
+        "status": "published",
+        "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#lss-meta-consistency-20260922-125016"
+      },
+      "recordedAt": "2026-09-22T13:16:53.277175+00:00",
+      "updatedAt": "2026-09-22T13:16:53.277175+00:00"
     }
   ]
 }

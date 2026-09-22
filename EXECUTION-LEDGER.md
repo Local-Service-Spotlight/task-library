@@ -55,7 +55,23 @@ Acceptance evidence uses public HTTPS URLs without credential-like query strings
 
 The full review also requires `version: 1`, `reviewId`, `taskSlug`, `canonicalURL`, `recipeSourceSha256`, `representation`, `instructionSourceSha256`, `reviewedAt`, `reviewer`, `executor`, and `nextHandoff`. The representation uses the same four choices as [article review evidence](build/ARTICLE-SEMANTIC-REVIEWS.md). Use the actual source hashes, a timezone-aware review date, and distinct reviewer/executor identities. Different name strings are not proof of independent judgment; the review evidence must support that claim. The build validates the record, not the truth of the reviewer’s assertions.
 
-A legacy CLI update that omits `acceptanceReviews` preserves the existing reviews. Explicitly replacing the array is a reviewed correction and keeps Git history. Do not erase failed checks to obtain a pass.
+A legacy CLI update that omits `acceptanceReviews` preserves the existing reviews. Unlinked acceptance reviews may be replaced through a reviewed correction that keeps Git history. Acceptance reviews referenced by saved setup reviews are immutable; retain them and add a new review ID for a correction. Do not erase failed checks to obtain a pass.
+
+## Record a first-use setup review
+
+Use `setupReviews` to show what happened when someone tried a downloaded guide for the first time. This helps us fix the steps that caused trouble. It connects setup evidence to the same task execution and its accepted result; it creates no second run or registry.
+
+Version 1 supports only `manual-guide`: reading an extracted guide in a chosen app. A positive new-user gate requires an actual `novice-human` with `assistance: "none"`. Record `fresh-agent` and `experienced-agent` rehearsals honestly. Their successful drafts do not prove that a new human could use the instructions alone. `provided` or `unknown` assistance cannot pass that gate. Record any help, retries and missing inputs in the observations.
+
+Each review requires `version: 1`, `reviewId`, `executionId`, `taskSlug`, `canonicalURL`, `recipeSourceSha256`, `representation`, `instructionSourceSha256`, `reviewedAt`, `reviewer`, `participant`, `participantType`, `assistance`, `app`, `surface`, `loadingRoute`, `package`, `acceptanceReviewId` and `criteria`. Use a public-safe participant code, not private personal details. The reviewer must be distinct from the participant. An acceptance reference, when present, must belong to the same run, task, revisions and participant. Use `null` while accepted-result evidence is missing.
+
+`package` records the actual public download URL, archive `sha256`, safe relative `memberPath`, `memberSha256` and `onboardingSha256`. Keep these different identities separate: a generated ZIP guide includes added context and can differ from the maintained instruction source. Hash format validation is not proof of download or use. The reviewer must inspect the saved download, extracted files and real attempt. Never guess a hash or fill a receipt from a planned test.
+
+The four required `criteria` are `filesLoaded`, `inputsAndAccess`, `result` and `handoff`. Each has `state`, `expectedResult`, `observedResult`, `sourceRef`, `evidenceRefs` and `observedAt`. Use the same public-reference/private-hash convention as acceptance reviews. Observation times must be at or after the run start and no later than the review, and must not be in the future. This permits inspection after the run finishes. A terminal run's review follows its finish. Private evidence hashes and the participant code are omitted from the public setup projection. Acceptance projections also omit the executor code. Public-safe explanations and scope remain visible. The source ledger is itself public: use public-safe codes there too, never confidential identities. Review all prose before committing: pattern checks cannot recognize every secret or private fact.
+
+The newest setup review controls the setup gate. Explicit failures and holds remain visible; ambiguous timestamps and missing evidence cannot pass. A positive review also needs the same completed run's currently accepted result and a separate matching recipe observation at or after the setup review, within the existing 24-hour freshness window. A later unsuccessful attempt cannot inherit an earlier pass. The result states exactly which app and manual route were checked; it does not certify plugin installation, scheduled execution or another app.
+
+Omitting `setupReviews` in an old client's update preserves the saved reviews. Setup history is append-only, and acceptance reviews it references are immutable. Add new review IDs to correct an earlier decision and retain the old evidence. Do not erase a failure to obtain a passing badge. Test fixtures belong only in tests; production records require actual attempts and evidence.
 
 ## Record schema, version 1
 
@@ -73,6 +89,7 @@ The ledger contains exactly `schemaVersion: 1` and an `executions` array. Each r
 | `result` | Short public-safe result, maximum 600 characters. Do not include private client facts. |
 | `evidence` | Array of public URL references or private-content hashes. At least one is required for completed work. |
 | `acceptanceReviews` | Optional versioned independent result reviews; see the required fields and criteria above. |
+| `setupReviews` | Optional versioned manual-guide first-use reviews; see the scoped setup requirements above. |
 | `metaArticle` | Written draft, withheld written draft, or published article; see below. |
 | `recordedAt` | When the execution was first entered in this ledger, at or after its start. |
 | `updatedAt` | Record revision time, at or after `recordedAt` and any finish time. |

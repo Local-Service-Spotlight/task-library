@@ -21,9 +21,15 @@ META_STATES = {'draft', 'published', 'withheld'}
 ID = re.compile(r'^[A-Za-z0-9][A-Za-z0-9._:-]{2,159}$')
 FIELDS = {'executionId', 'taskSlugs', 'startedAt', 'finishedAt', 'status',
           'result', 'evidence', 'metaArticle', 'recipeRevisions', 'parentExecutionId', 'recordedAt', 'updatedAt',
-          'acceptanceReviews'}
+          'acceptanceReviews', 'setupReviews'}
 ACCEPTANCE_STATES = {'pass', 'unmet', 'hold', 'unknown'}
 REPRESENTATIONS = {'public-rendered-html', 'public-visible-text', 'wordpress-content-html', 'repository-source'}
+SETUP_CRITERIA = {'filesLoaded', 'inputsAndAccess', 'result', 'handoff'}
+SETUP_PARTICIPANTS = {'novice-human', 'fresh-agent', 'experienced-agent'}
+SETUP_PUBLIC_FIELDS = ('version', 'reviewId', 'executionId', 'taskSlug', 'canonicalURL',
+                       'recipeSourceSha256', 'representation', 'instructionSourceSha256',
+                       'reviewedAt', 'reviewer', 'participantType', 'assistance', 'app', 'surface',
+                       'loadingRoute', 'package', 'acceptanceReviewId')
 
 
 def timestamp(value, where):
@@ -143,10 +149,128 @@ def validate_acceptance_review(review, record, known_slugs):
                 nextHandoff=_safe_text(review['nextHandoff'], 'acceptance nextHandoff'))
 
 
+def _setup_text(value, where, limit=600):
+    value = _safe_text(value, where, limit)
+    if re.search(r'~[/\\]|/(?:private|etc|root|Applications|Volumes|var)/', value, re.I):
+        raise ValueError(f'{where}: private paths are forbidden')
+    if re.search(r'(?i)(?:token|secret|password|signature|api[ _-]?key|credential)\s*[:=]|'
+                 r'\bBearer\s+\S+|\b(?:sk-|gh[pousr]_|github_pat_)[A-Za-z0-9_-]{12,}|'
+                 r'-----BEGIN [A-Z ]*PRIVATE KEY-----', value):
+        raise ValueError(f'{where}: credential-like text is forbidden')
+    return value
+
+
+def _setup_refs(value, where):
+    refs = _acceptance_refs(value, where)
+    for ref in refs:
+        if not ref.startswith('sha256:'):
+            _setup_text(unquote(ref), where, 1200)
+            sensitive_keys = {'sig', 'sas', 'auth', 'authorization', 'authcode', 'code',
+                              'accesscode', 'key', 'accesskey', 'session', 'sessionid', 'sessionkey'}
+            parsed = urlsplit(ref)
+            if any(re.sub(r'[^a-z0-9]', '', key.casefold()) in sensitive_keys
+                   for part in (parsed.query, parsed.fragment) for key, _ in parse_qsl(part)):
+                raise ValueError(f'{where}: signed or credential-like URL parameters are forbidden')
+    return refs
+
+
+def validate_setup_review(review, record, known_slugs):
+    """Version 1 records one observed manual-guide attempt, never installation."""
+    fields = set(SETUP_PUBLIC_FIELDS) | {'participant', 'criteria'}
+    if not isinstance(review, dict) or set(review) != fields:
+        raise ValueError('setup review has unsupported or missing fields')
+    if type(review['version']) is not int or review['version'] != 1:
+        raise ValueError('setup review requires version 1')
+    if not isinstance(review['reviewId'], str) or not ID.fullmatch(review['reviewId']):
+        raise ValueError('setup review requires stable reviewId')
+    if review['executionId'] != record['executionId']:
+        raise ValueError('setup review executionId must match its execution')
+    if not isinstance(review['taskSlug'], str) or review['taskSlug'] not in known_slugs or review['taskSlug'] not in record['taskSlugs']:
+        raise ValueError('setup review taskSlug must be named by its execution')
+    revision = record['recipeRevisions'][review['taskSlug']]
+    if review['canonicalURL'] != revision['articleUrl']:
+        raise ValueError('setup review canonicalURL must match the run recipe revision')
+    _setup_refs([review['canonicalURL']], 'setup canonicalURL')
+    if urlsplit(review['canonicalURL']).query or urlsplit(review['canonicalURL']).fragment:
+        raise ValueError('setup canonicalURL cannot contain query or fragment')
+    if not isinstance(review['representation'], str) or review['representation'] not in REPRESENTATIONS:
+        raise ValueError('setup review has unsupported recipe representation')
+    for key in ('recipeSourceSha256', 'instructionSourceSha256'):
+        if not isinstance(review[key], str) or not re.fullmatch(r'[a-f0-9]{64}', review[key]):
+            raise ValueError(f'setup review {key} must be a SHA-256')
+    if review['recipeSourceSha256'] != revision['sourceSha256']:
+        raise ValueError('setup recipeSourceSha256 must match the run recipe revision')
+    if review['loadingRoute'] != 'manual-guide':
+        raise ValueError('setup version 1 supports only manual-guide; installation and scheduling are not certified')
+    if not isinstance(review['participantType'], str) or review['participantType'] not in SETUP_PARTICIPANTS:
+        raise ValueError('setup review requires the actual participantType')
+    if not isinstance(review['assistance'], str) or review['assistance'] not in {'none', 'provided', 'unknown'}:
+        raise ValueError('setup assistance must be none, provided or unknown')
+    clean = copy.deepcopy(review)
+    for key in ('participant', 'reviewer', 'app', 'surface'):
+        clean[key] = _setup_text(review[key], f'setup {key}', 120)
+    if clean['participant'].casefold().split() == clean['reviewer'].casefold().split():
+        raise ValueError('setup reviewer must be distinct from participant')
+    package = review['package']
+    if not isinstance(package, dict) or set(package) != {'url', 'sha256', 'memberPath', 'memberSha256', 'onboardingSha256'}:
+        raise ValueError('setup package requires URL, archive SHA-256, member path/hash and onboarding hash')
+    _setup_refs([package['url']], 'setup package URL')
+    if package['url'].startswith('sha256:'):
+        raise ValueError('setup package requires a public HTTPS URL')
+    for key in ('sha256', 'memberSha256', 'onboardingSha256'):
+        if not isinstance(package[key], str) or not re.fullmatch(r'[a-f0-9]{64}', package[key]):
+            raise ValueError(f'setup package {key} must be a SHA-256')
+    member = package['memberPath']
+    if (not isinstance(member, str) or len(member) > 400 or
+            not re.fullmatch(r'[A-Za-z0-9_.-]+(?:/[A-Za-z0-9_.-]+)*', member) or
+            any(part in {'.', '..'} for part in member.split('/')) or
+            not (member.split('/')[-1] == review['taskSlug'] + '.md' or
+                 member.split('/')[-2:] == [review['taskSlug'], 'skill.md'])):
+        raise ValueError('setup memberPath must be a safe relative path to the named task Markdown guide')
+    # Archive, generated member and maintained source are different identities.
+    # Their hashes must not be compared for equality (the builder injects content).
+    reviewed = timestamp(review['reviewedAt'], 'setup reviewedAt')
+    start = timestamp(record['startedAt'], 'execution startedAt')
+    if not start <= reviewed <= timestamp(record['updatedAt'], 'execution updatedAt'):
+        raise ValueError('setup reviewedAt must be within the recorded execution timeline')
+    if record.get('finishedAt') and reviewed < timestamp(record['finishedAt'], 'execution finishedAt'):
+        raise ValueError('setup reviewedAt must be at or after the run finish')
+    criteria = review['criteria']
+    if not isinstance(criteria, dict) or set(criteria) != SETUP_CRITERIA:
+        raise ValueError('setup requires filesLoaded, inputsAndAccess, result and handoff criteria')
+    for name, item in criteria.items():
+        if not isinstance(item, dict) or set(item) != {'state', 'expectedResult', 'observedResult', 'sourceRef', 'evidenceRefs', 'observedAt'}:
+            raise ValueError('setup criterion requires dated expected/observed results and source/evidence references')
+        if not isinstance(item['state'], str) or item['state'] not in ACCEPTANCE_STATES:
+            raise ValueError('setup criterion has invalid state')
+        observed = timestamp(item['observedAt'], 'setup criterion observedAt')
+        if not start <= observed <= reviewed:
+            raise ValueError('setup criterion observedAt must be within the run and no later than review')
+        clean['criteria'][name] = {
+            'state': item['state'], 'observedAt': item['observedAt'],
+            'expectedResult': _setup_text(item['expectedResult'], 'setup expectedResult'),
+            'observedResult': _setup_text(item['observedResult'], 'setup observedResult'),
+            'sourceRef': _setup_refs([item['sourceRef']], 'setup sourceRef')[0],
+            'evidenceRefs': _setup_refs(item['evidenceRefs'], 'setup evidenceRefs')}
+    acceptance_id = review['acceptanceReviewId']
+    if acceptance_id is not None:
+        if not isinstance(acceptance_id, str) or not ID.fullmatch(acceptance_id):
+            raise ValueError('setup acceptanceReviewId must be a stable ID or null')
+        accepted = next((item for item in record.get('acceptanceReviews', ()) if item['reviewId'] == acceptance_id), None)
+        if not accepted or any(accepted[key] != review[key] for key in (
+                'taskSlug', 'canonicalURL', 'recipeSourceSha256', 'representation', 'instructionSourceSha256')):
+            raise ValueError('setup acceptanceReviewId must bind the same run, task and exact revisions')
+        if accepted['executor'].casefold().split() != clean['participant'].casefold().split():
+            raise ValueError('setup participant must match the referenced acceptance executor')
+        if timestamp(accepted['reviewedAt'], 'acceptance reviewedAt') > reviewed:
+            raise ValueError('setup cannot reference a later acceptance review')
+    return clean
+
+
 def validate_record(record, known_slugs):
     if not isinstance(record, dict) or set(record) - FIELDS:
         raise ValueError('execution has unsupported fields; do not store private notes or credentials')
-    required = FIELDS - {'finishedAt', 'parentExecutionId', 'acceptanceReviews'}
+    required = FIELDS - {'finishedAt', 'parentExecutionId', 'acceptanceReviews', 'setupReviews'}
     if required - set(record):
         raise ValueError(f'execution missing fields: {sorted(required - set(record))}')
     eid = record['executionId']
@@ -229,6 +353,16 @@ def validate_record(record, known_slugs):
     clean = copy.deepcopy(record)
     if 'acceptanceReviews' in clean or clean_reviews:
         clean['acceptanceReviews'] = clean_reviews
+    setup_reviews = record.get('setupReviews', [])
+    if not isinstance(setup_reviews, list):
+        raise ValueError(f'{eid}: setupReviews must be a list')
+    clean_setup = [validate_setup_review(item, clean, known_slugs) for item in setup_reviews]
+    if len({item['reviewId'] for item in clean_setup}) != len(clean_setup):
+        raise ValueError(f'{eid}: setup review IDs must be unique per run')
+    if len({(item['taskSlug'], timestamp(item['reviewedAt'], 'setup reviewedAt')) for item in clean_setup}) != len(clean_setup):
+        raise ValueError(f'{eid}: setup reviews need distinct task and review timestamps')
+    if 'setupReviews' in clean:
+        clean['setupReviews'] = clean_setup
     return clean
 
 
@@ -273,10 +407,12 @@ def public_record(record):
         result['metaArticle']['url'] = record['metaArticle']['url']
     if record.get('acceptanceReviews'):
         result['acceptanceReviews'] = [public_acceptance_review(review) for review in record['acceptanceReviews']]
+    if record.get('setupReviews'):
+        result['setupReviews'] = [public_setup_review(review) for review in record['setupReviews']]
     return result
 
 
-def public_acceptance_review(review):
+def _public_review_criteria(review):
     criteria = {}
     for name, item in review['criteria'].items():
         criteria[name] = {'state': item['state'], 'expectedResult': item['expectedResult'], 'observedResult': item['observedResult'],
@@ -284,8 +420,22 @@ def public_acceptance_review(review):
                           'sourcePrivateEvidenceRecorded': item['sourceRef'].startswith('sha256:'),
                           'evidenceUrls': [ref for ref in item['evidenceRefs'] if not ref.startswith('sha256:')],
                           'privateEvidenceRecorded': any(ref.startswith('sha256:') for ref in item['evidenceRefs'])}
+    return criteria
+
+
+def public_acceptance_review(review):
+    # Keep executor identity in the source ledger for independence validation.
+    # A linked setup review can make that executor a private novice participant.
     return {key: review[key] for key in ('version', 'reviewId', 'taskSlug', 'canonicalURL', 'recipeSourceSha256',
-            'representation', 'instructionSourceSha256', 'reviewedAt', 'reviewer', 'executor', 'nextHandoff')} | {'criteria': criteria}
+            'representation', 'instructionSourceSha256', 'reviewedAt', 'reviewer', 'nextHandoff')} | {'criteria': _public_review_criteria(review)}
+
+
+def public_setup_review(review):
+    # Reuse the acceptance evidence allowlist; private refs become booleans.
+    criteria = _public_review_criteria(review)
+    for name, item in criteria.items():
+        item['observedAt'] = review['criteria'][name]['observedAt']
+    return {key: copy.deepcopy(review[key]) for key in SETUP_PUBLIC_FIELDS} | {'criteria': criteria}
 
 
 def check_times_not_future(records, now):
@@ -296,6 +446,10 @@ def check_times_not_future(records, now):
         for review in record.get('acceptanceReviews', ()):
             if timestamp(review['reviewedAt'], 'acceptance review reviewedAt') > now:
                 raise ValueError('acceptance review timestamps cannot be in the future')
+        for review in record.get('setupReviews', ()):
+            if timestamp(review['reviewedAt'], 'setup reviewedAt') > now or any(
+                    timestamp(item['observedAt'], 'setup observedAt') > now for item in review['criteria'].values()):
+                raise ValueError('setup review timestamps cannot be in the future')
 
 
 def attach(tasks, records, as_of=None):
@@ -323,6 +477,8 @@ def attach(tasks, records, as_of=None):
                                    'startedAt': r['startedAt'], 'finishedAt': r.get('finishedAt')} for r in runs],
             'acceptanceReviews': [dict(public_acceptance_review(review), executionId=r['executionId']) for r in runs
                                   for review in r.get('acceptanceReviews', ()) if review['taskSlug'] == task['slug']],
+            'setupReviews': [public_setup_review(review) for r in runs
+                             for review in r.get('setupReviews', ()) if review['taskSlug'] == task['slug']],
         }
     return {'schemaVersion': 1, 'asOf': now.isoformat(),
             'countDefinition': 'Distinct recorded execution IDs, separate from meta-article URLs. History is partial; absent history is unknown, not zero. The last-30-day count is a documented lower bound, not total task frequency.',
@@ -345,11 +501,19 @@ def _upsert_locked(path, record, known_slugs, expected_revision=None, dry_run=Fa
         raw = json.load(source)
     records = validate_ledger(raw, known_slugs)
     found = next((r for r in records if r['executionId'] == candidate['executionId']), None)
-    # Older CLI payloads do not know this optional field.  Preserve recorded
-    # acceptance history unless the caller explicitly supplies its replacement.
-    if found and 'acceptanceReviews' not in record and found.get('acceptanceReviews'):
-        candidate = copy.deepcopy(candidate)
-        candidate['acceptanceReviews'] = copy.deepcopy(found['acceptanceReviews'])
+    # Older clients do not know optional review fields; preserve their history.
+    for field in ('acceptanceReviews', 'setupReviews'):
+        if found and field not in record and found.get(field):
+            candidate[field] = copy.deepcopy(found[field])
+    if found:
+        by_id = {item['reviewId']: item for item in candidate.get('setupReviews', ())}
+        if any(by_id.get(item['reviewId']) != item for item in found.get('setupReviews', ())):
+            raise ValueError('setup review history is append-only; add a later correction review')
+        linked_acceptance = {item['acceptanceReviewId'] for item in found.get('setupReviews', ())}
+        acceptance_by_id = {item['reviewId']: item for item in candidate.get('acceptanceReviews', ())}
+        if any(acceptance_by_id.get(item['reviewId']) != item
+               for item in found.get('acceptanceReviews', ()) if item['reviewId'] in linked_acceptance):
+            raise ValueError('acceptance reviews referenced by setup history are immutable; add a later correction review')
     if found == candidate:
         return {'action': 'unchanged', 'executionId': candidate['executionId'], 'revision': digest(found)}
     if found:
