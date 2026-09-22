@@ -8,7 +8,7 @@ import html
 import json
 import os
 from collections import Counter
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 
 import article_semantic_reviews
 
@@ -62,6 +62,61 @@ def gate(gate_id, state, reason, **evidence):
     result.update({key: value for key, value in evidence.items()
                    if value is not None and value != []})
     return result
+
+
+def acceptance_result(task, history, article_evidence, now):
+    """Evaluate only a structured, current, independent result review."""
+    reviews = history.get('acceptanceReviews') or []
+    if not reviews:
+        return {'state': 'unknown', 'reason': ('No structured acceptance review is recorded for the current '
+                'canonical article revision. A completed run label is not acceptance.')}
+    parsed_reviews = [(item, datetime.fromisoformat(item['reviewedAt'].replace('Z', '+00:00'))) for item in reviews]
+    latest_time = max(when for _, when in parsed_reviews)
+    latest = [item for item, when in parsed_reviews if when == latest_time]
+    if len(latest) != 1:
+        return {'state': 'unknown', 'reason': 'Multiple acceptance reviews have the same latest timestamp; resolve the ambiguity.',
+                'acceptanceReviewIds': sorted(item['reviewId'] for item in latest)}
+    review = latest[0]
+    common = {'acceptanceReview': review}
+    if latest_time > now:
+        return {'state': 'unknown', 'reason': 'The latest acceptance review timestamp is in the future.', **common}
+    selected_run = next((row for row in history.get('executionOutcomes', ())
+                         if row['executionId'] == review['executionId']), None)
+    if not selected_run or selected_run['status'] != 'completed':
+        return {'state': 'unmet', 'reason': 'The execution carrying this acceptance review is not completed.', **common}
+    if review['canonicalURL'] != task.get('article'):
+        return {'state': 'unmet', 'reason': 'The acceptance review canonical URL no longer matches this task mapping.', **common}
+    if review['instructionSourceSha256'] != task.get('_sourceSha256'):
+        return {'state': 'unmet', 'reason': 'The acceptance review instruction hash no longer matches the current task instruction.', **common}
+    outcomes = history.get('executionOutcomes') or []
+    reviewed_at = datetime.fromisoformat(review['reviewedAt'].replace('Z', '+00:00'))
+    run_finished_at = datetime.fromisoformat(selected_run['finishedAt'].replace('Z', '+00:00'))
+    later_unsuccessful = [row for row in outcomes if row['status'] in {'partial', 'failed', 'blocked', 'cancelled'} and
+                          datetime.fromisoformat((row.get('finishedAt') or row['startedAt']).replace('Z', '+00:00')) > run_finished_at]
+    if later_unsuccessful:
+        return {'state': 'unmet', 'reason': 'A later recorded execution did not complete; it cannot be promoted by an older acceptance review.', **common}
+    observations = [row for row in article_evidence.get('revisionObservations', ())
+                    if row['taskSlug'] == task['slug'] and row['canonicalURL'] == task.get('article') and
+                    row['representation'] == review['representation']]
+    if not observations:
+        return {'state': 'unknown', 'reason': 'No separately fetched current article revision observation is recorded.', **common}
+    observed = max(observations, key=lambda row: row['_observedAt'])
+    common['revisionObservation'] = {key: value for key, value in observed.items() if not key.startswith('_')}
+    if observed['state'] == 'failed' or observed['_observedAt'] < reviewed_at:
+        return {'state': 'unknown', 'reason': 'The separate current article revision observation failed or predates the acceptance review.', **common}
+    age = now - observed['_observedAt']
+    if age < timedelta(0) or age > timedelta(hours=article_semantic_reviews.FRESHNESS_HOURS):
+        return {'state': 'unknown', 'reason': 'The separate current article revision observation is outside the 24-hour freshness window.', **common}
+    if observed['sourceSha256'] != review['recipeSourceSha256']:
+        return {'state': 'unmet', 'reason': 'The observed article source hash does not match the accepted run recipe revision.', **common}
+    states = [criterion['state'] for criterion in review['criteria'].values()]
+    state = next((value for value in ('hold', 'unmet', 'unknown') if value in states), 'pass')
+    if state == 'pass':
+        reason = 'All named measurable acceptance criteria pass for the separately observed current recipe revision.'
+    else:
+        failed = [name for name, item in review['criteria'].items() if item['state'] == state]
+        reason = f'Acceptance criteria are {state}: {", ".join(failed)}.'
+    return {'state': state, 'reason': reason, **common}
 
 
 def derive(tasks, instruction_reviews, meta_audits, normalize_url,
@@ -230,10 +285,8 @@ def derive(tasks, instruction_reviews, meta_audits, normalize_url,
                 'recordedExecution', 'unknown',
                 'No execution ledger record names this task. Historical run frequency is unknown.')
         checks['recordedExecution'] = recorded
-        checks['acceptedExecution'] = gate(
-            'acceptedExecution', 'unknown',
-            'The current ledger has no structured acceptance result tied to this task and '
-            'the exact canonical article revision. A completed run label is not acceptance.')
+        result = acceptance_result(task, history, article_evidence, now or datetime.now(timezone.utc))
+        checks['acceptedExecution'] = gate('acceptedExecution', result.pop('state'), result.pop('reason'), **result)
         checks['setupSuccess'] = gate(
             'setupSuccess', 'unknown',
             'No structured receipt shows a new user loaded the needed files, had access and '

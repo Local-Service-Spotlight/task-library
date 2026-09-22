@@ -41,11 +41,32 @@ def execution(source_hash='a' * 64):
         'recipeRevisions': {'first-task': {
             'articleUrl': 'https://example.com/hub/', 'sourceSha256': source_hash}},
         'startedAt': '2026-09-15T10:00:00Z', 'finishedAt': '2026-09-15T11:00:00Z',
-        'recordedAt': '2026-09-15T10:00:00Z', 'updatedAt': '2026-09-15T11:00:00Z',
+        'recordedAt': '2026-09-15T10:00:00Z', 'updatedAt': '2026-09-15T12:00:00Z',
         'status': 'completed', 'result': 'Output checked.',
         'evidence': [{'visibility': 'public', 'url': 'https://example.com/proof/'}],
         'metaArticle': {'status': 'draft', 'draftSha256': 'b' * 64},
     }
+
+
+def acceptance(source_hash='a' * 64, instruction_hash='a' * 64, state='pass', **overrides):
+    value = {'version': 1, 'reviewId': 'acceptance-001', 'taskSlug': 'first-task',
+            'canonicalURL': 'https://example.com/hub/', 'recipeSourceSha256': source_hash,
+            'representation': 'wordpress-content-html', 'instructionSourceSha256': instruction_hash,
+            'reviewedAt': '2026-09-15T11:30:00Z', 'reviewer': 'Independent reviewer',
+            'executor': 'Run executor', 'nextHandoff': 'Hand the checked result to the owner.',
+            'criteria': {'result': {'state': state, 'expectedResult': 'A checked result exists.', 'observedResult': 'The result was checked.',
+                                    'sourceRef': 'https://example.com/guide/', 'evidenceRefs': ['https://example.com/result/']},
+                         'handoff': {'state': state, 'expectedResult': 'The owner receives it.', 'observedResult': 'The owner received it.',
+                                     'sourceRef': 'https://example.com/handoff/', 'evidenceRefs': ['https://example.com/handoff-proof/']}}}
+    value.update(overrides)
+    return value
+
+
+def observation(source_hash='a' * 64, observed='2026-09-15T12:00:00Z', state='observed'):
+    return {'taskSlug': 'first-task', 'canonicalURL': 'https://example.com/hub/',
+            'representation': 'wordpress-content-html', 'sourceSha256': source_hash if state == 'observed' else None,
+            'observedAt': observed, '_observedAt': datetime.fromisoformat(observed.replace('Z', '+00:00')),
+            'state': state, 'reason': 'Current public source observed.', 'observer': 'Separate observer', 'evidenceRefs': ['https://example.com/observe/']}
 
 
 class StandardVerificationTests(unittest.TestCase):
@@ -54,7 +75,16 @@ class StandardVerificationTests(unittest.TestCase):
         executions.attach(tasks, records, datetime(2026, 9, 16, tzinfo=timezone.utc))
         return verification.derive(
             tasks, reviews or {t['slug']: t.get('instructionReview') for t in tasks},
-            audits or {}, task_build.normalize_article_url)
+            audits or {}, task_build.normalize_article_url,
+            article_evidence={'semanticReviews': [], 'revisionObservations': []})
+
+    def derive_acceptance(self, current, records, observations):
+        executions.attach([current], records, datetime(2026, 9, 16, 12, tzinfo=timezone.utc))
+        verification.derive([current], {current['slug']: current['instructionReview']}, {},
+                            task_build.normalize_article_url,
+                            article_evidence={'semanticReviews': [], 'revisionObservations': observations},
+                            now=datetime(2026, 9, 15, 13, tzinfo=timezone.utc))
+        return current['standardVerification']['gates']['acceptedExecution']
 
     def test_proxies_cannot_certify_semantics_acceptance_or_setup(self):
         current = task('first-task', importance=5)
@@ -185,6 +215,72 @@ class StandardVerificationTests(unittest.TestCase):
         static_index = (HERE.parent / 'dashboard' / 'library-index.html').read_text()
         self.assertIn('href="verification-queue.html"', dashboard)
         self.assertIn('/verification-queue.html', static_index)
+
+    def test_acceptance_requires_current_hash_and_all_criteria(self):
+        r = execution(); r['acceptanceReviews'] = [acceptance()]
+        current = task('first-task')
+        self.assertEqual(self.derive_acceptance(current, [r], [observation()])['state'], 'pass')
+        gates = current['standardVerification']['gates']
+        self.assertEqual(gates['setupSuccess']['state'], 'unknown')
+        self.assertEqual(gates['articleSemanticCertification']['state'], 'unknown')
+        self.assertEqual(current['status'], 'complete')
+        self.assertFalse(current['standardVerification']['fullyVerified'])
+        current = task('first-task')
+        self.assertEqual(self.derive_acceptance(current, [r], [observation('c' * 64)])['state'], 'unmet')
+        current = task('first-task')
+        self.assertEqual(self.derive_acceptance(current, [r], [observation(observed='2026-09-14T11:00:00Z')])['state'], 'unknown')
+        r['acceptanceReviews'][0]['criteria']['result']['state'] = 'hold'
+        current = task('first-task')
+        self.assertEqual(self.derive_acceptance(current, [r], [observation()])['state'], 'hold')
+
+    def test_later_partial_run_cannot_be_promoted_by_older_acceptance(self):
+        accepted = execution(); accepted['acceptanceReviews'] = [acceptance()]
+        partial = execution(); partial['executionId'] = 'execution-002'; partial['status'] = 'partial'; partial['finishedAt'] = '2026-09-15T12:30:00Z'; partial['updatedAt'] = '2026-09-15T12:30:00Z'
+        current = task('first-task')
+        gate = self.derive_acceptance(current, [accepted, partial], [observation()])
+        self.assertEqual(gate['state'], 'unmet')
+
+    def test_latest_review_wins_by_instant_and_ties_or_future_fail_closed(self):
+        first = execution(); first['updatedAt'] = '2026-09-15T14:00:00Z'; first['acceptanceReviews'] = [acceptance(reviewedAt='2026-09-15T10:30:00-02:00', state='hold')]
+        second = execution(); second['updatedAt'] = '2026-09-16T11:00:00Z'; second['executionId'] = 'execution-002'; second['acceptanceReviews'] = [acceptance(reviewId='acceptance-002', reviewedAt='2026-09-15T11:30:00Z')]
+        current = task('first-task')
+        self.assertEqual(self.derive_acceptance(current, [first, second], [observation(observed='2026-09-15T12:45:00Z')])['state'], 'hold')
+        second['acceptanceReviews'][0]['reviewedAt'] = '2026-09-15T10:30:00-02:00'
+        current = task('first-task')
+        self.assertEqual(self.derive_acceptance(current, [first, second], [observation()])['state'], 'unknown')
+        second['acceptanceReviews'][0]['reviewedAt'] = '2026-09-16T10:30:00Z'
+        current = task('first-task')
+        self.assertEqual(self.derive_acceptance(current, [first, second], [observation()])['state'], 'unknown')
+
+    def test_acceptance_instruction_or_mapping_mismatch_cannot_promote_other_gates(self):
+        r = execution(); r['acceptanceReviews'] = [acceptance()]
+        current = task('first-task'); current['_sourceSha256'] = 'd' * 64
+        gate = self.derive_acceptance(current, [r], [observation()])
+        self.assertEqual(gate['state'], 'unmet')
+        self.assertEqual(current['standardVerification']['gates']['setupSuccess']['state'], 'unknown')
+        current = task('first-task', article='https://example.com/other/')
+        gate = self.derive_acceptance(current, [r], [observation()])
+        self.assertEqual(gate['state'], 'unmet')
+
+    def test_partial_correction_and_later_blocked_cannot_pass(self):
+        r = execution(); r['acceptanceReviews'] = [acceptance()]
+        r['status'] = 'partial'
+        self.assertEqual(self.derive_acceptance(task('first-task'), [r], [observation()])['state'], 'unmet')
+        r['status'] = 'completed'
+        blocked = execution(); blocked.update(executionId='later-blocked', status='blocked',
+            startedAt='2026-09-15T12:30:00Z', recordedAt='2026-09-15T12:30:00Z', updatedAt='2026-09-15T12:30:00Z')
+        blocked.pop('finishedAt')
+        self.assertEqual(self.derive_acceptance(task('first-task'), [r, blocked], [observation()])['state'], 'unmet')
+
+
+    def test_late_review_of_old_success_cannot_hide_later_failure(self):
+        old = execution(); old['updatedAt'] = '2026-09-15T13:00:00Z'
+        old['acceptanceReviews'] = [acceptance(reviewedAt='2026-09-15T12:45:00Z')]
+        failed = execution(); failed.update(executionId='later-failed', status='failed',
+            finishedAt='2026-09-15T12:00:00Z', updatedAt='2026-09-15T12:00:00Z')
+        gate = self.derive_acceptance(task('first-task'), [old, failed],
+                                     [observation(observed='2026-09-15T12:50:00Z')])
+        self.assertEqual(gate['state'], 'unmet')
 
 
 if __name__ == '__main__':

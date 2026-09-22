@@ -108,6 +108,97 @@
      ]
     }
    }
+  },
+  {
+   "version": 1,
+   "taskSlug": "write-meta-article-documenting-agent-work",
+   "canonicalURL": "https://blitzmetrics.com/meta-article-prompt/",
+   "representation": "wordpress-content-html",
+   "sourceSha256": "1952b6ead82a6a9aa0d0f96f0e976b34c957351fe155fe8ddd56b6fc7e767fde",
+   "criteria": {
+    "openingContext": {
+     "state": "unmet",
+     "reason": "The first three sentences explain what and use but contain no linked relationship; the first linked connection is in the following paragraph.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-source-2026-09-21.md",
+      "sha256:1952b6ead82a6a9aa0d0f96f0e976b34c957351fe155fe8ddd56b6fc7e767fde"
+     ]
+    },
+    "roleScope": {
+     "state": "pass",
+     "reason": "Source declares a canonical Content Factory Process task and an outcome for an evidence-backed meta article of one actual execution.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-source-2026-09-21.md",
+      "sha256:1952b6ead82a6a9aa0d0f96f0e976b34c957351fe155fe8ddd56b6fc7e767fde"
+     ]
+    },
+    "owner": {
+     "state": "unknown",
+     "reason": "The article does not name a maintained canonical owner, but an owner record may exist outside this source and was not reviewed.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-source-2026-09-21.md",
+      "sha256:1952b6ead82a6a9aa0d0f96f0e976b34c957351fe155fe8ddd56b6fc7e767fde"
+     ]
+    },
+    "steps": {
+     "state": "unmet",
+     "reason": "Page contract starts after a complete, partial, or failed result; embedded skill starts when work starts and includes blocked work. The trigger conflicts.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-source-2026-09-21.md",
+      "sha256:1952b6ead82a6a9aa0d0f96f0e976b34c957351fe155fe8ddd56b6fc7e767fde"
+     ]
+    },
+    "links": {
+     "state": "unknown",
+     "reason": "Internal teaching and Task Library links are present, but source-only review cannot verify their maintained targets or availability.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-source-2026-09-21.md",
+      "sha256:1952b6ead82a6a9aa0d0f96f0e976b34c957351fe155fe8ddd56b6fc7e767fde"
+     ]
+    },
+    "sourceEvidence": {
+     "state": "unknown",
+     "reason": "Claims that the example is real, 60 meta-articles are verified, agents automatically improve, and this is a gold standard recipe were not independently checked.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-source-2026-09-21.md",
+      "sha256:1952b6ead82a6a9aa0d0f96f0e976b34c957351fe155fe8ddd56b6fc7e767fde"
+     ]
+    },
+    "handoffContext": {
+     "state": "pass",
+     "reason": "The source names the Process role, actual inputs, evidence checks, Task Library registration, recipe feedback, and WordPress posting handoff.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-source-2026-09-21.md",
+      "sha256:1952b6ead82a6a9aa0d0f96f0e976b34c957351fe155fe8ddd56b6fc7e767fde"
+     ]
+    },
+    "visualAndLayout": {
+     "state": "unknown",
+     "reason": "Lead and Content Factory diagrams exist in source, but source cannot prove first-screen desktop or mobile rendering and readability.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-source-2026-09-21.md",
+      "sha256:1952b6ead82a6a9aa0d0f96f0e976b34c957351fe155fe8ddd56b6fc7e767fde"
+     ]
+    },
+    "publicationStandards": {
+     "state": "unknown",
+     "reason": "Content HTML cannot prove metadata, CTA placement, short redirect, entity routing, E-E-A-T, or live publication behavior. Separate JSON title observation is not tied to this hash.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-source-2026-09-21.md",
+      "sha256:1952b6ead82a6a9aa0d0f96f0e976b34c957351fe155fe8ddd56b6fc7e767fde"
+     ]
+    },
+    "acceptanceResults": {
+     "state": "unknown",
+     "reason": "No exact-revision independent acceptance receipt or fresh matching observation is included in the supplied source.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-source-2026-09-21.md",
+      "sha256:1952b6ead82a6a9aa0d0f96f0e976b34c957351fe155fe8ddd56b6fc7e767fde"
+     ]
+    }
+   },
+   "reviewedAt": "2026-09-21T02:52:08.726122Z",
+   "reviewer": "Codex — independent Terra source review with root corrections; source-only scope"
   }
  ],
  "revisionObservations": [
@@ -124,6 +215,20 @@
    "evidenceRefs": [
     "sha256:6341f95c45eb081e2ce0afc4e4a8adf96051d28e2389c9a271953c56121929c5",
     "sha256:14fabe631b4d1bb3596a8e4640ad6d82d28c7a7b634ad9e098e6b31f3e628039"
+   ]
+  },
+  {
+   "version": 1,
+   "taskSlug": "write-meta-article-documenting-agent-work",
+   "canonicalURL": "https://blitzmetrics.com/meta-article-prompt/",
+   "representation": "wordpress-content-html",
+   "sourceSha256": "1952b6ead82a6a9aa0d0f96f0e976b34c957351fe155fe8ddd56b6fc7e767fde",
+   "observedAt": "2026-09-21T02:58:47.228010Z",
+   "observer": "Codex — authenticated WordPress source read after editorial review",
+   "state": "observed",
+   "reason": "A separate fresh source read matched the reviewed raw content bytes. It does not measure rendered layout, metadata or business results.",
+   "evidenceRefs": [
+    "sha256:ba42e8df92faee9dad5f5f8c17eb611d91c43edd4d6d9b5e0e27dde48553dfc0"
    ]
   }
  ]
