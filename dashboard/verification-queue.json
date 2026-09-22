@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-22T04:40:19+00:00",
+  "generatedAt": "2026-09-22T13:17:06+00:00",
   "definition": "Per-task standard gates derived from exact instruction reviews, explicit instruction-requirement checks, contributor status, article mapping/catalog holds, exact-revision article semantic reviews, task-attributed examples and the execution ledger. Unknown proof is never turned into a pass.",
   "stats": {
     "tasks": 276,
@@ -154,7 +154,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -259,7 +262,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [],
@@ -362,7 +368,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [],
@@ -465,7 +474,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [],
@@ -568,7 +580,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [],
@@ -671,7 +686,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [],
@@ -774,7 +792,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [],
@@ -877,7 +898,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [],
@@ -980,7 +1004,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [],
@@ -1083,7 +1110,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [],
@@ -1186,7 +1216,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [],
@@ -1289,7 +1322,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [],
@@ -1392,7 +1428,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [],
@@ -1495,7 +1534,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [],
@@ -1598,7 +1640,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [],
@@ -1701,7 +1746,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [],
@@ -1804,7 +1852,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [],
@@ -1907,7 +1958,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [],
@@ -2010,7 +2064,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [],
@@ -2110,7 +2167,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -2212,7 +2272,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -2314,7 +2377,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -2416,7 +2482,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -2518,7 +2587,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -2620,7 +2692,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -2722,7 +2797,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -2824,7 +2902,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -2926,7 +3007,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -3028,7 +3112,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -3130,7 +3217,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -3232,7 +3322,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -3334,7 +3427,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -3437,7 +3533,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -3539,7 +3638,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -3641,7 +3743,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -3743,7 +3848,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -3845,7 +3953,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -3947,7 +4058,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -4049,7 +4163,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -4151,7 +4268,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -4253,7 +4373,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -4355,7 +4478,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -4456,7 +4582,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -4558,7 +4687,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -4660,7 +4792,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -4762,7 +4897,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -4864,7 +5002,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -4966,7 +5107,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -5068,7 +5212,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -5170,7 +5317,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -5272,7 +5422,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -5374,7 +5527,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -5476,7 +5632,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -5578,7 +5737,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -5680,7 +5842,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -5782,7 +5947,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -5884,7 +6052,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -5986,7 +6157,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -6088,7 +6262,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -6190,7 +6367,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -6292,7 +6472,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -6394,7 +6577,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -6496,7 +6682,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -6598,7 +6787,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -6700,7 +6892,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -6800,7 +6995,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -6902,7 +7100,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -7004,7 +7205,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -7106,7 +7310,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -7208,7 +7415,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -7310,7 +7520,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -7413,7 +7626,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -7515,7 +7731,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -7617,7 +7836,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -7719,7 +7941,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -7821,7 +8046,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -7923,7 +8151,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -8025,7 +8256,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -8127,7 +8361,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -8229,7 +8466,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -8331,7 +8571,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -8433,7 +8676,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -8535,7 +8781,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -8637,7 +8886,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -8739,7 +8991,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -8841,7 +9096,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -8943,7 +9201,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -9045,7 +9306,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -9147,7 +9411,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -9249,7 +9516,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -9351,7 +9621,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -9453,7 +9726,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -9555,7 +9831,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -9784,9 +10063,10 @@
             "id": "recordedExecution",
             "label": "Recorded real execution",
             "state": "pass",
-            "reason": "4 distinct execution ID(s) name this task; outcomes remain separate.",
+            "reason": "5 distinct execution ID(s) name this task; outcomes remain separate.",
             "executionIds": [
               "article-review-20260918-063904",
+              "lss-meta-consistency-20260922-125016",
               "meta-guide-repair-20260922-035343",
               "recipe-audit-20260905-080140",
               "task-standards-20260915-215131"
@@ -9803,7 +10083,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -9903,7 +10186,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -10005,7 +10291,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -10107,7 +10396,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -10209,7 +10501,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -10311,7 +10606,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -10413,7 +10711,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -10515,7 +10816,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -10617,7 +10921,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -10719,7 +11026,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -10821,7 +11131,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -10923,7 +11236,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -11025,7 +11341,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -11127,7 +11446,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -11229,7 +11551,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -11331,7 +11656,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -11433,7 +11761,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -11535,7 +11866,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -11637,7 +11971,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -11739,7 +12076,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -11841,7 +12181,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -11943,7 +12286,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -12045,7 +12391,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -12147,7 +12496,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -12249,7 +12601,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -12351,7 +12706,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -12453,7 +12811,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -12555,7 +12916,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -12657,7 +13021,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -12759,7 +13126,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -12861,7 +13231,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -12963,7 +13336,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -13065,7 +13441,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -13167,7 +13546,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -13269,7 +13651,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -13371,7 +13756,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -13473,7 +13861,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -13575,7 +13966,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -13677,7 +14071,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -13779,7 +14176,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -13881,7 +14281,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -13983,7 +14386,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -14085,7 +14491,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -14187,7 +14596,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -14289,7 +14701,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -14391,7 +14806,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -14493,7 +14911,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -14595,7 +15016,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -14697,7 +15121,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -14799,7 +15226,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -14901,7 +15331,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -15003,7 +15436,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -15105,7 +15541,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -15207,7 +15646,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -15309,7 +15751,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -15411,7 +15856,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -15513,7 +15961,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -15615,7 +16066,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -15717,7 +16171,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -15819,7 +16276,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -15921,7 +16381,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -16023,7 +16486,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -16125,7 +16591,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -16227,7 +16696,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -16329,7 +16801,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -16431,7 +16906,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -16533,7 +17011,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -16635,7 +17116,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -16737,7 +17221,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -16839,7 +17326,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -16941,7 +17431,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -17043,7 +17536,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -17145,7 +17641,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -17247,7 +17746,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -17349,7 +17851,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -17451,7 +17956,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -17553,7 +18061,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -17655,7 +18166,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -17756,7 +18270,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -17857,7 +18374,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -17958,7 +18478,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -18059,7 +18582,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -18160,7 +18686,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -18261,7 +18790,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -18362,7 +18894,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -18463,7 +18998,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -18564,7 +19102,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -18665,7 +19206,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -18766,7 +19310,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -18867,7 +19414,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -18968,7 +19518,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -19069,7 +19622,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -19170,7 +19726,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -19271,7 +19830,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -19372,7 +19934,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -19473,7 +20038,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -19574,7 +20142,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -19675,7 +20246,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -19776,7 +20350,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -19877,7 +20454,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -19978,7 +20558,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -20079,7 +20662,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -20180,7 +20766,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -20281,7 +20870,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -20382,7 +20974,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -20483,7 +21078,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -20584,7 +21182,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -20685,7 +21286,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -20786,7 +21390,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -20887,7 +21494,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -20988,7 +21598,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -21089,7 +21702,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -21190,7 +21806,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -21291,7 +21910,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -21392,7 +22014,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -21493,7 +22118,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -21594,7 +22222,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -21695,7 +22326,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -21796,7 +22430,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -21897,7 +22534,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -21998,7 +22638,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -22099,7 +22742,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -22200,7 +22846,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -22301,7 +22950,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -22402,7 +23054,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -22503,7 +23158,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -22604,7 +23262,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -22705,7 +23366,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -22806,7 +23470,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -22907,7 +23574,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -23008,7 +23678,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -23109,7 +23782,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -23210,7 +23886,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -23311,7 +23990,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -23412,7 +24094,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -23513,7 +24198,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -23614,7 +24302,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -23715,7 +24406,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -23816,7 +24510,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -23917,7 +24614,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -24018,7 +24718,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [
@@ -24120,7 +24823,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [],
@@ -24223,7 +24929,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [],
@@ -24334,7 +25043,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [],
@@ -24433,7 +25145,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [],
@@ -24533,7 +25248,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [],
@@ -24633,7 +25351,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [],
@@ -24733,7 +25454,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [],
@@ -24833,7 +25557,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [],
@@ -24933,7 +25660,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [],
@@ -25033,7 +25763,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [],
@@ -25333,7 +26066,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [],
@@ -25431,7 +26167,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [],
@@ -25534,7 +26273,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [],
@@ -25636,7 +26378,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [],
@@ -25738,7 +26483,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [],
@@ -25840,7 +26588,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [],
@@ -25942,7 +26693,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [],
@@ -26041,7 +26795,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [],
@@ -26141,7 +26898,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [],
@@ -26241,7 +27001,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [],
@@ -26341,7 +27104,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [],
@@ -26441,7 +27207,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [],
@@ -26541,7 +27310,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [],
@@ -26641,7 +27413,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [],
@@ -26741,7 +27516,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [],
@@ -26841,7 +27619,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [],
@@ -26941,7 +27722,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [],
@@ -27074,7 +27858,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [],
@@ -27173,7 +27960,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [],
@@ -27273,7 +28063,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [],
@@ -27373,7 +28166,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [],
@@ -27476,7 +28272,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [],
@@ -27575,7 +28374,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [],
@@ -27675,7 +28477,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [],
@@ -27775,7 +28580,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [],
@@ -27881,7 +28689,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [],
@@ -27980,7 +28791,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [],
@@ -28080,7 +28894,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [],
@@ -28180,7 +28997,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [],
@@ -28280,7 +29100,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [],
@@ -28380,7 +29203,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [],
@@ -28480,7 +29306,10 @@
             "id": "setupSuccess",
             "label": "New-user setup success",
             "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
           }
         },
         "unmetStandardGates": [],

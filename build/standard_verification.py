@@ -119,6 +119,62 @@ def acceptance_result(task, history, article_evidence, now):
     return {'state': state, 'reason': reason, **common}
 
 
+def setup_result(task, history, accepted, now):
+    """A scoped manual-guide receipt cannot certify agents as human novices."""
+    limits = {'supportedRoute': 'manual-guide', 'installationCertified': False,
+              'schedulingCertified': False}
+    reviews = history.get('setupReviews') or []
+    if not reviews:
+        return {'state': 'unknown', 'reason': ('No structured receipt shows a novice human loaded the needed files, '
+                'had access and completed this task successfully. Installation and scheduling are not certified.'), **limits}
+    parsed = [(item, datetime.fromisoformat(item['reviewedAt'].replace('Z', '+00:00'))) for item in reviews]
+    latest_time = max(when for _, when in parsed)
+    latest = [item for item, when in parsed if when == latest_time]
+    if len(latest) != 1:
+        return {'state': 'unknown', 'reason': 'Multiple setup reviews share the latest timestamp; resolve the ambiguity.',
+                'setupReviewIds': sorted(item['reviewId'] for item in latest), **limits}
+    review = latest[0]
+    common = {'setupReview': review, **limits}
+    if latest_time > now:
+        return {'state': 'unknown', 'reason': 'The latest setup review timestamp is in the future.', **common}
+    # Show observed failures even when result acceptance or fresh source proof is absent.
+    states = [item['state'] for item in review['criteria'].values()]
+    for state in ('hold', 'unmet'):
+        if state in states:
+            names = ', '.join(name for name, item in review['criteria'].items() if item['state'] == state)
+            return {'state': state, 'reason': f'The latest manual-guide setup review is {state}: {names}.', **common}
+    if review['canonicalURL'] != task.get('article') or review['instructionSourceSha256'] != task.get('_sourceSha256'):
+        return {'state': 'unmet', 'reason': 'The setup receipt no longer matches the current canonical recipe mapping or maintained instruction revision.', **common}
+    run = next((item for item in history.get('executionOutcomes', ()) if item['executionId'] == review['executionId']), None)
+    if not run or run['status'] != 'completed':
+        return {'state': 'unmet', 'reason': 'The execution carrying this setup receipt is not completed.', **common}
+    if 'unknown' in states:
+        return {'state': 'unknown', 'reason': 'The latest manual-guide setup review still has unknown criteria.', **common}
+    accepted_review = accepted.get('acceptanceReview') or {}
+    if (not review['acceptanceReviewId'] or accepted_review.get('executionId') != review['executionId'] or
+            accepted_review.get('reviewId') != review['acceptanceReviewId']):
+        return {'state': 'unknown', 'reason': 'The setup receipt does not reference the current acceptance review for the same completed run.', **common}
+    if accepted['state'] != 'pass':
+        return {'state': accepted['state'], 'reason': f'The same run has no currently passing accepted result: {accepted["reason"]}', **common}
+    # Acceptance already checks representation, source hash, future time and freshness.
+    # Setup needs an observation at or after its own review, not merely after acceptance.
+    observed = accepted.get('revisionObservation')
+    if not observed or datetime.fromisoformat(observed['observedAt'].replace('Z', '+00:00')) < latest_time:
+        return {'state': 'unknown', 'reason': 'A separate current recipe observation must follow the setup review within the 24-hour freshness window.', **common}
+    if review['participantType'] != 'novice-human':
+        return {'state': 'unknown', 'reason': (f'The {review["participantType"]} manual-guide rehearsal is recorded; '
+                'it does not establish new-user success for a novice human. Installation and scheduling are not certified.'), **common}
+    if review['assistance'] != 'none':
+        return {'state': 'unknown', 'reason': (
+            f'The novice-human attempt records assistance as {review["assistance"]}; '
+            'unassisted new-user setup success remains unknown.'), **common}
+    return {'state': 'pass', 'reason': (
+        f'A novice human completed the manual-guide route without assistance in {review["app"]} ({review["surface"]}) '
+        'with independently reviewed file loading, inputs/access, output and handoff for this exact package and recipe. '
+        'This scoped result does not certify installation, scheduling or other apps.'),
+        'revisionObservation': observed, **common}
+
+
 def derive(tasks, instruction_reviews, meta_audits, normalize_url,
            article_evidence=None, now=None):
     """Attach ``standardVerification`` and return a deterministic review queue."""
@@ -287,10 +343,8 @@ def derive(tasks, instruction_reviews, meta_audits, normalize_url,
         checks['recordedExecution'] = recorded
         result = acceptance_result(task, history, article_evidence, now or datetime.now(timezone.utc))
         checks['acceptedExecution'] = gate('acceptedExecution', result.pop('state'), result.pop('reason'), **result)
-        checks['setupSuccess'] = gate(
-            'setupSuccess', 'unknown',
-            'No structured receipt shows a new user loaded the needed files, had access and '
-            'completed this task successfully.')
+        setup = setup_result(task, history, checks['acceptedExecution'], now or datetime.now(timezone.utc))
+        checks['setupSuccess'] = gate('setupSuccess', setup.pop('state'), setup.pop('reason'), **setup)
 
         ordered = [checks[gate_id] for gate_id in GATE_ORDER]
         unmet = [item['id'] for item in ordered if item['state'] == 'unmet']
