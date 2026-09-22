@@ -199,6 +199,97 @@
    },
    "reviewedAt": "2026-09-21T02:52:08.726122Z",
    "reviewer": "Codex — independent Terra source review with root corrections; source-only scope"
+  },
+  {
+   "version": 1,
+   "taskSlug": "write-meta-article-documenting-agent-work",
+   "canonicalURL": "https://blitzmetrics.com/meta-article-prompt/",
+   "representation": "wordpress-content-html",
+   "sourceSha256": "39e6e64ed488372c63c72338cc28f005d6c845226842faf49e5c71bb1dde02be",
+   "reviewedAt": "2026-09-22T04:18:49.804481Z",
+   "reviewer": "Codex root with independent source and opening review",
+   "criteria": {
+    "openingContext": {
+     "state": "pass",
+     "reason": "First three sentences explain recording a real job, learning from mistakes, and improving the linked main task guide. Independent meaning review, grade3.72 diagnostic and destination check support the exact opening.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-repair-2026-09-22.md",
+      "sha256:9dab7e2ebb2259c299a559df91a0465d8d1fadce7e491b67f8676cae347cbf3b"
+     ]
+    },
+    "roleScope": {
+     "state": "pass",
+     "reason": "The page remains the mapped canonical task recipe for writing one actual execution record; its visible review status is explicitly incomplete.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-repair-2026-09-22.md",
+      "sha256:9dab7e2ebb2259c299a559df91a0465d8d1fadce7e491b67f8676cae347cbf3b"
+     ]
+    },
+    "owner": {
+     "state": "unknown",
+     "reason": "Canonical ownership evidence beyond the current task mapping and author byline was not fully audited in this scoped repair.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-repair-2026-09-22.md",
+      "sha256:9dab7e2ebb2259c299a559df91a0465d8d1fadce7e491b67f8676cae347cbf3b"
+     ]
+    },
+    "steps": {
+     "state": "unknown",
+     "reason": "Conflicting start instructions now consistently begin with the task and preserve the same ID. Full end-to-end step completeness and execution were not independently certified.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-repair-2026-09-22.md",
+      "sha256:9dab7e2ebb2259c299a559df91a0465d8d1fadce7e491b67f8676cae347cbf3b"
+     ]
+    },
+    "links": {
+     "state": "unknown",
+     "reason": "Opening destination was checked and all original URLs preserved. The full body destination set was not reverified.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-repair-2026-09-22.md",
+      "sha256:9dab7e2ebb2259c299a559df91a0465d8d1fadce7e491b67f8676cae347cbf3b"
+     ]
+    },
+    "sourceEvidence": {
+     "state": "unknown",
+     "reason": "Unsupported automatic improvement, quality and numeric measurement claims were corrected. The dated60-URL inventory remains historical; six classification conflicts and real-example source checks remain open.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-repair-2026-09-22.md",
+      "sha256:9dab7e2ebb2259c299a559df91a0465d8d1fadce7e491b67f8676cae347cbf3b"
+     ]
+    },
+    "handoffContext": {
+     "state": "pass",
+     "reason": "Explicit inputs, Process-stage Content Factory context, checked record, Task Library registration, supported recipe correction and authorized publishing handoff remain present.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-repair-2026-09-22.md",
+      "sha256:9dab7e2ebb2259c299a559df91a0465d8d1fadce7e491b67f8676cae347cbf3b"
+     ]
+    },
+    "visualAndLayout": {
+     "state": "unknown",
+     "reason": "Changed opening/diagram, phone tables, evidence labels and inventory passed scoped rendered checks. Full lower-page media and context requirements were not independently rechecked.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-repair-2026-09-22.md",
+      "sha256:9dab7e2ebb2259c299a559df91a0465d8d1fadce7e491b67f8676cae347cbf3b"
+     ]
+    },
+    "publicationStandards": {
+     "state": "unknown",
+     "reason": "Title shortened and separately checked, source/URL preserved, reviewed changes published. CTA, short URL, all metadata and E-E-A-T requirements were not fully audited.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-repair-2026-09-22.md",
+      "sha256:9dab7e2ebb2259c299a559df91a0465d8d1fadce7e491b67f8676cae347cbf3b"
+     ]
+    },
+    "acceptanceResults": {
+     "state": "unknown",
+     "reason": "No exact-revision accepted business run or successful novice-human setup is established by this maintenance repair.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-repair-2026-09-22.md",
+      "sha256:9dab7e2ebb2259c299a559df91a0465d8d1fadce7e491b67f8676cae347cbf3b"
+     ]
+    }
+   }
   }
  ],
  "revisionObservations": [
@@ -229,6 +320,20 @@
    "reason": "A separate fresh source read matched the reviewed raw content bytes. It does not measure rendered layout, metadata or business results.",
    "evidenceRefs": [
     "sha256:ba42e8df92faee9dad5f5f8c17eb611d91c43edd4d6d9b5e0e27dde48553dfc0"
+   ]
+  },
+  {
+   "version": 1,
+   "taskSlug": "write-meta-article-documenting-agent-work",
+   "canonicalURL": "https://blitzmetrics.com/meta-article-prompt/",
+   "representation": "wordpress-content-html",
+   "sourceSha256": "39e6e64ed488372c63c72338cc28f005d6c845226842faf49e5c71bb1dde02be",
+   "observedAt": "2026-09-22T04:18:50.835196Z",
+   "observer": "Codex separate fresh WordPress readback after editorial review",
+   "state": "observed",
+   "reason": "Fresh raw content bytes match the reviewed final revision. This observation does not substitute for separate public/rendered checks.",
+   "evidenceRefs": [
+    "sha256:9751842d2553f07ddd05a0e6ccddabf0356739678fb98994642b7b505991a1c2"
    ]
   }
  ]
