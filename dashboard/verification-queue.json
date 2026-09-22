@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-22T00:06:17+00:00",
+  "generatedAt": "2026-09-22T04:40:19+00:00",
   "definition": "Per-task standard gates derived from exact instruction reviews, explicit instruction-requirement checks, contributor status, article mapping/catalog holds, exact-revision article semantic reviews, task-attributed examples and the execution ledger. Unknown proof is never turned into a pass.",
   "stats": {
     "tasks": 276,
     "fullyVerifiedTasks": 0,
     "semanticHoldHubs": 3,
     "tasksWithHolds": 19,
-    "tasksWithUnmetGates": 217,
+    "tasksWithUnmetGates": 216,
     "tasksWithUnknownGates": 276,
     "gateCounts": {
       "instructionRevisionReviewed": {
@@ -42,9 +42,9 @@
       },
       "articleSemanticCertification": {
         "pass": 0,
-        "unmet": 1,
+        "unmet": 0,
         "hold": 19,
-        "unknown": 256
+        "unknown": 257
       },
       "taskExampleEvidence": {
         "pass": 10,
@@ -9784,9 +9784,10 @@
             "id": "recordedExecution",
             "label": "Recorded real execution",
             "state": "pass",
-            "reason": "3 distinct execution ID(s) name this task; outcomes remain separate.",
+            "reason": "4 distinct execution ID(s) name this task; outcomes remain separate.",
             "executionIds": [
               "article-review-20260918-063904",
+              "meta-guide-repair-20260922-035343",
               "recipe-audit-20260905-080140",
               "task-standards-20260915-215131"
             ],
@@ -19902,305 +19903,6 @@
       "queuePosition": 194,
       "priority": "P1",
       "priorityReason": "Known standard gap",
-      "slug": "write-meta-article-documenting-agent-work",
-      "title": "Write a meta article documenting a task execution",
-      "category": "Content Factory — Process",
-      "importance": 5,
-      "status": "complete",
-      "articleUrl": "https://blitzmetrics.com/meta-article-prompt/",
-      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=write-meta-article-documenting-agent-work#task-write-meta-article-documenting-agent-work",
-      "nextAction": "Current article semantic criteria are unmet: openingContext, steps.",
-      "standardVerification": {
-        "instructionSourceSha256": "d442d8bcb0a667057a12814afc16d0d23545601eea6433ff1e16405d1f5ef88e",
-        "articleKey": "blitzmetrics.com/meta-article-prompt",
-        "gates": {
-          "instructionRevisionReviewed": {
-            "id": "instructionRevisionReviewed",
-            "label": "Exact instruction revision reviewed",
-            "state": "pass",
-            "reason": "Current source bytes match the review recorded 2026-09-17. Review scope and limits: Exact current instruction file, with five explicit requirement checks. All five instruction checks pass. Link checks combine current public HTTP/index reads with ordinary anonymous-browser bodies; earlier HTTP 403 challenges are preserved as checking-method limits. Article semantics, rendered output, setup and real execution acceptance are not certified.",
-            "reviewedAt": "2026-09-17",
-            "reviewer": "Codex editorial author and independent instruction reviewer",
-            "sourceSha256": "d442d8bcb0a667057a12814afc16d0d23545601eea6433ff1e16405d1f5ef88e"
-          },
-          "instructionStandards": {
-            "id": "instructionStandards",
-            "label": "Instruction requirements checked",
-            "state": "pass",
-            "reason": "All five instruction requirements have explicit passing checks for the current source revision.",
-            "reviewedAt": "2026-09-17",
-            "reviewer": "Codex editorial author and independent instruction reviewer",
-            "reviewScope": "Exact current instruction file, with five explicit requirement checks. All five instruction checks pass. Link checks combine current public HTTP/index reads with ordinary anonymous-browser bodies; earlier HTTP 403 challenges are preserved as checking-method limits. Article semantics, rendered output, setup and real execution acceptance are not certified.",
-            "sourceSha256": "d442d8bcb0a667057a12814afc16d0d23545601eea6433ff1e16405d1f5ef88e",
-            "standards": {
-              "version": 1,
-              "checks": {
-                "opening": {
-                  "state": "pass",
-                  "reason": "Write a record of a job; help the next person avoid mistakes; use proof to improve the linked main guide. Independent meaning review passed.",
-                  "evidence": "Write a short record of what happened when your team did a job. It helps the next person learn from the work and avoid the same mistakes. Link the record to the main task guide so you can improve its steps with proof. Approximate reading diagnostic: 2.9; Flesch-Kincaid with Pyphen syllable approximation, not grade certification. Three sentences."
-                },
-                "recipe": {
-                  "state": "pass",
-                  "reason": "The instructions state a repeatable contract with inputs, checks and a setup boundary. This is a document review, not proof of a successful run.",
-                  "evidence": "Use this when covers actual attempts. Inputs and Steps 1-9 require exact task/revision, evidence, real lifecycle state, a saved draft and ledger validation. First-run setup says the file does not install an app, connect an account or create a schedule."
-                },
-                "links": {
-                  "state": "pass",
-                  "reason": "Combined current-page checks cover every maintained concept and task target named by this exact revision. Initial HTTP 403 responses were automated-checker limits, not bad-link evidence.",
-                  "evidence": "2026-09-17 direct HTTP and deployed-index review matched Article Guidelines, the recipe/meta guide, execution ledger, exact update-guide and self task routes. Same-day ordinary anonymous browser DOM review confirmed the final URL, heading and visible body support the stated purpose for Content Factory, Meta Article Prompt and Definitive Article Guide. The earlier 403 observations remain recorded as a fetch-method limitation."
-                },
-                "evidence": {
-                  "state": "pass",
-                  "reason": "Examples are labeled as teaching material and actual-run proof is required. Fictional examples do not count as completed tasks.",
-                  "evidence": "Example(s) explicitly says fictional. Write up the real run requires exact recipe revision, observed results, honest partial/failed states and one stable execution ID. Real-example and setup gaps remain separate."
-                },
-                "handoff": {
-                  "state": "pass",
-                  "reason": "The checked artifact, receiving function and actual Process-stage context are explicit.",
-                  "evidence": "The task owner receives the written meta and validated candidate; the standards owner receives supported recipe changes. No automatic endless meta loop. Handoff and Content Factory context distinguishes Produce, Process, Post and Promote."
-                }
-              }
-            }
-          },
-          "contributorComplete": {
-            "id": "contributorComplete",
-            "label": "Contributor reports guide complete",
-            "state": "pass",
-            "reason": "The contributor status is complete; this is a source claim, not execution proof."
-          },
-          "articleMapped": {
-            "id": "articleMapped",
-            "label": "Canonical article mapped",
-            "state": "pass",
-            "reason": "The task maps to a normalized canonical article URL.",
-            "articleUrl": "https://blitzmetrics.com/meta-article-prompt/"
-          },
-          "articleCatalogGate": {
-            "id": "articleCatalogGate",
-            "label": "Article catalog gate",
-            "state": "pass",
-            "reason": "Every task mapped to this hub is contributor-complete and no reviewed hold is active. This is catalog readiness only."
-          },
-          "articleSemanticCertification": {
-            "id": "articleSemanticCertification",
-            "label": "Article semantic certification",
-            "state": "unmet",
-            "reason": "Current article semantic criteria are unmet: openingContext, steps.",
-            "semanticReview": {
-              "version": 1,
-              "taskSlug": "write-meta-article-documenting-agent-work",
-              "canonicalURL": "https://blitzmetrics.com/meta-article-prompt/",
-              "sourceSha256": "1952b6ead82a6a9aa0d0f96f0e976b34c957351fe155fe8ddd56b6fc7e767fde",
-              "representation": "wordpress-content-html",
-              "reviewedAt": "2026-09-21T02:52:08.726122Z",
-              "reviewer": "Codex — independent Terra source review with root corrections; source-only scope",
-              "criteria": {
-                "openingContext": {
-                  "state": "unmet",
-                  "reason": "The first three sentences explain what and use but contain no linked relationship; the first linked connection is in the following paragraph.",
-                  "evidenceRefs": [
-                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-source-2026-09-21.md",
-                    "sha256:1952b6ead82a6a9aa0d0f96f0e976b34c957351fe155fe8ddd56b6fc7e767fde"
-                  ]
-                },
-                "roleScope": {
-                  "state": "pass",
-                  "reason": "Source declares a canonical Content Factory Process task and an outcome for an evidence-backed meta article of one actual execution.",
-                  "evidenceRefs": [
-                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-source-2026-09-21.md",
-                    "sha256:1952b6ead82a6a9aa0d0f96f0e976b34c957351fe155fe8ddd56b6fc7e767fde"
-                  ]
-                },
-                "owner": {
-                  "state": "unknown",
-                  "reason": "The article does not name a maintained canonical owner, but an owner record may exist outside this source and was not reviewed.",
-                  "evidenceRefs": [
-                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-source-2026-09-21.md",
-                    "sha256:1952b6ead82a6a9aa0d0f96f0e976b34c957351fe155fe8ddd56b6fc7e767fde"
-                  ]
-                },
-                "steps": {
-                  "state": "unmet",
-                  "reason": "Page contract starts after a complete, partial, or failed result; embedded skill starts when work starts and includes blocked work. The trigger conflicts.",
-                  "evidenceRefs": [
-                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-source-2026-09-21.md",
-                    "sha256:1952b6ead82a6a9aa0d0f96f0e976b34c957351fe155fe8ddd56b6fc7e767fde"
-                  ]
-                },
-                "links": {
-                  "state": "unknown",
-                  "reason": "Internal teaching and Task Library links are present, but source-only review cannot verify their maintained targets or availability.",
-                  "evidenceRefs": [
-                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-source-2026-09-21.md",
-                    "sha256:1952b6ead82a6a9aa0d0f96f0e976b34c957351fe155fe8ddd56b6fc7e767fde"
-                  ]
-                },
-                "sourceEvidence": {
-                  "state": "unknown",
-                  "reason": "Claims that the example is real, 60 meta-articles are verified, agents automatically improve, and this is a gold standard recipe were not independently checked.",
-                  "evidenceRefs": [
-                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-source-2026-09-21.md",
-                    "sha256:1952b6ead82a6a9aa0d0f96f0e976b34c957351fe155fe8ddd56b6fc7e767fde"
-                  ]
-                },
-                "handoffContext": {
-                  "state": "pass",
-                  "reason": "The source names the Process role, actual inputs, evidence checks, Task Library registration, recipe feedback, and WordPress posting handoff.",
-                  "evidenceRefs": [
-                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-source-2026-09-21.md",
-                    "sha256:1952b6ead82a6a9aa0d0f96f0e976b34c957351fe155fe8ddd56b6fc7e767fde"
-                  ]
-                },
-                "visualAndLayout": {
-                  "state": "unknown",
-                  "reason": "Lead and Content Factory diagrams exist in source, but source cannot prove first-screen desktop or mobile rendering and readability.",
-                  "evidenceRefs": [
-                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-source-2026-09-21.md",
-                    "sha256:1952b6ead82a6a9aa0d0f96f0e976b34c957351fe155fe8ddd56b6fc7e767fde"
-                  ]
-                },
-                "publicationStandards": {
-                  "state": "unknown",
-                  "reason": "Content HTML cannot prove metadata, CTA placement, short redirect, entity routing, E-E-A-T, or live publication behavior. Separate JSON title observation is not tied to this hash.",
-                  "evidenceRefs": [
-                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-source-2026-09-21.md",
-                    "sha256:1952b6ead82a6a9aa0d0f96f0e976b34c957351fe155fe8ddd56b6fc7e767fde"
-                  ]
-                },
-                "acceptanceResults": {
-                  "state": "unknown",
-                  "reason": "No exact-revision independent acceptance receipt or fresh matching observation is included in the supplied source.",
-                  "evidenceRefs": [
-                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-source-2026-09-21.md",
-                    "sha256:1952b6ead82a6a9aa0d0f96f0e976b34c957351fe155fe8ddd56b6fc7e767fde"
-                  ]
-                }
-              }
-            },
-            "revisionObservation": {
-              "version": 1,
-              "taskSlug": "write-meta-article-documenting-agent-work",
-              "canonicalURL": "https://blitzmetrics.com/meta-article-prompt/",
-              "sourceSha256": "1952b6ead82a6a9aa0d0f96f0e976b34c957351fe155fe8ddd56b6fc7e767fde",
-              "representation": "wordpress-content-html",
-              "observedAt": "2026-09-21T02:58:47.228010Z",
-              "observer": "Codex — authenticated WordPress source read after editorial review",
-              "state": "observed",
-              "reason": "A separate fresh source read matched the reviewed raw content bytes. It does not measure rendered layout, metadata or business results.",
-              "evidenceRefs": [
-                "sha256:ba42e8df92faee9dad5f5f8c17eb611d91c43edd4d6d9b5e0e27dde48553dfc0"
-              ]
-            }
-          },
-          "taskExampleEvidence": {
-            "id": "taskExampleEvidence",
-            "label": "Task-attributed example evidence",
-            "state": "pass",
-            "reason": "60 audited example URL(s) are attributable to this task.",
-            "exampleUrls": [
-              "https://blitzmetrics.com/ai-agent-audit-ben-forstie-durafoam/",
-              "https://blitzmetrics.com/ai-agent-audit-garrett-mcclure-born-and-bred/",
-              "https://blitzmetrics.com/ai-agent-audit-hunter-terpenny-humm-accounting/",
-              "https://blitzmetrics.com/ai-agent-audit-naz-electric-flagstaff-electrician/",
-              "https://blitzmetrics.com/ai-agent-audit-ryan-white-social-revelation/",
-              "https://blitzmetrics.com/ai-agent-audit-terry-shintani-million-follower-doctor/",
-              "https://blitzmetrics.com/audit-subscription-matt-bodnar/",
-              "https://blitzmetrics.com/building-dennis-yu-speaker-reel-for-event-organizers/",
-              "https://blitzmetrics.com/consent-scanner-blank-dashboard-token-links/",
-              "https://blitzmetrics.com/content-factory-academy-free-course-migration/",
-              "https://blitzmetrics.com/derive-dont-maintain/",
-              "https://blitzmetrics.com/file-that-wouldnt-attach-boomerang-gmail-dom-fix/",
-              "https://blitzmetrics.com/first-group-website-request-processed/",
-              "https://blitzmetrics.com/give-your-ai-team-one-shared-brain/",
-              "https://blitzmetrics.com/how-a-claude-agent-audited-blitzmetrics-gsc-cleared-404-monitor/",
-              "https://blitzmetrics.com/how-a-claude-agent-collapsed-13-redirect-chains-on-blitzmetrics/",
-              "https://blitzmetrics.com/how-a-claude-agent-fixed-blitzmetrics-404s/",
-              "https://blitzmetrics.com/how-a-claude-agent-migrated-junks-above-off-godaddy/",
-              "https://blitzmetrics.com/how-agents-qa-a-partner-local-audit/",
-              "https://blitzmetrics.com/how-claude-agent-built-ensitefulmarketing-com/",
-              "https://blitzmetrics.com/how-claude-built-keap-quiz-pass-fail-campaigns/",
-              "https://blitzmetrics.com/how-i-built-bing-webmaster-import/",
-              "https://blitzmetrics.com/how-we-automated-quick-audit-follow-ups-with-zapier/",
-              "https://blitzmetrics.com/how-we-built-avery-young-authority-package/",
-              "https://blitzmetrics.com/how-we-built-cam-hazzard-personal-brand-ai/",
-              "https://blitzmetrics.com/how-we-built-carol-hasegawa-personal-brand-site/",
-              "https://blitzmetrics.com/how-we-built-custom-wordpress-plugin-global-css-no-page-builder/",
-              "https://blitzmetrics.com/how-we-built-geo-targeted-location-pages-florida-contractor/",
-              "https://blitzmetrics.com/how-we-built-nathanielstevens-com-a-personal-brand-website-in-under-4-hours-using-ai/",
-              "https://blitzmetrics.com/how-we-connected-basecamp-to-blitzbase-knowledge-base/",
-              "https://blitzmetrics.com/how-we-embedded-google-reviews-faqs-home-services-wordpress/",
-              "https://blitzmetrics.com/how-we-finished-the-knowledge-panel-book/",
-              "https://blitzmetrics.com/how-we-harmonized-skills-and-routines/",
-              "https://blitzmetrics.com/how-we-integrated-jobber-wordpress-home-services/",
-              "https://blitzmetrics.com/how-we-launched-athlete-spotlight/",
-              "https://blitzmetrics.com/how-we-made-definitive-article-strength-measurable/",
-              "https://blitzmetrics.com/how-we-mapped-the-usage-buckets/",
-              "https://blitzmetrics.com/how-we-migrated-cheetah-screens-squarespace-to-wordpress/",
-              "https://blitzmetrics.com/how-we-propagated-dollar-a-day-across-the-fleet/",
-              "https://blitzmetrics.com/how-we-published-the-client-tracker/",
-              "https://blitzmetrics.com/how-we-rebuilt-financing-page-themed-enhancify-contractor/",
-              "https://blitzmetrics.com/how-we-redesigned-cody-jones-funeral-home-exit-website/",
-              "https://blitzmetrics.com/how-we-restructured-dennisyu-com-to-practice-what-we-preach/",
-              "https://blitzmetrics.com/how-we-rewrote-the-agency-audit-page/",
-              "https://blitzmetrics.com/how-we-set-up-rankmath-pro-local-service-business-wp-engine/",
-              "https://blitzmetrics.com/how-we-stood-up-a-special-project-for-superseed/",
-              "https://blitzmetrics.com/how-we-stopped-handing-agents-a-paste/",
-              "https://blitzmetrics.com/how-we-turned-239-tasks-into-an-ai-runnable-skill-library/",
-              "https://blitzmetrics.com/jim-klauck-radio-pitchman-brand-audit/",
-              "https://blitzmetrics.com/josh-collier-brand-ecosystem-build/",
-              "https://blitzmetrics.com/julian-david-entity-home-build/",
-              "https://blitzmetrics.com/kimi-k3-vs-claude-content-factory-math/",
-              "https://blitzmetrics.com/knowledge-graph-explorer-every-spotlight-site/",
-              "https://blitzmetrics.com/open-ai-knowledge-base-team-contributions/",
-              "https://blitzmetrics.com/personal-brand-fleet-money-pages/",
-              "https://blitzmetrics.com/spp-to-keap-migration/",
-              "https://blitzmetrics.com/system-front-door/",
-              "https://blitzmetrics.com/the-five-minute-brief-dennis-yu-dictated-before-the-ai-agent-did-anything/",
-              "https://blitzmetrics.com/the-local-quick-audit-is-not-a-swapped-headline/",
-              "https://blitzmetrics.com/video-schema-root-cause/"
-            ],
-            "auditedAt": "2026-09-10"
-          },
-          "recordedExecution": {
-            "id": "recordedExecution",
-            "label": "Recorded real execution",
-            "state": "unknown",
-            "reason": "No execution ledger record names this task. Historical run frequency is unknown."
-          },
-          "acceptedExecution": {
-            "id": "acceptedExecution",
-            "label": "Accepted execution result",
-            "state": "unknown",
-            "reason": "No structured acceptance review is recorded for the current canonical article revision. A completed run label is not acceptance."
-          },
-          "setupSuccess": {
-            "id": "setupSuccess",
-            "label": "New-user setup success",
-            "state": "unknown",
-            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
-          }
-        },
-        "unmetStandardGates": [
-          "articleSemanticCertification"
-        ],
-        "heldStandardGates": [],
-        "unknownStandardGates": [
-          "recordedExecution",
-          "acceptedExecution",
-          "setupSuccess"
-        ],
-        "fullyVerified": false,
-        "queuePosition": 194,
-        "priority": "P1",
-        "priorityReason": "Known standard gap",
-        "nextAction": "Current article semantic criteria are unmet: openingContext, steps."
-      }
-    },
-    {
-      "queuePosition": 195,
-      "priority": "P1",
-      "priorityReason": "Known standard gap",
       "slug": "apply-metrics-decomposition",
       "title": "Apply Metrics Decomposition",
       "category": "Content Factory — Promote",
@@ -20292,14 +19994,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 195,
+        "queuePosition": 194,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 196,
+      "queuePosition": 195,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "stage-2-goals-mission-90-day-goals-cpa-roas-budget",
@@ -20393,14 +20095,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 196,
+        "queuePosition": 195,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 197,
+      "queuePosition": 196,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "stage-6-optimization-metrics-budget-review-recommendations",
@@ -20494,14 +20196,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 197,
+        "queuePosition": 196,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 198,
+      "queuePosition": 197,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "audit-internal-links-between-all-blog-posts",
@@ -20595,14 +20297,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 198,
+        "queuePosition": 197,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 199,
+      "queuePosition": 198,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "check-each-homepage-section-includes-relevant-image",
@@ -20696,14 +20398,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 199,
+        "queuePosition": 198,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 200,
+      "queuePosition": 199,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "check-for-broken-links",
@@ -20797,14 +20499,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 200,
+        "queuePosition": 199,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 201,
+      "queuePosition": 200,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "check-lead-magnet-section-has-visual-mockup",
@@ -20898,14 +20600,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 201,
+        "queuePosition": 200,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 202,
+      "queuePosition": 201,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "check-meta-description-under-160-chars",
@@ -20999,14 +20701,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 202,
+        "queuePosition": 201,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 203,
+      "queuePosition": 202,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "check-schema-connects-to-all-verified-profiles",
@@ -21100,14 +20802,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 203,
+        "queuePosition": 202,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 204,
+      "queuePosition": 203,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "check-seo-title-under-60-chars-with-focus-keyword",
@@ -21201,14 +20903,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 204,
+        "queuePosition": 203,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 205,
+      "queuePosition": 204,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "check-social-profiles-linked-and-prominent",
@@ -21302,14 +21004,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 205,
+        "queuePosition": 204,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 206,
+      "queuePosition": 205,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "create-a-3-minute-why-video",
@@ -21403,14 +21105,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 206,
+        "queuePosition": 205,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 207,
+      "queuePosition": 206,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "create-a-3x3-video-grid",
@@ -21504,14 +21206,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 207,
+        "queuePosition": 206,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 208,
+      "queuePosition": 207,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "enhance-existing-articles-before-creating-new-ones",
@@ -21605,14 +21307,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 208,
+        "queuePosition": 207,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 209,
+      "queuePosition": 208,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "ensure-no-stock-images-used",
@@ -21706,14 +21408,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 209,
+        "queuePosition": 208,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 210,
+      "queuePosition": 209,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "ensure-no-text-only-sections-spanning-full-viewport",
@@ -21807,14 +21509,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 210,
+        "queuePosition": 209,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 211,
+      "queuePosition": 210,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "fit-every-new-piece-into-the-tree-structure",
@@ -21908,14 +21610,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 211,
+        "queuePosition": 210,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 212,
+      "queuePosition": 211,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "link-leaves-to-branches-branches-to-trunk",
@@ -22009,14 +21711,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 212,
+        "queuePosition": 211,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 213,
+      "queuePosition": 212,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "map-content-hierarchically-root-trunk-branches-leaves",
@@ -22110,14 +21812,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 213,
+        "queuePosition": 212,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 214,
+      "queuePosition": 213,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "stage-3-content-endorsements-why-video-3x3-grid-library",
@@ -22211,14 +21913,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 214,
+        "queuePosition": 213,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 215,
+      "queuePosition": 214,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "test-mobile-load-time-under-3-seconds",
@@ -22312,14 +22014,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 215,
+        "queuePosition": 214,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 216,
+      "queuePosition": 215,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "verify-achievements-are-evidenced-not-just-claimed",
@@ -22413,14 +22115,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 216,
+        "queuePosition": 215,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 217,
+      "queuePosition": 216,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "verify-all-images-have-descriptive-alt-text",
@@ -22514,14 +22216,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 217,
+        "queuePosition": 216,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 218,
+      "queuePosition": 217,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "verify-all-pages-written-in-first-person",
@@ -22615,14 +22317,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 218,
+        "queuePosition": 217,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 219,
+      "queuePosition": 218,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "verify-at-least-one-video-embed-on-homepage",
@@ -22716,14 +22418,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 219,
+        "queuePosition": 218,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 220,
+      "queuePosition": 219,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "verify-email-opt-in-form-exists-and-works",
@@ -22817,14 +22519,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 220,
+        "queuePosition": 219,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 221,
+      "queuePosition": 220,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "verify-entity-linking-follows-decision-tree",
@@ -22918,14 +22620,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 221,
+        "queuePosition": 220,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 222,
+      "queuePosition": 221,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "verify-featured-images-unique-per-blog-post",
@@ -23019,14 +22721,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 222,
+        "queuePosition": 221,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 223,
+      "queuePosition": 222,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "verify-footer-includes-social-links-and-secondary-nav",
@@ -23120,14 +22822,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 223,
+        "queuePosition": 222,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 224,
+      "queuePosition": 223,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "verify-google-business-profile",
@@ -23221,14 +22923,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 224,
+        "queuePosition": 223,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 225,
+      "queuePosition": 224,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "verify-google-business-profile-is-verified",
@@ -23322,14 +23024,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 225,
+        "queuePosition": 224,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 226,
+      "queuePosition": 225,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "verify-hero-section-contains-real-photo-of-person",
@@ -23423,14 +23125,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 226,
+        "queuePosition": 225,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 227,
+      "queuePosition": 226,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "verify-minimum-5-distinct-images-on-homepage",
@@ -23524,14 +23226,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 227,
+        "queuePosition": 226,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 228,
+      "queuePosition": 227,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "verify-rank-math-score-above-70-on-every-page",
@@ -23625,14 +23327,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 228,
+        "queuePosition": 227,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 229,
+      "queuePosition": 228,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "verify-social-proof-photos-present",
@@ -23726,14 +23428,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 229,
+        "queuePosition": 228,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 230,
+      "queuePosition": 229,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "verify-testimonials-include-headshots-with-attribution",
@@ -23827,14 +23529,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 230,
+        "queuePosition": 229,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 231,
+      "queuePosition": 230,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "verify-testimonials-with-full-attribution",
@@ -23928,14 +23630,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 231,
+        "queuePosition": 230,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 232,
+      "queuePosition": 231,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "verify-xml-sitemap-exists-and-in-robotstxt",
@@ -24029,14 +23731,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 232,
+        "queuePosition": 231,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 233,
+      "queuePosition": 232,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "check-topic-coherence-for-each-definitive-article",
@@ -24130,14 +23832,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 233,
+        "queuePosition": 232,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 234,
+      "queuePosition": 233,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "create-sop-amendment-proposal-500-words",
@@ -24231,14 +23933,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 234,
+        "queuePosition": 233,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 235,
+      "queuePosition": 234,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "verify-structural-completeness-against-8-step-framework",
@@ -24332,14 +24034,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 235,
+        "queuePosition": 234,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 236,
+      "queuePosition": 235,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "slug": "map-out-one-minute-video-topics-using-topic-wheel",
@@ -24432,14 +24134,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 236,
+        "queuePosition": 235,
         "priority": "P2",
         "priorityReason": "Importance 5; missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 237,
+      "queuePosition": 236,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "slug": "record-one-minute-videos",
@@ -24534,14 +24236,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 237,
+        "queuePosition": 236,
         "priority": "P2",
         "priorityReason": "Importance 5; missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 238,
+      "queuePosition": 237,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "slug": "run-content-factory-on-any-engine",
@@ -24645,14 +24347,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 238,
+        "queuePosition": 237,
         "priority": "P2",
         "priorityReason": "Importance 5; missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 239,
+      "queuePosition": 238,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "slug": "step-1-upload-video-to-google-drive-and-descript",
@@ -24745,14 +24447,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 239,
+        "queuePosition": 238,
         "priority": "P2",
         "priorityReason": "Importance 5; missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 240,
+      "queuePosition": 239,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "slug": "step-11-proofread-with-grammarly-or-chatgpt",
@@ -24845,14 +24547,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 240,
+        "queuePosition": 239,
         "priority": "P2",
         "priorityReason": "Importance 5; missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 241,
+      "queuePosition": 240,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "slug": "step-12-post-article-on-wordpress",
@@ -24945,14 +24647,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 241,
+        "queuePosition": 240,
         "priority": "P2",
         "priorityReason": "Importance 5; missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 242,
+      "queuePosition": 241,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "slug": "step-2-fix-categories-and-tags-in-wordpress",
@@ -25045,14 +24747,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 242,
+        "queuePosition": 241,
         "priority": "P2",
         "priorityReason": "Importance 5; missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 243,
+      "queuePosition": 242,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "slug": "step-2-transcribe-video-using-descript",
@@ -25145,14 +24847,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 243,
+        "queuePosition": 242,
         "priority": "P2",
         "priorityReason": "Importance 5; missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 244,
+      "queuePosition": 243,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "slug": "step-5-write-article-from-transcript",
@@ -25245,14 +24947,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 244,
+        "queuePosition": 243,
         "priority": "P2",
         "priorityReason": "Importance 5; missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 245,
+      "queuePosition": 244,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "slug": "use-descript-underlord-to-remove-filler-words",
@@ -25345,10 +25047,308 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 245,
+        "queuePosition": 244,
         "priority": "P2",
         "priorityReason": "Importance 5; missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
+      }
+    },
+    {
+      "queuePosition": 245,
+      "priority": "P2",
+      "priorityReason": "Importance 5; missing proof remains",
+      "slug": "write-meta-article-documenting-agent-work",
+      "title": "Write a meta article documenting a task execution",
+      "category": "Content Factory — Process",
+      "importance": 5,
+      "status": "complete",
+      "articleUrl": "https://blitzmetrics.com/meta-article-prompt/",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=write-meta-article-documenting-agent-work#task-write-meta-article-documenting-agent-work",
+      "nextAction": "Current article semantic criteria are unknown: owner, steps, links, sourceEvidence, visualAndLayout, publicationStandards, acceptanceResults.",
+      "standardVerification": {
+        "instructionSourceSha256": "d442d8bcb0a667057a12814afc16d0d23545601eea6433ff1e16405d1f5ef88e",
+        "articleKey": "blitzmetrics.com/meta-article-prompt",
+        "gates": {
+          "instructionRevisionReviewed": {
+            "id": "instructionRevisionReviewed",
+            "label": "Exact instruction revision reviewed",
+            "state": "pass",
+            "reason": "Current source bytes match the review recorded 2026-09-17. Review scope and limits: Exact current instruction file, with five explicit requirement checks. All five instruction checks pass. Link checks combine current public HTTP/index reads with ordinary anonymous-browser bodies; earlier HTTP 403 challenges are preserved as checking-method limits. Article semantics, rendered output, setup and real execution acceptance are not certified.",
+            "reviewedAt": "2026-09-17",
+            "reviewer": "Codex editorial author and independent instruction reviewer",
+            "sourceSha256": "d442d8bcb0a667057a12814afc16d0d23545601eea6433ff1e16405d1f5ef88e"
+          },
+          "instructionStandards": {
+            "id": "instructionStandards",
+            "label": "Instruction requirements checked",
+            "state": "pass",
+            "reason": "All five instruction requirements have explicit passing checks for the current source revision.",
+            "reviewedAt": "2026-09-17",
+            "reviewer": "Codex editorial author and independent instruction reviewer",
+            "reviewScope": "Exact current instruction file, with five explicit requirement checks. All five instruction checks pass. Link checks combine current public HTTP/index reads with ordinary anonymous-browser bodies; earlier HTTP 403 challenges are preserved as checking-method limits. Article semantics, rendered output, setup and real execution acceptance are not certified.",
+            "sourceSha256": "d442d8bcb0a667057a12814afc16d0d23545601eea6433ff1e16405d1f5ef88e",
+            "standards": {
+              "version": 1,
+              "checks": {
+                "opening": {
+                  "state": "pass",
+                  "reason": "Write a record of a job; help the next person avoid mistakes; use proof to improve the linked main guide. Independent meaning review passed.",
+                  "evidence": "Write a short record of what happened when your team did a job. It helps the next person learn from the work and avoid the same mistakes. Link the record to the main task guide so you can improve its steps with proof. Approximate reading diagnostic: 2.9; Flesch-Kincaid with Pyphen syllable approximation, not grade certification. Three sentences."
+                },
+                "recipe": {
+                  "state": "pass",
+                  "reason": "The instructions state a repeatable contract with inputs, checks and a setup boundary. This is a document review, not proof of a successful run.",
+                  "evidence": "Use this when covers actual attempts. Inputs and Steps 1-9 require exact task/revision, evidence, real lifecycle state, a saved draft and ledger validation. First-run setup says the file does not install an app, connect an account or create a schedule."
+                },
+                "links": {
+                  "state": "pass",
+                  "reason": "Combined current-page checks cover every maintained concept and task target named by this exact revision. Initial HTTP 403 responses were automated-checker limits, not bad-link evidence.",
+                  "evidence": "2026-09-17 direct HTTP and deployed-index review matched Article Guidelines, the recipe/meta guide, execution ledger, exact update-guide and self task routes. Same-day ordinary anonymous browser DOM review confirmed the final URL, heading and visible body support the stated purpose for Content Factory, Meta Article Prompt and Definitive Article Guide. The earlier 403 observations remain recorded as a fetch-method limitation."
+                },
+                "evidence": {
+                  "state": "pass",
+                  "reason": "Examples are labeled as teaching material and actual-run proof is required. Fictional examples do not count as completed tasks.",
+                  "evidence": "Example(s) explicitly says fictional. Write up the real run requires exact recipe revision, observed results, honest partial/failed states and one stable execution ID. Real-example and setup gaps remain separate."
+                },
+                "handoff": {
+                  "state": "pass",
+                  "reason": "The checked artifact, receiving function and actual Process-stage context are explicit.",
+                  "evidence": "The task owner receives the written meta and validated candidate; the standards owner receives supported recipe changes. No automatic endless meta loop. Handoff and Content Factory context distinguishes Produce, Process, Post and Promote."
+                }
+              }
+            }
+          },
+          "contributorComplete": {
+            "id": "contributorComplete",
+            "label": "Contributor reports guide complete",
+            "state": "pass",
+            "reason": "The contributor status is complete; this is a source claim, not execution proof."
+          },
+          "articleMapped": {
+            "id": "articleMapped",
+            "label": "Canonical article mapped",
+            "state": "pass",
+            "reason": "The task maps to a normalized canonical article URL.",
+            "articleUrl": "https://blitzmetrics.com/meta-article-prompt/"
+          },
+          "articleCatalogGate": {
+            "id": "articleCatalogGate",
+            "label": "Article catalog gate",
+            "state": "pass",
+            "reason": "Every task mapped to this hub is contributor-complete and no reviewed hold is active. This is catalog readiness only."
+          },
+          "articleSemanticCertification": {
+            "id": "articleSemanticCertification",
+            "label": "Article semantic certification",
+            "state": "unknown",
+            "reason": "Current article semantic criteria are unknown: owner, steps, links, sourceEvidence, visualAndLayout, publicationStandards, acceptanceResults.",
+            "semanticReview": {
+              "version": 1,
+              "taskSlug": "write-meta-article-documenting-agent-work",
+              "canonicalURL": "https://blitzmetrics.com/meta-article-prompt/",
+              "sourceSha256": "39e6e64ed488372c63c72338cc28f005d6c845226842faf49e5c71bb1dde02be",
+              "representation": "wordpress-content-html",
+              "reviewedAt": "2026-09-22T04:18:49.804481Z",
+              "reviewer": "Codex root with independent source and opening review",
+              "criteria": {
+                "openingContext": {
+                  "state": "pass",
+                  "reason": "First three sentences explain recording a real job, learning from mistakes, and improving the linked main task guide. Independent meaning review, grade3.72 diagnostic and destination check support the exact opening.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-repair-2026-09-22.md",
+                    "sha256:9dab7e2ebb2259c299a559df91a0465d8d1fadce7e491b67f8676cae347cbf3b"
+                  ]
+                },
+                "roleScope": {
+                  "state": "pass",
+                  "reason": "The page remains the mapped canonical task recipe for writing one actual execution record; its visible review status is explicitly incomplete.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-repair-2026-09-22.md",
+                    "sha256:9dab7e2ebb2259c299a559df91a0465d8d1fadce7e491b67f8676cae347cbf3b"
+                  ]
+                },
+                "owner": {
+                  "state": "unknown",
+                  "reason": "Canonical ownership evidence beyond the current task mapping and author byline was not fully audited in this scoped repair.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-repair-2026-09-22.md",
+                    "sha256:9dab7e2ebb2259c299a559df91a0465d8d1fadce7e491b67f8676cae347cbf3b"
+                  ]
+                },
+                "steps": {
+                  "state": "unknown",
+                  "reason": "Conflicting start instructions now consistently begin with the task and preserve the same ID. Full end-to-end step completeness and execution were not independently certified.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-repair-2026-09-22.md",
+                    "sha256:9dab7e2ebb2259c299a559df91a0465d8d1fadce7e491b67f8676cae347cbf3b"
+                  ]
+                },
+                "links": {
+                  "state": "unknown",
+                  "reason": "Opening destination was checked and all original URLs preserved. The full body destination set was not reverified.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-repair-2026-09-22.md",
+                    "sha256:9dab7e2ebb2259c299a559df91a0465d8d1fadce7e491b67f8676cae347cbf3b"
+                  ]
+                },
+                "sourceEvidence": {
+                  "state": "unknown",
+                  "reason": "Unsupported automatic improvement, quality and numeric measurement claims were corrected. The dated60-URL inventory remains historical; six classification conflicts and real-example source checks remain open.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-repair-2026-09-22.md",
+                    "sha256:9dab7e2ebb2259c299a559df91a0465d8d1fadce7e491b67f8676cae347cbf3b"
+                  ]
+                },
+                "handoffContext": {
+                  "state": "pass",
+                  "reason": "Explicit inputs, Process-stage Content Factory context, checked record, Task Library registration, supported recipe correction and authorized publishing handoff remain present.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-repair-2026-09-22.md",
+                    "sha256:9dab7e2ebb2259c299a559df91a0465d8d1fadce7e491b67f8676cae347cbf3b"
+                  ]
+                },
+                "visualAndLayout": {
+                  "state": "unknown",
+                  "reason": "Changed opening/diagram, phone tables, evidence labels and inventory passed scoped rendered checks. Full lower-page media and context requirements were not independently rechecked.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-repair-2026-09-22.md",
+                    "sha256:9dab7e2ebb2259c299a559df91a0465d8d1fadce7e491b67f8676cae347cbf3b"
+                  ]
+                },
+                "publicationStandards": {
+                  "state": "unknown",
+                  "reason": "Title shortened and separately checked, source/URL preserved, reviewed changes published. CTA, short URL, all metadata and E-E-A-T requirements were not fully audited.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-repair-2026-09-22.md",
+                    "sha256:9dab7e2ebb2259c299a559df91a0465d8d1fadce7e491b67f8676cae347cbf3b"
+                  ]
+                },
+                "acceptanceResults": {
+                  "state": "unknown",
+                  "reason": "No exact-revision accepted business run or successful novice-human setup is established by this maintenance repair.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-repair-2026-09-22.md",
+                    "sha256:9dab7e2ebb2259c299a559df91a0465d8d1fadce7e491b67f8676cae347cbf3b"
+                  ]
+                }
+              }
+            },
+            "revisionObservation": {
+              "version": 1,
+              "taskSlug": "write-meta-article-documenting-agent-work",
+              "canonicalURL": "https://blitzmetrics.com/meta-article-prompt/",
+              "sourceSha256": "39e6e64ed488372c63c72338cc28f005d6c845226842faf49e5c71bb1dde02be",
+              "representation": "wordpress-content-html",
+              "observedAt": "2026-09-22T04:18:50.835196Z",
+              "observer": "Codex separate fresh WordPress readback after editorial review",
+              "state": "observed",
+              "reason": "Fresh raw content bytes match the reviewed final revision. This observation does not substitute for separate public/rendered checks.",
+              "evidenceRefs": [
+                "sha256:9751842d2553f07ddd05a0e6ccddabf0356739678fb98994642b7b505991a1c2"
+              ]
+            }
+          },
+          "taskExampleEvidence": {
+            "id": "taskExampleEvidence",
+            "label": "Task-attributed example evidence",
+            "state": "pass",
+            "reason": "60 audited example URL(s) are attributable to this task.",
+            "exampleUrls": [
+              "https://blitzmetrics.com/ai-agent-audit-ben-forstie-durafoam/",
+              "https://blitzmetrics.com/ai-agent-audit-garrett-mcclure-born-and-bred/",
+              "https://blitzmetrics.com/ai-agent-audit-hunter-terpenny-humm-accounting/",
+              "https://blitzmetrics.com/ai-agent-audit-naz-electric-flagstaff-electrician/",
+              "https://blitzmetrics.com/ai-agent-audit-ryan-white-social-revelation/",
+              "https://blitzmetrics.com/ai-agent-audit-terry-shintani-million-follower-doctor/",
+              "https://blitzmetrics.com/audit-subscription-matt-bodnar/",
+              "https://blitzmetrics.com/building-dennis-yu-speaker-reel-for-event-organizers/",
+              "https://blitzmetrics.com/consent-scanner-blank-dashboard-token-links/",
+              "https://blitzmetrics.com/content-factory-academy-free-course-migration/",
+              "https://blitzmetrics.com/derive-dont-maintain/",
+              "https://blitzmetrics.com/file-that-wouldnt-attach-boomerang-gmail-dom-fix/",
+              "https://blitzmetrics.com/first-group-website-request-processed/",
+              "https://blitzmetrics.com/give-your-ai-team-one-shared-brain/",
+              "https://blitzmetrics.com/how-a-claude-agent-audited-blitzmetrics-gsc-cleared-404-monitor/",
+              "https://blitzmetrics.com/how-a-claude-agent-collapsed-13-redirect-chains-on-blitzmetrics/",
+              "https://blitzmetrics.com/how-a-claude-agent-fixed-blitzmetrics-404s/",
+              "https://blitzmetrics.com/how-a-claude-agent-migrated-junks-above-off-godaddy/",
+              "https://blitzmetrics.com/how-agents-qa-a-partner-local-audit/",
+              "https://blitzmetrics.com/how-claude-agent-built-ensitefulmarketing-com/",
+              "https://blitzmetrics.com/how-claude-built-keap-quiz-pass-fail-campaigns/",
+              "https://blitzmetrics.com/how-i-built-bing-webmaster-import/",
+              "https://blitzmetrics.com/how-we-automated-quick-audit-follow-ups-with-zapier/",
+              "https://blitzmetrics.com/how-we-built-avery-young-authority-package/",
+              "https://blitzmetrics.com/how-we-built-cam-hazzard-personal-brand-ai/",
+              "https://blitzmetrics.com/how-we-built-carol-hasegawa-personal-brand-site/",
+              "https://blitzmetrics.com/how-we-built-custom-wordpress-plugin-global-css-no-page-builder/",
+              "https://blitzmetrics.com/how-we-built-geo-targeted-location-pages-florida-contractor/",
+              "https://blitzmetrics.com/how-we-built-nathanielstevens-com-a-personal-brand-website-in-under-4-hours-using-ai/",
+              "https://blitzmetrics.com/how-we-connected-basecamp-to-blitzbase-knowledge-base/",
+              "https://blitzmetrics.com/how-we-embedded-google-reviews-faqs-home-services-wordpress/",
+              "https://blitzmetrics.com/how-we-finished-the-knowledge-panel-book/",
+              "https://blitzmetrics.com/how-we-harmonized-skills-and-routines/",
+              "https://blitzmetrics.com/how-we-integrated-jobber-wordpress-home-services/",
+              "https://blitzmetrics.com/how-we-launched-athlete-spotlight/",
+              "https://blitzmetrics.com/how-we-made-definitive-article-strength-measurable/",
+              "https://blitzmetrics.com/how-we-mapped-the-usage-buckets/",
+              "https://blitzmetrics.com/how-we-migrated-cheetah-screens-squarespace-to-wordpress/",
+              "https://blitzmetrics.com/how-we-propagated-dollar-a-day-across-the-fleet/",
+              "https://blitzmetrics.com/how-we-published-the-client-tracker/",
+              "https://blitzmetrics.com/how-we-rebuilt-financing-page-themed-enhancify-contractor/",
+              "https://blitzmetrics.com/how-we-redesigned-cody-jones-funeral-home-exit-website/",
+              "https://blitzmetrics.com/how-we-restructured-dennisyu-com-to-practice-what-we-preach/",
+              "https://blitzmetrics.com/how-we-rewrote-the-agency-audit-page/",
+              "https://blitzmetrics.com/how-we-set-up-rankmath-pro-local-service-business-wp-engine/",
+              "https://blitzmetrics.com/how-we-stood-up-a-special-project-for-superseed/",
+              "https://blitzmetrics.com/how-we-stopped-handing-agents-a-paste/",
+              "https://blitzmetrics.com/how-we-turned-239-tasks-into-an-ai-runnable-skill-library/",
+              "https://blitzmetrics.com/jim-klauck-radio-pitchman-brand-audit/",
+              "https://blitzmetrics.com/josh-collier-brand-ecosystem-build/",
+              "https://blitzmetrics.com/julian-david-entity-home-build/",
+              "https://blitzmetrics.com/kimi-k3-vs-claude-content-factory-math/",
+              "https://blitzmetrics.com/knowledge-graph-explorer-every-spotlight-site/",
+              "https://blitzmetrics.com/open-ai-knowledge-base-team-contributions/",
+              "https://blitzmetrics.com/personal-brand-fleet-money-pages/",
+              "https://blitzmetrics.com/spp-to-keap-migration/",
+              "https://blitzmetrics.com/system-front-door/",
+              "https://blitzmetrics.com/the-five-minute-brief-dennis-yu-dictated-before-the-ai-agent-did-anything/",
+              "https://blitzmetrics.com/the-local-quick-audit-is-not-a-swapped-headline/",
+              "https://blitzmetrics.com/video-schema-root-cause/"
+            ],
+            "auditedAt": "2026-09-10"
+          },
+          "recordedExecution": {
+            "id": "recordedExecution",
+            "label": "Recorded real execution",
+            "state": "unknown",
+            "reason": "No execution ledger record names this task. Historical run frequency is unknown."
+          },
+          "acceptedExecution": {
+            "id": "acceptedExecution",
+            "label": "Accepted execution result",
+            "state": "unknown",
+            "reason": "No structured acceptance review is recorded for the current canonical article revision. A completed run label is not acceptance."
+          },
+          "setupSuccess": {
+            "id": "setupSuccess",
+            "label": "New-user setup success",
+            "state": "unknown",
+            "reason": "No structured receipt shows a new user loaded the needed files, had access and completed this task successfully."
+          }
+        },
+        "unmetStandardGates": [],
+        "heldStandardGates": [],
+        "unknownStandardGates": [
+          "articleSemanticCertification",
+          "recordedExecution",
+          "acceptedExecution",
+          "setupSuccess"
+        ],
+        "fullyVerified": false,
+        "queuePosition": 245,
+        "priority": "P2",
+        "priorityReason": "Importance 5; missing proof remains",
+        "nextAction": "Current article semantic criteria are unknown: owner, steps, links, sourceEvidence, visualAndLayout, publicationStandards, acceptanceResults."
       }
     },
     {

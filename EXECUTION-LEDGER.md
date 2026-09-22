@@ -12,7 +12,7 @@ flowchart LR
 
 The Task Library registry and Asset Tracker still own the task list. `build/task-executions.json` adds reviewed run records that reference those task slugs; it is not another task registry.
 
-A **task** is the reusable recipe. An **execution** is one actual attempt with a stable ID, start time, result, evidence and written meta article. A **meta article** tells what happened in that execution and what the recipe should learn. Write it after every execution, including failures and blocked work. Publication follows the existing authority and privacy rules; writing does not authorize public posting.
+A **task** is the reusable recipe. An **execution** is one actual attempt with a stable ID, start time, result, evidence and written meta article. A **meta article** tells what happened in that execution and what the recipe should learn. Start the record when work begins and update it through the same execution, including failures and blocked work. Publication follows the existing authority and privacy rules; writing does not authorize public posting.
 
 One parent job remains one execution. Internal QA checks, agent contributions, revisions, translations, syndicated copies and derivative articles do not create extra completed runs. A separately scoped, performed and documented child task may have a distinct execution ID with `parentExecutionId`; that child record does not add another completion to the parent task. Use multiple `taskSlugs` only when the same real execution actually performed each named task; do not list merely related skills. Never recreate old executions from pageviews, article dates, estimated cadence or URL counts. Historical runs may be backfilled only with evidence of their distinct identity and outcome.
 

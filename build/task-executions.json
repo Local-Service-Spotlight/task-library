@@ -260,6 +260,62 @@
       },
       "recordedAt": "2026-09-18T07:31:56.660109Z",
       "updatedAt": "2026-09-18T07:31:56.660109Z"
+    },
+    {
+      "executionId": "meta-guide-repair-20260922-035343",
+      "taskSlugs": [
+        "create-or-update-a-definitive-article"
+      ],
+      "recipeRevisions": {
+        "create-or-update-a-definitive-article": {
+          "articleUrl": "https://blitzmetrics.com/definitive-article-guide/",
+          "sourceSha256": "5f4a981dd5d5b3ed52ea6eca4179a1ea872da25b6f728e782c4b5a652ab7a6a8"
+        }
+      },
+      "startedAt": "2026-09-22T03:53:43Z",
+      "finishedAt": "2026-09-22T04:40:02.094620+00:00",
+      "status": "partial",
+      "result": "Ended partial: published a clear linked opening, compact diagram and consistent start rules for the task-record guide. Corrected unsupported evidence claims and 37 worksheet cells. Exact source and ordinary public text/media passed; scoped rendered checks passed. A fresh-agent ZIP rehearsal with assistance drove onboarding fixes. Remaining article criteria, final meta phone rendering, novice setup and accepted task results are unknown. This is one authoring attempt, not 276 completed business jobs.",
+      "evidence": [
+        {
+          "visibility": "public",
+          "url": "https://blitzmetrics.com/meta-article-prompt/"
+        },
+        {
+          "visibility": "public",
+          "url": "https://github.com/Local-Service-Spotlight/task-library/pull/34"
+        },
+        {
+          "visibility": "private",
+          "sha256": "9dab7e2ebb2259c299a559df91a0465d8d1fadce7e491b67f8676cae347cbf3b"
+        },
+        {
+          "visibility": "private",
+          "sha256": "5ef5460369f125247e25d45d18d513dc072b65109ffa54ab09af7a1d45c143f7"
+        },
+        {
+          "visibility": "private",
+          "sha256": "37479ac034197ecc8554cd083978ed0aba68692ebefe6eade820fb08c671803c"
+        },
+        {
+          "visibility": "private",
+          "sha256": "7c7f95fe12a47e532b9c8a01dc4022e5907ffae6980d781352affe7da98bf63c"
+        },
+        {
+          "visibility": "private",
+          "sha256": "2ab67b780a03a13d75d813cbe818cfb519f062a1e9ece4f3438974947bfe3339"
+        },
+        {
+          "visibility": "private",
+          "sha256": "3c9885c68d8d2b19fb1e87c0c7698d98d0e7f4eb528314494232dd444e7a26ad"
+        }
+      ],
+      "metaArticle": {
+        "status": "published",
+        "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#meta-guide-repair-20260922-035343"
+      },
+      "recordedAt": "2026-09-22T04:40:02.094620+00:00",
+      "updatedAt": "2026-09-22T04:40:02.094620+00:00"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
- "updated": "September 17, 2026",
+ "updated": "September 22, 2026",
  "packs": [
   {
    "id": "wichita-google-ads",
@@ -24,7 +24,7 @@
    "name": "Website QA Audit",
    "kind": "category",
    "emoji": "🔍",
-   "blurb": "The full website QA audit category — real, ship-ready.",
+   "blurb": "Guides for checking website quality.",
    "file": "packs/website-qa.zip",
    "skill_count": 39
   },

@@ -1,11 +1,11 @@
 # Start with one useful result
 
-If you run a business, pick one job from these guides. Use the steps to make one draft you can check. Start small, then add the tools the work needs.
+If you run a business, use one guide to make a draft you can check. This helps you spot gaps before a bigger job. Find the steps and needed files for that job in the [Task Library](https://local-service-spotlight.github.io/task-library/).
 
 **Choose a job → Share its guide and your files → Check one result**
 
 1. Open one guide in `skills/`. Read what it needs, its steps, its checks, and who gets the result next. Start with work you understand, such as drafting a short article from your own call notes.
-2. Give your AI app the guide and the source files it can read. You can attach the file or copy its text. A web link works only if that app can open it.
+2. Give your AI app the guide and the source files it can read. You can attach the file or copy its text. A web link works only if that app can open it. For an article, include its current title, full body, intended readers, and goal; an export of the body may omit the title.
 3. Copy the prompt below. Fill in your business, goal, files, and where the result should go. Have the app identify any missing file or account access before the step that needs it.
 4. Open the result and check it against the guide. Save the output, source version, checks, and any unfinished work. A good answer alone does not prove an installed skill was selected.
 5. If you want a reusable setup, follow our [current installation guide](https://localservicespotlight.com/install/). Check the package, enabled skill, fresh-task load, access, and result in your actual app.
@@ -20,6 +20,7 @@ If a guide calls for another file, script, or template, open that guide in the [
 > Source files or text: [attach or paste them].
 > Save the result here: [fill in].
 > Actions already approved: [fill in].
+> Work already started? Attach its saved record, or say “new job.”
 >
 > Confirm which guide you are using. List the inputs and required account access. Start with one draft or read-only check when that fits the job. Continue work already authorized; ask only for the exact missing information or permission needed for an additional action. Show the result, sources, and how I can check it. Keep unfinished work visible. Write the run record with its evidence; retain one execution ID for the same run and its retries. Set up repeated work only when I ask for it.
 

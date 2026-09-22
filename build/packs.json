@@ -41,7 +41,7 @@
         "learn-do-teach-apprentice-model"
       ]
     },
-    { "id": "website-qa", "name": "Website QA Audit", "kind": "category", "emoji": "🔍", "blurb": "The full website QA audit category — real, ship-ready.", "category": "website-qa-audit" },
+    { "id": "website-qa", "name": "Website QA Audit", "kind": "category", "emoji": "🔍", "blurb": "Guides for checking website quality.", "category": "website-qa-audit" },
     { "id": "digital-plumbing", "name": "Digital Plumbing", "kind": "category", "emoji": "🔧", "blurb": "The foundational setup category (tracking, DNS, GBP, schema).", "category": "digital-plumbing" },
     { "id": "dollar-a-day", "name": "Dollar-a-Day Campaigns", "kind": "category", "emoji": "💵", "blurb": "Every Dollar-a-Day campaign skill.", "category": "dollar-a-day" }
   ]
