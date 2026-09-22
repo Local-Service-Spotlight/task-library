@@ -1711,11 +1711,11 @@
  ],
  "executionHistory": {
   "schemaVersion": 1,
-  "asOf": "2026-09-22T04:23:25.732800+00:00",
+  "asOf": "2026-09-22T04:40:19.535322+00:00",
   "countDefinition": "Distinct recorded execution IDs, separate from meta-article URLs. History is partial; absent history is unknown, not zero. The last-30-day count is a documented lower bound, not total task frequency.",
-  "recordedExecutions": 3,
+  "recordedExecutions": 4,
   "completedExecutions": 0,
-  "partialExecutions": 3,
+  "partialExecutions": 4,
   "executions": [
    {
     "executionId": "recipe-audit-20260905-080140",
@@ -1803,6 +1803,31 @@
     "privateEvidenceRecorded": true,
     "metaArticle": {
      "status": "draft"
+    }
+   },
+   {
+    "executionId": "meta-guide-repair-20260922-035343",
+    "taskSlugs": [
+     "create-or-update-a-definitive-article"
+    ],
+    "startedAt": "2026-09-22T03:53:43Z",
+    "status": "partial",
+    "result": "Ended partial: published a clear linked opening, compact diagram and consistent start rules for the task-record guide. Corrected unsupported evidence claims and 37 worksheet cells. Exact source and ordinary public text/media passed; scoped rendered checks passed. A fresh-agent ZIP rehearsal with assistance drove onboarding fixes. Remaining article criteria, final meta phone rendering, novice setup and accepted task results are unknown. This is one authoring attempt, not 276 completed business jobs.",
+    "recipeRevisions": {
+     "create-or-update-a-definitive-article": {
+      "articleUrl": "https://blitzmetrics.com/definitive-article-guide/",
+      "sourceSha256": "5f4a981dd5d5b3ed52ea6eca4179a1ea872da25b6f728e782c4b5a652ab7a6a8"
+     }
+    },
+    "finishedAt": "2026-09-22T04:40:02.094620+00:00",
+    "evidenceUrls": [
+     "https://blitzmetrics.com/meta-article-prompt/",
+     "https://github.com/Local-Service-Spotlight/task-library/pull/34"
+    ],
+    "privateEvidenceRecorded": true,
+    "metaArticle": {
+     "status": "published",
+     "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#meta-guide-repair-20260922-035343"
     }
    }
   ]
@@ -6523,7 +6548,7 @@
           },
           "owner": {
            "state": "unknown",
-           "reason": "A maintained canonical maintainer record beyond the author byline was not established in this scoped repair.",
+           "reason": "Canonical ownership evidence beyond the current task mapping and author byline was not fully audited in this scoped repair.",
            "evidenceRefs": [
             "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-repair-2026-09-22.md",
             "sha256:9dab7e2ebb2259c299a559df91a0465d8d1fadce7e491b67f8676cae347cbf3b"
@@ -6765,14 +6790,15 @@
      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=create-or-update-a-definitive-article#task-create-or-update-a-definitive-article",
      "executionHistory": {
       "status": "partial",
-      "recordedRuns": 3,
+      "recordedRuns": 4,
       "completedRuns": 0,
       "failedRuns": 0,
-      "partialRuns": 3,
+      "partialRuns": 4,
       "completedLast30Days": 0,
       "lastCompletedAt": null,
       "executionIds": [
        "article-review-20260918-063904",
+       "meta-guide-repair-20260922-035343",
        "recipe-audit-20260905-080140",
        "task-standards-20260915-215131"
       ],
@@ -6794,6 +6820,12 @@
         "status": "partial",
         "startedAt": "2026-09-18T06:39:04Z",
         "finishedAt": "2026-09-18T07:31:56.660109Z"
+       },
+       {
+        "executionId": "meta-guide-repair-20260922-035343",
+        "status": "partial",
+        "startedAt": "2026-09-22T03:53:43Z",
+        "finishedAt": "2026-09-22T04:40:02.094620+00:00"
        }
       ],
       "acceptanceReviews": []
@@ -6992,9 +7024,10 @@
         "id": "recordedExecution",
         "label": "Recorded real execution",
         "state": "pass",
-        "reason": "3 distinct execution ID(s) name this task; outcomes remain separate.",
+        "reason": "4 distinct execution ID(s) name this task; outcomes remain separate.",
         "executionIds": [
          "article-review-20260918-063904",
+         "meta-guide-repair-20260922-035343",
          "recipe-audit-20260905-080140",
          "task-standards-20260915-215131"
         ],

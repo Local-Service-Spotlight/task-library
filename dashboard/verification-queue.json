@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-22T04:23:25+00:00",
+  "generatedAt": "2026-09-22T04:40:19+00:00",
   "definition": "Per-task standard gates derived from exact instruction reviews, explicit instruction-requirement checks, contributor status, article mapping/catalog holds, exact-revision article semantic reviews, task-attributed examples and the execution ledger. Unknown proof is never turned into a pass.",
   "stats": {
     "tasks": 276,
@@ -9784,9 +9784,10 @@
             "id": "recordedExecution",
             "label": "Recorded real execution",
             "state": "pass",
-            "reason": "3 distinct execution ID(s) name this task; outcomes remain separate.",
+            "reason": "4 distinct execution ID(s) name this task; outcomes remain separate.",
             "executionIds": [
               "article-review-20260918-063904",
+              "meta-guide-repair-20260922-035343",
               "recipe-audit-20260905-080140",
               "task-standards-20260915-215131"
             ],
@@ -25168,7 +25169,7 @@
                 },
                 "owner": {
                   "state": "unknown",
-                  "reason": "A maintained canonical maintainer record beyond the author byline was not established in this scoped repair.",
+                  "reason": "Canonical ownership evidence beyond the current task mapping and author byline was not fully audited in this scoped repair.",
                   "evidenceRefs": [
                     "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-repair-2026-09-22.md",
                     "sha256:9dab7e2ebb2259c299a559df91a0465d8d1fadce7e491b67f8676cae347cbf3b"
