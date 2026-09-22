@@ -25,6 +25,19 @@ def record(eid='execution-001', status='completed'):
     return r
 
 
+def acceptance(**overrides):
+    value = {'version': 1, 'reviewId': 'review-001', 'taskSlug': 'first-task',
+             'canonicalURL': 'https://example.com/recipe', 'recipeSourceSha256': 'c' * 64,
+             'representation': 'public-visible-text', 'instructionSourceSha256': 'd' * 64,
+             'reviewedAt': '2026-09-01T11:00:00Z', 'reviewer': 'Independent reviewer',
+             'executor': 'Task executor', 'nextHandoff': 'Send the checked output to the next owner.',
+             'criteria': {
+                 'result': {'state': 'pass', 'expectedResult': 'A required output is present.', 'observedResult': 'The required output is present.', 'sourceRef': 'https://example.com/guide', 'evidenceRefs': ['https://example.com/accepted']},
+                 'handoff': {'state': 'pass', 'expectedResult': 'The next owner receives it.', 'observedResult': 'The next owner received it.', 'sourceRef': 'https://example.com/handoff-guide', 'evidenceRefs': ['https://example.com/handoff']}}}
+    value.update(overrides)
+    return value
+
+
 class ExecutionLedgerTests(unittest.TestCase):
     def setUp(self):
         self.tmp = tempfile.TemporaryDirectory()
@@ -175,6 +188,50 @@ class ExecutionLedgerTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'terminal status requires finishedAt'):
             executions.upsert(self.path, r, KNOWN)
         self.assertEqual(self.path.read_bytes(), before)
+
+    def test_acceptance_reviews_survive_upsert_but_private_refs_do_not_project(self):
+        r = record(); r['acceptanceReviews'] = [acceptance(criteria={
+            'result': {'state': 'pass', 'expectedResult': 'Output is present.', 'observedResult': 'Output is present.', 'sourceRef': 'sha256:' + 'f' * 64, 'evidenceRefs': ['sha256:' + 'e' * 64]},
+            'handoff': {'state': 'pass', 'expectedResult': 'Owner gets output.', 'observedResult': 'Owner got output.', 'sourceRef': 'https://example.com/hand', 'evidenceRefs': ['https://example.com/hand-proof']}})]
+        created = executions.upsert(self.path, r, KNOWN)
+        legacy_update = copy.deepcopy(r); legacy_update.pop('acceptanceReviews'); legacy_update['updatedAt'] = '2026-09-02T11:00:00Z'; legacy_update['status'] = 'partial'
+        executions.upsert(self.path, legacy_update, KNOWN, created['revision'])
+        stored = executions.load(self.path, KNOWN)[0]
+        self.assertEqual(stored['acceptanceReviews'][0]['reviewId'], 'review-001')
+        projection = executions.attach([{'slug': 'first-task'}], stored and [stored], NOW)
+        text = json.dumps(projection)
+        self.assertNotIn('e' * 64, text)
+        self.assertTrue(projection['executions'][0]['acceptanceReviews'][0]['criteria']['result']['privateEvidenceRecorded'])
+
+    def test_acceptance_rejects_private_fields_and_keeps_partial_history(self):
+        for change in (
+                {'reviewer': 'Task executor'},
+                {'canonicalURL': 'https://example.com/recipe#private'},
+                {'criteria': {'result': {'state': 'pass', 'expectedResult': 'Output.', 'observedResult': '/Users/person/private', 'sourceRef': 'https://example.com/guide', 'evidenceRefs': ['https://example.com/x']}, 'handoff': {'state': 'pass', 'expectedResult': 'Owner gets it.', 'observedResult': 'Owner got it.', 'sourceRef': 'https://example.com/hand', 'evidenceRefs': ['https://example.com/hand']}}}):
+            r = record(); r['acceptanceReviews'] = [acceptance(**change)]
+            with self.subTest(change=change), self.assertRaises(ValueError):
+                executions.validate_record(r, KNOWN)
+        r = record(status='partial'); r['acceptanceReviews'] = [acceptance()]
+        self.assertEqual(executions.validate_record(r, KNOWN)['acceptanceReviews'][0]['reviewId'], 'review-001')
+
+
+    def test_acceptance_rejects_missing_criteria_credentials_and_private_paths(self):
+        for url in ('https://example.com/proof?token=secret',
+                    'https://example.com/proof#access%5Ftoken=secret',
+                    'https://user:password@example.com/proof'):
+            r = record(); a = acceptance(); a['criteria']['result']['evidenceRefs'] = [url]
+            r['acceptanceReviews'] = [a]
+            with self.subTest(url=url), self.assertRaises(ValueError):
+                executions.validate_record(r, KNOWN)
+        for value in ('/tmp/private-file', 'C:\\Users\\person\\private.txt'):
+            r = record(); a = acceptance(); a['nextHandoff'] = value; r['acceptanceReviews'] = [a]
+            with self.subTest(value=value), self.assertRaises(ValueError):
+                executions.validate_record(r, KNOWN)
+        r = record(); a = acceptance(); del a['criteria']['handoff']; r['acceptanceReviews'] = [a]
+        with self.assertRaisesRegex(ValueError, 'result and handoff'):
+            executions.validate_record(r, KNOWN)
+        r = record(); a = acceptance(); a['criteria']['result']['sourceRef'] += '#requirements'; r['acceptanceReviews'] = [a]
+        self.assertEqual(executions.validate_record(r, KNOWN)['acceptanceReviews'][0]['reviewId'], 'review-001')
 
 
 if __name__ == '__main__':

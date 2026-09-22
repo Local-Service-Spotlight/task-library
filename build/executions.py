@@ -13,14 +13,17 @@ import re
 import tempfile
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
-from urllib.parse import parse_qsl, urlsplit
+from urllib.parse import parse_qsl, unquote, urlsplit
 
 STATUSES = {'running', 'completed', 'partial', 'failed', 'blocked', 'cancelled'}
 TERMINAL = {'completed', 'partial', 'failed', 'cancelled'}
 META_STATES = {'draft', 'published', 'withheld'}
 ID = re.compile(r'^[A-Za-z0-9][A-Za-z0-9._:-]{2,159}$')
 FIELDS = {'executionId', 'taskSlugs', 'startedAt', 'finishedAt', 'status',
-          'result', 'evidence', 'metaArticle', 'recipeRevisions', 'parentExecutionId', 'recordedAt', 'updatedAt'}
+          'result', 'evidence', 'metaArticle', 'recipeRevisions', 'parentExecutionId', 'recordedAt', 'updatedAt',
+          'acceptanceReviews'}
+ACCEPTANCE_STATES = {'pass', 'unmet', 'hold', 'unknown'}
+REPRESENTATIONS = {'public-rendered-html', 'public-visible-text', 'wordpress-content-html', 'repository-source'}
 
 
 def timestamp(value, where):
@@ -56,10 +59,94 @@ def public_url(value, where):
     return value
 
 
+def _acceptance_refs(value, where):
+    if not isinstance(value, list) or not value or len(value) > 10:
+        raise ValueError(f'{where}: requires 1-10 public HTTPS refs or private SHA-256 hashes')
+    clean = []
+    for ref in value:
+        if not isinstance(ref, str) or len(ref) > 1200:
+            raise ValueError(f'{where}: reference must be a string up to 1200 characters')
+        if isinstance(ref, str) and re.fullmatch(r'sha256:[a-f0-9]{64}', ref):
+            clean.append(ref)
+        else:
+            public_url(ref, where)
+            if re.search(r'token|secret|password|signature|api.?key|credential', unquote(urlsplit(ref).fragment), re.I):
+                raise ValueError(f'{where}: credential-like URL fragments are forbidden')
+            clean.append(ref)
+    return clean
+
+
+def _safe_text(value, where, limit=600):
+    if not isinstance(value, str) or not value.strip() or len(value.strip()) > limit:
+        raise ValueError(f'{where}: requires nonempty public-safe text up to {limit} characters')
+    value = value.strip()
+    if re.search(r'file:|/(?:users|home|tmp|var/folders)/|[a-z]:\\|\\\\', value, re.I):
+        raise ValueError(f'{where}: private paths are forbidden')
+    return value
+
+
+def validate_acceptance_review(review, record, known_slugs):
+    fields = {'version', 'reviewId', 'taskSlug', 'canonicalURL', 'recipeSourceSha256',
+              'representation', 'instructionSourceSha256', 'reviewedAt', 'reviewer',
+              'executor', 'criteria', 'nextHandoff'}
+    if not isinstance(review, dict) or set(review) != fields:
+        raise ValueError('acceptance review has unsupported or missing fields')
+    if type(review['version']) is not int or review['version'] != 1:
+        raise ValueError('acceptance review requires version 1')
+    if not isinstance(review['reviewId'], str) or not ID.fullmatch(review['reviewId']):
+        raise ValueError('acceptance review requires stable reviewId')
+    slug = review['taskSlug']
+    if slug not in record['taskSlugs'] or slug not in known_slugs:
+        raise ValueError('acceptance review taskSlug must be named by its execution')
+    revision = record['recipeRevisions'][slug]
+    if review['canonicalURL'] != revision['articleUrl']:
+        raise ValueError('acceptance review canonicalURL must match the run recipe revision')
+    public_url(review['canonicalURL'], 'acceptance review canonicalURL')
+    if urlsplit(review['canonicalURL']).query or urlsplit(review['canonicalURL']).fragment:
+        raise ValueError('acceptance review canonicalURL cannot contain query or fragment')
+    if review['representation'] not in REPRESENTATIONS:
+        raise ValueError('acceptance review has unsupported recipe representation')
+    for key in ('recipeSourceSha256', 'instructionSourceSha256'):
+        if not isinstance(review[key], str) or not re.fullmatch(r'[a-f0-9]{64}', review[key]):
+            raise ValueError(f'acceptance review {key} must be a SHA-256')
+    if review['recipeSourceSha256'] != revision['sourceSha256']:
+        raise ValueError('acceptance review recipeSourceSha256 must match the run recipe revision')
+    reviewer = _safe_text(review['reviewer'], 'acceptance review reviewer', 120)
+    executor = _safe_text(review['executor'], 'acceptance review executor', 120)
+    if reviewer.casefold().split() == executor.casefold().split():
+        raise ValueError('acceptance review reviewer must be distinct from executor')
+    reviewed = timestamp(review['reviewedAt'], 'acceptance review reviewedAt')
+    if reviewed < timestamp(record['startedAt'], 'execution startedAt'):
+        raise ValueError('acceptance review cannot predate its execution')
+    finish = timestamp(record['finishedAt'], 'execution finishedAt') if record.get('finishedAt') else None
+    if finish and reviewed < finish:
+        raise ValueError('acceptance review reviewedAt must be at or after the run finish')
+    criteria = review['criteria']
+    if not isinstance(criteria, dict) or not criteria:
+        raise ValueError('acceptance review requires named measurable criteria')
+    if not {'result', 'handoff'} <= set(criteria):
+        raise ValueError('acceptance review requires measurable result and handoff criteria')
+    cleaned = {}
+    for name, criterion in criteria.items():
+        if not isinstance(name, str) or not re.fullmatch(r'[A-Za-z][A-Za-z0-9 _.-]{0,119}', name):
+            raise ValueError('acceptance review criterion name is invalid')
+        if not isinstance(criterion, dict) or set(criterion) != {'state', 'expectedResult', 'observedResult', 'sourceRef', 'evidenceRefs'}:
+            raise ValueError('acceptance review criterion requires expectedResult, observedResult, sourceRef and evidenceRefs')
+        if criterion['state'] not in ACCEPTANCE_STATES:
+            raise ValueError('acceptance review criterion has invalid state')
+        cleaned[name] = {'state': criterion['state'],
+                         'expectedResult': _safe_text(criterion['expectedResult'], 'acceptance expectedResult'),
+                         'observedResult': _safe_text(criterion['observedResult'], 'acceptance observedResult'),
+                         'sourceRef': _acceptance_refs([criterion['sourceRef']], 'acceptance sourceRef')[0],
+                         'evidenceRefs': _acceptance_refs(criterion['evidenceRefs'], 'acceptance evidenceRefs')}
+    return dict(review, reviewer=reviewer, executor=executor, criteria=cleaned,
+                nextHandoff=_safe_text(review['nextHandoff'], 'acceptance nextHandoff'))
+
+
 def validate_record(record, known_slugs):
     if not isinstance(record, dict) or set(record) - FIELDS:
         raise ValueError('execution has unsupported fields; do not store private notes or credentials')
-    required = FIELDS - {'finishedAt', 'parentExecutionId'}
+    required = FIELDS - {'finishedAt', 'parentExecutionId', 'acceptanceReviews'}
     if required - set(record):
         raise ValueError(f'execution missing fields: {sorted(required - set(record))}')
     eid = record['executionId']
@@ -127,7 +214,22 @@ def validate_record(record, known_slugs):
         public_url(meta['url'], f'{eid}.metaArticle.url')
     elif not isinstance(meta.get('draftSha256'), str) or not re.fullmatch(r'[a-f0-9]{64}', meta.get('draftSha256', '')):
         raise ValueError(f'{eid}: draft/withheld meta article requires its saved-content hash')
-    return copy.deepcopy(record)
+    reviews = record.get('acceptanceReviews', [])
+    if not isinstance(reviews, list):
+        raise ValueError(f'{eid}: acceptanceReviews must be a list')
+    clean_reviews = [validate_acceptance_review(item, record, known_slugs) for item in reviews]
+    ids = [item['reviewId'] for item in clean_reviews]
+    if len(ids) != len(set(ids)):
+        raise ValueError(f'{eid}: acceptance review IDs must be unique per run')
+    review_times = [(item['taskSlug'], timestamp(item['reviewedAt'], 'acceptance review reviewedAt')) for item in clean_reviews]
+    if len(review_times) != len(set(review_times)):
+        raise ValueError(f'{eid}: acceptance reviews need distinct task and review timestamps')
+    if any(when > updated for _, when in review_times):
+        raise ValueError(f'{eid}: acceptance review reviewedAt cannot be after updatedAt')
+    clean = copy.deepcopy(record)
+    if 'acceptanceReviews' in clean or clean_reviews:
+        clean['acceptanceReviews'] = clean_reviews
+    return clean
 
 
 def validate_ledger(raw, known_slugs):
@@ -169,7 +271,21 @@ def public_record(record):
     result['metaArticle'] = {'status': record['metaArticle']['status']}
     if record['metaArticle']['status'] == 'published':
         result['metaArticle']['url'] = record['metaArticle']['url']
+    if record.get('acceptanceReviews'):
+        result['acceptanceReviews'] = [public_acceptance_review(review) for review in record['acceptanceReviews']]
     return result
+
+
+def public_acceptance_review(review):
+    criteria = {}
+    for name, item in review['criteria'].items():
+        criteria[name] = {'state': item['state'], 'expectedResult': item['expectedResult'], 'observedResult': item['observedResult'],
+                          'sourceUrl': item['sourceRef'] if not item['sourceRef'].startswith('sha256:') else None,
+                          'sourcePrivateEvidenceRecorded': item['sourceRef'].startswith('sha256:'),
+                          'evidenceUrls': [ref for ref in item['evidenceRefs'] if not ref.startswith('sha256:')],
+                          'privateEvidenceRecorded': any(ref.startswith('sha256:') for ref in item['evidenceRefs'])}
+    return {key: review[key] for key in ('version', 'reviewId', 'taskSlug', 'canonicalURL', 'recipeSourceSha256',
+            'representation', 'instructionSourceSha256', 'reviewedAt', 'reviewer', 'executor', 'nextHandoff')} | {'criteria': criteria}
 
 
 def check_times_not_future(records, now):
@@ -177,6 +293,9 @@ def check_times_not_future(records, now):
         for key in ('startedAt', 'finishedAt', 'recordedAt', 'updatedAt'):
             if record.get(key) and timestamp(record[key], key) > now:
                 raise ValueError('execution timestamps cannot be in the future')
+        for review in record.get('acceptanceReviews', ()):
+            if timestamp(review['reviewedAt'], 'acceptance review reviewedAt') > now:
+                raise ValueError('acceptance review timestamps cannot be in the future')
 
 
 def attach(tasks, records, as_of=None):
@@ -200,6 +319,10 @@ def attach(tasks, records, as_of=None):
             'lastCompletedAt': max((r['finishedAt'] for r in completed),
                                    key=lambda value: timestamp(value, 'finishedAt'), default=None),
             'executionIds': sorted(r['executionId'] for r in runs),
+            'executionOutcomes': [{'executionId': r['executionId'], 'status': r['status'],
+                                   'startedAt': r['startedAt'], 'finishedAt': r.get('finishedAt')} for r in runs],
+            'acceptanceReviews': [dict(public_acceptance_review(review), executionId=r['executionId']) for r in runs
+                                  for review in r.get('acceptanceReviews', ()) if review['taskSlug'] == task['slug']],
         }
     return {'schemaVersion': 1, 'asOf': now.isoformat(),
             'countDefinition': 'Distinct recorded execution IDs, separate from meta-article URLs. History is partial; absent history is unknown, not zero. The last-30-day count is a documented lower bound, not total task frequency.',
@@ -222,6 +345,11 @@ def _upsert_locked(path, record, known_slugs, expected_revision=None, dry_run=Fa
         raw = json.load(source)
     records = validate_ledger(raw, known_slugs)
     found = next((r for r in records if r['executionId'] == candidate['executionId']), None)
+    # Older CLI payloads do not know this optional field.  Preserve recorded
+    # acceptance history unless the caller explicitly supplies its replacement.
+    if found and 'acceptanceReviews' not in record and found.get('acceptanceReviews'):
+        candidate = copy.deepcopy(candidate)
+        candidate['acceptanceReviews'] = copy.deepcopy(found['acceptanceReviews'])
     if found == candidate:
         return {'action': 'unchanged', 'executionId': candidate['executionId'], 'revision': digest(found)}
     if found:

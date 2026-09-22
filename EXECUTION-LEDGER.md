@@ -1,5 +1,15 @@
 # Record a real task execution
 
+Save what happened when your team tried a task. This helps you see what worked and fix steps that caused trouble. Link each record to its [main task guide](https://blitzmetrics.com/definitive-article-guide/) so the next run can use the lesson.
+
+```mermaid
+flowchart LR
+  Guide[Task guide] --> Run[Real run]
+  Run --> Record[Execution record]
+  Record --> Review[Independent acceptance review]
+  Review --> Next[Next handoff]
+```
+
 The Task Library registry and Asset Tracker still own the task list. `build/task-executions.json` adds reviewed run records that reference those task slugs; it is not another task registry.
 
 A **task** is the reusable recipe. An **execution** is one actual attempt with a stable ID, start time, result, evidence and written meta article. A **meta article** tells what happened in that execution and what the recipe should learn. Write it after every execution, including failures and blocked work. Publication follows the existing authority and privacy rules; writing does not authorize public posting.
@@ -14,7 +24,38 @@ One parent job remains one execution. Internal QA checks, agent contributions, r
 
 None changes task completion, article certification, or a semantic HOLD. Registry `article_kind` may distinguish `task-recipe`, `topic-hub`, `entity-hub`, `reference`, `supporting`, or `unknown` without promoting readiness. Existing `before` and `after` values are generated neighboring stations, not verified prerequisite or handoff contracts; use the recipe's actual inputs and checked output links.
 
-The version 1 ledger does not record a structured acceptance result or new-user setup success. A `completed` status and linked evidence therefore do not pass those checks in the per-task verification queue. A future schema change must bind each result to the exact task and current canonical article revision, keep the skill instruction hash separate, require named criteria, reviewer/tester, date and evidence, and preserve the public/private evidence allowlist.
+An optional `acceptanceReviews` array extends an individual version 1 execution record without changing the ledger root or existing records. Old records remain valid. A completed label alone still does not pass acceptance. Each review has a stable per-run `reviewId`, exact task slug and canonical URL, recipe source hash matching that run, separate current task-instruction hash, representation, reviewer and distinct executor, review time, named measurable criteria with observed results and evidence, and a next handoff. Reviews are recorded at or after the run ends. Keep them if a later correction changes the run to partial; that historical review then cannot pass the gate.
+
+Each review needs at least these two criteria; add more when the task needs them. The fragment below is a teaching template, not a real receipt. Replace its placeholders with task-specific measurements and actual evidence; never register the example.
+
+```json
+{
+  "criteria": {
+    "result": {
+      "state": "unknown",
+      "expectedResult": "The named output is complete.",
+      "observedResult": "Not checked yet.",
+      "sourceRef": "https://example.com/task-guide",
+      "evidenceRefs": ["https://example.com/checked-output"]
+    },
+    "handoff": {
+      "state": "unknown",
+      "expectedResult": "The next owner receives the output.",
+      "observedResult": "Not checked yet.",
+      "sourceRef": "https://example.com/task-guide",
+      "evidenceRefs": ["https://example.com/handoff-receipt"]
+    }
+  }
+}
+```
+
+Every acceptance criterion must pass. The queue reads a separately recorded matching `revisionObservations` record from `article-certifications.json`: it must be observed after the review, be no more than 24 hours old, and match the accepted recipe hash. Missing, failed, future, stale or older observations remain unknown; a hash, current task mapping, or instruction-hash mismatch is unmet. A later partial, failed, blocked or cancelled execution prevents an older accepted run from being promoted. Acceptance never changes setup, article semantic certification, contributor completion, or full verification.
+
+Acceptance evidence uses public HTTPS URLs without credential-like query strings or fragments, or `sha256:<hash>` private references. Unsupported fields, common private paths and credential-bearing URLs are rejected. A reviewer must still check all prose and destinations for private information. Public projections retain public URLs and a private-evidence flag, never private hashes.
+
+The full review also requires `version: 1`, `reviewId`, `taskSlug`, `canonicalURL`, `recipeSourceSha256`, `representation`, `instructionSourceSha256`, `reviewedAt`, `reviewer`, `executor`, and `nextHandoff`. The representation uses the same four choices as [article review evidence](build/ARTICLE-SEMANTIC-REVIEWS.md). Use the actual source hashes, a timezone-aware review date, and distinct reviewer/executor identities. Different name strings are not proof of independent judgment; the review evidence must support that claim. The build validates the record, not the truth of the reviewer’s assertions.
+
+A legacy CLI update that omits `acceptanceReviews` preserves the existing reviews. Explicitly replacing the array is a reviewed correction and keeps Git history. Do not erase failed checks to obtain a pass.
 
 ## Record schema, version 1
 
@@ -31,6 +72,7 @@ The ledger contains exactly `schemaVersion: 1` and an `executions` array. Each r
 | `status` | `running`, `completed`, `partial`, `failed`, `blocked`, or `cancelled`. Use terminal `partial` when an attempt has ended with some required outcomes incomplete, and record `finishedAt`; use `blocked` while it still awaits a dependency. |
 | `result` | Short public-safe result, maximum 600 characters. Do not include private client facts. |
 | `evidence` | Array of public URL references or private-content hashes. At least one is required for completed work. |
+| `acceptanceReviews` | Optional versioned independent result reviews; see the required fields and criteria above. |
 | `metaArticle` | Written draft, withheld written draft, or published article; see below. |
 | `recordedAt` | When the execution was first entered in this ledger, at or after its start. |
 | `updatedAt` | Record revision time, at or after `recordedAt` and any finish time. |
