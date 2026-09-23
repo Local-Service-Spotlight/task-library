@@ -96,7 +96,7 @@
    }
   }
  },
- "updated": "September 22, 2026",
+ "updated": "September 23, 2026",
  "factory": {
   "phases": [
    {
@@ -1711,11 +1711,11 @@
  ],
  "executionHistory": {
   "schemaVersion": 1,
-  "asOf": "2026-09-22T13:17:06.775776+00:00",
+  "asOf": "2026-09-23T00:16:16.213360+00:00",
   "countDefinition": "Distinct recorded execution IDs, separate from meta-article URLs. History is partial; absent history is unknown, not zero. The last-30-day count is a documented lower bound, not total task frequency.",
-  "recordedExecutions": 5,
+  "recordedExecutions": 6,
   "completedExecutions": 0,
-  "partialExecutions": 5,
+  "partialExecutions": 6,
   "executions": [
    {
     "executionId": "recipe-audit-20260905-080140",
@@ -1852,6 +1852,31 @@
     "metaArticle": {
      "status": "published",
      "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#lss-meta-consistency-20260922-125016"
+    }
+   },
+   {
+    "executionId": "meta-guide-setup-20260923-000301",
+    "taskSlugs": [
+     "create-or-update-a-definitive-article"
+    ],
+    "startedAt": "2026-09-23T00:03:01.747166+00:00",
+    "status": "partial",
+    "result": "Ended partial: corrected the meta-article guide with first-use setup, maintained nine-step skill, record validation, ongoing/blocked prompt and capability-aware handoffs. Exact saved source, ordinary public text/media, phone and desktop checks passed. Independent step review passed. Whole-page ownership, historical sources, all links/media/publication standards, novice setup and accepted execution remain unverified. One authoring attempt; no completed business run.",
+    "recipeRevisions": {
+     "create-or-update-a-definitive-article": {
+      "articleUrl": "https://blitzmetrics.com/definitive-article-guide/",
+      "sourceSha256": "5f4a981dd5d5b3ed52ea6eca4179a1ea872da25b6f728e782c4b5a652ab7a6a8"
+     }
+    },
+    "finishedAt": "2026-09-23T00:16:15.700977+00:00",
+    "evidenceUrls": [
+     "https://blitzmetrics.com/meta-article-prompt/",
+     "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-setup-2026-09-23.md"
+    ],
+    "privateEvidenceRecorded": true,
+    "metaArticle": {
+     "status": "published",
+     "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#meta-guide-setup-20260923-000301"
     }
    }
   ]
@@ -6685,94 +6710,94 @@
         "id": "articleSemanticCertification",
         "label": "Article semantic certification",
         "state": "unknown",
-        "reason": "Current article semantic criteria are unknown: owner, steps, links, sourceEvidence, visualAndLayout, publicationStandards, acceptanceResults.",
+        "reason": "Current article semantic criteria are unknown: owner, links, sourceEvidence, visualAndLayout, publicationStandards, acceptanceResults.",
         "semanticReview": {
          "version": 1,
          "taskSlug": "write-meta-article-documenting-agent-work",
          "canonicalURL": "https://blitzmetrics.com/meta-article-prompt/",
-         "sourceSha256": "39e6e64ed488372c63c72338cc28f005d6c845226842faf49e5c71bb1dde02be",
+         "sourceSha256": "b2b4bb23c9641f2d09a0fbb3846b0e2c9a7d2b9ac5e524aa37fe255cd2205242",
          "representation": "wordpress-content-html",
-         "reviewedAt": "2026-09-22T04:18:49.804481Z",
-         "reviewer": "Codex root with independent source and opening review",
+         "reviewedAt": "2026-09-23T00:12:28.740724Z",
+         "reviewer": "Codex root with independent GPT-6 Luna candidate-only steps review",
          "criteria": {
           "openingContext": {
            "state": "pass",
-           "reason": "First three sentences explain recording a real job, learning from mistakes, and improving the linked main task guide. Independent meaning review, grade3.72 diagnostic and destination check support the exact opening.",
+           "reason": "Exact unchanged opening names the record, learning from mistakes, and proof-based improvement to the linked main task guide. Root rechecked destination HTTP 200 and body delivery; this is a meaning review, not a reading-score certification.",
            "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-repair-2026-09-22.md",
-            "sha256:9dab7e2ebb2259c299a559df91a0465d8d1fadce7e491b67f8676cae347cbf3b"
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-setup-2026-09-23.md",
+            "sha256:b760a80822d43641b3d220ce268206996b024e99615d0166d8697f9bfe830ec5"
            ]
           },
           "roleScope": {
            "state": "pass",
            "reason": "The page remains the mapped canonical task recipe for writing one actual execution record; its visible review status is explicitly incomplete.",
            "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-repair-2026-09-22.md",
-            "sha256:9dab7e2ebb2259c299a559df91a0465d8d1fadce7e491b67f8676cae347cbf3b"
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-setup-2026-09-23.md",
+            "sha256:b760a80822d43641b3d220ce268206996b024e99615d0166d8697f9bfe830ec5"
            ]
           },
           "owner": {
            "state": "unknown",
            "reason": "Canonical ownership evidence beyond the current task mapping and author byline was not fully audited in this scoped repair.",
            "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-repair-2026-09-22.md",
-            "sha256:9dab7e2ebb2259c299a559df91a0465d8d1fadce7e491b67f8676cae347cbf3b"
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-setup-2026-09-23.md",
+            "sha256:b760a80822d43641b3d220ce268206996b024e99615d0166d8697f9bfe830ec5"
            ]
           },
           "steps": {
-           "state": "unknown",
-           "reason": "Conflicting start instructions now consistently begin with the task and preserve the same ID. Full end-to-end step completeness and execution were not independently certified.",
+           "state": "pass",
+           "reason": "Literal final article independently reviewed: maintained nine-step skill, first-use input/access/output setup, current-state trigger, ledger validation and existing-ID revision checks, measurable output and explicit receiving owners. No execution or novice setup is certified.",
            "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-repair-2026-09-22.md",
-            "sha256:9dab7e2ebb2259c299a559df91a0465d8d1fadce7e491b67f8676cae347cbf3b"
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-setup-2026-09-23.md",
+            "sha256:b760a80822d43641b3d220ce268206996b024e99615d0166d8697f9bfe830ec5"
            ]
           },
           "links": {
            "state": "unknown",
-           "reason": "Opening destination was checked and all original URLs preserved. The full body destination set was not reverified.",
+           "reason": "Opening and new ledger destinations return HTTP 200 and match their teaching purpose. Historical example fetches encountered rate limits; full destination review remains unknown.",
            "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-repair-2026-09-22.md",
-            "sha256:9dab7e2ebb2259c299a559df91a0465d8d1fadce7e491b67f8676cae347cbf3b"
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-setup-2026-09-23.md",
+            "sha256:b760a80822d43641b3d220ce268206996b024e99615d0166d8697f9bfe830ec5"
            ]
           },
           "sourceEvidence": {
            "state": "unknown",
            "reason": "Unsupported automatic improvement, quality and numeric measurement claims were corrected. The dated60-URL inventory remains historical; six classification conflicts and real-example source checks remain open.",
            "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-repair-2026-09-22.md",
-            "sha256:9dab7e2ebb2259c299a559df91a0465d8d1fadce7e491b67f8676cae347cbf3b"
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-setup-2026-09-23.md",
+            "sha256:b760a80822d43641b3d220ce268206996b024e99615d0166d8697f9bfe830ec5"
            ]
           },
           "handoffContext": {
            "state": "pass",
            "reason": "Explicit inputs, Process-stage Content Factory context, checked record, Task Library registration, supported recipe correction and authorized publishing handoff remain present.",
            "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-repair-2026-09-22.md",
-            "sha256:9dab7e2ebb2259c299a559df91a0465d8d1fadce7e491b67f8676cae347cbf3b"
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-setup-2026-09-23.md",
+            "sha256:b760a80822d43641b3d220ce268206996b024e99615d0166d8697f9bfe830ec5"
            ]
           },
           "visualAndLayout": {
            "state": "unknown",
-           "reason": "Changed opening/diagram, phone tables, evidence labels and inventory passed scoped rendered checks. Full lower-page media and context requirements were not independently rechecked.",
+           "reason": "Exact opening and lead visual unchanged; new first-use section checked in phone and desktop preview. Full-page media/layout is not independently certified.",
            "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-repair-2026-09-22.md",
-            "sha256:9dab7e2ebb2259c299a559df91a0465d8d1fadce7e491b67f8676cae347cbf3b"
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-setup-2026-09-23.md",
+            "sha256:b760a80822d43641b3d220ce268206996b024e99615d0166d8697f9bfe830ec5"
            ]
           },
           "publicationStandards": {
            "state": "unknown",
            "reason": "Title shortened and separately checked, source/URL preserved, reviewed changes published. CTA, short URL, all metadata and E-E-A-T requirements were not fully audited.",
            "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-repair-2026-09-22.md",
-            "sha256:9dab7e2ebb2259c299a559df91a0465d8d1fadce7e491b67f8676cae347cbf3b"
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-setup-2026-09-23.md",
+            "sha256:b760a80822d43641b3d220ce268206996b024e99615d0166d8697f9bfe830ec5"
            ]
           },
           "acceptanceResults": {
            "state": "unknown",
            "reason": "No exact-revision accepted business run or successful novice-human setup is established by this maintenance repair.",
            "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-repair-2026-09-22.md",
-            "sha256:9dab7e2ebb2259c299a559df91a0465d8d1fadce7e491b67f8676cae347cbf3b"
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-setup-2026-09-23.md",
+            "sha256:b760a80822d43641b3d220ce268206996b024e99615d0166d8697f9bfe830ec5"
            ]
           }
          }
@@ -6781,14 +6806,14 @@
          "version": 1,
          "taskSlug": "write-meta-article-documenting-agent-work",
          "canonicalURL": "https://blitzmetrics.com/meta-article-prompt/",
-         "sourceSha256": "39e6e64ed488372c63c72338cc28f005d6c845226842faf49e5c71bb1dde02be",
+         "sourceSha256": "b2b4bb23c9641f2d09a0fbb3846b0e2c9a7d2b9ac5e524aa37fe255cd2205242",
          "representation": "wordpress-content-html",
-         "observedAt": "2026-09-22T04:18:50.835196Z",
-         "observer": "Codex separate fresh WordPress readback after editorial review",
+         "observedAt": "2026-09-23T00:12:29.795694Z",
+         "observer": "Codex separate fresh WordPress read after exact-revision editorial review",
          "state": "observed",
-         "reason": "Fresh raw content bytes match the reviewed final revision. This observation does not substitute for separate public/rendered checks.",
+         "reason": "Separate authenticated GET returned the exact reviewed article bytes. Public rendering and setup/results are separate checks.",
          "evidenceRefs": [
-          "sha256:9751842d2553f07ddd05a0e6ccddabf0356739678fb98994642b7b505991a1c2"
+          "sha256:6ca1fbd38a0a0b8e166fc59ca09607d267a9074074bddb1276cf21a6d2809cb2"
          ]
         }
        },
@@ -6895,7 +6920,7 @@
       "queuePosition": 245,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
-      "nextAction": "Current article semantic criteria are unknown: owner, steps, links, sourceEvidence, visualAndLayout, publicationStandards, acceptanceResults."
+      "nextAction": "Current article semantic criteria are unknown: owner, links, sourceEvidence, visualAndLayout, publicationStandards, acceptanceResults."
      }
     },
     {
@@ -6958,16 +6983,17 @@
      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=create-or-update-a-definitive-article#task-create-or-update-a-definitive-article",
      "executionHistory": {
       "status": "partial",
-      "recordedRuns": 5,
+      "recordedRuns": 6,
       "completedRuns": 0,
       "failedRuns": 0,
-      "partialRuns": 5,
+      "partialRuns": 6,
       "completedLast30Days": 0,
       "lastCompletedAt": null,
       "executionIds": [
        "article-review-20260918-063904",
        "lss-meta-consistency-20260922-125016",
        "meta-guide-repair-20260922-035343",
+       "meta-guide-setup-20260923-000301",
        "recipe-audit-20260905-080140",
        "task-standards-20260915-215131"
       ],
@@ -7001,6 +7027,12 @@
         "status": "partial",
         "startedAt": "2026-09-22T12:50:16Z",
         "finishedAt": "2026-09-22T13:16:53.277175+00:00"
+       },
+       {
+        "executionId": "meta-guide-setup-20260923-000301",
+        "status": "partial",
+        "startedAt": "2026-09-23T00:03:01.747166+00:00",
+        "finishedAt": "2026-09-23T00:16:15.700977+00:00"
        }
       ],
       "acceptanceReviews": [],
@@ -7200,11 +7232,12 @@
         "id": "recordedExecution",
         "label": "Recorded real execution",
         "state": "pass",
-        "reason": "5 distinct execution ID(s) name this task; outcomes remain separate.",
+        "reason": "6 distinct execution ID(s) name this task; outcomes remain separate.",
         "executionIds": [
          "article-review-20260918-063904",
          "lss-meta-consistency-20260922-125016",
          "meta-guide-repair-20260922-035343",
+         "meta-guide-setup-20260923-000301",
          "recipe-audit-20260905-080140",
          "task-standards-20260915-215131"
         ],
