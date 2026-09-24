@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "asOf": "2026-09-23T00:16:16.213360+00:00",
+  "asOf": "2026-09-24T00:15:51.958656+00:00",
   "countDefinition": "Distinct recorded execution IDs, separate from meta-article URLs. History is partial; absent history is unknown, not zero. The last-30-day count is a documented lower bound, not total task frequency.",
-  "recordedExecutions": 6,
+  "recordedExecutions": 7,
   "completedExecutions": 0,
-  "partialExecutions": 6,
+  "partialExecutions": 7,
   "executions": [
     {
       "executionId": "recipe-audit-20260905-080140",
@@ -166,6 +166,31 @@
       "metaArticle": {
         "status": "published",
         "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#meta-guide-setup-20260923-000301"
+      }
+    },
+    {
+      "executionId": "meta-rubric-repair-20260924-000536",
+      "taskSlugs": [
+        "create-or-update-a-definitive-article"
+      ],
+      "startedAt": "2026-09-24T00:05:36.720543+00:00",
+      "status": "partial",
+      "result": "Ended partial: corrected the work-record checklist, prompt and public layout examples so private drafts retain dates/evidence and do not require invented publishing steps, media or numbers. Phone checklist cards improve reading. Independent wording review, exact saved source, anonymous public text/media and changed phone/desktop views passed. Full article ownership, links, sources, media/metadata, novice setup and accepted execution remain unknown. One authoring attempt; no completed business run.",
+      "recipeRevisions": {
+        "create-or-update-a-definitive-article": {
+          "articleUrl": "https://blitzmetrics.com/definitive-article-guide/",
+          "sourceSha256": "5f4a981dd5d5b3ed52ea6eca4179a1ea872da25b6f728e782c4b5a652ab7a6a8"
+        }
+      },
+      "finishedAt": "2026-09-24T00:15:50.949038+00:00",
+      "evidenceUrls": [
+        "https://blitzmetrics.com/meta-article-prompt/",
+        "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-rubric-repair-2026-09-24.md"
+      ],
+      "privateEvidenceRecorded": true,
+      "metaArticle": {
+        "status": "published",
+        "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#meta-rubric-repair-20260924-000536"
       }
     }
   ]
