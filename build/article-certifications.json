@@ -472,6 +472,98 @@
      ]
     }
    }
+  },
+  {
+   "version": 1,
+   "taskSlug": "write-meta-article-documenting-agent-work",
+   "canonicalURL": "https://blitzmetrics.com/meta-article-prompt/",
+   "representation": "wordpress-content-html",
+   "sourceSha256": "f058250547fc893f952415afcf33cc5957bcb70419502f74dbeb3a8475f9590a",
+   "reviewedAt": "2026-09-24T19:06:43.030473Z",
+   "reviewer": "Codex root with independent GPT-6 Luna source/classification review; unchanged recipe checks reused",
+   "criteria": {
+    "openingContext": {
+     "state": "pass",
+     "reason": "Exact unchanged opening names the record, learning from mistakes, and proof-based improvement to the linked main task guide. Root rechecked destination HTTP 200 and body delivery; this is a meaning review, not a reading-score certification.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-example-sources-2026-09-24.md",
+      "sha256:e060a645a5aa0d1ab6d942efd30a9ef6bd8ff870ef2027008db48bf21e77d365"
+     ]
+    },
+    "roleScope": {
+     "state": "pass",
+     "reason": "The page remains the mapped canonical task recipe for writing one actual execution record; its visible review status is explicitly incomplete.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-example-sources-2026-09-24.md",
+      "sha256:e060a645a5aa0d1ab6d942efd30a9ef6bd8ff870ef2027008db48bf21e77d365"
+     ]
+    },
+    "owner": {
+     "state": "unmet",
+     "reason": "The maintained Asset Tracker task row45 has an empty Owner cell. The corrected guide URL and description were saved/read back; contributor status and byline do not assign upkeep responsibility. Owner choice remains open.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-example-sources-2026-09-24.md",
+      "sha256:e060a645a5aa0d1ab6d942efd30a9ef6bd8ff870ef2027008db48bf21e77d365",
+      "sha256:4bcf9e55f0e25f5e53af7150e13623575b54abf4551e5828d1d71146d9027a92"
+     ]
+    },
+    "steps": {
+     "state": "pass",
+     "reason": "Prior setup, nine-step skill and handoff text unchanged. Independent literal review reconciled checklist, prompt and example layout: actual-output checks, dated evidence, consistent check states, sourced optional cards and authorized public links. No actual execution is certified.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-example-sources-2026-09-24.md",
+      "sha256:e060a645a5aa0d1ab6d942efd30a9ef6bd8ff870ef2027008db48bf21e77d365"
+     ]
+    },
+    "links": {
+     "state": "unknown",
+     "reason": "The six historical sources, opening recipe and Task Library destination were freshly checked. Complete article link review remains unknown; the source-review URL is verified at release.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-example-sources-2026-09-24.md",
+      "sha256:e060a645a5aa0d1ab6d942efd30a9ef6bd8ff870ef2027008db48bf21e77d365"
+     ]
+    },
+    "sourceEvidence": {
+     "state": "unknown",
+     "reason": "Six conflicting classifications resolved from exact current sources: five retained, one related-only link excluded. Count now59; the other54 and all underlying outcome/cost/rights claims remain unaccepted.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-example-sources-2026-09-24.md",
+      "sha256:e060a645a5aa0d1ab6d942efd30a9ef6bd8ff870ef2027008db48bf21e77d365"
+     ]
+    },
+    "handoffContext": {
+     "state": "pass",
+     "reason": "Explicit inputs, Process-stage Content Factory context, checked record, Task Library registration, supported recipe correction and authorized publishing handoff remain present.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-example-sources-2026-09-24.md",
+      "sha256:e060a645a5aa0d1ab6d942efd30a9ef6bd8ff870ef2027008db48bf21e77d365"
+     ]
+    },
+    "visualAndLayout": {
+     "state": "unknown",
+     "reason": "Changed example explanation, expanded59-item list, caption and separate meta diagram checked on normal public desktop/phone pages. Opening/lead source unchanged. Full-page media/layout remains unreviewed.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-example-sources-2026-09-24.md",
+      "sha256:e060a645a5aa0d1ab6d942efd30a9ef6bd8ff870ef2027008db48bf21e77d365"
+     ]
+    },
+    "publicationStandards": {
+     "state": "unknown",
+     "reason": "Corrected count/history and source ownership connection are published; metadata retained. Overall metadata, publication fields and full-page compliance remain unknown.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-example-sources-2026-09-24.md",
+      "sha256:e060a645a5aa0d1ab6d942efd30a9ef6bd8ff870ef2027008db48bf21e77d365"
+     ]
+    },
+    "acceptanceResults": {
+     "state": "unknown",
+     "reason": "No exact-revision accepted business run or successful novice-human setup is established by this maintenance repair.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-example-sources-2026-09-24.md",
+      "sha256:e060a645a5aa0d1ab6d942efd30a9ef6bd8ff870ef2027008db48bf21e77d365"
+     ]
+    }
+   }
   }
  ],
  "revisionObservations": [
@@ -544,6 +636,20 @@
    "reason": "Separate authenticated GET matched the exact reviewed content. Public rendering, real setup and execution results remain separate evidence.",
    "evidenceRefs": [
     "sha256:c341c3beb5eafee1005cc998a9990273aa00a1c1134aebe05996b165c52ed06a"
+   ]
+  },
+  {
+   "version": 1,
+   "taskSlug": "write-meta-article-documenting-agent-work",
+   "canonicalURL": "https://blitzmetrics.com/meta-article-prompt/",
+   "representation": "wordpress-content-html",
+   "sourceSha256": "f058250547fc893f952415afcf33cc5957bcb70419502f74dbeb3a8475f9590a",
+   "observedAt": "2026-09-24T19:06:43.487916Z",
+   "observer": "Codex fresh authenticated source read after editorial review",
+   "state": "observed",
+   "reason": "Independent fresh GET matched exact reviewed raw content. Rendering, setup and result acceptance remain separate evidence.",
+   "evidenceRefs": [
+    "sha256:e64bfdce820095488a4c3ce36b09ea0737d03754f09c141e6f297a29378e1226"
    ]
   }
  ]

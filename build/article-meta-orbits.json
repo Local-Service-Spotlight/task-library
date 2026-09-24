@@ -241,10 +241,10 @@
       "readyHubsMissingCategory3273": [
         "https://localservicespotlight.com/article-guidelines/"
       ],
-      "countedMetaMissingExplicitTaxonomy": 55
+      "countedMetaMissingExplicitTaxonomy": 54
     },
     "primaryAuditSource": "orbit-audit-primary.json",
-    "uniqueCountedPrimaryMetaArticles": 89
+    "uniqueCountedPrimaryMetaArticles": 88
   },
   "hubs": [
     {
@@ -634,7 +634,7 @@
         }
       ],
       "metaCountStatus": "verified",
-      "metaArticleCount": 60,
+      "metaArticleCount": 59,
       "strength": {
         "score": 4,
         "label": "Deep",
@@ -820,11 +820,19 @@
           "modifiedAt": "2026-08-03T12:18:51",
           "taxonomyEvidence": [],
           "explicitMetaTaxonomy": false,
-          "explicitMetaLanguage": false,
+          "explicitMetaLanguage": true,
           "primaryParentHub": "https://blitzmetrics.com/meta-article-prompt/",
-          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "evidenceMethod": "September24 exact editable source review, contextual link judgment and anonymous public full-text readback; see https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-example-sources-2026-09-24.md",
           "counted": true,
-          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+          "reason": "Counted as a published worked example: the narrative/own deliverable receipt identifies this work as a meta article and links the canonical method. Reported success, costs and rights were not independently accepted.",
+          "sourceReview": {
+            "reviewedAt": "2026-09-24T18:58:37.208375+00:00",
+            "sourceSha256": "5dde2602330d01c737fd3d8a5cf55922b607746bf27373ab693ab328f14693d7",
+            "representation": "wordpress-content-html",
+            "reviewURL": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-example-sources-2026-09-24.md",
+            "evidenceQuote": "The format of this write-up follows our meta article standard.",
+            "scope": "Example eligibility only; not acceptance, current delivery or whole-page certification."
+          }
         },
         {
           "postId": 110554,
@@ -967,11 +975,19 @@
           "modifiedAt": "2026-07-19T20:44:00",
           "taxonomyEvidence": [],
           "explicitMetaTaxonomy": false,
-          "explicitMetaLanguage": false,
+          "explicitMetaLanguage": true,
           "primaryParentHub": "https://blitzmetrics.com/meta-article-prompt/",
-          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "evidenceMethod": "September24 exact editable source review, contextual link judgment and anonymous public full-text readback; see https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-example-sources-2026-09-24.md",
           "counted": true,
-          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+          "reason": "Counted as a published worked example: the narrative/own deliverable receipt identifies this work as a meta article and links the canonical method. Reported success, costs and rights were not independently accepted.",
+          "sourceReview": {
+            "reviewedAt": "2026-09-24T18:58:37.208375+00:00",
+            "sourceSha256": "2eec6dd2a16dbab4f4dc0a33a8f821fa856606a15c83aabbde10dfd5cf4dd0b2",
+            "representation": "wordpress-content-html",
+            "reviewURL": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-example-sources-2026-09-24.md",
+            "evidenceQuote": "Each fix is now part of the playbook, which is the entire point of writing meta articles after every build.",
+            "scope": "Example eligibility only; not acceptance, current delivery or whole-page certification."
+          }
         },
         {
           "postId": 109735,
@@ -1036,9 +1052,17 @@
           "explicitMetaTaxonomy": false,
           "explicitMetaLanguage": false,
           "primaryParentHub": "https://blitzmetrics.com/meta-article-prompt/",
-          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
-          "counted": true,
-          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+          "evidenceMethod": "September24 exact editable source review, contextual link judgment and anonymous public full-text readback; see https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-example-sources-2026-09-24.md",
+          "counted": false,
+          "reason": "Excluded September24: the canonical meta-article link appears only in a Related-reading list. It is a useful work story, but an incidental link does not meet the counted-example rule. No execution failure is inferred.",
+          "sourceReview": {
+            "reviewedAt": "2026-09-24T18:58:37.208375+00:00",
+            "sourceSha256": "0976246a77752d4e65770653d5504fd6c0c25d019a3bae17626098ec6c4d44f3",
+            "representation": "wordpress-content-html",
+            "reviewURL": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-example-sources-2026-09-24.md",
+            "evidenceQuote": "Related: ... How we write meta articles",
+            "scope": "Example eligibility only; not acceptance, current delivery or whole-page certification."
+          }
         },
         {
           "postId": 109548,
@@ -1240,11 +1264,19 @@
           "modifiedAt": "2026-06-12T17:27:08",
           "taxonomyEvidence": [],
           "explicitMetaTaxonomy": false,
-          "explicitMetaLanguage": false,
+          "explicitMetaLanguage": true,
           "primaryParentHub": "https://blitzmetrics.com/meta-article-prompt/",
-          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "evidenceMethod": "September24 exact editable source review, contextual link judgment and anonymous public full-text readback; see https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-example-sources-2026-09-24.md",
           "counted": true,
-          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+          "reason": "Counted as a published worked example: the narrative/own deliverable receipt identifies this work as a meta article and links the canonical method. Reported success, costs and rights were not independently accepted.",
+          "sourceReview": {
+            "reviewedAt": "2026-09-24T18:58:37.208375+00:00",
+            "sourceSha256": "056c783d77cb3b1b152db0fafb3f17af76e255fc2e67dc7419290c675c8fd5a0",
+            "representation": "wordpress-content-html",
+            "reviewURL": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-example-sources-2026-09-24.md",
+            "evidenceQuote": "How we write meta articles like this one",
+            "scope": "Example eligibility only; not acceptance, current delivery or whole-page certification."
+          }
         },
         {
           "postId": 107968,
@@ -1418,11 +1450,19 @@
           "modifiedAt": "2026-08-31T01:30:11",
           "taxonomyEvidence": [],
           "explicitMetaTaxonomy": false,
-          "explicitMetaLanguage": false,
+          "explicitMetaLanguage": true,
           "primaryParentHub": "https://blitzmetrics.com/meta-article-prompt/",
-          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "evidenceMethod": "September24 exact editable source review, contextual link judgment and anonymous public full-text readback; see https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-example-sources-2026-09-24.md",
           "counted": true,
-          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+          "reason": "Counted as a published worked example: the narrative/own deliverable receipt identifies this work as a meta article and links the canonical method. Reported success, costs and rights were not independently accepted.",
+          "sourceReview": {
+            "reviewedAt": "2026-09-24T18:58:37.208375+00:00",
+            "sourceSha256": "f464ae099838cacef905c5ced0b1336edff888e98bbfb89c3e4bc5b09833d9e9",
+            "representation": "wordpress-content-html",
+            "reviewURL": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-example-sources-2026-09-24.md",
+            "evidenceQuote": "How we write meta articles like this one",
+            "scope": "Example eligibility only; not acceptance, current delivery or whole-page certification."
+          }
         },
         {
           "postId": 107413,
@@ -1548,11 +1588,19 @@
           "modifiedAt": "2026-05-25T07:07:26",
           "taxonomyEvidence": [],
           "explicitMetaTaxonomy": false,
-          "explicitMetaLanguage": false,
+          "explicitMetaLanguage": true,
           "primaryParentHub": "https://blitzmetrics.com/meta-article-prompt/",
-          "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+          "evidenceMethod": "September24 exact editable source review, contextual link judgment and anonymous public full-text readback; see https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-example-sources-2026-09-24.md",
           "counted": true,
-          "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+          "reason": "Counted as a published worked example: the narrative/own deliverable receipt identifies this work as a meta article and links the canonical method. Reported success, costs and rights were not independently accepted.",
+          "sourceReview": {
+            "reviewedAt": "2026-09-24T18:58:37.208375+00:00",
+            "sourceSha256": "6af9debdf77b9a0f4dd3784c86a350264d457b1f834596f79849d5e7a4002ac5",
+            "representation": "wordpress-content-html",
+            "reviewURL": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-example-sources-2026-09-24.md",
+            "evidenceQuote": "to understand how we document every project like this one.",
+            "scope": "Example eligibility only; not acceptance, current delivery or whole-page certification."
+          }
         },
         {
           "postId": 106758,

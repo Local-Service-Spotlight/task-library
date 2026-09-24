@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-09-24T00:15:52+00:00",
+ "generatedAt": "2026-09-24T19:08:37+00:00",
  "countDefinition": "Verified meta-article sources explicitly classified by the recorded evidence method and linked to the normalized canonical hub. Unknown is never coerced to zero.",
  "strengthBands": [
   {
@@ -37,7 +37,7 @@
  "stats": {
   "articleHubs": 53,
   "definitiveArticles": 13,
-  "verifiedMetaArticles": 89,
+  "verifiedMetaArticles": 88,
   "metaOrbitHubsWithEvidence": 13,
   "metaOrbitHubsUnknown": 40
  },
@@ -1140,7 +1140,7 @@
    "taskSlugs": [
     "write-meta-article-documenting-agent-work"
    ],
-   "metaArticleCount": 60,
+   "metaArticleCount": 59,
    "metaCountStatus": "verified",
    "metaOrbitStrength": 4,
    "metaOrbitTier": "Deep",
@@ -1197,7 +1197,6 @@
     "https://blitzmetrics.com/josh-collier-brand-ecosystem-build/",
     "https://blitzmetrics.com/julian-david-entity-home-build/",
     "https://blitzmetrics.com/kimi-k3-vs-claude-content-factory-math/",
-    "https://blitzmetrics.com/knowledge-graph-explorer-every-spotlight-site/",
     "https://blitzmetrics.com/open-ai-knowledge-base-team-contributions/",
     "https://blitzmetrics.com/personal-brand-fleet-money-pages/",
     "https://blitzmetrics.com/spp-to-keap-migration/",
@@ -1207,7 +1206,7 @@
     "https://blitzmetrics.com/video-schema-root-cause/"
    ],
    "taskMetaCounts": {
-    "write-meta-article-documenting-agent-work": 60
+    "write-meta-article-documenting-agent-work": 59
    },
    "tasksWithMeta": 1,
    "taskCoverage": 1.0,
@@ -1359,9 +1358,9 @@
     {
      "sourceUrl": "https://blitzmetrics.com/derive-dont-maintain/",
      "hubUrl": "https://blitzmetrics.com/meta-article-prompt/",
-     "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+     "evidenceMethod": "September24 exact editable source review, contextual link judgment and anonymous public full-text readback; see https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-example-sources-2026-09-24.md",
      "counted": true,
-     "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it.",
+     "reason": "Counted as a published worked example: the narrative/own deliverable receipt identifies this work as a meta article and links the canonical method. Reported success, costs and rights were not independently accepted.",
      "title": "The Pack Was Perfect. Every Sentence About It Was Wrong.",
      "postId": 111073,
      "publishedAt": "2026-08-03T12:18:51",
@@ -1479,9 +1478,9 @@
     {
      "sourceUrl": "https://blitzmetrics.com/how-claude-agent-built-ensitefulmarketing-com/",
      "hubUrl": "https://blitzmetrics.com/meta-article-prompt/",
-     "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+     "evidenceMethod": "September24 exact editable source review, contextual link judgment and anonymous public full-text readback; see https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-example-sources-2026-09-24.md",
      "counted": true,
-     "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it.",
+     "reason": "Counted as a published worked example: the narrative/own deliverable receipt identifies this work as a meta article and links the canonical method. Reported success, costs and rights were not independently accepted.",
      "title": "How a Claude Agent Built EnsitefulMarketing.com End to End",
      "postId": 109793,
      "publishedAt": "2026-07-16T22:41:11",
@@ -1534,9 +1533,9 @@
     {
      "sourceUrl": "https://blitzmetrics.com/knowledge-graph-explorer-every-spotlight-site/",
      "hubUrl": "https://blitzmetrics.com/meta-article-prompt/",
-     "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
-     "counted": true,
-     "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it.",
+     "evidenceMethod": "September24 exact editable source review, contextual link judgment and anonymous public full-text readback; see https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-example-sources-2026-09-24.md",
+     "counted": false,
+     "reason": "Excluded September24: the canonical meta-article link appears only in a Related-reading list. It is a useful work story, but an incidental link does not meet the counted-example rule. No execution failure is inferred.",
      "title": "How a Hard-to-See Search Box Uncovered a Bug Freezing Our Knowledge Graph Explorer",
      "postId": 109554,
      "publishedAt": "2026-07-09T22:54:47",
@@ -1704,9 +1703,9 @@
     {
      "sourceUrl": "https://blitzmetrics.com/julian-david-entity-home-build/",
      "hubUrl": "https://blitzmetrics.com/meta-article-prompt/",
-     "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+     "evidenceMethod": "September24 exact editable source review, contextual link judgment and anonymous public full-text readback; see https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-example-sources-2026-09-24.md",
      "counted": true,
-     "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it.",
+     "reason": "Counted as a published worked example: the narrative/own deliverable receipt identifies this work as a meta article and links the canonical method. Reported success, costs and rights were not independently accepted.",
      "title": "How an AI Agent Built an Olympic Speed Climber’s Entity Home in One Day",
      "postId": 108046,
      "publishedAt": "2026-06-12T06:12:07",
@@ -1849,9 +1848,9 @@
     {
      "sourceUrl": "https://blitzmetrics.com/building-dennis-yu-speaker-reel-for-event-organizers/",
      "hubUrl": "https://blitzmetrics.com/meta-article-prompt/",
-     "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+     "evidenceMethod": "September24 exact editable source review, contextual link judgment and anonymous public full-text readback; see https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-example-sources-2026-09-24.md",
      "counted": true,
-     "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it.",
+     "reason": "Counted as a published worked example: the narrative/own deliverable receipt identifies this work as a meta article and links the canonical method. Reported success, costs and rights were not independently accepted.",
      "title": "Building Dennis Yu' Speaker Reel for Event Organizers",
      "postId": 107351,
      "publishedAt": "2026-06-06T16:56:57",
@@ -1955,9 +1954,9 @@
     {
      "sourceUrl": "https://blitzmetrics.com/how-we-integrated-jobber-wordpress-home-services/",
      "hubUrl": "https://blitzmetrics.com/meta-article-prompt/",
-     "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
+     "evidenceMethod": "September24 exact editable source review, contextual link judgment and anonymous public full-text readback; see https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-example-sources-2026-09-24.md",
      "counted": true,
-     "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it.",
+     "reason": "Counted as a published worked example: the narrative/own deliverable receipt identifies this work as a meta article and links the canonical method. Reported success, costs and rights were not independently accepted.",
      "title": "How We Integrated Jobber Into a WordPress Site for a Home Services Company",
      "postId": 106760,
      "publishedAt": "2026-05-16T20:17:26",

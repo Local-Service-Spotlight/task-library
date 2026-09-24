@@ -492,6 +492,78 @@
       },
       "recordedAt": "2026-09-24T00:15:50.949038+00:00",
       "updatedAt": "2026-09-24T00:15:50.949038+00:00"
+    },
+    {
+      "executionId": "meta-source-review-20260924-185131",
+      "taskSlugs": [
+        "create-or-update-a-definitive-article"
+      ],
+      "recipeRevisions": {
+        "create-or-update-a-definitive-article": {
+          "articleUrl": "https://blitzmetrics.com/definitive-article-guide/",
+          "sourceSha256": "5f4a981dd5d5b3ed52ea6eca4179a1ea872da25b6f728e782c4b5a652ab7a6a8"
+        }
+      },
+      "startedAt": "2026-09-24T18:51:31.024392+00:00",
+      "finishedAt": "2026-09-24T19:08:21.736959+00:00",
+      "status": "partial",
+      "result": "Ended partial: resolved six source classifications: five retained, one related-only story excluded. Published59 examples and corpus88; corrected tracker URL/description. Exact saved/public source, scoped phone/desktop views and independent classification review passed. Owner, other54 examples, underlying outcome claims, whole-page checks, first-user setup and accepted result/handoff remain unverified. One authoring attempt; no completed business run.",
+      "evidence": [
+        {
+          "visibility": "public",
+          "url": "https://blitzmetrics.com/meta-article-prompt/"
+        },
+        {
+          "visibility": "public",
+          "url": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-example-sources-2026-09-24.md"
+        },
+        {
+          "visibility": "private",
+          "sha256": "83362e2041a9285e3261dc332d5eb408aa107e5a0225811f222119ba0c5fcfb8"
+        },
+        {
+          "visibility": "private",
+          "sha256": "2397214d2d512694b7ad713bbc5684ca79ed545cd9550e0b9d1243a736c579f1"
+        },
+        {
+          "visibility": "private",
+          "sha256": "c733adcc4851cedcae3d28ab55448076437aa57e1babcb3eff8831b6cdf1343c"
+        },
+        {
+          "visibility": "private",
+          "sha256": "e060a645a5aa0d1ab6d942efd30a9ef6bd8ff870ef2027008db48bf21e77d365"
+        },
+        {
+          "visibility": "private",
+          "sha256": "cfb75ed672e0043b39f1771db7cae1c1cabceb5ecbc24298ab2d93cda6f287e5"
+        },
+        {
+          "visibility": "private",
+          "sha256": "c2d991f3558ba160b3bb561d352dd64082b28a7ef39d341ae298fa14254ccc8f"
+        },
+        {
+          "visibility": "private",
+          "sha256": "a7cec45a6e0461547c7e505c7107a2aace7f53b208e204e393ba8d3c82ceb167"
+        },
+        {
+          "visibility": "private",
+          "sha256": "c3d9eac15f5c734817d7e9e85a9470e58949b6b0aafff2ec9919262be00dc388"
+        },
+        {
+          "visibility": "private",
+          "sha256": "4bcf9e55f0e25f5e53af7150e13623575b54abf4551e5828d1d71146d9027a92"
+        },
+        {
+          "visibility": "private",
+          "sha256": "02bc70d5dda8a06ba2383aa1ed376241e72c53a72e96115043e30f3aefbc5d03"
+        }
+      ],
+      "metaArticle": {
+        "status": "published",
+        "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#meta-source-review-20260924-185131"
+      },
+      "recordedAt": "2026-09-24T19:08:21.736959+00:00",
+      "updatedAt": "2026-09-24T19:08:21.736959+00:00"
     }
   ]
 }
