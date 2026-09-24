@@ -581,7 +581,7 @@ class BuiltArticleInventory(unittest.TestCase):
             'blitzmetrics.com/how-we-use-podchaser-to-amplify-authority-and-repurpose-podcast-content':
                 (1, 'Emerging'),
             'blitzmetrics.com/internal-linking': (2, 'Emerging'),
-            'blitzmetrics.com/meta-article-prompt': (60, 'Deep'),
+            'blitzmetrics.com/meta-article-prompt': (59, 'Deep'),
             'blitzmetrics.com/one-minute-video-guide':
                 (1, 'Emerging'),
             'blitzmetrics.com/overnight-content-worker': (1, 'Emerging'),
@@ -590,7 +590,7 @@ class BuiltArticleInventory(unittest.TestCase):
         }
         hubs = {hub['key']: hub for hub in self.data['articleHubs']}
 
-        self.assertEqual(self.data['stats']['verifiedMetaArticles'], 89)
+        self.assertEqual(self.data['stats']['verifiedMetaArticles'], 88)
         self.assertEqual(self.data['stats']['metaOrbitHubsWithEvidence'], 13)
         self.assertEqual(self.data['stats']['metaOrbitHubsUnknown'], 40)
         self.assertEqual({key for key, hub in hubs.items()
@@ -608,6 +608,9 @@ class BuiltArticleInventory(unittest.TestCase):
 
         new_meta = 'https://blitzmetrics.com/how-we-made-definitive-article-strength-measurable/'
         self.assertIn(new_meta, hubs['blitzmetrics.com/meta-article-prompt']['metaArticles'])
+        self.assertNotIn(
+            'https://blitzmetrics.com/knowledge-graph-explorer-every-spotlight-site/',
+            hubs['blitzmetrics.com/meta-article-prompt']['metaArticles'])
         self.assertNotIn(
             new_meta,
             hubs['localservicespotlight.com/article-guidelines']['metaArticles'])

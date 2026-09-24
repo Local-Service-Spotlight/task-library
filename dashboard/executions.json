@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "asOf": "2026-09-24T00:15:51.958656+00:00",
+  "asOf": "2026-09-24T19:08:37.376428+00:00",
   "countDefinition": "Distinct recorded execution IDs, separate from meta-article URLs. History is partial; absent history is unknown, not zero. The last-30-day count is a documented lower bound, not total task frequency.",
-  "recordedExecutions": 7,
+  "recordedExecutions": 8,
   "completedExecutions": 0,
-  "partialExecutions": 7,
+  "partialExecutions": 8,
   "executions": [
     {
       "executionId": "recipe-audit-20260905-080140",
@@ -191,6 +191,31 @@
       "metaArticle": {
         "status": "published",
         "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#meta-rubric-repair-20260924-000536"
+      }
+    },
+    {
+      "executionId": "meta-source-review-20260924-185131",
+      "taskSlugs": [
+        "create-or-update-a-definitive-article"
+      ],
+      "startedAt": "2026-09-24T18:51:31.024392+00:00",
+      "status": "partial",
+      "result": "Ended partial: resolved six source classifications: five retained, one related-only story excluded. Published59 examples and corpus88; corrected tracker URL/description. Exact saved/public source, scoped phone/desktop views and independent classification review passed. Owner, other54 examples, underlying outcome claims, whole-page checks, first-user setup and accepted result/handoff remain unverified. One authoring attempt; no completed business run.",
+      "recipeRevisions": {
+        "create-or-update-a-definitive-article": {
+          "articleUrl": "https://blitzmetrics.com/definitive-article-guide/",
+          "sourceSha256": "5f4a981dd5d5b3ed52ea6eca4179a1ea872da25b6f728e782c4b5a652ab7a6a8"
+        }
+      },
+      "finishedAt": "2026-09-24T19:08:21.736959+00:00",
+      "evidenceUrls": [
+        "https://blitzmetrics.com/meta-article-prompt/",
+        "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-example-sources-2026-09-24.md"
+      ],
+      "privateEvidenceRecorded": true,
+      "metaArticle": {
+        "status": "published",
+        "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#meta-source-review-20260924-185131"
       }
     }
   ]
