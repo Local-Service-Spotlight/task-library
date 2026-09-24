@@ -381,6 +381,97 @@
      ]
     }
    }
+  },
+  {
+   "version": 1,
+   "taskSlug": "write-meta-article-documenting-agent-work",
+   "canonicalURL": "https://blitzmetrics.com/meta-article-prompt/",
+   "representation": "wordpress-content-html",
+   "sourceSha256": "fcf0a687c6f507222fd7f6302e3011b3ae2bf350ea6fc57a40328bf3e3a383c5",
+   "reviewedAt": "2026-09-24T00:13:46.578735Z",
+   "reviewer": "Codex root with independent GPT-6 Luna rubric/prompt/layout-wording review; prior unchanged checks reused",
+   "criteria": {
+    "openingContext": {
+     "state": "pass",
+     "reason": "Exact unchanged opening names the record, learning from mistakes, and proof-based improvement to the linked main task guide. Root rechecked destination HTTP 200 and body delivery; this is a meaning review, not a reading-score certification.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-rubric-repair-2026-09-24.md",
+      "sha256:ded12c8c024e38cd44bbb3dda92063eb14f227d2a4e987a24349f571ebc9e4fa"
+     ]
+    },
+    "roleScope": {
+     "state": "pass",
+     "reason": "The page remains the mapped canonical task recipe for writing one actual execution record; its visible review status is explicitly incomplete.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-rubric-repair-2026-09-24.md",
+      "sha256:ded12c8c024e38cd44bbb3dda92063eb14f227d2a4e987a24349f571ebc9e4fa"
+     ]
+    },
+    "owner": {
+     "state": "unknown",
+     "reason": "Canonical ownership evidence beyond the current task mapping and author byline was not fully audited in this scoped repair.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-rubric-repair-2026-09-24.md",
+      "sha256:ded12c8c024e38cd44bbb3dda92063eb14f227d2a4e987a24349f571ebc9e4fa"
+     ]
+    },
+    "steps": {
+     "state": "pass",
+     "reason": "Prior setup, nine-step skill and handoff text unchanged. Independent literal review reconciled checklist, prompt and example layout: actual-output checks, dated evidence, consistent check states, sourced optional cards and authorized public links. No actual execution is certified.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-rubric-repair-2026-09-24.md",
+      "sha256:ded12c8c024e38cd44bbb3dda92063eb14f227d2a4e987a24349f571ebc9e4fa"
+     ]
+    },
+    "links": {
+     "state": "unknown",
+     "reason": "Opening and new ledger destinations return HTTP 200 and match their teaching purpose. Historical example fetches encountered rate limits; full destination review remains unknown.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-rubric-repair-2026-09-24.md",
+      "sha256:ded12c8c024e38cd44bbb3dda92063eb14f227d2a4e987a24349f571ebc9e4fa"
+     ]
+    },
+    "sourceEvidence": {
+     "state": "unknown",
+     "reason": "Unsupported automatic improvement, quality and numeric measurement claims were corrected. The dated60-URL inventory remains historical; six classification conflicts and real-example source checks remain open.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-rubric-repair-2026-09-24.md",
+      "sha256:ded12c8c024e38cd44bbb3dda92063eb14f227d2a4e987a24349f571ebc9e4fa"
+     ]
+    },
+    "handoffContext": {
+     "state": "pass",
+     "reason": "Explicit inputs, Process-stage Content Factory context, checked record, Task Library registration, supported recipe correction and authorized publishing handoff remain present.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-rubric-repair-2026-09-24.md",
+      "sha256:ded12c8c024e38cd44bbb3dda92063eb14f227d2a4e987a24349f571ebc9e4fa"
+     ]
+    },
+    "visualAndLayout": {
+     "state": "unknown",
+     "reason": "Scoped phone cards and desktop checklist plus lower layout heading checked on normal public page. Original opening/lead source unchanged. Full-page media/layout not independently certified.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-rubric-repair-2026-09-24.md",
+      "sha256:ded12c8c024e38cd44bbb3dda92063eb14f227d2a4e987a24349f571ebc9e4fa"
+     ]
+    },
+    "publicationStandards": {
+     "state": "unknown",
+     "reason": "Contradictory blanket publication/media/date requirements corrected and public result checked. Overall metadata, source ownership, CTA/short URL and complete publication review remain unknown.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-rubric-repair-2026-09-24.md",
+      "sha256:ded12c8c024e38cd44bbb3dda92063eb14f227d2a4e987a24349f571ebc9e4fa"
+     ]
+    },
+    "acceptanceResults": {
+     "state": "unknown",
+     "reason": "No exact-revision accepted business run or successful novice-human setup is established by this maintenance repair.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-rubric-repair-2026-09-24.md",
+      "sha256:ded12c8c024e38cd44bbb3dda92063eb14f227d2a4e987a24349f571ebc9e4fa"
+     ]
+    }
+   }
   }
  ],
  "revisionObservations": [
@@ -439,6 +530,20 @@
    "reason": "Separate authenticated GET returned the exact reviewed article bytes. Public rendering and setup/results are separate checks.",
    "evidenceRefs": [
     "sha256:6ca1fbd38a0a0b8e166fc59ca09607d267a9074074bddb1276cf21a6d2809cb2"
+   ]
+  },
+  {
+   "version": 1,
+   "taskSlug": "write-meta-article-documenting-agent-work",
+   "canonicalURL": "https://blitzmetrics.com/meta-article-prompt/",
+   "representation": "wordpress-content-html",
+   "sourceSha256": "fcf0a687c6f507222fd7f6302e3011b3ae2bf350ea6fc57a40328bf3e3a383c5",
+   "observedAt": "2026-09-24T00:13:47.323846Z",
+   "observer": "Codex separate fresh source read after exact-revision editorial review",
+   "state": "observed",
+   "reason": "Separate authenticated GET matched the exact reviewed content. Public rendering, real setup and execution results remain separate evidence.",
+   "evidenceRefs": [
+    "sha256:c341c3beb5eafee1005cc998a9990273aa00a1c1134aebe05996b165c52ed06a"
    ]
   }
  ]

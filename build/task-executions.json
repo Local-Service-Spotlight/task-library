@@ -432,6 +432,66 @@
       },
       "recordedAt": "2026-09-23T00:16:15.700977+00:00",
       "updatedAt": "2026-09-23T00:16:15.700977+00:00"
+    },
+    {
+      "executionId": "meta-rubric-repair-20260924-000536",
+      "taskSlugs": [
+        "create-or-update-a-definitive-article"
+      ],
+      "recipeRevisions": {
+        "create-or-update-a-definitive-article": {
+          "articleUrl": "https://blitzmetrics.com/definitive-article-guide/",
+          "sourceSha256": "5f4a981dd5d5b3ed52ea6eca4179a1ea872da25b6f728e782c4b5a652ab7a6a8"
+        }
+      },
+      "startedAt": "2026-09-24T00:05:36.720543+00:00",
+      "finishedAt": "2026-09-24T00:15:50.949038+00:00",
+      "status": "partial",
+      "result": "Ended partial: corrected the work-record checklist, prompt and public layout examples so private drafts retain dates/evidence and do not require invented publishing steps, media or numbers. Phone checklist cards improve reading. Independent wording review, exact saved source, anonymous public text/media and changed phone/desktop views passed. Full article ownership, links, sources, media/metadata, novice setup and accepted execution remain unknown. One authoring attempt; no completed business run.",
+      "evidence": [
+        {
+          "visibility": "public",
+          "url": "https://blitzmetrics.com/meta-article-prompt/"
+        },
+        {
+          "visibility": "public",
+          "url": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-rubric-repair-2026-09-24.md"
+        },
+        {
+          "visibility": "private",
+          "sha256": "e20611710df4ebc70d7f8b66fb7732f60a122253982e120005ef285be0c272bd"
+        },
+        {
+          "visibility": "private",
+          "sha256": "71b142e19b8cd36f540139aabd3d4e56951b5e143001ae067ce6faf8348e4ace"
+        },
+        {
+          "visibility": "private",
+          "sha256": "ca95c2fa1e581bb9c5525ec4f017b319b6883f3066c41feca38c01e98517c01d"
+        },
+        {
+          "visibility": "private",
+          "sha256": "ded12c8c024e38cd44bbb3dda92063eb14f227d2a4e987a24349f571ebc9e4fa"
+        },
+        {
+          "visibility": "private",
+          "sha256": "a0c3d3f5eaeaf5d6fcc2e429e5e77236ff2794a5f934baf31f74234ee9e4fdf0"
+        },
+        {
+          "visibility": "private",
+          "sha256": "5b9eaa8a9ad420f53afee7ab1f0e524ba674b455ef7487f2cf9e49a5b8a38c34"
+        },
+        {
+          "visibility": "private",
+          "sha256": "3e11e5c8a5c950bdb3f92662b25df65d5efab8237a2b6d3f099dbaee5bf7c0e6"
+        }
+      ],
+      "metaArticle": {
+        "status": "published",
+        "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#meta-rubric-repair-20260924-000536"
+      },
+      "recordedAt": "2026-09-24T00:15:50.949038+00:00",
+      "updatedAt": "2026-09-24T00:15:50.949038+00:00"
     }
   ]
 }
