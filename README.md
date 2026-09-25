@@ -1,6 +1,13 @@
 # BlitzMetrics Task Library
 
-Use these guides to save time on work that helps your business. Pick one job and follow its steps. Check the result before you use it or pass it to the next person.
+Use these guides to save time on work that helps your business. Pick one job and follow its steps. Use the [Task Library Dashboard](https://blitzmetrics.com/task-library-dashboard/) to find that guide, then check its result before you pass work to the next person.
+
+```mermaid
+flowchart LR
+  A[Choose one job] --> B[Read its guide]
+  B --> C[Try it once]
+  C --> D[Check the result and next step]
+```
 
 New here? Open a guide on the [Task Library Dashboard](https://blitzmetrics.com/task-library-dashboard/) (public entry; this GitHub Pages app is embedded there) and copy its first-run prompt. Library-built ZIPs include `START-HERE.md`; an external provider's full suite may use its own setup guide. A ZIP gives you guides; app setup, account access, and optional schedules each need their own check.
 
@@ -31,7 +38,7 @@ Task-Library-Standard.md             the spec every skill.md must meet
 
 ## Owning a skill in your own repo
 
-Nobody edits this repo to own a skill. Everything happens in the **Asset Tracker's Task Library sheet**:
+Use the **Asset Tracker’s Task Library Dashboard tab** to record upkeep ownership when its approved feed is connected. A saved row alone does not prove a public update. Check the dashboard’s team-update notice before relying on this path:
 
 1. Put your `SKILL.md` in your repo at `skills/<slug>/SKILL.md` (standard Claude skill format — `name` + `description` frontmatter, `name` = the slug).
 2. On your skill's row in the sheet: put your name in **Owner**, your repo URL in **Source Repo**, and set **Status** (`wip` while you work it, `ready` when you stand behind it).
@@ -49,9 +56,11 @@ The same build writes `dashboard/verification-queue.html`, `.json` and `.csv`. T
 
 ## Asset Tracker
 
-The Asset Tracker's *Task Library* tab stays the ops-facing index (status, owner, flags). Publish it to web as CSV and set the `TRACKER_CSV_URL` Actions secret — the build then overrides `status`/`owner`/`article` per slug from the sheet. Content always comes from git; workflow state comes from the sheet.
+The Asset Tracker’s *Task Library Dashboard* tab is the maintained source for status, owner and flags. Its import is a separate setup step. A maintainer verifies the intended tab and existing approved feed, then configures `TRACKER_CSV_URL` for the build. Publishing a private sheet or changing access needs the appropriate authority; do not do it just to satisfy a setup check. When no feed is supplied, the build uses saved library records and reports that team updates were not loaded. When a feed is supplied, validation must pass before publication.
 
-The sheet is also the **onboarding path**: a row whose Slug isn't in the registry but has a Source Repo link becomes a new external skill on the next build — no PR to this repo needed. See CONTRIBUTING-SKILLS.md.
+Check `trackerImport` in the generated data and the dashboard notice, then compare the affected public task fields. A loaded feed does not establish complete coverage, a current source fetch, correct per-task values or accepted execution. Content comes from the maintained repository; sheet-driven source/status/owner overrides apply only when actually imported.
+
+The sheet is also the **onboarding path**: a row whose Slug isn't in the registry but has a Source Repo link can become a new external skill when the intended sheet is imported and its source validates. A successful deployment and exact public readback are still required. See CONTRIBUTING-SKILLS.md.
 
 ## SEO
 

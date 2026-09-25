@@ -373,10 +373,40 @@
       "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
     },
     "publish-skill-and-task-page": {
-      "source_sha256": "e1f44043d78b4f0354fb00b213107e461dddac2d5681029378d64ad57cd68a62",
-      "reviewed_at": "2026-09-06",
-      "reviewer": "Codex editorial review",
-      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+      "source_sha256": "018a076e1b85ea983a73295aa5abe3a56c8d5c6f3e6fdb703c849b8bb8bae9c9",
+      "reviewed_at": "2026-09-25",
+      "reviewer": "Codex root and independent GPT-6 Luna setup/copy reviewer",
+      "scope": "Exact current skill: opening, recipe, evidence labels and handoff reviewed. Complete link review remains unknown. Tracker integration, first-user setup, article-wide certification and accepted execution are separate.",
+      "standards": {
+        "version": 1,
+        "checks": {
+          "opening": {
+            "state": "pass",
+            "reason": "Names publishing, the benefit of consistent instructions and the linked checked-recipe prerequisite.",
+            "evidence": "Publish one clear task guide that your team can find and use. Keep its web page, skill file, and library entry in sync so no one follows old steps. Start with a checked task recipe, then use this guide to publish and check its copies."
+          },
+          "recipe": {
+            "state": "pass",
+            "reason": "Inputs, supported editor, authority, seven steps, import checks, public output and measurable comparison are explicit.",
+            "evidence": "Steps3/6 separate saved sheet, imported feed and checked public fields. No implicit permission, access grant or schedule."
+          },
+          "links": {
+            "state": "unknown",
+            "reason": "Changed connections and recipe parent checked; complete destination review was outside this batch.",
+            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/tracker-setup-2026-09-25.md"
+          },
+          "evidence": {
+            "state": "pass",
+            "reason": "Fictional example is labeled and real execution evidence remains required.",
+            "evidence": "The fictional stale-download example does not count as a client result; actual recipe revision, run state, source and next owner are required."
+          },
+          "handoff": {
+            "state": "pass",
+            "reason": "Post-stage task hands checked public/draft state and remaining gaps to task owner.",
+            "evidence": "Content Factory context names Process inputs and Post release; activation and promotion are separate."
+          }
+        }
+      }
     },
     "reply-with-task-status-in-origin-thread": {
       "source_sha256": "4b323d279c8a21abf4cfd6f9f3c8fdc9379d7d972049acc106b74807220edd71",

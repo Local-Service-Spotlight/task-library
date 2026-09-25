@@ -523,6 +523,7 @@
     <div class="btl-statgrid" id="btl-statgrid"></div>
     <div class="btl-health">
       <div class="btl-health-top"><span class="btl-health-label">Reported guide status</span><span id="btl-health-pct"></span></div>
+      <p id="btl-tracker-import" role="status" aria-live="polite">Team updates were not loaded. These are saved library records; recent owner or status changes may be missing.</p>
       <div class="btl-health-bar" id="btl-health-bar"></div>
       <div class="btl-health-legend" id="btl-health-legend"></div>
     </div>
@@ -661,6 +662,19 @@ fetch('data.json', {cache: 'no-cache'})
   .then(function(d){
     window.__TASK_DATA = d;
     var stats = (d && d.stats) || {};
+    var trackerImport = d && d.trackerImport;
+    var trackerNotice = document.getElementById('btl-tracker-import');
+    if (trackerNotice && trackerImport && trackerImport.state === 'loaded') {
+      var inputRows = Number(trackerImport.inputRows);
+      var matchedRows = Number(trackerImport.matchedRows);
+      trackerNotice.textContent = 'Team updates loaded from ' + (Number.isFinite(inputRows) ? inputRows : 0) +
+        ' rows; ' + (Number.isFinite(matchedRows) ? matchedRows : 0) +
+        ' matched library guides. This reports import only; guide status remains a contributor claim.';
+    } else if (trackerNotice && trackerImport && trackerImport.state === 'not_configured') {
+      trackerNotice.textContent = 'Team updates were not loaded. These are saved library records; recent owner or status changes may be missing.';
+    } else if (trackerNotice) {
+      trackerNotice.textContent = 'Team-update import has not been verified. Recent owner or status changes may be missing.';
+    }
     var articleHubs = Number(stats.articleHubs || 0);
     var definitive = Number(stats.definitiveArticles || 0);
     function fill(selector, value){

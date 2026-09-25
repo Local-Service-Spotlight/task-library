@@ -564,6 +564,97 @@
      ]
     }
    }
+  },
+  {
+   "version": 1,
+   "taskSlug": "publish-skill-and-task-page",
+   "canonicalURL": "https://blitzmetrics.com/skill-publishing-standard/",
+   "representation": "wordpress-content-html",
+   "sourceSha256": "7857ea9ce9ff959f8470dab5fd8455c5e406fd82a5edb086936793b584a0cf2b",
+   "reviewedAt": "2026-09-25T00:13:40.817679Z",
+   "reviewer": "Codex root with independent GPT-6 Luna scoped wording review",
+   "criteria": {
+    "openingContext": {
+     "state": "pass",
+     "reason": "Scoped plain opening and linked recipe reviewed.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/tracker-setup-2026-09-25.md",
+      "sha256:740a6591e8ed22cd7abc5c62cd93291c2a41657d65b56af1c05987d335a57b5e"
+     ]
+    },
+    "roleScope": {
+     "state": "pass",
+     "reason": "Task page and matching skill publish the same reusable method.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/tracker-setup-2026-09-25.md",
+      "sha256:740a6591e8ed22cd7abc5c62cd93291c2a41657d65b56af1c05987d335a57b5e"
+     ]
+    },
+    "owner": {
+     "state": "unknown",
+     "reason": "A responsible upkeep owner is not established by this scoped review.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/tracker-setup-2026-09-25.md",
+      "sha256:740a6591e8ed22cd7abc5c62cd93291c2a41657d65b56af1c05987d335a57b5e"
+     ]
+    },
+    "steps": {
+     "state": "pass",
+     "reason": "Current publishing/permission/import steps and embedded method reconciled.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/tracker-setup-2026-09-25.md",
+      "sha256:740a6591e8ed22cd7abc5c62cd93291c2a41657d65b56af1c05987d335a57b5e"
+     ]
+    },
+    "links": {
+     "state": "unknown",
+     "reason": "Changed destinations reviewed; all article links not checked.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/tracker-setup-2026-09-25.md",
+      "sha256:740a6591e8ed22cd7abc5c62cd93291c2a41657d65b56af1c05987d335a57b5e"
+     ]
+    },
+    "sourceEvidence": {
+     "state": "unknown",
+     "reason": "Historical claims and linked worked examples not independently accepted.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/tracker-setup-2026-09-25.md",
+      "sha256:740a6591e8ed22cd7abc5c62cd93291c2a41657d65b56af1c05987d335a57b5e"
+     ]
+    },
+    "handoffContext": {
+     "state": "pass",
+     "reason": "Post-stage input/output and receiving task owner are explicit.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/tracker-setup-2026-09-25.md",
+      "sha256:740a6591e8ed22cd7abc5c62cd93291c2a41657d65b56af1c05987d335a57b5e"
+     ]
+    },
+    "visualAndLayout": {
+     "state": "unknown",
+     "reason": "Changed sections and lead visual inspected; full-page media/layout not certified.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/tracker-setup-2026-09-25.md",
+      "sha256:740a6591e8ed22cd7abc5c62cd93291c2a41657d65b56af1c05987d335a57b5e"
+     ]
+    },
+    "publicationStandards": {
+     "state": "unknown",
+     "reason": "Whole-page metadata, ownership, publication and SEO checks remain incomplete.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/tracker-setup-2026-09-25.md",
+      "sha256:740a6591e8ed22cd7abc5c62cd93291c2a41657d65b56af1c05987d335a57b5e"
+     ]
+    },
+    "acceptanceResults": {
+     "state": "unknown",
+     "reason": "No accepted task execution or first-user setup was established.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/tracker-setup-2026-09-25.md",
+      "sha256:740a6591e8ed22cd7abc5c62cd93291c2a41657d65b56af1c05987d335a57b5e"
+     ]
+    }
+   }
   }
  ],
  "revisionObservations": [
@@ -650,6 +741,20 @@
    "reason": "Independent fresh GET matched exact reviewed raw content. Rendering, setup and result acceptance remain separate evidence.",
    "evidenceRefs": [
     "sha256:e64bfdce820095488a4c3ce36b09ea0737d03754f09c141e6f297a29378e1226"
+   ]
+  },
+  {
+   "version": 1,
+   "taskSlug": "publish-skill-and-task-page",
+   "canonicalURL": "https://blitzmetrics.com/skill-publishing-standard/",
+   "representation": "wordpress-content-html",
+   "sourceSha256": "7857ea9ce9ff959f8470dab5fd8455c5e406fd82a5edb086936793b584a0cf2b",
+   "observedAt": "2026-09-25T00:13:41.155932Z",
+   "observer": "Codex separate fresh source read after editorial review",
+   "state": "observed",
+   "reason": "Fresh authenticated GET matched exact reviewed content; publication and actual use are separate checks.",
+   "evidenceRefs": [
+    "sha256:dc9de2bf03ea8d5b91d24f0451f43178f955f497909d2607346408fe7b9032fb"
    ]
   }
  ]

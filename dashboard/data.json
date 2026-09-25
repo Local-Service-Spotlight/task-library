@@ -1,4 +1,9 @@
 {
+ "trackerImport": {
+  "state": "not_configured",
+  "inputRows": 0,
+  "matchedRows": 0
+ },
  "stats": {
   "total": 276,
   "complete": 125,
@@ -77,10 +82,10 @@
     "unknown": 266
    },
    "recordedExecution": {
-    "pass": 1,
+    "pass": 2,
     "unmet": 0,
     "hold": 0,
-    "unknown": 275
+    "unknown": 274
    },
    "acceptedExecution": {
     "pass": 0,
@@ -96,7 +101,7 @@
    }
   }
  },
- "updated": "September 24, 2026",
+ "updated": "September 25, 2026",
  "factory": {
   "phases": [
    {
@@ -1710,11 +1715,11 @@
  ],
  "executionHistory": {
   "schemaVersion": 1,
-  "asOf": "2026-09-24T19:08:37.376428+00:00",
+  "asOf": "2026-09-25T00:21:05.380228+00:00",
   "countDefinition": "Distinct recorded execution IDs, separate from meta-article URLs. History is partial; absent history is unknown, not zero. The last-30-day count is a documented lower bound, not total task frequency.",
-  "recordedExecutions": 8,
+  "recordedExecutions": 9,
   "completedExecutions": 0,
-  "partialExecutions": 8,
+  "partialExecutions": 9,
   "executions": [
    {
     "executionId": "recipe-audit-20260905-080140",
@@ -1926,6 +1931,31 @@
     "metaArticle": {
      "status": "published",
      "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#meta-source-review-20260924-185131"
+    }
+   },
+   {
+    "executionId": "tracker-setup-20260925-000216",
+    "taskSlugs": [
+     "publish-skill-and-task-page"
+    ],
+    "startedAt": "2026-09-25T00:02:16.768661+00:00",
+    "status": "partial",
+    "result": "Ended partial: reconciled publishing route, existing authority and tracker-import checks across the page, embedded method, library skill and contributor guides. Added explicit missing/loaded/unknown import evidence and dashboard notice; invalid existing Source Repo now fails. Exact saves, scoped public phone/desktop views and source checks passed. Tracker connection remains unconfigured; owner, full article review, first-user setup and accepted result/handoff remain unverified. No completed business run.",
+    "recipeRevisions": {
+     "publish-skill-and-task-page": {
+      "articleUrl": "https://blitzmetrics.com/skill-publishing-standard/",
+      "sourceSha256": "9705bf1a29c45961a6fb33404bfca3450bf280500ccdf6cb6ef67c00b6dd5cef"
+     }
+    },
+    "finishedAt": "2026-09-25T00:19:54.369912+00:00",
+    "evidenceUrls": [
+     "https://blitzmetrics.com/skill-publishing-standard/",
+     "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/tracker-setup-2026-09-25.md"
+    ],
+    "privateEvidenceRecorded": true,
+    "metaArticle": {
+     "status": "published",
+     "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#tracker-setup-20260925-000216"
     }
    }
   ]
@@ -37316,7 +37346,7 @@
      "article": "https://blitzmetrics.com/skill-publishing-standard/",
      "articleKind": "task-recipe",
      "desc": "A useful guide should be easy for people and AI to find.",
-     "content": "---\nname: publish-skill-and-task-page\ndescription: A useful guide should be easy for people and AI to find.\ncategory: Knowledge System Maintenance\nstage: Post\ndefinitive_article: https://blitzmetrics.com/skill-publishing-standard/\nstatus: needs-work\n---\n\n# Publish a skill and its task page\n\nA useful guide should be easy for people and AI to find. This task keeps the web page, skill file, and task entry in sync. Start with the reviewed guide and its real example.\n\n**The path:** Checked recipe → Matched files → Authorized release → Live readback\n\n**Start when:** A reviewed task method needs a maintained skill and matching readable page.\n\n## Inputs\n\n- [The documented task](https://local-service-spotlight.github.io/task-library/?task=document-a-task#task-document-a-task) with its trigger, inputs, ordered steps, checks and handoff.\n- The canonical source repository, permanent task name, existing page and correct registry.\n- A real relevant example or an explicit example gap, plus publishing authority and supported editor access.\n\n## Steps\n\n1. Search the site and Task Library for the existing task. Preserve its URL, name and page type; a rename needs a migration plan for links and installed references.\n2. Prepare a complete skill file and human-readable page from the same reviewed method. Include plain grade 5 context, meaningful lead visual, owned prerequisite links, example and lower task context.\n3. Keep task registration separate from AI-worker and job registration. Update the actual task/skill entry; do not create an Agent Roster row merely because a new skill exists.\n4. Check exact source-file, page and registry links in both directions. The downloadable instructions must match the reviewed revision; a short summary wrapper is not the full recipe.\n5. Use the repository’s branch/review/check workflow and the page’s supported editor or generator. Preserve existing media, builder state, categories and concurrent edits. Keep the full reviewable draft before publication.\n6. After the authorized release, read back the saved source and open the ordinary anonymous URL on desktop/mobile. Inspect the lead visual, links, task context and download; clear or fix stale public copies through their owning publisher.\n7. Record source available, page public, file downloadable and installed activation separately. Leave certification gaps visible; writing the run’s meta record is required even when public release is pending.\n\n## Definition of done (QA checklist)\n\n[Quality assurance (QA)](https://localservicespotlight.com/article-guidelines/) means checking the work against the agreed result.\n\n- [ ] Page, full skill and registry refer to the same canonical task/revision.\n- [ ] All released destinations are read back and the rendered guide is usable.\n- [ ] Missing real examples, private access or installed activation remain explicit.\n\n## Example(s)\n\n**Fictional teaching example. This is not a client result or proof of a completed run.**\n\nA fictional guide is merged and its page saved, but the public URL still serves yesterday’s download. Report source released and public copy stale. Fix the owning cache/publisher, then verify the same revision before calling the page current. No agent or recurring job is created by registering the skill.\n\n## Handoff and Content Factory context\n\nThe [Content Factory, our four stages of using real content](https://blitzmetrics.com/content-factory/) goes Produce → Process → Post → Promote. The source method is prepared and checked in Process. Its authorized page release and links belong to Post. Promotion is a separate decision after the published result is checked.\n\nThe task owner receives the public/draft state and remaining gaps. Consumers use the exact guide; any installed-package update needs its own activation check.\n\n## Run with an agent\n\nGive the AI worker this recipe, the real Inputs above, the intended result and the actions already authorized. Ask it to return the saved output, checks, evidence and remaining owner. Check its work against this guide; loading a skill does not prove access, installation of a job, or successful execution. Keep media muted with volume at zero if playback is needed.\n\nFor recurring work, keep the actual trigger, owner and runtime in the job record. Scheduling and observed firings are separate. Do not create a schedule merely because this guide mentions a review interval.\n\n## Record the real execution\n\nOpen the run record when the work starts. Keep the exact starting recipe revision, one execution ID, source evidence and actual state. Write a [meta article, the record of one run](https://blitzmetrics.com/meta-article-prompt/) with decisions, results, checks, failures and next owner. Link it to this task and register it through the [Task Library](https://local-service-spotlight.github.io/task-library/) execution process. Writing is part of the work; public release follows existing authority.\n\nReuse the same execution ID for revisions, QA, meta writing and retries within that run. A blocked run stays open with its dependency and next owner; do not invent a finish time. Use supported findings to propose and verify a better recipe. A historical public-example count without distinct run IDs remains dated article volume, not verified execution frequency.\n\n\n<!-- factory-layer:start -->\n\n## Factory chain (do not treat this as isolated)\n\n- **Phase:** Post\n- **Importance:** 2/5 `●●○○○` — frequency 2, revenue 1, gating 2 (supporting)\n- **Suggested previous station:** —\n- **Suggested next station:** —\nThese stations are generated neighbors, not verified prerequisites or handoffs. Follow the task’s actual Inputs and Handoff sections.\n- **Handoff:** Draft URL or WP post ID, slug, author user ID, featured-image media ID. Promote reads the live URL, not the draft.\n\n## Model routing (same factory, any engine)\n\n- **This task's lane:** `any` — Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.\n- **Single-engine path:** Use the capable AI app you already have. Check its required tools and access before starting. Pass the actual result and proof to the next task.\n- **Optional multi-engine:** A tested local model may draft; a stronger model may review facts and voice. Use supported tools for approved actions. Pick models from observed quality and cost; a model name does not prove it can run this task.\n- **Never** store the working state in one vendor's memory. Files in the Content Library are the bridge.\n\n<!-- factory-layer:end -->\n## Definitive article & links\n\n- [Maintained source guide](https://blitzmetrics.com/skill-publishing-standard/)\n- [This task in the Task Library](https://local-service-spotlight.github.io/task-library/?task=publish-skill-and-task-page#task-publish-skill-and-task-page)\n- [Article Guidelines](https://localservicespotlight.com/article-guidelines/)\n- [current article guide](https://blitzmetrics.com/definitive-article-guide/)\n- [How recipes and run records work together](https://localservicespotlight.com/meta-articles/)\n\n## Review and evidence still needed\n\nThe inherited contributor status is `needs-work`. It is preserved, not promoted by this rewrite. That label alone does not verify document readiness, a client outcome, access or an executed task.\n\nA real execution still needs its own source, reviewer, saved result and handoff evidence. The fictional example teaches the method; a real example with relevant proof is still needed where required. The task-specific flow above is source guidance; its visible presentation and the full document need a named reviewer and desktop/mobile checks.",
+     "content": "---\nname: publish-skill-and-task-page\ndescription: A useful guide should be easy for people and AI to find.\ncategory: Knowledge System Maintenance\nstage: Post\ndefinitive_article: https://blitzmetrics.com/skill-publishing-standard/\nstatus: needs-work\n---\n\n# Publish a skill and its task page\n\nPublish one clear task guide that your team can find and use. Keep its web page, skill file, and library entry in sync so no one follows old steps. Start with a [checked task recipe](https://blitzmetrics.com/definitive-article-guide/), then use this guide to publish and check its copies.\n\n**The path:** Checked recipe → Matched files → Authorized release → Live readback\n\n**Start when:** A reviewed task method needs a maintained skill and matching readable page.\n\n## Inputs\n\n- [The documented task](https://local-service-spotlight.github.io/task-library/?task=document-a-task#task-document-a-task) with its trigger, inputs, ordered steps, checks and handoff.\n- The canonical source repository, permanent task name, existing page and correct registry.\n- A real relevant example or an explicit example gap, plus publishing authority and supported editor access.\n\n## Steps\n\n1. Search the site and Task Library for the existing task. Preserve its URL, name and page type; a rename needs a migration plan for links and installed references.\n2. Prepare a complete skill file and human-readable page from the same reviewed method. Include plain grade 5 context, meaningful lead visual, owned prerequisite links, example and lower task context.\n3. Keep task registration separate from AI-worker and job registration. Update the actual task/skill entry; do not create an Agent Roster row merely because a new skill exists. Follow the [contributor guide](https://github.com/Local-Service-Spotlight/task-library/blob/main/CONTRIBUTING-SKILLS.md). A sheet row reaches the dashboard only when the intended tracker feed is imported. Check the team-update notice and build receipt; when missing, report the row saved and public sync pending. The maintainer checks the existing approved connection without silently changing sharing or access.\n4. Check exact source-file, page and registry links in both directions. The downloadable instructions must match the reviewed revision; a short summary wrapper is not the full recipe.\n5. Use the repository’s branch/review/check workflow and the page’s supported editor or generator. Preserve existing media, builder state, categories and concurrent edits. Keep the full reviewable draft before publication.\n6. After the authorized release, read back the saved source and open the ordinary anonymous URL on desktop/mobile. Inspect the lead visual, links, task context and download; clear or fix stale public copies through their owning publisher. Compare the deployed task’s owner, status, source, article and download with the intended values. A successful build or loaded feed alone does not prove these fields match.\n7. Record source available, page public, file downloadable and installed activation separately. Leave certification gaps visible; writing the run’s meta record is required even when public release is pending.\n\n## Definition of done (QA checklist)\n\n[Quality assurance (QA)](https://localservicespotlight.com/article-guidelines/) means checking the work against the agreed result.\n\n- [ ] Page, full skill and registry refer to the same canonical task/revision.\n- [ ] All released destinations are read back and the rendered guide is usable.\n- [ ] Tracker import state and the deployed task fields are checked; missing sync remains pending.\n- [ ] Missing real examples, private access or installed activation remain explicit.\n\n## Example(s)\n\n**Fictional teaching example. This is not a client result or proof of a completed run.**\n\nA fictional guide is merged and its page saved, but the public URL still serves yesterday’s download. Report source released and public copy stale. Fix the owning cache/publisher, then verify the same revision before calling the page current. No agent or recurring job is created by registering the skill.\n\n## Handoff and Content Factory context\n\nThe [Content Factory, our four stages of using real content](https://blitzmetrics.com/content-factory/) goes Produce → Process → Post → Promote. The source method is prepared and checked in Process. Its authorized page release and links belong to Post. Promotion is a separate decision after the published result is checked.\n\nThe task owner receives the public/draft state and remaining gaps. Consumers use the exact guide; any installed-package update needs its own activation check.\n\n## Run with an agent\n\nGive the AI worker this recipe, the real Inputs above, the intended result and the actions already authorized. Ask it to return the saved output, checks, evidence and remaining owner. Check its work against this guide; loading a skill does not prove access, installation of a job, or successful execution. Keep media muted with volume at zero if playback is needed.\n\nFor recurring work, keep the actual trigger, owner and runtime in the job record. Scheduling and observed firings are separate. Do not create a schedule merely because this guide mentions a review interval.\n\n## Record the real execution\n\nOpen the run record when the work starts. Keep the exact starting recipe revision, one execution ID, source evidence and actual state. Write a [meta article, the record of one run](https://blitzmetrics.com/meta-article-prompt/) with decisions, results, checks, failures and next owner. Link it to this task and register it through the [Task Library](https://local-service-spotlight.github.io/task-library/) execution process. Writing is part of the work; public release follows existing authority.\n\nReuse the same execution ID for revisions, QA, meta writing and retries within that run. A blocked run stays open with its dependency and next owner; do not invent a finish time. Use supported findings to propose and verify a better recipe. A historical public-example count without distinct run IDs remains dated article volume, not verified execution frequency.\n\n\n<!-- factory-layer:start -->\n\n## Factory chain (do not treat this as isolated)\n\n- **Phase:** Post\n- **Importance:** 2/5 `●●○○○` — frequency 2, revenue 1, gating 2 (supporting)\n- **Suggested previous station:** —\n- **Suggested next station:** —\nThese stations are generated neighbors, not verified prerequisites or handoffs. Follow the task’s actual Inputs and Handoff sections.\n- **Handoff:** Draft URL or WP post ID, slug, author user ID, featured-image media ID. Promote reads the live URL, not the draft.\n\n## Model routing (same factory, any engine)\n\n- **This task's lane:** `any` — Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.\n- **Single-engine path:** Use the capable AI app you already have. Check its required tools and access before starting. Pass the actual result and proof to the next task.\n- **Optional multi-engine:** A tested local model may draft; a stronger model may review facts and voice. Use supported tools for approved actions. Pick models from observed quality and cost; a model name does not prove it can run this task.\n- **Never** store the working state in one vendor's memory. Files in the Content Library are the bridge.\n\n<!-- factory-layer:end -->\n## Definitive article & links\n\n- [Maintained source guide](https://blitzmetrics.com/skill-publishing-standard/)\n- [This task in the Task Library](https://local-service-spotlight.github.io/task-library/?task=publish-skill-and-task-page#task-publish-skill-and-task-page)\n- [Article Guidelines](https://localservicespotlight.com/article-guidelines/)\n- [current article guide](https://blitzmetrics.com/definitive-article-guide/)\n- [How recipes and run records work together](https://localservicespotlight.com/meta-articles/)\n\n## Review and evidence still needed\n\nThe inherited contributor status is `needs-work`. It is preserved, not promoted by this rewrite. That label alone does not verify document readiness, a client outcome, access or an executed task.\n\nA real execution still needs its own source, reviewer, saved result and handoff evidence. The fictional example teaches the method; a real example with relevant proof is still needed where required. The task-specific flow above is source guidance; its visible presentation and the full document need a named reviewer and desktop/mobile checks.",
      "importance": 2,
      "freq": 2,
      "revenue": 1,
@@ -37328,46 +37358,118 @@
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
      "why": "supporting",
      "instructionReview": {
-      "source_sha256": "e1f44043d78b4f0354fb00b213107e461dddac2d5681029378d64ad57cd68a62",
-      "reviewed_at": "2026-09-06",
-      "reviewer": "Codex editorial review",
-      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+      "source_sha256": "018a076e1b85ea983a73295aa5abe3a56c8d5c6f3e6fdb703c849b8bb8bae9c9",
+      "reviewed_at": "2026-09-25",
+      "reviewer": "Codex root and independent GPT-6 Luna setup/copy reviewer",
+      "scope": "Exact current skill: opening, recipe, evidence labels and handoff reviewed. Complete link review remains unknown. Tracker integration, first-user setup, article-wide certification and accepted execution are separate.",
+      "standards": {
+       "version": 1,
+       "checks": {
+        "opening": {
+         "state": "pass",
+         "reason": "Names publishing, the benefit of consistent instructions and the linked checked-recipe prerequisite.",
+         "evidence": "Publish one clear task guide that your team can find and use. Keep its web page, skill file, and library entry in sync so no one follows old steps. Start with a checked task recipe, then use this guide to publish and check its copies."
+        },
+        "recipe": {
+         "state": "pass",
+         "reason": "Inputs, supported editor, authority, seven steps, import checks, public output and measurable comparison are explicit.",
+         "evidence": "Steps3/6 separate saved sheet, imported feed and checked public fields. No implicit permission, access grant or schedule."
+        },
+        "links": {
+         "state": "unknown",
+         "reason": "Changed connections and recipe parent checked; complete destination review was outside this batch.",
+         "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/tracker-setup-2026-09-25.md"
+        },
+        "evidence": {
+         "state": "pass",
+         "reason": "Fictional example is labeled and real execution evidence remains required.",
+         "evidence": "The fictional stale-download example does not count as a client result; actual recipe revision, run state, source and next owner are required."
+        },
+        "handoff": {
+         "state": "pass",
+         "reason": "Post-stage task hands checked public/draft state and remaining gaps to task owner.",
+         "evidence": "Content Factory context names Process inputs and Post release; activation and promotion are separate."
+        }
+       }
+      }
      },
      "flag": "New reviewed source mapping; WIP. No independent execution or runtime certification claimed.",
      "articleState": "wip",
      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=publish-skill-and-task-page#task-publish-skill-and-task-page",
      "executionHistory": {
-      "status": "unknown",
-      "recordedRuns": null,
-      "completedRuns": null,
-      "failedRuns": null,
-      "partialRuns": null,
-      "completedLast30Days": null,
+      "status": "partial",
+      "recordedRuns": 1,
+      "completedRuns": 0,
+      "failedRuns": 0,
+      "partialRuns": 1,
+      "completedLast30Days": 0,
       "lastCompletedAt": null,
-      "executionIds": [],
-      "executionOutcomes": [],
+      "executionIds": [
+       "tracker-setup-20260925-000216"
+      ],
+      "executionOutcomes": [
+       {
+        "executionId": "tracker-setup-20260925-000216",
+        "status": "partial",
+        "startedAt": "2026-09-25T00:02:16.768661+00:00",
+        "finishedAt": "2026-09-25T00:19:54.369912+00:00"
+       }
+      ],
       "acceptanceReviews": [],
       "setupReviews": []
      },
      "standardVerification": {
-      "instructionSourceSha256": "e1f44043d78b4f0354fb00b213107e461dddac2d5681029378d64ad57cd68a62",
+      "instructionSourceSha256": "018a076e1b85ea983a73295aa5abe3a56c8d5c6f3e6fdb703c849b8bb8bae9c9",
       "articleKey": "blitzmetrics.com/skill-publishing-standard",
       "gates": {
        "instructionRevisionReviewed": {
         "id": "instructionRevisionReviewed",
         "label": "Exact instruction revision reviewed",
         "state": "pass",
-        "reason": "Current source bytes match the review recorded 2026-09-06. Review scope and limits: Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate.",
-        "reviewedAt": "2026-09-06",
-        "reviewer": "Codex editorial review",
-        "sourceSha256": "e1f44043d78b4f0354fb00b213107e461dddac2d5681029378d64ad57cd68a62"
+        "reason": "Current source bytes match the review recorded 2026-09-25. Review scope and limits: Exact current skill: opening, recipe, evidence labels and handoff reviewed. Complete link review remains unknown. Tracker integration, first-user setup, article-wide certification and accepted execution are separate.",
+        "reviewedAt": "2026-09-25",
+        "reviewer": "Codex root and independent GPT-6 Luna setup/copy reviewer",
+        "sourceSha256": "018a076e1b85ea983a73295aa5abe3a56c8d5c6f3e6fdb703c849b8bb8bae9c9"
        },
        "instructionStandards": {
         "id": "instructionStandards",
         "label": "Instruction requirements checked",
         "state": "unknown",
-        "reason": "The current exact-byte review has no structured instruction-requirements checklist.",
-        "sourceSha256": "e1f44043d78b4f0354fb00b213107e461dddac2d5681029378d64ad57cd68a62"
+        "reason": "Current-revision instruction requirements are unknown: links.",
+        "reviewedAt": "2026-09-25",
+        "reviewer": "Codex root and independent GPT-6 Luna setup/copy reviewer",
+        "reviewScope": "Exact current skill: opening, recipe, evidence labels and handoff reviewed. Complete link review remains unknown. Tracker integration, first-user setup, article-wide certification and accepted execution are separate.",
+        "sourceSha256": "018a076e1b85ea983a73295aa5abe3a56c8d5c6f3e6fdb703c849b8bb8bae9c9",
+        "standards": {
+         "version": 1,
+         "checks": {
+          "opening": {
+           "state": "pass",
+           "reason": "Names publishing, the benefit of consistent instructions and the linked checked-recipe prerequisite.",
+           "evidence": "Publish one clear task guide that your team can find and use. Keep its web page, skill file, and library entry in sync so no one follows old steps. Start with a checked task recipe, then use this guide to publish and check its copies."
+          },
+          "recipe": {
+           "state": "pass",
+           "reason": "Inputs, supported editor, authority, seven steps, import checks, public output and measurable comparison are explicit.",
+           "evidence": "Steps3/6 separate saved sheet, imported feed and checked public fields. No implicit permission, access grant or schedule."
+          },
+          "links": {
+           "state": "unknown",
+           "reason": "Changed connections and recipe parent checked; complete destination review was outside this batch.",
+           "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/tracker-setup-2026-09-25.md"
+          },
+          "evidence": {
+           "state": "pass",
+           "reason": "Fictional example is labeled and real execution evidence remains required.",
+           "evidence": "The fictional stale-download example does not count as a client result; actual recipe revision, run state, source and next owner are required."
+          },
+          "handoff": {
+           "state": "pass",
+           "reason": "Post-stage task hands checked public/draft state and remaining gaps to task owner.",
+           "evidence": "Content Factory context names Process inputs and Post release; activation and promotion are separate."
+          }
+         }
+        }
        },
        "contributorComplete": {
         "id": "contributorComplete",
@@ -37392,7 +37494,112 @@
         "id": "articleSemanticCertification",
         "label": "Article semantic certification",
         "state": "unknown",
-        "reason": "No exact-revision positive semantic review is recorded for this article."
+        "reason": "Current article semantic criteria are unknown: owner, links, sourceEvidence, visualAndLayout, publicationStandards, acceptanceResults.",
+        "semanticReview": {
+         "version": 1,
+         "taskSlug": "publish-skill-and-task-page",
+         "canonicalURL": "https://blitzmetrics.com/skill-publishing-standard/",
+         "sourceSha256": "7857ea9ce9ff959f8470dab5fd8455c5e406fd82a5edb086936793b584a0cf2b",
+         "representation": "wordpress-content-html",
+         "reviewedAt": "2026-09-25T00:13:40.817679Z",
+         "reviewer": "Codex root with independent GPT-6 Luna scoped wording review",
+         "criteria": {
+          "openingContext": {
+           "state": "pass",
+           "reason": "Scoped plain opening and linked recipe reviewed.",
+           "evidenceRefs": [
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/tracker-setup-2026-09-25.md",
+            "sha256:740a6591e8ed22cd7abc5c62cd93291c2a41657d65b56af1c05987d335a57b5e"
+           ]
+          },
+          "roleScope": {
+           "state": "pass",
+           "reason": "Task page and matching skill publish the same reusable method.",
+           "evidenceRefs": [
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/tracker-setup-2026-09-25.md",
+            "sha256:740a6591e8ed22cd7abc5c62cd93291c2a41657d65b56af1c05987d335a57b5e"
+           ]
+          },
+          "owner": {
+           "state": "unknown",
+           "reason": "A responsible upkeep owner is not established by this scoped review.",
+           "evidenceRefs": [
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/tracker-setup-2026-09-25.md",
+            "sha256:740a6591e8ed22cd7abc5c62cd93291c2a41657d65b56af1c05987d335a57b5e"
+           ]
+          },
+          "steps": {
+           "state": "pass",
+           "reason": "Current publishing/permission/import steps and embedded method reconciled.",
+           "evidenceRefs": [
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/tracker-setup-2026-09-25.md",
+            "sha256:740a6591e8ed22cd7abc5c62cd93291c2a41657d65b56af1c05987d335a57b5e"
+           ]
+          },
+          "links": {
+           "state": "unknown",
+           "reason": "Changed destinations reviewed; all article links not checked.",
+           "evidenceRefs": [
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/tracker-setup-2026-09-25.md",
+            "sha256:740a6591e8ed22cd7abc5c62cd93291c2a41657d65b56af1c05987d335a57b5e"
+           ]
+          },
+          "sourceEvidence": {
+           "state": "unknown",
+           "reason": "Historical claims and linked worked examples not independently accepted.",
+           "evidenceRefs": [
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/tracker-setup-2026-09-25.md",
+            "sha256:740a6591e8ed22cd7abc5c62cd93291c2a41657d65b56af1c05987d335a57b5e"
+           ]
+          },
+          "handoffContext": {
+           "state": "pass",
+           "reason": "Post-stage input/output and receiving task owner are explicit.",
+           "evidenceRefs": [
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/tracker-setup-2026-09-25.md",
+            "sha256:740a6591e8ed22cd7abc5c62cd93291c2a41657d65b56af1c05987d335a57b5e"
+           ]
+          },
+          "visualAndLayout": {
+           "state": "unknown",
+           "reason": "Changed sections and lead visual inspected; full-page media/layout not certified.",
+           "evidenceRefs": [
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/tracker-setup-2026-09-25.md",
+            "sha256:740a6591e8ed22cd7abc5c62cd93291c2a41657d65b56af1c05987d335a57b5e"
+           ]
+          },
+          "publicationStandards": {
+           "state": "unknown",
+           "reason": "Whole-page metadata, ownership, publication and SEO checks remain incomplete.",
+           "evidenceRefs": [
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/tracker-setup-2026-09-25.md",
+            "sha256:740a6591e8ed22cd7abc5c62cd93291c2a41657d65b56af1c05987d335a57b5e"
+           ]
+          },
+          "acceptanceResults": {
+           "state": "unknown",
+           "reason": "No accepted task execution or first-user setup was established.",
+           "evidenceRefs": [
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/tracker-setup-2026-09-25.md",
+            "sha256:740a6591e8ed22cd7abc5c62cd93291c2a41657d65b56af1c05987d335a57b5e"
+           ]
+          }
+         }
+        },
+        "revisionObservation": {
+         "version": 1,
+         "taskSlug": "publish-skill-and-task-page",
+         "canonicalURL": "https://blitzmetrics.com/skill-publishing-standard/",
+         "sourceSha256": "7857ea9ce9ff959f8470dab5fd8455c5e406fd82a5edb086936793b584a0cf2b",
+         "representation": "wordpress-content-html",
+         "observedAt": "2026-09-25T00:13:41.155932Z",
+         "observer": "Codex separate fresh source read after editorial review",
+         "state": "observed",
+         "reason": "Fresh authenticated GET matched exact reviewed content; publication and actual use are separate checks.",
+         "evidenceRefs": [
+          "sha256:dc9de2bf03ea8d5b91d24f0451f43178f955f497909d2607346408fe7b9032fb"
+         ]
+        }
        },
        "taskExampleEvidence": {
         "id": "taskExampleEvidence",
@@ -37403,8 +37610,12 @@
        "recordedExecution": {
         "id": "recordedExecution",
         "label": "Recorded real execution",
-        "state": "unknown",
-        "reason": "No execution ledger record names this task. Historical run frequency is unknown."
+        "state": "pass",
+        "reason": "1 distinct execution ID(s) name this task; outcomes remain separate.",
+        "executionIds": [
+         "tracker-setup-20260925-000216"
+        ],
+        "historyStatus": "partial"
        },
        "acceptedExecution": {
         "id": "acceptedExecution",
@@ -37431,7 +37642,6 @@
        "instructionStandards",
        "articleSemanticCertification",
        "taskExampleEvidence",
-       "recordedExecution",
        "acceptedExecution",
        "setupSuccess"
       ],
