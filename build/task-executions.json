@@ -564,6 +564,74 @@
       },
       "recordedAt": "2026-09-24T19:08:21.736959+00:00",
       "updatedAt": "2026-09-24T19:08:21.736959+00:00"
+    },
+    {
+      "executionId": "tracker-setup-20260925-000216",
+      "taskSlugs": [
+        "publish-skill-and-task-page"
+      ],
+      "recipeRevisions": {
+        "publish-skill-and-task-page": {
+          "articleUrl": "https://blitzmetrics.com/skill-publishing-standard/",
+          "sourceSha256": "9705bf1a29c45961a6fb33404bfca3450bf280500ccdf6cb6ef67c00b6dd5cef"
+        }
+      },
+      "startedAt": "2026-09-25T00:02:16.768661+00:00",
+      "finishedAt": "2026-09-25T00:19:54.369912+00:00",
+      "status": "partial",
+      "result": "Ended partial: reconciled publishing route, existing authority and tracker-import checks across the page, embedded method, library skill and contributor guides. Added explicit missing/loaded/unknown import evidence and dashboard notice; invalid existing Source Repo now fails. Exact saves, scoped public phone/desktop views and source checks passed. Tracker connection remains unconfigured; owner, full article review, first-user setup and accepted result/handoff remain unverified. No completed business run.",
+      "evidence": [
+        {
+          "visibility": "public",
+          "url": "https://blitzmetrics.com/skill-publishing-standard/"
+        },
+        {
+          "visibility": "public",
+          "url": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/tracker-setup-2026-09-25.md"
+        },
+        {
+          "visibility": "private",
+          "sha256": "59ac014967a2e4408602d296a4b24b919937034a0590de62fa9b3014da8e68d5"
+        },
+        {
+          "visibility": "private",
+          "sha256": "60bcf44248bc77689823f4eedbf8dc5bebb963fb092143c60198bf2f4eef254e"
+        },
+        {
+          "visibility": "private",
+          "sha256": "b7a1425a55fd44a03cfe89436a42cb6d413336b625ef5ff6789563227e49bc2b"
+        },
+        {
+          "visibility": "private",
+          "sha256": "c1c0e63a83780e317cfb460cca796a98719af7b583ccdcfacc6ea0c354874df6"
+        },
+        {
+          "visibility": "private",
+          "sha256": "b8417e4c213c942f2e99360bf8d96de576ae5716b42434f6e14ef62b26cd32ba"
+        },
+        {
+          "visibility": "private",
+          "sha256": "740a6591e8ed22cd7abc5c62cd93291c2a41657d65b56af1c05987d335a57b5e"
+        },
+        {
+          "visibility": "private",
+          "sha256": "38bced08b48ad62516820774936eced9aa059ea415ef1dd937eee0bc9647391d"
+        },
+        {
+          "visibility": "private",
+          "sha256": "faae8719e50a6b239139948f0c20b06c45e91957202af2aa4d5c15d9d31c8040"
+        },
+        {
+          "visibility": "private",
+          "sha256": "3ff3374ee7a945c4716d1ded6d528a13f6e9fa06c7b502c86c7b15c64c98a710"
+        }
+      ],
+      "metaArticle": {
+        "status": "published",
+        "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#tracker-setup-20260925-000216"
+      },
+      "recordedAt": "2026-09-25T00:19:54.369912+00:00",
+      "updatedAt": "2026-09-25T00:19:54.369912+00:00"
     }
   ]
 }

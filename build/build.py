@@ -956,6 +956,23 @@ def source_from_repo_url(url, slug):
     return f'github:{owner}/{repo}@{ref}:{path}/SKILL.md'
 
 
+def apply_existing_tracker_source(slug, row, registry, errors):
+    """Apply a populated Source Repo cell to a known slug; report malformed input."""
+    src_cell = (row.get('Source Repo') or '').strip()
+    if slug not in registry or not src_cell:
+        return False
+    src = source_from_repo_url(src_cell, slug)
+    if not src:
+        errors.append(f'{slug}: sheet Source Repo not a recognizable GitHub URL: {src_cell}')
+    elif src != registry[slug].get('source'):
+        registry[slug] = dict(registry[slug], source=src, format='claude-skill',
+                              flag='claimed via sheet — hub copy superseded')
+        dl = (row.get('Download URL') or '').strip() or download_from_source(src)
+        if dl:
+            registry[slug]['download'] = dl
+    return True
+
+
 def download_from_source(source):
     m = re.match(r'github:([^/]+)/([^@]+)@([^:]+):', source or '')
     if not m:
@@ -992,6 +1009,17 @@ def write_zip(data, out_dir, fname, note, only_complete):
     return len(ready)
 
 
+def tracker_import_state(tracker_supplied, input_rows, matched_rows, validation_passed):
+    """Public-safe import provenance; it says nothing about task verification."""
+    if not tracker_supplied:
+        state = 'not_configured'
+    elif validation_passed:
+        state = 'loaded'
+    else:
+        state = 'unknown'
+    return {'state': state, 'inputRows': input_rows, 'matchedRows': matched_rows}
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--tracker-csv')
@@ -1005,8 +1033,10 @@ def main():
     site = json.load(open(os.path.join(BUILD, 'site-meta.json'), encoding='utf-8'))
 
     overrides = {}
+    tracker_row_count = 0
     if args.tracker_csv:
         for row in csv.DictReader(open(args.tracker_csv, encoding='utf-8-sig')):
+            tracker_row_count += 1
             overrides[row['Slug'].strip()] = row
         # A tracker was explicitly requested, so zero rows means the fetch broke
         # upstream - not that there is nothing to apply. Fail loudly instead of
@@ -1026,16 +1056,9 @@ def main():
     sheet_only = {}   # rows with no source anywhere: rendered as named gap cards
     for slug, row in list(overrides.items()):
         src_cell = (row.get('Source Repo') or '').strip()
-        if slug in registry and src_cell:
+        if apply_existing_tracker_source(slug, row, registry, errors):
             # SHEET WINS: a repo link on an existing row re-points the skill
             # to the owner's repo; the hub copy is ignored from now on.
-            src = source_from_repo_url(src_cell, slug)
-            if src and src != registry[slug].get('source'):
-                registry[slug] = dict(registry[slug], source=src, format='claude-skill',
-                                      flag='claimed via sheet — hub copy superseded')
-                dl = (row.get('Download URL') or '').strip() or download_from_source(src)
-                if dl:
-                    registry[slug]['download'] = dl
             continue
         if slug in registry:
             continue
@@ -1164,7 +1187,11 @@ def main():
     if args.tracker_csv and not {t['owner'] for t in all_tasks if t.get('owner')}:
         sys.exit("ERROR: a tracker CSV was supplied but the build produced 0 owners. "
                  "The Asset Tracker feed is empty or malformed. Refusing to publish.")
-    data = {'stats': {'total': len(all_tasks),
+    built_slugs = {t['slug'] for t in all_tasks}
+    tracker_import = tracker_import_state(
+        bool(args.tracker_csv), tracker_row_count, len(built_slugs.intersection(overrides)), not errors)
+    data = {'trackerImport': tracker_import,
+            'stats': {'total': len(all_tasks),
                       'complete': sum(t['status'] == 'complete' for t in all_tasks),
                       'reviewedInstructions': sum(bool(t.get('instructionReview')) for t in all_tasks),
                       'needsWork': sum(t['status'] == 'needs-work' for t in all_tasks),

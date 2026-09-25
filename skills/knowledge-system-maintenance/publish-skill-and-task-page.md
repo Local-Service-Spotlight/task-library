@@ -9,7 +9,7 @@ status: needs-work
 
 # Publish a skill and its task page
 
-A useful guide should be easy for people and AI to find. This task keeps the web page, skill file, and task entry in sync. Start with the reviewed guide and its real example.
+Publish one clear task guide that your team can find and use. Keep its web page, skill file, and library entry in sync so no one follows old steps. Start with a [checked task recipe](https://blitzmetrics.com/definitive-article-guide/), then use this guide to publish and check its copies.
 
 **The path:** Checked recipe → Matched files → Authorized release → Live readback
 
@@ -25,10 +25,10 @@ A useful guide should be easy for people and AI to find. This task keeps the web
 
 1. Search the site and Task Library for the existing task. Preserve its URL, name and page type; a rename needs a migration plan for links and installed references.
 2. Prepare a complete skill file and human-readable page from the same reviewed method. Include plain grade 5 context, meaningful lead visual, owned prerequisite links, example and lower task context.
-3. Keep task registration separate from AI-worker and job registration. Update the actual task/skill entry; do not create an Agent Roster row merely because a new skill exists.
+3. Keep task registration separate from AI-worker and job registration. Update the actual task/skill entry; do not create an Agent Roster row merely because a new skill exists. Follow the [contributor guide](https://github.com/Local-Service-Spotlight/task-library/blob/main/CONTRIBUTING-SKILLS.md). A sheet row reaches the dashboard only when the intended tracker feed is imported. Check the team-update notice and build receipt; when missing, report the row saved and public sync pending. The maintainer checks the existing approved connection without silently changing sharing or access.
 4. Check exact source-file, page and registry links in both directions. The downloadable instructions must match the reviewed revision; a short summary wrapper is not the full recipe.
 5. Use the repository’s branch/review/check workflow and the page’s supported editor or generator. Preserve existing media, builder state, categories and concurrent edits. Keep the full reviewable draft before publication.
-6. After the authorized release, read back the saved source and open the ordinary anonymous URL on desktop/mobile. Inspect the lead visual, links, task context and download; clear or fix stale public copies through their owning publisher.
+6. After the authorized release, read back the saved source and open the ordinary anonymous URL on desktop/mobile. Inspect the lead visual, links, task context and download; clear or fix stale public copies through their owning publisher. Compare the deployed task’s owner, status, source, article and download with the intended values. A successful build or loaded feed alone does not prove these fields match.
 7. Record source available, page public, file downloadable and installed activation separately. Leave certification gaps visible; writing the run’s meta record is required even when public release is pending.
 
 ## Definition of done (QA checklist)
@@ -37,6 +37,7 @@ A useful guide should be easy for people and AI to find. This task keeps the web
 
 - [ ] Page, full skill and registry refer to the same canonical task/revision.
 - [ ] All released destinations are read back and the rendered guide is usable.
+- [ ] Tracker import state and the deployed task fields are checked; missing sync remains pending.
 - [ ] Missing real examples, private access or installed activation remain explicit.
 
 ## Example(s)

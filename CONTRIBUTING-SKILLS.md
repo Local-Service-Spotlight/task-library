@@ -1,11 +1,18 @@
 # Listing Your Skill Repo in the Task Library
 
-Help a business owner do one job well. Share clear steps, a useful example, and a way to check the result. Keep your guide current so the next person can trust it.
+Add your task guide to the library so your team can find and use it. Check the public entry so no one follows an old file or a broken link. First use the [publishing guide](https://blitzmetrics.com/skill-publishing-standard/) to prepare the skill and its matching web page.
+
+```mermaid
+flowchart LR
+  A[Prepare the guide] --> B[Register its source]
+  B --> C[Check the tracker import]
+  C --> D[Check the public entry and download]
+```
 
 
 How to format a GitHub repo so your skill shows up on the Task Library dashboard with a working "download everything" link — while you keep full ownership of the code in your own repo.
 
-The short version: **you don't reformat your skill, you register it.** If your repo is a normal Claude skill or plugin, it already qualifies. The library just needs to know where your SKILL.md lives and where people download the full package.
+The short version: **you don't reformat your skill, you register it.** A normal Claude skill layout can use the library’s external-skill format, but it must still pass the source and required-field checks below. A plugin alone is not a registered skill. The library needs the location of each SKILL.md and a working full-package download.
 
 ---
 
@@ -56,9 +63,11 @@ The difference matters: `main.zip` is whatever your repo looks like right now, m
 
 ---
 
-## Registering it — the easy way (no repo access needed)
+## Register through the connected Asset Tracker
 
-Add a row to the **Task Library tab of the Asset Tracker sheet**. Fill in:
+Use the existing **Task Library Dashboard tab of the Asset Tracker** if you have permission to edit it. Before relying on this path, ask the maintainer to confirm that the build imports that tab’s approved feed. The dashboard’s team-update notice reports whether tracker rows were loaded for that build. If the notice says they were not loaded or the import is unknown, a saved sheet edit is still pending public sync. Do not change sharing or publish a private sheet to clear this step.
+
+Find the existing task row first; add a new row only for a new permanent task name. Fill in:
 
 | Column | What to put |
 |---|---|
@@ -69,7 +78,7 @@ Add a row to the **Task Library tab of the Asset Tracker sheet**. Fill in:
 | Source Repo | your repo URL — `https://github.com/you/your-repo` |
 | Download URL | optional; defaults to your repo's zip archive |
 
-That's it. The build assumes your SKILL.md is at `skills/<slug>/SKILL.md` in your repo. If it lives elsewhere, paste the deeper link instead — a folder link (`.../tree/main/path/to/skill-folder`) or a direct file link (`.../blob/main/path/to/SKILL.md`) both work. The next build (daily, or on request) fetches, validates, and publishes your skill. Errors show in the build log with your slug on them.
+That's it. The build assumes your SKILL.md is at `skills/<slug>/SKILL.md` in your repo. If it lives elsewhere, paste the deeper link instead — a folder link (`.../tree/main/path/to/skill-folder`) or a direct file link (`.../blob/main/path/to/SKILL.md`) both work. A build with the intended tracker feed can fetch and validate that source. After deployment, compare the public task’s owner, status, source, article and download against your intended values. Errors appear in the build log. A green build alone does not prove the tracker was imported or your change reached readers.
 
 Registering a suite: one row per skill, same Source Repo on each.
 
@@ -104,13 +113,13 @@ Field by field:
 
 ## What happens after you register
 
-The build robot runs daily (and on every change to the central repo). Each run it:
+The build runs daily and on changes to the central repository. Sheet-driven changes apply only when that build imports the intended tracker feed. For each registered source it:
 
 1. Fetches your SKILL.md from your repo.
-2. Validates it: frontmatter has `name` + `description`, and your registry entry has a valid category/status. Failures are reported in the build log and the skill keeps its last good version — a broken push to your repo never blanks the dashboard.
+2. Validates it: frontmatter has `name` + `description`, and your registry entry has a valid category/status. Fetch failures may reuse a previously cached source if one is available. This fallback is reported in the log and can leave old content visible. A validation error is different: it fails the build. Neither outcome proves that your latest edit shipped.
 3. Publishes it to the dashboard: your description's first sentence on the card, your full SKILL.md in the detail view, your download link on both.
 
-From then on, updating your skill = pushing to your own repo. You never touch the central repo again unless you're changing your registry entry (new category, new download URL, status change).
+After registration, maintain the method in its owning repository. For each release, check the actual fetched revision, deployed task and full-package download. Updating a source file does not by itself prove the public copy is current. Changes to a pinned source, category or download may also need a registry update.
 
 ## Ownership expectations
 
@@ -119,3 +128,9 @@ Name the accountable **owner** in the Asset Tracker and verify that the built re
 ## Common rejections
 
 The build log will tell you, but these are the usual ones: missing or empty `name`/`description` in frontmatter; frontmatter `name` doesn't match the registry slug (warning — registry wins); registry entry missing `category` or using a status/stage outside the allowed values; the source path 404s (typo in the path, renamed folder, or the repo went private without a token).
+
+## If the tracker update does not arrive
+
+A missing tracker feed leaves the dashboard on saved library records. Keep the edit in the existing tracker and report the task name, intended value and observed public value to the maintainer through the authorized project channel. Do not create a second tracker or claim a new owner from a byline. The maintainer checks the approved feed, intended tab, parser result and deployment, then reads the task back publicly. The dashboard’s import notice and counts describe the build input; they do not certify the task.
+
+Finish with the checked public task and package, or a named pending state. Save the result and next owner in the [work record](https://blitzmetrics.com/meta-article-prompt/). A new user still needs to load the files, supply the required access and complete a checked first run before any optional schedule.

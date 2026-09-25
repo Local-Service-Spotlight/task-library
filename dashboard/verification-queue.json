@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-24T19:08:37+00:00",
+  "generatedAt": "2026-09-25T00:21:05+00:00",
   "definition": "Per-task standard gates derived from exact instruction reviews, explicit instruction-requirement checks, contributor status, article mapping/catalog holds, exact-revision article semantic reviews, task-attributed examples and the execution ledger. Unknown proof is never turned into a pass.",
   "stats": {
     "tasks": 276,
@@ -53,10 +53,10 @@
         "unknown": 266
       },
       "recordedExecution": {
-        "pass": 1,
+        "pass": 2,
         "unmet": 0,
         "hold": 0,
-        "unknown": 275
+        "unknown": 274
       },
       "acceptedExecution": {
         "pass": 0,
@@ -16843,24 +16843,57 @@
       "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=publish-skill-and-task-page#task-publish-skill-and-task-page",
       "nextAction": "The contributor status is needs-work; finish and review the guide.",
       "standardVerification": {
-        "instructionSourceSha256": "e1f44043d78b4f0354fb00b213107e461dddac2d5681029378d64ad57cd68a62",
+        "instructionSourceSha256": "018a076e1b85ea983a73295aa5abe3a56c8d5c6f3e6fdb703c849b8bb8bae9c9",
         "articleKey": "blitzmetrics.com/skill-publishing-standard",
         "gates": {
           "instructionRevisionReviewed": {
             "id": "instructionRevisionReviewed",
             "label": "Exact instruction revision reviewed",
             "state": "pass",
-            "reason": "Current source bytes match the review recorded 2026-09-06. Review scope and limits: Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate.",
-            "reviewedAt": "2026-09-06",
-            "reviewer": "Codex editorial review",
-            "sourceSha256": "e1f44043d78b4f0354fb00b213107e461dddac2d5681029378d64ad57cd68a62"
+            "reason": "Current source bytes match the review recorded 2026-09-25. Review scope and limits: Exact current skill: opening, recipe, evidence labels and handoff reviewed. Complete link review remains unknown. Tracker integration, first-user setup, article-wide certification and accepted execution are separate.",
+            "reviewedAt": "2026-09-25",
+            "reviewer": "Codex root and independent GPT-6 Luna setup/copy reviewer",
+            "sourceSha256": "018a076e1b85ea983a73295aa5abe3a56c8d5c6f3e6fdb703c849b8bb8bae9c9"
           },
           "instructionStandards": {
             "id": "instructionStandards",
             "label": "Instruction requirements checked",
             "state": "unknown",
-            "reason": "The current exact-byte review has no structured instruction-requirements checklist.",
-            "sourceSha256": "e1f44043d78b4f0354fb00b213107e461dddac2d5681029378d64ad57cd68a62"
+            "reason": "Current-revision instruction requirements are unknown: links.",
+            "reviewedAt": "2026-09-25",
+            "reviewer": "Codex root and independent GPT-6 Luna setup/copy reviewer",
+            "reviewScope": "Exact current skill: opening, recipe, evidence labels and handoff reviewed. Complete link review remains unknown. Tracker integration, first-user setup, article-wide certification and accepted execution are separate.",
+            "sourceSha256": "018a076e1b85ea983a73295aa5abe3a56c8d5c6f3e6fdb703c849b8bb8bae9c9",
+            "standards": {
+              "version": 1,
+              "checks": {
+                "opening": {
+                  "state": "pass",
+                  "reason": "Names publishing, the benefit of consistent instructions and the linked checked-recipe prerequisite.",
+                  "evidence": "Publish one clear task guide that your team can find and use. Keep its web page, skill file, and library entry in sync so no one follows old steps. Start with a checked task recipe, then use this guide to publish and check its copies."
+                },
+                "recipe": {
+                  "state": "pass",
+                  "reason": "Inputs, supported editor, authority, seven steps, import checks, public output and measurable comparison are explicit.",
+                  "evidence": "Steps3/6 separate saved sheet, imported feed and checked public fields. No implicit permission, access grant or schedule."
+                },
+                "links": {
+                  "state": "unknown",
+                  "reason": "Changed connections and recipe parent checked; complete destination review was outside this batch.",
+                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/tracker-setup-2026-09-25.md"
+                },
+                "evidence": {
+                  "state": "pass",
+                  "reason": "Fictional example is labeled and real execution evidence remains required.",
+                  "evidence": "The fictional stale-download example does not count as a client result; actual recipe revision, run state, source and next owner are required."
+                },
+                "handoff": {
+                  "state": "pass",
+                  "reason": "Post-stage task hands checked public/draft state and remaining gaps to task owner.",
+                  "evidence": "Content Factory context names Process inputs and Post release; activation and promotion are separate."
+                }
+              }
+            }
           },
           "contributorComplete": {
             "id": "contributorComplete",
@@ -16885,7 +16918,112 @@
             "id": "articleSemanticCertification",
             "label": "Article semantic certification",
             "state": "unknown",
-            "reason": "No exact-revision positive semantic review is recorded for this article."
+            "reason": "Current article semantic criteria are unknown: owner, links, sourceEvidence, visualAndLayout, publicationStandards, acceptanceResults.",
+            "semanticReview": {
+              "version": 1,
+              "taskSlug": "publish-skill-and-task-page",
+              "canonicalURL": "https://blitzmetrics.com/skill-publishing-standard/",
+              "sourceSha256": "7857ea9ce9ff959f8470dab5fd8455c5e406fd82a5edb086936793b584a0cf2b",
+              "representation": "wordpress-content-html",
+              "reviewedAt": "2026-09-25T00:13:40.817679Z",
+              "reviewer": "Codex root with independent GPT-6 Luna scoped wording review",
+              "criteria": {
+                "openingContext": {
+                  "state": "pass",
+                  "reason": "Scoped plain opening and linked recipe reviewed.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/tracker-setup-2026-09-25.md",
+                    "sha256:740a6591e8ed22cd7abc5c62cd93291c2a41657d65b56af1c05987d335a57b5e"
+                  ]
+                },
+                "roleScope": {
+                  "state": "pass",
+                  "reason": "Task page and matching skill publish the same reusable method.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/tracker-setup-2026-09-25.md",
+                    "sha256:740a6591e8ed22cd7abc5c62cd93291c2a41657d65b56af1c05987d335a57b5e"
+                  ]
+                },
+                "owner": {
+                  "state": "unknown",
+                  "reason": "A responsible upkeep owner is not established by this scoped review.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/tracker-setup-2026-09-25.md",
+                    "sha256:740a6591e8ed22cd7abc5c62cd93291c2a41657d65b56af1c05987d335a57b5e"
+                  ]
+                },
+                "steps": {
+                  "state": "pass",
+                  "reason": "Current publishing/permission/import steps and embedded method reconciled.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/tracker-setup-2026-09-25.md",
+                    "sha256:740a6591e8ed22cd7abc5c62cd93291c2a41657d65b56af1c05987d335a57b5e"
+                  ]
+                },
+                "links": {
+                  "state": "unknown",
+                  "reason": "Changed destinations reviewed; all article links not checked.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/tracker-setup-2026-09-25.md",
+                    "sha256:740a6591e8ed22cd7abc5c62cd93291c2a41657d65b56af1c05987d335a57b5e"
+                  ]
+                },
+                "sourceEvidence": {
+                  "state": "unknown",
+                  "reason": "Historical claims and linked worked examples not independently accepted.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/tracker-setup-2026-09-25.md",
+                    "sha256:740a6591e8ed22cd7abc5c62cd93291c2a41657d65b56af1c05987d335a57b5e"
+                  ]
+                },
+                "handoffContext": {
+                  "state": "pass",
+                  "reason": "Post-stage input/output and receiving task owner are explicit.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/tracker-setup-2026-09-25.md",
+                    "sha256:740a6591e8ed22cd7abc5c62cd93291c2a41657d65b56af1c05987d335a57b5e"
+                  ]
+                },
+                "visualAndLayout": {
+                  "state": "unknown",
+                  "reason": "Changed sections and lead visual inspected; full-page media/layout not certified.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/tracker-setup-2026-09-25.md",
+                    "sha256:740a6591e8ed22cd7abc5c62cd93291c2a41657d65b56af1c05987d335a57b5e"
+                  ]
+                },
+                "publicationStandards": {
+                  "state": "unknown",
+                  "reason": "Whole-page metadata, ownership, publication and SEO checks remain incomplete.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/tracker-setup-2026-09-25.md",
+                    "sha256:740a6591e8ed22cd7abc5c62cd93291c2a41657d65b56af1c05987d335a57b5e"
+                  ]
+                },
+                "acceptanceResults": {
+                  "state": "unknown",
+                  "reason": "No accepted task execution or first-user setup was established.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/tracker-setup-2026-09-25.md",
+                    "sha256:740a6591e8ed22cd7abc5c62cd93291c2a41657d65b56af1c05987d335a57b5e"
+                  ]
+                }
+              }
+            },
+            "revisionObservation": {
+              "version": 1,
+              "taskSlug": "publish-skill-and-task-page",
+              "canonicalURL": "https://blitzmetrics.com/skill-publishing-standard/",
+              "sourceSha256": "7857ea9ce9ff959f8470dab5fd8455c5e406fd82a5edb086936793b584a0cf2b",
+              "representation": "wordpress-content-html",
+              "observedAt": "2026-09-25T00:13:41.155932Z",
+              "observer": "Codex separate fresh source read after editorial review",
+              "state": "observed",
+              "reason": "Fresh authenticated GET matched exact reviewed content; publication and actual use are separate checks.",
+              "evidenceRefs": [
+                "sha256:dc9de2bf03ea8d5b91d24f0451f43178f955f497909d2607346408fe7b9032fb"
+              ]
+            }
           },
           "taskExampleEvidence": {
             "id": "taskExampleEvidence",
@@ -16896,8 +17034,12 @@
           "recordedExecution": {
             "id": "recordedExecution",
             "label": "Recorded real execution",
-            "state": "unknown",
-            "reason": "No execution ledger record names this task. Historical run frequency is unknown."
+            "state": "pass",
+            "reason": "1 distinct execution ID(s) name this task; outcomes remain separate.",
+            "executionIds": [
+              "tracker-setup-20260925-000216"
+            ],
+            "historyStatus": "partial"
           },
           "acceptedExecution": {
             "id": "acceptedExecution",
@@ -16924,7 +17066,6 @@
           "instructionStandards",
           "articleSemanticCertification",
           "taskExampleEvidence",
-          "recordedExecution",
           "acceptedExecution",
           "setupSuccess"
         ],
