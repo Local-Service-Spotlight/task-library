@@ -374,9 +374,9 @@
     },
     "publish-skill-and-task-page": {
       "source_sha256": "018a076e1b85ea983a73295aa5abe3a56c8d5c6f3e6fdb703c849b8bb8bae9c9",
-      "reviewed_at": "2026-09-25",
-      "reviewer": "Codex root and independent GPT-6 Luna setup/copy reviewer",
-      "scope": "Exact current skill: opening, recipe, evidence labels and handoff reviewed. Complete link review remains unknown. Tracker integration, first-user setup, article-wide certification and accepted execution are separate.",
+      "reviewed_at": "2026-09-26",
+      "reviewer": "Codex root; September25 independent setup/copy review retained; root completed destination adjudication",
+      "scope": "Exact current skill: all five instruction requirements pass. September26 review verifies all ten Markdown destinations and actual public task routing; prior four criteria reused on unchanged source. Tracker setup, full article certification, novice use and accepted execution remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/publisher-links-2026-09-26.md",
       "standards": {
         "version": 1,
         "checks": {
@@ -391,9 +391,9 @@
             "evidence": "Steps3/6 separate saved sheet, imported feed and checked public fields. No implicit permission, access grant or schedule."
           },
           "links": {
-            "state": "unknown",
-            "reason": "Changed connections and recipe parent checked; complete destination review was outside this batch.",
-            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/tracker-setup-2026-09-25.md"
+            "state": "pass",
+            "reason": "All ten destinations contain the relevant maintained method or task; actual public query routing selects both expected slugs, and prerequisite/contributor links point back to publishing.",
+            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/publisher-links-2026-09-26.md"
           },
           "evidence": {
             "state": "pass",
