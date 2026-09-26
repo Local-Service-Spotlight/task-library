@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-26T16:06:47+00:00",
+  "generatedAt": "2026-09-26T16:08:19+00:00",
   "definition": "Per-task standard gates derived from exact instruction reviews, explicit instruction-requirement checks, contributor status, article mapping/catalog holds, exact-revision article semantic reviews, task-attributed examples and the execution ledger. Unknown proof is never turned into a pass.",
   "stats": {
     "tasks": 276,
@@ -16918,7 +16918,7 @@
             "id": "articleSemanticCertification",
             "label": "Article semantic certification",
             "state": "unknown",
-            "reason": "The article revision observation is outside the 24-hour freshness window.",
+            "reason": "Current article semantic criteria are unknown: owner, links, sourceEvidence, visualAndLayout, publicationStandards, acceptanceResults.",
             "semanticReview": {
               "version": 1,
               "taskSlug": "publish-skill-and-task-page",
@@ -17016,12 +17016,12 @@
               "canonicalURL": "https://blitzmetrics.com/skill-publishing-standard/",
               "sourceSha256": "7857ea9ce9ff959f8470dab5fd8455c5e406fd82a5edb086936793b584a0cf2b",
               "representation": "wordpress-content-html",
-              "observedAt": "2026-09-25T00:13:41.155932Z",
-              "observer": "Codex separate fresh source read after editorial review",
+              "observedAt": "2026-09-26T16:03:57.919823Z",
+              "observer": "Codex fresh source read during September26 link review",
               "state": "observed",
-              "reason": "Fresh authenticated GET matched exact reviewed content; publication and actual use are separate checks.",
+              "reason": "Fresh authenticated source still matches the September25 reviewed article bytes; no new article-wide criterion or use claim.",
               "evidenceRefs": [
-                "sha256:dc9de2bf03ea8d5b91d24f0451f43178f955f497909d2607346408fe7b9032fb"
+                "sha256:e9802e8fb0eb5e24aeffcece80df8252b84594768145e57d4ef08bbed0ffc270"
               ]
             }
           },
