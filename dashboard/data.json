@@ -36,7 +36,7 @@
   "fullyVerifiedTasks": 0,
   "semanticHoldHubs": 3,
   "tasksWithHolds": 19,
-  "tasksWithUnmetGates": 217,
+  "tasksWithUnmetGates": 216,
   "tasksWithUnknownGates": 276,
   "gateCounts": {
    "instructionRevisionReviewed": {
@@ -46,10 +46,10 @@
     "unknown": 0
    },
    "instructionStandards": {
-    "pass": 3,
+    "pass": 4,
     "unmet": 0,
     "hold": 0,
-    "unknown": 273
+    "unknown": 272
    },
    "contributorComplete": {
     "pass": 125,
@@ -71,9 +71,9 @@
    },
    "articleSemanticCertification": {
     "pass": 0,
-    "unmet": 1,
+    "unmet": 0,
     "hold": 19,
-    "unknown": 256
+    "unknown": 257
    },
    "taskExampleEvidence": {
     "pass": 10,
@@ -101,7 +101,7 @@
    }
   }
  },
- "updated": "September 25, 2026",
+ "updated": "September 26, 2026",
  "factory": {
   "phases": [
    {
@@ -1715,7 +1715,7 @@
  ],
  "executionHistory": {
   "schemaVersion": 1,
-  "asOf": "2026-09-25T00:21:05.380228+00:00",
+  "asOf": "2026-09-26T16:08:56.719758+00:00",
   "countDefinition": "Distinct recorded execution IDs, separate from meta-article URLs. History is partial; absent history is unknown, not zero. The last-30-day count is a documented lower bound, not total task frequency.",
   "recordedExecutions": 9,
   "completedExecutions": 0,
@@ -2356,7 +2356,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 206,
+      "queuePosition": 205,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -2488,7 +2488,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 207,
+      "queuePosition": 206,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -2881,7 +2881,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 236,
+      "queuePosition": 235,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -3014,7 +3014,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 237,
+      "queuePosition": 236,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -4870,7 +4870,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 239,
+      "queuePosition": 238,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -5132,7 +5132,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 240,
+      "queuePosition": 239,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -5263,7 +5263,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 243,
+      "queuePosition": 242,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -5656,7 +5656,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 244,
+      "queuePosition": 243,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -6506,7 +6506,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 245,
+      "queuePosition": 244,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -6788,8 +6788,8 @@
        "articleSemanticCertification": {
         "id": "articleSemanticCertification",
         "label": "Article semantic certification",
-        "state": "unmet",
-        "reason": "Current article semantic criteria are unmet: owner.",
+        "state": "unknown",
+        "reason": "The article revision observation is outside the 24-hour freshness window.",
         "semanticReview": {
          "version": 1,
          "taskSlug": "write-meta-article-documenting-agent-work",
@@ -6987,20 +6987,19 @@
         "schedulingCertified": false
        }
       },
-      "unmetStandardGates": [
-       "articleSemanticCertification"
-      ],
+      "unmetStandardGates": [],
       "heldStandardGates": [],
       "unknownStandardGates": [
+       "articleSemanticCertification",
        "recordedExecution",
        "acceptedExecution",
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 194,
-      "priority": "P1",
-      "priorityReason": "Known standard gap",
-      "nextAction": "Current article semantic criteria are unmet: owner."
+      "queuePosition": 245,
+      "priority": "P2",
+      "priorityReason": "Importance 5; missing proof remains",
+      "nextAction": "The article revision observation is outside the 24-hour freshness window."
      }
     },
     {
@@ -8428,7 +8427,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 241,
+      "queuePosition": 240,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -9489,7 +9488,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 195,
+      "queuePosition": 194,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -14527,7 +14526,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 224,
+      "queuePosition": 223,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -17460,7 +17459,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 198,
+      "queuePosition": 197,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -17725,7 +17724,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 199,
+      "queuePosition": 198,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -17990,7 +17989,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 200,
+      "queuePosition": 199,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -18122,7 +18121,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 201,
+      "queuePosition": 200,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -18254,7 +18253,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 202,
+      "queuePosition": 201,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -18386,7 +18385,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 203,
+      "queuePosition": 202,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -18518,7 +18517,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 204,
+      "queuePosition": 203,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -18650,7 +18649,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 205,
+      "queuePosition": 204,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -18782,7 +18781,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 209,
+      "queuePosition": 208,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -18914,7 +18913,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 210,
+      "queuePosition": 209,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -19179,7 +19178,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 215,
+      "queuePosition": 214,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -19311,7 +19310,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 216,
+      "queuePosition": 215,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -19443,7 +19442,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 217,
+      "queuePosition": 216,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -19575,7 +19574,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 218,
+      "queuePosition": 217,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -19707,7 +19706,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 219,
+      "queuePosition": 218,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -19839,7 +19838,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 220,
+      "queuePosition": 219,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -19971,7 +19970,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 221,
+      "queuePosition": 220,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -20103,7 +20102,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 222,
+      "queuePosition": 221,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -20235,7 +20234,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 223,
+      "queuePosition": 222,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -20499,7 +20498,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 225,
+      "queuePosition": 224,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -20763,7 +20762,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 226,
+      "queuePosition": 225,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -21159,7 +21158,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 227,
+      "queuePosition": 226,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -21424,7 +21423,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 228,
+      "queuePosition": 227,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -21556,7 +21555,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 229,
+      "queuePosition": 228,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -21688,7 +21687,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 230,
+      "queuePosition": 229,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -21820,7 +21819,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 231,
+      "queuePosition": 230,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -22084,7 +22083,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 232,
+      "queuePosition": 231,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -22760,7 +22759,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 208,
+      "queuePosition": 207,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -22892,7 +22891,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 211,
+      "queuePosition": 210,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -23293,7 +23292,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 212,
+      "queuePosition": 211,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -23425,7 +23424,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 213,
+      "queuePosition": 212,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -23953,7 +23952,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 242,
+      "queuePosition": 241,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -30766,7 +30765,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 196,
+      "queuePosition": 195,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -30898,7 +30897,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 214,
+      "queuePosition": 213,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -31294,7 +31293,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 197,
+      "queuePosition": 196,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -32097,7 +32096,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 238,
+      "queuePosition": 237,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -34137,7 +34136,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 233,
+      "queuePosition": 232,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -34668,7 +34667,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 234,
+      "queuePosition": 233,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -36662,7 +36661,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 235,
+      "queuePosition": 234,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -37359,9 +37358,9 @@
      "why": "supporting",
      "instructionReview": {
       "source_sha256": "018a076e1b85ea983a73295aa5abe3a56c8d5c6f3e6fdb703c849b8bb8bae9c9",
-      "reviewed_at": "2026-09-25",
-      "reviewer": "Codex root and independent GPT-6 Luna setup/copy reviewer",
-      "scope": "Exact current skill: opening, recipe, evidence labels and handoff reviewed. Complete link review remains unknown. Tracker integration, first-user setup, article-wide certification and accepted execution are separate.",
+      "reviewed_at": "2026-09-26",
+      "reviewer": "Codex root; September25 independent setup/copy review retained; root completed destination adjudication",
+      "scope": "Exact current skill: all five instruction requirements pass. September26 review verifies all ten Markdown destinations and actual public task routing; prior four criteria reused on unchanged source. Tracker setup, full article certification, novice use and accepted execution remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/publisher-links-2026-09-26.md",
       "standards": {
        "version": 1,
        "checks": {
@@ -37376,9 +37375,9 @@
          "evidence": "Steps3/6 separate saved sheet, imported feed and checked public fields. No implicit permission, access grant or schedule."
         },
         "links": {
-         "state": "unknown",
-         "reason": "Changed connections and recipe parent checked; complete destination review was outside this batch.",
-         "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/tracker-setup-2026-09-25.md"
+         "state": "pass",
+         "reason": "All ten destinations contain the relevant maintained method or task; actual public query routing selects both expected slugs, and prerequisite/contributor links point back to publishing.",
+         "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/publisher-links-2026-09-26.md"
         },
         "evidence": {
          "state": "pass",
@@ -37426,19 +37425,19 @@
         "id": "instructionRevisionReviewed",
         "label": "Exact instruction revision reviewed",
         "state": "pass",
-        "reason": "Current source bytes match the review recorded 2026-09-25. Review scope and limits: Exact current skill: opening, recipe, evidence labels and handoff reviewed. Complete link review remains unknown. Tracker integration, first-user setup, article-wide certification and accepted execution are separate.",
-        "reviewedAt": "2026-09-25",
-        "reviewer": "Codex root and independent GPT-6 Luna setup/copy reviewer",
+        "reason": "Current source bytes match the review recorded 2026-09-26. Review scope and limits: Exact current skill: all five instruction requirements pass. September26 review verifies all ten Markdown destinations and actual public task routing; prior four criteria reused on unchanged source. Tracker setup, full article certification, novice use and accepted execution remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/publisher-links-2026-09-26.md",
+        "reviewedAt": "2026-09-26",
+        "reviewer": "Codex root; September25 independent setup/copy review retained; root completed destination adjudication",
         "sourceSha256": "018a076e1b85ea983a73295aa5abe3a56c8d5c6f3e6fdb703c849b8bb8bae9c9"
        },
        "instructionStandards": {
         "id": "instructionStandards",
         "label": "Instruction requirements checked",
-        "state": "unknown",
-        "reason": "Current-revision instruction requirements are unknown: links.",
-        "reviewedAt": "2026-09-25",
-        "reviewer": "Codex root and independent GPT-6 Luna setup/copy reviewer",
-        "reviewScope": "Exact current skill: opening, recipe, evidence labels and handoff reviewed. Complete link review remains unknown. Tracker integration, first-user setup, article-wide certification and accepted execution are separate.",
+        "state": "pass",
+        "reason": "All five instruction requirements have explicit passing checks for the current source revision.",
+        "reviewedAt": "2026-09-26",
+        "reviewer": "Codex root; September25 independent setup/copy review retained; root completed destination adjudication",
+        "reviewScope": "Exact current skill: all five instruction requirements pass. September26 review verifies all ten Markdown destinations and actual public task routing; prior four criteria reused on unchanged source. Tracker setup, full article certification, novice use and accepted execution remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/publisher-links-2026-09-26.md",
         "sourceSha256": "018a076e1b85ea983a73295aa5abe3a56c8d5c6f3e6fdb703c849b8bb8bae9c9",
         "standards": {
          "version": 1,
@@ -37454,9 +37453,9 @@
            "evidence": "Steps3/6 separate saved sheet, imported feed and checked public fields. No implicit permission, access grant or schedule."
           },
           "links": {
-           "state": "unknown",
-           "reason": "Changed connections and recipe parent checked; complete destination review was outside this batch.",
-           "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/tracker-setup-2026-09-25.md"
+           "state": "pass",
+           "reason": "All ten destinations contain the relevant maintained method or task; actual public query routing selects both expected slugs, and prerequisite/contributor links point back to publishing.",
+           "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/publisher-links-2026-09-26.md"
           },
           "evidence": {
            "state": "pass",
@@ -37592,12 +37591,12 @@
          "canonicalURL": "https://blitzmetrics.com/skill-publishing-standard/",
          "sourceSha256": "7857ea9ce9ff959f8470dab5fd8455c5e406fd82a5edb086936793b584a0cf2b",
          "representation": "wordpress-content-html",
-         "observedAt": "2026-09-25T00:13:41.155932Z",
-         "observer": "Codex separate fresh source read after editorial review",
+         "observedAt": "2026-09-26T16:03:57.919823Z",
+         "observer": "Codex fresh source read during September26 link review",
          "state": "observed",
-         "reason": "Fresh authenticated GET matched exact reviewed content; publication and actual use are separate checks.",
+         "reason": "Fresh authenticated source still matches the September25 reviewed article bytes; no new article-wide criterion or use claim.",
          "evidenceRefs": [
-          "sha256:dc9de2bf03ea8d5b91d24f0451f43178f955f497909d2607346408fe7b9032fb"
+          "sha256:e9802e8fb0eb5e24aeffcece80df8252b84594768145e57d4ef08bbed0ffc270"
          ]
         }
        },
@@ -37639,7 +37638,6 @@
       ],
       "heldStandardGates": [],
       "unknownStandardGates": [
-       "instructionStandards",
        "articleSemanticCertification",
        "taskExampleEvidence",
        "acceptedExecution",
