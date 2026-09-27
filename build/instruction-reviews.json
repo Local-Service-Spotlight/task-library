@@ -493,10 +493,10 @@
       "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
     },
     "validate-cross-reference-integrity-across-articles": {
-      "source_sha256": "927b1a79dbfd50bba433d5b77fd3184f22ac7ff0a634b124e915a1ff934e63fd",
+      "source_sha256": "46e041102c8b2de0e0b76fcdb61964d6c9a699b944c53b2e36865434b3bd4ba4",
       "reviewed_at": "2026-09-27",
       "reviewer": "Codex root with independent GPT-6 Sol source review",
-      "scope": "All five written instruction checks reviewed; candidate publication checks remain separate. Contributor needs-work and whole task evidence gates are preserved. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/cross-reference-guide-2026-09-27.md",
+      "scope": "All five written instruction checks reviewed for the exact revision, including missing concept links, LSS naming and former-client examples. Whole-task gates stay separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/lss-editorial-correction-2026-09-27.md",
       "standards": {
         "version": 1,
         "checks": {
@@ -507,13 +507,13 @@
           },
           "recipe": {
             "state": "pass",
-            "reason": "Scoped sources, seven ordered steps, checked outputs and explicit missing-access treatment.",
+            "reason": "Scoped sources, eight ordered steps, concept coverage, checked outputs and explicit missing-access treatment.",
             "evidence": "Working table records source revision, surrounding claim, target/fragment, direction, semantic result and coverage limits."
           },
           "links": {
             "state": "pass",
-            "reason": "Owned guide relationships and the downstream result-recording task were read; corrected misleading audit label.",
-            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/cross-reference-guide-2026-09-27.md"
+            "reason": "Existing maintained SEO Tree and related guides read; absent-link coverage and former-client exception are explicit.",
+            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/lss-editorial-correction-2026-09-27.md"
           },
           "evidence": {
             "state": "pass",

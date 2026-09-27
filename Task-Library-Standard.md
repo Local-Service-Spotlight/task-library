@@ -1,10 +1,10 @@
-# The BlitzMetrics Task Library Standard
+# The LSS Task Library Standard
 Use this standard to make work clear for your team. Write the steps, show a useful example, and check the result. Link each guide to its [real run records](EXECUTION-LEDGER.md) so the next person can learn from them.
 
-A [definitive article](https://blitzmetrics.com/definitive-article-guide/) is the main recipe. A skill file holds its steps for an AI app. A [meta article](https://blitzmetrics.com/meta-article-prompt/) records one real run and its proof.
+A [definitive article](https://blitzmetrics.com/definitive-article-guide/) is the main guide for its topic. A task recipe gives the steps for a job. A skill file holds its steps for an AI app. A [meta article](https://blitzmetrics.com/meta-article-prompt/) records one real run and its proof.
 
-**Source of truth:** [How to Create a Definitive Article for Any BlitzMetrics Concept](https://blitzmetrics.com/definitive-article-guide/) and the [Task Library Dashboard](https://blitzmetrics.com/task-library-dashboard/). This standard reflects the task-recipe and per-execution feedback requirements reviewed September 2026.
-**Purpose:** one standard that writers and AI agents follow to bring every registered task up to standard — each one documented, downloadable as a skill, and wired into the SEO Tree. Counts are always derived from the registry/build; never type a task or article count into copy.
+**Source of truth:** [Definitive article guide](https://blitzmetrics.com/definitive-article-guide/) and the [Task Library Dashboard](https://blitzmetrics.com/task-library-dashboard/). This standard reflects the task-recipe and per-execution feedback requirements reviewed September 2026.
+**Purpose:** one standard that writers and AI agents follow to bring every registered task up to standard — each one documented, downloadable as a skill, and connected through the [SEO Tree](https://blitzmetrics.com/seo-tree/). Counts are always derived from the registry/build; never type a task or article count into copy.
 
 ---
 
@@ -67,14 +67,18 @@ A page is only "definitive" if it meets **all nine**. Miss one and it's a draft 
 ---
 
 ## Entity Destination Rules
-Explain unfamiliar language and apply this decision tree to the **first useful mention only**, with descriptive 3–6 word anchor text. Do not link the same entity repeatedly in one article.
+Explain unfamiliar language and apply this decision tree to the **first useful mention only**, with descriptive 3–6 word anchor text. Avoid repeating the same link; repeat it only when a later section needs a useful pointer.
 
 1. **Person with a verified personal-brand site** → that person's own site. Example: Dennis Yu points to `dennisyu.com`, not a WordPress author archive.
-2. **Company or organization in our network** → its verified official site. For an outside entity in explanatory copy, use our maintained guide when available; preserve direct primary-proof and required-action links at their actual step.
-3. **Tool, platform, or method with a BlitzMetrics training article** → the internal hands-on article that teaches the task. The official product site may be linked separately at the execution step where the reader must open the tool; it does not replace our training link in explanatory copy.
+2. **Company or organization in our current network** → its verified official site after checking the relationship status. Ardmor and Pure Plumbing are former clients: keep useful, accurate historical examples as plain text; do not link to those companies or imply they are current clients. For an outside entity in explanatory copy, use our maintained guide when available; preserve direct primary-proof and required-action links at their actual step.
+3. **Tool, platform, or method with an LSS training article** → the internal hands-on article that teaches the task. The official product site may be linked separately at the execution step where the reader must open the tool; it does not replace our training link in explanatory copy.
 4. **Named entity without a verified home or relevant internal article** → plain text until verified. Never guess a domain, personal site, or destination.
 
-These links exist to help the reader identify the entity and complete the task. They are not decorative SEO links.
+These links exist to help the reader identify the entity and complete the task. Check major concepts even when the draft has no link to them yet. Search the Task Library and maintained owned guides first. Explain the term in a short phrase and link the first useful mention to the guide that actually teaches it. Follow the [SEO Tree](https://blitzmetrics.com/seo-tree/): supporting pages point to their main guide; the main guide points back where a subtask or example helps readers. Do not add reciprocal links that have no reader benefit.
+
+Create a new concept article only when it serves a distinct reader need, has enough evidence and useful instruction to stand on its own, and has a clear parent and next step. If it would be thin or duplicate an existing guide, improve that guide or define the term in place. Record a missing-guide gap; never guess a URL or mark an unavailable destination checked.
+
+Name the current organization **Local Service Spotlight (LSS)**. An article hosted at `blitzmetrics.com` is still LSS guidance; the domain does not determine the company name. Preserve stable URLs, exact historical quotations and technical identifiers. This naming rule does not authorize a domain migration.
 
 ---
 
@@ -173,7 +177,7 @@ status: <complete | needs-work | gap>
 **Rules for guide authors:**
 - The `name` slug is permanent (installs/bundles depend on it). Match the task slug.
 - `category` must exactly match one name in `build/categories.json`; `stage` must be one of `Produce | Process | Post | Promote | —`. Do not create an alias because a WordPress category or tag is spelled differently—fix the taxonomy drift instead.
-- Steps must mirror the task's real SOP — use the definitive article's documented process, Dennis's frameworks (GCT, MAA, the 4 P's, SEO Tree, entity-linking decision tree, Dollar a Day mechanics), and the task description. No invented tools or fabricated URLs — reference only the task's real definitive-article short URL and known BlitzMetrics concepts.
+- Steps must mirror the task's real SOP — use the definitive article's documented process, Dennis's frameworks (GCT, MAA, the 4 P's, SEO Tree, entity-linking decision tree, Dollar a Day mechanics), and the task description. No invented tools or fabricated URLs — reference only the task's real definitive-article short URL and known LSS concepts.
 - Every skill.md must carry a **Definition of done** checklist (the QA layer) and at least a placeholder **Example** so the meta-article loop has a slot to fill.
 - For **gap** tasks (no article yet), set `definitive_article: GAP — to be written`, write the SOP from the description + method, and flag the missing hub.
 
