@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "asOf": "2026-09-27T15:50:25.785654+00:00",
+  "asOf": "2026-09-27T16:17:03.628942+00:00",
   "countDefinition": "Distinct recorded execution IDs, separate from meta-article URLs. History is partial; absent history is unknown, not zero. The last-30-day count is a documented lower bound, not total task frequency.",
   "recordedExecutions": 10,
-  "completedExecutions": 0,
+  "completedExecutions": 1,
   "partialExecutions": 9,
   "executions": [
     {
@@ -249,19 +249,74 @@
         "publish-skill-and-task-page"
       ],
       "startedAt": "2026-09-27T13:44:12.475179+00:00",
-      "status": "running",
-      "result": "Preparing matched publishing instructions, canonical page and library release; verification pending.",
+      "status": "completed",
+      "result": "Published matching maintained skill, canonical task page and library entry. Anonymous article and both download guides agree; seven deployed archive checks passed. Existing maintenance worker receives the recorded gaps and next queue step. Contributor instructions are complete; owner, novice setup, full article certification and a later accepted run of the revised recipe remain unknown.",
       "recipeRevisions": {
         "publish-skill-and-task-page": {
           "articleUrl": "https://blitzmetrics.com/skill-publishing-standard/",
           "sourceSha256": "7857ea9ce9ff959f8470dab5fd8455c5e406fd82a5edb086936793b584a0cf2b"
         }
       },
-      "evidenceUrls": [],
+      "finishedAt": "2026-09-27T16:14:01.977704+00:00",
+      "evidenceUrls": [
+        "https://github.com/Local-Service-Spotlight/task-library/pull/41",
+        "https://github.com/Local-Service-Spotlight/task-library/blob/914e8219bc260c15ccebe4a3402c3692f2dee80d/reviews/publisher-completion-2026-09-27.md"
+      ],
       "privateEvidenceRecorded": true,
       "metaArticle": {
-        "status": "draft"
-      }
+        "status": "published",
+        "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#publisher-completion-20260927-134412"
+      },
+      "acceptanceReviews": [
+        {
+          "version": 1,
+          "reviewId": "publisher-completion-20260927-134412-acceptance-1",
+          "taskSlug": "publish-skill-and-task-page",
+          "canonicalURL": "https://blitzmetrics.com/skill-publishing-standard/",
+          "recipeSourceSha256": "7857ea9ce9ff959f8470dab5fd8455c5e406fd82a5edb086936793b584a0cf2b",
+          "representation": "wordpress-content-html",
+          "instructionSourceSha256": "609039d529572a9d02b5e2b5847469d5fe7e6138a55c1ebd3c70a716c3a1093a",
+          "reviewedAt": "2026-09-27T16:15:22Z",
+          "reviewer": "Codex GPT-6 Sol independent source reviewer",
+          "nextHandoff": "Existing Task Library maintenance worker uses the current verification queue and recorded run to resolve the owner, tracker and first-user gaps. This review covers the scoped repair under its old starting recipe only; a later use of the new recipe needs its own execution.",
+          "criteria": {
+            "result": {
+              "state": "pass",
+              "expectedResult": "Publish one matching maintained skill, canonical task page and Task Library entry; make the complete guide available in the public library downloads.",
+              "observedResult": "PR41 merged. The saved and anonymous article each embed the exact SHA609039d5 maintained skill. The public task entry is complete and maps to this page. All and ready ZIPs contain full generated guides plus onboarding; seven deployed archive checks passed.",
+              "sourceUrl": null,
+              "sourcePrivateEvidenceRecorded": true,
+              "evidenceUrls": [
+                "https://github.com/Local-Service-Spotlight/task-library/pull/41",
+                "https://github.com/Local-Service-Spotlight/task-library/blob/111bca7fee201644aae9b7f7427ac4d6628c2fa6/reviews/publisher-completion-2026-09-27.md"
+              ],
+              "privateEvidenceRecorded": true
+            },
+            "publicReadback": {
+              "state": "pass",
+              "expectedResult": "Read back the saved and anonymous task page and public meta record; verify the lead diagram on desktop and phone.",
+              "observedResult": "The task article returned 200 with exact embedded source text and equal media. The final meta page returned 200 with its whole new section and equal media at 16:06:17 UTC. Corrected phone and desktop captures show readable diagrams and opening text.",
+              "sourceUrl": "https://blitzmetrics.com/skill-publishing-standard/",
+              "sourcePrivateEvidenceRecorded": false,
+              "evidenceUrls": [
+                "https://blitzmetrics.com/making-task-guides-easier-to-use/"
+              ],
+              "privateEvidenceRecorded": true
+            },
+            "handoff": {
+              "state": "pass",
+              "expectedResult": "Record the scoped result and remaining owner, tracker and first-user gaps for the existing Task Library maintenance worker's next queue step.",
+              "observedResult": "The published meta section and completed run record name the existing maintenance worker, current verification queue and open owner, tracker and novice gates. No separate person or new schedule was contacted or created.",
+              "sourceUrl": "https://blitzmetrics.com/skill-publishing-standard/",
+              "sourcePrivateEvidenceRecorded": false,
+              "evidenceUrls": [
+                "https://blitzmetrics.com/making-task-guides-easier-to-use/"
+              ],
+              "privateEvidenceRecorded": true
+            }
+          }
+        }
+      ]
     }
   ]
 }
