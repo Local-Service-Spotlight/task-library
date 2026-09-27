@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-27T19:36:09+00:00",
+  "generatedAt": "2026-09-27T21:14:33+00:00",
   "definition": "Per-task standard gates derived from exact instruction reviews, explicit instruction-requirement checks, contributor status, article mapping/catalog holds, exact-revision article semantic reviews, task-attributed examples and the execution ledger. Unknown proof is never turned into a pass.",
   "stats": {
     "tasks": 276,
@@ -17893,17 +17893,17 @@
       "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=validate-cross-reference-integrity-across-articles#task-validate-cross-reference-integrity-across-articles",
       "nextAction": "The contributor status is needs-work; finish and review the guide.",
       "standardVerification": {
-        "instructionSourceSha256": "46e041102c8b2de0e0b76fcdb61964d6c9a699b944c53b2e36865434b3bd4ba4",
+        "instructionSourceSha256": "8d6c630a81443874a72bbbb3f606d20c61a849f6037df92822d3af6b12acc523",
         "articleKey": "blitzmetrics.com/knowledge-system-maintenance",
         "gates": {
           "instructionRevisionReviewed": {
             "id": "instructionRevisionReviewed",
             "label": "Exact instruction revision reviewed",
             "state": "pass",
-            "reason": "Current source bytes match the review recorded 2026-09-27. Review scope and limits: All five written instruction checks reviewed for the exact revision, including missing concept links, LSS naming and former-client examples. Whole-task gates stay separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/lss-editorial-correction-2026-09-27.md",
+            "reason": "Current source bytes match the review recorded 2026-09-27. Review scope and limits: Exact-revision written instruction review after removing private account information from public instructions; whole-task gates remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/public-editorial-boundary-2026-09-27.md",
             "reviewedAt": "2026-09-27",
             "reviewer": "Codex root with independent GPT-6 Sol source review",
-            "sourceSha256": "46e041102c8b2de0e0b76fcdb61964d6c9a699b944c53b2e36865434b3bd4ba4"
+            "sourceSha256": "8d6c630a81443874a72bbbb3f606d20c61a849f6037df92822d3af6b12acc523"
           },
           "instructionStandards": {
             "id": "instructionStandards",
@@ -17912,8 +17912,8 @@
             "reason": "All five instruction requirements have explicit passing checks for the current source revision.",
             "reviewedAt": "2026-09-27",
             "reviewer": "Codex root with independent GPT-6 Sol source review",
-            "reviewScope": "All five written instruction checks reviewed for the exact revision, including missing concept links, LSS naming and former-client examples. Whole-task gates stay separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/lss-editorial-correction-2026-09-27.md",
-            "sourceSha256": "46e041102c8b2de0e0b76fcdb61964d6c9a699b944c53b2e36865434b3bd4ba4",
+            "reviewScope": "Exact-revision written instruction review after removing private account information from public instructions; whole-task gates remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/public-editorial-boundary-2026-09-27.md",
+            "sourceSha256": "8d6c630a81443874a72bbbb3f606d20c61a849f6037df92822d3af6b12acc523",
             "standards": {
               "version": 1,
               "checks": {
@@ -17929,8 +17929,8 @@
                 },
                 "links": {
                   "state": "pass",
-                  "reason": "Existing maintained SEO Tree and related guides read; absent-link coverage and former-client exception are explicit.",
-                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/lss-editorial-correction-2026-09-27.md"
+                  "reason": "Maintained concept guides and next task are linked; public example/link choices do not disclose private account information.",
+                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/public-editorial-boundary-2026-09-27.md"
                 },
                 "evidence": {
                   "state": "pass",
@@ -24774,11 +24774,12 @@
             "id": "recordedExecution",
             "label": "Recorded real execution",
             "state": "pass",
-            "reason": "4 distinct execution ID(s) name this task; outcomes remain separate.",
+            "reason": "5 distinct execution ID(s) name this task; outcomes remain separate.",
             "executionIds": [
               "crossref-release-20260927-162402",
               "lss-editorial-correction-20260927-190846",
               "publisher-completion-20260927-134412",
+              "roster-public-boundary-20260927-210848",
               "tracker-setup-20260925-000216"
             ],
             "historyStatus": "partial"
