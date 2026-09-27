@@ -854,20 +854,45 @@
         }
       },
       "startedAt": "2026-09-27T21:08:48Z",
-      "status": "running",
-      "result": "Correct public article, downloadable instruction and run-record copies that included private account information; strengthen shared source-access and editorial boundary checks. Publication and private preflight verification are in progress. No client task execution or whole-library certification is claimed.",
+      "status": "partial",
+      "result": "Corrected identified public article, skill, review, run-data and ZIP disclosures; installed and tested private canonical roster access and scope checks. Replaced the weekly guide’s misleading public-roster authority and neutralized its fictional scope example. The main static LSS Article Guidelines amendment is prepared but not deployed: maintained source and a supported existing-route release remain unresolved. Other agents must prove their own access. Maintenance owns that next release; no whole-library certification is claimed.",
       "evidence": [
         {
           "visibility": "public",
           "url": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/public-editorial-boundary-2026-09-27.md"
+        },
+        {
+          "visibility": "public",
+          "url": "https://github.com/Local-Service-Spotlight/task-library/pull/47"
+        },
+        {
+          "visibility": "private",
+          "sha256": "f5d8272cb71781e6d059d751d82c25f3e420e126d493866feb07414d4f8ad443"
+        },
+        {
+          "visibility": "private",
+          "sha256": "5490b85f363193820ccaf85a2080e0edb72b38d86d79c61cc827471264420cd4"
+        },
+        {
+          "visibility": "private",
+          "sha256": "280f4fca078f28416233f0a29f58f3c3bc7a6de7741cd5f21126353a01089f8c"
+        },
+        {
+          "visibility": "private",
+          "sha256": "9756aa130149fecbdf5c841c6901a57545464b535be553e8346cdc8ae87f0522"
+        },
+        {
+          "visibility": "private",
+          "sha256": "94327afa762ff7c40e783ee6d1306f36bf7bf77507fa002c006825866014f932"
         }
       ],
       "metaArticle": {
-        "status": "draft",
-        "draftSha256": "135fdbc656ddff9cd8c19cfd6481af5843f28989243d3da55088a1b196ac1abe"
+        "status": "published",
+        "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#roster-public-boundary-20260927-210848"
       },
       "recordedAt": "2026-09-27T21:08:48Z",
-      "updatedAt": "2026-09-27T21:08:48Z"
+      "updatedAt": "2026-09-27T21:32:56.853190+00:00",
+      "finishedAt": "2026-09-27T21:32:56.853190+00:00"
     }
   ]
 }

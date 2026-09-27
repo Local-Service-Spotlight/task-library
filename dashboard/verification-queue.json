@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-27T21:14:33+00:00",
+  "generatedAt": "2026-09-27T21:33:30+00:00",
   "definition": "Per-task standard gates derived from exact instruction reviews, explicit instruction-requirement checks, contributor status, article mapping/catalog holds, exact-revision article semantic reviews, task-attributed examples and the execution ledger. Unknown proof is never turned into a pass.",
   "stats": {
     "tasks": 276,
@@ -14533,24 +14533,24 @@
       "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=run-weekly-client-seo-audits#task-run-weekly-client-seo-audits",
       "nextAction": "The contributor status is needs-work; finish and review the guide.",
       "standardVerification": {
-        "instructionSourceSha256": "6dcc68897fca14f3b2fc8295398fef4aaf23372ec81ea340f0d2a512cc1ae250",
+        "instructionSourceSha256": "dce51c39716310660d0ea23ba8b68ffcb51926a6b817a48487edcbb6bee4f640",
         "articleKey": "blitzmetrics.com/how-to-run-weekly-ai-agent-seo-audits-across-all-your-clients",
         "gates": {
           "instructionRevisionReviewed": {
             "id": "instructionRevisionReviewed",
             "label": "Exact instruction revision reviewed",
             "state": "pass",
-            "reason": "Current source bytes match the review recorded 2026-09-06. Review scope and limits: Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate.",
-            "reviewedAt": "2026-09-06",
-            "reviewer": "Codex editorial review",
-            "sourceSha256": "6dcc68897fca14f3b2fc8295398fef4aaf23372ec81ea340f0d2a512cc1ae250"
+            "reason": "Current source bytes match the review recorded 2026-09-27. Review scope and limits: Read the full revised instruction. Corrected private roster authority and neutral fictional example; public roster pages do not establish access. No new five-check certification, real execution, scheduler or article pass is inferred.",
+            "reviewedAt": "2026-09-27",
+            "reviewer": "Codex root targeted privacy and roster-source correction",
+            "sourceSha256": "dce51c39716310660d0ea23ba8b68ffcb51926a6b817a48487edcbb6bee4f640"
           },
           "instructionStandards": {
             "id": "instructionStandards",
             "label": "Instruction requirements checked",
             "state": "unknown",
             "reason": "The current exact-byte review has no structured instruction-requirements checklist.",
-            "sourceSha256": "6dcc68897fca14f3b2fc8295398fef4aaf23372ec81ea340f0d2a512cc1ae250"
+            "sourceSha256": "dce51c39716310660d0ea23ba8b68ffcb51926a6b817a48487edcbb6bee4f640"
           },
           "contributorComplete": {
             "id": "contributorComplete",
