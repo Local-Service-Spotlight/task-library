@@ -645,20 +645,94 @@
         }
       },
       "startedAt": "2026-09-27T13:44:12.475179+00:00",
-      "status": "running",
-      "result": "Preparing matched publishing instructions, canonical page and library release; verification pending.",
+      "status": "completed",
+      "result": "Published matching maintained skill, canonical task page and library entry. Anonymous article and both download guides agree; seven deployed archive checks passed. Existing maintenance worker receives the recorded gaps and next queue step. Contributor instructions are complete; owner, novice setup, full article certification and a later accepted run of the revised recipe remain unknown.",
       "evidence": [
         {
+          "visibility": "public",
+          "url": "https://github.com/Local-Service-Spotlight/task-library/pull/41"
+        },
+        {
+          "visibility": "public",
+          "url": "https://github.com/Local-Service-Spotlight/task-library/blob/914e8219bc260c15ccebe4a3402c3692f2dee80d/reviews/publisher-completion-2026-09-27.md"
+        },
+        {
           "visibility": "private",
-          "sha256": "75e68977333253e6437a608d1a96652a22adc3624d1f240b5a13c692baeef7fd"
+          "sha256": "924ecdc9753920cb5e7a87a3b3c2b915ef8462b01988d2fff02c3375ec1238b9"
+        },
+        {
+          "visibility": "private",
+          "sha256": "68e7eb314bcfa59cfd24547e9949ec7855220bced4ac65d8d19f73abe6a82a62"
+        },
+        {
+          "visibility": "private",
+          "sha256": "6287064848f4929e222f88b49af380b1515fd9f2f4aa860707f82297bd37ff2c"
+        },
+        {
+          "visibility": "private",
+          "sha256": "32716110b2cd2eeca2825979d30dc8b51f97ef3f66a327c6221caced2759d3c6"
+        },
+        {
+          "visibility": "private",
+          "sha256": "df136986534986b580a4e2669e5b6827b33eae31c296d5d85f6192ad836138c1"
         }
       ],
       "metaArticle": {
-        "status": "draft",
-        "draftSha256": "280eb6e7455e51d718f9c61fa76add1ac3961d84b92ec79fc5c0558e48f326ee"
+        "status": "published",
+        "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#publisher-completion-20260927-134412"
       },
       "recordedAt": "2026-09-27T13:45:37.219068+00:00",
-      "updatedAt": "2026-09-27T13:45:37.219068+00:00"
+      "updatedAt": "2026-09-27T16:16:57.844571+00:00",
+      "finishedAt": "2026-09-27T16:14:01.977704+00:00",
+      "acceptanceReviews": [
+        {
+          "version": 1,
+          "reviewId": "publisher-completion-20260927-134412-acceptance-1",
+          "taskSlug": "publish-skill-and-task-page",
+          "canonicalURL": "https://blitzmetrics.com/skill-publishing-standard/",
+          "recipeSourceSha256": "7857ea9ce9ff959f8470dab5fd8455c5e406fd82a5edb086936793b584a0cf2b",
+          "representation": "wordpress-content-html",
+          "instructionSourceSha256": "609039d529572a9d02b5e2b5847469d5fe7e6138a55c1ebd3c70a716c3a1093a",
+          "reviewedAt": "2026-09-27T16:15:22Z",
+          "reviewer": "Codex GPT-6 Sol independent source reviewer",
+          "executor": "Codex root",
+          "criteria": {
+            "result": {
+              "state": "pass",
+              "expectedResult": "Publish one matching maintained skill, canonical task page and Task Library entry; make the complete guide available in the public library downloads.",
+              "observedResult": "PR41 merged. The saved and anonymous article each embed the exact SHA609039d5 maintained skill. The public task entry is complete and maps to this page. All and ready ZIPs contain full generated guides plus onboarding; seven deployed archive checks passed.",
+              "sourceRef": "sha256:7857ea9ce9ff959f8470dab5fd8455c5e406fd82a5edb086936793b584a0cf2b",
+              "evidenceRefs": [
+                "https://github.com/Local-Service-Spotlight/task-library/pull/41",
+                "https://github.com/Local-Service-Spotlight/task-library/blob/111bca7fee201644aae9b7f7427ac4d6628c2fa6/reviews/publisher-completion-2026-09-27.md",
+                "sha256:924ecdc9753920cb5e7a87a3b3c2b915ef8462b01988d2fff02c3375ec1238b9"
+              ]
+            },
+            "publicReadback": {
+              "state": "pass",
+              "expectedResult": "Read back the saved and anonymous task page and public meta record; verify the lead diagram on desktop and phone.",
+              "observedResult": "The task article returned 200 with exact embedded source text and equal media. The final meta page returned 200 with its whole new section and equal media at 16:06:17 UTC. Corrected phone and desktop captures show readable diagrams and opening text.",
+              "sourceRef": "https://blitzmetrics.com/skill-publishing-standard/",
+              "evidenceRefs": [
+                "sha256:6287064848f4929e222f88b49af380b1515fd9f2f4aa860707f82297bd37ff2c",
+                "sha256:5c42e50d9adba542eb26ac6e300b9e48242b12099e6f0aaa7675345220273a95",
+                "https://blitzmetrics.com/making-task-guides-easier-to-use/"
+              ]
+            },
+            "handoff": {
+              "state": "pass",
+              "expectedResult": "Record the scoped result and remaining owner, tracker and first-user gaps for the existing Task Library maintenance worker's next queue step.",
+              "observedResult": "The published meta section and completed run record name the existing maintenance worker, current verification queue and open owner, tracker and novice gates. No separate person or new schedule was contacted or created.",
+              "sourceRef": "https://blitzmetrics.com/skill-publishing-standard/",
+              "evidenceRefs": [
+                "https://blitzmetrics.com/making-task-guides-easier-to-use/",
+                "sha256:f7227df22a45352ae59bd2916731843c6327ed70de462696be19cb434d44c785"
+              ]
+            }
+          },
+          "nextHandoff": "Existing Task Library maintenance worker uses the current verification queue and recorded run to resolve the owner, tracker and first-user gaps. This review covers the scoped repair under its old starting recipe only; a later use of the new recipe needs its own execution."
+        }
+      ]
     }
   ]
 }
