@@ -901,10 +901,10 @@
       "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
     },
     "run-weekly-client-seo-audits": {
-      "source_sha256": "6dcc68897fca14f3b2fc8295398fef4aaf23372ec81ea340f0d2a512cc1ae250",
-      "reviewed_at": "2026-09-06",
-      "reviewer": "Codex editorial review",
-      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+      "source_sha256": "dce51c39716310660d0ea23ba8b68ffcb51926a6b817a48487edcbb6bee4f640",
+      "reviewed_at": "2026-09-27",
+      "reviewer": "Codex root targeted privacy and roster-source correction",
+      "scope": "Read the full revised instruction. Corrected private roster authority and neutral fictional example; public roster pages do not establish access. No new five-check certification, real execution, scheduler or article pass is inferred."
     },
     "add-homepage-blog-card-thumbnails": {
       "source_sha256": "7fdc77a927296424c4e5a1ddfdf43edfa6985740f4d44020740f02a536bdf472",

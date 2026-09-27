@@ -16,7 +16,7 @@ A small site fault can stay live for weeks if no one checks it. This guide helps
 **Use this when:** The agreed weekly audit trigger fires for a verified in-scope client/site list, or the owner authorizes a manual calibration run.
 
 ## Inputs
-- The current [Client Roster](https://localservicespotlight.com/client-roster/), engagement scope and working run list with exact client, site URLs and existing project thread.
+- Your private client roster, agreed work scope and run list with exact site URLs and existing project thread. For LSS work, authorized agents read `clients/ROSTER.md` in the private `Local-Service-Spotlight/agent-runtime` repository at its current revision through authenticated access. A public page or cached copy does not prove current scope. If the private source is unavailable, stop the dependent work.
 - The agreed checklist version and last audit/evidence for each client, including unresolved issue IDs and owners.
 - Real public read access and any required account access; the existing scope for controlled tests, repairs and project-thread posting.
 - The actual scheduler/trigger, timezone, persisted run state and failure owner if this is a scheduled run; a manual first run can proceed without claiming a schedule exists.
@@ -74,7 +74,7 @@ A merged standard or saved prompt is not live enforcement or observed operation.
 
 ## Example(s)
 
-**Fictional teaching example — no client audit or message ran.** A sample weekly list contains Maple Cycle and a former client. The roster confirms Maple Cycle is in scope and the former client is Not Active, so the latter is skipped.
+**Fictional teaching example — no client audit or message ran.** A sample weekly list contains Maple Cycle and another account. The private scope check confirms only Maple Cycle is authorized for this run. Skip the other account and keep the private reason out of public writing.
 
 Last week Maple Cycle had a wrong service description and a broken quote link. This week the served description is correct, but the quote link still fails. The report marks one resolved and one recurring Priority 1 item, with the link owner and evidence. Missing Search Console access remains unknown.
 
