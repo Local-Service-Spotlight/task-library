@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "asOf": "2026-09-27T16:17:03.628942+00:00",
+  "asOf": "2026-09-27T17:12:08.846423+00:00",
   "countDefinition": "Distinct recorded execution IDs, separate from meta-article URLs. History is partial; absent history is unknown, not zero. The last-30-day count is a documented lower bound, not total task frequency.",
-  "recordedExecutions": 10,
+  "recordedExecutions": 11,
   "completedExecutions": 1,
   "partialExecutions": 9,
   "executions": [
@@ -317,6 +317,26 @@
           }
         }
       ]
+    },
+    {
+      "executionId": "crossref-release-20260927-162402",
+      "taskSlugs": [
+        "publish-skill-and-task-page"
+      ],
+      "startedAt": "2026-09-27T16:24:02.098463+00:00",
+      "status": "running",
+      "result": "Publish a reviewed cross-reference guide revision with matching maintained file, article section, task entry and download. No cross-reference audit execution is claimed.",
+      "recipeRevisions": {
+        "publish-skill-and-task-page": {
+          "articleUrl": "https://blitzmetrics.com/skill-publishing-standard/",
+          "sourceSha256": "3e9f22977b023330140c0866b6db199f0cbd31e086370043dcadfc643e45f319"
+        }
+      },
+      "evidenceUrls": [],
+      "privateEvidenceRecorded": true,
+      "metaArticle": {
+        "status": "draft"
+      }
     }
   ]
 }

@@ -733,6 +733,33 @@
           "nextHandoff": "Existing Task Library maintenance worker uses the current verification queue and recorded run to resolve the owner, tracker and first-user gaps. This review covers the scoped repair under its old starting recipe only; a later use of the new recipe needs its own execution."
         }
       ]
+    },
+    {
+      "executionId": "crossref-release-20260927-162402",
+      "taskSlugs": [
+        "publish-skill-and-task-page"
+      ],
+      "recipeRevisions": {
+        "publish-skill-and-task-page": {
+          "articleUrl": "https://blitzmetrics.com/skill-publishing-standard/",
+          "sourceSha256": "3e9f22977b023330140c0866b6db199f0cbd31e086370043dcadfc643e45f319"
+        }
+      },
+      "startedAt": "2026-09-27T16:24:02.098463+00:00",
+      "status": "running",
+      "result": "Publish a reviewed cross-reference guide revision with matching maintained file, article section, task entry and download. No cross-reference audit execution is claimed.",
+      "evidence": [
+        {
+          "visibility": "private",
+          "sha256": "53525e374bfafa3c3d9c58ecbac80fa212f239f0dccc39668aa527e18aa0318d"
+        }
+      ],
+      "metaArticle": {
+        "status": "draft",
+        "draftSha256": "3d30090e12c1fddbe4251a5e061327b7cbea1959bb9d8b877157a8dc45dcc519"
+      },
+      "recordedAt": "2026-09-27T16:24:03.437581+00:00",
+      "updatedAt": "2026-09-27T16:24:03.437592+00:00"
     }
   ]
 }

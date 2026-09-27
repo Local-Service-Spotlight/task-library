@@ -9,7 +9,7 @@ status: needs-work
 
 # Validate cross-reference integrity across articles
 
-A link should take people to the help its words promise. This guide checks both ends of each link around one page. Start with the page and a list of the pages that point to it.
+Check that each link leads to the help its words promise. Read the source page and its linked page so readers get the right answer. Next, [record the full article audit result](https://local-service-spotlight.github.io/task-library/?task=update-status-table-in-definitive-article-guide#task-update-status-table-in-definitive-article-guide) once the topic, steps, and facts are also checked.
 
 **The path:** Reference list → Read both pages → Scoped fixes → Check again
 
@@ -18,24 +18,24 @@ A link should take people to the help its words promise. This guide checks both 
 ## Inputs
 
 - The audited article’s current URL, known aliases, role and source revision.
-- A scoped site export or internal-link report, with its coverage and collection time.
+- A scoped site export or internal-link report, with its coverage and collection time; access to the current source and rendered pages, or a named owner for pages the auditor cannot open.
 - [Article Guidelines](https://localservicespotlight.com/article-guidelines/) and the owned [SEO Tree, how related pages link to their main topic](https://blitzmetrics.com/seo-tree/) for topic relationships.
 
 ## Steps
 
-1. Build the inbound list from the available site export or link report, checking known aliases and title mentions. Search can find more candidates, but it cannot prove a complete inventory; record the covered sites, dates and any inaccessible sources.
-2. Read each inbound anchor with its surrounding sentence and then read its current destination. Check whether the destination really teaches the promised task or concept and whether any cited section still exists.
+1. Build a working table with source URL, source revision, anchor and surrounding claim, destination URL or fragment, direction (inbound or outbound), and status. Populate inbound links from the available site export or link report, checking known aliases and title mentions. Search can find more candidates, but it cannot prove a complete inventory; record covered sites, collection dates and inaccessible sources.
+2. Read each inbound anchor with its surrounding sentence and then read its current destination. Record whether the destination teaches or proves the promised task, concept or claim and whether any cited section still exists. If access fails, mark meaning UNKNOWN rather than passing the link from its URL.
 3. Mark wrong subject links, removed fragments, misleading descriptions and redirects to the wrong page. A successful page load proves reachability only, not that the linked claim is true.
 4. Use concise descriptive anchors that fit the sentence. Link owned topic or task explainers for those concepts; retain an external primary source when it supports a provider-specific fact. Never retarget an external documentation link solely because an internal page mentions the same product.
-5. Reverse the process for outbound links, including related task and topic links. A task recipe, an entity hub, a comparison and a story have distinct purposes; do not relabel one just to fill a required link slot.
+5. Repeat the same table and meaning check for outbound links, including related task and topic links. A task recipe, entity hub, comparison and story have distinct purposes; do not relabel one just to fill a required link slot.
 6. Prepare exact source edits for inaccurate references and preserve all unrelated content/media. Release only through the owning source and existing authority; otherwise hand the owner the precise sentence, destination and reason.
-7. Reopen the changed links and read the rendered sentence at both ends. Record unresolved items and recurring patterns; propose a source-workflow fix when repeated renames or edits leave references stale.
+7. Reopen each changed link and read the rendered sentence at both ends. Save the dated table with one result per listed link: correct, repaired and read back, wrong and handed off, or UNKNOWN with access reason. Count each result, name coverage limits and remaining owners, and propose a source-workflow fix if repeated renames or edits leave references stale.
 
 ## Definition of done (QA checklist)
 
 [Quality assurance (QA)](https://localservicespotlight.com/article-guidelines/) means checking the work against the agreed result.
 
-- [ ] The reference inventory states actual coverage; every listed link has a semantic result.
+- [ ] The dated reference table states actual coverage, source revision and counts; every listed link has a semantic result or explicit UNKNOWN.
 - [ ] Wrong destinations and descriptions have a verified repair or an exact owner handoff.
 - [ ] Readback covers changed anchors and targets; reachability is not substituted for meaning.
 
@@ -49,7 +49,7 @@ A fictional article links “how to set up your library” to a story about one 
 
 This work supports the [Content Factory, our four stages of using real content](https://blitzmetrics.com/content-factory/): Produce → Process → Post → Promote. Use the specific inputs and next task below to place the work; a maintenance task does not manufacture transcripts, clips or other stage outputs it does not call for.
 
-[Record the audit result](https://local-service-spotlight.github.io/task-library/?task=update-status-table-in-definitive-article-guide#task-update-status-table-in-definitive-article-guide) receives the link findings and coverage limits. Article owners receive exact unresolved source changes.
+The article owner receives the dated link table, confirmed repairs, source sentences, coverage limits and unresolved issues. [Record the article audit result](https://local-service-spotlight.github.io/task-library/?task=update-status-table-in-definitive-article-guide#task-update-status-table-in-definitive-article-guide) receives these link findings when the topic, structure and facts checks are also ready; a link-only pass stays partial.
 
 ## Run with an agent
 
