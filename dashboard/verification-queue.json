@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-27T17:12:08+00:00",
+  "generatedAt": "2026-09-27T17:18:58+00:00",
   "definition": "Per-task standard gates derived from exact instruction reviews, explicit instruction-requirement checks, contributor status, article mapping/catalog holds, exact-revision article semantic reviews, task-attributed examples and the execution ledger. Unknown proof is never turned into a pass.",
   "stats": {
     "tasks": 276,
     "fullyVerifiedTasks": 0,
     "semanticHoldHubs": 3,
     "tasksWithHolds": 19,
-    "tasksWithUnmetGates": 215,
+    "tasksWithUnmetGates": 216,
     "tasksWithUnknownGates": 276,
     "gateCounts": {
       "instructionRevisionReviewed": {
@@ -60,9 +60,9 @@
       },
       "acceptedExecution": {
         "pass": 0,
-        "unmet": 0,
+        "unmet": 1,
         "hold": 0,
-        "unknown": 276
+        "unknown": 275
       },
       "setupSuccess": {
         "pass": 0,
@@ -24573,6 +24573,300 @@
       "queuePosition": 233,
       "priority": "P1",
       "priorityReason": "Known standard gap",
+      "slug": "publish-skill-and-task-page",
+      "title": "Publish a skill and its task page",
+      "category": "Knowledge System Maintenance",
+      "importance": 2,
+      "status": "complete",
+      "articleUrl": "https://blitzmetrics.com/skill-publishing-standard/",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=publish-skill-and-task-page#task-publish-skill-and-task-page",
+      "nextAction": "A later recorded execution did not complete; it cannot be promoted by an older acceptance review.",
+      "standardVerification": {
+        "instructionSourceSha256": "609039d529572a9d02b5e2b5847469d5fe7e6138a55c1ebd3c70a716c3a1093a",
+        "articleKey": "blitzmetrics.com/skill-publishing-standard",
+        "gates": {
+          "instructionRevisionReviewed": {
+            "id": "instructionRevisionReviewed",
+            "label": "Exact instruction revision reviewed",
+            "state": "pass",
+            "reason": "Current source bytes match the review recorded 2026-09-27. Review scope and limits: All five written-instruction checks pass for this source. Real partial example, exact source/page copy and responsive browser checks reviewed. Publication/novice/accepted execution and upkeep ownership remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/publisher-completion-2026-09-27.md",
+            "reviewedAt": "2026-09-27",
+            "reviewer": "Codex root with independent GPT-6 Sol source and destination review",
+            "sourceSha256": "609039d529572a9d02b5e2b5847469d5fe7e6138a55c1ebd3c70a716c3a1093a"
+          },
+          "instructionStandards": {
+            "id": "instructionStandards",
+            "label": "Instruction requirements checked",
+            "state": "pass",
+            "reason": "All five instruction requirements have explicit passing checks for the current source revision.",
+            "reviewedAt": "2026-09-27",
+            "reviewer": "Codex root with independent GPT-6 Sol source and destination review",
+            "reviewScope": "All five written-instruction checks pass for this source. Real partial example, exact source/page copy and responsive browser checks reviewed. Publication/novice/accepted execution and upkeep ownership remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/publisher-completion-2026-09-27.md",
+            "sourceSha256": "609039d529572a9d02b5e2b5847469d5fe7e6138a55c1ebd3c70a716c3a1093a",
+            "standards": {
+              "version": 1,
+              "checks": {
+                "opening": {
+                  "state": "pass",
+                  "reason": "Names publishing, the benefit of consistent instructions and the linked checked-recipe prerequisite.",
+                  "evidence": "Publish one clear task guide that your team can find and use. Keep its web page, skill file, and library entry in sync so no one follows old steps. Start with a checked task recipe, then use this guide to publish and check its copies."
+                },
+                "recipe": {
+                  "state": "pass",
+                  "reason": "Inputs, supported editor, authority, seven steps, import checks, public output and measurable comparison are explicit.",
+                  "evidence": "Seven steps now require exact decoded embedded-file comparison, current source identity, registry mapping, source/public readback, tracker state and named remaining owner."
+                },
+                "links": {
+                  "state": "pass",
+                  "reason": "Owned method links and exact task route are relevant; three added evidence links name the real partial repair. Actual browser reverse route opens this task.",
+                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/publisher-completion-2026-09-27.md"
+                },
+                "evidence": {
+                  "state": "pass",
+                  "reason": "The real September25 repair is linked with its partial result and missing setup evidence. The separate teaching example stays fictional.",
+                  "evidence": "PR39 is merged; reviews/tracker-setup-2026-09-25.md and the meta section #tracker-setup-20260925-000216 document source/public checks and open tracker, owner and first-user gates."
+                },
+                "handoff": {
+                  "state": "pass",
+                  "reason": "Post-stage task hands checked public/draft state and remaining gaps to task owner.",
+                  "evidence": "Content Factory context names Process inputs and Post release; activation and promotion are separate."
+                }
+              }
+            }
+          },
+          "contributorComplete": {
+            "id": "contributorComplete",
+            "label": "Contributor reports guide complete",
+            "state": "pass",
+            "reason": "The contributor status is complete; this is a source claim, not execution proof."
+          },
+          "articleMapped": {
+            "id": "articleMapped",
+            "label": "Canonical article mapped",
+            "state": "pass",
+            "reason": "The task maps to a normalized canonical article URL.",
+            "articleUrl": "https://blitzmetrics.com/skill-publishing-standard/"
+          },
+          "articleCatalogGate": {
+            "id": "articleCatalogGate",
+            "label": "Article catalog gate",
+            "state": "pass",
+            "reason": "Every task mapped to this hub is contributor-complete and no reviewed hold is active. This is catalog readiness only."
+          },
+          "articleSemanticCertification": {
+            "id": "articleSemanticCertification",
+            "label": "Article semantic certification",
+            "state": "unknown",
+            "reason": "Current article semantic criteria are unknown: owner, publicationStandards, acceptanceResults.",
+            "semanticReview": {
+              "version": 1,
+              "taskSlug": "publish-skill-and-task-page",
+              "canonicalURL": "https://blitzmetrics.com/skill-publishing-standard/",
+              "sourceSha256": "3e9f22977b023330140c0866b6db199f0cbd31e086370043dcadfc643e45f319",
+              "representation": "wordpress-content-html",
+              "reviewedAt": "2026-09-27T15:49:15.573162Z",
+              "reviewer": "Codex root; independent GPT-6 Sol source/link reviews plus root public browser QA",
+              "criteria": {
+                "openingContext": {
+                  "state": "pass",
+                  "reason": "Plain opening quotes action, value and checked-recipe prerequisite; body delivers seven publishing steps.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/914e8219bc260c15ccebe4a3402c3692f2dee80d/reviews/publisher-completion-2026-09-27.md",
+                    "sha256:cacb3d0b06383582b74a4817a75a0c706f1233c9791b989059d1a62f1abce810"
+                  ]
+                },
+                "roleScope": {
+                  "state": "pass",
+                  "reason": "Page is explicitly the publishing task recipe; canonical source and permanent task are named.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/914e8219bc260c15ccebe4a3402c3692f2dee80d/reviews/publisher-completion-2026-09-27.md",
+                    "sha256:cacb3d0b06383582b74a4817a75a0c706f1233c9791b989059d1a62f1abce810"
+                  ]
+                },
+                "owner": {
+                  "state": "unknown",
+                  "reason": "Owning repository is explicit, but responsible upkeep assignment is still missing from maintained tracker evidence.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/914e8219bc260c15ccebe4a3402c3692f2dee80d/reviews/publisher-completion-2026-09-27.md",
+                    "sha256:cacb3d0b06383582b74a4817a75a0c706f1233c9791b989059d1a62f1abce810"
+                  ]
+                },
+                "steps": {
+                  "state": "pass",
+                  "reason": "Inputs, authority, source comparison, supported save path, tracker state and public readback are explicit.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/914e8219bc260c15ccebe4a3402c3692f2dee80d/reviews/publisher-completion-2026-09-27.md",
+                    "sha256:cacb3d0b06383582b74a4817a75a0c706f1233c9791b989059d1a62f1abce810"
+                  ]
+                },
+                "links": {
+                  "state": "pass",
+                  "reason": "Current destination meanings and fragment targets checked; stale plugin/project labels corrected and exact source/partial-example links added.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/914e8219bc260c15ccebe4a3402c3692f2dee80d/reviews/publisher-completion-2026-09-27.md",
+                    "sha256:cacb3d0b06383582b74a4817a75a0c706f1233c9791b989059d1a62f1abce810"
+                  ]
+                },
+                "sourceEvidence": {
+                  "state": "pass",
+                  "reason": "Merged PR39, dated review and exact meta section prove the bounded September25 publishing repair; its partial result and setup gaps remain explicit.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/914e8219bc260c15ccebe4a3402c3692f2dee80d/reviews/publisher-completion-2026-09-27.md",
+                    "sha256:cacb3d0b06383582b74a4817a75a0c706f1233c9791b989059d1a62f1abce810"
+                  ]
+                },
+                "handoffContext": {
+                  "state": "pass",
+                  "reason": "Process supplies the reviewed method, Post publishes it; matched output, remaining issues and receiving owner are required.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/914e8219bc260c15ccebe4a3402c3692f2dee80d/reviews/publisher-completion-2026-09-27.md",
+                    "sha256:cacb3d0b06383582b74a4817a75a0c706f1233c9791b989059d1a62f1abce810"
+                  ]
+                },
+                "visualAndLayout": {
+                  "state": "pass",
+                  "reason": "Anonymous desktop1280x800 and phone390x844 show plain opening and readable four-step visual above fold. One H1, lower Post context and no phone horizontal overflow checked.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/914e8219bc260c15ccebe4a3402c3692f2dee80d/reviews/publisher-completion-2026-09-27.md",
+                    "sha256:cacb3d0b06383582b74a4817a75a0c706f1233c9791b989059d1a62f1abce810"
+                  ]
+                },
+                "publicationStandards": {
+                  "state": "unknown",
+                  "reason": "Title, canonical URL, description and headings were checked. Complete CTA/short-URL/E-E-A-T publication certification is not established by this scoped repair.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/914e8219bc260c15ccebe4a3402c3692f2dee80d/reviews/publisher-completion-2026-09-27.md",
+                    "sha256:cacb3d0b06383582b74a4817a75a0c706f1233c9791b989059d1a62f1abce810"
+                  ]
+                },
+                "acceptanceResults": {
+                  "state": "unknown",
+                  "reason": "This exact revised recipe has no independently accepted execution or novice setup receipt.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/914e8219bc260c15ccebe4a3402c3692f2dee80d/reviews/publisher-completion-2026-09-27.md",
+                    "sha256:cacb3d0b06383582b74a4817a75a0c706f1233c9791b989059d1a62f1abce810"
+                  ]
+                }
+              }
+            },
+            "revisionObservation": {
+              "version": 1,
+              "taskSlug": "publish-skill-and-task-page",
+              "canonicalURL": "https://blitzmetrics.com/skill-publishing-standard/",
+              "sourceSha256": "3e9f22977b023330140c0866b6db199f0cbd31e086370043dcadfc643e45f319",
+              "representation": "wordpress-content-html",
+              "observedAt": "2026-09-27T15:49:41.057053Z",
+              "observer": "Codex separate fresh source read after article review",
+              "state": "observed",
+              "reason": "Fresh saved source matches exact reviewed bytes and anonymous public content; missing criteria and actual use remain separate.",
+              "evidenceRefs": [
+                "sha256:2a69843bbf7cfefc0ab1f4ab5a11454cc0e80e58b0baf1e0abc0a609e6e1f45e"
+              ]
+            }
+          },
+          "taskExampleEvidence": {
+            "id": "taskExampleEvidence",
+            "label": "Task-attributed example evidence",
+            "state": "unknown",
+            "reason": "No source-backed example audit exists for the mapped hub."
+          },
+          "recordedExecution": {
+            "id": "recordedExecution",
+            "label": "Recorded real execution",
+            "state": "pass",
+            "reason": "3 distinct execution ID(s) name this task; outcomes remain separate.",
+            "executionIds": [
+              "crossref-release-20260927-162402",
+              "publisher-completion-20260927-134412",
+              "tracker-setup-20260925-000216"
+            ],
+            "historyStatus": "partial"
+          },
+          "acceptedExecution": {
+            "id": "acceptedExecution",
+            "label": "Accepted execution result",
+            "state": "unmet",
+            "reason": "A later recorded execution did not complete; it cannot be promoted by an older acceptance review.",
+            "acceptanceReview": {
+              "version": 1,
+              "reviewId": "publisher-completion-20260927-134412-acceptance-1",
+              "taskSlug": "publish-skill-and-task-page",
+              "canonicalURL": "https://blitzmetrics.com/skill-publishing-standard/",
+              "recipeSourceSha256": "7857ea9ce9ff959f8470dab5fd8455c5e406fd82a5edb086936793b584a0cf2b",
+              "representation": "wordpress-content-html",
+              "instructionSourceSha256": "609039d529572a9d02b5e2b5847469d5fe7e6138a55c1ebd3c70a716c3a1093a",
+              "reviewedAt": "2026-09-27T16:15:22Z",
+              "reviewer": "Codex GPT-6 Sol independent source reviewer",
+              "nextHandoff": "Existing Task Library maintenance worker uses the current verification queue and recorded run to resolve the owner, tracker and first-user gaps. This review covers the scoped repair under its old starting recipe only; a later use of the new recipe needs its own execution.",
+              "criteria": {
+                "result": {
+                  "state": "pass",
+                  "expectedResult": "Publish one matching maintained skill, canonical task page and Task Library entry; make the complete guide available in the public library downloads.",
+                  "observedResult": "PR41 merged. The saved and anonymous article each embed the exact SHA609039d5 maintained skill. The public task entry is complete and maps to this page. All and ready ZIPs contain full generated guides plus onboarding; seven deployed archive checks passed.",
+                  "sourceUrl": null,
+                  "sourcePrivateEvidenceRecorded": true,
+                  "evidenceUrls": [
+                    "https://github.com/Local-Service-Spotlight/task-library/pull/41",
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/111bca7fee201644aae9b7f7427ac4d6628c2fa6/reviews/publisher-completion-2026-09-27.md"
+                  ],
+                  "privateEvidenceRecorded": true
+                },
+                "publicReadback": {
+                  "state": "pass",
+                  "expectedResult": "Read back the saved and anonymous task page and public meta record; verify the lead diagram on desktop and phone.",
+                  "observedResult": "The task article returned 200 with exact embedded source text and equal media. The final meta page returned 200 with its whole new section and equal media at 16:06:17 UTC. Corrected phone and desktop captures show readable diagrams and opening text.",
+                  "sourceUrl": "https://blitzmetrics.com/skill-publishing-standard/",
+                  "sourcePrivateEvidenceRecorded": false,
+                  "evidenceUrls": [
+                    "https://blitzmetrics.com/making-task-guides-easier-to-use/"
+                  ],
+                  "privateEvidenceRecorded": true
+                },
+                "handoff": {
+                  "state": "pass",
+                  "expectedResult": "Record the scoped result and remaining owner, tracker and first-user gaps for the existing Task Library maintenance worker's next queue step.",
+                  "observedResult": "The published meta section and completed run record name the existing maintenance worker, current verification queue and open owner, tracker and novice gates. No separate person or new schedule was contacted or created.",
+                  "sourceUrl": "https://blitzmetrics.com/skill-publishing-standard/",
+                  "sourcePrivateEvidenceRecorded": false,
+                  "evidenceUrls": [
+                    "https://blitzmetrics.com/making-task-guides-easier-to-use/"
+                  ],
+                  "privateEvidenceRecorded": true
+                }
+              },
+              "executionId": "publisher-completion-20260927-134412"
+            }
+          },
+          "setupSuccess": {
+            "id": "setupSuccess",
+            "label": "New-user setup success",
+            "state": "unknown",
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
+          }
+        },
+        "unmetStandardGates": [
+          "acceptedExecution"
+        ],
+        "heldStandardGates": [],
+        "unknownStandardGates": [
+          "articleSemanticCertification",
+          "taskExampleEvidence",
+          "setupSuccess"
+        ],
+        "fullyVerified": false,
+        "queuePosition": 233,
+        "priority": "P1",
+        "priorityReason": "Known standard gap",
+        "nextAction": "A later recorded execution did not complete; it cannot be promoted by an older acceptance review."
+      }
+    },
+    {
+      "queuePosition": 234,
+      "priority": "P1",
+      "priorityReason": "Known standard gap",
       "slug": "verify-structural-completeness-against-8-step-framework",
       "title": "Check structure against the current article guidelines",
       "category": "Knowledge System Maintenance",
@@ -24667,14 +24961,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 233,
+        "queuePosition": 234,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 234,
+      "queuePosition": 235,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "slug": "map-out-one-minute-video-topics-using-topic-wheel",
@@ -24770,14 +25064,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 234,
+        "queuePosition": 235,
         "priority": "P2",
         "priorityReason": "Importance 5; missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 235,
+      "queuePosition": 236,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "slug": "record-one-minute-videos",
@@ -24875,14 +25169,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 235,
+        "queuePosition": 236,
         "priority": "P2",
         "priorityReason": "Importance 5; missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 236,
+      "queuePosition": 237,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "slug": "run-content-factory-on-any-engine",
@@ -24989,14 +25283,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 236,
+        "queuePosition": 237,
         "priority": "P2",
         "priorityReason": "Importance 5; missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 237,
+      "queuePosition": 238,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "slug": "step-1-upload-video-to-google-drive-and-descript",
@@ -25092,14 +25386,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 237,
+        "queuePosition": 238,
         "priority": "P2",
         "priorityReason": "Importance 5; missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 238,
+      "queuePosition": 239,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "slug": "step-11-proofread-with-grammarly-or-chatgpt",
@@ -25195,14 +25489,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 238,
+        "queuePosition": 239,
         "priority": "P2",
         "priorityReason": "Importance 5; missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 239,
+      "queuePosition": 240,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "slug": "step-12-post-article-on-wordpress",
@@ -25298,14 +25592,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 239,
+        "queuePosition": 240,
         "priority": "P2",
         "priorityReason": "Importance 5; missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 240,
+      "queuePosition": 241,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "slug": "step-2-fix-categories-and-tags-in-wordpress",
@@ -25401,14 +25695,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 240,
+        "queuePosition": 241,
         "priority": "P2",
         "priorityReason": "Importance 5; missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 241,
+      "queuePosition": 242,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "slug": "step-2-transcribe-video-using-descript",
@@ -25504,14 +25798,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 241,
+        "queuePosition": 242,
         "priority": "P2",
         "priorityReason": "Importance 5; missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 242,
+      "queuePosition": 243,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "slug": "step-5-write-article-from-transcript",
@@ -25607,14 +25901,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 242,
+        "queuePosition": 243,
         "priority": "P2",
         "priorityReason": "Importance 5; missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 243,
+      "queuePosition": 244,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "slug": "use-descript-underlord-to-remove-filler-words",
@@ -25710,14 +26004,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 243,
+        "queuePosition": 244,
         "priority": "P2",
         "priorityReason": "Importance 5; missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 244,
+      "queuePosition": 245,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "slug": "write-meta-article-documenting-agent-work",
@@ -26011,14 +26305,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 244,
+        "queuePosition": 245,
         "priority": "P2",
         "priorityReason": "Importance 5; missing proof remains",
         "nextAction": "The article revision observation is outside the 24-hour freshness window."
       }
     },
     {
-      "queuePosition": 245,
+      "queuePosition": 246,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "slug": "email-and-dm-client-about-published-article",
@@ -26114,14 +26408,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 245,
+        "queuePosition": 246,
         "priority": "P3",
         "priorityReason": "Missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 246,
+      "queuePosition": 247,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "slug": "how-to-inventory-a-podcast-on-youtube",
@@ -26219,14 +26513,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 246,
+        "queuePosition": 247,
         "priority": "P3",
         "priorityReason": "Missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 247,
+      "queuePosition": 248,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "slug": "how-to-inventory-every-podcast-youve-been-on-and-why-its-one-of-the-highest-roi-things-you-can-do",
@@ -26324,14 +26618,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 247,
+        "queuePosition": 248,
         "priority": "P3",
         "priorityReason": "Missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 248,
+      "queuePosition": 249,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "slug": "how-we-use-listen-notes-to-find-track-and-repurpose-every-podcast-appearance",
@@ -26429,14 +26723,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 248,
+        "queuePosition": 249,
         "priority": "P3",
         "priorityReason": "Missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 249,
+      "queuePosition": 250,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "slug": "how-we-use-podchaser-to-amplify-authority-and-repurpose-podcast-content",
@@ -26534,14 +26828,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 249,
+        "queuePosition": 250,
         "priority": "P3",
         "priorityReason": "Missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 250,
+      "queuePosition": 251,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "slug": "run-overnight-local-writer",
@@ -26639,14 +26933,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 250,
+        "queuePosition": 251,
         "priority": "P3",
         "priorityReason": "Missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 251,
+      "queuePosition": 252,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "slug": "share-in-44k-facebook-group",
@@ -26742,14 +27036,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 251,
+        "queuePosition": 252,
         "priority": "P3",
         "priorityReason": "Missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 252,
+      "queuePosition": 253,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "slug": "step-10-embed-source-video",
@@ -26845,14 +27139,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 252,
+        "queuePosition": 253,
         "priority": "P3",
         "priorityReason": "Missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 253,
+      "queuePosition": 254,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "slug": "step-13-categorize-post-and-add-tags",
@@ -26948,14 +27242,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 253,
+        "queuePosition": 254,
         "priority": "P3",
         "priorityReason": "Missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 254,
+      "queuePosition": 255,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "slug": "step-14a-configure-rankmath-seo-plugin",
@@ -27051,14 +27345,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 254,
+        "queuePosition": 255,
         "priority": "P3",
         "priorityReason": "Missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 255,
+      "queuePosition": 256,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "slug": "step-14b-run-linkwhisper-for-internal-links",
@@ -27154,14 +27448,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 255,
+        "queuePosition": 256,
         "priority": "P3",
         "priorityReason": "Missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 256,
+      "queuePosition": 257,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "slug": "step-17-final-formatting-and-qa-checks",
@@ -27257,14 +27551,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 256,
+        "queuePosition": 257,
         "priority": "P3",
         "priorityReason": "Missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 257,
+      "queuePosition": 258,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "slug": "step-3-watch-video-and-identify-gct",
@@ -27360,14 +27654,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 257,
+        "queuePosition": 258,
         "priority": "P3",
         "priorityReason": "Missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 258,
+      "queuePosition": 259,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "slug": "step-4-research-edit-add-timestamps-and-outline",
@@ -27463,14 +27757,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 258,
+        "queuePosition": 259,
         "priority": "P3",
         "priorityReason": "Missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 259,
+      "queuePosition": 260,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "slug": "step-6-measure-and-iterate-with-maa",
@@ -27566,14 +27860,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 259,
+        "queuePosition": 260,
         "priority": "P3",
         "priorityReason": "Missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 260,
+      "queuePosition": 261,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "slug": "step-6-write-title-and-headings",
@@ -27669,14 +27963,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 260,
+        "queuePosition": 261,
         "priority": "P3",
         "priorityReason": "Missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 261,
+      "queuePosition": 262,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "slug": "step-7-write-hook-and-establish-context",
@@ -27804,14 +28098,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 261,
+        "queuePosition": 262,
         "priority": "P3",
         "priorityReason": "Missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 262,
+      "queuePosition": 263,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "slug": "step-8-add-photos-and-featured-image",
@@ -27907,14 +28201,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 262,
+        "queuePosition": 263,
         "priority": "P3",
         "priorityReason": "Missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 263,
+      "queuePosition": 264,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "slug": "step-9-add-internal-links-with-proper-anchor-text",
@@ -28010,14 +28304,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 263,
+        "queuePosition": 264,
         "priority": "P3",
         "priorityReason": "Missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 264,
+      "queuePosition": 265,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "slug": "verify-all-items-on-blog-posting-checklist",
@@ -28113,14 +28407,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 264,
+        "queuePosition": 265,
         "priority": "P3",
         "priorityReason": "Missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 265,
+      "queuePosition": 266,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "slug": "keep-speaker-bureau-profile-bookable",
@@ -28218,14 +28512,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 265,
+        "queuePosition": 266,
         "priority": "P3",
         "priorityReason": "Missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 266,
+      "queuePosition": 267,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "slug": "map-how-ring-methods",
@@ -28321,14 +28615,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 266,
+        "queuePosition": 267,
         "priority": "P3",
         "priorityReason": "Missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 267,
+      "queuePosition": 268,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "slug": "map-what-ring-specific-content",
@@ -28424,14 +28718,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 267,
+        "queuePosition": 268,
         "priority": "P3",
         "priorityReason": "Missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 268,
+      "queuePosition": 269,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "slug": "map-why-ring-core-purpose",
@@ -28527,14 +28821,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 268,
+        "queuePosition": 269,
         "priority": "P3",
         "priorityReason": "Missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 269,
+      "queuePosition": 270,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "slug": "positive-mentions-harvester",
@@ -28635,14 +28929,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 269,
+        "queuePosition": 270,
         "priority": "P3",
         "priorityReason": "Missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 270,
+      "queuePosition": 271,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "slug": "step-1-inventory-content-and-establish-gct-per-page",
@@ -28738,14 +29032,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 270,
+        "queuePosition": 271,
         "priority": "P3",
         "priorityReason": "Missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 271,
+      "queuePosition": 272,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "slug": "step-3-identify-money-pages-and-orphan-pages",
@@ -28841,14 +29135,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 271,
+        "queuePosition": 272,
         "priority": "P3",
         "priorityReason": "Missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 272,
+      "queuePosition": 273,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "slug": "step-4-create-links-with-proper-anchor-text-and-placement",
@@ -28944,14 +29238,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 272,
+        "queuePosition": 273,
         "priority": "P3",
         "priorityReason": "Missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 273,
+      "queuePosition": 274,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "slug": "step-5-qa-links-against-google-guidelines",
@@ -29047,14 +29341,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 273,
+        "queuePosition": 274,
         "priority": "P3",
         "priorityReason": "Missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 274,
+      "queuePosition": 275,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "slug": "use-for-content-planning-and-video-topics",
@@ -29150,14 +29444,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 274,
+        "queuePosition": 275,
         "priority": "P3",
         "priorityReason": "Missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 275,
+      "queuePosition": 276,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "slug": "use-proper-anchor-text-3-6-words-descriptive",
@@ -29253,317 +29547,10 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 275,
-        "priority": "P3",
-        "priorityReason": "Missing proof remains",
-        "nextAction": "No exact-revision positive semantic review is recorded for this article."
-      }
-    },
-    {
-      "queuePosition": 276,
-      "priority": "P3",
-      "priorityReason": "Missing proof remains",
-      "slug": "publish-skill-and-task-page",
-      "title": "Publish a skill and its task page",
-      "category": "Knowledge System Maintenance",
-      "importance": 2,
-      "status": "complete",
-      "articleUrl": "https://blitzmetrics.com/skill-publishing-standard/",
-      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=publish-skill-and-task-page#task-publish-skill-and-task-page",
-      "nextAction": "Current article semantic criteria are unknown: owner, publicationStandards, acceptanceResults.",
-      "standardVerification": {
-        "instructionSourceSha256": "609039d529572a9d02b5e2b5847469d5fe7e6138a55c1ebd3c70a716c3a1093a",
-        "articleKey": "blitzmetrics.com/skill-publishing-standard",
-        "gates": {
-          "instructionRevisionReviewed": {
-            "id": "instructionRevisionReviewed",
-            "label": "Exact instruction revision reviewed",
-            "state": "pass",
-            "reason": "Current source bytes match the review recorded 2026-09-27. Review scope and limits: All five written-instruction checks pass for this source. Real partial example, exact source/page copy and responsive browser checks reviewed. Publication/novice/accepted execution and upkeep ownership remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/publisher-completion-2026-09-27.md",
-            "reviewedAt": "2026-09-27",
-            "reviewer": "Codex root with independent GPT-6 Sol source and destination review",
-            "sourceSha256": "609039d529572a9d02b5e2b5847469d5fe7e6138a55c1ebd3c70a716c3a1093a"
-          },
-          "instructionStandards": {
-            "id": "instructionStandards",
-            "label": "Instruction requirements checked",
-            "state": "pass",
-            "reason": "All five instruction requirements have explicit passing checks for the current source revision.",
-            "reviewedAt": "2026-09-27",
-            "reviewer": "Codex root with independent GPT-6 Sol source and destination review",
-            "reviewScope": "All five written-instruction checks pass for this source. Real partial example, exact source/page copy and responsive browser checks reviewed. Publication/novice/accepted execution and upkeep ownership remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/publisher-completion-2026-09-27.md",
-            "sourceSha256": "609039d529572a9d02b5e2b5847469d5fe7e6138a55c1ebd3c70a716c3a1093a",
-            "standards": {
-              "version": 1,
-              "checks": {
-                "opening": {
-                  "state": "pass",
-                  "reason": "Names publishing, the benefit of consistent instructions and the linked checked-recipe prerequisite.",
-                  "evidence": "Publish one clear task guide that your team can find and use. Keep its web page, skill file, and library entry in sync so no one follows old steps. Start with a checked task recipe, then use this guide to publish and check its copies."
-                },
-                "recipe": {
-                  "state": "pass",
-                  "reason": "Inputs, supported editor, authority, seven steps, import checks, public output and measurable comparison are explicit.",
-                  "evidence": "Seven steps now require exact decoded embedded-file comparison, current source identity, registry mapping, source/public readback, tracker state and named remaining owner."
-                },
-                "links": {
-                  "state": "pass",
-                  "reason": "Owned method links and exact task route are relevant; three added evidence links name the real partial repair. Actual browser reverse route opens this task.",
-                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/publisher-completion-2026-09-27.md"
-                },
-                "evidence": {
-                  "state": "pass",
-                  "reason": "The real September25 repair is linked with its partial result and missing setup evidence. The separate teaching example stays fictional.",
-                  "evidence": "PR39 is merged; reviews/tracker-setup-2026-09-25.md and the meta section #tracker-setup-20260925-000216 document source/public checks and open tracker, owner and first-user gates."
-                },
-                "handoff": {
-                  "state": "pass",
-                  "reason": "Post-stage task hands checked public/draft state and remaining gaps to task owner.",
-                  "evidence": "Content Factory context names Process inputs and Post release; activation and promotion are separate."
-                }
-              }
-            }
-          },
-          "contributorComplete": {
-            "id": "contributorComplete",
-            "label": "Contributor reports guide complete",
-            "state": "pass",
-            "reason": "The contributor status is complete; this is a source claim, not execution proof."
-          },
-          "articleMapped": {
-            "id": "articleMapped",
-            "label": "Canonical article mapped",
-            "state": "pass",
-            "reason": "The task maps to a normalized canonical article URL.",
-            "articleUrl": "https://blitzmetrics.com/skill-publishing-standard/"
-          },
-          "articleCatalogGate": {
-            "id": "articleCatalogGate",
-            "label": "Article catalog gate",
-            "state": "pass",
-            "reason": "Every task mapped to this hub is contributor-complete and no reviewed hold is active. This is catalog readiness only."
-          },
-          "articleSemanticCertification": {
-            "id": "articleSemanticCertification",
-            "label": "Article semantic certification",
-            "state": "unknown",
-            "reason": "Current article semantic criteria are unknown: owner, publicationStandards, acceptanceResults.",
-            "semanticReview": {
-              "version": 1,
-              "taskSlug": "publish-skill-and-task-page",
-              "canonicalURL": "https://blitzmetrics.com/skill-publishing-standard/",
-              "sourceSha256": "3e9f22977b023330140c0866b6db199f0cbd31e086370043dcadfc643e45f319",
-              "representation": "wordpress-content-html",
-              "reviewedAt": "2026-09-27T15:49:15.573162Z",
-              "reviewer": "Codex root; independent GPT-6 Sol source/link reviews plus root public browser QA",
-              "criteria": {
-                "openingContext": {
-                  "state": "pass",
-                  "reason": "Plain opening quotes action, value and checked-recipe prerequisite; body delivers seven publishing steps.",
-                  "evidenceRefs": [
-                    "https://github.com/Local-Service-Spotlight/task-library/blob/914e8219bc260c15ccebe4a3402c3692f2dee80d/reviews/publisher-completion-2026-09-27.md",
-                    "sha256:cacb3d0b06383582b74a4817a75a0c706f1233c9791b989059d1a62f1abce810"
-                  ]
-                },
-                "roleScope": {
-                  "state": "pass",
-                  "reason": "Page is explicitly the publishing task recipe; canonical source and permanent task are named.",
-                  "evidenceRefs": [
-                    "https://github.com/Local-Service-Spotlight/task-library/blob/914e8219bc260c15ccebe4a3402c3692f2dee80d/reviews/publisher-completion-2026-09-27.md",
-                    "sha256:cacb3d0b06383582b74a4817a75a0c706f1233c9791b989059d1a62f1abce810"
-                  ]
-                },
-                "owner": {
-                  "state": "unknown",
-                  "reason": "Owning repository is explicit, but responsible upkeep assignment is still missing from maintained tracker evidence.",
-                  "evidenceRefs": [
-                    "https://github.com/Local-Service-Spotlight/task-library/blob/914e8219bc260c15ccebe4a3402c3692f2dee80d/reviews/publisher-completion-2026-09-27.md",
-                    "sha256:cacb3d0b06383582b74a4817a75a0c706f1233c9791b989059d1a62f1abce810"
-                  ]
-                },
-                "steps": {
-                  "state": "pass",
-                  "reason": "Inputs, authority, source comparison, supported save path, tracker state and public readback are explicit.",
-                  "evidenceRefs": [
-                    "https://github.com/Local-Service-Spotlight/task-library/blob/914e8219bc260c15ccebe4a3402c3692f2dee80d/reviews/publisher-completion-2026-09-27.md",
-                    "sha256:cacb3d0b06383582b74a4817a75a0c706f1233c9791b989059d1a62f1abce810"
-                  ]
-                },
-                "links": {
-                  "state": "pass",
-                  "reason": "Current destination meanings and fragment targets checked; stale plugin/project labels corrected and exact source/partial-example links added.",
-                  "evidenceRefs": [
-                    "https://github.com/Local-Service-Spotlight/task-library/blob/914e8219bc260c15ccebe4a3402c3692f2dee80d/reviews/publisher-completion-2026-09-27.md",
-                    "sha256:cacb3d0b06383582b74a4817a75a0c706f1233c9791b989059d1a62f1abce810"
-                  ]
-                },
-                "sourceEvidence": {
-                  "state": "pass",
-                  "reason": "Merged PR39, dated review and exact meta section prove the bounded September25 publishing repair; its partial result and setup gaps remain explicit.",
-                  "evidenceRefs": [
-                    "https://github.com/Local-Service-Spotlight/task-library/blob/914e8219bc260c15ccebe4a3402c3692f2dee80d/reviews/publisher-completion-2026-09-27.md",
-                    "sha256:cacb3d0b06383582b74a4817a75a0c706f1233c9791b989059d1a62f1abce810"
-                  ]
-                },
-                "handoffContext": {
-                  "state": "pass",
-                  "reason": "Process supplies the reviewed method, Post publishes it; matched output, remaining issues and receiving owner are required.",
-                  "evidenceRefs": [
-                    "https://github.com/Local-Service-Spotlight/task-library/blob/914e8219bc260c15ccebe4a3402c3692f2dee80d/reviews/publisher-completion-2026-09-27.md",
-                    "sha256:cacb3d0b06383582b74a4817a75a0c706f1233c9791b989059d1a62f1abce810"
-                  ]
-                },
-                "visualAndLayout": {
-                  "state": "pass",
-                  "reason": "Anonymous desktop1280x800 and phone390x844 show plain opening and readable four-step visual above fold. One H1, lower Post context and no phone horizontal overflow checked.",
-                  "evidenceRefs": [
-                    "https://github.com/Local-Service-Spotlight/task-library/blob/914e8219bc260c15ccebe4a3402c3692f2dee80d/reviews/publisher-completion-2026-09-27.md",
-                    "sha256:cacb3d0b06383582b74a4817a75a0c706f1233c9791b989059d1a62f1abce810"
-                  ]
-                },
-                "publicationStandards": {
-                  "state": "unknown",
-                  "reason": "Title, canonical URL, description and headings were checked. Complete CTA/short-URL/E-E-A-T publication certification is not established by this scoped repair.",
-                  "evidenceRefs": [
-                    "https://github.com/Local-Service-Spotlight/task-library/blob/914e8219bc260c15ccebe4a3402c3692f2dee80d/reviews/publisher-completion-2026-09-27.md",
-                    "sha256:cacb3d0b06383582b74a4817a75a0c706f1233c9791b989059d1a62f1abce810"
-                  ]
-                },
-                "acceptanceResults": {
-                  "state": "unknown",
-                  "reason": "This exact revised recipe has no independently accepted execution or novice setup receipt.",
-                  "evidenceRefs": [
-                    "https://github.com/Local-Service-Spotlight/task-library/blob/914e8219bc260c15ccebe4a3402c3692f2dee80d/reviews/publisher-completion-2026-09-27.md",
-                    "sha256:cacb3d0b06383582b74a4817a75a0c706f1233c9791b989059d1a62f1abce810"
-                  ]
-                }
-              }
-            },
-            "revisionObservation": {
-              "version": 1,
-              "taskSlug": "publish-skill-and-task-page",
-              "canonicalURL": "https://blitzmetrics.com/skill-publishing-standard/",
-              "sourceSha256": "3e9f22977b023330140c0866b6db199f0cbd31e086370043dcadfc643e45f319",
-              "representation": "wordpress-content-html",
-              "observedAt": "2026-09-27T15:49:41.057053Z",
-              "observer": "Codex separate fresh source read after article review",
-              "state": "observed",
-              "reason": "Fresh saved source matches exact reviewed bytes and anonymous public content; missing criteria and actual use remain separate.",
-              "evidenceRefs": [
-                "sha256:2a69843bbf7cfefc0ab1f4ab5a11454cc0e80e58b0baf1e0abc0a609e6e1f45e"
-              ]
-            }
-          },
-          "taskExampleEvidence": {
-            "id": "taskExampleEvidence",
-            "label": "Task-attributed example evidence",
-            "state": "unknown",
-            "reason": "No source-backed example audit exists for the mapped hub."
-          },
-          "recordedExecution": {
-            "id": "recordedExecution",
-            "label": "Recorded real execution",
-            "state": "pass",
-            "reason": "3 distinct execution ID(s) name this task; outcomes remain separate.",
-            "executionIds": [
-              "crossref-release-20260927-162402",
-              "publisher-completion-20260927-134412",
-              "tracker-setup-20260925-000216"
-            ],
-            "historyStatus": "partial"
-          },
-          "acceptedExecution": {
-            "id": "acceptedExecution",
-            "label": "Accepted execution result",
-            "state": "unknown",
-            "reason": "The separate current article revision observation failed or predates the acceptance review.",
-            "acceptanceReview": {
-              "version": 1,
-              "reviewId": "publisher-completion-20260927-134412-acceptance-1",
-              "taskSlug": "publish-skill-and-task-page",
-              "canonicalURL": "https://blitzmetrics.com/skill-publishing-standard/",
-              "recipeSourceSha256": "7857ea9ce9ff959f8470dab5fd8455c5e406fd82a5edb086936793b584a0cf2b",
-              "representation": "wordpress-content-html",
-              "instructionSourceSha256": "609039d529572a9d02b5e2b5847469d5fe7e6138a55c1ebd3c70a716c3a1093a",
-              "reviewedAt": "2026-09-27T16:15:22Z",
-              "reviewer": "Codex GPT-6 Sol independent source reviewer",
-              "nextHandoff": "Existing Task Library maintenance worker uses the current verification queue and recorded run to resolve the owner, tracker and first-user gaps. This review covers the scoped repair under its old starting recipe only; a later use of the new recipe needs its own execution.",
-              "criteria": {
-                "result": {
-                  "state": "pass",
-                  "expectedResult": "Publish one matching maintained skill, canonical task page and Task Library entry; make the complete guide available in the public library downloads.",
-                  "observedResult": "PR41 merged. The saved and anonymous article each embed the exact SHA609039d5 maintained skill. The public task entry is complete and maps to this page. All and ready ZIPs contain full generated guides plus onboarding; seven deployed archive checks passed.",
-                  "sourceUrl": null,
-                  "sourcePrivateEvidenceRecorded": true,
-                  "evidenceUrls": [
-                    "https://github.com/Local-Service-Spotlight/task-library/pull/41",
-                    "https://github.com/Local-Service-Spotlight/task-library/blob/111bca7fee201644aae9b7f7427ac4d6628c2fa6/reviews/publisher-completion-2026-09-27.md"
-                  ],
-                  "privateEvidenceRecorded": true
-                },
-                "publicReadback": {
-                  "state": "pass",
-                  "expectedResult": "Read back the saved and anonymous task page and public meta record; verify the lead diagram on desktop and phone.",
-                  "observedResult": "The task article returned 200 with exact embedded source text and equal media. The final meta page returned 200 with its whole new section and equal media at 16:06:17 UTC. Corrected phone and desktop captures show readable diagrams and opening text.",
-                  "sourceUrl": "https://blitzmetrics.com/skill-publishing-standard/",
-                  "sourcePrivateEvidenceRecorded": false,
-                  "evidenceUrls": [
-                    "https://blitzmetrics.com/making-task-guides-easier-to-use/"
-                  ],
-                  "privateEvidenceRecorded": true
-                },
-                "handoff": {
-                  "state": "pass",
-                  "expectedResult": "Record the scoped result and remaining owner, tracker and first-user gaps for the existing Task Library maintenance worker's next queue step.",
-                  "observedResult": "The published meta section and completed run record name the existing maintenance worker, current verification queue and open owner, tracker and novice gates. No separate person or new schedule was contacted or created.",
-                  "sourceUrl": "https://blitzmetrics.com/skill-publishing-standard/",
-                  "sourcePrivateEvidenceRecorded": false,
-                  "evidenceUrls": [
-                    "https://blitzmetrics.com/making-task-guides-easier-to-use/"
-                  ],
-                  "privateEvidenceRecorded": true
-                }
-              },
-              "executionId": "publisher-completion-20260927-134412"
-            },
-            "revisionObservation": {
-              "version": 1,
-              "taskSlug": "publish-skill-and-task-page",
-              "canonicalURL": "https://blitzmetrics.com/skill-publishing-standard/",
-              "sourceSha256": "3e9f22977b023330140c0866b6db199f0cbd31e086370043dcadfc643e45f319",
-              "representation": "wordpress-content-html",
-              "observedAt": "2026-09-27T15:49:41.057053Z",
-              "observer": "Codex separate fresh source read after article review",
-              "state": "observed",
-              "reason": "Fresh saved source matches exact reviewed bytes and anonymous public content; missing criteria and actual use remain separate.",
-              "evidenceRefs": [
-                "sha256:2a69843bbf7cfefc0ab1f4ab5a11454cc0e80e58b0baf1e0abc0a609e6e1f45e"
-              ]
-            }
-          },
-          "setupSuccess": {
-            "id": "setupSuccess",
-            "label": "New-user setup success",
-            "state": "unknown",
-            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
-            "supportedRoute": "manual-guide",
-            "installationCertified": false,
-            "schedulingCertified": false
-          }
-        },
-        "unmetStandardGates": [],
-        "heldStandardGates": [],
-        "unknownStandardGates": [
-          "articleSemanticCertification",
-          "taskExampleEvidence",
-          "acceptedExecution",
-          "setupSuccess"
-        ],
-        "fullyVerified": false,
         "queuePosition": 276,
         "priority": "P3",
         "priorityReason": "Missing proof remains",
-        "nextAction": "Current article semantic criteria are unknown: owner, publicationStandards, acceptanceResults."
+        "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     }
   ]

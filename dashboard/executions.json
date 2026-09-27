@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "asOf": "2026-09-27T17:12:08.846423+00:00",
+  "asOf": "2026-09-27T17:18:58.024336+00:00",
   "countDefinition": "Distinct recorded execution IDs, separate from meta-article URLs. History is partial; absent history is unknown, not zero. The last-30-day count is a documented lower bound, not total task frequency.",
   "recordedExecutions": 11,
   "completedExecutions": 1,
-  "partialExecutions": 9,
+  "partialExecutions": 10,
   "executions": [
     {
       "executionId": "recipe-audit-20260905-080140",
@@ -324,18 +324,23 @@
         "publish-skill-and-task-page"
       ],
       "startedAt": "2026-09-27T16:24:02.098463+00:00",
-      "status": "running",
-      "result": "Publish a reviewed cross-reference guide revision with matching maintained file, article section, task entry and download. No cross-reference audit execution is claimed.",
+      "status": "partial",
+      "result": "Matched cross-reference instructions were published in the maintained source, article section and all-tasks ZIP; saved/anonymous full text and media match. Final public visual verification remains open because browser capture and control failed. No cross-reference audit execution or novice setup is claimed. Existing maintenance worker receives the capture failure and exact revision for follow-up.",
       "recipeRevisions": {
         "publish-skill-and-task-page": {
           "articleUrl": "https://blitzmetrics.com/skill-publishing-standard/",
           "sourceSha256": "3e9f22977b023330140c0866b6db199f0cbd31e086370043dcadfc643e45f319"
         }
       },
-      "evidenceUrls": [],
+      "finishedAt": "2026-09-27T17:18:54.853552+00:00",
+      "evidenceUrls": [
+        "https://github.com/Local-Service-Spotlight/task-library/pull/43",
+        "https://github.com/Local-Service-Spotlight/task-library/blob/ccf0362a00ca38515e6137bcce486115136f3c14/reviews/cross-reference-guide-2026-09-27.md"
+      ],
       "privateEvidenceRecorded": true,
       "metaArticle": {
-        "status": "draft"
+        "status": "published",
+        "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#crossref-release-20260927-162402"
       }
     }
   ]
