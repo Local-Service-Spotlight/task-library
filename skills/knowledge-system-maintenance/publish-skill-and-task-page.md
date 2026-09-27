@@ -4,7 +4,7 @@ description: A useful guide should be easy for people and AI to find.
 category: Knowledge System Maintenance
 stage: Post
 definitive_article: https://blitzmetrics.com/skill-publishing-standard/
-status: needs-work
+status: complete
 ---
 
 # Publish a skill and its task page
@@ -26,7 +26,7 @@ Publish one clear task guide that your team can find and use. Keep its web page,
 1. Search the site and Task Library for the existing task. Preserve its URL, name and page type; a rename needs a migration plan for links and installed references.
 2. Prepare a complete skill file and human-readable page from the same reviewed method. Include plain grade 5 context, meaningful lead visual, owned prerequisite links, example and lower task context.
 3. Keep task registration separate from AI-worker and job registration. Update the actual task/skill entry; do not create an Agent Roster row merely because a new skill exists. Follow the [contributor guide](https://github.com/Local-Service-Spotlight/task-library/blob/main/CONTRIBUTING-SKILLS.md). A sheet row reaches the dashboard only when the intended tracker feed is imported. Check the team-update notice and build receipt; when missing, report the row saved and public sync pending. The maintainer checks the existing approved connection without silently changing sharing or access.
-4. Check exact source-file, page and registry links in both directions. The downloadable instructions must match the reviewed revision; a short summary wrapper is not the full recipe.
+4. Link the exact maintained source file and permanent task name on the page. If the page includes a copy of the skill, compare its full decoded text with the source file before release. Check exact source-file, page and registry links in both directions. The downloadable instructions must match the reviewed revision; a short summary wrapper is not the full recipe.
 5. Use the repository’s branch/review/check workflow and the page’s supported editor or generator. Preserve existing media, builder state, categories and concurrent edits. Keep the full reviewable draft before publication.
 6. After the authorized release, read back the saved source and open the ordinary anonymous URL on desktop/mobile. Inspect the lead visual, links, task context and download; clear or fix stale public copies through their owning publisher. Compare the deployed task’s owner, status, source, article and download with the intended values. A successful build or loaded feed alone does not prove these fields match.
 7. Record source available, page public, file downloadable and installed activation separately. Leave certification gaps visible; writing the run’s meta record is required even when public release is pending.
@@ -41,6 +41,8 @@ Publish one clear task guide that your team can find and use. Keep its web page,
 - [ ] Missing real examples, private access or installed activation remain explicit.
 
 ## Example(s)
+
+**Recorded partial publishing run, September 25, 2026.** The [tracker setup review](https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/tracker-setup-2026-09-25.md) documents the saved guide changes, public readback and missing tracker feed. The [merged repair](https://github.com/Local-Service-Spotlight/task-library/pull/39) and [work record](https://blitzmetrics.com/making-task-guides-easier-to-use/#tracker-setup-20260925-000216) show what shipped and what stayed open. This proves a publishing repair and its limits; it does not prove a new user installed a skill or that the tracker feed was connected.
 
 **Fictional teaching example. This is not a client result or proof of a completed run.**
 
@@ -72,8 +74,8 @@ Reuse the same execution ID for revisions, QA, meta writing and retries within t
 - [current article guide](https://blitzmetrics.com/definitive-article-guide/)
 - [How recipes and run records work together](https://localservicespotlight.com/meta-articles/)
 
-## Review and evidence still needed
+## Evidence limits
 
-The inherited contributor status is `needs-work`. It is preserved, not promoted by this rewrite. That label alone does not verify document readiness, a client outcome, access or an executed task.
+Contributor status `complete` records that these written instructions have been completed and reviewed. It does not certify account access, novice setup, a successful client outcome, or every article standard. Keep the task's current verification gates visible in the library.
 
-A real execution still needs its own source, reviewer, saved result and handoff evidence. The fictional example teaches the method; a real example with relevant proof is still needed where required. The task-specific flow above is source guidance; its visible presentation and the full document need a named reviewer and desktop/mobile checks.
+The September 25 example ended partial. Each new execution still needs its own starting recipe revision, saved output, independent result review and next handoff. Name any missing upkeep owner or tracker connection; do not infer either from a byline or a successful build.

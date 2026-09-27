@@ -426,16 +426,16 @@ class BuiltArticleInventory(unittest.TestCase):
 
     def test_current_inventory_has_exact_derived_counts(self):
         self.assertEqual(self.data['stats']['articleHubs'], 53)
-        self.assertEqual(self.data['stats']['definitiveArticles'], 13)
+        self.assertEqual(self.data['stats']['definitiveArticles'], 14)
 
         tasks = copy.deepcopy(self.tasks)
         derived = task_build.derive_article_states(tasks)
-        self.assertEqual(derived, {'articleHubs': 53, 'definitiveArticles': 13})
+        self.assertEqual(derived, {'articleHubs': 53, 'definitiveArticles': 14})
 
     def test_registered_recipes_keep_wip_and_ledger_backed_history(self):
         by_slug = {t['slug']: t for t in self.tasks}
         self.assertEqual(self.data['stats']['total'], 276)
-        self.assertEqual(self.data['stats']['complete'], 125)
+        self.assertEqual(self.data['stats']['complete'], 126)
         self.assertEqual(self.data['stats']['gaps'], 23)
         for slug in ('create-or-update-a-definitive-article', 'document-a-task', 'install-local-qwen',
                      'submit-weekly-maa-report-every-friday', 'deliver-personal-brand-site-from-request'):
@@ -594,7 +594,7 @@ class BuiltArticleInventory(unittest.TestCase):
         self.assertEqual(self.data['stats']['metaOrbitHubsWithEvidence'], 13)
         self.assertEqual(self.data['stats']['metaOrbitHubsUnknown'], 40)
         self.assertEqual({key for key, hub in hubs.items()
-                          if hub['state'] == 'ready'}, set(expected))
+                          if hub['state'] == 'ready'}, set(expected) | {'blitzmetrics.com/skill-publishing-standard'})
         for key, (count, tier) in expected.items():
             with self.subTest(hub=key):
                 self.assertEqual(hubs[key]['metaCountStatus'], 'verified')
@@ -643,7 +643,8 @@ class ArticleLabelUI(unittest.TestCase):
             self.assertIsNotNone(match, rel)
             blocks.append(match.group(0))
             self.assertIn("t.articleState === 'ready'", source)
-            self.assertIn("'Definitive article ↗'", source)
+            self.assertNotIn("'Definitive article ↗'", source)
+            self.assertIn("'Article guide ↗'", source)
             self.assertIn("'Article in progress ↗'", source)
             self.assertIn('t.articleStateReason', source)
             self.assertIn('no reviewed semantic hold is active', source)

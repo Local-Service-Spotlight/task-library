@@ -655,6 +655,97 @@
      ]
     }
    }
+  },
+  {
+   "version": 1,
+   "taskSlug": "publish-skill-and-task-page",
+   "canonicalURL": "https://blitzmetrics.com/skill-publishing-standard/",
+   "representation": "wordpress-content-html",
+   "sourceSha256": "3e9f22977b023330140c0866b6db199f0cbd31e086370043dcadfc643e45f319",
+   "reviewedAt": "2026-09-27T15:49:15.573162Z",
+   "reviewer": "Codex root; independent GPT-6 Sol source/link reviews plus root public browser QA",
+   "criteria": {
+    "openingContext": {
+     "state": "pass",
+     "reason": "Plain opening quotes action, value and checked-recipe prerequisite; body delivers seven publishing steps.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/publisher-completion-2026-09-27.md",
+      "sha256:cacb3d0b06383582b74a4817a75a0c706f1233c9791b989059d1a62f1abce810"
+     ]
+    },
+    "roleScope": {
+     "state": "pass",
+     "reason": "Page is explicitly the publishing task recipe; canonical source and permanent task are named.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/publisher-completion-2026-09-27.md",
+      "sha256:cacb3d0b06383582b74a4817a75a0c706f1233c9791b989059d1a62f1abce810"
+     ]
+    },
+    "owner": {
+     "state": "unknown",
+     "reason": "Owning repository is explicit, but responsible upkeep assignment is still missing from maintained tracker evidence.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/publisher-completion-2026-09-27.md",
+      "sha256:cacb3d0b06383582b74a4817a75a0c706f1233c9791b989059d1a62f1abce810"
+     ]
+    },
+    "steps": {
+     "state": "pass",
+     "reason": "Inputs, authority, source comparison, supported save path, tracker state and public readback are explicit.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/publisher-completion-2026-09-27.md",
+      "sha256:cacb3d0b06383582b74a4817a75a0c706f1233c9791b989059d1a62f1abce810"
+     ]
+    },
+    "links": {
+     "state": "pass",
+     "reason": "Current destination meanings and fragment targets checked; stale plugin/project labels corrected and exact source/partial-example links added.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/publisher-completion-2026-09-27.md",
+      "sha256:cacb3d0b06383582b74a4817a75a0c706f1233c9791b989059d1a62f1abce810"
+     ]
+    },
+    "sourceEvidence": {
+     "state": "pass",
+     "reason": "Merged PR39, dated review and exact meta section prove the bounded September25 publishing repair; its partial result and setup gaps remain explicit.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/publisher-completion-2026-09-27.md",
+      "sha256:cacb3d0b06383582b74a4817a75a0c706f1233c9791b989059d1a62f1abce810"
+     ]
+    },
+    "handoffContext": {
+     "state": "pass",
+     "reason": "Process supplies the reviewed method, Post publishes it; matched output, remaining issues and receiving owner are required.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/publisher-completion-2026-09-27.md",
+      "sha256:cacb3d0b06383582b74a4817a75a0c706f1233c9791b989059d1a62f1abce810"
+     ]
+    },
+    "visualAndLayout": {
+     "state": "pass",
+     "reason": "Anonymous desktop1280x800 and phone390x844 show plain opening and readable four-step visual above fold. One H1, lower Post context and no phone horizontal overflow checked.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/publisher-completion-2026-09-27.md",
+      "sha256:cacb3d0b06383582b74a4817a75a0c706f1233c9791b989059d1a62f1abce810"
+     ]
+    },
+    "publicationStandards": {
+     "state": "unknown",
+     "reason": "Title, canonical URL, description and headings were checked. Complete CTA/short-URL/E-E-A-T publication certification is not established by this scoped repair.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/publisher-completion-2026-09-27.md",
+      "sha256:cacb3d0b06383582b74a4817a75a0c706f1233c9791b989059d1a62f1abce810"
+     ]
+    },
+    "acceptanceResults": {
+     "state": "unknown",
+     "reason": "This exact revised recipe has no independently accepted execution or novice setup receipt.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/publisher-completion-2026-09-27.md",
+      "sha256:cacb3d0b06383582b74a4817a75a0c706f1233c9791b989059d1a62f1abce810"
+     ]
+    }
+   }
   }
  ],
  "revisionObservations": [
@@ -769,6 +860,20 @@
    "reason": "Fresh authenticated source still matches the September25 reviewed article bytes; no new article-wide criterion or use claim.",
    "evidenceRefs": [
     "sha256:e9802e8fb0eb5e24aeffcece80df8252b84594768145e57d4ef08bbed0ffc270"
+   ]
+  },
+  {
+   "version": 1,
+   "taskSlug": "publish-skill-and-task-page",
+   "canonicalURL": "https://blitzmetrics.com/skill-publishing-standard/",
+   "representation": "wordpress-content-html",
+   "sourceSha256": "3e9f22977b023330140c0866b6db199f0cbd31e086370043dcadfc643e45f319",
+   "observedAt": "2026-09-27T15:49:41.057053Z",
+   "observer": "Codex separate fresh source read after article review",
+   "state": "observed",
+   "reason": "Fresh saved source matches exact reviewed bytes and anonymous public content; missing criteria and actual use remain separate.",
+   "evidenceRefs": [
+    "sha256:2a69843bbf7cfefc0ab1f4ab5a11454cc0e80e58b0baf1e0abc0a609e6e1f45e"
    ]
   }
  ]

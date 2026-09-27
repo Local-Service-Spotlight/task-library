@@ -2,13 +2,13 @@
 
 Generated from `build/build.py` after scoring in `build/factory.py`.
 
-Library: **276** tasks — 125 complete, 128 needs-work, 23 gaps.
+Library: **276** tasks — 126 complete, 127 needs-work, 23 gaps.
 
 Importance distribution: 5★=75, 4★=43, 3★=115, 2★=43, 1★=0
 
 Scoring: `importance = max(frequency, revenue, gating)`. Ads, pixels, GSC, Descript, WP-author, and Meta BM are 5s even when the task is small, because they unblock the line.
 
-Incomplete: **151**. This file is the work order. Do not re-sample.
+Incomplete: **150**. This file is the work order. Do not re-sample.
 
 | ★ | Status | Phase | Category | Slug | Lane | Why |
 |---|---|---|---|---|---|---|
@@ -150,7 +150,6 @@ Incomplete: **151**. This file is the work order. Do not re-sample.
 | 2 | needs-work | — |  | `install-canonical-skill-packs` | any | supporting |
 | 2 | needs-work | — |  | `install-local-qwen` | any | supporting |
 | 2 | needs-work | — |  | `onboard-agent-for-first-scoped-task` | any | supporting |
-| 2 | needs-work | Post |  | `publish-skill-and-task-page` | any | supporting |
 | 2 | needs-work | — |  | `reply-with-task-status-in-origin-thread` | any | supporting |
 | 2 | needs-work | — |  | `review-existing-sops-for-portability-compliance` | any | supporting |
 | 2 | needs-work | — |  | `review-past-6-months-of-sop-amendment-proposals-for-patterns` | any | supporting |
