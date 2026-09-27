@@ -373,10 +373,10 @@
       "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
     },
     "publish-skill-and-task-page": {
-      "source_sha256": "018a076e1b85ea983a73295aa5abe3a56c8d5c6f3e6fdb703c849b8bb8bae9c9",
-      "reviewed_at": "2026-09-26",
-      "reviewer": "Codex root; September25 independent setup/copy review retained; root completed destination adjudication",
-      "scope": "Exact current skill: all five instruction requirements pass. September26 review verifies all ten Markdown destinations and actual public task routing; prior four criteria reused on unchanged source. Tracker setup, full article certification, novice use and accepted execution remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/publisher-links-2026-09-26.md",
+      "source_sha256": "609039d529572a9d02b5e2b5847469d5fe7e6138a55c1ebd3c70a716c3a1093a",
+      "reviewed_at": "2026-09-27",
+      "reviewer": "Codex root with independent GPT-6 Sol source and destination review",
+      "scope": "All five written-instruction checks pass for this source. Real partial example, exact source/page copy and responsive browser checks reviewed. Publication/novice/accepted execution and upkeep ownership remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/publisher-completion-2026-09-27.md",
       "standards": {
         "version": 1,
         "checks": {
@@ -388,17 +388,17 @@
           "recipe": {
             "state": "pass",
             "reason": "Inputs, supported editor, authority, seven steps, import checks, public output and measurable comparison are explicit.",
-            "evidence": "Steps3/6 separate saved sheet, imported feed and checked public fields. No implicit permission, access grant or schedule."
+            "evidence": "Seven steps now require exact decoded embedded-file comparison, current source identity, registry mapping, source/public readback, tracker state and named remaining owner."
           },
           "links": {
             "state": "pass",
-            "reason": "All ten destinations contain the relevant maintained method or task; actual public query routing selects both expected slugs, and prerequisite/contributor links point back to publishing.",
-            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/publisher-links-2026-09-26.md"
+            "reason": "Owned method links and exact task route are relevant; three added evidence links name the real partial repair. Actual browser reverse route opens this task.",
+            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/publisher-completion-2026-09-27.md"
           },
           "evidence": {
             "state": "pass",
-            "reason": "Fictional example is labeled and real execution evidence remains required.",
-            "evidence": "The fictional stale-download example does not count as a client result; actual recipe revision, run state, source and next owner are required."
+            "reason": "The real September25 repair is linked with its partial result and missing setup evidence. The separate teaching example stays fictional.",
+            "evidence": "PR39 is merged; reviews/tracker-setup-2026-09-25.md and the meta section #tracker-setup-20260925-000216 document source/public checks and open tracker, owner and first-user gates."
           },
           "handoff": {
             "state": "pass",

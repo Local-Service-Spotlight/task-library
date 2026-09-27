@@ -632,6 +632,33 @@
       },
       "recordedAt": "2026-09-25T00:19:54.369912+00:00",
       "updatedAt": "2026-09-25T00:19:54.369912+00:00"
+    },
+    {
+      "executionId": "publisher-completion-20260927-134412",
+      "taskSlugs": [
+        "publish-skill-and-task-page"
+      ],
+      "recipeRevisions": {
+        "publish-skill-and-task-page": {
+          "articleUrl": "https://blitzmetrics.com/skill-publishing-standard/",
+          "sourceSha256": "7857ea9ce9ff959f8470dab5fd8455c5e406fd82a5edb086936793b584a0cf2b"
+        }
+      },
+      "startedAt": "2026-09-27T13:44:12.475179+00:00",
+      "status": "running",
+      "result": "Preparing matched publishing instructions, canonical page and library release; verification pending.",
+      "evidence": [
+        {
+          "visibility": "private",
+          "sha256": "75e68977333253e6437a608d1a96652a22adc3624d1f240b5a13c692baeef7fd"
+        }
+      ],
+      "metaArticle": {
+        "status": "draft",
+        "draftSha256": "280eb6e7455e51d718f9c61fa76add1ac3961d84b92ec79fc5c0558e48f326ee"
+      },
+      "recordedAt": "2026-09-27T13:45:37.219068+00:00",
+      "updatedAt": "2026-09-27T13:45:37.219068+00:00"
     }
   ]
 }

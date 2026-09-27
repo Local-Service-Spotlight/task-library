@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-09-26T16:08:56+00:00",
+ "generatedAt": "2026-09-27T15:50:25+00:00",
  "countDefinition": "Verified meta-article sources explicitly classified by the recorded evidence method and linked to the normalized canonical hub. Unknown is never coerced to zero.",
  "strengthBands": [
   {
@@ -36,7 +36,7 @@
  ],
  "stats": {
   "articleHubs": 53,
-  "definitiveArticles": 13,
+  "definitiveArticles": 14,
   "verifiedMetaArticles": 88,
   "metaOrbitHubsWithEvidence": 13,
   "metaOrbitHubsUnknown": 40
@@ -2343,10 +2343,10 @@
   {
    "key": "blitzmetrics.com/skill-publishing-standard",
    "url": "https://blitzmetrics.com/skill-publishing-standard/",
-   "state": "wip",
+   "state": "ready",
    "articleKind": "task-recipe",
    "taskCount": 1,
-   "completeTaskCount": 0,
+   "completeTaskCount": 1,
    "importance": 2,
    "importanceTotal": 2,
    "taskSlugs": [

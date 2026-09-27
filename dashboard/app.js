@@ -356,7 +356,7 @@ function articleLink(t){
     'entity-hub':'Entity guide', 'reference':'Reference', 'supporting':'Supporting article'};
   const kindLabel = kindLabels[t.articleKind];
   const label = kindLabel ? kindLabel + (ready ? ' ↗' : ' in progress ↗') :
-    (ready ? 'Definitive article ↗' : 'Article in progress ↗');
+    (ready ? 'Article guide ↗' : 'Article in progress ↗');
   const title = ready ? 'All mapped tasks carry contributor complete labels and no reviewed semantic hold is active; this alone does not certify the article' :
     (t.articleStateReason || 'Article has incomplete mapped work or an active semantic-certification hold');
   let orbit = '';

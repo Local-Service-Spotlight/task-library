@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "asOf": "2026-09-26T16:08:56.719758+00:00",
+  "asOf": "2026-09-27T15:50:25.785654+00:00",
   "countDefinition": "Distinct recorded execution IDs, separate from meta-article URLs. History is partial; absent history is unknown, not zero. The last-30-day count is a documented lower bound, not total task frequency.",
-  "recordedExecutions": 9,
+  "recordedExecutions": 10,
   "completedExecutions": 0,
   "partialExecutions": 9,
   "executions": [
@@ -241,6 +241,26 @@
       "metaArticle": {
         "status": "published",
         "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#tracker-setup-20260925-000216"
+      }
+    },
+    {
+      "executionId": "publisher-completion-20260927-134412",
+      "taskSlugs": [
+        "publish-skill-and-task-page"
+      ],
+      "startedAt": "2026-09-27T13:44:12.475179+00:00",
+      "status": "running",
+      "result": "Preparing matched publishing instructions, canonical page and library release; verification pending.",
+      "recipeRevisions": {
+        "publish-skill-and-task-page": {
+          "articleUrl": "https://blitzmetrics.com/skill-publishing-standard/",
+          "sourceSha256": "7857ea9ce9ff959f8470dab5fd8455c5e406fd82a5edb086936793b584a0cf2b"
+        }
+      },
+      "evidenceUrls": [],
+      "privateEvidenceRecorded": true,
+      "metaArticle": {
+        "status": "draft"
       }
     }
   ]
