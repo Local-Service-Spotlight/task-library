@@ -679,7 +679,7 @@ class DurableArticleStandard(unittest.TestCase):
         self.assertIn('## Entity Destination Rules', self.standard)
         self.assertIn('verified personal-brand site', self.standard)
         self.assertIn('verified official site', self.standard)
-        self.assertIn('BlitzMetrics training article', self.standard)
+        self.assertIn('LSS training article', self.standard)
         self.assertIn('Never guess a domain', self.standard)
 
     def test_canonical_diagram_and_ready_marker_are_gated(self):

@@ -1,4 +1,4 @@
-# BlitzMetrics Task Library
+# LSS Task Library
 
 Use these guides to save time on work that helps your business. Pick one job and follow its steps. Use the [Task Library Dashboard](https://blitzmetrics.com/task-library-dashboard/) to find that guide, then check its result before you pass work to the next person.
 
