@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-27T16:17:03+00:00",
+  "generatedAt": "2026-09-27T17:12:08+00:00",
   "definition": "Per-task standard gates derived from exact instruction reviews, explicit instruction-requirement checks, contributor status, article mapping/catalog holds, exact-revision article semantic reviews, task-attributed examples and the execution ledger. Unknown proof is never turned into a pass.",
   "stats": {
     "tasks": 276,
@@ -17,10 +17,10 @@
         "unknown": 0
       },
       "instructionStandards": {
-        "pass": 4,
+        "pass": 5,
         "unmet": 0,
         "hold": 0,
-        "unknown": 272
+        "unknown": 271
       },
       "contributorComplete": {
         "pass": 126,
@@ -17893,24 +17893,57 @@
       "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=validate-cross-reference-integrity-across-articles#task-validate-cross-reference-integrity-across-articles",
       "nextAction": "The contributor status is needs-work; finish and review the guide.",
       "standardVerification": {
-        "instructionSourceSha256": "16546d4677e9cf176b42ccccddeaa34172d477976490fa402087dfa5bde81743",
+        "instructionSourceSha256": "927b1a79dbfd50bba433d5b77fd3184f22ac7ff0a634b124e915a1ff934e63fd",
         "articleKey": "blitzmetrics.com/knowledge-system-maintenance",
         "gates": {
           "instructionRevisionReviewed": {
             "id": "instructionRevisionReviewed",
             "label": "Exact instruction revision reviewed",
             "state": "pass",
-            "reason": "Current source bytes match the review recorded 2026-09-06. Review scope and limits: Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate.",
-            "reviewedAt": "2026-09-06",
-            "reviewer": "Codex editorial review",
-            "sourceSha256": "16546d4677e9cf176b42ccccddeaa34172d477976490fa402087dfa5bde81743"
+            "reason": "Current source bytes match the review recorded 2026-09-27. Review scope and limits: All five written instruction checks reviewed; candidate publication checks remain separate. Contributor needs-work and whole task evidence gates are preserved. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/cross-reference-guide-2026-09-27.md",
+            "reviewedAt": "2026-09-27",
+            "reviewer": "Codex root with independent GPT-6 Sol source review",
+            "sourceSha256": "927b1a79dbfd50bba433d5b77fd3184f22ac7ff0a634b124e915a1ff934e63fd"
           },
           "instructionStandards": {
             "id": "instructionStandards",
             "label": "Instruction requirements checked",
-            "state": "unknown",
-            "reason": "The current exact-byte review has no structured instruction-requirements checklist.",
-            "sourceSha256": "16546d4677e9cf176b42ccccddeaa34172d477976490fa402087dfa5bde81743"
+            "state": "pass",
+            "reason": "All five instruction requirements have explicit passing checks for the current source revision.",
+            "reviewedAt": "2026-09-27",
+            "reviewer": "Codex root with independent GPT-6 Sol source review",
+            "reviewScope": "All five written instruction checks reviewed; candidate publication checks remain separate. Contributor needs-work and whole task evidence gates are preserved. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/cross-reference-guide-2026-09-27.md",
+            "sourceSha256": "927b1a79dbfd50bba433d5b77fd3184f22ac7ff0a634b124e915a1ff934e63fd",
+            "standards": {
+              "version": 1,
+              "checks": {
+                "opening": {
+                  "state": "pass",
+                  "reason": "Names link meaning, reader value and the dependent full-audit result record.",
+                  "evidence": "Check that each link leads to the help its words promise. Read the source page and its linked page so readers get the right answer. Next, record the full article audit result once the topic, steps, and facts are also checked."
+                },
+                "recipe": {
+                  "state": "pass",
+                  "reason": "Scoped sources, seven ordered steps, checked outputs and explicit missing-access treatment.",
+                  "evidence": "Working table records source revision, surrounding claim, target/fragment, direction, semantic result and coverage limits."
+                },
+                "links": {
+                  "state": "pass",
+                  "reason": "Owned guide relationships and the downstream result-recording task were read; corrected misleading audit label.",
+                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/cross-reference-guide-2026-09-27.md"
+                },
+                "evidence": {
+                  "state": "pass",
+                  "reason": "Fiction is labeled and source-backed real evidence is still required.",
+                  "evidence": "A loaded URL is not semantic proof; the source requires dated observations and explicit UNKNOWN coverage."
+                },
+                "handoff": {
+                  "state": "pass",
+                  "reason": "Specific owner handoff and full-audit dependency are explicit.",
+                  "evidence": "Article owner receives dated link table, checked repairs and unresolved source edits. Record full result only after other audit checks."
+                }
+              }
+            }
           },
           "contributorComplete": {
             "id": "contributorComplete",
@@ -17971,7 +18004,6 @@
         ],
         "heldStandardGates": [],
         "unknownStandardGates": [
-          "instructionStandards",
           "articleSemanticCertification",
           "taskExampleEvidence",
           "recordedExecution",
@@ -29432,8 +29464,9 @@
             "id": "recordedExecution",
             "label": "Recorded real execution",
             "state": "pass",
-            "reason": "2 distinct execution ID(s) name this task; outcomes remain separate.",
+            "reason": "3 distinct execution ID(s) name this task; outcomes remain separate.",
             "executionIds": [
+              "crossref-release-20260927-162402",
               "publisher-completion-20260927-134412",
               "tracker-setup-20260925-000216"
             ],

@@ -493,10 +493,40 @@
       "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
     },
     "validate-cross-reference-integrity-across-articles": {
-      "source_sha256": "16546d4677e9cf176b42ccccddeaa34172d477976490fa402087dfa5bde81743",
-      "reviewed_at": "2026-09-06",
-      "reviewer": "Codex editorial review",
-      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+      "source_sha256": "927b1a79dbfd50bba433d5b77fd3184f22ac7ff0a634b124e915a1ff934e63fd",
+      "reviewed_at": "2026-09-27",
+      "reviewer": "Codex root with independent GPT-6 Sol source review",
+      "scope": "All five written instruction checks reviewed; candidate publication checks remain separate. Contributor needs-work and whole task evidence gates are preserved. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/cross-reference-guide-2026-09-27.md",
+      "standards": {
+        "version": 1,
+        "checks": {
+          "opening": {
+            "state": "pass",
+            "reason": "Names link meaning, reader value and the dependent full-audit result record.",
+            "evidence": "Check that each link leads to the help its words promise. Read the source page and its linked page so readers get the right answer. Next, record the full article audit result once the topic, steps, and facts are also checked."
+          },
+          "recipe": {
+            "state": "pass",
+            "reason": "Scoped sources, seven ordered steps, checked outputs and explicit missing-access treatment.",
+            "evidence": "Working table records source revision, surrounding claim, target/fragment, direction, semantic result and coverage limits."
+          },
+          "links": {
+            "state": "pass",
+            "reason": "Owned guide relationships and the downstream result-recording task were read; corrected misleading audit label.",
+            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/cross-reference-guide-2026-09-27.md"
+          },
+          "evidence": {
+            "state": "pass",
+            "reason": "Fiction is labeled and source-backed real evidence is still required.",
+            "evidence": "A loaded URL is not semantic proof; the source requires dated observations and explicit UNKNOWN coverage."
+          },
+          "handoff": {
+            "state": "pass",
+            "reason": "Specific owner handoff and full-audit dependency are explicit.",
+            "evidence": "Article owner receives dated link table, checked repairs and unresolved source edits. Record full result only after other audit checks."
+          }
+        }
+      }
     },
     "verify-structural-completeness-against-8-step-framework": {
       "source_sha256": "f7ca11a38cb60c81f86beae4f0b8092fe335c40d7710bdaf6c12c0235f7ab865",
