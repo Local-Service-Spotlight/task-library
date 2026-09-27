@@ -746,20 +746,41 @@
         }
       },
       "startedAt": "2026-09-27T16:24:02.098463+00:00",
-      "status": "running",
-      "result": "Publish a reviewed cross-reference guide revision with matching maintained file, article section, task entry and download. No cross-reference audit execution is claimed.",
+      "status": "partial",
+      "result": "Matched cross-reference instructions were published in the maintained source, article section and all-tasks ZIP; saved/anonymous full text and media match. Final public visual verification remains open because browser capture and control failed. No cross-reference audit execution or novice setup is claimed. Existing maintenance worker receives the capture failure and exact revision for follow-up.",
       "evidence": [
         {
+          "visibility": "public",
+          "url": "https://github.com/Local-Service-Spotlight/task-library/pull/43"
+        },
+        {
+          "visibility": "public",
+          "url": "https://github.com/Local-Service-Spotlight/task-library/blob/ccf0362a00ca38515e6137bcce486115136f3c14/reviews/cross-reference-guide-2026-09-27.md"
+        },
+        {
           "visibility": "private",
-          "sha256": "53525e374bfafa3c3d9c58ecbac80fa212f239f0dccc39668aa527e18aa0318d"
+          "sha256": "adc0ab8a859a4aa5dbc2444e7e423065a6f73b480285209c9b317c0938f54798"
+        },
+        {
+          "visibility": "private",
+          "sha256": "69763785c0e37206e5e1b0deb348edaed52dcb8f2c131606afdf2f039c268433"
+        },
+        {
+          "visibility": "private",
+          "sha256": "e3d2669c2a74b11288e3e577db58dbc8caaa631dbb33cfe804a0edc87c548864"
+        },
+        {
+          "visibility": "private",
+          "sha256": "3b2e5f7e25a32bf9a7b3d6b4fd83afc692f49ff35c920689a789073f4a035449"
         }
       ],
       "metaArticle": {
-        "status": "draft",
-        "draftSha256": "3d30090e12c1fddbe4251a5e061327b7cbea1959bb9d8b877157a8dc45dcc519"
+        "status": "published",
+        "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#crossref-release-20260927-162402"
       },
       "recordedAt": "2026-09-27T16:24:03.437581+00:00",
-      "updatedAt": "2026-09-27T16:24:03.437592+00:00"
+      "updatedAt": "2026-09-27T17:18:54.853552+00:00",
+      "finishedAt": "2026-09-27T17:18:54.853552+00:00"
     }
   ]
 }

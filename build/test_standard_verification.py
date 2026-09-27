@@ -207,7 +207,14 @@ class StandardVerificationTests(unittest.TestCase):
         self.assertEqual(counts['taskExampleEvidence']['pass'], len(exact_examples))
         self.assertEqual(counts['recordedExecution']['pass'],
                          sum(bool(task['executionHistory']['executionIds']) for task in tasks))
-        self.assertEqual(counts['acceptedExecution']['unknown'], len(tasks))
+        # The newer partial publisher attempt must not inherit the older acceptance.
+        self.assertEqual(counts['acceptedExecution']['pass'], 0)
+        self.assertEqual(counts['acceptedExecution']['unknown'], len(tasks) - 1)
+        self.assertEqual(counts['acceptedExecution']['unmet'], 1)
+        publisher = next(task for task in tasks
+                         if task['slug'] == 'publish-skill-and-task-page')
+        self.assertEqual(publisher['standardVerification']['gates']
+                         ['acceptedExecution']['state'], 'unmet')
         self.assertEqual(counts['setupSuccess']['unknown'], len(tasks))
 
     def test_normal_dashboard_and_static_index_link_to_queue(self):
