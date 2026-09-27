@@ -781,6 +781,66 @@
       "recordedAt": "2026-09-27T16:24:03.437581+00:00",
       "updatedAt": "2026-09-27T17:18:54.853552+00:00",
       "finishedAt": "2026-09-27T17:18:54.853552+00:00"
+    },
+    {
+      "executionId": "lss-editorial-correction-20260927-190846",
+      "taskSlugs": [
+        "publish-skill-and-task-page"
+      ],
+      "recipeRevisions": {
+        "publish-skill-and-task-page": {
+          "articleUrl": "https://blitzmetrics.com/skill-publishing-standard/",
+          "sourceSha256": "3e9f22977b023330140c0866b6db199f0cbd31e086370043dcadfc643e45f319"
+        }
+      },
+      "startedAt": "2026-09-27T19:08:46.459712+00:00",
+      "status": "partial",
+      "result": "Published LSS naming and substantive concept-link rules in three owned guides, matched the maintained link-checking skill and public ZIP, and recorded Ardmor/Pure Plumbing as former clients. Exact saved/anonymous sources and changed guide layouts checked. The LSS static article-guidelines amendment remains prepared because its maintained source and supported release publisher are unavailable; legacy site-wide branding remains outside this scoped release. No whole-library certification or novice setup claimed. Existing maintenance worker receives the exact amendment and remaining queue.",
+      "evidence": [
+        {
+          "visibility": "public",
+          "url": "https://github.com/Local-Service-Spotlight/task-library/pull/45"
+        },
+        {
+          "visibility": "public",
+          "url": "https://github.com/Local-Service-Spotlight/task-library/blob/5a2fbc7e014bfefe0f59470d36d1c11f0b9be85d/reviews/lss-editorial-correction-2026-09-27.md"
+        },
+        {
+          "visibility": "private",
+          "sha256": "912c79d3ae4bff051904e018ca3799e21100b5fc2e2e46ee421fdcba2b6ad1f9"
+        },
+        {
+          "visibility": "private",
+          "sha256": "484d81be945283e587ef4b178dfc86d45fe7dbc072707f364832e014bbaa73c6"
+        },
+        {
+          "visibility": "private",
+          "sha256": "e5ec0acf6c6f3bbc1bc4529098e6f38131d390f060e3dd57d9d5bea43c73bd87"
+        },
+        {
+          "visibility": "private",
+          "sha256": "d8ad29f72274ec619057c397863a44197870c360e12ca6487ad54dc8493cd509"
+        },
+        {
+          "visibility": "private",
+          "sha256": "551184d638310aef362edc9c050e103c71b7b9201e163c68d1b795ae0fcfb2aa"
+        },
+        {
+          "visibility": "private",
+          "sha256": "5a3e2b8401fcb525386ae8526d4250d51bfaa35d23ee804f042602db8a81cbe6"
+        },
+        {
+          "visibility": "private",
+          "sha256": "e29cc6683ec7e4201a954eda9ba3c48e5afc6cd8bb6daa5a5bb1932bee9308e5"
+        }
+      ],
+      "metaArticle": {
+        "status": "published",
+        "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#lss-editorial-correction-20260927-190846"
+      },
+      "recordedAt": "2026-09-27T19:08:46.459712+00:00",
+      "updatedAt": "2026-09-27T19:35:44.435541+00:00",
+      "finishedAt": "2026-09-27T19:35:44.435541+00:00"
     }
   ]
 }

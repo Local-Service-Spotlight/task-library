@@ -1715,11 +1715,11 @@
  ],
  "executionHistory": {
   "schemaVersion": 1,
-  "asOf": "2026-09-27T19:25:49.478495+00:00",
+  "asOf": "2026-09-27T19:36:09.629200+00:00",
   "countDefinition": "Distinct recorded execution IDs, separate from meta-article URLs. History is partial; absent history is unknown, not zero. The last-30-day count is a documented lower bound, not total task frequency.",
-  "recordedExecutions": 11,
+  "recordedExecutions": 12,
   "completedExecutions": 1,
-  "partialExecutions": 10,
+  "partialExecutions": 11,
   "executions": [
    {
     "executionId": "recipe-audit-20260905-080140",
@@ -2056,6 +2056,31 @@
     "metaArticle": {
      "status": "published",
      "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#crossref-release-20260927-162402"
+    }
+   },
+   {
+    "executionId": "lss-editorial-correction-20260927-190846",
+    "taskSlugs": [
+     "publish-skill-and-task-page"
+    ],
+    "startedAt": "2026-09-27T19:08:46.459712+00:00",
+    "status": "partial",
+    "result": "Published LSS naming and substantive concept-link rules in three owned guides, matched the maintained link-checking skill and public ZIP, and recorded Ardmor/Pure Plumbing as former clients. Exact saved/anonymous sources and changed guide layouts checked. The LSS static article-guidelines amendment remains prepared because its maintained source and supported release publisher are unavailable; legacy site-wide branding remains outside this scoped release. No whole-library certification or novice setup claimed. Existing maintenance worker receives the exact amendment and remaining queue.",
+    "recipeRevisions": {
+     "publish-skill-and-task-page": {
+      "articleUrl": "https://blitzmetrics.com/skill-publishing-standard/",
+      "sourceSha256": "3e9f22977b023330140c0866b6db199f0cbd31e086370043dcadfc643e45f319"
+     }
+    },
+    "finishedAt": "2026-09-27T19:35:44.435541+00:00",
+    "evidenceUrls": [
+     "https://github.com/Local-Service-Spotlight/task-library/pull/45",
+     "https://github.com/Local-Service-Spotlight/task-library/blob/5a2fbc7e014bfefe0f59470d36d1c11f0b9be85d/reviews/lss-editorial-correction-2026-09-27.md"
+    ],
+    "privateEvidenceRecorded": true,
+    "metaArticle": {
+     "status": "published",
+     "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#lss-editorial-correction-20260927-190846"
     }
    }
   ]
@@ -37559,14 +37584,15 @@
      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=publish-skill-and-task-page#task-publish-skill-and-task-page",
      "executionHistory": {
       "status": "partial",
-      "recordedRuns": 3,
+      "recordedRuns": 4,
       "completedRuns": 1,
       "failedRuns": 0,
-      "partialRuns": 2,
+      "partialRuns": 3,
       "completedLast30Days": 1,
       "lastCompletedAt": "2026-09-27T16:14:01.977704+00:00",
       "executionIds": [
        "crossref-release-20260927-162402",
+       "lss-editorial-correction-20260927-190846",
        "publisher-completion-20260927-134412",
        "tracker-setup-20260925-000216"
       ],
@@ -37588,6 +37614,12 @@
         "status": "partial",
         "startedAt": "2026-09-27T16:24:02.098463+00:00",
         "finishedAt": "2026-09-27T17:18:54.853552+00:00"
+       },
+       {
+        "executionId": "lss-editorial-correction-20260927-190846",
+        "status": "partial",
+        "startedAt": "2026-09-27T19:08:46.459712+00:00",
+        "finishedAt": "2026-09-27T19:35:44.435541+00:00"
        }
       ],
       "acceptanceReviews": [
@@ -37836,9 +37868,10 @@
         "id": "recordedExecution",
         "label": "Recorded real execution",
         "state": "pass",
-        "reason": "3 distinct execution ID(s) name this task; outcomes remain separate.",
+        "reason": "4 distinct execution ID(s) name this task; outcomes remain separate.",
         "executionIds": [
          "crossref-release-20260927-162402",
+         "lss-editorial-correction-20260927-190846",
          "publisher-completion-20260927-134412",
          "tracker-setup-20260925-000216"
         ],
