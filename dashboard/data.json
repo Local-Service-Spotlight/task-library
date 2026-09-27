@@ -1715,9 +1715,9 @@
  ],
  "executionHistory": {
   "schemaVersion": 1,
-  "asOf": "2026-09-27T19:36:09.629200+00:00",
+  "asOf": "2026-09-27T21:14:33.545429+00:00",
   "countDefinition": "Distinct recorded execution IDs, separate from meta-article URLs. History is partial; absent history is unknown, not zero. The last-30-day count is a documented lower bound, not total task frequency.",
-  "recordedExecutions": 12,
+  "recordedExecutions": 13,
   "completedExecutions": 1,
   "partialExecutions": 11,
   "executions": [
@@ -2065,7 +2065,7 @@
     ],
     "startedAt": "2026-09-27T19:08:46.459712+00:00",
     "status": "partial",
-    "result": "Published LSS naming and substantive concept-link rules in three owned guides, matched the maintained link-checking skill and public ZIP, and recorded Ardmor/Pure Plumbing as former clients. Exact saved/anonymous sources and changed guide layouts checked. The LSS static article-guidelines amendment remains prepared because its maintained source and supported release publisher are unavailable; legacy site-wide branding remains outside this scoped release. No whole-library certification or novice setup claimed. Existing maintenance worker receives the exact amendment and remaining queue.",
+    "result": "Published LSS naming and concept-link rules in three owned guides and matched the maintained link skill and ZIP. A later review found internal account information in public copies; a separate correction removes it. The static LSS article-guidelines amendment remains prepared, not deployed. Existing worker retains source/release ownership, full article certification and novice-setup gaps. No whole-library certification is claimed.",
     "recipeRevisions": {
      "publish-skill-and-task-page": {
       "articleUrl": "https://blitzmetrics.com/skill-publishing-standard/",
@@ -2075,12 +2075,34 @@
     "finishedAt": "2026-09-27T19:35:44.435541+00:00",
     "evidenceUrls": [
      "https://github.com/Local-Service-Spotlight/task-library/pull/45",
-     "https://github.com/Local-Service-Spotlight/task-library/blob/5a2fbc7e014bfefe0f59470d36d1c11f0b9be85d/reviews/lss-editorial-correction-2026-09-27.md"
+     "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/lss-editorial-correction-2026-09-27.md"
     ],
     "privateEvidenceRecorded": true,
     "metaArticle": {
      "status": "published",
      "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#lss-editorial-correction-20260927-190846"
+    }
+   },
+   {
+    "executionId": "roster-public-boundary-20260927-210848",
+    "taskSlugs": [
+     "publish-skill-and-task-page"
+    ],
+    "startedAt": "2026-09-27T21:08:48Z",
+    "status": "running",
+    "result": "Correct public article, downloadable instruction and run-record copies that included private account information; strengthen shared source-access and editorial boundary checks. Publication and private preflight verification are in progress. No client task execution or whole-library certification is claimed.",
+    "recipeRevisions": {
+     "publish-skill-and-task-page": {
+      "articleUrl": "https://blitzmetrics.com/skill-publishing-standard/",
+      "sourceSha256": "660d6f1abd8678c851c0a08059f27982e8e29b46775ea217a2ae1d6e3ba55537"
+     }
+    },
+    "evidenceUrls": [
+     "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/public-editorial-boundary-2026-09-27.md"
+    ],
+    "privateEvidenceRecorded": false,
+    "metaArticle": {
+     "status": "draft"
     }
    }
   ]
@@ -36535,7 +36557,7 @@
      "article": "https://blitzmetrics.com/knowledge-system-maintenance",
      "articleKind": "topic-hub",
      "desc": "A link should take people to the help its words promise.",
-     "content": "---\nname: validate-cross-reference-integrity-across-articles\ndescription: A link should take people to the help its words promise.\ncategory: Knowledge System Maintenance\nstage: —\ndefinitive_article: /knowledge-system-maintenance\nstatus: needs-work\n---\n\n# Validate cross-reference integrity across articles\n\nCheck that each link leads to the help its words promise. Read the source page and its linked page so readers get the right answer. Next, [record the full article audit result](https://local-service-spotlight.github.io/task-library/?task=update-status-table-in-definitive-article-guide#task-update-status-table-in-definitive-article-guide) once the topic, steps, and facts are also checked.\n\n**The path:** Reference list → Read both pages → Scoped fixes → Check again\n\n**Start when:** An audit needs to check whether the links around a page still describe their targets accurately.\n\n## Inputs\n\n- The audited article’s current URL, known aliases, role and source revision.\n- A scoped site export or internal-link report, with its coverage and collection time; access to the current source and rendered pages, or a named owner for pages the auditor cannot open.\n- [Article Guidelines](https://localservicespotlight.com/article-guidelines/) and the owned [SEO Tree, how related pages link to their main topic](https://blitzmetrics.com/seo-tree/) for topic relationships.\n\n## Steps\n\n1. Build a working table with source URL, source revision, anchor and surrounding claim, destination URL or fragment, direction (inbound or outbound), and status. Populate inbound links from the available site export or link report, checking known aliases and title mentions. Search can find more candidates, but it cannot prove a complete inventory; record covered sites, collection dates and inaccessible sources.\n2. Read each inbound anchor with its surrounding sentence and then read its current destination. Record whether the destination teaches or proves the promised task, concept or claim and whether any cited section still exists. If access fails, mark meaning UNKNOWN rather than passing the link from its URL.\n3. Mark wrong subject links, removed fragments, misleading descriptions and redirects to the wrong page. A successful page load proves reachability only, not that the linked claim is true.\n4. Inventory the major concepts and prerequisites mentioned in the article, including ones with no link yet. Explain unfamiliar terms in a short phrase and link the first useful mention to the existing maintained guide. Follow the [SEO Tree](https://blitzmetrics.com/seo-tree/): a supporting page links to its main topic, and the main guide links back when that example or subtask helps readers. Search the Task Library and owned sites before proposing a new article. Create one only for a distinct reader need with enough evidence, useful instruction and a clear place in the tree; otherwise improve the existing guide or define the term in place. Record a missing-guide gap rather than inventing a destination.\n5. Use concise descriptive anchors that fit the sentence. Retain an external primary source when it supports a provider-specific fact or required tool action. Never retarget an external documentation link solely because an internal page mentions the same product. Check relationship status before linking a named business. Ardmor and Pure Plumbing are former clients: verified historical examples may remain as plain text, without links to those companies or claims of a current client relationship. Use Local Service Spotlight (LSS) for the current organization; the publishing domain can remain blitzmetrics.com. Preserve exact historical quotations and technical identifiers.\n6. Repeat the same table and meaning check for outbound links, including related task and topic links. A task recipe, entity hub, comparison and story have distinct purposes; do not relabel one just to fill a required link slot.\n7. Prepare exact source edits for inaccurate references and preserve all unrelated content/media. Release only through the owning source and existing authority; otherwise hand the owner the precise sentence, destination and reason.\n8. Reopen each changed link and read the rendered sentence at both ends. Save the dated table with one result per listed link: correct, repaired and read back, wrong and handed off, or UNKNOWN with access reason. Count each result, name coverage limits and remaining owners, and propose a source-workflow fix if repeated renames or edits leave references stale.\n\n## Definition of done (QA checklist)\n\n[Quality assurance (QA)](https://localservicespotlight.com/article-guidelines/) means checking the work against the agreed result.\n\n- [ ] The dated reference table states actual coverage, source revision and counts; every listed link has a semantic result or explicit UNKNOWN.\n- [ ] Major concepts have a helpful maintained link, an in-place definition, or a recorded missing-guide gap; former-client examples and current LSS naming follow the publishing rules.\n- [ ] Wrong destinations and descriptions have a verified repair or an exact owner handoff.\n- [ ] Readback covers changed anchors and targets; reachability is not substituted for meaning.\n\n## Example(s)\n\n**Fictional teaching example. This is not a client result or proof of a completed run.**\n\nA fictional article links “how to set up your library” to a story about one team’s library. The story loads, but it does not teach setup. Change the link only after locating and reading the actual setup guide. A separate vendor link for a supported file limit stays as primary evidence; the owned guide does not establish that limit.\n\n## Handoff and Content Factory context\n\nThis work supports the [Content Factory, our four stages of using real content](https://blitzmetrics.com/content-factory/): Produce → Process → Post → Promote. Use the specific inputs and next task below to place the work; a maintenance task does not manufacture transcripts, clips or other stage outputs it does not call for.\n\nThe article owner receives the dated link table, confirmed repairs, source sentences, coverage limits and unresolved issues. [Record the article audit result](https://local-service-spotlight.github.io/task-library/?task=update-status-table-in-definitive-article-guide#task-update-status-table-in-definitive-article-guide) receives these link findings when the topic, structure and facts checks are also ready; a link-only pass stays partial.\n\n## Run with an agent\n\nGive the AI worker this recipe, the real Inputs above, the intended result and the actions already authorized. Ask it to return the saved output, checks, evidence and remaining owner. Check its work against this guide; loading a skill does not prove access, installation of a job, or successful execution. Keep media muted with volume at zero if playback is needed.\n\nFor recurring work, keep the actual trigger, owner and runtime in the job record. Scheduling and observed firings are separate. Do not create a schedule merely because this guide mentions a review interval.\n\n## Record the real execution\n\nOpen the run record when the work starts. Keep the exact starting recipe revision, one execution ID, source evidence and actual state. Write a [meta article, the record of one run](https://blitzmetrics.com/meta-article-prompt/) with decisions, results, checks, failures and next owner. Link it to this task and register it through the [Task Library](https://local-service-spotlight.github.io/task-library/) execution process. Writing is part of the work; public release follows existing authority.\n\nReuse the same execution ID for revisions, QA, meta writing and retries within that run. A blocked run stays open with its dependency and next owner; do not invent a finish time. Use supported findings to propose and verify a better recipe. A historical public-example count without distinct run IDs remains dated article volume, not verified execution frequency.\n\n\n<!-- factory-layer:start -->\n\n## Factory chain (do not treat this as isolated)\n\n- **Phase:** —\n- **Importance:** 2/5 `●●○○○` — frequency 2, revenue 1, gating 2 (supporting)\n- **Suggested previous station:** —\n- **Suggested next station:** —\nThese stations are generated neighbors, not verified prerequisites or handoffs. Follow the task’s actual Inputs and Handoff sections.\n- **Handoff:** Save this task’s actual output, source, date and checks where the receiving owner can read them. Follow the Inputs and Handoff sections for its next step.\n\n## Model routing (same factory, any engine)\n\n- **This task's lane:** `any` — Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.\n- **Single-engine path:** Use the capable AI app you already have. Check its required tools and access before starting. Pass the actual result and proof to the next task.\n- **Optional multi-engine:** A tested local model may draft; a stronger model may review facts and voice. Use supported tools for approved actions. Pick models from observed quality and cost; a model name does not prove it can run this task.\n- **Never** store the working state in one vendor's memory. Files in the Content Library are the bridge.\n\n<!-- factory-layer:end -->\n## Definitive article & links\n\n- [Maintained source guide](https://blitzmetrics.com/knowledge-system-maintenance/)\n- [This task in the Task Library](https://local-service-spotlight.github.io/task-library/?task=validate-cross-reference-integrity-across-articles#task-validate-cross-reference-integrity-across-articles)\n- [Article Guidelines](https://localservicespotlight.com/article-guidelines/)\n- [current article guide](https://blitzmetrics.com/definitive-article-guide/)\n- [How recipes and run records work together](https://localservicespotlight.com/meta-articles/)\n\n## Review and evidence still needed\n\nThe inherited contributor status is `needs-work`. It is preserved, not promoted by this rewrite. That label alone does not verify document readiness, a client outcome, access or an executed task.\n\nA real execution still needs its own source, reviewer, saved result and handoff evidence. The fictional example teaches the method; a real example with relevant proof is still needed where required. The task-specific flow above is source guidance; its visible presentation and the full document need a named reviewer and desktop/mobile checks.",
+     "content": "---\nname: validate-cross-reference-integrity-across-articles\ndescription: A link should take people to the help its words promise.\ncategory: Knowledge System Maintenance\nstage: —\ndefinitive_article: /knowledge-system-maintenance\nstatus: needs-work\n---\n\n# Validate cross-reference integrity across articles\n\nCheck that each link leads to the help its words promise. Read the source page and its linked page so readers get the right answer. Next, [record the full article audit result](https://local-service-spotlight.github.io/task-library/?task=update-status-table-in-definitive-article-guide#task-update-status-table-in-definitive-article-guide) once the topic, steps, and facts are also checked.\n\n**The path:** Reference list → Read both pages → Scoped fixes → Check again\n\n**Start when:** An audit needs to check whether the links around a page still describe their targets accurately.\n\n## Inputs\n\n- The audited article’s current URL, known aliases, role and source revision.\n- A scoped site export or internal-link report, with its coverage and collection time; access to the current source and rendered pages, or a named owner for pages the auditor cannot open.\n- [Article Guidelines](https://localservicespotlight.com/article-guidelines/) and the owned [SEO Tree, how related pages link to their main topic](https://blitzmetrics.com/seo-tree/) for topic relationships.\n\n## Steps\n\n1. Build a working table with source URL, source revision, anchor and surrounding claim, destination URL or fragment, direction (inbound or outbound), and status. Populate inbound links from the available site export or link report, checking known aliases and title mentions. Search can find more candidates, but it cannot prove a complete inventory; record covered sites, collection dates and inaccessible sources.\n2. Read each inbound anchor with its surrounding sentence and then read its current destination. Record whether the destination teaches or proves the promised task, concept or claim and whether any cited section still exists. If access fails, mark meaning UNKNOWN rather than passing the link from its URL.\n3. Mark wrong subject links, removed fragments, misleading descriptions and redirects to the wrong page. A successful page load proves reachability only, not that the linked claim is true.\n4. Inventory the major concepts and prerequisites mentioned in the article, including ones with no link yet. Explain unfamiliar terms in a short phrase and link the first useful mention to the existing maintained guide. Follow the [SEO Tree](https://blitzmetrics.com/seo-tree/): a supporting page links to its main topic, and the main guide links back when that example or subtask helps readers. Search the Task Library and owned sites before proposing a new article. Create one only for a distinct reader need with enough evidence, useful instruction and a clear place in the tree; otherwise improve the existing guide or define the term in place. Record a missing-guide gap rather than inventing a destination.\n5. Use concise descriptive anchors that fit the sentence. Retain an external primary source when it supports a provider-specific fact or required tool action. Never retarget an external documentation link solely because an internal page mentions the same product. Apply the approved link rules for each example. Keep internal account information out of public copy, downloadable instructions and public run records. A private source may guide an editorial decision without being quoted or disclosed. Use Local Service Spotlight (LSS) for the current organization; the publishing domain can remain blitzmetrics.com. Preserve exact historical quotations and technical identifiers.\n6. Repeat the same table and meaning check for outbound links, including related task and topic links. A task recipe, entity hub, comparison and story have distinct purposes; do not relabel one just to fill a required link slot.\n7. Prepare exact source edits for inaccurate references and preserve all unrelated content/media. Release only through the owning source and existing authority; otherwise hand the owner the precise sentence, destination and reason.\n8. Reopen each changed link and read the rendered sentence at both ends. Save the dated table with one result per listed link: correct, repaired and read back, wrong and handed off, or UNKNOWN with access reason. Count each result, name coverage limits and remaining owners, and propose a source-workflow fix if repeated renames or edits leave references stale.\n\n## Definition of done (QA checklist)\n\n[Quality assurance (QA)](https://localservicespotlight.com/article-guidelines/) means checking the work against the agreed result.\n\n- [ ] The dated reference table states actual coverage, source revision and counts; every listed link has a semantic result or explicit UNKNOWN.\n- [ ] Major concepts have a helpful maintained link, an in-place definition, or a recorded missing-guide gap; examples, privacy and current LSS naming follow the publishing rules.\n- [ ] Wrong destinations and descriptions have a verified repair or an exact owner handoff.\n- [ ] Readback covers changed anchors and targets; reachability is not substituted for meaning.\n\n## Example(s)\n\n**Fictional teaching example. This is not a client result or proof of a completed run.**\n\nA fictional article links “how to set up your library” to a story about one team’s library. The story loads, but it does not teach setup. Change the link only after locating and reading the actual setup guide. A separate vendor link for a supported file limit stays as primary evidence; the owned guide does not establish that limit.\n\n## Handoff and Content Factory context\n\nThis work supports the [Content Factory, our four stages of using real content](https://blitzmetrics.com/content-factory/): Produce → Process → Post → Promote. Use the specific inputs and next task below to place the work; a maintenance task does not manufacture transcripts, clips or other stage outputs it does not call for.\n\nThe article owner receives the dated link table, confirmed repairs, source sentences, coverage limits and unresolved issues. [Record the article audit result](https://local-service-spotlight.github.io/task-library/?task=update-status-table-in-definitive-article-guide#task-update-status-table-in-definitive-article-guide) receives these link findings when the topic, structure and facts checks are also ready; a link-only pass stays partial.\n\n## Run with an agent\n\nGive the AI worker this recipe, the real Inputs above, the intended result and the actions already authorized. Ask it to return the saved output, checks, evidence and remaining owner. Check its work against this guide; loading a skill does not prove access, installation of a job, or successful execution. Keep media muted with volume at zero if playback is needed.\n\nFor recurring work, keep the actual trigger, owner and runtime in the job record. Scheduling and observed firings are separate. Do not create a schedule merely because this guide mentions a review interval.\n\n## Record the real execution\n\nOpen the run record when the work starts. Keep the exact starting recipe revision, one execution ID, source evidence and actual state. Write a [meta article, the record of one run](https://blitzmetrics.com/meta-article-prompt/) with decisions, results, checks, failures and next owner. Link it to this task and register it through the [Task Library](https://local-service-spotlight.github.io/task-library/) execution process. Writing is part of the work; public release follows existing authority.\n\nReuse the same execution ID for revisions, QA, meta writing and retries within that run. A blocked run stays open with its dependency and next owner; do not invent a finish time. Use supported findings to propose and verify a better recipe. A historical public-example count without distinct run IDs remains dated article volume, not verified execution frequency.\n\n\n<!-- factory-layer:start -->\n\n## Factory chain (do not treat this as isolated)\n\n- **Phase:** —\n- **Importance:** 2/5 `●●○○○` — frequency 2, revenue 1, gating 2 (supporting)\n- **Suggested previous station:** —\n- **Suggested next station:** —\nThese stations are generated neighbors, not verified prerequisites or handoffs. Follow the task’s actual Inputs and Handoff sections.\n- **Handoff:** Save this task’s actual output, source, date and checks where the receiving owner can read them. Follow the Inputs and Handoff sections for its next step.\n\n## Model routing (same factory, any engine)\n\n- **This task's lane:** `any` — Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.\n- **Single-engine path:** Use the capable AI app you already have. Check its required tools and access before starting. Pass the actual result and proof to the next task.\n- **Optional multi-engine:** A tested local model may draft; a stronger model may review facts and voice. Use supported tools for approved actions. Pick models from observed quality and cost; a model name does not prove it can run this task.\n- **Never** store the working state in one vendor's memory. Files in the Content Library are the bridge.\n\n<!-- factory-layer:end -->\n## Definitive article & links\n\n- [Maintained source guide](https://blitzmetrics.com/knowledge-system-maintenance/)\n- [This task in the Task Library](https://local-service-spotlight.github.io/task-library/?task=validate-cross-reference-integrity-across-articles#task-validate-cross-reference-integrity-across-articles)\n- [Article Guidelines](https://localservicespotlight.com/article-guidelines/)\n- [current article guide](https://blitzmetrics.com/definitive-article-guide/)\n- [How recipes and run records work together](https://localservicespotlight.com/meta-articles/)\n\n## Review and evidence still needed\n\nThe inherited contributor status is `needs-work`. It is preserved, not promoted by this rewrite. That label alone does not verify document readiness, a client outcome, access or an executed task.\n\nA real execution still needs its own source, reviewer, saved result and handoff evidence. The fictional example teaches the method; a real example with relevant proof is still needed where required. The task-specific flow above is source guidance; its visible presentation and the full document need a named reviewer and desktop/mobile checks.",
      "importance": 2,
      "freq": 2,
      "revenue": 1,
@@ -36547,10 +36569,10 @@
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
      "why": "supporting",
      "instructionReview": {
-      "source_sha256": "46e041102c8b2de0e0b76fcdb61964d6c9a699b944c53b2e36865434b3bd4ba4",
+      "source_sha256": "8d6c630a81443874a72bbbb3f606d20c61a849f6037df92822d3af6b12acc523",
       "reviewed_at": "2026-09-27",
       "reviewer": "Codex root with independent GPT-6 Sol source review",
-      "scope": "All five written instruction checks reviewed for the exact revision, including missing concept links, LSS naming and former-client examples. Whole-task gates stay separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/lss-editorial-correction-2026-09-27.md",
+      "scope": "Exact-revision written instruction review after removing private account information from public instructions; whole-task gates remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/public-editorial-boundary-2026-09-27.md",
       "standards": {
        "version": 1,
        "checks": {
@@ -36566,8 +36588,8 @@
         },
         "links": {
          "state": "pass",
-         "reason": "Existing maintained SEO Tree and related guides read; absent-link coverage and former-client exception are explicit.",
-         "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/lss-editorial-correction-2026-09-27.md"
+         "reason": "Maintained concept guides and next task are linked; public example/link choices do not disclose private account information.",
+         "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/public-editorial-boundary-2026-09-27.md"
         },
         "evidence": {
          "state": "pass",
@@ -36598,17 +36620,17 @@
       "setupReviews": []
      },
      "standardVerification": {
-      "instructionSourceSha256": "46e041102c8b2de0e0b76fcdb61964d6c9a699b944c53b2e36865434b3bd4ba4",
+      "instructionSourceSha256": "8d6c630a81443874a72bbbb3f606d20c61a849f6037df92822d3af6b12acc523",
       "articleKey": "blitzmetrics.com/knowledge-system-maintenance",
       "gates": {
        "instructionRevisionReviewed": {
         "id": "instructionRevisionReviewed",
         "label": "Exact instruction revision reviewed",
         "state": "pass",
-        "reason": "Current source bytes match the review recorded 2026-09-27. Review scope and limits: All five written instruction checks reviewed for the exact revision, including missing concept links, LSS naming and former-client examples. Whole-task gates stay separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/lss-editorial-correction-2026-09-27.md",
+        "reason": "Current source bytes match the review recorded 2026-09-27. Review scope and limits: Exact-revision written instruction review after removing private account information from public instructions; whole-task gates remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/public-editorial-boundary-2026-09-27.md",
         "reviewedAt": "2026-09-27",
         "reviewer": "Codex root with independent GPT-6 Sol source review",
-        "sourceSha256": "46e041102c8b2de0e0b76fcdb61964d6c9a699b944c53b2e36865434b3bd4ba4"
+        "sourceSha256": "8d6c630a81443874a72bbbb3f606d20c61a849f6037df92822d3af6b12acc523"
        },
        "instructionStandards": {
         "id": "instructionStandards",
@@ -36617,8 +36639,8 @@
         "reason": "All five instruction requirements have explicit passing checks for the current source revision.",
         "reviewedAt": "2026-09-27",
         "reviewer": "Codex root with independent GPT-6 Sol source review",
-        "reviewScope": "All five written instruction checks reviewed for the exact revision, including missing concept links, LSS naming and former-client examples. Whole-task gates stay separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/lss-editorial-correction-2026-09-27.md",
-        "sourceSha256": "46e041102c8b2de0e0b76fcdb61964d6c9a699b944c53b2e36865434b3bd4ba4",
+        "reviewScope": "Exact-revision written instruction review after removing private account information from public instructions; whole-task gates remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/public-editorial-boundary-2026-09-27.md",
+        "sourceSha256": "8d6c630a81443874a72bbbb3f606d20c61a849f6037df92822d3af6b12acc523",
         "standards": {
          "version": 1,
          "checks": {
@@ -36634,8 +36656,8 @@
           },
           "links": {
            "state": "pass",
-           "reason": "Existing maintained SEO Tree and related guides read; absent-link coverage and former-client exception are explicit.",
-           "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/lss-editorial-correction-2026-09-27.md"
+           "reason": "Maintained concept guides and next task are linked; public example/link choices do not disclose private account information.",
+           "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/public-editorial-boundary-2026-09-27.md"
           },
           "evidence": {
            "state": "pass",
@@ -37584,7 +37606,7 @@
      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=publish-skill-and-task-page#task-publish-skill-and-task-page",
      "executionHistory": {
       "status": "partial",
-      "recordedRuns": 4,
+      "recordedRuns": 5,
       "completedRuns": 1,
       "failedRuns": 0,
       "partialRuns": 3,
@@ -37594,6 +37616,7 @@
        "crossref-release-20260927-162402",
        "lss-editorial-correction-20260927-190846",
        "publisher-completion-20260927-134412",
+       "roster-public-boundary-20260927-210848",
        "tracker-setup-20260925-000216"
       ],
       "executionOutcomes": [
@@ -37620,6 +37643,12 @@
         "status": "partial",
         "startedAt": "2026-09-27T19:08:46.459712+00:00",
         "finishedAt": "2026-09-27T19:35:44.435541+00:00"
+       },
+       {
+        "executionId": "roster-public-boundary-20260927-210848",
+        "status": "running",
+        "startedAt": "2026-09-27T21:08:48Z",
+        "finishedAt": null
        }
       ],
       "acceptanceReviews": [
@@ -37868,11 +37897,12 @@
         "id": "recordedExecution",
         "label": "Recorded real execution",
         "state": "pass",
-        "reason": "4 distinct execution ID(s) name this task; outcomes remain separate.",
+        "reason": "5 distinct execution ID(s) name this task; outcomes remain separate.",
         "executionIds": [
          "crossref-release-20260927-162402",
          "lss-editorial-correction-20260927-190846",
          "publisher-completion-20260927-134412",
+         "roster-public-boundary-20260927-210848",
          "tracker-setup-20260925-000216"
         ],
         "historyStatus": "partial"

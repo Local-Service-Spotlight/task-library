@@ -795,7 +795,7 @@
       },
       "startedAt": "2026-09-27T19:08:46.459712+00:00",
       "status": "partial",
-      "result": "Published LSS naming and substantive concept-link rules in three owned guides, matched the maintained link-checking skill and public ZIP, and recorded Ardmor/Pure Plumbing as former clients. Exact saved/anonymous sources and changed guide layouts checked. The LSS static article-guidelines amendment remains prepared because its maintained source and supported release publisher are unavailable; legacy site-wide branding remains outside this scoped release. No whole-library certification or novice setup claimed. Existing maintenance worker receives the exact amendment and remaining queue.",
+      "result": "Published LSS naming and concept-link rules in three owned guides and matched the maintained link skill and ZIP. A later review found internal account information in public copies; a separate correction removes it. The static LSS article-guidelines amendment remains prepared, not deployed. Existing worker retains source/release ownership, full article certification and novice-setup gaps. No whole-library certification is claimed.",
       "evidence": [
         {
           "visibility": "public",
@@ -803,7 +803,7 @@
         },
         {
           "visibility": "public",
-          "url": "https://github.com/Local-Service-Spotlight/task-library/blob/5a2fbc7e014bfefe0f59470d36d1c11f0b9be85d/reviews/lss-editorial-correction-2026-09-27.md"
+          "url": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/lss-editorial-correction-2026-09-27.md"
         },
         {
           "visibility": "private",
@@ -841,6 +841,33 @@
       "recordedAt": "2026-09-27T19:08:46.459712+00:00",
       "updatedAt": "2026-09-27T19:35:44.435541+00:00",
       "finishedAt": "2026-09-27T19:35:44.435541+00:00"
+    },
+    {
+      "executionId": "roster-public-boundary-20260927-210848",
+      "taskSlugs": [
+        "publish-skill-and-task-page"
+      ],
+      "recipeRevisions": {
+        "publish-skill-and-task-page": {
+          "articleUrl": "https://blitzmetrics.com/skill-publishing-standard/",
+          "sourceSha256": "660d6f1abd8678c851c0a08059f27982e8e29b46775ea217a2ae1d6e3ba55537"
+        }
+      },
+      "startedAt": "2026-09-27T21:08:48Z",
+      "status": "running",
+      "result": "Correct public article, downloadable instruction and run-record copies that included private account information; strengthen shared source-access and editorial boundary checks. Publication and private preflight verification are in progress. No client task execution or whole-library certification is claimed.",
+      "evidence": [
+        {
+          "visibility": "public",
+          "url": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/public-editorial-boundary-2026-09-27.md"
+        }
+      ],
+      "metaArticle": {
+        "status": "draft",
+        "draftSha256": "135fdbc656ddff9cd8c19cfd6481af5843f28989243d3da55088a1b196ac1abe"
+      },
+      "recordedAt": "2026-09-27T21:08:48Z",
+      "updatedAt": "2026-09-27T21:08:48Z"
     }
   ]
 }
