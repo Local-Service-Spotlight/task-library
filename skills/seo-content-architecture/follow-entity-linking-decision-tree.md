@@ -9,7 +9,7 @@ status: complete
 
 # Follow entity linking decision tree
 
-Help readers reach the right person, business or guide. This task checks what each name means and where its link should go. Start with the draft and a list of the names and ideas it uses.
+Help readers find the right person, business, or guide. Use these steps to choose links that answer their next question. This builds your [SEO Tree](https://blitzmetrics.com/seo-tree/): a map that joins each story to its main guide and your business.
 
 **The path:** Named subject → Identity and page-role check → Useful destination → In-context review
 
@@ -18,18 +18,18 @@ Help readers reach the right person, business or guide. This task checks what ea
 ## Inputs
 
 - The exact current draft/source, actual named subjects and supporting evidence.
-- [Inventory pages and their purpose](https://local-service-spotlight.github.io/task-library/?task=step-1-inventory-content-and-establish-gct-per-page#task-step-1-inventory-content-and-establish-gct-per-page) or the maintained guide directory, verified personal/company homes and current relationship scope.
+- [Inventory pages and their purpose](https://local-service-spotlight.github.io/task-library/?task=step-1-inventory-content-and-establish-gct-per-page#task-step-1-inventory-content-and-establish-gct-per-page) or the maintained guide directory, verified personal/company homes and current relationship scope from the authorized private source. Keep that check private: public examples describe the work, without calling a named client “former,” “inactive,” or “no longer a client.”
 - The [entity linking, choosing the right home for a named person or topic](https://blitzmetrics.com/entity-linking/) method and necessary direct source, sign-in, install or download destinations used by the task.
 
 ## Steps
 
 1. Read the actual sentences and list the names and unfamiliar terms they contain. Record whether each item means a person, an organization, a method, a tool or a particular piece of evidence. Resolve ambiguous names before linking; a matching title in search is not identity proof.
-2. Route a person to their verified personal home and an in-network business to its verified official site. Check that the page describes the same entity and current relationship. Do not use a look-alike name, obsolete affiliate destination or unrelated profile merely because it opens.
-3. For a BlitzMetrics method, choose the maintained owned explanation. For an outside tool, concept or well-known entity in explanatory copy, use our current guide when one exists. If no relevant owned guide exists, leave the name plain and record the actual knowledge gap instead of linking to a weak substitute.
+2. For a person or business in the verified network, use their verified personal home or official business site. Send names outside that scope through step 3. Check that the page describes the same entity and current relationship. Do not use a look-alike name, obsolete affiliate destination or unrelated profile merely because it opens.
+3. For an LSS method, choose the maintained owned explanation. For an outside person, business, tool, concept or well-known entity in explanatory copy, use our current guide when one exists. If no relevant owned guide exists, leave the name plain and record the actual knowledge gap instead of linking to a weak substitute. Search for an existing guide first; improve it if it can answer the question. Propose a new guide only for a distinct task or substantial explanation, never just to fill a link slot.
 4. Keep direct primary evidence and required action links when the step needs that destination. Label a research source, account sign-in or download by its real purpose; these are different from the first explanation of the tool. Do not retarget a source citation or login button to our general article.
 5. Explain unfamiliar language on its first useful body mention in plain words, linked to the owned guide. Keep headings short and meaningful; if the term first occurs in a heading, give its explanation in the next suitable prose. Do not expand every repeated mention or repeatedly link the same entity.
 6. Use the actual name or a concise phrase that predicts the destination. Three to six descriptive words is the house preference where natural, not a requirement to pad a two-word person’s name. Read the surrounding sentence after the edit to ensure the meaning and claim remain true.
-7. Open the targets and inspect the final body links, preserving existing media, IDs and source ownership. Record unresolved identity, missing-guide and inaccessible-source cases separately. Pass the exact link log and remaining decisions to the page owner; a link is not proof of an endorsement or completed task.
+7. Open the targets and inspect the final body links, preserving existing media, IDs and source ownership. Record unresolved identity, missing-guide and inaccessible-source cases separately. Record source page, exact mention, purpose, destination, check date, result and open gap. Pass the exact link log and remaining decisions to the page owner; a link is not proof of an endorsement or completed task.
 
 ## Definition of done (QA checklist)
 

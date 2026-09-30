@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-27T21:33:30+00:00",
+  "generatedAt": "2026-09-30T01:09:34+00:00",
   "definition": "Per-task standard gates derived from exact instruction reviews, explicit instruction-requirement checks, contributor status, article mapping/catalog holds, exact-revision article semantic reviews, task-attributed examples and the execution ledger. Unknown proof is never turned into a pass.",
   "stats": {
     "tasks": 276,
@@ -17,10 +17,10 @@
         "unknown": 0
       },
       "instructionStandards": {
-        "pass": 5,
+        "pass": 6,
         "unmet": 0,
         "hold": 0,
-        "unknown": 271
+        "unknown": 270
       },
       "contributorComplete": {
         "pass": 126,
@@ -722,26 +722,59 @@
       "status": "complete",
       "articleUrl": "https://blitzmetrics.com/entity-linking/",
       "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=follow-entity-linking-decision-tree#task-follow-entity-linking-decision-tree",
-      "nextAction": "Existing completed entity-linking task now maps to its precise standalone recipe. This mapping review is not independent runtime or semantic certification of the newly mapped article.",
+      "nextAction": "Exact source and written instructions reviewed after a scoped repair. Full semantic certification remains held: canonical ownership, complete publication checks and accepted execution evidence are not all established. See reviews/entity-linking-2026-09-29.md.",
       "standardVerification": {
-        "instructionSourceSha256": "6cf0b6ea65480a19b6ec56c4c8fab93ff44d9041107d49f1f2353cd5971738b3",
+        "instructionSourceSha256": "8880e6df0dcba159e9c26477a306c1098ffe657d6ccd0983898f8f81a822ca74",
         "articleKey": "blitzmetrics.com/entity-linking",
         "gates": {
           "instructionRevisionReviewed": {
             "id": "instructionRevisionReviewed",
             "label": "Exact instruction revision reviewed",
             "state": "pass",
-            "reason": "Current source bytes match the review recorded 2026-09-06. Review scope and limits: Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate.",
-            "reviewedAt": "2026-09-06",
-            "reviewer": "Codex editorial review",
-            "sourceSha256": "6cf0b6ea65480a19b6ec56c4c8fab93ff44d9041107d49f1f2353cd5971738b3"
+            "reason": "Current source bytes match the review recorded 2026-09-29. Review scope and limits: Five written-instruction checks at exact bytes; independent corrections and target meaning reviewed. Real setup, article certification and accepted business execution remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/entity-linking-2026-09-29.md",
+            "reviewedAt": "2026-09-29",
+            "reviewer": "Codex root with independent Codex source review",
+            "sourceSha256": "8880e6df0dcba159e9c26477a306c1098ffe657d6ccd0983898f8f81a822ca74"
           },
           "instructionStandards": {
             "id": "instructionStandards",
             "label": "Instruction requirements checked",
-            "state": "unknown",
-            "reason": "The current exact-byte review has no structured instruction-requirements checklist.",
-            "sourceSha256": "6cf0b6ea65480a19b6ec56c4c8fab93ff44d9041107d49f1f2353cd5971738b3"
+            "state": "pass",
+            "reason": "All five instruction requirements have explicit passing checks for the current source revision.",
+            "reviewedAt": "2026-09-29",
+            "reviewer": "Codex root with independent Codex source review",
+            "reviewScope": "Five written-instruction checks at exact bytes; independent corrections and target meaning reviewed. Real setup, article certification and accepted business execution remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/entity-linking-2026-09-29.md",
+            "sourceSha256": "8880e6df0dcba159e9c26477a306c1098ffe657d6ccd0983898f8f81a822ca74",
+            "standards": {
+              "version": 1,
+              "checks": {
+                "opening": {
+                  "state": "pass",
+                  "reason": "States outcome, why readers benefit and the linked SEO Tree relationship in plain words.",
+                  "evidence": "Help readers find the right person, business, or guide. Use these steps to choose links that answer their next question. This builds your SEO Tree: a map that joins each story to its main guide and your business."
+                },
+                "recipe": {
+                  "state": "pass",
+                  "reason": "Actual input draft, verified map and scope, seven steps, distinct destination purposes and measurable link-log output are present.",
+                  "evidence": "Record source page, exact mention, purpose, destination, check date, result and open gap."
+                },
+                "links": {
+                  "state": "pass",
+                  "reason": "Owned explanations match their roles; required exact proof/action URLs are preserved. Opening target and receiving task were inspected.",
+                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/entity-linking-2026-09-29.md"
+                },
+                "evidence": {
+                  "state": "pass",
+                  "reason": "Example is clearly fictional; contributor completion does not imply access, execution or accepted results. Real record requirements include source version, checks, failure and owner.",
+                  "evidence": "Fictional teaching example. This is not a client result or proof of a completed run."
+                },
+                "handoff": {
+                  "state": "pass",
+                  "reason": "Page owner receives checked log and open decisions; named link-review task receives result; Content Factory role and one execution ID are explicit.",
+                  "evidence": "Check the placed links receives the checked links and unresolved cases."
+                }
+              }
+            }
           },
           "contributorComplete": {
             "id": "contributorComplete",
@@ -760,15 +793,15 @@
             "id": "articleCatalogGate",
             "label": "Article catalog gate",
             "state": "hold",
-            "reason": "Existing completed entity-linking task now maps to its precise standalone recipe. This mapping review is not independent runtime or semantic certification of the newly mapped article.",
-            "reviewedAt": "2026-09-05"
+            "reason": "Exact source and written instructions reviewed after a scoped repair. Full semantic certification remains held: canonical ownership, complete publication checks and accepted execution evidence are not all established. See reviews/entity-linking-2026-09-29.md.",
+            "reviewedAt": "2026-09-29"
           },
           "articleSemanticCertification": {
             "id": "articleSemanticCertification",
             "label": "Article semantic certification",
             "state": "hold",
-            "reason": "Existing completed entity-linking task now maps to its precise standalone recipe. This mapping review is not independent runtime or semantic certification of the newly mapped article.",
-            "reviewedAt": "2026-09-05"
+            "reason": "Exact source and written instructions reviewed after a scoped repair. Full semantic certification remains held: canonical ownership, complete publication checks and accepted execution evidence are not all established. See reviews/entity-linking-2026-09-29.md.",
+            "reviewedAt": "2026-09-29"
           },
           "taskExampleEvidence": {
             "id": "taskExampleEvidence",
@@ -804,7 +837,6 @@
           "articleSemanticCertification"
         ],
         "unknownStandardGates": [
-          "instructionStandards",
           "taskExampleEvidence",
           "recordedExecution",
           "acceptedExecution",
@@ -814,7 +846,7 @@
         "queuePosition": 7,
         "priority": "P0",
         "priorityReason": "Explicit evidence hold",
-        "nextAction": "Existing completed entity-linking task now maps to its precise standalone recipe. This mapping review is not independent runtime or semantic certification of the newly mapped article."
+        "nextAction": "Exact source and written instructions reviewed after a scoped repair. Full semantic certification remains held: canonical ownership, complete publication checks and accepted execution evidence are not all established. See reviews/entity-linking-2026-09-29.md."
       }
     },
     {
@@ -24657,7 +24689,7 @@
             "id": "articleSemanticCertification",
             "label": "Article semantic certification",
             "state": "unknown",
-            "reason": "Current article semantic criteria are unknown: owner, publicationStandards, acceptanceResults.",
+            "reason": "The article revision observation is outside the 24-hour freshness window.",
             "semanticReview": {
               "version": 1,
               "taskSlug": "publish-skill-and-task-page",

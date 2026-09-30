@@ -8,8 +8,8 @@
   },
   "https://blitzmetrics.com/entity-linking/": {
    "state": "wip",
-   "reviewed": "2026-09-05",
-   "reason": "Existing completed entity-linking task now maps to its precise standalone recipe. This mapping review is not independent runtime or semantic certification of the newly mapped article."
+   "reviewed": "2026-09-29",
+   "reason": "Exact source and written instructions reviewed after a scoped repair. Full semantic certification remains held: canonical ownership, complete publication checks and accepted execution evidence are not all established. See reviews/entity-linking-2026-09-29.md."
   },
   "https://blitzmetrics.com/thank-you-machine/": {
    "state": "wip",
@@ -746,6 +746,97 @@
      ]
     }
    }
+  },
+  {
+   "version": 1,
+   "taskSlug": "follow-entity-linking-decision-tree",
+   "canonicalURL": "https://blitzmetrics.com/entity-linking/",
+   "sourceSha256": "ba7b919b7dd2d4dc1a3513113fdad270d185913416f37af6d40add8628b32947",
+   "representation": "wordpress-content-html",
+   "reviewedAt": "2026-09-30T01:09:24.483279Z",
+   "reviewer": "Codex root with independent Codex source review",
+   "criteria": {
+    "openingContext": {
+     "state": "pass",
+     "reason": "Exact words name outcome, value and an explained link to the verified SEO Tree destination; body delivers that promise.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/entity-linking-2026-09-29.md",
+      "sha256:c1b3b3578ca8634987bf78cb5af103b1e773efd352be220f17334981e0de4f09"
+     ]
+    },
+    "roleScope": {
+     "state": "pass",
+     "reason": "Mapped task recipe applies the parent link policy to identity, explanation, primary evidence and action destinations.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/entity-linking-2026-09-29.md",
+      "sha256:c1b3b3578ca8634987bf78cb5af103b1e773efd352be220f17334981e0de4f09"
+     ]
+    },
+    "owner": {
+     "state": "unknown",
+     "reason": "A mapped article and author byline do not establish the complete maintained canonical owner record.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/entity-linking-2026-09-29.md",
+      "sha256:c1b3b3578ca8634987bf78cb5af103b1e773efd352be220f17334981e0de4f09"
+     ]
+    },
+    "steps": {
+     "state": "pass",
+     "reason": "Independent source review verified inputs, five application steps, scope checks, exact link log, draft/public distinction and one work record from task start.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/entity-linking-2026-09-29.md",
+      "sha256:c1b3b3578ca8634987bf78cb5af103b1e773efd352be220f17334981e0de4f09"
+     ]
+    },
+    "links": {
+     "state": "pass",
+     "reason": "Seventeen article destinations and Content Factory fragments checked; actual next task opens and matches saved/public link-review handoff. Added source file is checked at release.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/entity-linking-2026-09-29.md",
+      "sha256:c1b3b3578ca8634987bf78cb5af103b1e773efd352be220f17334981e0de4f09"
+     ]
+    },
+    "sourceEvidence": {
+     "state": "pass",
+     "reason": "Google claim narrowed to discovery and relevance with precise primary citation. Teaching example explicitly fictional; no business result claimed.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/entity-linking-2026-09-29.md",
+      "sha256:c1b3b3578ca8634987bf78cb5af103b1e773efd352be220f17334981e0de4f09"
+     ]
+    },
+    "handoffContext": {
+     "state": "pass",
+     "reason": "Four-stage context, task-specific output log, unresolved cases, receiving link-review task and conditional WordPress publishing task are explicit.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/entity-linking-2026-09-29.md",
+      "sha256:c1b3b3578ca8634987bf78cb5af103b1e773efd352be220f17334981e0de4f09"
+     ]
+    },
+    "visualAndLayout": {
+     "state": "unknown",
+     "reason": "Real-theme phone, desktop and no-script preview passed; final ordinary public checks are still pending at this source review.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/entity-linking-2026-09-29.md",
+      "sha256:c1b3b3578ca8634987bf78cb5af103b1e773efd352be220f17334981e0de4f09"
+     ]
+    },
+    "publicationStandards": {
+     "state": "unknown",
+     "reason": "Scoped edit preserves canonical URL and media; full metadata, CTA, ownership and publication checklist not certified.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/entity-linking-2026-09-29.md",
+      "sha256:c1b3b3578ca8634987bf78cb5af103b1e773efd352be220f17334981e0de4f09"
+     ]
+    },
+    "acceptanceResults": {
+     "state": "unknown",
+     "reason": "No independent accepted business outcome or novice-human setup receipt established by this repair.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/entity-linking-2026-09-29.md",
+      "sha256:c1b3b3578ca8634987bf78cb5af103b1e773efd352be220f17334981e0de4f09"
+     ]
+    }
+   }
   }
  ],
  "revisionObservations": [
@@ -874,6 +965,21 @@
    "reason": "Fresh saved source matches exact reviewed bytes and anonymous public content; missing criteria and actual use remain separate.",
    "evidenceRefs": [
     "sha256:2a69843bbf7cfefc0ab1f4ab5a11454cc0e80e58b0baf1e0abc0a609e6e1f45e"
+   ]
+  },
+  {
+   "version": 1,
+   "taskSlug": "follow-entity-linking-decision-tree",
+   "canonicalURL": "https://blitzmetrics.com/entity-linking/",
+   "sourceSha256": "ba7b919b7dd2d4dc1a3513113fdad270d185913416f37af6d40add8628b32947",
+   "representation": "wordpress-content-html",
+   "observedAt": "2026-09-30T01:09:24.483279Z",
+   "observer": "Codex authenticated exact saved-source readback",
+   "state": "observed",
+   "reason": "Exact saved candidate and embedded file verified; ordinary anonymous cached content has not yet caught up.",
+   "evidenceRefs": [
+    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/entity-linking-2026-09-29.md",
+    "sha256:569ff1434c05a1d6836a3f78ff27b59dfae427a27766d34b9cc0fd71bf899dab"
    ]
   }
  ]

@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-09-27T21:33:30+00:00",
+ "generatedAt": "2026-09-30T01:09:34+00:00",
  "countDefinition": "Verified meta-article sources explicitly classified by the recorded evidence method and linked to the normalized canonical hub. Unknown is never coerced to zero.",
  "strengthBands": [
   {
@@ -488,8 +488,8 @@
    "taskCoverage": null,
    "priorityCoverage": null,
    "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?article=https%3A%2F%2Fblitzmetrics.com%2Fentity-linking%2F",
-   "stateReason": "Existing completed entity-linking task now maps to its precise standalone recipe. This mapping review is not independent runtime or semantic certification of the newly mapped article.",
-   "stateReviewed": "2026-09-05",
+   "stateReason": "Exact source and written instructions reviewed after a scoped repair. Full semantic certification remains held: canonical ownership, complete publication checks and accepted execution evidence are not all established. See reviews/entity-linking-2026-09-29.md.",
+   "stateReviewed": "2026-09-29",
    "records": []
   },
   {
