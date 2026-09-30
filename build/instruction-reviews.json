@@ -1717,10 +1717,40 @@
       "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
     },
     "follow-entity-linking-decision-tree": {
-      "source_sha256": "6cf0b6ea65480a19b6ec56c4c8fab93ff44d9041107d49f1f2353cd5971738b3",
-      "reviewed_at": "2026-09-06",
-      "reviewer": "Codex editorial review",
-      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+      "source_sha256": "8880e6df0dcba159e9c26477a306c1098ffe657d6ccd0983898f8f81a822ca74",
+      "reviewed_at": "2026-09-29",
+      "reviewer": "Codex root with independent Codex source review",
+      "scope": "Five written-instruction checks at exact bytes; independent corrections and target meaning reviewed. Real setup, article certification and accepted business execution remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/entity-linking-2026-09-29.md",
+      "standards": {
+        "version": 1,
+        "checks": {
+          "opening": {
+            "state": "pass",
+            "reason": "States outcome, why readers benefit and the linked SEO Tree relationship in plain words.",
+            "evidence": "Help readers find the right person, business, or guide. Use these steps to choose links that answer their next question. This builds your SEO Tree: a map that joins each story to its main guide and your business."
+          },
+          "recipe": {
+            "state": "pass",
+            "reason": "Actual input draft, verified map and scope, seven steps, distinct destination purposes and measurable link-log output are present.",
+            "evidence": "Record source page, exact mention, purpose, destination, check date, result and open gap."
+          },
+          "links": {
+            "state": "pass",
+            "reason": "Owned explanations match their roles; required exact proof/action URLs are preserved. Opening target and receiving task were inspected.",
+            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/entity-linking-2026-09-29.md"
+          },
+          "evidence": {
+            "state": "pass",
+            "reason": "Example is clearly fictional; contributor completion does not imply access, execution or accepted results. Real record requirements include source version, checks, failure and owner.",
+            "evidence": "Fictional teaching example. This is not a client result or proof of a completed run."
+          },
+          "handoff": {
+            "state": "pass",
+            "reason": "Page owner receives checked log and open decisions; named link-review task receives result; Content Factory role and one execution ID are explicit.",
+            "evidence": "Check the placed links receives the checked links and unresolved cases."
+          }
+        }
+      }
     },
     "identify-and-eliminate-orphan-standalone-articles": {
       "source_sha256": "2b6118616cd999657b0cdcfb21b06cd8d8d33027fc0287d833fa7ef1b6ddf08a",
