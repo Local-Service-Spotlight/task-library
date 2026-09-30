@@ -38,3 +38,13 @@ The article's full semantic hold remains: canonical ownership, the complete publ
 ## Next handoff
 
 The maintenance worker retains the exact revision and unresolved gates in the generated queue. Review the parent Link Building Guidelines next, especially its package-install instruction and older policy claims, using the existing mapped tasks. Do not open a duplicate task registry or call a reviewed file a completed business job.
+
+## Final release checks
+
+Source PR49 merged as `0961d5fa7f39a85a75e5c99027c41be1eb38e8d5`; deployment36653839069 succeeded. All seven ordinary public archives passed. The public all-guides ZIP member exactly matches the generated task content, including its build-injected Content Factory layer; the raw Markdown hash is retained separately. Comparing the ZIP directly to raw Markdown initially failed for that expected layer, and the failed check was preserved.
+
+The first ordinary HTTP read returned an older cached article. After its normal cache expiry, the complete rendered article text and media matched the saved source on the normal URL. The anonymous browser also matched the full text and exact decoded embedded file. Phone390x844 and desktop1280x800 opening checks passed with scripts enabled and disabled. The complete task-file disclosure opens, and its phone view has no horizontal overflow. A capture taken before a viewport resize settled was retained separately and replaced by a confirmed-size capture. No media played.
+
+The final layout-only follow-up changes code wrapping, spacing, font size and line height. A separate reviewer verified no change to prose, links or embedded Markdown. Final article HTML SHA-256: `3156a6f4b47fd38a984fd07330ac1369ffa5e173d6c16d56333b8b43539931da`. Final independent review SHA-256: `c5a097f5d6320031d68024efdae82ab5ced144aa17cd9c03d845fc0afb2a97b1`. Exact source and normal public readback passed again after this change.
+
+The [run's public meta article](https://blitzmetrics.com/making-task-guides-easier-to-use/#entity-linking-repair-20260930-0105) is saved and anonymously verified. This is a completed scoped publishing repair, with broader certification/setup/accepted-business-result gates still unknown.

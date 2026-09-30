@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "asOf": "2026-09-30T01:09:34.219662+00:00",
+  "asOf": "2026-09-30T01:16:49.219922+00:00",
   "countDefinition": "Distinct recorded execution IDs, separate from meta-article URLs. History is partial; absent history is unknown, not zero. The last-30-day count is a documented lower bound, not total task frequency.",
-  "recordedExecutions": 13,
-  "completedExecutions": 1,
+  "recordedExecutions": 14,
+  "completedExecutions": 2,
   "partialExecutions": 12,
   "executions": [
     {
@@ -391,6 +391,31 @@
       "metaArticle": {
         "status": "published",
         "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#roster-public-boundary-20260927-210848"
+      }
+    },
+    {
+      "executionId": "entity-linking-repair-20260930-0105",
+      "taskSlugs": [
+        "publish-skill-and-task-page"
+      ],
+      "startedAt": "2026-09-30T01:03:05.034622+00:00",
+      "status": "completed",
+      "result": "Completed one scoped entity-linking article and task-file repair: plain linked opening, corrected destination scope, privacy rule, measured handoff, exact embedded skill, public phone/desktop checks and generated archive parity. Full semantic certification, novice setup and accepted business-result evidence remain unverified. Maintenance owns parent-guideline setup and policy cleanup next.",
+      "recipeRevisions": {
+        "publish-skill-and-task-page": {
+          "articleUrl": "https://blitzmetrics.com/skill-publishing-standard/",
+          "sourceSha256": "660d6f1abd8678c851c0a08059f27982e8e29b46775ea217a2ae1d6e3ba55537"
+        }
+      },
+      "finishedAt": "2026-09-30T01:16:37.333349+00:00",
+      "evidenceUrls": [
+        "https://github.com/Local-Service-Spotlight/task-library/pull/49",
+        "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/entity-linking-2026-09-29.md"
+      ],
+      "privateEvidenceRecorded": true,
+      "metaArticle": {
+        "status": "published",
+        "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#entity-linking-repair-20260930-0105"
       }
     }
   ]
