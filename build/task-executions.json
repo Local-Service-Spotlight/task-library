@@ -855,7 +855,7 @@
       },
       "startedAt": "2026-09-27T21:08:48Z",
       "status": "partial",
-      "result": "Corrected identified public article, skill, review, run-data and ZIP disclosures; installed and tested private canonical roster access and scope checks. Replaced the weekly guide’s misleading public-roster authority and neutralized its fictional scope example. The main static LSS Article Guidelines amendment is prepared but not deployed: maintained source and a supported existing-route release remain unresolved. Other agents must prove their own access. Maintenance owns that next release; no whole-library certification is claimed.",
+      "result": "Corrected identified public article, skill, review, run-data and ZIP disclosures; installed and tested private canonical roster access and scope checks. Replaced the weekly guide\u2019s misleading public-roster authority and neutralized its fictional scope example. The main static LSS Article Guidelines amendment is prepared but not deployed: maintained source and a supported existing-route release remain unresolved. Other agents must prove their own access. Maintenance owns that next release; no whole-library certification is claimed.",
       "evidence": [
         {
           "visibility": "public",
@@ -893,6 +893,62 @@
       "recordedAt": "2026-09-27T21:08:48Z",
       "updatedAt": "2026-09-27T21:32:56.853190+00:00",
       "finishedAt": "2026-09-27T21:32:56.853190+00:00"
+    },
+    {
+      "executionId": "entity-linking-repair-20260930-0105",
+      "startedAt": "2026-09-30T01:03:05.034622+00:00",
+      "taskSlugs": [
+        "publish-skill-and-task-page"
+      ],
+      "recipeRevisions": {
+        "publish-skill-and-task-page": {
+          "articleUrl": "https://blitzmetrics.com/skill-publishing-standard/",
+          "sourceSha256": "660d6f1abd8678c851c0a08059f27982e8e29b46775ea217a2ae1d6e3ba55537"
+        }
+      },
+      "status": "completed",
+      "result": "Completed one scoped entity-linking article and task-file repair: plain linked opening, corrected destination scope, privacy rule, measured handoff, exact embedded skill, public phone/desktop checks and generated archive parity. Full semantic certification, novice setup and accepted business-result evidence remain unverified. Maintenance owns parent-guideline setup and policy cleanup next.",
+      "evidence": [
+        {
+          "visibility": "public",
+          "url": "https://github.com/Local-Service-Spotlight/task-library/pull/49"
+        },
+        {
+          "visibility": "public",
+          "url": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/entity-linking-2026-09-29.md"
+        },
+        {
+          "visibility": "private",
+          "sha256": "1f28e172ca8a700b90ebae9f37af372c6dc51fa217260da98bf93e6e5706fe90"
+        },
+        {
+          "visibility": "private",
+          "sha256": "8a8f191857e3294de71ceafdb4d5a1c69c25ae6e28a5f3531105e151b9ae931c"
+        },
+        {
+          "visibility": "private",
+          "sha256": "7727c79ecf172ed80d404790dd8a94c4f9de504c837fd02dc9aa810fabebd582"
+        },
+        {
+          "visibility": "private",
+          "sha256": "7c1a199912e4505fbad7e71ab42552e6f1f94e0e68a09a251f15cdbfa3428330"
+        },
+        {
+          "visibility": "private",
+          "sha256": "c5a097f5d6320031d68024efdae82ab5ced144aa17cd9c03d845fc0afb2a97b1"
+        },
+        {
+          "visibility": "private",
+          "sha256": "261a26ceb2882d1f5c5d5a39324ecc45e8e8854128854fdfb747673207fe7967"
+        }
+      ],
+      "metaArticle": {
+        "status": "published",
+        "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#entity-linking-repair-20260930-0105"
+      },
+      "recordedAt": "2026-09-30T01:03:05.034622+00:00",
+      "updatedAt": "2026-09-30T01:16:37.333349+00:00",
+      "finishedAt": "2026-09-30T01:16:37.333349+00:00"
     }
   ]
 }

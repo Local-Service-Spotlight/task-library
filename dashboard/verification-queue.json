@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-30T01:09:34+00:00",
+  "generatedAt": "2026-09-30T01:16:49+00:00",
   "definition": "Per-task standard gates derived from exact instruction reviews, explicit instruction-requirement checks, contributor status, article mapping/catalog holds, exact-revision article semantic reviews, task-attributed examples and the execution ledger. Unknown proof is never turned into a pass.",
   "stats": {
     "tasks": 276,
@@ -24806,9 +24806,10 @@
             "id": "recordedExecution",
             "label": "Recorded real execution",
             "state": "pass",
-            "reason": "5 distinct execution ID(s) name this task; outcomes remain separate.",
+            "reason": "6 distinct execution ID(s) name this task; outcomes remain separate.",
             "executionIds": [
               "crossref-release-20260927-162402",
+              "entity-linking-repair-20260930-0105",
               "lss-editorial-correction-20260927-190846",
               "publisher-completion-20260927-134412",
               "roster-public-boundary-20260927-210848",
