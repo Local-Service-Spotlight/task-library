@@ -1715,9 +1715,9 @@
  ],
  "executionHistory": {
   "schemaVersion": 1,
-  "asOf": "2026-10-01T14:16:36.739601+00:00",
+  "asOf": "2026-10-01T14:19:47.066931+00:00",
   "countDefinition": "Distinct recorded execution IDs, separate from meta-article URLs. History is partial; absent history is unknown, not zero. The last-30-day count is a documented lower bound, not total task frequency.",
-  "recordedExecutions": 15,
+  "recordedExecutions": 16,
   "completedExecutions": 3,
   "partialExecutions": 12,
   "executions": [
@@ -2156,6 +2156,29 @@
     "metaArticle": {
      "status": "published",
      "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#link-building-repair-20261001-1307"
+    }
+   },
+   {
+    "executionId": "internal-linking-repair-20261001-1405",
+    "taskSlugs": [
+     "publish-skill-and-task-page"
+    ],
+    "startedAt": "2026-10-01T14:06:26.211013+00:00",
+    "status": "running",
+    "result": "Parent and meta saved/public text/media exact; two task openings and seven copied payloads checked. Local153build+89script tests and7archives pass; library release and downloaded artifacts pending.",
+    "recipeRevisions": {
+     "publish-skill-and-task-page": {
+      "articleUrl": "https://blitzmetrics.com/skill-publishing-standard/",
+      "sourceSha256": "660d6f1abd8678c851c0a08059f27982e8e29b46775ea217a2ae1d6e3ba55537"
+     }
+    },
+    "evidenceUrls": [
+     "https://blitzmetrics.com/internal-linking/"
+    ],
+    "privateEvidenceRecorded": true,
+    "metaArticle": {
+     "status": "published",
+     "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#internal-linking-repair-20261001-1405"
     }
    }
   ]
@@ -38222,7 +38245,7 @@
      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=publish-skill-and-task-page#task-publish-skill-and-task-page",
      "executionHistory": {
       "status": "partial",
-      "recordedRuns": 7,
+      "recordedRuns": 8,
       "completedRuns": 3,
       "failedRuns": 0,
       "partialRuns": 4,
@@ -38231,6 +38254,7 @@
       "executionIds": [
        "crossref-release-20260927-162402",
        "entity-linking-repair-20260930-0105",
+       "internal-linking-repair-20261001-1405",
        "link-building-repair-20261001-1307",
        "lss-editorial-correction-20260927-190846",
        "publisher-completion-20260927-134412",
@@ -38279,6 +38303,12 @@
         "status": "completed",
         "startedAt": "2026-10-01T13:07:33.732838+00:00",
         "finishedAt": "2026-10-01T13:19:09.819308+00:00"
+       },
+       {
+        "executionId": "internal-linking-repair-20261001-1405",
+        "status": "running",
+        "startedAt": "2026-10-01T14:06:26.211013+00:00",
+        "finishedAt": null
        }
       ],
       "acceptanceReviews": [
@@ -38527,10 +38557,11 @@
         "id": "recordedExecution",
         "label": "Recorded real execution",
         "state": "pass",
-        "reason": "7 distinct execution ID(s) name this task; outcomes remain separate.",
+        "reason": "8 distinct execution ID(s) name this task; outcomes remain separate.",
         "executionIds": [
          "crossref-release-20260927-162402",
          "entity-linking-repair-20260930-0105",
+         "internal-linking-repair-20261001-1405",
          "link-building-repair-20261001-1307",
          "lss-editorial-correction-20260927-190846",
          "publisher-completion-20260927-134412",

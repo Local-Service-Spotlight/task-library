@@ -36,3 +36,7 @@ Execution internal-linking-repair-20261001-1405 is one publishing repair under t
 - Independent final review: `0c4f9ea6b02ca66cbb6ea61a0da51bd113512c704622043acbcfe1cbb34b27e5`
 - step-4-create-links-with-proper-anchor-text-and-placement: `62aa597890ee545455fc3ab325dc0ee2b742f692a276cf18cfeabe0c39df0c27`
 - step-5-qa-links-against-google-guidelines: `1bcce8119fd47ee419b2b9fb172e1257a8d06ad06da0a5b075e6d091d86b647f`
+
+## Observed release checks
+
+At14:18UTC the normal public article matched all saved rendered text and media after cache expiry. Meta source/public also matched. Phone390×844 and desktop1280×800 openings, placement cards and phone expanded QA file were visibly checked without overflow; meta section checked at both sizes. All153build tests,89script tests and7local archive payload checks passed after source/projection commit3e01bcb. Full article audit remains unknown. Downloaded released archives and final run closeout are recorded after deployment.
