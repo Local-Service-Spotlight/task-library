@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-30T01:16:49+00:00",
+  "generatedAt": "2026-10-01T13:11:29+00:00",
   "definition": "Per-task standard gates derived from exact instruction reviews, explicit instruction-requirement checks, contributor status, article mapping/catalog holds, exact-revision article semantic reviews, task-attributed examples and the execution ledger. Unknown proof is never turned into a pass.",
   "stats": {
     "tasks": 276,
@@ -17,10 +17,10 @@
         "unknown": 0
       },
       "instructionStandards": {
-        "pass": 6,
+        "pass": 7,
         "unmet": 0,
         "hold": 0,
-        "unknown": 270
+        "unknown": 269
       },
       "contributorComplete": {
         "pass": 126,
@@ -11520,24 +11520,57 @@
       "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=build-external-backlinks-from-authoritative-sources#task-build-external-backlinks-from-authoritative-sources",
       "nextAction": "The contributor status is needs-work; finish and review the guide.",
       "standardVerification": {
-        "instructionSourceSha256": "e08670cc462f153e1ef92ab9a547c45ea248dc174c363fb649848045c12f8153",
+        "instructionSourceSha256": "2a4deb7806fe0a08d67b67bec2d751fcbd9c4b4529ddf7116b2b76dc28ca8152",
         "articleKey": "blitzmetrics.com/link-building",
         "gates": {
           "instructionRevisionReviewed": {
             "id": "instructionRevisionReviewed",
             "label": "Exact instruction revision reviewed",
             "state": "pass",
-            "reason": "Current source bytes match the review recorded 2026-09-06. Review scope and limits: Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate.",
-            "reviewedAt": "2026-09-06",
-            "reviewer": "Codex editorial review",
-            "sourceSha256": "e08670cc462f153e1ef92ab9a547c45ea248dc174c363fb649848045c12f8153"
+            "reason": "Current source bytes match the review recorded 2026-10-01. Review scope and limits: Exact written instructions checked; article certification, setup and accepted results remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-building-2026-10-01.md",
+            "reviewedAt": "2026-10-01",
+            "reviewer": "Codex root with independent Codex source review",
+            "sourceSha256": "2a4deb7806fe0a08d67b67bec2d751fcbd9c4b4529ddf7116b2b76dc28ca8152"
           },
           "instructionStandards": {
             "id": "instructionStandards",
             "label": "Instruction requirements checked",
-            "state": "unknown",
-            "reason": "The current exact-byte review has no structured instruction-requirements checklist.",
-            "sourceSha256": "e08670cc462f153e1ef92ab9a547c45ea248dc174c363fb649848045c12f8153"
+            "state": "pass",
+            "reason": "All five instruction requirements have explicit passing checks for the current source revision.",
+            "reviewedAt": "2026-10-01",
+            "reviewer": "Codex root with independent Codex source review",
+            "reviewScope": "Exact written instructions checked; article certification, setup and accepted results remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-building-2026-10-01.md",
+            "sourceSha256": "2a4deb7806fe0a08d67b67bec2d751fcbd9c4b4529ddf7116b2b76dc28ca8152",
+            "standards": {
+              "version": 1,
+              "checks": {
+                "opening": {
+                  "state": "pass",
+                  "reason": "Useful outcome, plain method and explained owned SEO Tree connection.",
+                  "evidence": "Help the right people find and check your work. Earn useful links by sharing real work with sites that serve the same people."
+                },
+                "recipe": {
+                  "state": "pass",
+                  "reason": "Trigger, verified inputs, action authority, seven steps, distinct placement states and measured log.",
+                  "evidence": "Count only placements actually checked live. Report proposed, sent, booked, published and verified totals separately; agree any target count before work starts."
+                },
+                "links": {
+                  "state": "pass",
+                  "reason": "Destination rule matches parent/entity guide; owned explanations and exact proof/action exceptions remain separate.",
+                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-building-2026-10-01.md"
+                },
+                "evidence": {
+                  "state": "pass",
+                  "reason": "Fictional example and real run record separated; no invented placement or setup pass.",
+                  "evidence": "Fictional teaching example. This is not a client result or proof of a completed run."
+                },
+                "handoff": {
+                  "state": "pass",
+                  "reason": "Proof classification, hub owner, MAA receiver and Content Factory relationship identify the next step.",
+                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-building-2026-10-01.md"
+                }
+              }
+            }
           },
           "contributorComplete": {
             "id": "contributorComplete",
@@ -11598,7 +11631,6 @@
         ],
         "heldStandardGates": [],
         "unknownStandardGates": [
-          "instructionStandards",
           "articleSemanticCertification",
           "taskExampleEvidence",
           "recordedExecution",
