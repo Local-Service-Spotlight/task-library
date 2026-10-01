@@ -9,7 +9,7 @@ status: complete
 
 # Step 4: Create links with proper anchor text and placement
 
-Put useful next steps where readers need them. This guide adds clear links between pages that truly help each other. Start with the checked link plan and the current text of each page you will change.
+Help readers find the next page they need. Use a checked plan to add clear links that save them time. This is the build step in our [internal-linking process, which turns a page list into checked paths through your site](https://blitzmetrics.com/internal-linking/).
 
 **The path:** Accepted link rows → Fresh source check → Contextual edit → Saved and public readback
 

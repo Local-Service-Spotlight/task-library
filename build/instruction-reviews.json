@@ -1837,16 +1837,76 @@
       "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
     },
     "step-4-create-links-with-proper-anchor-text-and-placement": {
-      "source_sha256": "ba8df0ff233141b374d4cc00921ec6ccb9834ad511958ed0acdfe9c32bde6b45",
-      "reviewed_at": "2026-09-06",
-      "reviewer": "Codex editorial review",
-      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+      "source_sha256": "62aa597890ee545455fc3ab325dc0ee2b742f692a276cf18cfeabe0c39df0c27",
+      "reviewed_at": "2026-10-01",
+      "reviewer": "Codex root with separate Codex source reviewer",
+      "scope": "Exact written instructions checked; article, setup and accepted results are separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/internal-linking-2026-10-01.md",
+      "standards": {
+        "version": 1,
+        "checks": {
+          "opening": {
+            "state": "pass",
+            "reason": "Quoted useful outcome, reader value and explained owned process connection.",
+            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/internal-linking-2026-10-01.md"
+          },
+          "recipe": {
+            "state": "pass",
+            "reason": "Clear trigger, inputs, authorized ordered steps, exact output and QA.",
+            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/internal-linking-2026-10-01.md"
+          },
+          "links": {
+            "state": "pass",
+            "reason": "Owned methods, primary Google sources, correct task handoff and destination rules are explicit.",
+            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/internal-linking-2026-10-01.md"
+          },
+          "evidence": {
+            "state": "pass",
+            "reason": "Fictional example labeled; source/public proof and one execution record required; no invented result.",
+            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/internal-linking-2026-10-01.md"
+          },
+          "handoff": {
+            "state": "pass",
+            "reason": "Placement passes exact change log to QA; QA passes accepted rows to measurement and holds to owner.",
+            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/internal-linking-2026-10-01.md"
+          }
+        }
+      }
     },
     "step-5-qa-links-against-google-guidelines": {
-      "source_sha256": "e9863615a98f8f38bd7f26177783b58c9f9e891023b9eec719863bbbf40f7549",
-      "reviewed_at": "2026-09-06",
-      "reviewer": "Codex editorial review",
-      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+      "source_sha256": "1bcce8119fd47ee419b2b9fb172e1257a8d06ad06da0a5b075e6d091d86b647f",
+      "reviewed_at": "2026-10-01",
+      "reviewer": "Codex root with separate Codex source reviewer",
+      "scope": "Exact written instructions checked; article, setup and accepted results are separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/internal-linking-2026-10-01.md",
+      "standards": {
+        "version": 1,
+        "checks": {
+          "opening": {
+            "state": "pass",
+            "reason": "Quoted useful outcome, reader value and explained owned process connection.",
+            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/internal-linking-2026-10-01.md"
+          },
+          "recipe": {
+            "state": "pass",
+            "reason": "Clear trigger, inputs, authorized ordered steps, exact output and QA.",
+            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/internal-linking-2026-10-01.md"
+          },
+          "links": {
+            "state": "pass",
+            "reason": "Owned methods, primary Google sources, correct task handoff and destination rules are explicit.",
+            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/internal-linking-2026-10-01.md"
+          },
+          "evidence": {
+            "state": "pass",
+            "reason": "Fictional example labeled; source/public proof and one execution record required; no invented result.",
+            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/internal-linking-2026-10-01.md"
+          },
+          "handoff": {
+            "state": "pass",
+            "reason": "Placement passes exact change log to QA; QA passes accepted rows to measurement and holds to owner.",
+            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/internal-linking-2026-10-01.md"
+          }
+        }
+      }
     },
     "step-6-measure-and-iterate-with-maa": {
       "source_sha256": "cf2ad468f0b842fd23c6a2e0f8e074ba4d4c22f053fca925e54ac0f0030166e8",

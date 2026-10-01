@@ -46,10 +46,10 @@
     "unknown": 0
    },
    "instructionStandards": {
-    "pass": 7,
+    "pass": 9,
     "unmet": 0,
     "hold": 0,
-    "unknown": 269
+    "unknown": 267
    },
    "contributorComplete": {
     "pass": 126,
@@ -1715,9 +1715,9 @@
  ],
  "executionHistory": {
   "schemaVersion": 1,
-  "asOf": "2026-10-01T13:21:26.518255+00:00",
+  "asOf": "2026-10-01T14:19:47.066931+00:00",
   "countDefinition": "Distinct recorded execution IDs, separate from meta-article URLs. History is partial; absent history is unknown, not zero. The last-30-day count is a documented lower bound, not total task frequency.",
-  "recordedExecutions": 15,
+  "recordedExecutions": 16,
   "completedExecutions": 3,
   "partialExecutions": 12,
   "executions": [
@@ -2156,6 +2156,29 @@
     "metaArticle": {
      "status": "published",
      "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#link-building-repair-20261001-1307"
+    }
+   },
+   {
+    "executionId": "internal-linking-repair-20261001-1405",
+    "taskSlugs": [
+     "publish-skill-and-task-page"
+    ],
+    "startedAt": "2026-10-01T14:06:26.211013+00:00",
+    "status": "running",
+    "result": "Parent and meta saved/public text/media exact; two task openings and seven copied payloads checked. Local153build+89script tests and7archives pass; library release and downloaded artifacts pending.",
+    "recipeRevisions": {
+     "publish-skill-and-task-page": {
+      "articleUrl": "https://blitzmetrics.com/skill-publishing-standard/",
+      "sourceSha256": "660d6f1abd8678c851c0a08059f27982e8e29b46775ea217a2ae1d6e3ba55537"
+     }
+    },
+    "evidenceUrls": [
+     "https://blitzmetrics.com/internal-linking/"
+    ],
+    "privateEvidenceRecorded": true,
+    "metaArticle": {
+     "status": "published",
+     "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#internal-linking-repair-20261001-1405"
     }
    }
   ]
@@ -24526,7 +24549,7 @@
      "article": "https://blitzmetrics.com/internal-linking",
      "articleKind": "task-recipe",
      "desc": "Put useful next steps where readers need them.",
-     "content": "---\nname: step-4-create-links-with-proper-anchor-text-and-placement\ndescription: \"Put useful next steps where readers need them.\"\ncategory: SEO & Content Architecture\nstage: —\ndefinitive_article: /internal-linking\nstatus: complete\n---\n\n# Step 4: Create links with proper anchor text and placement\n\nPut useful next steps where readers need them. This guide adds clear links between pages that truly help each other. Start with the checked link plan and the current text of each page you will change.\n\n**The path:** Accepted link rows → Fresh source check → Contextual edit → Saved and public readback\n\n**Start when:** Step 3 has supplied accepted source-to-target rows and the exact content edits are authorized.\n\n## Inputs\n\n- [Plan relevant links and orphan repairs](https://local-service-spotlight.github.io/task-library/?task=step-3-identify-money-pages-and-orphan-pages#task-step-3-identify-money-pages-and-orphan-pages) with proposed source, target, anchor, context, owner and relevance.\n- Fresh source/body for each page, maintained builder/generator rail, existing media and the expected base revision.\n- [Choose the right entity destination](https://local-service-spotlight.github.io/task-library/?task=follow-entity-linking-decision-tree#task-follow-entity-linking-decision-tree) and the baseline request for [Measure the accepted change set](https://local-service-spotlight.github.io/task-library/?task=step-6-measure-and-iterate-with-maa#task-step-6-measure-and-iterate-with-maa) before release, where measurement is planned.\n\n## Steps\n\n1. Open each plan row and fetch the current maintained source before editing. Compare it with the reviewed base and preserve concurrent work. Identify whether a builder, shortcode, generator or ordinary body owns the text; do not replace serialized layout or generated content with a blind full-body write.\n2. Read both source and target in context and confirm the planned reader benefit still holds. If the target has changed, redirects to a different subject or does not deliver the proposed promise, hold or revise the row with its owner. A once-approved URL is not a permanent relevance guarantee.\n3. Choose concise anchor text that honestly predicts the destination. Prefer three to six descriptive words when natural, or use the actual entity name. Avoid padding, generic “click here,” keyword stuffing and forced phrasing changes that make repeated references less clear.\n4. Place the link in the relevant body sentence with enough context to explain why it helps. Useful existing navigation and footers may remain; this task is not a site-wide ban on those links. Add no hidden links or unrelated collections merely to increase the total.\n5. Apply [entity linking, choosing the right home for a named person or topic](https://blitzmetrics.com/entity-linking/) to explanations while preserving direct primary evidence and actual account/download actions. Connect stories to their owning methods or offers and add useful cross-links as planned. Keep the source’s factual meaning, relevant proof, IDs and media unchanged outside the exact intended edit.\n6. If a suggestion tool proposes additional links, treat them as candidates requiring the same purpose and identity review. Do not accept a batch solely from a keyword score. Log rejected and held rows so the accepted scope does not silently expand during implementation.\n7. Save through the supported authorized rail and read back the exact edited field and ordinary rendered page. Follow the real link and check its final target and surrounding sentence. Record source URL, target, anchor, revision, release time and any cache or access gap for QA; a successful API response is only the save stage.\n\n## Definition of done (QA checklist)\n\nQuality assurance (QA) means checking the actual result against its agreed requirements. Follow the [Article Guidelines](https://localservicespotlight.com/article-guidelines/).\n\n- [ ] Every placed link comes from an accepted relevant row and preserves the current source, layout and unrelated content.\n- [ ] Anchor meaning, first-mention routing and necessary source/action links remain accurate.\n- [ ] Actual saved and normal public links are checked, with held rows and verification gaps explicit.\n- [ ] The exact output, source revision, reviewer evidence and remaining owner action are saved.\n- [ ] For any reader-facing output, the short grade-five opening states the reader’s useful outcome and supporting method or proof. The body delivers that promise; a useful authentic visual appears in the first screen. Retain exact text and quoted reviewer evidence.\n\n## Example(s)\n\n**Fictional teaching example. This is not a client result or proof of a completed run.**\n\nA fictional approved row links a repair case to its method guide. The live case now has a new photo and paragraph added by its owner. The editor keeps that work, inserts the link in the planned sentence through the existing builder field, and checks the ordinary URL. The receipt records one link, not a replaced article or a proven ranking gain.\n\n## Handoff and Content Factory context\n\n[Check the placed links](https://local-service-spotlight.github.io/task-library/?task=step-5-qa-links-against-google-guidelines#task-step-5-qa-links-against-google-guidelines) receives the exact change log, source revisions and public checks. [Measure the accepted change set](https://local-service-spotlight.github.io/task-library/?task=step-6-measure-and-iterate-with-maa#task-step-6-measure-and-iterate-with-maa) receives the released target list and dates; concurrent-source conflicts remain with the original owner.\n\nThis task supports the [Content Factory: Produce, Process, Post and Promote](https://blitzmetrics.com/content-factory/). Identity, proof, access or coordination can support several stages. Use the real inputs and receiving owner above; this task does not create unrelated transcripts, clips or ads merely because the diagram has four stages.\n\n## Start with an agent\n\nGive the [AI worker](https://blitzmetrics.com/build-agents/) this recipe, the real inputs, desired result and actions already authorized. Ask for the saved output, sources, checks and next owner. A [skill is a written recipe](https://localservicespotlight.com/plugin/); loading one does not prove account access or perform the task. Use the [installation guide](https://localservicespotlight.com/install/) if reusable setup is needed. A ZIP is a source snapshot, not an access grant or automatic update.\n\nUse the app’s actual supported tools and verified file/account access. Keep a missing human verification step with its real owner. Recurring work needs its own configured job, trigger, timezone and observed result; this guide creates no schedule. Before any media playback, mute the player and set its volume to zero. If silence cannot be verified first, use captions, frames, metadata or another silent check.\n\n## Record the real execution\n\nOpen the run record when work begins. Keep one execution ID, starting recipe revision, real inputs and current state. Write the [meta article, the record of this execution](https://blitzmetrics.com/meta-article-prompt/) with actual steps, results, checks, failures and next owner. Writing is required; public release follows existing authority. Link it to this recipe and the [Task Library](https://local-service-spotlight.github.io/task-library/).\n\nReuse the same execution ID for internal checks, revisions, retries and meta writing. A blocked run stays open with its dependency and owner, without an invented finish time. Dated public examples and distinct verified execution counts remain separate. Propose the smallest source-backed recipe improvement when the actual evidence reveals a defect.\n\n\n<!-- factory-layer:start -->\n\n## Factory chain (do not treat this as isolated)\n\n- **Phase:** —\n- **Importance:** 3/5 `●●●○○` — frequency 3, revenue 3, gating 2 (supporting)\n- **Suggested previous station:** —\n- **Suggested next station:** —\nThese stations are generated neighbors, not verified prerequisites or handoffs. Follow the task’s actual Inputs and Handoff sections.\n- **Handoff:** Save this task’s actual output, source, date and checks where the receiving owner can read them. Follow the Inputs and Handoff sections for its next step.\n\n## Model routing (same factory, any engine)\n\n- **This task's lane:** `any` — Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.\n- **Single-engine path:** Use the capable AI app you already have. Check its required tools and access before starting. Pass the actual result and proof to the next task.\n- **Optional multi-engine:** A tested local model may draft; a stronger model may review facts and voice. Use supported tools for approved actions. Pick models from observed quality and cost; a model name does not prove it can run this task.\n- **Never** store the working state in one vendor's memory. Files in the Content Library are the bridge.\n\n<!-- factory-layer:end -->\n## Definitive article & links\n\n- [Maintained source guide](https://blitzmetrics.com/internal-linking/)\n- [This task in the Task Library](https://local-service-spotlight.github.io/task-library/?task=step-4-create-links-with-proper-anchor-text-and-placement#task-step-4-create-links-with-proper-anchor-text-and-placement)\n- [Article Guidelines](https://localservicespotlight.com/article-guidelines/)\n- [Definitive article and task recipe standard](https://blitzmetrics.com/definitive-article-guide/)\n- [How recipes and run records fit together](https://localservicespotlight.com/meta-articles/)\n\n### Primary method references\n\n- [Google’s crawlable and descriptive link guidance](https://developers.google.com/search/docs/crawling-indexing/links-crawlable)\n\n## Review and evidence still needed\n\nThe inherited contributor status is `complete`. It is preserved, not promoted by this rewrite. That label alone does not prove document readiness, account access, an actual execution or a client result.\n\nThe fictional example teaches the method and does not fill a real-run evidence gap. A named semantic reviewer must check the actual opening, full method, sources and handoff. Check the useful opening visual in the normal rendered guide at the current required desktop and mobile sizes, including 1280 × 800 and 390 × 844. Source readability checks do not prove public presentation or task execution.",
+     "content": "---\nname: step-4-create-links-with-proper-anchor-text-and-placement\ndescription: \"Put useful next steps where readers need them.\"\ncategory: SEO & Content Architecture\nstage: —\ndefinitive_article: /internal-linking\nstatus: complete\n---\n\n# Step 4: Create links with proper anchor text and placement\n\nHelp readers find the next page they need. Use a checked plan to add clear links that save them time. This is the build step in our [internal-linking process, which turns a page list into checked paths through your site](https://blitzmetrics.com/internal-linking/).\n\n**The path:** Accepted link rows → Fresh source check → Contextual edit → Saved and public readback\n\n**Start when:** Step 3 has supplied accepted source-to-target rows and the exact content edits are authorized.\n\n## Inputs\n\n- [Plan relevant links and orphan repairs](https://local-service-spotlight.github.io/task-library/?task=step-3-identify-money-pages-and-orphan-pages#task-step-3-identify-money-pages-and-orphan-pages) with proposed source, target, anchor, context, owner and relevance.\n- Fresh source/body for each page, maintained builder/generator rail, existing media and the expected base revision.\n- [Choose the right entity destination](https://local-service-spotlight.github.io/task-library/?task=follow-entity-linking-decision-tree#task-follow-entity-linking-decision-tree) and the baseline request for [Measure the accepted change set](https://local-service-spotlight.github.io/task-library/?task=step-6-measure-and-iterate-with-maa#task-step-6-measure-and-iterate-with-maa) before release, where measurement is planned.\n\n## Steps\n\n1. Open each plan row and fetch the current maintained source before editing. Compare it with the reviewed base and preserve concurrent work. Identify whether a builder, shortcode, generator or ordinary body owns the text; do not replace serialized layout or generated content with a blind full-body write.\n2. Read both source and target in context and confirm the planned reader benefit still holds. If the target has changed, redirects to a different subject or does not deliver the proposed promise, hold or revise the row with its owner. A once-approved URL is not a permanent relevance guarantee.\n3. Choose concise anchor text that honestly predicts the destination. Prefer three to six descriptive words when natural, or use the actual entity name. Avoid padding, generic “click here,” keyword stuffing and forced phrasing changes that make repeated references less clear.\n4. Place the link in the relevant body sentence with enough context to explain why it helps. Useful existing navigation and footers may remain; this task is not a site-wide ban on those links. Add no hidden links or unrelated collections merely to increase the total.\n5. Apply [entity linking, choosing the right home for a named person or topic](https://blitzmetrics.com/entity-linking/) to explanations while preserving direct primary evidence and actual account/download actions. Connect stories to their owning methods or offers and add useful cross-links as planned. Keep the source’s factual meaning, relevant proof, IDs and media unchanged outside the exact intended edit.\n6. If a suggestion tool proposes additional links, treat them as candidates requiring the same purpose and identity review. Do not accept a batch solely from a keyword score. Log rejected and held rows so the accepted scope does not silently expand during implementation.\n7. Save through the supported authorized rail and read back the exact edited field and ordinary rendered page. Follow the real link and check its final target and surrounding sentence. Record source URL, target, anchor, revision, release time and any cache or access gap for QA; a successful API response is only the save stage.\n\n## Definition of done (QA checklist)\n\nQuality assurance (QA) means checking the actual result against its agreed requirements. Follow the [Article Guidelines](https://localservicespotlight.com/article-guidelines/).\n\n- [ ] Every placed link comes from an accepted relevant row and preserves the current source, layout and unrelated content.\n- [ ] Anchor meaning, first-mention routing and necessary source/action links remain accurate.\n- [ ] Actual saved and normal public links are checked, with held rows and verification gaps explicit.\n- [ ] The exact output, source revision, reviewer evidence and remaining owner action are saved.\n- [ ] For any reader-facing output, the short grade-five opening states the reader’s useful outcome and supporting method or proof. The body delivers that promise; a useful authentic visual appears in the first screen. Retain exact text and quoted reviewer evidence.\n\n## Example(s)\n\n**Fictional teaching example. This is not a client result or proof of a completed run.**\n\nA fictional approved row links a repair case to its method guide. The live case now has a new photo and paragraph added by its owner. The editor keeps that work, inserts the link in the planned sentence through the existing builder field, and checks the ordinary URL. The receipt records one link, not a replaced article or a proven ranking gain.\n\n## Handoff and Content Factory context\n\n[Check the placed links](https://local-service-spotlight.github.io/task-library/?task=step-5-qa-links-against-google-guidelines#task-step-5-qa-links-against-google-guidelines) receives the exact change log, source revisions and public checks. [Measure the accepted change set](https://local-service-spotlight.github.io/task-library/?task=step-6-measure-and-iterate-with-maa#task-step-6-measure-and-iterate-with-maa) receives the released target list and dates; concurrent-source conflicts remain with the original owner.\n\nThis task supports the [Content Factory: Produce, Process, Post and Promote](https://blitzmetrics.com/content-factory/). Identity, proof, access or coordination can support several stages. Use the real inputs and receiving owner above; this task does not create unrelated transcripts, clips or ads merely because the diagram has four stages.\n\n## Start with an agent\n\nGive the [AI worker](https://blitzmetrics.com/build-agents/) this recipe, the real inputs, desired result and actions already authorized. Ask for the saved output, sources, checks and next owner. A [skill is a written recipe](https://localservicespotlight.com/plugin/); loading one does not prove account access or perform the task. Use the [installation guide](https://localservicespotlight.com/install/) if reusable setup is needed. A ZIP is a source snapshot, not an access grant or automatic update.\n\nUse the app’s actual supported tools and verified file/account access. Keep a missing human verification step with its real owner. Recurring work needs its own configured job, trigger, timezone and observed result; this guide creates no schedule. Before any media playback, mute the player and set its volume to zero. If silence cannot be verified first, use captions, frames, metadata or another silent check.\n\n## Record the real execution\n\nOpen the run record when work begins. Keep one execution ID, starting recipe revision, real inputs and current state. Write the [meta article, the record of this execution](https://blitzmetrics.com/meta-article-prompt/) with actual steps, results, checks, failures and next owner. Writing is required; public release follows existing authority. Link it to this recipe and the [Task Library](https://local-service-spotlight.github.io/task-library/).\n\nReuse the same execution ID for internal checks, revisions, retries and meta writing. A blocked run stays open with its dependency and owner, without an invented finish time. Dated public examples and distinct verified execution counts remain separate. Propose the smallest source-backed recipe improvement when the actual evidence reveals a defect.\n\n\n<!-- factory-layer:start -->\n\n## Factory chain (do not treat this as isolated)\n\n- **Phase:** —\n- **Importance:** 3/5 `●●●○○` — frequency 3, revenue 3, gating 2 (supporting)\n- **Suggested previous station:** —\n- **Suggested next station:** —\nThese stations are generated neighbors, not verified prerequisites or handoffs. Follow the task’s actual Inputs and Handoff sections.\n- **Handoff:** Save this task’s actual output, source, date and checks where the receiving owner can read them. Follow the Inputs and Handoff sections for its next step.\n\n## Model routing (same factory, any engine)\n\n- **This task's lane:** `any` — Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.\n- **Single-engine path:** Use the capable AI app you already have. Check its required tools and access before starting. Pass the actual result and proof to the next task.\n- **Optional multi-engine:** A tested local model may draft; a stronger model may review facts and voice. Use supported tools for approved actions. Pick models from observed quality and cost; a model name does not prove it can run this task.\n- **Never** store the working state in one vendor's memory. Files in the Content Library are the bridge.\n\n<!-- factory-layer:end -->\n## Definitive article & links\n\n- [Maintained source guide](https://blitzmetrics.com/internal-linking/)\n- [This task in the Task Library](https://local-service-spotlight.github.io/task-library/?task=step-4-create-links-with-proper-anchor-text-and-placement#task-step-4-create-links-with-proper-anchor-text-and-placement)\n- [Article Guidelines](https://localservicespotlight.com/article-guidelines/)\n- [Definitive article and task recipe standard](https://blitzmetrics.com/definitive-article-guide/)\n- [How recipes and run records fit together](https://localservicespotlight.com/meta-articles/)\n\n### Primary method references\n\n- [Google’s crawlable and descriptive link guidance](https://developers.google.com/search/docs/crawling-indexing/links-crawlable)\n\n## Review and evidence still needed\n\nThe inherited contributor status is `complete`. It is preserved, not promoted by this rewrite. That label alone does not prove document readiness, account access, an actual execution or a client result.\n\nThe fictional example teaches the method and does not fill a real-run evidence gap. A named semantic reviewer must check the actual opening, full method, sources and handoff. Check the useful opening visual in the normal rendered guide at the current required desktop and mobile sizes, including 1280 × 800 and 390 × 844. Source readability checks do not prove public presentation or task execution.",
      "importance": 3,
      "freq": 3,
      "revenue": 3,
@@ -24538,10 +24561,40 @@
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
      "why": "supporting",
      "instructionReview": {
-      "source_sha256": "ba8df0ff233141b374d4cc00921ec6ccb9834ad511958ed0acdfe9c32bde6b45",
-      "reviewed_at": "2026-09-06",
-      "reviewer": "Codex editorial review",
-      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+      "source_sha256": "62aa597890ee545455fc3ab325dc0ee2b742f692a276cf18cfeabe0c39df0c27",
+      "reviewed_at": "2026-10-01",
+      "reviewer": "Codex root with separate Codex source reviewer",
+      "scope": "Exact written instructions checked; article, setup and accepted results are separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/internal-linking-2026-10-01.md",
+      "standards": {
+       "version": 1,
+       "checks": {
+        "opening": {
+         "state": "pass",
+         "reason": "Quoted useful outcome, reader value and explained owned process connection.",
+         "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/internal-linking-2026-10-01.md"
+        },
+        "recipe": {
+         "state": "pass",
+         "reason": "Clear trigger, inputs, authorized ordered steps, exact output and QA.",
+         "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/internal-linking-2026-10-01.md"
+        },
+        "links": {
+         "state": "pass",
+         "reason": "Owned methods, primary Google sources, correct task handoff and destination rules are explicit.",
+         "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/internal-linking-2026-10-01.md"
+        },
+        "evidence": {
+         "state": "pass",
+         "reason": "Fictional example labeled; source/public proof and one execution record required; no invented result.",
+         "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/internal-linking-2026-10-01.md"
+        },
+        "handoff": {
+         "state": "pass",
+         "reason": "Placement passes exact change log to QA; QA passes accepted rows to measurement and holds to owner.",
+         "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/internal-linking-2026-10-01.md"
+        }
+       }
+      }
      },
      "articleState": "ready",
      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=step-4-create-links-with-proper-anchor-text-and-placement#task-step-4-create-links-with-proper-anchor-text-and-placement",
@@ -24559,24 +24612,57 @@
       "setupReviews": []
      },
      "standardVerification": {
-      "instructionSourceSha256": "ba8df0ff233141b374d4cc00921ec6ccb9834ad511958ed0acdfe9c32bde6b45",
+      "instructionSourceSha256": "62aa597890ee545455fc3ab325dc0ee2b742f692a276cf18cfeabe0c39df0c27",
       "articleKey": "blitzmetrics.com/internal-linking",
       "gates": {
        "instructionRevisionReviewed": {
         "id": "instructionRevisionReviewed",
         "label": "Exact instruction revision reviewed",
         "state": "pass",
-        "reason": "Current source bytes match the review recorded 2026-09-06. Review scope and limits: Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate.",
-        "reviewedAt": "2026-09-06",
-        "reviewer": "Codex editorial review",
-        "sourceSha256": "ba8df0ff233141b374d4cc00921ec6ccb9834ad511958ed0acdfe9c32bde6b45"
+        "reason": "Current source bytes match the review recorded 2026-10-01. Review scope and limits: Exact written instructions checked; article, setup and accepted results are separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/internal-linking-2026-10-01.md",
+        "reviewedAt": "2026-10-01",
+        "reviewer": "Codex root with separate Codex source reviewer",
+        "sourceSha256": "62aa597890ee545455fc3ab325dc0ee2b742f692a276cf18cfeabe0c39df0c27"
        },
        "instructionStandards": {
         "id": "instructionStandards",
         "label": "Instruction requirements checked",
-        "state": "unknown",
-        "reason": "The current exact-byte review has no structured instruction-requirements checklist.",
-        "sourceSha256": "ba8df0ff233141b374d4cc00921ec6ccb9834ad511958ed0acdfe9c32bde6b45"
+        "state": "pass",
+        "reason": "All five instruction requirements have explicit passing checks for the current source revision.",
+        "reviewedAt": "2026-10-01",
+        "reviewer": "Codex root with separate Codex source reviewer",
+        "reviewScope": "Exact written instructions checked; article, setup and accepted results are separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/internal-linking-2026-10-01.md",
+        "sourceSha256": "62aa597890ee545455fc3ab325dc0ee2b742f692a276cf18cfeabe0c39df0c27",
+        "standards": {
+         "version": 1,
+         "checks": {
+          "opening": {
+           "state": "pass",
+           "reason": "Quoted useful outcome, reader value and explained owned process connection.",
+           "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/internal-linking-2026-10-01.md"
+          },
+          "recipe": {
+           "state": "pass",
+           "reason": "Clear trigger, inputs, authorized ordered steps, exact output and QA.",
+           "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/internal-linking-2026-10-01.md"
+          },
+          "links": {
+           "state": "pass",
+           "reason": "Owned methods, primary Google sources, correct task handoff and destination rules are explicit.",
+           "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/internal-linking-2026-10-01.md"
+          },
+          "evidence": {
+           "state": "pass",
+           "reason": "Fictional example labeled; source/public proof and one execution record required; no invented result.",
+           "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/internal-linking-2026-10-01.md"
+          },
+          "handoff": {
+           "state": "pass",
+           "reason": "Placement passes exact change log to QA; QA passes accepted rows to measurement and holds to owner.",
+           "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/internal-linking-2026-10-01.md"
+          }
+         }
+        }
        },
        "contributorComplete": {
         "id": "contributorComplete",
@@ -24601,7 +24687,112 @@
         "id": "articleSemanticCertification",
         "label": "Article semantic certification",
         "state": "unknown",
-        "reason": "No exact-revision positive semantic review is recorded for this article."
+        "reason": "Current article semantic criteria are unknown: owner, sourceEvidence, visualAndLayout, publicationStandards, acceptanceResults.",
+        "semanticReview": {
+         "version": 1,
+         "taskSlug": "step-4-create-links-with-proper-anchor-text-and-placement",
+         "canonicalURL": "https://blitzmetrics.com/internal-linking",
+         "sourceSha256": "017cda11a99d24ab8015f2f3e49f3d9b00d828a1735658bbaca979f6dc406568",
+         "representation": "wordpress-content-html",
+         "reviewedAt": "2026-10-01T14:16:18.175364Z",
+         "reviewer": "Codex root with separate Codex source reviewer",
+         "criteria": {
+          "openingContext": {
+           "state": "pass",
+           "reason": "Quoted opening explains purpose, value and checked SEO Tree connection; method delivers the promise.",
+           "evidenceRefs": [
+            "sha256:0c4f9ea6b02ca66cbb6ea61a0da51bd113512c704622043acbcfe1cbb34b27e5",
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/internal-linking-2026-10-01.md"
+           ]
+          },
+          "roleScope": {
+           "state": "pass",
+           "reason": "Parent playbook coordinates separate placement and QA tasks; seven copies do not imply seven certifications.",
+           "evidenceRefs": [
+            "sha256:0c4f9ea6b02ca66cbb6ea61a0da51bd113512c704622043acbcfe1cbb34b27e5",
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/internal-linking-2026-10-01.md"
+           ]
+          },
+          "owner": {
+           "state": "unknown",
+           "reason": "Full canonical upkeep-owner record not established.",
+           "evidenceRefs": [
+            "sha256:0c4f9ea6b02ca66cbb6ea61a0da51bd113512c704622043acbcfe1cbb34b27e5",
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/internal-linking-2026-10-01.md"
+           ]
+          },
+          "steps": {
+           "state": "pass",
+           "reason": "Inputs, steps, permission boundary, result checks and next receiving task are explicit.",
+           "evidenceRefs": [
+            "sha256:0c4f9ea6b02ca66cbb6ea61a0da51bd113512c704622043acbcfe1cbb34b27e5",
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/internal-linking-2026-10-01.md"
+           ]
+          },
+          "links": {
+           "state": "pass",
+           "reason": "Final43HTMLdestinations return200; opening, setup and exact task connections read for meaning; seven embedded sources match.",
+           "evidenceRefs": [
+            "sha256:0c4f9ea6b02ca66cbb6ea61a0da51bd113512c704622043acbcfe1cbb34b27e5",
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/internal-linking-2026-10-01.md"
+           ]
+          },
+          "sourceEvidence": {
+           "state": "unknown",
+           "reason": "Google primary directions checked; historical reports not independent accepted execution proof.",
+           "evidenceRefs": [
+            "sha256:0c4f9ea6b02ca66cbb6ea61a0da51bd113512c704622043acbcfe1cbb34b27e5",
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/internal-linking-2026-10-01.md"
+           ]
+          },
+          "handoffContext": {
+           "state": "pass",
+           "reason": "Process/Post relationship and placement-to-QA-to-measurement outputs explicit.",
+           "evidenceRefs": [
+            "sha256:0c4f9ea6b02ca66cbb6ea61a0da51bd113512c704622043acbcfe1cbb34b27e5",
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/internal-linking-2026-10-01.md"
+           ]
+          },
+          "visualAndLayout": {
+           "state": "unknown",
+           "reason": "Selected phone/desktop views checked; full-page publishing audit remains unverified.",
+           "evidenceRefs": [
+            "sha256:0c4f9ea6b02ca66cbb6ea61a0da51bd113512c704622043acbcfe1cbb34b27e5",
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/internal-linking-2026-10-01.md"
+           ]
+          },
+          "publicationStandards": {
+           "state": "unknown",
+           "reason": "Source metadata preserved; full ownership and publication checklist remains open.",
+           "evidenceRefs": [
+            "sha256:0c4f9ea6b02ca66cbb6ea61a0da51bd113512c704622043acbcfe1cbb34b27e5",
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/internal-linking-2026-10-01.md"
+           ]
+          },
+          "acceptanceResults": {
+           "state": "unknown",
+           "reason": "No novice installed-skill success or accepted business execution established by this repair.",
+           "evidenceRefs": [
+            "sha256:0c4f9ea6b02ca66cbb6ea61a0da51bd113512c704622043acbcfe1cbb34b27e5",
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/internal-linking-2026-10-01.md"
+           ]
+          }
+         }
+        },
+        "revisionObservation": {
+         "version": 1,
+         "taskSlug": "step-4-create-links-with-proper-anchor-text-and-placement",
+         "canonicalURL": "https://blitzmetrics.com/internal-linking",
+         "sourceSha256": "017cda11a99d24ab8015f2f3e49f3d9b00d828a1735658bbaca979f6dc406568",
+         "representation": "wordpress-content-html",
+         "observedAt": "2026-10-01T14:16:18.840489Z",
+         "observer": "Codex fresh authenticated source read after review",
+         "state": "observed",
+         "reason": "Final saved source matches exact reviewed candidate; public readback remains separately recorded.",
+         "evidenceRefs": [
+          "sha256:428c5a8343b29f341ec39a426ec7521fee2af6f2bcbc7fcad51204c22d4253f8"
+         ]
+        }
        },
        "taskExampleEvidence": {
         "id": "taskExampleEvidence",
@@ -24635,7 +24826,6 @@
       "unmetStandardGates": [],
       "heldStandardGates": [],
       "unknownStandardGates": [
-       "instructionStandards",
        "articleSemanticCertification",
        "taskExampleEvidence",
        "recordedExecution",
@@ -24646,7 +24836,7 @@
       "queuePosition": 273,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
-      "nextAction": "No exact-revision positive semantic review is recorded for this article."
+      "nextAction": "Current article semantic criteria are unknown: owner, sourceEvidence, visualAndLayout, publicationStandards, acceptanceResults."
      }
     },
     {
@@ -24657,7 +24847,7 @@
      "article": "https://blitzmetrics.com/internal-linking",
      "articleKind": "task-recipe",
      "desc": "Check that each new link helps readers reach the right page.",
-     "content": "---\nname: step-5-qa-links-against-google-guidelines\ndescription: \"Check that each new link helps readers reach the right page.\"\ncategory: SEO & Content Architecture\nstage: —\ndefinitive_article: /internal-linking\nstatus: complete\n---\n\n# Step 5: QA links against Google guidelines\n\nCheck that each new link helps readers reach the right page. This guide tests the words, the page they open and the reason to click. Start with the exact list of links that changed and their live pages.\n\n**The path:** Exact changed links → Meaning and destination checks → Repairs or held rows → Accepted log\n\n**Start when:** Step 4 has saved or released a defined set of links and supplied the actual change log.\n\n## Inputs\n\n- [Place the accepted links](https://local-service-spotlight.github.io/task-library/?task=step-4-create-links-with-proper-anchor-text-and-placement#task-step-4-create-links-with-proper-anchor-text-and-placement) log with source/target, anchor, surrounding text, exact revision and save/public state.\n- The accepted [Goals, Content, Targeting: the result, source material and people served](https://blitzmetrics.com/gct-business-strategy/) and current owning target pages, plus normal public access to the changed source pages.\n- The maintained [internal-linking method](https://blitzmetrics.com/internal-linking/) and current Google primary link guidance.\n\n## Steps\n\n1. Start from the exact changed-link log and read each link in its actual normal page context. Compare it with the saved source, not just a preview or cached screenshot. A stale public copy or inaccessible page is a specific verification gap; do not approve it because the CMS raw text is correct.\n2. Check the anchor’s promise against the destination. It should be concise, descriptive and natural; the house three-to-six-word preference is not a Google word-count rule. A real two-word name can be correct, and repeating an accurate name is not automatically keyword stuffing.\n3. Check that the surrounding sentence gives a useful reason to follow the link and remains factually true. Confirm the named person, company, method or offer matches. Owned explanatory links must not replace a necessary primary citation, sign-in or download destination with a general guide.\n4. Inspect placement and link behavior. Ordinary crawlable links use real anchors with destinations, and readers must be able to see and use them. Contextual body links are this change set’s purpose; useful menu/footer navigation is not inherently manipulative. Hold hidden, misleading or unrelated link schemes.\n5. Review volume by reader usefulness rather than a fixed links-per-word ratio. Remove redundant or forced additions where they add no value. Google states no ideal link count; a page with many relevant sources and a short page with few links need different judgments.\n6. Follow each changed destination and record actual responses and redirect meaning. Correct a stale internal alias when the verified final target serves the same purpose; do not rewrite an intentional external evidence link blindly. Handle removed content with a relevant replacement or the proper reviewed removal behavior, never an arbitrary redirect.\n7. Repair in-scope defects through the same maintained source rail and repeat only the affected checks. Save accepted, failed and held rows with exact evidence and owners, plus any wider issues discovered outside this scope. Pass the verified change set to measurement without declaring full-site compliance from a limited link review.\n\n## Definition of done (QA checklist)\n\nQuality assurance (QA) means checking the actual result against its agreed requirements. Follow the [Article Guidelines](https://localservicespotlight.com/article-guidelines/).\n\n- [ ] Each accepted changed link has an accurate anchor, useful context, correct identity and actual destination check.\n- [ ] The review distinguishes Google guidance from house preferences and finds no hidden or irrelevant link scheme in the changed set.\n- [ ] Source/public mismatches, failed links and out-of-scope defects retain their real states and owners.\n- [ ] The exact output, source revision, reviewer evidence and remaining owner action are saved.\n- [ ] For any reader-facing output, the short grade-five opening states the reader’s useful outcome and supporting method or proof. The body delivers that promise; a useful authentic visual appears in the first screen. Retain exact text and quoted reviewer evidence.\n\n## Example(s)\n\n**Fictional teaching example. This is not a client result or proof of a completed run.**\n\nA fictional review checks eight new links. Seven point to the intended pages. The eighth uses a service name but now redirects to a general home page, so it is held until the owner confirms a relevant destination. The report accepts seven and names one blocker; it does not declare the entire site fixed from this small check.\n\n## Handoff and Content Factory context\n\n[Measure the accepted change set](https://local-service-spotlight.github.io/task-library/?task=step-6-measure-and-iterate-with-maa#task-step-6-measure-and-iterate-with-maa) receives the accepted URLs, release dates, corrections and limitations. The page owner receives any held destination or source problem before that row is called done.\n\nThis task supports the [Content Factory: Produce, Process, Post and Promote](https://blitzmetrics.com/content-factory/). Identity, proof, access or coordination can support several stages. Use the real inputs and receiving owner above; this task does not create unrelated transcripts, clips or ads merely because the diagram has four stages.\n\n## Start with an agent\n\nGive the [AI worker](https://blitzmetrics.com/build-agents/) this recipe, the real inputs, desired result and actions already authorized. Ask for the saved output, sources, checks and next owner. A [skill is a written recipe](https://localservicespotlight.com/plugin/); loading one does not prove account access or perform the task. Use the [installation guide](https://localservicespotlight.com/install/) if reusable setup is needed. A ZIP is a source snapshot, not an access grant or automatic update.\n\nUse the app’s actual supported tools and verified file/account access. Keep a missing human verification step with its real owner. Recurring work needs its own configured job, trigger, timezone and observed result; this guide creates no schedule. Before any media playback, mute the player and set its volume to zero. If silence cannot be verified first, use captions, frames, metadata or another silent check.\n\n## Record the real execution\n\nOpen the run record when work begins. Keep one execution ID, starting recipe revision, real inputs and current state. Write the [meta article, the record of this execution](https://blitzmetrics.com/meta-article-prompt/) with actual steps, results, checks, failures and next owner. Writing is required; public release follows existing authority. Link it to this recipe and the [Task Library](https://local-service-spotlight.github.io/task-library/).\n\nReuse the same execution ID for internal checks, revisions, retries and meta writing. A blocked run stays open with its dependency and owner, without an invented finish time. Dated public examples and distinct verified execution counts remain separate. Propose the smallest source-backed recipe improvement when the actual evidence reveals a defect.\n\n\n<!-- factory-layer:start -->\n\n## Factory chain (do not treat this as isolated)\n\n- **Phase:** —\n- **Importance:** 3/5 `●●●○○` — frequency 3, revenue 3, gating 2 (supporting)\n- **Suggested previous station:** —\n- **Suggested next station:** —\nThese stations are generated neighbors, not verified prerequisites or handoffs. Follow the task’s actual Inputs and Handoff sections.\n- **Handoff:** Save this task’s actual output, source, date and checks where the receiving owner can read them. Follow the Inputs and Handoff sections for its next step.\n\n## Model routing (same factory, any engine)\n\n- **This task's lane:** `any` — Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.\n- **Single-engine path:** Use the capable AI app you already have. Check its required tools and access before starting. Pass the actual result and proof to the next task.\n- **Optional multi-engine:** A tested local model may draft; a stronger model may review facts and voice. Use supported tools for approved actions. Pick models from observed quality and cost; a model name does not prove it can run this task.\n- **Never** store the working state in one vendor's memory. Files in the Content Library are the bridge.\n\n<!-- factory-layer:end -->\n## Definitive article & links\n\n- [Maintained source guide](https://blitzmetrics.com/internal-linking/)\n- [This task in the Task Library](https://local-service-spotlight.github.io/task-library/?task=step-5-qa-links-against-google-guidelines#task-step-5-qa-links-against-google-guidelines)\n- [Article Guidelines](https://localservicespotlight.com/article-guidelines/)\n- [Definitive article and task recipe standard](https://blitzmetrics.com/definitive-article-guide/)\n- [How recipes and run records fit together](https://localservicespotlight.com/meta-articles/)\n\n### Primary method references\n\n- [Google’s current link best practices](https://developers.google.com/search/docs/crawling-indexing/links-crawlable)\n- [Google’s link spam policies](https://developers.google.com/search/docs/essentials/spam-policies)\n\n## Review and evidence still needed\n\nThe inherited contributor status is `complete`. It is preserved, not promoted by this rewrite. That label alone does not prove document readiness, account access, an actual execution or a client result.\n\nThe fictional example teaches the method and does not fill a real-run evidence gap. A named semantic reviewer must check the actual opening, full method, sources and handoff. Check the useful opening visual in the normal rendered guide at the current required desktop and mobile sizes, including 1280 × 800 and 390 × 844. Source readability checks do not prove public presentation or task execution.",
+     "content": "---\nname: step-5-qa-links-against-google-guidelines\ndescription: \"Check that each new link helps readers reach the right page.\"\ncategory: SEO & Content Architecture\nstage: —\ndefinitive_article: /internal-linking\nstatus: complete\n---\n\n# Step 5: QA links against Google guidelines\n\nCheck that each new link takes readers to the right page. This helps catch wrong words, dead links and confusing next steps. Use this check after the [link-placement task, which adds the approved links and records what changed](https://local-service-spotlight.github.io/task-library/?task=step-4-create-links-with-proper-anchor-text-and-placement#task-step-4-create-links-with-proper-anchor-text-and-placement).\n\n**The path:** Exact changed links → Meaning and destination checks → Repairs or held rows → Accepted log\n\n**Start when:** Step 4 has saved or released a defined set of links and supplied the actual change log.\n\n## Inputs\n\n- [Place the accepted links](https://local-service-spotlight.github.io/task-library/?task=step-4-create-links-with-proper-anchor-text-and-placement#task-step-4-create-links-with-proper-anchor-text-and-placement) log with source/target, anchor, surrounding text, exact revision and save/public state.\n- The accepted [Goals, Content, Targeting: the result, source material and people served](https://blitzmetrics.com/gct-business-strategy/) and current owning target pages, plus normal public access to the changed source pages.\n- The maintained [internal-linking method](https://blitzmetrics.com/internal-linking/) and current Google primary link guidance.\n\n## Steps\n\n1. Start from the exact changed-link log and read each link in its actual normal page context. Compare it with the saved source, not just a preview or cached screenshot. A stale public copy or inaccessible page is a specific verification gap; do not approve it because the CMS raw text is correct.\n2. Check the anchor’s promise against the destination. It should be concise, descriptive and natural; the house three-to-six-word preference is not a Google word-count rule. A real two-word name can be correct, and repeating an accurate name is not automatically keyword stuffing.\n3. Check that the surrounding sentence gives a useful reason to follow the link and remains factually true. Confirm the named person, company, method or offer matches. Owned explanatory links must not replace a necessary primary citation, sign-in or download destination with a general guide.\n4. Inspect placement and link behavior. Ordinary crawlable links use real anchors with destinations, and readers must be able to see and use them. Contextual body links are this change set’s purpose; useful menu/footer navigation is not inherently manipulative. Hold hidden, misleading or unrelated link schemes.\n5. Review volume by reader usefulness rather than a fixed links-per-word ratio. Remove redundant or forced additions where they add no value. Google states no ideal link count; a page with many relevant sources and a short page with few links need different judgments.\n6. Follow each changed destination and record actual responses and redirect meaning. Correct a stale internal alias when the verified final target serves the same purpose; do not rewrite an intentional external evidence link blindly. Handle removed content with a relevant replacement or the proper reviewed removal behavior, never an arbitrary redirect.\n7. Repair in-scope defects through the same maintained source rail and repeat only the affected checks. Save accepted, failed and held rows with exact evidence and owners, plus any wider issues discovered outside this scope. Pass the verified change set to measurement without declaring full-site compliance from a limited link review.\n\n## Definition of done (QA checklist)\n\nQuality assurance (QA) means checking the actual result against its agreed requirements. Follow the [Article Guidelines](https://localservicespotlight.com/article-guidelines/).\n\n- [ ] Each accepted changed link has an accurate anchor, useful context, correct identity and actual destination check.\n- [ ] The review distinguishes Google guidance from house preferences and finds no hidden or irrelevant link scheme in the changed set.\n- [ ] Source/public mismatches, failed links and out-of-scope defects retain their real states and owners.\n- [ ] The exact output, source revision, reviewer evidence and remaining owner action are saved.\n- [ ] For any reader-facing output, the short grade-five opening states the reader’s useful outcome and supporting method or proof. The body delivers that promise; a useful authentic visual appears in the first screen. Retain exact text and quoted reviewer evidence.\n\n## Example(s)\n\n**Fictional teaching example. This is not a client result or proof of a completed run.**\n\nA fictional review checks eight new links. Seven point to the intended pages. The eighth uses a service name but now redirects to a general home page, so it is held until the owner confirms a relevant destination. The report accepts seven and names one blocker; it does not declare the entire site fixed from this small check.\n\n## Handoff and Content Factory context\n\n[Measure the accepted change set](https://local-service-spotlight.github.io/task-library/?task=step-6-measure-and-iterate-with-maa#task-step-6-measure-and-iterate-with-maa) receives the accepted URLs, release dates, corrections and limitations. The page owner receives any held destination or source problem before that row is called done.\n\nThis task supports the [Content Factory: Produce, Process, Post and Promote](https://blitzmetrics.com/content-factory/). Identity, proof, access or coordination can support several stages. Use the real inputs and receiving owner above; this task does not create unrelated transcripts, clips or ads merely because the diagram has four stages.\n\n## Start with an agent\n\nGive the [AI worker](https://blitzmetrics.com/build-agents/) this recipe, the real inputs, desired result and actions already authorized. Ask for the saved output, sources, checks and next owner. A [skill is a written recipe](https://localservicespotlight.com/plugin/); loading one does not prove account access or perform the task. Use the [installation guide](https://localservicespotlight.com/install/) if reusable setup is needed. A ZIP is a source snapshot, not an access grant or automatic update.\n\nUse the app’s actual supported tools and verified file/account access. Keep a missing human verification step with its real owner. Recurring work needs its own configured job, trigger, timezone and observed result; this guide creates no schedule. Before any media playback, mute the player and set its volume to zero. If silence cannot be verified first, use captions, frames, metadata or another silent check.\n\n## Record the real execution\n\nOpen the run record when work begins. Keep one execution ID, starting recipe revision, real inputs and current state. Write the [meta article, the record of this execution](https://blitzmetrics.com/meta-article-prompt/) with actual steps, results, checks, failures and next owner. Writing is required; public release follows existing authority. Link it to this recipe and the [Task Library](https://local-service-spotlight.github.io/task-library/).\n\nReuse the same execution ID for internal checks, revisions, retries and meta writing. A blocked run stays open with its dependency and owner, without an invented finish time. Dated public examples and distinct verified execution counts remain separate. Propose the smallest source-backed recipe improvement when the actual evidence reveals a defect.\n\n\n<!-- factory-layer:start -->\n\n## Factory chain (do not treat this as isolated)\n\n- **Phase:** —\n- **Importance:** 3/5 `●●●○○` — frequency 3, revenue 3, gating 2 (supporting)\n- **Suggested previous station:** —\n- **Suggested next station:** —\nThese stations are generated neighbors, not verified prerequisites or handoffs. Follow the task’s actual Inputs and Handoff sections.\n- **Handoff:** Save this task’s actual output, source, date and checks where the receiving owner can read them. Follow the Inputs and Handoff sections for its next step.\n\n## Model routing (same factory, any engine)\n\n- **This task's lane:** `any` — Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.\n- **Single-engine path:** Use the capable AI app you already have. Check its required tools and access before starting. Pass the actual result and proof to the next task.\n- **Optional multi-engine:** A tested local model may draft; a stronger model may review facts and voice. Use supported tools for approved actions. Pick models from observed quality and cost; a model name does not prove it can run this task.\n- **Never** store the working state in one vendor's memory. Files in the Content Library are the bridge.\n\n<!-- factory-layer:end -->\n## Definitive article & links\n\n- [Maintained source guide](https://blitzmetrics.com/internal-linking/)\n- [This task in the Task Library](https://local-service-spotlight.github.io/task-library/?task=step-5-qa-links-against-google-guidelines#task-step-5-qa-links-against-google-guidelines)\n- [Article Guidelines](https://localservicespotlight.com/article-guidelines/)\n- [Definitive article and task recipe standard](https://blitzmetrics.com/definitive-article-guide/)\n- [How recipes and run records fit together](https://localservicespotlight.com/meta-articles/)\n\n### Primary method references\n\n- [Google’s current link best practices](https://developers.google.com/search/docs/crawling-indexing/links-crawlable)\n- [Google’s link spam policies](https://developers.google.com/search/docs/essentials/spam-policies)\n\n## Review and evidence still needed\n\nThe inherited contributor status is `complete`. It is preserved, not promoted by this rewrite. That label alone does not prove document readiness, account access, an actual execution or a client result.\n\nThe fictional example teaches the method and does not fill a real-run evidence gap. A named semantic reviewer must check the actual opening, full method, sources and handoff. Check the useful opening visual in the normal rendered guide at the current required desktop and mobile sizes, including 1280 × 800 and 390 × 844. Source readability checks do not prove public presentation or task execution.",
      "importance": 3,
      "freq": 3,
      "revenue": 3,
@@ -24669,10 +24859,40 @@
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
      "why": "supporting",
      "instructionReview": {
-      "source_sha256": "e9863615a98f8f38bd7f26177783b58c9f9e891023b9eec719863bbbf40f7549",
-      "reviewed_at": "2026-09-06",
-      "reviewer": "Codex editorial review",
-      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+      "source_sha256": "1bcce8119fd47ee419b2b9fb172e1257a8d06ad06da0a5b075e6d091d86b647f",
+      "reviewed_at": "2026-10-01",
+      "reviewer": "Codex root with separate Codex source reviewer",
+      "scope": "Exact written instructions checked; article, setup and accepted results are separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/internal-linking-2026-10-01.md",
+      "standards": {
+       "version": 1,
+       "checks": {
+        "opening": {
+         "state": "pass",
+         "reason": "Quoted useful outcome, reader value and explained owned process connection.",
+         "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/internal-linking-2026-10-01.md"
+        },
+        "recipe": {
+         "state": "pass",
+         "reason": "Clear trigger, inputs, authorized ordered steps, exact output and QA.",
+         "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/internal-linking-2026-10-01.md"
+        },
+        "links": {
+         "state": "pass",
+         "reason": "Owned methods, primary Google sources, correct task handoff and destination rules are explicit.",
+         "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/internal-linking-2026-10-01.md"
+        },
+        "evidence": {
+         "state": "pass",
+         "reason": "Fictional example labeled; source/public proof and one execution record required; no invented result.",
+         "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/internal-linking-2026-10-01.md"
+        },
+        "handoff": {
+         "state": "pass",
+         "reason": "Placement passes exact change log to QA; QA passes accepted rows to measurement and holds to owner.",
+         "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/internal-linking-2026-10-01.md"
+        }
+       }
+      }
      },
      "articleState": "ready",
      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=step-5-qa-links-against-google-guidelines#task-step-5-qa-links-against-google-guidelines",
@@ -24690,24 +24910,57 @@
       "setupReviews": []
      },
      "standardVerification": {
-      "instructionSourceSha256": "e9863615a98f8f38bd7f26177783b58c9f9e891023b9eec719863bbbf40f7549",
+      "instructionSourceSha256": "1bcce8119fd47ee419b2b9fb172e1257a8d06ad06da0a5b075e6d091d86b647f",
       "articleKey": "blitzmetrics.com/internal-linking",
       "gates": {
        "instructionRevisionReviewed": {
         "id": "instructionRevisionReviewed",
         "label": "Exact instruction revision reviewed",
         "state": "pass",
-        "reason": "Current source bytes match the review recorded 2026-09-06. Review scope and limits: Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate.",
-        "reviewedAt": "2026-09-06",
-        "reviewer": "Codex editorial review",
-        "sourceSha256": "e9863615a98f8f38bd7f26177783b58c9f9e891023b9eec719863bbbf40f7549"
+        "reason": "Current source bytes match the review recorded 2026-10-01. Review scope and limits: Exact written instructions checked; article, setup and accepted results are separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/internal-linking-2026-10-01.md",
+        "reviewedAt": "2026-10-01",
+        "reviewer": "Codex root with separate Codex source reviewer",
+        "sourceSha256": "1bcce8119fd47ee419b2b9fb172e1257a8d06ad06da0a5b075e6d091d86b647f"
        },
        "instructionStandards": {
         "id": "instructionStandards",
         "label": "Instruction requirements checked",
-        "state": "unknown",
-        "reason": "The current exact-byte review has no structured instruction-requirements checklist.",
-        "sourceSha256": "e9863615a98f8f38bd7f26177783b58c9f9e891023b9eec719863bbbf40f7549"
+        "state": "pass",
+        "reason": "All five instruction requirements have explicit passing checks for the current source revision.",
+        "reviewedAt": "2026-10-01",
+        "reviewer": "Codex root with separate Codex source reviewer",
+        "reviewScope": "Exact written instructions checked; article, setup and accepted results are separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/internal-linking-2026-10-01.md",
+        "sourceSha256": "1bcce8119fd47ee419b2b9fb172e1257a8d06ad06da0a5b075e6d091d86b647f",
+        "standards": {
+         "version": 1,
+         "checks": {
+          "opening": {
+           "state": "pass",
+           "reason": "Quoted useful outcome, reader value and explained owned process connection.",
+           "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/internal-linking-2026-10-01.md"
+          },
+          "recipe": {
+           "state": "pass",
+           "reason": "Clear trigger, inputs, authorized ordered steps, exact output and QA.",
+           "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/internal-linking-2026-10-01.md"
+          },
+          "links": {
+           "state": "pass",
+           "reason": "Owned methods, primary Google sources, correct task handoff and destination rules are explicit.",
+           "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/internal-linking-2026-10-01.md"
+          },
+          "evidence": {
+           "state": "pass",
+           "reason": "Fictional example labeled; source/public proof and one execution record required; no invented result.",
+           "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/internal-linking-2026-10-01.md"
+          },
+          "handoff": {
+           "state": "pass",
+           "reason": "Placement passes exact change log to QA; QA passes accepted rows to measurement and holds to owner.",
+           "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/internal-linking-2026-10-01.md"
+          }
+         }
+        }
        },
        "contributorComplete": {
         "id": "contributorComplete",
@@ -24732,7 +24985,112 @@
         "id": "articleSemanticCertification",
         "label": "Article semantic certification",
         "state": "unknown",
-        "reason": "No exact-revision positive semantic review is recorded for this article."
+        "reason": "Current article semantic criteria are unknown: owner, sourceEvidence, visualAndLayout, publicationStandards, acceptanceResults.",
+        "semanticReview": {
+         "version": 1,
+         "taskSlug": "step-5-qa-links-against-google-guidelines",
+         "canonicalURL": "https://blitzmetrics.com/internal-linking",
+         "sourceSha256": "017cda11a99d24ab8015f2f3e49f3d9b00d828a1735658bbaca979f6dc406568",
+         "representation": "wordpress-content-html",
+         "reviewedAt": "2026-10-01T14:16:18.175364Z",
+         "reviewer": "Codex root with separate Codex source reviewer",
+         "criteria": {
+          "openingContext": {
+           "state": "pass",
+           "reason": "Quoted opening explains purpose, value and checked SEO Tree connection; method delivers the promise.",
+           "evidenceRefs": [
+            "sha256:0c4f9ea6b02ca66cbb6ea61a0da51bd113512c704622043acbcfe1cbb34b27e5",
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/internal-linking-2026-10-01.md"
+           ]
+          },
+          "roleScope": {
+           "state": "pass",
+           "reason": "Parent playbook coordinates separate placement and QA tasks; seven copies do not imply seven certifications.",
+           "evidenceRefs": [
+            "sha256:0c4f9ea6b02ca66cbb6ea61a0da51bd113512c704622043acbcfe1cbb34b27e5",
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/internal-linking-2026-10-01.md"
+           ]
+          },
+          "owner": {
+           "state": "unknown",
+           "reason": "Full canonical upkeep-owner record not established.",
+           "evidenceRefs": [
+            "sha256:0c4f9ea6b02ca66cbb6ea61a0da51bd113512c704622043acbcfe1cbb34b27e5",
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/internal-linking-2026-10-01.md"
+           ]
+          },
+          "steps": {
+           "state": "pass",
+           "reason": "Inputs, steps, permission boundary, result checks and next receiving task are explicit.",
+           "evidenceRefs": [
+            "sha256:0c4f9ea6b02ca66cbb6ea61a0da51bd113512c704622043acbcfe1cbb34b27e5",
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/internal-linking-2026-10-01.md"
+           ]
+          },
+          "links": {
+           "state": "pass",
+           "reason": "Final43HTMLdestinations return200; opening, setup and exact task connections read for meaning; seven embedded sources match.",
+           "evidenceRefs": [
+            "sha256:0c4f9ea6b02ca66cbb6ea61a0da51bd113512c704622043acbcfe1cbb34b27e5",
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/internal-linking-2026-10-01.md"
+           ]
+          },
+          "sourceEvidence": {
+           "state": "unknown",
+           "reason": "Google primary directions checked; historical reports not independent accepted execution proof.",
+           "evidenceRefs": [
+            "sha256:0c4f9ea6b02ca66cbb6ea61a0da51bd113512c704622043acbcfe1cbb34b27e5",
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/internal-linking-2026-10-01.md"
+           ]
+          },
+          "handoffContext": {
+           "state": "pass",
+           "reason": "Process/Post relationship and placement-to-QA-to-measurement outputs explicit.",
+           "evidenceRefs": [
+            "sha256:0c4f9ea6b02ca66cbb6ea61a0da51bd113512c704622043acbcfe1cbb34b27e5",
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/internal-linking-2026-10-01.md"
+           ]
+          },
+          "visualAndLayout": {
+           "state": "unknown",
+           "reason": "Selected phone/desktop views checked; full-page publishing audit remains unverified.",
+           "evidenceRefs": [
+            "sha256:0c4f9ea6b02ca66cbb6ea61a0da51bd113512c704622043acbcfe1cbb34b27e5",
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/internal-linking-2026-10-01.md"
+           ]
+          },
+          "publicationStandards": {
+           "state": "unknown",
+           "reason": "Source metadata preserved; full ownership and publication checklist remains open.",
+           "evidenceRefs": [
+            "sha256:0c4f9ea6b02ca66cbb6ea61a0da51bd113512c704622043acbcfe1cbb34b27e5",
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/internal-linking-2026-10-01.md"
+           ]
+          },
+          "acceptanceResults": {
+           "state": "unknown",
+           "reason": "No novice installed-skill success or accepted business execution established by this repair.",
+           "evidenceRefs": [
+            "sha256:0c4f9ea6b02ca66cbb6ea61a0da51bd113512c704622043acbcfe1cbb34b27e5",
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/internal-linking-2026-10-01.md"
+           ]
+          }
+         }
+        },
+        "revisionObservation": {
+         "version": 1,
+         "taskSlug": "step-5-qa-links-against-google-guidelines",
+         "canonicalURL": "https://blitzmetrics.com/internal-linking",
+         "sourceSha256": "017cda11a99d24ab8015f2f3e49f3d9b00d828a1735658bbaca979f6dc406568",
+         "representation": "wordpress-content-html",
+         "observedAt": "2026-10-01T14:16:18.840489Z",
+         "observer": "Codex fresh authenticated source read after review",
+         "state": "observed",
+         "reason": "Final saved source matches exact reviewed candidate; public readback remains separately recorded.",
+         "evidenceRefs": [
+          "sha256:428c5a8343b29f341ec39a426ec7521fee2af6f2bcbc7fcad51204c22d4253f8"
+         ]
+        }
        },
        "taskExampleEvidence": {
         "id": "taskExampleEvidence",
@@ -24766,7 +25124,6 @@
       "unmetStandardGates": [],
       "heldStandardGates": [],
       "unknownStandardGates": [
-       "instructionStandards",
        "articleSemanticCertification",
        "taskExampleEvidence",
        "recordedExecution",
@@ -24777,7 +25134,7 @@
       "queuePosition": 274,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
-      "nextAction": "No exact-revision positive semantic review is recorded for this article."
+      "nextAction": "Current article semantic criteria are unknown: owner, sourceEvidence, visualAndLayout, publicationStandards, acceptanceResults."
      }
     },
     {
@@ -37888,7 +38245,7 @@
      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=publish-skill-and-task-page#task-publish-skill-and-task-page",
      "executionHistory": {
       "status": "partial",
-      "recordedRuns": 7,
+      "recordedRuns": 8,
       "completedRuns": 3,
       "failedRuns": 0,
       "partialRuns": 4,
@@ -37897,6 +38254,7 @@
       "executionIds": [
        "crossref-release-20260927-162402",
        "entity-linking-repair-20260930-0105",
+       "internal-linking-repair-20261001-1405",
        "link-building-repair-20261001-1307",
        "lss-editorial-correction-20260927-190846",
        "publisher-completion-20260927-134412",
@@ -37945,6 +38303,12 @@
         "status": "completed",
         "startedAt": "2026-10-01T13:07:33.732838+00:00",
         "finishedAt": "2026-10-01T13:19:09.819308+00:00"
+       },
+       {
+        "executionId": "internal-linking-repair-20261001-1405",
+        "status": "running",
+        "startedAt": "2026-10-01T14:06:26.211013+00:00",
+        "finishedAt": null
        }
       ],
       "acceptanceReviews": [
@@ -38193,10 +38557,11 @@
         "id": "recordedExecution",
         "label": "Recorded real execution",
         "state": "pass",
-        "reason": "7 distinct execution ID(s) name this task; outcomes remain separate.",
+        "reason": "8 distinct execution ID(s) name this task; outcomes remain separate.",
         "executionIds": [
          "crossref-release-20260927-162402",
          "entity-linking-repair-20260930-0105",
+         "internal-linking-repair-20261001-1405",
          "link-building-repair-20261001-1307",
          "lss-editorial-correction-20260927-190846",
          "publisher-completion-20260927-134412",

@@ -1019,6 +1019,188 @@
      ]
     }
    }
+  },
+  {
+   "version": 1,
+   "taskSlug": "step-4-create-links-with-proper-anchor-text-and-placement",
+   "canonicalURL": "https://blitzmetrics.com/internal-linking",
+   "sourceSha256": "017cda11a99d24ab8015f2f3e49f3d9b00d828a1735658bbaca979f6dc406568",
+   "representation": "wordpress-content-html",
+   "reviewedAt": "2026-10-01T14:16:18.175364Z",
+   "reviewer": "Codex root with separate Codex source reviewer",
+   "criteria": {
+    "openingContext": {
+     "state": "pass",
+     "reason": "Quoted opening explains purpose, value and checked SEO Tree connection; method delivers the promise.",
+     "evidenceRefs": [
+      "sha256:0c4f9ea6b02ca66cbb6ea61a0da51bd113512c704622043acbcfe1cbb34b27e5",
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/internal-linking-2026-10-01.md"
+     ]
+    },
+    "roleScope": {
+     "state": "pass",
+     "reason": "Parent playbook coordinates separate placement and QA tasks; seven copies do not imply seven certifications.",
+     "evidenceRefs": [
+      "sha256:0c4f9ea6b02ca66cbb6ea61a0da51bd113512c704622043acbcfe1cbb34b27e5",
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/internal-linking-2026-10-01.md"
+     ]
+    },
+    "owner": {
+     "state": "unknown",
+     "reason": "Full canonical upkeep-owner record not established.",
+     "evidenceRefs": [
+      "sha256:0c4f9ea6b02ca66cbb6ea61a0da51bd113512c704622043acbcfe1cbb34b27e5",
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/internal-linking-2026-10-01.md"
+     ]
+    },
+    "steps": {
+     "state": "pass",
+     "reason": "Inputs, steps, permission boundary, result checks and next receiving task are explicit.",
+     "evidenceRefs": [
+      "sha256:0c4f9ea6b02ca66cbb6ea61a0da51bd113512c704622043acbcfe1cbb34b27e5",
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/internal-linking-2026-10-01.md"
+     ]
+    },
+    "links": {
+     "state": "pass",
+     "reason": "Final43HTMLdestinations return200; opening, setup and exact task connections read for meaning; seven embedded sources match.",
+     "evidenceRefs": [
+      "sha256:0c4f9ea6b02ca66cbb6ea61a0da51bd113512c704622043acbcfe1cbb34b27e5",
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/internal-linking-2026-10-01.md"
+     ]
+    },
+    "sourceEvidence": {
+     "state": "unknown",
+     "reason": "Google primary directions checked; historical reports not independent accepted execution proof.",
+     "evidenceRefs": [
+      "sha256:0c4f9ea6b02ca66cbb6ea61a0da51bd113512c704622043acbcfe1cbb34b27e5",
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/internal-linking-2026-10-01.md"
+     ]
+    },
+    "handoffContext": {
+     "state": "pass",
+     "reason": "Process/Post relationship and placement-to-QA-to-measurement outputs explicit.",
+     "evidenceRefs": [
+      "sha256:0c4f9ea6b02ca66cbb6ea61a0da51bd113512c704622043acbcfe1cbb34b27e5",
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/internal-linking-2026-10-01.md"
+     ]
+    },
+    "visualAndLayout": {
+     "state": "unknown",
+     "reason": "Selected phone/desktop views checked; full-page publishing audit remains unverified.",
+     "evidenceRefs": [
+      "sha256:0c4f9ea6b02ca66cbb6ea61a0da51bd113512c704622043acbcfe1cbb34b27e5",
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/internal-linking-2026-10-01.md"
+     ]
+    },
+    "publicationStandards": {
+     "state": "unknown",
+     "reason": "Source metadata preserved; full ownership and publication checklist remains open.",
+     "evidenceRefs": [
+      "sha256:0c4f9ea6b02ca66cbb6ea61a0da51bd113512c704622043acbcfe1cbb34b27e5",
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/internal-linking-2026-10-01.md"
+     ]
+    },
+    "acceptanceResults": {
+     "state": "unknown",
+     "reason": "No novice installed-skill success or accepted business execution established by this repair.",
+     "evidenceRefs": [
+      "sha256:0c4f9ea6b02ca66cbb6ea61a0da51bd113512c704622043acbcfe1cbb34b27e5",
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/internal-linking-2026-10-01.md"
+     ]
+    }
+   }
+  },
+  {
+   "version": 1,
+   "taskSlug": "step-5-qa-links-against-google-guidelines",
+   "canonicalURL": "https://blitzmetrics.com/internal-linking",
+   "sourceSha256": "017cda11a99d24ab8015f2f3e49f3d9b00d828a1735658bbaca979f6dc406568",
+   "representation": "wordpress-content-html",
+   "reviewedAt": "2026-10-01T14:16:18.175364Z",
+   "reviewer": "Codex root with separate Codex source reviewer",
+   "criteria": {
+    "openingContext": {
+     "state": "pass",
+     "reason": "Quoted opening explains purpose, value and checked SEO Tree connection; method delivers the promise.",
+     "evidenceRefs": [
+      "sha256:0c4f9ea6b02ca66cbb6ea61a0da51bd113512c704622043acbcfe1cbb34b27e5",
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/internal-linking-2026-10-01.md"
+     ]
+    },
+    "roleScope": {
+     "state": "pass",
+     "reason": "Parent playbook coordinates separate placement and QA tasks; seven copies do not imply seven certifications.",
+     "evidenceRefs": [
+      "sha256:0c4f9ea6b02ca66cbb6ea61a0da51bd113512c704622043acbcfe1cbb34b27e5",
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/internal-linking-2026-10-01.md"
+     ]
+    },
+    "owner": {
+     "state": "unknown",
+     "reason": "Full canonical upkeep-owner record not established.",
+     "evidenceRefs": [
+      "sha256:0c4f9ea6b02ca66cbb6ea61a0da51bd113512c704622043acbcfe1cbb34b27e5",
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/internal-linking-2026-10-01.md"
+     ]
+    },
+    "steps": {
+     "state": "pass",
+     "reason": "Inputs, steps, permission boundary, result checks and next receiving task are explicit.",
+     "evidenceRefs": [
+      "sha256:0c4f9ea6b02ca66cbb6ea61a0da51bd113512c704622043acbcfe1cbb34b27e5",
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/internal-linking-2026-10-01.md"
+     ]
+    },
+    "links": {
+     "state": "pass",
+     "reason": "Final43HTMLdestinations return200; opening, setup and exact task connections read for meaning; seven embedded sources match.",
+     "evidenceRefs": [
+      "sha256:0c4f9ea6b02ca66cbb6ea61a0da51bd113512c704622043acbcfe1cbb34b27e5",
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/internal-linking-2026-10-01.md"
+     ]
+    },
+    "sourceEvidence": {
+     "state": "unknown",
+     "reason": "Google primary directions checked; historical reports not independent accepted execution proof.",
+     "evidenceRefs": [
+      "sha256:0c4f9ea6b02ca66cbb6ea61a0da51bd113512c704622043acbcfe1cbb34b27e5",
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/internal-linking-2026-10-01.md"
+     ]
+    },
+    "handoffContext": {
+     "state": "pass",
+     "reason": "Process/Post relationship and placement-to-QA-to-measurement outputs explicit.",
+     "evidenceRefs": [
+      "sha256:0c4f9ea6b02ca66cbb6ea61a0da51bd113512c704622043acbcfe1cbb34b27e5",
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/internal-linking-2026-10-01.md"
+     ]
+    },
+    "visualAndLayout": {
+     "state": "unknown",
+     "reason": "Selected phone/desktop views checked; full-page publishing audit remains unverified.",
+     "evidenceRefs": [
+      "sha256:0c4f9ea6b02ca66cbb6ea61a0da51bd113512c704622043acbcfe1cbb34b27e5",
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/internal-linking-2026-10-01.md"
+     ]
+    },
+    "publicationStandards": {
+     "state": "unknown",
+     "reason": "Source metadata preserved; full ownership and publication checklist remains open.",
+     "evidenceRefs": [
+      "sha256:0c4f9ea6b02ca66cbb6ea61a0da51bd113512c704622043acbcfe1cbb34b27e5",
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/internal-linking-2026-10-01.md"
+     ]
+    },
+    "acceptanceResults": {
+     "state": "unknown",
+     "reason": "No novice installed-skill success or accepted business execution established by this repair.",
+     "evidenceRefs": [
+      "sha256:0c4f9ea6b02ca66cbb6ea61a0da51bd113512c704622043acbcfe1cbb34b27e5",
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/internal-linking-2026-10-01.md"
+     ]
+    }
+   }
   }
  ],
  "revisionObservations": [
@@ -1191,6 +1373,34 @@
    "reason": "Fresh saved source matches final independently reviewed candidate, including exact task and maintained-source links. Earlier full browser comparison retained; final anonymous read recorded separately.",
    "evidenceRefs": [
     "sha256:e8fbbc7e7a6b7e27a5e86af0eedc07cfb5930d6c7bfde6f48695896b21e1e471"
+   ]
+  },
+  {
+   "version": 1,
+   "taskSlug": "step-4-create-links-with-proper-anchor-text-and-placement",
+   "canonicalURL": "https://blitzmetrics.com/internal-linking",
+   "sourceSha256": "017cda11a99d24ab8015f2f3e49f3d9b00d828a1735658bbaca979f6dc406568",
+   "representation": "wordpress-content-html",
+   "observedAt": "2026-10-01T14:16:18.840489Z",
+   "observer": "Codex fresh authenticated source read after review",
+   "state": "observed",
+   "reason": "Final saved source matches exact reviewed candidate; public readback remains separately recorded.",
+   "evidenceRefs": [
+    "sha256:428c5a8343b29f341ec39a426ec7521fee2af6f2bcbc7fcad51204c22d4253f8"
+   ]
+  },
+  {
+   "version": 1,
+   "taskSlug": "step-5-qa-links-against-google-guidelines",
+   "canonicalURL": "https://blitzmetrics.com/internal-linking",
+   "sourceSha256": "017cda11a99d24ab8015f2f3e49f3d9b00d828a1735658bbaca979f6dc406568",
+   "representation": "wordpress-content-html",
+   "observedAt": "2026-10-01T14:16:18.840489Z",
+   "observer": "Codex fresh authenticated source read after review",
+   "state": "observed",
+   "reason": "Final saved source matches exact reviewed candidate; public readback remains separately recorded.",
+   "evidenceRefs": [
+    "sha256:428c5a8343b29f341ec39a426ec7521fee2af6f2bcbc7fcad51204c22d4253f8"
    ]
   }
  ]

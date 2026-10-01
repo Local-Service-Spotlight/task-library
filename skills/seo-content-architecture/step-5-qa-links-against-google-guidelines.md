@@ -9,7 +9,7 @@ status: complete
 
 # Step 5: QA links against Google guidelines
 
-Check that each new link helps readers reach the right page. This guide tests the words, the page they open and the reason to click. Start with the exact list of links that changed and their live pages.
+Check that each new link takes readers to the right page. This helps catch wrong words, dead links and confusing next steps. Use this check after the [link-placement task, which adds the approved links and records what changed](https://local-service-spotlight.github.io/task-library/?task=step-4-create-links-with-proper-anchor-text-and-placement#task-step-4-create-links-with-proper-anchor-text-and-placement).
 
 **The path:** Exact changed links → Meaning and destination checks → Repairs or held rows → Accepted log
 
