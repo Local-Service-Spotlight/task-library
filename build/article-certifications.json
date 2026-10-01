@@ -1,1197 +1,1197 @@
 {
-  "_format": "Reviewed URL-level holds may only downgrade a hub to wip. Each hold requires a reason and review date; task completion remains unchanged.",
-  "articles": {
-    "https://blitzmetrics.com/9-triangles-framework-scalable-home-service-businesses/": {
-      "state": "wip",
-      "reviewed": "2026-08-22",
-      "reason": "Semantic certification held: the live hub duplicates GCT and DDD and omits the accepted AEC, CID, and SBP triangle labels from Nine Triangles operational version 2026-08-06."
-    },
-    "https://blitzmetrics.com/entity-linking/": {
-      "state": "wip",
-      "reviewed": "2026-09-29",
-      "reason": "Exact source and written instructions reviewed after a scoped repair. Full semantic certification remains held: canonical ownership, complete publication checks and accepted execution evidence are not all established. See reviews/entity-linking-2026-09-29.md."
-    },
-    "https://blitzmetrics.com/thank-you-machine/": {
-      "state": "wip",
-      "reviewed": "2026-09-06",
-      "reason": "Semantic certification held: the ordinary public URL redirects to /face-socks/ (How to Order Custom Face Socks, post 103160). That gift-ordering recipe does not certify the mapped thank-you video, tagging and paid-test workflows. The canonical video destination needs owner reconciliation; contributor task states are unchanged."
-    }
+ "_format": "Reviewed URL-level holds may only downgrade a hub to wip. Each hold requires a reason and review date; task completion remains unchanged.",
+ "articles": {
+  "https://blitzmetrics.com/9-triangles-framework-scalable-home-service-businesses/": {
+   "state": "wip",
+   "reviewed": "2026-08-22",
+   "reason": "Semantic certification held: the live hub duplicates GCT and DDD and omits the accepted AEC, CID, and SBP triangle labels from Nine Triangles operational version 2026-08-06."
   },
-  "semanticReviews": [
-    {
-      "version": 1,
-      "taskSlug": "create-or-update-a-definitive-article",
-      "canonicalURL": "https://blitzmetrics.com/definitive-article-guide/",
-      "sourceSha256": "5f4a981dd5d5b3ed52ea6eca4179a1ea872da25b6f728e782c4b5a652ab7a6a8",
-      "representation": "wordpress-content-html",
-      "reviewedAt": "2026-09-20T03:35:44.954292Z",
-      "reviewer": "Codex; independent opening and SVG editorial review retained",
-      "criteria": {
-        "openingContext": {
-          "state": "pass",
-          "reason": "The first three sentences explain turning a business job into clear team steps, why a checked result helps, and how the linked Content Factory turns real work into guides and posts. Exact words, destination content and body promise were checked.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/definitive-opening-2026-09-20.md",
-            "sha256:477248981497caf622a1ccb79fb84f82b5c62c85e2a241e8694fe44322969372"
-          ]
-        },
-        "roleScope": {
-          "state": "unknown",
-          "reason": "This scoped opening review did not complete an independent review of the whole article role and scope.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/definitive-opening-2026-09-20.md",
-            "sha256:477248981497caf622a1ccb79fb84f82b5c62c85e2a241e8694fe44322969372"
-          ]
-        },
-        "owner": {
-          "state": "unknown",
-          "reason": "The maintained ownership evidence was not fully reviewed in this opening release.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/definitive-opening-2026-09-20.md",
-            "sha256:477248981497caf622a1ccb79fb84f82b5c62c85e2a241e8694fe44322969372"
-          ]
-        },
-        "steps": {
-          "state": "unknown",
-          "reason": "The opening promise is supported by the recipe fields and creation steps, but complete step-by-step execution was not tested.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/definitive-opening-2026-09-20.md",
-            "sha256:477248981497caf622a1ccb79fb84f82b5c62c85e2a241e8694fe44322969372"
-          ]
-        },
-        "links": {
-          "state": "unknown",
-          "reason": "The opening Content Factory destination was checked; the complete body link set was not reverified.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/definitive-opening-2026-09-20.md",
-            "sha256:477248981497caf622a1ccb79fb84f82b5c62c85e2a241e8694fe44322969372"
-          ]
-        },
-        "sourceEvidence": {
-          "state": "unknown",
-          "reason": "Real examples and their source claims were not independently re-audited in this scoped release.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/definitive-opening-2026-09-20.md",
-            "sha256:477248981497caf622a1ccb79fb84f82b5c62c85e2a241e8694fe44322969372"
-          ]
-        },
-        "handoffContext": {
-          "state": "unknown",
-          "reason": "The existing context and handoff text were preserved, but all linked prerequisite and receiving-task contracts were not reverified.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/definitive-opening-2026-09-20.md",
-            "sha256:477248981497caf622a1ccb79fb84f82b5c62c85e2a241e8694fe44322969372"
-          ]
-        },
-        "visualAndLayout": {
-          "state": "unknown",
-          "reason": "First-screen diagram and complete opening passed phone and desktop with scripts on and off; all lower-page visual and layout requirements were not reverified.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/definitive-opening-2026-09-20.md",
-            "sha256:477248981497caf622a1ccb79fb84f82b5c62c85e2a241e8694fe44322969372"
-          ]
-        },
-        "publicationStandards": {
-          "state": "unknown",
-          "reason": "This opening release did not re-audit every CTA, short URL, metadata and E-E-A-T requirement.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/definitive-opening-2026-09-20.md",
-            "sha256:477248981497caf622a1ccb79fb84f82b5c62c85e2a241e8694fe44322969372"
-          ]
-        },
-        "acceptanceResults": {
-          "state": "unknown",
-          "reason": "No independent real-user setup or accepted business-result evidence was established by this opening repair.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/definitive-opening-2026-09-20.md",
-            "sha256:477248981497caf622a1ccb79fb84f82b5c62c85e2a241e8694fe44322969372"
-          ]
-        }
-      }
+  "https://blitzmetrics.com/entity-linking/": {
+   "state": "wip",
+   "reviewed": "2026-09-29",
+   "reason": "Exact source and written instructions reviewed after a scoped repair. Full semantic certification remains held: canonical ownership, complete publication checks and accepted execution evidence are not all established. See reviews/entity-linking-2026-09-29.md."
+  },
+  "https://blitzmetrics.com/thank-you-machine/": {
+   "state": "wip",
+   "reviewed": "2026-09-06",
+   "reason": "Semantic certification held: the ordinary public URL redirects to /face-socks/ (How to Order Custom Face Socks, post 103160). That gift-ordering recipe does not certify the mapped thank-you video, tagging and paid-test workflows. The canonical video destination needs owner reconciliation; contributor task states are unchanged."
+  }
+ },
+ "semanticReviews": [
+  {
+   "version": 1,
+   "taskSlug": "create-or-update-a-definitive-article",
+   "canonicalURL": "https://blitzmetrics.com/definitive-article-guide/",
+   "sourceSha256": "5f4a981dd5d5b3ed52ea6eca4179a1ea872da25b6f728e782c4b5a652ab7a6a8",
+   "representation": "wordpress-content-html",
+   "reviewedAt": "2026-09-20T03:35:44.954292Z",
+   "reviewer": "Codex; independent opening and SVG editorial review retained",
+   "criteria": {
+    "openingContext": {
+     "state": "pass",
+     "reason": "The first three sentences explain turning a business job into clear team steps, why a checked result helps, and how the linked Content Factory turns real work into guides and posts. Exact words, destination content and body promise were checked.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/definitive-opening-2026-09-20.md",
+      "sha256:477248981497caf622a1ccb79fb84f82b5c62c85e2a241e8694fe44322969372"
+     ]
     },
-    {
-      "version": 1,
-      "taskSlug": "write-meta-article-documenting-agent-work",
-      "canonicalURL": "https://blitzmetrics.com/meta-article-prompt/",
-      "representation": "wordpress-content-html",
-      "sourceSha256": "1952b6ead82a6a9aa0d0f96f0e976b34c957351fe155fe8ddd56b6fc7e767fde",
-      "criteria": {
-        "openingContext": {
-          "state": "unmet",
-          "reason": "The first three sentences explain what and use but contain no linked relationship; the first linked connection is in the following paragraph.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-source-2026-09-21.md",
-            "sha256:1952b6ead82a6a9aa0d0f96f0e976b34c957351fe155fe8ddd56b6fc7e767fde"
-          ]
-        },
-        "roleScope": {
-          "state": "pass",
-          "reason": "Source declares a canonical Content Factory Process task and an outcome for an evidence-backed meta article of one actual execution.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-source-2026-09-21.md",
-            "sha256:1952b6ead82a6a9aa0d0f96f0e976b34c957351fe155fe8ddd56b6fc7e767fde"
-          ]
-        },
-        "owner": {
-          "state": "unknown",
-          "reason": "The article does not name a maintained canonical owner, but an owner record may exist outside this source and was not reviewed.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-source-2026-09-21.md",
-            "sha256:1952b6ead82a6a9aa0d0f96f0e976b34c957351fe155fe8ddd56b6fc7e767fde"
-          ]
-        },
-        "steps": {
-          "state": "unmet",
-          "reason": "Page contract starts after a complete, partial, or failed result; embedded skill starts when work starts and includes blocked work. The trigger conflicts.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-source-2026-09-21.md",
-            "sha256:1952b6ead82a6a9aa0d0f96f0e976b34c957351fe155fe8ddd56b6fc7e767fde"
-          ]
-        },
-        "links": {
-          "state": "unknown",
-          "reason": "Internal teaching and Task Library links are present, but source-only review cannot verify their maintained targets or availability.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-source-2026-09-21.md",
-            "sha256:1952b6ead82a6a9aa0d0f96f0e976b34c957351fe155fe8ddd56b6fc7e767fde"
-          ]
-        },
-        "sourceEvidence": {
-          "state": "unknown",
-          "reason": "Claims that the example is real, 60 meta-articles are verified, agents automatically improve, and this is a gold standard recipe were not independently checked.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-source-2026-09-21.md",
-            "sha256:1952b6ead82a6a9aa0d0f96f0e976b34c957351fe155fe8ddd56b6fc7e767fde"
-          ]
-        },
-        "handoffContext": {
-          "state": "pass",
-          "reason": "The source names the Process role, actual inputs, evidence checks, Task Library registration, recipe feedback, and WordPress posting handoff.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-source-2026-09-21.md",
-            "sha256:1952b6ead82a6a9aa0d0f96f0e976b34c957351fe155fe8ddd56b6fc7e767fde"
-          ]
-        },
-        "visualAndLayout": {
-          "state": "unknown",
-          "reason": "Lead and Content Factory diagrams exist in source, but source cannot prove first-screen desktop or mobile rendering and readability.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-source-2026-09-21.md",
-            "sha256:1952b6ead82a6a9aa0d0f96f0e976b34c957351fe155fe8ddd56b6fc7e767fde"
-          ]
-        },
-        "publicationStandards": {
-          "state": "unknown",
-          "reason": "Content HTML cannot prove metadata, CTA placement, short redirect, entity routing, E-E-A-T, or live publication behavior. Separate JSON title observation is not tied to this hash.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-source-2026-09-21.md",
-            "sha256:1952b6ead82a6a9aa0d0f96f0e976b34c957351fe155fe8ddd56b6fc7e767fde"
-          ]
-        },
-        "acceptanceResults": {
-          "state": "unknown",
-          "reason": "No exact-revision independent acceptance receipt or fresh matching observation is included in the supplied source.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-source-2026-09-21.md",
-            "sha256:1952b6ead82a6a9aa0d0f96f0e976b34c957351fe155fe8ddd56b6fc7e767fde"
-          ]
-        }
-      },
-      "reviewedAt": "2026-09-21T02:52:08.726122Z",
-      "reviewer": "Codex — independent Terra source review with root corrections; source-only scope"
+    "roleScope": {
+     "state": "unknown",
+     "reason": "This scoped opening review did not complete an independent review of the whole article role and scope.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/definitive-opening-2026-09-20.md",
+      "sha256:477248981497caf622a1ccb79fb84f82b5c62c85e2a241e8694fe44322969372"
+     ]
     },
-    {
-      "version": 1,
-      "taskSlug": "write-meta-article-documenting-agent-work",
-      "canonicalURL": "https://blitzmetrics.com/meta-article-prompt/",
-      "representation": "wordpress-content-html",
-      "sourceSha256": "39e6e64ed488372c63c72338cc28f005d6c845226842faf49e5c71bb1dde02be",
-      "reviewedAt": "2026-09-22T04:18:49.804481Z",
-      "reviewer": "Codex root with independent source and opening review",
-      "criteria": {
-        "openingContext": {
-          "state": "pass",
-          "reason": "First three sentences explain recording a real job, learning from mistakes, and improving the linked main task guide. Independent meaning review, grade3.72 diagnostic and destination check support the exact opening.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-repair-2026-09-22.md",
-            "sha256:9dab7e2ebb2259c299a559df91a0465d8d1fadce7e491b67f8676cae347cbf3b"
-          ]
-        },
-        "roleScope": {
-          "state": "pass",
-          "reason": "The page remains the mapped canonical task recipe for writing one actual execution record; its visible review status is explicitly incomplete.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-repair-2026-09-22.md",
-            "sha256:9dab7e2ebb2259c299a559df91a0465d8d1fadce7e491b67f8676cae347cbf3b"
-          ]
-        },
-        "owner": {
-          "state": "unknown",
-          "reason": "Canonical ownership evidence beyond the current task mapping and author byline was not fully audited in this scoped repair.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-repair-2026-09-22.md",
-            "sha256:9dab7e2ebb2259c299a559df91a0465d8d1fadce7e491b67f8676cae347cbf3b"
-          ]
-        },
-        "steps": {
-          "state": "unknown",
-          "reason": "Conflicting start instructions now consistently begin with the task and preserve the same ID. Full end-to-end step completeness and execution were not independently certified.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-repair-2026-09-22.md",
-            "sha256:9dab7e2ebb2259c299a559df91a0465d8d1fadce7e491b67f8676cae347cbf3b"
-          ]
-        },
-        "links": {
-          "state": "unknown",
-          "reason": "Opening destination was checked and all original URLs preserved. The full body destination set was not reverified.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-repair-2026-09-22.md",
-            "sha256:9dab7e2ebb2259c299a559df91a0465d8d1fadce7e491b67f8676cae347cbf3b"
-          ]
-        },
-        "sourceEvidence": {
-          "state": "unknown",
-          "reason": "Unsupported automatic improvement, quality and numeric measurement claims were corrected. The dated60-URL inventory remains historical; six classification conflicts and real-example source checks remain open.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-repair-2026-09-22.md",
-            "sha256:9dab7e2ebb2259c299a559df91a0465d8d1fadce7e491b67f8676cae347cbf3b"
-          ]
-        },
-        "handoffContext": {
-          "state": "pass",
-          "reason": "Explicit inputs, Process-stage Content Factory context, checked record, Task Library registration, supported recipe correction and authorized publishing handoff remain present.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-repair-2026-09-22.md",
-            "sha256:9dab7e2ebb2259c299a559df91a0465d8d1fadce7e491b67f8676cae347cbf3b"
-          ]
-        },
-        "visualAndLayout": {
-          "state": "unknown",
-          "reason": "Changed opening/diagram, phone tables, evidence labels and inventory passed scoped rendered checks. Full lower-page media and context requirements were not independently rechecked.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-repair-2026-09-22.md",
-            "sha256:9dab7e2ebb2259c299a559df91a0465d8d1fadce7e491b67f8676cae347cbf3b"
-          ]
-        },
-        "publicationStandards": {
-          "state": "unknown",
-          "reason": "Title shortened and separately checked, source/URL preserved, reviewed changes published. CTA, short URL, all metadata and E-E-A-T requirements were not fully audited.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-repair-2026-09-22.md",
-            "sha256:9dab7e2ebb2259c299a559df91a0465d8d1fadce7e491b67f8676cae347cbf3b"
-          ]
-        },
-        "acceptanceResults": {
-          "state": "unknown",
-          "reason": "No exact-revision accepted business run or successful novice-human setup is established by this maintenance repair.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-repair-2026-09-22.md",
-            "sha256:9dab7e2ebb2259c299a559df91a0465d8d1fadce7e491b67f8676cae347cbf3b"
-          ]
-        }
-      }
+    "owner": {
+     "state": "unknown",
+     "reason": "The maintained ownership evidence was not fully reviewed in this opening release.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/definitive-opening-2026-09-20.md",
+      "sha256:477248981497caf622a1ccb79fb84f82b5c62c85e2a241e8694fe44322969372"
+     ]
     },
-    {
-      "version": 1,
-      "taskSlug": "write-meta-article-documenting-agent-work",
-      "canonicalURL": "https://blitzmetrics.com/meta-article-prompt/",
-      "representation": "wordpress-content-html",
-      "sourceSha256": "b2b4bb23c9641f2d09a0fbb3846b0e2c9a7d2b9ac5e524aa37fe255cd2205242",
-      "reviewedAt": "2026-09-23T00:12:28.740724Z",
-      "reviewer": "Codex root with independent GPT-6 Luna candidate-only steps review",
-      "criteria": {
-        "openingContext": {
-          "state": "pass",
-          "reason": "Exact unchanged opening names the record, learning from mistakes, and proof-based improvement to the linked main task guide. Root rechecked destination HTTP 200 and body delivery; this is a meaning review, not a reading-score certification.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-setup-2026-09-23.md",
-            "sha256:b760a80822d43641b3d220ce268206996b024e99615d0166d8697f9bfe830ec5"
-          ]
-        },
-        "roleScope": {
-          "state": "pass",
-          "reason": "The page remains the mapped canonical task recipe for writing one actual execution record; its visible review status is explicitly incomplete.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-setup-2026-09-23.md",
-            "sha256:b760a80822d43641b3d220ce268206996b024e99615d0166d8697f9bfe830ec5"
-          ]
-        },
-        "owner": {
-          "state": "unknown",
-          "reason": "Canonical ownership evidence beyond the current task mapping and author byline was not fully audited in this scoped repair.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-setup-2026-09-23.md",
-            "sha256:b760a80822d43641b3d220ce268206996b024e99615d0166d8697f9bfe830ec5"
-          ]
-        },
-        "steps": {
-          "state": "pass",
-          "reason": "Literal final article independently reviewed: maintained nine-step skill, first-use input/access/output setup, current-state trigger, ledger validation and existing-ID revision checks, measurable output and explicit receiving owners. No execution or novice setup is certified.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-setup-2026-09-23.md",
-            "sha256:b760a80822d43641b3d220ce268206996b024e99615d0166d8697f9bfe830ec5"
-          ]
-        },
-        "links": {
-          "state": "unknown",
-          "reason": "Opening and new ledger destinations return HTTP 200 and match their teaching purpose. Historical example fetches encountered rate limits; full destination review remains unknown.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-setup-2026-09-23.md",
-            "sha256:b760a80822d43641b3d220ce268206996b024e99615d0166d8697f9bfe830ec5"
-          ]
-        },
-        "sourceEvidence": {
-          "state": "unknown",
-          "reason": "Unsupported automatic improvement, quality and numeric measurement claims were corrected. The dated60-URL inventory remains historical; six classification conflicts and real-example source checks remain open.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-setup-2026-09-23.md",
-            "sha256:b760a80822d43641b3d220ce268206996b024e99615d0166d8697f9bfe830ec5"
-          ]
-        },
-        "handoffContext": {
-          "state": "pass",
-          "reason": "Explicit inputs, Process-stage Content Factory context, checked record, Task Library registration, supported recipe correction and authorized publishing handoff remain present.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-setup-2026-09-23.md",
-            "sha256:b760a80822d43641b3d220ce268206996b024e99615d0166d8697f9bfe830ec5"
-          ]
-        },
-        "visualAndLayout": {
-          "state": "unknown",
-          "reason": "Exact opening and lead visual unchanged; new first-use section checked in phone and desktop preview. Full-page media/layout is not independently certified.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-setup-2026-09-23.md",
-            "sha256:b760a80822d43641b3d220ce268206996b024e99615d0166d8697f9bfe830ec5"
-          ]
-        },
-        "publicationStandards": {
-          "state": "unknown",
-          "reason": "Title shortened and separately checked, source/URL preserved, reviewed changes published. CTA, short URL, all metadata and E-E-A-T requirements were not fully audited.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-setup-2026-09-23.md",
-            "sha256:b760a80822d43641b3d220ce268206996b024e99615d0166d8697f9bfe830ec5"
-          ]
-        },
-        "acceptanceResults": {
-          "state": "unknown",
-          "reason": "No exact-revision accepted business run or successful novice-human setup is established by this maintenance repair.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-setup-2026-09-23.md",
-            "sha256:b760a80822d43641b3d220ce268206996b024e99615d0166d8697f9bfe830ec5"
-          ]
-        }
-      }
+    "steps": {
+     "state": "unknown",
+     "reason": "The opening promise is supported by the recipe fields and creation steps, but complete step-by-step execution was not tested.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/definitive-opening-2026-09-20.md",
+      "sha256:477248981497caf622a1ccb79fb84f82b5c62c85e2a241e8694fe44322969372"
+     ]
     },
-    {
-      "version": 1,
-      "taskSlug": "write-meta-article-documenting-agent-work",
-      "canonicalURL": "https://blitzmetrics.com/meta-article-prompt/",
-      "representation": "wordpress-content-html",
-      "sourceSha256": "fcf0a687c6f507222fd7f6302e3011b3ae2bf350ea6fc57a40328bf3e3a383c5",
-      "reviewedAt": "2026-09-24T00:13:46.578735Z",
-      "reviewer": "Codex root with independent GPT-6 Luna rubric/prompt/layout-wording review; prior unchanged checks reused",
-      "criteria": {
-        "openingContext": {
-          "state": "pass",
-          "reason": "Exact unchanged opening names the record, learning from mistakes, and proof-based improvement to the linked main task guide. Root rechecked destination HTTP 200 and body delivery; this is a meaning review, not a reading-score certification.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-rubric-repair-2026-09-24.md",
-            "sha256:ded12c8c024e38cd44bbb3dda92063eb14f227d2a4e987a24349f571ebc9e4fa"
-          ]
-        },
-        "roleScope": {
-          "state": "pass",
-          "reason": "The page remains the mapped canonical task recipe for writing one actual execution record; its visible review status is explicitly incomplete.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-rubric-repair-2026-09-24.md",
-            "sha256:ded12c8c024e38cd44bbb3dda92063eb14f227d2a4e987a24349f571ebc9e4fa"
-          ]
-        },
-        "owner": {
-          "state": "unknown",
-          "reason": "Canonical ownership evidence beyond the current task mapping and author byline was not fully audited in this scoped repair.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-rubric-repair-2026-09-24.md",
-            "sha256:ded12c8c024e38cd44bbb3dda92063eb14f227d2a4e987a24349f571ebc9e4fa"
-          ]
-        },
-        "steps": {
-          "state": "pass",
-          "reason": "Prior setup, nine-step skill and handoff text unchanged. Independent literal review reconciled checklist, prompt and example layout: actual-output checks, dated evidence, consistent check states, sourced optional cards and authorized public links. No actual execution is certified.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-rubric-repair-2026-09-24.md",
-            "sha256:ded12c8c024e38cd44bbb3dda92063eb14f227d2a4e987a24349f571ebc9e4fa"
-          ]
-        },
-        "links": {
-          "state": "unknown",
-          "reason": "Opening and new ledger destinations return HTTP 200 and match their teaching purpose. Historical example fetches encountered rate limits; full destination review remains unknown.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-rubric-repair-2026-09-24.md",
-            "sha256:ded12c8c024e38cd44bbb3dda92063eb14f227d2a4e987a24349f571ebc9e4fa"
-          ]
-        },
-        "sourceEvidence": {
-          "state": "unknown",
-          "reason": "Unsupported automatic improvement, quality and numeric measurement claims were corrected. The dated60-URL inventory remains historical; six classification conflicts and real-example source checks remain open.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-rubric-repair-2026-09-24.md",
-            "sha256:ded12c8c024e38cd44bbb3dda92063eb14f227d2a4e987a24349f571ebc9e4fa"
-          ]
-        },
-        "handoffContext": {
-          "state": "pass",
-          "reason": "Explicit inputs, Process-stage Content Factory context, checked record, Task Library registration, supported recipe correction and authorized publishing handoff remain present.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-rubric-repair-2026-09-24.md",
-            "sha256:ded12c8c024e38cd44bbb3dda92063eb14f227d2a4e987a24349f571ebc9e4fa"
-          ]
-        },
-        "visualAndLayout": {
-          "state": "unknown",
-          "reason": "Scoped phone cards and desktop checklist plus lower layout heading checked on normal public page. Original opening/lead source unchanged. Full-page media/layout not independently certified.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-rubric-repair-2026-09-24.md",
-            "sha256:ded12c8c024e38cd44bbb3dda92063eb14f227d2a4e987a24349f571ebc9e4fa"
-          ]
-        },
-        "publicationStandards": {
-          "state": "unknown",
-          "reason": "Contradictory blanket publication/media/date requirements corrected and public result checked. Overall metadata, source ownership, CTA/short URL and complete publication review remain unknown.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-rubric-repair-2026-09-24.md",
-            "sha256:ded12c8c024e38cd44bbb3dda92063eb14f227d2a4e987a24349f571ebc9e4fa"
-          ]
-        },
-        "acceptanceResults": {
-          "state": "unknown",
-          "reason": "No exact-revision accepted business run or successful novice-human setup is established by this maintenance repair.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-rubric-repair-2026-09-24.md",
-            "sha256:ded12c8c024e38cd44bbb3dda92063eb14f227d2a4e987a24349f571ebc9e4fa"
-          ]
-        }
-      }
+    "links": {
+     "state": "unknown",
+     "reason": "The opening Content Factory destination was checked; the complete body link set was not reverified.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/definitive-opening-2026-09-20.md",
+      "sha256:477248981497caf622a1ccb79fb84f82b5c62c85e2a241e8694fe44322969372"
+     ]
     },
-    {
-      "version": 1,
-      "taskSlug": "write-meta-article-documenting-agent-work",
-      "canonicalURL": "https://blitzmetrics.com/meta-article-prompt/",
-      "representation": "wordpress-content-html",
-      "sourceSha256": "f058250547fc893f952415afcf33cc5957bcb70419502f74dbeb3a8475f9590a",
-      "reviewedAt": "2026-09-24T19:06:43.030473Z",
-      "reviewer": "Codex root with independent GPT-6 Luna source/classification review; unchanged recipe checks reused",
-      "criteria": {
-        "openingContext": {
-          "state": "pass",
-          "reason": "Exact unchanged opening names the record, learning from mistakes, and proof-based improvement to the linked main task guide. Root rechecked destination HTTP 200 and body delivery; this is a meaning review, not a reading-score certification.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-example-sources-2026-09-24.md",
-            "sha256:e060a645a5aa0d1ab6d942efd30a9ef6bd8ff870ef2027008db48bf21e77d365"
-          ]
-        },
-        "roleScope": {
-          "state": "pass",
-          "reason": "The page remains the mapped canonical task recipe for writing one actual execution record; its visible review status is explicitly incomplete.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-example-sources-2026-09-24.md",
-            "sha256:e060a645a5aa0d1ab6d942efd30a9ef6bd8ff870ef2027008db48bf21e77d365"
-          ]
-        },
-        "owner": {
-          "state": "unmet",
-          "reason": "The maintained Asset Tracker task row45 has an empty Owner cell. The corrected guide URL and description were saved/read back; contributor status and byline do not assign upkeep responsibility. Owner choice remains open.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-example-sources-2026-09-24.md",
-            "sha256:e060a645a5aa0d1ab6d942efd30a9ef6bd8ff870ef2027008db48bf21e77d365",
-            "sha256:4bcf9e55f0e25f5e53af7150e13623575b54abf4551e5828d1d71146d9027a92"
-          ]
-        },
-        "steps": {
-          "state": "pass",
-          "reason": "Prior setup, nine-step skill and handoff text unchanged. Independent literal review reconciled checklist, prompt and example layout: actual-output checks, dated evidence, consistent check states, sourced optional cards and authorized public links. No actual execution is certified.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-example-sources-2026-09-24.md",
-            "sha256:e060a645a5aa0d1ab6d942efd30a9ef6bd8ff870ef2027008db48bf21e77d365"
-          ]
-        },
-        "links": {
-          "state": "unknown",
-          "reason": "The six historical sources, opening recipe and Task Library destination were freshly checked. Complete article link review remains unknown; the source-review URL is verified at release.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-example-sources-2026-09-24.md",
-            "sha256:e060a645a5aa0d1ab6d942efd30a9ef6bd8ff870ef2027008db48bf21e77d365"
-          ]
-        },
-        "sourceEvidence": {
-          "state": "unknown",
-          "reason": "Six conflicting classifications resolved from exact current sources: five retained, one related-only link excluded. Count now59; the other54 and all underlying outcome/cost/rights claims remain unaccepted.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-example-sources-2026-09-24.md",
-            "sha256:e060a645a5aa0d1ab6d942efd30a9ef6bd8ff870ef2027008db48bf21e77d365"
-          ]
-        },
-        "handoffContext": {
-          "state": "pass",
-          "reason": "Explicit inputs, Process-stage Content Factory context, checked record, Task Library registration, supported recipe correction and authorized publishing handoff remain present.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-example-sources-2026-09-24.md",
-            "sha256:e060a645a5aa0d1ab6d942efd30a9ef6bd8ff870ef2027008db48bf21e77d365"
-          ]
-        },
-        "visualAndLayout": {
-          "state": "unknown",
-          "reason": "Changed example explanation, expanded59-item list, caption and separate meta diagram checked on normal public desktop/phone pages. Opening/lead source unchanged. Full-page media/layout remains unreviewed.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-example-sources-2026-09-24.md",
-            "sha256:e060a645a5aa0d1ab6d942efd30a9ef6bd8ff870ef2027008db48bf21e77d365"
-          ]
-        },
-        "publicationStandards": {
-          "state": "unknown",
-          "reason": "Corrected count/history and source ownership connection are published; metadata retained. Overall metadata, publication fields and full-page compliance remain unknown.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-example-sources-2026-09-24.md",
-            "sha256:e060a645a5aa0d1ab6d942efd30a9ef6bd8ff870ef2027008db48bf21e77d365"
-          ]
-        },
-        "acceptanceResults": {
-          "state": "unknown",
-          "reason": "No exact-revision accepted business run or successful novice-human setup is established by this maintenance repair.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-example-sources-2026-09-24.md",
-            "sha256:e060a645a5aa0d1ab6d942efd30a9ef6bd8ff870ef2027008db48bf21e77d365"
-          ]
-        }
-      }
+    "sourceEvidence": {
+     "state": "unknown",
+     "reason": "Real examples and their source claims were not independently re-audited in this scoped release.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/definitive-opening-2026-09-20.md",
+      "sha256:477248981497caf622a1ccb79fb84f82b5c62c85e2a241e8694fe44322969372"
+     ]
     },
-    {
-      "version": 1,
-      "taskSlug": "publish-skill-and-task-page",
-      "canonicalURL": "https://blitzmetrics.com/skill-publishing-standard/",
-      "representation": "wordpress-content-html",
-      "sourceSha256": "7857ea9ce9ff959f8470dab5fd8455c5e406fd82a5edb086936793b584a0cf2b",
-      "reviewedAt": "2026-09-25T00:13:40.817679Z",
-      "reviewer": "Codex root with independent GPT-6 Luna scoped wording review",
-      "criteria": {
-        "openingContext": {
-          "state": "pass",
-          "reason": "Scoped plain opening and linked recipe reviewed.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/tracker-setup-2026-09-25.md",
-            "sha256:740a6591e8ed22cd7abc5c62cd93291c2a41657d65b56af1c05987d335a57b5e"
-          ]
-        },
-        "roleScope": {
-          "state": "pass",
-          "reason": "Task page and matching skill publish the same reusable method.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/tracker-setup-2026-09-25.md",
-            "sha256:740a6591e8ed22cd7abc5c62cd93291c2a41657d65b56af1c05987d335a57b5e"
-          ]
-        },
-        "owner": {
-          "state": "unknown",
-          "reason": "A responsible upkeep owner is not established by this scoped review.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/tracker-setup-2026-09-25.md",
-            "sha256:740a6591e8ed22cd7abc5c62cd93291c2a41657d65b56af1c05987d335a57b5e"
-          ]
-        },
-        "steps": {
-          "state": "pass",
-          "reason": "Current publishing/permission/import steps and embedded method reconciled.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/tracker-setup-2026-09-25.md",
-            "sha256:740a6591e8ed22cd7abc5c62cd93291c2a41657d65b56af1c05987d335a57b5e"
-          ]
-        },
-        "links": {
-          "state": "unknown",
-          "reason": "Changed destinations reviewed; all article links not checked.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/tracker-setup-2026-09-25.md",
-            "sha256:740a6591e8ed22cd7abc5c62cd93291c2a41657d65b56af1c05987d335a57b5e"
-          ]
-        },
-        "sourceEvidence": {
-          "state": "unknown",
-          "reason": "Historical claims and linked worked examples not independently accepted.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/tracker-setup-2026-09-25.md",
-            "sha256:740a6591e8ed22cd7abc5c62cd93291c2a41657d65b56af1c05987d335a57b5e"
-          ]
-        },
-        "handoffContext": {
-          "state": "pass",
-          "reason": "Post-stage input/output and receiving task owner are explicit.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/tracker-setup-2026-09-25.md",
-            "sha256:740a6591e8ed22cd7abc5c62cd93291c2a41657d65b56af1c05987d335a57b5e"
-          ]
-        },
-        "visualAndLayout": {
-          "state": "unknown",
-          "reason": "Changed sections and lead visual inspected; full-page media/layout not certified.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/tracker-setup-2026-09-25.md",
-            "sha256:740a6591e8ed22cd7abc5c62cd93291c2a41657d65b56af1c05987d335a57b5e"
-          ]
-        },
-        "publicationStandards": {
-          "state": "unknown",
-          "reason": "Whole-page metadata, ownership, publication and SEO checks remain incomplete.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/tracker-setup-2026-09-25.md",
-            "sha256:740a6591e8ed22cd7abc5c62cd93291c2a41657d65b56af1c05987d335a57b5e"
-          ]
-        },
-        "acceptanceResults": {
-          "state": "unknown",
-          "reason": "No accepted task execution or first-user setup was established.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/tracker-setup-2026-09-25.md",
-            "sha256:740a6591e8ed22cd7abc5c62cd93291c2a41657d65b56af1c05987d335a57b5e"
-          ]
-        }
-      }
+    "handoffContext": {
+     "state": "unknown",
+     "reason": "The existing context and handoff text were preserved, but all linked prerequisite and receiving-task contracts were not reverified.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/definitive-opening-2026-09-20.md",
+      "sha256:477248981497caf622a1ccb79fb84f82b5c62c85e2a241e8694fe44322969372"
+     ]
     },
-    {
-      "version": 1,
-      "taskSlug": "publish-skill-and-task-page",
-      "canonicalURL": "https://blitzmetrics.com/skill-publishing-standard/",
-      "representation": "wordpress-content-html",
-      "sourceSha256": "3e9f22977b023330140c0866b6db199f0cbd31e086370043dcadfc643e45f319",
-      "reviewedAt": "2026-09-27T15:49:15.573162Z",
-      "reviewer": "Codex root; independent GPT-6 Sol source/link reviews plus root public browser QA",
-      "criteria": {
-        "openingContext": {
-          "state": "pass",
-          "reason": "Plain opening quotes action, value and checked-recipe prerequisite; body delivers seven publishing steps.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/914e8219bc260c15ccebe4a3402c3692f2dee80d/reviews/publisher-completion-2026-09-27.md",
-            "sha256:cacb3d0b06383582b74a4817a75a0c706f1233c9791b989059d1a62f1abce810"
-          ]
-        },
-        "roleScope": {
-          "state": "pass",
-          "reason": "Page is explicitly the publishing task recipe; canonical source and permanent task are named.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/914e8219bc260c15ccebe4a3402c3692f2dee80d/reviews/publisher-completion-2026-09-27.md",
-            "sha256:cacb3d0b06383582b74a4817a75a0c706f1233c9791b989059d1a62f1abce810"
-          ]
-        },
-        "owner": {
-          "state": "unknown",
-          "reason": "Owning repository is explicit, but responsible upkeep assignment is still missing from maintained tracker evidence.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/914e8219bc260c15ccebe4a3402c3692f2dee80d/reviews/publisher-completion-2026-09-27.md",
-            "sha256:cacb3d0b06383582b74a4817a75a0c706f1233c9791b989059d1a62f1abce810"
-          ]
-        },
-        "steps": {
-          "state": "pass",
-          "reason": "Inputs, authority, source comparison, supported save path, tracker state and public readback are explicit.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/914e8219bc260c15ccebe4a3402c3692f2dee80d/reviews/publisher-completion-2026-09-27.md",
-            "sha256:cacb3d0b06383582b74a4817a75a0c706f1233c9791b989059d1a62f1abce810"
-          ]
-        },
-        "links": {
-          "state": "pass",
-          "reason": "Current destination meanings and fragment targets checked; stale plugin/project labels corrected and exact source/partial-example links added.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/914e8219bc260c15ccebe4a3402c3692f2dee80d/reviews/publisher-completion-2026-09-27.md",
-            "sha256:cacb3d0b06383582b74a4817a75a0c706f1233c9791b989059d1a62f1abce810"
-          ]
-        },
-        "sourceEvidence": {
-          "state": "pass",
-          "reason": "Merged PR39, dated review and exact meta section prove the bounded September25 publishing repair; its partial result and setup gaps remain explicit.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/914e8219bc260c15ccebe4a3402c3692f2dee80d/reviews/publisher-completion-2026-09-27.md",
-            "sha256:cacb3d0b06383582b74a4817a75a0c706f1233c9791b989059d1a62f1abce810"
-          ]
-        },
-        "handoffContext": {
-          "state": "pass",
-          "reason": "Process supplies the reviewed method, Post publishes it; matched output, remaining issues and receiving owner are required.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/914e8219bc260c15ccebe4a3402c3692f2dee80d/reviews/publisher-completion-2026-09-27.md",
-            "sha256:cacb3d0b06383582b74a4817a75a0c706f1233c9791b989059d1a62f1abce810"
-          ]
-        },
-        "visualAndLayout": {
-          "state": "pass",
-          "reason": "Anonymous desktop1280x800 and phone390x844 show plain opening and readable four-step visual above fold. One H1, lower Post context and no phone horizontal overflow checked.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/914e8219bc260c15ccebe4a3402c3692f2dee80d/reviews/publisher-completion-2026-09-27.md",
-            "sha256:cacb3d0b06383582b74a4817a75a0c706f1233c9791b989059d1a62f1abce810"
-          ]
-        },
-        "publicationStandards": {
-          "state": "unknown",
-          "reason": "Title, canonical URL, description and headings were checked. Complete CTA/short-URL/E-E-A-T publication certification is not established by this scoped repair.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/914e8219bc260c15ccebe4a3402c3692f2dee80d/reviews/publisher-completion-2026-09-27.md",
-            "sha256:cacb3d0b06383582b74a4817a75a0c706f1233c9791b989059d1a62f1abce810"
-          ]
-        },
-        "acceptanceResults": {
-          "state": "unknown",
-          "reason": "This exact revised recipe has no independently accepted execution or novice setup receipt.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/914e8219bc260c15ccebe4a3402c3692f2dee80d/reviews/publisher-completion-2026-09-27.md",
-            "sha256:cacb3d0b06383582b74a4817a75a0c706f1233c9791b989059d1a62f1abce810"
-          ]
-        }
-      }
+    "visualAndLayout": {
+     "state": "unknown",
+     "reason": "First-screen diagram and complete opening passed phone and desktop with scripts on and off; all lower-page visual and layout requirements were not reverified.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/definitive-opening-2026-09-20.md",
+      "sha256:477248981497caf622a1ccb79fb84f82b5c62c85e2a241e8694fe44322969372"
+     ]
     },
-    {
-      "version": 1,
-      "taskSlug": "follow-entity-linking-decision-tree",
-      "canonicalURL": "https://blitzmetrics.com/entity-linking/",
-      "sourceSha256": "ba7b919b7dd2d4dc1a3513113fdad270d185913416f37af6d40add8628b32947",
-      "representation": "wordpress-content-html",
-      "reviewedAt": "2026-09-30T01:09:24.483279Z",
-      "reviewer": "Codex root with independent Codex source review",
-      "criteria": {
-        "openingContext": {
-          "state": "pass",
-          "reason": "Exact words name outcome, value and an explained link to the verified SEO Tree destination; body delivers that promise.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/entity-linking-2026-09-29.md",
-            "sha256:c1b3b3578ca8634987bf78cb5af103b1e773efd352be220f17334981e0de4f09"
-          ]
-        },
-        "roleScope": {
-          "state": "pass",
-          "reason": "Mapped task recipe applies the parent link policy to identity, explanation, primary evidence and action destinations.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/entity-linking-2026-09-29.md",
-            "sha256:c1b3b3578ca8634987bf78cb5af103b1e773efd352be220f17334981e0de4f09"
-          ]
-        },
-        "owner": {
-          "state": "unknown",
-          "reason": "A mapped article and author byline do not establish the complete maintained canonical owner record.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/entity-linking-2026-09-29.md",
-            "sha256:c1b3b3578ca8634987bf78cb5af103b1e773efd352be220f17334981e0de4f09"
-          ]
-        },
-        "steps": {
-          "state": "pass",
-          "reason": "Independent source review verified inputs, five application steps, scope checks, exact link log, draft/public distinction and one work record from task start.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/entity-linking-2026-09-29.md",
-            "sha256:c1b3b3578ca8634987bf78cb5af103b1e773efd352be220f17334981e0de4f09"
-          ]
-        },
-        "links": {
-          "state": "pass",
-          "reason": "Seventeen article destinations and Content Factory fragments checked; actual next task opens and matches saved/public link-review handoff. Added source file is checked at release.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/entity-linking-2026-09-29.md",
-            "sha256:c1b3b3578ca8634987bf78cb5af103b1e773efd352be220f17334981e0de4f09"
-          ]
-        },
-        "sourceEvidence": {
-          "state": "pass",
-          "reason": "Google claim narrowed to discovery and relevance with precise primary citation. Teaching example explicitly fictional; no business result claimed.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/entity-linking-2026-09-29.md",
-            "sha256:c1b3b3578ca8634987bf78cb5af103b1e773efd352be220f17334981e0de4f09"
-          ]
-        },
-        "handoffContext": {
-          "state": "pass",
-          "reason": "Four-stage context, task-specific output log, unresolved cases, receiving link-review task and conditional WordPress publishing task are explicit.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/entity-linking-2026-09-29.md",
-            "sha256:c1b3b3578ca8634987bf78cb5af103b1e773efd352be220f17334981e0de4f09"
-          ]
-        },
-        "visualAndLayout": {
-          "state": "unknown",
-          "reason": "Real-theme phone, desktop and no-script preview passed; final ordinary public checks are still pending at this source review.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/entity-linking-2026-09-29.md",
-            "sha256:c1b3b3578ca8634987bf78cb5af103b1e773efd352be220f17334981e0de4f09"
-          ]
-        },
-        "publicationStandards": {
-          "state": "unknown",
-          "reason": "Scoped edit preserves canonical URL and media; full metadata, CTA, ownership and publication checklist not certified.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/entity-linking-2026-09-29.md",
-            "sha256:c1b3b3578ca8634987bf78cb5af103b1e773efd352be220f17334981e0de4f09"
-          ]
-        },
-        "acceptanceResults": {
-          "state": "unknown",
-          "reason": "No independent accepted business outcome or novice-human setup receipt established by this repair.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/entity-linking-2026-09-29.md",
-            "sha256:c1b3b3578ca8634987bf78cb5af103b1e773efd352be220f17334981e0de4f09"
-          ]
-        }
-      }
+    "publicationStandards": {
+     "state": "unknown",
+     "reason": "This opening release did not re-audit every CTA, short URL, metadata and E-E-A-T requirement.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/definitive-opening-2026-09-20.md",
+      "sha256:477248981497caf622a1ccb79fb84f82b5c62c85e2a241e8694fe44322969372"
+     ]
     },
-    {
-      "version": 1,
-      "taskSlug": "follow-entity-linking-decision-tree",
-      "canonicalURL": "https://blitzmetrics.com/entity-linking/",
-      "sourceSha256": "3156a6f4b47fd38a984fd07330ac1369ffa5e173d6c16d56333b8b43539931da",
-      "representation": "wordpress-content-html",
-      "reviewedAt": "2026-09-30T01:16:37.333349Z",
-      "reviewer": "Codex root with independent Codex final layout-only and source review",
-      "criteria": {
-        "openingContext": {
-          "state": "pass",
-          "reason": "Exact words name outcome, value and an explained link to the verified SEO Tree destination; body delivers that promise.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/entity-linking-2026-09-29.md",
-            "sha256:c5a097f5d6320031d68024efdae82ab5ced144aa17cd9c03d845fc0afb2a97b1"
-          ]
-        },
-        "roleScope": {
-          "state": "pass",
-          "reason": "Mapped task recipe applies the parent link policy to identity, explanation, primary evidence and action destinations.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/entity-linking-2026-09-29.md",
-            "sha256:c5a097f5d6320031d68024efdae82ab5ced144aa17cd9c03d845fc0afb2a97b1"
-          ]
-        },
-        "owner": {
-          "state": "unknown",
-          "reason": "A mapped article and author byline do not establish the complete maintained canonical owner record.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/entity-linking-2026-09-29.md",
-            "sha256:c5a097f5d6320031d68024efdae82ab5ced144aa17cd9c03d845fc0afb2a97b1"
-          ]
-        },
-        "steps": {
-          "state": "pass",
-          "reason": "Independent source review verified inputs, five application steps, scope checks, exact link log, draft/public distinction and one work record from task start.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/entity-linking-2026-09-29.md",
-            "sha256:c5a097f5d6320031d68024efdae82ab5ced144aa17cd9c03d845fc0afb2a97b1"
-          ]
-        },
-        "links": {
-          "state": "pass",
-          "reason": "Article targets and stage fragments checked; actual receiving QA task loaded; maintained source, public generated task and archive are deployed and match their intended roles.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/entity-linking-2026-09-29.md",
-            "sha256:c5a097f5d6320031d68024efdae82ab5ced144aa17cd9c03d845fc0afb2a97b1"
-          ]
-        },
-        "sourceEvidence": {
-          "state": "pass",
-          "reason": "Google claim narrowed to discovery and relevance with precise primary citation. Teaching example explicitly fictional; no business result claimed.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/entity-linking-2026-09-29.md",
-            "sha256:c5a097f5d6320031d68024efdae82ab5ced144aa17cd9c03d845fc0afb2a97b1"
-          ]
-        },
-        "handoffContext": {
-          "state": "pass",
-          "reason": "Four-stage context, task-specific output log, unresolved cases, receiving link-review task and conditional WordPress publishing task are explicit.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/entity-linking-2026-09-29.md",
-            "sha256:c5a097f5d6320031d68024efdae82ab5ced144aa17cd9c03d845fc0afb2a97b1"
-          ]
-        },
-        "visualAndLayout": {
-          "state": "unknown",
-          "reason": "Phone/desktop opening, no-script initial visual, expanded file control and phone overflow checks passed on ordinary public URL. Complete lower-page visual and publication-standard audit remains outside this scoped review.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/entity-linking-2026-09-29.md",
-            "sha256:c5a097f5d6320031d68024efdae82ab5ced144aa17cd9c03d845fc0afb2a97b1"
-          ]
-        },
-        "publicationStandards": {
-          "state": "unknown",
-          "reason": "Scoped edit preserves canonical URL and media; full metadata, CTA, ownership and publication checklist not certified.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/entity-linking-2026-09-29.md",
-            "sha256:c5a097f5d6320031d68024efdae82ab5ced144aa17cd9c03d845fc0afb2a97b1"
-          ]
-        },
-        "acceptanceResults": {
-          "state": "unknown",
-          "reason": "No independent accepted business outcome or novice-human setup receipt established by this repair.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/entity-linking-2026-09-29.md",
-            "sha256:c5a097f5d6320031d68024efdae82ab5ced144aa17cd9c03d845fc0afb2a97b1"
-          ]
-        }
-      }
-    },
-    {
-      "version": 1,
-      "taskSlug": "build-external-backlinks-from-authoritative-sources",
-      "canonicalURL": "https://blitzmetrics.com/link-building",
-      "sourceSha256": "f99ce0d01b76bfeaf20805df0ea105e9f3f5da0fc2d6addfe7b3e2bb1609a17c",
-      "representation": "wordpress-content-html",
-      "reviewedAt": "2026-10-01T13:18:20.235921Z",
-      "reviewer": "Codex root with separate Codex source reviewer",
-      "criteria": {
-        "openingContext": {
-          "state": "pass",
-          "reason": "Quoted words explain useful links, reader value and the verified SEO Tree connection; body delivers the promise.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-building-2026-10-01.md",
-            "sha256:c3b47758ca7efb317ce62c08f4db055b35c14cd878c2d2ff5677f5dd78298773"
-          ]
-        },
-        "roleScope": {
-          "state": "pass",
-          "reason": "Parent linking policy explicitly distinguishes internal, outbound and earned links; embedded child recipe matches the mapped external-placement task.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-building-2026-10-01.md",
-            "sha256:c3b47758ca7efb317ce62c08f4db055b35c14cd878c2d2ff5677f5dd78298773"
-          ]
-        },
-        "owner": {
-          "state": "unknown",
-          "reason": "Mapped hub and author do not establish the full maintained upkeep-owner record.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-building-2026-10-01.md",
-            "sha256:c3b47758ca7efb317ce62c08f4db055b35c14cd878c2d2ff5677f5dd78298773"
-          ]
-        },
-        "steps": {
-          "state": "pass",
-          "reason": "Inputs, permission boundary, ordered review and placement steps, exact log, separate states and measured next handoff are explicit.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-building-2026-10-01.md",
-            "sha256:c3b47758ca7efb317ce62c08f4db055b35c14cd878c2d2ff5677f5dd78298773"
-          ]
-        },
-        "links": {
-          "state": "pass",
-          "reason": "All article destinations checked; opening, install and next QA destination read for meaning. Exact embedded file matches maintained task.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-building-2026-10-01.md",
-            "sha256:c3b47758ca7efb317ce62c08f4db055b35c14cd878c2d2ff5677f5dd78298773"
-          ]
-        },
-        "sourceEvidence": {
-          "state": "unknown",
-          "reason": "Primary Google claims checked and fictional example clearly labeled; task-attributed real placement proof remains missing.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-building-2026-10-01.md",
-            "sha256:c3b47758ca7efb317ce62c08f4db055b35c14cd878c2d2ff5677f5dd78298773"
-          ]
-        },
-        "handoffContext": {
-          "state": "pass",
-          "reason": "Produce/Process/Post/Promote relationship, receiving QA and MAA work, exact output log and unresolved owner actions are explicit.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-building-2026-10-01.md",
-            "sha256:c3b47758ca7efb317ce62c08f4db055b35c14cd878c2d2ff5677f5dd78298773"
-          ]
-        },
-        "visualAndLayout": {
-          "state": "unknown",
-          "reason": "Public phone/desktop opening, lower context and expanded phone recipe checked; comprehensive whole-page publishing audit is not certified.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-building-2026-10-01.md",
-            "sha256:c3b47758ca7efb317ce62c08f4db055b35c14cd878c2d2ff5677f5dd78298773"
-          ]
-        },
-        "publicationStandards": {
-          "state": "unknown",
-          "reason": "Exact source and public browser readback passed with preserved URL/date/media; complete metadata, E-E-A-T and owner checklist remains open.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-building-2026-10-01.md",
-            "sha256:c3b47758ca7efb317ce62c08f4db055b35c14cd878c2d2ff5677f5dd78298773"
-          ]
-        },
-        "acceptanceResults": {
-          "state": "unknown",
-          "reason": "No independent accepted placement or novice-human setup receipt is established by this repair.",
-          "evidenceRefs": [
-            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-building-2026-10-01.md",
-            "sha256:c3b47758ca7efb317ce62c08f4db055b35c14cd878c2d2ff5677f5dd78298773"
-          ]
-        }
-      }
+    "acceptanceResults": {
+     "state": "unknown",
+     "reason": "No independent real-user setup or accepted business-result evidence was established by this opening repair.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/definitive-opening-2026-09-20.md",
+      "sha256:477248981497caf622a1ccb79fb84f82b5c62c85e2a241e8694fe44322969372"
+     ]
     }
-  ],
-  "revisionObservations": [
-    {
-      "version": 1,
-      "taskSlug": "create-or-update-a-definitive-article",
-      "canonicalURL": "https://blitzmetrics.com/definitive-article-guide/",
-      "sourceSha256": "5f4a981dd5d5b3ed52ea6eca4179a1ea872da25b6f728e782c4b5a652ab7a6a8",
-      "representation": "wordpress-content-html",
-      "observedAt": "2026-09-20T03:35:45.596606Z",
-      "observer": "Codex WordPress source readback with separate anonymous public QA",
-      "state": "observed",
-      "reason": "Fresh WordPress content matched the reviewed source. Separate ordinary public full-text/media and four first-screen checks passed after cache expiry.",
-      "evidenceRefs": [
-        "sha256:6341f95c45eb081e2ce0afc4e4a8adf96051d28e2389c9a271953c56121929c5",
-        "sha256:14fabe631b4d1bb3596a8e4640ad6d82d28c7a7b634ad9e098e6b31f3e628039"
-      ]
+   }
+  },
+  {
+   "version": 1,
+   "taskSlug": "write-meta-article-documenting-agent-work",
+   "canonicalURL": "https://blitzmetrics.com/meta-article-prompt/",
+   "representation": "wordpress-content-html",
+   "sourceSha256": "1952b6ead82a6a9aa0d0f96f0e976b34c957351fe155fe8ddd56b6fc7e767fde",
+   "criteria": {
+    "openingContext": {
+     "state": "unmet",
+     "reason": "The first three sentences explain what and use but contain no linked relationship; the first linked connection is in the following paragraph.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-source-2026-09-21.md",
+      "sha256:1952b6ead82a6a9aa0d0f96f0e976b34c957351fe155fe8ddd56b6fc7e767fde"
+     ]
     },
-    {
-      "version": 1,
-      "taskSlug": "write-meta-article-documenting-agent-work",
-      "canonicalURL": "https://blitzmetrics.com/meta-article-prompt/",
-      "representation": "wordpress-content-html",
-      "sourceSha256": "1952b6ead82a6a9aa0d0f96f0e976b34c957351fe155fe8ddd56b6fc7e767fde",
-      "observedAt": "2026-09-21T02:58:47.228010Z",
-      "observer": "Codex — authenticated WordPress source read after editorial review",
-      "state": "observed",
-      "reason": "A separate fresh source read matched the reviewed raw content bytes. It does not measure rendered layout, metadata or business results.",
-      "evidenceRefs": [
-        "sha256:ba42e8df92faee9dad5f5f8c17eb611d91c43edd4d6d9b5e0e27dde48553dfc0"
-      ]
+    "roleScope": {
+     "state": "pass",
+     "reason": "Source declares a canonical Content Factory Process task and an outcome for an evidence-backed meta article of one actual execution.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-source-2026-09-21.md",
+      "sha256:1952b6ead82a6a9aa0d0f96f0e976b34c957351fe155fe8ddd56b6fc7e767fde"
+     ]
     },
-    {
-      "version": 1,
-      "taskSlug": "write-meta-article-documenting-agent-work",
-      "canonicalURL": "https://blitzmetrics.com/meta-article-prompt/",
-      "representation": "wordpress-content-html",
-      "sourceSha256": "39e6e64ed488372c63c72338cc28f005d6c845226842faf49e5c71bb1dde02be",
-      "observedAt": "2026-09-22T04:18:50.835196Z",
-      "observer": "Codex separate fresh WordPress readback after editorial review",
-      "state": "observed",
-      "reason": "Fresh raw content bytes match the reviewed final revision. This observation does not substitute for separate public/rendered checks.",
-      "evidenceRefs": [
-        "sha256:9751842d2553f07ddd05a0e6ccddabf0356739678fb98994642b7b505991a1c2"
-      ]
+    "owner": {
+     "state": "unknown",
+     "reason": "The article does not name a maintained canonical owner, but an owner record may exist outside this source and was not reviewed.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-source-2026-09-21.md",
+      "sha256:1952b6ead82a6a9aa0d0f96f0e976b34c957351fe155fe8ddd56b6fc7e767fde"
+     ]
     },
-    {
-      "version": 1,
-      "taskSlug": "write-meta-article-documenting-agent-work",
-      "canonicalURL": "https://blitzmetrics.com/meta-article-prompt/",
-      "representation": "wordpress-content-html",
-      "sourceSha256": "b2b4bb23c9641f2d09a0fbb3846b0e2c9a7d2b9ac5e524aa37fe255cd2205242",
-      "observedAt": "2026-09-23T00:12:29.795694Z",
-      "observer": "Codex separate fresh WordPress read after exact-revision editorial review",
-      "state": "observed",
-      "reason": "Separate authenticated GET returned the exact reviewed article bytes. Public rendering and setup/results are separate checks.",
-      "evidenceRefs": [
-        "sha256:6ca1fbd38a0a0b8e166fc59ca09607d267a9074074bddb1276cf21a6d2809cb2"
-      ]
+    "steps": {
+     "state": "unmet",
+     "reason": "Page contract starts after a complete, partial, or failed result; embedded skill starts when work starts and includes blocked work. The trigger conflicts.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-source-2026-09-21.md",
+      "sha256:1952b6ead82a6a9aa0d0f96f0e976b34c957351fe155fe8ddd56b6fc7e767fde"
+     ]
     },
-    {
-      "version": 1,
-      "taskSlug": "write-meta-article-documenting-agent-work",
-      "canonicalURL": "https://blitzmetrics.com/meta-article-prompt/",
-      "representation": "wordpress-content-html",
-      "sourceSha256": "fcf0a687c6f507222fd7f6302e3011b3ae2bf350ea6fc57a40328bf3e3a383c5",
-      "observedAt": "2026-09-24T00:13:47.323846Z",
-      "observer": "Codex separate fresh source read after exact-revision editorial review",
-      "state": "observed",
-      "reason": "Separate authenticated GET matched the exact reviewed content. Public rendering, real setup and execution results remain separate evidence.",
-      "evidenceRefs": [
-        "sha256:c341c3beb5eafee1005cc998a9990273aa00a1c1134aebe05996b165c52ed06a"
-      ]
+    "links": {
+     "state": "unknown",
+     "reason": "Internal teaching and Task Library links are present, but source-only review cannot verify their maintained targets or availability.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-source-2026-09-21.md",
+      "sha256:1952b6ead82a6a9aa0d0f96f0e976b34c957351fe155fe8ddd56b6fc7e767fde"
+     ]
     },
-    {
-      "version": 1,
-      "taskSlug": "write-meta-article-documenting-agent-work",
-      "canonicalURL": "https://blitzmetrics.com/meta-article-prompt/",
-      "representation": "wordpress-content-html",
-      "sourceSha256": "f058250547fc893f952415afcf33cc5957bcb70419502f74dbeb3a8475f9590a",
-      "observedAt": "2026-09-24T19:06:43.487916Z",
-      "observer": "Codex fresh authenticated source read after editorial review",
-      "state": "observed",
-      "reason": "Independent fresh GET matched exact reviewed raw content. Rendering, setup and result acceptance remain separate evidence.",
-      "evidenceRefs": [
-        "sha256:e64bfdce820095488a4c3ce36b09ea0737d03754f09c141e6f297a29378e1226"
-      ]
+    "sourceEvidence": {
+     "state": "unknown",
+     "reason": "Claims that the example is real, 60 meta-articles are verified, agents automatically improve, and this is a gold standard recipe were not independently checked.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-source-2026-09-21.md",
+      "sha256:1952b6ead82a6a9aa0d0f96f0e976b34c957351fe155fe8ddd56b6fc7e767fde"
+     ]
     },
-    {
-      "version": 1,
-      "taskSlug": "publish-skill-and-task-page",
-      "canonicalURL": "https://blitzmetrics.com/skill-publishing-standard/",
-      "representation": "wordpress-content-html",
-      "sourceSha256": "7857ea9ce9ff959f8470dab5fd8455c5e406fd82a5edb086936793b584a0cf2b",
-      "observedAt": "2026-09-25T00:13:41.155932Z",
-      "observer": "Codex separate fresh source read after editorial review",
-      "state": "observed",
-      "reason": "Fresh authenticated GET matched exact reviewed content; publication and actual use are separate checks.",
-      "evidenceRefs": [
-        "sha256:dc9de2bf03ea8d5b91d24f0451f43178f955f497909d2607346408fe7b9032fb"
-      ]
+    "handoffContext": {
+     "state": "pass",
+     "reason": "The source names the Process role, actual inputs, evidence checks, Task Library registration, recipe feedback, and WordPress posting handoff.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-source-2026-09-21.md",
+      "sha256:1952b6ead82a6a9aa0d0f96f0e976b34c957351fe155fe8ddd56b6fc7e767fde"
+     ]
     },
-    {
-      "version": 1,
-      "taskSlug": "publish-skill-and-task-page",
-      "canonicalURL": "https://blitzmetrics.com/skill-publishing-standard/",
-      "representation": "wordpress-content-html",
-      "sourceSha256": "7857ea9ce9ff959f8470dab5fd8455c5e406fd82a5edb086936793b584a0cf2b",
-      "observedAt": "2026-09-26T16:03:57.919823Z",
-      "observer": "Codex fresh source read during September26 link review",
-      "state": "observed",
-      "reason": "Fresh authenticated source still matches the September25 reviewed article bytes; no new article-wide criterion or use claim.",
-      "evidenceRefs": [
-        "sha256:e9802e8fb0eb5e24aeffcece80df8252b84594768145e57d4ef08bbed0ffc270"
-      ]
+    "visualAndLayout": {
+     "state": "unknown",
+     "reason": "Lead and Content Factory diagrams exist in source, but source cannot prove first-screen desktop or mobile rendering and readability.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-source-2026-09-21.md",
+      "sha256:1952b6ead82a6a9aa0d0f96f0e976b34c957351fe155fe8ddd56b6fc7e767fde"
+     ]
     },
-    {
-      "version": 1,
-      "taskSlug": "publish-skill-and-task-page",
-      "canonicalURL": "https://blitzmetrics.com/skill-publishing-standard/",
-      "representation": "wordpress-content-html",
-      "sourceSha256": "3e9f22977b023330140c0866b6db199f0cbd31e086370043dcadfc643e45f319",
-      "observedAt": "2026-09-27T15:49:41.057053Z",
-      "observer": "Codex separate fresh source read after article review",
-      "state": "observed",
-      "reason": "Fresh saved source matches exact reviewed bytes and anonymous public content; missing criteria and actual use remain separate.",
-      "evidenceRefs": [
-        "sha256:2a69843bbf7cfefc0ab1f4ab5a11454cc0e80e58b0baf1e0abc0a609e6e1f45e"
-      ]
+    "publicationStandards": {
+     "state": "unknown",
+     "reason": "Content HTML cannot prove metadata, CTA placement, short redirect, entity routing, E-E-A-T, or live publication behavior. Separate JSON title observation is not tied to this hash.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-source-2026-09-21.md",
+      "sha256:1952b6ead82a6a9aa0d0f96f0e976b34c957351fe155fe8ddd56b6fc7e767fde"
+     ]
     },
-    {
-      "version": 1,
-      "taskSlug": "follow-entity-linking-decision-tree",
-      "canonicalURL": "https://blitzmetrics.com/entity-linking/",
-      "sourceSha256": "ba7b919b7dd2d4dc1a3513113fdad270d185913416f37af6d40add8628b32947",
-      "representation": "wordpress-content-html",
-      "observedAt": "2026-09-30T01:09:24.483279Z",
-      "observer": "Codex authenticated exact saved-source readback",
-      "state": "observed",
-      "reason": "Exact saved candidate and embedded file verified; ordinary anonymous cached content has not yet caught up.",
-      "evidenceRefs": [
-        "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/entity-linking-2026-09-29.md",
-        "sha256:569ff1434c05a1d6836a3f78ff27b59dfae427a27766d34b9cc0fd71bf899dab"
-      ]
-    },
-    {
-      "version": 1,
-      "taskSlug": "follow-entity-linking-decision-tree",
-      "canonicalURL": "https://blitzmetrics.com/entity-linking/",
-      "sourceSha256": "3156a6f4b47fd38a984fd07330ac1369ffa5e173d6c16d56333b8b43539931da",
-      "representation": "wordpress-content-html",
-      "observedAt": "2026-09-30T01:16:37.333349Z",
-      "observer": "Codex exact saved source and ordinary anonymous public check",
-      "state": "observed",
-      "reason": "Final saved content and metadata match; full normal public rendered text and media match; decoded embedded raw skill exact. Code-only formatting follows independent review.",
-      "evidenceRefs": [
-        "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/entity-linking-2026-09-29.md",
-        "sha256:8a8f191857e3294de71ceafdb4d5a1c69c25ae6e28a5f3531105e151b9ae931c"
-      ]
-    },
-    {
-      "version": 1,
-      "taskSlug": "build-external-backlinks-from-authoritative-sources",
-      "canonicalURL": "https://blitzmetrics.com/link-building",
-      "sourceSha256": "f99ce0d01b76bfeaf20805df0ea105e9f3f5da0fc2d6addfe7b3e2bb1609a17c",
-      "representation": "wordpress-content-html",
-      "observedAt": "2026-10-01T13:18:20.819549Z",
-      "observer": "Codex independent final source read after review",
-      "state": "observed",
-      "reason": "Fresh saved source matches final independently reviewed candidate, including exact task and maintained-source links. Earlier full browser comparison retained; final anonymous read recorded separately.",
-      "evidenceRefs": [
-        "sha256:e8fbbc7e7a6b7e27a5e86af0eedc07cfb5930d6c7bfde6f48695896b21e1e471"
-      ]
+    "acceptanceResults": {
+     "state": "unknown",
+     "reason": "No exact-revision independent acceptance receipt or fresh matching observation is included in the supplied source.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-source-2026-09-21.md",
+      "sha256:1952b6ead82a6a9aa0d0f96f0e976b34c957351fe155fe8ddd56b6fc7e767fde"
+     ]
     }
-  ]
+   },
+   "reviewedAt": "2026-09-21T02:52:08.726122Z",
+   "reviewer": "Codex — independent Terra source review with root corrections; source-only scope"
+  },
+  {
+   "version": 1,
+   "taskSlug": "write-meta-article-documenting-agent-work",
+   "canonicalURL": "https://blitzmetrics.com/meta-article-prompt/",
+   "representation": "wordpress-content-html",
+   "sourceSha256": "39e6e64ed488372c63c72338cc28f005d6c845226842faf49e5c71bb1dde02be",
+   "reviewedAt": "2026-09-22T04:18:49.804481Z",
+   "reviewer": "Codex root with independent source and opening review",
+   "criteria": {
+    "openingContext": {
+     "state": "pass",
+     "reason": "First three sentences explain recording a real job, learning from mistakes, and improving the linked main task guide. Independent meaning review, grade3.72 diagnostic and destination check support the exact opening.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-repair-2026-09-22.md",
+      "sha256:9dab7e2ebb2259c299a559df91a0465d8d1fadce7e491b67f8676cae347cbf3b"
+     ]
+    },
+    "roleScope": {
+     "state": "pass",
+     "reason": "The page remains the mapped canonical task recipe for writing one actual execution record; its visible review status is explicitly incomplete.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-repair-2026-09-22.md",
+      "sha256:9dab7e2ebb2259c299a559df91a0465d8d1fadce7e491b67f8676cae347cbf3b"
+     ]
+    },
+    "owner": {
+     "state": "unknown",
+     "reason": "Canonical ownership evidence beyond the current task mapping and author byline was not fully audited in this scoped repair.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-repair-2026-09-22.md",
+      "sha256:9dab7e2ebb2259c299a559df91a0465d8d1fadce7e491b67f8676cae347cbf3b"
+     ]
+    },
+    "steps": {
+     "state": "unknown",
+     "reason": "Conflicting start instructions now consistently begin with the task and preserve the same ID. Full end-to-end step completeness and execution were not independently certified.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-repair-2026-09-22.md",
+      "sha256:9dab7e2ebb2259c299a559df91a0465d8d1fadce7e491b67f8676cae347cbf3b"
+     ]
+    },
+    "links": {
+     "state": "unknown",
+     "reason": "Opening destination was checked and all original URLs preserved. The full body destination set was not reverified.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-repair-2026-09-22.md",
+      "sha256:9dab7e2ebb2259c299a559df91a0465d8d1fadce7e491b67f8676cae347cbf3b"
+     ]
+    },
+    "sourceEvidence": {
+     "state": "unknown",
+     "reason": "Unsupported automatic improvement, quality and numeric measurement claims were corrected. The dated60-URL inventory remains historical; six classification conflicts and real-example source checks remain open.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-repair-2026-09-22.md",
+      "sha256:9dab7e2ebb2259c299a559df91a0465d8d1fadce7e491b67f8676cae347cbf3b"
+     ]
+    },
+    "handoffContext": {
+     "state": "pass",
+     "reason": "Explicit inputs, Process-stage Content Factory context, checked record, Task Library registration, supported recipe correction and authorized publishing handoff remain present.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-repair-2026-09-22.md",
+      "sha256:9dab7e2ebb2259c299a559df91a0465d8d1fadce7e491b67f8676cae347cbf3b"
+     ]
+    },
+    "visualAndLayout": {
+     "state": "unknown",
+     "reason": "Changed opening/diagram, phone tables, evidence labels and inventory passed scoped rendered checks. Full lower-page media and context requirements were not independently rechecked.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-repair-2026-09-22.md",
+      "sha256:9dab7e2ebb2259c299a559df91a0465d8d1fadce7e491b67f8676cae347cbf3b"
+     ]
+    },
+    "publicationStandards": {
+     "state": "unknown",
+     "reason": "Title shortened and separately checked, source/URL preserved, reviewed changes published. CTA, short URL, all metadata and E-E-A-T requirements were not fully audited.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-repair-2026-09-22.md",
+      "sha256:9dab7e2ebb2259c299a559df91a0465d8d1fadce7e491b67f8676cae347cbf3b"
+     ]
+    },
+    "acceptanceResults": {
+     "state": "unknown",
+     "reason": "No exact-revision accepted business run or successful novice-human setup is established by this maintenance repair.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-repair-2026-09-22.md",
+      "sha256:9dab7e2ebb2259c299a559df91a0465d8d1fadce7e491b67f8676cae347cbf3b"
+     ]
+    }
+   }
+  },
+  {
+   "version": 1,
+   "taskSlug": "write-meta-article-documenting-agent-work",
+   "canonicalURL": "https://blitzmetrics.com/meta-article-prompt/",
+   "representation": "wordpress-content-html",
+   "sourceSha256": "b2b4bb23c9641f2d09a0fbb3846b0e2c9a7d2b9ac5e524aa37fe255cd2205242",
+   "reviewedAt": "2026-09-23T00:12:28.740724Z",
+   "reviewer": "Codex root with independent GPT-6 Luna candidate-only steps review",
+   "criteria": {
+    "openingContext": {
+     "state": "pass",
+     "reason": "Exact unchanged opening names the record, learning from mistakes, and proof-based improvement to the linked main task guide. Root rechecked destination HTTP 200 and body delivery; this is a meaning review, not a reading-score certification.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-setup-2026-09-23.md",
+      "sha256:b760a80822d43641b3d220ce268206996b024e99615d0166d8697f9bfe830ec5"
+     ]
+    },
+    "roleScope": {
+     "state": "pass",
+     "reason": "The page remains the mapped canonical task recipe for writing one actual execution record; its visible review status is explicitly incomplete.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-setup-2026-09-23.md",
+      "sha256:b760a80822d43641b3d220ce268206996b024e99615d0166d8697f9bfe830ec5"
+     ]
+    },
+    "owner": {
+     "state": "unknown",
+     "reason": "Canonical ownership evidence beyond the current task mapping and author byline was not fully audited in this scoped repair.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-setup-2026-09-23.md",
+      "sha256:b760a80822d43641b3d220ce268206996b024e99615d0166d8697f9bfe830ec5"
+     ]
+    },
+    "steps": {
+     "state": "pass",
+     "reason": "Literal final article independently reviewed: maintained nine-step skill, first-use input/access/output setup, current-state trigger, ledger validation and existing-ID revision checks, measurable output and explicit receiving owners. No execution or novice setup is certified.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-setup-2026-09-23.md",
+      "sha256:b760a80822d43641b3d220ce268206996b024e99615d0166d8697f9bfe830ec5"
+     ]
+    },
+    "links": {
+     "state": "unknown",
+     "reason": "Opening and new ledger destinations return HTTP 200 and match their teaching purpose. Historical example fetches encountered rate limits; full destination review remains unknown.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-setup-2026-09-23.md",
+      "sha256:b760a80822d43641b3d220ce268206996b024e99615d0166d8697f9bfe830ec5"
+     ]
+    },
+    "sourceEvidence": {
+     "state": "unknown",
+     "reason": "Unsupported automatic improvement, quality and numeric measurement claims were corrected. The dated60-URL inventory remains historical; six classification conflicts and real-example source checks remain open.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-setup-2026-09-23.md",
+      "sha256:b760a80822d43641b3d220ce268206996b024e99615d0166d8697f9bfe830ec5"
+     ]
+    },
+    "handoffContext": {
+     "state": "pass",
+     "reason": "Explicit inputs, Process-stage Content Factory context, checked record, Task Library registration, supported recipe correction and authorized publishing handoff remain present.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-setup-2026-09-23.md",
+      "sha256:b760a80822d43641b3d220ce268206996b024e99615d0166d8697f9bfe830ec5"
+     ]
+    },
+    "visualAndLayout": {
+     "state": "unknown",
+     "reason": "Exact opening and lead visual unchanged; new first-use section checked in phone and desktop preview. Full-page media/layout is not independently certified.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-setup-2026-09-23.md",
+      "sha256:b760a80822d43641b3d220ce268206996b024e99615d0166d8697f9bfe830ec5"
+     ]
+    },
+    "publicationStandards": {
+     "state": "unknown",
+     "reason": "Title shortened and separately checked, source/URL preserved, reviewed changes published. CTA, short URL, all metadata and E-E-A-T requirements were not fully audited.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-setup-2026-09-23.md",
+      "sha256:b760a80822d43641b3d220ce268206996b024e99615d0166d8697f9bfe830ec5"
+     ]
+    },
+    "acceptanceResults": {
+     "state": "unknown",
+     "reason": "No exact-revision accepted business run or successful novice-human setup is established by this maintenance repair.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-guide-setup-2026-09-23.md",
+      "sha256:b760a80822d43641b3d220ce268206996b024e99615d0166d8697f9bfe830ec5"
+     ]
+    }
+   }
+  },
+  {
+   "version": 1,
+   "taskSlug": "write-meta-article-documenting-agent-work",
+   "canonicalURL": "https://blitzmetrics.com/meta-article-prompt/",
+   "representation": "wordpress-content-html",
+   "sourceSha256": "fcf0a687c6f507222fd7f6302e3011b3ae2bf350ea6fc57a40328bf3e3a383c5",
+   "reviewedAt": "2026-09-24T00:13:46.578735Z",
+   "reviewer": "Codex root with independent GPT-6 Luna rubric/prompt/layout-wording review; prior unchanged checks reused",
+   "criteria": {
+    "openingContext": {
+     "state": "pass",
+     "reason": "Exact unchanged opening names the record, learning from mistakes, and proof-based improvement to the linked main task guide. Root rechecked destination HTTP 200 and body delivery; this is a meaning review, not a reading-score certification.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-rubric-repair-2026-09-24.md",
+      "sha256:ded12c8c024e38cd44bbb3dda92063eb14f227d2a4e987a24349f571ebc9e4fa"
+     ]
+    },
+    "roleScope": {
+     "state": "pass",
+     "reason": "The page remains the mapped canonical task recipe for writing one actual execution record; its visible review status is explicitly incomplete.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-rubric-repair-2026-09-24.md",
+      "sha256:ded12c8c024e38cd44bbb3dda92063eb14f227d2a4e987a24349f571ebc9e4fa"
+     ]
+    },
+    "owner": {
+     "state": "unknown",
+     "reason": "Canonical ownership evidence beyond the current task mapping and author byline was not fully audited in this scoped repair.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-rubric-repair-2026-09-24.md",
+      "sha256:ded12c8c024e38cd44bbb3dda92063eb14f227d2a4e987a24349f571ebc9e4fa"
+     ]
+    },
+    "steps": {
+     "state": "pass",
+     "reason": "Prior setup, nine-step skill and handoff text unchanged. Independent literal review reconciled checklist, prompt and example layout: actual-output checks, dated evidence, consistent check states, sourced optional cards and authorized public links. No actual execution is certified.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-rubric-repair-2026-09-24.md",
+      "sha256:ded12c8c024e38cd44bbb3dda92063eb14f227d2a4e987a24349f571ebc9e4fa"
+     ]
+    },
+    "links": {
+     "state": "unknown",
+     "reason": "Opening and new ledger destinations return HTTP 200 and match their teaching purpose. Historical example fetches encountered rate limits; full destination review remains unknown.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-rubric-repair-2026-09-24.md",
+      "sha256:ded12c8c024e38cd44bbb3dda92063eb14f227d2a4e987a24349f571ebc9e4fa"
+     ]
+    },
+    "sourceEvidence": {
+     "state": "unknown",
+     "reason": "Unsupported automatic improvement, quality and numeric measurement claims were corrected. The dated60-URL inventory remains historical; six classification conflicts and real-example source checks remain open.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-rubric-repair-2026-09-24.md",
+      "sha256:ded12c8c024e38cd44bbb3dda92063eb14f227d2a4e987a24349f571ebc9e4fa"
+     ]
+    },
+    "handoffContext": {
+     "state": "pass",
+     "reason": "Explicit inputs, Process-stage Content Factory context, checked record, Task Library registration, supported recipe correction and authorized publishing handoff remain present.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-rubric-repair-2026-09-24.md",
+      "sha256:ded12c8c024e38cd44bbb3dda92063eb14f227d2a4e987a24349f571ebc9e4fa"
+     ]
+    },
+    "visualAndLayout": {
+     "state": "unknown",
+     "reason": "Scoped phone cards and desktop checklist plus lower layout heading checked on normal public page. Original opening/lead source unchanged. Full-page media/layout not independently certified.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-rubric-repair-2026-09-24.md",
+      "sha256:ded12c8c024e38cd44bbb3dda92063eb14f227d2a4e987a24349f571ebc9e4fa"
+     ]
+    },
+    "publicationStandards": {
+     "state": "unknown",
+     "reason": "Contradictory blanket publication/media/date requirements corrected and public result checked. Overall metadata, source ownership, CTA/short URL and complete publication review remain unknown.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-rubric-repair-2026-09-24.md",
+      "sha256:ded12c8c024e38cd44bbb3dda92063eb14f227d2a4e987a24349f571ebc9e4fa"
+     ]
+    },
+    "acceptanceResults": {
+     "state": "unknown",
+     "reason": "No exact-revision accepted business run or successful novice-human setup is established by this maintenance repair.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-rubric-repair-2026-09-24.md",
+      "sha256:ded12c8c024e38cd44bbb3dda92063eb14f227d2a4e987a24349f571ebc9e4fa"
+     ]
+    }
+   }
+  },
+  {
+   "version": 1,
+   "taskSlug": "write-meta-article-documenting-agent-work",
+   "canonicalURL": "https://blitzmetrics.com/meta-article-prompt/",
+   "representation": "wordpress-content-html",
+   "sourceSha256": "f058250547fc893f952415afcf33cc5957bcb70419502f74dbeb3a8475f9590a",
+   "reviewedAt": "2026-09-24T19:06:43.030473Z",
+   "reviewer": "Codex root with independent GPT-6 Luna source/classification review; unchanged recipe checks reused",
+   "criteria": {
+    "openingContext": {
+     "state": "pass",
+     "reason": "Exact unchanged opening names the record, learning from mistakes, and proof-based improvement to the linked main task guide. Root rechecked destination HTTP 200 and body delivery; this is a meaning review, not a reading-score certification.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-example-sources-2026-09-24.md",
+      "sha256:e060a645a5aa0d1ab6d942efd30a9ef6bd8ff870ef2027008db48bf21e77d365"
+     ]
+    },
+    "roleScope": {
+     "state": "pass",
+     "reason": "The page remains the mapped canonical task recipe for writing one actual execution record; its visible review status is explicitly incomplete.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-example-sources-2026-09-24.md",
+      "sha256:e060a645a5aa0d1ab6d942efd30a9ef6bd8ff870ef2027008db48bf21e77d365"
+     ]
+    },
+    "owner": {
+     "state": "unmet",
+     "reason": "The maintained Asset Tracker task row45 has an empty Owner cell. The corrected guide URL and description were saved/read back; contributor status and byline do not assign upkeep responsibility. Owner choice remains open.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-example-sources-2026-09-24.md",
+      "sha256:e060a645a5aa0d1ab6d942efd30a9ef6bd8ff870ef2027008db48bf21e77d365",
+      "sha256:4bcf9e55f0e25f5e53af7150e13623575b54abf4551e5828d1d71146d9027a92"
+     ]
+    },
+    "steps": {
+     "state": "pass",
+     "reason": "Prior setup, nine-step skill and handoff text unchanged. Independent literal review reconciled checklist, prompt and example layout: actual-output checks, dated evidence, consistent check states, sourced optional cards and authorized public links. No actual execution is certified.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-example-sources-2026-09-24.md",
+      "sha256:e060a645a5aa0d1ab6d942efd30a9ef6bd8ff870ef2027008db48bf21e77d365"
+     ]
+    },
+    "links": {
+     "state": "unknown",
+     "reason": "The six historical sources, opening recipe and Task Library destination were freshly checked. Complete article link review remains unknown; the source-review URL is verified at release.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-example-sources-2026-09-24.md",
+      "sha256:e060a645a5aa0d1ab6d942efd30a9ef6bd8ff870ef2027008db48bf21e77d365"
+     ]
+    },
+    "sourceEvidence": {
+     "state": "unknown",
+     "reason": "Six conflicting classifications resolved from exact current sources: five retained, one related-only link excluded. Count now59; the other54 and all underlying outcome/cost/rights claims remain unaccepted.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-example-sources-2026-09-24.md",
+      "sha256:e060a645a5aa0d1ab6d942efd30a9ef6bd8ff870ef2027008db48bf21e77d365"
+     ]
+    },
+    "handoffContext": {
+     "state": "pass",
+     "reason": "Explicit inputs, Process-stage Content Factory context, checked record, Task Library registration, supported recipe correction and authorized publishing handoff remain present.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-example-sources-2026-09-24.md",
+      "sha256:e060a645a5aa0d1ab6d942efd30a9ef6bd8ff870ef2027008db48bf21e77d365"
+     ]
+    },
+    "visualAndLayout": {
+     "state": "unknown",
+     "reason": "Changed example explanation, expanded59-item list, caption and separate meta diagram checked on normal public desktop/phone pages. Opening/lead source unchanged. Full-page media/layout remains unreviewed.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-example-sources-2026-09-24.md",
+      "sha256:e060a645a5aa0d1ab6d942efd30a9ef6bd8ff870ef2027008db48bf21e77d365"
+     ]
+    },
+    "publicationStandards": {
+     "state": "unknown",
+     "reason": "Corrected count/history and source ownership connection are published; metadata retained. Overall metadata, publication fields and full-page compliance remain unknown.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-example-sources-2026-09-24.md",
+      "sha256:e060a645a5aa0d1ab6d942efd30a9ef6bd8ff870ef2027008db48bf21e77d365"
+     ]
+    },
+    "acceptanceResults": {
+     "state": "unknown",
+     "reason": "No exact-revision accepted business run or successful novice-human setup is established by this maintenance repair.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/meta-example-sources-2026-09-24.md",
+      "sha256:e060a645a5aa0d1ab6d942efd30a9ef6bd8ff870ef2027008db48bf21e77d365"
+     ]
+    }
+   }
+  },
+  {
+   "version": 1,
+   "taskSlug": "publish-skill-and-task-page",
+   "canonicalURL": "https://blitzmetrics.com/skill-publishing-standard/",
+   "representation": "wordpress-content-html",
+   "sourceSha256": "7857ea9ce9ff959f8470dab5fd8455c5e406fd82a5edb086936793b584a0cf2b",
+   "reviewedAt": "2026-09-25T00:13:40.817679Z",
+   "reviewer": "Codex root with independent GPT-6 Luna scoped wording review",
+   "criteria": {
+    "openingContext": {
+     "state": "pass",
+     "reason": "Scoped plain opening and linked recipe reviewed.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/tracker-setup-2026-09-25.md",
+      "sha256:740a6591e8ed22cd7abc5c62cd93291c2a41657d65b56af1c05987d335a57b5e"
+     ]
+    },
+    "roleScope": {
+     "state": "pass",
+     "reason": "Task page and matching skill publish the same reusable method.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/tracker-setup-2026-09-25.md",
+      "sha256:740a6591e8ed22cd7abc5c62cd93291c2a41657d65b56af1c05987d335a57b5e"
+     ]
+    },
+    "owner": {
+     "state": "unknown",
+     "reason": "A responsible upkeep owner is not established by this scoped review.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/tracker-setup-2026-09-25.md",
+      "sha256:740a6591e8ed22cd7abc5c62cd93291c2a41657d65b56af1c05987d335a57b5e"
+     ]
+    },
+    "steps": {
+     "state": "pass",
+     "reason": "Current publishing/permission/import steps and embedded method reconciled.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/tracker-setup-2026-09-25.md",
+      "sha256:740a6591e8ed22cd7abc5c62cd93291c2a41657d65b56af1c05987d335a57b5e"
+     ]
+    },
+    "links": {
+     "state": "unknown",
+     "reason": "Changed destinations reviewed; all article links not checked.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/tracker-setup-2026-09-25.md",
+      "sha256:740a6591e8ed22cd7abc5c62cd93291c2a41657d65b56af1c05987d335a57b5e"
+     ]
+    },
+    "sourceEvidence": {
+     "state": "unknown",
+     "reason": "Historical claims and linked worked examples not independently accepted.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/tracker-setup-2026-09-25.md",
+      "sha256:740a6591e8ed22cd7abc5c62cd93291c2a41657d65b56af1c05987d335a57b5e"
+     ]
+    },
+    "handoffContext": {
+     "state": "pass",
+     "reason": "Post-stage input/output and receiving task owner are explicit.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/tracker-setup-2026-09-25.md",
+      "sha256:740a6591e8ed22cd7abc5c62cd93291c2a41657d65b56af1c05987d335a57b5e"
+     ]
+    },
+    "visualAndLayout": {
+     "state": "unknown",
+     "reason": "Changed sections and lead visual inspected; full-page media/layout not certified.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/tracker-setup-2026-09-25.md",
+      "sha256:740a6591e8ed22cd7abc5c62cd93291c2a41657d65b56af1c05987d335a57b5e"
+     ]
+    },
+    "publicationStandards": {
+     "state": "unknown",
+     "reason": "Whole-page metadata, ownership, publication and SEO checks remain incomplete.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/tracker-setup-2026-09-25.md",
+      "sha256:740a6591e8ed22cd7abc5c62cd93291c2a41657d65b56af1c05987d335a57b5e"
+     ]
+    },
+    "acceptanceResults": {
+     "state": "unknown",
+     "reason": "No accepted task execution or first-user setup was established.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/tracker-setup-2026-09-25.md",
+      "sha256:740a6591e8ed22cd7abc5c62cd93291c2a41657d65b56af1c05987d335a57b5e"
+     ]
+    }
+   }
+  },
+  {
+   "version": 1,
+   "taskSlug": "publish-skill-and-task-page",
+   "canonicalURL": "https://blitzmetrics.com/skill-publishing-standard/",
+   "representation": "wordpress-content-html",
+   "sourceSha256": "3e9f22977b023330140c0866b6db199f0cbd31e086370043dcadfc643e45f319",
+   "reviewedAt": "2026-09-27T15:49:15.573162Z",
+   "reviewer": "Codex root; independent GPT-6 Sol source/link reviews plus root public browser QA",
+   "criteria": {
+    "openingContext": {
+     "state": "pass",
+     "reason": "Plain opening quotes action, value and checked-recipe prerequisite; body delivers seven publishing steps.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/914e8219bc260c15ccebe4a3402c3692f2dee80d/reviews/publisher-completion-2026-09-27.md",
+      "sha256:cacb3d0b06383582b74a4817a75a0c706f1233c9791b989059d1a62f1abce810"
+     ]
+    },
+    "roleScope": {
+     "state": "pass",
+     "reason": "Page is explicitly the publishing task recipe; canonical source and permanent task are named.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/914e8219bc260c15ccebe4a3402c3692f2dee80d/reviews/publisher-completion-2026-09-27.md",
+      "sha256:cacb3d0b06383582b74a4817a75a0c706f1233c9791b989059d1a62f1abce810"
+     ]
+    },
+    "owner": {
+     "state": "unknown",
+     "reason": "Owning repository is explicit, but responsible upkeep assignment is still missing from maintained tracker evidence.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/914e8219bc260c15ccebe4a3402c3692f2dee80d/reviews/publisher-completion-2026-09-27.md",
+      "sha256:cacb3d0b06383582b74a4817a75a0c706f1233c9791b989059d1a62f1abce810"
+     ]
+    },
+    "steps": {
+     "state": "pass",
+     "reason": "Inputs, authority, source comparison, supported save path, tracker state and public readback are explicit.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/914e8219bc260c15ccebe4a3402c3692f2dee80d/reviews/publisher-completion-2026-09-27.md",
+      "sha256:cacb3d0b06383582b74a4817a75a0c706f1233c9791b989059d1a62f1abce810"
+     ]
+    },
+    "links": {
+     "state": "pass",
+     "reason": "Current destination meanings and fragment targets checked; stale plugin/project labels corrected and exact source/partial-example links added.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/914e8219bc260c15ccebe4a3402c3692f2dee80d/reviews/publisher-completion-2026-09-27.md",
+      "sha256:cacb3d0b06383582b74a4817a75a0c706f1233c9791b989059d1a62f1abce810"
+     ]
+    },
+    "sourceEvidence": {
+     "state": "pass",
+     "reason": "Merged PR39, dated review and exact meta section prove the bounded September25 publishing repair; its partial result and setup gaps remain explicit.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/914e8219bc260c15ccebe4a3402c3692f2dee80d/reviews/publisher-completion-2026-09-27.md",
+      "sha256:cacb3d0b06383582b74a4817a75a0c706f1233c9791b989059d1a62f1abce810"
+     ]
+    },
+    "handoffContext": {
+     "state": "pass",
+     "reason": "Process supplies the reviewed method, Post publishes it; matched output, remaining issues and receiving owner are required.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/914e8219bc260c15ccebe4a3402c3692f2dee80d/reviews/publisher-completion-2026-09-27.md",
+      "sha256:cacb3d0b06383582b74a4817a75a0c706f1233c9791b989059d1a62f1abce810"
+     ]
+    },
+    "visualAndLayout": {
+     "state": "pass",
+     "reason": "Anonymous desktop1280x800 and phone390x844 show plain opening and readable four-step visual above fold. One H1, lower Post context and no phone horizontal overflow checked.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/914e8219bc260c15ccebe4a3402c3692f2dee80d/reviews/publisher-completion-2026-09-27.md",
+      "sha256:cacb3d0b06383582b74a4817a75a0c706f1233c9791b989059d1a62f1abce810"
+     ]
+    },
+    "publicationStandards": {
+     "state": "unknown",
+     "reason": "Title, canonical URL, description and headings were checked. Complete CTA/short-URL/E-E-A-T publication certification is not established by this scoped repair.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/914e8219bc260c15ccebe4a3402c3692f2dee80d/reviews/publisher-completion-2026-09-27.md",
+      "sha256:cacb3d0b06383582b74a4817a75a0c706f1233c9791b989059d1a62f1abce810"
+     ]
+    },
+    "acceptanceResults": {
+     "state": "unknown",
+     "reason": "This exact revised recipe has no independently accepted execution or novice setup receipt.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/914e8219bc260c15ccebe4a3402c3692f2dee80d/reviews/publisher-completion-2026-09-27.md",
+      "sha256:cacb3d0b06383582b74a4817a75a0c706f1233c9791b989059d1a62f1abce810"
+     ]
+    }
+   }
+  },
+  {
+   "version": 1,
+   "taskSlug": "follow-entity-linking-decision-tree",
+   "canonicalURL": "https://blitzmetrics.com/entity-linking/",
+   "sourceSha256": "ba7b919b7dd2d4dc1a3513113fdad270d185913416f37af6d40add8628b32947",
+   "representation": "wordpress-content-html",
+   "reviewedAt": "2026-09-30T01:09:24.483279Z",
+   "reviewer": "Codex root with independent Codex source review",
+   "criteria": {
+    "openingContext": {
+     "state": "pass",
+     "reason": "Exact words name outcome, value and an explained link to the verified SEO Tree destination; body delivers that promise.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/entity-linking-2026-09-29.md",
+      "sha256:c1b3b3578ca8634987bf78cb5af103b1e773efd352be220f17334981e0de4f09"
+     ]
+    },
+    "roleScope": {
+     "state": "pass",
+     "reason": "Mapped task recipe applies the parent link policy to identity, explanation, primary evidence and action destinations.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/entity-linking-2026-09-29.md",
+      "sha256:c1b3b3578ca8634987bf78cb5af103b1e773efd352be220f17334981e0de4f09"
+     ]
+    },
+    "owner": {
+     "state": "unknown",
+     "reason": "A mapped article and author byline do not establish the complete maintained canonical owner record.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/entity-linking-2026-09-29.md",
+      "sha256:c1b3b3578ca8634987bf78cb5af103b1e773efd352be220f17334981e0de4f09"
+     ]
+    },
+    "steps": {
+     "state": "pass",
+     "reason": "Independent source review verified inputs, five application steps, scope checks, exact link log, draft/public distinction and one work record from task start.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/entity-linking-2026-09-29.md",
+      "sha256:c1b3b3578ca8634987bf78cb5af103b1e773efd352be220f17334981e0de4f09"
+     ]
+    },
+    "links": {
+     "state": "pass",
+     "reason": "Seventeen article destinations and Content Factory fragments checked; actual next task opens and matches saved/public link-review handoff. Added source file is checked at release.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/entity-linking-2026-09-29.md",
+      "sha256:c1b3b3578ca8634987bf78cb5af103b1e773efd352be220f17334981e0de4f09"
+     ]
+    },
+    "sourceEvidence": {
+     "state": "pass",
+     "reason": "Google claim narrowed to discovery and relevance with precise primary citation. Teaching example explicitly fictional; no business result claimed.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/entity-linking-2026-09-29.md",
+      "sha256:c1b3b3578ca8634987bf78cb5af103b1e773efd352be220f17334981e0de4f09"
+     ]
+    },
+    "handoffContext": {
+     "state": "pass",
+     "reason": "Four-stage context, task-specific output log, unresolved cases, receiving link-review task and conditional WordPress publishing task are explicit.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/entity-linking-2026-09-29.md",
+      "sha256:c1b3b3578ca8634987bf78cb5af103b1e773efd352be220f17334981e0de4f09"
+     ]
+    },
+    "visualAndLayout": {
+     "state": "unknown",
+     "reason": "Real-theme phone, desktop and no-script preview passed; final ordinary public checks are still pending at this source review.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/entity-linking-2026-09-29.md",
+      "sha256:c1b3b3578ca8634987bf78cb5af103b1e773efd352be220f17334981e0de4f09"
+     ]
+    },
+    "publicationStandards": {
+     "state": "unknown",
+     "reason": "Scoped edit preserves canonical URL and media; full metadata, CTA, ownership and publication checklist not certified.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/entity-linking-2026-09-29.md",
+      "sha256:c1b3b3578ca8634987bf78cb5af103b1e773efd352be220f17334981e0de4f09"
+     ]
+    },
+    "acceptanceResults": {
+     "state": "unknown",
+     "reason": "No independent accepted business outcome or novice-human setup receipt established by this repair.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/entity-linking-2026-09-29.md",
+      "sha256:c1b3b3578ca8634987bf78cb5af103b1e773efd352be220f17334981e0de4f09"
+     ]
+    }
+   }
+  },
+  {
+   "version": 1,
+   "taskSlug": "follow-entity-linking-decision-tree",
+   "canonicalURL": "https://blitzmetrics.com/entity-linking/",
+   "sourceSha256": "3156a6f4b47fd38a984fd07330ac1369ffa5e173d6c16d56333b8b43539931da",
+   "representation": "wordpress-content-html",
+   "reviewedAt": "2026-09-30T01:16:37.333349Z",
+   "reviewer": "Codex root with independent Codex final layout-only and source review",
+   "criteria": {
+    "openingContext": {
+     "state": "pass",
+     "reason": "Exact words name outcome, value and an explained link to the verified SEO Tree destination; body delivers that promise.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/entity-linking-2026-09-29.md",
+      "sha256:c5a097f5d6320031d68024efdae82ab5ced144aa17cd9c03d845fc0afb2a97b1"
+     ]
+    },
+    "roleScope": {
+     "state": "pass",
+     "reason": "Mapped task recipe applies the parent link policy to identity, explanation, primary evidence and action destinations.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/entity-linking-2026-09-29.md",
+      "sha256:c5a097f5d6320031d68024efdae82ab5ced144aa17cd9c03d845fc0afb2a97b1"
+     ]
+    },
+    "owner": {
+     "state": "unknown",
+     "reason": "A mapped article and author byline do not establish the complete maintained canonical owner record.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/entity-linking-2026-09-29.md",
+      "sha256:c5a097f5d6320031d68024efdae82ab5ced144aa17cd9c03d845fc0afb2a97b1"
+     ]
+    },
+    "steps": {
+     "state": "pass",
+     "reason": "Independent source review verified inputs, five application steps, scope checks, exact link log, draft/public distinction and one work record from task start.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/entity-linking-2026-09-29.md",
+      "sha256:c5a097f5d6320031d68024efdae82ab5ced144aa17cd9c03d845fc0afb2a97b1"
+     ]
+    },
+    "links": {
+     "state": "pass",
+     "reason": "Article targets and stage fragments checked; actual receiving QA task loaded; maintained source, public generated task and archive are deployed and match their intended roles.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/entity-linking-2026-09-29.md",
+      "sha256:c5a097f5d6320031d68024efdae82ab5ced144aa17cd9c03d845fc0afb2a97b1"
+     ]
+    },
+    "sourceEvidence": {
+     "state": "pass",
+     "reason": "Google claim narrowed to discovery and relevance with precise primary citation. Teaching example explicitly fictional; no business result claimed.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/entity-linking-2026-09-29.md",
+      "sha256:c5a097f5d6320031d68024efdae82ab5ced144aa17cd9c03d845fc0afb2a97b1"
+     ]
+    },
+    "handoffContext": {
+     "state": "pass",
+     "reason": "Four-stage context, task-specific output log, unresolved cases, receiving link-review task and conditional WordPress publishing task are explicit.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/entity-linking-2026-09-29.md",
+      "sha256:c5a097f5d6320031d68024efdae82ab5ced144aa17cd9c03d845fc0afb2a97b1"
+     ]
+    },
+    "visualAndLayout": {
+     "state": "unknown",
+     "reason": "Phone/desktop opening, no-script initial visual, expanded file control and phone overflow checks passed on ordinary public URL. Complete lower-page visual and publication-standard audit remains outside this scoped review.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/entity-linking-2026-09-29.md",
+      "sha256:c5a097f5d6320031d68024efdae82ab5ced144aa17cd9c03d845fc0afb2a97b1"
+     ]
+    },
+    "publicationStandards": {
+     "state": "unknown",
+     "reason": "Scoped edit preserves canonical URL and media; full metadata, CTA, ownership and publication checklist not certified.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/entity-linking-2026-09-29.md",
+      "sha256:c5a097f5d6320031d68024efdae82ab5ced144aa17cd9c03d845fc0afb2a97b1"
+     ]
+    },
+    "acceptanceResults": {
+     "state": "unknown",
+     "reason": "No independent accepted business outcome or novice-human setup receipt established by this repair.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/entity-linking-2026-09-29.md",
+      "sha256:c5a097f5d6320031d68024efdae82ab5ced144aa17cd9c03d845fc0afb2a97b1"
+     ]
+    }
+   }
+  },
+  {
+   "version": 1,
+   "taskSlug": "build-external-backlinks-from-authoritative-sources",
+   "canonicalURL": "https://blitzmetrics.com/link-building",
+   "sourceSha256": "f99ce0d01b76bfeaf20805df0ea105e9f3f5da0fc2d6addfe7b3e2bb1609a17c",
+   "representation": "wordpress-content-html",
+   "reviewedAt": "2026-10-01T13:18:20.235921Z",
+   "reviewer": "Codex root with separate Codex source reviewer",
+   "criteria": {
+    "openingContext": {
+     "state": "pass",
+     "reason": "Quoted words explain useful links, reader value and the verified SEO Tree connection; body delivers the promise.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-building-2026-10-01.md",
+      "sha256:c3b47758ca7efb317ce62c08f4db055b35c14cd878c2d2ff5677f5dd78298773"
+     ]
+    },
+    "roleScope": {
+     "state": "pass",
+     "reason": "Parent linking policy explicitly distinguishes internal, outbound and earned links; embedded child recipe matches the mapped external-placement task.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-building-2026-10-01.md",
+      "sha256:c3b47758ca7efb317ce62c08f4db055b35c14cd878c2d2ff5677f5dd78298773"
+     ]
+    },
+    "owner": {
+     "state": "unknown",
+     "reason": "Mapped hub and author do not establish the full maintained upkeep-owner record.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-building-2026-10-01.md",
+      "sha256:c3b47758ca7efb317ce62c08f4db055b35c14cd878c2d2ff5677f5dd78298773"
+     ]
+    },
+    "steps": {
+     "state": "pass",
+     "reason": "Inputs, permission boundary, ordered review and placement steps, exact log, separate states and measured next handoff are explicit.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-building-2026-10-01.md",
+      "sha256:c3b47758ca7efb317ce62c08f4db055b35c14cd878c2d2ff5677f5dd78298773"
+     ]
+    },
+    "links": {
+     "state": "pass",
+     "reason": "All article destinations checked; opening, install and next QA destination read for meaning. Exact embedded file matches maintained task.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-building-2026-10-01.md",
+      "sha256:c3b47758ca7efb317ce62c08f4db055b35c14cd878c2d2ff5677f5dd78298773"
+     ]
+    },
+    "sourceEvidence": {
+     "state": "unknown",
+     "reason": "Primary Google claims checked and fictional example clearly labeled; task-attributed real placement proof remains missing.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-building-2026-10-01.md",
+      "sha256:c3b47758ca7efb317ce62c08f4db055b35c14cd878c2d2ff5677f5dd78298773"
+     ]
+    },
+    "handoffContext": {
+     "state": "pass",
+     "reason": "Produce/Process/Post/Promote relationship, receiving QA and MAA work, exact output log and unresolved owner actions are explicit.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-building-2026-10-01.md",
+      "sha256:c3b47758ca7efb317ce62c08f4db055b35c14cd878c2d2ff5677f5dd78298773"
+     ]
+    },
+    "visualAndLayout": {
+     "state": "unknown",
+     "reason": "Public phone/desktop opening, lower context and expanded phone recipe checked; comprehensive whole-page publishing audit is not certified.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-building-2026-10-01.md",
+      "sha256:c3b47758ca7efb317ce62c08f4db055b35c14cd878c2d2ff5677f5dd78298773"
+     ]
+    },
+    "publicationStandards": {
+     "state": "unknown",
+     "reason": "Exact source and public browser readback passed with preserved URL/date/media; complete metadata, E-E-A-T and owner checklist remains open.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-building-2026-10-01.md",
+      "sha256:c3b47758ca7efb317ce62c08f4db055b35c14cd878c2d2ff5677f5dd78298773"
+     ]
+    },
+    "acceptanceResults": {
+     "state": "unknown",
+     "reason": "No independent accepted placement or novice-human setup receipt is established by this repair.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-building-2026-10-01.md",
+      "sha256:c3b47758ca7efb317ce62c08f4db055b35c14cd878c2d2ff5677f5dd78298773"
+     ]
+    }
+   }
+  }
+ ],
+ "revisionObservations": [
+  {
+   "version": 1,
+   "taskSlug": "create-or-update-a-definitive-article",
+   "canonicalURL": "https://blitzmetrics.com/definitive-article-guide/",
+   "sourceSha256": "5f4a981dd5d5b3ed52ea6eca4179a1ea872da25b6f728e782c4b5a652ab7a6a8",
+   "representation": "wordpress-content-html",
+   "observedAt": "2026-09-20T03:35:45.596606Z",
+   "observer": "Codex WordPress source readback with separate anonymous public QA",
+   "state": "observed",
+   "reason": "Fresh WordPress content matched the reviewed source. Separate ordinary public full-text/media and four first-screen checks passed after cache expiry.",
+   "evidenceRefs": [
+    "sha256:6341f95c45eb081e2ce0afc4e4a8adf96051d28e2389c9a271953c56121929c5",
+    "sha256:14fabe631b4d1bb3596a8e4640ad6d82d28c7a7b634ad9e098e6b31f3e628039"
+   ]
+  },
+  {
+   "version": 1,
+   "taskSlug": "write-meta-article-documenting-agent-work",
+   "canonicalURL": "https://blitzmetrics.com/meta-article-prompt/",
+   "representation": "wordpress-content-html",
+   "sourceSha256": "1952b6ead82a6a9aa0d0f96f0e976b34c957351fe155fe8ddd56b6fc7e767fde",
+   "observedAt": "2026-09-21T02:58:47.228010Z",
+   "observer": "Codex — authenticated WordPress source read after editorial review",
+   "state": "observed",
+   "reason": "A separate fresh source read matched the reviewed raw content bytes. It does not measure rendered layout, metadata or business results.",
+   "evidenceRefs": [
+    "sha256:ba42e8df92faee9dad5f5f8c17eb611d91c43edd4d6d9b5e0e27dde48553dfc0"
+   ]
+  },
+  {
+   "version": 1,
+   "taskSlug": "write-meta-article-documenting-agent-work",
+   "canonicalURL": "https://blitzmetrics.com/meta-article-prompt/",
+   "representation": "wordpress-content-html",
+   "sourceSha256": "39e6e64ed488372c63c72338cc28f005d6c845226842faf49e5c71bb1dde02be",
+   "observedAt": "2026-09-22T04:18:50.835196Z",
+   "observer": "Codex separate fresh WordPress readback after editorial review",
+   "state": "observed",
+   "reason": "Fresh raw content bytes match the reviewed final revision. This observation does not substitute for separate public/rendered checks.",
+   "evidenceRefs": [
+    "sha256:9751842d2553f07ddd05a0e6ccddabf0356739678fb98994642b7b505991a1c2"
+   ]
+  },
+  {
+   "version": 1,
+   "taskSlug": "write-meta-article-documenting-agent-work",
+   "canonicalURL": "https://blitzmetrics.com/meta-article-prompt/",
+   "representation": "wordpress-content-html",
+   "sourceSha256": "b2b4bb23c9641f2d09a0fbb3846b0e2c9a7d2b9ac5e524aa37fe255cd2205242",
+   "observedAt": "2026-09-23T00:12:29.795694Z",
+   "observer": "Codex separate fresh WordPress read after exact-revision editorial review",
+   "state": "observed",
+   "reason": "Separate authenticated GET returned the exact reviewed article bytes. Public rendering and setup/results are separate checks.",
+   "evidenceRefs": [
+    "sha256:6ca1fbd38a0a0b8e166fc59ca09607d267a9074074bddb1276cf21a6d2809cb2"
+   ]
+  },
+  {
+   "version": 1,
+   "taskSlug": "write-meta-article-documenting-agent-work",
+   "canonicalURL": "https://blitzmetrics.com/meta-article-prompt/",
+   "representation": "wordpress-content-html",
+   "sourceSha256": "fcf0a687c6f507222fd7f6302e3011b3ae2bf350ea6fc57a40328bf3e3a383c5",
+   "observedAt": "2026-09-24T00:13:47.323846Z",
+   "observer": "Codex separate fresh source read after exact-revision editorial review",
+   "state": "observed",
+   "reason": "Separate authenticated GET matched the exact reviewed content. Public rendering, real setup and execution results remain separate evidence.",
+   "evidenceRefs": [
+    "sha256:c341c3beb5eafee1005cc998a9990273aa00a1c1134aebe05996b165c52ed06a"
+   ]
+  },
+  {
+   "version": 1,
+   "taskSlug": "write-meta-article-documenting-agent-work",
+   "canonicalURL": "https://blitzmetrics.com/meta-article-prompt/",
+   "representation": "wordpress-content-html",
+   "sourceSha256": "f058250547fc893f952415afcf33cc5957bcb70419502f74dbeb3a8475f9590a",
+   "observedAt": "2026-09-24T19:06:43.487916Z",
+   "observer": "Codex fresh authenticated source read after editorial review",
+   "state": "observed",
+   "reason": "Independent fresh GET matched exact reviewed raw content. Rendering, setup and result acceptance remain separate evidence.",
+   "evidenceRefs": [
+    "sha256:e64bfdce820095488a4c3ce36b09ea0737d03754f09c141e6f297a29378e1226"
+   ]
+  },
+  {
+   "version": 1,
+   "taskSlug": "publish-skill-and-task-page",
+   "canonicalURL": "https://blitzmetrics.com/skill-publishing-standard/",
+   "representation": "wordpress-content-html",
+   "sourceSha256": "7857ea9ce9ff959f8470dab5fd8455c5e406fd82a5edb086936793b584a0cf2b",
+   "observedAt": "2026-09-25T00:13:41.155932Z",
+   "observer": "Codex separate fresh source read after editorial review",
+   "state": "observed",
+   "reason": "Fresh authenticated GET matched exact reviewed content; publication and actual use are separate checks.",
+   "evidenceRefs": [
+    "sha256:dc9de2bf03ea8d5b91d24f0451f43178f955f497909d2607346408fe7b9032fb"
+   ]
+  },
+  {
+   "version": 1,
+   "taskSlug": "publish-skill-and-task-page",
+   "canonicalURL": "https://blitzmetrics.com/skill-publishing-standard/",
+   "representation": "wordpress-content-html",
+   "sourceSha256": "7857ea9ce9ff959f8470dab5fd8455c5e406fd82a5edb086936793b584a0cf2b",
+   "observedAt": "2026-09-26T16:03:57.919823Z",
+   "observer": "Codex fresh source read during September26 link review",
+   "state": "observed",
+   "reason": "Fresh authenticated source still matches the September25 reviewed article bytes; no new article-wide criterion or use claim.",
+   "evidenceRefs": [
+    "sha256:e9802e8fb0eb5e24aeffcece80df8252b84594768145e57d4ef08bbed0ffc270"
+   ]
+  },
+  {
+   "version": 1,
+   "taskSlug": "publish-skill-and-task-page",
+   "canonicalURL": "https://blitzmetrics.com/skill-publishing-standard/",
+   "representation": "wordpress-content-html",
+   "sourceSha256": "3e9f22977b023330140c0866b6db199f0cbd31e086370043dcadfc643e45f319",
+   "observedAt": "2026-09-27T15:49:41.057053Z",
+   "observer": "Codex separate fresh source read after article review",
+   "state": "observed",
+   "reason": "Fresh saved source matches exact reviewed bytes and anonymous public content; missing criteria and actual use remain separate.",
+   "evidenceRefs": [
+    "sha256:2a69843bbf7cfefc0ab1f4ab5a11454cc0e80e58b0baf1e0abc0a609e6e1f45e"
+   ]
+  },
+  {
+   "version": 1,
+   "taskSlug": "follow-entity-linking-decision-tree",
+   "canonicalURL": "https://blitzmetrics.com/entity-linking/",
+   "sourceSha256": "ba7b919b7dd2d4dc1a3513113fdad270d185913416f37af6d40add8628b32947",
+   "representation": "wordpress-content-html",
+   "observedAt": "2026-09-30T01:09:24.483279Z",
+   "observer": "Codex authenticated exact saved-source readback",
+   "state": "observed",
+   "reason": "Exact saved candidate and embedded file verified; ordinary anonymous cached content has not yet caught up.",
+   "evidenceRefs": [
+    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/entity-linking-2026-09-29.md",
+    "sha256:569ff1434c05a1d6836a3f78ff27b59dfae427a27766d34b9cc0fd71bf899dab"
+   ]
+  },
+  {
+   "version": 1,
+   "taskSlug": "follow-entity-linking-decision-tree",
+   "canonicalURL": "https://blitzmetrics.com/entity-linking/",
+   "sourceSha256": "3156a6f4b47fd38a984fd07330ac1369ffa5e173d6c16d56333b8b43539931da",
+   "representation": "wordpress-content-html",
+   "observedAt": "2026-09-30T01:16:37.333349Z",
+   "observer": "Codex exact saved source and ordinary anonymous public check",
+   "state": "observed",
+   "reason": "Final saved content and metadata match; full normal public rendered text and media match; decoded embedded raw skill exact. Code-only formatting follows independent review.",
+   "evidenceRefs": [
+    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/entity-linking-2026-09-29.md",
+    "sha256:8a8f191857e3294de71ceafdb4d5a1c69c25ae6e28a5f3531105e151b9ae931c"
+   ]
+  },
+  {
+   "version": 1,
+   "taskSlug": "build-external-backlinks-from-authoritative-sources",
+   "canonicalURL": "https://blitzmetrics.com/link-building",
+   "sourceSha256": "f99ce0d01b76bfeaf20805df0ea105e9f3f5da0fc2d6addfe7b3e2bb1609a17c",
+   "representation": "wordpress-content-html",
+   "observedAt": "2026-10-01T13:18:20.819549Z",
+   "observer": "Codex independent final source read after review",
+   "state": "observed",
+   "reason": "Fresh saved source matches final independently reviewed candidate, including exact task and maintained-source links. Earlier full browser comparison retained; final anonymous read recorded separately.",
+   "evidenceRefs": [
+    "sha256:e8fbbc7e7a6b7e27a5e86af0eedc07cfb5930d6c7bfde6f48695896b21e1e471"
+   ]
+  }
+ ]
 }
