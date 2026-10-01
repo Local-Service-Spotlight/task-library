@@ -1715,10 +1715,10 @@
  ],
  "executionHistory": {
   "schemaVersion": 1,
-  "asOf": "2026-10-01T14:19:47.066931+00:00",
+  "asOf": "2026-10-01T14:24:34.250902+00:00",
   "countDefinition": "Distinct recorded execution IDs, separate from meta-article URLs. History is partial; absent history is unknown, not zero. The last-30-day count is a documented lower bound, not total task frequency.",
   "recordedExecutions": 16,
-  "completedExecutions": 3,
+  "completedExecutions": 4,
   "partialExecutions": 12,
   "executions": [
    {
@@ -2164,16 +2164,18 @@
      "publish-skill-and-task-page"
     ],
     "startedAt": "2026-10-01T14:06:26.211013+00:00",
-    "status": "running",
-    "result": "Parent and meta saved/public text/media exact; two task openings and seven copied payloads checked. Local153build+89script tests and7archives pass; library release and downloaded artifacts pending.",
+    "status": "completed",
+    "result": "Published and verified one internal-linking parent repair and two task openings. All7existing copies exact;43HTMLdestinations respond; article/meta saved+anonymous text/media and phone/desktop checks pass;153build+89script tests,7local+7downloaded archive checks and4affected ZIPmember comparisons pass. PR53 deployed03edd26c. Written-instruction passes9; full verification0; no client audit or novice setup claimed.",
     "recipeRevisions": {
      "publish-skill-and-task-page": {
       "articleUrl": "https://blitzmetrics.com/skill-publishing-standard/",
       "sourceSha256": "660d6f1abd8678c851c0a08059f27982e8e29b46775ea217a2ae1d6e3ba55537"
      }
     },
+    "finishedAt": "2026-10-01T14:23:43.133403+00:00",
     "evidenceUrls": [
-     "https://blitzmetrics.com/internal-linking/"
+     "https://blitzmetrics.com/internal-linking/",
+     "https://github.com/Local-Service-Spotlight/task-library/pull/53"
     ],
     "privateEvidenceRecorded": true,
     "metaArticle": {
@@ -38246,11 +38248,11 @@
      "executionHistory": {
       "status": "partial",
       "recordedRuns": 8,
-      "completedRuns": 3,
+      "completedRuns": 4,
       "failedRuns": 0,
       "partialRuns": 4,
-      "completedLast30Days": 3,
-      "lastCompletedAt": "2026-10-01T13:19:09.819308+00:00",
+      "completedLast30Days": 4,
+      "lastCompletedAt": "2026-10-01T14:23:43.133403+00:00",
       "executionIds": [
        "crossref-release-20260927-162402",
        "entity-linking-repair-20260930-0105",
@@ -38306,9 +38308,9 @@
        },
        {
         "executionId": "internal-linking-repair-20261001-1405",
-        "status": "running",
+        "status": "completed",
         "startedAt": "2026-10-01T14:06:26.211013+00:00",
-        "finishedAt": null
+        "finishedAt": "2026-10-01T14:23:43.133403+00:00"
        }
       ],
       "acceptanceReviews": [
