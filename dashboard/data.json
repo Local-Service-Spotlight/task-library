@@ -1715,10 +1715,10 @@
  ],
  "executionHistory": {
   "schemaVersion": 1,
-  "asOf": "2026-10-01T13:11:29.960328+00:00",
+  "asOf": "2026-10-01T13:20:22.388072+00:00",
   "countDefinition": "Distinct recorded execution IDs, separate from meta-article URLs. History is partial; absent history is unknown, not zero. The last-30-day count is a documented lower bound, not total task frequency.",
-  "recordedExecutions": 14,
-  "completedExecutions": 2,
+  "recordedExecutions": 15,
+  "completedExecutions": 3,
   "partialExecutions": 12,
   "executions": [
    {
@@ -2131,6 +2131,31 @@
     "metaArticle": {
      "status": "published",
      "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#entity-linking-repair-20260930-0105"
+    }
+   },
+   {
+    "executionId": "link-building-repair-20261001-1307",
+    "taskSlugs": [
+     "publish-skill-and-task-page"
+    ],
+    "startedAt": "2026-10-01T13:07:33.732838+00:00",
+    "status": "completed",
+    "result": "Completed one scoped parent link-building guide and task repair: plain explained SEO Tree opening, consistent destination/privacy rules, exact embedded task, manual start and direct task/source links, measured placement handoff. Source/public phone/desktop and generated ZIP checks passed. Full article certification, accepted backlink results and novice setup remain unverified. Maintenance owns adjacent internal-linking and static-guidelines source/publisher gaps.",
+    "recipeRevisions": {
+     "publish-skill-and-task-page": {
+      "articleUrl": "https://blitzmetrics.com/skill-publishing-standard/",
+      "sourceSha256": "660d6f1abd8678c851c0a08059f27982e8e29b46775ea217a2ae1d6e3ba55537"
+     }
+    },
+    "finishedAt": "2026-10-01T13:19:09.819308+00:00",
+    "evidenceUrls": [
+     "https://github.com/Local-Service-Spotlight/task-library/pull/51",
+     "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-building-2026-10-01.md"
+    ],
+    "privateEvidenceRecorded": true,
+    "metaArticle": {
+     "status": "published",
+     "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#link-building-repair-20261001-1307"
     }
    }
   ]
@@ -22821,7 +22846,112 @@
         "id": "articleSemanticCertification",
         "label": "Article semantic certification",
         "state": "unknown",
-        "reason": "No exact-revision positive semantic review is recorded for this article."
+        "reason": "Current article semantic criteria are unknown: owner, sourceEvidence, visualAndLayout, publicationStandards, acceptanceResults.",
+        "semanticReview": {
+         "version": 1,
+         "taskSlug": "build-external-backlinks-from-authoritative-sources",
+         "canonicalURL": "https://blitzmetrics.com/link-building",
+         "sourceSha256": "f99ce0d01b76bfeaf20805df0ea105e9f3f5da0fc2d6addfe7b3e2bb1609a17c",
+         "representation": "wordpress-content-html",
+         "reviewedAt": "2026-10-01T13:18:20.235921Z",
+         "reviewer": "Codex root with separate Codex source reviewer",
+         "criteria": {
+          "openingContext": {
+           "state": "pass",
+           "reason": "Quoted words explain useful links, reader value and the verified SEO Tree connection; body delivers the promise.",
+           "evidenceRefs": [
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-building-2026-10-01.md",
+            "sha256:c3b47758ca7efb317ce62c08f4db055b35c14cd878c2d2ff5677f5dd78298773"
+           ]
+          },
+          "roleScope": {
+           "state": "pass",
+           "reason": "Parent linking policy explicitly distinguishes internal, outbound and earned links; embedded child recipe matches the mapped external-placement task.",
+           "evidenceRefs": [
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-building-2026-10-01.md",
+            "sha256:c3b47758ca7efb317ce62c08f4db055b35c14cd878c2d2ff5677f5dd78298773"
+           ]
+          },
+          "owner": {
+           "state": "unknown",
+           "reason": "Mapped hub and author do not establish the full maintained upkeep-owner record.",
+           "evidenceRefs": [
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-building-2026-10-01.md",
+            "sha256:c3b47758ca7efb317ce62c08f4db055b35c14cd878c2d2ff5677f5dd78298773"
+           ]
+          },
+          "steps": {
+           "state": "pass",
+           "reason": "Inputs, permission boundary, ordered review and placement steps, exact log, separate states and measured next handoff are explicit.",
+           "evidenceRefs": [
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-building-2026-10-01.md",
+            "sha256:c3b47758ca7efb317ce62c08f4db055b35c14cd878c2d2ff5677f5dd78298773"
+           ]
+          },
+          "links": {
+           "state": "pass",
+           "reason": "All article destinations checked; opening, install and next QA destination read for meaning. Exact embedded file matches maintained task.",
+           "evidenceRefs": [
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-building-2026-10-01.md",
+            "sha256:c3b47758ca7efb317ce62c08f4db055b35c14cd878c2d2ff5677f5dd78298773"
+           ]
+          },
+          "sourceEvidence": {
+           "state": "unknown",
+           "reason": "Primary Google claims checked and fictional example clearly labeled; task-attributed real placement proof remains missing.",
+           "evidenceRefs": [
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-building-2026-10-01.md",
+            "sha256:c3b47758ca7efb317ce62c08f4db055b35c14cd878c2d2ff5677f5dd78298773"
+           ]
+          },
+          "handoffContext": {
+           "state": "pass",
+           "reason": "Produce/Process/Post/Promote relationship, receiving QA and MAA work, exact output log and unresolved owner actions are explicit.",
+           "evidenceRefs": [
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-building-2026-10-01.md",
+            "sha256:c3b47758ca7efb317ce62c08f4db055b35c14cd878c2d2ff5677f5dd78298773"
+           ]
+          },
+          "visualAndLayout": {
+           "state": "unknown",
+           "reason": "Public phone/desktop opening, lower context and expanded phone recipe checked; comprehensive whole-page publishing audit is not certified.",
+           "evidenceRefs": [
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-building-2026-10-01.md",
+            "sha256:c3b47758ca7efb317ce62c08f4db055b35c14cd878c2d2ff5677f5dd78298773"
+           ]
+          },
+          "publicationStandards": {
+           "state": "unknown",
+           "reason": "Exact source and public browser readback passed with preserved URL/date/media; complete metadata, E-E-A-T and owner checklist remains open.",
+           "evidenceRefs": [
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-building-2026-10-01.md",
+            "sha256:c3b47758ca7efb317ce62c08f4db055b35c14cd878c2d2ff5677f5dd78298773"
+           ]
+          },
+          "acceptanceResults": {
+           "state": "unknown",
+           "reason": "No independent accepted placement or novice-human setup receipt is established by this repair.",
+           "evidenceRefs": [
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-building-2026-10-01.md",
+            "sha256:c3b47758ca7efb317ce62c08f4db055b35c14cd878c2d2ff5677f5dd78298773"
+           ]
+          }
+         }
+        },
+        "revisionObservation": {
+         "version": 1,
+         "taskSlug": "build-external-backlinks-from-authoritative-sources",
+         "canonicalURL": "https://blitzmetrics.com/link-building",
+         "sourceSha256": "f99ce0d01b76bfeaf20805df0ea105e9f3f5da0fc2d6addfe7b3e2bb1609a17c",
+         "representation": "wordpress-content-html",
+         "observedAt": "2026-10-01T13:18:20.819549Z",
+         "observer": "Codex independent final source read after review",
+         "state": "observed",
+         "reason": "Fresh saved source matches final independently reviewed candidate, including exact task and maintained-source links. Earlier full browser comparison retained; final anonymous read recorded separately.",
+         "evidenceRefs": [
+          "sha256:e8fbbc7e7a6b7e27a5e86af0eedc07cfb5930d6c7bfde6f48695896b21e1e471"
+         ]
+        }
        },
        "taskExampleEvidence": {
         "id": "taskExampleEvidence",
@@ -37758,15 +37888,16 @@
      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=publish-skill-and-task-page#task-publish-skill-and-task-page",
      "executionHistory": {
       "status": "partial",
-      "recordedRuns": 6,
-      "completedRuns": 2,
+      "recordedRuns": 7,
+      "completedRuns": 3,
       "failedRuns": 0,
       "partialRuns": 4,
-      "completedLast30Days": 2,
-      "lastCompletedAt": "2026-09-30T01:16:37.333349+00:00",
+      "completedLast30Days": 3,
+      "lastCompletedAt": "2026-10-01T13:19:09.819308+00:00",
       "executionIds": [
        "crossref-release-20260927-162402",
        "entity-linking-repair-20260930-0105",
+       "link-building-repair-20261001-1307",
        "lss-editorial-correction-20260927-190846",
        "publisher-completion-20260927-134412",
        "roster-public-boundary-20260927-210848",
@@ -37808,6 +37939,12 @@
         "status": "completed",
         "startedAt": "2026-09-30T01:03:05.034622+00:00",
         "finishedAt": "2026-09-30T01:16:37.333349+00:00"
+       },
+       {
+        "executionId": "link-building-repair-20261001-1307",
+        "status": "completed",
+        "startedAt": "2026-10-01T13:07:33.732838+00:00",
+        "finishedAt": "2026-10-01T13:19:09.819308+00:00"
        }
       ],
       "acceptanceReviews": [
@@ -38056,10 +38193,11 @@
         "id": "recordedExecution",
         "label": "Recorded real execution",
         "state": "pass",
-        "reason": "6 distinct execution ID(s) name this task; outcomes remain separate.",
+        "reason": "7 distinct execution ID(s) name this task; outcomes remain separate.",
         "executionIds": [
          "crossref-release-20260927-162402",
          "entity-linking-repair-20260930-0105",
+         "link-building-repair-20261001-1307",
          "lss-editorial-correction-20260927-190846",
          "publisher-completion-20260927-134412",
          "roster-public-boundary-20260927-210848",

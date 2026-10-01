@@ -27,3 +27,15 @@ The contributor needs-work label remains. Canonical ownership, the complete publ
 Use the generated queue next to inspect the adjacent internal-linking guide for source/embedded-recipe consistency. Rechecks of this repair stay in this same execution.
 
 Article HTML SHA-256: `6fd2e3ee2385e30264624961e2d8951a2b8289f3461f4a785f3b089c33bbc35a`. Raw task SHA-256: `2a4deb7806fe0a08d67b67bec2d751fcbd9c4b4529ddf7116b2b76dc28ca8152`. Independent source review SHA-256: `d42cc120c70741163cb1ac162e6fb4f98d2382020bcfe54d8e962cf676cdacb1`.
+
+## Final release verification
+
+Source PR51 merged as `e22228768706a1c5b26ba374081511f4b82a402b`; deployment36867067571 succeeded. All seven public archives passed. The affected all-guides ZIP member exactly matches generated task content (including the deliberate build-injected Factory layer); raw source matches the public maintained file. Instruction-standard passes are now 7; fully verified tasks remain 0.
+
+After ordinary cache expiry, the anonymous URL contained the full final saved text and media. The final browser text and exact embedded Markdown also match. A last independently reviewed paragraph adds direct links to the permanent task and maintained source. The task link selected one correct dashboard result and its Open guide control displayed the updated recipe. Public phone/desktop context and handoff views and the phone copy control were inspected with no horizontal overflow. The meta section was saved, anonymously matched and inspected on phone and desktop. No media played.
+
+Final article HTML SHA-256: `f99ce0d01b76bfeaf20805df0ea105e9f3f5da0fc2d6addfe7b3e2bb1609a17c`. The exact final independent source review is retained separately from the earlier candidate review. All ten article criteria retain their explicit limits; source evidence, owner, full layout/publication standards and accepted results remain unknown.
+
+The Oct1 private publisher check found new JVA route-specific code, but its domain/route allowlist does not support the LSS guidelines page. The public guidelines bytes are unchanged from Sep29, and both prepared amendments remain absent. No deployment route was bypassed.
+
+This batch ended completed for the scoped publishing repair. The [public meta record](https://blitzmetrics.com/making-task-guides-easier-to-use/#link-building-repair-20261001-1307) preserves the actual changes, checks and limits.
