@@ -1819,10 +1819,40 @@
       "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
     },
     "step-1-inventory-content-and-establish-gct-per-page": {
-      "source_sha256": "ab761bf0b398d67576117ca463d9aeeb5ed4b8bd037770154d144d4bd592621b",
-      "reviewed_at": "2026-09-06",
-      "reviewer": "Codex editorial review",
-      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+      "source_sha256": "fe4d7dc7a7712e4d85a06a7e990f298030f1df4302809267ea6a778fa060c0d9",
+      "reviewed_at": "2026-10-02",
+      "reviewer": "Codex root with separate GPT-6 Luna source review",
+      "scope": "Exact written instructions only; article, setup and accepted results remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/inventory-guide-2026-10-02.md",
+      "standards": {
+        "version": 1,
+        "checks": {
+          "opening": {
+            "state": "pass",
+            "reason": "Exact opening quoted: page list, missing-page value and explained owned internal-linking connection; final body supplies the promised method.",
+            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/inventory-guide-2026-10-02.md"
+          },
+          "recipe": {
+            "state": "pass",
+            "reason": "Trigger, source inputs, count/disposition reconciliation, identity checks, ordered steps and measurable partial/done boundary.",
+            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/inventory-guide-2026-10-02.md"
+          },
+          "links": {
+            "state": "pass",
+            "reason": "Owned parent, GCT, Content Factory and installation bodies read; Step2/3 source inputs read and reciprocal links checked;16 destinations200.",
+            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/inventory-guide-2026-10-02.md"
+          },
+          "evidence": {
+            "state": "pass",
+            "reason": "Dated source revisions, opening quotes, count method and unknown states retained; fictional CSV is not a real result.",
+            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/inventory-guide-2026-10-02.md"
+          },
+          "handoff": {
+            "state": "pass",
+            "reason": "Dated source/reconciliation package, opening reviews and issue owners feed taxonomy and link planning.",
+            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/inventory-guide-2026-10-02.md"
+          }
+        }
+      }
     },
     "step-2-fix-categories-and-tags-in-wordpress": {
       "source_sha256": "e7f3526f6a7f855c8ba965d4e36b21de89a4a62ecfe8ba1dd0dae69f186fc218",

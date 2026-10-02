@@ -46,10 +46,10 @@
     "unknown": 0
    },
    "instructionStandards": {
-    "pass": 9,
+    "pass": 10,
     "unmet": 0,
     "hold": 0,
-    "unknown": 267
+    "unknown": 266
    },
    "contributorComplete": {
     "pass": 126,
@@ -1715,9 +1715,9 @@
  ],
  "executionHistory": {
   "schemaVersion": 1,
-  "asOf": "2026-10-02T14:50:39.030585+00:00",
+  "asOf": "2026-10-02T16:16:51.076720+00:00",
   "countDefinition": "Distinct recorded execution IDs, separate from meta-article URLs. History is partial; absent history is unknown, not zero. The last-30-day count is a documented lower bound, not total task frequency.",
-  "recordedExecutions": 17,
+  "recordedExecutions": 18,
   "completedExecutions": 5,
   "partialExecutions": 12,
   "executions": [
@@ -2207,6 +2207,29 @@
     "metaArticle": {
      "status": "published",
      "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#task-direct-open-20261002-1404"
+    }
+   },
+   {
+    "executionId": "inventory-guide-repair-20261002-1610",
+    "taskSlugs": [
+     "publish-skill-and-task-page"
+    ],
+    "startedAt": "2026-10-02T16:11:44.260298+00:00",
+    "status": "running",
+    "result": "Revised one inventory recipe and its parent copy; source and bounded instruction review complete; final release checks pending. No real inventory or novice setup claimed.",
+    "recipeRevisions": {
+     "publish-skill-and-task-page": {
+      "articleUrl": "https://blitzmetrics.com/skill-publishing-standard/",
+      "sourceSha256": "660d6f1abd8678c851c0a08059f27982e8e29b46775ea217a2ae1d6e3ba55537"
+     }
+    },
+    "evidenceUrls": [
+     "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/inventory-guide-2026-10-02.md"
+    ],
+    "privateEvidenceRecorded": false,
+    "metaArticle": {
+     "status": "published",
+     "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#inventory-guide-repair-20261002-1610"
     }
    }
   ]
@@ -24177,14 +24200,14 @@
      }
     },
     {
-     "title": "Step 1: Inventory content and establish GCT per page",
+     "title": "Step 1: List pages and their purpose",
      "slug": "step-1-inventory-content-and-establish-gct-per-page",
      "status": "complete",
      "stage": "—",
      "article": "https://blitzmetrics.com/internal-linking",
      "articleKind": "task-recipe",
      "desc": "Know what each page is for before you change its links.",
-     "content": "---\nname: step-1-inventory-content-and-establish-gct-per-page\ndescription: \"Know what each page is for before you change its links.\"\ncategory: SEO & Content Architecture\nstage: —\ndefinitive_article: /internal-linking\nstatus: complete\n---\n\n# Step 1: Inventory content and establish GCT per page\n\nKnow what each page is for before you change its links. This guide puts your pages, readers and next steps in one list. Start with the full set of live pages, then check what each one helps someone do.\n\n**The path:** Published URLs + crawl → Page purpose and role → Opening review state → Shared inventory\n\n**Start when:** The six-step internal-linking process is starting or the maintained content inventory is stale.\n\n## Inputs\n\n- Published URL exports from the actual CMS/source, current sitemap, rendered crawl and their dates.\n- [Map actual content roles](https://local-service-spotlight.github.io/task-library/?task=map-content-hierarchically-root-trunk-branches-leaves#task-map-content-hierarchically-root-trunk-branches-leaves) conventions and [Goals, Content, Targeting: the result, source material and people served](https://blitzmetrics.com/gct-business-strategy/) for the result, actual material and people each page serves.\n- The existing working inventory, access scope, link-count definition and current opening review evidence where available.\n\n## Steps\n\n1. Open the maintained inventory and record its prior date and scope before collecting data. Export all published content types in scope, including Posts and Pages where used, and reconcile them with sitemap and crawl. A crawl alone can miss unlinked URLs; list inaccessible or excluded source areas explicitly.\n2. Keep one row per actual canonical content item with URL, source ID/type, title, publish/modified dates, current source revision, categories/tags where supported and page owner if known. Retain aliases and redirects in separate fields so normalization does not erase a real split or routing issue.\n3. Add incoming and outgoing link counts with their extraction source and date. Distinguish rendered-body links from theme navigation and count unique sources consistently. Record missing data as unknown. A category, mapped parent or outgoing link does not prove that another page links into this one.\n4. Read each major page and write its specific [Goals, Content, Targeting: the result, source material and people served](https://blitzmetrics.com/gct-business-strategy/). State the reader’s actual situation and desired action, the real method or proof supplied, and who the page serves. For money pages, use the genuine offer and buying path; for a recipe, identify the task result rather than a generic traffic goal.\n5. Assign the honest content role and map location. Use the current tree legend without inventing a separate homepage/root node. Task recipes, topic hubs, service pages, supporting stories and utility pages have different jobs even if they share keywords; their evidence and readiness states stay distinct.\n6. Retain the exact first two or three sentences and their source revision, then bring forward the [Review the opening and context](https://local-service-spotlight.github.io/task-library/?task=step-7-write-hook-and-establish-context#task-step-7-write-hook-and-establish-context) semantic review. Check grade-five context, why the reader should care, useful outcome and the body’s supporting mechanism. Save quoted reviewer evidence; unchecked pages stay unknown and failures go to the existing owner.\n7. Flag missing purpose, orphan candidates, possible duplicates, weak proof and unresolved roles as separate findings. A missing brief requires investigation, not automatic deletion or consolidation. Save the completed bounded inventory and ownership gaps as the shared input for Steps 2–6, preserving the prior snapshot for comparison.\n\n## Definition of done (QA checklist)\n\nQuality assurance (QA) means checking the actual result against its agreed requirements. Follow the [Article Guidelines](https://localservicespotlight.com/article-guidelines/).\n\n- [ ] Published-source and crawl coverage reconcile, with excluded and inaccessible areas explicitly listed.\n- [ ] Major pages have specific reader purpose, actual content and targeting; unknowns are not filled with generic promises.\n- [ ] Counts, roles, exact opening revisions and quoted review evidence have clear sources and states.\n- [ ] Existing page rows retain the exact opening/revision and `step-7-write-hook-and-establish-context` review for reader/situation, reason to care, useful outcome and supporting mechanism; unchecked pages stay UNKNOWN, and failures route to the existing owner\n- [ ] Save the exact grade-five opening and quoted semantic review from the linked hook task; a reading score alone does not approve the promise.\n- [ ] The exact output, source revision, reviewer evidence and remaining owner action are saved.\n- [ ] For any reader-facing output, the short grade-five opening states the reader’s useful outcome and supporting method or proof. The body delivers that promise; a useful authentic visual appears in the first screen. Retain exact text and quoted reviewer evidence.\n\n## Example(s)\n\n**Fictional teaching example. This is not a client result or proof of a completed run.**\n\nA fictional site’s export contains forty pages, but the crawl finds only thirty-eight. The team adds both missing URLs to the inventory and checks their roles. One is a useful guide with no incoming path; one is an intentional private-form destination outside public scope. The sheet keeps those causes separate and does not invent a passing opening review for either.\n\n## Handoff and Content Factory context\n\n[Review the supported taxonomy](https://local-service-spotlight.github.io/task-library/?task=step-2-fix-categories-and-tags-in-wordpress#task-step-2-fix-categories-and-tags-in-wordpress) receives the source-backed inventory. [Plan relevant links and orphan repairs](https://local-service-spotlight.github.io/task-library/?task=step-3-identify-money-pages-and-orphan-pages#task-step-3-identify-money-pages-and-orphan-pages) receives genuine offers and incoming-link gaps; unresolved opening checks stay with their named owner.\n\nThis task supports the [Content Factory: Produce, Process, Post and Promote](https://blitzmetrics.com/content-factory/). Identity, proof, access or coordination can support several stages. Use the real inputs and receiving owner above; this task does not create unrelated transcripts, clips or ads merely because the diagram has four stages.\n\n## Start with an agent\n\nGive the [AI worker](https://blitzmetrics.com/build-agents/) this recipe, the real inputs, desired result and actions already authorized. Ask for the saved output, sources, checks and next owner. A [skill is a written recipe](https://localservicespotlight.com/plugin/); loading one does not prove account access or perform the task. Use the [installation guide](https://localservicespotlight.com/install/) if reusable setup is needed. A ZIP is a source snapshot, not an access grant or automatic update.\n\nUse the app’s actual supported tools and verified file/account access. Keep a missing human verification step with its real owner. Recurring work needs its own configured job, trigger, timezone and observed result; this guide creates no schedule. Before any media playback, mute the player and set its volume to zero. If silence cannot be verified first, use captions, frames, metadata or another silent check.\n\n## Record the real execution\n\nOpen the run record when work begins. Keep one execution ID, starting recipe revision, real inputs and current state. Write the [meta article, the record of this execution](https://blitzmetrics.com/meta-article-prompt/) with actual steps, results, checks, failures and next owner. Writing is required; public release follows existing authority. Link it to this recipe and the [Task Library](https://local-service-spotlight.github.io/task-library/).\n\nReuse the same execution ID for internal checks, revisions, retries and meta writing. A blocked run stays open with its dependency and owner, without an invented finish time. Dated public examples and distinct verified execution counts remain separate. Propose the smallest source-backed recipe improvement when the actual evidence reveals a defect.\n\n\n<!-- factory-layer:start -->\n\n## Factory chain (do not treat this as isolated)\n\n- **Phase:** —\n- **Importance:** 3/5 `●●●○○` — frequency 3, revenue 3, gating 2 (supporting)\n- **Suggested previous station:** —\n- **Suggested next station:** —\nThese stations are generated neighbors, not verified prerequisites or handoffs. Follow the task’s actual Inputs and Handoff sections.\n- **Handoff:** Save this task’s actual output, source, date and checks where the receiving owner can read them. Follow the Inputs and Handoff sections for its next step.\n\n## Model routing (same factory, any engine)\n\n- **This task's lane:** `any` — Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.\n- **Single-engine path:** Use the capable AI app you already have. Check its required tools and access before starting. Pass the actual result and proof to the next task.\n- **Optional multi-engine:** A tested local model may draft; a stronger model may review facts and voice. Use supported tools for approved actions. Pick models from observed quality and cost; a model name does not prove it can run this task.\n- **Never** store the working state in one vendor's memory. Files in the Content Library are the bridge.\n\n<!-- factory-layer:end -->\n## Definitive article & links\n\n- [Maintained source guide](https://blitzmetrics.com/internal-linking/)\n- [This task in the Task Library](https://local-service-spotlight.github.io/task-library/?task=step-1-inventory-content-and-establish-gct-per-page#task-step-1-inventory-content-and-establish-gct-per-page)\n- [Article Guidelines](https://localservicespotlight.com/article-guidelines/)\n- [Definitive article and task recipe standard](https://blitzmetrics.com/definitive-article-guide/)\n- [How recipes and run records fit together](https://localservicespotlight.com/meta-articles/)\n\n## Review and evidence still needed\n\nThe inherited contributor status is `complete`. It is preserved, not promoted by this rewrite. That label alone does not prove document readiness, account access, an actual execution or a client result.\n\nThe fictional example teaches the method and does not fill a real-run evidence gap. A named semantic reviewer must check the actual opening, full method, sources and handoff. Check the useful opening visual in the normal rendered guide at the current required desktop and mobile sizes, including 1280 × 800 and 390 × 844. Source readability checks do not prove public presentation or task execution.",
+     "content": "---\nname: step-1-inventory-content-and-establish-gct-per-page\ndescription: \"Know what each page is for before you change its links.\"\ncategory: SEO & Content Architecture\nstage: —\ndefinitive_article: /internal-linking\nstatus: complete\n---\n\n# Step 1: List pages and their purpose\n\nMake one list of your live pages before you change their links. This helps you spot missing pages and see who each page helps. Use this list to start the [internal-linking process](https://blitzmetrics.com/internal-linking/), which connects readers to the right next page.\n\n**The path:** List live pages → Check missing URLs → Note each page’s job → Share checked list\n\n[Goals, Content, Targeting (GCT)](https://blitzmetrics.com/gct-business-strategy/) means the result you want, the source material you have, and the people you want to help. Write those three things for each major page.\n\n**Start when:** The six-step internal-linking process is starting or the maintained content inventory is stale.\n\n## Inputs\n\n- Published URL exports from the actual CMS/source, current sitemap, rendered crawl and their dates.\n- [Map actual content roles](https://local-service-spotlight.github.io/task-library/?task=map-content-hierarchically-root-trunk-branches-leaves#task-map-content-hierarchically-root-trunk-branches-leaves) conventions and [Goals, Content, Targeting: the result, source material and people served](https://blitzmetrics.com/gct-business-strategy/) for the result, actual material and people each page serves.\n- The existing working inventory, access scope, link-count definition and current opening review evidence where available.\n\n## Steps\n\n1. Open the maintained inventory and record its prior date and scope before collecting data. Export all published content types in scope, including Posts and Pages where used, and reconcile them with sitemap and crawl. A crawl alone can miss unlinked URLs. Record separate counts by source and content type. Give every difference a row and a reason: a matched page, an alias or redirect, a confirmed exclusion, an access problem, or an unresolved gap. Save evidence for each reason; do not silently drop a URL to make the totals match.\n2. Keep one row per actual canonical content item with URL, source ID/type, title, publish/modified dates, current source revision, categories/tags where supported and page owner if known. Retain aliases and redirects in separate fields so normalization does not erase a real split or routing issue. Check the actual page, source ID, canonical tag and redirect destination before combining records; a matching URL pattern alone is not proof.\n3. Add incoming and outgoing link counts with their extraction source and date. Distinguish rendered-body links from theme navigation and count unique sources consistently. Record missing data as unknown. A category, mapped parent or outgoing link does not prove that another page links into this one.\n4. Read each major page and write its specific [Goals, Content, Targeting: the result, source material and people served](https://blitzmetrics.com/gct-business-strategy/). State the reader’s actual situation and desired action, the real method or proof supplied, and who the page serves. For money pages, use the genuine offer and buying path; for a recipe, identify the task result rather than a generic traffic goal.\n5. Assign the honest content role and map location. Use the current tree legend without inventing a separate homepage/root node. Task recipes, topic hubs, service pages, supporting stories and utility pages have different jobs even if they share keywords; their evidence and readiness states stay distinct.\n6. Retain the exact first two or three sentences and their source revision, then bring forward the [Review the opening and context](https://local-service-spotlight.github.io/task-library/?task=step-7-write-hook-and-establish-context#task-step-7-write-hook-and-establish-context) semantic review. Check grade-five context, why the reader should care, useful outcome and the body’s supporting mechanism. Save quoted reviewer evidence; unchecked pages stay unknown and failures go to the existing owner.\n7. Flag missing purpose, orphan candidates, possible duplicates, weak proof and unresolved roles as separate findings. A missing brief requires investigation, not automatic deletion or consolidation. Save the dated inventory, source exports, crawl date, count reconciliation and evidence links as one handoff package. Keep the prior snapshot. Assign each unresolved gap to an owner or mark the owner unknown. A partial package may support planning, but it is not a completed inventory.\n\n## Definition of done (QA checklist)\n\nQuality assurance (QA) means checking the actual result against its agreed requirements. Follow the [Article Guidelines](https://localservicespotlight.com/article-guidelines/).\n\n- [ ] Source, sitemap and crawl counts are recorded by content type. There are zero unexplained differences: each mismatch has a retained row, disposition and evidence.\n- [ ] No unresolved in-scope URL or required field is hidden by an exclusion or a made-up value. Unresolved items keep the result partial and name the next action and owner.\n- [ ] Major pages have specific reader purpose, actual content and targeting; unknowns are not filled with generic promises.\n- [ ] Counts, roles, exact opening revisions and quoted review evidence have clear sources and states.\n- [ ] Existing page rows retain the exact opening/revision and `step-7-write-hook-and-establish-context` review for reader/situation, reason to care, useful outcome and supporting mechanism; unchecked pages stay UNKNOWN, and failures route to the existing owner\n- [ ] Save the exact grade-five opening and quoted semantic review from the linked hook task; a reading score alone does not approve the promise.\n- [ ] The exact output, source revision, reviewer evidence and remaining owner action are saved.\n- [ ] For any reader-facing output, the short grade-five opening states the reader’s useful outcome and supporting method or proof. The body delivers that promise; a useful authentic visual appears in the first screen. Retain exact text and quoted reviewer evidence.\n\n## Example(s)\n\n**Fictional teaching example. This is not a client result or proof of a completed run.**\n\nA site export lists forty pages, but a crawl finds thirty-eight. Keep both missing URLs in the list. Check whether each is unlinked, blocked, redirected or outside the agreed scope before deciding what to do. This starter table shows how to retain those questions. The example.invalid domain is reserved for examples; do not crawl these fictional addresses.\n\n```csv\nsource_id,url,in_export,in_sitemap,in_crawl,disposition,evidence,next_action,owner\nF001,https://example.invalid/guide-a,yes,yes,yes,match_candidate,not_checked,verify_page_and_source_id,unassigned\nF002,https://example.invalid/guide-b,yes,yes,no,crawl_gap,not_checked,check_access_and_incoming_links,unassigned\nF003,https://example.invalid/old-guide,yes,yes,yes,possible_alias,not_checked,check_redirect_and_target,unassigned\nF004,https://example.invalid/private-form,yes,no,no,scope_question,not_checked,confirm_scope_before_excluding,unassigned\n```\n\nAdd the page purpose, title, dates, source revision, content role, link counts and opening-review fields required above. This is a starter table, not a complete inventory. A missing URL does not prove an orphan page, and none of these sample rows has passed review.\n\n## Handoff and Content Factory context\n\nSend the package with its scope, date, source revisions, count reconciliation, link-count method, exact opening quotes and review states. Include remaining issues, their next actions and owners. [Review the supported taxonomy](https://local-service-spotlight.github.io/task-library/?task=step-2-fix-categories-and-tags-in-wordpress#task-step-2-fix-categories-and-tags-in-wordpress) uses that inventory to check how pages are grouped. [Plan relevant links and orphan repairs](https://local-service-spotlight.github.io/task-library/?task=step-3-identify-money-pages-and-orphan-pages#task-step-3-identify-money-pages-and-orphan-pages) receives genuine offers and incoming-link gaps; unresolved opening checks stay with their named owner.\n\nThis task supports the [Content Factory: Produce, Process, Post and Promote](https://blitzmetrics.com/content-factory/). The list helps plan page work during Process and check links during Post. It uses published pages and their source records; it hands checked page purposes and gaps to taxonomy and link planning. It does not create clips or ads.\n\n## Start with an agent\n\nGive the [AI worker](https://blitzmetrics.com/build-agents/) this recipe, the real inputs, desired result and actions already authorized. Ask for the saved output, sources, checks and next owner. A [skill is a written recipe](https://localservicespotlight.com/plugin/); loading one does not prove account access or perform the task. Use the [installation guide](https://localservicespotlight.com/install/) if reusable setup is needed. A ZIP is a source snapshot, not an access grant or automatic update.\n\nUse the app’s actual supported tools and verified file/account access. Keep a missing human verification step with its real owner. Recurring work needs its own configured job, trigger, timezone and observed result; this guide creates no schedule. Before any media playback, mute the player and set its volume to zero. If silence cannot be verified first, use captions, frames, metadata or another silent check.\n\n## Record the real execution\n\nOpen the run record when work begins. Keep one execution ID, starting recipe revision, real inputs and current state. Write the [meta article, the record of this execution](https://blitzmetrics.com/meta-article-prompt/) with actual steps, results, checks, failures and next owner. Writing is required; public release follows existing authority. Link it to this recipe and the [Task Library](https://local-service-spotlight.github.io/task-library/).\n\nReuse the same execution ID for internal checks, revisions, retries and meta writing. A blocked run stays open with its dependency and owner, without an invented finish time. Dated public examples and distinct verified execution counts remain separate. Propose the smallest source-backed recipe improvement when the actual evidence reveals a defect.\n\n\n<!-- factory-layer:start -->\n\n## Factory chain (do not treat this as isolated)\n\n- **Phase:** —\n- **Importance:** 3/5 `●●●○○` — frequency 3, revenue 3, gating 2 (supporting)\n- **Suggested previous station:** —\n- **Suggested next station:** —\nThese stations are generated neighbors, not verified prerequisites or handoffs. Follow the task’s actual Inputs and Handoff sections.\n- **Handoff:** Save this task’s actual output, source, date and checks where the receiving owner can read them. Follow the Inputs and Handoff sections for its next step.\n\n## Model routing (same factory, any engine)\n\n- **This task's lane:** `any` — Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.\n- **Single-engine path:** Use the capable AI app you already have. Check its required tools and access before starting. Pass the actual result and proof to the next task.\n- **Optional multi-engine:** A tested local model may draft; a stronger model may review facts and voice. Use supported tools for approved actions. Pick models from observed quality and cost; a model name does not prove it can run this task.\n- **Never** store the working state in one vendor's memory. Files in the Content Library are the bridge.\n\n<!-- factory-layer:end -->\n## Definitive article & links\n\n- [Maintained source guide](https://blitzmetrics.com/internal-linking/)\n- [This task in the Task Library](https://local-service-spotlight.github.io/task-library/?task=step-1-inventory-content-and-establish-gct-per-page#task-step-1-inventory-content-and-establish-gct-per-page)\n- [Article Guidelines](https://localservicespotlight.com/article-guidelines/)\n- [Definitive article and task recipe standard](https://blitzmetrics.com/definitive-article-guide/)\n- [How recipes and run records fit together](https://localservicespotlight.com/meta-articles/)\n\n## Review and evidence still needed\n\nThe inherited contributor status is `complete`. It is preserved, not promoted by this rewrite. That label alone does not prove document readiness, account access, an actual execution or a client result.\n\nThe fictional example teaches the method and does not fill a real-run evidence gap. A named semantic reviewer must check the actual opening, full method, sources and handoff. Check the useful opening visual in the normal rendered guide at the current required desktop and mobile sizes, including 1280 × 800 and 390 × 844. Source readability checks do not prove public presentation or task execution.",
      "importance": 3,
      "freq": 3,
      "revenue": 3,
@@ -24196,10 +24219,40 @@
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
      "why": "supporting",
      "instructionReview": {
-      "source_sha256": "ab761bf0b398d67576117ca463d9aeeb5ed4b8bd037770154d144d4bd592621b",
-      "reviewed_at": "2026-09-06",
-      "reviewer": "Codex editorial review",
-      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+      "source_sha256": "fe4d7dc7a7712e4d85a06a7e990f298030f1df4302809267ea6a778fa060c0d9",
+      "reviewed_at": "2026-10-02",
+      "reviewer": "Codex root with separate GPT-6 Luna source review",
+      "scope": "Exact written instructions only; article, setup and accepted results remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/inventory-guide-2026-10-02.md",
+      "standards": {
+       "version": 1,
+       "checks": {
+        "opening": {
+         "state": "pass",
+         "reason": "Exact opening quoted: page list, missing-page value and explained owned internal-linking connection; final body supplies the promised method.",
+         "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/inventory-guide-2026-10-02.md"
+        },
+        "recipe": {
+         "state": "pass",
+         "reason": "Trigger, source inputs, count/disposition reconciliation, identity checks, ordered steps and measurable partial/done boundary.",
+         "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/inventory-guide-2026-10-02.md"
+        },
+        "links": {
+         "state": "pass",
+         "reason": "Owned parent, GCT, Content Factory and installation bodies read; Step2/3 source inputs read and reciprocal links checked;16 destinations200.",
+         "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/inventory-guide-2026-10-02.md"
+        },
+        "evidence": {
+         "state": "pass",
+         "reason": "Dated source revisions, opening quotes, count method and unknown states retained; fictional CSV is not a real result.",
+         "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/inventory-guide-2026-10-02.md"
+        },
+        "handoff": {
+         "state": "pass",
+         "reason": "Dated source/reconciliation package, opening reviews and issue owners feed taxonomy and link planning.",
+         "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/inventory-guide-2026-10-02.md"
+        }
+       }
+      }
      },
      "articleState": "ready",
      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=step-1-inventory-content-and-establish-gct-per-page#task-step-1-inventory-content-and-establish-gct-per-page",
@@ -24217,24 +24270,57 @@
       "setupReviews": []
      },
      "standardVerification": {
-      "instructionSourceSha256": "ab761bf0b398d67576117ca463d9aeeb5ed4b8bd037770154d144d4bd592621b",
+      "instructionSourceSha256": "fe4d7dc7a7712e4d85a06a7e990f298030f1df4302809267ea6a778fa060c0d9",
       "articleKey": "blitzmetrics.com/internal-linking",
       "gates": {
        "instructionRevisionReviewed": {
         "id": "instructionRevisionReviewed",
         "label": "Exact instruction revision reviewed",
         "state": "pass",
-        "reason": "Current source bytes match the review recorded 2026-09-06. Review scope and limits: Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate.",
-        "reviewedAt": "2026-09-06",
-        "reviewer": "Codex editorial review",
-        "sourceSha256": "ab761bf0b398d67576117ca463d9aeeb5ed4b8bd037770154d144d4bd592621b"
+        "reason": "Current source bytes match the review recorded 2026-10-02. Review scope and limits: Exact written instructions only; article, setup and accepted results remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/inventory-guide-2026-10-02.md",
+        "reviewedAt": "2026-10-02",
+        "reviewer": "Codex root with separate GPT-6 Luna source review",
+        "sourceSha256": "fe4d7dc7a7712e4d85a06a7e990f298030f1df4302809267ea6a778fa060c0d9"
        },
        "instructionStandards": {
         "id": "instructionStandards",
         "label": "Instruction requirements checked",
-        "state": "unknown",
-        "reason": "The current exact-byte review has no structured instruction-requirements checklist.",
-        "sourceSha256": "ab761bf0b398d67576117ca463d9aeeb5ed4b8bd037770154d144d4bd592621b"
+        "state": "pass",
+        "reason": "All five instruction requirements have explicit passing checks for the current source revision.",
+        "reviewedAt": "2026-10-02",
+        "reviewer": "Codex root with separate GPT-6 Luna source review",
+        "reviewScope": "Exact written instructions only; article, setup and accepted results remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/inventory-guide-2026-10-02.md",
+        "sourceSha256": "fe4d7dc7a7712e4d85a06a7e990f298030f1df4302809267ea6a778fa060c0d9",
+        "standards": {
+         "version": 1,
+         "checks": {
+          "opening": {
+           "state": "pass",
+           "reason": "Exact opening quoted: page list, missing-page value and explained owned internal-linking connection; final body supplies the promised method.",
+           "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/inventory-guide-2026-10-02.md"
+          },
+          "recipe": {
+           "state": "pass",
+           "reason": "Trigger, source inputs, count/disposition reconciliation, identity checks, ordered steps and measurable partial/done boundary.",
+           "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/inventory-guide-2026-10-02.md"
+          },
+          "links": {
+           "state": "pass",
+           "reason": "Owned parent, GCT, Content Factory and installation bodies read; Step2/3 source inputs read and reciprocal links checked;16 destinations200.",
+           "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/inventory-guide-2026-10-02.md"
+          },
+          "evidence": {
+           "state": "pass",
+           "reason": "Dated source revisions, opening quotes, count method and unknown states retained; fictional CSV is not a real result.",
+           "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/inventory-guide-2026-10-02.md"
+          },
+          "handoff": {
+           "state": "pass",
+           "reason": "Dated source/reconciliation package, opening reviews and issue owners feed taxonomy and link planning.",
+           "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/inventory-guide-2026-10-02.md"
+          }
+         }
+        }
        },
        "contributorComplete": {
         "id": "contributorComplete",
@@ -24259,7 +24345,102 @@
         "id": "articleSemanticCertification",
         "label": "Article semantic certification",
         "state": "unknown",
-        "reason": "No exact-revision positive semantic review is recorded for this article."
+        "reason": "Current article semantic criteria are unknown: owner, sourceEvidence, visualAndLayout, publicationStandards, acceptanceResults.",
+        "semanticReview": {
+         "version": 1,
+         "taskSlug": "step-1-inventory-content-and-establish-gct-per-page",
+         "canonicalURL": "https://blitzmetrics.com/internal-linking",
+         "sourceSha256": "67fe37a85f18751f56072f54aa311dc31db3d29df2e97ec715b3e964187dc77d",
+         "representation": "wordpress-content-html",
+         "reviewedAt": "2026-10-02T16:16:28.987335Z",
+         "reviewer": "Codex root with separate GPT-6 Luna source review",
+         "criteria": {
+          "openingContext": {
+           "state": "pass",
+           "reason": "Exact copied recipe opening quoted and owned parent/GCT bodies read; concrete purpose/value/process relationship.",
+           "evidenceRefs": [
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/inventory-guide-2026-10-02.md"
+           ]
+          },
+          "roleScope": {
+           "state": "pass",
+           "reason": "Inventory is one subtask of the shared internal-linking playbook, not an actual inventory execution.",
+           "evidenceRefs": [
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/inventory-guide-2026-10-02.md"
+           ]
+          },
+          "owner": {
+           "state": "unknown",
+           "reason": "Full canonical upkeep-owner evidence not established.",
+           "evidenceRefs": [
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/inventory-guide-2026-10-02.md"
+           ]
+          },
+          "steps": {
+           "state": "pass",
+           "reason": "The selected copied recipe matches maintained source and states inputs, ordered work and a measurable partial/done boundary.",
+           "evidenceRefs": [
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/inventory-guide-2026-10-02.md"
+           ]
+          },
+          "links": {
+           "state": "pass",
+           "reason": "Sixteen current destinations200; key concept and receiving task meaning reviewed.",
+           "evidenceRefs": [
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/inventory-guide-2026-10-02.md"
+           ]
+          },
+          "sourceEvidence": {
+           "state": "unknown",
+           "reason": "Fictional table teaches structure; real task-attributed result remains missing.",
+           "evidenceRefs": [
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/inventory-guide-2026-10-02.md"
+           ]
+          },
+          "handoffContext": {
+           "state": "pass",
+           "reason": "Package feeds Step2 taxonomy and Step3 link planning; Process/Post support is explained.",
+           "evidenceRefs": [
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/inventory-guide-2026-10-02.md"
+           ]
+          },
+          "visualAndLayout": {
+           "state": "unknown",
+           "reason": "Selected guide/modal views are checked separately; complete parent publication audit remains open.",
+           "evidenceRefs": [
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/inventory-guide-2026-10-02.md"
+           ]
+          },
+          "publicationStandards": {
+           "state": "unknown",
+           "reason": "Scoped copy change and metadata preservation do not certify the full parent.",
+           "evidenceRefs": [
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/inventory-guide-2026-10-02.md"
+           ]
+          },
+          "acceptanceResults": {
+           "state": "unknown",
+           "reason": "No accepted inventory execution, receiving-owner result or novice setup evidence.",
+           "evidenceRefs": [
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/inventory-guide-2026-10-02.md"
+           ]
+          }
+         }
+        },
+        "revisionObservation": {
+         "version": 1,
+         "taskSlug": "step-1-inventory-content-and-establish-gct-per-page",
+         "canonicalURL": "https://blitzmetrics.com/internal-linking",
+         "sourceSha256": "67fe37a85f18751f56072f54aa311dc31db3d29df2e97ec715b3e964187dc77d",
+         "representation": "wordpress-content-html",
+         "observedAt": "2026-10-02T16:16:29.674551Z",
+         "observer": "Codex fresh authenticated source read",
+         "state": "observed",
+         "reason": "Final saved copy matches reviewed candidate.",
+         "evidenceRefs": [
+          "sha256:99ed898cf67dd9093454a86ee91c09321b870e35eda824a158db511cba457b79"
+         ]
+        }
        },
        "taskExampleEvidence": {
         "id": "taskExampleEvidence",
@@ -24293,7 +24474,6 @@
       "unmetStandardGates": [],
       "heldStandardGates": [],
       "unknownStandardGates": [
-       "instructionStandards",
        "articleSemanticCertification",
        "taskExampleEvidence",
        "recordedExecution",
@@ -24304,7 +24484,7 @@
       "queuePosition": 271,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
-      "nextAction": "No exact-revision positive semantic review is recorded for this article."
+      "nextAction": "Current article semantic criteria are unknown: owner, sourceEvidence, visualAndLayout, publicationStandards, acceptanceResults."
      }
     },
     {
@@ -38273,7 +38453,7 @@
      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=publish-skill-and-task-page#task-publish-skill-and-task-page",
      "executionHistory": {
       "status": "partial",
-      "recordedRuns": 9,
+      "recordedRuns": 10,
       "completedRuns": 5,
       "failedRuns": 0,
       "partialRuns": 4,
@@ -38283,6 +38463,7 @@
        "crossref-release-20260927-162402",
        "entity-linking-repair-20260930-0105",
        "internal-linking-repair-20261001-1405",
+       "inventory-guide-repair-20261002-1610",
        "link-building-repair-20261001-1307",
        "lss-editorial-correction-20260927-190846",
        "publisher-completion-20260927-134412",
@@ -38344,6 +38525,12 @@
         "status": "completed",
         "startedAt": "2026-10-02T14:04:50.931255+00:00",
         "finishedAt": "2026-10-02T14:50:37.192050+00:00"
+       },
+       {
+        "executionId": "inventory-guide-repair-20261002-1610",
+        "status": "running",
+        "startedAt": "2026-10-02T16:11:44.260298+00:00",
+        "finishedAt": null
        }
       ],
       "acceptanceReviews": [
@@ -38592,11 +38779,12 @@
         "id": "recordedExecution",
         "label": "Recorded real execution",
         "state": "pass",
-        "reason": "9 distinct execution ID(s) name this task; outcomes remain separate.",
+        "reason": "10 distinct execution ID(s) name this task; outcomes remain separate.",
         "executionIds": [
          "crossref-release-20260927-162402",
          "entity-linking-repair-20260930-0105",
          "internal-linking-repair-20261001-1405",
+         "inventory-guide-repair-20261002-1610",
          "link-building-repair-20261001-1307",
          "lss-editorial-correction-20260927-190846",
          "publisher-completion-20260927-134412",

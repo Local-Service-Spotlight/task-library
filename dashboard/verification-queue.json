@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-02T14:50:39+00:00",
+  "generatedAt": "2026-10-02T16:16:51+00:00",
   "definition": "Per-task standard gates derived from exact instruction reviews, explicit instruction-requirement checks, contributor status, article mapping/catalog holds, exact-revision article semantic reviews, task-attributed examples and the execution ledger. Unknown proof is never turned into a pass.",
   "stats": {
     "tasks": 276,
@@ -17,10 +17,10 @@
         "unknown": 0
       },
       "instructionStandards": {
-        "pass": 9,
+        "pass": 10,
         "unmet": 0,
         "hold": 0,
-        "unknown": 267
+        "unknown": 266
       },
       "contributorComplete": {
         "pass": 126,
@@ -24943,11 +24943,12 @@
             "id": "recordedExecution",
             "label": "Recorded real execution",
             "state": "pass",
-            "reason": "9 distinct execution ID(s) name this task; outcomes remain separate.",
+            "reason": "10 distinct execution ID(s) name this task; outcomes remain separate.",
             "executionIds": [
               "crossref-release-20260927-162402",
               "entity-linking-repair-20260930-0105",
               "internal-linking-repair-20261001-1405",
+              "inventory-guide-repair-20261002-1610",
               "link-building-repair-20261001-1307",
               "lss-editorial-correction-20260927-190846",
               "publisher-completion-20260927-134412",
@@ -29115,32 +29116,65 @@
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "slug": "step-1-inventory-content-and-establish-gct-per-page",
-      "title": "Step 1: Inventory content and establish GCT per page",
+      "title": "Step 1: List pages and their purpose",
       "category": "SEO & Content Architecture",
       "importance": 3,
       "status": "complete",
       "articleUrl": "https://blitzmetrics.com/internal-linking",
       "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=step-1-inventory-content-and-establish-gct-per-page#task-step-1-inventory-content-and-establish-gct-per-page",
-      "nextAction": "No exact-revision positive semantic review is recorded for this article.",
+      "nextAction": "Current article semantic criteria are unknown: owner, sourceEvidence, visualAndLayout, publicationStandards, acceptanceResults.",
       "standardVerification": {
-        "instructionSourceSha256": "ab761bf0b398d67576117ca463d9aeeb5ed4b8bd037770154d144d4bd592621b",
+        "instructionSourceSha256": "fe4d7dc7a7712e4d85a06a7e990f298030f1df4302809267ea6a778fa060c0d9",
         "articleKey": "blitzmetrics.com/internal-linking",
         "gates": {
           "instructionRevisionReviewed": {
             "id": "instructionRevisionReviewed",
             "label": "Exact instruction revision reviewed",
             "state": "pass",
-            "reason": "Current source bytes match the review recorded 2026-09-06. Review scope and limits: Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate.",
-            "reviewedAt": "2026-09-06",
-            "reviewer": "Codex editorial review",
-            "sourceSha256": "ab761bf0b398d67576117ca463d9aeeb5ed4b8bd037770154d144d4bd592621b"
+            "reason": "Current source bytes match the review recorded 2026-10-02. Review scope and limits: Exact written instructions only; article, setup and accepted results remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/inventory-guide-2026-10-02.md",
+            "reviewedAt": "2026-10-02",
+            "reviewer": "Codex root with separate GPT-6 Luna source review",
+            "sourceSha256": "fe4d7dc7a7712e4d85a06a7e990f298030f1df4302809267ea6a778fa060c0d9"
           },
           "instructionStandards": {
             "id": "instructionStandards",
             "label": "Instruction requirements checked",
-            "state": "unknown",
-            "reason": "The current exact-byte review has no structured instruction-requirements checklist.",
-            "sourceSha256": "ab761bf0b398d67576117ca463d9aeeb5ed4b8bd037770154d144d4bd592621b"
+            "state": "pass",
+            "reason": "All five instruction requirements have explicit passing checks for the current source revision.",
+            "reviewedAt": "2026-10-02",
+            "reviewer": "Codex root with separate GPT-6 Luna source review",
+            "reviewScope": "Exact written instructions only; article, setup and accepted results remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/inventory-guide-2026-10-02.md",
+            "sourceSha256": "fe4d7dc7a7712e4d85a06a7e990f298030f1df4302809267ea6a778fa060c0d9",
+            "standards": {
+              "version": 1,
+              "checks": {
+                "opening": {
+                  "state": "pass",
+                  "reason": "Exact opening quoted: page list, missing-page value and explained owned internal-linking connection; final body supplies the promised method.",
+                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/inventory-guide-2026-10-02.md"
+                },
+                "recipe": {
+                  "state": "pass",
+                  "reason": "Trigger, source inputs, count/disposition reconciliation, identity checks, ordered steps and measurable partial/done boundary.",
+                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/inventory-guide-2026-10-02.md"
+                },
+                "links": {
+                  "state": "pass",
+                  "reason": "Owned parent, GCT, Content Factory and installation bodies read; Step2/3 source inputs read and reciprocal links checked;16 destinations200.",
+                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/inventory-guide-2026-10-02.md"
+                },
+                "evidence": {
+                  "state": "pass",
+                  "reason": "Dated source revisions, opening quotes, count method and unknown states retained; fictional CSV is not a real result.",
+                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/inventory-guide-2026-10-02.md"
+                },
+                "handoff": {
+                  "state": "pass",
+                  "reason": "Dated source/reconciliation package, opening reviews and issue owners feed taxonomy and link planning.",
+                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/inventory-guide-2026-10-02.md"
+                }
+              }
+            }
           },
           "contributorComplete": {
             "id": "contributorComplete",
@@ -29165,7 +29199,102 @@
             "id": "articleSemanticCertification",
             "label": "Article semantic certification",
             "state": "unknown",
-            "reason": "No exact-revision positive semantic review is recorded for this article."
+            "reason": "Current article semantic criteria are unknown: owner, sourceEvidence, visualAndLayout, publicationStandards, acceptanceResults.",
+            "semanticReview": {
+              "version": 1,
+              "taskSlug": "step-1-inventory-content-and-establish-gct-per-page",
+              "canonicalURL": "https://blitzmetrics.com/internal-linking",
+              "sourceSha256": "67fe37a85f18751f56072f54aa311dc31db3d29df2e97ec715b3e964187dc77d",
+              "representation": "wordpress-content-html",
+              "reviewedAt": "2026-10-02T16:16:28.987335Z",
+              "reviewer": "Codex root with separate GPT-6 Luna source review",
+              "criteria": {
+                "openingContext": {
+                  "state": "pass",
+                  "reason": "Exact copied recipe opening quoted and owned parent/GCT bodies read; concrete purpose/value/process relationship.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/inventory-guide-2026-10-02.md"
+                  ]
+                },
+                "roleScope": {
+                  "state": "pass",
+                  "reason": "Inventory is one subtask of the shared internal-linking playbook, not an actual inventory execution.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/inventory-guide-2026-10-02.md"
+                  ]
+                },
+                "owner": {
+                  "state": "unknown",
+                  "reason": "Full canonical upkeep-owner evidence not established.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/inventory-guide-2026-10-02.md"
+                  ]
+                },
+                "steps": {
+                  "state": "pass",
+                  "reason": "The selected copied recipe matches maintained source and states inputs, ordered work and a measurable partial/done boundary.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/inventory-guide-2026-10-02.md"
+                  ]
+                },
+                "links": {
+                  "state": "pass",
+                  "reason": "Sixteen current destinations200; key concept and receiving task meaning reviewed.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/inventory-guide-2026-10-02.md"
+                  ]
+                },
+                "sourceEvidence": {
+                  "state": "unknown",
+                  "reason": "Fictional table teaches structure; real task-attributed result remains missing.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/inventory-guide-2026-10-02.md"
+                  ]
+                },
+                "handoffContext": {
+                  "state": "pass",
+                  "reason": "Package feeds Step2 taxonomy and Step3 link planning; Process/Post support is explained.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/inventory-guide-2026-10-02.md"
+                  ]
+                },
+                "visualAndLayout": {
+                  "state": "unknown",
+                  "reason": "Selected guide/modal views are checked separately; complete parent publication audit remains open.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/inventory-guide-2026-10-02.md"
+                  ]
+                },
+                "publicationStandards": {
+                  "state": "unknown",
+                  "reason": "Scoped copy change and metadata preservation do not certify the full parent.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/inventory-guide-2026-10-02.md"
+                  ]
+                },
+                "acceptanceResults": {
+                  "state": "unknown",
+                  "reason": "No accepted inventory execution, receiving-owner result or novice setup evidence.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/inventory-guide-2026-10-02.md"
+                  ]
+                }
+              }
+            },
+            "revisionObservation": {
+              "version": 1,
+              "taskSlug": "step-1-inventory-content-and-establish-gct-per-page",
+              "canonicalURL": "https://blitzmetrics.com/internal-linking",
+              "sourceSha256": "67fe37a85f18751f56072f54aa311dc31db3d29df2e97ec715b3e964187dc77d",
+              "representation": "wordpress-content-html",
+              "observedAt": "2026-10-02T16:16:29.674551Z",
+              "observer": "Codex fresh authenticated source read",
+              "state": "observed",
+              "reason": "Final saved copy matches reviewed candidate.",
+              "evidenceRefs": [
+                "sha256:99ed898cf67dd9093454a86ee91c09321b870e35eda824a158db511cba457b79"
+              ]
+            }
           },
           "taskExampleEvidence": {
             "id": "taskExampleEvidence",
@@ -29199,7 +29328,6 @@
         "unmetStandardGates": [],
         "heldStandardGates": [],
         "unknownStandardGates": [
-          "instructionStandards",
           "articleSemanticCertification",
           "taskExampleEvidence",
           "recordedExecution",
@@ -29210,7 +29338,7 @@
         "queuePosition": 271,
         "priority": "P3",
         "priorityReason": "Missing proof remains",
-        "nextAction": "No exact-revision positive semantic review is recorded for this article."
+        "nextAction": "Current article semantic criteria are unknown: owner, sourceEvidence, visualAndLayout, publicationStandards, acceptanceResults."
       }
     },
     {
