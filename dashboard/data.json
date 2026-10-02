@@ -101,7 +101,7 @@
    }
   }
  },
- "updated": "October 1, 2026",
+ "updated": "October 2, 2026",
  "factory": {
   "phases": [
    {
@@ -1715,9 +1715,9 @@
  ],
  "executionHistory": {
   "schemaVersion": 1,
-  "asOf": "2026-10-01T14:24:34.250902+00:00",
+  "asOf": "2026-10-02T14:14:46.227413+00:00",
   "countDefinition": "Distinct recorded execution IDs, separate from meta-article URLs. History is partial; absent history is unknown, not zero. The last-30-day count is a documented lower bound, not total task frequency.",
-  "recordedExecutions": 16,
+  "recordedExecutions": 17,
   "completedExecutions": 4,
   "partialExecutions": 12,
   "executions": [
@@ -2181,6 +2181,29 @@
     "metaArticle": {
      "status": "published",
      "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#internal-linking-repair-20261001-1405"
+    }
+   },
+   {
+    "executionId": "task-direct-open-20261002-1404",
+    "taskSlugs": [
+     "publish-skill-and-task-page"
+    ],
+    "startedAt": "2026-10-02T14:04:50.931255+00:00",
+    "status": "running",
+    "result": "Repair direct task opening and visible factory marker artifacts in the maintained Task Library app; no recipe or certification promotion.",
+    "recipeRevisions": {
+     "publish-skill-and-task-page": {
+      "articleUrl": "https://blitzmetrics.com/skill-publishing-standard/",
+      "sourceSha256": "660d6f1abd8678c851c0a08059f27982e8e29b46775ea217a2ae1d6e3ba55537"
+     }
+    },
+    "evidenceUrls": [
+     "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/task-direct-open-2026-10-02.md"
+    ],
+    "privateEvidenceRecorded": false,
+    "metaArticle": {
+     "status": "published",
+     "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#task-direct-open-20261002-1404"
     }
    }
   ]
@@ -22871,7 +22894,7 @@
         "id": "articleSemanticCertification",
         "label": "Article semantic certification",
         "state": "unknown",
-        "reason": "Current article semantic criteria are unknown: owner, sourceEvidence, visualAndLayout, publicationStandards, acceptanceResults.",
+        "reason": "The article revision observation is outside the 24-hour freshness window.",
         "semanticReview": {
          "version": 1,
          "taskSlug": "build-external-backlinks-from-authoritative-sources",
@@ -38247,7 +38270,7 @@
      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=publish-skill-and-task-page#task-publish-skill-and-task-page",
      "executionHistory": {
       "status": "partial",
-      "recordedRuns": 8,
+      "recordedRuns": 9,
       "completedRuns": 4,
       "failedRuns": 0,
       "partialRuns": 4,
@@ -38261,6 +38284,7 @@
        "lss-editorial-correction-20260927-190846",
        "publisher-completion-20260927-134412",
        "roster-public-boundary-20260927-210848",
+       "task-direct-open-20261002-1404",
        "tracker-setup-20260925-000216"
       ],
       "executionOutcomes": [
@@ -38311,6 +38335,12 @@
         "status": "completed",
         "startedAt": "2026-10-01T14:06:26.211013+00:00",
         "finishedAt": "2026-10-01T14:23:43.133403+00:00"
+       },
+       {
+        "executionId": "task-direct-open-20261002-1404",
+        "status": "running",
+        "startedAt": "2026-10-02T14:04:50.931255+00:00",
+        "finishedAt": null
        }
       ],
       "acceptanceReviews": [
@@ -38559,7 +38589,7 @@
         "id": "recordedExecution",
         "label": "Recorded real execution",
         "state": "pass",
-        "reason": "8 distinct execution ID(s) name this task; outcomes remain separate.",
+        "reason": "9 distinct execution ID(s) name this task; outcomes remain separate.",
         "executionIds": [
          "crossref-release-20260927-162402",
          "entity-linking-repair-20260930-0105",
@@ -38568,6 +38598,7 @@
          "lss-editorial-correction-20260927-190846",
          "publisher-completion-20260927-134412",
          "roster-public-boundary-20260927-210848",
+         "task-direct-open-20261002-1404",
          "tracker-setup-20260925-000216"
         ],
         "historyStatus": "partial"

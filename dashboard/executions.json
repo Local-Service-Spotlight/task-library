@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "asOf": "2026-10-01T14:24:34.250902+00:00",
+  "asOf": "2026-10-02T14:14:46.227413+00:00",
   "countDefinition": "Distinct recorded execution IDs, separate from meta-article URLs. History is partial; absent history is unknown, not zero. The last-30-day count is a documented lower bound, not total task frequency.",
-  "recordedExecutions": 16,
+  "recordedExecutions": 17,
   "completedExecutions": 4,
   "partialExecutions": 12,
   "executions": [
@@ -466,6 +466,29 @@
       "metaArticle": {
         "status": "published",
         "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#internal-linking-repair-20261001-1405"
+      }
+    },
+    {
+      "executionId": "task-direct-open-20261002-1404",
+      "taskSlugs": [
+        "publish-skill-and-task-page"
+      ],
+      "startedAt": "2026-10-02T14:04:50.931255+00:00",
+      "status": "running",
+      "result": "Repair direct task opening and visible factory marker artifacts in the maintained Task Library app; no recipe or certification promotion.",
+      "recipeRevisions": {
+        "publish-skill-and-task-page": {
+          "articleUrl": "https://blitzmetrics.com/skill-publishing-standard/",
+          "sourceSha256": "660d6f1abd8678c851c0a08059f27982e8e29b46775ea217a2ae1d6e3ba55537"
+        }
+      },
+      "evidenceUrls": [
+        "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/task-direct-open-2026-10-02.md"
+      ],
+      "privateEvidenceRecorded": false,
+      "metaArticle": {
+        "status": "published",
+        "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#task-direct-open-20261002-1404"
       }
     }
   ]

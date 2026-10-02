@@ -71,6 +71,9 @@ function buildList(items, ordered){
     return li;
   }).join('') + '</' + tag + '>';
 }
+function isFactoryMarker(line){
+  return /^\s*<!-- factory-layer:(?:start|end) -->\s*$/.test(line);
+}
 function renderMD(src){
   const out = [];
   const lines = String(src == null ? '' : src).replace(/\r\n?/g, '\n').split('\n');
@@ -102,6 +105,8 @@ function renderMD(src){
       out.push('<pre><code>' + esc(buf.join('\n')) + '</code></pre>');
       continue;
     }
+    /* Build delimiters are source bookkeeping, not reader instructions. */
+    if (isFactoryMarker(L)){ i++; continue; }
     /* heading */
     m = L.match(/^(#{1,6})\s+(.*)$/);
     if (m){
@@ -140,7 +145,7 @@ function renderMD(src){
       while (i < lines.length){
         const mm = lines[i].match(re);
         if (mm){ items.push({ ind: mm[1].length, txt: mm[3] }); i++; }
-        else if (lines[i].trim() && /^\s{2,}/.test(lines[i]) && items.length){ items[items.length - 1].txt += ' ' + lines[i].trim(); i++; }
+        else if (lines[i].trim() && !isFactoryMarker(lines[i]) && /^\s{2,}/.test(lines[i]) && items.length){ items[items.length - 1].txt += ' ' + lines[i].trim(); i++; }
         else break;
       }
       out.push(buildList(items, ordered));
@@ -148,7 +153,7 @@ function renderMD(src){
     }
     /* paragraph */
     const buf = [L]; i++;
-    while (i < lines.length && lines[i].trim() &&
+    while (i < lines.length && lines[i].trim() && !isFactoryMarker(lines[i]) &&
            !/^(#{1,6}\s|\s*```|\s*>|\s*(?:[-*+]|\d+[.)])\s|\s*(?:-{3,}|\*{3,}|_{3,})\s*$)/.test(lines[i]) &&
            !(lines[i].indexOf('|') !== -1 && /^\s*\|?[\s:|-]+\|?\s*$/.test(lines[i + 1] || '') && /-/.test(lines[i + 1] || ''))){
       buf.push(lines[i]); i++;
@@ -461,7 +466,7 @@ function ensureRendered(ci){
 /* ============================================================
    Filtering engine — search (incl. full skill.md text) + chips
    ============================================================ */
-const state = { q: '', status: 'all', open: new Set(), userClosed: new Set(), phase: 'all', minImp: 0, articleKey: '' };
+const state = { q: '', status: 'all', open: new Set(), userClosed: new Set(), phase: 'all', minImp: 0, articleKey: '', taskSlug: '' };
 const qInput = el('#btl-q'), clearBtn = el('#btl-clear'), resline = el('#btl-resline'), emptyBox = el('#btl-empty');
 
 function setOpen(ci, open){
@@ -497,7 +502,7 @@ function applyFilters(){
     let catMatch = 0;
     c.tasks.forEach(function(t){
       total++;
-      const qok = !q || t._hay.indexOf(q) !== -1;
+      const qok = state.taskSlug ? t.slug === state.taskSlug : (!q || t._hay.indexOf(q) !== -1);
       if (qok){
         counts.all++;
         if (t.instructionReview) counts.reviewed = (counts.reviewed || 0) + 1;
@@ -554,22 +559,27 @@ function syncPhases(){
 function gotoSlug(slug){
   const t = Object.prototype.hasOwnProperty.call(bySlug, slug) ? bySlug[slug] : null;
   if (!t){ toast('No skill named ' + slug + ' in this build'); return; }
-  state.articleKey = '';
+  closeModal();
+  state.articleKey = ''; state.taskSlug = slug;
   state.q = slug; qInput.value = slug; clearBtn.hidden = false;
-  state.status = 'all'; syncChips(); applyFilters();
+  state.status = 'all'; state.phase = 'all'; state.minImp = 0;
+  state.userClosed.delete(t._cat._ci);
+  syncChips(); syncPhases(); applyFilters();
   ensureRendered(t._cat._ci);
   const row = el('[data-slug="' + slug + '"]');
   if (row){
-    row.scrollIntoView({behavior:'smooth', block:'center'});
-    row.style.outline = '2px solid #4f8cff';
-    setTimeout(function(){ row.style.outline = ''; }, 1600);
+    row.scrollIntoView({behavior: reduced ? 'auto' : 'smooth', block:'center'});
+    const opener = row.querySelector('[data-view]');
+    if (opener) opener.focus({preventScroll:true});
   }
+  openModal(t);
 }
 function gotoArticle(url){
   const key = normalizeArticleUrl(url);
   const mapped = key && Object.prototype.hasOwnProperty.call(byArticle, key) ? byArticle[key] : null;
   if (!mapped || !mapped.length){ toast('No article hub named ' + url + ' in this build'); return; }
-  state.q = ''; qInput.value = ''; clearBtn.hidden = false;
+  closeModal();
+  state.taskSlug = ''; state.q = ''; qInput.value = ''; clearBtn.hidden = false;
   state.articleKey = key; state.status = 'all'; state.phase = 'all';
   syncChips(); syncPhases(); applyFilters();
   mapped.forEach(function(t){ ensureRendered(t._cat._ci); });
@@ -592,6 +602,7 @@ window.addEventListener('message', function(e){
   if (e.data && typeof e.data.btlArticle === 'string') gotoArticle(e.data.btlArticle);
 });
 function resetFilters(){
+  state.taskSlug = '';
   state.q = ''; qInput.value = ''; clearBtn.hidden = true;
   state.status = 'all'; state.phase = 'all'; state.articleKey = ''; syncChips(); syncPhases(); applyFilters();
 }
@@ -792,7 +803,7 @@ root.addEventListener('click', function(e){
   }
   if (e.target.closest('#btl-reset')){ resetFilters(); return; }
   if (e.target.closest('#btl-clear')){
-    state.q = ''; state.articleKey = ''; qInput.value = ''; clearBtn.hidden = true;
+    state.taskSlug = ''; state.q = ''; state.articleKey = ''; qInput.value = ''; clearBtn.hidden = true;
     applyFilters(); qInput.focus();
     return;
   }
@@ -804,12 +815,14 @@ root.addEventListener('click', function(e){
 });
 
 qInput.addEventListener('input', debounce(function(){
+  state.taskSlug = '';
   state.articleKey = '';
   state.q = qInput.value;
   clearBtn.hidden = !qInput.value;
   applyFilters();
 }, 120));
 qInput.addEventListener('search', function(){
+  state.taskSlug = '';
   state.articleKey = '';
   state.q = qInput.value;
   clearBtn.hidden = !qInput.value;

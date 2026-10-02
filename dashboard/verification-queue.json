@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-01T14:24:34+00:00",
+  "generatedAt": "2026-10-02T14:14:46+00:00",
   "definition": "Per-task standard gates derived from exact instruction reviews, explicit instruction-requirement checks, contributor status, article mapping/catalog holds, exact-revision article semantic reviews, task-attributed examples and the execution ledger. Unknown proof is never turned into a pass.",
   "stats": {
     "tasks": 276,
@@ -11595,7 +11595,7 @@
             "id": "articleSemanticCertification",
             "label": "Article semantic certification",
             "state": "unknown",
-            "reason": "Current article semantic criteria are unknown: owner, sourceEvidence, visualAndLayout, publicationStandards, acceptanceResults.",
+            "reason": "The article revision observation is outside the 24-hour freshness window.",
             "semanticReview": {
               "version": 1,
               "taskSlug": "build-external-backlinks-from-authoritative-sources",
@@ -24943,7 +24943,7 @@
             "id": "recordedExecution",
             "label": "Recorded real execution",
             "state": "pass",
-            "reason": "8 distinct execution ID(s) name this task; outcomes remain separate.",
+            "reason": "9 distinct execution ID(s) name this task; outcomes remain separate.",
             "executionIds": [
               "crossref-release-20260927-162402",
               "entity-linking-repair-20260930-0105",
@@ -24952,6 +24952,7 @@
               "lss-editorial-correction-20260927-190846",
               "publisher-completion-20260927-134412",
               "roster-public-boundary-20260927-210848",
+              "task-direct-open-20261002-1404",
               "tracker-setup-20260925-000216"
             ],
             "historyStatus": "partial"

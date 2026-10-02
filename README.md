@@ -68,8 +68,10 @@ The dashboard itself is `noindex` (it's a utility, not the ranking surface — a
 
 ## Stable links to one task
 
-The dashboard accepts a permanent `?task=<slug>` query and opens the matching task in
-context. For example:
+The dashboard accepts a permanent `?task=<slug>` query and opens that exact guide
+with its first-run controls. Closing the guide returns focus to its task row.
+Typing a new search or choosing an article hub returns to ordinary browsing; an
+unknown task name shows a message without opening a different guide. For example:
 
 ```text
 https://local-service-spotlight.github.io/task-library/?task=positive-mentions-harvester
