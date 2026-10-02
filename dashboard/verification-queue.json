@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-02T14:14:46+00:00",
+  "generatedAt": "2026-10-02T14:50:39+00:00",
   "definition": "Per-task standard gates derived from exact instruction reviews, explicit instruction-requirement checks, contributor status, article mapping/catalog holds, exact-revision article semantic reviews, task-attributed examples and the execution ledger. Unknown proof is never turned into a pass.",
   "stats": {
     "tasks": 276,
@@ -29327,7 +29327,7 @@
       "status": "complete",
       "articleUrl": "https://blitzmetrics.com/internal-linking",
       "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=step-4-create-links-with-proper-anchor-text-and-placement#task-step-4-create-links-with-proper-anchor-text-and-placement",
-      "nextAction": "Current article semantic criteria are unknown: owner, sourceEvidence, visualAndLayout, publicationStandards, acceptanceResults.",
+      "nextAction": "The article revision observation is outside the 24-hour freshness window.",
       "standardVerification": {
         "instructionSourceSha256": "62aa597890ee545455fc3ab325dc0ee2b742f692a276cf18cfeabe0c39df0c27",
         "articleKey": "blitzmetrics.com/internal-linking",
@@ -29404,7 +29404,7 @@
             "id": "articleSemanticCertification",
             "label": "Article semantic certification",
             "state": "unknown",
-            "reason": "Current article semantic criteria are unknown: owner, sourceEvidence, visualAndLayout, publicationStandards, acceptanceResults.",
+            "reason": "The article revision observation is outside the 24-hour freshness window.",
             "semanticReview": {
               "version": 1,
               "taskSlug": "step-4-create-links-with-proper-anchor-text-and-placement",
@@ -29553,7 +29553,7 @@
         "queuePosition": 273,
         "priority": "P3",
         "priorityReason": "Missing proof remains",
-        "nextAction": "Current article semantic criteria are unknown: owner, sourceEvidence, visualAndLayout, publicationStandards, acceptanceResults."
+        "nextAction": "The article revision observation is outside the 24-hour freshness window."
       }
     },
     {
@@ -29567,7 +29567,7 @@
       "status": "complete",
       "articleUrl": "https://blitzmetrics.com/internal-linking",
       "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=step-5-qa-links-against-google-guidelines#task-step-5-qa-links-against-google-guidelines",
-      "nextAction": "Current article semantic criteria are unknown: owner, sourceEvidence, visualAndLayout, publicationStandards, acceptanceResults.",
+      "nextAction": "The article revision observation is outside the 24-hour freshness window.",
       "standardVerification": {
         "instructionSourceSha256": "1bcce8119fd47ee419b2b9fb172e1257a8d06ad06da0a5b075e6d091d86b647f",
         "articleKey": "blitzmetrics.com/internal-linking",
@@ -29644,7 +29644,7 @@
             "id": "articleSemanticCertification",
             "label": "Article semantic certification",
             "state": "unknown",
-            "reason": "Current article semantic criteria are unknown: owner, sourceEvidence, visualAndLayout, publicationStandards, acceptanceResults.",
+            "reason": "The article revision observation is outside the 24-hour freshness window.",
             "semanticReview": {
               "version": 1,
               "taskSlug": "step-5-qa-links-against-google-guidelines",
@@ -29793,7 +29793,7 @@
         "queuePosition": 274,
         "priority": "P3",
         "priorityReason": "Missing proof remains",
-        "nextAction": "Current article semantic criteria are unknown: owner, sourceEvidence, visualAndLayout, publicationStandards, acceptanceResults."
+        "nextAction": "The article revision observation is outside the 24-hour freshness window."
       }
     },
     {
