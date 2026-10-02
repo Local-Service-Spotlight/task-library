@@ -55,6 +55,10 @@ const toast=s=>{message=s},setTimeout=fn=>fn(),reduced=true,normalizeArticleUrl=
         got=self.js(self.fixture()+"\ngotoSlug('place-links');resetFilters();process.stdout.write(JSON.stringify({task:state.taskSlug,query:qInput.value,visible:[a,b].filter(t=>t._vis).map(t=>t.slug)}));")
         self.assertEqual(got,{'task':'','query':'','visible':['place-links','check-links']})
 
+    def test_embedded_reveal_reports_position_only_for_parent_frame(self):
+        got=self.js("const messages=[];const window={self:1,top:2,scrollY:40,parent:{postMessage:(m,o)=>messages.push([m,o])}};"+functions('revealEmbeddedElement')+"revealEmbeddedElement({getBoundingClientRect:()=>({top:80})});window.top=1;revealEmbeddedElement({getBoundingClientRect:()=>({top:9})});process.stdout.write(JSON.stringify(messages));")
+        self.assertEqual(got,[[{'btlRevealY':120},'*']])
+
     def render(self, md):
         helpers="const ESC={'&':'&amp;','<':'&lt;','>':'&gt;','\"':'&quot;',\"'\":'&#39;'};\n"+functions('esc','inline','splitRow','liHtml','buildList','isFactoryMarker','renderMD')
         return self.js(helpers+'\nconst src='+json.dumps(md)+';process.stdout.write(JSON.stringify({html:renderMD(src),src}));')

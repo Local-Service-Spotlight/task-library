@@ -683,6 +683,11 @@ function firstRunHTML(t){
     '. This is a contributor claim; independent guide review is not supplied by that label. Your installation and account access are not checked here. A copied guide is reference material. A schedule is needed only for work you choose to repeat.</p></details></section>';
 }
 
+function revealEmbeddedElement(node){
+  if (window.self === window.top || !node) return;
+  window.parent.postMessage({btlRevealY: Math.max(0, node.getBoundingClientRect().top + window.scrollY)}, '*');
+}
+
 function openModal(t){
   if (!t) return;
   modalTask = t;
@@ -720,7 +725,8 @@ function openModal(t){
   }
   modal.hidden = false;
   mBody.scrollTop = 0;
-  mClose.focus();
+  mClose.focus({preventScroll:true});
+  revealEmbeddedElement(mPanel);
 }
 function closeModal(){
   if (modal.hidden) return;
@@ -730,7 +736,8 @@ function closeModal(){
   if (panel){ panel.style.marginTop = ''; panel.style.maxHeight = ''; }
   modalTask = null;
   document.body.style.overflow = prevOverflow;
-  if (lastFocus && lastFocus.focus) lastFocus.focus();
+  if (lastFocus && lastFocus.focus) lastFocus.focus({preventScroll:true});
+  revealEmbeddedElement(lastFocus);
 }
 function trapFocus(e){
   const items = modal.querySelectorAll('button, a[href], summary, textarea, input, select, [tabindex]:not([tabindex="-1"])');
