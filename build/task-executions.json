@@ -1065,6 +1065,33 @@
         }
       ],
       "finishedAt": "2026-10-02T14:50:37.192050+00:00"
+    },
+    {
+      "executionId": "inventory-guide-repair-20261002-1610",
+      "taskSlugs": [
+        "publish-skill-and-task-page"
+      ],
+      "recipeRevisions": {
+        "publish-skill-and-task-page": {
+          "articleUrl": "https://blitzmetrics.com/skill-publishing-standard/",
+          "sourceSha256": "660d6f1abd8678c851c0a08059f27982e8e29b46775ea217a2ae1d6e3ba55537"
+        }
+      },
+      "startedAt": "2026-10-02T16:11:44.260298+00:00",
+      "recordedAt": "2026-10-02T16:11:44.260298+00:00",
+      "updatedAt": "2026-10-02T16:16:28.987335Z",
+      "status": "running",
+      "result": "Revised one inventory recipe and its parent copy; source and bounded instruction review complete; final release checks pending. No real inventory or novice setup claimed.",
+      "metaArticle": {
+        "status": "published",
+        "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#inventory-guide-repair-20261002-1610"
+      },
+      "evidence": [
+        {
+          "visibility": "public",
+          "url": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/inventory-guide-2026-10-02.md"
+        }
+      ]
     }
   ]
 }

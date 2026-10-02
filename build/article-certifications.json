@@ -1201,6 +1201,87 @@
      ]
     }
    }
+  },
+  {
+   "version": 1,
+   "taskSlug": "step-1-inventory-content-and-establish-gct-per-page",
+   "canonicalURL": "https://blitzmetrics.com/internal-linking",
+   "sourceSha256": "67fe37a85f18751f56072f54aa311dc31db3d29df2e97ec715b3e964187dc77d",
+   "representation": "wordpress-content-html",
+   "reviewedAt": "2026-10-02T16:16:28.987335Z",
+   "reviewer": "Codex root with separate GPT-6 Luna source review",
+   "criteria": {
+    "openingContext": {
+     "state": "pass",
+     "reason": "Exact copied recipe opening quoted and owned parent/GCT bodies read; concrete purpose/value/process relationship.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/inventory-guide-2026-10-02.md"
+     ]
+    },
+    "roleScope": {
+     "state": "pass",
+     "reason": "Inventory is one subtask of the shared internal-linking playbook, not an actual inventory execution.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/inventory-guide-2026-10-02.md"
+     ]
+    },
+    "owner": {
+     "state": "unknown",
+     "reason": "Full canonical upkeep-owner evidence not established.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/inventory-guide-2026-10-02.md"
+     ]
+    },
+    "steps": {
+     "state": "pass",
+     "reason": "The selected copied recipe matches maintained source and states inputs, ordered work and a measurable partial/done boundary.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/inventory-guide-2026-10-02.md"
+     ]
+    },
+    "links": {
+     "state": "pass",
+     "reason": "Sixteen current destinations200; key concept and receiving task meaning reviewed.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/inventory-guide-2026-10-02.md"
+     ]
+    },
+    "sourceEvidence": {
+     "state": "unknown",
+     "reason": "Fictional table teaches structure; real task-attributed result remains missing.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/inventory-guide-2026-10-02.md"
+     ]
+    },
+    "handoffContext": {
+     "state": "pass",
+     "reason": "Package feeds Step2 taxonomy and Step3 link planning; Process/Post support is explained.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/inventory-guide-2026-10-02.md"
+     ]
+    },
+    "visualAndLayout": {
+     "state": "unknown",
+     "reason": "Selected guide/modal views are checked separately; complete parent publication audit remains open.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/inventory-guide-2026-10-02.md"
+     ]
+    },
+    "publicationStandards": {
+     "state": "unknown",
+     "reason": "Scoped copy change and metadata preservation do not certify the full parent.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/inventory-guide-2026-10-02.md"
+     ]
+    },
+    "acceptanceResults": {
+     "state": "unknown",
+     "reason": "No accepted inventory execution, receiving-owner result or novice setup evidence.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/inventory-guide-2026-10-02.md"
+     ]
+    }
+   }
   }
  ],
  "revisionObservations": [
@@ -1401,6 +1482,20 @@
    "reason": "Final saved source matches exact reviewed candidate; public readback remains separately recorded.",
    "evidenceRefs": [
     "sha256:428c5a8343b29f341ec39a426ec7521fee2af6f2bcbc7fcad51204c22d4253f8"
+   ]
+  },
+  {
+   "version": 1,
+   "taskSlug": "step-1-inventory-content-and-establish-gct-per-page",
+   "canonicalURL": "https://blitzmetrics.com/internal-linking",
+   "sourceSha256": "67fe37a85f18751f56072f54aa311dc31db3d29df2e97ec715b3e964187dc77d",
+   "representation": "wordpress-content-html",
+   "observedAt": "2026-10-02T16:16:29.674551Z",
+   "observer": "Codex fresh authenticated source read",
+   "state": "observed",
+   "reason": "Final saved copy matches reviewed candidate.",
+   "evidenceRefs": [
+    "sha256:99ed898cf67dd9093454a86ee91c09321b870e35eda824a158db511cba457b79"
    ]
   }
  ]
