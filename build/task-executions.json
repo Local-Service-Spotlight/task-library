@@ -1043,9 +1043,9 @@
       },
       "startedAt": "2026-10-02T14:04:50.931255+00:00",
       "recordedAt": "2026-10-02T14:04:50.931255+00:00",
-      "updatedAt": "2026-10-02T14:14:31.932497+00:00",
-      "status": "running",
-      "result": "Repair direct task opening and visible factory marker artifacts in the maintained Task Library app; no recipe or certification promotion.",
+      "updatedAt": "2026-10-02T14:50:37.192050+00:00",
+      "status": "completed",
+      "result": "Published and verified exact-task opening, clean guide rendering, corrected canonical setup/download instructions and embedded guide visibility. Public source/script parity, phone/desktop checks, 250 tests and seven archives passed. No novice setup, business-task acceptance or full certification is inferred.",
       "metaArticle": {
         "status": "published",
         "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#task-direct-open-20261002-1404"
@@ -1054,8 +1054,17 @@
         {
           "visibility": "public",
           "url": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/task-direct-open-2026-10-02.md"
+        },
+        {
+          "visibility": "public",
+          "url": "https://blitzmetrics.com/task-library-dashboard/"
+        },
+        {
+          "visibility": "public",
+          "url": "https://github.com/Local-Service-Spotlight/task-library/pull/56"
         }
-      ]
+      ],
+      "finishedAt": "2026-10-02T14:50:37.192050+00:00"
     }
   ]
 }
