@@ -1079,9 +1079,9 @@
       },
       "startedAt": "2026-10-02T16:11:44.260298+00:00",
       "recordedAt": "2026-10-02T16:11:44.260298+00:00",
-      "updatedAt": "2026-10-02T16:16:28.987335Z",
-      "status": "running",
-      "result": "Revised one inventory recipe and its parent copy; source and bounded instruction review complete; final release checks pending. No real inventory or novice setup claimed.",
+      "updatedAt": "2026-10-02T16:25:08.877432+00:00",
+      "status": "completed",
+      "result": "Published and verified one inventory recipe repair: plain linked opening, GCT definition, measured source/crawl reconciliation, fictional CSV starter and receiving-task package. Saved/public copy, phone/desktop checks, 250 tests and seven archives passed. No real inventory, novice setup or full-task certification inferred.",
       "metaArticle": {
         "status": "published",
         "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#inventory-guide-repair-20261002-1610"
@@ -1090,8 +1090,13 @@
         {
           "visibility": "public",
           "url": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/inventory-guide-2026-10-02.md"
+        },
+        {
+          "visibility": "public",
+          "url": "https://github.com/Local-Service-Spotlight/task-library/pull/58"
         }
-      ]
+      ],
+      "finishedAt": "2026-10-02T16:25:08.877432+00:00"
     }
   ]
 }

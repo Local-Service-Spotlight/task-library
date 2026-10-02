@@ -27,3 +27,13 @@ The first preview falsely said the guide needed an example because a broad exist
 All five written-instruction checks pass for these exact recipe bytes: opening, recipe contract, links, evidence handling and handoff. These checks do not certify the full shared article, source upkeep owner, a real inventory result, receiving-owner acceptance or new-user setup. The task remains not fully verified. A fictional table is teaching material, not a task-attributed real example.
 
 The next genuine inventory run must show whether its receiving tasks can use the saved package. For scheduled maintenance, select the next actionable missing gate from the generated queue rather than starting a duplicate registry.
+
+## Release proof
+
+Source PR58 merged as8ad92bc3a6d115af2e6fbc64f9b29a3009f5a7a6; deployment37033060893 succeeded. All161build and89script tests passed after source/projection commit, as did seven local and seven public archives. Both affected ZIP members match the final generated guide exactly and their START-HERE text matches the maintained source. No package dependency or setup source changed. These checks do not prove new-human setup.
+
+The final WordPress parent67fe37a85f18751f56072f54aa311dc31db3d29df2e97ec715b3e964187dc77d matched the ordinary anonymous full text/media/scripts at16:22:26UTC after the earlier cached copy expired. The final run-record sourcef6111865201645e88db43e8a3e6d41d2ad02dbbb2757d38ba266784bd39e0970 matched ordinary anonymous full text/media/scripts at16:24:18UTC. The normal task link opened the right guide; useful four-step tiles and first-run controls fit phone390x844 and desktop1280x800. Public copied-file disclosure wraps within phone width; public run-record opening and diagram were reviewed at both sizes. The meta's appended release paragraph changes no opening or diagram styling.
+
+One browser viewport check initially targeted another tab; measured390px captures and separate desktop evidence replaced that invalid-size capture. A native accessibility button label did not map to a DOMbutton; the actual summary control was inspected and used successfully. These are checker corrections, not extra executions.
+
+The fresh public queue reports276tasks,275current instruction reviews,10written-standard passes,126contributor-complete labels and0fully verified tasks. The completed maintenance execution is a publisher run, not inventory-task acceptance. Step2 taxonomy remains the next coherent written-instruction gate in the generated queue; real-use and article-wide gaps remain open.

@@ -1715,10 +1715,10 @@
  ],
  "executionHistory": {
   "schemaVersion": 1,
-  "asOf": "2026-10-02T16:16:51.076720+00:00",
+  "asOf": "2026-10-02T16:25:48.923510+00:00",
   "countDefinition": "Distinct recorded execution IDs, separate from meta-article URLs. History is partial; absent history is unknown, not zero. The last-30-day count is a documented lower bound, not total task frequency.",
   "recordedExecutions": 18,
-  "completedExecutions": 5,
+  "completedExecutions": 6,
   "partialExecutions": 12,
   "executions": [
    {
@@ -2215,16 +2215,18 @@
      "publish-skill-and-task-page"
     ],
     "startedAt": "2026-10-02T16:11:44.260298+00:00",
-    "status": "running",
-    "result": "Revised one inventory recipe and its parent copy; source and bounded instruction review complete; final release checks pending. No real inventory or novice setup claimed.",
+    "status": "completed",
+    "result": "Published and verified one inventory recipe repair: plain linked opening, GCT definition, measured source/crawl reconciliation, fictional CSV starter and receiving-task package. Saved/public copy, phone/desktop checks, 250 tests and seven archives passed. No real inventory, novice setup or full-task certification inferred.",
     "recipeRevisions": {
      "publish-skill-and-task-page": {
       "articleUrl": "https://blitzmetrics.com/skill-publishing-standard/",
       "sourceSha256": "660d6f1abd8678c851c0a08059f27982e8e29b46775ea217a2ae1d6e3ba55537"
      }
     },
+    "finishedAt": "2026-10-02T16:25:08.877432+00:00",
     "evidenceUrls": [
-     "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/inventory-guide-2026-10-02.md"
+     "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/inventory-guide-2026-10-02.md",
+     "https://github.com/Local-Service-Spotlight/task-library/pull/58"
     ],
     "privateEvidenceRecorded": false,
     "metaArticle": {
@@ -38454,11 +38456,11 @@
      "executionHistory": {
       "status": "partial",
       "recordedRuns": 10,
-      "completedRuns": 5,
+      "completedRuns": 6,
       "failedRuns": 0,
       "partialRuns": 4,
-      "completedLast30Days": 5,
-      "lastCompletedAt": "2026-10-02T14:50:37.192050+00:00",
+      "completedLast30Days": 6,
+      "lastCompletedAt": "2026-10-02T16:25:08.877432+00:00",
       "executionIds": [
        "crossref-release-20260927-162402",
        "entity-linking-repair-20260930-0105",
@@ -38528,9 +38530,9 @@
        },
        {
         "executionId": "inventory-guide-repair-20261002-1610",
-        "status": "running",
+        "status": "completed",
         "startedAt": "2026-10-02T16:11:44.260298+00:00",
-        "finishedAt": null
+        "finishedAt": "2026-10-02T16:25:08.877432+00:00"
        }
       ],
       "acceptanceReviews": [
