@@ -1715,10 +1715,10 @@
  ],
  "executionHistory": {
   "schemaVersion": 1,
-  "asOf": "2026-10-03T16:13:55.038465+00:00",
+  "asOf": "2026-10-03T16:25:06.508532+00:00",
   "countDefinition": "Distinct recorded execution IDs, separate from meta-article URLs. History is partial; absent history is unknown, not zero. The last-30-day count is a documented lower bound, not total task frequency.",
   "recordedExecutions": 19,
-  "completedExecutions": 6,
+  "completedExecutions": 7,
   "partialExecutions": 12,
   "executions": [
    {
@@ -2240,16 +2240,18 @@
      "publish-skill-and-task-page"
     ],
     "startedAt": "2026-10-03T16:06:00.594126+00:00",
-    "status": "running",
-    "result": "Repaired one WordPress grouping recipe and parent copy; bounded written review passes; release checks pending. No real taxonomy job or novice setup claimed.",
+    "status": "completed",
+    "result": "Published and verified one WordPress grouping recipe repair: plain linked opening, full-set preservation, fresh-read conflict handling, route/result checks and receiving-task package. Saved/public copies, phone/desktop views, 250 tests and seven archives passed. No real taxonomy job, novice setup or full-task certification inferred.",
     "recipeRevisions": {
      "publish-skill-and-task-page": {
       "articleUrl": "https://blitzmetrics.com/skill-publishing-standard/",
       "sourceSha256": "660d6f1abd8678c851c0a08059f27982e8e29b46775ea217a2ae1d6e3ba55537"
      }
     },
+    "finishedAt": "2026-10-03T16:24:46.626565+00:00",
     "evidenceUrls": [
-     "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/taxonomy-guide-2026-10-03.md"
+     "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/taxonomy-guide-2026-10-03.md",
+     "https://github.com/Local-Service-Spotlight/task-library/pull/60"
     ],
     "privateEvidenceRecorded": false,
     "metaArticle": {
@@ -24370,7 +24372,7 @@
         "id": "articleSemanticCertification",
         "label": "Article semantic certification",
         "state": "unknown",
-        "reason": "Current article semantic criteria are unknown: owner, sourceEvidence, visualAndLayout, publicationStandards, acceptanceResults.",
+        "reason": "The article revision observation is outside the 24-hour freshness window.",
         "semanticReview": {
          "version": 1,
          "taskSlug": "step-1-inventory-content-and-establish-gct-per-page",
@@ -24509,7 +24511,7 @@
       "queuePosition": 271,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
-      "nextAction": "Current article semantic criteria are unknown: owner, sourceEvidence, visualAndLayout, publicationStandards, acceptanceResults."
+      "nextAction": "The article revision observation is outside the 24-hour freshness window."
      }
     },
     {
@@ -38636,11 +38638,11 @@
      "executionHistory": {
       "status": "partial",
       "recordedRuns": 11,
-      "completedRuns": 6,
+      "completedRuns": 7,
       "failedRuns": 0,
       "partialRuns": 4,
-      "completedLast30Days": 6,
-      "lastCompletedAt": "2026-10-02T16:25:08.877432+00:00",
+      "completedLast30Days": 7,
+      "lastCompletedAt": "2026-10-03T16:24:46.626565+00:00",
       "executionIds": [
        "crossref-release-20260927-162402",
        "entity-linking-repair-20260930-0105",
@@ -38717,9 +38719,9 @@
        },
        {
         "executionId": "taxonomy-guide-repair-20261003-1606",
-        "status": "running",
+        "status": "completed",
         "startedAt": "2026-10-03T16:06:00.594126+00:00",
-        "finishedAt": null
+        "finishedAt": "2026-10-03T16:24:46.626565+00:00"
        }
       ],
       "acceptanceReviews": [

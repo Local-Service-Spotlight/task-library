@@ -29,3 +29,13 @@ The four-step visible path is read page list, plan group changes, save agreed la
 All five exact-revision written checks pass: opening, recipe, links, evidence handling and handoff. This does not certify the complete shared parent article, a source upkeep owner, a real taxonomy result, receiving-owner acceptance or first-user setup. The task remains not fully verified. Existing contributor status and meta counts are separate.
 
 The next real grouping job must test the supported site's behavior and receiving task's acceptance. Use the generated queue to choose the next missing gate; do not create another task registry.
+
+## Public release checks
+
+[Source PR60](https://github.com/Local-Service-Spotlight/task-library/pull/60) merged as `672ccfb7264f2244b65561496ba456879c8a9fe7`; [deployment37136196972](https://github.com/Local-Service-Spotlight/task-library/actions/runs/37136196972) succeeded. The final saved parent matched the anonymous public full text, media and unchanged inline script on October3 at16:16:25UTC. Earlier cached mismatches remain recorded. The copied article file exactly equals the maintained recipe between its copy markers. The public Copy guide control returned the exact generated guide after an initial empty clipboard read; that check is not a novice trial.
+
+The public modal's four-step visual is visible at390×844 and1280×800 without page overflow. Its brief description appears above the visual; the complete source opening sits lower in the modal. The changed article disclosure and dated meta section were inspected at both sizes. Unchanged parent and wrapper styles retain their earlier scoped checks; this does not certify the whole parent.
+
+All161 build and89 script tests passed after committing the source ledgers and dashboard projections. Seven local archive checks passed; the deployment checks all seven public archives. Both affected public ZIP members matched their generated files, and START-HERE.md matched the maintained setup source. The source snapshot grants no access, installs no worker and starts no schedule. No changed package dependencies were found.
+
+The generated public queue reports276 tasks,275 exact instruction reviews,11 five-check written passes,126 contributor-complete labels and0 fully verified tasks. These counts do not add a taxonomy execution or first-use result.

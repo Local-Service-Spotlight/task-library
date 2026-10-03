@@ -1111,9 +1111,9 @@
       },
       "startedAt": "2026-10-03T16:06:00.594126+00:00",
       "recordedAt": "2026-10-03T16:06:00.594126+00:00",
-      "updatedAt": "2026-10-03T16:13:38.625918Z",
-      "status": "running",
-      "result": "Repaired one WordPress grouping recipe and parent copy; bounded written review passes; release checks pending. No real taxonomy job or novice setup claimed.",
+      "updatedAt": "2026-10-03T16:24:46.626565+00:00",
+      "status": "completed",
+      "result": "Published and verified one WordPress grouping recipe repair: plain linked opening, full-set preservation, fresh-read conflict handling, route/result checks and receiving-task package. Saved/public copies, phone/desktop views, 250 tests and seven archives passed. No real taxonomy job, novice setup or full-task certification inferred.",
       "metaArticle": {
         "status": "published",
         "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#taxonomy-guide-repair-20261003-1606"
@@ -1122,8 +1122,13 @@
         {
           "visibility": "public",
           "url": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/taxonomy-guide-2026-10-03.md"
+        },
+        {
+          "visibility": "public",
+          "url": "https://github.com/Local-Service-Spotlight/task-library/pull/60"
         }
-      ]
+      ],
+      "finishedAt": "2026-10-03T16:24:46.626565+00:00"
     }
   ]
 }
