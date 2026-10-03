@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-02T16:25:48+00:00",
+  "generatedAt": "2026-10-03T16:13:55+00:00",
   "definition": "Per-task standard gates derived from exact instruction reviews, explicit instruction-requirement checks, contributor status, article mapping/catalog holds, exact-revision article semantic reviews, task-attributed examples and the execution ledger. Unknown proof is never turned into a pass.",
   "stats": {
     "tasks": 276,
@@ -17,10 +17,10 @@
         "unknown": 0
       },
       "instructionStandards": {
-        "pass": 10,
+        "pass": 11,
         "unmet": 0,
         "hold": 0,
-        "unknown": 266
+        "unknown": 265
       },
       "contributorComplete": {
         "pass": 126,
@@ -24943,7 +24943,7 @@
             "id": "recordedExecution",
             "label": "Recorded real execution",
             "state": "pass",
-            "reason": "10 distinct execution ID(s) name this task; outcomes remain separate.",
+            "reason": "11 distinct execution ID(s) name this task; outcomes remain separate.",
             "executionIds": [
               "crossref-release-20260927-162402",
               "entity-linking-repair-20260930-0105",
@@ -24954,6 +24954,7 @@
               "publisher-completion-20260927-134412",
               "roster-public-boundary-20260927-210848",
               "task-direct-open-20261002-1404",
+              "taxonomy-guide-repair-20261003-1606",
               "tracker-setup-20260925-000216"
             ],
             "historyStatus": "partial"
@@ -25785,26 +25786,59 @@
       "status": "complete",
       "articleUrl": "https://blitzmetrics.com/internal-linking",
       "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=step-2-fix-categories-and-tags-in-wordpress#task-step-2-fix-categories-and-tags-in-wordpress",
-      "nextAction": "No exact-revision positive semantic review is recorded for this article.",
+      "nextAction": "Current article semantic criteria are unknown: owner, sourceEvidence, visualAndLayout, publicationStandards, acceptanceResults.",
       "standardVerification": {
-        "instructionSourceSha256": "e7f3526f6a7f855c8ba965d4e36b21de89a4a62ecfe8ba1dd0dae69f186fc218",
+        "instructionSourceSha256": "0796d4e6d90a840b8c861d5f36a72e4ed53d4973e8bc3364cbd25689d8513071",
         "articleKey": "blitzmetrics.com/internal-linking",
         "gates": {
           "instructionRevisionReviewed": {
             "id": "instructionRevisionReviewed",
             "label": "Exact instruction revision reviewed",
             "state": "pass",
-            "reason": "Current source bytes match the review recorded 2026-09-06. Review scope and limits: Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate.",
-            "reviewedAt": "2026-09-06",
-            "reviewer": "Codex editorial review",
-            "sourceSha256": "e7f3526f6a7f855c8ba965d4e36b21de89a4a62ecfe8ba1dd0dae69f186fc218"
+            "reason": "Current source bytes match the review recorded 2026-10-03. Review scope and limits: Exact written instructions only; article, setup and accepted results remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/taxonomy-guide-2026-10-03.md",
+            "reviewedAt": "2026-10-03",
+            "reviewer": "Codex root with separate GPT-6 Luna source review",
+            "sourceSha256": "0796d4e6d90a840b8c861d5f36a72e4ed53d4973e8bc3364cbd25689d8513071"
           },
           "instructionStandards": {
             "id": "instructionStandards",
             "label": "Instruction requirements checked",
-            "state": "unknown",
-            "reason": "The current exact-byte review has no structured instruction-requirements checklist.",
-            "sourceSha256": "e7f3526f6a7f855c8ba965d4e36b21de89a4a62ecfe8ba1dd0dae69f186fc218"
+            "state": "pass",
+            "reason": "All five instruction requirements have explicit passing checks for the current source revision.",
+            "reviewedAt": "2026-10-03",
+            "reviewer": "Codex root with separate GPT-6 Luna source review",
+            "reviewScope": "Exact written instructions only; article, setup and accepted results remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/taxonomy-guide-2026-10-03.md",
+            "sourceSha256": "0796d4e6d90a840b8c861d5f36a72e4ed53d4973e8bc3364cbd25689d8513071",
+            "standards": {
+              "version": 1,
+              "checks": {
+                "opening": {
+                  "state": "pass",
+                  "reason": "Quoted action, reader value and explained owned page-inventory connection; body delivers the grouping promise.",
+                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/taxonomy-guide-2026-10-03.md"
+                },
+                "recipe": {
+                  "state": "pass",
+                  "reason": "Inputs, full-set mapping, fresh-read conflict stop, supported POST arrays, complete readback, route checks and partial/done boundary.",
+                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/taxonomy-guide-2026-10-03.md"
+                },
+                "links": {
+                  "state": "pass",
+                  "reason": "Seventeen destinations200; owned process/setup meaning and adjacent maintained task inputs checked; primary WordPress implementation supports replacement behavior.",
+                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/taxonomy-guide-2026-10-03.md"
+                },
+                "evidence": {
+                  "state": "pass",
+                  "reason": "Fictional IDs clearly marked; exact source, actual sent values, readback, coverage and unknowns required without claiming a live result.",
+                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/taxonomy-guide-2026-10-03.md"
+                },
+                "handoff": {
+                  "state": "pass",
+                  "reason": "Step3 receives inventory incoming-path counts, scope/date/method, accepted mapping, readbacks, routes and retrieval coverage; exceptions retain owner.",
+                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/taxonomy-guide-2026-10-03.md"
+                }
+              }
+            }
           },
           "contributorComplete": {
             "id": "contributorComplete",
@@ -25829,7 +25863,102 @@
             "id": "articleSemanticCertification",
             "label": "Article semantic certification",
             "state": "unknown",
-            "reason": "No exact-revision positive semantic review is recorded for this article."
+            "reason": "Current article semantic criteria are unknown: owner, sourceEvidence, visualAndLayout, publicationStandards, acceptanceResults.",
+            "semanticReview": {
+              "version": 1,
+              "taskSlug": "step-2-fix-categories-and-tags-in-wordpress",
+              "canonicalURL": "https://blitzmetrics.com/internal-linking",
+              "sourceSha256": "eb9206eb25624765e91827bd926d8c17541896da3bf1d6ef5c684794d16d9718",
+              "representation": "wordpress-content-html",
+              "reviewedAt": "2026-10-03T16:13:38.625918Z",
+              "reviewer": "Codex root with separate GPT-6 Luna source review",
+              "criteria": {
+                "openingContext": {
+                  "state": "pass",
+                  "reason": "Exact recipe opening quoted; linked inventory meaning and input relationship checked.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/taxonomy-guide-2026-10-03.md"
+                  ]
+                },
+                "roleScope": {
+                  "state": "pass",
+                  "reason": "WordPress grouping is a bounded prerequisite to link planning; this review is not a taxonomy execution.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/taxonomy-guide-2026-10-03.md"
+                  ]
+                },
+                "owner": {
+                  "state": "unknown",
+                  "reason": "Full canonical upkeep-owner evidence remains missing.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/taxonomy-guide-2026-10-03.md"
+                  ]
+                },
+                "steps": {
+                  "state": "pass",
+                  "reason": "Exact copied recipe gives full-set mapping, source checks, scoped save, result comparisons and partial boundary.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/taxonomy-guide-2026-10-03.md"
+                  ]
+                },
+                "links": {
+                  "state": "pass",
+                  "reason": "Seventeen destinations200; key owned and primary technical destination meaning read.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/taxonomy-guide-2026-10-03.md"
+                  ]
+                },
+                "sourceEvidence": {
+                  "state": "unknown",
+                  "reason": "Fictional example is not a real task result.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/taxonomy-guide-2026-10-03.md"
+                  ]
+                },
+                "handoffContext": {
+                  "state": "pass",
+                  "reason": "Actual inventory coverage and accepted taxonomy package feed Step3; Process/Post support explained.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/taxonomy-guide-2026-10-03.md"
+                  ]
+                },
+                "visualAndLayout": {
+                  "state": "unknown",
+                  "reason": "Selected guide is checked separately; complete parent publication audit remains open.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/taxonomy-guide-2026-10-03.md"
+                  ]
+                },
+                "publicationStandards": {
+                  "state": "unknown",
+                  "reason": "Scoped copy and preserved metadata do not certify the full parent.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/taxonomy-guide-2026-10-03.md"
+                  ]
+                },
+                "acceptanceResults": {
+                  "state": "unknown",
+                  "reason": "No accepted taxonomy execution, receiving-owner acceptance or novice setup evidence.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/taxonomy-guide-2026-10-03.md"
+                  ]
+                }
+              }
+            },
+            "revisionObservation": {
+              "version": 1,
+              "taskSlug": "step-2-fix-categories-and-tags-in-wordpress",
+              "canonicalURL": "https://blitzmetrics.com/internal-linking",
+              "sourceSha256": "eb9206eb25624765e91827bd926d8c17541896da3bf1d6ef5c684794d16d9718",
+              "representation": "wordpress-content-html",
+              "observedAt": "2026-10-03T16:13:39.239877Z",
+              "observer": "Codex fresh authenticated source read",
+              "state": "observed",
+              "reason": "Saved copy matches exact reviewed candidate.",
+              "evidenceRefs": [
+                "sha256:345de06c53864b5635490cc9f8bf51cb1223f72c5cb59ccf907bb80723d95ead"
+              ]
+            }
           },
           "taskExampleEvidence": {
             "id": "taskExampleEvidence",
@@ -25863,7 +25992,6 @@
         "unmetStandardGates": [],
         "heldStandardGates": [],
         "unknownStandardGates": [
-          "instructionStandards",
           "articleSemanticCertification",
           "taskExampleEvidence",
           "recordedExecution",
@@ -25874,7 +26002,7 @@
         "queuePosition": 241,
         "priority": "P2",
         "priorityReason": "Importance 5; missing proof remains",
-        "nextAction": "No exact-revision positive semantic review is recorded for this article."
+        "nextAction": "Current article semantic criteria are unknown: owner, sourceEvidence, visualAndLayout, publicationStandards, acceptanceResults."
       }
     },
     {

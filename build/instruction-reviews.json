@@ -1855,10 +1855,40 @@
       }
     },
     "step-2-fix-categories-and-tags-in-wordpress": {
-      "source_sha256": "e7f3526f6a7f855c8ba965d4e36b21de89a4a62ecfe8ba1dd0dae69f186fc218",
-      "reviewed_at": "2026-09-06",
-      "reviewer": "Codex editorial review",
-      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+      "source_sha256": "0796d4e6d90a840b8c861d5f36a72e4ed53d4973e8bc3364cbd25689d8513071",
+      "reviewed_at": "2026-10-03",
+      "reviewer": "Codex root with separate GPT-6 Luna source review",
+      "scope": "Exact written instructions only; article, setup and accepted results remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/taxonomy-guide-2026-10-03.md",
+      "standards": {
+        "version": 1,
+        "checks": {
+          "opening": {
+            "state": "pass",
+            "reason": "Quoted action, reader value and explained owned page-inventory connection; body delivers the grouping promise.",
+            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/taxonomy-guide-2026-10-03.md"
+          },
+          "recipe": {
+            "state": "pass",
+            "reason": "Inputs, full-set mapping, fresh-read conflict stop, supported POST arrays, complete readback, route checks and partial/done boundary.",
+            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/taxonomy-guide-2026-10-03.md"
+          },
+          "links": {
+            "state": "pass",
+            "reason": "Seventeen destinations200; owned process/setup meaning and adjacent maintained task inputs checked; primary WordPress implementation supports replacement behavior.",
+            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/taxonomy-guide-2026-10-03.md"
+          },
+          "evidence": {
+            "state": "pass",
+            "reason": "Fictional IDs clearly marked; exact source, actual sent values, readback, coverage and unknowns required without claiming a live result.",
+            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/taxonomy-guide-2026-10-03.md"
+          },
+          "handoff": {
+            "state": "pass",
+            "reason": "Step3 receives inventory incoming-path counts, scope/date/method, accepted mapping, readbacks, routes and retrieval coverage; exceptions retain owner.",
+            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/taxonomy-guide-2026-10-03.md"
+          }
+        }
+      }
     },
     "step-3-identify-money-pages-and-orphan-pages": {
       "source_sha256": "9d584ede936922972c674018bbd5903a98884548ddf2287a2b482609b6e4de78",

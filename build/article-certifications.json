@@ -1282,6 +1282,87 @@
      ]
     }
    }
+  },
+  {
+   "version": 1,
+   "taskSlug": "step-2-fix-categories-and-tags-in-wordpress",
+   "canonicalURL": "https://blitzmetrics.com/internal-linking",
+   "sourceSha256": "eb9206eb25624765e91827bd926d8c17541896da3bf1d6ef5c684794d16d9718",
+   "representation": "wordpress-content-html",
+   "reviewedAt": "2026-10-03T16:13:38.625918Z",
+   "reviewer": "Codex root with separate GPT-6 Luna source review",
+   "criteria": {
+    "openingContext": {
+     "state": "pass",
+     "reason": "Exact recipe opening quoted; linked inventory meaning and input relationship checked.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/taxonomy-guide-2026-10-03.md"
+     ]
+    },
+    "roleScope": {
+     "state": "pass",
+     "reason": "WordPress grouping is a bounded prerequisite to link planning; this review is not a taxonomy execution.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/taxonomy-guide-2026-10-03.md"
+     ]
+    },
+    "owner": {
+     "state": "unknown",
+     "reason": "Full canonical upkeep-owner evidence remains missing.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/taxonomy-guide-2026-10-03.md"
+     ]
+    },
+    "steps": {
+     "state": "pass",
+     "reason": "Exact copied recipe gives full-set mapping, source checks, scoped save, result comparisons and partial boundary.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/taxonomy-guide-2026-10-03.md"
+     ]
+    },
+    "links": {
+     "state": "pass",
+     "reason": "Seventeen destinations200; key owned and primary technical destination meaning read.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/taxonomy-guide-2026-10-03.md"
+     ]
+    },
+    "sourceEvidence": {
+     "state": "unknown",
+     "reason": "Fictional example is not a real task result.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/taxonomy-guide-2026-10-03.md"
+     ]
+    },
+    "handoffContext": {
+     "state": "pass",
+     "reason": "Actual inventory coverage and accepted taxonomy package feed Step3; Process/Post support explained.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/taxonomy-guide-2026-10-03.md"
+     ]
+    },
+    "visualAndLayout": {
+     "state": "unknown",
+     "reason": "Selected guide is checked separately; complete parent publication audit remains open.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/taxonomy-guide-2026-10-03.md"
+     ]
+    },
+    "publicationStandards": {
+     "state": "unknown",
+     "reason": "Scoped copy and preserved metadata do not certify the full parent.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/taxonomy-guide-2026-10-03.md"
+     ]
+    },
+    "acceptanceResults": {
+     "state": "unknown",
+     "reason": "No accepted taxonomy execution, receiving-owner acceptance or novice setup evidence.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/taxonomy-guide-2026-10-03.md"
+     ]
+    }
+   }
   }
  ],
  "revisionObservations": [
@@ -1496,6 +1577,20 @@
    "reason": "Final saved copy matches reviewed candidate.",
    "evidenceRefs": [
     "sha256:99ed898cf67dd9093454a86ee91c09321b870e35eda824a158db511cba457b79"
+   ]
+  },
+  {
+   "version": 1,
+   "taskSlug": "step-2-fix-categories-and-tags-in-wordpress",
+   "canonicalURL": "https://blitzmetrics.com/internal-linking",
+   "sourceSha256": "eb9206eb25624765e91827bd926d8c17541896da3bf1d6ef5c684794d16d9718",
+   "representation": "wordpress-content-html",
+   "observedAt": "2026-10-03T16:13:39.239877Z",
+   "observer": "Codex fresh authenticated source read",
+   "state": "observed",
+   "reason": "Saved copy matches exact reviewed candidate.",
+   "evidenceRefs": [
+    "sha256:345de06c53864b5635490cc9f8bf51cb1223f72c5cb59ccf907bb80723d95ead"
    ]
   }
  ]
