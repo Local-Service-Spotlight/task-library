@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T16:13:55+00:00",
+  "generatedAt": "2026-10-03T16:25:06+00:00",
   "definition": "Per-task standard gates derived from exact instruction reviews, explicit instruction-requirement checks, contributor status, article mapping/catalog holds, exact-revision article semantic reviews, task-attributed examples and the execution ledger. Unknown proof is never turned into a pass.",
   "stats": {
     "tasks": 276,
@@ -29250,7 +29250,7 @@
       "status": "complete",
       "articleUrl": "https://blitzmetrics.com/internal-linking",
       "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=step-1-inventory-content-and-establish-gct-per-page#task-step-1-inventory-content-and-establish-gct-per-page",
-      "nextAction": "Current article semantic criteria are unknown: owner, sourceEvidence, visualAndLayout, publicationStandards, acceptanceResults.",
+      "nextAction": "The article revision observation is outside the 24-hour freshness window.",
       "standardVerification": {
         "instructionSourceSha256": "fe4d7dc7a7712e4d85a06a7e990f298030f1df4302809267ea6a778fa060c0d9",
         "articleKey": "blitzmetrics.com/internal-linking",
@@ -29327,7 +29327,7 @@
             "id": "articleSemanticCertification",
             "label": "Article semantic certification",
             "state": "unknown",
-            "reason": "Current article semantic criteria are unknown: owner, sourceEvidence, visualAndLayout, publicationStandards, acceptanceResults.",
+            "reason": "The article revision observation is outside the 24-hour freshness window.",
             "semanticReview": {
               "version": 1,
               "taskSlug": "step-1-inventory-content-and-establish-gct-per-page",
@@ -29466,7 +29466,7 @@
         "queuePosition": 271,
         "priority": "P3",
         "priorityReason": "Missing proof remains",
-        "nextAction": "Current article semantic criteria are unknown: owner, sourceEvidence, visualAndLayout, publicationStandards, acceptanceResults."
+        "nextAction": "The article revision observation is outside the 24-hour freshness window."
       }
     },
     {
