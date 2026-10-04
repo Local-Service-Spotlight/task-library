@@ -1143,9 +1143,9 @@
       },
       "startedAt": "2026-10-04T16:05:24.941122+00:00",
       "recordedAt": "2026-10-04T16:05:24.941122+00:00",
-      "updatedAt": "2026-10-04T16:08:57.116457Z",
-      "status": "running",
-      "result": "Repaired one link-planning recipe and parent copy; written review passes; final public release checks pending. No client link plan, novice setup or full task certification inferred.",
+      "updatedAt": "2026-10-04T16:16:47.277363+00:00",
+      "status": "completed",
+      "result": "Published and verified one link-planning recipe repair: plain linked opening, scoped orphan evidence, reachable sources, exact reviewed edit rows and receiving-task package. Saved/public copies, phone/desktop views, 250 tests and seven archives passed. No real link-planning job, novice setup or full-task certification inferred.",
       "metaArticle": {
         "status": "published",
         "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#link-plan-guide-repair-20261004-1605"
@@ -1154,8 +1154,13 @@
         {
           "visibility": "public",
           "url": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-plan-guide-2026-10-04.md"
+        },
+        {
+          "visibility": "public",
+          "url": "https://github.com/Local-Service-Spotlight/task-library/pull/62"
         }
-      ]
+      ],
+      "finishedAt": "2026-10-04T16:16:47.277363+00:00"
     }
   ]
 }
