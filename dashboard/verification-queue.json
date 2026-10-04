@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T16:25:06+00:00",
+  "generatedAt": "2026-10-04T16:09:17+00:00",
   "definition": "Per-task standard gates derived from exact instruction reviews, explicit instruction-requirement checks, contributor status, article mapping/catalog holds, exact-revision article semantic reviews, task-attributed examples and the execution ledger. Unknown proof is never turned into a pass.",
   "stats": {
     "tasks": 276,
@@ -17,10 +17,10 @@
         "unknown": 0
       },
       "instructionStandards": {
-        "pass": 11,
+        "pass": 12,
         "unmet": 0,
         "hold": 0,
-        "unknown": 265
+        "unknown": 264
       },
       "contributorComplete": {
         "pass": 126,
@@ -24943,13 +24943,14 @@
             "id": "recordedExecution",
             "label": "Recorded real execution",
             "state": "pass",
-            "reason": "11 distinct execution ID(s) name this task; outcomes remain separate.",
+            "reason": "12 distinct execution ID(s) name this task; outcomes remain separate.",
             "executionIds": [
               "crossref-release-20260927-162402",
               "entity-linking-repair-20260930-0105",
               "internal-linking-repair-20261001-1405",
               "inventory-guide-repair-20261002-1610",
               "link-building-repair-20261001-1307",
+              "link-plan-guide-repair-20261004-1605",
               "lss-editorial-correction-20260927-190846",
               "publisher-completion-20260927-134412",
               "roster-public-boundary-20260927-210848",
@@ -29480,26 +29481,59 @@
       "status": "complete",
       "articleUrl": "https://blitzmetrics.com/internal-linking",
       "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=step-3-identify-money-pages-and-orphan-pages#task-step-3-identify-money-pages-and-orphan-pages",
-      "nextAction": "No exact-revision positive semantic review is recorded for this article.",
+      "nextAction": "Current article semantic criteria are unknown: owner, sourceEvidence, visualAndLayout, publicationStandards, acceptanceResults.",
       "standardVerification": {
-        "instructionSourceSha256": "9d584ede936922972c674018bbd5903a98884548ddf2287a2b482609b6e4de78",
+        "instructionSourceSha256": "dda7662b843806f75df9c704d7a941d1d868661ba82bdcf4a3de140ae46aea37",
         "articleKey": "blitzmetrics.com/internal-linking",
         "gates": {
           "instructionRevisionReviewed": {
             "id": "instructionRevisionReviewed",
             "label": "Exact instruction revision reviewed",
             "state": "pass",
-            "reason": "Current source bytes match the review recorded 2026-09-06. Review scope and limits: Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate.",
-            "reviewedAt": "2026-09-06",
-            "reviewer": "Codex editorial review",
-            "sourceSha256": "9d584ede936922972c674018bbd5903a98884548ddf2287a2b482609b6e4de78"
+            "reason": "Current source bytes match the review recorded 2026-10-04. Review scope and limits: Exact written instructions only; full article, setup and accepted results remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-plan-guide-2026-10-04.md",
+            "reviewedAt": "2026-10-04",
+            "reviewer": "Codex root with separate GPT-6 Luna source review",
+            "sourceSha256": "dda7662b843806f75df9c704d7a941d1d868661ba82bdcf4a3de140ae46aea37"
           },
           "instructionStandards": {
             "id": "instructionStandards",
             "label": "Instruction requirements checked",
-            "state": "unknown",
-            "reason": "The current exact-byte review has no structured instruction-requirements checklist.",
-            "sourceSha256": "9d584ede936922972c674018bbd5903a98884548ddf2287a2b482609b6e4de78"
+            "state": "pass",
+            "reason": "All five instruction requirements have explicit passing checks for the current source revision.",
+            "reviewedAt": "2026-10-04",
+            "reviewer": "Codex root with separate GPT-6 Luna source review",
+            "reviewScope": "Exact written instructions only; full article, setup and accepted results remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-plan-guide-2026-10-04.md",
+            "sourceSha256": "dda7662b843806f75df9c704d7a941d1d868661ba82bdcf4a3de140ae46aea37",
+            "standards": {
+              "version": 1,
+              "checks": {
+                "opening": {
+                  "state": "pass",
+                  "reason": "Exact plain opening names link plan, reader benefit and explained owned inventory prerequisite; body delivers the promised plan.",
+                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-plan-guide-2026-10-04.md"
+                },
+                "recipe": {
+                  "state": "pass",
+                  "reason": "Dated scope, source access, candidate disposition counts, reachable sources, exact proposed edit rows and measurable acceptance/partial boundary.",
+                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-plan-guide-2026-10-04.md"
+                },
+                "links": {
+                  "state": "pass",
+                  "reason": "Nineteen destinations200; relevant owned definitions, setup, input/output contracts and primary Google link guidance read for meaning.",
+                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-plan-guide-2026-10-04.md"
+                },
+                "evidence": {
+                  "state": "pass",
+                  "reason": "Incomplete coverage remains unknown; fictional rows and proposed plans are not live repairs, revenue, indexing or setup proof.",
+                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-plan-guide-2026-10-04.md"
+                },
+                "handoff": {
+                  "state": "pass",
+                  "reason": "Accepted row IDs, source/target, sentence, base revision, edit owner, reviewer/date feed placement; baseline request and later released log are distinct.",
+                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-plan-guide-2026-10-04.md"
+                }
+              }
+            }
           },
           "contributorComplete": {
             "id": "contributorComplete",
@@ -29524,7 +29558,102 @@
             "id": "articleSemanticCertification",
             "label": "Article semantic certification",
             "state": "unknown",
-            "reason": "No exact-revision positive semantic review is recorded for this article."
+            "reason": "Current article semantic criteria are unknown: owner, sourceEvidence, visualAndLayout, publicationStandards, acceptanceResults.",
+            "semanticReview": {
+              "version": 1,
+              "taskSlug": "step-3-identify-money-pages-and-orphan-pages",
+              "canonicalURL": "https://blitzmetrics.com/internal-linking",
+              "sourceSha256": "22127cd9c782a73b806a2b60e649174c93494a968732fd4377e54d562b18da64",
+              "representation": "wordpress-content-html",
+              "reviewedAt": "2026-10-04T16:08:57.116457Z",
+              "reviewer": "Codex root with separate GPT-6 Luna source review",
+              "criteria": {
+                "openingContext": {
+                  "state": "pass",
+                  "reason": "Exact opening quoted; inventory prerequisite meaning and body delivery reviewed.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-plan-guide-2026-10-04.md"
+                  ]
+                },
+                "roleScope": {
+                  "state": "pass",
+                  "reason": "Bounded planning task feeds placement; no published-link execution is inferred.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-plan-guide-2026-10-04.md"
+                  ]
+                },
+                "owner": {
+                  "state": "unknown",
+                  "reason": "Full canonical upkeep owner not established.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-plan-guide-2026-10-04.md"
+                  ]
+                },
+                "steps": {
+                  "state": "pass",
+                  "reason": "Scope, access, candidate classification, exact rows and measurable partial/done rules in the matching copied recipe.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-plan-guide-2026-10-04.md"
+                  ]
+                },
+                "links": {
+                  "state": "pass",
+                  "reason": "Nineteen destinations loaded; input/output and relevant owned concept meanings read.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-plan-guide-2026-10-04.md"
+                  ]
+                },
+                "sourceEvidence": {
+                  "state": "unknown",
+                  "reason": "Fictional rows are not task-attributed actual result proof.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-plan-guide-2026-10-04.md"
+                  ]
+                },
+                "handoffContext": {
+                  "state": "pass",
+                  "reason": "Explicit accepted row package feeds placement; baseline request precedes release and actual measurement follows QA.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-plan-guide-2026-10-04.md"
+                  ]
+                },
+                "visualAndLayout": {
+                  "state": "unknown",
+                  "reason": "Selected guide views checked separately; complete parent audit remains open.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-plan-guide-2026-10-04.md"
+                  ]
+                },
+                "publicationStandards": {
+                  "state": "unknown",
+                  "reason": "One source-copy update with metadata preservation does not certify the full parent.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-plan-guide-2026-10-04.md"
+                  ]
+                },
+                "acceptanceResults": {
+                  "state": "unknown",
+                  "reason": "No real planning output, receiving-owner acceptance or novice setup proof.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-plan-guide-2026-10-04.md"
+                  ]
+                }
+              }
+            },
+            "revisionObservation": {
+              "version": 1,
+              "taskSlug": "step-3-identify-money-pages-and-orphan-pages",
+              "canonicalURL": "https://blitzmetrics.com/internal-linking",
+              "sourceSha256": "22127cd9c782a73b806a2b60e649174c93494a968732fd4377e54d562b18da64",
+              "representation": "wordpress-content-html",
+              "observedAt": "2026-10-04T16:08:57.546023Z",
+              "observer": "Codex fresh authenticated source read",
+              "state": "observed",
+              "reason": "Final saved copied recipe matches reviewed candidate.",
+              "evidenceRefs": [
+                "sha256:528efe6a6b488d59d3b3c1e34e31490d1ad3de5dc6b1efe84f479445c8bd27ad"
+              ]
+            }
           },
           "taskExampleEvidence": {
             "id": "taskExampleEvidence",
@@ -29558,7 +29687,6 @@
         "unmetStandardGates": [],
         "heldStandardGates": [],
         "unknownStandardGates": [
-          "instructionStandards",
           "articleSemanticCertification",
           "taskExampleEvidence",
           "recordedExecution",
@@ -29569,7 +29697,7 @@
         "queuePosition": 272,
         "priority": "P3",
         "priorityReason": "Missing proof remains",
-        "nextAction": "No exact-revision positive semantic review is recorded for this article."
+        "nextAction": "Current article semantic criteria are unknown: owner, sourceEvidence, visualAndLayout, publicationStandards, acceptanceResults."
       }
     },
     {

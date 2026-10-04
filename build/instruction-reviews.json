@@ -1891,10 +1891,40 @@
       }
     },
     "step-3-identify-money-pages-and-orphan-pages": {
-      "source_sha256": "9d584ede936922972c674018bbd5903a98884548ddf2287a2b482609b6e4de78",
-      "reviewed_at": "2026-09-06",
-      "reviewer": "Codex editorial review",
-      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+      "source_sha256": "dda7662b843806f75df9c704d7a941d1d868661ba82bdcf4a3de140ae46aea37",
+      "reviewed_at": "2026-10-04",
+      "reviewer": "Codex root with separate GPT-6 Luna source review",
+      "scope": "Exact written instructions only; full article, setup and accepted results remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-plan-guide-2026-10-04.md",
+      "standards": {
+        "version": 1,
+        "checks": {
+          "opening": {
+            "state": "pass",
+            "reason": "Exact plain opening names link plan, reader benefit and explained owned inventory prerequisite; body delivers the promised plan.",
+            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-plan-guide-2026-10-04.md"
+          },
+          "recipe": {
+            "state": "pass",
+            "reason": "Dated scope, source access, candidate disposition counts, reachable sources, exact proposed edit rows and measurable acceptance/partial boundary.",
+            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-plan-guide-2026-10-04.md"
+          },
+          "links": {
+            "state": "pass",
+            "reason": "Nineteen destinations200; relevant owned definitions, setup, input/output contracts and primary Google link guidance read for meaning.",
+            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-plan-guide-2026-10-04.md"
+          },
+          "evidence": {
+            "state": "pass",
+            "reason": "Incomplete coverage remains unknown; fictional rows and proposed plans are not live repairs, revenue, indexing or setup proof.",
+            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-plan-guide-2026-10-04.md"
+          },
+          "handoff": {
+            "state": "pass",
+            "reason": "Accepted row IDs, source/target, sentence, base revision, edit owner, reviewer/date feed placement; baseline request and later released log are distinct.",
+            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-plan-guide-2026-10-04.md"
+          }
+        }
+      }
     },
     "step-4-create-links-with-proper-anchor-text-and-placement": {
       "source_sha256": "62aa597890ee545455fc3ab325dc0ee2b742f692a276cf18cfeabe0c39df0c27",
