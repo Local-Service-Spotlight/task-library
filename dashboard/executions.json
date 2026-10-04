@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "asOf": "2026-10-03T16:25:06.508532+00:00",
+  "asOf": "2026-10-04T16:09:17.849916+00:00",
   "countDefinition": "Distinct recorded execution IDs, separate from meta-article URLs. History is partial; absent history is unknown, not zero. The last-30-day count is a documented lower bound, not total task frequency.",
-  "recordedExecutions": 19,
+  "recordedExecutions": 20,
   "completedExecutions": 7,
   "partialExecutions": 12,
   "executions": [
@@ -542,6 +542,29 @@
       "metaArticle": {
         "status": "published",
         "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#taxonomy-guide-repair-20261003-1606"
+      }
+    },
+    {
+      "executionId": "link-plan-guide-repair-20261004-1605",
+      "taskSlugs": [
+        "publish-skill-and-task-page"
+      ],
+      "startedAt": "2026-10-04T16:05:24.941122+00:00",
+      "status": "running",
+      "result": "Repaired one link-planning recipe and parent copy; written review passes; final public release checks pending. No client link plan, novice setup or full task certification inferred.",
+      "recipeRevisions": {
+        "publish-skill-and-task-page": {
+          "articleUrl": "https://blitzmetrics.com/skill-publishing-standard/",
+          "sourceSha256": "660d6f1abd8678c851c0a08059f27982e8e29b46775ea217a2ae1d6e3ba55537"
+        }
+      },
+      "evidenceUrls": [
+        "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-plan-guide-2026-10-04.md"
+      ],
+      "privateEvidenceRecorded": false,
+      "metaArticle": {
+        "status": "published",
+        "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#link-plan-guide-repair-20261004-1605"
       }
     }
   ]

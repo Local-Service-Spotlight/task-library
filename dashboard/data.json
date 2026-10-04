@@ -46,10 +46,10 @@
     "unknown": 0
    },
    "instructionStandards": {
-    "pass": 11,
+    "pass": 12,
     "unmet": 0,
     "hold": 0,
-    "unknown": 265
+    "unknown": 264
    },
    "contributorComplete": {
     "pass": 126,
@@ -101,7 +101,7 @@
    }
   }
  },
- "updated": "October 3, 2026",
+ "updated": "October 4, 2026",
  "factory": {
   "phases": [
    {
@@ -1715,9 +1715,9 @@
  ],
  "executionHistory": {
   "schemaVersion": 1,
-  "asOf": "2026-10-03T16:25:06.508532+00:00",
+  "asOf": "2026-10-04T16:09:17.849916+00:00",
   "countDefinition": "Distinct recorded execution IDs, separate from meta-article URLs. History is partial; absent history is unknown, not zero. The last-30-day count is a documented lower bound, not total task frequency.",
-  "recordedExecutions": 19,
+  "recordedExecutions": 20,
   "completedExecutions": 7,
   "partialExecutions": 12,
   "executions": [
@@ -2257,6 +2257,29 @@
     "metaArticle": {
      "status": "published",
      "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#taxonomy-guide-repair-20261003-1606"
+    }
+   },
+   {
+    "executionId": "link-plan-guide-repair-20261004-1605",
+    "taskSlugs": [
+     "publish-skill-and-task-page"
+    ],
+    "startedAt": "2026-10-04T16:05:24.941122+00:00",
+    "status": "running",
+    "result": "Repaired one link-planning recipe and parent copy; written review passes; final public release checks pending. No client link plan, novice setup or full task certification inferred.",
+    "recipeRevisions": {
+     "publish-skill-and-task-page": {
+      "articleUrl": "https://blitzmetrics.com/skill-publishing-standard/",
+      "sourceSha256": "660d6f1abd8678c851c0a08059f27982e8e29b46775ea217a2ae1d6e3ba55537"
+     }
+    },
+    "evidenceUrls": [
+     "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-plan-guide-2026-10-04.md"
+    ],
+    "privateEvidenceRecorded": false,
+    "metaArticle": {
+     "status": "published",
+     "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#link-plan-guide-repair-20261004-1605"
     }
    }
   ]
@@ -24810,7 +24833,7 @@
      "article": "https://blitzmetrics.com/internal-linking",
      "articleKind": "task-recipe",
      "desc": "Find good pages that are hard to reach.",
-     "content": "---\nname: step-3-identify-money-pages-and-orphan-pages\ndescription: \"Find good pages that are hard to reach.\"\ncategory: SEO & Content Architecture\nstage: —\ndefinitive_article: /internal-linking\nstatus: complete\n---\n\n# Step 3: Identify money pages and orphan pages\n\nFind good pages that are hard to reach. This guide plans links to real offers and pages with no path in. Start with your page list, the offers you sell and the links the site now has.\n\n**The path:** Actual offers + incoming gaps → Relevance review → Prioritized link rows → Placement owner\n\n**Start when:** The page inventory and supported taxonomy review are ready for an exact source-to-target link plan.\n\n## Inputs\n\n- [Inventory pages and their purpose](https://local-service-spotlight.github.io/task-library/?task=step-1-inventory-content-and-establish-gct-per-page#task-step-1-inventory-content-and-establish-gct-per-page) and [Review WordPress taxonomy](https://local-service-spotlight.github.io/task-library/?task=step-2-fix-categories-and-tags-in-wordpress#task-step-2-fix-categories-and-tags-in-wordpress) results, including actual incoming-path coverage.\n- The live offer/service destinations, current business priorities and verified comparable revenue data only if connected.\n- Reader purpose, body content and existing links for potential sources; the [Money Pages versus Blog Posts method](https://blitzmetrics.com/money-pages-vs-blog-posts/).\n\n## Steps\n\n1. Identify the actual buying, booking, service and lead-capture destinations from the site and business owner. A “money page” is an offer/action role; its name does not prove it currently earns revenue. Keep the live URL, intended action, source owner and any known duplicate or redirect.\n2. Flag pages with no detected incoming internal route using the inventory’s stated scope. Keep outgoing links, navigation links, body-link counts and assigned parent separate. Cross-check orphan candidates with the published source so unlinked content missed by the crawler is not excluded from the plan.\n3. Prioritize offers with the owner’s current business goals, relevant proof gaps and measured support. Use verified comparable revenue only when available; otherwise label priority as a business decision, not a revenue rank. An expensive offer or a zero-link count alone does not establish financial impact.\n4. For each target, read candidate source pages and their [Goals, Content, Targeting: the result, source material and people served](https://blitzmetrics.com/gct-business-strategy/). Select places where a reader would genuinely benefit from the next destination. Record the actual supporting sentence or section; reject keyword-only matches and avoid turning every source page into a link to every service.\n5. For each useful orphan, plan an incoming link from an existing relevant page as well as an appropriate outgoing parent link. Route weak or overlapping content to its separate review task. A page becoming a source for an offer remains orphaned if nothing links into it.\n6. Write one action row per exact source-to-target relationship, with proposed anchor/context, target status, relevance reason, source revision and owner. Mark add, improve-existing, no-change or held. A missing hub or unresolved offer duplicate needs its owner’s decision before a misleading target is used.\n7. Save two coherent lists: priority offers needing support and orphan/exception dispositions. Review the plan with its release owner and pass only accepted rows to placement. Preserve missing access, unresolved source facts and baseline needs so the next task cannot mistake a proposed link for a published result.\n\n## Definition of done (QA checklist)\n\nQuality assurance (QA) means checking the actual result against its agreed requirements. Follow the [Article Guidelines](https://localservicespotlight.com/article-guidelines/).\n\n- [ ] Money-page roles and business priorities are sourced; unknown revenue is not labeled zero or proven importance.\n- [ ] Orphan repairs include real incoming paths, with intentional exceptions and content-review cases distinct.\n- [ ] Each accepted row has an exact source, relevant target, proposed context, current revision and owner.\n- [ ] The exact output, source revision, reviewer evidence and remaining owner action are saved.\n- [ ] For any reader-facing output, the short grade-five opening states the reader’s useful outcome and supporting method or proof. The body delivers that promise; a useful authentic visual appears in the first screen. Retain exact text and quoted reviewer evidence.\n\n## Example(s)\n\n**Fictional teaching example. This is not a client result or proof of a completed run.**\n\nA fictional contractor has two service pages and a useful job story with no incoming link. The plan links the roof hub to that story, and the story to its relevant roof service. The owner chooses roofing as a current priority, but no revenue feed is connected. The report calls it an owner priority and does not label it the highest-earning branch.\n\n## Handoff and Content Factory context\n\n[Place the accepted links](https://local-service-spotlight.github.io/task-library/?task=step-4-create-links-with-proper-anchor-text-and-placement#task-step-4-create-links-with-proper-anchor-text-and-placement) receives accepted rows and source guards. [Review duplicate or weak pages](https://local-service-spotlight.github.io/task-library/?task=remove-duplicate-thin-pages#task-remove-duplicate-thin-pages) receives duplicate-intent cases; [Measure the accepted change set](https://local-service-spotlight.github.io/task-library/?task=step-6-measure-and-iterate-with-maa#task-step-6-measure-and-iterate-with-maa) receives target URLs and the baseline request before links are released.\n\nThis task supports the [Content Factory: Produce, Process, Post and Promote](https://blitzmetrics.com/content-factory/). Identity, proof, access or coordination can support several stages. Use the real inputs and receiving owner above; this task does not create unrelated transcripts, clips or ads merely because the diagram has four stages.\n\n## Start with an agent\n\nGive the [AI worker](https://blitzmetrics.com/build-agents/) this recipe, the real inputs, desired result and actions already authorized. Ask for the saved output, sources, checks and next owner. A [skill is a written recipe](https://localservicespotlight.com/plugin/); loading one does not prove account access or perform the task. Use the [installation guide](https://localservicespotlight.com/install/) if reusable setup is needed. A ZIP is a source snapshot, not an access grant or automatic update.\n\nUse the app’s actual supported tools and verified file/account access. Keep a missing human verification step with its real owner. Recurring work needs its own configured job, trigger, timezone and observed result; this guide creates no schedule. Before any media playback, mute the player and set its volume to zero. If silence cannot be verified first, use captions, frames, metadata or another silent check.\n\n## Record the real execution\n\nOpen the run record when work begins. Keep one execution ID, starting recipe revision, real inputs and current state. Write the [meta article, the record of this execution](https://blitzmetrics.com/meta-article-prompt/) with actual steps, results, checks, failures and next owner. Writing is required; public release follows existing authority. Link it to this recipe and the [Task Library](https://local-service-spotlight.github.io/task-library/).\n\nReuse the same execution ID for internal checks, revisions, retries and meta writing. A blocked run stays open with its dependency and owner, without an invented finish time. Dated public examples and distinct verified execution counts remain separate. Propose the smallest source-backed recipe improvement when the actual evidence reveals a defect.\n\n\n<!-- factory-layer:start -->\n\n## Factory chain (do not treat this as isolated)\n\n- **Phase:** —\n- **Importance:** 3/5 `●●●○○` — frequency 3, revenue 3, gating 2 (supporting)\n- **Suggested previous station:** —\n- **Suggested next station:** —\nThese stations are generated neighbors, not verified prerequisites or handoffs. Follow the task’s actual Inputs and Handoff sections.\n- **Handoff:** Save this task’s actual output, source, date and checks where the receiving owner can read them. Follow the Inputs and Handoff sections for its next step.\n\n## Model routing (same factory, any engine)\n\n- **This task's lane:** `any` — Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.\n- **Single-engine path:** Use the capable AI app you already have. Check its required tools and access before starting. Pass the actual result and proof to the next task.\n- **Optional multi-engine:** A tested local model may draft; a stronger model may review facts and voice. Use supported tools for approved actions. Pick models from observed quality and cost; a model name does not prove it can run this task.\n- **Never** store the working state in one vendor's memory. Files in the Content Library are the bridge.\n\n<!-- factory-layer:end -->\n## Definitive article & links\n\n- [Maintained source guide](https://blitzmetrics.com/internal-linking/)\n- [This task in the Task Library](https://local-service-spotlight.github.io/task-library/?task=step-3-identify-money-pages-and-orphan-pages#task-step-3-identify-money-pages-and-orphan-pages)\n- [Article Guidelines](https://localservicespotlight.com/article-guidelines/)\n- [Definitive article and task recipe standard](https://blitzmetrics.com/definitive-article-guide/)\n- [How recipes and run records fit together](https://localservicespotlight.com/meta-articles/)\n\n## Review and evidence still needed\n\nThe inherited contributor status is `complete`. It is preserved, not promoted by this rewrite. That label alone does not prove document readiness, account access, an actual execution or a client result.\n\nThe fictional example teaches the method and does not fill a real-run evidence gap. A named semantic reviewer must check the actual opening, full method, sources and handoff. Check the useful opening visual in the normal rendered guide at the current required desktop and mobile sizes, including 1280 × 800 and 390 × 844. Source readability checks do not prove public presentation or task execution.",
+     "content": "---\nname: step-3-identify-money-pages-and-orphan-pages\ndescription: \"Find good pages that are hard to reach.\"\ncategory: SEO & Content Architecture\nstage: —\ndefinitive_article: /internal-linking\nstatus: complete\n---\n\n# Step 3: Identify money pages and orphan pages\n\nPlan links that help readers find your key pages. This makes useful posts and offers easier to reach. Use the checked [page list](https://local-service-spotlight.github.io/task-library/?task=step-1-inventory-content-and-establish-gct-per-page#task-step-1-inventory-content-and-establish-gct-per-page) to spot gaps before the next task places the links.\n\n**The path:** Check the page list → Read both pages → Plan useful links → Hand off checked rows\n\nA **money page** helps a reader buy, book or ask about a service; the name does not prove sales. The [money pages and blog posts guide](https://blitzmetrics.com/money-pages-vs-blog-posts/) explains their different jobs. An **orphan page** has no incoming internal link. Treat it as a candidate until the checked coverage supports that claim; an incomplete check can miss a real path.\n\n**Start when:** The page inventory and supported taxonomy review are ready for an exact source-to-target link plan.\n\n## Inputs\n\n- [Inventory pages and their purpose](https://local-service-spotlight.github.io/task-library/?task=step-1-inventory-content-and-establish-gct-per-page#task-step-1-inventory-content-and-establish-gct-per-page) and [Review WordPress taxonomy](https://local-service-spotlight.github.io/task-library/?task=step-2-fix-categories-and-tags-in-wordpress#task-step-2-fix-categories-and-tags-in-wordpress) results, including actual incoming-path counts, link types, counted URLs, crawl/extraction method and date, known entry pages, exclusions and unresolved coverage gaps. A crawl follows links to inspect pages; it can miss pages with no path from its starting point.\n- The live offer/service destinations, current business priorities and verified comparable revenue data only if connected.\n- Read access to current source and target pages, dated source revisions and the maintained edit surface or its named owner. This task saves a plan; it does not need publishing access or permission to change a live page. Missing required source access stays a named gap.\n- Reader purpose, body content and existing links for potential sources; the [Money Pages versus Blog Posts method](https://blitzmetrics.com/money-pages-vs-blog-posts/).\n\n## Steps\n\n1. Identify the actual buying, booking, service and lead-capture destinations from the site and business owner. A “money page” is an offer/action role; its name does not prove it currently earns revenue. Keep the live URL, intended action, source owner and any known duplicate or redirect.\n2. Flag pages with no detected incoming internal route within the inventory’s stated scope. Cross-check the crawl against the published-page export so unseen pages are included. Record incoming body links and navigation/archive links separately. Zero body links with a working menu link is a contextual-link gap, not proof of an orphan. An assigned parent, an outgoing link or a sitemap listing alone is not an incoming link from another page. If access, rendering or crawl coverage is incomplete, keep the state “candidate—coverage incomplete” and name the missing check; do not report a site-wide orphan count. Record the actual counted source URLs, not just a tool total.\n3. Prioritize offers with the owner’s current business goals, relevant proof gaps and measured support. Use verified comparable revenue only when available; otherwise label priority as a business decision, not a revenue rank. An expensive offer or a zero-link count alone does not establish financial impact.\n4. For each target, read candidate source pages and their [Goals, Content, Targeting: the result, source material and people served](https://blitzmetrics.com/gct-business-strategy/). Select places where a reader would genuinely benefit from the next destination. Record the actual supporting sentence or section; reject keyword-only matches and avoid turning every source page into a link to every service.\n5. For each useful orphan candidate, plan an incoming link from an existing relevant page that readers can reach from a known site entry, such as the home page or a linked topic hub. Check and record that path; links only between otherwise unreachable pages do not connect the group to the rest of the site. Add an outgoing parent link only where it helps readers. Route weak or overlapping content to its separate review task. A proposed incoming link is a plan, not proof of a repaired path; placement and QA must check the released result.\n6. Write one action row per exact source-to-target relationship. Include a row ID, both URLs, checked final destination and date, source revision, exact sentence/section, proposed anchor and change, relevance reason, incoming coverage evidence, intended edit surface or its owner, and placement owner. Keep the proposed action (add, improve-existing, no-change) separate from its review state (proposed, accepted, held). The accepted row records who reviewed it and when. A missing hub, inaccessible source or unresolved offer duplicate stays held with a next owner/action; do not invent an edit location or use a misleading target.\n7. Save the priority-offer list and orphan/exception list with one disposition for every in-scope candidate: accepted link plan, justified no-change, content review or held. Reconcile their counts to the input list so nothing disappears. Review the plan with its responsible owner and pass only accepted rows to placement within the existing authorization. For planned measurement, pass the target URL set, question, metric, time window, data source/access owner and baseline capture request before release; record captured proof or the actual gap. A missing baseline is not zero or invented historical data. Missing required scope or source evidence keeps the planning result partial. No row is called published or repaired by this task.\n\n## Definition of done (QA checklist)\n\nQuality assurance (QA) means checking the actual result against its agreed requirements. Follow the [Article Guidelines](https://localservicespotlight.com/article-guidelines/).\n\n- [ ] Money-page roles and business priorities are sourced; unknown revenue is not labeled zero or proven importance.\n- [ ] Orphan candidates retain dated scope and evidence. Missing body links, navigation paths and incomplete coverage are distinct; no unsupported site-wide claim is made.\n- [ ] Every in-scope candidate has a counted disposition. Planned incoming paths start from reachable relevant pages; no proposed change is called a published repair.\n- [ ] Every accepted row has the exact source/target, checked target meaning, proposed context, current base revision, edit surface or owner, reviewer/date and placement owner. Held rows name a next action.\n- [ ] The receiving worker can locate the intended edit and check it against the source revision; planned measurement has a baseline request and captured proof or an explicit gap.\n- [ ] The exact output, source revision, reviewer evidence and remaining owner action are saved.\n- [ ] For any reader-facing output, the short grade-five opening states the reader’s useful outcome and supporting method or proof. The body delivers that promise; a useful authentic visual appears in the first screen. Retain exact text and quoted reviewer evidence.\n\n## Example(s)\n\n**Fictional teaching example. This is not a client result or proof of a completed run.**\n\nA fictional firm has a roof hub linked from its home page, a roof-repair story, and a roof service page. A body-only crawl finds zero incoming links to the story. A menu check then finds a link, so the record changes to “body-link gap”; it does not call the story an orphan. The planner reads both pages and proposes a useful hub-to-story link. A story-to-service link is a separate row.\n\n- **Row A — proposed add:** Roof hub → repair story. Place “see this roof repair” after the repair-method paragraph. Next, verify the exact URLs, source revision and edit surface, then get the row reviewed.\n- **Row B — held:** Repair story → roof service. Place “roof repair service” after the repair result only once the service owner resolves the two competing offer URLs.\n\nThese are fictional labels, not usable URLs or accepted rows. A real row needs all fields in Step 6. If both candidate source and target sit outside any path from the home page, linking them to each other alone does not solve reachability. The owner may choose roofing as a business priority, but without verified revenue the plan does not call it the highest-earning branch.\n\n## Handoff and Content Factory context\n\n[Place the accepted links](https://local-service-spotlight.github.io/task-library/?task=step-4-create-links-with-proper-anchor-text-and-placement#task-step-4-create-links-with-proper-anchor-text-and-placement) receives the accepted row IDs, source/target URLs, exact sentence and proposed anchor, source revisions, edit-surface ownership, relevance/coverage evidence, reviewer/date and placement owner. It re-reads both pages before editing; a source or target change goes back for reconciliation rather than inheriting the old acceptance. [Review duplicate or weak pages](https://local-service-spotlight.github.io/task-library/?task=remove-duplicate-thin-pages#task-remove-duplicate-thin-pages) receives duplicate-intent cases; [Measure the accepted change set](https://local-service-spotlight.github.io/task-library/?task=step-6-measure-and-iterate-with-maa#task-step-6-measure-and-iterate-with-maa) receives the target set, question, metric, window, access owner and baseline request before release when measurement is planned. Its outcome analysis begins only after placement and QA provide the actual released log; sending a baseline request is not starting the measurement run.\n\nThis task supports the [Content Factory: Produce, Process, Post and Promote](https://blitzmetrics.com/content-factory/). The checked page list and grouping results are its inputs. Reviewing relevance and preparing the plan support Process. The accepted rows go to placement and QA in Post. A later measurement task checks observed changes; this plan claims no ranking or sales gain.\n\n## Start with an agent\n\nGive the [AI worker](https://blitzmetrics.com/build-agents/) this recipe, the real inputs, desired result and actions already authorized. Ask for the saved output, sources, checks and next owner. A [skill is a written recipe](https://localservicespotlight.com/plugin/); loading one does not prove account access or perform the task. Use the [installation guide](https://localservicespotlight.com/install/) if reusable setup is needed. A ZIP is a source snapshot, not an access grant or automatic update.\n\nUse the app’s actual supported tools and verified file/account access. Keep a missing human verification step with its real owner. Recurring work needs its own configured job, trigger, timezone and observed result; this guide creates no schedule. Before any media playback, mute the player and set its volume to zero. If silence cannot be verified first, use captions, frames, metadata or another silent check.\n\n## Record the real execution\n\nOpen the run record when work begins. Keep one execution ID, starting recipe revision, real inputs and current state. Write the [meta article, the record of this execution](https://blitzmetrics.com/meta-article-prompt/) with actual steps, results, checks, failures and next owner. Writing is required; public release follows existing authority. Link it to this recipe and the [Task Library](https://local-service-spotlight.github.io/task-library/).\n\nReuse the same execution ID for internal checks, revisions, retries and meta writing. A blocked run stays open with its dependency and owner, without an invented finish time. Dated public examples and distinct verified execution counts remain separate. Propose the smallest source-backed recipe improvement when the actual evidence reveals a defect.\n\n\n<!-- factory-layer:start -->\n\n## Factory chain (do not treat this as isolated)\n\n- **Phase:** —\n- **Importance:** 3/5 `●●●○○` — frequency 3, revenue 3, gating 2 (supporting)\n- **Suggested previous station:** —\n- **Suggested next station:** —\nThese stations are generated neighbors, not verified prerequisites or handoffs. Follow the task’s actual Inputs and Handoff sections.\n- **Handoff:** Save this task’s actual output, source, date and checks where the receiving owner can read them. Follow the Inputs and Handoff sections for its next step.\n\n## Model routing (same factory, any engine)\n\n- **This task's lane:** `any` — Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.\n- **Single-engine path:** Use the capable AI app you already have. Check its required tools and access before starting. Pass the actual result and proof to the next task.\n- **Optional multi-engine:** A tested local model may draft; a stronger model may review facts and voice. Use supported tools for approved actions. Pick models from observed quality and cost; a model name does not prove it can run this task.\n- **Never** store the working state in one vendor's memory. Files in the Content Library are the bridge.\n\n<!-- factory-layer:end -->\n## Definitive article & links\n\n- [Maintained source guide](https://blitzmetrics.com/internal-linking/)\n- [This task in the Task Library](https://local-service-spotlight.github.io/task-library/?task=step-3-identify-money-pages-and-orphan-pages#task-step-3-identify-money-pages-and-orphan-pages)\n- [Article Guidelines](https://localservicespotlight.com/article-guidelines/)\n- [Definitive article and task recipe standard](https://blitzmetrics.com/definitive-article-guide/)\n- [How recipes and run records fit together](https://localservicespotlight.com/meta-articles/)\n\n### Primary method reference\n\n- [Google’s crawlable, descriptive internal-link guidance](https://developers.google.com/search/docs/crawling-indexing/links-crawlable) supports useful incoming links and relevant context. A crawl finding alone does not prove indexing or a business result.\n\n## Review and evidence still needed\n\nThe inherited contributor status is `complete`. It is preserved, not promoted by this rewrite. That label alone does not prove document readiness, account access, an actual execution or a client result.\n\nThe fictional example teaches the method and does not fill a real-run evidence gap. A named semantic reviewer must check the actual opening, full method, sources and handoff. Check the useful opening visual in the normal rendered guide at the current required desktop and mobile sizes, including 1280 × 800 and 390 × 844. Source readability checks do not prove public presentation or task execution.",
      "importance": 3,
      "freq": 3,
      "revenue": 3,
@@ -24822,10 +24845,40 @@
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
      "why": "supporting",
      "instructionReview": {
-      "source_sha256": "9d584ede936922972c674018bbd5903a98884548ddf2287a2b482609b6e4de78",
-      "reviewed_at": "2026-09-06",
-      "reviewer": "Codex editorial review",
-      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+      "source_sha256": "dda7662b843806f75df9c704d7a941d1d868661ba82bdcf4a3de140ae46aea37",
+      "reviewed_at": "2026-10-04",
+      "reviewer": "Codex root with separate GPT-6 Luna source review",
+      "scope": "Exact written instructions only; full article, setup and accepted results remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-plan-guide-2026-10-04.md",
+      "standards": {
+       "version": 1,
+       "checks": {
+        "opening": {
+         "state": "pass",
+         "reason": "Exact plain opening names link plan, reader benefit and explained owned inventory prerequisite; body delivers the promised plan.",
+         "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-plan-guide-2026-10-04.md"
+        },
+        "recipe": {
+         "state": "pass",
+         "reason": "Dated scope, source access, candidate disposition counts, reachable sources, exact proposed edit rows and measurable acceptance/partial boundary.",
+         "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-plan-guide-2026-10-04.md"
+        },
+        "links": {
+         "state": "pass",
+         "reason": "Nineteen destinations200; relevant owned definitions, setup, input/output contracts and primary Google link guidance read for meaning.",
+         "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-plan-guide-2026-10-04.md"
+        },
+        "evidence": {
+         "state": "pass",
+         "reason": "Incomplete coverage remains unknown; fictional rows and proposed plans are not live repairs, revenue, indexing or setup proof.",
+         "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-plan-guide-2026-10-04.md"
+        },
+        "handoff": {
+         "state": "pass",
+         "reason": "Accepted row IDs, source/target, sentence, base revision, edit owner, reviewer/date feed placement; baseline request and later released log are distinct.",
+         "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-plan-guide-2026-10-04.md"
+        }
+       }
+      }
      },
      "articleState": "ready",
      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=step-3-identify-money-pages-and-orphan-pages#task-step-3-identify-money-pages-and-orphan-pages",
@@ -24843,24 +24896,57 @@
       "setupReviews": []
      },
      "standardVerification": {
-      "instructionSourceSha256": "9d584ede936922972c674018bbd5903a98884548ddf2287a2b482609b6e4de78",
+      "instructionSourceSha256": "dda7662b843806f75df9c704d7a941d1d868661ba82bdcf4a3de140ae46aea37",
       "articleKey": "blitzmetrics.com/internal-linking",
       "gates": {
        "instructionRevisionReviewed": {
         "id": "instructionRevisionReviewed",
         "label": "Exact instruction revision reviewed",
         "state": "pass",
-        "reason": "Current source bytes match the review recorded 2026-09-06. Review scope and limits: Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate.",
-        "reviewedAt": "2026-09-06",
-        "reviewer": "Codex editorial review",
-        "sourceSha256": "9d584ede936922972c674018bbd5903a98884548ddf2287a2b482609b6e4de78"
+        "reason": "Current source bytes match the review recorded 2026-10-04. Review scope and limits: Exact written instructions only; full article, setup and accepted results remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-plan-guide-2026-10-04.md",
+        "reviewedAt": "2026-10-04",
+        "reviewer": "Codex root with separate GPT-6 Luna source review",
+        "sourceSha256": "dda7662b843806f75df9c704d7a941d1d868661ba82bdcf4a3de140ae46aea37"
        },
        "instructionStandards": {
         "id": "instructionStandards",
         "label": "Instruction requirements checked",
-        "state": "unknown",
-        "reason": "The current exact-byte review has no structured instruction-requirements checklist.",
-        "sourceSha256": "9d584ede936922972c674018bbd5903a98884548ddf2287a2b482609b6e4de78"
+        "state": "pass",
+        "reason": "All five instruction requirements have explicit passing checks for the current source revision.",
+        "reviewedAt": "2026-10-04",
+        "reviewer": "Codex root with separate GPT-6 Luna source review",
+        "reviewScope": "Exact written instructions only; full article, setup and accepted results remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-plan-guide-2026-10-04.md",
+        "sourceSha256": "dda7662b843806f75df9c704d7a941d1d868661ba82bdcf4a3de140ae46aea37",
+        "standards": {
+         "version": 1,
+         "checks": {
+          "opening": {
+           "state": "pass",
+           "reason": "Exact plain opening names link plan, reader benefit and explained owned inventory prerequisite; body delivers the promised plan.",
+           "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-plan-guide-2026-10-04.md"
+          },
+          "recipe": {
+           "state": "pass",
+           "reason": "Dated scope, source access, candidate disposition counts, reachable sources, exact proposed edit rows and measurable acceptance/partial boundary.",
+           "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-plan-guide-2026-10-04.md"
+          },
+          "links": {
+           "state": "pass",
+           "reason": "Nineteen destinations200; relevant owned definitions, setup, input/output contracts and primary Google link guidance read for meaning.",
+           "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-plan-guide-2026-10-04.md"
+          },
+          "evidence": {
+           "state": "pass",
+           "reason": "Incomplete coverage remains unknown; fictional rows and proposed plans are not live repairs, revenue, indexing or setup proof.",
+           "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-plan-guide-2026-10-04.md"
+          },
+          "handoff": {
+           "state": "pass",
+           "reason": "Accepted row IDs, source/target, sentence, base revision, edit owner, reviewer/date feed placement; baseline request and later released log are distinct.",
+           "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-plan-guide-2026-10-04.md"
+          }
+         }
+        }
        },
        "contributorComplete": {
         "id": "contributorComplete",
@@ -24885,7 +24971,102 @@
         "id": "articleSemanticCertification",
         "label": "Article semantic certification",
         "state": "unknown",
-        "reason": "No exact-revision positive semantic review is recorded for this article."
+        "reason": "Current article semantic criteria are unknown: owner, sourceEvidence, visualAndLayout, publicationStandards, acceptanceResults.",
+        "semanticReview": {
+         "version": 1,
+         "taskSlug": "step-3-identify-money-pages-and-orphan-pages",
+         "canonicalURL": "https://blitzmetrics.com/internal-linking",
+         "sourceSha256": "22127cd9c782a73b806a2b60e649174c93494a968732fd4377e54d562b18da64",
+         "representation": "wordpress-content-html",
+         "reviewedAt": "2026-10-04T16:08:57.116457Z",
+         "reviewer": "Codex root with separate GPT-6 Luna source review",
+         "criteria": {
+          "openingContext": {
+           "state": "pass",
+           "reason": "Exact opening quoted; inventory prerequisite meaning and body delivery reviewed.",
+           "evidenceRefs": [
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-plan-guide-2026-10-04.md"
+           ]
+          },
+          "roleScope": {
+           "state": "pass",
+           "reason": "Bounded planning task feeds placement; no published-link execution is inferred.",
+           "evidenceRefs": [
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-plan-guide-2026-10-04.md"
+           ]
+          },
+          "owner": {
+           "state": "unknown",
+           "reason": "Full canonical upkeep owner not established.",
+           "evidenceRefs": [
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-plan-guide-2026-10-04.md"
+           ]
+          },
+          "steps": {
+           "state": "pass",
+           "reason": "Scope, access, candidate classification, exact rows and measurable partial/done rules in the matching copied recipe.",
+           "evidenceRefs": [
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-plan-guide-2026-10-04.md"
+           ]
+          },
+          "links": {
+           "state": "pass",
+           "reason": "Nineteen destinations loaded; input/output and relevant owned concept meanings read.",
+           "evidenceRefs": [
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-plan-guide-2026-10-04.md"
+           ]
+          },
+          "sourceEvidence": {
+           "state": "unknown",
+           "reason": "Fictional rows are not task-attributed actual result proof.",
+           "evidenceRefs": [
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-plan-guide-2026-10-04.md"
+           ]
+          },
+          "handoffContext": {
+           "state": "pass",
+           "reason": "Explicit accepted row package feeds placement; baseline request precedes release and actual measurement follows QA.",
+           "evidenceRefs": [
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-plan-guide-2026-10-04.md"
+           ]
+          },
+          "visualAndLayout": {
+           "state": "unknown",
+           "reason": "Selected guide views checked separately; complete parent audit remains open.",
+           "evidenceRefs": [
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-plan-guide-2026-10-04.md"
+           ]
+          },
+          "publicationStandards": {
+           "state": "unknown",
+           "reason": "One source-copy update with metadata preservation does not certify the full parent.",
+           "evidenceRefs": [
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-plan-guide-2026-10-04.md"
+           ]
+          },
+          "acceptanceResults": {
+           "state": "unknown",
+           "reason": "No real planning output, receiving-owner acceptance or novice setup proof.",
+           "evidenceRefs": [
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-plan-guide-2026-10-04.md"
+           ]
+          }
+         }
+        },
+        "revisionObservation": {
+         "version": 1,
+         "taskSlug": "step-3-identify-money-pages-and-orphan-pages",
+         "canonicalURL": "https://blitzmetrics.com/internal-linking",
+         "sourceSha256": "22127cd9c782a73b806a2b60e649174c93494a968732fd4377e54d562b18da64",
+         "representation": "wordpress-content-html",
+         "observedAt": "2026-10-04T16:08:57.546023Z",
+         "observer": "Codex fresh authenticated source read",
+         "state": "observed",
+         "reason": "Final saved copied recipe matches reviewed candidate.",
+         "evidenceRefs": [
+          "sha256:528efe6a6b488d59d3b3c1e34e31490d1ad3de5dc6b1efe84f479445c8bd27ad"
+         ]
+        }
        },
        "taskExampleEvidence": {
         "id": "taskExampleEvidence",
@@ -24919,7 +25100,6 @@
       "unmetStandardGates": [],
       "heldStandardGates": [],
       "unknownStandardGates": [
-       "instructionStandards",
        "articleSemanticCertification",
        "taskExampleEvidence",
        "recordedExecution",
@@ -24930,7 +25110,7 @@
       "queuePosition": 272,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
-      "nextAction": "No exact-revision positive semantic review is recorded for this article."
+      "nextAction": "Current article semantic criteria are unknown: owner, sourceEvidence, visualAndLayout, publicationStandards, acceptanceResults."
      }
     },
     {
@@ -38637,7 +38817,7 @@
      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=publish-skill-and-task-page#task-publish-skill-and-task-page",
      "executionHistory": {
       "status": "partial",
-      "recordedRuns": 11,
+      "recordedRuns": 12,
       "completedRuns": 7,
       "failedRuns": 0,
       "partialRuns": 4,
@@ -38649,6 +38829,7 @@
        "internal-linking-repair-20261001-1405",
        "inventory-guide-repair-20261002-1610",
        "link-building-repair-20261001-1307",
+       "link-plan-guide-repair-20261004-1605",
        "lss-editorial-correction-20260927-190846",
        "publisher-completion-20260927-134412",
        "roster-public-boundary-20260927-210848",
@@ -38722,6 +38903,12 @@
         "status": "completed",
         "startedAt": "2026-10-03T16:06:00.594126+00:00",
         "finishedAt": "2026-10-03T16:24:46.626565+00:00"
+       },
+       {
+        "executionId": "link-plan-guide-repair-20261004-1605",
+        "status": "running",
+        "startedAt": "2026-10-04T16:05:24.941122+00:00",
+        "finishedAt": null
        }
       ],
       "acceptanceReviews": [
@@ -38970,13 +39157,14 @@
         "id": "recordedExecution",
         "label": "Recorded real execution",
         "state": "pass",
-        "reason": "11 distinct execution ID(s) name this task; outcomes remain separate.",
+        "reason": "12 distinct execution ID(s) name this task; outcomes remain separate.",
         "executionIds": [
          "crossref-release-20260927-162402",
          "entity-linking-repair-20260930-0105",
          "internal-linking-repair-20261001-1405",
          "inventory-guide-repair-20261002-1610",
          "link-building-repair-20261001-1307",
+         "link-plan-guide-repair-20261004-1605",
          "lss-editorial-correction-20260927-190846",
          "publisher-completion-20260927-134412",
          "roster-public-boundary-20260927-210848",
