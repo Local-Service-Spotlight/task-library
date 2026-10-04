@@ -27,3 +27,15 @@ The first mobile preview showed the five-column fictional table required horizon
 All five exact written checks pass: opening, recipe, links, evidence handling and handoff. Fictional examples do not establish task-attributed real results. Source upkeep owner, complete parent publication standards, accepted business results and unassisted novice setup remain unknown. The task is not fully verified.
 
 The next real use must test whether the placement worker can use the plan and whether the released paths pass QA. The maintenance worker selects the next missing gate from the generated queue; no duplicate registry is created.
+
+## Public release checks
+
+[Source PR62](https://github.com/Local-Service-Spotlight/task-library/pull/62) merged as `7949eec36f8360035f98e14f2a06852e75f38fdd`; [deployment37215778868](https://github.com/Local-Service-Spotlight/task-library/actions/runs/37215778868) succeeded, including all seven deployed archive checks. The ordinary parent URL matched the full saved text, media and unchanged inline scripts at16:15:49UTC on October4. Earlier cached mismatches remain recorded. The normal meta URL matched its full saved text/media/scripts at16:09:19UTC. One of seven existing article task copies changed; the other six remained exact.
+
+The browser article copy equals the maintained recipe between START/END. The embedded dashboard's Copy guide result equals the generated public task content. An immediate earlier clipboard read returned the previous task's text; a separate read after the embedded copy action returned the intended guide. That observation is retained without claiming an application defect. Maintained task sources supplied meaning checks because fetched dashboard shells alone do not prove dynamically selected content.
+
+At390×844 and1280×800 the standalone task path and normal embedded opening were visible. The canonical outer dashboard's normal Open guide control showed the intended title and copy controls after frame resize. Changing the viewport from phone to desktop while open initially left the outer scroll below the controls; closing and reopening at the new size restored the proper view. The unchanged app/wrapper retains this bounded observation for relevant layout work. The changed article disclosure and meta section were readable at both sizes. No media played.
+
+After committed source ledgers and generated projections,161 build and89 script tests passed. Seven local archives passed. Both affected public ZIP members matched their generated source, and START-HERE matched the maintained setup instructions. Existing app and setup dependencies were unchanged. A ZIP still grants no account access, installs no worker and starts no schedule.
+
+The current public queue reports276 tasks,275 exact instruction reviews,12 five-check written passes,126 contributor-complete labels and0 fully verified tasks. This repair adds one scoped publishing execution, not a link-plan result or first-user setup success.

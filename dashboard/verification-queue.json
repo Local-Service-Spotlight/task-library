@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-04T16:09:17+00:00",
+  "generatedAt": "2026-10-04T16:16:49+00:00",
   "definition": "Per-task standard gates derived from exact instruction reviews, explicit instruction-requirement checks, contributor status, article mapping/catalog holds, exact-revision article semantic reviews, task-attributed examples and the execution ledger. Unknown proof is never turned into a pass.",
   "stats": {
     "tasks": 276,
@@ -25787,7 +25787,7 @@
       "status": "complete",
       "articleUrl": "https://blitzmetrics.com/internal-linking",
       "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=step-2-fix-categories-and-tags-in-wordpress#task-step-2-fix-categories-and-tags-in-wordpress",
-      "nextAction": "Current article semantic criteria are unknown: owner, sourceEvidence, visualAndLayout, publicationStandards, acceptanceResults.",
+      "nextAction": "The article revision observation is outside the 24-hour freshness window.",
       "standardVerification": {
         "instructionSourceSha256": "0796d4e6d90a840b8c861d5f36a72e4ed53d4973e8bc3364cbd25689d8513071",
         "articleKey": "blitzmetrics.com/internal-linking",
@@ -25864,7 +25864,7 @@
             "id": "articleSemanticCertification",
             "label": "Article semantic certification",
             "state": "unknown",
-            "reason": "Current article semantic criteria are unknown: owner, sourceEvidence, visualAndLayout, publicationStandards, acceptanceResults.",
+            "reason": "The article revision observation is outside the 24-hour freshness window.",
             "semanticReview": {
               "version": 1,
               "taskSlug": "step-2-fix-categories-and-tags-in-wordpress",
@@ -26003,7 +26003,7 @@
         "queuePosition": 241,
         "priority": "P2",
         "priorityReason": "Importance 5; missing proof remains",
-        "nextAction": "Current article semantic criteria are unknown: owner, sourceEvidence, visualAndLayout, publicationStandards, acceptanceResults."
+        "nextAction": "The article revision observation is outside the 24-hour freshness window."
       }
     },
     {

@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "asOf": "2026-10-04T16:09:17.849916+00:00",
+  "asOf": "2026-10-04T16:16:49.350188+00:00",
   "countDefinition": "Distinct recorded execution IDs, separate from meta-article URLs. History is partial; absent history is unknown, not zero. The last-30-day count is a documented lower bound, not total task frequency.",
   "recordedExecutions": 20,
-  "completedExecutions": 7,
+  "completedExecutions": 8,
   "partialExecutions": 12,
   "executions": [
     {
@@ -550,16 +550,18 @@
         "publish-skill-and-task-page"
       ],
       "startedAt": "2026-10-04T16:05:24.941122+00:00",
-      "status": "running",
-      "result": "Repaired one link-planning recipe and parent copy; written review passes; final public release checks pending. No client link plan, novice setup or full task certification inferred.",
+      "status": "completed",
+      "result": "Published and verified one link-planning recipe repair: plain linked opening, scoped orphan evidence, reachable sources, exact reviewed edit rows and receiving-task package. Saved/public copies, phone/desktop views, 250 tests and seven archives passed. No real link-planning job, novice setup or full-task certification inferred.",
       "recipeRevisions": {
         "publish-skill-and-task-page": {
           "articleUrl": "https://blitzmetrics.com/skill-publishing-standard/",
           "sourceSha256": "660d6f1abd8678c851c0a08059f27982e8e29b46775ea217a2ae1d6e3ba55537"
         }
       },
+      "finishedAt": "2026-10-04T16:16:47.277363+00:00",
       "evidenceUrls": [
-        "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-plan-guide-2026-10-04.md"
+        "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/link-plan-guide-2026-10-04.md",
+        "https://github.com/Local-Service-Spotlight/task-library/pull/62"
       ],
       "privateEvidenceRecorded": false,
       "metaArticle": {
