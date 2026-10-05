@@ -88,8 +88,8 @@
     "unknown": 274
    },
    "acceptedExecution": {
-    "pass": 1,
-    "unmet": 0,
+    "pass": 0,
+    "unmet": 1,
     "hold": 0,
     "unknown": 275
    },
@@ -1715,7 +1715,7 @@
  ],
  "executionHistory": {
   "schemaVersion": 1,
-  "asOf": "2026-10-05T21:44:07.297011+00:00",
+  "asOf": "2026-10-05T21:47:32.208816+00:00",
   "countDefinition": "Distinct recorded execution IDs, separate from meta-article URLs. History is partial; absent history is unknown, not zero. The last-30-day count is a documented lower bound, not total task frequency.",
   "recordedExecutions": 23,
   "completedExecutions": 10,
@@ -36737,7 +36737,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 231,
+      "queuePosition": 232,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -37268,7 +37268,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 232,
+      "queuePosition": 233,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -37667,7 +37667,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 221,
+      "queuePosition": 222,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -37800,7 +37800,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 222,
+      "queuePosition": 223,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -37933,7 +37933,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 223,
+      "queuePosition": 224,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -38465,7 +38465,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 224,
+      "queuePosition": 225,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -38598,7 +38598,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 225,
+      "queuePosition": 226,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -38864,7 +38864,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 228,
+      "queuePosition": 229,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -38997,7 +38997,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 229,
+      "queuePosition": 230,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -39192,7 +39192,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 230,
+      "queuePosition": 231,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -40510,8 +40510,8 @@
        "acceptedExecution": {
         "id": "acceptedExecution",
         "label": "Accepted execution result",
-        "state": "pass",
-        "reason": "All named measurable acceptance criteria pass for the separately observed current recipe revision.",
+        "state": "unmet",
+        "reason": "A later recorded execution did not complete; it cannot be promoted by an older acceptance review.",
         "acceptanceReview": {
          "version": 1,
          "reviewId": "revenue-path-repair-20261005-1855-acceptance-1",
@@ -40577,20 +40577,6 @@
           }
          },
          "executionId": "revenue-path-repair-20261005-1855"
-        },
-        "revisionObservation": {
-         "version": 1,
-         "taskSlug": "publish-skill-and-task-page",
-         "canonicalURL": "https://blitzmetrics.com/skill-publishing-standard/",
-         "sourceSha256": "660d6f1abd8678c851c0a08059f27982e8e29b46775ea217a2ae1d6e3ba55537",
-         "representation": "wordpress-content-html",
-         "observedAt": "2026-10-05T21:43:54.272645Z",
-         "observer": "Codex separate authenticated post-acceptance source read",
-         "state": "observed",
-         "reason": "Current publishing recipe matches the revision followed by the accepted prior release; later authority release remains a separate blocked execution.",
-         "evidenceRefs": [
-          "sha256:0c848d4a94f769fce01473d5bc00c98b0d9f89895348137983020825f00acaf2"
-         ]
         }
        },
        "setupSuccess": {
@@ -40604,7 +40590,8 @@
        }
       },
       "unmetStandardGates": [
-       "articleSemanticCertification"
+       "articleSemanticCertification",
+       "acceptedExecution"
       ],
       "heldStandardGates": [],
       "unknownStandardGates": [
@@ -40612,7 +40599,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 233,
+      "queuePosition": 220,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The observed article source hash does not match the reviewed revision."
@@ -40746,7 +40733,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 226,
+      "queuePosition": 227,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -40880,7 +40867,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 227,
+      "queuePosition": 228,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -41014,7 +41001,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 220,
+      "queuePosition": 221,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
