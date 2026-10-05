@@ -198,7 +198,7 @@
         }
       },
       "reviewedAt": "2026-09-21T02:52:08.726122Z",
-      "reviewer": "Codex — independent Terra source review with root corrections; source-only scope"
+      "reviewer": "Codex \u2014 independent Terra source review with root corrections; source-only scope"
     },
     {
       "version": 1,
@@ -1532,7 +1532,7 @@
       "canonicalURL": "https://blitzmetrics.com/digital-plumbing",
       "sourceSha256": "5785e65d552c7e29371a338a304725fb04f235e9c5098d967e87409d48f2433e",
       "representation": "wordpress-content-html",
-      "reviewedAt": "2026-10-05T20:17:19.449635+00:00",
+      "reviewedAt": "2026-10-05T20:17:19.449635Z",
       "reviewer": "Codex root; independent source review recorded separately",
       "criteria": {
         "openingContext": {
@@ -1613,7 +1613,7 @@
       "canonicalURL": "https://blitzmetrics.com/digital-plumbing",
       "sourceSha256": "5785e65d552c7e29371a338a304725fb04f235e9c5098d967e87409d48f2433e",
       "representation": "wordpress-content-html",
-      "reviewedAt": "2026-10-05T20:17:19.449635+00:00",
+      "reviewedAt": "2026-10-05T20:17:19.449635Z",
       "reviewer": "Codex root; independent source review recorded separately",
       "criteria": {
         "openingContext": {
@@ -1694,7 +1694,7 @@
       "canonicalURL": "https://blitzmetrics.com/digital-plumbing",
       "sourceSha256": "5785e65d552c7e29371a338a304725fb04f235e9c5098d967e87409d48f2433e",
       "representation": "wordpress-content-html",
-      "reviewedAt": "2026-10-05T20:17:19.449635+00:00",
+      "reviewedAt": "2026-10-05T20:17:19.449635Z",
       "reviewer": "Codex root; independent source review recorded separately",
       "criteria": {
         "openingContext": {
@@ -1793,7 +1793,7 @@
       "representation": "wordpress-content-html",
       "sourceSha256": "1952b6ead82a6a9aa0d0f96f0e976b34c957351fe155fe8ddd56b6fc7e767fde",
       "observedAt": "2026-09-21T02:58:47.228010Z",
-      "observer": "Codex — authenticated WordPress source read after editorial review",
+      "observer": "Codex \u2014 authenticated WordPress source read after editorial review",
       "state": "observed",
       "reason": "A separate fresh source read matched the reviewed raw content bytes. It does not measure rendered layout, metadata or business results.",
       "evidenceRefs": [
@@ -2032,7 +2032,7 @@
       "canonicalURL": "https://blitzmetrics.com/digital-plumbing",
       "sourceSha256": "5785e65d552c7e29371a338a304725fb04f235e9c5098d967e87409d48f2433e",
       "representation": "wordpress-content-html",
-      "observedAt": "2026-10-05T20:17:19.453497+00:00",
+      "observedAt": "2026-10-05T20:17:19.453497Z",
       "observer": "Codex separate authenticated read",
       "state": "observed",
       "reason": "Separate fresh saved-source read matches final reviewed parent bytes; anonymous readback checked separately.",
@@ -2046,7 +2046,7 @@
       "canonicalURL": "https://blitzmetrics.com/digital-plumbing",
       "sourceSha256": "5785e65d552c7e29371a338a304725fb04f235e9c5098d967e87409d48f2433e",
       "representation": "wordpress-content-html",
-      "observedAt": "2026-10-05T20:17:19.453518+00:00",
+      "observedAt": "2026-10-05T20:17:19.453518Z",
       "observer": "Codex separate authenticated read",
       "state": "observed",
       "reason": "Separate fresh saved-source read matches final reviewed parent bytes; anonymous readback checked separately.",
@@ -2060,7 +2060,7 @@
       "canonicalURL": "https://blitzmetrics.com/digital-plumbing",
       "sourceSha256": "5785e65d552c7e29371a338a304725fb04f235e9c5098d967e87409d48f2433e",
       "representation": "wordpress-content-html",
-      "observedAt": "2026-10-05T20:17:19.453522+00:00",
+      "observedAt": "2026-10-05T20:17:19.453522Z",
       "observer": "Codex separate authenticated read",
       "state": "observed",
       "reason": "Separate fresh saved-source read matches final reviewed parent bytes; anonymous readback checked separately.",

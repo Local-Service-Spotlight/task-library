@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "ordering": "Setup failures and evidence holds first. Within each priority lane, sort by estimated revenue role, dependencies unblocked, frequency and importance before missing-guide status and gap count. Effort and actual income remain unknown.",
-  "generatedAt": "2026-10-05T20:04:29+00:00",
+  "generatedAt": "2026-10-05T20:20:35+00:00",
   "definition": "Per-task standard gates derived from exact instruction reviews, explicit instruction-requirement checks, contributor status, article mapping/catalog holds, exact-revision article semantic reviews, task-attributed examples and the execution ledger. Unknown proof is never turned into a pass.",
   "stats": {
     "tasks": 276,
@@ -2645,14 +2645,14 @@
               "version": 1,
               "taskSlug": "create-clear-conversion-path",
               "canonicalURL": "https://blitzmetrics.com/digital-plumbing",
-              "sourceSha256": "4e2e557b45a6d32980184e91036c75c57f88056ee2982413962581efa9113c88",
+              "sourceSha256": "5785e65d552c7e29371a338a304725fb04f235e9c5098d967e87409d48f2433e",
               "representation": "wordpress-content-html",
-              "reviewedAt": "2026-10-05T19:58:54.781855Z",
+              "reviewedAt": "2026-10-05T20:17:19.449635Z",
               "reviewer": "Codex root; independent source review recorded separately",
               "criteria": {
                 "openingContext": {
                   "state": "pass",
-                  "reason": "Actual opening quoted with task, business value and meaningful linked connection.",
+                  "reason": "Canonical parent opening and meaningful Content Factory connection now quoted and reviewed separately from its copied skill openings. Current body supplies the setup and test steps promised.",
                   "evidenceRefs": [
                     "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md"
                   ]
@@ -2680,7 +2680,7 @@
                 },
                 "links": {
                   "state": "pass",
-                  "reason": "Root read relevant owned and primary meanings;20 URLs returned200; linked task bodies checked.",
+                  "reason": "Selected recipe links: root read relevant owned and primary meanings; 20 URLs returned 200; linked task bodies checked. Parent opening Content Factory destination read.",
                   "evidenceRefs": [
                     "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md"
                   ]
@@ -2726,12 +2726,12 @@
               "version": 1,
               "taskSlug": "create-clear-conversion-path",
               "canonicalURL": "https://blitzmetrics.com/digital-plumbing",
-              "sourceSha256": "4e2e557b45a6d32980184e91036c75c57f88056ee2982413962581efa9113c88",
+              "sourceSha256": "5785e65d552c7e29371a338a304725fb04f235e9c5098d967e87409d48f2433e",
               "representation": "wordpress-content-html",
-              "observedAt": "2026-10-05T19:58:57.590432Z",
+              "observedAt": "2026-10-05T20:17:19.453497Z",
               "observer": "Codex separate authenticated read",
               "state": "observed",
-              "reason": "Final source copy agrees with reviewed maintained recipe.",
+              "reason": "Separate fresh saved-source read matches final reviewed parent bytes; anonymous readback checked separately.",
               "evidenceRefs": [
                 "sha256:76375c5c067973c412c979f5f2e0aad6195047dae0d9285f789598006d956afa"
               ]
@@ -2882,14 +2882,14 @@
               "version": 1,
               "taskSlug": "ensure-working-contact-form-delivers-notifications",
               "canonicalURL": "https://blitzmetrics.com/digital-plumbing",
-              "sourceSha256": "4e2e557b45a6d32980184e91036c75c57f88056ee2982413962581efa9113c88",
+              "sourceSha256": "5785e65d552c7e29371a338a304725fb04f235e9c5098d967e87409d48f2433e",
               "representation": "wordpress-content-html",
-              "reviewedAt": "2026-10-05T19:58:54.781855Z",
+              "reviewedAt": "2026-10-05T20:17:19.449635Z",
               "reviewer": "Codex root; independent source review recorded separately",
               "criteria": {
                 "openingContext": {
                   "state": "pass",
-                  "reason": "Actual opening quoted with task, business value and meaningful linked connection.",
+                  "reason": "Canonical parent opening and meaningful Content Factory connection now quoted and reviewed separately from its copied skill openings. Current body supplies the setup and test steps promised.",
                   "evidenceRefs": [
                     "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md"
                   ]
@@ -2917,7 +2917,7 @@
                 },
                 "links": {
                   "state": "pass",
-                  "reason": "Root read relevant owned and primary meanings;20 URLs returned200; linked task bodies checked.",
+                  "reason": "Selected recipe links: root read relevant owned and primary meanings; 20 URLs returned 200; linked task bodies checked. Parent opening Content Factory destination read.",
                   "evidenceRefs": [
                     "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md"
                   ]
@@ -2963,12 +2963,12 @@
               "version": 1,
               "taskSlug": "ensure-working-contact-form-delivers-notifications",
               "canonicalURL": "https://blitzmetrics.com/digital-plumbing",
-              "sourceSha256": "4e2e557b45a6d32980184e91036c75c57f88056ee2982413962581efa9113c88",
+              "sourceSha256": "5785e65d552c7e29371a338a304725fb04f235e9c5098d967e87409d48f2433e",
               "representation": "wordpress-content-html",
-              "observedAt": "2026-10-05T19:58:57.590607Z",
+              "observedAt": "2026-10-05T20:17:19.453518Z",
               "observer": "Codex separate authenticated read",
               "state": "observed",
-              "reason": "Final source copy agrees with reviewed maintained recipe.",
+              "reason": "Separate fresh saved-source read matches final reviewed parent bytes; anonymous readback checked separately.",
               "evidenceRefs": [
                 "sha256:76375c5c067973c412c979f5f2e0aad6195047dae0d9285f789598006d956afa"
               ]
@@ -5198,14 +5198,14 @@
               "version": 1,
               "taskSlug": "set-up-call-tracking-for-phone-conversions",
               "canonicalURL": "https://blitzmetrics.com/digital-plumbing",
-              "sourceSha256": "4e2e557b45a6d32980184e91036c75c57f88056ee2982413962581efa9113c88",
+              "sourceSha256": "5785e65d552c7e29371a338a304725fb04f235e9c5098d967e87409d48f2433e",
               "representation": "wordpress-content-html",
-              "reviewedAt": "2026-10-05T19:58:54.781855Z",
+              "reviewedAt": "2026-10-05T20:17:19.449635Z",
               "reviewer": "Codex root; independent source review recorded separately",
               "criteria": {
                 "openingContext": {
                   "state": "pass",
-                  "reason": "Actual opening quoted with task, business value and meaningful linked connection.",
+                  "reason": "Canonical parent opening and meaningful Content Factory connection now quoted and reviewed separately from its copied skill openings. Current body supplies the setup and test steps promised.",
                   "evidenceRefs": [
                     "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md"
                   ]
@@ -5233,7 +5233,7 @@
                 },
                 "links": {
                   "state": "pass",
-                  "reason": "Root read relevant owned and primary meanings;20 URLs returned200; linked task bodies checked.",
+                  "reason": "Selected recipe links: root read relevant owned and primary meanings; 20 URLs returned 200; linked task bodies checked. Parent opening Content Factory destination read.",
                   "evidenceRefs": [
                     "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md"
                   ]
@@ -5279,12 +5279,12 @@
               "version": 1,
               "taskSlug": "set-up-call-tracking-for-phone-conversions",
               "canonicalURL": "https://blitzmetrics.com/digital-plumbing",
-              "sourceSha256": "4e2e557b45a6d32980184e91036c75c57f88056ee2982413962581efa9113c88",
+              "sourceSha256": "5785e65d552c7e29371a338a304725fb04f235e9c5098d967e87409d48f2433e",
               "representation": "wordpress-content-html",
-              "observedAt": "2026-10-05T19:58:57.590737Z",
+              "observedAt": "2026-10-05T20:17:19.453522Z",
               "observer": "Codex separate authenticated read",
               "state": "observed",
-              "reason": "Final source copy agrees with reviewed maintained recipe.",
+              "reason": "Separate fresh saved-source read matches final reviewed parent bytes; anonymous readback checked separately.",
               "evidenceRefs": [
                 "sha256:76375c5c067973c412c979f5f2e0aad6195047dae0d9285f789598006d956afa"
               ]
