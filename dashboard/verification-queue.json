@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "ordering": "Setup failures and evidence holds first. Within each priority lane, sort by estimated revenue role, dependencies unblocked, frequency and importance before missing-guide status and gap count. Effort and actual income remain unknown.",
-  "generatedAt": "2026-10-05T21:47:32+00:00",
+  "generatedAt": "2026-10-05T23:56:22+00:00",
   "definition": "Per-task standard gates derived from exact instruction reviews, explicit instruction-requirement checks, contributor status, article mapping/catalog holds, exact-revision article semantic reviews, task-attributed examples and the execution ledger. Unknown proof is never turned into a pass.",
   "stats": {
     "tasks": 276,
@@ -25411,11 +25411,12 @@
             "id": "recordedExecution",
             "label": "Recorded real execution",
             "state": "pass",
-            "reason": "15 distinct execution ID(s) name this task; outcomes remain separate.",
+            "reason": "16 distinct execution ID(s) name this task; outcomes remain separate.",
             "executionIds": [
               "authority-guides-repair-20261005-2100",
               "crossref-release-20260927-162402",
               "entity-linking-repair-20260930-0105",
+              "first-use-rcf-20261005-2343",
               "internal-linking-repair-20261001-1405",
               "inventory-guide-repair-20261002-1610",
               "link-building-repair-20261001-1307",

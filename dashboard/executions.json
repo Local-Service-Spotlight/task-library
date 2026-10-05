@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "asOf": "2026-10-05T21:47:32.208816+00:00",
+  "asOf": "2026-10-05T23:56:22.311910+00:00",
   "countDefinition": "Distinct recorded execution IDs, separate from meta-article URLs. History is partial; absent history is unknown, not zero. The last-30-day count is a documented lower bound, not total task frequency.",
-  "recordedExecutions": 23,
+  "recordedExecutions": 24,
   "completedExecutions": 10,
   "partialExecutions": 12,
   "executions": [
@@ -709,6 +709,29 @@
       "metaArticle": {
         "status": "published",
         "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#authority-guides-repair-20261005-2100"
+      }
+    },
+    {
+      "executionId": "first-use-rcf-20261005-2343",
+      "taskSlugs": [
+        "publish-skill-and-task-page"
+      ],
+      "startedAt": "2026-10-05T23:43:01Z",
+      "status": "running",
+      "result": "RCA repaired web/ZIP starter-field drift and misleading catalog-neighbor labels. Maintenance now permits useful independent work during release holds. Local source tests and phone/desktop preview checks passed; public runtime release remains pending. No business-task run or novice setup inferred.",
+      "recipeRevisions": {
+        "publish-skill-and-task-page": {
+          "articleUrl": "https://blitzmetrics.com/skill-publishing-standard/",
+          "sourceSha256": "660d6f1abd8678c851c0a08059f27982e8e29b46775ea217a2ae1d6e3ba55537"
+        }
+      },
+      "evidenceUrls": [
+        "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/library-rca-2026-10-05.md"
+      ],
+      "privateEvidenceRecorded": false,
+      "metaArticle": {
+        "status": "published",
+        "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#first-use-rcf-20261005-2343"
       }
     }
   ]

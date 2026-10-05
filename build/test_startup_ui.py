@@ -21,6 +21,14 @@ class StartupUI(unittest.TestCase):
         self.assertTrue(got['prompt'].endswith(guide))
         self.assertIn('?task=draft-titles#task-draft-titles',got['prompt'])
         self.assertIn('My business and the result I want: [fill in]',got['prompt'])
+        onboarding=(ROOT/'build/pack-start-here.md').read_text()
+        for field in ('Save the result here: [fill in].',
+                      'Actions already approved: [fill in].',
+                      'Work already started? Attach its saved record, or say “new job.”'):
+            self.assertIn(field,got['prompt'])
+            self.assertIn(field,onboarding)
+        self.assertIn('current title, full body, intended readers, and goal',got['prompt'])
+        self.assertIn('Retain the same execution ID',got['prompt'])
         self.assertIn('required account access',got['prompt'])
         self.assertIn('one draft or read-only check',got['prompt'])
         self.assertIn('only when I ask for it',got['prompt'])
