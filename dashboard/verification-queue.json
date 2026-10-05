@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "ordering": "Setup failures and evidence holds first. Within each priority lane, sort by estimated revenue role, dependencies unblocked, frequency and importance before missing-guide status and gap count. Effort and actual income remain unknown.",
-  "generatedAt": "2026-10-05T20:36:34+00:00",
+  "generatedAt": "2026-10-05T21:22:01+00:00",
   "definition": "Per-task standard gates derived from exact instruction reviews, explicit instruction-requirement checks, contributor status, article mapping/catalog holds, exact-revision article semantic reviews, task-attributed examples and the execution ledger. Unknown proof is never turned into a pass.",
   "stats": {
     "tasks": 276,
@@ -18,10 +18,10 @@
         "unknown": 0
       },
       "instructionStandards": {
-        "pass": 16,
+        "pass": 19,
         "unmet": 0,
         "hold": 0,
-        "unknown": 260
+        "unknown": 257
       },
       "contributorComplete": {
         "pass": 126,
@@ -11720,24 +11720,57 @@
       "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=classify-and-offer-knowledge-panel#task-classify-and-offer-knowledge-panel",
       "nextAction": "The contributor status is needs-work; finish and review the guide.",
       "standardVerification": {
-        "instructionSourceSha256": "cecebe10a67c2349b0e70d6186a35868129da6837b6f7a361939a71e46c64bd4",
+        "instructionSourceSha256": "e52ab95088bca316403cce18fbf1b7810cf871886e4c3775fba9ed88926dfab4",
         "articleKey": "blitzmetrics.com/knowledge-panel",
         "gates": {
           "instructionRevisionReviewed": {
             "id": "instructionRevisionReviewed",
             "label": "Exact instruction revision reviewed",
             "state": "pass",
-            "reason": "Current source bytes match the review recorded 2026-09-06. Review scope and limits: Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate.",
-            "reviewedAt": "2026-09-06",
-            "reviewer": "Codex editorial review",
-            "sourceSha256": "cecebe10a67c2349b0e70d6186a35868129da6837b6f7a361939a71e46c64bd4"
+            "reason": "Current source bytes match the review recorded 2026-10-05. Review scope and limits: Five written checks only. Article certification, accepted execution and novice setup remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md",
+            "reviewedAt": "2026-10-05",
+            "reviewer": "Codex root with independent GPT-6 Luna written review",
+            "sourceSha256": "e52ab95088bca316403cce18fbf1b7810cf871886e4c3775fba9ed88926dfab4"
           },
           "instructionStandards": {
             "id": "instructionStandards",
             "label": "Instruction requirements checked",
-            "state": "unknown",
-            "reason": "The current exact-byte review has no structured instruction-requirements checklist.",
-            "sourceSha256": "cecebe10a67c2349b0e70d6186a35868129da6837b6f7a361939a71e46c64bd4"
+            "state": "pass",
+            "reason": "All five instruction requirements have explicit passing checks for the current source revision.",
+            "reviewedAt": "2026-10-05",
+            "reviewer": "Codex root with independent GPT-6 Luna written review",
+            "reviewScope": "Five written checks only. Article certification, accepted execution and novice setup remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md",
+            "sourceSha256": "e52ab95088bca316403cce18fbf1b7810cf871886e4c3775fba9ed88926dfab4",
+            "standards": {
+              "version": 1,
+              "checks": {
+                "opening": {
+                  "state": "pass",
+                  "reason": "Exact opening quoted in review: task, practical reason and explained owned connection. First-screen diagram and opening checked in phone and desktop article previews. Readability diagnostic saved; actual meaning judged separately.",
+                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+                },
+                "recipe": {
+                  "state": "pass",
+                  "reason": "Trigger, source/access inputs, ordered steps, countable result record, acceptance and real scope are explicit. Setup, access, one task and optional schedule stay separate.",
+                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+                },
+                "links": {
+                  "state": "pass",
+                  "reason": "Owned prerequisite and receiving-task bodies read; normal destination checks succeeded. Empty GBP course replaced with the relevant maintained task; primary Google and DNS sources support provider claims.",
+                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+                },
+                "evidence": {
+                  "state": "pass",
+                  "reason": "Unsupported Google guarantees and site-launch assumptions removed. False identity matches excluded; examples fictional; actual approved terms, domain configuration, output checks and receiver evidence required.",
+                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+                },
+                "handoff": {
+                  "state": "pass",
+                  "reason": "Exact proposal, identity map or site record goes to a required reviewer/owner. Assignment is a prerequisite, not a claim of staffed roles. Qualification precedes delivery; Process identity feeds Post site work.",
+                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+                }
+              }
+            }
           },
           "contributorComplete": {
             "id": "contributorComplete",
@@ -11762,7 +11795,102 @@
             "id": "articleSemanticCertification",
             "label": "Article semantic certification",
             "state": "unknown",
-            "reason": "No exact-revision positive semantic review is recorded for this article."
+            "reason": "Current article semantic criteria are unknown: owner, sourceEvidence, visualAndLayout, publicationStandards, acceptanceResults.",
+            "semanticReview": {
+              "version": 1,
+              "taskSlug": "classify-and-offer-knowledge-panel",
+              "canonicalURL": "https://blitzmetrics.com/knowledge-panel",
+              "sourceSha256": "8ffaedfbfedaa6aa9a5073ae30abfac53e6b3b9b316cf2614b9d2b2e6fe751bd",
+              "representation": "wordpress-content-html",
+              "reviewedAt": "2026-10-05T21:21:36.783111Z",
+              "reviewer": "Codex root; separate GPT-6 Luna written review",
+              "criteria": {
+                "openingContext": {
+                  "state": "pass",
+                  "reason": "Actual first paragraph quoted below; plain useful work, reason and owned personal-brand prerequisite, with source meaning checked.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+                  ]
+                },
+                "roleScope": {
+                  "state": "pass",
+                  "reason": "Single site-delivery recipe or six-task Knowledge Panel topic hub; registry and public copy agree.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+                  ]
+                },
+                "owner": {
+                  "state": "unknown",
+                  "reason": "Canonical ongoing upkeep owner not established by this scoped release.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+                  ]
+                },
+                "steps": {
+                  "state": "pass",
+                  "reason": "Reviewed body now agrees with the current source recipe; old Google and DNS contradictions removed.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+                  ]
+                },
+                "links": {
+                  "state": "pass",
+                  "reason": "Owned conceptual and prerequisite meanings checked; current source copies and primary-provider references checked.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+                  ]
+                },
+                "sourceEvidence": {
+                  "state": "unknown",
+                  "reason": "No new independently accepted offer, identity audit or site launch is supplied by documentation work.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+                  ]
+                },
+                "handoffContext": {
+                  "state": "pass",
+                  "reason": "Named required reviewer or publisher, exact artifact and accepting record, plus specific Content Factory relationship.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+                  ]
+                },
+                "visualAndLayout": {
+                  "state": "unknown",
+                  "reason": "Previews passed; final anonymous source and full public rendered checks tracked separately before any certification.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+                  ]
+                },
+                "publicationStandards": {
+                  "state": "unknown",
+                  "reason": "Stable route and basic metadata preserved or improved; complete taxonomy, SEO metadata and author evidence not certified.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+                  ]
+                },
+                "acceptanceResults": {
+                  "state": "unknown",
+                  "reason": "No accepted real task execution or novice setup trial; article publication is not their substitute.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+                  ]
+                }
+              }
+            },
+            "revisionObservation": {
+              "version": 1,
+              "taskSlug": "classify-and-offer-knowledge-panel",
+              "canonicalURL": "https://blitzmetrics.com/knowledge-panel",
+              "sourceSha256": "8ffaedfbfedaa6aa9a5073ae30abfac53e6b3b9b316cf2614b9d2b2e6fe751bd",
+              "representation": "wordpress-content-html",
+              "observedAt": "2026-10-05T21:21:37.547232Z",
+              "observer": "Codex separate authenticated source read",
+              "state": "observed",
+              "reason": "Exact reviewed source independently read after the review. Public parity remains separate.",
+              "evidenceRefs": [
+                "sha256:37ddfe4c66f4e20c4824e23c164e66f5bd2ad204cc10731c329c94c6a39599db"
+              ]
+            }
           },
           "taskExampleEvidence": {
             "id": "taskExampleEvidence",
@@ -11798,7 +11926,6 @@
         ],
         "heldStandardGates": [],
         "unknownStandardGates": [
-          "instructionStandards",
           "articleSemanticCertification",
           "taskExampleEvidence",
           "recordedExecution",
@@ -15741,24 +15868,57 @@
       "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=deliver-personal-brand-site-from-request#task-deliver-personal-brand-site-from-request",
       "nextAction": "The contributor status is needs-work; finish and review the guide.",
       "standardVerification": {
-        "instructionSourceSha256": "0b7ad1cef8adc6c40d798a7545ec7d1e5e41b727909411885cf105b230ed0ed2",
+        "instructionSourceSha256": "20d84176417903edc98454b05f4a3f35286d7bf8141273fb35190a183a2f0c30",
         "articleKey": "blitzmetrics.com/from-one-email-to-a-live-personal-brand-site",
         "gates": {
           "instructionRevisionReviewed": {
             "id": "instructionRevisionReviewed",
             "label": "Exact instruction revision reviewed",
             "state": "pass",
-            "reason": "Current source bytes match the review recorded 2026-09-06. Review scope and limits: Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate.",
-            "reviewedAt": "2026-09-06",
-            "reviewer": "Codex editorial review",
-            "sourceSha256": "0b7ad1cef8adc6c40d798a7545ec7d1e5e41b727909411885cf105b230ed0ed2"
+            "reason": "Current source bytes match the review recorded 2026-10-05. Review scope and limits: Five written checks only. Article certification, accepted execution and novice setup remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md",
+            "reviewedAt": "2026-10-05",
+            "reviewer": "Codex root with independent GPT-6 Luna written review",
+            "sourceSha256": "20d84176417903edc98454b05f4a3f35286d7bf8141273fb35190a183a2f0c30"
           },
           "instructionStandards": {
             "id": "instructionStandards",
             "label": "Instruction requirements checked",
-            "state": "unknown",
-            "reason": "The current exact-byte review has no structured instruction-requirements checklist.",
-            "sourceSha256": "0b7ad1cef8adc6c40d798a7545ec7d1e5e41b727909411885cf105b230ed0ed2"
+            "state": "pass",
+            "reason": "All five instruction requirements have explicit passing checks for the current source revision.",
+            "reviewedAt": "2026-10-05",
+            "reviewer": "Codex root with independent GPT-6 Luna written review",
+            "reviewScope": "Five written checks only. Article certification, accepted execution and novice setup remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md",
+            "sourceSha256": "20d84176417903edc98454b05f4a3f35286d7bf8141273fb35190a183a2f0c30",
+            "standards": {
+              "version": 1,
+              "checks": {
+                "opening": {
+                  "state": "pass",
+                  "reason": "Exact opening quoted in review: task, practical reason and explained owned connection. First-screen diagram and opening checked in phone and desktop article previews. Readability diagnostic saved; actual meaning judged separately.",
+                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+                },
+                "recipe": {
+                  "state": "pass",
+                  "reason": "Trigger, source/access inputs, ordered steps, countable result record, acceptance and real scope are explicit. Setup, access, one task and optional schedule stay separate.",
+                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+                },
+                "links": {
+                  "state": "pass",
+                  "reason": "Owned prerequisite and receiving-task bodies read; normal destination checks succeeded. Empty GBP course replaced with the relevant maintained task; primary Google and DNS sources support provider claims.",
+                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+                },
+                "evidence": {
+                  "state": "pass",
+                  "reason": "Unsupported Google guarantees and site-launch assumptions removed. False identity matches excluded; examples fictional; actual approved terms, domain configuration, output checks and receiver evidence required.",
+                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+                },
+                "handoff": {
+                  "state": "pass",
+                  "reason": "Exact proposal, identity map or site record goes to a required reviewer/owner. Assignment is a prerequisite, not a claim of staffed roles. Qualification precedes delivery; Process identity feeds Post site work.",
+                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+                }
+              }
+            }
           },
           "contributorComplete": {
             "id": "contributorComplete",
@@ -15783,7 +15943,102 @@
             "id": "articleSemanticCertification",
             "label": "Article semantic certification",
             "state": "unknown",
-            "reason": "No exact-revision positive semantic review is recorded for this article."
+            "reason": "Current article semantic criteria are unknown: owner, sourceEvidence, visualAndLayout, publicationStandards, acceptanceResults.",
+            "semanticReview": {
+              "version": 1,
+              "taskSlug": "deliver-personal-brand-site-from-request",
+              "canonicalURL": "https://blitzmetrics.com/from-one-email-to-a-live-personal-brand-site/",
+              "sourceSha256": "16c8a44fe24f066e6330e14585cd5daa456865cbf6372840a58fed34d6efed8d",
+              "representation": "wordpress-content-html",
+              "reviewedAt": "2026-10-05T21:21:36.784617Z",
+              "reviewer": "Codex root; separate GPT-6 Luna written review",
+              "criteria": {
+                "openingContext": {
+                  "state": "pass",
+                  "reason": "Actual first paragraph quoted below; plain useful work, reason and owned personal-brand prerequisite, with source meaning checked.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+                  ]
+                },
+                "roleScope": {
+                  "state": "pass",
+                  "reason": "Single site-delivery recipe or six-task Knowledge Panel topic hub; registry and public copy agree.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+                  ]
+                },
+                "owner": {
+                  "state": "unknown",
+                  "reason": "Canonical ongoing upkeep owner not established by this scoped release.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+                  ]
+                },
+                "steps": {
+                  "state": "pass",
+                  "reason": "Reviewed body now agrees with the current source recipe; old Google and DNS contradictions removed.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+                  ]
+                },
+                "links": {
+                  "state": "pass",
+                  "reason": "Owned conceptual and prerequisite meanings checked; current source copies and primary-provider references checked.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+                  ]
+                },
+                "sourceEvidence": {
+                  "state": "unknown",
+                  "reason": "No new independently accepted offer, identity audit or site launch is supplied by documentation work.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+                  ]
+                },
+                "handoffContext": {
+                  "state": "pass",
+                  "reason": "Named required reviewer or publisher, exact artifact and accepting record, plus specific Content Factory relationship.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+                  ]
+                },
+                "visualAndLayout": {
+                  "state": "unknown",
+                  "reason": "Previews passed; final anonymous source and full public rendered checks tracked separately before any certification.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+                  ]
+                },
+                "publicationStandards": {
+                  "state": "unknown",
+                  "reason": "Stable route and basic metadata preserved or improved; complete taxonomy, SEO metadata and author evidence not certified.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+                  ]
+                },
+                "acceptanceResults": {
+                  "state": "unknown",
+                  "reason": "No accepted real task execution or novice setup trial; article publication is not their substitute.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+                  ]
+                }
+              }
+            },
+            "revisionObservation": {
+              "version": 1,
+              "taskSlug": "deliver-personal-brand-site-from-request",
+              "canonicalURL": "https://blitzmetrics.com/from-one-email-to-a-live-personal-brand-site/",
+              "sourceSha256": "16c8a44fe24f066e6330e14585cd5daa456865cbf6372840a58fed34d6efed8d",
+              "representation": "wordpress-content-html",
+              "observedAt": "2026-10-05T21:21:38.281278Z",
+              "observer": "Codex separate authenticated source read",
+              "state": "observed",
+              "reason": "Exact reviewed source independently read after the review. Public parity remains separate.",
+              "evidenceRefs": [
+                "sha256:adb6551a2e71e065a84ed54612fd7dc7b1f408f294d6b4d8a899418217b38a74"
+              ]
+            }
           },
           "taskExampleEvidence": {
             "id": "taskExampleEvidence",
@@ -15819,7 +16074,6 @@
         ],
         "heldStandardGates": [],
         "unknownStandardGates": [
-          "instructionStandards",
           "articleSemanticCertification",
           "taskExampleEvidence",
           "recordedExecution",
@@ -15851,24 +16105,57 @@
       "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=establish-entity-identity#task-establish-entity-identity",
       "nextAction": "The contributor status is needs-work; finish and review the guide.",
       "standardVerification": {
-        "instructionSourceSha256": "e2362b7adafe3c8c050ff8e777345b71b0ed36d912d109d137d9f0571ccb918d",
+        "instructionSourceSha256": "c6a880dda0fda613688c60ef64061226ff0ec2a11cee9e05655c7063fd06fec3",
         "articleKey": "blitzmetrics.com/knowledge-panel",
         "gates": {
           "instructionRevisionReviewed": {
             "id": "instructionRevisionReviewed",
             "label": "Exact instruction revision reviewed",
             "state": "pass",
-            "reason": "Current source bytes match the review recorded 2026-09-06. Review scope and limits: Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate.",
-            "reviewedAt": "2026-09-06",
-            "reviewer": "Codex editorial review",
-            "sourceSha256": "e2362b7adafe3c8c050ff8e777345b71b0ed36d912d109d137d9f0571ccb918d"
+            "reason": "Current source bytes match the review recorded 2026-10-05. Review scope and limits: Five written checks only. Article certification, accepted execution and novice setup remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md",
+            "reviewedAt": "2026-10-05",
+            "reviewer": "Codex root with independent GPT-6 Luna written review",
+            "sourceSha256": "c6a880dda0fda613688c60ef64061226ff0ec2a11cee9e05655c7063fd06fec3"
           },
           "instructionStandards": {
             "id": "instructionStandards",
             "label": "Instruction requirements checked",
-            "state": "unknown",
-            "reason": "The current exact-byte review has no structured instruction-requirements checklist.",
-            "sourceSha256": "e2362b7adafe3c8c050ff8e777345b71b0ed36d912d109d137d9f0571ccb918d"
+            "state": "pass",
+            "reason": "All five instruction requirements have explicit passing checks for the current source revision.",
+            "reviewedAt": "2026-10-05",
+            "reviewer": "Codex root with independent GPT-6 Luna written review",
+            "reviewScope": "Five written checks only. Article certification, accepted execution and novice setup remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md",
+            "sourceSha256": "c6a880dda0fda613688c60ef64061226ff0ec2a11cee9e05655c7063fd06fec3",
+            "standards": {
+              "version": 1,
+              "checks": {
+                "opening": {
+                  "state": "pass",
+                  "reason": "Exact opening quoted in review: task, practical reason and explained owned connection. First-screen diagram and opening checked in phone and desktop article previews. Readability diagnostic saved; actual meaning judged separately.",
+                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+                },
+                "recipe": {
+                  "state": "pass",
+                  "reason": "Trigger, source/access inputs, ordered steps, countable result record, acceptance and real scope are explicit. Setup, access, one task and optional schedule stay separate.",
+                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+                },
+                "links": {
+                  "state": "pass",
+                  "reason": "Owned prerequisite and receiving-task bodies read; normal destination checks succeeded. Empty GBP course replaced with the relevant maintained task; primary Google and DNS sources support provider claims.",
+                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+                },
+                "evidence": {
+                  "state": "pass",
+                  "reason": "Unsupported Google guarantees and site-launch assumptions removed. False identity matches excluded; examples fictional; actual approved terms, domain configuration, output checks and receiver evidence required.",
+                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+                },
+                "handoff": {
+                  "state": "pass",
+                  "reason": "Exact proposal, identity map or site record goes to a required reviewer/owner. Assignment is a prerequisite, not a claim of staffed roles. Qualification precedes delivery; Process identity feeds Post site work.",
+                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+                }
+              }
+            }
           },
           "contributorComplete": {
             "id": "contributorComplete",
@@ -15893,7 +16180,102 @@
             "id": "articleSemanticCertification",
             "label": "Article semantic certification",
             "state": "unknown",
-            "reason": "No exact-revision positive semantic review is recorded for this article."
+            "reason": "Current article semantic criteria are unknown: owner, sourceEvidence, visualAndLayout, publicationStandards, acceptanceResults.",
+            "semanticReview": {
+              "version": 1,
+              "taskSlug": "establish-entity-identity",
+              "canonicalURL": "https://blitzmetrics.com/knowledge-panel",
+              "sourceSha256": "8ffaedfbfedaa6aa9a5073ae30abfac53e6b3b9b316cf2614b9d2b2e6fe751bd",
+              "representation": "wordpress-content-html",
+              "reviewedAt": "2026-10-05T21:21:36.785532Z",
+              "reviewer": "Codex root; separate GPT-6 Luna written review",
+              "criteria": {
+                "openingContext": {
+                  "state": "pass",
+                  "reason": "Actual first paragraph quoted below; plain useful work, reason and owned personal-brand prerequisite, with source meaning checked.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+                  ]
+                },
+                "roleScope": {
+                  "state": "pass",
+                  "reason": "Single site-delivery recipe or six-task Knowledge Panel topic hub; registry and public copy agree.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+                  ]
+                },
+                "owner": {
+                  "state": "unknown",
+                  "reason": "Canonical ongoing upkeep owner not established by this scoped release.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+                  ]
+                },
+                "steps": {
+                  "state": "pass",
+                  "reason": "Reviewed body now agrees with the current source recipe; old Google and DNS contradictions removed.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+                  ]
+                },
+                "links": {
+                  "state": "pass",
+                  "reason": "Owned conceptual and prerequisite meanings checked; current source copies and primary-provider references checked.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+                  ]
+                },
+                "sourceEvidence": {
+                  "state": "unknown",
+                  "reason": "No new independently accepted offer, identity audit or site launch is supplied by documentation work.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+                  ]
+                },
+                "handoffContext": {
+                  "state": "pass",
+                  "reason": "Named required reviewer or publisher, exact artifact and accepting record, plus specific Content Factory relationship.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+                  ]
+                },
+                "visualAndLayout": {
+                  "state": "unknown",
+                  "reason": "Previews passed; final anonymous source and full public rendered checks tracked separately before any certification.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+                  ]
+                },
+                "publicationStandards": {
+                  "state": "unknown",
+                  "reason": "Stable route and basic metadata preserved or improved; complete taxonomy, SEO metadata and author evidence not certified.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+                  ]
+                },
+                "acceptanceResults": {
+                  "state": "unknown",
+                  "reason": "No accepted real task execution or novice setup trial; article publication is not their substitute.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+                  ]
+                }
+              }
+            },
+            "revisionObservation": {
+              "version": 1,
+              "taskSlug": "establish-entity-identity",
+              "canonicalURL": "https://blitzmetrics.com/knowledge-panel",
+              "sourceSha256": "8ffaedfbfedaa6aa9a5073ae30abfac53e6b3b9b316cf2614b9d2b2e6fe751bd",
+              "representation": "wordpress-content-html",
+              "observedAt": "2026-10-05T21:21:37.548161Z",
+              "observer": "Codex separate authenticated source read",
+              "state": "observed",
+              "reason": "Exact reviewed source independently read after the review. Public parity remains separate.",
+              "evidenceRefs": [
+                "sha256:37ddfe4c66f4e20c4824e23c164e66f5bd2ad204cc10731c329c94c6a39599db"
+              ]
+            }
           },
           "taskExampleEvidence": {
             "id": "taskExampleEvidence",
@@ -15929,7 +16311,6 @@
         ],
         "heldStandardGates": [],
         "unknownStandardGates": [
-          "instructionStandards",
           "articleSemanticCertification",
           "taskExampleEvidence",
           "recordedExecution",
@@ -26490,8 +26871,9 @@
             "id": "recordedExecution",
             "label": "Recorded real execution",
             "state": "pass",
-            "reason": "14 distinct execution ID(s) name this task; outcomes remain separate.",
+            "reason": "15 distinct execution ID(s) name this task; outcomes remain separate.",
             "executionIds": [
+              "authority-guides-repair-20261005-2100",
               "crossref-release-20260927-162402",
               "entity-linking-repair-20260930-0105",
               "internal-linking-repair-20261001-1405",

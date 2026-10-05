@@ -1477,10 +1477,40 @@
       "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
     },
     "classify-and-offer-knowledge-panel": {
-      "source_sha256": "cecebe10a67c2349b0e70d6186a35868129da6837b6f7a361939a71e46c64bd4",
-      "reviewed_at": "2026-09-06",
-      "reviewer": "Codex editorial review",
-      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+      "source_sha256": "e52ab95088bca316403cce18fbf1b7810cf871886e4c3775fba9ed88926dfab4",
+      "reviewed_at": "2026-10-05",
+      "reviewer": "Codex root with independent GPT-6 Luna written review",
+      "scope": "Five written checks only. Article certification, accepted execution and novice setup remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md",
+      "standards": {
+        "version": 1,
+        "checks": {
+          "opening": {
+            "state": "pass",
+            "reason": "Exact opening quoted in review: task, practical reason and explained owned connection. First-screen diagram and opening checked in phone and desktop article previews. Readability diagnostic saved; actual meaning judged separately.",
+            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+          },
+          "recipe": {
+            "state": "pass",
+            "reason": "Trigger, source/access inputs, ordered steps, countable result record, acceptance and real scope are explicit. Setup, access, one task and optional schedule stay separate.",
+            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+          },
+          "links": {
+            "state": "pass",
+            "reason": "Owned prerequisite and receiving-task bodies read; normal destination checks succeeded. Empty GBP course replaced with the relevant maintained task; primary Google and DNS sources support provider claims.",
+            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+          },
+          "evidence": {
+            "state": "pass",
+            "reason": "Unsupported Google guarantees and site-launch assumptions removed. False identity matches excluded; examples fictional; actual approved terms, domain configuration, output checks and receiver evidence required.",
+            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+          },
+          "handoff": {
+            "state": "pass",
+            "reason": "Exact proposal, identity map or site record goes to a required reviewer/owner. Assignment is a prerequisite, not a claim of staffed roles. Qualification precedes delivery; Process identity feeds Post site work.",
+            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+          }
+        }
+      }
     },
     "create-collaborative-content-with-industry-peers": {
       "source_sha256": "3d8d48803b447b69327c234eae66d557fc155288d7168a4ccdfe90e7928c3047",
@@ -1501,16 +1531,76 @@
       "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
     },
     "deliver-personal-brand-site-from-request": {
-      "source_sha256": "0b7ad1cef8adc6c40d798a7545ec7d1e5e41b727909411885cf105b230ed0ed2",
-      "reviewed_at": "2026-09-06",
-      "reviewer": "Codex editorial review",
-      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+      "source_sha256": "20d84176417903edc98454b05f4a3f35286d7bf8141273fb35190a183a2f0c30",
+      "reviewed_at": "2026-10-05",
+      "reviewer": "Codex root with independent GPT-6 Luna written review",
+      "scope": "Five written checks only. Article certification, accepted execution and novice setup remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md",
+      "standards": {
+        "version": 1,
+        "checks": {
+          "opening": {
+            "state": "pass",
+            "reason": "Exact opening quoted in review: task, practical reason and explained owned connection. First-screen diagram and opening checked in phone and desktop article previews. Readability diagnostic saved; actual meaning judged separately.",
+            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+          },
+          "recipe": {
+            "state": "pass",
+            "reason": "Trigger, source/access inputs, ordered steps, countable result record, acceptance and real scope are explicit. Setup, access, one task and optional schedule stay separate.",
+            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+          },
+          "links": {
+            "state": "pass",
+            "reason": "Owned prerequisite and receiving-task bodies read; normal destination checks succeeded. Empty GBP course replaced with the relevant maintained task; primary Google and DNS sources support provider claims.",
+            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+          },
+          "evidence": {
+            "state": "pass",
+            "reason": "Unsupported Google guarantees and site-launch assumptions removed. False identity matches excluded; examples fictional; actual approved terms, domain configuration, output checks and receiver evidence required.",
+            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+          },
+          "handoff": {
+            "state": "pass",
+            "reason": "Exact proposal, identity map or site record goes to a required reviewer/owner. Assignment is a prerequisite, not a claim of staffed roles. Qualification precedes delivery; Process identity feeds Post site work.",
+            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+          }
+        }
+      }
     },
     "establish-entity-identity": {
-      "source_sha256": "e2362b7adafe3c8c050ff8e777345b71b0ed36d912d109d137d9f0571ccb918d",
-      "reviewed_at": "2026-09-06",
-      "reviewer": "Codex editorial review",
-      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+      "source_sha256": "c6a880dda0fda613688c60ef64061226ff0ec2a11cee9e05655c7063fd06fec3",
+      "reviewed_at": "2026-10-05",
+      "reviewer": "Codex root with independent GPT-6 Luna written review",
+      "scope": "Five written checks only. Article certification, accepted execution and novice setup remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md",
+      "standards": {
+        "version": 1,
+        "checks": {
+          "opening": {
+            "state": "pass",
+            "reason": "Exact opening quoted in review: task, practical reason and explained owned connection. First-screen diagram and opening checked in phone and desktop article previews. Readability diagnostic saved; actual meaning judged separately.",
+            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+          },
+          "recipe": {
+            "state": "pass",
+            "reason": "Trigger, source/access inputs, ordered steps, countable result record, acceptance and real scope are explicit. Setup, access, one task and optional schedule stay separate.",
+            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+          },
+          "links": {
+            "state": "pass",
+            "reason": "Owned prerequisite and receiving-task bodies read; normal destination checks succeeded. Empty GBP course replaced with the relevant maintained task; primary Google and DNS sources support provider claims.",
+            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+          },
+          "evidence": {
+            "state": "pass",
+            "reason": "Unsupported Google guarantees and site-launch assumptions removed. False identity matches excluded; examples fictional; actual approved terms, domain configuration, output checks and receiver evidence required.",
+            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+          },
+          "handoff": {
+            "state": "pass",
+            "reason": "Exact proposal, identity map or site record goes to a required reviewer/owner. Assignment is a prerequisite, not a claim of staffed roles. Qualification precedes delivery; Process identity feeds Post site work.",
+            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+          }
+        }
+      }
     },
     "generate-backlinks-and-entity-mentions": {
       "source_sha256": "050e3d7e8850aa9356d42265f69409fedf2c05052cd7579311db6962c79a9a06",

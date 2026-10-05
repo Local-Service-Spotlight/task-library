@@ -91,9 +91,9 @@ Incomplete: **150**. This file is the work order. Do not re-sample.
 | 3 | needs-work | Gate |  | `convert-instagram-to-professional-account` | any | supporting |
 | 3 | needs-work | — |  | `create-collaborative-content-with-industry-peers` | any | supporting |
 | 3 | needs-work | Process |  | `create-social-content-from-video-clips` | any | supporting |
-| 3 | needs-work | — |  | `deliver-personal-brand-site-from-request` | any | supporting |
+| 3 | needs-work | Post |  | `deliver-personal-brand-site-from-request` | any | supporting |
 | 3 | needs-work | Gate |  | `ensure-site-loads-under-3-seconds-on-mobile` | any | supporting |
-| 3 | needs-work | — |  | `establish-entity-identity` | judgment | supporting |
+| 3 | needs-work | Process |  | `establish-entity-identity` | judgment | supporting |
 | 3 | needs-work | Produce |  | `film-casual-team-conversations` | any | supporting |
 | 3 | needs-work | — |  | `generate-backlinks-and-entity-mentions` | judgment | supporting |
 | 3 | needs-work | — |  | `get-featured-on-podcasts` | any | supporting |
