@@ -90,9 +90,12 @@ def acceptance_result(task, history, article_evidence, now):
         return {'state': 'unmet', 'reason': 'The acceptance review instruction hash no longer matches the current task instruction.', **common}
     outcomes = history.get('executionOutcomes') or []
     reviewed_at = datetime.fromisoformat(review['reviewedAt'].replace('Z', '+00:00'))
+    run_started_at = datetime.fromisoformat(selected_run['startedAt'].replace('Z', '+00:00'))
     run_finished_at = datetime.fromisoformat(selected_run['finishedAt'].replace('Z', '+00:00'))
     later_unsuccessful = [row for row in outcomes if row['status'] in {'partial', 'failed', 'blocked', 'cancelled'} and
-                          datetime.fromisoformat((row.get('finishedAt') or row['startedAt']).replace('Z', '+00:00')) > run_finished_at]
+                          (datetime.fromisoformat(row['startedAt'].replace('Z', '+00:00')) > run_started_at or
+                           (row.get('finishedAt') and
+                            datetime.fromisoformat(row['finishedAt'].replace('Z', '+00:00')) > run_finished_at))]
     if later_unsuccessful:
         return {'state': 'unmet', 'reason': 'A later recorded execution did not complete; it cannot be promoted by an older acceptance review.', **common}
     observations = [row for row in article_evidence.get('revisionObservations', ())
