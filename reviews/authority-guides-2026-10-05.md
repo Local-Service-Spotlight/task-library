@@ -58,3 +58,19 @@ This batch does not count as executing its three subject tasks. No customer offe
 
 
 Actual publishing execution: `authority-guides-repair-20261005-2100`; start `2026-10-05T21:01:41.079406+00:00`. Meta: https://blitzmetrics.com/making-task-guides-easier-to-use/#authority-guides-repair-20261005-2100.
+
+## Final title and status-label correction
+
+The site article title is now **Build a Personal Brand Site from a Real Request** (45 characters). The body’s unearned Definitive Guide label is now Site delivery guide. The unchanged method and opening retain the independent meaning review; final content SHA-256 is `8b79aceba7d540c82f8090a7a5de44d1bb773d5002c74ee06fb27834cbfa369e`. Root separately read back those bytes. Earlier hashes remain historical evidence; public parity is checked against this final source.
+
+## Saved and public article checks
+
+Ordinary anonymous readbacks matched the final Knowledge Panel source at 21:27:50 UTC and the final site article source at 21:34:34 UTC on October 5. Whole rendered text, media and inline scripts matched. The final phone and desktop captures show one readable title, a plain opening followed by a meaningful visible diagram, and no horizontal overflow. Each of the three changed task copies matches its maintained source; all six Knowledge Panel topic-hub copies were also checked. Media stayed muted.
+
+The source release has 19 written-standard passes, 275 exact instruction reviews and 276 tasks. These are separate from 126 contributor-complete labels and zero fully verified tasks. Source [PR68](https://github.com/Local-Service-Spotlight/task-library/pull/68) merged and its build passed. Its deploy job remained queued at the latest release check, so the current public runtime still represented the preceding 16-pass release. Final download parity and independent publication acceptance remain open for this batch. The private maintenance note and continuity handoff are merged and read back.
+
+## Closeout verification lesson
+
+Registering the independently accepted preceding release exposed an ordering bug: that older attempt finished after this newer blocked attempt started. Comparing only the older finish time incorrectly allowed the acceptance gate to pass. The gate now checks both start order and terminal finish order. New tests cover overlapping blocked, partial, failed and cancelled attempts, and preserve an earlier-ended failure followed by a later accepted attempt. An independent code reviewer found no blocker; all 168 build tests passed against committed final projections. Seven local archive checks passed, with unchanged generated guide members.
+
+The status-only meta correction has exact ordinary anonymous text/media/script parity at 21:54:38 UTC; final content SHA-256 is `f6145ec5dc68f1c25bd816f9f73497467cfb0c0903dca2d943a1e30bf94110e7`. No new execution was created for this correction or the checks. The earlier publishing attempt is completed with scoped independent acceptance; this newer attempt remains blocked only on its remaining public runtime release and acceptance.

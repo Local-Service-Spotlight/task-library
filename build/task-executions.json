@@ -1207,9 +1207,9 @@
       },
       "startedAt": "2026-10-05T18:57:29.098918+00:00",
       "recordedAt": "2026-10-05T18:57:29.098918+00:00",
-      "updatedAt": "2026-10-05T20:36:25.871362+00:00",
-      "status": "blocked",
-      "result": "Three corrected inquiry-path guides, business-value queue order and a pre-load search repair are committed. Parent article and meta are published and read back. GitHub Actions runner allocation is queued during a reported service incident; library deployment, exact public archives/UI and independent acceptance remain pending. No client tests or income results.",
+      "updatedAt": "2026-10-05T21:43:52.997830+00:00",
+      "status": "completed",
+      "result": "Published three corrected inquiry-path guides, business-value queue ordering and pre-load search repair. Anonymous parent/meta, exact public guide/ZIP bytes and phone/desktop normal-open checks passed. Independent publication review is retained separately. No client form/call attempt, novice setup or income result is claimed.",
       "metaArticle": {
         "status": "published",
         "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#revenue-path-repair-20261005-1855"
@@ -1226,6 +1226,79 @@
         {
           "visibility": "private",
           "sha256": "e41eb3a07fa3246c36b83d18104cb3f165ee6aa4c73b92415019814eb2e17b4a"
+        },
+        {
+          "visibility": "public",
+          "url": "https://github.com/Local-Service-Spotlight/task-library/actions/runs/37372277713"
+        }
+      ],
+      "finishedAt": "2026-10-05T21:39:18Z",
+      "acceptanceReviews": [
+        {
+          "version": 1,
+          "reviewId": "revenue-path-repair-20261005-1855-acceptance-1",
+          "taskSlug": "publish-skill-and-task-page",
+          "canonicalURL": "https://blitzmetrics.com/skill-publishing-standard/",
+          "recipeSourceSha256": "660d6f1abd8678c851c0a08059f27982e8e29b46775ea217a2ae1d6e3ba55537",
+          "representation": "wordpress-content-html",
+          "instructionSourceSha256": "609039d529572a9d02b5e2b5847469d5fe7e6138a55c1ebd3c70a716c3a1093a",
+          "reviewedAt": "2026-10-05T21:41:34Z",
+          "reviewer": "Codex independent audit subagent",
+          "executor": "codex-root-coordinator",
+          "criteria": {
+            "result": {
+              "state": "pass",
+              "expectedResult": "Publish one matching maintained skill, canonical task page, and Task Library entry; make the complete guide available in public library downloads.",
+              "observedResult": "Fresh anonymous library data matches the generated registry output for all three repaired guides. Full-library and Digital Plumbing archives returned 200 and contain byte-identical copies of each guide. Seven archive checks and public desktop/mobile guide and queue renders are recorded. The repaired guides remain needs-work; no client execution or income result is claimed.",
+              "sourceRef": "https://blitzmetrics.com/skill-publishing-standard/",
+              "evidenceRefs": [
+                "https://local-service-spotlight.github.io/task-library/data.json",
+                "https://local-service-spotlight.github.io/task-library/TaskLibrary-Skills-all.zip",
+                "https://local-service-spotlight.github.io/task-library/packs/digital-plumbing.zip",
+                "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md",
+                "sha256:d5c825e23aeb528fa65f20bed9eec644dc21690ece65e507046f2307b55331bb",
+                "sha256:330ab735a416d4b8c53b98f9c4c1fd33cb7a3a556fcd6192778ee2e7634c945e"
+              ]
+            },
+            "publicReadback": {
+              "state": "pass",
+              "expectedResult": "Read back the public parent article and meta write-up for the released substantive outputs and confirm the corrected task copies are present.",
+              "observedResult": "A fresh parent-page fetch returned 200 with all three task slugs. The ordinary meta URL receipt at 21:40:09Z reports 200 and matching full text, media, and scripts against the saved substantive meta source. Scope excludes the later status-only closeout paragraph saved at 21:40:44Z; its subsequent cache receipt says fullRenderedTextPresent=false, so that later paragraph is not certified here. My own normal-URL request returned 403; the successful contemporaneous receipt is separately retained as evidence.",
+              "sourceRef": "https://blitzmetrics.com/making-task-guides-easier-to-use/",
+              "evidenceRefs": [
+                "https://blitzmetrics.com/digital-plumbing/",
+                "https://blitzmetrics.com/making-task-guides-easier-to-use/",
+                "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md",
+                "sha256:b874e71eb3f18fab996bc4610cc5e263f90c96541045a0e59a6dbd9645ad6ece",
+                "sha256:b5bff6b2981a75f0da699ae4606d59fed8e1f610dc21d553db3c9f531093cc2c",
+                "sha256:021247cb849b8207108c831041a09c6d910ca9112c340553b7bfac817a582a95"
+              ]
+            },
+            "searchAndFirstOpen": {
+              "state": "pass",
+              "expectedResult": "A search entered before data load produces the intended match, and the published task opens with its copy control visible after settling on phone and desktop.",
+              "observedResult": "The public preload-search receipt records 3 of 276 matches and one target row. The settled first-open receipt records the target guide and copy control within phone and desktop viewports after 1.2 seconds. Clipboard contents were not read back; this is not novice setup evidence.",
+              "sourceRef": "https://blitzmetrics.com/task-library-dashboard/",
+              "evidenceRefs": [
+                "https://blitzmetrics.com/task-library-dashboard/",
+                "sha256:a437d3f9a02ee55199000acf6dde8fbe2176b41bf5f9997a735a3321598c7e13",
+                "sha256:317d62a89b901d9a796abd5f35e681ff57e201bd1c039cb5ec4ff4d174882a2c",
+                "sha256:1463530659bed09161f9b4aad3298a210b5cb28f2bcfd71d5d9a1dda249d6d89"
+              ]
+            },
+            "handoff": {
+              "state": "pass",
+              "expectedResult": "Leave the published task set and its next maintenance step findable by the existing Task Library maintenance function.",
+              "observedResult": "The public library, exact archive links, current queue and published review expose the released guides and the next maintenance route. This is a handoff to the maintenance function through its durable records; no named person's acknowledgment is claimed. The separate release-19 batch remains pending and is outside this review.",
+              "sourceRef": "https://local-service-spotlight.github.io/task-library/",
+              "evidenceRefs": [
+                "https://local-service-spotlight.github.io/task-library/",
+                "https://local-service-spotlight.github.io/task-library/verification-queue.json",
+                "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md"
+              ]
+            }
+          },
+          "nextHandoff": "Existing Task Library maintenance function: use the released guides and current verification queue for the next bounded maintenance step. Confirm the status-only meta closeout paragraph after cache refresh; it is excluded from this acceptance. Release 19 remains a separate pending batch."
         }
       ]
     },
@@ -1242,9 +1315,9 @@
       },
       "startedAt": "2026-10-05T21:01:41.079406+00:00",
       "recordedAt": "2026-10-05T21:01:41.079406+00:00",
-      "updatedAt": "2026-10-05T21:21:38.283296Z",
+      "updatedAt": "2026-10-05T21:42:23.018508+00:00",
       "status": "blocked",
-      "result": "Three authority and site-delivery guides repaired; two mapped WordPress articles and meta saved. Written checks complete. GitHub Actions outage delays library deployment; final anonymous pages, downloads and independent publication acceptance remain pending. No client execution or income result.",
+      "result": "Three authority/site guides pass written checks. Both mapped articles are live with exact saved/anonymous parity and phone/desktop inspections. Source PR68 merged; its build passed but runtime deployment is queued during service degradation. Exact current public downloads and independent acceptance remain open. No client execution or income result.",
       "metaArticle": {
         "status": "published",
         "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#authority-guides-repair-20261005-2100"
@@ -1253,6 +1326,10 @@
         {
           "visibility": "public",
           "url": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+        },
+        {
+          "visibility": "public",
+          "url": "https://github.com/Local-Service-Spotlight/task-library/pull/68"
         }
       ]
     }

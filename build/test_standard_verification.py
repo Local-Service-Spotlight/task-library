@@ -282,6 +282,33 @@ class StandardVerificationTests(unittest.TestCase):
         gate = self.derive_acceptance(current, [accepted, partial], [observation()])
         self.assertEqual(gate['state'], 'unmet')
 
+    def test_overlapping_later_attempt_cannot_inherit_older_completion(self):
+        accepted = execution(); accepted['acceptanceReviews'] = [acceptance()]
+        for status in ('blocked', 'partial', 'failed', 'cancelled'):
+            with self.subTest(status=status):
+                later = execution()
+                later.update(executionId='overlapping-later', status=status,
+                             startedAt='2026-09-15T10:15:00Z',
+                             recordedAt='2026-09-15T10:15:00Z',
+                             updatedAt='2026-09-15T10:45:00Z')
+                if status == 'blocked':
+                    later.pop('finishedAt')
+                else:
+                    later['finishedAt'] = '2026-09-15T10:45:00Z'
+                gate = self.derive_acceptance(task('first-task'), [accepted, later], [observation()])
+                self.assertEqual(gate['state'], 'unmet')
+
+    def test_earlier_ended_failure_does_not_block_later_accepted_attempt(self):
+        accepted = execution(); accepted['acceptanceReviews'] = [acceptance()]
+        earlier = execution()
+        earlier.update(executionId='earlier-failed', status='failed',
+                       startedAt='2026-09-15T09:00:00Z',
+                       recordedAt='2026-09-15T09:00:00Z',
+                       finishedAt='2026-09-15T09:30:00Z',
+                       updatedAt='2026-09-15T09:30:00Z')
+        self.assertEqual(self.derive_acceptance(task('first-task'),
+                         [accepted, earlier], [observation()])['state'], 'pass')
+
     def test_latest_review_wins_by_instant_and_ties_or_future_fail_closed(self):
         first = execution(); first['updatedAt'] = '2026-09-15T14:00:00Z'; first['acceptanceReviews'] = [acceptance(reviewedAt='2026-09-15T10:30:00-02:00', state='hold')]
         second = execution(); second['updatedAt'] = '2026-09-16T11:00:00Z'; second['executionId'] = 'execution-002'; second['acceptanceReviews'] = [acceptance(reviewId='acceptance-002', reviewedAt='2026-09-15T11:30:00Z')]

@@ -53,6 +53,8 @@ Every acceptance criterion must pass. The queue reads a separately recorded matc
 
 Acceptance evidence uses public HTTPS URLs without credential-like query strings or fragments, or `sha256:<hash>` private references. Unsupported fields, common private paths and credential-bearing URLs are rejected. A reviewer must still check all prose and destinations for private information. Public projections retain public URLs and a private-evidence flag, never private hashes.
 
+Overlapping attempts keep their own outcomes. A later-started blocked or unsuccessful attempt cannot inherit an older attempt's acceptance just because the older attempt finishes last. An unsuccessful attempt that finishes after the accepted run also prevents promotion. An earlier ended failure does not block a later accepted attempt.
+
 The full review also requires `version: 1`, `reviewId`, `taskSlug`, `canonicalURL`, `recipeSourceSha256`, `representation`, `instructionSourceSha256`, `reviewedAt`, `reviewer`, `executor`, and `nextHandoff`. The representation uses the same four choices as [article review evidence](build/ARTICLE-SEMANTIC-REVIEWS.md). Use the actual source hashes, a timezone-aware review date, and distinct reviewer/executor identities. Different name strings are not proof of independent judgment; the review evidence must support that claim. The build validates the record, not the truth of the reviewer’s assertions.
 
 A legacy CLI update that omits `acceptanceReviews` preserves the existing reviews. Unlinked acceptance reviews may be replaced through a reviewed correction that keeps Git history. Acceptance reviews referenced by saved setup reviews are immutable; retain them and add a new review ID for a correction. Do not erase failed checks to obtain a pass.
