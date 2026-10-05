@@ -36,6 +36,14 @@ All 20 distinct guide URLs returned HTTP 200 with full ordinary browser headers.
 
 The separate reviewer passed the written opening, recipe and handoff checks; link availability was left for root. It left call-provider evidence unknown. Root retains actual provider setup as unknown, while passing the narrower written-evidence check: the final guide requires the chosen provider’s current instruction URL/review date, actual account capabilities, call records and truthful outcome meanings. It makes no provider-specific execution claim. No provider was selected, configured, bought or called. Final root edits also corrected the Money Tree definition and removed an inappropriate dynamic-number-insertion definition link.
 
+## Canonical parent opening
+
+> Use this guide to check how people reach your business online. It helps your team catch lost calls and web requests before you pay for more visitors. It supports the [Content Factory](https://blitzmetrics.com/content-factory/) by checking the site and tools before you share and promote content.
+
+This is the actual opening of the shared Digital Plumbing article, not one of its copied task files. It names the reader's job, why missed requests matter and the larger process. Root read the linked maintained Content Factory guide: preparing the site and checking receipt support sharing and promotion. The parent body supplies ownership, connected tools, contact-path tests and records, and the three copied recipes supply the detailed checks. Approximate reading ease is a diagnostic; these concrete promises and body support are the basis for the meaning review.
+
+Independent review caught that the initial article opening evidence referred only to task-file openings. That unsupported subcriterion was corrected before the repository release by reviewing and quoting the actual revised parent opening. The parent now uses LSS in current company prose; the historical channel reference is simply a training session. Source URLs are preserved. Full parent certification still has the explicit unknown criteria listed below.
+
 ## Public meta opening
 
 > We updated three guides that help a team get web and phone requests. Clear checks help catch lost requests before more people visit a site. These guides support Digital Plumbing, which connects the site to the team that answers.
@@ -47,4 +55,4 @@ This opening links the parent guide, states the work and practical reason, and e
 The saved parent and meta source hashes, ordinary anonymous readbacks, build/tests/archive and rendered results are recorded in the release evidence. The three guide source labels remain unchanged. Fully verified tasks, real execution acceptance and novice setup are not inferred from this publication. The next maintenance worker receives the generated queue and checkpoint; the next authorized real use needs a chosen business, exact recipe, approved inputs, paired result proof and receiving-owner acceptance.
 
 
-Saved parent content HTML SHA-256: `4e2e557b45a6d32980184e91036c75c57f88056ee2982413962581efa9113c88`. Saved meta content HTML SHA-256: `d68e7c50ec1e4d4e29c791e27fc8ee7f7097c5a051526d2ec2df1839f3b88b95`. Publishing execution: `revenue-path-repair-20261005-1855`, actual start `2026-10-05T18:57:29.098918+00:00`.
+Saved parent content HTML SHA-256: `5785e65d552c7e29371a338a304725fb04f235e9c5098d967e87409d48f2433e`. Saved meta content HTML SHA-256: `d68e7c50ec1e4d4e29c791e27fc8ee7f7097c5a051526d2ec2df1839f3b88b95`. Publishing execution: `revenue-path-repair-20261005-1855`, actual start `2026-10-05T18:57:29.098918+00:00`.
