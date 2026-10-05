@@ -1999,10 +1999,40 @@
       }
     },
     "step-6-measure-and-iterate-with-maa": {
-      "source_sha256": "cf2ad468f0b842fd23c6a2e0f8e074ba4d4c22f053fca925e54ac0f0030166e8",
-      "reviewed_at": "2026-09-06",
-      "reviewer": "Codex editorial review",
-      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+      "source_sha256": "b3f48be68cafa5706a4099ea0e33a8f8848ed7e14cc8cc4b9367268bd569dfea",
+      "reviewed_at": "2026-10-05",
+      "reviewer": "Codex root with separate GPT-6 Luna source review",
+      "scope": "Exact written instructions only; full article, setup and accepted results remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/measurement-guide-2026-10-05.md",
+      "standards": {
+        "version": 1,
+        "checks": {
+          "opening": {
+            "state": "pass",
+            "reason": "Exact opening states job, practical benefit and explained linked QA prerequisite; body delivers the comparison promise.",
+            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/measurement-guide-2026-10-05.md"
+          },
+          "recipe": {
+            "state": "pass",
+            "reason": "Defined released scope, question, comparable source settings, dated evidence, calculations, output and partial/done conditions.",
+            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/measurement-guide-2026-10-05.md"
+          },
+          "links": {
+            "state": "pass",
+            "reason": "Seventeen destinations200; maintained prerequisite/receiver bodies and relevant owned concept meanings read, with primary Google reference retained.",
+            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/measurement-guide-2026-10-05.md"
+          },
+          "evidence": {
+            "state": "pass",
+            "reason": "Unknown, preliminary and noncomparable data stay separate; fictional calculations are correct and no causal, sales or setup proof is inferred.",
+            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/measurement-guide-2026-10-05.md"
+          },
+          "handoff": {
+            "state": "pass",
+            "reason": "Saved comparison package, accessible evidence, recipients, due points, acceptance checks and actual receiving-owner acceptance or dependency.",
+            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/measurement-guide-2026-10-05.md"
+          }
+        }
+      }
     },
     "use-proper-anchor-text-3-6-words-descriptive": {
       "source_sha256": "70eae162ba9d42242f7047ac02a5a712c5d40e4ecbb06d45e1c0561915830148",

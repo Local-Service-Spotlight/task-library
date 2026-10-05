@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "asOf": "2026-10-04T16:16:49.350188+00:00",
+  "asOf": "2026-10-05T16:08:42.708693+00:00",
   "countDefinition": "Distinct recorded execution IDs, separate from meta-article URLs. History is partial; absent history is unknown, not zero. The last-30-day count is a documented lower bound, not total task frequency.",
-  "recordedExecutions": 20,
+  "recordedExecutions": 21,
   "completedExecutions": 8,
   "partialExecutions": 12,
   "executions": [
@@ -567,6 +567,29 @@
       "metaArticle": {
         "status": "published",
         "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#link-plan-guide-repair-20261004-1605"
+      }
+    },
+    {
+      "executionId": "measurement-guide-repair-20261005-1607",
+      "taskSlugs": [
+        "publish-skill-and-task-page"
+      ],
+      "startedAt": "2026-10-05T16:04:57.028877+00:00",
+      "status": "running",
+      "result": "Repaired one measurement recipe and parent copy; written review passes; final public release checks pending. No client measurement job, novice setup or full task certification inferred.",
+      "recipeRevisions": {
+        "publish-skill-and-task-page": {
+          "articleUrl": "https://blitzmetrics.com/skill-publishing-standard/",
+          "sourceSha256": "660d6f1abd8678c851c0a08059f27982e8e29b46775ea217a2ae1d6e3ba55537"
+        }
+      },
+      "evidenceUrls": [
+        "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/measurement-guide-2026-10-05.md"
+      ],
+      "privateEvidenceRecorded": false,
+      "metaArticle": {
+        "status": "published",
+        "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#measurement-guide-repair-20261005-1607"
       }
     }
   ]

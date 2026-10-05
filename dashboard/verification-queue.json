@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-04T16:16:49+00:00",
+  "generatedAt": "2026-10-05T16:08:42+00:00",
   "definition": "Per-task standard gates derived from exact instruction reviews, explicit instruction-requirement checks, contributor status, article mapping/catalog holds, exact-revision article semantic reviews, task-attributed examples and the execution ledger. Unknown proof is never turned into a pass.",
   "stats": {
     "tasks": 276,
@@ -17,10 +17,10 @@
         "unknown": 0
       },
       "instructionStandards": {
-        "pass": 12,
+        "pass": 13,
         "unmet": 0,
         "hold": 0,
-        "unknown": 264
+        "unknown": 263
       },
       "contributorComplete": {
         "pass": 126,
@@ -24943,7 +24943,7 @@
             "id": "recordedExecution",
             "label": "Recorded real execution",
             "state": "pass",
-            "reason": "12 distinct execution ID(s) name this task; outcomes remain separate.",
+            "reason": "13 distinct execution ID(s) name this task; outcomes remain separate.",
             "executionIds": [
               "crossref-release-20260927-162402",
               "entity-linking-repair-20260930-0105",
@@ -24952,6 +24952,7 @@
               "link-building-repair-20261001-1307",
               "link-plan-guide-repair-20261004-1605",
               "lss-editorial-correction-20260927-190846",
+              "measurement-guide-repair-20261005-1607",
               "publisher-completion-20260927-134412",
               "roster-public-boundary-20260927-210848",
               "task-direct-open-20261002-1404",
@@ -28079,26 +28080,59 @@
       "status": "complete",
       "articleUrl": "https://blitzmetrics.com/internal-linking",
       "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=step-6-measure-and-iterate-with-maa#task-step-6-measure-and-iterate-with-maa",
-      "nextAction": "No exact-revision positive semantic review is recorded for this article.",
+      "nextAction": "Current article semantic criteria are unknown: owner, sourceEvidence, visualAndLayout, publicationStandards, acceptanceResults.",
       "standardVerification": {
-        "instructionSourceSha256": "cf2ad468f0b842fd23c6a2e0f8e074ba4d4c22f053fca925e54ac0f0030166e8",
+        "instructionSourceSha256": "b3f48be68cafa5706a4099ea0e33a8f8848ed7e14cc8cc4b9367268bd569dfea",
         "articleKey": "blitzmetrics.com/internal-linking",
         "gates": {
           "instructionRevisionReviewed": {
             "id": "instructionRevisionReviewed",
             "label": "Exact instruction revision reviewed",
             "state": "pass",
-            "reason": "Current source bytes match the review recorded 2026-09-06. Review scope and limits: Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate.",
-            "reviewedAt": "2026-09-06",
-            "reviewer": "Codex editorial review",
-            "sourceSha256": "cf2ad468f0b842fd23c6a2e0f8e074ba4d4c22f053fca925e54ac0f0030166e8"
+            "reason": "Current source bytes match the review recorded 2026-10-05. Review scope and limits: Exact written instructions only; full article, setup and accepted results remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/measurement-guide-2026-10-05.md",
+            "reviewedAt": "2026-10-05",
+            "reviewer": "Codex root with separate GPT-6 Luna source review",
+            "sourceSha256": "b3f48be68cafa5706a4099ea0e33a8f8848ed7e14cc8cc4b9367268bd569dfea"
           },
           "instructionStandards": {
             "id": "instructionStandards",
             "label": "Instruction requirements checked",
-            "state": "unknown",
-            "reason": "The current exact-byte review has no structured instruction-requirements checklist.",
-            "sourceSha256": "cf2ad468f0b842fd23c6a2e0f8e074ba4d4c22f053fca925e54ac0f0030166e8"
+            "state": "pass",
+            "reason": "All five instruction requirements have explicit passing checks for the current source revision.",
+            "reviewedAt": "2026-10-05",
+            "reviewer": "Codex root with separate GPT-6 Luna source review",
+            "reviewScope": "Exact written instructions only; full article, setup and accepted results remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/measurement-guide-2026-10-05.md",
+            "sourceSha256": "b3f48be68cafa5706a4099ea0e33a8f8848ed7e14cc8cc4b9367268bd569dfea",
+            "standards": {
+              "version": 1,
+              "checks": {
+                "opening": {
+                  "state": "pass",
+                  "reason": "Exact opening states job, practical benefit and explained linked QA prerequisite; body delivers the comparison promise.",
+                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/measurement-guide-2026-10-05.md"
+                },
+                "recipe": {
+                  "state": "pass",
+                  "reason": "Defined released scope, question, comparable source settings, dated evidence, calculations, output and partial/done conditions.",
+                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/measurement-guide-2026-10-05.md"
+                },
+                "links": {
+                  "state": "pass",
+                  "reason": "Seventeen destinations200; maintained prerequisite/receiver bodies and relevant owned concept meanings read, with primary Google reference retained.",
+                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/measurement-guide-2026-10-05.md"
+                },
+                "evidence": {
+                  "state": "pass",
+                  "reason": "Unknown, preliminary and noncomparable data stay separate; fictional calculations are correct and no causal, sales or setup proof is inferred.",
+                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/measurement-guide-2026-10-05.md"
+                },
+                "handoff": {
+                  "state": "pass",
+                  "reason": "Saved comparison package, accessible evidence, recipients, due points, acceptance checks and actual receiving-owner acceptance or dependency.",
+                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/measurement-guide-2026-10-05.md"
+                }
+              }
+            }
           },
           "contributorComplete": {
             "id": "contributorComplete",
@@ -28123,7 +28157,102 @@
             "id": "articleSemanticCertification",
             "label": "Article semantic certification",
             "state": "unknown",
-            "reason": "No exact-revision positive semantic review is recorded for this article."
+            "reason": "Current article semantic criteria are unknown: owner, sourceEvidence, visualAndLayout, publicationStandards, acceptanceResults.",
+            "semanticReview": {
+              "version": 1,
+              "taskSlug": "step-6-measure-and-iterate-with-maa",
+              "canonicalURL": "https://blitzmetrics.com/internal-linking",
+              "sourceSha256": "15c4aa944ab04eea5993fa7878b485784d879687f87145d7df38f95da4e39745",
+              "representation": "wordpress-content-html",
+              "reviewedAt": "2026-10-05T16:08:41.228913Z",
+              "reviewer": "Codex root with separate GPT-6 Luna source review",
+              "criteria": {
+                "openingContext": {
+                  "state": "pass",
+                  "reason": "Exact opening quoted; linked QA input and body delivery reviewed.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/measurement-guide-2026-10-05.md"
+                  ]
+                },
+                "roleScope": {
+                  "state": "pass",
+                  "reason": "Bounded measurement recipe consumes released accepted changes; publishing repair is not a measurement job.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/measurement-guide-2026-10-05.md"
+                  ]
+                },
+                "owner": {
+                  "state": "unknown",
+                  "reason": "Full canonical upkeep ownership not established.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/measurement-guide-2026-10-05.md"
+                  ]
+                },
+                "steps": {
+                  "state": "pass",
+                  "reason": "Scope, access, comparable data, original evidence, calculations and objective report checks in matching source copy.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/measurement-guide-2026-10-05.md"
+                  ]
+                },
+                "links": {
+                  "state": "pass",
+                  "reason": "Seventeen destinations loaded; owned definitions, actual input/output bodies and provider method read.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/measurement-guide-2026-10-05.md"
+                  ]
+                },
+                "sourceEvidence": {
+                  "state": "unknown",
+                  "reason": "Fictional rows do not establish task-attributed actual results.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/measurement-guide-2026-10-05.md"
+                  ]
+                },
+                "handoffContext": {
+                  "state": "pass",
+                  "reason": "Exact report package, accessible evidence, recipient, due point and acceptance check; missing responses remain pending.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/measurement-guide-2026-10-05.md"
+                  ]
+                },
+                "visualAndLayout": {
+                  "state": "unknown",
+                  "reason": "Selected guide views checked separately; complete parent audit remains open.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/measurement-guide-2026-10-05.md"
+                  ]
+                },
+                "publicationStandards": {
+                  "state": "unknown",
+                  "reason": "One copy update does not certify full parent publication standards.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/measurement-guide-2026-10-05.md"
+                  ]
+                },
+                "acceptanceResults": {
+                  "state": "unknown",
+                  "reason": "No real measurement output, receiving-owner acceptance or novice setup proof.",
+                  "evidenceRefs": [
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/measurement-guide-2026-10-05.md"
+                  ]
+                }
+              }
+            },
+            "revisionObservation": {
+              "version": 1,
+              "taskSlug": "step-6-measure-and-iterate-with-maa",
+              "canonicalURL": "https://blitzmetrics.com/internal-linking",
+              "sourceSha256": "15c4aa944ab04eea5993fa7878b485784d879687f87145d7df38f95da4e39745",
+              "representation": "wordpress-content-html",
+              "observedAt": "2026-10-05T16:08:41.772447Z",
+              "observer": "Codex fresh authenticated source read",
+              "state": "observed",
+              "reason": "Final saved copied recipe matches reviewed candidate.",
+              "evidenceRefs": [
+                "sha256:2853af988c621034f91628193699b52eb5f8ff5b6ca3a7be54ba91d99bf4d47b"
+              ]
+            }
           },
           "taskExampleEvidence": {
             "id": "taskExampleEvidence",
@@ -28157,7 +28286,6 @@
         "unmetStandardGates": [],
         "heldStandardGates": [],
         "unknownStandardGates": [
-          "instructionStandards",
           "articleSemanticCertification",
           "taskExampleEvidence",
           "recordedExecution",
@@ -28168,7 +28296,7 @@
         "queuePosition": 260,
         "priority": "P3",
         "priorityReason": "Missing proof remains",
-        "nextAction": "No exact-revision positive semantic review is recorded for this article."
+        "nextAction": "Current article semantic criteria are unknown: owner, sourceEvidence, visualAndLayout, publicationStandards, acceptanceResults."
       }
     },
     {
