@@ -1175,9 +1175,9 @@
       },
       "startedAt": "2026-10-05T16:04:57.028877+00:00",
       "recordedAt": "2026-10-05T16:04:57.028877+00:00",
-      "updatedAt": "2026-10-05T16:08:41.228913Z",
-      "status": "running",
-      "result": "Repaired one measurement recipe and parent copy; written review passes; final public release checks pending. No client measurement job, novice setup or full task certification inferred.",
+      "updatedAt": "2026-10-05T16:16:01.836392+00:00",
+      "status": "completed",
+      "result": "Published and verified one measurement recipe repair: plain linked opening, reproducible comparisons, honest missing-data states, exact report and receiving-owner acceptance. Saved/public copies, phone/desktop views, 250 tests and seven archives passed. No real measurement job, novice setup or full-task certification inferred.",
       "metaArticle": {
         "status": "published",
         "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#measurement-guide-repair-20261005-1607"
@@ -1186,8 +1186,13 @@
         {
           "visibility": "public",
           "url": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/measurement-guide-2026-10-05.md"
+        },
+        {
+          "visibility": "public",
+          "url": "https://github.com/Local-Service-Spotlight/task-library/pull/64"
         }
-      ]
+      ],
+      "finishedAt": "2026-10-05T16:16:01.836392+00:00"
     }
   ]
 }

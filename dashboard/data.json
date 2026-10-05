@@ -1715,10 +1715,10 @@
  ],
  "executionHistory": {
   "schemaVersion": 1,
-  "asOf": "2026-10-05T16:08:42.708693+00:00",
+  "asOf": "2026-10-05T16:16:57.933436+00:00",
   "countDefinition": "Distinct recorded execution IDs, separate from meta-article URLs. History is partial; absent history is unknown, not zero. The last-30-day count is a documented lower bound, not total task frequency.",
   "recordedExecutions": 21,
-  "completedExecutions": 8,
+  "completedExecutions": 9,
   "partialExecutions": 12,
   "executions": [
    {
@@ -2290,16 +2290,18 @@
      "publish-skill-and-task-page"
     ],
     "startedAt": "2026-10-05T16:04:57.028877+00:00",
-    "status": "running",
-    "result": "Repaired one measurement recipe and parent copy; written review passes; final public release checks pending. No client measurement job, novice setup or full task certification inferred.",
+    "status": "completed",
+    "result": "Published and verified one measurement recipe repair: plain linked opening, reproducible comparisons, honest missing-data states, exact report and receiving-owner acceptance. Saved/public copies, phone/desktop views, 250 tests and seven archives passed. No real measurement job, novice setup or full-task certification inferred.",
     "recipeRevisions": {
      "publish-skill-and-task-page": {
       "articleUrl": "https://blitzmetrics.com/skill-publishing-standard/",
       "sourceSha256": "660d6f1abd8678c851c0a08059f27982e8e29b46775ea217a2ae1d6e3ba55537"
      }
     },
+    "finishedAt": "2026-10-05T16:16:01.836392+00:00",
     "evidenceUrls": [
-     "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/measurement-guide-2026-10-05.md"
+     "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/measurement-guide-2026-10-05.md",
+     "https://github.com/Local-Service-Spotlight/task-library/pull/64"
     ],
     "privateEvidenceRecorded": false,
     "metaArticle": {
@@ -24996,7 +24998,7 @@
         "id": "articleSemanticCertification",
         "label": "Article semantic certification",
         "state": "unknown",
-        "reason": "Current article semantic criteria are unknown: owner, sourceEvidence, visualAndLayout, publicationStandards, acceptanceResults.",
+        "reason": "The article revision observation is outside the 24-hour freshness window.",
         "semanticReview": {
          "version": 1,
          "taskSlug": "step-3-identify-money-pages-and-orphan-pages",
@@ -25135,7 +25137,7 @@
       "queuePosition": 272,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
-      "nextAction": "Current article semantic criteria are unknown: owner, sourceEvidence, visualAndLayout, publicationStandards, acceptanceResults."
+      "nextAction": "The article revision observation is outside the 24-hour freshness window."
      }
     },
     {
@@ -39000,11 +39002,11 @@
      "executionHistory": {
       "status": "partial",
       "recordedRuns": 13,
-      "completedRuns": 8,
+      "completedRuns": 9,
       "failedRuns": 0,
       "partialRuns": 4,
-      "completedLast30Days": 8,
-      "lastCompletedAt": "2026-10-04T16:16:47.277363+00:00",
+      "completedLast30Days": 9,
+      "lastCompletedAt": "2026-10-05T16:16:01.836392+00:00",
       "executionIds": [
        "crossref-release-20260927-162402",
        "entity-linking-repair-20260930-0105",
@@ -39095,9 +39097,9 @@
        },
        {
         "executionId": "measurement-guide-repair-20261005-1607",
-        "status": "running",
+        "status": "completed",
         "startedAt": "2026-10-05T16:04:57.028877+00:00",
-        "finishedAt": null
+        "finishedAt": "2026-10-05T16:16:01.836392+00:00"
        }
       ],
       "acceptanceReviews": [
