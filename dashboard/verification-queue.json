@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "ordering": "Setup failures and evidence holds first. Within each priority lane, sort by estimated revenue role, dependencies unblocked, frequency and importance before missing-guide status and gap count. Effort and actual income remain unknown.",
-  "generatedAt": "2026-10-05T21:22:01+00:00",
+  "generatedAt": "2026-10-05T21:44:07+00:00",
   "definition": "Per-task standard gates derived from exact instruction reviews, explicit instruction-requirement checks, contributor status, article mapping/catalog holds, exact-revision article semantic reviews, task-attributed examples and the execution ledger. Unknown proof is never turned into a pass.",
   "stats": {
     "tasks": 276,
@@ -43,9 +43,9 @@
       },
       "articleSemanticCertification": {
         "pass": 0,
-        "unmet": 0,
+        "unmet": 1,
         "hold": 19,
-        "unknown": 257
+        "unknown": 256
       },
       "taskExampleEvidence": {
         "pass": 10,
@@ -60,8 +60,8 @@
         "unknown": 274
       },
       "acceptedExecution": {
-        "pass": 0,
-        "unmet": 1,
+        "pass": 1,
+        "unmet": 0,
         "hold": 0,
         "unknown": 275
       },
@@ -15948,10 +15948,10 @@
               "version": 1,
               "taskSlug": "deliver-personal-brand-site-from-request",
               "canonicalURL": "https://blitzmetrics.com/from-one-email-to-a-live-personal-brand-site/",
-              "sourceSha256": "16c8a44fe24f066e6330e14585cd5daa456865cbf6372840a58fed34d6efed8d",
+              "sourceSha256": "8b79aceba7d540c82f8090a7a5de44d1bb773d5002c74ee06fb27834cbfa369e",
               "representation": "wordpress-content-html",
-              "reviewedAt": "2026-10-05T21:21:36.784617Z",
-              "reviewer": "Codex root; separate GPT-6 Luna written review",
+              "reviewedAt": "2026-10-05T21:32:21.939389Z",
+              "reviewer": "Codex root final title and status-label correction; unchanged method independently reviewed",
               "criteria": {
                 "openingContext": {
                   "state": "pass",
@@ -16011,7 +16011,7 @@
                 },
                 "publicationStandards": {
                   "state": "unknown",
-                  "reason": "Stable route and basic metadata preserved or improved; complete taxonomy, SEO metadata and author evidence not certified.",
+                  "reason": "Title shortened below60characters and misleading Definitive Guide label removed. Full taxonomy, SEO plugin fields and author evidence remain unverified.",
                   "evidenceRefs": [
                     "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
                   ]
@@ -16029,14 +16029,14 @@
               "version": 1,
               "taskSlug": "deliver-personal-brand-site-from-request",
               "canonicalURL": "https://blitzmetrics.com/from-one-email-to-a-live-personal-brand-site/",
-              "sourceSha256": "16c8a44fe24f066e6330e14585cd5daa456865cbf6372840a58fed34d6efed8d",
+              "sourceSha256": "8b79aceba7d540c82f8090a7a5de44d1bb773d5002c74ee06fb27834cbfa369e",
               "representation": "wordpress-content-html",
-              "observedAt": "2026-10-05T21:21:38.281278Z",
-              "observer": "Codex separate authenticated source read",
+              "observedAt": "2026-10-05T21:32:22.537643Z",
+              "observer": "Codex separate final source read",
               "state": "observed",
-              "reason": "Exact reviewed source independently read after the review. Public parity remains separate.",
+              "reason": "Only title/excerpt and unearned definitive label changed; recipe body and opening unchanged. Exact final source read back.",
               "evidenceRefs": [
-                "sha256:adb6551a2e71e065a84ed54612fd7dc7b1f408f294d6b4d8a899418217b38a74"
+                "sha256:688471a030c3d00c445a6f12c1ba6c32b712fdfee56105f564a2eb5ee8f940cc"
               ]
             }
           },
@@ -26677,7 +26677,7 @@
       "status": "complete",
       "articleUrl": "https://blitzmetrics.com/skill-publishing-standard/",
       "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=publish-skill-and-task-page#task-publish-skill-and-task-page",
-      "nextAction": "A later recorded execution did not complete; it cannot be promoted by an older acceptance review.",
+      "nextAction": "The observed article source hash does not match the reviewed revision.",
       "standardVerification": {
         "instructionSourceSha256": "609039d529572a9d02b5e2b5847469d5fe7e6138a55c1ebd3c70a716c3a1093a",
         "articleKey": "blitzmetrics.com/skill-publishing-standard",
@@ -26753,8 +26753,8 @@
           "articleSemanticCertification": {
             "id": "articleSemanticCertification",
             "label": "Article semantic certification",
-            "state": "unknown",
-            "reason": "The article revision observation is outside the 24-hour freshness window.",
+            "state": "unmet",
+            "reason": "The observed article source hash does not match the reviewed revision.",
             "semanticReview": {
               "version": 1,
               "taskSlug": "publish-skill-and-task-page",
@@ -26850,14 +26850,14 @@
               "version": 1,
               "taskSlug": "publish-skill-and-task-page",
               "canonicalURL": "https://blitzmetrics.com/skill-publishing-standard/",
-              "sourceSha256": "3e9f22977b023330140c0866b6db199f0cbd31e086370043dcadfc643e45f319",
+              "sourceSha256": "660d6f1abd8678c851c0a08059f27982e8e29b46775ea217a2ae1d6e3ba55537",
               "representation": "wordpress-content-html",
-              "observedAt": "2026-09-27T15:49:41.057053Z",
-              "observer": "Codex separate fresh source read after article review",
+              "observedAt": "2026-10-05T21:43:54.272645Z",
+              "observer": "Codex separate authenticated post-acceptance source read",
               "state": "observed",
-              "reason": "Fresh saved source matches exact reviewed bytes and anonymous public content; missing criteria and actual use remain separate.",
+              "reason": "Current publishing recipe matches the revision followed by the accepted prior release; later authority release remains a separate blocked execution.",
               "evidenceRefs": [
-                "sha256:2a69843bbf7cfefc0ab1f4ab5a11454cc0e80e58b0baf1e0abc0a609e6e1f45e"
+                "sha256:0c848d4a94f769fce01473d5bc00c98b0d9f89895348137983020825f00acaf2"
               ]
             }
           },
@@ -26894,56 +26894,87 @@
           "acceptedExecution": {
             "id": "acceptedExecution",
             "label": "Accepted execution result",
-            "state": "unmet",
-            "reason": "A later recorded execution did not complete; it cannot be promoted by an older acceptance review.",
+            "state": "pass",
+            "reason": "All named measurable acceptance criteria pass for the separately observed current recipe revision.",
             "acceptanceReview": {
               "version": 1,
-              "reviewId": "publisher-completion-20260927-134412-acceptance-1",
+              "reviewId": "revenue-path-repair-20261005-1855-acceptance-1",
               "taskSlug": "publish-skill-and-task-page",
               "canonicalURL": "https://blitzmetrics.com/skill-publishing-standard/",
-              "recipeSourceSha256": "7857ea9ce9ff959f8470dab5fd8455c5e406fd82a5edb086936793b584a0cf2b",
+              "recipeSourceSha256": "660d6f1abd8678c851c0a08059f27982e8e29b46775ea217a2ae1d6e3ba55537",
               "representation": "wordpress-content-html",
               "instructionSourceSha256": "609039d529572a9d02b5e2b5847469d5fe7e6138a55c1ebd3c70a716c3a1093a",
-              "reviewedAt": "2026-09-27T16:15:22Z",
-              "reviewer": "Codex GPT-6 Sol independent source reviewer",
-              "nextHandoff": "Existing Task Library maintenance worker uses the current verification queue and recorded run to resolve the owner, tracker and first-user gaps. This review covers the scoped repair under its old starting recipe only; a later use of the new recipe needs its own execution.",
+              "reviewedAt": "2026-10-05T21:41:34Z",
+              "reviewer": "Codex independent audit subagent",
+              "nextHandoff": "Existing Task Library maintenance function: use the released guides and current verification queue for the next bounded maintenance step. Confirm the status-only meta closeout paragraph after cache refresh; it is excluded from this acceptance. Release 19 remains a separate pending batch.",
               "criteria": {
                 "result": {
                   "state": "pass",
-                  "expectedResult": "Publish one matching maintained skill, canonical task page and Task Library entry; make the complete guide available in the public library downloads.",
-                  "observedResult": "PR41 merged. The saved and anonymous article each embed the exact SHA609039d5 maintained skill. The public task entry is complete and maps to this page. All and ready ZIPs contain full generated guides plus onboarding; seven deployed archive checks passed.",
-                  "sourceUrl": null,
-                  "sourcePrivateEvidenceRecorded": true,
+                  "expectedResult": "Publish one matching maintained skill, canonical task page, and Task Library entry; make the complete guide available in public library downloads.",
+                  "observedResult": "Fresh anonymous library data matches the generated registry output for all three repaired guides. Full-library and Digital Plumbing archives returned 200 and contain byte-identical copies of each guide. Seven archive checks and public desktop/mobile guide and queue renders are recorded. The repaired guides remain needs-work; no client execution or income result is claimed.",
+                  "sourceUrl": "https://blitzmetrics.com/skill-publishing-standard/",
+                  "sourcePrivateEvidenceRecorded": false,
                   "evidenceUrls": [
-                    "https://github.com/Local-Service-Spotlight/task-library/pull/41",
-                    "https://github.com/Local-Service-Spotlight/task-library/blob/111bca7fee201644aae9b7f7427ac4d6628c2fa6/reviews/publisher-completion-2026-09-27.md"
+                    "https://local-service-spotlight.github.io/task-library/data.json",
+                    "https://local-service-spotlight.github.io/task-library/TaskLibrary-Skills-all.zip",
+                    "https://local-service-spotlight.github.io/task-library/packs/digital-plumbing.zip",
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md"
                   ],
                   "privateEvidenceRecorded": true
                 },
                 "publicReadback": {
                   "state": "pass",
-                  "expectedResult": "Read back the saved and anonymous task page and public meta record; verify the lead diagram on desktop and phone.",
-                  "observedResult": "The task article returned 200 with exact embedded source text and equal media. The final meta page returned 200 with its whole new section and equal media at 16:06:17 UTC. Corrected phone and desktop captures show readable diagrams and opening text.",
-                  "sourceUrl": "https://blitzmetrics.com/skill-publishing-standard/",
+                  "expectedResult": "Read back the public parent article and meta write-up for the released substantive outputs and confirm the corrected task copies are present.",
+                  "observedResult": "A fresh parent-page fetch returned 200 with all three task slugs. The ordinary meta URL receipt at 21:40:09Z reports 200 and matching full text, media, and scripts against the saved substantive meta source. Scope excludes the later status-only closeout paragraph saved at 21:40:44Z; its subsequent cache receipt says fullRenderedTextPresent=false, so that later paragraph is not certified here. My own normal-URL request returned 403; the successful contemporaneous receipt is separately retained as evidence.",
+                  "sourceUrl": "https://blitzmetrics.com/making-task-guides-easier-to-use/",
                   "sourcePrivateEvidenceRecorded": false,
                   "evidenceUrls": [
-                    "https://blitzmetrics.com/making-task-guides-easier-to-use/"
+                    "https://blitzmetrics.com/digital-plumbing/",
+                    "https://blitzmetrics.com/making-task-guides-easier-to-use/",
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md"
+                  ],
+                  "privateEvidenceRecorded": true
+                },
+                "searchAndFirstOpen": {
+                  "state": "pass",
+                  "expectedResult": "A search entered before data load produces the intended match, and the published task opens with its copy control visible after settling on phone and desktop.",
+                  "observedResult": "The public preload-search receipt records 3 of 276 matches and one target row. The settled first-open receipt records the target guide and copy control within phone and desktop viewports after 1.2 seconds. Clipboard contents were not read back; this is not novice setup evidence.",
+                  "sourceUrl": "https://blitzmetrics.com/task-library-dashboard/",
+                  "sourcePrivateEvidenceRecorded": false,
+                  "evidenceUrls": [
+                    "https://blitzmetrics.com/task-library-dashboard/"
                   ],
                   "privateEvidenceRecorded": true
                 },
                 "handoff": {
                   "state": "pass",
-                  "expectedResult": "Record the scoped result and remaining owner, tracker and first-user gaps for the existing Task Library maintenance worker's next queue step.",
-                  "observedResult": "The published meta section and completed run record name the existing maintenance worker, current verification queue and open owner, tracker and novice gates. No separate person or new schedule was contacted or created.",
-                  "sourceUrl": "https://blitzmetrics.com/skill-publishing-standard/",
+                  "expectedResult": "Leave the published task set and its next maintenance step findable by the existing Task Library maintenance function.",
+                  "observedResult": "The public library, exact archive links, current queue and published review expose the released guides and the next maintenance route. This is a handoff to the maintenance function through its durable records; no named person's acknowledgment is claimed. The separate release-19 batch remains pending and is outside this review.",
+                  "sourceUrl": "https://local-service-spotlight.github.io/task-library/",
                   "sourcePrivateEvidenceRecorded": false,
                   "evidenceUrls": [
-                    "https://blitzmetrics.com/making-task-guides-easier-to-use/"
+                    "https://local-service-spotlight.github.io/task-library/",
+                    "https://local-service-spotlight.github.io/task-library/verification-queue.json",
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md"
                   ],
-                  "privateEvidenceRecorded": true
+                  "privateEvidenceRecorded": false
                 }
               },
-              "executionId": "publisher-completion-20260927-134412"
+              "executionId": "revenue-path-repair-20261005-1855"
+            },
+            "revisionObservation": {
+              "version": 1,
+              "taskSlug": "publish-skill-and-task-page",
+              "canonicalURL": "https://blitzmetrics.com/skill-publishing-standard/",
+              "sourceSha256": "660d6f1abd8678c851c0a08059f27982e8e29b46775ea217a2ae1d6e3ba55537",
+              "representation": "wordpress-content-html",
+              "observedAt": "2026-10-05T21:43:54.272645Z",
+              "observer": "Codex separate authenticated post-acceptance source read",
+              "state": "observed",
+              "reason": "Current publishing recipe matches the revision followed by the accepted prior release; later authority release remains a separate blocked execution.",
+              "evidenceRefs": [
+                "sha256:0c848d4a94f769fce01473d5bc00c98b0d9f89895348137983020825f00acaf2"
+              ]
             }
           },
           "setupSuccess": {
@@ -26957,11 +26988,10 @@
           }
         },
         "unmetStandardGates": [
-          "acceptedExecution"
+          "articleSemanticCertification"
         ],
         "heldStandardGates": [],
         "unknownStandardGates": [
-          "articleSemanticCertification",
           "taskExampleEvidence",
           "setupSuccess"
         ],
@@ -26969,7 +26999,7 @@
         "queuePosition": 233,
         "priority": "P1",
         "priorityReason": "Known standard gap",
-        "nextAction": "A later recorded execution did not complete; it cannot be promoted by an older acceptance review."
+        "nextAction": "The observed article source hash does not match the reviewed revision."
       }
     },
     {

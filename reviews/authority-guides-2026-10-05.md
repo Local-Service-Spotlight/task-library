@@ -58,3 +58,13 @@ This batch does not count as executing its three subject tasks. No customer offe
 
 
 Actual publishing execution: `authority-guides-repair-20261005-2100`; start `2026-10-05T21:01:41.079406+00:00`. Meta: https://blitzmetrics.com/making-task-guides-easier-to-use/#authority-guides-repair-20261005-2100.
+
+## Final title and status-label correction
+
+The site article title is now **Build a Personal Brand Site from a Real Request** (45 characters). The body’s unearned Definitive Guide label is now Site delivery guide. The unchanged method and opening retain the independent meaning review; final content SHA-256 is `8b79aceba7d540c82f8090a7a5de44d1bb773d5002c74ee06fb27834cbfa369e`. Root separately read back those bytes. Earlier hashes remain historical evidence; public parity is checked against this final source.
+
+## Saved and public article checks
+
+Ordinary anonymous readbacks matched the final Knowledge Panel source at 21:27:50 UTC and the final site article source at 21:34:34 UTC on October 5. Whole rendered text, media and inline scripts matched. The final phone and desktop captures show one readable title, a plain opening followed by a meaningful visible diagram, and no horizontal overflow. Each of the three changed task copies matches its maintained source; all six Knowledge Panel topic-hub copies were also checked. Media stayed muted.
+
+The source release has 19 written-standard passes, 275 exact instruction reviews and 276 tasks. These are separate from 126 contributor-complete labels and zero fully verified tasks. Source [PR68](https://github.com/Local-Service-Spotlight/task-library/pull/68) merged and its build passed. Its deploy job remained queued at the latest release check, so the current public runtime still represented the preceding 16-pass release. Final download parity and independent publication acceptance remain open for this batch. The private maintenance note and continuity handoff are merged and read back.
