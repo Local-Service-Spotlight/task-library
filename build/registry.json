@@ -772,17 +772,17 @@
   "build-third-party-validation": {
    "source": "local",
    "category": "Personal Branding",
-   "article_kind": "task-recipe"
+   "article_kind": "topic-hub"
   },
   "claim-and-verify-knowledge-panel-when-it-appears": {
    "source": "local",
    "category": "Personal Branding",
-   "article_kind": "task-recipe"
+   "article_kind": "topic-hub"
   },
   "classify-and-offer-knowledge-panel": {
    "source": "local",
    "category": "Personal Branding",
-   "article_kind": "task-recipe"
+   "article_kind": "topic-hub"
   },
   "create-collaborative-content-with-industry-peers": {
    "source": "local",
@@ -802,7 +802,7 @@
   "establish-entity-identity": {
    "source": "local",
    "category": "Personal Branding",
-   "article_kind": "task-recipe"
+   "article_kind": "topic-hub"
   },
   "generate-backlinks-and-entity-mentions": {
    "source": "local",
@@ -826,7 +826,7 @@
   "implement-technical-schema-markup": {
    "source": "local",
    "category": "Personal Branding",
-   "article_kind": "task-recipe"
+   "article_kind": "topic-hub"
   },
   "link-all-content-back-to-personal-brand-site": {
    "source": "local",
@@ -836,7 +836,7 @@
   "measure-search-impressions-traffic-inbound-opportunities": {
    "source": "local",
    "category": "Personal Branding",
-   "article_kind": "task-recipe"
+   "article_kind": "topic-hub"
   },
   "record-one-minute-videos-answering-customer-questions": {
    "source": "local",

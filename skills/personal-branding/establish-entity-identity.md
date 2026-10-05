@@ -2,14 +2,14 @@
 name: establish-entity-identity
 description: "Make it clear which person a page is about."
 category: Personal Branding
-stage: —
+stage: Process
 definitive_article: /knowledge-panel
 status: needs-work
 ---
 
 # Establish entity identity
 
-Make it clear which person a page is about. This guide checks your name, site and key facts so people can tell you apart from someone else. Start with your own site and the profiles you know are yours.
+Check which web pages are about you. This helps your team keep your facts apart from those of someone with the same name. Pass the checked facts to [the site code setup](https://local-service-spotlight.github.io/task-library/?task=implement-person-schema-with-sameas-links#task-implement-person-schema-with-sameas-links) so search tools can read the same facts as your readers.
 
 **The path:** Known person → Profile inventory → Fact and identity checks → Corrected source map
 
@@ -31,6 +31,10 @@ Make it clear which person a page is about. This guide checks your name, site an
 6. After authorized corrections, reopen affected pages and check saved facts and destinations. Pass verified identity pages to [Add verified Person markup](https://local-service-spotlight.github.io/task-library/?task=implement-person-schema-with-sameas-links#task-implement-person-schema-with-sameas-links). An inaccessible source stays unresolved until a supported inspection proves its identity; a response code alone is insufficient.
 7. Save accepted aliases, rejected matches, checked sources and next actions. Review when a role, domain or profile changes. Any quarterly schedule needs its real owner and observed configuration; clean identity evidence does not guarantee a [Knowledge Panel, Google’s information box for an entity](https://blitzmetrics.com/knowledge-panel/).
 
+## Output record and acceptance
+
+Save one versioned identity map with a row for each in-scope source: URL, source type and check date; displayed name and role; match state (`accepted`, `rejected` or `unknown`); evidence links; conflict; proposed correction and owner. Report the number of rows checked in each state. The map passes when every accepted row has supporting evidence and names the person separately from any company; unresolved sources stay `unknown` and out of accepted links. The person responsible for checking identity evidence records accept or return against the exact map revision, reviewer and date. Only accepted URLs and facts go to the Person schema task.
+
 ## Definition of done (QA checklist)
 
 Quality assurance (QA) means checking the actual result against its agreed requirements. Follow the [Article Guidelines](https://localservicespotlight.com/article-guidelines/).
@@ -49,9 +53,9 @@ A fictional designer shares her name with an actor. A podcast page names her des
 
 ## Handoff and Content Factory context
 
-[Check outside proof](https://local-service-spotlight.github.io/task-library/?task=build-third-party-validation#task-build-third-party-validation) receives the resolved identity; [Maintain the identity graph](https://local-service-spotlight.github.io/task-library/?task=implement-technical-schema-markup#task-implement-technical-schema-markup) receives accepted URLs and fact changes.
+The person responsible for checking identity evidence accepts or returns the exact map revision. After acceptance, [Person schema setup](https://local-service-spotlight.github.io/task-library/?task=implement-person-schema-with-sameas-links#task-implement-person-schema-with-sameas-links) receives only accepted URLs and facts. [Check outside proof](https://local-service-spotlight.github.io/task-library/?task=build-third-party-validation#task-build-third-party-validation) receives unresolved source questions when independent proof is still needed.
 
-This task supports the [Content Factory: Produce, Process, Post and Promote](https://blitzmetrics.com/content-factory/). Identity, proof, access or coordination can support several stages. Use the real inputs and receiving owner above; this task does not create unrelated transcripts, clips or ads merely because the diagram has four stages.
+**Content Factory stage: Process.** This task turns supplied profile and site evidence into a checked identity map for later page and schema work. The [Content Factory](https://blitzmetrics.com/content-factory/) uses this checked record before Post. This recipe may correct owned fields within existing authority; outside corrections remain with their owner.
 
 ## Start with an agent
 
@@ -72,6 +76,11 @@ Reuse the same execution ID for internal checks, revisions, retries and meta wri
 - [Article Guidelines](https://localservicespotlight.com/article-guidelines/)
 - [Definitive article and task recipe standard](https://blitzmetrics.com/definitive-article-guide/)
 - [How recipes and run records fit together](https://localservicespotlight.com/meta-articles/)
+
+### Primary method references
+
+- [Google: how panels work and who can suggest edits](https://support.google.com/knowledgepanel/answer/9163198?hl=en)
+- [Google: accurate, visible structured data](https://developers.google.com/search/docs/appearance/structured-data/sd-policies)
 
 ## Review and evidence still needed
 

@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-10-05T20:36:34+00:00",
+ "generatedAt": "2026-10-05T21:22:01+00:00",
  "countDefinition": "Verified meta-article sources explicitly classified by the recorded evidence method and linked to the normalized canonical hub. Unknown is never coerced to zero.",
  "strengthBands": [
   {
@@ -1031,7 +1031,7 @@
    "key": "blitzmetrics.com/knowledge-panel",
    "url": "https://blitzmetrics.com/knowledge-panel",
    "state": "wip",
-   "articleKind": "task-recipe",
+   "articleKind": "topic-hub",
    "taskCount": 6,
    "completeTaskCount": 0,
    "importance": 3,

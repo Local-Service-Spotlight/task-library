@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "asOf": "2026-10-05T20:36:34.880493+00:00",
+  "asOf": "2026-10-05T21:22:01.666861+00:00",
   "countDefinition": "Distinct recorded execution IDs, separate from meta-article URLs. History is partial; absent history is unknown, not zero. The last-30-day count is a documented lower bound, not total task frequency.",
-  "recordedExecutions": 22,
+  "recordedExecutions": 23,
   "completedExecutions": 9,
   "partialExecutions": 12,
   "executions": [
@@ -616,6 +616,29 @@
       "metaArticle": {
         "status": "published",
         "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#revenue-path-repair-20261005-1855"
+      }
+    },
+    {
+      "executionId": "authority-guides-repair-20261005-2100",
+      "taskSlugs": [
+        "publish-skill-and-task-page"
+      ],
+      "startedAt": "2026-10-05T21:01:41.079406+00:00",
+      "status": "blocked",
+      "result": "Three authority and site-delivery guides repaired; two mapped WordPress articles and meta saved. Written checks complete. GitHub Actions outage delays library deployment; final anonymous pages, downloads and independent publication acceptance remain pending. No client execution or income result.",
+      "recipeRevisions": {
+        "publish-skill-and-task-page": {
+          "articleUrl": "https://blitzmetrics.com/skill-publishing-standard/",
+          "sourceSha256": "660d6f1abd8678c851c0a08059f27982e8e29b46775ea217a2ae1d6e3ba55537"
+        }
+      },
+      "evidenceUrls": [
+        "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+      ],
+      "privateEvidenceRecorded": false,
+      "metaArticle": {
+        "status": "published",
+        "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#authority-guides-repair-20261005-2100"
       }
     }
   ]

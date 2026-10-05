@@ -46,10 +46,10 @@
     "unknown": 0
    },
    "instructionStandards": {
-    "pass": 16,
+    "pass": 19,
     "unmet": 0,
     "hold": 0,
-    "unknown": 260
+    "unknown": 257
    },
    "contributorComplete": {
     "pass": 126,
@@ -817,7 +817,7 @@
    "key": "blitzmetrics.com/knowledge-panel",
    "url": "https://blitzmetrics.com/knowledge-panel",
    "state": "wip",
-   "articleKind": "task-recipe",
+   "articleKind": "topic-hub",
    "taskCount": 6,
    "completeTaskCount": 0,
    "importance": 3,
@@ -1715,9 +1715,9 @@
  ],
  "executionHistory": {
   "schemaVersion": 1,
-  "asOf": "2026-10-05T20:36:34.880493+00:00",
+  "asOf": "2026-10-05T21:22:01.666861+00:00",
   "countDefinition": "Distinct recorded execution IDs, separate from meta-article URLs. History is partial; absent history is unknown, not zero. The last-30-day count is a documented lower bound, not total task frequency.",
-  "recordedExecutions": 22,
+  "recordedExecutions": 23,
   "completedExecutions": 9,
   "partialExecutions": 12,
   "executions": [
@@ -2331,6 +2331,29 @@
     "metaArticle": {
      "status": "published",
      "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#revenue-path-repair-20261005-1855"
+    }
+   },
+   {
+    "executionId": "authority-guides-repair-20261005-2100",
+    "taskSlugs": [
+     "publish-skill-and-task-page"
+    ],
+    "startedAt": "2026-10-05T21:01:41.079406+00:00",
+    "status": "blocked",
+    "result": "Three authority and site-delivery guides repaired; two mapped WordPress articles and meta saved. Written checks complete. GitHub Actions outage delays library deployment; final anonymous pages, downloads and independent publication acceptance remain pending. No client execution or income result.",
+    "recipeRevisions": {
+     "publish-skill-and-task-page": {
+      "articleUrl": "https://blitzmetrics.com/skill-publishing-standard/",
+      "sourceSha256": "660d6f1abd8678c851c0a08059f27982e8e29b46775ea217a2ae1d6e3ba55537"
+     }
+    },
+    "evidenceUrls": [
+     "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+    ],
+    "privateEvidenceRecorded": false,
+    "metaArticle": {
+     "status": "published",
+     "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#authority-guides-repair-20261005-2100"
     }
    }
   ]
@@ -27333,7 +27356,7 @@
      "status": "needs-work",
      "stage": "—",
      "article": "https://blitzmetrics.com/knowledge-panel",
-     "articleKind": "task-recipe",
+     "articleKind": "topic-hub",
      "desc": "Help people check your work with proof from other sources.",
      "content": "---\nname: build-third-party-validation\ndescription: \"Help people check your work with proof from other sources.\"\ncategory: Personal Branding\nstage: —\ndefinitive_article: /knowledge-panel\nstatus: needs-work\n---\n\n# Build third-party validation\n\nHelp people check your work with proof from other sources. This guide sorts press, talks and interviews into a clear record. Start with the real links you already have, then find what each one shows.\n\n**The path:** Existing coverage → Identity and source checks → Proof inventory → Public use proposal\n\n**Start when:** Identity facts are established and the team needs a checked inventory of outside evidence and gaps.\n\n## Inputs\n\n- [Check the person’s identity](https://local-service-spotlight.github.io/task-library/?task=establish-entity-identity#task-establish-entity-identity) with the accepted name, role, home site and known collisions.\n- Existing press, podcast, talk, book and directory records, plus their source URLs, dates and use permissions.\n- The actual claim to support and approved research scope; [Collect and classify positive mentions](https://local-service-spotlight.github.io/task-library/?task=positive-mentions-harvester#task-positive-mentions-harvester) classification rules.\n\n## Steps\n\n1. Read the current proof inventory and append there. Record the source title, URL, date, author, named subject, exact supported fact and whether the material is independent, self-published, paid or a simple appearance. Avoid counting syndicated copies as independent coverage.\n2. Search the accepted names, useful variants and the languages in which the person has lived and worked. Inspect the primary page or supplied source, not just a search summary. Record sources or languages that remain inaccessible so a thin search is not labeled a thin career.\n3. Resolve same-name people with role, organization, location and the source’s actual context. Keep the narrowest true claim: a speaker listing proves a scheduled role; a recorded delivered talk proves participation; praise requires actual attributable positive language.\n4. Build the gap list around the reader’s needed proof. Use the podcast, speaking and press tasks to propose suitable opportunities. A missing type of proof is not permission to purchase a placement or manufacture a book credit.\n5. Consider Wikidata only after checking its current notability rules, existing items, reliable references and identity fit. Wikipedia has separate notability and conflict-of-interest rules. Document the route and disclose relevant interests; neither platform is a compulsory branding checkbox or a guaranteed Google panel source.\n6. Select the strongest relevant public-safe proof for the site with a short account of what it establishes. Keep permissions and private locators in the governed record. Pass only true identity pages to the schema task; an ordinary press story is a citation, not automatically a sameAs identity.\n7. Save the covered scope, accepted and held records, changed facts and next owner. A bounded inventory pass can finish with honest gaps; new placements, a growing quarterly count or a Knowledge Panel are separate outcomes.\n\n## Definition of done (QA checklist)\n\nQuality assurance (QA) means checking the actual result against its agreed requirements. Follow the [Article Guidelines](https://localservicespotlight.com/article-guidelines/).\n\n- [ ] Every accepted item identifies the right subject and the exact fact its source supports.\n- [ ] Independent coverage, appearances, praise and duplicates are classified separately.\n- [ ] The source-backed inventory and gap plan are saved; no new public placement or panel is invented.\n- [ ] The exact output, source revision, reviewer evidence and remaining owner action are saved.\n- [ ] For any reader-facing output, the short grade-five opening states the reader’s useful outcome and supporting method or proof. The body delivers that promise; a useful authentic visual appears in the first screen. Retain exact text and quoted reviewer evidence.\n\n## Example(s)\n\n**Fictional teaching example. This is not a client result or proof of a completed run.**\n\nA fictional trainer has two interviews and a shared event photo. One interview contains a named client’s praise; the other is a neutral Q&A. The photo shows attendance only. The inventory keeps those three meanings separate and proposes a topic-specific speaking pitch, without presenting all three items as endorsements.\n\n## Handoff and Content Factory context\n\n[Review identity markup](https://local-service-spotlight.github.io/task-library/?task=implement-technical-schema-markup#task-implement-technical-schema-markup) receives verified identity pages. The site owner receives approved proof cards; press and podcast tasks receive scoped gaps.\n\nThis task supports the [Content Factory: Produce, Process, Post and Promote](https://blitzmetrics.com/content-factory/). Identity, proof, access or coordination can support several stages. Use the real inputs and receiving owner above; this task does not create unrelated transcripts, clips or ads merely because the diagram has four stages.\n\n## Start with an agent\n\nGive the [AI worker](https://blitzmetrics.com/build-agents/) this recipe, the real inputs, desired result and actions already authorized. Ask for the saved output, sources, checks and next owner. A [skill is a written recipe](https://localservicespotlight.com/plugin/); loading one does not prove account access or perform the task. Use the [installation guide](https://localservicespotlight.com/install/) if reusable setup is needed. A ZIP is a source snapshot, not an access grant or automatic update.\n\nUse the app’s actual supported tools and verified file/account access. Keep a missing human verification step with its real owner. Recurring work needs its own configured job, trigger, timezone and observed result; this guide creates no schedule. Before any media playback, mute the player and set its volume to zero. If silence cannot be verified first, use captions, frames, metadata or another silent check.\n\n## Record the real execution\n\nOpen the run record when work begins. Keep one execution ID, starting recipe revision, real inputs and current state. Write the [meta article, the record of this execution](https://blitzmetrics.com/meta-article-prompt/) with actual steps, results, checks, failures and next owner. Writing is required; public release follows existing authority. Link it to this recipe and the [Task Library](https://local-service-spotlight.github.io/task-library/).\n\nReuse the same execution ID for internal checks, revisions, retries and meta writing. A blocked run stays open with its dependency and owner, without an invented finish time. Dated public examples and distinct verified execution counts remain separate. Propose the smallest source-backed recipe improvement when the actual evidence reveals a defect.\n\n\n<!-- factory-layer:start -->\n\n## Factory chain (do not treat this as isolated)\n\n- **Phase:** —\n- **Importance:** 3/5 `●●●○○` — frequency 3, revenue 3, gating 2 (supporting)\n- **Suggested previous station:** —\n- **Suggested next station:** —\nThese stations are generated neighbors, not verified prerequisites or handoffs. Follow the task’s actual Inputs and Handoff sections.\n- **Handoff:** Save this task’s actual output, source, date and checks where the receiving owner can read them. Follow the Inputs and Handoff sections for its next step.\n\n## Model routing (same factory, any engine)\n\n- **This task's lane:** `any` — Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.\n- **Single-engine path:** Use the capable AI app you already have. Check its required tools and access before starting. Pass the actual result and proof to the next task.\n- **Optional multi-engine:** A tested local model may draft; a stronger model may review facts and voice. Use supported tools for approved actions. Pick models from observed quality and cost; a model name does not prove it can run this task.\n- **Never** store the working state in one vendor's memory. Files in the Content Library are the bridge.\n\n<!-- factory-layer:end -->\n## Definitive article & links\n\n- [Maintained source guide](https://blitzmetrics.com/knowledge-panel/)\n- [This task in the Task Library](https://local-service-spotlight.github.io/task-library/?task=build-third-party-validation#task-build-third-party-validation)\n- [Article Guidelines](https://localservicespotlight.com/article-guidelines/)\n- [Definitive article and task recipe standard](https://blitzmetrics.com/definitive-article-guide/)\n- [How recipes and run records fit together](https://localservicespotlight.com/meta-articles/)\n\n### Primary method references\n\n- [Wikidata notability](https://www.wikidata.org/wiki/Wikidata:Notability)\n- [Wikipedia conflict of interest](https://en.wikipedia.org/wiki/Wikipedia:Conflict_of_interest)\n\n## Review and evidence still needed\n\nThe inherited contributor status is `needs-work`. It is preserved, not promoted by this rewrite. That label alone does not prove document readiness, account access, an actual execution or a client result.\n\nThe fictional example teaches the method and does not fill a real-run evidence gap. A named semantic reviewer must check the actual opening, full method, sources and handoff. Check the useful opening visual in the normal rendered guide at the current required desktop and mobile sizes, including 1280 × 800 and 390 × 844. Source readability checks do not prove public presentation or task execution.",
      "importance": 3,
@@ -27466,7 +27489,7 @@
      "status": "needs-work",
      "stage": "—",
      "article": "https://blitzmetrics.com/knowledge-panel",
-     "articleKind": "task-recipe",
+     "articleKind": "topic-hub",
      "desc": "Check the facts people see about you on Google.",
      "content": "---\nname: claim-and-verify-knowledge-panel-when-it-appears\ndescription: \"Check the facts people see about you on Google.\"\ncategory: Personal Branding\nstage: —\ndefinitive_article: /knowledge-panel\nstatus: needs-work\n---\n\n# Claim and verify Knowledge Panel when it appears\n\nCheck the facts people see about you on Google. This guide helps you claim a panel when Google offers that option. Start with the live panel for the right person and the account that person controls.\n\n**The path:** Correct panel → Offered claim flow → Owner verification → Checked claim and edits\n\n**Start when:** Google displays the correct person’s panel and offers a claim flow, or an existing claim needs correction.\n\n## Inputs\n\n- [Classify the current panel state](https://local-service-spotlight.github.io/task-library/?task=classify-and-offer-knowledge-panel#task-classify-and-offer-knowledge-panel) with dated search evidence.\n- The person’s authorized Google account and access to the official sites/profiles Google offers for verification.\n- Accurate identity facts and evidence for requested corrections; [Google’s panel claim instructions](https://support.google.com/knowledgepanel/answer/7534902?hl=en).\n\n## Steps\n\n1. Find the correct panel in a current search and record the query, date, device and observed identity. An entity ID, sometimes called a KGMID, or a thin card does not by itself prove a claim flow exists. Keep not claimable as the current state.\n2. Confirm the account and representative authority before taking the claim action. Use the person’s owner-controlled account and the verified public profiles requested by the offered flow. Helpers need their actual permitted role; the recipe does not grant account access.\n3. Open the displayed claim control and follow [Google’s panel claim instructions](https://support.google.com/knowledgepanel/answer/7534902?hl=en). Google may request a connected official profile or more evidence. Let the account owner complete identity or recovery steps that require them, and keep sensitive verification material out of public run notes.\n4. Read the result after submission. Submitted, pending, verified and already managed are distinct states. If the panel belongs to a different person or the account is already managed, use the documented support path rather than creating another identity or repeating blind submissions.\n5. After verification, compare visible panel facts with current reliable sources. Correct owned source errors first, then suggest only supported panel changes through the offered control. A suggested edit is not an accepted edit; save each result separately.\n6. Save the claim evidence, date, current facts, unresolved edits and next check owner. Use the existing review cadence only if it is actually assigned. A payment milestone is governed by the accepted engagement terms, not inferred from a search card or this checklist.\n\n## Definition of done (QA checklist)\n\nQuality assurance (QA) means checking the actual result against its agreed requirements. Follow the [Article Guidelines](https://localservicespotlight.com/article-guidelines/).\n\n- [ ] The correct person’s claim state has direct current evidence; pending is not called verified.\n- [ ] Requested and accepted fact changes are separate, supported and checked.\n- [ ] Ownership, remaining human action and the next review are recorded without private verification data.\n- [ ] The exact output, source revision, reviewer evidence and remaining owner action are saved.\n- [ ] For any reader-facing output, the short grade-five opening states the reader’s useful outcome and supporting method or proof. The body delivers that promise; a useful authentic visual appears in the first screen. Retain exact text and quoted reviewer evidence.\n\n## Example(s)\n\n**Fictional teaching example. This is not a client result or proof of a completed run.**\n\nA fictional founder’s information card shows her name but no claim button. The team records that card and its date, then continues the identity work. A later search offers claiming, so the owner completes the offered check. Until Google confirms that result, the record says pending rather than claimed.\n\n## Handoff and Content Factory context\n\n[Review search and real inquiries](https://local-service-spotlight.github.io/task-library/?task=measure-search-impressions-traffic-inbound-opportunities#task-measure-search-impressions-traffic-inbound-opportunities) receives the observed panel state. [Check identity facts](https://local-service-spotlight.github.io/task-library/?task=establish-entity-identity#task-establish-entity-identity) receives source corrections; the owner retains any pending verification step.\n\nThis task supports the [Content Factory: Produce, Process, Post and Promote](https://blitzmetrics.com/content-factory/). Identity, proof, access or coordination can support several stages. Use the real inputs and receiving owner above; this task does not create unrelated transcripts, clips or ads merely because the diagram has four stages.\n\n## Start with an agent\n\nGive the [AI worker](https://blitzmetrics.com/build-agents/) this recipe, the real inputs, desired result and actions already authorized. Ask for the saved output, sources, checks and next owner. A [skill is a written recipe](https://localservicespotlight.com/plugin/); loading one does not prove account access or perform the task. Use the [installation guide](https://localservicespotlight.com/install/) if reusable setup is needed. A ZIP is a source snapshot, not an access grant or automatic update.\n\nUse the app’s actual supported tools and verified file/account access. Keep a missing human verification step with its real owner. Recurring work needs its own configured job, trigger, timezone and observed result; this guide creates no schedule. Before any media playback, mute the player and set its volume to zero. If silence cannot be verified first, use captions, frames, metadata or another silent check.\n\n## Record the real execution\n\nOpen the run record when work begins. Keep one execution ID, starting recipe revision, real inputs and current state. Write the [meta article, the record of this execution](https://blitzmetrics.com/meta-article-prompt/) with actual steps, results, checks, failures and next owner. Writing is required; public release follows existing authority. Link it to this recipe and the [Task Library](https://local-service-spotlight.github.io/task-library/).\n\nReuse the same execution ID for internal checks, revisions, retries and meta writing. A blocked run stays open with its dependency and owner, without an invented finish time. Dated public examples and distinct verified execution counts remain separate. Propose the smallest source-backed recipe improvement when the actual evidence reveals a defect.\n\n\n<!-- factory-layer:start -->\n\n## Factory chain (do not treat this as isolated)\n\n- **Phase:** —\n- **Importance:** 3/5 `●●●○○` — frequency 3, revenue 3, gating 3 (supporting)\n- **Suggested previous station:** —\n- **Suggested next station:** —\nThese stations are generated neighbors, not verified prerequisites or handoffs. Follow the task’s actual Inputs and Handoff sections.\n- **Handoff:** Save this task’s actual output, source, date and checks where the receiving owner can read them. Follow the Inputs and Handoff sections for its next step.\n\n## Model routing (same factory, any engine)\n\n- **This task's lane:** `judgment` — Frontier judgment: honest scoring, entity disambiguation, the subject's voice. Claude, ChatGPT, or Grok — pick the one you have.\n- **Single-engine path:** Use the capable AI app you already have. Check its required tools and access before starting. Pass the actual result and proof to the next task.\n- **Optional multi-engine:** A tested local model may draft; a stronger model may review facts and voice. Use supported tools for approved actions. Pick models from observed quality and cost; a model name does not prove it can run this task.\n- **Never** store the working state in one vendor's memory. Files in the Content Library are the bridge.\n\n<!-- factory-layer:end -->\n## Definitive article & links\n\n- [Maintained source guide](https://blitzmetrics.com/knowledge-panel/)\n- [This task in the Task Library](https://local-service-spotlight.github.io/task-library/?task=claim-and-verify-knowledge-panel-when-it-appears#task-claim-and-verify-knowledge-panel-when-it-appears)\n- [Article Guidelines](https://localservicespotlight.com/article-guidelines/)\n- [Definitive article and task recipe standard](https://blitzmetrics.com/definitive-article-guide/)\n- [How recipes and run records fit together](https://localservicespotlight.com/meta-articles/)\n\n### Primary method references\n\n- [Google panel claim](https://support.google.com/knowledgepanel/answer/7534902?hl=en)\n\n## Review and evidence still needed\n\nThe inherited contributor status is `needs-work`. It is preserved, not promoted by this rewrite. That label alone does not prove document readiness, account access, an actual execution or a client result.\n\nThe fictional example teaches the method and does not fill a real-run evidence gap. A named semantic reviewer must check the actual opening, full method, sources and handoff. Check the useful opening visual in the normal rendered guide at the current required desktop and mobile sizes, including 1280 × 800 and 390 × 844. Source readability checks do not prove public presentation or task execution.",
      "importance": 3,
@@ -27599,9 +27622,9 @@
      "status": "needs-work",
      "stage": "—",
      "article": "https://blitzmetrics.com/knowledge-panel",
-     "articleKind": "task-recipe",
+     "articleKind": "topic-hub",
      "desc": "Choose the right next step for your name on Google.",
-     "content": "---\nname: classify-and-offer-knowledge-panel\ndescription: \"Choose the right next step for your name on Google.\"\ncategory: Personal Branding\nstage: —\ndefinitive_article: /knowledge-panel\nstatus: needs-work\n---\n\n# Classify and offer Knowledge Panel\n\nChoose the right next step for your name on Google. This guide checks what is there before your team offers panel work. Start with a fresh search and the current terms your business has approved.\n\n**The path:** Live search + proof → Claim / Build / Contested → Current terms → Offer draft\n\n**Start when:** An accepted prospective engagement needs an evidence-based panel-work recommendation and a matching draft offer.\n\n## Inputs\n\n- The person’s accepted public name, role, home site and existing identity evidence.\n- Current search access, the approved service terms and qualification rules, and the actual commercial decision owner.\n- [Current owned package page](https://localservicespotlight.com/knowledge-panel-package/) and [Google’s account of how panels work](https://support.google.com/knowledgepanel/answer/9163198?hl=en); reconcile any conflict with the accepted engagement before quoting.\n\n## Steps\n\n1. Run a fresh name search and record query, location or locale where known, device, date and screenshots. Inspect the result’s identity, not merely the displayed name. A signed-out search reduces some personalization but does not remove all contextual variation.\n2. Classify Claim/correct only when the right panel offers the needed claim or edit route. An existing entity ID without that route is evidence of an entity, not claim-ready delivery. Classify Build as supported identity/proof work still needed; use contested review for ambiguity or a crowded name.\n3. Check the person’s existing public home, verified profiles and independent evidence. State the actual gaps and the services within scope. Do not promise that a checklist, payment, name domain or schema will force Google to display a panel.\n4. Read the current approved price, deposit, milestone and refund terms from their maintained source. The older skill’s dollar bands and duration ranges are historical source copy; this recipe does not set a new price or repeat them as current without that check.\n5. Draft the matching recommendation with the evidence, exact deliverables, owner-controlled verification account, dependencies and accepted commercial terms. Tie each milestone to its actual contract definition. Keep proposed service work distinct from Google’s decision and from a completed claim.\n6. Route ambiguous scope, conflicting terms and contested identities to the responsible commercial or entity-review function with the finished evidence packet. A named colleague’s availability is not a reason to pause safe research, nor authority to send an unapproved offer.\n7. Save the decision and draft. Send only under existing authorization and record the exact sent version when it happens. The classification task is checked when its evidence and matching proposal are reviewable; a sale or a panel is a later outcome.\n\n## Definition of done (QA checklist)\n\nQuality assurance (QA) means checking the actual result against its agreed requirements. Follow the [Article Guidelines](https://localservicespotlight.com/article-guidelines/).\n\n- [ ] The recommendation distinguishes identity evidence from an actual claim/edit route.\n- [ ] All quoted commercial terms match the current approved source; unsupported timing promises are absent.\n- [ ] The evidence-backed offer remains accurately labeled draft or sent, with the next owner named.\n- [ ] The exact output, source revision, reviewer evidence and remaining owner action are saved.\n- [ ] For any reader-facing output, the short grade-five opening states the reader’s useful outcome and supporting method or proof. The body delivers that promise; a useful authentic visual appears in the first screen. Retain exact text and quoted reviewer evidence.\n\n## Example(s)\n\n**Fictional teaching example. This is not a client result or proof of a completed run.**\n\nA fictional accountant has a name shared by a musician. The visible card belongs to the musician. The team prepares a contested-identity review with the accountant’s true work and site. It does not sell a ready-to-claim service or borrow an old price; the current offer owner must supply the actual terms.\n\n## Handoff and Content Factory context\n\n[Resolve identity facts](https://local-service-spotlight.github.io/task-library/?task=establish-entity-identity#task-establish-entity-identity) or [Claim the available panel](https://local-service-spotlight.github.io/task-library/?task=claim-and-verify-knowledge-panel-when-it-appears#task-claim-and-verify-knowledge-panel-when-it-appears) receives the accepted route after scope approval.\n\nThis task supports the [Content Factory: Produce, Process, Post and Promote](https://blitzmetrics.com/content-factory/). Identity, proof, access or coordination can support several stages. Use the real inputs and receiving owner above; this task does not create unrelated transcripts, clips or ads merely because the diagram has four stages.\n\n## Start with an agent\n\nGive the [AI worker](https://blitzmetrics.com/build-agents/) this recipe, the real inputs, desired result and actions already authorized. Ask for the saved output, sources, checks and next owner. A [skill is a written recipe](https://localservicespotlight.com/plugin/); loading one does not prove account access or perform the task. Use the [installation guide](https://localservicespotlight.com/install/) if reusable setup is needed. A ZIP is a source snapshot, not an access grant or automatic update.\n\nUse the app’s actual supported tools and verified file/account access. Keep a missing human verification step with its real owner. Recurring work needs its own configured job, trigger, timezone and observed result; this guide creates no schedule. Before any media playback, mute the player and set its volume to zero. If silence cannot be verified first, use captions, frames, metadata or another silent check.\n\n## Record the real execution\n\nOpen the run record when work begins. Keep one execution ID, starting recipe revision, real inputs and current state. Write the [meta article, the record of this execution](https://blitzmetrics.com/meta-article-prompt/) with actual steps, results, checks, failures and next owner. Writing is required; public release follows existing authority. Link it to this recipe and the [Task Library](https://local-service-spotlight.github.io/task-library/).\n\nReuse the same execution ID for internal checks, revisions, retries and meta writing. A blocked run stays open with its dependency and owner, without an invented finish time. Dated public examples and distinct verified execution counts remain separate. Propose the smallest source-backed recipe improvement when the actual evidence reveals a defect.\n\n\n<!-- factory-layer:start -->\n\n## Factory chain (do not treat this as isolated)\n\n- **Phase:** —\n- **Importance:** 3/5 `●●●○○` — frequency 3, revenue 3, gating 3 (supporting)\n- **Suggested previous station:** —\n- **Suggested next station:** —\nThese stations are generated neighbors, not verified prerequisites or handoffs. Follow the task’s actual Inputs and Handoff sections.\n- **Handoff:** Save this task’s actual output, source, date and checks where the receiving owner can read them. Follow the Inputs and Handoff sections for its next step.\n\n## Model routing (same factory, any engine)\n\n- **This task's lane:** `judgment` — Frontier judgment: honest scoring, entity disambiguation, the subject's voice. Claude, ChatGPT, or Grok — pick the one you have.\n- **Single-engine path:** Use the capable AI app you already have. Check its required tools and access before starting. Pass the actual result and proof to the next task.\n- **Optional multi-engine:** A tested local model may draft; a stronger model may review facts and voice. Use supported tools for approved actions. Pick models from observed quality and cost; a model name does not prove it can run this task.\n- **Never** store the working state in one vendor's memory. Files in the Content Library are the bridge.\n\n<!-- factory-layer:end -->\n## Definitive article & links\n\n- [Maintained source guide](https://blitzmetrics.com/knowledge-panel/)\n- [This task in the Task Library](https://local-service-spotlight.github.io/task-library/?task=classify-and-offer-knowledge-panel#task-classify-and-offer-knowledge-panel)\n- [Article Guidelines](https://localservicespotlight.com/article-guidelines/)\n- [Definitive article and task recipe standard](https://blitzmetrics.com/definitive-article-guide/)\n- [How recipes and run records fit together](https://localservicespotlight.com/meta-articles/)\n\n### Primary method references\n\n- [Google panel explanation](https://support.google.com/knowledgepanel/answer/9163198?hl=en)\n\n## Review and evidence still needed\n\nThe inherited contributor status is `needs-work`. It is preserved, not promoted by this rewrite. That label alone does not prove document readiness, account access, an actual execution or a client result.\n\nThe fictional example teaches the method and does not fill a real-run evidence gap. A named semantic reviewer must check the actual opening, full method, sources and handoff. Check the useful opening visual in the normal rendered guide at the current required desktop and mobile sizes, including 1280 × 800 and 390 × 844. Source readability checks do not prove public presentation or task execution.",
+     "content": "---\nname: classify-and-offer-knowledge-panel\ndescription: \"Choose the right next step for your name on Google.\"\ncategory: Personal Branding\nstage: —\ndefinitive_article: /knowledge-panel\nstatus: needs-work\n---\n\n# Classify and offer Knowledge Panel\n\nChoose the right work to help people find you on Google. This keeps your team from selling work you do not need. First, [check who each profile belongs to](https://local-service-spotlight.github.io/task-library/?task=establish-entity-identity#task-establish-entity-identity); that proof helps you tell your results from someone else’s.\n\n**The path:** Live search + proof → Claim / Build / Contested → Current terms → Offer draft\n\n**Start when:** An accepted prospective engagement needs an evidence-based panel-work recommendation and a matching draft offer.\n\n## Inputs\n\n- The person’s accepted public name, role, home site and existing identity evidence.\n- Current search access, the approved service terms and qualification rules, and the actual commercial decision owner.\n- [Current owned package page](https://localservicespotlight.com/knowledge-panel-package/) and [Google’s account of how panels work](https://support.google.com/knowledgepanel/answer/9163198?hl=en); reconcile any conflict with the accepted engagement before quoting.\n\n## Steps\n\n1. Run a fresh name search and record query, location or locale where known, device, date and screenshots. Inspect the result’s identity, not merely the displayed name. A signed-out search reduces some personalization but does not remove all contextual variation.\n2. Classify Claim/correct only when the right panel offers the needed claim or edit route. An entity ID is a code for a named person or thing in Google’s data. It does not prove the right panel offers a claim or edit route. Classify Build as supported identity/proof work still needed; use contested review for ambiguity or a crowded name.\n3. Check the person’s existing public home, verified profiles and independent evidence. State the actual gaps and the services within scope. Do not promise that a checklist, payment, name domain or schema will force Google to display a panel.\n4. Read the current approved price, deposit, milestone and refund terms from their maintained source. If the public offer page omits a term, get the approved engagement or terms owner’s record; do not invent it or treat silence as a refund policy. The older skill’s dollar bands and duration ranges are historical source copy; this recipe does not set a new price or repeat them as current without that check.\n5. Draft the matching recommendation with the evidence, exact deliverables, owner-controlled verification account, dependencies and accepted commercial terms. Tie each milestone to its actual contract definition. Keep proposed service work distinct from Google’s decision and from a completed claim.\n6. Route ambiguous scope, conflicting terms and contested identities to the responsible commercial or entity-review function with the finished evidence packet. A named colleague’s availability is not a reason to pause safe research, nor authority to send an unapproved offer.\n7. Save the decision and draft. Send only under existing authorization and record the exact sent version when it happens. The classification task is checked when its evidence and matching proposal are reviewable; a sale or a panel is a later outcome.\n\n## Output record and acceptance\n\nFor each accepted request, save the request ID and revision; search name, date, locale and result evidence; identity match; route (`claim/correct`, `build` or `contested`); evidence gaps; approved-terms source and revision; offer-draft link and state; and next function and owner. Count the in-scope names searched and classified, and drafts backed by current terms. The check passes when every recommendation can be traced to saved evidence and each quoted term matches its approved source. The person responsible for commercial terms records accept or return against the exact draft revision, with reviewer and date; contested identity goes to the identity reviewer. Keep these records in the approved private project space.\n\n## Definition of done (QA checklist)\n\nQuality assurance (QA) means checking the actual result against its agreed requirements. Follow the [Article Guidelines](https://localservicespotlight.com/article-guidelines/).\n\n- [ ] The recommendation distinguishes identity evidence from an actual claim/edit route.\n- [ ] All quoted commercial terms match the current approved source; unsupported timing promises are absent.\n- [ ] The evidence-backed offer remains accurately labeled draft or sent, with the next owner named.\n- [ ] The exact output, source revision, reviewer evidence and remaining owner action are saved.\n- [ ] For any reader-facing output, the short grade-five opening states the reader’s useful outcome and supporting method or proof. The body delivers that promise; a useful authentic visual appears in the first screen. Retain exact text and quoted reviewer evidence.\n\n## Example(s)\n\n**Fictional teaching example. This is not a client result or proof of a completed run.**\n\nA fictional accountant has a name shared by a musician. The visible card belongs to the musician. The team prepares a contested-identity review with the accountant’s true work and site. It does not sell a ready-to-claim service or borrow an old price; the current offer owner must supply the actual terms.\n\n## Handoff and Content Factory context\n\nThe person responsible for commercial terms receives the exact proposal for acceptance. The identity reviewer receives a contested case before an offer is sent. After scope approval, [resolve identity facts](https://local-service-spotlight.github.io/task-library/?task=establish-entity-identity#task-establish-entity-identity) or [claim an available panel](https://local-service-spotlight.github.io/task-library/?task=claim-and-verify-knowledge-panel-when-it-appears#task-claim-and-verify-knowledge-panel-when-it-appears) receives the supported route.\n\nThis is a qualification gate before the [Content Factory](https://blitzmetrics.com/content-factory/) starts. Once work is accepted, [Establish entity identity](https://local-service-spotlight.github.io/task-library/?task=establish-entity-identity#task-establish-entity-identity) supplies checked facts for later site or schema work. This task produces a sourced route and offer draft; it does not make a content asset.\n\n## Start with an agent\n\nGive the [AI worker](https://blitzmetrics.com/build-agents/) this recipe, the real inputs, desired result and actions already authorized. Ask for the saved output, sources, checks and next owner. A [skill is a written recipe](https://localservicespotlight.com/plugin/); loading one does not prove account access or perform the task. Use the [installation guide](https://localservicespotlight.com/install/) if reusable setup is needed. A ZIP is a source snapshot, not an access grant or automatic update.\n\nUse the app’s actual supported tools and verified file/account access. Keep a missing human verification step with its real owner. Recurring work needs its own configured job, trigger, timezone and observed result; this guide creates no schedule. Before any media playback, mute the player and set its volume to zero. If silence cannot be verified first, use captions, frames, metadata or another silent check.\n\n## Record the real execution\n\nOpen the run record when work begins. Keep one execution ID, starting recipe revision, real inputs and current state. Write the [meta article, the record of this execution](https://blitzmetrics.com/meta-article-prompt/) with actual steps, results, checks, failures and next owner. Writing is required; public release follows existing authority. Link it to this recipe and the [Task Library](https://local-service-spotlight.github.io/task-library/).\n\nReuse the same execution ID for internal checks, revisions, retries and meta writing. A blocked run stays open with its dependency and owner, without an invented finish time. Dated public examples and distinct verified execution counts remain separate. Propose the smallest source-backed recipe improvement when the actual evidence reveals a defect.\n\n\n<!-- factory-layer:start -->\n\n## Factory chain (do not treat this as isolated)\n\n- **Phase:** —\n- **Importance:** 3/5 `●●●○○` — frequency 3, revenue 3, gating 3 (supporting)\n- **Suggested previous station:** —\n- **Suggested next station:** —\nThese stations are generated neighbors, not verified prerequisites or handoffs. Follow the task’s actual Inputs and Handoff sections.\n- **Handoff:** Save this task’s actual output, source, date and checks where the receiving owner can read them. Follow the Inputs and Handoff sections for its next step.\n\n## Model routing (same factory, any engine)\n\n- **This task's lane:** `judgment` — Frontier judgment: honest scoring, entity disambiguation, the subject's voice. Claude, ChatGPT, or Grok — pick the one you have.\n- **Single-engine path:** Use the capable AI app you already have. Check its required tools and access before starting. Pass the actual result and proof to the next task.\n- **Optional multi-engine:** A tested local model may draft; a stronger model may review facts and voice. Use supported tools for approved actions. Pick models from observed quality and cost; a model name does not prove it can run this task.\n- **Never** store the working state in one vendor's memory. Files in the Content Library are the bridge.\n\n<!-- factory-layer:end -->\n## Definitive article & links\n\n- [Maintained source guide](https://blitzmetrics.com/knowledge-panel/)\n- [This task in the Task Library](https://local-service-spotlight.github.io/task-library/?task=classify-and-offer-knowledge-panel#task-classify-and-offer-knowledge-panel)\n- [Article Guidelines](https://localservicespotlight.com/article-guidelines/)\n- [Definitive article and task recipe standard](https://blitzmetrics.com/definitive-article-guide/)\n- [How recipes and run records fit together](https://localservicespotlight.com/meta-articles/)\n\n### Primary method references\n\n- [Google panel explanation](https://support.google.com/knowledgepanel/answer/9163198?hl=en)\n\n## Review and evidence still needed\n\nThe inherited contributor status is `needs-work`. It is preserved, not promoted by this rewrite. That label alone does not prove document readiness, account access, an actual execution or a client result.\n\nThe fictional example teaches the method and does not fill a real-run evidence gap. A named semantic reviewer must check the actual opening, full method, sources and handoff. Check the useful opening visual in the normal rendered guide at the current required desktop and mobile sizes, including 1280 × 800 and 390 × 844. Source readability checks do not prove public presentation or task execution.",
      "importance": 3,
      "freq": 3,
      "revenue": 3,
@@ -27613,10 +27636,40 @@
      "lane_label": "Frontier judgment: honest scoring, entity disambiguation, the subject's voice. Claude, ChatGPT, or Grok — pick the one you have.",
      "why": "supporting",
      "instructionReview": {
-      "source_sha256": "cecebe10a67c2349b0e70d6186a35868129da6837b6f7a361939a71e46c64bd4",
-      "reviewed_at": "2026-09-06",
-      "reviewer": "Codex editorial review",
-      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+      "source_sha256": "e52ab95088bca316403cce18fbf1b7810cf871886e4c3775fba9ed88926dfab4",
+      "reviewed_at": "2026-10-05",
+      "reviewer": "Codex root with independent GPT-6 Luna written review",
+      "scope": "Five written checks only. Article certification, accepted execution and novice setup remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md",
+      "standards": {
+       "version": 1,
+       "checks": {
+        "opening": {
+         "state": "pass",
+         "reason": "Exact opening quoted in review: task, practical reason and explained owned connection. First-screen diagram and opening checked in phone and desktop article previews. Readability diagnostic saved; actual meaning judged separately.",
+         "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+        },
+        "recipe": {
+         "state": "pass",
+         "reason": "Trigger, source/access inputs, ordered steps, countable result record, acceptance and real scope are explicit. Setup, access, one task and optional schedule stay separate.",
+         "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+        },
+        "links": {
+         "state": "pass",
+         "reason": "Owned prerequisite and receiving-task bodies read; normal destination checks succeeded. Empty GBP course replaced with the relevant maintained task; primary Google and DNS sources support provider claims.",
+         "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+        },
+        "evidence": {
+         "state": "pass",
+         "reason": "Unsupported Google guarantees and site-launch assumptions removed. False identity matches excluded; examples fictional; actual approved terms, domain configuration, output checks and receiver evidence required.",
+         "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+        },
+        "handoff": {
+         "state": "pass",
+         "reason": "Exact proposal, identity map or site record goes to a required reviewer/owner. Assignment is a prerequisite, not a claim of staffed roles. Qualification precedes delivery; Process identity feeds Post site work.",
+         "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+        }
+       }
+      }
      },
      "articleState": "wip",
      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=classify-and-offer-knowledge-panel#task-classify-and-offer-knowledge-panel",
@@ -27634,24 +27687,57 @@
       "setupReviews": []
      },
      "standardVerification": {
-      "instructionSourceSha256": "cecebe10a67c2349b0e70d6186a35868129da6837b6f7a361939a71e46c64bd4",
+      "instructionSourceSha256": "e52ab95088bca316403cce18fbf1b7810cf871886e4c3775fba9ed88926dfab4",
       "articleKey": "blitzmetrics.com/knowledge-panel",
       "gates": {
        "instructionRevisionReviewed": {
         "id": "instructionRevisionReviewed",
         "label": "Exact instruction revision reviewed",
         "state": "pass",
-        "reason": "Current source bytes match the review recorded 2026-09-06. Review scope and limits: Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate.",
-        "reviewedAt": "2026-09-06",
-        "reviewer": "Codex editorial review",
-        "sourceSha256": "cecebe10a67c2349b0e70d6186a35868129da6837b6f7a361939a71e46c64bd4"
+        "reason": "Current source bytes match the review recorded 2026-10-05. Review scope and limits: Five written checks only. Article certification, accepted execution and novice setup remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md",
+        "reviewedAt": "2026-10-05",
+        "reviewer": "Codex root with independent GPT-6 Luna written review",
+        "sourceSha256": "e52ab95088bca316403cce18fbf1b7810cf871886e4c3775fba9ed88926dfab4"
        },
        "instructionStandards": {
         "id": "instructionStandards",
         "label": "Instruction requirements checked",
-        "state": "unknown",
-        "reason": "The current exact-byte review has no structured instruction-requirements checklist.",
-        "sourceSha256": "cecebe10a67c2349b0e70d6186a35868129da6837b6f7a361939a71e46c64bd4"
+        "state": "pass",
+        "reason": "All five instruction requirements have explicit passing checks for the current source revision.",
+        "reviewedAt": "2026-10-05",
+        "reviewer": "Codex root with independent GPT-6 Luna written review",
+        "reviewScope": "Five written checks only. Article certification, accepted execution and novice setup remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md",
+        "sourceSha256": "e52ab95088bca316403cce18fbf1b7810cf871886e4c3775fba9ed88926dfab4",
+        "standards": {
+         "version": 1,
+         "checks": {
+          "opening": {
+           "state": "pass",
+           "reason": "Exact opening quoted in review: task, practical reason and explained owned connection. First-screen diagram and opening checked in phone and desktop article previews. Readability diagnostic saved; actual meaning judged separately.",
+           "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+          },
+          "recipe": {
+           "state": "pass",
+           "reason": "Trigger, source/access inputs, ordered steps, countable result record, acceptance and real scope are explicit. Setup, access, one task and optional schedule stay separate.",
+           "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+          },
+          "links": {
+           "state": "pass",
+           "reason": "Owned prerequisite and receiving-task bodies read; normal destination checks succeeded. Empty GBP course replaced with the relevant maintained task; primary Google and DNS sources support provider claims.",
+           "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+          },
+          "evidence": {
+           "state": "pass",
+           "reason": "Unsupported Google guarantees and site-launch assumptions removed. False identity matches excluded; examples fictional; actual approved terms, domain configuration, output checks and receiver evidence required.",
+           "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+          },
+          "handoff": {
+           "state": "pass",
+           "reason": "Exact proposal, identity map or site record goes to a required reviewer/owner. Assignment is a prerequisite, not a claim of staffed roles. Qualification precedes delivery; Process identity feeds Post site work.",
+           "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+          }
+         }
+        }
        },
        "contributorComplete": {
         "id": "contributorComplete",
@@ -27676,7 +27762,102 @@
         "id": "articleSemanticCertification",
         "label": "Article semantic certification",
         "state": "unknown",
-        "reason": "No exact-revision positive semantic review is recorded for this article."
+        "reason": "Current article semantic criteria are unknown: owner, sourceEvidence, visualAndLayout, publicationStandards, acceptanceResults.",
+        "semanticReview": {
+         "version": 1,
+         "taskSlug": "classify-and-offer-knowledge-panel",
+         "canonicalURL": "https://blitzmetrics.com/knowledge-panel",
+         "sourceSha256": "8ffaedfbfedaa6aa9a5073ae30abfac53e6b3b9b316cf2614b9d2b2e6fe751bd",
+         "representation": "wordpress-content-html",
+         "reviewedAt": "2026-10-05T21:21:36.783111Z",
+         "reviewer": "Codex root; separate GPT-6 Luna written review",
+         "criteria": {
+          "openingContext": {
+           "state": "pass",
+           "reason": "Actual first paragraph quoted below; plain useful work, reason and owned personal-brand prerequisite, with source meaning checked.",
+           "evidenceRefs": [
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+           ]
+          },
+          "roleScope": {
+           "state": "pass",
+           "reason": "Single site-delivery recipe or six-task Knowledge Panel topic hub; registry and public copy agree.",
+           "evidenceRefs": [
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+           ]
+          },
+          "owner": {
+           "state": "unknown",
+           "reason": "Canonical ongoing upkeep owner not established by this scoped release.",
+           "evidenceRefs": [
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+           ]
+          },
+          "steps": {
+           "state": "pass",
+           "reason": "Reviewed body now agrees with the current source recipe; old Google and DNS contradictions removed.",
+           "evidenceRefs": [
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+           ]
+          },
+          "links": {
+           "state": "pass",
+           "reason": "Owned conceptual and prerequisite meanings checked; current source copies and primary-provider references checked.",
+           "evidenceRefs": [
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+           ]
+          },
+          "sourceEvidence": {
+           "state": "unknown",
+           "reason": "No new independently accepted offer, identity audit or site launch is supplied by documentation work.",
+           "evidenceRefs": [
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+           ]
+          },
+          "handoffContext": {
+           "state": "pass",
+           "reason": "Named required reviewer or publisher, exact artifact and accepting record, plus specific Content Factory relationship.",
+           "evidenceRefs": [
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+           ]
+          },
+          "visualAndLayout": {
+           "state": "unknown",
+           "reason": "Previews passed; final anonymous source and full public rendered checks tracked separately before any certification.",
+           "evidenceRefs": [
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+           ]
+          },
+          "publicationStandards": {
+           "state": "unknown",
+           "reason": "Stable route and basic metadata preserved or improved; complete taxonomy, SEO metadata and author evidence not certified.",
+           "evidenceRefs": [
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+           ]
+          },
+          "acceptanceResults": {
+           "state": "unknown",
+           "reason": "No accepted real task execution or novice setup trial; article publication is not their substitute.",
+           "evidenceRefs": [
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+           ]
+          }
+         }
+        },
+        "revisionObservation": {
+         "version": 1,
+         "taskSlug": "classify-and-offer-knowledge-panel",
+         "canonicalURL": "https://blitzmetrics.com/knowledge-panel",
+         "sourceSha256": "8ffaedfbfedaa6aa9a5073ae30abfac53e6b3b9b316cf2614b9d2b2e6fe751bd",
+         "representation": "wordpress-content-html",
+         "observedAt": "2026-10-05T21:21:37.547232Z",
+         "observer": "Codex separate authenticated source read",
+         "state": "observed",
+         "reason": "Exact reviewed source independently read after the review. Public parity remains separate.",
+         "evidenceRefs": [
+          "sha256:37ddfe4c66f4e20c4824e23c164e66f5bd2ad204cc10731c329c94c6a39599db"
+         ]
+        }
        },
        "taskExampleEvidence": {
         "id": "taskExampleEvidence",
@@ -27712,7 +27893,6 @@
       ],
       "heldStandardGates": [],
       "unknownStandardGates": [
-       "instructionStandards",
        "articleSemanticCertification",
        "taskExampleEvidence",
        "recordedExecution",
@@ -28129,26 +28309,56 @@
      "title": "Establish entity identity",
      "slug": "establish-entity-identity",
      "status": "needs-work",
-     "stage": "—",
+     "stage": "Process",
      "article": "https://blitzmetrics.com/knowledge-panel",
-     "articleKind": "task-recipe",
+     "articleKind": "topic-hub",
      "desc": "Make it clear which person a page is about.",
-     "content": "---\nname: establish-entity-identity\ndescription: \"Make it clear which person a page is about.\"\ncategory: Personal Branding\nstage: —\ndefinitive_article: /knowledge-panel\nstatus: needs-work\n---\n\n# Establish entity identity\n\nMake it clear which person a page is about. This guide checks your name, site and key facts so people can tell you apart from someone else. Start with your own site and the profiles you know are yours.\n\n**The path:** Known person → Profile inventory → Fact and identity checks → Corrected source map\n\n**Start when:** An identity audit or panel project needs one verified record of the person and known naming conflicts.\n\n## Inputs\n\n- [Align photos and bio facts](https://local-service-spotlight.github.io/task-library/?task=add-consistent-headshots-and-bios-across-profiles#task-add-consistent-headshots-and-bios-across-profiles) with the approved name, real photo and current role facts.\n- The person’s home site, known profiles, outside sources and current structured markup.\n- Actual edit rights and a defined research scope; prior collisions and rejected identity matches.\n\n## Steps\n\n1. Create or update the existing identity record. Include the accepted professional name, valid alternate names, home URL, role and organization with source evidence. A person may have legitimate historic names and photos; consistency means resolving facts, not deleting their history.\n2. Inventory the in-scope owned and outside pages. Record URL, source type, name used, current role, image, website target and evidence date. Search known variants and useful languages; record coverage limits rather than claiming to find every page on the web.\n3. Resolve each page to this person using its actual role, organization, context and sources. A matching name, a search snippet or a photo with another person is insufficient. Keep wrong-person and uncertain matches excluded from accepted identity links.\n4. Compare current owned fields with the approved record. Prepare corrections for factual drift and broken links. Preserve valid older credits with their dates. Retiring profiles, redirecting URLs or changing another publisher’s page requires its actual owner and existing authority.\n5. Inspect the live website’s Person markup, meaning structured facts identifying the person. Reuse one stable identity ID for that person across relevant blocks. Person and business remain separate entities; do not merge the person with a company profile simply because they own it.\n6. After authorized corrections, reopen affected pages and check saved facts and destinations. Pass verified identity pages to [Add verified Person markup](https://local-service-spotlight.github.io/task-library/?task=implement-person-schema-with-sameas-links#task-implement-person-schema-with-sameas-links). An inaccessible source stays unresolved until a supported inspection proves its identity; a response code alone is insufficient.\n7. Save accepted aliases, rejected matches, checked sources and next actions. Review when a role, domain or profile changes. Any quarterly schedule needs its real owner and observed configuration; clean identity evidence does not guarantee a [Knowledge Panel, Google’s information box for an entity](https://blitzmetrics.com/knowledge-panel/).\n\n## Definition of done (QA checklist)\n\nQuality assurance (QA) means checking the actual result against its agreed requirements. Follow the [Article Guidelines](https://localservicespotlight.com/article-guidelines/).\n\n- [ ] Accepted pages unambiguously describe the intended person; aliases and collisions remain documented.\n- [ ] Corrected owned facts are read back and outside corrections have their actual state.\n- [ ] The identity map distinguishes Person and company and supplies verified sources to schema work.\n- [ ] The exact output, source revision, reviewer evidence and remaining owner action are saved.\n- [ ] For any reader-facing output, the short grade-five opening states the reader’s useful outcome and supporting method or proof. The body delivers that promise; a useful authentic visual appears in the first screen. Retain exact text and quoted reviewer evidence.\n\n## Example(s)\n\n**Fictional teaching example. This is not a client result or proof of a completed run.**\n\nA fictional designer shares her name with an actor. A podcast page names her design firm, while a film page belongs to the actor. The team accepts the podcast profile and excludes the film page. An old employer bio stays as dated career history, with only its broken current-site link proposed for repair.\n\n## Handoff and Content Factory context\n\n[Check outside proof](https://local-service-spotlight.github.io/task-library/?task=build-third-party-validation#task-build-third-party-validation) receives the resolved identity; [Maintain the identity graph](https://local-service-spotlight.github.io/task-library/?task=implement-technical-schema-markup#task-implement-technical-schema-markup) receives accepted URLs and fact changes.\n\nThis task supports the [Content Factory: Produce, Process, Post and Promote](https://blitzmetrics.com/content-factory/). Identity, proof, access or coordination can support several stages. Use the real inputs and receiving owner above; this task does not create unrelated transcripts, clips or ads merely because the diagram has four stages.\n\n## Start with an agent\n\nGive the [AI worker](https://blitzmetrics.com/build-agents/) this recipe, the real inputs, desired result and actions already authorized. Ask for the saved output, sources, checks and next owner. A [skill is a written recipe](https://localservicespotlight.com/plugin/); loading one does not prove account access or perform the task. Use the [installation guide](https://localservicespotlight.com/install/) if reusable setup is needed. A ZIP is a source snapshot, not an access grant or automatic update.\n\nUse the app’s actual supported tools and verified file/account access. Keep a missing human verification step with its real owner. Recurring work needs its own configured job, trigger, timezone and observed result; this guide creates no schedule. Before any media playback, mute the player and set its volume to zero. If silence cannot be verified first, use captions, frames, metadata or another silent check.\n\n## Record the real execution\n\nOpen the run record when work begins. Keep one execution ID, starting recipe revision, real inputs and current state. Write the [meta article, the record of this execution](https://blitzmetrics.com/meta-article-prompt/) with actual steps, results, checks, failures and next owner. Writing is required; public release follows existing authority. Link it to this recipe and the [Task Library](https://local-service-spotlight.github.io/task-library/).\n\nReuse the same execution ID for internal checks, revisions, retries and meta writing. A blocked run stays open with its dependency and owner, without an invented finish time. Dated public examples and distinct verified execution counts remain separate. Propose the smallest source-backed recipe improvement when the actual evidence reveals a defect.\n\n\n<!-- factory-layer:start -->\n\n## Factory chain (do not treat this as isolated)\n\n- **Phase:** —\n- **Importance:** 3/5 `●●●○○` — frequency 3, revenue 3, gating 2 (supporting)\n- **Suggested previous station:** —\n- **Suggested next station:** —\nThese stations are generated neighbors, not verified prerequisites or handoffs. Follow the task’s actual Inputs and Handoff sections.\n- **Handoff:** Save this task’s actual output, source, date and checks where the receiving owner can read them. Follow the Inputs and Handoff sections for its next step.\n\n## Model routing (same factory, any engine)\n\n- **This task's lane:** `judgment` — Frontier judgment: honest scoring, entity disambiguation, the subject's voice. Claude, ChatGPT, or Grok — pick the one you have.\n- **Single-engine path:** Use the capable AI app you already have. Check its required tools and access before starting. Pass the actual result and proof to the next task.\n- **Optional multi-engine:** A tested local model may draft; a stronger model may review facts and voice. Use supported tools for approved actions. Pick models from observed quality and cost; a model name does not prove it can run this task.\n- **Never** store the working state in one vendor's memory. Files in the Content Library are the bridge.\n\n<!-- factory-layer:end -->\n## Definitive article & links\n\n- [Maintained source guide](https://blitzmetrics.com/knowledge-panel/)\n- [This task in the Task Library](https://local-service-spotlight.github.io/task-library/?task=establish-entity-identity#task-establish-entity-identity)\n- [Article Guidelines](https://localservicespotlight.com/article-guidelines/)\n- [Definitive article and task recipe standard](https://blitzmetrics.com/definitive-article-guide/)\n- [How recipes and run records fit together](https://localservicespotlight.com/meta-articles/)\n\n## Review and evidence still needed\n\nThe inherited contributor status is `needs-work`. It is preserved, not promoted by this rewrite. That label alone does not prove document readiness, account access, an actual execution or a client result.\n\nThe fictional example teaches the method and does not fill a real-run evidence gap. A named semantic reviewer must check the actual opening, full method, sources and handoff. Check the useful opening visual in the normal rendered guide at the current required desktop and mobile sizes, including 1280 × 800 and 390 × 844. Source readability checks do not prove public presentation or task execution.",
+     "content": "---\nname: establish-entity-identity\ndescription: \"Make it clear which person a page is about.\"\ncategory: Personal Branding\nstage: Process\ndefinitive_article: /knowledge-panel\nstatus: needs-work\n---\n\n# Establish entity identity\n\nCheck which web pages are about you. This helps your team keep your facts apart from those of someone with the same name. Pass the checked facts to [the site code setup](https://local-service-spotlight.github.io/task-library/?task=implement-person-schema-with-sameas-links#task-implement-person-schema-with-sameas-links) so search tools can read the same facts as your readers.\n\n**The path:** Known person → Profile inventory → Fact and identity checks → Corrected source map\n\n**Start when:** An identity audit or panel project needs one verified record of the person and known naming conflicts.\n\n## Inputs\n\n- [Align photos and bio facts](https://local-service-spotlight.github.io/task-library/?task=add-consistent-headshots-and-bios-across-profiles#task-add-consistent-headshots-and-bios-across-profiles) with the approved name, real photo and current role facts.\n- The person’s home site, known profiles, outside sources and current structured markup.\n- Actual edit rights and a defined research scope; prior collisions and rejected identity matches.\n\n## Steps\n\n1. Create or update the existing identity record. Include the accepted professional name, valid alternate names, home URL, role and organization with source evidence. A person may have legitimate historic names and photos; consistency means resolving facts, not deleting their history.\n2. Inventory the in-scope owned and outside pages. Record URL, source type, name used, current role, image, website target and evidence date. Search known variants and useful languages; record coverage limits rather than claiming to find every page on the web.\n3. Resolve each page to this person using its actual role, organization, context and sources. A matching name, a search snippet or a photo with another person is insufficient. Keep wrong-person and uncertain matches excluded from accepted identity links.\n4. Compare current owned fields with the approved record. Prepare corrections for factual drift and broken links. Preserve valid older credits with their dates. Retiring profiles, redirecting URLs or changing another publisher’s page requires its actual owner and existing authority.\n5. Inspect the live website’s Person markup, meaning structured facts identifying the person. Reuse one stable identity ID for that person across relevant blocks. Person and business remain separate entities; do not merge the person with a company profile simply because they own it.\n6. After authorized corrections, reopen affected pages and check saved facts and destinations. Pass verified identity pages to [Add verified Person markup](https://local-service-spotlight.github.io/task-library/?task=implement-person-schema-with-sameas-links#task-implement-person-schema-with-sameas-links). An inaccessible source stays unresolved until a supported inspection proves its identity; a response code alone is insufficient.\n7. Save accepted aliases, rejected matches, checked sources and next actions. Review when a role, domain or profile changes. Any quarterly schedule needs its real owner and observed configuration; clean identity evidence does not guarantee a [Knowledge Panel, Google’s information box for an entity](https://blitzmetrics.com/knowledge-panel/).\n\n## Output record and acceptance\n\nSave one versioned identity map with a row for each in-scope source: URL, source type and check date; displayed name and role; match state (`accepted`, `rejected` or `unknown`); evidence links; conflict; proposed correction and owner. Report the number of rows checked in each state. The map passes when every accepted row has supporting evidence and names the person separately from any company; unresolved sources stay `unknown` and out of accepted links. The person responsible for checking identity evidence records accept or return against the exact map revision, reviewer and date. Only accepted URLs and facts go to the Person schema task.\n\n## Definition of done (QA checklist)\n\nQuality assurance (QA) means checking the actual result against its agreed requirements. Follow the [Article Guidelines](https://localservicespotlight.com/article-guidelines/).\n\n- [ ] Accepted pages unambiguously describe the intended person; aliases and collisions remain documented.\n- [ ] Corrected owned facts are read back and outside corrections have their actual state.\n- [ ] The identity map distinguishes Person and company and supplies verified sources to schema work.\n- [ ] The exact output, source revision, reviewer evidence and remaining owner action are saved.\n- [ ] For any reader-facing output, the short grade-five opening states the reader’s useful outcome and supporting method or proof. The body delivers that promise; a useful authentic visual appears in the first screen. Retain exact text and quoted reviewer evidence.\n\n## Example(s)\n\n**Fictional teaching example. This is not a client result or proof of a completed run.**\n\nA fictional designer shares her name with an actor. A podcast page names her design firm, while a film page belongs to the actor. The team accepts the podcast profile and excludes the film page. An old employer bio stays as dated career history, with only its broken current-site link proposed for repair.\n\n## Handoff and Content Factory context\n\nThe person responsible for checking identity evidence accepts or returns the exact map revision. After acceptance, [Person schema setup](https://local-service-spotlight.github.io/task-library/?task=implement-person-schema-with-sameas-links#task-implement-person-schema-with-sameas-links) receives only accepted URLs and facts. [Check outside proof](https://local-service-spotlight.github.io/task-library/?task=build-third-party-validation#task-build-third-party-validation) receives unresolved source questions when independent proof is still needed.\n\n**Content Factory stage: Process.** This task turns supplied profile and site evidence into a checked identity map for later page and schema work. The [Content Factory](https://blitzmetrics.com/content-factory/) uses this checked record before Post. This recipe may correct owned fields within existing authority; outside corrections remain with their owner.\n\n## Start with an agent\n\nGive the [AI worker](https://blitzmetrics.com/build-agents/) this recipe, the real inputs, desired result and actions already authorized. Ask for the saved output, sources, checks and next owner. A [skill is a written recipe](https://localservicespotlight.com/plugin/); loading one does not prove account access or perform the task. Use the [installation guide](https://localservicespotlight.com/install/) if reusable setup is needed. A ZIP is a source snapshot, not an access grant or automatic update.\n\nUse the app’s actual supported tools and verified file/account access. Keep a missing human verification step with its real owner. Recurring work needs its own configured job, trigger, timezone and observed result; this guide creates no schedule. Before any media playback, mute the player and set its volume to zero. If silence cannot be verified first, use captions, frames, metadata or another silent check.\n\n## Record the real execution\n\nOpen the run record when work begins. Keep one execution ID, starting recipe revision, real inputs and current state. Write the [meta article, the record of this execution](https://blitzmetrics.com/meta-article-prompt/) with actual steps, results, checks, failures and next owner. Writing is required; public release follows existing authority. Link it to this recipe and the [Task Library](https://local-service-spotlight.github.io/task-library/).\n\nReuse the same execution ID for internal checks, revisions, retries and meta writing. A blocked run stays open with its dependency and owner, without an invented finish time. Dated public examples and distinct verified execution counts remain separate. Propose the smallest source-backed recipe improvement when the actual evidence reveals a defect.\n\n\n<!-- factory-layer:start -->\n\n## Factory chain (do not treat this as isolated)\n\n- **Phase:** Process\n- **Importance:** 3/5 `●●●○○` — frequency 3, revenue 3, gating 2 (supporting)\n- **Suggested previous station:** —\n- **Suggested next station:** —\nThese stations are generated neighbors, not verified prerequisites or handoffs. Follow the task’s actual Inputs and Handoff sections.\n- **Handoff:** Process-stage artifact examples include `transcript.md`, `gct.md`, `article.html` (or a staged draft), `clips/`, or `04-Promote-Creatives/`. These are examples, not requirements for every task. Follow this task's actual Inputs and Handoff sections for the required output, evidence, and next owner. Pass the files or records, not one vendor's memory.\n\n## Model routing (same factory, any engine)\n\n- **This task's lane:** `judgment` — Frontier judgment: honest scoring, entity disambiguation, the subject's voice. Claude, ChatGPT, or Grok — pick the one you have.\n- **Single-engine path:** Use the capable AI app you already have. Check its required tools and access before starting. Pass the actual result and proof to the next task.\n- **Optional multi-engine:** A tested local model may draft; a stronger model may review facts and voice. Use supported tools for approved actions. Pick models from observed quality and cost; a model name does not prove it can run this task.\n- **Never** store the working state in one vendor's memory. Files in the Content Library are the bridge.\n\n<!-- factory-layer:end -->\n## Definitive article & links\n\n- [Maintained source guide](https://blitzmetrics.com/knowledge-panel/)\n- [This task in the Task Library](https://local-service-spotlight.github.io/task-library/?task=establish-entity-identity#task-establish-entity-identity)\n- [Article Guidelines](https://localservicespotlight.com/article-guidelines/)\n- [Definitive article and task recipe standard](https://blitzmetrics.com/definitive-article-guide/)\n- [How recipes and run records fit together](https://localservicespotlight.com/meta-articles/)\n\n### Primary method references\n\n- [Google: how panels work and who can suggest edits](https://support.google.com/knowledgepanel/answer/9163198?hl=en)\n- [Google: accurate, visible structured data](https://developers.google.com/search/docs/appearance/structured-data/sd-policies)\n\n## Review and evidence still needed\n\nThe inherited contributor status is `needs-work`. It is preserved, not promoted by this rewrite. That label alone does not prove document readiness, account access, an actual execution or a client result.\n\nThe fictional example teaches the method and does not fill a real-run evidence gap. A named semantic reviewer must check the actual opening, full method, sources and handoff. Check the useful opening visual in the normal rendered guide at the current required desktop and mobile sizes, including 1280 × 800 and 390 × 844. Source readability checks do not prove public presentation or task execution.",
      "importance": 3,
      "freq": 3,
      "revenue": 3,
      "gating": 2,
-     "phase": "—",
+     "phase": "Process",
      "before": null,
      "after": null,
      "lane": "judgment",
      "lane_label": "Frontier judgment: honest scoring, entity disambiguation, the subject's voice. Claude, ChatGPT, or Grok — pick the one you have.",
      "why": "supporting",
      "instructionReview": {
-      "source_sha256": "e2362b7adafe3c8c050ff8e777345b71b0ed36d912d109d137d9f0571ccb918d",
-      "reviewed_at": "2026-09-06",
-      "reviewer": "Codex editorial review",
-      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+      "source_sha256": "c6a880dda0fda613688c60ef64061226ff0ec2a11cee9e05655c7063fd06fec3",
+      "reviewed_at": "2026-10-05",
+      "reviewer": "Codex root with independent GPT-6 Luna written review",
+      "scope": "Five written checks only. Article certification, accepted execution and novice setup remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md",
+      "standards": {
+       "version": 1,
+       "checks": {
+        "opening": {
+         "state": "pass",
+         "reason": "Exact opening quoted in review: task, practical reason and explained owned connection. First-screen diagram and opening checked in phone and desktop article previews. Readability diagnostic saved; actual meaning judged separately.",
+         "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+        },
+        "recipe": {
+         "state": "pass",
+         "reason": "Trigger, source/access inputs, ordered steps, countable result record, acceptance and real scope are explicit. Setup, access, one task and optional schedule stay separate.",
+         "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+        },
+        "links": {
+         "state": "pass",
+         "reason": "Owned prerequisite and receiving-task bodies read; normal destination checks succeeded. Empty GBP course replaced with the relevant maintained task; primary Google and DNS sources support provider claims.",
+         "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+        },
+        "evidence": {
+         "state": "pass",
+         "reason": "Unsupported Google guarantees and site-launch assumptions removed. False identity matches excluded; examples fictional; actual approved terms, domain configuration, output checks and receiver evidence required.",
+         "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+        },
+        "handoff": {
+         "state": "pass",
+         "reason": "Exact proposal, identity map or site record goes to a required reviewer/owner. Assignment is a prerequisite, not a claim of staffed roles. Qualification precedes delivery; Process identity feeds Post site work.",
+         "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+        }
+       }
+      }
      },
      "articleState": "wip",
      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=establish-entity-identity#task-establish-entity-identity",
@@ -28166,24 +28376,57 @@
       "setupReviews": []
      },
      "standardVerification": {
-      "instructionSourceSha256": "e2362b7adafe3c8c050ff8e777345b71b0ed36d912d109d137d9f0571ccb918d",
+      "instructionSourceSha256": "c6a880dda0fda613688c60ef64061226ff0ec2a11cee9e05655c7063fd06fec3",
       "articleKey": "blitzmetrics.com/knowledge-panel",
       "gates": {
        "instructionRevisionReviewed": {
         "id": "instructionRevisionReviewed",
         "label": "Exact instruction revision reviewed",
         "state": "pass",
-        "reason": "Current source bytes match the review recorded 2026-09-06. Review scope and limits: Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate.",
-        "reviewedAt": "2026-09-06",
-        "reviewer": "Codex editorial review",
-        "sourceSha256": "e2362b7adafe3c8c050ff8e777345b71b0ed36d912d109d137d9f0571ccb918d"
+        "reason": "Current source bytes match the review recorded 2026-10-05. Review scope and limits: Five written checks only. Article certification, accepted execution and novice setup remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md",
+        "reviewedAt": "2026-10-05",
+        "reviewer": "Codex root with independent GPT-6 Luna written review",
+        "sourceSha256": "c6a880dda0fda613688c60ef64061226ff0ec2a11cee9e05655c7063fd06fec3"
        },
        "instructionStandards": {
         "id": "instructionStandards",
         "label": "Instruction requirements checked",
-        "state": "unknown",
-        "reason": "The current exact-byte review has no structured instruction-requirements checklist.",
-        "sourceSha256": "e2362b7adafe3c8c050ff8e777345b71b0ed36d912d109d137d9f0571ccb918d"
+        "state": "pass",
+        "reason": "All five instruction requirements have explicit passing checks for the current source revision.",
+        "reviewedAt": "2026-10-05",
+        "reviewer": "Codex root with independent GPT-6 Luna written review",
+        "reviewScope": "Five written checks only. Article certification, accepted execution and novice setup remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md",
+        "sourceSha256": "c6a880dda0fda613688c60ef64061226ff0ec2a11cee9e05655c7063fd06fec3",
+        "standards": {
+         "version": 1,
+         "checks": {
+          "opening": {
+           "state": "pass",
+           "reason": "Exact opening quoted in review: task, practical reason and explained owned connection. First-screen diagram and opening checked in phone and desktop article previews. Readability diagnostic saved; actual meaning judged separately.",
+           "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+          },
+          "recipe": {
+           "state": "pass",
+           "reason": "Trigger, source/access inputs, ordered steps, countable result record, acceptance and real scope are explicit. Setup, access, one task and optional schedule stay separate.",
+           "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+          },
+          "links": {
+           "state": "pass",
+           "reason": "Owned prerequisite and receiving-task bodies read; normal destination checks succeeded. Empty GBP course replaced with the relevant maintained task; primary Google and DNS sources support provider claims.",
+           "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+          },
+          "evidence": {
+           "state": "pass",
+           "reason": "Unsupported Google guarantees and site-launch assumptions removed. False identity matches excluded; examples fictional; actual approved terms, domain configuration, output checks and receiver evidence required.",
+           "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+          },
+          "handoff": {
+           "state": "pass",
+           "reason": "Exact proposal, identity map or site record goes to a required reviewer/owner. Assignment is a prerequisite, not a claim of staffed roles. Qualification precedes delivery; Process identity feeds Post site work.",
+           "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+          }
+         }
+        }
        },
        "contributorComplete": {
         "id": "contributorComplete",
@@ -28208,7 +28451,102 @@
         "id": "articleSemanticCertification",
         "label": "Article semantic certification",
         "state": "unknown",
-        "reason": "No exact-revision positive semantic review is recorded for this article."
+        "reason": "Current article semantic criteria are unknown: owner, sourceEvidence, visualAndLayout, publicationStandards, acceptanceResults.",
+        "semanticReview": {
+         "version": 1,
+         "taskSlug": "establish-entity-identity",
+         "canonicalURL": "https://blitzmetrics.com/knowledge-panel",
+         "sourceSha256": "8ffaedfbfedaa6aa9a5073ae30abfac53e6b3b9b316cf2614b9d2b2e6fe751bd",
+         "representation": "wordpress-content-html",
+         "reviewedAt": "2026-10-05T21:21:36.785532Z",
+         "reviewer": "Codex root; separate GPT-6 Luna written review",
+         "criteria": {
+          "openingContext": {
+           "state": "pass",
+           "reason": "Actual first paragraph quoted below; plain useful work, reason and owned personal-brand prerequisite, with source meaning checked.",
+           "evidenceRefs": [
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+           ]
+          },
+          "roleScope": {
+           "state": "pass",
+           "reason": "Single site-delivery recipe or six-task Knowledge Panel topic hub; registry and public copy agree.",
+           "evidenceRefs": [
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+           ]
+          },
+          "owner": {
+           "state": "unknown",
+           "reason": "Canonical ongoing upkeep owner not established by this scoped release.",
+           "evidenceRefs": [
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+           ]
+          },
+          "steps": {
+           "state": "pass",
+           "reason": "Reviewed body now agrees with the current source recipe; old Google and DNS contradictions removed.",
+           "evidenceRefs": [
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+           ]
+          },
+          "links": {
+           "state": "pass",
+           "reason": "Owned conceptual and prerequisite meanings checked; current source copies and primary-provider references checked.",
+           "evidenceRefs": [
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+           ]
+          },
+          "sourceEvidence": {
+           "state": "unknown",
+           "reason": "No new independently accepted offer, identity audit or site launch is supplied by documentation work.",
+           "evidenceRefs": [
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+           ]
+          },
+          "handoffContext": {
+           "state": "pass",
+           "reason": "Named required reviewer or publisher, exact artifact and accepting record, plus specific Content Factory relationship.",
+           "evidenceRefs": [
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+           ]
+          },
+          "visualAndLayout": {
+           "state": "unknown",
+           "reason": "Previews passed; final anonymous source and full public rendered checks tracked separately before any certification.",
+           "evidenceRefs": [
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+           ]
+          },
+          "publicationStandards": {
+           "state": "unknown",
+           "reason": "Stable route and basic metadata preserved or improved; complete taxonomy, SEO metadata and author evidence not certified.",
+           "evidenceRefs": [
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+           ]
+          },
+          "acceptanceResults": {
+           "state": "unknown",
+           "reason": "No accepted real task execution or novice setup trial; article publication is not their substitute.",
+           "evidenceRefs": [
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+           ]
+          }
+         }
+        },
+        "revisionObservation": {
+         "version": 1,
+         "taskSlug": "establish-entity-identity",
+         "canonicalURL": "https://blitzmetrics.com/knowledge-panel",
+         "sourceSha256": "8ffaedfbfedaa6aa9a5073ae30abfac53e6b3b9b316cf2614b9d2b2e6fe751bd",
+         "representation": "wordpress-content-html",
+         "observedAt": "2026-10-05T21:21:37.548161Z",
+         "observer": "Codex separate authenticated source read",
+         "state": "observed",
+         "reason": "Exact reviewed source independently read after the review. Public parity remains separate.",
+         "evidenceRefs": [
+          "sha256:37ddfe4c66f4e20c4824e23c164e66f5bd2ad204cc10731c329c94c6a39599db"
+         ]
+        }
        },
        "taskExampleEvidence": {
         "id": "taskExampleEvidence",
@@ -28244,7 +28582,6 @@
       ],
       "heldStandardGates": [],
       "unknownStandardGates": [
-       "instructionStandards",
        "articleSemanticCertification",
        "taskExampleEvidence",
        "recordedExecution",
@@ -28794,7 +29131,7 @@
      "status": "needs-work",
      "stage": "—",
      "article": "https://blitzmetrics.com/knowledge-panel",
-     "articleKind": "task-recipe",
+     "articleKind": "topic-hub",
      "desc": "Keep the facts on your site clear as your work changes.",
      "content": "---\nname: implement-technical-schema-markup\ndescription: \"Keep the facts on your site clear as your work changes.\"\ncategory: Personal Branding\nstage: —\ndefinitive_article: /knowledge-panel\nstatus: needs-work\n---\n\n# Implement technical schema markup\n\nKeep the facts on your site clear as your work changes. This guide checks your existing identity data and adds only what the sources support. Start with the live page and the last checked version of its facts.\n\n**The path:** Existing graph + new proof → Verified fact changes → Source patch → Live graph check\n\n**Start when:** A verified role, profile or source change requires maintenance of the existing identity graph.\n\n## Inputs\n\n- [Add verified Person markup](https://local-service-spotlight.github.io/task-library/?task=implement-person-schema-with-sameas-links#task-implement-person-schema-with-sameas-links) with the stable Person ID, source owner and prior validation receipt.\n- The current identity/proof inventory and evidence for changed roles or new identity pages.\n- Actual site source access, visible page copy and the supported markup editor.\n\n## Steps\n\n1. Read the complete current graph from the live page and its maintained source. Identify which component emits each node. Record existing Person, Organization, WebPage and other IDs before editing so one task cannot silently overwrite unrelated structured content.\n2. Compare the new facts with current visible copy and source evidence. Confirm a role change is current, not an old biography, and distinguish the person’s identity from an employer or business. Use separate nodes and a supported relationship such as worksFor only when it is true.\n3. Assess each proposed identity link under [Schema.org’s sameAs definition](https://schema.org/sameAs). A durable speaker profile may qualify when it clearly identifies the same person; a press article or an organization’s GBP is not automatically that person’s identity. Exclude missing, wrong-person or unresolved targets and retain the review reason.\n4. Add only supported fields such as current jobTitle, worksFor, alumniOf or knowsAbout. An expertise claim needs real visible evidence; an unearned title in machine-readable form is still a false claim. Update the visible page when an authorized fact correction requires it.\n5. Prepare a focused source change that preserves the stable Person ID and other valid nodes. Check JSON syntax, Schema.org properties and any actually applicable Google feature requirements. “Knowledge Panel grade” is not a validator outcome or a published Google certification.\n6. After authorized save, inspect the normal public page and its rendered markup. Verify the changed fields, one identity for the person, retained graph nodes and accepted profile links. Save exact source revision and validation results; a stale cached body is not a fresh readback.\n7. Record a Google entity ID only when independently observed for the correct person. Panel appearance, claim state and commercial milestones stay in their own records. Set a named review trigger for future fact changes; do not claim that a skill file automatically maintains the graph.\n\n## Definition of done (QA checklist)\n\nQuality assurance (QA) means checking the actual result against its agreed requirements. Follow the [Article Guidelines](https://localservicespotlight.com/article-guidelines/).\n\n- [ ] The focused graph change preserves the existing source owner, stable person identity and unrelated nodes.\n- [ ] Every added field or identity link is current and evidence-backed.\n- [ ] Live readback and validation are retained; panel and payment states are not inferred.\n- [ ] The exact output, source revision, reviewer evidence and remaining owner action are saved.\n- [ ] For any reader-facing output, the short grade-five opening states the reader’s useful outcome and supporting method or proof. The body delivers that promise; a useful authentic visual appears in the first screen. Retain exact text and quoted reviewer evidence.\n\n## Example(s)\n\n**Fictional teaching example. This is not a client result or proof of a completed run.**\n\nA fictional analyst joins a new firm. The current site names the new firm but markup still names the old one. The developer changes the supported employer link under the existing Person ID and checks the public graph. A recent news story is added as visible proof, not as a second person identity or guaranteed panel trigger.\n\n## Handoff and Content Factory context\n\n[Check the actual claim opportunity](https://local-service-spotlight.github.io/task-library/?task=claim-and-verify-knowledge-panel-when-it-appears#task-claim-and-verify-knowledge-panel-when-it-appears) receives verified identity evidence when applicable; [Review search and real inquiries](https://local-service-spotlight.github.io/task-library/?task=measure-search-impressions-traffic-inbound-opportunities#task-measure-search-impressions-traffic-inbound-opportunities) receives the observed search state.\n\nThis task supports the [Content Factory: Produce, Process, Post and Promote](https://blitzmetrics.com/content-factory/). Identity, proof, access or coordination can support several stages. Use the real inputs and receiving owner above; this task does not create unrelated transcripts, clips or ads merely because the diagram has four stages.\n\n## Start with an agent\n\nGive the [AI worker](https://blitzmetrics.com/build-agents/) this recipe, the real inputs, desired result and actions already authorized. Ask for the saved output, sources, checks and next owner. A [skill is a written recipe](https://localservicespotlight.com/plugin/); loading one does not prove account access or perform the task. Use the [installation guide](https://localservicespotlight.com/install/) if reusable setup is needed. A ZIP is a source snapshot, not an access grant or automatic update.\n\nUse the app’s actual supported tools and verified file/account access. Keep a missing human verification step with its real owner. Recurring work needs its own configured job, trigger, timezone and observed result; this guide creates no schedule. Before any media playback, mute the player and set its volume to zero. If silence cannot be verified first, use captions, frames, metadata or another silent check.\n\n## Record the real execution\n\nOpen the run record when work begins. Keep one execution ID, starting recipe revision, real inputs and current state. Write the [meta article, the record of this execution](https://blitzmetrics.com/meta-article-prompt/) with actual steps, results, checks, failures and next owner. Writing is required; public release follows existing authority. Link it to this recipe and the [Task Library](https://local-service-spotlight.github.io/task-library/).\n\nReuse the same execution ID for internal checks, revisions, retries and meta writing. A blocked run stays open with its dependency and owner, without an invented finish time. Dated public examples and distinct verified execution counts remain separate. Propose the smallest source-backed recipe improvement when the actual evidence reveals a defect.\n\n\n<!-- factory-layer:start -->\n\n## Factory chain (do not treat this as isolated)\n\n- **Phase:** —\n- **Importance:** 3/5 `●●●○○` — frequency 3, revenue 3, gating 3 (supporting)\n- **Suggested previous station:** —\n- **Suggested next station:** —\nThese stations are generated neighbors, not verified prerequisites or handoffs. Follow the task’s actual Inputs and Handoff sections.\n- **Handoff:** Save this task’s actual output, source, date and checks where the receiving owner can read them. Follow the Inputs and Handoff sections for its next step.\n\n## Model routing (same factory, any engine)\n\n- **This task's lane:** `any` — Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.\n- **Single-engine path:** Use the capable AI app you already have. Check its required tools and access before starting. Pass the actual result and proof to the next task.\n- **Optional multi-engine:** A tested local model may draft; a stronger model may review facts and voice. Use supported tools for approved actions. Pick models from observed quality and cost; a model name does not prove it can run this task.\n- **Never** store the working state in one vendor's memory. Files in the Content Library are the bridge.\n\n<!-- factory-layer:end -->\n## Definitive article & links\n\n- [Maintained source guide](https://blitzmetrics.com/knowledge-panel/)\n- [This task in the Task Library](https://local-service-spotlight.github.io/task-library/?task=implement-technical-schema-markup#task-implement-technical-schema-markup)\n- [Article Guidelines](https://localservicespotlight.com/article-guidelines/)\n- [Definitive article and task recipe standard](https://blitzmetrics.com/definitive-article-guide/)\n- [How recipes and run records fit together](https://localservicespotlight.com/meta-articles/)\n\n### Primary method references\n\n- [Schema.org sameAs](https://schema.org/sameAs)\n- [Google structured data policies](https://developers.google.com/search/docs/appearance/structured-data/sd-policies)\n\n## Review and evidence still needed\n\nThe inherited contributor status is `needs-work`. It is preserved, not promoted by this rewrite. That label alone does not prove document readiness, account access, an actual execution or a client result.\n\nThe fictional example teaches the method and does not fill a real-run evidence gap. A named semantic reviewer must check the actual opening, full method, sources and handoff. Check the useful opening visual in the normal rendered guide at the current required desktop and mobile sizes, including 1280 × 800 and 390 × 844. Source readability checks do not prove public presentation or task execution.",
      "importance": 3,
@@ -29060,7 +29397,7 @@
      "status": "needs-work",
      "stage": "—",
      "article": "https://blitzmetrics.com/knowledge-panel",
-     "articleKind": "task-recipe",
+     "articleKind": "topic-hub",
      "desc": "See whether people find your work and get in touch.",
      "content": "---\nname: measure-search-impressions-traffic-inbound-opportunities\ndescription: \"See whether people find your work and get in touch.\"\ncategory: Personal Branding\nstage: —\ndefinitive_article: /knowledge-panel\nstatus: needs-work\n---\n\n# Measure: search impressions, traffic, inbound opportunities\n\nSee whether people find your work and get in touch. This guide checks search, site visits and real inquiries in one report. Start with the same date range and a clear meaning for each number.\n\n**The path:** Same date range → Checked sources → Supported meaning → Owned next step\n\n**Start when:** The agreed reporting window has closed and the brand owner needs an evidence-based performance review.\n\n## Inputs\n\n- Actual read access or named exports from Search Console, site analytics and the inquiry record.\n- Accepted metric definitions, timezones, current and comparison periods, relevant targets and earlier reports.\n- The content/appearance timeline, actual panel observations and [Metrics, Analysis, Action: what happened, why and what to do](https://blitzmetrics.com/maa/).\n\n## Steps\n\n1. Define name-search impressions and clicks, organic site traffic and inbound opportunities separately. Record source, account/property, filter, timezone and comparison window. Search Console counts and analytics sessions measure different things and need not match one for one.\n2. Pull the accepted current and comparable prior windows. For name searches use verified name variants and record the exact query filters. [Search Console’s performance guide](https://support.google.com/webmasters/answer/7576553?hl=en) explains available report controls; omitted query rows or unavailable access do not establish zero demand.\n3. Reconcile the inquiry log by distinct real contacts or opportunities under the agreed definition. Separate speaking asks, partnership discussions and qualified sales leads. Retain date, source evidence and stage; a reported source such as “heard your interview” is an attribution statement with limits.\n4. Compare results with the baseline and target, noting sample size, time lag and tracking changes. Mark unconnected sources unknown. A rise after a podcast or a new panel is correlation unless additional evidence supports the claimed contribution.\n5. Explain the strongest supported finding before recommending action. Write two or three grade-five sentences that name the decision and why it matters, paired with a useful chart or evidence diagram. Save the exact opening and quoted reviewer evidence under [Review the report’s reader value](https://local-service-spotlight.github.io/task-library/?task=step-7-write-hook-and-establish-context#task-step-7-write-hook-and-establish-context).\n6. Propose a small set of next actions tied to that evidence, with owner and review date. Keep insufficient-data items unresolved; do not automatically kill every activity without a measured inquiry. Reconcile the previous report’s actions as proposed, accepted, in progress or actually completed.\n7. Save the report with source links and checked calculations, including any observed panel state and new proof. Deliver only under the existing authority and retain the actual receipt. A monthly cadence is followed only when agreed; it is not created by this guide.\n\n## Definition of done (QA checklist)\n\nQuality assurance (QA) means checking the actual result against its agreed requirements. Follow the [Article Guidelines](https://localservicespotlight.com/article-guidelines/).\n\n- [ ] Each metric has a source, definition, period and honest missing-data state.\n- [ ] The report’s conclusions respect attribution and sample limits and lead to an owned next step.\n- [ ] Draft, delivered and acted-on states are recorded separately, with exact reader-value review.\n- [ ] The exact output, source revision, reviewer evidence and remaining owner action are saved.\n- [ ] For any reader-facing output, the short grade-five opening states the reader’s useful outcome and supporting method or proof. The body delivers that promise; a useful authentic visual appears in the first screen. Retain exact text and quoted reviewer evidence.\n\n## Example(s)\n\n**Fictional teaching example. This is not a client result or proof of a completed run.**\n\nA fictional consultant has 400 name-search impressions and three qualified inquiries this month. One person says they heard a podcast; the other two sources are unknown. The report records those facts and proposes checking the contact form. It does not credit all three inquiries to the podcast or call search impressions revenue.\n\n## Handoff and Content Factory context\n\n[Record real customer answers](https://local-service-spotlight.github.io/task-library/?task=record-one-minute-videos-answering-customer-questions#task-record-one-minute-videos-answering-customer-questions) receives supported content needs; the relevant web or relationship function receives the next action. Later results return to the existing [Metrics, Analysis, Action: what happened, why and what to do](https://blitzmetrics.com/maa/) record.\n\nThis task supports the [Content Factory: Produce, Process, Post and Promote](https://blitzmetrics.com/content-factory/). Identity, proof, access or coordination can support several stages. Use the real inputs and receiving owner above; this task does not create unrelated transcripts, clips or ads merely because the diagram has four stages.\n\n## Start with an agent\n\nGive the [AI worker](https://blitzmetrics.com/build-agents/) this recipe, the real inputs, desired result and actions already authorized. Ask for the saved output, sources, checks and next owner. A [skill is a written recipe](https://localservicespotlight.com/plugin/); loading one does not prove account access or perform the task. Use the [installation guide](https://localservicespotlight.com/install/) if reusable setup is needed. A ZIP is a source snapshot, not an access grant or automatic update.\n\nUse the app’s actual supported tools and verified file/account access. Keep a missing human verification step with its real owner. Recurring work needs its own configured job, trigger, timezone and observed result; this guide creates no schedule. Before any media playback, mute the player and set its volume to zero. If silence cannot be verified first, use captions, frames, metadata or another silent check.\n\n## Record the real execution\n\nOpen the run record when work begins. Keep one execution ID, starting recipe revision, real inputs and current state. Write the [meta article, the record of this execution](https://blitzmetrics.com/meta-article-prompt/) with actual steps, results, checks, failures and next owner. Writing is required; public release follows existing authority. Link it to this recipe and the [Task Library](https://local-service-spotlight.github.io/task-library/).\n\nReuse the same execution ID for internal checks, revisions, retries and meta writing. A blocked run stays open with its dependency and owner, without an invented finish time. Dated public examples and distinct verified execution counts remain separate. Propose the smallest source-backed recipe improvement when the actual evidence reveals a defect.\n\n\n<!-- factory-layer:start -->\n\n## Factory chain (do not treat this as isolated)\n\n- **Phase:** —\n- **Importance:** 3/5 `●●●○○` — frequency 3, revenue 3, gating 2 (supporting)\n- **Suggested previous station:** —\n- **Suggested next station:** —\nThese stations are generated neighbors, not verified prerequisites or handoffs. Follow the task’s actual Inputs and Handoff sections.\n- **Handoff:** Save this task’s actual output, source, date and checks where the receiving owner can read them. Follow the Inputs and Handoff sections for its next step.\n\n## Model routing (same factory, any engine)\n\n- **This task's lane:** `any` — Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.\n- **Single-engine path:** Use the capable AI app you already have. Check its required tools and access before starting. Pass the actual result and proof to the next task.\n- **Optional multi-engine:** A tested local model may draft; a stronger model may review facts and voice. Use supported tools for approved actions. Pick models from observed quality and cost; a model name does not prove it can run this task.\n- **Never** store the working state in one vendor's memory. Files in the Content Library are the bridge.\n\n<!-- factory-layer:end -->\n## Definitive article & links\n\n- [Maintained source guide](https://blitzmetrics.com/knowledge-panel/)\n- [This task in the Task Library](https://local-service-spotlight.github.io/task-library/?task=measure-search-impressions-traffic-inbound-opportunities#task-measure-search-impressions-traffic-inbound-opportunities)\n- [Article Guidelines](https://localservicespotlight.com/article-guidelines/)\n- [Definitive article and task recipe standard](https://blitzmetrics.com/definitive-article-guide/)\n- [How recipes and run records fit together](https://localservicespotlight.com/meta-articles/)\n\n### Primary method references\n\n- [Search Console performance report](https://support.google.com/webmasters/answer/7576553?hl=en)\n\n## Review and evidence still needed\n\nThe inherited contributor status is `needs-work`. It is preserved, not promoted by this rewrite. That label alone does not prove document readiness, account access, an actual execution or a client result.\n\nThe fictional example teaches the method and does not fill a real-run evidence gap. A named semantic reviewer must check the actual opening, full method, sources and handoff. Check the useful opening visual in the normal rendered guide at the current required desktop and mobile sizes, including 1280 × 800 and 390 × 844. Source readability checks do not prove public presentation or task execution.",
      "importance": 3,
@@ -30397,26 +30734,56 @@
      "title": "Deliver a personal-brand site from a request",
      "slug": "deliver-personal-brand-site-from-request",
      "status": "needs-work",
-     "stage": "—",
+     "stage": "Post",
      "article": "https://blitzmetrics.com/from-one-email-to-a-live-personal-brand-site/",
      "articleKind": "task-recipe",
      "desc": "Build a site from the owner’s real request.",
-     "content": "---\nname: deliver-personal-brand-site-from-request\ndescription: \"Build a site from the owner’s real request.\"\ncategory: Personal Branding\nstage: —\ndefinitive_article: https://blitzmetrics.com/from-one-email-to-a-live-personal-brand-site/\nstatus: needs-work\n---\n\n# Deliver a personal-brand site from a request\n\nBuild a site from the owner’s real request. This guide checks the facts, builds the page and gives the owner one clear next step. Start with the full request and the domain they control.\n\n**The path:** Full request → Checked preview → Exact domain plan → Verified live site\n\n**Start when:** A person requests a site and identifies the domain they actually control.\n\n## Inputs\n\n- The full original request, accepted business scope, intended reader and goal.\n- Actual domain owner, existing site/source, hosting plan and DNS/mail records.\n- Verified bio, photos, proof, source rights, supported build tools and deployment/send authority.\n\n## Steps\n\n1. Read the entire original conversation. Resolve the correct person, actual domain and current request, including changes of mind. Record what the site should help its reader do before collecting more material; do not choose a domain from an old email alone.\n2. Collect the existing approved bio, photos, interviews and proof. Verify load-bearing facts against their sources and keep private material private. Complete safe preparation before requesting genuinely missing assets, with the missing item tied to a specific blocked section.\n3. Use [Build the personal brand site](https://local-service-spotlight.github.io/task-library/?task=build-personal-brand-website#task-build-personal-brand-website) for the content build. Produce a concrete preview with real media, the person’s own voice, source-backed proof and clear contact path. Use the current [Article Guidelines](https://localservicespotlight.com/article-guidelines/) opening and visual requirements; retain layout and builder data on an existing site.\n4. Identify both the registrar and authoritative DNS provider from actual records and the authorized account. Nameservers show where DNS is served, which need not be the registrar. Read the existing web, mail and verification records before preparing any change.\n5. Prepare only the exact web records required by the selected host, with current before values and recovery steps. Prefer a minimal web-record change when appropriate. Check whether email uses the root domain or affected records; changing A records is not universally risk-free for mail, and changing nameservers needs a complete zone plan.\n6. Link instructions for the actual provider and the observed controls. If a maintained guide is missing, prepare a reusable guide from the provider’s current official documentation. Do not copy a fleet IP, nameserver set or automatic certificate promise from another site.\n7. Prepare the reply with the checked preview and one concrete owner action. Keep it a draft unless sending is authorized. Provision, map the domain and publish only through the accepted deployment rail; keep DNS pending, built and live as separate states.\n8. After launch, check the normal public URL, HTTPS, intended content, media, contact path and relevant retained mail configuration. Save the exact source and evidence, then return the verified result to the original conversation under its send authority.\n\n## Definition of done (QA checklist)\n\nQuality assurance (QA) means checking the actual result against its agreed requirements. Follow the [Article Guidelines](https://localservicespotlight.com/article-guidelines/).\n\n- [ ] The preview’s facts, voice, media and first-screen value are reviewed against sources.\n- [ ] The domain plan is exact to the current host and preserves recorded dependent services.\n- [ ] Only the checked public domain is called live; draft replies and owner dependencies remain explicit.\n- [ ] The exact output, source revision, reviewer evidence and remaining owner action are saved.\n- [ ] For any reader-facing output, the short grade-five opening states the reader’s useful outcome and supporting method or proof. The body delivers that promise; a useful authentic visual appears in the first screen. Retain exact text and quoted reviewer evidence.\n\n## Example(s)\n\n**Fictional teaching example. This is not a client result or proof of a completed run.**\n\nA fictional owner first mentions an old domain, then confirms a different domain she controls. The team builds a preview from her real photos and checks the active mail records at the current DNS host. It drafts one exact web-record action. The job remains blocked on that owner action until the final public site is verified.\n\n## Handoff and Content Factory context\n\nThe domain owner receives the exact pending action; [Review search and real inquiries](https://local-service-spotlight.github.io/task-library/?task=measure-search-impressions-traffic-inbound-opportunities#task-measure-search-impressions-traffic-inbound-opportunities) receives the authorized launched site and actual source connections. The original request remains the parent record.\n\nThis task supports the [Content Factory: Produce, Process, Post and Promote](https://blitzmetrics.com/content-factory/). Identity, proof, access or coordination can support several stages. Use the real inputs and receiving owner above; this task does not create unrelated transcripts, clips or ads merely because the diagram has four stages.\n\n## Start with an agent\n\nGive the [AI worker](https://blitzmetrics.com/build-agents/) this recipe, the real inputs, desired result and actions already authorized. Ask for the saved output, sources, checks and next owner. A [skill is a written recipe](https://localservicespotlight.com/plugin/); loading one does not prove account access or perform the task. Use the [installation guide](https://localservicespotlight.com/install/) if reusable setup is needed. A ZIP is a source snapshot, not an access grant or automatic update.\n\nUse the app’s actual supported tools and verified file/account access. Keep a missing human verification step with its real owner. Recurring work needs its own configured job, trigger, timezone and observed result; this guide creates no schedule. Before any media playback, mute the player and set its volume to zero. If silence cannot be verified first, use captions, frames, metadata or another silent check.\n\n## Record the real execution\n\nOpen the run record when work begins. Keep one execution ID, starting recipe revision, real inputs and current state. Write the [meta article, the record of this execution](https://blitzmetrics.com/meta-article-prompt/) with actual steps, results, checks, failures and next owner. Writing is required; public release follows existing authority. Link it to this recipe and the [Task Library](https://local-service-spotlight.github.io/task-library/).\n\nReuse the same execution ID for internal checks, revisions, retries and meta writing. A blocked run stays open with its dependency and owner, without an invented finish time. Dated public examples and distinct verified execution counts remain separate. Propose the smallest source-backed recipe improvement when the actual evidence reveals a defect.\n\n\n<!-- factory-layer:start -->\n\n## Factory chain (do not treat this as isolated)\n\n- **Phase:** —\n- **Importance:** 3/5 `●●●○○` — frequency 3, revenue 3, gating 2 (supporting)\n- **Suggested previous station:** —\n- **Suggested next station:** —\nThese stations are generated neighbors, not verified prerequisites or handoffs. Follow the task’s actual Inputs and Handoff sections.\n- **Handoff:** Save this task’s actual output, source, date and checks where the receiving owner can read them. Follow the Inputs and Handoff sections for its next step.\n\n## Model routing (same factory, any engine)\n\n- **This task's lane:** `any` — Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.\n- **Single-engine path:** Use the capable AI app you already have. Check its required tools and access before starting. Pass the actual result and proof to the next task.\n- **Optional multi-engine:** A tested local model may draft; a stronger model may review facts and voice. Use supported tools for approved actions. Pick models from observed quality and cost; a model name does not prove it can run this task.\n- **Never** store the working state in one vendor's memory. Files in the Content Library are the bridge.\n\n<!-- factory-layer:end -->\n## Definitive article & links\n\n- [Maintained source guide](https://blitzmetrics.com/from-one-email-to-a-live-personal-brand-site/)\n- [This task in the Task Library](https://local-service-spotlight.github.io/task-library/?task=deliver-personal-brand-site-from-request#task-deliver-personal-brand-site-from-request)\n- [Article Guidelines](https://localservicespotlight.com/article-guidelines/)\n- [Definitive article and task recipe standard](https://blitzmetrics.com/definitive-article-guide/)\n- [How recipes and run records fit together](https://localservicespotlight.com/meta-articles/)\n\n## Review and evidence still needed\n\nThe inherited contributor status is `needs-work`. It is preserved, not promoted by this rewrite. That label alone does not prove document readiness, account access, an actual execution or a client result.\n\nThe fictional example teaches the method and does not fill a real-run evidence gap. A named semantic reviewer must check the actual opening, full method, sources and handoff. Check the useful opening visual in the normal rendered guide at the current required desktop and mobile sizes, including 1280 × 800 and 390 × 844. Source readability checks do not prove public presentation or task execution.",
+     "content": "---\nname: deliver-personal-brand-site-from-request\ndescription: \"Build a site from the owner’s real request.\"\ncategory: Personal Branding\nstage: Post\ndefinitive_article: https://blitzmetrics.com/from-one-email-to-a-live-personal-brand-site/\nstatus: needs-work\n---\n\n# Deliver a personal-brand site from a request\n\nTurn a site request into a page that shows your work and helps people reach you. Use [the site build guide](https://local-service-spotlight.github.io/task-library/?task=build-personal-brand-website#task-build-personal-brand-website) to shape the page from your real photos and proof. Then use the checks here to get it live and test the email services a site change could affect.\n\n**The path:** Full request → Checked preview → Exact domain plan → Verified live site\n\n**Start when:** A person requests a site and identifies the domain they actually control.\n\n## Inputs\n\n- The full original request, accepted business scope, intended reader and goal.\n- The domain owner, existing site/source, hosting plan, mail records and [Domain Name System (DNS) settings](https://local-service-spotlight.github.io/task-library/?task=ensure-proper-dns-records#task-ensure-proper-dns-records)—the records that direct a web address to its host.\n- Verified bio, photos, proof, source rights, supported build tools and deployment/send authority.\n\n## Steps\n\n1. Read the entire original conversation. Resolve the correct person, actual domain and current request, including changes of mind. Record what the site should help its reader do before collecting more material; do not choose a domain from an old email alone.\n2. Collect the existing approved bio, photos, interviews and proof. Verify load-bearing facts against their sources and keep private material private. Complete safe preparation before requesting genuinely missing assets, with the missing item tied to a specific blocked section.\n3. Use [Build the personal brand site](https://local-service-spotlight.github.io/task-library/?task=build-personal-brand-website#task-build-personal-brand-website) for the content build. Produce a concrete preview with real media, the person’s own voice, source-backed proof and clear contact path. Use the current [Article Guidelines](https://localservicespotlight.com/article-guidelines/) opening and visual requirements; retain layout and builder data on an existing site.\n4. Use [the domain ownership check](https://local-service-spotlight.github.io/task-library/?task=verify-domain-ownership-and-registrar-access#task-verify-domain-ownership-and-registrar-access) to identify the registrar (the company where the domain is registered) and authoritative DNS provider (the service that holds its live settings) from actual records and the authorized account. Nameservers show where DNS is served, which may differ from the registrar. Read the existing web, mail and verification records before preparing a change.\n5. Prepare only the exact web records required by the selected host, with current before-values and recovery steps. An A record points a web name to a server; changing it can affect other services, including mail. Use [the domain email guide](https://local-service-spotlight.github.io/task-library/?task=set-up-professional-email-on-domain#task-set-up-professional-email-on-domain) to check mail routes and authentication. Inspect affected MX records (mail routes), their target hosts and A/AAAA records (internet addresses) too, and prepare a full zone plan before changing nameservers.\n6. Link instructions for the actual provider and the observed controls. If a maintained guide is missing, link the provider’s current official documentation and record the exact control needed. Give the documentation owner a bounded guide request; create and publish that guide only within existing documentation authority. This does not make the site request authority for unrelated work. Do not copy a fleet IP, nameserver set or automatic certificate promise from another site.\n7. Prepare the reply with the checked preview and one concrete owner action. Keep it a draft unless sending is authorized. Provision, map the domain and publish only through the accepted deployment rail; keep DNS pending, built and live as separate states.\n8. After launch, check the normal public URL, [HTTPS and mixed content](https://local-service-spotlight.github.io/task-library/?task=configure-https-with-no-mixed-content#task-configure-https-with-no-mixed-content), intended content, media, contact path and relevant retained mail configuration. Save a scoped mail check or mark mail continuity unverified; unchanged records alone do not prove mail delivery. Save the exact source and evidence, then return the verified result to the original conversation under its send authority.\n\n## Output record and acceptance\n\nSave a site-delivery record with the request ID and revision; controlled domain and owner evidence; approved fact/media sources; preview URL and revision; owner decision; current host and DNS/mail record snapshot; exact proposed change and rollback; deployment state; checked URL count and each URL’s response code, secure HTTPS result and desktop/mobile result; contact-path result; open issue and next owner. Count approved facts with source links against total facts proposed. Report each site state separately (`draft`, `preview`, `approved`, `configured`, `live`). The site owner accepts the exact preview and domain plan. Name the authorized publishing owner in the record; deployment stays pending until assigned. That owner acts only after recorded authorization; mark the site `live` only after the normal public URL returns the expected page over HTTPS and the contact path and required desktop/mobile checks pass. An absent approval, inaccessible account or unchecked URL remains pending.\n\n## Definition of done (QA checklist)\n\nQuality assurance (QA) means checking the actual result against its agreed requirements. Follow the [Article Guidelines](https://localservicespotlight.com/article-guidelines/).\n\n- [ ] The preview’s facts, voice, media and first-screen value are reviewed against sources.\n- [ ] The domain plan is exact to the current host and preserves recorded dependent services.\n- [ ] Only the checked public domain is called live; draft replies and owner dependencies remain explicit.\n- [ ] The exact output, source revision, reviewer evidence and remaining owner action are saved.\n- [ ] For any reader-facing output, the short grade-five opening states the reader’s useful outcome and supporting method or proof. The body delivers that promise; a useful authentic visual appears in the first screen. Retain exact text and quoted reviewer evidence.\n\n## Example(s)\n\n**Fictional teaching example. This is not a client result or proof of a completed run.**\n\nA fictional owner first mentions an old domain, then confirms a different domain she controls. The team builds a preview from her real photos and checks the active mail records at the current DNS host. It drafts one exact web-record action. The job remains blocked on that owner action until the final public site is verified.\n\n## Handoff and Content Factory context\n\nThe site owner accepts the preview and exact domain plan. The authorized publishing function receives the recorded approval and rollback plan. After public checks pass, [Review search and real inquiries](https://local-service-spotlight.github.io/task-library/?task=measure-search-impressions-traffic-inbound-opportunities#task-measure-search-impressions-traffic-inbound-opportunities) receives the verified URL and actual source connections. The original request remains the parent record.\n\n**[Content Factory](https://blitzmetrics.com/content-factory/) stage: Post.** This task places approved identity content on the owner’s site and checks the served pages and contact path. It does not include paid promotion.\n\n## Start with an agent\n\nGive the [AI worker](https://blitzmetrics.com/build-agents/) this recipe, the real inputs, desired result and actions already authorized. Ask for the saved output, sources, checks and next owner. A [skill is a written recipe](https://localservicespotlight.com/plugin/); loading one does not prove account access or perform the task. Use the [installation guide](https://localservicespotlight.com/install/) if reusable setup is needed. A ZIP is a source snapshot, not an access grant or automatic update.\n\nUse the app’s actual supported tools and verified file/account access. Keep a missing human verification step with its real owner. Recurring work needs its own configured job, trigger, timezone and observed result; this guide creates no schedule. Before any media playback, mute the player and set its volume to zero. If silence cannot be verified first, use captions, frames, metadata or another silent check.\n\n## Record the real execution\n\nOpen the run record when work begins. Keep one execution ID, starting recipe revision, real inputs and current state. Write the [meta article, the record of this execution](https://blitzmetrics.com/meta-article-prompt/) with actual steps, results, checks, failures and next owner. Writing is required; public release follows existing authority. Link it to this recipe and the [Task Library](https://local-service-spotlight.github.io/task-library/).\n\nReuse the same execution ID for internal checks, revisions, retries and meta writing. A blocked run stays open with its dependency and owner, without an invented finish time. Dated public examples and distinct verified execution counts remain separate. Propose the smallest source-backed recipe improvement when the actual evidence reveals a defect.\n\n\n<!-- factory-layer:start -->\n\n## Factory chain (do not treat this as isolated)\n\n- **Phase:** Post\n- **Importance:** 3/5 `●●●○○` — frequency 3, revenue 3, gating 2 (supporting)\n- **Suggested previous station:** —\n- **Suggested next station:** —\nThese stations are generated neighbors, not verified prerequisites or handoffs. Follow the task’s actual Inputs and Handoff sections.\n- **Handoff:** Draft URL or WP post ID, slug, author user ID, featured-image media ID. Promote reads the live URL, not the draft.\n\n## Model routing (same factory, any engine)\n\n- **This task's lane:** `any` — Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.\n- **Single-engine path:** Use the capable AI app you already have. Check its required tools and access before starting. Pass the actual result and proof to the next task.\n- **Optional multi-engine:** A tested local model may draft; a stronger model may review facts and voice. Use supported tools for approved actions. Pick models from observed quality and cost; a model name does not prove it can run this task.\n- **Never** store the working state in one vendor's memory. Files in the Content Library are the bridge.\n\n<!-- factory-layer:end -->\n## Definitive article & links\n\n- [Maintained source guide](https://blitzmetrics.com/from-one-email-to-a-live-personal-brand-site/)\n- [This task in the Task Library](https://local-service-spotlight.github.io/task-library/?task=deliver-personal-brand-site-from-request#task-deliver-personal-brand-site-from-request)\n- [Article Guidelines](https://localservicespotlight.com/article-guidelines/)\n- [Definitive article and task recipe standard](https://blitzmetrics.com/definitive-article-guide/)\n- [How recipes and run records fit together](https://localservicespotlight.com/meta-articles/)\n\n## Review and evidence still needed\n\nThe inherited contributor status is `needs-work`. It is preserved, not promoted by this rewrite. That label alone does not prove document readiness, account access, an actual execution or a client result.\n\nThe fictional example teaches the method and does not fill a real-run evidence gap. A named semantic reviewer must check the actual opening, full method, sources and handoff. Check the useful opening visual in the normal rendered guide at the current required desktop and mobile sizes, including 1280 × 800 and 390 × 844. Source readability checks do not prove public presentation or task execution.",
      "importance": 3,
      "freq": 3,
      "revenue": 3,
      "gating": 2,
-     "phase": "—",
+     "phase": "Post",
      "before": null,
      "after": null,
      "lane": "any",
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
      "why": "supporting",
      "instructionReview": {
-      "source_sha256": "0b7ad1cef8adc6c40d798a7545ec7d1e5e41b727909411885cf105b230ed0ed2",
-      "reviewed_at": "2026-09-06",
-      "reviewer": "Codex editorial review",
-      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+      "source_sha256": "20d84176417903edc98454b05f4a3f35286d7bf8141273fb35190a183a2f0c30",
+      "reviewed_at": "2026-10-05",
+      "reviewer": "Codex root with independent GPT-6 Luna written review",
+      "scope": "Five written checks only. Article certification, accepted execution and novice setup remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md",
+      "standards": {
+       "version": 1,
+       "checks": {
+        "opening": {
+         "state": "pass",
+         "reason": "Exact opening quoted in review: task, practical reason and explained owned connection. First-screen diagram and opening checked in phone and desktop article previews. Readability diagnostic saved; actual meaning judged separately.",
+         "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+        },
+        "recipe": {
+         "state": "pass",
+         "reason": "Trigger, source/access inputs, ordered steps, countable result record, acceptance and real scope are explicit. Setup, access, one task and optional schedule stay separate.",
+         "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+        },
+        "links": {
+         "state": "pass",
+         "reason": "Owned prerequisite and receiving-task bodies read; normal destination checks succeeded. Empty GBP course replaced with the relevant maintained task; primary Google and DNS sources support provider claims.",
+         "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+        },
+        "evidence": {
+         "state": "pass",
+         "reason": "Unsupported Google guarantees and site-launch assumptions removed. False identity matches excluded; examples fictional; actual approved terms, domain configuration, output checks and receiver evidence required.",
+         "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+        },
+        "handoff": {
+         "state": "pass",
+         "reason": "Exact proposal, identity map or site record goes to a required reviewer/owner. Assignment is a prerequisite, not a claim of staffed roles. Qualification precedes delivery; Process identity feeds Post site work.",
+         "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+        }
+       }
+      }
      },
      "flag": "New reviewed source mapping; WIP. No independent execution or runtime certification claimed.",
      "articleState": "wip",
@@ -30435,24 +30802,57 @@
       "setupReviews": []
      },
      "standardVerification": {
-      "instructionSourceSha256": "0b7ad1cef8adc6c40d798a7545ec7d1e5e41b727909411885cf105b230ed0ed2",
+      "instructionSourceSha256": "20d84176417903edc98454b05f4a3f35286d7bf8141273fb35190a183a2f0c30",
       "articleKey": "blitzmetrics.com/from-one-email-to-a-live-personal-brand-site",
       "gates": {
        "instructionRevisionReviewed": {
         "id": "instructionRevisionReviewed",
         "label": "Exact instruction revision reviewed",
         "state": "pass",
-        "reason": "Current source bytes match the review recorded 2026-09-06. Review scope and limits: Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate.",
-        "reviewedAt": "2026-09-06",
-        "reviewer": "Codex editorial review",
-        "sourceSha256": "0b7ad1cef8adc6c40d798a7545ec7d1e5e41b727909411885cf105b230ed0ed2"
+        "reason": "Current source bytes match the review recorded 2026-10-05. Review scope and limits: Five written checks only. Article certification, accepted execution and novice setup remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md",
+        "reviewedAt": "2026-10-05",
+        "reviewer": "Codex root with independent GPT-6 Luna written review",
+        "sourceSha256": "20d84176417903edc98454b05f4a3f35286d7bf8141273fb35190a183a2f0c30"
        },
        "instructionStandards": {
         "id": "instructionStandards",
         "label": "Instruction requirements checked",
-        "state": "unknown",
-        "reason": "The current exact-byte review has no structured instruction-requirements checklist.",
-        "sourceSha256": "0b7ad1cef8adc6c40d798a7545ec7d1e5e41b727909411885cf105b230ed0ed2"
+        "state": "pass",
+        "reason": "All five instruction requirements have explicit passing checks for the current source revision.",
+        "reviewedAt": "2026-10-05",
+        "reviewer": "Codex root with independent GPT-6 Luna written review",
+        "reviewScope": "Five written checks only. Article certification, accepted execution and novice setup remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md",
+        "sourceSha256": "20d84176417903edc98454b05f4a3f35286d7bf8141273fb35190a183a2f0c30",
+        "standards": {
+         "version": 1,
+         "checks": {
+          "opening": {
+           "state": "pass",
+           "reason": "Exact opening quoted in review: task, practical reason and explained owned connection. First-screen diagram and opening checked in phone and desktop article previews. Readability diagnostic saved; actual meaning judged separately.",
+           "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+          },
+          "recipe": {
+           "state": "pass",
+           "reason": "Trigger, source/access inputs, ordered steps, countable result record, acceptance and real scope are explicit. Setup, access, one task and optional schedule stay separate.",
+           "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+          },
+          "links": {
+           "state": "pass",
+           "reason": "Owned prerequisite and receiving-task bodies read; normal destination checks succeeded. Empty GBP course replaced with the relevant maintained task; primary Google and DNS sources support provider claims.",
+           "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+          },
+          "evidence": {
+           "state": "pass",
+           "reason": "Unsupported Google guarantees and site-launch assumptions removed. False identity matches excluded; examples fictional; actual approved terms, domain configuration, output checks and receiver evidence required.",
+           "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+          },
+          "handoff": {
+           "state": "pass",
+           "reason": "Exact proposal, identity map or site record goes to a required reviewer/owner. Assignment is a prerequisite, not a claim of staffed roles. Qualification precedes delivery; Process identity feeds Post site work.",
+           "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+          }
+         }
+        }
        },
        "contributorComplete": {
         "id": "contributorComplete",
@@ -30477,7 +30877,102 @@
         "id": "articleSemanticCertification",
         "label": "Article semantic certification",
         "state": "unknown",
-        "reason": "No exact-revision positive semantic review is recorded for this article."
+        "reason": "Current article semantic criteria are unknown: owner, sourceEvidence, visualAndLayout, publicationStandards, acceptanceResults.",
+        "semanticReview": {
+         "version": 1,
+         "taskSlug": "deliver-personal-brand-site-from-request",
+         "canonicalURL": "https://blitzmetrics.com/from-one-email-to-a-live-personal-brand-site/",
+         "sourceSha256": "16c8a44fe24f066e6330e14585cd5daa456865cbf6372840a58fed34d6efed8d",
+         "representation": "wordpress-content-html",
+         "reviewedAt": "2026-10-05T21:21:36.784617Z",
+         "reviewer": "Codex root; separate GPT-6 Luna written review",
+         "criteria": {
+          "openingContext": {
+           "state": "pass",
+           "reason": "Actual first paragraph quoted below; plain useful work, reason and owned personal-brand prerequisite, with source meaning checked.",
+           "evidenceRefs": [
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+           ]
+          },
+          "roleScope": {
+           "state": "pass",
+           "reason": "Single site-delivery recipe or six-task Knowledge Panel topic hub; registry and public copy agree.",
+           "evidenceRefs": [
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+           ]
+          },
+          "owner": {
+           "state": "unknown",
+           "reason": "Canonical ongoing upkeep owner not established by this scoped release.",
+           "evidenceRefs": [
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+           ]
+          },
+          "steps": {
+           "state": "pass",
+           "reason": "Reviewed body now agrees with the current source recipe; old Google and DNS contradictions removed.",
+           "evidenceRefs": [
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+           ]
+          },
+          "links": {
+           "state": "pass",
+           "reason": "Owned conceptual and prerequisite meanings checked; current source copies and primary-provider references checked.",
+           "evidenceRefs": [
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+           ]
+          },
+          "sourceEvidence": {
+           "state": "unknown",
+           "reason": "No new independently accepted offer, identity audit or site launch is supplied by documentation work.",
+           "evidenceRefs": [
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+           ]
+          },
+          "handoffContext": {
+           "state": "pass",
+           "reason": "Named required reviewer or publisher, exact artifact and accepting record, plus specific Content Factory relationship.",
+           "evidenceRefs": [
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+           ]
+          },
+          "visualAndLayout": {
+           "state": "unknown",
+           "reason": "Previews passed; final anonymous source and full public rendered checks tracked separately before any certification.",
+           "evidenceRefs": [
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+           ]
+          },
+          "publicationStandards": {
+           "state": "unknown",
+           "reason": "Stable route and basic metadata preserved or improved; complete taxonomy, SEO metadata and author evidence not certified.",
+           "evidenceRefs": [
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+           ]
+          },
+          "acceptanceResults": {
+           "state": "unknown",
+           "reason": "No accepted real task execution or novice setup trial; article publication is not their substitute.",
+           "evidenceRefs": [
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+           ]
+          }
+         }
+        },
+        "revisionObservation": {
+         "version": 1,
+         "taskSlug": "deliver-personal-brand-site-from-request",
+         "canonicalURL": "https://blitzmetrics.com/from-one-email-to-a-live-personal-brand-site/",
+         "sourceSha256": "16c8a44fe24f066e6330e14585cd5daa456865cbf6372840a58fed34d6efed8d",
+         "representation": "wordpress-content-html",
+         "observedAt": "2026-10-05T21:21:38.281278Z",
+         "observer": "Codex separate authenticated source read",
+         "state": "observed",
+         "reason": "Exact reviewed source independently read after the review. Public parity remains separate.",
+         "evidenceRefs": [
+          "sha256:adb6551a2e71e065a84ed54612fd7dc7b1f408f294d6b4d8a899418217b38a74"
+         ]
+        }
        },
        "taskExampleEvidence": {
         "id": "taskExampleEvidence",
@@ -30513,7 +31008,6 @@
       ],
       "heldStandardGates": [],
       "unknownStandardGates": [
-       "instructionStandards",
        "articleSemanticCertification",
        "taskExampleEvidence",
        "recordedExecution",
@@ -39496,13 +39990,14 @@
      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=publish-skill-and-task-page#task-publish-skill-and-task-page",
      "executionHistory": {
       "status": "partial",
-      "recordedRuns": 14,
+      "recordedRuns": 15,
       "completedRuns": 9,
       "failedRuns": 0,
       "partialRuns": 4,
       "completedLast30Days": 9,
       "lastCompletedAt": "2026-10-05T16:16:01.836392+00:00",
       "executionIds": [
+       "authority-guides-repair-20261005-2100",
        "crossref-release-20260927-162402",
        "entity-linking-repair-20260930-0105",
        "internal-linking-repair-20261001-1405",
@@ -39601,6 +40096,12 @@
         "executionId": "revenue-path-repair-20261005-1855",
         "status": "blocked",
         "startedAt": "2026-10-05T18:57:29.098918+00:00",
+        "finishedAt": null
+       },
+       {
+        "executionId": "authority-guides-repair-20261005-2100",
+        "status": "blocked",
+        "startedAt": "2026-10-05T21:01:41.079406+00:00",
         "finishedAt": null
        }
       ],
@@ -39850,8 +40351,9 @@
         "id": "recordedExecution",
         "label": "Recorded real execution",
         "state": "pass",
-        "reason": "14 distinct execution ID(s) name this task; outcomes remain separate.",
+        "reason": "15 distinct execution ID(s) name this task; outcomes remain separate.",
         "executionIds": [
+         "authority-guides-repair-20261005-2100",
          "crossref-release-20260927-162402",
          "entity-linking-repair-20260930-0105",
          "internal-linking-repair-20261001-1405",

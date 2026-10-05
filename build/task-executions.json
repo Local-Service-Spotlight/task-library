@@ -1228,6 +1228,33 @@
           "sha256": "e41eb3a07fa3246c36b83d18104cb3f165ee6aa4c73b92415019814eb2e17b4a"
         }
       ]
+    },
+    {
+      "executionId": "authority-guides-repair-20261005-2100",
+      "taskSlugs": [
+        "publish-skill-and-task-page"
+      ],
+      "recipeRevisions": {
+        "publish-skill-and-task-page": {
+          "articleUrl": "https://blitzmetrics.com/skill-publishing-standard/",
+          "sourceSha256": "660d6f1abd8678c851c0a08059f27982e8e29b46775ea217a2ae1d6e3ba55537"
+        }
+      },
+      "startedAt": "2026-10-05T21:01:41.079406+00:00",
+      "recordedAt": "2026-10-05T21:01:41.079406+00:00",
+      "updatedAt": "2026-10-05T21:21:38.283296Z",
+      "status": "blocked",
+      "result": "Three authority and site-delivery guides repaired; two mapped WordPress articles and meta saved. Written checks complete. GitHub Actions outage delays library deployment; final anonymous pages, downloads and independent publication acceptance remain pending. No client execution or income result.",
+      "metaArticle": {
+        "status": "published",
+        "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#authority-guides-repair-20261005-2100"
+      },
+      "evidence": [
+        {
+          "visibility": "public",
+          "url": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+        }
+      ]
     }
   ]
 }

@@ -2,14 +2,14 @@
 name: deliver-personal-brand-site-from-request
 description: "Build a site from the owner’s real request."
 category: Personal Branding
-stage: —
+stage: Post
 definitive_article: https://blitzmetrics.com/from-one-email-to-a-live-personal-brand-site/
 status: needs-work
 ---
 
 # Deliver a personal-brand site from a request
 
-Build a site from the owner’s real request. This guide checks the facts, builds the page and gives the owner one clear next step. Start with the full request and the domain they control.
+Turn a site request into a page that shows your work and helps people reach you. Use [the site build guide](https://local-service-spotlight.github.io/task-library/?task=build-personal-brand-website#task-build-personal-brand-website) to shape the page from your real photos and proof. Then use the checks here to get it live and test the email services a site change could affect.
 
 **The path:** Full request → Checked preview → Exact domain plan → Verified live site
 
@@ -18,7 +18,7 @@ Build a site from the owner’s real request. This guide checks the facts, build
 ## Inputs
 
 - The full original request, accepted business scope, intended reader and goal.
-- Actual domain owner, existing site/source, hosting plan and DNS/mail records.
+- The domain owner, existing site/source, hosting plan, mail records and [Domain Name System (DNS) settings](https://local-service-spotlight.github.io/task-library/?task=ensure-proper-dns-records#task-ensure-proper-dns-records)—the records that direct a web address to its host.
 - Verified bio, photos, proof, source rights, supported build tools and deployment/send authority.
 
 ## Steps
@@ -26,11 +26,15 @@ Build a site from the owner’s real request. This guide checks the facts, build
 1. Read the entire original conversation. Resolve the correct person, actual domain and current request, including changes of mind. Record what the site should help its reader do before collecting more material; do not choose a domain from an old email alone.
 2. Collect the existing approved bio, photos, interviews and proof. Verify load-bearing facts against their sources and keep private material private. Complete safe preparation before requesting genuinely missing assets, with the missing item tied to a specific blocked section.
 3. Use [Build the personal brand site](https://local-service-spotlight.github.io/task-library/?task=build-personal-brand-website#task-build-personal-brand-website) for the content build. Produce a concrete preview with real media, the person’s own voice, source-backed proof and clear contact path. Use the current [Article Guidelines](https://localservicespotlight.com/article-guidelines/) opening and visual requirements; retain layout and builder data on an existing site.
-4. Identify both the registrar and authoritative DNS provider from actual records and the authorized account. Nameservers show where DNS is served, which need not be the registrar. Read the existing web, mail and verification records before preparing any change.
-5. Prepare only the exact web records required by the selected host, with current before values and recovery steps. Prefer a minimal web-record change when appropriate. Check whether email uses the root domain or affected records; changing A records is not universally risk-free for mail, and changing nameservers needs a complete zone plan.
-6. Link instructions for the actual provider and the observed controls. If a maintained guide is missing, prepare a reusable guide from the provider’s current official documentation. Do not copy a fleet IP, nameserver set or automatic certificate promise from another site.
+4. Use [the domain ownership check](https://local-service-spotlight.github.io/task-library/?task=verify-domain-ownership-and-registrar-access#task-verify-domain-ownership-and-registrar-access) to identify the registrar (the company where the domain is registered) and authoritative DNS provider (the service that holds its live settings) from actual records and the authorized account. Nameservers show where DNS is served, which may differ from the registrar. Read the existing web, mail and verification records before preparing a change.
+5. Prepare only the exact web records required by the selected host, with current before-values and recovery steps. An A record points a web name to a server; changing it can affect other services, including mail. Use [the domain email guide](https://local-service-spotlight.github.io/task-library/?task=set-up-professional-email-on-domain#task-set-up-professional-email-on-domain) to check mail routes and authentication. Inspect affected MX records (mail routes), their target hosts and A/AAAA records (internet addresses) too, and prepare a full zone plan before changing nameservers.
+6. Link instructions for the actual provider and the observed controls. If a maintained guide is missing, link the provider’s current official documentation and record the exact control needed. Give the documentation owner a bounded guide request; create and publish that guide only within existing documentation authority. This does not make the site request authority for unrelated work. Do not copy a fleet IP, nameserver set or automatic certificate promise from another site.
 7. Prepare the reply with the checked preview and one concrete owner action. Keep it a draft unless sending is authorized. Provision, map the domain and publish only through the accepted deployment rail; keep DNS pending, built and live as separate states.
-8. After launch, check the normal public URL, HTTPS, intended content, media, contact path and relevant retained mail configuration. Save the exact source and evidence, then return the verified result to the original conversation under its send authority.
+8. After launch, check the normal public URL, [HTTPS and mixed content](https://local-service-spotlight.github.io/task-library/?task=configure-https-with-no-mixed-content#task-configure-https-with-no-mixed-content), intended content, media, contact path and relevant retained mail configuration. Save a scoped mail check or mark mail continuity unverified; unchanged records alone do not prove mail delivery. Save the exact source and evidence, then return the verified result to the original conversation under its send authority.
+
+## Output record and acceptance
+
+Save a site-delivery record with the request ID and revision; controlled domain and owner evidence; approved fact/media sources; preview URL and revision; owner decision; current host and DNS/mail record snapshot; exact proposed change and rollback; deployment state; checked URL count and each URL’s response code, secure HTTPS result and desktop/mobile result; contact-path result; open issue and next owner. Count approved facts with source links against total facts proposed. Report each site state separately (`draft`, `preview`, `approved`, `configured`, `live`). The site owner accepts the exact preview and domain plan. Name the authorized publishing owner in the record; deployment stays pending until assigned. That owner acts only after recorded authorization; mark the site `live` only after the normal public URL returns the expected page over HTTPS and the contact path and required desktop/mobile checks pass. An absent approval, inaccessible account or unchecked URL remains pending.
 
 ## Definition of done (QA checklist)
 
@@ -50,9 +54,9 @@ A fictional owner first mentions an old domain, then confirms a different domain
 
 ## Handoff and Content Factory context
 
-The domain owner receives the exact pending action; [Review search and real inquiries](https://local-service-spotlight.github.io/task-library/?task=measure-search-impressions-traffic-inbound-opportunities#task-measure-search-impressions-traffic-inbound-opportunities) receives the authorized launched site and actual source connections. The original request remains the parent record.
+The site owner accepts the preview and exact domain plan. The authorized publishing function receives the recorded approval and rollback plan. After public checks pass, [Review search and real inquiries](https://local-service-spotlight.github.io/task-library/?task=measure-search-impressions-traffic-inbound-opportunities#task-measure-search-impressions-traffic-inbound-opportunities) receives the verified URL and actual source connections. The original request remains the parent record.
 
-This task supports the [Content Factory: Produce, Process, Post and Promote](https://blitzmetrics.com/content-factory/). Identity, proof, access or coordination can support several stages. Use the real inputs and receiving owner above; this task does not create unrelated transcripts, clips or ads merely because the diagram has four stages.
+**[Content Factory](https://blitzmetrics.com/content-factory/) stage: Post.** This task places approved identity content on the owner’s site and checks the served pages and contact path. It does not include paid promotion.
 
 ## Start with an agent
 

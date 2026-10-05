@@ -9,7 +9,7 @@ status: needs-work
 
 # Classify and offer Knowledge Panel
 
-Choose the right next step for your name on Google. This guide checks what is there before your team offers panel work. Start with a fresh search and the current terms your business has approved.
+Choose the right work to help people find you on Google. This keeps your team from selling work you do not need. First, [check who each profile belongs to](https://local-service-spotlight.github.io/task-library/?task=establish-entity-identity#task-establish-entity-identity); that proof helps you tell your results from someone else’s.
 
 **The path:** Live search + proof → Claim / Build / Contested → Current terms → Offer draft
 
@@ -24,12 +24,16 @@ Choose the right next step for your name on Google. This guide checks what is th
 ## Steps
 
 1. Run a fresh name search and record query, location or locale where known, device, date and screenshots. Inspect the result’s identity, not merely the displayed name. A signed-out search reduces some personalization but does not remove all contextual variation.
-2. Classify Claim/correct only when the right panel offers the needed claim or edit route. An existing entity ID without that route is evidence of an entity, not claim-ready delivery. Classify Build as supported identity/proof work still needed; use contested review for ambiguity or a crowded name.
+2. Classify Claim/correct only when the right panel offers the needed claim or edit route. An entity ID is a code for a named person or thing in Google’s data. It does not prove the right panel offers a claim or edit route. Classify Build as supported identity/proof work still needed; use contested review for ambiguity or a crowded name.
 3. Check the person’s existing public home, verified profiles and independent evidence. State the actual gaps and the services within scope. Do not promise that a checklist, payment, name domain or schema will force Google to display a panel.
-4. Read the current approved price, deposit, milestone and refund terms from their maintained source. The older skill’s dollar bands and duration ranges are historical source copy; this recipe does not set a new price or repeat them as current without that check.
+4. Read the current approved price, deposit, milestone and refund terms from their maintained source. If the public offer page omits a term, get the approved engagement or terms owner’s record; do not invent it or treat silence as a refund policy. The older skill’s dollar bands and duration ranges are historical source copy; this recipe does not set a new price or repeat them as current without that check.
 5. Draft the matching recommendation with the evidence, exact deliverables, owner-controlled verification account, dependencies and accepted commercial terms. Tie each milestone to its actual contract definition. Keep proposed service work distinct from Google’s decision and from a completed claim.
 6. Route ambiguous scope, conflicting terms and contested identities to the responsible commercial or entity-review function with the finished evidence packet. A named colleague’s availability is not a reason to pause safe research, nor authority to send an unapproved offer.
 7. Save the decision and draft. Send only under existing authorization and record the exact sent version when it happens. The classification task is checked when its evidence and matching proposal are reviewable; a sale or a panel is a later outcome.
+
+## Output record and acceptance
+
+For each accepted request, save the request ID and revision; search name, date, locale and result evidence; identity match; route (`claim/correct`, `build` or `contested`); evidence gaps; approved-terms source and revision; offer-draft link and state; and next function and owner. Count the in-scope names searched and classified, and drafts backed by current terms. The check passes when every recommendation can be traced to saved evidence and each quoted term matches its approved source. The person responsible for commercial terms records accept or return against the exact draft revision, with reviewer and date; contested identity goes to the identity reviewer. Keep these records in the approved private project space.
 
 ## Definition of done (QA checklist)
 
@@ -49,9 +53,9 @@ A fictional accountant has a name shared by a musician. The visible card belongs
 
 ## Handoff and Content Factory context
 
-[Resolve identity facts](https://local-service-spotlight.github.io/task-library/?task=establish-entity-identity#task-establish-entity-identity) or [Claim the available panel](https://local-service-spotlight.github.io/task-library/?task=claim-and-verify-knowledge-panel-when-it-appears#task-claim-and-verify-knowledge-panel-when-it-appears) receives the accepted route after scope approval.
+The person responsible for commercial terms receives the exact proposal for acceptance. The identity reviewer receives a contested case before an offer is sent. After scope approval, [resolve identity facts](https://local-service-spotlight.github.io/task-library/?task=establish-entity-identity#task-establish-entity-identity) or [claim an available panel](https://local-service-spotlight.github.io/task-library/?task=claim-and-verify-knowledge-panel-when-it-appears#task-claim-and-verify-knowledge-panel-when-it-appears) receives the supported route.
 
-This task supports the [Content Factory: Produce, Process, Post and Promote](https://blitzmetrics.com/content-factory/). Identity, proof, access or coordination can support several stages. Use the real inputs and receiving owner above; this task does not create unrelated transcripts, clips or ads merely because the diagram has four stages.
+This is a qualification gate before the [Content Factory](https://blitzmetrics.com/content-factory/) starts. Once work is accepted, [Establish entity identity](https://local-service-spotlight.github.io/task-library/?task=establish-entity-identity#task-establish-entity-identity) supplies checked facts for later site or schema work. This task produces a sourced route and offer draft; it does not make a content asset.
 
 ## Start with an agent
 
