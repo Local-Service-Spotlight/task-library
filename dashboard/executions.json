@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "asOf": "2026-10-05T16:16:57.933436+00:00",
+  "asOf": "2026-10-05T20:21:07.836236+00:00",
   "countDefinition": "Distinct recorded execution IDs, separate from meta-article URLs. History is partial; absent history is unknown, not zero. The last-30-day count is a documented lower bound, not total task frequency.",
-  "recordedExecutions": 21,
+  "recordedExecutions": 22,
   "completedExecutions": 9,
   "partialExecutions": 12,
   "executions": [
@@ -592,6 +592,29 @@
       "metaArticle": {
         "status": "published",
         "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#measurement-guide-repair-20261005-1607"
+      }
+    },
+    {
+      "executionId": "revenue-path-repair-20261005-1855",
+      "taskSlugs": [
+        "publish-skill-and-task-page"
+      ],
+      "startedAt": "2026-10-05T18:57:29.098918+00:00",
+      "status": "running",
+      "result": "Published three corrected lead-path guide copies and meta section; final public release verification pending. No client tests or income results.",
+      "recipeRevisions": {
+        "publish-skill-and-task-page": {
+          "articleUrl": "https://blitzmetrics.com/skill-publishing-standard/",
+          "sourceSha256": "660d6f1abd8678c851c0a08059f27982e8e29b46775ea217a2ae1d6e3ba55537"
+        }
+      },
+      "evidenceUrls": [
+        "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md"
+      ],
+      "privateEvidenceRecorded": false,
+      "metaArticle": {
+        "status": "published",
+        "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#revenue-path-repair-20261005-1855"
       }
     }
   ]

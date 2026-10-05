@@ -31,6 +31,18 @@ Before editing, collect the exact task slug, current recipe revision, latest run
 6. Publish through the approved route and read the result where readers receive it. A successful save, build, or deployment is not enough by itself. Keep failed and uncertain checks visible.
 7. Record the lesson, changed revision, checks, and next action. The next real use must test the revised steps; a promising edit is not a proven outcome.
 
+## Choose work by business value
+
+Spend effort where it can help the business earn or keep money. A clear offer and a working way to receive requests matter more than a larger review count. Use the [Goals, Content, and Targeting brief](https://blitzmetrics.com/gct-business-strategy/) to connect the owner's goal, useful material and intended buyer before choosing the next batch.
+
+For each batch, record four things in the existing checkpoint: the earning path it supports, the evidence for that choice, the next missing gate, and a rough effort estimate with its assumptions. Prefer fixes that protect received inquiries, fulfill a current paid offer, or remove a dependency from an evidenced opportunity. Consider the owner's time, delivery cost, repeat use and supported margin or revenue evidence. Avoid making up dollar returns, close rates or a strategy that has not been read. When the current strategy is unavailable, label the choice provisional and keep working on a defensible shared prerequisite.
+
+The generated queue uses existing revenue-role, dependency and frequency estimates within each priority lane. Those estimates are not actual use or income. They rank ahead of missing-guide status and gap count, so a long list of deficiencies does not make a task valuable by itself. Check the live business context before adopting the order. No new task registry is needed.
+
+Treat a shared article hold as one repair affecting several task rows. Keep each task's gate visible, but do not spend separate batches rediscovering the same unchanged hold. Skip work whose next step needs unavailable evidence or authority and retain the exact dependency. For a longer requested project, finish and checkpoint one coherent batch, then take the next actionable batch; the one-batch daily maintenance limit is not a cap on that project.
+
+Move written review and real-use verification forward together. A documentation repair may close a written check. Only a real authorized attempt with the exact recipe, accepted output and receiving handoff can close execution checks. Capture that evidence during normal work instead of creating pretend client jobs to fill the ledger. Keep the new-user test separate from an agent rehearsal.
+
 Rebuild after each batch. Confirm that `dashboard/verification-queue.json`, `.csv` and `.html` agree, that the changed task moved only when its evidence supports the new state, and that the queue remains linked from the normal dashboard and static library index. A skill-file review hash is separate from the canonical article revision. Shared-hub article volume is not task-level proof unless the audited record names the matching task slug or the hub has only that one mapped task.
 
 Record the five explicit instruction checks from [the Task Library Standard](Task-Library-Standard.md#record-which-instruction-requirements-passed) in the existing instruction review. Preserve any failed or unknown check even when other checks pass. Inspect changed upstream source bytes before renewing an expired review; restoring yesterday's review count is not a reason to approve today's source.

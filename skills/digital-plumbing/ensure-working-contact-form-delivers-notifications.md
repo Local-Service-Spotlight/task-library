@@ -9,7 +9,7 @@ status: needs-work
 
 # Ensure Working Contact Form Delivers Notifications
 
-A form can say “sent” while no one gets the message. This guide helps a business owner check the whole path. Start with the form and the inbox your team really reads.
+Use this guide to check that a web form sends each request to the right person. It helps you catch lost requests before you send more people to your site. Start with [a clear contact path](https://local-service-spotlight.github.io/task-library/?task=create-clear-conversion-path#task-create-clear-conversion-path), which picks the next step for your visitor.
 
 **The path:** Form input → Accepted request → Team receipt → Follow-up owner.
 
@@ -17,8 +17,12 @@ A form can say “sent” while no one gets the message. This guide helps a busi
 
 ## Inputs
 - The form URLs and IDs, supported form settings access and the approved monitored receiver.
-- The actual sending service and existing authentication setup, with access to relevant delivery logs or a named mail owner.
-- The authorized test scope, clear test marker, device coverage and expected receipt window. Identify downstream CRM, booking or autoresponder actions before submitting.
+- The actual sending service and current [email authentication setup](https://local-service-spotlight.github.io/task-library/?task=configure-spf-dkim-dmarc-for-deliverability#task-configure-spf-dkim-dmarc-for-deliverability), with access to relevant delivery logs or a named mail owner.
+- The authorized test scope, clear test marker, device coverage and expected receipt window. Identify downstream customer-record, booking or automatic-reply actions before submitting.
+
+## Starting state and run record
+
+Start with the supplied form IDs, intended receiver, test marker, approved device scope and receipt window. For each test, record form ID and revision, marker and time, device, accepted or rejected result, matching receiver record and time, delivery delay, downstream effect, issue and next owner. The acceptance measure is a matching request at the approved destination within the agreed window; a success banner or mail-server acceptance alone does not pass. Keep tests separate from real leads and do not turn test counts into sales claims.
 
 ## First-run prompt
 
@@ -28,7 +32,7 @@ A form can say “sent” while no one gets the message. This guide helps a busi
 1. Map each form to its intended receiver and follow-up team. Read the recipient, From and Reply-To settings plus any customer-system or autoresponder connections. Confirm what a test will trigger so it does not create an unrequested appointment, charge or message chain.
 2. Save the current settings and prepare a clearly marked controlled test with no real customer data. Use the supplied receiver and response window; do not substitute an arbitrary personal inbox.
 3. Test desktop and mobile paths within that authority. Check required-field errors, accessible labels and submission behavior. Record the form ID, time and test marker, avoiding private data in public evidence.
-4. Verify the actual receiving inbox or system entry and delivery time. Inspect junk folders and mail logs when needed. A browser success message or SMTP acceptance is not the same as a message reaching the monitored inbox.
+4. Verify the actual receiving inbox or system entry and delivery time. Inspect junk folders and mail logs when needed. A browser success message or mail-server acceptance is not the same as a message reaching the monitored inbox.
 5. For a wrong recipient, update the owning form setting. For sender failure, use the site’s supported authenticated mail or provider integration and its verified domain setup. Use an owned sender address and an appropriate Reply-To; do not spoof the visitor’s address as the authenticated From identity.
 6. Ensure success is shown only after the form accepts the intended request, and that errors give a useful next step. If analytics is in scope, trigger the agreed successful-submission event at that point, not merely on a button click.
 7. Re-test the affected chain after each fix. Inspect actual received analytics events when included, honoring consent. A Meta Lead event applies only where its meaning and current setup match the real action; installing tracking is not mandatory to prove email delivery.
@@ -48,9 +52,9 @@ A form can say “sent” while no one gets the message. This guide helps a busi
 
 ## Handoff and Content Factory context
 
-Give the receiving team the tested path and response responsibility. Use [configure spf dkim dmarc for deliverability](https://local-service-spotlight.github.io/task-library/?task=configure-spf-dkim-dmarc-for-deliverability#task-configure-spf-dkim-dmarc-for-deliverability) for authentication defects or [create clear conversion path](https://local-service-spotlight.github.io/task-library/?task=create-clear-conversion-path#task-create-clear-conversion-path) when the path itself is confusing.
+Hand the paired form and receiver records to the named mail or lead-response owner. The handoff is accepted when that owner confirms the monitored destination and response responsibility for the tested forms; otherwise record acceptance as pending. Use [configure spf dkim dmarc for deliverability](https://local-service-spotlight.github.io/task-library/?task=configure-spf-dkim-dmarc-for-deliverability#task-configure-spf-dkim-dmarc-for-deliverability) for authentication defects or [create clear conversion path](https://local-service-spotlight.github.io/task-library/?task=create-clear-conversion-path#task-create-clear-conversion-path) when the path itself is confusing.
 
-This setup supports the [Content Factory](https://blitzmetrics.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. This check does not automatically execute all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
+This is a setup check for **Post** in the [Content Factory](https://blitzmetrics.com/content-factory/), the process that turns real stories into useful content. A published page needs a working way for a reader to reach the business. Check that path before **Promote** sends more people to it. Promotion, spend and customer follow-up remain separately scoped work.
 
 ## When this runs
 
