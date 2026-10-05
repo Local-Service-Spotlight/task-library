@@ -9,7 +9,7 @@ status: needs-work
 
 # Create Clear Conversion Path
 
-Can a new visitor tell what to do on your site? This guide helps a business owner make the next step clear. Start with one page, the person it serves and the action that helps them.
+Use this guide to make it easy for people to ask your business for help. A clear path helps your team get requests it can answer. Next, [check your contact form](https://local-service-spotlight.github.io/task-library/?task=ensure-working-contact-form-delivers-notifications#task-ensure-working-contact-form-delivers-notifications) to make sure those requests reach the right person.
 
 **The path:** Visitor need → Clear action → Working form or call → Team receipt.
 
@@ -20,6 +20,10 @@ Can a new visitor tell what to do on your site? This guide helps a business owne
 - The actual contact, booking, purchase or download destination and the responsible team. Preserve legitimate privacy, legal and navigation links.
 - Access to the owning page and destination settings, plus the agreed test scope and existing measurement plan if one is in use.
 
+## Starting state and run record
+
+Start with one named page, its intended visitor and action, the current destination, and the person or team that must receive the request. Record the page URL and revision, action label, destination, controlled-test ID and time, device, link/form/call result, receiver evidence, unresolved issue, and next owner. Count clicks, accepted requests, connected calls and qualified leads separately. Compare lead rates only when real baseline and follow-up data use the same lead definition and data source over equal-length windows; traffic mix and season changes can still affect the result. This guide does not estimate sales uplift.
+
 ## First-run prompt
 
 > Map the visitor’s path on the supplied page. Improve the main call to action and its destination within the authorized scope. Check the visible result and the actual receiving system separately. Report clicks, submitted requests and received leads as different evidence.
@@ -29,14 +33,14 @@ Can a new visitor tell what to do on your site? This guide helps a business owne
 2. Trace the current route from the page to the final destination. Record confusing labels, dead links, repeated questions and unnecessary detours. Do not infer the cause of low lead volume from a page glance alone.
 3. Write a specific action label such as “Request a roof check” rather than a vague “Learn more” when a request is the real next step. State what happens next and any material cost or commitment accurately.
 4. Place the action where it supports the page’s explanation and is reachable on mobile. Keep relevant secondary choices and accessibility controls. The source’s two-click idea is a reachability target, not a rule that every real booking or purchase must finish in two clicks.
-5. Edit the supported page source and destination. Keep required fields limited to the actual business need; preserve necessary consent and disclosures. Use the true service or offer page, following the owned Money Tree when it applies.
+5. Edit the supported page source and destination. Keep required fields limited to the actual business need; preserve necessary consent and disclosures. Use the true service or offer page, following the [Money Tree](https://blitzmetrics.com/money-tree/) when it applies: the site map of posts and the pages where people book or buy.
 6. Test the link and form or booking flow using the authorized controlled test. Check errors, success state and mobile use. Avoid a real charge, booking or message beyond the existing test scope; label that untested portion rather than calling the whole path passed.
 7. Verify receipt in the actual inbox, booking tool or customer system and identify who follows up. A success page or analytics event alone is not proof that the team got the request.
 8. If tracking is in scope, check one appropriate received event per intended action and its consent behavior. Save the route, test evidence and measured result; compare later lead performance only with real comparable data.
 
 ## Definition of done (QA checklist)
 
-- [ ] Each money-page opening makes the customer's situation, supported value and next buying step clear in the first 2–3 sentences, with relevant authentic proof; `step-7-write-hook-and-establish-context` review is recorded, not inferred from a CTA or unmeasured conversion promise
+- [ ] Each money-page opening makes the customer's situation, supported value and next buying step clear in the first 2–3 sentences, with relevant authentic proof; [opening review](https://local-service-spotlight.github.io/task-library/?task=step-7-write-hook-and-establish-context#task-step-7-write-hook-and-establish-context) is recorded, not inferred from a CTA or unmeasured conversion promise
 
 - [ ] The page has an understandable primary action for its intended visitor.
 - [ ] The route reaches the correct destination with no unnecessary dead end.
@@ -50,9 +54,9 @@ Can a new visitor tell what to do on your site? This guide helps a business owne
 
 ## Handoff and Content Factory context
 
-Give the receiving team the path and follow-up responsibility. Use [ensure working contact form delivers notifications](https://local-service-spotlight.github.io/task-library/?task=ensure-working-contact-form-delivers-notifications#task-ensure-working-contact-form-delivers-notifications) for a form-delivery defect or [add click to call links for mobile](https://local-service-spotlight.github.io/task-library/?task=add-click-to-call-links-for-mobile#task-add-click-to-call-links-for-mobile) for a call-link defect.
+Hand the route record to the named page or lead-response owner. The handoff is ready when that owner confirms the destination and response responsibility against the test ID; if confirmation is missing, record it as pending. Use [ensure working contact form delivers notifications](https://local-service-spotlight.github.io/task-library/?task=ensure-working-contact-form-delivers-notifications#task-ensure-working-contact-form-delivers-notifications) for a form-delivery defect or [add click to call links for mobile](https://local-service-spotlight.github.io/task-library/?task=add-click-to-call-links-for-mobile#task-add-click-to-call-links-for-mobile) for a call-link defect.
 
-This setup supports the [Content Factory](https://blitzmetrics.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. This check does not automatically execute all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
+This is a setup check for **Post** in the [Content Factory](https://blitzmetrics.com/content-factory/), the process that turns real stories into useful content. A published page needs a working way for a reader to reach the business. Check that path before **Promote** sends more people to it. Promotion, spend and customer follow-up remain separately scoped work.
 
 ## When this runs
 

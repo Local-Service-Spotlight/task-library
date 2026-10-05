@@ -1525,6 +1525,249 @@
      ]
     }
    }
+  },
+  {
+   "version": 1,
+   "taskSlug": "create-clear-conversion-path",
+   "canonicalURL": "https://blitzmetrics.com/digital-plumbing",
+   "sourceSha256": "4e2e557b45a6d32980184e91036c75c57f88056ee2982413962581efa9113c88",
+   "representation": "wordpress-content-html",
+   "reviewedAt": "2026-10-05T19:58:54.781855Z",
+   "reviewer": "Codex root; independent source review recorded separately",
+   "criteria": {
+    "openingContext": {
+     "state": "pass",
+     "reason": "Actual opening quoted with task, business value and meaningful linked connection.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md"
+     ]
+    },
+    "roleScope": {
+     "state": "pass",
+     "reason": "Recipe scope and shared parent topic-hub role preserved.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md"
+     ]
+    },
+    "owner": {
+     "state": "unknown",
+     "reason": "Canonical article upkeep ownership not established by this scoped repair.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md"
+     ]
+    },
+    "steps": {
+     "state": "pass",
+     "reason": "Current copied recipe gives controlled inputs, distinct results and receiving acceptance.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md"
+     ]
+    },
+    "links": {
+     "state": "pass",
+     "reason": "Root read relevant owned and primary meanings;20 URLs returned200; linked task bodies checked.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md"
+     ]
+    },
+    "sourceEvidence": {
+     "state": "unknown",
+     "reason": "Teaching scenarios do not establish real task-attributed outcomes.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md"
+     ]
+    },
+    "handoffContext": {
+     "state": "pass",
+     "reason": "Explicit checked record and accepting function; relates working contact path to Post before Promote.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md"
+     ]
+    },
+    "visualAndLayout": {
+     "state": "unknown",
+     "reason": "Selected instructions and section views checked; complete parent audit not certified.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md"
+     ]
+    },
+    "publicationStandards": {
+     "state": "unknown",
+     "reason": "Three copied skills are not full shared-parent certification.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md"
+     ]
+    },
+    "acceptanceResults": {
+     "state": "unknown",
+     "reason": "No actual call/form/client delivery or beginner setup performed.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md"
+     ]
+    }
+   }
+  },
+  {
+   "version": 1,
+   "taskSlug": "ensure-working-contact-form-delivers-notifications",
+   "canonicalURL": "https://blitzmetrics.com/digital-plumbing",
+   "sourceSha256": "4e2e557b45a6d32980184e91036c75c57f88056ee2982413962581efa9113c88",
+   "representation": "wordpress-content-html",
+   "reviewedAt": "2026-10-05T19:58:54.781855Z",
+   "reviewer": "Codex root; independent source review recorded separately",
+   "criteria": {
+    "openingContext": {
+     "state": "pass",
+     "reason": "Actual opening quoted with task, business value and meaningful linked connection.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md"
+     ]
+    },
+    "roleScope": {
+     "state": "pass",
+     "reason": "Recipe scope and shared parent topic-hub role preserved.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md"
+     ]
+    },
+    "owner": {
+     "state": "unknown",
+     "reason": "Canonical article upkeep ownership not established by this scoped repair.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md"
+     ]
+    },
+    "steps": {
+     "state": "pass",
+     "reason": "Current copied recipe gives controlled inputs, distinct results and receiving acceptance.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md"
+     ]
+    },
+    "links": {
+     "state": "pass",
+     "reason": "Root read relevant owned and primary meanings;20 URLs returned200; linked task bodies checked.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md"
+     ]
+    },
+    "sourceEvidence": {
+     "state": "unknown",
+     "reason": "Teaching scenarios do not establish real task-attributed outcomes.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md"
+     ]
+    },
+    "handoffContext": {
+     "state": "pass",
+     "reason": "Explicit checked record and accepting function; relates working contact path to Post before Promote.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md"
+     ]
+    },
+    "visualAndLayout": {
+     "state": "unknown",
+     "reason": "Selected instructions and section views checked; complete parent audit not certified.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md"
+     ]
+    },
+    "publicationStandards": {
+     "state": "unknown",
+     "reason": "Three copied skills are not full shared-parent certification.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md"
+     ]
+    },
+    "acceptanceResults": {
+     "state": "unknown",
+     "reason": "No actual call/form/client delivery or beginner setup performed.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md"
+     ]
+    }
+   }
+  },
+  {
+   "version": 1,
+   "taskSlug": "set-up-call-tracking-for-phone-conversions",
+   "canonicalURL": "https://blitzmetrics.com/digital-plumbing",
+   "sourceSha256": "4e2e557b45a6d32980184e91036c75c57f88056ee2982413962581efa9113c88",
+   "representation": "wordpress-content-html",
+   "reviewedAt": "2026-10-05T19:58:54.781855Z",
+   "reviewer": "Codex root; independent source review recorded separately",
+   "criteria": {
+    "openingContext": {
+     "state": "pass",
+     "reason": "Actual opening quoted with task, business value and meaningful linked connection.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md"
+     ]
+    },
+    "roleScope": {
+     "state": "pass",
+     "reason": "Recipe scope and shared parent topic-hub role preserved.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md"
+     ]
+    },
+    "owner": {
+     "state": "unknown",
+     "reason": "Canonical article upkeep ownership not established by this scoped repair.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md"
+     ]
+    },
+    "steps": {
+     "state": "pass",
+     "reason": "Current copied recipe gives controlled inputs, distinct results and receiving acceptance.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md"
+     ]
+    },
+    "links": {
+     "state": "pass",
+     "reason": "Root read relevant owned and primary meanings;20 URLs returned200; linked task bodies checked.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md"
+     ]
+    },
+    "sourceEvidence": {
+     "state": "unknown",
+     "reason": "Teaching scenarios do not establish real task-attributed outcomes.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md"
+     ]
+    },
+    "handoffContext": {
+     "state": "pass",
+     "reason": "Explicit checked record and accepting function; relates working contact path to Post before Promote.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md"
+     ]
+    },
+    "visualAndLayout": {
+     "state": "unknown",
+     "reason": "Selected instructions and section views checked; complete parent audit not certified.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md"
+     ]
+    },
+    "publicationStandards": {
+     "state": "unknown",
+     "reason": "Three copied skills are not full shared-parent certification.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md"
+     ]
+    },
+    "acceptanceResults": {
+     "state": "unknown",
+     "reason": "No actual call/form/client delivery or beginner setup performed.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md"
+     ]
+    }
+   }
   }
  ],
  "revisionObservations": [
@@ -1781,6 +2024,48 @@
    "reason": "Final saved copied recipe matches reviewed candidate.",
    "evidenceRefs": [
     "sha256:2853af988c621034f91628193699b52eb5f8ff5b6ca3a7be54ba91d99bf4d47b"
+   ]
+  },
+  {
+   "version": 1,
+   "taskSlug": "create-clear-conversion-path",
+   "canonicalURL": "https://blitzmetrics.com/digital-plumbing",
+   "sourceSha256": "4e2e557b45a6d32980184e91036c75c57f88056ee2982413962581efa9113c88",
+   "representation": "wordpress-content-html",
+   "observedAt": "2026-10-05T19:58:57.590432Z",
+   "observer": "Codex separate authenticated read",
+   "state": "observed",
+   "reason": "Final source copy agrees with reviewed maintained recipe.",
+   "evidenceRefs": [
+    "sha256:76375c5c067973c412c979f5f2e0aad6195047dae0d9285f789598006d956afa"
+   ]
+  },
+  {
+   "version": 1,
+   "taskSlug": "ensure-working-contact-form-delivers-notifications",
+   "canonicalURL": "https://blitzmetrics.com/digital-plumbing",
+   "sourceSha256": "4e2e557b45a6d32980184e91036c75c57f88056ee2982413962581efa9113c88",
+   "representation": "wordpress-content-html",
+   "observedAt": "2026-10-05T19:58:57.590607Z",
+   "observer": "Codex separate authenticated read",
+   "state": "observed",
+   "reason": "Final source copy agrees with reviewed maintained recipe.",
+   "evidenceRefs": [
+    "sha256:76375c5c067973c412c979f5f2e0aad6195047dae0d9285f789598006d956afa"
+   ]
+  },
+  {
+   "version": 1,
+   "taskSlug": "set-up-call-tracking-for-phone-conversions",
+   "canonicalURL": "https://blitzmetrics.com/digital-plumbing",
+   "sourceSha256": "4e2e557b45a6d32980184e91036c75c57f88056ee2982413962581efa9113c88",
+   "representation": "wordpress-content-html",
+   "observedAt": "2026-10-05T19:58:57.590737Z",
+   "observer": "Codex separate authenticated read",
+   "state": "observed",
+   "reason": "Final source copy agrees with reviewed maintained recipe.",
+   "evidenceRefs": [
+    "sha256:76375c5c067973c412c979f5f2e0aad6195047dae0d9285f789598006d956afa"
    ]
   }
  ]

@@ -181,6 +181,41 @@ class StandardVerificationTests(unittest.TestCase):
         self.assertIn('unknownStandardGates', csv_text.splitlines()[0])
         self.assertIn('acceptedExecution', csv_text.splitlines()[0])
 
+    def test_revenue_role_precedes_gap_count_within_priority(self):
+        lead_path = task('lead-path', status='needs-work', importance=5)
+        lead_path.update(revenue=5, gating=5, freq=4)
+        documentation_gap = task('documentation-gap', status='gap', article=None, importance=5)
+        documentation_gap.update(revenue=2, gating=3, freq=5)
+        rows = self.derive([documentation_gap, lead_path])
+        self.assertEqual([row['slug'] for row in rows], ['lead-path', 'documentation-gap'])
+        self.assertEqual(lead_path['standardVerification']['gates']['acceptedExecution']['state'], 'unknown')
+        self.assertFalse(lead_path['standardVerification']['fullyVerified'])
+
+    def test_revenue_ties_use_dependencies_before_frequency(self):
+        frequent = task('frequent', status='needs-work', importance=5)
+        frequent.update(revenue=5, gating=3, freq=5)
+        dependency = task('dependency', status='needs-work', importance=5)
+        dependency.update(revenue=5, gating=5, freq=3)
+        self.assertEqual([row['slug'] for row in self.derive([frequent, dependency])],
+                         ['dependency', 'frequent'])
+
+    def test_value_exports_preserve_unknown_effort_and_income(self):
+        candidate = task('candidate')
+        candidate.update(revenue=5, gating=4, freq=3)
+        payload = verification.report(self.derive([candidate]))
+        row = payload['queue'][0]
+        self.assertEqual(row['revenueEstimate'], 5)
+        self.assertIsNone(row['effortEstimate'])
+        self.assertIn('not measured income', row['valueBasis'])
+        with tempfile.TemporaryDirectory() as out:
+            verification.write_artifacts(payload, out)
+            import csv
+            with open(Path(out) / 'verification-queue.csv') as source:
+                exported = next(csv.DictReader(source))
+            self.assertEqual(exported['revenueEstimate'], '5')
+            self.assertEqual(exported['effortEstimate'], '')
+            self.assertEqual(exported['valueBasis'], row['valueBasis'])
+
     def test_checked_in_queue_matches_current_evidence_boundaries(self):
         payload = json.loads((HERE.parent / 'dashboard' / 'verification-queue.json').read_text())
         data = json.loads((HERE.parent / 'dashboard' / 'data.json').read_text())

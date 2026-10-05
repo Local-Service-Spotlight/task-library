@@ -390,10 +390,13 @@ def _queue_sort_key(task):
     priority, _ = _queue_priority(task)
     return (
         {'P0': 0, 'P1': 1, 'P2': 2, 'P3': 3}[priority],
+        -int(task.get('revenue') or 0),
+        -int(task.get('gating') or 0),
+        -int(task.get('freq') or 0),
+        -int(task.get('importance') or 0),
         0 if task.get('status') == 'gap' else 1,
         -len(verification['heldStandardGates']),
         -len(verification['unmetStandardGates']),
-        -int(task.get('importance') or 0),
         task['slug'],
     )
 
@@ -427,6 +430,11 @@ def report(tasks, generated_at=None):
             'priorityReason': task['standardVerification']['priorityReason'],
             'slug': task['slug'], 'title': task['title'],
             'category': task.get('category'), 'importance': task.get('importance'),
+            'revenueEstimate': task.get('revenue'),
+            'dependencyEstimate': task.get('gating'),
+            'frequencyEstimate': task.get('freq'),
+            'valueBasis': 'Editorial estimate from build/factory.py; not measured income, demand or use.',
+            'effortEstimate': None,
             'status': task.get('status'), 'articleUrl': task.get('article'),
             'taskLibraryUrl': task.get('taskLibraryUrl'),
             'nextAction': task['standardVerification']['nextAction'],
@@ -434,6 +442,9 @@ def report(tasks, generated_at=None):
         })
     return {
         'schemaVersion': 1,
+        'ordering': ('Setup failures and evidence holds first. Within each priority lane, '
+                     'sort by estimated revenue role, dependencies unblocked, frequency and importance '
+                     'before missing-guide status and gap count. Effort and actual income remain unknown.'),
         'generatedAt': generated_at,
         'definition': ('Per-task standard gates derived from exact instruction reviews, explicit '
                        'instruction-requirement checks, contributor status, article mapping/catalog '
@@ -463,7 +474,8 @@ def write_artifacts(payload, out_dir):
         json.dump(payload, target, ensure_ascii=False, indent=2)
         target.write('\n')
     fields = ['queuePosition', 'priority', 'priorityReason', 'slug', 'title',
-              'category', 'importance', 'status', 'articleUrl', 'taskLibraryUrl',
+              'category', 'importance', 'revenueEstimate', 'dependencyEstimate',
+              'frequencyEstimate', 'valueBasis', 'effortEstimate', 'status', 'articleUrl', 'taskLibraryUrl',
               'unmetStandardGates', 'heldStandardGates', 'unknownStandardGates',
               'nextAction'] + list(GATE_ORDER)
     with open(csv_path, 'w', encoding='utf-8', newline='') as target:
@@ -530,7 +542,10 @@ def _html_report(payload):
             f'<td data-label="Queue">{row["queuePosition"]}</td><td data-label="Priority"><strong>{esc(row["priority"])}</strong><br>'
             f'<small>{esc(row["priorityReason"])}</small></td>'
             f'<td data-label="Task">{title}<br><code>{esc(row["slug"])}</code><br><small>{esc(row.get("category"))}</small></td>'
-            f'<td data-label="Importance">{esc(row.get("importance"))}</td>'
+            f'<td data-label="Estimated value">Revenue role {esc(row.get("revenueEstimate")) or "unknown"}/5<br>'
+            f'Dependencies {esc(row.get("dependencyEstimate")) or "unknown"}/5<br>'
+            f'Frequency {esc(row.get("frequencyEstimate")) or "unknown"}/5<br>'
+            f'<small>Editorial estimates; effort and income unknown.</small></td>'
             f'<td data-label="Checks"><span class="state unmet">{len(verification["unmetStandardGates"])} unmet</span> '
             f'<span class="state hold">{len(verification["heldStandardGates"])} held</span> '
             f'<span class="state unknown">{len(verification["unknownStandardGates"])} unknown</span>'
@@ -553,9 +568,10 @@ def _html_report(payload):
 <p class="lead">Use this list to find which work guides in the <a href="./">Task Library</a> still need checks before your team relies on them. It shows what we know, what is missing, and what to check next. These checks help keep the Task Library useful as each real job teaches us more.</p>
 <ol class="process" aria-label="How real work improves a guide"><li>Read guide</li><li>Try task</li><li>Check result</li><li>Improve guide</li></ol>
 <p><strong>{stats['fullyVerifiedTasks']} of {stats['tasks']} tasks currently pass every check.</strong> A guide can be listed and reviewed while its real result or first-user setup is still unknown. Generated {esc(payload['generatedAt'])}. Download the <a href="verification-queue.json">JSON report</a> or <a href="verification-queue.csv">CSV queue</a>.</p>
+<p>Choose work that helps the business earn or keep revenue. Within each priority lane, this list now puts the estimated revenue role and the work it unlocks ahead of the number of missing checks. These are planning estimates, not proof of sales. Before choosing a batch, compare the next fix with the current offer, demand, available access and effort. Follow the <a href="https://github.com/Local-Service-Spotlight/task-library/blob/main/MAINTAINING-THE-LIBRARY.md">maintenance guide</a> to record that choice and its evidence.</p>
 <section class="summary" aria-labelledby="gate-summary"><h2 id="gate-summary">Gate counts</h2><ul>{''.join(gate_cards)}</ul></section>
 <section class="filters" aria-label="Queue filters"><label>Search tasks<input id="search" type="search" autocomplete="off" placeholder="Name, slug or category"></label><label>Priority<select id="priority"><option value="">All priorities</option><option>P0</option><option>P1</option><option>P2</option><option>P3</option></select></label><label>Evidence state<select id="state"><option value="">All states</option><option value="hold">Has a hold</option><option value="unmet">Has an unmet gate</option><option value="unknown">Has an unknown gate</option><option value="pass">Has a passing gate</option></select></label><p id="shown" aria-live="polite"></p></section>
-<div class="table-wrap"><table><caption>Tasks sorted by setup failures, evidence holds, known gaps, importance and slug.</caption><thead><tr><th>Queue</th><th>Priority</th><th>Task</th><th>Importance</th><th>Gate states</th><th>Next action</th></tr></thead><tbody>{''.join(rows)}</tbody></table></div>
+<div class="table-wrap"><table><caption>Tasks sorted by priority, estimated revenue role, dependencies, frequency, importance, then gaps. Repeated holds on one article are one repair job; skip unchanged unavailable work.</caption><thead><tr><th>Queue</th><th>Priority</th><th>Task</th><th>Estimated value</th><th>Gate states</th><th>Next action</th></tr></thead><tbody>{''.join(rows)}</tbody></table></div>
 <script>
 const rows=[...document.querySelectorAll('tbody tr')], search=document.querySelector('#search'), priority=document.querySelector('#priority'), state=document.querySelector('#state'), shown=document.querySelector('#shown');
 function apply(){{const q=search.value.trim().toLowerCase();let count=0;for(const row of rows){{const visible=(!q||row.dataset.search.includes(q))&&(!priority.value||row.dataset.priority===priority.value)&&(!state.value||row.dataset.states.split(' ').includes(state.value));row.hidden=!visible;if(visible)count++;}}shown.textContent=count+' of '+rows.length+' tasks shown';}}

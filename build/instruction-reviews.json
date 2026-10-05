@@ -949,10 +949,40 @@
       "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
     },
     "create-clear-conversion-path": {
-      "source_sha256": "4d622de4fecab52261135e965560269c17334b3939110bcc3c723bce04000bff",
-      "reviewed_at": "2026-09-06",
-      "reviewer": "Codex editorial review",
-      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+      "source_sha256": "121a163c9adbf9d7ddb2354804f1fd29f60843703be8a60228741588c3aed739",
+      "reviewed_at": "2026-10-05",
+      "reviewer": "Codex root with separate GPT-6 Luna written review",
+      "scope": "Exact written method only. Full article, real execution, receiver result and unassisted novice setup remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md",
+      "standards": {
+        "version": 1,
+        "checks": {
+          "opening": {
+            "state": "pass",
+            "reason": "Actual three-sentence opening quoted in release review: plain task, useful business reason and explained linked prerequisite/next step. Rendered guide path inspected at phone and desktop sizes.",
+            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md"
+          },
+          "recipe": {
+            "state": "pass",
+            "reason": "Starting page/form/provider scope, required access and approved tests, ordered checks, recorded outputs and objective acceptance conditions are explicit.",
+            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md"
+          },
+          "links": {
+            "state": "pass",
+            "reason": "All20 linked URLs returned200 with normal browser headers; root read relevant owned definitions, linked task bodies and primary source meanings. No definition is linked to an unrelated task.",
+            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md"
+          },
+          "evidence": {
+            "state": "pass",
+            "reason": "Fictional examples labeled; actual receipts, provider capability and outcome proof are required before execution can pass. Clicks, accepted requests, calls and qualified leads remain distinct; no sales uplift inferred.",
+            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md"
+          },
+          "handoff": {
+            "state": "pass",
+            "reason": "Named page/mail/phone/reporting function receives the checked record and confirms it; missing confirmation remains pending. Working contact path belongs before promotion.",
+            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md"
+          }
+        }
+      }
     },
     "create-linkedin-page-matching-business-entity": {
       "source_sha256": "8f7439bfad104c15d6a0d3bb6662880aae727f75bf658854cc5525301c8c4337",
@@ -991,10 +1021,40 @@
       "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
     },
     "ensure-working-contact-form-delivers-notifications": {
-      "source_sha256": "5f480fdcb7ce222cb880e15e03c858fe9e9816a88ad3559aaa2a8b26c749cfef",
-      "reviewed_at": "2026-09-06",
-      "reviewer": "Codex editorial review",
-      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+      "source_sha256": "7657464979ae461cf4f7a4ec061e8417a3c38af7cba2709c46a06d9318f508e0",
+      "reviewed_at": "2026-10-05",
+      "reviewer": "Codex root with separate GPT-6 Luna written review",
+      "scope": "Exact written method only. Full article, real execution, receiver result and unassisted novice setup remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md",
+      "standards": {
+        "version": 1,
+        "checks": {
+          "opening": {
+            "state": "pass",
+            "reason": "Actual three-sentence opening quoted in release review: plain task, useful business reason and explained linked prerequisite/next step. Rendered guide path inspected at phone and desktop sizes.",
+            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md"
+          },
+          "recipe": {
+            "state": "pass",
+            "reason": "Starting page/form/provider scope, required access and approved tests, ordered checks, recorded outputs and objective acceptance conditions are explicit.",
+            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md"
+          },
+          "links": {
+            "state": "pass",
+            "reason": "All20 linked URLs returned200 with normal browser headers; root read relevant owned definitions, linked task bodies and primary source meanings. No definition is linked to an unrelated task.",
+            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md"
+          },
+          "evidence": {
+            "state": "pass",
+            "reason": "Fictional examples labeled; actual receipts, provider capability and outcome proof are required before execution can pass. Clicks, accepted requests, calls and qualified leads remain distinct; no sales uplift inferred.",
+            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md"
+          },
+          "handoff": {
+            "state": "pass",
+            "reason": "Named page/mail/phone/reporting function receives the checked record and confirms it; missing confirmation remains pending. Working contact path belongs before promotion.",
+            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md"
+          }
+        }
+      }
     },
     "install-google-tag-manager-container": {
       "source_sha256": "b097ac1b3d82a7ec3efd14243f47ab94dbf55845b3dbb9cdd605244c63e174bc",
@@ -1189,10 +1249,40 @@
       "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
     },
     "set-up-call-tracking-for-phone-conversions": {
-      "source_sha256": "b792c99b840b1becdc55dba48a6be00a0c035b66a3f8b59a39329de886791e32",
-      "reviewed_at": "2026-09-06",
-      "reviewer": "Codex editorial review",
-      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+      "source_sha256": "dc69b04996dec7bd3f12d76e94dd4fac9f75155af9a0796744605e0d1a755eca",
+      "reviewed_at": "2026-10-05",
+      "reviewer": "Codex root with separate GPT-6 Luna written review",
+      "scope": "Exact written method only. Full article, real execution, receiver result and unassisted novice setup remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md",
+      "standards": {
+        "version": 1,
+        "checks": {
+          "opening": {
+            "state": "pass",
+            "reason": "Actual three-sentence opening quoted in release review: plain task, useful business reason and explained linked prerequisite/next step. Rendered guide path inspected at phone and desktop sizes.",
+            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md"
+          },
+          "recipe": {
+            "state": "pass",
+            "reason": "Starting page/form/provider scope, required access and approved tests, ordered checks, recorded outputs and objective acceptance conditions are explicit.",
+            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md"
+          },
+          "links": {
+            "state": "pass",
+            "reason": "All20 linked URLs returned200 with normal browser headers; root read relevant owned definitions, linked task bodies and primary source meanings. No definition is linked to an unrelated task.",
+            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md"
+          },
+          "evidence": {
+            "state": "pass",
+            "reason": "Fictional examples labeled; actual receipts, provider capability and outcome proof are required before execution can pass. Clicks, accepted requests, calls and qualified leads remain distinct; no sales uplift inferred.",
+            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md"
+          },
+          "handoff": {
+            "state": "pass",
+            "reason": "Named page/mail/phone/reporting function receives the checked record and confirms it; missing confirmation remains pending. Working contact path belongs before promotion.",
+            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md"
+          }
+        }
+      }
     },
     "set-up-consistent-headshots-and-bios-across-profiles": {
       "source_sha256": "c0734a70f48d37087d1a142e1463c5ef529f1ea2efbabda1192058654b3f06d6",
