@@ -845,6 +845,9 @@ document.addEventListener('keydown', function(e){
 /* ============================================================
    Go
    ============================================================ */
+// Keep a query typed while data.json and this script were still loading.
+state.q = qInput.value;
+clearBtn.hidden = !qInput.value;
 applyFilters();
 const linkedRoute = routeFromUrl();
 if (linkedRoute.task) gotoSlug(linkedRoute.task);

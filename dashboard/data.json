@@ -1715,7 +1715,7 @@
  ],
  "executionHistory": {
   "schemaVersion": 1,
-  "asOf": "2026-10-05T20:21:07.836236+00:00",
+  "asOf": "2026-10-05T20:36:34.880493+00:00",
   "countDefinition": "Distinct recorded execution IDs, separate from meta-article URLs. History is partial; absent history is unknown, not zero. The last-30-day count is a documented lower bound, not total task frequency.",
   "recordedExecutions": 22,
   "completedExecutions": 9,
@@ -2315,8 +2315,8 @@
      "publish-skill-and-task-page"
     ],
     "startedAt": "2026-10-05T18:57:29.098918+00:00",
-    "status": "running",
-    "result": "Published three corrected lead-path guide copies and meta section; final public release verification pending. No client tests or income results.",
+    "status": "blocked",
+    "result": "Three corrected inquiry-path guides, business-value queue order and a pre-load search repair are committed. Parent article and meta are published and read back. GitHub Actions runner allocation is queued during a reported service incident; library deployment, exact public archives/UI and independent acceptance remain pending. No client tests or income results.",
     "recipeRevisions": {
      "publish-skill-and-task-page": {
       "articleUrl": "https://blitzmetrics.com/skill-publishing-standard/",
@@ -2324,9 +2324,10 @@
      }
     },
     "evidenceUrls": [
-     "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md"
+     "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md",
+     "https://github.com/Local-Service-Spotlight/task-library/pull/66"
     ],
-    "privateEvidenceRecorded": false,
+    "privateEvidenceRecorded": true,
     "metaArticle": {
      "status": "published",
      "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#revenue-path-repair-20261005-1855"
@@ -39598,7 +39599,7 @@
        },
        {
         "executionId": "revenue-path-repair-20261005-1855",
-        "status": "running",
+        "status": "blocked",
         "startedAt": "2026-10-05T18:57:29.098918+00:00",
         "finishedAt": null
        }

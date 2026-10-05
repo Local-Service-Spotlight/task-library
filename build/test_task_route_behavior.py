@@ -42,6 +42,16 @@ const toast=s=>{message=s},setTimeout=fn=>fn(),reduced=true,normalizeArticleUrl=
         got=self.js(self.fixture()+"\ngotoSlug('place-links');qInput.value='place-links';(function(){"+handler+"})();process.stdout.write(JSON.stringify([a,b].filter(t=>t._vis).map(t=>t.slug)));")
         self.assertEqual(got,['place-links','check-links'])
 
+    def test_query_entered_before_data_load_is_applied_on_startup(self):
+        bootstrap=SOURCE.rsplit('   Go\n',1)[1].split('*/',1)[1].rsplit('})();',1)[0]
+        got=self.js(self.fixture()+"\nstate.status='all';state.phase='all';state.minImp=0;state.articleKey='';qInput.value='check-links';const routeFromUrl=()=>({});\n"+bootstrap+"\nprocess.stdout.write(JSON.stringify({visible:[a,b].filter(t=>t._vis).map(t=>t.slug),query:qInput.value,clearHidden:clearBtn.hidden}));")
+        self.assertEqual(got,{'visible':['check-links'],'query':'check-links','clearHidden':False})
+
+    def test_exact_linked_task_takes_precedence_over_a_restored_search(self):
+        bootstrap=SOURCE.rsplit('   Go\n',1)[1].split('*/',1)[1].rsplit('})();',1)[0]
+        got=self.js(self.fixture()+"\nstate.status='all';state.phase='all';state.minImp=0;state.articleKey='';qInput.value='check-links';const routeFromUrl=()=>({task:'place-links'});\n"+bootstrap+"\nprocess.stdout.write(JSON.stringify({visible:[a,b].filter(t=>t._vis).map(t=>t.slug),opened}));")
+        self.assertEqual(got,{'visible':['place-links'],'opened':'place-links'})
+
     def test_article_route_clears_exact_task_constraint(self):
         got=self.js(self.fixture()+"\ngotoSlug('place-links');gotoArticle('hub');process.stdout.write(JSON.stringify({task:state.taskSlug,visible:[a,b].filter(t=>t._vis).map(t=>t.slug),closed}));")
         self.assertEqual(got,{'task':'','visible':['place-links','check-links'],'closed':2})

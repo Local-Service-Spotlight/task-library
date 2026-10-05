@@ -1207,9 +1207,9 @@
       },
       "startedAt": "2026-10-05T18:57:29.098918+00:00",
       "recordedAt": "2026-10-05T18:57:29.098918+00:00",
-      "updatedAt": "2026-10-05T19:58:54.781855Z",
-      "status": "running",
-      "result": "Published three corrected lead-path guide copies and meta section; final public release verification pending. No client tests or income results.",
+      "updatedAt": "2026-10-05T20:36:25.871362+00:00",
+      "status": "blocked",
+      "result": "Three corrected inquiry-path guides, business-value queue order and a pre-load search repair are committed. Parent article and meta are published and read back. GitHub Actions runner allocation is queued during a reported service incident; library deployment, exact public archives/UI and independent acceptance remain pending. No client tests or income results.",
       "metaArticle": {
         "status": "published",
         "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#revenue-path-repair-20261005-1855"
@@ -1218,6 +1218,14 @@
         {
           "visibility": "public",
           "url": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md"
+        },
+        {
+          "visibility": "public",
+          "url": "https://github.com/Local-Service-Spotlight/task-library/pull/66"
+        },
+        {
+          "visibility": "private",
+          "sha256": "e41eb3a07fa3246c36b83d18104cb3f165ee6aa4c73b92415019814eb2e17b4a"
         }
       ]
     }

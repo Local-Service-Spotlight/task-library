@@ -56,3 +56,13 @@ The saved parent and meta source hashes, ordinary anonymous readbacks, build/tes
 
 
 Saved parent content HTML SHA-256: `5785e65d552c7e29371a338a304725fb04f235e9c5098d967e87409d48f2433e`. Saved meta content HTML SHA-256: `d68e7c50ec1e4d4e29c791e27fc8ee7f7097c5a051526d2ec2df1839f3b88b95`. Publishing execution: `revenue-path-repair-20261005-1855`, actual start `2026-10-05T18:57:29.098918+00:00`.
+
+## First-use search repair and deployment boundary
+
+A controlled browser check held the library data response, typed `publish-skill-and-task-page` into Search, then released the response. Before the repair, the page showed all 276 tasks and no rendered target row while retaining the typed search. After the repair, it showed three matching tasks, including the requested guide. The app now reads the existing input before its first filter pass. A linked exact task still takes precedence. Two behavior tests cover both cases; a separate reviewer found no blocker.
+
+This is an agent rehearsal, not an unassisted human setup pass. The initial outer-page probes typed before initialization and timed out; the controlled test above identified the actual lost-query cause. Clipboard readback and the previously recorded embedded viewport observations remain separate, unresolved checks.
+
+PR66 merged the guide and priority changes. During release verification, GitHub Actions had a queued Ubuntu-hosted build with no runner assigned, and GitHub's public status API reported an Actions incident on October 5. WordPress article and meta changes have saved-source and ordinary anonymous text/media/script readbacks. The library deployment and final public queue/ZIP/UI verification remain pending; this run is blocked on that external release dependency. Do not infer a completed publishing execution or accepted result until the exact deployed outputs and next handoff are independently checked.
+
+The final meta continuation was saved and anonymously read back after the startup finding: content SHA-256 `c573d89ea734634928a9d1e42520eb458a0a1c75edf963b10189a83218ec5ad2`; whole rendered text, media and inline scripts matched at 20:37:38 UTC on October 5. The earlier meta hash above is retained as publication history. This final continuation explicitly records the deployment hold.
