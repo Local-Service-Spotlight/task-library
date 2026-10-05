@@ -1444,6 +1444,87 @@
      ]
     }
    }
+  },
+  {
+   "version": 1,
+   "taskSlug": "step-6-measure-and-iterate-with-maa",
+   "canonicalURL": "https://blitzmetrics.com/internal-linking",
+   "sourceSha256": "15c4aa944ab04eea5993fa7878b485784d879687f87145d7df38f95da4e39745",
+   "representation": "wordpress-content-html",
+   "reviewedAt": "2026-10-05T16:08:41.228913Z",
+   "reviewer": "Codex root with separate GPT-6 Luna source review",
+   "criteria": {
+    "openingContext": {
+     "state": "pass",
+     "reason": "Exact opening quoted; linked QA input and body delivery reviewed.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/measurement-guide-2026-10-05.md"
+     ]
+    },
+    "roleScope": {
+     "state": "pass",
+     "reason": "Bounded measurement recipe consumes released accepted changes; publishing repair is not a measurement job.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/measurement-guide-2026-10-05.md"
+     ]
+    },
+    "owner": {
+     "state": "unknown",
+     "reason": "Full canonical upkeep ownership not established.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/measurement-guide-2026-10-05.md"
+     ]
+    },
+    "steps": {
+     "state": "pass",
+     "reason": "Scope, access, comparable data, original evidence, calculations and objective report checks in matching source copy.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/measurement-guide-2026-10-05.md"
+     ]
+    },
+    "links": {
+     "state": "pass",
+     "reason": "Seventeen destinations loaded; owned definitions, actual input/output bodies and provider method read.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/measurement-guide-2026-10-05.md"
+     ]
+    },
+    "sourceEvidence": {
+     "state": "unknown",
+     "reason": "Fictional rows do not establish task-attributed actual results.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/measurement-guide-2026-10-05.md"
+     ]
+    },
+    "handoffContext": {
+     "state": "pass",
+     "reason": "Exact report package, accessible evidence, recipient, due point and acceptance check; missing responses remain pending.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/measurement-guide-2026-10-05.md"
+     ]
+    },
+    "visualAndLayout": {
+     "state": "unknown",
+     "reason": "Selected guide views checked separately; complete parent audit remains open.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/measurement-guide-2026-10-05.md"
+     ]
+    },
+    "publicationStandards": {
+     "state": "unknown",
+     "reason": "One copy update does not certify full parent publication standards.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/measurement-guide-2026-10-05.md"
+     ]
+    },
+    "acceptanceResults": {
+     "state": "unknown",
+     "reason": "No real measurement output, receiving-owner acceptance or novice setup proof.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/measurement-guide-2026-10-05.md"
+     ]
+    }
+   }
   }
  ],
  "revisionObservations": [
@@ -1686,6 +1767,20 @@
    "reason": "Final saved copied recipe matches reviewed candidate.",
    "evidenceRefs": [
     "sha256:528efe6a6b488d59d3b3c1e34e31490d1ad3de5dc6b1efe84f479445c8bd27ad"
+   ]
+  },
+  {
+   "version": 1,
+   "taskSlug": "step-6-measure-and-iterate-with-maa",
+   "canonicalURL": "https://blitzmetrics.com/internal-linking",
+   "sourceSha256": "15c4aa944ab04eea5993fa7878b485784d879687f87145d7df38f95da4e39745",
+   "representation": "wordpress-content-html",
+   "observedAt": "2026-10-05T16:08:41.772447Z",
+   "observer": "Codex fresh authenticated source read",
+   "state": "observed",
+   "reason": "Final saved copied recipe matches reviewed candidate.",
+   "evidenceRefs": [
+    "sha256:2853af988c621034f91628193699b52eb5f8ff5b6ca3a7be54ba91d99bf4d47b"
    ]
   }
  ]
