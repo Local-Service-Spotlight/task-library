@@ -12,7 +12,7 @@ ROOT = Path(__file__).resolve().parents[1]
 class ExecutionUI(unittest.TestCase):
     def run_ui(self, filename):
         source = (ROOT / filename).read_text()
-        names = ('articleLink', 'executionHistoryHTML')
+        names = ('articleLink', 'historicalEvidenceHTML', 'executionHistoryHTML')
         functions = '\n'.join(re.search(r'function ' + n + r'\([^)]*\)\{.*?\n\}', source, re.S).group() for n in names)
         script = r'''
 const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -20,7 +20,8 @@ const fmt = n => String(n);
 const DATA = {executionHistory:{executions:[{executionId:'one', status:'running', startedAt:'2026-09-05T01:00:00Z', result:'<script>bad</script>', metaArticle:{status:'draft'}, evidenceUrls:['https://example.com/proof'], privateEvidenceRecorded:true}]}};
 ''' + functions + r'''
 const known = {executionHistory:{status:'partial',completedRuns:0,completedLast30Days:0,failedRuns:0,executionIds:['one']}};
-process.stdout.write(JSON.stringify({unknown:executionHistoryHTML({},true),known:executionHistoryHTML(known,true),reference:articleLink({article:'https://example.com/guide',articleState:'ready',articleKind:'reference',metaCountStatus:'verified',metaArticleCount:85,metaOrbitAudited:'2026-08-24'})}));
+const historical={historicalDeliveryEvidence:{count:1,candidateCount:1,records:[{outcome:'<script>old</script>',recipeRevision:{state:'unknown'},observedAt:'2026-10-01',review:Object.fromEntries(['identity','output','acceptance','handoff'].map(k=>[k,{state:'unknown',notes:'<b>private-safe</b>'}])),evidenceUrls:[],privateEvidenceRecorded:true}]}};
+process.stdout.write(JSON.stringify({historical:executionHistoryHTML(historical,true),unknown:executionHistoryHTML({},true),known:executionHistoryHTML(known,true),reference:articleLink({article:'https://example.com/guide',articleState:'ready',articleKind:'reference',metaCountStatus:'verified',metaArticleCount:85,metaOrbitAudited:'2026-08-24'})}));
 '''
         return json.loads(subprocess.check_output(['node', '-e', script], text=True))
 
@@ -30,6 +31,11 @@ process.stdout.write(JSON.stringify({unknown:executionHistoryHTML({},true),known
                 result = self.run_ui(filename)
                 self.assertIn('Run frequency unknown', result['unknown'])
                 self.assertNotIn('0 recorded', result['unknown'])
+                self.assertIn('1 checked historical delivery', result['historical'])
+                self.assertIn('Acceptance: unknown', result['historical'])
+                self.assertIn('Run frequency unknown', result['historical'])
+                self.assertIn('&lt;script&gt;', result['historical'])
+                self.assertNotIn('<script>', result['historical'])
                 self.assertIn('0 recorded completed runs', result['known'])
                 self.assertIn('running', result['known'])
                 self.assertIn('Meta article draft', result['known'])
