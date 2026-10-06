@@ -1715,7 +1715,7 @@
  ],
  "executionHistory": {
   "schemaVersion": 1,
-  "asOf": "2026-10-06T03:43:19.011553+00:00",
+  "asOf": "2026-10-06T16:09:10.463584+00:00",
   "countDefinition": "Distinct recorded execution IDs, separate from meta-article URLs. History is partial; absent history is unknown, not zero. The last-30-day count is a documented lower bound, not total task frequency.",
   "recordedExecutions": 24,
   "completedExecutions": 12,
@@ -2582,8 +2582,8 @@
    }
   ],
   "historicalDeliveryEvidence": {
-   "count": 2,
-   "candidateCount": 2,
+   "count": 3,
+   "candidateCount": 3,
    "records": [
     {
      "version": 1,
@@ -2682,6 +2682,49 @@
       "handoff": {
        "state": "pass",
        "notes": "The report was posted to its project channel with named next actions and dates. Receipt by a particular reader and completion of those future actions remain unknown."
+      }
+     },
+     "evidenceUrls": [],
+     "privateEvidenceRecorded": true
+    },
+    {
+     "version": 1,
+     "evidenceId": "historical-a0e5c5670e6d4ce3ef327036",
+     "taskSlugs": [
+      "place-content-on-seo-tree-with-proper-links"
+     ],
+     "occurrence": {
+      "start": {
+       "precision": "unknown",
+       "value": null
+      },
+      "end": {
+       "precision": "unknown",
+       "value": null
+      }
+     },
+     "recipeRevision": {
+      "state": "unknown",
+      "canonicalURL": null
+     },
+     "observedAt": "2026-10-06T16:04:38.180428+00:00",
+     "outcome": "One published guide directory connects readers to five topic guides and relevant shopping and selling pages. The client confirmed navigation and native content editability. This is partial historical proof of content placement; the current recipe and new-user setup remain unverified.",
+     "review": {
+      "identity": {
+       "state": "pass",
+       "notes": "One linked guide collection and its directory are one source job. Repeated acknowledgments and individual pages are not separate deliveries."
+      },
+      "output": {
+       "state": "pass",
+       "notes": "All six pages returned HTTP 200. The directory body links to five guides; each guide links to shopping and selling pages. The five guide bodies lack an upward directory link. This checks published link placement only, not all facts, all destinations or the current recipe."
+      },
+      "acceptance": {
+       "state": "pass",
+       "notes": "The client confirmed the live dropdown menus, clickable directory and editable text/links for this exact delivery. Acceptance is limited to those features, not every current recipe criterion. Editability is client-confirmed, not independently exercised by this checker."
+      },
+      "handoff": {
+       "state": "pass",
+       "notes": "The delivery reached the existing project conversation. The client acknowledged it and the delivery owner described the next guide batch and preview process. Completion of that future batch is not claimed."
       }
      },
      "evidenceUrls": [],
@@ -8672,9 +8715,53 @@
       "setupReviews": []
      },
      "historicalDeliveryEvidence": {
-      "count": 0,
-      "candidateCount": 0,
-      "records": []
+      "count": 1,
+      "candidateCount": 1,
+      "records": [
+       {
+        "version": 1,
+        "evidenceId": "historical-a0e5c5670e6d4ce3ef327036",
+        "taskSlugs": [
+         "place-content-on-seo-tree-with-proper-links"
+        ],
+        "occurrence": {
+         "start": {
+          "precision": "unknown",
+          "value": null
+         },
+         "end": {
+          "precision": "unknown",
+          "value": null
+         }
+        },
+        "recipeRevision": {
+         "state": "unknown",
+         "canonicalURL": null
+        },
+        "observedAt": "2026-10-06T16:04:38.180428+00:00",
+        "outcome": "One published guide directory connects readers to five topic guides and relevant shopping and selling pages. The client confirmed navigation and native content editability. This is partial historical proof of content placement; the current recipe and new-user setup remain unverified.",
+        "review": {
+         "identity": {
+          "state": "pass",
+          "notes": "One linked guide collection and its directory are one source job. Repeated acknowledgments and individual pages are not separate deliveries."
+         },
+         "output": {
+          "state": "pass",
+          "notes": "All six pages returned HTTP 200. The directory body links to five guides; each guide links to shopping and selling pages. The five guide bodies lack an upward directory link. This checks published link placement only, not all facts, all destinations or the current recipe."
+         },
+         "acceptance": {
+          "state": "pass",
+          "notes": "The client confirmed the live dropdown menus, clickable directory and editable text/links for this exact delivery. Acceptance is limited to those features, not every current recipe criterion. Editability is client-confirmed, not independently exercised by this checker."
+         },
+         "handoff": {
+          "state": "pass",
+          "notes": "The delivery reached the existing project conversation. The client acknowledged it and the delivery owner described the next guide batch and preview process. Completion of that future batch is not claimed."
+         }
+        },
+        "evidenceUrls": [],
+        "privateEvidenceRecorded": true
+       }
+      ]
      },
      "standardVerification": {
       "instructionSourceSha256": "953166073f0d98c82a3788534cdfed2a990f00436461f3bc6c0c61616b0c26e2",
@@ -27682,7 +27769,7 @@
         "id": "articleSemanticCertification",
         "label": "Article semantic certification",
         "state": "unknown",
-        "reason": "Current article semantic criteria are unknown: owner, sourceEvidence, visualAndLayout, publicationStandards, acceptanceResults.",
+        "reason": "The article revision observation is outside the 24-hour freshness window.",
         "semanticReview": {
          "version": 1,
          "taskSlug": "step-6-measure-and-iterate-with-maa",
@@ -27821,7 +27908,7 @@
       "queuePosition": 253,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
-      "nextAction": "Current article semantic criteria are unknown: owner, sourceEvidence, visualAndLayout, publicationStandards, acceptanceResults."
+      "nextAction": "The article revision observation is outside the 24-hour freshness window."
      }
     },
     {

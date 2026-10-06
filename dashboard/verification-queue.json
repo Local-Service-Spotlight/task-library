@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "ordering": "Setup failures and evidence holds first. Within each priority lane, sort by estimated revenue role, dependencies unblocked, frequency and importance before missing-guide status and gap count. Effort and actual income remain unknown.",
-  "generatedAt": "2026-10-06T03:43:19+00:00",
+  "generatedAt": "2026-10-06T16:09:10+00:00",
   "definition": "Per-task standard gates derived from exact instruction reviews, explicit instruction-requirement checks, contributor status, article mapping/catalog holds, exact-revision article semantic reviews, task-attributed examples and the execution ledger. Unknown proof is never turned into a pass.",
   "stats": {
     "tasks": 276,
@@ -8232,8 +8232,10 @@
       "status": "complete",
       "articleUrl": "https://blitzmetrics.com/seo-tree",
       "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=place-content-on-seo-tree-with-proper-links#task-place-content-on-seo-tree-with-proper-links",
-      "historicalDeliveryCount": 0,
-      "historicalEvidenceIds": [],
+      "historicalDeliveryCount": 1,
+      "historicalEvidenceIds": [
+        "historical-a0e5c5670e6d4ce3ef327036"
+      ],
       "nextAction": "At least one task mapped to this hub is not contributor-complete.",
       "standardVerification": {
         "instructionSourceSha256": "953166073f0d98c82a3788534cdfed2a990f00436461f3bc6c0c61616b0c26e2",
@@ -29921,7 +29923,7 @@
       "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=step-6-measure-and-iterate-with-maa#task-step-6-measure-and-iterate-with-maa",
       "historicalDeliveryCount": 0,
       "historicalEvidenceIds": [],
-      "nextAction": "Current article semantic criteria are unknown: owner, sourceEvidence, visualAndLayout, publicationStandards, acceptanceResults.",
+      "nextAction": "The article revision observation is outside the 24-hour freshness window.",
       "standardVerification": {
         "instructionSourceSha256": "b3f48be68cafa5706a4099ea0e33a8f8848ed7e14cc8cc4b9367268bd569dfea",
         "articleKey": "blitzmetrics.com/internal-linking",
@@ -29998,7 +30000,7 @@
             "id": "articleSemanticCertification",
             "label": "Article semantic certification",
             "state": "unknown",
-            "reason": "Current article semantic criteria are unknown: owner, sourceEvidence, visualAndLayout, publicationStandards, acceptanceResults.",
+            "reason": "The article revision observation is outside the 24-hour freshness window.",
             "semanticReview": {
               "version": 1,
               "taskSlug": "step-6-measure-and-iterate-with-maa",
@@ -30137,7 +30139,7 @@
         "queuePosition": 253,
         "priority": "P3",
         "priorityReason": "Missing proof remains",
-        "nextAction": "Current article semantic criteria are unknown: owner, sourceEvidence, visualAndLayout, publicationStandards, acceptanceResults."
+        "nextAction": "The article revision observation is outside the 24-hour freshness window."
       }
     },
     {
