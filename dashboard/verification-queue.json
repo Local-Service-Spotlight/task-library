@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "ordering": "Setup failures and evidence holds first. Within each priority lane, sort by estimated revenue role, dependencies unblocked, frequency and importance before missing-guide status and gap count. Effort and actual income remain unknown.",
-  "generatedAt": "2026-10-06T00:36:30+00:00",
+  "generatedAt": "2026-10-06T02:09:20+00:00",
   "definition": "Per-task standard gates derived from exact instruction reviews, explicit instruction-requirement checks, contributor status, article mapping/catalog holds, exact-revision article semantic reviews, task-attributed examples and the execution ledger. Unknown proof is never turned into a pass.",
   "stats": {
     "tasks": 276,
@@ -26852,12 +26852,12 @@
               "canonicalURL": "https://blitzmetrics.com/skill-publishing-standard/",
               "sourceSha256": "660d6f1abd8678c851c0a08059f27982e8e29b46775ea217a2ae1d6e3ba55537",
               "representation": "wordpress-content-html",
-              "observedAt": "2026-10-06T00:18:28.770022Z",
+              "observedAt": "2026-10-06T02:09:18.996036Z",
               "observer": "Codex separate post-acceptance authenticated source read",
               "state": "observed",
-              "reason": "Publishing recipe still matches the authority release accepted after its public deployment. New startup repair is a separate run.",
+              "reason": "Exact publishing recipe remains unchanged after independent acceptance of the shared startup repair.",
               "evidenceRefs": [
-                "sha256:0c848d4a94f769fce01473d5bc00c98b0d9f89895348137983020825f00acaf2"
+                "sha256:d37b0b58c3d05c51b5d2fc414f21b43d960cc2d9d1277196cbc4ad0e47454139"
               ]
             }
           },
@@ -26899,62 +26899,68 @@
             "reason": "All named measurable acceptance criteria pass for the separately observed current recipe revision.",
             "acceptanceReview": {
               "version": 1,
-              "reviewId": "authority-guides-repair-20261005-independent-acceptance",
+              "reviewId": "first-use-rcf-20261005-2343-independent-acceptance",
               "taskSlug": "publish-skill-and-task-page",
               "canonicalURL": "https://blitzmetrics.com/skill-publishing-standard/",
               "recipeSourceSha256": "660d6f1abd8678c851c0a08059f27982e8e29b46775ea217a2ae1d6e3ba55537",
               "representation": "wordpress-content-html",
               "instructionSourceSha256": "609039d529572a9d02b5e2b5847469d5fe7e6138a55c1ebd3c70a716c3a1093a",
-              "reviewedAt": "2026-10-05T23:58:49Z",
+              "reviewedAt": "2026-10-06T02:07:43Z",
               "reviewer": "Codex independent audit subagent",
-              "nextHandoff": "Task Library maintenance function: use the released verification queue and current written guidance to select the next actionable task batch; keep real execution, first-use setup, and business outcomes separate until their own evidence exists.",
+              "nextHandoff": "Task Library maintenance function: use the published verification queue to choose the next actionable batch; keep novice setup, real client execution, and business outcomes in their own evidence gates.",
               "criteria": {
                 "result": {
                   "state": "pass",
-                  "expectedResult": "Three named guide pages and their two associated canonical article revisions are published with exact maintained guide bytes and readable public article bodies.",
-                  "observedResult": "The immutable bd032 release snapshot records exact parity for all three guides. Public review receipts record HTTP 200 and full rendered text for both canonical articles; the seven-archive receipt records the expected copies. This accepts written/publication delivery only; it does not certify task execution, novice setup, client outcomes, or revenue.",
+                  "expectedResult": "The first-use update is released to the public task library, with web startup guidance and downloadable ZIP startup files carrying the aligned fields and safe run-record instruction.",
+                  "observedResult": "The successful PR70 deployment and public source-parity receipt identify merge 2b531ee895a18fe17f5aff5f35e06e9be41201a4. The public web startup receipt passes desktop and mobile prompt-field checks. I fetched all seven public ZIP archives over HTTPS (HTTP 200) and inspected their START-HERE.md files; each contains the save destination, approved actions, prior-run attachment prompt, and retain-one-execution-ID instruction. This accepts the publishing and written startup update only; it does not establish novice setup, client work, or business results.",
                   "sourceUrl": "https://blitzmetrics.com/skill-publishing-standard/",
                   "sourcePrivateEvidenceRecorded": false,
                   "evidenceUrls": [
-                    "https://github.com/Local-Service-Spotlight/task-library/pull/68",
-                    "https://github.com/Local-Service-Spotlight/task-library/actions/runs/37379330811"
+                    "https://github.com/Local-Service-Spotlight/task-library/pull/70",
+                    "https://github.com/Local-Service-Spotlight/task-library/actions/runs/37396308410"
                   ],
                   "privateEvidenceRecorded": true
                 },
                 "handoff": {
                   "state": "pass",
-                  "expectedResult": "The released maintenance material is reachable by the Task Library maintenance function, with its verification queue available as the next-work record.",
-                  "observedResult": "The public Task Library release includes a 276-task verification queue. The captured public queue lists 0 fully verified tasks and preserves gate-level unknowns; this is an actionable maintenance handoff, not a claim that a human received or acted on it.",
+                  "expectedResult": "The public Task Library maintenance queue remains reachable as the receiving record for the next maintenance task.",
+                  "observedResult": "The deployed catalog and generated queue preserve 276 task records and gate-level status. This makes the release available to the Task Library maintenance function; no individual human receipt or subsequent action is claimed.",
                   "sourceUrl": "https://blitzmetrics.com/skill-publishing-standard/",
                   "sourcePrivateEvidenceRecorded": false,
                   "evidenceUrls": [
                     "https://local-service-spotlight.github.io/task-library/",
-                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/library-rca-2026-10-05.md"
                   ],
                   "privateEvidenceRecorded": true
                 },
-                "publicGuideCopiesAndArchives": {
+                "publicFirstOpen": {
                   "state": "pass",
-                  "expectedResult": "All three in-scope guide pages match the immutable source release and the seven archived copies pass parity checks.",
-                  "observedResult": "The public release receipt records exact source parity for the three target guides; the archive parity receipt records all seven copies matching. Current later RCF working-tree edits are outside this accepted release.",
-                  "sourceUrl": "https://blitzmetrics.com/skill-publishing-standard/",
-                  "sourcePrivateEvidenceRecorded": false,
-                  "evidenceUrls": [
-                    "https://github.com/Local-Service-Spotlight/task-library/pull/68"
-                  ],
-                  "privateEvidenceRecorded": true
-                },
-                "publicGuideViews": {
-                  "state": "pass",
-                  "expectedResult": "The three published guide surfaces render on desktop and mobile, with the guide content and copy control visible and no reported queue overflow.",
-                  "observedResult": "The live render receipt records the three guides on phone and desktop, visible copy controls, and queue overflow false. It explicitly labels the check live and not novice setup; no media played.",
-                  "sourceUrl": "https://blitzmetrics.com/skill-publishing-standard/",
+                  "expectedResult": "The public publisher guide opens on phone and desktop with its copy control visible before interaction; selecting it gives visible confirmation without an overflow issue.",
+                  "observedResult": "The anonymous agent rehearsal receipt records the expected publisher guide, in-viewport copy controls and a copied-item toast on phone and desktop. Clipboard contents were not read back, and the receipt explicitly does not represent unassisted novice setup.",
+                  "sourceUrl": "https://blitzmetrics.com/task-library-dashboard/",
                   "sourcePrivateEvidenceRecorded": false,
                   "evidenceUrls": [],
                   "privateEvidenceRecorded": true
+                },
+                "archiveAvailability": {
+                  "state": "pass",
+                  "expectedResult": "The seven declared public ZIP downloads are available and contain the aligned startup instructions.",
+                  "observedResult": "Each of the seven public ZIP URLs returned HTTP 200. I opened each archive in memory and found one START-HERE.md containing the required save destination, action approvals, existing-run attachment, and same-run execution-ID guidance. This verifies written archive content, not a skill installation or app setup.",
+                  "sourceUrl": "https://blitzmetrics.com/skill-publishing-standard/",
+                  "sourcePrivateEvidenceRecorded": false,
+                  "evidenceUrls": [
+                    "https://local-service-spotlight.github.io/task-library/TaskLibrary-Skills-all.zip",
+                    "https://local-service-spotlight.github.io/task-library/TaskLibrary-Skills-ready.zip",
+                    "https://local-service-spotlight.github.io/task-library/packs/wichita-google-ads.zip",
+                    "https://local-service-spotlight.github.io/task-library/packs/dealcon.zip",
+                    "https://local-service-spotlight.github.io/task-library/packs/website-qa.zip",
+                    "https://local-service-spotlight.github.io/task-library/packs/digital-plumbing.zip",
+                    "https://local-service-spotlight.github.io/task-library/packs/dollar-a-day.zip"
+                  ],
+                  "privateEvidenceRecorded": true
                 }
               },
-              "executionId": "authority-guides-repair-20261005-2100"
+              "executionId": "first-use-rcf-20261005-2343"
             },
             "revisionObservation": {
               "version": 1,
@@ -26962,12 +26968,12 @@
               "canonicalURL": "https://blitzmetrics.com/skill-publishing-standard/",
               "sourceSha256": "660d6f1abd8678c851c0a08059f27982e8e29b46775ea217a2ae1d6e3ba55537",
               "representation": "wordpress-content-html",
-              "observedAt": "2026-10-06T00:18:28.770022Z",
+              "observedAt": "2026-10-06T02:09:18.996036Z",
               "observer": "Codex separate post-acceptance authenticated source read",
               "state": "observed",
-              "reason": "Publishing recipe still matches the authority release accepted after its public deployment. New startup repair is a separate run.",
+              "reason": "Exact publishing recipe remains unchanged after independent acceptance of the shared startup repair.",
               "evidenceRefs": [
-                "sha256:0c848d4a94f769fce01473d5bc00c98b0d9f89895348137983020825f00acaf2"
+                "sha256:d37b0b58c3d05c51b5d2fc414f21b43d960cc2d9d1277196cbc4ad0e47454139"
               ]
             }
           },

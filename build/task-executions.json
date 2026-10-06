@@ -1412,19 +1412,94 @@
       },
       "startedAt": "2026-10-05T23:43:01Z",
       "recordedAt": "2026-10-05T23:45:19.414908+00:00",
-      "updatedAt": "2026-10-05T23:53:20.491433+00:00",
-      "status": "running",
-      "result": "RCA repaired web/ZIP starter-field drift and misleading catalog-neighbor labels. Maintenance now permits useful independent work during release holds. Local source tests and phone/desktop preview checks passed; public runtime release remains pending. No business-task run or novice setup inferred.",
+      "updatedAt": "2026-10-06T02:09:17.455402+00:00",
+      "status": "completed",
+      "result": "Published aligned web/ZIP starter inputs and clear catalog browsing labels. PR70 deployment succeeded; exact app source and all non-timestamp generated fields match, all seven public archives pass, phone/desktop standalone and embedded controls pass. Maintenance instructions and public RCA connect future work to existing business evidence. No novice setup, client execution or revenue result claimed.",
       "evidence": [
         {
           "visibility": "public",
           "url": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/library-rca-2026-10-05.md"
+        },
+        {
+          "visibility": "public",
+          "url": "https://github.com/Local-Service-Spotlight/task-library/pull/70"
+        },
+        {
+          "visibility": "public",
+          "url": "https://github.com/Local-Service-Spotlight/task-library/actions/runs/37396308410"
         }
       ],
       "metaArticle": {
         "status": "published",
         "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#first-use-rcf-20261005-2343"
-      }
+      },
+      "finishedAt": "2026-10-06T02:06:05.871154+00:00",
+      "acceptanceReviews": [
+        {
+          "version": 1,
+          "reviewId": "first-use-rcf-20261005-2343-independent-acceptance",
+          "taskSlug": "publish-skill-and-task-page",
+          "canonicalURL": "https://blitzmetrics.com/skill-publishing-standard/",
+          "recipeSourceSha256": "660d6f1abd8678c851c0a08059f27982e8e29b46775ea217a2ae1d6e3ba55537",
+          "representation": "wordpress-content-html",
+          "instructionSourceSha256": "609039d529572a9d02b5e2b5847469d5fe7e6138a55c1ebd3c70a716c3a1093a",
+          "reviewedAt": "2026-10-06T02:07:43Z",
+          "reviewer": "Codex independent audit subagent",
+          "executor": "codex-root-coordinator",
+          "criteria": {
+            "result": {
+              "state": "pass",
+              "expectedResult": "The first-use update is released to the public task library, with web startup guidance and downloadable ZIP startup files carrying the aligned fields and safe run-record instruction.",
+              "observedResult": "The successful PR70 deployment and public source-parity receipt identify merge 2b531ee895a18fe17f5aff5f35e06e9be41201a4. The public web startup receipt passes desktop and mobile prompt-field checks. I fetched all seven public ZIP archives over HTTPS (HTTP 200) and inspected their START-HERE.md files; each contains the save destination, approved actions, prior-run attachment prompt, and retain-one-execution-ID instruction. This accepts the publishing and written startup update only; it does not establish novice setup, client work, or business results.",
+              "sourceRef": "https://blitzmetrics.com/skill-publishing-standard/",
+              "evidenceRefs": [
+                "https://github.com/Local-Service-Spotlight/task-library/pull/70",
+                "https://github.com/Local-Service-Spotlight/task-library/actions/runs/37396308410",
+                "sha256:6054c9c38dd0de06b434782a6c0d39459c8f9e04b400537bf464be2a64172ccc",
+                "sha256:3f28c10eaabb35dc740a391921d64c637aa9d92629e7a80de36354e939c724d3"
+              ]
+            },
+            "handoff": {
+              "state": "pass",
+              "expectedResult": "The public Task Library maintenance queue remains reachable as the receiving record for the next maintenance task.",
+              "observedResult": "The deployed catalog and generated queue preserve 276 task records and gate-level status. This makes the release available to the Task Library maintenance function; no individual human receipt or subsequent action is claimed.",
+              "sourceRef": "https://blitzmetrics.com/skill-publishing-standard/",
+              "evidenceRefs": [
+                "https://local-service-spotlight.github.io/task-library/",
+                "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/library-rca-2026-10-05.md",
+                "sha256:6054c9c38dd0de06b434782a6c0d39459c8f9e04b400537bf464be2a64172ccc"
+              ]
+            },
+            "publicFirstOpen": {
+              "state": "pass",
+              "expectedResult": "The public publisher guide opens on phone and desktop with its copy control visible before interaction; selecting it gives visible confirmation without an overflow issue.",
+              "observedResult": "The anonymous agent rehearsal receipt records the expected publisher guide, in-viewport copy controls and a copied-item toast on phone and desktop. Clipboard contents were not read back, and the receipt explicitly does not represent unassisted novice setup.",
+              "sourceRef": "https://blitzmetrics.com/task-library-dashboard/",
+              "evidenceRefs": [
+                "sha256:e03cedf43ab174c374619e3724d4e5fc65e78497a06535ddcc4c7537a4cd914a",
+                "sha256:3f28c10eaabb35dc740a391921d64c637aa9d92629e7a80de36354e939c724d3"
+              ]
+            },
+            "archiveAvailability": {
+              "state": "pass",
+              "expectedResult": "The seven declared public ZIP downloads are available and contain the aligned startup instructions.",
+              "observedResult": "Each of the seven public ZIP URLs returned HTTP 200. I opened each archive in memory and found one START-HERE.md containing the required save destination, action approvals, existing-run attachment, and same-run execution-ID guidance. This verifies written archive content, not a skill installation or app setup.",
+              "sourceRef": "https://blitzmetrics.com/skill-publishing-standard/",
+              "evidenceRefs": [
+                "sha256:d5c825e23aeb528fa65f20bed9eec644dc21690ece65e507046f2307b55331bb",
+                "https://local-service-spotlight.github.io/task-library/TaskLibrary-Skills-all.zip",
+                "https://local-service-spotlight.github.io/task-library/TaskLibrary-Skills-ready.zip",
+                "https://local-service-spotlight.github.io/task-library/packs/wichita-google-ads.zip",
+                "https://local-service-spotlight.github.io/task-library/packs/dealcon.zip",
+                "https://local-service-spotlight.github.io/task-library/packs/website-qa.zip",
+                "https://local-service-spotlight.github.io/task-library/packs/digital-plumbing.zip",
+                "https://local-service-spotlight.github.io/task-library/packs/dollar-a-day.zip"
+              ]
+            }
+          },
+          "nextHandoff": "Task Library maintenance function: use the published verification queue to choose the next actionable batch; keep novice setup, real client execution, and business outcomes in their own evidence gates."
+        }
+      ]
     }
   ]
 }
