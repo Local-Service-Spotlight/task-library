@@ -242,14 +242,21 @@ class StandardVerificationTests(unittest.TestCase):
         self.assertEqual(counts['taskExampleEvidence']['pass'], len(exact_examples))
         self.assertEqual(counts['recordedExecution']['pass'],
                          sum(bool(task['executionHistory']['executionIds']) for task in tasks))
-        # The newer partial publisher attempt must not inherit the older acceptance.
-        self.assertEqual(counts['acceptedExecution']['pass'], 0)
-        self.assertEqual(counts['acceptedExecution']['unknown'], len(tasks) - 1)
-        self.assertEqual(counts['acceptedExecution']['unmet'], 1)
-        publisher = next(task for task in tasks
-                         if task['slug'] == 'publish-skill-and-task-page')
-        self.assertEqual(publisher['standardVerification']['gates']
-                         ['acceptedExecution']['state'], 'unmet')
+        # Compare the projection with current source evidence. Real accepted work
+        # may change the count; the behavioral tests below guard false promotion.
+        source_records = json.loads((HERE.parent / 'build' / 'task-executions.json').read_text())['executions']
+        source_tasks = [{'slug': row['slug'], 'article': row.get('article'),
+                         '_sourceSha256': row['standardVerification']['instructionSourceSha256']}
+                        for row in tasks]
+        as_of = datetime.fromisoformat(payload['generatedAt'].replace('Z', '+00:00'))
+        executions.attach(source_tasks, source_records, as_of)
+        evidence = task_build.load_article_semantic_evidence()
+        expected_states = [verification.acceptance_result(row, row['executionHistory'], evidence, as_of)['state']
+                           for row in source_tasks]
+        for state in ('pass', 'unknown', 'unmet', 'hold'):
+            self.assertEqual(counts['acceptedExecution'][state], expected_states.count(state))
+        self.assertEqual([row['standardVerification']['gates']['acceptedExecution']['state'] for row in tasks],
+                         expected_states)
         self.assertEqual(counts['setupSuccess']['unknown'], len(tasks))
 
     def test_normal_dashboard_and_static_index_link_to_queue(self):

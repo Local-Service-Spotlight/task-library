@@ -421,10 +421,10 @@ function rowHTML(t){
   if (t.before || t.after || t.phase){
     chain = '<p class="btl-chain">' +
       (t.phase ? '<b>' + esc(t.phase) + '</b> · ' : '') +
-      (t.before ? 'suggested previous station <button type="button" data-goto="' + esc(t.before) + '">' + esc(t.before) + '</button>' : '') +
+      (t.before ? 'Browse earlier task <button type="button" data-goto="' + esc(t.before) + '">' + esc(t.before) + '</button>' : '') +
       (t.before && t.after ? ' → ' : '') +
-      (t.after ? 'suggested next station <button type="button" data-goto="' + esc(t.after) + '">' + esc(t.after) + '</button>' : '') +
-      '</p>';
+      (t.after ? 'Browse later task <button type="button" data-goto="' + esc(t.after) + '">' + esc(t.after) + '</button>' : '') +
+      '<br>These are nearby tasks in the library. Use the guide’s Inputs and Handoff sections to choose what comes before and after your work.</p>';
   }
   return '<article class="btl-row" id="task-' + esc(t.slug) + '" data-id="' + t._id + '" data-slug="' + esc(t.slug) + '">' +
     '<span class="btl-dot dot-' + esc(t.status) + '" aria-hidden="true"></span>' +
@@ -657,9 +657,13 @@ function starterPrompt(t){
   return 'Help me with this task: ' + (t.title || t.slug || 'selected task') + '.\n' +
     'My business and the result I want: [fill in].\n' +
     'My source files or facts: [add links or attach files].\n' +
+    'For article work, include the current title, full body, intended readers, and goal.\n' +
+    'Save the result here: [fill in].\n' +
+    'Actions already approved: [fill in].\n' +
+    'Work already started? Attach its saved record, or say “new job.”\n' +
     'Read the guide below. Explain the value and first step in plain words. Check the starting condition, inputs, and required account access. Name any exact missing item. If the guide is missing or unclear, say what needs fixing.\n' +
     'Use the task-specific first-run prompt when provided. Start with one draft or read-only check. Confirm the scope before a step that publishes, sends, spends, changes access, or sets a schedule. Do the work already covered by my instructions.\n' +
-    'Check the output against the guide. Save the result, evidence, missing checks, and next owner or task. Write one meta article for this real run with its execution ID and link to the recipe. Do not call a draft, download, or teaching example a completed production result. Schedule repeated work only when I ask for it, and verify its first firing.\n\n' +
+    'Check the output against the guide. Save the result, evidence, missing checks, and next owner or task in the stated location. Retain the same execution ID when continuing an unfinished run or retrying it. Write one meta article for this real run with its execution ID and link to the recipe. Do not call a draft, download, or teaching example a completed production result. Schedule repeated work only when I ask for it, and verify its first firing.\n\n' +
     'Task: ' + (t.taskLibraryUrl || 'https://local-service-spotlight.github.io/task-library/?task=' + encodeURIComponent(t.slug || '') + '#task-' + encodeURIComponent(t.slug || '')) + '\n\nGUIDE\n' +
     (t.content || 'Guide missing: ask for the maintained instructions before doing this task.');
 }

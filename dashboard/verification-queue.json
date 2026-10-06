@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "ordering": "Setup failures and evidence holds first. Within each priority lane, sort by estimated revenue role, dependencies unblocked, frequency and importance before missing-guide status and gap count. Effort and actual income remain unknown.",
-  "generatedAt": "2026-10-05T21:47:32+00:00",
+  "generatedAt": "2026-10-06T00:36:30+00:00",
   "definition": "Per-task standard gates derived from exact instruction reviews, explicit instruction-requirement checks, contributor status, article mapping/catalog holds, exact-revision article semantic reviews, task-attributed examples and the execution ledger. Unknown proof is never turned into a pass.",
   "stats": {
     "tasks": 276,
@@ -60,8 +60,8 @@
         "unknown": 274
       },
       "acceptedExecution": {
-        "pass": 0,
-        "unmet": 1,
+        "pass": 1,
+        "unmet": 0,
         "hold": 0,
         "unknown": 275
       },
@@ -25205,6 +25205,1466 @@
       "queuePosition": 220,
       "priority": "P1",
       "priorityReason": "Known standard gap",
+      "slug": "reply-with-task-status-in-origin-thread",
+      "title": "Reply with task status in the original thread",
+      "category": "Knowledge System Maintenance",
+      "importance": 2,
+      "revenueEstimate": 1,
+      "dependencyEstimate": 2,
+      "frequencyEstimate": 2,
+      "valueBasis": "Editorial estimate from build/factory.py; not measured income, demand or use.",
+      "effortEstimate": null,
+      "status": "needs-work",
+      "articleUrl": "https://blitzmetrics.com/always-reply/",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=reply-with-task-status-in-origin-thread#task-reply-with-task-status-in-origin-thread",
+      "nextAction": "The contributor status is needs-work; finish and review the guide.",
+      "standardVerification": {
+        "instructionSourceSha256": "4b323d279c8a21abf4cfd6f9f3c8fdc9379d7d972049acc106b74807220edd71",
+        "articleKey": "blitzmetrics.com/always-reply",
+        "gates": {
+          "instructionRevisionReviewed": {
+            "id": "instructionRevisionReviewed",
+            "label": "Exact instruction revision reviewed",
+            "state": "pass",
+            "reason": "Current source bytes match the review recorded 2026-09-06. Review scope and limits: Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate.",
+            "reviewedAt": "2026-09-06",
+            "reviewer": "Codex editorial review",
+            "sourceSha256": "4b323d279c8a21abf4cfd6f9f3c8fdc9379d7d972049acc106b74807220edd71"
+          },
+          "instructionStandards": {
+            "id": "instructionStandards",
+            "label": "Instruction requirements checked",
+            "state": "unknown",
+            "reason": "The current exact-byte review has no structured instruction-requirements checklist.",
+            "sourceSha256": "4b323d279c8a21abf4cfd6f9f3c8fdc9379d7d972049acc106b74807220edd71"
+          },
+          "contributorComplete": {
+            "id": "contributorComplete",
+            "label": "Contributor reports guide complete",
+            "state": "unmet",
+            "reason": "The contributor status is needs-work; finish and review the guide."
+          },
+          "articleMapped": {
+            "id": "articleMapped",
+            "label": "Canonical article mapped",
+            "state": "pass",
+            "reason": "The task maps to a normalized canonical article URL.",
+            "articleUrl": "https://blitzmetrics.com/always-reply/"
+          },
+          "articleCatalogGate": {
+            "id": "articleCatalogGate",
+            "label": "Article catalog gate",
+            "state": "unmet",
+            "reason": "At least one task mapped to this hub is not contributor-complete."
+          },
+          "articleSemanticCertification": {
+            "id": "articleSemanticCertification",
+            "label": "Article semantic certification",
+            "state": "unknown",
+            "reason": "No exact-revision positive semantic review is recorded for this article."
+          },
+          "taskExampleEvidence": {
+            "id": "taskExampleEvidence",
+            "label": "Task-attributed example evidence",
+            "state": "unknown",
+            "reason": "No source-backed example audit exists for the mapped hub."
+          },
+          "recordedExecution": {
+            "id": "recordedExecution",
+            "label": "Recorded real execution",
+            "state": "unknown",
+            "reason": "No execution ledger record names this task. Historical run frequency is unknown."
+          },
+          "acceptedExecution": {
+            "id": "acceptedExecution",
+            "label": "Accepted execution result",
+            "state": "unknown",
+            "reason": "No structured acceptance review is recorded for the current canonical article revision. A completed run label is not acceptance."
+          },
+          "setupSuccess": {
+            "id": "setupSuccess",
+            "label": "New-user setup success",
+            "state": "unknown",
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
+          }
+        },
+        "unmetStandardGates": [
+          "contributorComplete",
+          "articleCatalogGate"
+        ],
+        "heldStandardGates": [],
+        "unknownStandardGates": [
+          "instructionStandards",
+          "articleSemanticCertification",
+          "taskExampleEvidence",
+          "recordedExecution",
+          "acceptedExecution",
+          "setupSuccess"
+        ],
+        "fullyVerified": false,
+        "queuePosition": 220,
+        "priority": "P1",
+        "priorityReason": "Known standard gap",
+        "nextAction": "The contributor status is needs-work; finish and review the guide."
+      }
+    },
+    {
+      "queuePosition": 221,
+      "priority": "P1",
+      "priorityReason": "Known standard gap",
+      "slug": "review-existing-sops-for-portability-compliance",
+      "title": "Review existing task guides for portability compliance",
+      "category": "Knowledge System Maintenance",
+      "importance": 2,
+      "revenueEstimate": 1,
+      "dependencyEstimate": 2,
+      "frequencyEstimate": 2,
+      "valueBasis": "Editorial estimate from build/factory.py; not measured income, demand or use.",
+      "effortEstimate": null,
+      "status": "needs-work",
+      "articleUrl": "https://blitzmetrics.com/knowledge-system-maintenance",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=review-existing-sops-for-portability-compliance#task-review-existing-sops-for-portability-compliance",
+      "nextAction": "The contributor status is needs-work; finish and review the guide.",
+      "standardVerification": {
+        "instructionSourceSha256": "0c01d314378460d1c76ef87d50438ab543aee70dfe5f0b7ede6528c148f592d5",
+        "articleKey": "blitzmetrics.com/knowledge-system-maintenance",
+        "gates": {
+          "instructionRevisionReviewed": {
+            "id": "instructionRevisionReviewed",
+            "label": "Exact instruction revision reviewed",
+            "state": "pass",
+            "reason": "Current source bytes match the review recorded 2026-09-06. Review scope and limits: Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate.",
+            "reviewedAt": "2026-09-06",
+            "reviewer": "Codex editorial review",
+            "sourceSha256": "0c01d314378460d1c76ef87d50438ab543aee70dfe5f0b7ede6528c148f592d5"
+          },
+          "instructionStandards": {
+            "id": "instructionStandards",
+            "label": "Instruction requirements checked",
+            "state": "unknown",
+            "reason": "The current exact-byte review has no structured instruction-requirements checklist.",
+            "sourceSha256": "0c01d314378460d1c76ef87d50438ab543aee70dfe5f0b7ede6528c148f592d5"
+          },
+          "contributorComplete": {
+            "id": "contributorComplete",
+            "label": "Contributor reports guide complete",
+            "state": "unmet",
+            "reason": "The contributor status is needs-work; finish and review the guide."
+          },
+          "articleMapped": {
+            "id": "articleMapped",
+            "label": "Canonical article mapped",
+            "state": "pass",
+            "reason": "The task maps to a normalized canonical article URL.",
+            "articleUrl": "https://blitzmetrics.com/knowledge-system-maintenance"
+          },
+          "articleCatalogGate": {
+            "id": "articleCatalogGate",
+            "label": "Article catalog gate",
+            "state": "unmet",
+            "reason": "At least one task mapped to this hub is not contributor-complete."
+          },
+          "articleSemanticCertification": {
+            "id": "articleSemanticCertification",
+            "label": "Article semantic certification",
+            "state": "unknown",
+            "reason": "No exact-revision positive semantic review is recorded for this article."
+          },
+          "taskExampleEvidence": {
+            "id": "taskExampleEvidence",
+            "label": "Task-attributed example evidence",
+            "state": "unknown",
+            "reason": "No source-backed example audit exists for the mapped hub."
+          },
+          "recordedExecution": {
+            "id": "recordedExecution",
+            "label": "Recorded real execution",
+            "state": "unknown",
+            "reason": "No execution ledger record names this task. Historical run frequency is unknown."
+          },
+          "acceptedExecution": {
+            "id": "acceptedExecution",
+            "label": "Accepted execution result",
+            "state": "unknown",
+            "reason": "No structured acceptance review is recorded for the current canonical article revision. A completed run label is not acceptance."
+          },
+          "setupSuccess": {
+            "id": "setupSuccess",
+            "label": "New-user setup success",
+            "state": "unknown",
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
+          }
+        },
+        "unmetStandardGates": [
+          "contributorComplete",
+          "articleCatalogGate"
+        ],
+        "heldStandardGates": [],
+        "unknownStandardGates": [
+          "instructionStandards",
+          "articleSemanticCertification",
+          "taskExampleEvidence",
+          "recordedExecution",
+          "acceptedExecution",
+          "setupSuccess"
+        ],
+        "fullyVerified": false,
+        "queuePosition": 221,
+        "priority": "P1",
+        "priorityReason": "Known standard gap",
+        "nextAction": "The contributor status is needs-work; finish and review the guide."
+      }
+    },
+    {
+      "queuePosition": 222,
+      "priority": "P1",
+      "priorityReason": "Known standard gap",
+      "slug": "review-past-6-months-of-sop-amendment-proposals-for-patterns",
+      "title": "Review past 6 months of task guide Amendment Proposals for patterns",
+      "category": "Knowledge System Maintenance",
+      "importance": 2,
+      "revenueEstimate": 1,
+      "dependencyEstimate": 2,
+      "frequencyEstimate": 2,
+      "valueBasis": "Editorial estimate from build/factory.py; not measured income, demand or use.",
+      "effortEstimate": null,
+      "status": "needs-work",
+      "articleUrl": "https://blitzmetrics.com/knowledge-system-maintenance",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=review-past-6-months-of-sop-amendment-proposals-for-patterns#task-review-past-6-months-of-sop-amendment-proposals-for-patterns",
+      "nextAction": "The contributor status is needs-work; finish and review the guide.",
+      "standardVerification": {
+        "instructionSourceSha256": "13648667021aaf4fb7c25ab744e58213c43faf29553c542f3ef05c274de6931c",
+        "articleKey": "blitzmetrics.com/knowledge-system-maintenance",
+        "gates": {
+          "instructionRevisionReviewed": {
+            "id": "instructionRevisionReviewed",
+            "label": "Exact instruction revision reviewed",
+            "state": "pass",
+            "reason": "Current source bytes match the review recorded 2026-09-06. Review scope and limits: Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate.",
+            "reviewedAt": "2026-09-06",
+            "reviewer": "Codex editorial review",
+            "sourceSha256": "13648667021aaf4fb7c25ab744e58213c43faf29553c542f3ef05c274de6931c"
+          },
+          "instructionStandards": {
+            "id": "instructionStandards",
+            "label": "Instruction requirements checked",
+            "state": "unknown",
+            "reason": "The current exact-byte review has no structured instruction-requirements checklist.",
+            "sourceSha256": "13648667021aaf4fb7c25ab744e58213c43faf29553c542f3ef05c274de6931c"
+          },
+          "contributorComplete": {
+            "id": "contributorComplete",
+            "label": "Contributor reports guide complete",
+            "state": "unmet",
+            "reason": "The contributor status is needs-work; finish and review the guide."
+          },
+          "articleMapped": {
+            "id": "articleMapped",
+            "label": "Canonical article mapped",
+            "state": "pass",
+            "reason": "The task maps to a normalized canonical article URL.",
+            "articleUrl": "https://blitzmetrics.com/knowledge-system-maintenance"
+          },
+          "articleCatalogGate": {
+            "id": "articleCatalogGate",
+            "label": "Article catalog gate",
+            "state": "unmet",
+            "reason": "At least one task mapped to this hub is not contributor-complete."
+          },
+          "articleSemanticCertification": {
+            "id": "articleSemanticCertification",
+            "label": "Article semantic certification",
+            "state": "unknown",
+            "reason": "No exact-revision positive semantic review is recorded for this article."
+          },
+          "taskExampleEvidence": {
+            "id": "taskExampleEvidence",
+            "label": "Task-attributed example evidence",
+            "state": "unknown",
+            "reason": "No source-backed example audit exists for the mapped hub."
+          },
+          "recordedExecution": {
+            "id": "recordedExecution",
+            "label": "Recorded real execution",
+            "state": "unknown",
+            "reason": "No execution ledger record names this task. Historical run frequency is unknown."
+          },
+          "acceptedExecution": {
+            "id": "acceptedExecution",
+            "label": "Accepted execution result",
+            "state": "unknown",
+            "reason": "No structured acceptance review is recorded for the current canonical article revision. A completed run label is not acceptance."
+          },
+          "setupSuccess": {
+            "id": "setupSuccess",
+            "label": "New-user setup success",
+            "state": "unknown",
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
+          }
+        },
+        "unmetStandardGates": [
+          "contributorComplete",
+          "articleCatalogGate"
+        ],
+        "heldStandardGates": [],
+        "unknownStandardGates": [
+          "instructionStandards",
+          "articleSemanticCertification",
+          "taskExampleEvidence",
+          "recordedExecution",
+          "acceptedExecution",
+          "setupSuccess"
+        ],
+        "fullyVerified": false,
+        "queuePosition": 222,
+        "priority": "P1",
+        "priorityReason": "Known standard gap",
+        "nextAction": "The contributor status is needs-work; finish and review the guide."
+      }
+    },
+    {
+      "queuePosition": 223,
+      "priority": "P1",
+      "priorityReason": "Known standard gap",
+      "slug": "route-notes-to-sop-update-protocol-or-directly-to-articles",
+      "title": "Route notes to task guide Update Protocol or directly to articles",
+      "category": "Knowledge System Maintenance",
+      "importance": 2,
+      "revenueEstimate": 1,
+      "dependencyEstimate": 2,
+      "frequencyEstimate": 2,
+      "valueBasis": "Editorial estimate from build/factory.py; not measured income, demand or use.",
+      "effortEstimate": null,
+      "status": "needs-work",
+      "articleUrl": "https://blitzmetrics.com/knowledge-system-maintenance",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=route-notes-to-sop-update-protocol-or-directly-to-articles#task-route-notes-to-sop-update-protocol-or-directly-to-articles",
+      "nextAction": "The contributor status is needs-work; finish and review the guide.",
+      "standardVerification": {
+        "instructionSourceSha256": "2005949a9498696756e12c439ef119f6aa2b90fe6fac8901fabf515b81370546",
+        "articleKey": "blitzmetrics.com/knowledge-system-maintenance",
+        "gates": {
+          "instructionRevisionReviewed": {
+            "id": "instructionRevisionReviewed",
+            "label": "Exact instruction revision reviewed",
+            "state": "pass",
+            "reason": "Current source bytes match the review recorded 2026-09-06. Review scope and limits: Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate.",
+            "reviewedAt": "2026-09-06",
+            "reviewer": "Codex editorial review",
+            "sourceSha256": "2005949a9498696756e12c439ef119f6aa2b90fe6fac8901fabf515b81370546"
+          },
+          "instructionStandards": {
+            "id": "instructionStandards",
+            "label": "Instruction requirements checked",
+            "state": "unknown",
+            "reason": "The current exact-byte review has no structured instruction-requirements checklist.",
+            "sourceSha256": "2005949a9498696756e12c439ef119f6aa2b90fe6fac8901fabf515b81370546"
+          },
+          "contributorComplete": {
+            "id": "contributorComplete",
+            "label": "Contributor reports guide complete",
+            "state": "unmet",
+            "reason": "The contributor status is needs-work; finish and review the guide."
+          },
+          "articleMapped": {
+            "id": "articleMapped",
+            "label": "Canonical article mapped",
+            "state": "pass",
+            "reason": "The task maps to a normalized canonical article URL.",
+            "articleUrl": "https://blitzmetrics.com/knowledge-system-maintenance"
+          },
+          "articleCatalogGate": {
+            "id": "articleCatalogGate",
+            "label": "Article catalog gate",
+            "state": "unmet",
+            "reason": "At least one task mapped to this hub is not contributor-complete."
+          },
+          "articleSemanticCertification": {
+            "id": "articleSemanticCertification",
+            "label": "Article semantic certification",
+            "state": "unknown",
+            "reason": "No exact-revision positive semantic review is recorded for this article."
+          },
+          "taskExampleEvidence": {
+            "id": "taskExampleEvidence",
+            "label": "Task-attributed example evidence",
+            "state": "unknown",
+            "reason": "No source-backed example audit exists for the mapped hub."
+          },
+          "recordedExecution": {
+            "id": "recordedExecution",
+            "label": "Recorded real execution",
+            "state": "unknown",
+            "reason": "No execution ledger record names this task. Historical run frequency is unknown."
+          },
+          "acceptedExecution": {
+            "id": "acceptedExecution",
+            "label": "Accepted execution result",
+            "state": "unknown",
+            "reason": "No structured acceptance review is recorded for the current canonical article revision. A completed run label is not acceptance."
+          },
+          "setupSuccess": {
+            "id": "setupSuccess",
+            "label": "New-user setup success",
+            "state": "unknown",
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
+          }
+        },
+        "unmetStandardGates": [
+          "contributorComplete",
+          "articleCatalogGate"
+        ],
+        "heldStandardGates": [],
+        "unknownStandardGates": [
+          "instructionStandards",
+          "articleSemanticCertification",
+          "taskExampleEvidence",
+          "recordedExecution",
+          "acceptedExecution",
+          "setupSuccess"
+        ],
+        "fullyVerified": false,
+        "queuePosition": 223,
+        "priority": "P1",
+        "priorityReason": "Known standard gap",
+        "nextAction": "The contributor status is needs-work; finish and review the guide."
+      }
+    },
+    {
+      "queuePosition": 224,
+      "priority": "P1",
+      "priorityReason": "Known standard gap",
+      "slug": "senior-team-member-reviews-weekly",
+      "title": "Senior team member reviews weekly",
+      "category": "Knowledge System Maintenance",
+      "importance": 2,
+      "revenueEstimate": 1,
+      "dependencyEstimate": 2,
+      "frequencyEstimate": 2,
+      "valueBasis": "Editorial estimate from build/factory.py; not measured income, demand or use.",
+      "effortEstimate": null,
+      "status": "needs-work",
+      "articleUrl": "https://blitzmetrics.com/knowledge-system-maintenance",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=senior-team-member-reviews-weekly#task-senior-team-member-reviews-weekly",
+      "nextAction": "The contributor status is needs-work; finish and review the guide.",
+      "standardVerification": {
+        "instructionSourceSha256": "4f91861cc0b84e6e105860ba3057e2cb564aa31665a9f1d842345ab23703c226",
+        "articleKey": "blitzmetrics.com/knowledge-system-maintenance",
+        "gates": {
+          "instructionRevisionReviewed": {
+            "id": "instructionRevisionReviewed",
+            "label": "Exact instruction revision reviewed",
+            "state": "pass",
+            "reason": "Current source bytes match the review recorded 2026-09-06. Review scope and limits: Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate.",
+            "reviewedAt": "2026-09-06",
+            "reviewer": "Codex editorial review",
+            "sourceSha256": "4f91861cc0b84e6e105860ba3057e2cb564aa31665a9f1d842345ab23703c226"
+          },
+          "instructionStandards": {
+            "id": "instructionStandards",
+            "label": "Instruction requirements checked",
+            "state": "unknown",
+            "reason": "The current exact-byte review has no structured instruction-requirements checklist.",
+            "sourceSha256": "4f91861cc0b84e6e105860ba3057e2cb564aa31665a9f1d842345ab23703c226"
+          },
+          "contributorComplete": {
+            "id": "contributorComplete",
+            "label": "Contributor reports guide complete",
+            "state": "unmet",
+            "reason": "The contributor status is needs-work; finish and review the guide."
+          },
+          "articleMapped": {
+            "id": "articleMapped",
+            "label": "Canonical article mapped",
+            "state": "pass",
+            "reason": "The task maps to a normalized canonical article URL.",
+            "articleUrl": "https://blitzmetrics.com/knowledge-system-maintenance"
+          },
+          "articleCatalogGate": {
+            "id": "articleCatalogGate",
+            "label": "Article catalog gate",
+            "state": "unmet",
+            "reason": "At least one task mapped to this hub is not contributor-complete."
+          },
+          "articleSemanticCertification": {
+            "id": "articleSemanticCertification",
+            "label": "Article semantic certification",
+            "state": "unknown",
+            "reason": "No exact-revision positive semantic review is recorded for this article."
+          },
+          "taskExampleEvidence": {
+            "id": "taskExampleEvidence",
+            "label": "Task-attributed example evidence",
+            "state": "unknown",
+            "reason": "No source-backed example audit exists for the mapped hub."
+          },
+          "recordedExecution": {
+            "id": "recordedExecution",
+            "label": "Recorded real execution",
+            "state": "unknown",
+            "reason": "No execution ledger record names this task. Historical run frequency is unknown."
+          },
+          "acceptedExecution": {
+            "id": "acceptedExecution",
+            "label": "Accepted execution result",
+            "state": "unknown",
+            "reason": "No structured acceptance review is recorded for the current canonical article revision. A completed run label is not acceptance."
+          },
+          "setupSuccess": {
+            "id": "setupSuccess",
+            "label": "New-user setup success",
+            "state": "unknown",
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
+          }
+        },
+        "unmetStandardGates": [
+          "contributorComplete",
+          "articleCatalogGate"
+        ],
+        "heldStandardGates": [],
+        "unknownStandardGates": [
+          "instructionStandards",
+          "articleSemanticCertification",
+          "taskExampleEvidence",
+          "recordedExecution",
+          "acceptedExecution",
+          "setupSuccess"
+        ],
+        "fullyVerified": false,
+        "queuePosition": 224,
+        "priority": "P1",
+        "priorityReason": "Known standard gap",
+        "nextAction": "The contributor status is needs-work; finish and review the guide."
+      }
+    },
+    {
+      "queuePosition": 225,
+      "priority": "P1",
+      "priorityReason": "Known standard gap",
+      "slug": "separate-methodology-layer-what-why-from-implementation-layer-how",
+      "title": "Separate methodology layer (what/why) from implementation layer (how)",
+      "category": "Knowledge System Maintenance",
+      "importance": 2,
+      "revenueEstimate": 1,
+      "dependencyEstimate": 2,
+      "frequencyEstimate": 2,
+      "valueBasis": "Editorial estimate from build/factory.py; not measured income, demand or use.",
+      "effortEstimate": null,
+      "status": "needs-work",
+      "articleUrl": "https://blitzmetrics.com/knowledge-system-maintenance",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=separate-methodology-layer-what-why-from-implementation-layer-how#task-separate-methodology-layer-what-why-from-implementation-layer-how",
+      "nextAction": "The contributor status is needs-work; finish and review the guide.",
+      "standardVerification": {
+        "instructionSourceSha256": "7ea316bc5d2c6de1fce9148b32c7b07797ecd09ae6fd46a11f2165ca3765ff52",
+        "articleKey": "blitzmetrics.com/knowledge-system-maintenance",
+        "gates": {
+          "instructionRevisionReviewed": {
+            "id": "instructionRevisionReviewed",
+            "label": "Exact instruction revision reviewed",
+            "state": "pass",
+            "reason": "Current source bytes match the review recorded 2026-09-06. Review scope and limits: Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate.",
+            "reviewedAt": "2026-09-06",
+            "reviewer": "Codex editorial review",
+            "sourceSha256": "7ea316bc5d2c6de1fce9148b32c7b07797ecd09ae6fd46a11f2165ca3765ff52"
+          },
+          "instructionStandards": {
+            "id": "instructionStandards",
+            "label": "Instruction requirements checked",
+            "state": "unknown",
+            "reason": "The current exact-byte review has no structured instruction-requirements checklist.",
+            "sourceSha256": "7ea316bc5d2c6de1fce9148b32c7b07797ecd09ae6fd46a11f2165ca3765ff52"
+          },
+          "contributorComplete": {
+            "id": "contributorComplete",
+            "label": "Contributor reports guide complete",
+            "state": "unmet",
+            "reason": "The contributor status is needs-work; finish and review the guide."
+          },
+          "articleMapped": {
+            "id": "articleMapped",
+            "label": "Canonical article mapped",
+            "state": "pass",
+            "reason": "The task maps to a normalized canonical article URL.",
+            "articleUrl": "https://blitzmetrics.com/knowledge-system-maintenance"
+          },
+          "articleCatalogGate": {
+            "id": "articleCatalogGate",
+            "label": "Article catalog gate",
+            "state": "unmet",
+            "reason": "At least one task mapped to this hub is not contributor-complete."
+          },
+          "articleSemanticCertification": {
+            "id": "articleSemanticCertification",
+            "label": "Article semantic certification",
+            "state": "unknown",
+            "reason": "No exact-revision positive semantic review is recorded for this article."
+          },
+          "taskExampleEvidence": {
+            "id": "taskExampleEvidence",
+            "label": "Task-attributed example evidence",
+            "state": "unknown",
+            "reason": "No source-backed example audit exists for the mapped hub."
+          },
+          "recordedExecution": {
+            "id": "recordedExecution",
+            "label": "Recorded real execution",
+            "state": "unknown",
+            "reason": "No execution ledger record names this task. Historical run frequency is unknown."
+          },
+          "acceptedExecution": {
+            "id": "acceptedExecution",
+            "label": "Accepted execution result",
+            "state": "unknown",
+            "reason": "No structured acceptance review is recorded for the current canonical article revision. A completed run label is not acceptance."
+          },
+          "setupSuccess": {
+            "id": "setupSuccess",
+            "label": "New-user setup success",
+            "state": "unknown",
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
+          }
+        },
+        "unmetStandardGates": [
+          "contributorComplete",
+          "articleCatalogGate"
+        ],
+        "heldStandardGates": [],
+        "unknownStandardGates": [
+          "instructionStandards",
+          "articleSemanticCertification",
+          "taskExampleEvidence",
+          "recordedExecution",
+          "acceptedExecution",
+          "setupSuccess"
+        ],
+        "fullyVerified": false,
+        "queuePosition": 225,
+        "priority": "P1",
+        "priorityReason": "Known standard gap",
+        "nextAction": "The contributor status is needs-work; finish and review the guide."
+      }
+    },
+    {
+      "queuePosition": 226,
+      "priority": "P1",
+      "priorityReason": "Known standard gap",
+      "slug": "set-up-business-ai-work-environment",
+      "title": "Set up a business AI work environment",
+      "category": "Knowledge System Maintenance",
+      "importance": 2,
+      "revenueEstimate": 1,
+      "dependencyEstimate": 2,
+      "frequencyEstimate": 2,
+      "valueBasis": "Editorial estimate from build/factory.py; not measured income, demand or use.",
+      "effortEstimate": null,
+      "status": "needs-work",
+      "articleUrl": "https://blitzmetrics.com/start/",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=set-up-business-ai-work-environment#task-set-up-business-ai-work-environment",
+      "nextAction": "The contributor status is needs-work; finish and review the guide.",
+      "standardVerification": {
+        "instructionSourceSha256": "5929e07c12174f761f4b2c92e6f9319f292a2c5b69f87ce83d1d38baa531430e",
+        "articleKey": "blitzmetrics.com/start",
+        "gates": {
+          "instructionRevisionReviewed": {
+            "id": "instructionRevisionReviewed",
+            "label": "Exact instruction revision reviewed",
+            "state": "pass",
+            "reason": "Current source bytes match the review recorded 2026-09-06. Review scope and limits: Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate.",
+            "reviewedAt": "2026-09-06",
+            "reviewer": "Codex editorial review",
+            "sourceSha256": "5929e07c12174f761f4b2c92e6f9319f292a2c5b69f87ce83d1d38baa531430e"
+          },
+          "instructionStandards": {
+            "id": "instructionStandards",
+            "label": "Instruction requirements checked",
+            "state": "unknown",
+            "reason": "The current exact-byte review has no structured instruction-requirements checklist.",
+            "sourceSha256": "5929e07c12174f761f4b2c92e6f9319f292a2c5b69f87ce83d1d38baa531430e"
+          },
+          "contributorComplete": {
+            "id": "contributorComplete",
+            "label": "Contributor reports guide complete",
+            "state": "unmet",
+            "reason": "The contributor status is needs-work; finish and review the guide."
+          },
+          "articleMapped": {
+            "id": "articleMapped",
+            "label": "Canonical article mapped",
+            "state": "pass",
+            "reason": "The task maps to a normalized canonical article URL.",
+            "articleUrl": "https://blitzmetrics.com/start/"
+          },
+          "articleCatalogGate": {
+            "id": "articleCatalogGate",
+            "label": "Article catalog gate",
+            "state": "unmet",
+            "reason": "At least one task mapped to this hub is not contributor-complete."
+          },
+          "articleSemanticCertification": {
+            "id": "articleSemanticCertification",
+            "label": "Article semantic certification",
+            "state": "unknown",
+            "reason": "No exact-revision positive semantic review is recorded for this article."
+          },
+          "taskExampleEvidence": {
+            "id": "taskExampleEvidence",
+            "label": "Task-attributed example evidence",
+            "state": "unknown",
+            "reason": "No source-backed example audit exists for the mapped hub."
+          },
+          "recordedExecution": {
+            "id": "recordedExecution",
+            "label": "Recorded real execution",
+            "state": "unknown",
+            "reason": "No execution ledger record names this task. Historical run frequency is unknown."
+          },
+          "acceptedExecution": {
+            "id": "acceptedExecution",
+            "label": "Accepted execution result",
+            "state": "unknown",
+            "reason": "No structured acceptance review is recorded for the current canonical article revision. A completed run label is not acceptance."
+          },
+          "setupSuccess": {
+            "id": "setupSuccess",
+            "label": "New-user setup success",
+            "state": "unknown",
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
+          }
+        },
+        "unmetStandardGates": [
+          "contributorComplete",
+          "articleCatalogGate"
+        ],
+        "heldStandardGates": [],
+        "unknownStandardGates": [
+          "instructionStandards",
+          "articleSemanticCertification",
+          "taskExampleEvidence",
+          "recordedExecution",
+          "acceptedExecution",
+          "setupSuccess"
+        ],
+        "fullyVerified": false,
+        "queuePosition": 226,
+        "priority": "P1",
+        "priorityReason": "Known standard gap",
+        "nextAction": "The contributor status is needs-work; finish and review the guide."
+      }
+    },
+    {
+      "queuePosition": 227,
+      "priority": "P1",
+      "priorityReason": "Known standard gap",
+      "slug": "set-up-special-project-workspace",
+      "title": "Set up a Special Project workspace",
+      "category": "Knowledge System Maintenance",
+      "importance": 2,
+      "revenueEstimate": 1,
+      "dependencyEstimate": 2,
+      "frequencyEstimate": 2,
+      "valueBasis": "Editorial estimate from build/factory.py; not measured income, demand or use.",
+      "effortEstimate": null,
+      "status": "needs-work",
+      "articleUrl": "https://blitzmetrics.com/special-project/",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=set-up-special-project-workspace#task-set-up-special-project-workspace",
+      "nextAction": "The contributor status is needs-work; finish and review the guide.",
+      "standardVerification": {
+        "instructionSourceSha256": "cf3513f809506b374cd4568f98dc7efe6d65609df5bbdd82991bc71acfc27bf0",
+        "articleKey": "blitzmetrics.com/special-project",
+        "gates": {
+          "instructionRevisionReviewed": {
+            "id": "instructionRevisionReviewed",
+            "label": "Exact instruction revision reviewed",
+            "state": "pass",
+            "reason": "Current source bytes match the review recorded 2026-09-06. Review scope and limits: Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate.",
+            "reviewedAt": "2026-09-06",
+            "reviewer": "Codex editorial review",
+            "sourceSha256": "cf3513f809506b374cd4568f98dc7efe6d65609df5bbdd82991bc71acfc27bf0"
+          },
+          "instructionStandards": {
+            "id": "instructionStandards",
+            "label": "Instruction requirements checked",
+            "state": "unknown",
+            "reason": "The current exact-byte review has no structured instruction-requirements checklist.",
+            "sourceSha256": "cf3513f809506b374cd4568f98dc7efe6d65609df5bbdd82991bc71acfc27bf0"
+          },
+          "contributorComplete": {
+            "id": "contributorComplete",
+            "label": "Contributor reports guide complete",
+            "state": "unmet",
+            "reason": "The contributor status is needs-work; finish and review the guide."
+          },
+          "articleMapped": {
+            "id": "articleMapped",
+            "label": "Canonical article mapped",
+            "state": "pass",
+            "reason": "The task maps to a normalized canonical article URL.",
+            "articleUrl": "https://blitzmetrics.com/special-project/"
+          },
+          "articleCatalogGate": {
+            "id": "articleCatalogGate",
+            "label": "Article catalog gate",
+            "state": "unmet",
+            "reason": "At least one task mapped to this hub is not contributor-complete."
+          },
+          "articleSemanticCertification": {
+            "id": "articleSemanticCertification",
+            "label": "Article semantic certification",
+            "state": "unknown",
+            "reason": "No exact-revision positive semantic review is recorded for this article."
+          },
+          "taskExampleEvidence": {
+            "id": "taskExampleEvidence",
+            "label": "Task-attributed example evidence",
+            "state": "unknown",
+            "reason": "No source-backed example audit exists for the mapped hub."
+          },
+          "recordedExecution": {
+            "id": "recordedExecution",
+            "label": "Recorded real execution",
+            "state": "unknown",
+            "reason": "No execution ledger record names this task. Historical run frequency is unknown."
+          },
+          "acceptedExecution": {
+            "id": "acceptedExecution",
+            "label": "Accepted execution result",
+            "state": "unknown",
+            "reason": "No structured acceptance review is recorded for the current canonical article revision. A completed run label is not acceptance."
+          },
+          "setupSuccess": {
+            "id": "setupSuccess",
+            "label": "New-user setup success",
+            "state": "unknown",
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
+          }
+        },
+        "unmetStandardGates": [
+          "contributorComplete",
+          "articleCatalogGate"
+        ],
+        "heldStandardGates": [],
+        "unknownStandardGates": [
+          "instructionStandards",
+          "articleSemanticCertification",
+          "taskExampleEvidence",
+          "recordedExecution",
+          "acceptedExecution",
+          "setupSuccess"
+        ],
+        "fullyVerified": false,
+        "queuePosition": 227,
+        "priority": "P1",
+        "priorityReason": "Known standard gap",
+        "nextAction": "The contributor status is needs-work; finish and review the guide."
+      }
+    },
+    {
+      "queuePosition": 228,
+      "priority": "P1",
+      "priorityReason": "Known standard gap",
+      "slug": "tag-proposal-with-affected-sop-and-queue-for-review",
+      "title": "Tag proposal with affected task guide and queue for review",
+      "category": "Knowledge System Maintenance",
+      "importance": 2,
+      "revenueEstimate": 1,
+      "dependencyEstimate": 2,
+      "frequencyEstimate": 2,
+      "valueBasis": "Editorial estimate from build/factory.py; not measured income, demand or use.",
+      "effortEstimate": null,
+      "status": "needs-work",
+      "articleUrl": "https://blitzmetrics.com/knowledge-system-maintenance",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=tag-proposal-with-affected-sop-and-queue-for-review#task-tag-proposal-with-affected-sop-and-queue-for-review",
+      "nextAction": "The contributor status is needs-work; finish and review the guide.",
+      "standardVerification": {
+        "instructionSourceSha256": "42c83e46dfbdff680bb50b0aae127e9d0edc5208c05af9d4e99602a33bc8bb9f",
+        "articleKey": "blitzmetrics.com/knowledge-system-maintenance",
+        "gates": {
+          "instructionRevisionReviewed": {
+            "id": "instructionRevisionReviewed",
+            "label": "Exact instruction revision reviewed",
+            "state": "pass",
+            "reason": "Current source bytes match the review recorded 2026-09-06. Review scope and limits: Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate.",
+            "reviewedAt": "2026-09-06",
+            "reviewer": "Codex editorial review",
+            "sourceSha256": "42c83e46dfbdff680bb50b0aae127e9d0edc5208c05af9d4e99602a33bc8bb9f"
+          },
+          "instructionStandards": {
+            "id": "instructionStandards",
+            "label": "Instruction requirements checked",
+            "state": "unknown",
+            "reason": "The current exact-byte review has no structured instruction-requirements checklist.",
+            "sourceSha256": "42c83e46dfbdff680bb50b0aae127e9d0edc5208c05af9d4e99602a33bc8bb9f"
+          },
+          "contributorComplete": {
+            "id": "contributorComplete",
+            "label": "Contributor reports guide complete",
+            "state": "unmet",
+            "reason": "The contributor status is needs-work; finish and review the guide."
+          },
+          "articleMapped": {
+            "id": "articleMapped",
+            "label": "Canonical article mapped",
+            "state": "pass",
+            "reason": "The task maps to a normalized canonical article URL.",
+            "articleUrl": "https://blitzmetrics.com/knowledge-system-maintenance"
+          },
+          "articleCatalogGate": {
+            "id": "articleCatalogGate",
+            "label": "Article catalog gate",
+            "state": "unmet",
+            "reason": "At least one task mapped to this hub is not contributor-complete."
+          },
+          "articleSemanticCertification": {
+            "id": "articleSemanticCertification",
+            "label": "Article semantic certification",
+            "state": "unknown",
+            "reason": "No exact-revision positive semantic review is recorded for this article."
+          },
+          "taskExampleEvidence": {
+            "id": "taskExampleEvidence",
+            "label": "Task-attributed example evidence",
+            "state": "unknown",
+            "reason": "No source-backed example audit exists for the mapped hub."
+          },
+          "recordedExecution": {
+            "id": "recordedExecution",
+            "label": "Recorded real execution",
+            "state": "unknown",
+            "reason": "No execution ledger record names this task. Historical run frequency is unknown."
+          },
+          "acceptedExecution": {
+            "id": "acceptedExecution",
+            "label": "Accepted execution result",
+            "state": "unknown",
+            "reason": "No structured acceptance review is recorded for the current canonical article revision. A completed run label is not acceptance."
+          },
+          "setupSuccess": {
+            "id": "setupSuccess",
+            "label": "New-user setup success",
+            "state": "unknown",
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
+          }
+        },
+        "unmetStandardGates": [
+          "contributorComplete",
+          "articleCatalogGate"
+        ],
+        "heldStandardGates": [],
+        "unknownStandardGates": [
+          "instructionStandards",
+          "articleSemanticCertification",
+          "taskExampleEvidence",
+          "recordedExecution",
+          "acceptedExecution",
+          "setupSuccess"
+        ],
+        "fullyVerified": false,
+        "queuePosition": 228,
+        "priority": "P1",
+        "priorityReason": "Known standard gap",
+        "nextAction": "The contributor status is needs-work; finish and review the guide."
+      }
+    },
+    {
+      "queuePosition": 229,
+      "priority": "P1",
+      "priorityReason": "Known standard gap",
+      "slug": "update-status-table-in-definitive-article-guide",
+      "title": "Update status table in Definitive Article Guide",
+      "category": "Knowledge System Maintenance",
+      "importance": 2,
+      "revenueEstimate": 1,
+      "dependencyEstimate": 2,
+      "frequencyEstimate": 2,
+      "valueBasis": "Editorial estimate from build/factory.py; not measured income, demand or use.",
+      "effortEstimate": null,
+      "status": "needs-work",
+      "articleUrl": "https://blitzmetrics.com/knowledge-system-maintenance",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=update-status-table-in-definitive-article-guide#task-update-status-table-in-definitive-article-guide",
+      "nextAction": "The contributor status is needs-work; finish and review the guide.",
+      "standardVerification": {
+        "instructionSourceSha256": "4bb4527a43d359641b9e07ff0d633f9622f4061aae035f37040c293c7871af3e",
+        "articleKey": "blitzmetrics.com/knowledge-system-maintenance",
+        "gates": {
+          "instructionRevisionReviewed": {
+            "id": "instructionRevisionReviewed",
+            "label": "Exact instruction revision reviewed",
+            "state": "pass",
+            "reason": "Current source bytes match the review recorded 2026-09-06. Review scope and limits: Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate.",
+            "reviewedAt": "2026-09-06",
+            "reviewer": "Codex editorial review",
+            "sourceSha256": "4bb4527a43d359641b9e07ff0d633f9622f4061aae035f37040c293c7871af3e"
+          },
+          "instructionStandards": {
+            "id": "instructionStandards",
+            "label": "Instruction requirements checked",
+            "state": "unknown",
+            "reason": "The current exact-byte review has no structured instruction-requirements checklist.",
+            "sourceSha256": "4bb4527a43d359641b9e07ff0d633f9622f4061aae035f37040c293c7871af3e"
+          },
+          "contributorComplete": {
+            "id": "contributorComplete",
+            "label": "Contributor reports guide complete",
+            "state": "unmet",
+            "reason": "The contributor status is needs-work; finish and review the guide."
+          },
+          "articleMapped": {
+            "id": "articleMapped",
+            "label": "Canonical article mapped",
+            "state": "pass",
+            "reason": "The task maps to a normalized canonical article URL.",
+            "articleUrl": "https://blitzmetrics.com/knowledge-system-maintenance"
+          },
+          "articleCatalogGate": {
+            "id": "articleCatalogGate",
+            "label": "Article catalog gate",
+            "state": "unmet",
+            "reason": "At least one task mapped to this hub is not contributor-complete."
+          },
+          "articleSemanticCertification": {
+            "id": "articleSemanticCertification",
+            "label": "Article semantic certification",
+            "state": "unknown",
+            "reason": "No exact-revision positive semantic review is recorded for this article."
+          },
+          "taskExampleEvidence": {
+            "id": "taskExampleEvidence",
+            "label": "Task-attributed example evidence",
+            "state": "unknown",
+            "reason": "No source-backed example audit exists for the mapped hub."
+          },
+          "recordedExecution": {
+            "id": "recordedExecution",
+            "label": "Recorded real execution",
+            "state": "unknown",
+            "reason": "No execution ledger record names this task. Historical run frequency is unknown."
+          },
+          "acceptedExecution": {
+            "id": "acceptedExecution",
+            "label": "Accepted execution result",
+            "state": "unknown",
+            "reason": "No structured acceptance review is recorded for the current canonical article revision. A completed run label is not acceptance."
+          },
+          "setupSuccess": {
+            "id": "setupSuccess",
+            "label": "New-user setup success",
+            "state": "unknown",
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
+          }
+        },
+        "unmetStandardGates": [
+          "contributorComplete",
+          "articleCatalogGate"
+        ],
+        "heldStandardGates": [],
+        "unknownStandardGates": [
+          "instructionStandards",
+          "articleSemanticCertification",
+          "taskExampleEvidence",
+          "recordedExecution",
+          "acceptedExecution",
+          "setupSuccess"
+        ],
+        "fullyVerified": false,
+        "queuePosition": 229,
+        "priority": "P1",
+        "priorityReason": "Known standard gap",
+        "nextAction": "The contributor status is needs-work; finish and review the guide."
+      }
+    },
+    {
+      "queuePosition": 230,
+      "priority": "P1",
+      "priorityReason": "Known standard gap",
+      "slug": "validate-cross-reference-integrity-across-articles",
+      "title": "Validate cross-reference integrity across articles",
+      "category": "Knowledge System Maintenance",
+      "importance": 2,
+      "revenueEstimate": 1,
+      "dependencyEstimate": 2,
+      "frequencyEstimate": 2,
+      "valueBasis": "Editorial estimate from build/factory.py; not measured income, demand or use.",
+      "effortEstimate": null,
+      "status": "needs-work",
+      "articleUrl": "https://blitzmetrics.com/knowledge-system-maintenance",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=validate-cross-reference-integrity-across-articles#task-validate-cross-reference-integrity-across-articles",
+      "nextAction": "The contributor status is needs-work; finish and review the guide.",
+      "standardVerification": {
+        "instructionSourceSha256": "8d6c630a81443874a72bbbb3f606d20c61a849f6037df92822d3af6b12acc523",
+        "articleKey": "blitzmetrics.com/knowledge-system-maintenance",
+        "gates": {
+          "instructionRevisionReviewed": {
+            "id": "instructionRevisionReviewed",
+            "label": "Exact instruction revision reviewed",
+            "state": "pass",
+            "reason": "Current source bytes match the review recorded 2026-09-27. Review scope and limits: Exact-revision written instruction review after removing private account information from public instructions; whole-task gates remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/public-editorial-boundary-2026-09-27.md",
+            "reviewedAt": "2026-09-27",
+            "reviewer": "Codex root with independent GPT-6 Sol source review",
+            "sourceSha256": "8d6c630a81443874a72bbbb3f606d20c61a849f6037df92822d3af6b12acc523"
+          },
+          "instructionStandards": {
+            "id": "instructionStandards",
+            "label": "Instruction requirements checked",
+            "state": "pass",
+            "reason": "All five instruction requirements have explicit passing checks for the current source revision.",
+            "reviewedAt": "2026-09-27",
+            "reviewer": "Codex root with independent GPT-6 Sol source review",
+            "reviewScope": "Exact-revision written instruction review after removing private account information from public instructions; whole-task gates remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/public-editorial-boundary-2026-09-27.md",
+            "sourceSha256": "8d6c630a81443874a72bbbb3f606d20c61a849f6037df92822d3af6b12acc523",
+            "standards": {
+              "version": 1,
+              "checks": {
+                "opening": {
+                  "state": "pass",
+                  "reason": "Names link meaning, reader value and the dependent full-audit result record.",
+                  "evidence": "Check that each link leads to the help its words promise. Read the source page and its linked page so readers get the right answer. Next, record the full article audit result once the topic, steps, and facts are also checked."
+                },
+                "recipe": {
+                  "state": "pass",
+                  "reason": "Scoped sources, eight ordered steps, concept coverage, checked outputs and explicit missing-access treatment.",
+                  "evidence": "Working table records source revision, surrounding claim, target/fragment, direction, semantic result and coverage limits."
+                },
+                "links": {
+                  "state": "pass",
+                  "reason": "Maintained concept guides and next task are linked; public example/link choices do not disclose private account information.",
+                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/public-editorial-boundary-2026-09-27.md"
+                },
+                "evidence": {
+                  "state": "pass",
+                  "reason": "Fiction is labeled and source-backed real evidence is still required.",
+                  "evidence": "A loaded URL is not semantic proof; the source requires dated observations and explicit UNKNOWN coverage."
+                },
+                "handoff": {
+                  "state": "pass",
+                  "reason": "Specific owner handoff and full-audit dependency are explicit.",
+                  "evidence": "Article owner receives dated link table, checked repairs and unresolved source edits. Record full result only after other audit checks."
+                }
+              }
+            }
+          },
+          "contributorComplete": {
+            "id": "contributorComplete",
+            "label": "Contributor reports guide complete",
+            "state": "unmet",
+            "reason": "The contributor status is needs-work; finish and review the guide."
+          },
+          "articleMapped": {
+            "id": "articleMapped",
+            "label": "Canonical article mapped",
+            "state": "pass",
+            "reason": "The task maps to a normalized canonical article URL.",
+            "articleUrl": "https://blitzmetrics.com/knowledge-system-maintenance"
+          },
+          "articleCatalogGate": {
+            "id": "articleCatalogGate",
+            "label": "Article catalog gate",
+            "state": "unmet",
+            "reason": "At least one task mapped to this hub is not contributor-complete."
+          },
+          "articleSemanticCertification": {
+            "id": "articleSemanticCertification",
+            "label": "Article semantic certification",
+            "state": "unknown",
+            "reason": "No exact-revision positive semantic review is recorded for this article."
+          },
+          "taskExampleEvidence": {
+            "id": "taskExampleEvidence",
+            "label": "Task-attributed example evidence",
+            "state": "unknown",
+            "reason": "No source-backed example audit exists for the mapped hub."
+          },
+          "recordedExecution": {
+            "id": "recordedExecution",
+            "label": "Recorded real execution",
+            "state": "unknown",
+            "reason": "No execution ledger record names this task. Historical run frequency is unknown."
+          },
+          "acceptedExecution": {
+            "id": "acceptedExecution",
+            "label": "Accepted execution result",
+            "state": "unknown",
+            "reason": "No structured acceptance review is recorded for the current canonical article revision. A completed run label is not acceptance."
+          },
+          "setupSuccess": {
+            "id": "setupSuccess",
+            "label": "New-user setup success",
+            "state": "unknown",
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
+          }
+        },
+        "unmetStandardGates": [
+          "contributorComplete",
+          "articleCatalogGate"
+        ],
+        "heldStandardGates": [],
+        "unknownStandardGates": [
+          "articleSemanticCertification",
+          "taskExampleEvidence",
+          "recordedExecution",
+          "acceptedExecution",
+          "setupSuccess"
+        ],
+        "fullyVerified": false,
+        "queuePosition": 230,
+        "priority": "P1",
+        "priorityReason": "Known standard gap",
+        "nextAction": "The contributor status is needs-work; finish and review the guide."
+      }
+    },
+    {
+      "queuePosition": 231,
+      "priority": "P1",
+      "priorityReason": "Known standard gap",
+      "slug": "check-topic-coherence-for-each-definitive-article",
+      "title": "Check topic coherence for each definitive article",
+      "category": "Knowledge System Maintenance",
+      "importance": 2,
+      "revenueEstimate": 1,
+      "dependencyEstimate": 2,
+      "frequencyEstimate": 2,
+      "valueBasis": "Editorial estimate from build/factory.py; not measured income, demand or use.",
+      "effortEstimate": null,
+      "status": "complete",
+      "articleUrl": "https://blitzmetrics.com/knowledge-system-maintenance",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=check-topic-coherence-for-each-definitive-article#task-check-topic-coherence-for-each-definitive-article",
+      "nextAction": "At least one task mapped to this hub is not contributor-complete.",
+      "standardVerification": {
+        "instructionSourceSha256": "4ea1e3a849f9e79dc244f11d4470e2ec243ad1fa58979c1f9a5200beebad0349",
+        "articleKey": "blitzmetrics.com/knowledge-system-maintenance",
+        "gates": {
+          "instructionRevisionReviewed": {
+            "id": "instructionRevisionReviewed",
+            "label": "Exact instruction revision reviewed",
+            "state": "pass",
+            "reason": "Current source bytes match the review recorded 2026-09-06. Review scope and limits: Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate.",
+            "reviewedAt": "2026-09-06",
+            "reviewer": "Codex editorial review",
+            "sourceSha256": "4ea1e3a849f9e79dc244f11d4470e2ec243ad1fa58979c1f9a5200beebad0349"
+          },
+          "instructionStandards": {
+            "id": "instructionStandards",
+            "label": "Instruction requirements checked",
+            "state": "unknown",
+            "reason": "The current exact-byte review has no structured instruction-requirements checklist.",
+            "sourceSha256": "4ea1e3a849f9e79dc244f11d4470e2ec243ad1fa58979c1f9a5200beebad0349"
+          },
+          "contributorComplete": {
+            "id": "contributorComplete",
+            "label": "Contributor reports guide complete",
+            "state": "pass",
+            "reason": "The contributor status is complete; this is a source claim, not execution proof."
+          },
+          "articleMapped": {
+            "id": "articleMapped",
+            "label": "Canonical article mapped",
+            "state": "pass",
+            "reason": "The task maps to a normalized canonical article URL.",
+            "articleUrl": "https://blitzmetrics.com/knowledge-system-maintenance"
+          },
+          "articleCatalogGate": {
+            "id": "articleCatalogGate",
+            "label": "Article catalog gate",
+            "state": "unmet",
+            "reason": "At least one task mapped to this hub is not contributor-complete."
+          },
+          "articleSemanticCertification": {
+            "id": "articleSemanticCertification",
+            "label": "Article semantic certification",
+            "state": "unknown",
+            "reason": "No exact-revision positive semantic review is recorded for this article."
+          },
+          "taskExampleEvidence": {
+            "id": "taskExampleEvidence",
+            "label": "Task-attributed example evidence",
+            "state": "unknown",
+            "reason": "No source-backed example audit exists for the mapped hub."
+          },
+          "recordedExecution": {
+            "id": "recordedExecution",
+            "label": "Recorded real execution",
+            "state": "unknown",
+            "reason": "No execution ledger record names this task. Historical run frequency is unknown."
+          },
+          "acceptedExecution": {
+            "id": "acceptedExecution",
+            "label": "Accepted execution result",
+            "state": "unknown",
+            "reason": "No structured acceptance review is recorded for the current canonical article revision. A completed run label is not acceptance."
+          },
+          "setupSuccess": {
+            "id": "setupSuccess",
+            "label": "New-user setup success",
+            "state": "unknown",
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
+          }
+        },
+        "unmetStandardGates": [
+          "articleCatalogGate"
+        ],
+        "heldStandardGates": [],
+        "unknownStandardGates": [
+          "instructionStandards",
+          "articleSemanticCertification",
+          "taskExampleEvidence",
+          "recordedExecution",
+          "acceptedExecution",
+          "setupSuccess"
+        ],
+        "fullyVerified": false,
+        "queuePosition": 231,
+        "priority": "P1",
+        "priorityReason": "Known standard gap",
+        "nextAction": "At least one task mapped to this hub is not contributor-complete."
+      }
+    },
+    {
+      "queuePosition": 232,
+      "priority": "P1",
+      "priorityReason": "Known standard gap",
+      "slug": "create-sop-amendment-proposal-500-words",
+      "title": "Create task guide Amendment Proposal (≤500 words)",
+      "category": "Knowledge System Maintenance",
+      "importance": 2,
+      "revenueEstimate": 1,
+      "dependencyEstimate": 2,
+      "frequencyEstimate": 2,
+      "valueBasis": "Editorial estimate from build/factory.py; not measured income, demand or use.",
+      "effortEstimate": null,
+      "status": "complete",
+      "articleUrl": "https://blitzmetrics.com/knowledge-system-maintenance",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=create-sop-amendment-proposal-500-words#task-create-sop-amendment-proposal-500-words",
+      "nextAction": "At least one task mapped to this hub is not contributor-complete.",
+      "standardVerification": {
+        "instructionSourceSha256": "50f08832cdb10985515679357f3a9ca0f3e65d19b27a18ed72eac00292432ba4",
+        "articleKey": "blitzmetrics.com/knowledge-system-maintenance",
+        "gates": {
+          "instructionRevisionReviewed": {
+            "id": "instructionRevisionReviewed",
+            "label": "Exact instruction revision reviewed",
+            "state": "pass",
+            "reason": "Current source bytes match the review recorded 2026-09-06. Review scope and limits: Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate.",
+            "reviewedAt": "2026-09-06",
+            "reviewer": "Codex editorial review",
+            "sourceSha256": "50f08832cdb10985515679357f3a9ca0f3e65d19b27a18ed72eac00292432ba4"
+          },
+          "instructionStandards": {
+            "id": "instructionStandards",
+            "label": "Instruction requirements checked",
+            "state": "unknown",
+            "reason": "The current exact-byte review has no structured instruction-requirements checklist.",
+            "sourceSha256": "50f08832cdb10985515679357f3a9ca0f3e65d19b27a18ed72eac00292432ba4"
+          },
+          "contributorComplete": {
+            "id": "contributorComplete",
+            "label": "Contributor reports guide complete",
+            "state": "pass",
+            "reason": "The contributor status is complete; this is a source claim, not execution proof."
+          },
+          "articleMapped": {
+            "id": "articleMapped",
+            "label": "Canonical article mapped",
+            "state": "pass",
+            "reason": "The task maps to a normalized canonical article URL.",
+            "articleUrl": "https://blitzmetrics.com/knowledge-system-maintenance"
+          },
+          "articleCatalogGate": {
+            "id": "articleCatalogGate",
+            "label": "Article catalog gate",
+            "state": "unmet",
+            "reason": "At least one task mapped to this hub is not contributor-complete."
+          },
+          "articleSemanticCertification": {
+            "id": "articleSemanticCertification",
+            "label": "Article semantic certification",
+            "state": "unknown",
+            "reason": "No exact-revision positive semantic review is recorded for this article."
+          },
+          "taskExampleEvidence": {
+            "id": "taskExampleEvidence",
+            "label": "Task-attributed example evidence",
+            "state": "unknown",
+            "reason": "No source-backed example audit exists for the mapped hub."
+          },
+          "recordedExecution": {
+            "id": "recordedExecution",
+            "label": "Recorded real execution",
+            "state": "unknown",
+            "reason": "No execution ledger record names this task. Historical run frequency is unknown."
+          },
+          "acceptedExecution": {
+            "id": "acceptedExecution",
+            "label": "Accepted execution result",
+            "state": "unknown",
+            "reason": "No structured acceptance review is recorded for the current canonical article revision. A completed run label is not acceptance."
+          },
+          "setupSuccess": {
+            "id": "setupSuccess",
+            "label": "New-user setup success",
+            "state": "unknown",
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
+          }
+        },
+        "unmetStandardGates": [
+          "articleCatalogGate"
+        ],
+        "heldStandardGates": [],
+        "unknownStandardGates": [
+          "instructionStandards",
+          "articleSemanticCertification",
+          "taskExampleEvidence",
+          "recordedExecution",
+          "acceptedExecution",
+          "setupSuccess"
+        ],
+        "fullyVerified": false,
+        "queuePosition": 232,
+        "priority": "P1",
+        "priorityReason": "Known standard gap",
+        "nextAction": "At least one task mapped to this hub is not contributor-complete."
+      }
+    },
+    {
+      "queuePosition": 233,
+      "priority": "P1",
+      "priorityReason": "Known standard gap",
       "slug": "publish-skill-and-task-page",
       "title": "Publish a skill and its task page",
       "category": "Knowledge System Maintenance",
@@ -25392,10 +26852,10 @@
               "canonicalURL": "https://blitzmetrics.com/skill-publishing-standard/",
               "sourceSha256": "660d6f1abd8678c851c0a08059f27982e8e29b46775ea217a2ae1d6e3ba55537",
               "representation": "wordpress-content-html",
-              "observedAt": "2026-10-05T21:43:54.272645Z",
-              "observer": "Codex separate authenticated post-acceptance source read",
+              "observedAt": "2026-10-06T00:18:28.770022Z",
+              "observer": "Codex separate post-acceptance authenticated source read",
               "state": "observed",
-              "reason": "Current publishing recipe matches the revision followed by the accepted prior release; later authority release remains a separate blocked execution.",
+              "reason": "Publishing recipe still matches the authority release accepted after its public deployment. New startup repair is a separate run.",
               "evidenceRefs": [
                 "sha256:0c848d4a94f769fce01473d5bc00c98b0d9f89895348137983020825f00acaf2"
               ]
@@ -25411,11 +26871,12 @@
             "id": "recordedExecution",
             "label": "Recorded real execution",
             "state": "pass",
-            "reason": "15 distinct execution ID(s) name this task; outcomes remain separate.",
+            "reason": "16 distinct execution ID(s) name this task; outcomes remain separate.",
             "executionIds": [
               "authority-guides-repair-20261005-2100",
               "crossref-release-20260927-162402",
               "entity-linking-repair-20260930-0105",
+              "first-use-rcf-20261005-2343",
               "internal-linking-repair-20261001-1405",
               "inventory-guide-repair-20261002-1610",
               "link-building-repair-20261001-1307",
@@ -25434,1314 +26895,82 @@
           "acceptedExecution": {
             "id": "acceptedExecution",
             "label": "Accepted execution result",
-            "state": "unmet",
-            "reason": "A later recorded execution did not complete; it cannot be promoted by an older acceptance review.",
+            "state": "pass",
+            "reason": "All named measurable acceptance criteria pass for the separately observed current recipe revision.",
             "acceptanceReview": {
               "version": 1,
-              "reviewId": "revenue-path-repair-20261005-1855-acceptance-1",
+              "reviewId": "authority-guides-repair-20261005-independent-acceptance",
               "taskSlug": "publish-skill-and-task-page",
               "canonicalURL": "https://blitzmetrics.com/skill-publishing-standard/",
               "recipeSourceSha256": "660d6f1abd8678c851c0a08059f27982e8e29b46775ea217a2ae1d6e3ba55537",
               "representation": "wordpress-content-html",
               "instructionSourceSha256": "609039d529572a9d02b5e2b5847469d5fe7e6138a55c1ebd3c70a716c3a1093a",
-              "reviewedAt": "2026-10-05T21:41:34Z",
+              "reviewedAt": "2026-10-05T23:58:49Z",
               "reviewer": "Codex independent audit subagent",
-              "nextHandoff": "Existing Task Library maintenance function: use the released guides and current verification queue for the next bounded maintenance step. Confirm the status-only meta closeout paragraph after cache refresh; it is excluded from this acceptance. Release 19 remains a separate pending batch.",
+              "nextHandoff": "Task Library maintenance function: use the released verification queue and current written guidance to select the next actionable task batch; keep real execution, first-use setup, and business outcomes separate until their own evidence exists.",
               "criteria": {
                 "result": {
                   "state": "pass",
-                  "expectedResult": "Publish one matching maintained skill, canonical task page, and Task Library entry; make the complete guide available in public library downloads.",
-                  "observedResult": "Fresh anonymous library data matches the generated registry output for all three repaired guides. Full-library and Digital Plumbing archives returned 200 and contain byte-identical copies of each guide. Seven archive checks and public desktop/mobile guide and queue renders are recorded. The repaired guides remain needs-work; no client execution or income result is claimed.",
+                  "expectedResult": "Three named guide pages and their two associated canonical article revisions are published with exact maintained guide bytes and readable public article bodies.",
+                  "observedResult": "The immutable bd032 release snapshot records exact parity for all three guides. Public review receipts record HTTP 200 and full rendered text for both canonical articles; the seven-archive receipt records the expected copies. This accepts written/publication delivery only; it does not certify task execution, novice setup, client outcomes, or revenue.",
                   "sourceUrl": "https://blitzmetrics.com/skill-publishing-standard/",
                   "sourcePrivateEvidenceRecorded": false,
                   "evidenceUrls": [
-                    "https://local-service-spotlight.github.io/task-library/data.json",
-                    "https://local-service-spotlight.github.io/task-library/TaskLibrary-Skills-all.zip",
-                    "https://local-service-spotlight.github.io/task-library/packs/digital-plumbing.zip",
-                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md"
-                  ],
-                  "privateEvidenceRecorded": true
-                },
-                "publicReadback": {
-                  "state": "pass",
-                  "expectedResult": "Read back the public parent article and meta write-up for the released substantive outputs and confirm the corrected task copies are present.",
-                  "observedResult": "A fresh parent-page fetch returned 200 with all three task slugs. The ordinary meta URL receipt at 21:40:09Z reports 200 and matching full text, media, and scripts against the saved substantive meta source. Scope excludes the later status-only closeout paragraph saved at 21:40:44Z; its subsequent cache receipt says fullRenderedTextPresent=false, so that later paragraph is not certified here. My own normal-URL request returned 403; the successful contemporaneous receipt is separately retained as evidence.",
-                  "sourceUrl": "https://blitzmetrics.com/making-task-guides-easier-to-use/",
-                  "sourcePrivateEvidenceRecorded": false,
-                  "evidenceUrls": [
-                    "https://blitzmetrics.com/digital-plumbing/",
-                    "https://blitzmetrics.com/making-task-guides-easier-to-use/",
-                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md"
-                  ],
-                  "privateEvidenceRecorded": true
-                },
-                "searchAndFirstOpen": {
-                  "state": "pass",
-                  "expectedResult": "A search entered before data load produces the intended match, and the published task opens with its copy control visible after settling on phone and desktop.",
-                  "observedResult": "The public preload-search receipt records 3 of 276 matches and one target row. The settled first-open receipt records the target guide and copy control within phone and desktop viewports after 1.2 seconds. Clipboard contents were not read back; this is not novice setup evidence.",
-                  "sourceUrl": "https://blitzmetrics.com/task-library-dashboard/",
-                  "sourcePrivateEvidenceRecorded": false,
-                  "evidenceUrls": [
-                    "https://blitzmetrics.com/task-library-dashboard/"
+                    "https://github.com/Local-Service-Spotlight/task-library/pull/68",
+                    "https://github.com/Local-Service-Spotlight/task-library/actions/runs/37379330811"
                   ],
                   "privateEvidenceRecorded": true
                 },
                 "handoff": {
                   "state": "pass",
-                  "expectedResult": "Leave the published task set and its next maintenance step findable by the existing Task Library maintenance function.",
-                  "observedResult": "The public library, exact archive links, current queue and published review expose the released guides and the next maintenance route. This is a handoff to the maintenance function through its durable records; no named person's acknowledgment is claimed. The separate release-19 batch remains pending and is outside this review.",
-                  "sourceUrl": "https://local-service-spotlight.github.io/task-library/",
+                  "expectedResult": "The released maintenance material is reachable by the Task Library maintenance function, with its verification queue available as the next-work record.",
+                  "observedResult": "The public Task Library release includes a 276-task verification queue. The captured public queue lists 0 fully verified tasks and preserves gate-level unknowns; this is an actionable maintenance handoff, not a claim that a human received or acted on it.",
+                  "sourceUrl": "https://blitzmetrics.com/skill-publishing-standard/",
                   "sourcePrivateEvidenceRecorded": false,
                   "evidenceUrls": [
                     "https://local-service-spotlight.github.io/task-library/",
-                    "https://local-service-spotlight.github.io/task-library/verification-queue.json",
-                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md"
+                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
                   ],
-                  "privateEvidenceRecorded": false
+                  "privateEvidenceRecorded": true
+                },
+                "publicGuideCopiesAndArchives": {
+                  "state": "pass",
+                  "expectedResult": "All three in-scope guide pages match the immutable source release and the seven archived copies pass parity checks.",
+                  "observedResult": "The public release receipt records exact source parity for the three target guides; the archive parity receipt records all seven copies matching. Current later RCF working-tree edits are outside this accepted release.",
+                  "sourceUrl": "https://blitzmetrics.com/skill-publishing-standard/",
+                  "sourcePrivateEvidenceRecorded": false,
+                  "evidenceUrls": [
+                    "https://github.com/Local-Service-Spotlight/task-library/pull/68"
+                  ],
+                  "privateEvidenceRecorded": true
+                },
+                "publicGuideViews": {
+                  "state": "pass",
+                  "expectedResult": "The three published guide surfaces render on desktop and mobile, with the guide content and copy control visible and no reported queue overflow.",
+                  "observedResult": "The live render receipt records the three guides on phone and desktop, visible copy controls, and queue overflow false. It explicitly labels the check live and not novice setup; no media played.",
+                  "sourceUrl": "https://blitzmetrics.com/skill-publishing-standard/",
+                  "sourcePrivateEvidenceRecorded": false,
+                  "evidenceUrls": [],
+                  "privateEvidenceRecorded": true
                 }
               },
-              "executionId": "revenue-path-repair-20261005-1855"
-            }
-          },
-          "setupSuccess": {
-            "id": "setupSuccess",
-            "label": "New-user setup success",
-            "state": "unknown",
-            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
-            "supportedRoute": "manual-guide",
-            "installationCertified": false,
-            "schedulingCertified": false
-          }
-        },
-        "unmetStandardGates": [
-          "articleSemanticCertification",
-          "acceptedExecution"
-        ],
-        "heldStandardGates": [],
-        "unknownStandardGates": [
-          "taskExampleEvidence",
-          "setupSuccess"
-        ],
-        "fullyVerified": false,
-        "queuePosition": 220,
-        "priority": "P1",
-        "priorityReason": "Known standard gap",
-        "nextAction": "The observed article source hash does not match the reviewed revision."
-      }
-    },
-    {
-      "queuePosition": 221,
-      "priority": "P1",
-      "priorityReason": "Known standard gap",
-      "slug": "reply-with-task-status-in-origin-thread",
-      "title": "Reply with task status in the original thread",
-      "category": "Knowledge System Maintenance",
-      "importance": 2,
-      "revenueEstimate": 1,
-      "dependencyEstimate": 2,
-      "frequencyEstimate": 2,
-      "valueBasis": "Editorial estimate from build/factory.py; not measured income, demand or use.",
-      "effortEstimate": null,
-      "status": "needs-work",
-      "articleUrl": "https://blitzmetrics.com/always-reply/",
-      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=reply-with-task-status-in-origin-thread#task-reply-with-task-status-in-origin-thread",
-      "nextAction": "The contributor status is needs-work; finish and review the guide.",
-      "standardVerification": {
-        "instructionSourceSha256": "4b323d279c8a21abf4cfd6f9f3c8fdc9379d7d972049acc106b74807220edd71",
-        "articleKey": "blitzmetrics.com/always-reply",
-        "gates": {
-          "instructionRevisionReviewed": {
-            "id": "instructionRevisionReviewed",
-            "label": "Exact instruction revision reviewed",
-            "state": "pass",
-            "reason": "Current source bytes match the review recorded 2026-09-06. Review scope and limits: Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate.",
-            "reviewedAt": "2026-09-06",
-            "reviewer": "Codex editorial review",
-            "sourceSha256": "4b323d279c8a21abf4cfd6f9f3c8fdc9379d7d972049acc106b74807220edd71"
-          },
-          "instructionStandards": {
-            "id": "instructionStandards",
-            "label": "Instruction requirements checked",
-            "state": "unknown",
-            "reason": "The current exact-byte review has no structured instruction-requirements checklist.",
-            "sourceSha256": "4b323d279c8a21abf4cfd6f9f3c8fdc9379d7d972049acc106b74807220edd71"
-          },
-          "contributorComplete": {
-            "id": "contributorComplete",
-            "label": "Contributor reports guide complete",
-            "state": "unmet",
-            "reason": "The contributor status is needs-work; finish and review the guide."
-          },
-          "articleMapped": {
-            "id": "articleMapped",
-            "label": "Canonical article mapped",
-            "state": "pass",
-            "reason": "The task maps to a normalized canonical article URL.",
-            "articleUrl": "https://blitzmetrics.com/always-reply/"
-          },
-          "articleCatalogGate": {
-            "id": "articleCatalogGate",
-            "label": "Article catalog gate",
-            "state": "unmet",
-            "reason": "At least one task mapped to this hub is not contributor-complete."
-          },
-          "articleSemanticCertification": {
-            "id": "articleSemanticCertification",
-            "label": "Article semantic certification",
-            "state": "unknown",
-            "reason": "No exact-revision positive semantic review is recorded for this article."
-          },
-          "taskExampleEvidence": {
-            "id": "taskExampleEvidence",
-            "label": "Task-attributed example evidence",
-            "state": "unknown",
-            "reason": "No source-backed example audit exists for the mapped hub."
-          },
-          "recordedExecution": {
-            "id": "recordedExecution",
-            "label": "Recorded real execution",
-            "state": "unknown",
-            "reason": "No execution ledger record names this task. Historical run frequency is unknown."
-          },
-          "acceptedExecution": {
-            "id": "acceptedExecution",
-            "label": "Accepted execution result",
-            "state": "unknown",
-            "reason": "No structured acceptance review is recorded for the current canonical article revision. A completed run label is not acceptance."
-          },
-          "setupSuccess": {
-            "id": "setupSuccess",
-            "label": "New-user setup success",
-            "state": "unknown",
-            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
-            "supportedRoute": "manual-guide",
-            "installationCertified": false,
-            "schedulingCertified": false
-          }
-        },
-        "unmetStandardGates": [
-          "contributorComplete",
-          "articleCatalogGate"
-        ],
-        "heldStandardGates": [],
-        "unknownStandardGates": [
-          "instructionStandards",
-          "articleSemanticCertification",
-          "taskExampleEvidence",
-          "recordedExecution",
-          "acceptedExecution",
-          "setupSuccess"
-        ],
-        "fullyVerified": false,
-        "queuePosition": 221,
-        "priority": "P1",
-        "priorityReason": "Known standard gap",
-        "nextAction": "The contributor status is needs-work; finish and review the guide."
-      }
-    },
-    {
-      "queuePosition": 222,
-      "priority": "P1",
-      "priorityReason": "Known standard gap",
-      "slug": "review-existing-sops-for-portability-compliance",
-      "title": "Review existing task guides for portability compliance",
-      "category": "Knowledge System Maintenance",
-      "importance": 2,
-      "revenueEstimate": 1,
-      "dependencyEstimate": 2,
-      "frequencyEstimate": 2,
-      "valueBasis": "Editorial estimate from build/factory.py; not measured income, demand or use.",
-      "effortEstimate": null,
-      "status": "needs-work",
-      "articleUrl": "https://blitzmetrics.com/knowledge-system-maintenance",
-      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=review-existing-sops-for-portability-compliance#task-review-existing-sops-for-portability-compliance",
-      "nextAction": "The contributor status is needs-work; finish and review the guide.",
-      "standardVerification": {
-        "instructionSourceSha256": "0c01d314378460d1c76ef87d50438ab543aee70dfe5f0b7ede6528c148f592d5",
-        "articleKey": "blitzmetrics.com/knowledge-system-maintenance",
-        "gates": {
-          "instructionRevisionReviewed": {
-            "id": "instructionRevisionReviewed",
-            "label": "Exact instruction revision reviewed",
-            "state": "pass",
-            "reason": "Current source bytes match the review recorded 2026-09-06. Review scope and limits: Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate.",
-            "reviewedAt": "2026-09-06",
-            "reviewer": "Codex editorial review",
-            "sourceSha256": "0c01d314378460d1c76ef87d50438ab543aee70dfe5f0b7ede6528c148f592d5"
-          },
-          "instructionStandards": {
-            "id": "instructionStandards",
-            "label": "Instruction requirements checked",
-            "state": "unknown",
-            "reason": "The current exact-byte review has no structured instruction-requirements checklist.",
-            "sourceSha256": "0c01d314378460d1c76ef87d50438ab543aee70dfe5f0b7ede6528c148f592d5"
-          },
-          "contributorComplete": {
-            "id": "contributorComplete",
-            "label": "Contributor reports guide complete",
-            "state": "unmet",
-            "reason": "The contributor status is needs-work; finish and review the guide."
-          },
-          "articleMapped": {
-            "id": "articleMapped",
-            "label": "Canonical article mapped",
-            "state": "pass",
-            "reason": "The task maps to a normalized canonical article URL.",
-            "articleUrl": "https://blitzmetrics.com/knowledge-system-maintenance"
-          },
-          "articleCatalogGate": {
-            "id": "articleCatalogGate",
-            "label": "Article catalog gate",
-            "state": "unmet",
-            "reason": "At least one task mapped to this hub is not contributor-complete."
-          },
-          "articleSemanticCertification": {
-            "id": "articleSemanticCertification",
-            "label": "Article semantic certification",
-            "state": "unknown",
-            "reason": "No exact-revision positive semantic review is recorded for this article."
-          },
-          "taskExampleEvidence": {
-            "id": "taskExampleEvidence",
-            "label": "Task-attributed example evidence",
-            "state": "unknown",
-            "reason": "No source-backed example audit exists for the mapped hub."
-          },
-          "recordedExecution": {
-            "id": "recordedExecution",
-            "label": "Recorded real execution",
-            "state": "unknown",
-            "reason": "No execution ledger record names this task. Historical run frequency is unknown."
-          },
-          "acceptedExecution": {
-            "id": "acceptedExecution",
-            "label": "Accepted execution result",
-            "state": "unknown",
-            "reason": "No structured acceptance review is recorded for the current canonical article revision. A completed run label is not acceptance."
-          },
-          "setupSuccess": {
-            "id": "setupSuccess",
-            "label": "New-user setup success",
-            "state": "unknown",
-            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
-            "supportedRoute": "manual-guide",
-            "installationCertified": false,
-            "schedulingCertified": false
-          }
-        },
-        "unmetStandardGates": [
-          "contributorComplete",
-          "articleCatalogGate"
-        ],
-        "heldStandardGates": [],
-        "unknownStandardGates": [
-          "instructionStandards",
-          "articleSemanticCertification",
-          "taskExampleEvidence",
-          "recordedExecution",
-          "acceptedExecution",
-          "setupSuccess"
-        ],
-        "fullyVerified": false,
-        "queuePosition": 222,
-        "priority": "P1",
-        "priorityReason": "Known standard gap",
-        "nextAction": "The contributor status is needs-work; finish and review the guide."
-      }
-    },
-    {
-      "queuePosition": 223,
-      "priority": "P1",
-      "priorityReason": "Known standard gap",
-      "slug": "review-past-6-months-of-sop-amendment-proposals-for-patterns",
-      "title": "Review past 6 months of task guide Amendment Proposals for patterns",
-      "category": "Knowledge System Maintenance",
-      "importance": 2,
-      "revenueEstimate": 1,
-      "dependencyEstimate": 2,
-      "frequencyEstimate": 2,
-      "valueBasis": "Editorial estimate from build/factory.py; not measured income, demand or use.",
-      "effortEstimate": null,
-      "status": "needs-work",
-      "articleUrl": "https://blitzmetrics.com/knowledge-system-maintenance",
-      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=review-past-6-months-of-sop-amendment-proposals-for-patterns#task-review-past-6-months-of-sop-amendment-proposals-for-patterns",
-      "nextAction": "The contributor status is needs-work; finish and review the guide.",
-      "standardVerification": {
-        "instructionSourceSha256": "13648667021aaf4fb7c25ab744e58213c43faf29553c542f3ef05c274de6931c",
-        "articleKey": "blitzmetrics.com/knowledge-system-maintenance",
-        "gates": {
-          "instructionRevisionReviewed": {
-            "id": "instructionRevisionReviewed",
-            "label": "Exact instruction revision reviewed",
-            "state": "pass",
-            "reason": "Current source bytes match the review recorded 2026-09-06. Review scope and limits: Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate.",
-            "reviewedAt": "2026-09-06",
-            "reviewer": "Codex editorial review",
-            "sourceSha256": "13648667021aaf4fb7c25ab744e58213c43faf29553c542f3ef05c274de6931c"
-          },
-          "instructionStandards": {
-            "id": "instructionStandards",
-            "label": "Instruction requirements checked",
-            "state": "unknown",
-            "reason": "The current exact-byte review has no structured instruction-requirements checklist.",
-            "sourceSha256": "13648667021aaf4fb7c25ab744e58213c43faf29553c542f3ef05c274de6931c"
-          },
-          "contributorComplete": {
-            "id": "contributorComplete",
-            "label": "Contributor reports guide complete",
-            "state": "unmet",
-            "reason": "The contributor status is needs-work; finish and review the guide."
-          },
-          "articleMapped": {
-            "id": "articleMapped",
-            "label": "Canonical article mapped",
-            "state": "pass",
-            "reason": "The task maps to a normalized canonical article URL.",
-            "articleUrl": "https://blitzmetrics.com/knowledge-system-maintenance"
-          },
-          "articleCatalogGate": {
-            "id": "articleCatalogGate",
-            "label": "Article catalog gate",
-            "state": "unmet",
-            "reason": "At least one task mapped to this hub is not contributor-complete."
-          },
-          "articleSemanticCertification": {
-            "id": "articleSemanticCertification",
-            "label": "Article semantic certification",
-            "state": "unknown",
-            "reason": "No exact-revision positive semantic review is recorded for this article."
-          },
-          "taskExampleEvidence": {
-            "id": "taskExampleEvidence",
-            "label": "Task-attributed example evidence",
-            "state": "unknown",
-            "reason": "No source-backed example audit exists for the mapped hub."
-          },
-          "recordedExecution": {
-            "id": "recordedExecution",
-            "label": "Recorded real execution",
-            "state": "unknown",
-            "reason": "No execution ledger record names this task. Historical run frequency is unknown."
-          },
-          "acceptedExecution": {
-            "id": "acceptedExecution",
-            "label": "Accepted execution result",
-            "state": "unknown",
-            "reason": "No structured acceptance review is recorded for the current canonical article revision. A completed run label is not acceptance."
-          },
-          "setupSuccess": {
-            "id": "setupSuccess",
-            "label": "New-user setup success",
-            "state": "unknown",
-            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
-            "supportedRoute": "manual-guide",
-            "installationCertified": false,
-            "schedulingCertified": false
-          }
-        },
-        "unmetStandardGates": [
-          "contributorComplete",
-          "articleCatalogGate"
-        ],
-        "heldStandardGates": [],
-        "unknownStandardGates": [
-          "instructionStandards",
-          "articleSemanticCertification",
-          "taskExampleEvidence",
-          "recordedExecution",
-          "acceptedExecution",
-          "setupSuccess"
-        ],
-        "fullyVerified": false,
-        "queuePosition": 223,
-        "priority": "P1",
-        "priorityReason": "Known standard gap",
-        "nextAction": "The contributor status is needs-work; finish and review the guide."
-      }
-    },
-    {
-      "queuePosition": 224,
-      "priority": "P1",
-      "priorityReason": "Known standard gap",
-      "slug": "route-notes-to-sop-update-protocol-or-directly-to-articles",
-      "title": "Route notes to task guide Update Protocol or directly to articles",
-      "category": "Knowledge System Maintenance",
-      "importance": 2,
-      "revenueEstimate": 1,
-      "dependencyEstimate": 2,
-      "frequencyEstimate": 2,
-      "valueBasis": "Editorial estimate from build/factory.py; not measured income, demand or use.",
-      "effortEstimate": null,
-      "status": "needs-work",
-      "articleUrl": "https://blitzmetrics.com/knowledge-system-maintenance",
-      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=route-notes-to-sop-update-protocol-or-directly-to-articles#task-route-notes-to-sop-update-protocol-or-directly-to-articles",
-      "nextAction": "The contributor status is needs-work; finish and review the guide.",
-      "standardVerification": {
-        "instructionSourceSha256": "2005949a9498696756e12c439ef119f6aa2b90fe6fac8901fabf515b81370546",
-        "articleKey": "blitzmetrics.com/knowledge-system-maintenance",
-        "gates": {
-          "instructionRevisionReviewed": {
-            "id": "instructionRevisionReviewed",
-            "label": "Exact instruction revision reviewed",
-            "state": "pass",
-            "reason": "Current source bytes match the review recorded 2026-09-06. Review scope and limits: Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate.",
-            "reviewedAt": "2026-09-06",
-            "reviewer": "Codex editorial review",
-            "sourceSha256": "2005949a9498696756e12c439ef119f6aa2b90fe6fac8901fabf515b81370546"
-          },
-          "instructionStandards": {
-            "id": "instructionStandards",
-            "label": "Instruction requirements checked",
-            "state": "unknown",
-            "reason": "The current exact-byte review has no structured instruction-requirements checklist.",
-            "sourceSha256": "2005949a9498696756e12c439ef119f6aa2b90fe6fac8901fabf515b81370546"
-          },
-          "contributorComplete": {
-            "id": "contributorComplete",
-            "label": "Contributor reports guide complete",
-            "state": "unmet",
-            "reason": "The contributor status is needs-work; finish and review the guide."
-          },
-          "articleMapped": {
-            "id": "articleMapped",
-            "label": "Canonical article mapped",
-            "state": "pass",
-            "reason": "The task maps to a normalized canonical article URL.",
-            "articleUrl": "https://blitzmetrics.com/knowledge-system-maintenance"
-          },
-          "articleCatalogGate": {
-            "id": "articleCatalogGate",
-            "label": "Article catalog gate",
-            "state": "unmet",
-            "reason": "At least one task mapped to this hub is not contributor-complete."
-          },
-          "articleSemanticCertification": {
-            "id": "articleSemanticCertification",
-            "label": "Article semantic certification",
-            "state": "unknown",
-            "reason": "No exact-revision positive semantic review is recorded for this article."
-          },
-          "taskExampleEvidence": {
-            "id": "taskExampleEvidence",
-            "label": "Task-attributed example evidence",
-            "state": "unknown",
-            "reason": "No source-backed example audit exists for the mapped hub."
-          },
-          "recordedExecution": {
-            "id": "recordedExecution",
-            "label": "Recorded real execution",
-            "state": "unknown",
-            "reason": "No execution ledger record names this task. Historical run frequency is unknown."
-          },
-          "acceptedExecution": {
-            "id": "acceptedExecution",
-            "label": "Accepted execution result",
-            "state": "unknown",
-            "reason": "No structured acceptance review is recorded for the current canonical article revision. A completed run label is not acceptance."
-          },
-          "setupSuccess": {
-            "id": "setupSuccess",
-            "label": "New-user setup success",
-            "state": "unknown",
-            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
-            "supportedRoute": "manual-guide",
-            "installationCertified": false,
-            "schedulingCertified": false
-          }
-        },
-        "unmetStandardGates": [
-          "contributorComplete",
-          "articleCatalogGate"
-        ],
-        "heldStandardGates": [],
-        "unknownStandardGates": [
-          "instructionStandards",
-          "articleSemanticCertification",
-          "taskExampleEvidence",
-          "recordedExecution",
-          "acceptedExecution",
-          "setupSuccess"
-        ],
-        "fullyVerified": false,
-        "queuePosition": 224,
-        "priority": "P1",
-        "priorityReason": "Known standard gap",
-        "nextAction": "The contributor status is needs-work; finish and review the guide."
-      }
-    },
-    {
-      "queuePosition": 225,
-      "priority": "P1",
-      "priorityReason": "Known standard gap",
-      "slug": "senior-team-member-reviews-weekly",
-      "title": "Senior team member reviews weekly",
-      "category": "Knowledge System Maintenance",
-      "importance": 2,
-      "revenueEstimate": 1,
-      "dependencyEstimate": 2,
-      "frequencyEstimate": 2,
-      "valueBasis": "Editorial estimate from build/factory.py; not measured income, demand or use.",
-      "effortEstimate": null,
-      "status": "needs-work",
-      "articleUrl": "https://blitzmetrics.com/knowledge-system-maintenance",
-      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=senior-team-member-reviews-weekly#task-senior-team-member-reviews-weekly",
-      "nextAction": "The contributor status is needs-work; finish and review the guide.",
-      "standardVerification": {
-        "instructionSourceSha256": "4f91861cc0b84e6e105860ba3057e2cb564aa31665a9f1d842345ab23703c226",
-        "articleKey": "blitzmetrics.com/knowledge-system-maintenance",
-        "gates": {
-          "instructionRevisionReviewed": {
-            "id": "instructionRevisionReviewed",
-            "label": "Exact instruction revision reviewed",
-            "state": "pass",
-            "reason": "Current source bytes match the review recorded 2026-09-06. Review scope and limits: Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate.",
-            "reviewedAt": "2026-09-06",
-            "reviewer": "Codex editorial review",
-            "sourceSha256": "4f91861cc0b84e6e105860ba3057e2cb564aa31665a9f1d842345ab23703c226"
-          },
-          "instructionStandards": {
-            "id": "instructionStandards",
-            "label": "Instruction requirements checked",
-            "state": "unknown",
-            "reason": "The current exact-byte review has no structured instruction-requirements checklist.",
-            "sourceSha256": "4f91861cc0b84e6e105860ba3057e2cb564aa31665a9f1d842345ab23703c226"
-          },
-          "contributorComplete": {
-            "id": "contributorComplete",
-            "label": "Contributor reports guide complete",
-            "state": "unmet",
-            "reason": "The contributor status is needs-work; finish and review the guide."
-          },
-          "articleMapped": {
-            "id": "articleMapped",
-            "label": "Canonical article mapped",
-            "state": "pass",
-            "reason": "The task maps to a normalized canonical article URL.",
-            "articleUrl": "https://blitzmetrics.com/knowledge-system-maintenance"
-          },
-          "articleCatalogGate": {
-            "id": "articleCatalogGate",
-            "label": "Article catalog gate",
-            "state": "unmet",
-            "reason": "At least one task mapped to this hub is not contributor-complete."
-          },
-          "articleSemanticCertification": {
-            "id": "articleSemanticCertification",
-            "label": "Article semantic certification",
-            "state": "unknown",
-            "reason": "No exact-revision positive semantic review is recorded for this article."
-          },
-          "taskExampleEvidence": {
-            "id": "taskExampleEvidence",
-            "label": "Task-attributed example evidence",
-            "state": "unknown",
-            "reason": "No source-backed example audit exists for the mapped hub."
-          },
-          "recordedExecution": {
-            "id": "recordedExecution",
-            "label": "Recorded real execution",
-            "state": "unknown",
-            "reason": "No execution ledger record names this task. Historical run frequency is unknown."
-          },
-          "acceptedExecution": {
-            "id": "acceptedExecution",
-            "label": "Accepted execution result",
-            "state": "unknown",
-            "reason": "No structured acceptance review is recorded for the current canonical article revision. A completed run label is not acceptance."
-          },
-          "setupSuccess": {
-            "id": "setupSuccess",
-            "label": "New-user setup success",
-            "state": "unknown",
-            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
-            "supportedRoute": "manual-guide",
-            "installationCertified": false,
-            "schedulingCertified": false
-          }
-        },
-        "unmetStandardGates": [
-          "contributorComplete",
-          "articleCatalogGate"
-        ],
-        "heldStandardGates": [],
-        "unknownStandardGates": [
-          "instructionStandards",
-          "articleSemanticCertification",
-          "taskExampleEvidence",
-          "recordedExecution",
-          "acceptedExecution",
-          "setupSuccess"
-        ],
-        "fullyVerified": false,
-        "queuePosition": 225,
-        "priority": "P1",
-        "priorityReason": "Known standard gap",
-        "nextAction": "The contributor status is needs-work; finish and review the guide."
-      }
-    },
-    {
-      "queuePosition": 226,
-      "priority": "P1",
-      "priorityReason": "Known standard gap",
-      "slug": "separate-methodology-layer-what-why-from-implementation-layer-how",
-      "title": "Separate methodology layer (what/why) from implementation layer (how)",
-      "category": "Knowledge System Maintenance",
-      "importance": 2,
-      "revenueEstimate": 1,
-      "dependencyEstimate": 2,
-      "frequencyEstimate": 2,
-      "valueBasis": "Editorial estimate from build/factory.py; not measured income, demand or use.",
-      "effortEstimate": null,
-      "status": "needs-work",
-      "articleUrl": "https://blitzmetrics.com/knowledge-system-maintenance",
-      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=separate-methodology-layer-what-why-from-implementation-layer-how#task-separate-methodology-layer-what-why-from-implementation-layer-how",
-      "nextAction": "The contributor status is needs-work; finish and review the guide.",
-      "standardVerification": {
-        "instructionSourceSha256": "7ea316bc5d2c6de1fce9148b32c7b07797ecd09ae6fd46a11f2165ca3765ff52",
-        "articleKey": "blitzmetrics.com/knowledge-system-maintenance",
-        "gates": {
-          "instructionRevisionReviewed": {
-            "id": "instructionRevisionReviewed",
-            "label": "Exact instruction revision reviewed",
-            "state": "pass",
-            "reason": "Current source bytes match the review recorded 2026-09-06. Review scope and limits: Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate.",
-            "reviewedAt": "2026-09-06",
-            "reviewer": "Codex editorial review",
-            "sourceSha256": "7ea316bc5d2c6de1fce9148b32c7b07797ecd09ae6fd46a11f2165ca3765ff52"
-          },
-          "instructionStandards": {
-            "id": "instructionStandards",
-            "label": "Instruction requirements checked",
-            "state": "unknown",
-            "reason": "The current exact-byte review has no structured instruction-requirements checklist.",
-            "sourceSha256": "7ea316bc5d2c6de1fce9148b32c7b07797ecd09ae6fd46a11f2165ca3765ff52"
-          },
-          "contributorComplete": {
-            "id": "contributorComplete",
-            "label": "Contributor reports guide complete",
-            "state": "unmet",
-            "reason": "The contributor status is needs-work; finish and review the guide."
-          },
-          "articleMapped": {
-            "id": "articleMapped",
-            "label": "Canonical article mapped",
-            "state": "pass",
-            "reason": "The task maps to a normalized canonical article URL.",
-            "articleUrl": "https://blitzmetrics.com/knowledge-system-maintenance"
-          },
-          "articleCatalogGate": {
-            "id": "articleCatalogGate",
-            "label": "Article catalog gate",
-            "state": "unmet",
-            "reason": "At least one task mapped to this hub is not contributor-complete."
-          },
-          "articleSemanticCertification": {
-            "id": "articleSemanticCertification",
-            "label": "Article semantic certification",
-            "state": "unknown",
-            "reason": "No exact-revision positive semantic review is recorded for this article."
-          },
-          "taskExampleEvidence": {
-            "id": "taskExampleEvidence",
-            "label": "Task-attributed example evidence",
-            "state": "unknown",
-            "reason": "No source-backed example audit exists for the mapped hub."
-          },
-          "recordedExecution": {
-            "id": "recordedExecution",
-            "label": "Recorded real execution",
-            "state": "unknown",
-            "reason": "No execution ledger record names this task. Historical run frequency is unknown."
-          },
-          "acceptedExecution": {
-            "id": "acceptedExecution",
-            "label": "Accepted execution result",
-            "state": "unknown",
-            "reason": "No structured acceptance review is recorded for the current canonical article revision. A completed run label is not acceptance."
-          },
-          "setupSuccess": {
-            "id": "setupSuccess",
-            "label": "New-user setup success",
-            "state": "unknown",
-            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
-            "supportedRoute": "manual-guide",
-            "installationCertified": false,
-            "schedulingCertified": false
-          }
-        },
-        "unmetStandardGates": [
-          "contributorComplete",
-          "articleCatalogGate"
-        ],
-        "heldStandardGates": [],
-        "unknownStandardGates": [
-          "instructionStandards",
-          "articleSemanticCertification",
-          "taskExampleEvidence",
-          "recordedExecution",
-          "acceptedExecution",
-          "setupSuccess"
-        ],
-        "fullyVerified": false,
-        "queuePosition": 226,
-        "priority": "P1",
-        "priorityReason": "Known standard gap",
-        "nextAction": "The contributor status is needs-work; finish and review the guide."
-      }
-    },
-    {
-      "queuePosition": 227,
-      "priority": "P1",
-      "priorityReason": "Known standard gap",
-      "slug": "set-up-business-ai-work-environment",
-      "title": "Set up a business AI work environment",
-      "category": "Knowledge System Maintenance",
-      "importance": 2,
-      "revenueEstimate": 1,
-      "dependencyEstimate": 2,
-      "frequencyEstimate": 2,
-      "valueBasis": "Editorial estimate from build/factory.py; not measured income, demand or use.",
-      "effortEstimate": null,
-      "status": "needs-work",
-      "articleUrl": "https://blitzmetrics.com/start/",
-      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=set-up-business-ai-work-environment#task-set-up-business-ai-work-environment",
-      "nextAction": "The contributor status is needs-work; finish and review the guide.",
-      "standardVerification": {
-        "instructionSourceSha256": "5929e07c12174f761f4b2c92e6f9319f292a2c5b69f87ce83d1d38baa531430e",
-        "articleKey": "blitzmetrics.com/start",
-        "gates": {
-          "instructionRevisionReviewed": {
-            "id": "instructionRevisionReviewed",
-            "label": "Exact instruction revision reviewed",
-            "state": "pass",
-            "reason": "Current source bytes match the review recorded 2026-09-06. Review scope and limits: Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate.",
-            "reviewedAt": "2026-09-06",
-            "reviewer": "Codex editorial review",
-            "sourceSha256": "5929e07c12174f761f4b2c92e6f9319f292a2c5b69f87ce83d1d38baa531430e"
-          },
-          "instructionStandards": {
-            "id": "instructionStandards",
-            "label": "Instruction requirements checked",
-            "state": "unknown",
-            "reason": "The current exact-byte review has no structured instruction-requirements checklist.",
-            "sourceSha256": "5929e07c12174f761f4b2c92e6f9319f292a2c5b69f87ce83d1d38baa531430e"
-          },
-          "contributorComplete": {
-            "id": "contributorComplete",
-            "label": "Contributor reports guide complete",
-            "state": "unmet",
-            "reason": "The contributor status is needs-work; finish and review the guide."
-          },
-          "articleMapped": {
-            "id": "articleMapped",
-            "label": "Canonical article mapped",
-            "state": "pass",
-            "reason": "The task maps to a normalized canonical article URL.",
-            "articleUrl": "https://blitzmetrics.com/start/"
-          },
-          "articleCatalogGate": {
-            "id": "articleCatalogGate",
-            "label": "Article catalog gate",
-            "state": "unmet",
-            "reason": "At least one task mapped to this hub is not contributor-complete."
-          },
-          "articleSemanticCertification": {
-            "id": "articleSemanticCertification",
-            "label": "Article semantic certification",
-            "state": "unknown",
-            "reason": "No exact-revision positive semantic review is recorded for this article."
-          },
-          "taskExampleEvidence": {
-            "id": "taskExampleEvidence",
-            "label": "Task-attributed example evidence",
-            "state": "unknown",
-            "reason": "No source-backed example audit exists for the mapped hub."
-          },
-          "recordedExecution": {
-            "id": "recordedExecution",
-            "label": "Recorded real execution",
-            "state": "unknown",
-            "reason": "No execution ledger record names this task. Historical run frequency is unknown."
-          },
-          "acceptedExecution": {
-            "id": "acceptedExecution",
-            "label": "Accepted execution result",
-            "state": "unknown",
-            "reason": "No structured acceptance review is recorded for the current canonical article revision. A completed run label is not acceptance."
-          },
-          "setupSuccess": {
-            "id": "setupSuccess",
-            "label": "New-user setup success",
-            "state": "unknown",
-            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
-            "supportedRoute": "manual-guide",
-            "installationCertified": false,
-            "schedulingCertified": false
-          }
-        },
-        "unmetStandardGates": [
-          "contributorComplete",
-          "articleCatalogGate"
-        ],
-        "heldStandardGates": [],
-        "unknownStandardGates": [
-          "instructionStandards",
-          "articleSemanticCertification",
-          "taskExampleEvidence",
-          "recordedExecution",
-          "acceptedExecution",
-          "setupSuccess"
-        ],
-        "fullyVerified": false,
-        "queuePosition": 227,
-        "priority": "P1",
-        "priorityReason": "Known standard gap",
-        "nextAction": "The contributor status is needs-work; finish and review the guide."
-      }
-    },
-    {
-      "queuePosition": 228,
-      "priority": "P1",
-      "priorityReason": "Known standard gap",
-      "slug": "set-up-special-project-workspace",
-      "title": "Set up a Special Project workspace",
-      "category": "Knowledge System Maintenance",
-      "importance": 2,
-      "revenueEstimate": 1,
-      "dependencyEstimate": 2,
-      "frequencyEstimate": 2,
-      "valueBasis": "Editorial estimate from build/factory.py; not measured income, demand or use.",
-      "effortEstimate": null,
-      "status": "needs-work",
-      "articleUrl": "https://blitzmetrics.com/special-project/",
-      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=set-up-special-project-workspace#task-set-up-special-project-workspace",
-      "nextAction": "The contributor status is needs-work; finish and review the guide.",
-      "standardVerification": {
-        "instructionSourceSha256": "cf3513f809506b374cd4568f98dc7efe6d65609df5bbdd82991bc71acfc27bf0",
-        "articleKey": "blitzmetrics.com/special-project",
-        "gates": {
-          "instructionRevisionReviewed": {
-            "id": "instructionRevisionReviewed",
-            "label": "Exact instruction revision reviewed",
-            "state": "pass",
-            "reason": "Current source bytes match the review recorded 2026-09-06. Review scope and limits: Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate.",
-            "reviewedAt": "2026-09-06",
-            "reviewer": "Codex editorial review",
-            "sourceSha256": "cf3513f809506b374cd4568f98dc7efe6d65609df5bbdd82991bc71acfc27bf0"
-          },
-          "instructionStandards": {
-            "id": "instructionStandards",
-            "label": "Instruction requirements checked",
-            "state": "unknown",
-            "reason": "The current exact-byte review has no structured instruction-requirements checklist.",
-            "sourceSha256": "cf3513f809506b374cd4568f98dc7efe6d65609df5bbdd82991bc71acfc27bf0"
-          },
-          "contributorComplete": {
-            "id": "contributorComplete",
-            "label": "Contributor reports guide complete",
-            "state": "unmet",
-            "reason": "The contributor status is needs-work; finish and review the guide."
-          },
-          "articleMapped": {
-            "id": "articleMapped",
-            "label": "Canonical article mapped",
-            "state": "pass",
-            "reason": "The task maps to a normalized canonical article URL.",
-            "articleUrl": "https://blitzmetrics.com/special-project/"
-          },
-          "articleCatalogGate": {
-            "id": "articleCatalogGate",
-            "label": "Article catalog gate",
-            "state": "unmet",
-            "reason": "At least one task mapped to this hub is not contributor-complete."
-          },
-          "articleSemanticCertification": {
-            "id": "articleSemanticCertification",
-            "label": "Article semantic certification",
-            "state": "unknown",
-            "reason": "No exact-revision positive semantic review is recorded for this article."
-          },
-          "taskExampleEvidence": {
-            "id": "taskExampleEvidence",
-            "label": "Task-attributed example evidence",
-            "state": "unknown",
-            "reason": "No source-backed example audit exists for the mapped hub."
-          },
-          "recordedExecution": {
-            "id": "recordedExecution",
-            "label": "Recorded real execution",
-            "state": "unknown",
-            "reason": "No execution ledger record names this task. Historical run frequency is unknown."
-          },
-          "acceptedExecution": {
-            "id": "acceptedExecution",
-            "label": "Accepted execution result",
-            "state": "unknown",
-            "reason": "No structured acceptance review is recorded for the current canonical article revision. A completed run label is not acceptance."
-          },
-          "setupSuccess": {
-            "id": "setupSuccess",
-            "label": "New-user setup success",
-            "state": "unknown",
-            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
-            "supportedRoute": "manual-guide",
-            "installationCertified": false,
-            "schedulingCertified": false
-          }
-        },
-        "unmetStandardGates": [
-          "contributorComplete",
-          "articleCatalogGate"
-        ],
-        "heldStandardGates": [],
-        "unknownStandardGates": [
-          "instructionStandards",
-          "articleSemanticCertification",
-          "taskExampleEvidence",
-          "recordedExecution",
-          "acceptedExecution",
-          "setupSuccess"
-        ],
-        "fullyVerified": false,
-        "queuePosition": 228,
-        "priority": "P1",
-        "priorityReason": "Known standard gap",
-        "nextAction": "The contributor status is needs-work; finish and review the guide."
-      }
-    },
-    {
-      "queuePosition": 229,
-      "priority": "P1",
-      "priorityReason": "Known standard gap",
-      "slug": "tag-proposal-with-affected-sop-and-queue-for-review",
-      "title": "Tag proposal with affected task guide and queue for review",
-      "category": "Knowledge System Maintenance",
-      "importance": 2,
-      "revenueEstimate": 1,
-      "dependencyEstimate": 2,
-      "frequencyEstimate": 2,
-      "valueBasis": "Editorial estimate from build/factory.py; not measured income, demand or use.",
-      "effortEstimate": null,
-      "status": "needs-work",
-      "articleUrl": "https://blitzmetrics.com/knowledge-system-maintenance",
-      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=tag-proposal-with-affected-sop-and-queue-for-review#task-tag-proposal-with-affected-sop-and-queue-for-review",
-      "nextAction": "The contributor status is needs-work; finish and review the guide.",
-      "standardVerification": {
-        "instructionSourceSha256": "42c83e46dfbdff680bb50b0aae127e9d0edc5208c05af9d4e99602a33bc8bb9f",
-        "articleKey": "blitzmetrics.com/knowledge-system-maintenance",
-        "gates": {
-          "instructionRevisionReviewed": {
-            "id": "instructionRevisionReviewed",
-            "label": "Exact instruction revision reviewed",
-            "state": "pass",
-            "reason": "Current source bytes match the review recorded 2026-09-06. Review scope and limits: Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate.",
-            "reviewedAt": "2026-09-06",
-            "reviewer": "Codex editorial review",
-            "sourceSha256": "42c83e46dfbdff680bb50b0aae127e9d0edc5208c05af9d4e99602a33bc8bb9f"
-          },
-          "instructionStandards": {
-            "id": "instructionStandards",
-            "label": "Instruction requirements checked",
-            "state": "unknown",
-            "reason": "The current exact-byte review has no structured instruction-requirements checklist.",
-            "sourceSha256": "42c83e46dfbdff680bb50b0aae127e9d0edc5208c05af9d4e99602a33bc8bb9f"
-          },
-          "contributorComplete": {
-            "id": "contributorComplete",
-            "label": "Contributor reports guide complete",
-            "state": "unmet",
-            "reason": "The contributor status is needs-work; finish and review the guide."
-          },
-          "articleMapped": {
-            "id": "articleMapped",
-            "label": "Canonical article mapped",
-            "state": "pass",
-            "reason": "The task maps to a normalized canonical article URL.",
-            "articleUrl": "https://blitzmetrics.com/knowledge-system-maintenance"
-          },
-          "articleCatalogGate": {
-            "id": "articleCatalogGate",
-            "label": "Article catalog gate",
-            "state": "unmet",
-            "reason": "At least one task mapped to this hub is not contributor-complete."
-          },
-          "articleSemanticCertification": {
-            "id": "articleSemanticCertification",
-            "label": "Article semantic certification",
-            "state": "unknown",
-            "reason": "No exact-revision positive semantic review is recorded for this article."
-          },
-          "taskExampleEvidence": {
-            "id": "taskExampleEvidence",
-            "label": "Task-attributed example evidence",
-            "state": "unknown",
-            "reason": "No source-backed example audit exists for the mapped hub."
-          },
-          "recordedExecution": {
-            "id": "recordedExecution",
-            "label": "Recorded real execution",
-            "state": "unknown",
-            "reason": "No execution ledger record names this task. Historical run frequency is unknown."
-          },
-          "acceptedExecution": {
-            "id": "acceptedExecution",
-            "label": "Accepted execution result",
-            "state": "unknown",
-            "reason": "No structured acceptance review is recorded for the current canonical article revision. A completed run label is not acceptance."
-          },
-          "setupSuccess": {
-            "id": "setupSuccess",
-            "label": "New-user setup success",
-            "state": "unknown",
-            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
-            "supportedRoute": "manual-guide",
-            "installationCertified": false,
-            "schedulingCertified": false
-          }
-        },
-        "unmetStandardGates": [
-          "contributorComplete",
-          "articleCatalogGate"
-        ],
-        "heldStandardGates": [],
-        "unknownStandardGates": [
-          "instructionStandards",
-          "articleSemanticCertification",
-          "taskExampleEvidence",
-          "recordedExecution",
-          "acceptedExecution",
-          "setupSuccess"
-        ],
-        "fullyVerified": false,
-        "queuePosition": 229,
-        "priority": "P1",
-        "priorityReason": "Known standard gap",
-        "nextAction": "The contributor status is needs-work; finish and review the guide."
-      }
-    },
-    {
-      "queuePosition": 230,
-      "priority": "P1",
-      "priorityReason": "Known standard gap",
-      "slug": "update-status-table-in-definitive-article-guide",
-      "title": "Update status table in Definitive Article Guide",
-      "category": "Knowledge System Maintenance",
-      "importance": 2,
-      "revenueEstimate": 1,
-      "dependencyEstimate": 2,
-      "frequencyEstimate": 2,
-      "valueBasis": "Editorial estimate from build/factory.py; not measured income, demand or use.",
-      "effortEstimate": null,
-      "status": "needs-work",
-      "articleUrl": "https://blitzmetrics.com/knowledge-system-maintenance",
-      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=update-status-table-in-definitive-article-guide#task-update-status-table-in-definitive-article-guide",
-      "nextAction": "The contributor status is needs-work; finish and review the guide.",
-      "standardVerification": {
-        "instructionSourceSha256": "4bb4527a43d359641b9e07ff0d633f9622f4061aae035f37040c293c7871af3e",
-        "articleKey": "blitzmetrics.com/knowledge-system-maintenance",
-        "gates": {
-          "instructionRevisionReviewed": {
-            "id": "instructionRevisionReviewed",
-            "label": "Exact instruction revision reviewed",
-            "state": "pass",
-            "reason": "Current source bytes match the review recorded 2026-09-06. Review scope and limits: Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate.",
-            "reviewedAt": "2026-09-06",
-            "reviewer": "Codex editorial review",
-            "sourceSha256": "4bb4527a43d359641b9e07ff0d633f9622f4061aae035f37040c293c7871af3e"
-          },
-          "instructionStandards": {
-            "id": "instructionStandards",
-            "label": "Instruction requirements checked",
-            "state": "unknown",
-            "reason": "The current exact-byte review has no structured instruction-requirements checklist.",
-            "sourceSha256": "4bb4527a43d359641b9e07ff0d633f9622f4061aae035f37040c293c7871af3e"
-          },
-          "contributorComplete": {
-            "id": "contributorComplete",
-            "label": "Contributor reports guide complete",
-            "state": "unmet",
-            "reason": "The contributor status is needs-work; finish and review the guide."
-          },
-          "articleMapped": {
-            "id": "articleMapped",
-            "label": "Canonical article mapped",
-            "state": "pass",
-            "reason": "The task maps to a normalized canonical article URL.",
-            "articleUrl": "https://blitzmetrics.com/knowledge-system-maintenance"
-          },
-          "articleCatalogGate": {
-            "id": "articleCatalogGate",
-            "label": "Article catalog gate",
-            "state": "unmet",
-            "reason": "At least one task mapped to this hub is not contributor-complete."
-          },
-          "articleSemanticCertification": {
-            "id": "articleSemanticCertification",
-            "label": "Article semantic certification",
-            "state": "unknown",
-            "reason": "No exact-revision positive semantic review is recorded for this article."
-          },
-          "taskExampleEvidence": {
-            "id": "taskExampleEvidence",
-            "label": "Task-attributed example evidence",
-            "state": "unknown",
-            "reason": "No source-backed example audit exists for the mapped hub."
-          },
-          "recordedExecution": {
-            "id": "recordedExecution",
-            "label": "Recorded real execution",
-            "state": "unknown",
-            "reason": "No execution ledger record names this task. Historical run frequency is unknown."
-          },
-          "acceptedExecution": {
-            "id": "acceptedExecution",
-            "label": "Accepted execution result",
-            "state": "unknown",
-            "reason": "No structured acceptance review is recorded for the current canonical article revision. A completed run label is not acceptance."
-          },
-          "setupSuccess": {
-            "id": "setupSuccess",
-            "label": "New-user setup success",
-            "state": "unknown",
-            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
-            "supportedRoute": "manual-guide",
-            "installationCertified": false,
-            "schedulingCertified": false
-          }
-        },
-        "unmetStandardGates": [
-          "contributorComplete",
-          "articleCatalogGate"
-        ],
-        "heldStandardGates": [],
-        "unknownStandardGates": [
-          "instructionStandards",
-          "articleSemanticCertification",
-          "taskExampleEvidence",
-          "recordedExecution",
-          "acceptedExecution",
-          "setupSuccess"
-        ],
-        "fullyVerified": false,
-        "queuePosition": 230,
-        "priority": "P1",
-        "priorityReason": "Known standard gap",
-        "nextAction": "The contributor status is needs-work; finish and review the guide."
-      }
-    },
-    {
-      "queuePosition": 231,
-      "priority": "P1",
-      "priorityReason": "Known standard gap",
-      "slug": "validate-cross-reference-integrity-across-articles",
-      "title": "Validate cross-reference integrity across articles",
-      "category": "Knowledge System Maintenance",
-      "importance": 2,
-      "revenueEstimate": 1,
-      "dependencyEstimate": 2,
-      "frequencyEstimate": 2,
-      "valueBasis": "Editorial estimate from build/factory.py; not measured income, demand or use.",
-      "effortEstimate": null,
-      "status": "needs-work",
-      "articleUrl": "https://blitzmetrics.com/knowledge-system-maintenance",
-      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=validate-cross-reference-integrity-across-articles#task-validate-cross-reference-integrity-across-articles",
-      "nextAction": "The contributor status is needs-work; finish and review the guide.",
-      "standardVerification": {
-        "instructionSourceSha256": "8d6c630a81443874a72bbbb3f606d20c61a849f6037df92822d3af6b12acc523",
-        "articleKey": "blitzmetrics.com/knowledge-system-maintenance",
-        "gates": {
-          "instructionRevisionReviewed": {
-            "id": "instructionRevisionReviewed",
-            "label": "Exact instruction revision reviewed",
-            "state": "pass",
-            "reason": "Current source bytes match the review recorded 2026-09-27. Review scope and limits: Exact-revision written instruction review after removing private account information from public instructions; whole-task gates remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/public-editorial-boundary-2026-09-27.md",
-            "reviewedAt": "2026-09-27",
-            "reviewer": "Codex root with independent GPT-6 Sol source review",
-            "sourceSha256": "8d6c630a81443874a72bbbb3f606d20c61a849f6037df92822d3af6b12acc523"
-          },
-          "instructionStandards": {
-            "id": "instructionStandards",
-            "label": "Instruction requirements checked",
-            "state": "pass",
-            "reason": "All five instruction requirements have explicit passing checks for the current source revision.",
-            "reviewedAt": "2026-09-27",
-            "reviewer": "Codex root with independent GPT-6 Sol source review",
-            "reviewScope": "Exact-revision written instruction review after removing private account information from public instructions; whole-task gates remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/public-editorial-boundary-2026-09-27.md",
-            "sourceSha256": "8d6c630a81443874a72bbbb3f606d20c61a849f6037df92822d3af6b12acc523",
-            "standards": {
+              "executionId": "authority-guides-repair-20261005-2100"
+            },
+            "revisionObservation": {
               "version": 1,
-              "checks": {
-                "opening": {
-                  "state": "pass",
-                  "reason": "Names link meaning, reader value and the dependent full-audit result record.",
-                  "evidence": "Check that each link leads to the help its words promise. Read the source page and its linked page so readers get the right answer. Next, record the full article audit result once the topic, steps, and facts are also checked."
-                },
-                "recipe": {
-                  "state": "pass",
-                  "reason": "Scoped sources, eight ordered steps, concept coverage, checked outputs and explicit missing-access treatment.",
-                  "evidence": "Working table records source revision, surrounding claim, target/fragment, direction, semantic result and coverage limits."
-                },
-                "links": {
-                  "state": "pass",
-                  "reason": "Maintained concept guides and next task are linked; public example/link choices do not disclose private account information.",
-                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/public-editorial-boundary-2026-09-27.md"
-                },
-                "evidence": {
-                  "state": "pass",
-                  "reason": "Fiction is labeled and source-backed real evidence is still required.",
-                  "evidence": "A loaded URL is not semantic proof; the source requires dated observations and explicit UNKNOWN coverage."
-                },
-                "handoff": {
-                  "state": "pass",
-                  "reason": "Specific owner handoff and full-audit dependency are explicit.",
-                  "evidence": "Article owner receives dated link table, checked repairs and unresolved source edits. Record full result only after other audit checks."
-                }
-              }
+              "taskSlug": "publish-skill-and-task-page",
+              "canonicalURL": "https://blitzmetrics.com/skill-publishing-standard/",
+              "sourceSha256": "660d6f1abd8678c851c0a08059f27982e8e29b46775ea217a2ae1d6e3ba55537",
+              "representation": "wordpress-content-html",
+              "observedAt": "2026-10-06T00:18:28.770022Z",
+              "observer": "Codex separate post-acceptance authenticated source read",
+              "state": "observed",
+              "reason": "Publishing recipe still matches the authority release accepted after its public deployment. New startup repair is a separate run.",
+              "evidenceRefs": [
+                "sha256:0c848d4a94f769fce01473d5bc00c98b0d9f89895348137983020825f00acaf2"
+              ]
             }
           },
-          "contributorComplete": {
-            "id": "contributorComplete",
-            "label": "Contributor reports guide complete",
-            "state": "unmet",
-            "reason": "The contributor status is needs-work; finish and review the guide."
-          },
-          "articleMapped": {
-            "id": "articleMapped",
-            "label": "Canonical article mapped",
-            "state": "pass",
-            "reason": "The task maps to a normalized canonical article URL.",
-            "articleUrl": "https://blitzmetrics.com/knowledge-system-maintenance"
-          },
-          "articleCatalogGate": {
-            "id": "articleCatalogGate",
-            "label": "Article catalog gate",
-            "state": "unmet",
-            "reason": "At least one task mapped to this hub is not contributor-complete."
-          },
-          "articleSemanticCertification": {
-            "id": "articleSemanticCertification",
-            "label": "Article semantic certification",
-            "state": "unknown",
-            "reason": "No exact-revision positive semantic review is recorded for this article."
-          },
-          "taskExampleEvidence": {
-            "id": "taskExampleEvidence",
-            "label": "Task-attributed example evidence",
-            "state": "unknown",
-            "reason": "No source-backed example audit exists for the mapped hub."
-          },
-          "recordedExecution": {
-            "id": "recordedExecution",
-            "label": "Recorded real execution",
-            "state": "unknown",
-            "reason": "No execution ledger record names this task. Historical run frequency is unknown."
-          },
-          "acceptedExecution": {
-            "id": "acceptedExecution",
-            "label": "Accepted execution result",
-            "state": "unknown",
-            "reason": "No structured acceptance review is recorded for the current canonical article revision. A completed run label is not acceptance."
-          },
           "setupSuccess": {
             "id": "setupSuccess",
             "label": "New-user setup success",
@@ -26753,240 +26982,18 @@
           }
         },
         "unmetStandardGates": [
-          "contributorComplete",
-          "articleCatalogGate"
+          "articleSemanticCertification"
         ],
         "heldStandardGates": [],
         "unknownStandardGates": [
-          "articleSemanticCertification",
           "taskExampleEvidence",
-          "recordedExecution",
-          "acceptedExecution",
-          "setupSuccess"
-        ],
-        "fullyVerified": false,
-        "queuePosition": 231,
-        "priority": "P1",
-        "priorityReason": "Known standard gap",
-        "nextAction": "The contributor status is needs-work; finish and review the guide."
-      }
-    },
-    {
-      "queuePosition": 232,
-      "priority": "P1",
-      "priorityReason": "Known standard gap",
-      "slug": "check-topic-coherence-for-each-definitive-article",
-      "title": "Check topic coherence for each definitive article",
-      "category": "Knowledge System Maintenance",
-      "importance": 2,
-      "revenueEstimate": 1,
-      "dependencyEstimate": 2,
-      "frequencyEstimate": 2,
-      "valueBasis": "Editorial estimate from build/factory.py; not measured income, demand or use.",
-      "effortEstimate": null,
-      "status": "complete",
-      "articleUrl": "https://blitzmetrics.com/knowledge-system-maintenance",
-      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=check-topic-coherence-for-each-definitive-article#task-check-topic-coherence-for-each-definitive-article",
-      "nextAction": "At least one task mapped to this hub is not contributor-complete.",
-      "standardVerification": {
-        "instructionSourceSha256": "4ea1e3a849f9e79dc244f11d4470e2ec243ad1fa58979c1f9a5200beebad0349",
-        "articleKey": "blitzmetrics.com/knowledge-system-maintenance",
-        "gates": {
-          "instructionRevisionReviewed": {
-            "id": "instructionRevisionReviewed",
-            "label": "Exact instruction revision reviewed",
-            "state": "pass",
-            "reason": "Current source bytes match the review recorded 2026-09-06. Review scope and limits: Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate.",
-            "reviewedAt": "2026-09-06",
-            "reviewer": "Codex editorial review",
-            "sourceSha256": "4ea1e3a849f9e79dc244f11d4470e2ec243ad1fa58979c1f9a5200beebad0349"
-          },
-          "instructionStandards": {
-            "id": "instructionStandards",
-            "label": "Instruction requirements checked",
-            "state": "unknown",
-            "reason": "The current exact-byte review has no structured instruction-requirements checklist.",
-            "sourceSha256": "4ea1e3a849f9e79dc244f11d4470e2ec243ad1fa58979c1f9a5200beebad0349"
-          },
-          "contributorComplete": {
-            "id": "contributorComplete",
-            "label": "Contributor reports guide complete",
-            "state": "pass",
-            "reason": "The contributor status is complete; this is a source claim, not execution proof."
-          },
-          "articleMapped": {
-            "id": "articleMapped",
-            "label": "Canonical article mapped",
-            "state": "pass",
-            "reason": "The task maps to a normalized canonical article URL.",
-            "articleUrl": "https://blitzmetrics.com/knowledge-system-maintenance"
-          },
-          "articleCatalogGate": {
-            "id": "articleCatalogGate",
-            "label": "Article catalog gate",
-            "state": "unmet",
-            "reason": "At least one task mapped to this hub is not contributor-complete."
-          },
-          "articleSemanticCertification": {
-            "id": "articleSemanticCertification",
-            "label": "Article semantic certification",
-            "state": "unknown",
-            "reason": "No exact-revision positive semantic review is recorded for this article."
-          },
-          "taskExampleEvidence": {
-            "id": "taskExampleEvidence",
-            "label": "Task-attributed example evidence",
-            "state": "unknown",
-            "reason": "No source-backed example audit exists for the mapped hub."
-          },
-          "recordedExecution": {
-            "id": "recordedExecution",
-            "label": "Recorded real execution",
-            "state": "unknown",
-            "reason": "No execution ledger record names this task. Historical run frequency is unknown."
-          },
-          "acceptedExecution": {
-            "id": "acceptedExecution",
-            "label": "Accepted execution result",
-            "state": "unknown",
-            "reason": "No structured acceptance review is recorded for the current canonical article revision. A completed run label is not acceptance."
-          },
-          "setupSuccess": {
-            "id": "setupSuccess",
-            "label": "New-user setup success",
-            "state": "unknown",
-            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
-            "supportedRoute": "manual-guide",
-            "installationCertified": false,
-            "schedulingCertified": false
-          }
-        },
-        "unmetStandardGates": [
-          "articleCatalogGate"
-        ],
-        "heldStandardGates": [],
-        "unknownStandardGates": [
-          "instructionStandards",
-          "articleSemanticCertification",
-          "taskExampleEvidence",
-          "recordedExecution",
-          "acceptedExecution",
-          "setupSuccess"
-        ],
-        "fullyVerified": false,
-        "queuePosition": 232,
-        "priority": "P1",
-        "priorityReason": "Known standard gap",
-        "nextAction": "At least one task mapped to this hub is not contributor-complete."
-      }
-    },
-    {
-      "queuePosition": 233,
-      "priority": "P1",
-      "priorityReason": "Known standard gap",
-      "slug": "create-sop-amendment-proposal-500-words",
-      "title": "Create task guide Amendment Proposal (≤500 words)",
-      "category": "Knowledge System Maintenance",
-      "importance": 2,
-      "revenueEstimate": 1,
-      "dependencyEstimate": 2,
-      "frequencyEstimate": 2,
-      "valueBasis": "Editorial estimate from build/factory.py; not measured income, demand or use.",
-      "effortEstimate": null,
-      "status": "complete",
-      "articleUrl": "https://blitzmetrics.com/knowledge-system-maintenance",
-      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=create-sop-amendment-proposal-500-words#task-create-sop-amendment-proposal-500-words",
-      "nextAction": "At least one task mapped to this hub is not contributor-complete.",
-      "standardVerification": {
-        "instructionSourceSha256": "50f08832cdb10985515679357f3a9ca0f3e65d19b27a18ed72eac00292432ba4",
-        "articleKey": "blitzmetrics.com/knowledge-system-maintenance",
-        "gates": {
-          "instructionRevisionReviewed": {
-            "id": "instructionRevisionReviewed",
-            "label": "Exact instruction revision reviewed",
-            "state": "pass",
-            "reason": "Current source bytes match the review recorded 2026-09-06. Review scope and limits: Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate.",
-            "reviewedAt": "2026-09-06",
-            "reviewer": "Codex editorial review",
-            "sourceSha256": "50f08832cdb10985515679357f3a9ca0f3e65d19b27a18ed72eac00292432ba4"
-          },
-          "instructionStandards": {
-            "id": "instructionStandards",
-            "label": "Instruction requirements checked",
-            "state": "unknown",
-            "reason": "The current exact-byte review has no structured instruction-requirements checklist.",
-            "sourceSha256": "50f08832cdb10985515679357f3a9ca0f3e65d19b27a18ed72eac00292432ba4"
-          },
-          "contributorComplete": {
-            "id": "contributorComplete",
-            "label": "Contributor reports guide complete",
-            "state": "pass",
-            "reason": "The contributor status is complete; this is a source claim, not execution proof."
-          },
-          "articleMapped": {
-            "id": "articleMapped",
-            "label": "Canonical article mapped",
-            "state": "pass",
-            "reason": "The task maps to a normalized canonical article URL.",
-            "articleUrl": "https://blitzmetrics.com/knowledge-system-maintenance"
-          },
-          "articleCatalogGate": {
-            "id": "articleCatalogGate",
-            "label": "Article catalog gate",
-            "state": "unmet",
-            "reason": "At least one task mapped to this hub is not contributor-complete."
-          },
-          "articleSemanticCertification": {
-            "id": "articleSemanticCertification",
-            "label": "Article semantic certification",
-            "state": "unknown",
-            "reason": "No exact-revision positive semantic review is recorded for this article."
-          },
-          "taskExampleEvidence": {
-            "id": "taskExampleEvidence",
-            "label": "Task-attributed example evidence",
-            "state": "unknown",
-            "reason": "No source-backed example audit exists for the mapped hub."
-          },
-          "recordedExecution": {
-            "id": "recordedExecution",
-            "label": "Recorded real execution",
-            "state": "unknown",
-            "reason": "No execution ledger record names this task. Historical run frequency is unknown."
-          },
-          "acceptedExecution": {
-            "id": "acceptedExecution",
-            "label": "Accepted execution result",
-            "state": "unknown",
-            "reason": "No structured acceptance review is recorded for the current canonical article revision. A completed run label is not acceptance."
-          },
-          "setupSuccess": {
-            "id": "setupSuccess",
-            "label": "New-user setup success",
-            "state": "unknown",
-            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
-            "supportedRoute": "manual-guide",
-            "installationCertified": false,
-            "schedulingCertified": false
-          }
-        },
-        "unmetStandardGates": [
-          "articleCatalogGate"
-        ],
-        "heldStandardGates": [],
-        "unknownStandardGates": [
-          "instructionStandards",
-          "articleSemanticCertification",
-          "taskExampleEvidence",
-          "recordedExecution",
-          "acceptedExecution",
           "setupSuccess"
         ],
         "fullyVerified": false,
         "queuePosition": 233,
         "priority": "P1",
         "priorityReason": "Known standard gap",
-        "nextAction": "At least one task mapped to this hub is not contributor-complete."
+        "nextAction": "The observed article source hash does not match the reviewed revision."
       }
     },
     {
