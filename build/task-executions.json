@@ -1315,9 +1315,9 @@
       },
       "startedAt": "2026-10-05T21:01:41.079406+00:00",
       "recordedAt": "2026-10-05T21:01:41.079406+00:00",
-      "updatedAt": "2026-10-05T21:42:23.018508+00:00",
-      "status": "blocked",
-      "result": "Three authority/site guides pass written checks. Both mapped articles are live with exact saved/anonymous parity and phone/desktop inspections. Source PR68 merged; its build passed but runtime deployment is queued during service degradation. Exact current public downloads and independent acceptance remain open. No client execution or income result.",
+      "updatedAt": "2026-10-06T00:18:26.316026+00:00",
+      "status": "completed",
+      "result": "Three authority/site guides and both canonical article revisions published and checked. Obsolete never-started deployment cancelled after verified source inclusion; successor release succeeded. Exact public guides, seven archives and phone/desktop views pass. Publication acceptance remains separate from novice setup and client results.",
       "metaArticle": {
         "status": "published",
         "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#authority-guides-repair-20261005-2100"
@@ -1330,6 +1330,72 @@
         {
           "visibility": "public",
           "url": "https://github.com/Local-Service-Spotlight/task-library/pull/68"
+        },
+        {
+          "visibility": "public",
+          "url": "https://github.com/Local-Service-Spotlight/task-library/actions/runs/37379330811"
+        }
+      ],
+      "finishedAt": "2026-10-05T23:45:19.414908+00:00",
+      "acceptanceReviews": [
+        {
+          "version": 1,
+          "reviewId": "authority-guides-repair-20261005-independent-acceptance",
+          "taskSlug": "publish-skill-and-task-page",
+          "canonicalURL": "https://blitzmetrics.com/skill-publishing-standard/",
+          "recipeSourceSha256": "660d6f1abd8678c851c0a08059f27982e8e29b46775ea217a2ae1d6e3ba55537",
+          "representation": "wordpress-content-html",
+          "instructionSourceSha256": "609039d529572a9d02b5e2b5847469d5fe7e6138a55c1ebd3c70a716c3a1093a",
+          "reviewedAt": "2026-10-05T23:58:49Z",
+          "reviewer": "Codex independent audit subagent",
+          "executor": "codex-root-coordinator",
+          "criteria": {
+            "result": {
+              "state": "pass",
+              "expectedResult": "Three named guide pages and their two associated canonical article revisions are published with exact maintained guide bytes and readable public article bodies.",
+              "observedResult": "The immutable bd032 release snapshot records exact parity for all three guides. Public review receipts record HTTP 200 and full rendered text for both canonical articles; the seven-archive receipt records the expected copies. This accepts written/publication delivery only; it does not certify task execution, novice setup, client outcomes, or revenue.",
+              "sourceRef": "https://blitzmetrics.com/skill-publishing-standard/",
+              "evidenceRefs": [
+                "https://github.com/Local-Service-Spotlight/task-library/pull/68",
+                "https://github.com/Local-Service-Spotlight/task-library/actions/runs/37379330811",
+                "sha256:0a505219b03c0fb40d52818a39217c24b581a06d354aaaa291f710a55f4efe2d",
+                "sha256:d6c9ceee86d5a9a9200b79bd4b8c9b137677939ed968cc61bf689c9184e6d176",
+                "sha256:ecec9bc2a3e3bfec3332d251a652ffd48e7cfcbcd1408da53447393889458450"
+              ]
+            },
+            "handoff": {
+              "state": "pass",
+              "expectedResult": "The released maintenance material is reachable by the Task Library maintenance function, with its verification queue available as the next-work record.",
+              "observedResult": "The public Task Library release includes a 276-task verification queue. The captured public queue lists 0 fully verified tasks and preserves gate-level unknowns; this is an actionable maintenance handoff, not a claim that a human received or acted on it.",
+              "sourceRef": "https://blitzmetrics.com/skill-publishing-standard/",
+              "evidenceRefs": [
+                "https://local-service-spotlight.github.io/task-library/",
+                "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md",
+                "sha256:0a505219b03c0fb40d52818a39217c24b581a06d354aaaa291f710a55f4efe2d"
+              ]
+            },
+            "publicGuideCopiesAndArchives": {
+              "state": "pass",
+              "expectedResult": "All three in-scope guide pages match the immutable source release and the seven archived copies pass parity checks.",
+              "observedResult": "The public release receipt records exact source parity for the three target guides; the archive parity receipt records all seven copies matching. Current later RCF working-tree edits are outside this accepted release.",
+              "sourceRef": "https://blitzmetrics.com/skill-publishing-standard/",
+              "evidenceRefs": [
+                "https://github.com/Local-Service-Spotlight/task-library/pull/68",
+                "sha256:0a505219b03c0fb40d52818a39217c24b581a06d354aaaa291f710a55f4efe2d",
+                "sha256:ecec9bc2a3e3bfec3332d251a652ffd48e7cfcbcd1408da53447393889458450"
+              ]
+            },
+            "publicGuideViews": {
+              "state": "pass",
+              "expectedResult": "The three published guide surfaces render on desktop and mobile, with the guide content and copy control visible and no reported queue overflow.",
+              "observedResult": "The live render receipt records the three guides on phone and desktop, visible copy controls, and queue overflow false. It explicitly labels the check live and not novice setup; no media played.",
+              "sourceRef": "https://blitzmetrics.com/skill-publishing-standard/",
+              "evidenceRefs": [
+                "sha256:5fe7f9ce0713703662e6d9bb392471fa6a896d1588d7436fbab12b5bd2b4b727"
+              ]
+            }
+          },
+          "nextHandoff": "Task Library maintenance function: use the released verification queue and current written guidance to select the next actionable task batch; keep real execution, first-use setup, and business outcomes separate until their own evidence exists."
         }
       ]
     },
