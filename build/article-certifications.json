@@ -2475,6 +2475,20 @@
    "evidenceRefs": [
     "sha256:0c848d4a94f769fce01473d5bc00c98b0d9f89895348137983020825f00acaf2"
    ]
+  },
+  {
+   "version": 1,
+   "taskSlug": "publish-skill-and-task-page",
+   "canonicalURL": "https://blitzmetrics.com/skill-publishing-standard/",
+   "sourceSha256": "660d6f1abd8678c851c0a08059f27982e8e29b46775ea217a2ae1d6e3ba55537",
+   "representation": "wordpress-content-html",
+   "observedAt": "2026-10-06T02:09:18.996036Z",
+   "observer": "Codex separate post-acceptance authenticated source read",
+   "state": "observed",
+   "reason": "Exact publishing recipe remains unchanged after independent acceptance of the shared startup repair.",
+   "evidenceRefs": [
+    "sha256:d37b0b58c3d05c51b5d2fc414f21b43d960cc2d9d1277196cbc4ad0e47454139"
+   ]
   }
  ]
 }
