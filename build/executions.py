@@ -4,6 +4,7 @@ The ledger references existing task slugs. Public output is an allowlisted
 projection, not a copy of the ledger. Missing history remains unknown.
 """
 import copy
+import calendar
 import fcntl
 import hashlib
 import ipaddress
@@ -26,6 +27,9 @@ ACCEPTANCE_STATES = {'pass', 'unmet', 'hold', 'unknown'}
 REPRESENTATIONS = {'public-rendered-html', 'public-visible-text', 'wordpress-content-html', 'repository-source'}
 SETUP_CRITERIA = {'filesLoaded', 'inputsAndAccess', 'result', 'handoff'}
 SETUP_PARTICIPANTS = {'novice-human', 'fresh-agent', 'experienced-agent'}
+HISTORICAL_STATES = {'pass', 'unmet', 'hold', 'unknown'}
+HISTORICAL_ID = re.compile(r'^historical-[a-f0-9]{24}$')
+HISTORICAL_PERIOD_PRECISIONS = {'timestamp', 'date', 'month', 'year', 'unknown'}
 SETUP_PUBLIC_FIELDS = ('version', 'reviewId', 'executionId', 'taskSlug', 'canonicalURL',
                        'recipeSourceSha256', 'representation', 'instructionSourceSha256',
                        'reviewedAt', 'reviewer', 'participantType', 'assistance', 'app', 'surface',
@@ -366,8 +370,154 @@ def validate_record(record, known_slugs):
     return clean
 
 
+def validate_historical_evidence(record, known_slugs):
+    """Validate historical proof without asserting a new or fully specified run."""
+    fields = {'version', 'evidenceId', 'sourceIdentitySha256', 'taskSlugs',
+              'occurrence', 'recipeRevision', 'observedAt', 'recordedAt', 'updatedAt',
+              'outcome', 'evidence', 'executorCode', 'reviewerCode', 'review'}
+    if not isinstance(record, dict) or set(record) != fields:
+        raise ValueError('historical evidence has unsupported or missing fields')
+    if type(record['version']) is not int or record['version'] != 1:
+        raise ValueError('historical evidence requires version 1')
+    identity_hash = record['sourceIdentitySha256']
+    if not isinstance(identity_hash, str) or not re.fullmatch(r'[a-f0-9]{64}', identity_hash):
+        raise ValueError('sourceIdentitySha256 must hash the stable source identity')
+    if record['evidenceId'] != 'historical-' + identity_hash[:24] or not HISTORICAL_ID.fullmatch(record['evidenceId']):
+        raise ValueError('evidenceId must be the opaque stable ID derived from sourceIdentitySha256')
+    slugs = record['taskSlugs']
+    if (not isinstance(slugs, list) or not slugs or
+            any(not isinstance(slug, str) or slug not in known_slugs for slug in slugs) or
+            len(slugs) != len(set(slugs))):
+        raise ValueError('historical taskSlugs must be distinct existing Task Library slugs')
+
+    occurrence = record['occurrence']
+    if not isinstance(occurrence, dict) or set(occurrence) != {'start', 'end'}:
+        raise ValueError('historical occurrence requires explicit start and end precision')
+    parsed_period = {}
+    for bound, value in occurrence.items():
+        if not isinstance(value, dict) or set(value) != {'precision', 'value'}:
+            raise ValueError(f'historical occurrence {bound} requires precision and value')
+        precision, raw_value = value['precision'], value['value']
+        if precision not in HISTORICAL_PERIOD_PRECISIONS:
+            raise ValueError(f'historical occurrence {bound} has unsupported precision')
+        if precision == 'unknown':
+            if raw_value is not None:
+                raise ValueError(f'historical occurrence {bound} must use null when precision is unknown')
+            parsed_period[bound] = None
+            continue
+        if not isinstance(raw_value, str):
+            raise ValueError(f'historical occurrence {bound} requires a value at its stated precision')
+        try:
+            if precision == 'timestamp':
+                parsed_period[bound] = timestamp(raw_value, f'historical occurrence {bound}')
+            elif precision == 'date':
+                if not re.fullmatch(r'\d{4}-\d{2}-\d{2}', raw_value):
+                    raise ValueError('expected YYYY-MM-DD')
+                parsed_period[bound] = datetime.strptime(raw_value, '%Y-%m-%d').replace(tzinfo=timezone.utc)
+                if bound == 'end':
+                    parsed_period[bound] = parsed_period[bound].replace(hour=23, minute=59, second=59, microsecond=999999)
+            elif precision == 'month':
+                if not re.fullmatch(r'\d{4}-\d{2}', raw_value):
+                    raise ValueError('expected YYYY-MM')
+                parsed_period[bound] = datetime.strptime(raw_value, '%Y-%m').replace(tzinfo=timezone.utc)
+                if bound == 'end':
+                    last_day = calendar.monthrange(parsed_period[bound].year, parsed_period[bound].month)[1]
+                    parsed_period[bound] = parsed_period[bound].replace(day=last_day, hour=23, minute=59, second=59, microsecond=999999)
+            else:
+                if not re.fullmatch(r'\d{4}', raw_value):
+                    raise ValueError('expected YYYY')
+                parsed_period[bound] = datetime(int(raw_value), 1, 1, tzinfo=timezone.utc)
+                if bound == 'end':
+                    parsed_period[bound] = parsed_period[bound].replace(month=12, day=31, hour=23, minute=59, second=59, microsecond=999999)
+        except (ValueError, TypeError) as exc:
+            raise ValueError(f'historical occurrence {bound} does not match {precision} precision') from exc
+    if parsed_period['start'] and parsed_period['end'] and parsed_period['start'] > parsed_period['end']:
+        raise ValueError('historical occurrence start cannot follow end')
+
+    recipe = record['recipeRevision']
+    if not isinstance(recipe, dict) or set(recipe) != {'state', 'canonicalURL', 'sourceSha256'}:
+        raise ValueError('historical recipeRevision requires state, canonicalURL and sourceSha256')
+    if recipe['state'] not in {'known', 'unknown'}:
+        raise ValueError('historical recipeRevision state must be known or unknown')
+    url, source_hash = recipe['canonicalURL'], recipe['sourceSha256']
+    if url is not None:
+        public_url(url, 'historical recipe canonicalURL')
+        if urlsplit(url).query or urlsplit(url).fragment:
+            raise ValueError('historical recipe canonicalURL cannot contain query or fragment')
+    if recipe['state'] == 'known':
+        if not url or not isinstance(source_hash, str) or not re.fullmatch(r'[a-f0-9]{64}', source_hash):
+            raise ValueError('known historical recipe revision requires exact URL and sourceSha256')
+    elif source_hash is not None:
+        raise ValueError('unknown historical recipe revision must not invent a sourceSha256')
+
+    observed = timestamp(record['observedAt'], 'historical observedAt')
+    recorded = timestamp(record['recordedAt'], 'historical recordedAt')
+    updated = timestamp(record['updatedAt'], 'historical updatedAt')
+    if observed > updated or recorded > updated:
+        raise ValueError('historical observedAt, recordedAt and updatedAt are out of order')
+    wall_now = datetime.now(timezone.utc)
+    if any(value > wall_now for value in (observed, recorded, updated)):
+        raise ValueError('historical observedAt, recordedAt and updatedAt cannot be in the future')
+    outcome = _setup_text(record['outcome'], 'historical outcome', 600)
+    evidence = record['evidence']
+    if not isinstance(evidence, list) or not evidence:
+        raise ValueError('historical evidence requires at least one public reference or private content hash')
+    clean_evidence = []
+    for item in evidence:
+        if not isinstance(item, dict):
+            raise ValueError('historical evidence references must be objects')
+        if item.get('visibility') == 'public':
+            if set(item) != {'visibility', 'url'}:
+                raise ValueError('public historical evidence accepts only visibility and URL')
+            public_url(item['url'], 'historical evidence URL')
+        elif item.get('visibility') == 'private':
+            if (set(item) != {'visibility', 'sha256'} or not isinstance(item.get('sha256'), str) or
+                    not re.fullmatch(r'[a-f0-9]{64}', item['sha256'])):
+                raise ValueError('private historical evidence accepts only an actual content SHA-256')
+        else:
+            raise ValueError('historical evidence visibility must be explicit')
+        clean_evidence.append(copy.deepcopy(item))
+    codes = {}
+    for key in ('executorCode', 'reviewerCode'):
+        value = record[key]
+        if not isinstance(value, str) or not re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9._:-]{2,79}', value):
+            raise ValueError(f'{key} must be a short privacy-safe identity code')
+        codes[key] = value
+    if codes['executorCode'].casefold() == codes['reviewerCode'].casefold():
+        raise ValueError('historical executor and reviewer codes must be distinct')
+    review = record['review']
+    review_fields = {'identity', 'output', 'acceptance', 'handoff'}
+    if not isinstance(review, dict) or set(review) != review_fields:
+        raise ValueError('historical review requires identity, output, acceptance and handoff states')
+    clean_review = {}
+    for key, item in review.items():
+        if not isinstance(item, dict) or set(item) != {'state', 'notes'}:
+            raise ValueError(f'historical review {key} requires state and notes')
+        if item['state'] not in HISTORICAL_STATES:
+            raise ValueError(f'historical review {key} has an invalid state')
+        clean_review[key] = {'state': item['state'], 'notes': _setup_text(item['notes'], f'historical review {key}', 400)}
+    if clean_review['output']['state'] == 'pass' and clean_review['identity']['state'] != 'pass':
+        raise ValueError('historical output cannot pass unless source identity review passes')
+    if clean_review['acceptance']['state'] == 'pass' and clean_review['output']['state'] != 'pass':
+        raise ValueError('historical acceptance cannot pass unless output review passes')
+    if clean_review['handoff']['state'] == 'pass' and clean_review['output']['state'] != 'pass':
+        raise ValueError('historical handoff cannot pass unless output review passes')
+    if parsed_period['end'] and parsed_period['end'] > recorded:
+        raise ValueError('historical occurrence end cannot follow the ledger recordedAt')
+    return copy.deepcopy(record) | {'evidence': clean_evidence, 'review': clean_review}
+
+
+class ExecutionRecords(list):
+    """Legacy list-compatible run records with separately held historical evidence."""
+    def __init__(self, executions, historical_evidence=None):
+        super().__init__(executions)
+        self.historical_evidence = historical_evidence or []
+
+
 def validate_ledger(raw, known_slugs):
-    if not isinstance(raw, dict) or set(raw) != {'schemaVersion', 'executions'} or (type(raw['schemaVersion']) is not int or raw['schemaVersion'] != 1):
+    if (not isinstance(raw, dict) or set(raw) not in (
+            {'schemaVersion', 'executions'}, {'schemaVersion', 'executions', 'historicalEvidence'}) or
+            type(raw.get('schemaVersion')) is not int or raw['schemaVersion'] != 1):
         raise ValueError('execution ledger requires schemaVersion 1 and executions')
     if not isinstance(raw['executions'], list):
         raise ValueError('executions must be a list')
@@ -386,7 +536,15 @@ def validate_ledger(raw, known_slugs):
                 raise ValueError('parentExecutionId cannot form a cycle')
             seen.add(parent)
             parent = by_id[parent].get('parentExecutionId')
-    return records
+    historical = raw.get('historicalEvidence', [])
+    if not isinstance(historical, list):
+        raise ValueError('historicalEvidence must be a list')
+    historical = [validate_historical_evidence(item, known_slugs) for item in historical]
+    evidence_ids = [item['evidenceId'] for item in historical]
+    identity_hashes = [item['sourceIdentitySha256'] for item in historical]
+    if len(evidence_ids) != len(set(evidence_ids)) or len(identity_hashes) != len(set(identity_hashes)):
+        raise ValueError('duplicate historical evidence identity; preserve one item per source job')
+    return ExecutionRecords(records, historical)
 
 
 def load(path, known_slugs):
@@ -410,6 +568,18 @@ def public_record(record):
     if record.get('setupReviews'):
         result['setupReviews'] = [public_setup_review(review) for review in record['setupReviews']]
     return result
+
+
+def public_historical_record(record):
+    recipe = record['recipeRevision']
+    return {
+        'version': record['version'], 'evidenceId': record['evidenceId'],
+        'taskSlugs': list(record['taskSlugs']), 'occurrence': copy.deepcopy(record['occurrence']),
+        'recipeRevision': {'state': recipe['state'], 'canonicalURL': recipe['canonicalURL']},
+        'observedAt': record['observedAt'], 'outcome': record['outcome'],
+        'review': copy.deepcopy(record['review']),
+        'evidenceUrls': [item['url'] for item in record['evidence'] if item['visibility'] == 'public'],
+        'privateEvidenceRecorded': any(item['visibility'] == 'private' for item in record['evidence'])}
 
 
 def _public_review_criteria(review):
@@ -450,13 +620,23 @@ def check_times_not_future(records, now):
             if timestamp(review['reviewedAt'], 'setup reviewedAt') > now or any(
                     timestamp(item['observedAt'], 'setup observedAt') > now for item in review['criteria'].values()):
                 raise ValueError('setup review timestamps cannot be in the future')
+    for record in getattr(records, 'historical_evidence', ()):
+        for key in ('observedAt', 'recordedAt', 'updatedAt'):
+            if timestamp(record[key], f'historical {key}') > now:
+                raise ValueError('historical evidence timestamps cannot be in the future')
 
 
-def attach(tasks, records, as_of=None):
+def attach(tasks, records, as_of=None, historical_evidence=None):
     """Count each execution once per named task; never infer runs from meta URLs."""
     now = as_of or datetime.now(timezone.utc)
-    records = validate_ledger({'schemaVersion': 1, 'executions': records},
-                              {t['slug'] for t in tasks})
+    historical = (getattr(records, 'historical_evidence', []) if historical_evidence is None
+                  else historical_evidence)
+    raw = {'schemaVersion': 1, 'executions': list(records)}
+    if historical:
+        raw['historicalEvidence'] = historical
+    validated = validate_ledger(raw, {t['slug'] for t in tasks})
+    records = validated
+    historical = validated.historical_evidence
     check_times_not_future(records, now)
     recent = now - timedelta(days=30)
     for task in tasks:
@@ -480,12 +660,24 @@ def attach(tasks, records, as_of=None):
             'setupReviews': [public_setup_review(review) for r in runs
                              for review in r.get('setupReviews', ()) if review['taskSlug'] == task['slug']],
         }
+        task_history = [item for item in historical if task['slug'] in item['taskSlugs']]
+        verified_outputs = sum(item['review']['identity']['state'] == 'pass' and
+                               item['review']['output']['state'] == 'pass' for item in task_history)
+        task['historicalDeliveryEvidence'] = {
+            'count': verified_outputs,
+            'candidateCount': len(task_history),
+            'records': [public_historical_record(item) for item in task_history]}
     return {'schemaVersion': 1, 'asOf': now.isoformat(),
             'countDefinition': 'Distinct recorded execution IDs, separate from meta-article URLs. History is partial; absent history is unknown, not zero. The last-30-day count is a documented lower bound, not total task frequency.',
             'recordedExecutions': len(records) if records else None,
             'completedExecutions': sum(r['status'] == 'completed' for r in records) if records else None,
             'partialExecutions': sum(r['status'] == 'partial' for r in records) if records else None,
-            'executions': [public_record(r) for r in records]}
+            'executions': [public_record(r) for r in records],
+            'historicalDeliveryEvidence': {
+                'count': sum(item['review']['identity']['state'] == 'pass' and item['review']['output']['state'] == 'pass'
+                             for item in historical),
+                'candidateCount': len(historical),
+                'records': [public_historical_record(item) for item in historical]}}
 
 
 def digest(record):
@@ -530,12 +722,75 @@ def _upsert_locked(path, record, known_slugs, expected_revision=None, dry_run=Fa
         if expected_revision is not None:
             raise ValueError('cannot update an execution ID that is not recorded')
         records.append(candidate)
-    validate_ledger({'schemaVersion': 1, 'executions': records}, known_slugs)
+    validate_ledger(_ledger_value(records), known_slugs)
     outcome = {'action': 'updated' if found else 'created',
                'executionId': candidate['executionId'], 'revision': digest(candidate)}
     if dry_run:
         return dict(outcome, written=False)
-    encoded = json.dumps({'schemaVersion': 1, 'executions': records}, indent=2) + '\n'
+    encoded = json.dumps(_ledger_value(records), indent=2) + '\n'
+    handle, temporary = tempfile.mkstemp(prefix=path.name + '.', dir=path.parent)
+    try:
+        with os.fdopen(handle, 'w', encoding='utf-8') as target:
+            target.write(encoded)
+            target.flush()
+            os.fsync(target.fileno())
+        os.replace(temporary, path)
+    finally:
+        if os.path.exists(temporary):
+            os.unlink(temporary)
+    return outcome
+
+
+def _ledger_value(records):
+    value = {'schemaVersion': 1, 'executions': list(records)}
+    historical = getattr(records, 'historical_evidence', [])
+    if historical:
+        value['historicalEvidence'] = historical
+    return value
+
+
+def _upsert_historical_locked(path, record, known_slugs, expected_revision=None, dry_run=False):
+    path = Path(path)
+    candidate = validate_historical_evidence(record, known_slugs)
+    now = datetime.now(timezone.utc)
+    for key in ('observedAt', 'recordedAt', 'updatedAt'):
+        if timestamp(candidate[key], f'historical {key}') > now:
+            raise ValueError(f'historical {key} cannot be in the future')
+    with path.open(encoding='utf-8') as source:
+        raw = json.load(source)
+    records = validate_ledger(raw, known_slugs)
+    historical = records.historical_evidence
+    by_id = next((item for item in historical if item['evidenceId'] == candidate['evidenceId']), None)
+    by_identity = next((item for item in historical
+                        if item['sourceIdentitySha256'] == candidate['sourceIdentitySha256']), None)
+    if by_id and by_identity and by_id is not by_identity:
+        raise ValueError('evidenceId and sourceIdentitySha256 identify different historical records')
+    found = by_id or by_identity
+    if found == candidate:
+        return {'action': 'unchanged', 'evidenceId': candidate['evidenceId'], 'revision': digest(found)}
+    if found:
+        if expected_revision != digest(found):
+            raise ValueError('historical evidence exists: supply its current --expected-revision to update it')
+        for key in ('evidenceId', 'sourceIdentitySha256', 'recordedAt'):
+            if found[key] != candidate[key]:
+                raise ValueError(f'{key} is immutable; do not reidentify or recount a historical source job')
+        if timestamp(candidate['updatedAt'], 'historical updatedAt') <= timestamp(found['updatedAt'], 'historical updatedAt'):
+            raise ValueError('a historical evidence update requires later updatedAt')
+        historical[historical.index(found)] = candidate
+    else:
+        if expected_revision is not None:
+            raise ValueError('cannot update historical evidence that is not recorded')
+        if timestamp(candidate['observedAt'], 'historical observedAt') > timestamp(candidate['recordedAt'], 'historical recordedAt'):
+            raise ValueError('historical first observation cannot follow its recordedAt')
+        historical.append(candidate)
+    raw = _ledger_value(records)
+    raw['historicalEvidence'] = historical
+    validated = validate_ledger(raw, known_slugs)
+    outcome = {'action': 'updated' if found else 'created',
+               'evidenceId': candidate['evidenceId'], 'revision': digest(candidate)}
+    if dry_run:
+        return dict(outcome, written=False)
+    encoded = json.dumps(_ledger_value(validated), indent=2) + '\n'
     handle, temporary = tempfile.mkstemp(prefix=path.name + '.', dir=path.parent)
     try:
         with os.fdopen(handle, 'w', encoding='utf-8') as target:
@@ -555,3 +810,11 @@ def upsert(path, record, known_slugs, expected_revision=None, dry_run=False):
     with path.with_suffix('.lock').open('a', encoding='utf-8') as lock:
         fcntl.flock(lock, fcntl.LOCK_EX)
         return _upsert_locked(path, record, known_slugs, expected_revision, dry_run)
+
+
+def upsert_historical(path, record, known_slugs, expected_revision=None, dry_run=False):
+    """Idempotently add/update a historical evidence item without creating an execution."""
+    path = Path(path)
+    with path.with_suffix('.lock').open('a', encoding='utf-8') as lock:
+        fcntl.flock(lock, fcntl.LOCK_EX)
+        return _upsert_historical_locked(path, record, known_slugs, expected_revision, dry_run)

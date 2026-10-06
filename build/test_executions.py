@@ -7,6 +7,7 @@ import unittest
 from unittest.mock import patch
 
 import executions
+import standard_verification
 
 NOW = datetime(2026, 9, 5, tzinfo=timezone.utc)
 KNOWN = {'first-task', 'second-task', 'untracked-task'}
@@ -36,6 +37,31 @@ def acceptance(**overrides):
                  'handoff': {'state': 'pass', 'expectedResult': 'The next owner receives it.', 'observedResult': 'The next owner received it.', 'sourceRef': 'https://example.com/handoff-guide', 'evidenceRefs': ['https://example.com/handoff']}}}
     value.update(overrides)
     return value
+
+
+def historical(evidence_hash='b' * 64, identity_hash='e' * 64):
+    return {
+        'version': 1,
+        'evidenceId': 'historical-' + identity_hash[:24],
+        'sourceIdentitySha256': identity_hash,
+        'taskSlugs': ['first-task'],
+        'occurrence': {
+            'start': {'precision': 'unknown', 'value': None},
+            'end': {'precision': 'timestamp', 'value': '2026-09-04T09:00:00Z'}},
+        'recipeRevision': {'state': 'unknown', 'canonicalURL': 'https://example.com/recipe', 'sourceSha256': None},
+        'observedAt': '2026-09-04T10:00:00Z',
+        'recordedAt': '2026-09-04T10:05:00Z',
+        'updatedAt': '2026-09-04T10:05:00Z',
+        'outcome': 'The named deliverable was observed and its historical source was reviewed.',
+        'evidence': [{'visibility': 'private', 'sha256': evidence_hash}],
+        'executorCode': 'exec-opaque-01',
+        'reviewerCode': 'review-opaque-02',
+        'review': {
+            'identity': {'state': 'pass', 'notes': 'Source record is distinct from the other imported jobs.'},
+            'output': {'state': 'pass', 'notes': 'The saved deliverable matches the described historical outcome.'},
+            'acceptance': {'state': 'pass', 'notes': 'The saved human response accepts this output.'},
+            'handoff': {'state': 'unknown', 'notes': 'No receiving acknowledgment was retained.'}}
+    }
 
 
 class ExecutionLedgerTests(unittest.TestCase):
@@ -137,6 +163,109 @@ class ExecutionLedgerTests(unittest.TestCase):
         self.assertIsNone(projection['recordedExecutions'])
         self.assertIsNone(tasks[0]['executionHistory']['completedRuns'])
         self.assertEqual(tasks[0]['metaArticleCount'], 85)
+
+    def test_historical_evidence_is_separate_from_run_and_acceptance_counts(self):
+        item = historical()
+        raw = {'schemaVersion': 1, 'executions': [], 'historicalEvidence': [item]}
+        records = executions.validate_ledger(raw, KNOWN)
+        tasks = [{'slug': 'first-task'}]
+        projection = executions.attach(tasks, records, NOW)
+        self.assertIsInstance(records, list)
+        self.assertEqual(projection['recordedExecutions'], None)
+        self.assertEqual(projection['completedExecutions'], None)
+        self.assertEqual(projection['historicalDeliveryEvidence']['count'], 1)
+        self.assertEqual(projection['historicalDeliveryEvidence']['candidateCount'], 1)
+        self.assertEqual(tasks[0]['executionHistory']['recordedRuns'], None)
+        self.assertEqual(tasks[0]['executionHistory']['completedLast30Days'], None)
+        self.assertEqual(tasks[0]['historicalDeliveryEvidence']['count'], 1)
+        self.assertEqual(tasks[0]['historicalDeliveryEvidence']['records'][0]['recipeRevision']['state'], 'unknown')
+        self.assertEqual(tasks[0]['historicalDeliveryEvidence']['records'][0]['occurrence']['start'],
+                         {'precision': 'unknown', 'value': None})
+        self.assertEqual(standard_verification.acceptance_result(
+            {'slug': 'first-task', 'article': 'https://example.com/recipe', '_sourceSha256': 'd' * 64},
+            tasks[0]['executionHistory'], {}, NOW)['state'], 'unknown')
+
+    def test_historical_projection_removes_private_hashes_and_actor_codes(self):
+        item = historical()
+        projection = executions.attach([{'slug': 'first-task'}],
+                                       executions.validate_ledger({'schemaVersion': 1, 'executions': [],
+                                                                   'historicalEvidence': [item]}, KNOWN), NOW)
+        text = json.dumps(projection)
+        self.assertNotIn(item['sourceIdentitySha256'], text)
+        self.assertNotIn(item['evidence'][0]['sha256'], text)
+        self.assertNotIn(item['executorCode'], text)
+        self.assertNotIn(item['reviewerCode'], text)
+        self.assertTrue(projection['historicalDeliveryEvidence']['records'][0]['privateEvidenceRecorded'])
+
+    def test_historical_unknowns_are_explicit_and_false_acceptance_fails(self):
+        item = historical()
+        item['recipeRevision']['sourceSha256'] = 'c' * 64
+        with self.assertRaisesRegex(ValueError, 'must not invent'):
+            executions.validate_historical_evidence(item, KNOWN)
+        item = historical(); item['review']['identity']['state'] = 'unknown'
+        with self.assertRaisesRegex(ValueError, 'identity review passes'):
+            executions.validate_historical_evidence(item, KNOWN)
+        item = historical(); item['review']['output']['state'] = 'unknown'
+        with self.assertRaisesRegex(ValueError, 'output review passes'):
+            executions.validate_historical_evidence(item, KNOWN)
+
+    def test_historical_source_identity_dedupes_idempotently_and_requires_revision_for_changes(self):
+        item = historical()
+        dry = executions.upsert_historical(self.path, item, KNOWN, dry_run=True)
+        self.assertFalse(dry['written'])
+        self.assertEqual(self.path.read_text(), '{"schemaVersion":1,"executions":[]}\n')
+        created = executions.upsert_historical(self.path, item, KNOWN)
+        self.assertEqual(created['action'], 'created')
+        before = self.path.read_bytes()
+        self.assertEqual(executions.upsert_historical(self.path, item, KNOWN)['action'], 'unchanged')
+        self.assertEqual(self.path.read_bytes(), before)
+        revised = copy.deepcopy(item)
+        revised['taskSlugs'] = ['first-task', 'second-task']
+        revised['review']['handoff'] = {'state': 'pass', 'notes': 'The receiving owner confirmed delivery.'}
+        revised['observedAt'] = '2026-09-04T11:00:00Z'
+        revised['updatedAt'] = '2026-09-04T11:00:00Z'
+        with self.assertRaisesRegex(ValueError, 'expected-revision'):
+            executions.upsert_historical(self.path, revised, KNOWN)
+        updated = executions.upsert_historical(self.path, revised, KNOWN, created['revision'])
+        self.assertEqual(updated['action'], 'updated')
+        self.assertEqual(len(executions.load(self.path, KNOWN)), 0)
+        self.assertEqual(len(executions.load(self.path, KNOWN).historical_evidence), 1)
+        projected_tasks = [{'slug': 'first-task'}, {'slug': 'second-task'}]
+        projected = executions.attach(projected_tasks, executions.load(self.path, KNOWN), NOW)
+        self.assertEqual(projected['historicalDeliveryEvidence']['count'], 1)
+        self.assertEqual([task['historicalDeliveryEvidence']['count'] for task in projected_tasks], [1, 1])
+        self.assertEqual(projected['recordedExecutions'], None)
+
+    def test_execution_upsert_preserves_historical_items(self):
+        executions.upsert_historical(self.path, historical(), KNOWN)
+        executions.upsert(self.path, record(), KNOWN)
+        raw = json.loads(self.path.read_text())
+        self.assertEqual(len(raw['executions']), 1)
+        self.assertEqual(len(raw['historicalEvidence']), 1)
+        self.assertEqual(len(executions.load(self.path, KNOWN).historical_evidence), 1)
+
+    def test_historical_records_reject_duplicate_source_identity_and_private_fields(self):
+        item = historical()
+        duplicate = historical('f' * 64)
+        with self.assertRaisesRegex(ValueError, 'duplicate historical evidence identity'):
+            executions.validate_ledger({'schemaVersion': 1, 'executions': [],
+                                        'historicalEvidence': [item, duplicate]}, KNOWN)
+        item = historical(); item['outcome'] = '/Users/private/client/notes.txt'
+        with self.assertRaisesRegex(ValueError, 'private paths'):
+            executions.validate_historical_evidence(item, KNOWN)
+        item = historical(); item['reviewerCode'] = item['executorCode']
+        with self.assertRaisesRegex(ValueError, 'must be distinct'):
+            executions.validate_historical_evidence(item, KNOWN)
+
+    def test_legacy_ledger_and_record_updates_remain_compatible(self):
+        old = record()
+        self.path.write_text(json.dumps({'schemaVersion': 1, 'executions': [old]}))
+        result = executions.upsert_historical(self.path, historical(), KNOWN)
+        self.assertEqual(result['action'], 'created')
+        raw = json.loads(self.path.read_text())
+        self.assertEqual(raw['schemaVersion'], 1)
+        self.assertEqual(len(raw['executions']), 1)
+        self.assertEqual(len(raw['historicalEvidence']), 1)
 
     def test_separately_scoped_child_keeps_parent_count_distinct(self):
         parent = record('parent-run')

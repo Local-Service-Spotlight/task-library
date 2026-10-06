@@ -86,6 +86,27 @@ class StandardVerificationTests(unittest.TestCase):
                             now=datetime(2026, 9, 15, 13, tzinfo=timezone.utc))
         return current['standardVerification']['gates']['acceptedExecution']
 
+    def test_historical_proof_is_exported_without_changing_gates(self):
+        tasks = self.derive([task('first-task')])
+        before = json.loads(json.dumps(tasks[0]['standardVerification']))
+        tasks[0]['historicalDeliveryEvidence'] = {
+            'count': 1, 'records': [{'evidenceId': 'historical-' + 'a' * 24}]}
+        payload = verification.report(tasks)
+        row = payload['queue'][0]
+        self.assertEqual(1, row['historicalDeliveryCount'])
+        self.assertEqual(['historical-' + 'a' * 24], row['historicalEvidenceIds'])
+        self.assertEqual(before, row['standardVerification'])
+        with tempfile.TemporaryDirectory() as out:
+            verification.write_artifacts(payload, out)
+            import csv
+            with open(Path(out) / 'verification-queue.csv') as source:
+                exported = next(csv.DictReader(source))
+            self.assertEqual('1', exported['historicalDeliveryCount'])
+            self.assertEqual('historical-' + 'a' * 24, exported['historicalEvidenceIds'])
+            self.assertEqual('unknown', exported['acceptedExecution'])
+            self.assertIn('does not pass a verification gate',
+                          (Path(out) / 'verification-queue.html').read_text())
+
     def test_proxies_cannot_certify_semantics_acceptance_or_setup(self):
         current = task('first-task', importance=5)
         records = [execution()]

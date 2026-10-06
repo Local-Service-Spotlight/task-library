@@ -8,6 +8,9 @@ flowchart LR
   Run --> Record[Execution record]
   Record --> Review[Independent acceptance review]
   Review --> Next[Next handoff]
+  Old[Surviving historical delivery proof] --> Hist[Historical evidence record]
+  Hist --> HistReview[Independent identity and output review]
+  HistReview --> Next
 ```
 
 The Task Library registry and Asset Tracker still own the task list. `build/task-executions.json` adds reviewed run records that reference those task slugs; it is not another task registry.
@@ -15,6 +18,12 @@ The Task Library registry and Asset Tracker still own the task list. `build/task
 A **task** is the reusable recipe. An **execution** is one actual attempt with a stable ID, start time, result, evidence and written meta article. A **meta article** tells what happened in that execution and what the recipe should learn. Start the record when work begins and update it through the same execution, including failures and blocked work. Publication follows the existing authority and privacy rules; writing does not authorize public posting.
 
 One parent job remains one execution. Internal QA checks, agent contributions, revisions, translations, syndicated copies and derivative articles do not create extra completed runs. A separately scoped, performed and documented child task may have a distinct execution ID with `parentExecutionId`; that child record does not add another completion to the parent task. Use multiple `taskSlugs` only when the same real execution actually performed each named task; do not list merely related skills. Never recreate old executions from pageviews, article dates, estimated cadence or URL counts. Historical runs may be backfilled only with evidence of their distinct identity and outcome.
+
+If old delivery proof survives but the original start time or task-guide revision does not, do not invent either value or insert a normal execution. Save a version 1 item in the optional `historicalEvidence` array in this same ledger. This preserves an output, human response or handoff without treating the import as a new run. An independent reviewer must check that the source item is unique and that the output really exists. The historical evidence count is separate from recorded executions, current-recipe acceptance, first-use setup and 30-day completions. When the missing original facts are later recovered, promote the same source identity into a normal execution through a reviewed change; the new ledger-entry date is still not the work date.
+
+Historical evidence uses an opaque `evidenceId` derived from a stable `sourceIdentitySha256` so a repeated import hits the same source job. Hash the source system and immutable native record identity; do not store a private source ID or private content in the public ledger. `occurrence.start` and `.end` state their precision (`timestamp`, `date`, `month`, `year`, or `unknown`) and use `null` only with `unknown`. `recipeRevision.state` is `known` only when the historical canonical URL and exact source hash are supported; otherwise leave the hash `null` and state `unknown`. `observedAt` is when the reviewer checked the source proof, `recordedAt` is when this item first entered the ledger, and `updatedAt` is the later correction time. All are actual timestamps, never reconstructed work dates.
+
+Each item includes a short public-safe outcome, source evidence in the same public-URL/private-content-hash format as executions, distinct privacy-safe `executorCode` and `reviewerCode`, and separate identity, output, acceptance and handoff review states. The public projection hides source-identity hashes, content hashes and actor codes. It reports an evidence candidate separately; only identity-pass plus output-pass items contribute to the historical delivery evidence count. This does not claim the old recipe is currently accepted. Use [`record_historical_evidence.py`](scripts/record_historical_evidence.py) to validate, deduplicate or revise an item without creating an execution.
 
 ## Three independent measures
 
@@ -77,7 +86,7 @@ Omitting `setupReviews` in an old client's update preserves the saved reviews. S
 
 ## Record schema, version 1
 
-The ledger contains exactly `schemaVersion: 1` and an `executions` array. Each record has:
+The ledger contains `schemaVersion: 1` and an `executions` array. It may also contain a `historicalEvidence` array of separately versioned proof items; existing v1 execution records are unchanged. Each execution has:
 
 | Field | Requirement |
 | --- | --- |
@@ -96,6 +105,8 @@ The ledger contains exactly `schemaVersion: 1` and an `executions` array. Each r
 | `recordedAt` | When the execution was first entered in this ledger, at or after its start. |
 | `updatedAt` | Record revision time, at or after `recordedAt` and any finish time. |
 
+Historical evidence is not an execution record. Each item has `version: 1`, `evidenceId`, `sourceIdentitySha256`, `taskSlugs`, `occurrence`, `recipeRevision`, `observedAt`, `recordedAt`, `updatedAt`, `outcome`, `evidence`, `executorCode`, `reviewerCode`, and `review`. The review contains `identity`, `output`, `acceptance` and `handoff`, each with `state` and a public-safe note. A verified historical output requires passing identity and output review. Acceptance and handoff can remain `unknown`; do not transfer evidence between separate jobs.
+
 Public evidence is exactly `{"visibility":"public","url":"https://…"}`. Private evidence is exactly `{"visibility":"private","sha256":"<actual saved-content SHA-256>"}`. Keep private files, paths, notes and credentials outside this repository. URLs must be public HTTPS without credentials or credential-like query fields. The validator cannot establish that arbitrary prose or a remote page is safe: review the exact public fields and destinations before committing.
 
 A published meta article is exactly `{"status":"published","url":"https://…"}`. A written draft is exactly `{"status":"draft","draftSha256":"<actual saved-draft SHA-256>"}`. A written article intentionally withheld from publication uses the same hash shape with `status: "withheld"`. A URL or a draft hash alone does not prove completion; status and run evidence must reflect what happened. Keep an in-progress meta draft for a running record and update the same record when the work ends.
@@ -110,11 +121,13 @@ Build current task data first, including the Asset Tracker CSV when applicable, 
 python3 build/build.py
 python3 scripts/record_execution.py /path/to/real-run.json --check
 python3 scripts/record_execution.py /path/to/real-run.json
+python3 scripts/record_historical_evidence.py /path/to/historical-evidence.json --check
+python3 scripts/record_historical_evidence.py /path/to/historical-evidence.json
 python3 build/build.py
 python3 -m unittest discover -s build -p 'test_*.py' -v
 ```
 
-After every ledger insert or revision, rebuild the checked-in dashboard data and execution projection before running the tests. Commit the source ledger and its generated projections together. The tests compare those records and correctly fail if a projection still shows an older status. Run the checks against the final files you will commit.
+After every ledger insert or revision, rebuild the checked-in dashboard data and execution projection before running the tests. Historical proof changes its separate historical-evidence projection only; it does not change execution counts or standard-verification gates. Commit the source ledger and its generated projections together. The tests compare those records and correctly fail if a projection still shows an older status. Run the checks against the final files you will commit.
 
 The CLI records only data; it does not run the task, publish a meta article, merge a change, schedule work or grant authority. Review and deploy through the repository's existing pull request and GitHub Pages workflow.
 
@@ -126,6 +139,8 @@ python3 scripts/record_execution.py /path/to/revised-real-run.json --expected-re
 ```
 
 Stale revisions, unknown tasks, duplicate IDs and unsupported fields fail before replacement. A stable sidecar lock serializes CLI writers. The ledger is written to a temporary file and replaced atomically; failed replacement leaves the previous ledger intact. `--check` validates the proposed insert or update without writing an execution record.
+
+The historical-evidence CLI uses the same atomic ledger update and `--check` pattern. Its receipt returns `evidenceId`, `action` and the current item revision. Repeated imports with the same source identity are idempotent. A correction needs `--expected-revision`; the evidence ID, source identity and original `recordedAt` cannot be changed. Review may correct or add task mappings when the same source job demonstrably performed those tasks; it still remains one historical item and never mints or increments an execution ID.
 
 Correct an inaccurate completion on the same ID with a reviewed revision; do not mint a second ID to hide it. Git retains the change history. A retry is a new execution only when it is an actual separate attempt with its own real start, outcome, evidence and written meta article.
 

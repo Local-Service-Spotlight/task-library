@@ -1715,7 +1715,7 @@
  ],
  "executionHistory": {
   "schemaVersion": 1,
-  "asOf": "2026-10-06T02:09:20.281848+00:00",
+  "asOf": "2026-10-06T03:43:19.011553+00:00",
   "countDefinition": "Distinct recorded execution IDs, separate from meta-article URLs. History is partial; absent history is unknown, not zero. The last-30-day count is a documented lower bound, not total task frequency.",
   "recordedExecutions": 24,
   "completedExecutions": 12,
@@ -2580,7 +2580,115 @@
      }
     ]
    }
-  ]
+  ],
+  "historicalDeliveryEvidence": {
+   "count": 2,
+   "candidateCount": 2,
+   "records": [
+    {
+     "version": 1,
+     "evidenceId": "historical-84b2c95111073421c11227b6",
+     "taskSlugs": [
+      "upload-processed-video-to-youtube",
+      "step-10-embed-source-video"
+     ],
+     "occurrence": {
+      "start": {
+       "precision": "unknown",
+       "value": null
+      },
+      "end": {
+       "precision": "unknown",
+       "value": null
+      }
+     },
+     "recipeRevision": {
+      "state": "unknown",
+      "canonicalURL": null
+     },
+     "observedAt": "2026-10-06T02:58:28.783349+00:00",
+     "outcome": "One Optimize Live delivery includes five web pages, a full talk and eight Shorts. Current anonymous checks found the intended video embeds on all five pages and matching metadata for all nine videos. This is one historical source job supporting two tasks.",
+     "review": {
+      "identity": {
+       "state": "pass",
+       "notes": "Original project job, delivery thread and output URLs match. Multiple outputs and repeated delivery comments belong to one source job."
+      },
+      "output": {
+       "state": "pass",
+       "notes": "Five page responses contain the intended video ID and expected start parameters; nine video metadata responses identify the expected titles and channel. Playback, visibility settings and full editing quality were not tested."
+      },
+      "acceptance": {
+       "state": "unknown",
+       "notes": "The delivery received acknowledgment. No independent review against the exact recipe used was recovered; gratitude and a completed checkbox do not establish that acceptance."
+      },
+      "handoff": {
+       "state": "pass",
+       "notes": "The completed output list reached the project thread and received acknowledgment. The next reporting request is recorded; its later completion remains unknown."
+      }
+     },
+     "evidenceUrls": [
+      "https://dennisyu.com/optimize/",
+      "https://localservicespotlight.com/why-isaac-hall-has-an-edge-in-ai-marketing-for-plumbers/",
+      "https://jack-allard.com/named-at-optimize-live/",
+      "https://isaac-hall.com/named-at-optimize-live/",
+      "https://markosipila.com/named-at-optimize-live/",
+      "https://www.youtube.com/watch?v=dyJrGllGbn4",
+      "https://www.youtube.com/watch?v=Ww6yDpbkyZA",
+      "https://www.youtube.com/watch?v=oD0Te0_rips",
+      "https://www.youtube.com/watch?v=cNBcEdr_hIY",
+      "https://www.youtube.com/watch?v=oY_Kk5A4Zq8",
+      "https://www.youtube.com/watch?v=bfNrXi_akr0",
+      "https://www.youtube.com/watch?v=7gyOAfD5yTI",
+      "https://www.youtube.com/watch?v=h0kSeES2erE",
+      "https://www.youtube.com/watch?v=ERdAMUq5a8Q"
+     ],
+     "privateEvidenceRecorded": true
+    },
+    {
+     "version": 1,
+     "evidenceId": "historical-67283f8934345f04d0bb68a6",
+     "taskSlugs": [
+      "submit-weekly-maa-report-every-friday"
+     ],
+     "occurrence": {
+      "start": {
+       "precision": "unknown",
+       "value": null
+      },
+      "end": {
+       "precision": "unknown",
+       "value": null
+      }
+     },
+     "recipeRevision": {
+      "state": "unknown",
+      "canonicalURL": null
+     },
+     "observedAt": "2026-10-06T02:58:28.783349+00:00",
+     "outcome": "A weekly business report was posted with Metrics, Analysis and Action, source exports, named owners and due dates. Nineteen selected aggregate checks matched the attached files, with one explicitly marked test submission excluded. Private customer details and figures are withheld.",
+     "review": {
+      "identity": {
+       "state": "pass",
+       "notes": "One dated weekly report and its exact attachment were recovered from the original project thread. Praise for a separate page delivery was not treated as report approval."
+      },
+      "output": {
+       "state": "pass",
+       "notes": "The report and its readable export archive exist. Selected totals reconcile with the stated date ranges and explicit test-row exclusion. This check does not certify every claim or source-system provenance."
+      },
+      "acceptance": {
+       "state": "unknown",
+       "notes": "No report-specific reviewer acceptance was found. A conclusion that direct traffic rules out ad influence is unsupported, so full accuracy acceptance remains open."
+      },
+      "handoff": {
+       "state": "pass",
+       "notes": "The report was posted to its project channel with named next actions and dates. Receipt by a particular reader and completion of those future actions remain unknown."
+      }
+     },
+     "evidenceUrls": [],
+     "privateEvidenceRecorded": true
+    }
+   ]
+  }
  },
  "categories": [
   {
@@ -2627,6 +2735,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "4e1bf704e84618823b4279b03c9ecd32f90e10ea810a345b9cf266500ef9d6bb",
@@ -2758,6 +2871,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "ea67b5076e805bb72dc00b4a471d3cb700f1acd6f5685928e41b55123cee11b5",
@@ -2892,6 +3010,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "91f7d6cc83a0b7a5bfb0e3fb1971dce1b4d26eb672ed0d77e35c084848d6b96f",
       "articleKey": "blitzmetrics.com/social-amplification",
@@ -3024,6 +3147,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "74f5e7a53b55c9f361312d411aa2b23ee7845660fd9cf62fe81f363434eb1a5b",
       "articleKey": "blitzmetrics.com/social-amplification",
@@ -3153,6 +3281,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "eb9c07ffbf6b288544f94ef06d32c85fe5a60b23122c270dd33d5d33062d6e1a",
@@ -3284,6 +3417,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "f5b1512084e55753cceefd417bcc5678f7f839d2169f78a27fc5889b620dd4f4",
@@ -3418,6 +3556,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "94182b94f3916c6da4019ece2d6024979ccd1bafeb5886fdc359f377a8a0d75c",
       "articleKey": "blitzmetrics.com/topic-wheel",
@@ -3549,6 +3692,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "7f922f63ec0246dafaba8f0274c0230ce9f695d55d0f9925f1fed2d5033a4027",
       "articleKey": "blitzmetrics.com/one-minute-video-guide",
@@ -3679,6 +3827,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "dfc866956901289a2a4d8103bd8cbcd29d8b3d74754359de52116adb79627dce",
@@ -3813,6 +3966,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "0be7bf7981ce624c355f56ddb80501c4c296bd64bce43a2a88f6089391acb3aa",
       "articleKey": "blitzmetrics.com/social-amplification",
@@ -3946,6 +4104,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "ab3e46e69cfa0db336c0acdefbaa7938d03b090ca4871c6dc6a34ee108b7f361",
@@ -4087,6 +4250,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "015deb3de7099c5ea7d3ffd76fd902ee3981ddbecfb14790166a3a1b2b992cdc",
       "articleKey": null,
@@ -4217,6 +4385,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "bf20dc950c4dbd923022429a826c09687604c9bd323a7e0a059ead3682fae666",
@@ -4349,6 +4522,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "a8833537ad1f8523764f266d82fb53b3b06af6cc061bbf03cc989e836627f7f7",
       "articleKey": null,
@@ -4480,6 +4658,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "4e5cfc35fe5f9ed4452831e1ceddaaac1432920ef4ba1bbe9db69e61942dce21",
       "articleKey": null,
@@ -4610,6 +4793,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "033672d450ae259e969fa2ae99dd431b557930fb71c4a35128d6793ce480d061",
@@ -4744,6 +4932,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "a3578df092ec30bdb2f6311571a91140f037e521fe23ad2ad97b3aa007155cd7",
       "articleKey": "blitzmetrics.com/how-to-inventory-a-podcast-on-youtube",
@@ -4876,6 +5069,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "563b7e346f48593900bcda466fff6026cc6926add7c9b8452ae569d64eaeeb0d",
@@ -5010,6 +5208,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "77b6cb011ee3811e38445a83d866e5ed373b6404a8b0d5b215dd450907668186",
       "articleKey": "blitzmetrics.com/how-we-use-listen-notes-to-find-track-and-repurpose-every-podcast-appearance",
@@ -5143,6 +5346,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "00977a8d30e92ae632be2db14bd37ea479eebefe73030a6d52641c8195157e31",
       "articleKey": "blitzmetrics.com/how-we-use-podchaser-to-amplify-authority-and-repurpose-podcast-content",
@@ -5273,6 +5481,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "bf3168ce3f7ebca90af942af95c993682dd054897b20430923ce59374af9ccdb",
@@ -5407,6 +5620,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "aad264f359b5d2d53b010acae0d3db0e5d2f0ee3ee136479b7b8367485870d9b",
       "articleKey": "localservicespotlight.com/article-guidelines",
@@ -5537,6 +5755,71 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 1,
+      "candidateCount": 1,
+      "records": [
+       {
+        "version": 1,
+        "evidenceId": "historical-84b2c95111073421c11227b6",
+        "taskSlugs": [
+         "upload-processed-video-to-youtube",
+         "step-10-embed-source-video"
+        ],
+        "occurrence": {
+         "start": {
+          "precision": "unknown",
+          "value": null
+         },
+         "end": {
+          "precision": "unknown",
+          "value": null
+         }
+        },
+        "recipeRevision": {
+         "state": "unknown",
+         "canonicalURL": null
+        },
+        "observedAt": "2026-10-06T02:58:28.783349+00:00",
+        "outcome": "One Optimize Live delivery includes five web pages, a full talk and eight Shorts. Current anonymous checks found the intended video embeds on all five pages and matching metadata for all nine videos. This is one historical source job supporting two tasks.",
+        "review": {
+         "identity": {
+          "state": "pass",
+          "notes": "Original project job, delivery thread and output URLs match. Multiple outputs and repeated delivery comments belong to one source job."
+         },
+         "output": {
+          "state": "pass",
+          "notes": "Five page responses contain the intended video ID and expected start parameters; nine video metadata responses identify the expected titles and channel. Playback, visibility settings and full editing quality were not tested."
+         },
+         "acceptance": {
+          "state": "unknown",
+          "notes": "The delivery received acknowledgment. No independent review against the exact recipe used was recovered; gratitude and a completed checkbox do not establish that acceptance."
+         },
+         "handoff": {
+          "state": "pass",
+          "notes": "The completed output list reached the project thread and received acknowledgment. The next reporting request is recorded; its later completion remains unknown."
+         }
+        },
+        "evidenceUrls": [
+         "https://dennisyu.com/optimize/",
+         "https://localservicespotlight.com/why-isaac-hall-has-an-edge-in-ai-marketing-for-plumbers/",
+         "https://jack-allard.com/named-at-optimize-live/",
+         "https://isaac-hall.com/named-at-optimize-live/",
+         "https://markosipila.com/named-at-optimize-live/",
+         "https://www.youtube.com/watch?v=dyJrGllGbn4",
+         "https://www.youtube.com/watch?v=Ww6yDpbkyZA",
+         "https://www.youtube.com/watch?v=oD0Te0_rips",
+         "https://www.youtube.com/watch?v=cNBcEdr_hIY",
+         "https://www.youtube.com/watch?v=oY_Kk5A4Zq8",
+         "https://www.youtube.com/watch?v=bfNrXi_akr0",
+         "https://www.youtube.com/watch?v=7gyOAfD5yTI",
+         "https://www.youtube.com/watch?v=h0kSeES2erE",
+         "https://www.youtube.com/watch?v=ERdAMUq5a8Q"
+        ],
+        "privateEvidenceRecorded": true
+       }
+      ]
      },
      "standardVerification": {
       "instructionSourceSha256": "f94e5fe66c1628483a0c84507a7a5af075412bed511becbc7bc42a9092bf9184",
@@ -5669,6 +5952,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "c3c5f21956caced7216ab4b64c910e5771f81da9a798edcf0fc56b21142257c8",
       "articleKey": "localservicespotlight.com/article-guidelines",
@@ -5799,6 +6087,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "6571350beafd4b8e37394cc64e7c4cd5a6098845615392d12b6e6ffc28558323",
@@ -5931,6 +6224,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "4a44d393aa97086cdf4a64cd82ac67c180a21100efe03766c531e3d1c9ef72cd",
       "articleKey": "localservicespotlight.com/article-guidelines",
@@ -6061,6 +6359,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "4c8f25a2af3ac3fe8ffe1405c22e1c2e3000797ad961a02aa59c20e44da8b347",
@@ -6193,6 +6496,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "a5fdf80502cf5bec5c35a7ef6c003487cc80332553c17111ec3fd683394fe4eb",
       "articleKey": "localservicespotlight.com/article-guidelines",
@@ -6323,6 +6631,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "63ee619e018fd848dea9f1a99f4519a749dd85eac164c64348b5287a8ce70e5b",
@@ -6456,6 +6769,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "63d8a255a39dbe4e1039b8a1b75789095e802e7b54b0a30c2d9541e43615b361",
@@ -6617,6 +6935,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "2118243b8b030d5738fe83d3514f2f5e792e9f8d0b4457e59999a3b8ae9fee3b",
@@ -6781,6 +7104,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "4644714b8ad9a9cf7a45a88cb0f5c4da471e8dbcbf0b8b238bd1ac9ef72935e1",
       "articleKey": "localservicespotlight.com/article-guidelines",
@@ -6911,6 +7239,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "ee68093d6ad3a8621e6923fc5ad2dd6162a862ac5b1c5dfcba79829389164c10",
@@ -7043,6 +7376,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "f311d4648581fea5855b1835f04b11d3d974d0c1ffb394e7722b1b6189935d7b",
       "articleKey": "localservicespotlight.com/article-guidelines",
@@ -7171,6 +7509,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "cbc1eb332b7706448ed7c193a3cff385ff7866ac0a7377f1fdd1f8d5b90b5e43",
@@ -7334,6 +7677,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "d442d8bcb0a667057a12814afc16d0d23545601eea6433ff1e16405d1f5ef88e",
@@ -7753,6 +8101,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "790c9779a5e71b48fe2a982f52781e96f5085038dea232055793588a656c2b77",
       "articleKey": "blitzmetrics.com/definitive-article-guide",
@@ -8035,6 +8388,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "4e272b870e854d8e547111e21f12c3c0d3c419dc6aa96991df661702b9550cae",
       "articleKey": "blitzmetrics.com/one-canonical-honor",
@@ -8177,6 +8535,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "32fa4c6a36dd3ad6f7695e36ac811acd3bab30319bbc5aa2145381459d5d5322",
       "articleKey": "localservicespotlight.com/article-guidelines",
@@ -8308,6 +8671,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "953166073f0d98c82a3788534cdfed2a990f00436461f3bc6c0c61616b0c26e2",
       "articleKey": "blitzmetrics.com/seo-tree",
@@ -8437,6 +8805,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "aa215bbfff060a8b740a807aa23e1b3fb8ee3306b4c636055331070392b0220b",
@@ -8569,6 +8942,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "166c021acc726baedcc60073d1c899df8d7c3f13ccb7e7aaa067dc8beae983e9",
       "articleKey": null,
@@ -8699,6 +9077,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "a816d8587734d5c28f81d41425c60d2e52876a342eca745af5823a77c4efb781",
@@ -8833,6 +9216,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "92cd7464bc85504a0ad7262630e37caae6073d699f3c7d71ee1a501108215f83",
       "articleKey": "localservicespotlight.com/article-guidelines",
@@ -8963,6 +9351,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "40a2dd9f31975663518823e89aced2a2b59f0b076fcbc6d780bb9f1e8c9b63f8",
@@ -9095,6 +9488,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "179d28d5036d28e141b1691c9d5f9870ce514b9cd158a90226fcdf3742205586",
       "articleKey": "localservicespotlight.com/article-guidelines",
@@ -9225,6 +9623,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "162c048e93bab9f294180a048f4c38dbd821854a384ba05a566ca67b8d762c3c",
@@ -9357,6 +9760,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "03a59f9cf722ee7cf7802b7b4021b160e558a56cf7256dd932373358f65f6425",
       "articleKey": "localservicespotlight.com/article-guidelines",
@@ -9488,6 +9896,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "01eb04ab0229310b0ef4a0a29799a0cace96c7003fd1d18e7634f5eb25b7fbc7",
       "articleKey": "localservicespotlight.com/article-guidelines",
@@ -9616,6 +10029,71 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 1,
+      "candidateCount": 1,
+      "records": [
+       {
+        "version": 1,
+        "evidenceId": "historical-84b2c95111073421c11227b6",
+        "taskSlugs": [
+         "upload-processed-video-to-youtube",
+         "step-10-embed-source-video"
+        ],
+        "occurrence": {
+         "start": {
+          "precision": "unknown",
+          "value": null
+         },
+         "end": {
+          "precision": "unknown",
+          "value": null
+         }
+        },
+        "recipeRevision": {
+         "state": "unknown",
+         "canonicalURL": null
+        },
+        "observedAt": "2026-10-06T02:58:28.783349+00:00",
+        "outcome": "One Optimize Live delivery includes five web pages, a full talk and eight Shorts. Current anonymous checks found the intended video embeds on all five pages and matching metadata for all nine videos. This is one historical source job supporting two tasks.",
+        "review": {
+         "identity": {
+          "state": "pass",
+          "notes": "Original project job, delivery thread and output URLs match. Multiple outputs and repeated delivery comments belong to one source job."
+         },
+         "output": {
+          "state": "pass",
+          "notes": "Five page responses contain the intended video ID and expected start parameters; nine video metadata responses identify the expected titles and channel. Playback, visibility settings and full editing quality were not tested."
+         },
+         "acceptance": {
+          "state": "unknown",
+          "notes": "The delivery received acknowledgment. No independent review against the exact recipe used was recovered; gratitude and a completed checkbox do not establish that acceptance."
+         },
+         "handoff": {
+          "state": "pass",
+          "notes": "The completed output list reached the project thread and received acknowledgment. The next reporting request is recorded; its later completion remains unknown."
+         }
+        },
+        "evidenceUrls": [
+         "https://dennisyu.com/optimize/",
+         "https://localservicespotlight.com/why-isaac-hall-has-an-edge-in-ai-marketing-for-plumbers/",
+         "https://jack-allard.com/named-at-optimize-live/",
+         "https://isaac-hall.com/named-at-optimize-live/",
+         "https://markosipila.com/named-at-optimize-live/",
+         "https://www.youtube.com/watch?v=dyJrGllGbn4",
+         "https://www.youtube.com/watch?v=Ww6yDpbkyZA",
+         "https://www.youtube.com/watch?v=oD0Te0_rips",
+         "https://www.youtube.com/watch?v=cNBcEdr_hIY",
+         "https://www.youtube.com/watch?v=oY_Kk5A4Zq8",
+         "https://www.youtube.com/watch?v=bfNrXi_akr0",
+         "https://www.youtube.com/watch?v=7gyOAfD5yTI",
+         "https://www.youtube.com/watch?v=h0kSeES2erE",
+         "https://www.youtube.com/watch?v=ERdAMUq5a8Q"
+        ],
+        "privateEvidenceRecorded": true
+       }
+      ]
      },
      "standardVerification": {
       "instructionSourceSha256": "40f3657d12b510b16fecf5c9268de5c6e7a43f2a18b8f62f4e938aff44094104",
@@ -9750,6 +10228,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "7bb52173e57290d00b20c165f01c609b66c5c44e5700ccf51e34cc6107443bf5",
       "articleKey": "localservicespotlight.com/article-guidelines",
@@ -9881,6 +10364,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "de8f16f07f63d8fa3bdee2d42f6f791e70b1c117c8f8746ce0457e12903bab21",
@@ -10024,6 +10512,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "117088a11734aa6a615f88fcae221e94a9edb9f4256e66a4ade9f1ade840f2cd",
       "articleKey": "blitzmetrics.com/social-amplification",
@@ -10156,6 +10649,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "e893b7296df82212fb3fb1a9607a537698a8e890f51137d299695497c2ae8031",
       "articleKey": "blitzmetrics.com/social-amplification",
@@ -10287,6 +10785,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "7d7898cd99e51853e153f89c1cb666e473dc2e830e9ef367c854c4f63c24c402",
@@ -10423,6 +10926,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "5d035b1634e09e2cb4aecd7f6fc7f6385efcbbf056d108dd30b98c5dd604077f",
       "articleKey": "blitzmetrics.com/thank-you-machine",
@@ -10557,6 +11065,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "608c6ae11c33b31d0b4981e2f8bb8e40baa30efe2c41bb61e8436778a5d2c5ba",
       "articleKey": "blitzmetrics.com/social-amplification",
@@ -10687,6 +11200,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "0565810d2259f690ded51769f38cdfa33530ceb3d3885b51e36de3e56fc43f9d",
@@ -10821,6 +11339,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "c3ab6f128ff74be64559059c91e988e2e8cef025c8d7291031a6c685f39fca36",
       "articleKey": "blitzmetrics.com/dad",
@@ -10954,6 +11477,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "26f0bedbe2347baab95d41951b3ca93f07e8bb88cc98429cf9eedf7dc8d612c3",
       "articleKey": "blitzmetrics.com/social-amplification",
@@ -11083,6 +11611,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "dd48af15c0ce3857d3ae172bfcaf1617b5736eae7cbf9d636d26ffdf36170a62",
@@ -11217,6 +11750,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "bd48c558cd019e3d2f8164af7ec5763a17666a3e2892c84604e3ac9f994f2ae7",
       "articleKey": "blitzmetrics.com/social-amplification",
@@ -11350,6 +11888,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "fd1bd6078ffe23e72b76ae433f1ab48983e921a885ffb72ed0c5f768384bfbf4",
       "articleKey": "blitzmetrics.com/dad",
@@ -11481,6 +12024,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "f1099192ad46eabc66ea48147ebbbebbc532c72b10d7bcf185f251541aef2083",
@@ -11614,6 +12162,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "846501acc485f2ca8f18e6b89d16941ed0ea82a9fa663f7fc25bf3bf8a4d4a0c",
@@ -11757,6 +12310,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "82805962f4b939ba22300e16f12097bc3b73f5d2a986df784788d41435a01494",
       "articleKey": "blitzmetrics.com/digital-plumbing",
@@ -11889,6 +12447,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "6988dd705a9cf3ca4bd03317a5b7622cc90a6b0fcad437744997bf163672f4fb",
@@ -12023,6 +12586,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "cb430f69805564b465b63a009cb9cae629800b5cfca3f02c495724e4cd77475d",
       "articleKey": "blitzmetrics.com/digital-plumbing",
@@ -12156,6 +12724,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "84e71950038a6916a072b241c3b8ad59fe19c668752c4554182ab88c5988c138",
       "articleKey": "blitzmetrics.com/digital-plumbing",
@@ -12286,6 +12859,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "a86bea8a41689116740a120918525942596bacbd098f9ce07eba4de63ac360e8",
@@ -12419,6 +12997,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "0511d058940dd5b8be0192ae3aa93b01929a7638cb09a9b301874f9967be42f9",
@@ -12582,6 +13165,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "121a163c9adbf9d7ddb2354804f1fd29f60843703be8a60228741588c3aed739",
@@ -12843,6 +13431,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "8f7439bfad104c15d6a0d3bb6662880aae727f75bf658854cc5525301c8c4337",
       "articleKey": "blitzmetrics.com/digital-plumbing",
@@ -12973,6 +13566,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "330970202492e3e07085d32b1ea3f55cd1c0a12ec68db5fb5a68efb61578a1ed",
@@ -13107,6 +13705,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "bd147b61539a2eb51ea3f1c4bfebbb0a0d4011fb3b8797afff83b08cac7f263e",
       "articleKey": "blitzmetrics.com/digital-plumbing",
@@ -13238,6 +13841,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "0f2ff7e060a9b04cdf63902574b4b2a96c06a438aa5391923e1a60b84e0d2106",
       "articleKey": null,
@@ -13368,6 +13976,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "f544ba85a95271b6c6fba532670c7080c298f381ca1fcd110da7ecebcff4c260",
@@ -13501,6 +14114,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "c2b9b37394a1382e9f139f79bb7af94d559409cd6ccfe56ed6586b9e9309306a",
@@ -13664,6 +14282,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "7657464979ae461cf4f7a4ec061e8417a3c38af7cba2709c46a06d9318f508e0",
@@ -13923,6 +14546,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "b097ac1b3d82a7ec3efd14243f47ab94dbf55845b3dbb9cdd605244c63e174bc",
       "articleKey": null,
@@ -14053,6 +14681,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "9eb2ec4a9c81bf29466ef9d9b6bc7e793275330c3f2159386c2b75868ae443d2",
@@ -14187,6 +14820,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "b6cb679b80d277fe4f5258a34257412f9ed6fa7a57eabefbf9523f194bde1b4f",
       "articleKey": "blitzmetrics.com/digital-plumbing",
@@ -14317,6 +14955,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "3756ab879060370fc755eb97d0053fbf4de32103ede2a9eddfd2930f8e550f37",
@@ -14480,6 +15123,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "dc69b04996dec7bd3f12d76e94dd4fac9f75155af9a0796744605e0d1a755eca",
@@ -14739,6 +15387,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "c0734a70f48d37087d1a142e1463c5ef529f1ea2efbabda1192058654b3f06d6",
       "articleKey": null,
@@ -14870,6 +15523,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "2beb6692ab7eb5185beb97a98a1a2ddc6fda25e18929bb8905cee8c9ef2250a0",
       "articleKey": null,
@@ -15000,6 +15658,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "fce5cb0fbe54b861b4fb4ed35d08fae62eda494a7ceddc6232d1ce2e00556b11",
@@ -15134,6 +15797,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "7e6ec4088a37be555e2a4cda132ad9e45e8ea37d1b3f3982c6007e531380366d",
       "articleKey": "blitzmetrics.com/digital-plumbing",
@@ -15266,6 +15934,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "6e05ed6d9e9374dad907ebea26698041a41a5966810bfb6da7ec738d5ebec0cc",
@@ -15400,6 +16073,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "433bd356c72efa3795dfa96d1fa269c8461b7c170966b4627c9a9d3a437046ba",
       "articleKey": "blitzmetrics.com/digital-plumbing",
@@ -15533,6 +16211,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "299e2a943c12f9fa7b35551775f2f8b41fbf2514fdd1e7adf3806e3ab49e41bc",
       "articleKey": "blitzmetrics.com/digital-plumbing",
@@ -15664,6 +16347,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "8b7e0bb80e9d494de7683b2cdb523fb92ab6f668f617b76bd60c7812982b7a63",
@@ -15798,6 +16486,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "5398039f9f159dbbe572b071105b557eef3f1306fd0b4b3698047518b85fc434",
       "articleKey": "blitzmetrics.com/digital-plumbing",
@@ -15931,6 +16624,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "d65011042fbe431599311045d8c8279a4155b622ecce0d4d63e9c37905f63002",
@@ -16074,6 +16772,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "1363e5cd759e1f1ade8df403b16a3757f3015d9b8f029969ed810b5e7706c8a1",
       "articleKey": "blitzmetrics.com/dad",
@@ -16205,6 +16908,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "05954116ddabf6fa65cd5eddbadeecdf3c3d97fed1698b8a77e9d06cbbd23d6f",
@@ -16339,6 +17047,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "26107dd30354c33e3a966d2d2a73223b1cc885f364edb786802f1fbba1ad435f",
       "articleKey": "blitzmetrics.com/dad",
@@ -16470,6 +17183,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "78d4fbe2aa36eca66860c49faadad4406984ecbbfe2025322081785aabc72667",
@@ -16604,6 +17322,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "f01d0a832d1525a80c8ba801f254c89f2912a0d751559bb8e422940c54344ce1",
       "articleKey": "blitzmetrics.com/dad",
@@ -16736,6 +17459,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "e047fdc08da919c25b0c986a4f73b27515843391ce3920c06aff7b65d8d7dd89",
@@ -16870,6 +17598,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "529420be0e32dfafea22649939b31582322d7d7b0ad790d3a57b5fe63a21f745",
       "articleKey": "blitzmetrics.com/dad",
@@ -17001,6 +17734,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "2eda749a52eee802a21bd5010b1270aecef267436eab38a36126d89cebdb48d6",
@@ -17134,6 +17872,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "bb9f96601106bda39f0abf9ff3faf13b57eedf4e5ee87cc2c20090af52177b97",
       "articleKey": "blitzmetrics.com/dad",
@@ -17263,6 +18006,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "6f02e90b514673befca2a6c5e126e105feabdb555f4d640d19c7f6f1d52a921c",
@@ -17397,6 +18145,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "89353034e481ad371e1c46220fbc3d49f6132aba3bd287df08ceb62d4e528b12",
       "articleKey": "blitzmetrics.com/dad",
@@ -17528,6 +18281,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "68a352861eaa6f8d9d03d8213e5d7207398cc2f5cb6a3123155a140091a442fc",
@@ -17662,6 +18420,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "e85f652030b4239ca25dc3bb929791e267f9262f8a710abc27311f024e69d4c9",
       "articleKey": "blitzmetrics.com/dad",
@@ -17794,6 +18557,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "92458b09e2acc4a83c49635c87b7adab09f95827254545bcdd6660a6413f4f04",
       "articleKey": "blitzmetrics.com/dad",
@@ -17925,6 +18693,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "743cdd6b5409330d12e89af7363670bd768f55bff229342414df0c00479100d2",
@@ -18059,6 +18832,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "0e50d60e4fdd3b59371a5a7d7b9524f8bb511985e0d1720647305111fa4f25df",
       "articleKey": "blitzmetrics.com/dad",
@@ -18192,6 +18970,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "08156259d5843dda97d865725c62a2be319d41d352e4ea4b8e3f08c03fff0438",
       "articleKey": "blitzmetrics.com/dad",
@@ -18324,6 +19107,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "f8a95e824c5580dec5e756ebe5e490566c5a25e14679afbe3b25046fd497a116",
@@ -18466,6 +19254,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "8f84ed2a876b96039c6c22d34d57c381e0705a8b7b9ee9d6128330805fd3bbd3",
       "articleKey": "blitzmetrics.com/website-qa-audit",
@@ -18597,6 +19390,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "2bf606d6155ebd1b9ba997622033f719f900632a5eeb34fc7bd6c7cfb93d7bf2",
@@ -18731,6 +19529,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "ae22d94a405f75208026d58012350aea849e25e777692e71751bad5f22fcde59",
       "articleKey": "blitzmetrics.com/website-qa-audit",
@@ -18862,6 +19665,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "b05f255eeb66e8908787ce0f4a8c3eaf0be06831f8a7c0ea0504f5faafbe6bd2",
@@ -18996,6 +19804,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "3a35f3cc1b5aceadd1bf8647839970a48f66a762ddf299fbe54297fce9f3b587",
       "articleKey": "blitzmetrics.com/website-qa-audit",
@@ -19127,6 +19940,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "874b170f685087a059f0746106d33463cfaa0c04b9bc4ee41b2091a9d6c10443",
@@ -19260,6 +20078,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "d1bbeb75cffd8bc5aef21c5ddf5f473a4b52cc7bd2eda660ba3735e48174e802",
       "articleKey": "blitzmetrics.com/website-qa-audit",
@@ -19391,6 +20214,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "48481af14905d524c3db3eca1067a1b3a3ff8fcd403aa01fd2523303b744ce54",
@@ -19524,6 +20352,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "edbaa178df56b259389ff7d3f17ee08f0dbd5595f9654e0fd952c3fbfe50919a",
       "articleKey": "blitzmetrics.com/website-qa-audit",
@@ -19655,6 +20488,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "950c9e8cba9b519d158245d336f2ce728792d9c9b54bfefdb643068e4283485e",
@@ -19788,6 +20626,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "513bc8c986dd7b4cfceda7dcd81854f01f262813b29d8fbec6f5bd225d3dff42",
       "articleKey": "blitzmetrics.com/website-qa-audit",
@@ -19919,6 +20762,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "560a13b937425967007f5cce2d251b860e0a0442fe7031c2ada4f4fd40f8ae84",
@@ -20053,6 +20901,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "3084f1497c27d18d7f3d2a318aad7ce0c522346674a1936260ff461ef22878ec",
       "articleKey": "blitzmetrics.com/website-qa-audit",
@@ -20184,6 +21037,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "3dd88c3c9e2b4c1d9ceba67b9f2c1903bb591c91270f748e33a5e4ebc39e2009",
@@ -20317,6 +21175,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "d89f83648b0a2ab229fd1ecc3def2dab5b4386e9b5308204e828b67a046d4fa2",
       "articleKey": "blitzmetrics.com/website-qa-audit",
@@ -20448,6 +21311,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "cd8b05aa21d38b44eb8f3027c1baae15a3c60c2665d7035ab0330ec2d874a6ae",
@@ -20581,6 +21449,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "ea0dacb1a629b18b14ea7f83f85176dbda8b591d7283c308c5929f0121ab6807",
       "articleKey": "blitzmetrics.com/website-qa-audit",
@@ -20712,6 +21585,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "9d399b4c53b0edcea5559c408b9c0d95f8dad82d36c13f2aeed613ddd167ab67",
@@ -20845,6 +21723,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "0914961f30d39d8d0bed2a92ae8afb2cb02e2ff2cfbc1e4c688dfd5d19054552",
       "articleKey": "blitzmetrics.com/website-qa-audit",
@@ -20976,6 +21859,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "2c172ad9bd974103132dd0e50d7ae0db91f01e03c098b7c17d3e0d80c0a2ba68",
@@ -21109,6 +21997,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "f65c5966d13dbb2606df1231f1d5487ea57b8fd187996d24db9d79d89454dd99",
       "articleKey": "blitzmetrics.com/website-qa-audit",
@@ -21240,6 +22133,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "212ff8738fb8b2f344f26c380685f98665f5988ef94d789f085672e7cca2f502",
@@ -21373,6 +22271,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "d5dfb57d241a64d7031f8b0851a4baa2739bf64299a53cdaa6a6f7ecbca54989",
       "articleKey": "blitzmetrics.com/website-qa-audit",
@@ -21504,6 +22407,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "0153e2915d034fc7d56ad355018c5e7df034a7f91a0e5c51896260abc4508afa",
@@ -21637,6 +22545,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "b132cfe2d9a5e3422b05b8aa866f48aa35c7330c4df49b848662ec3337be4f6c",
       "articleKey": "blitzmetrics.com/website-qa-audit",
@@ -21768,6 +22681,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "88bc804268894abe3837775fa41d55c778e7d2f7d0933c6484268f390b8c0e5b",
@@ -21901,6 +22819,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "5564ccfd195646a4d3c877170bcb45fb7f64390f5c97ab2d400d13a446472947",
       "articleKey": "blitzmetrics.com/website-qa-audit",
@@ -22032,6 +22955,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "663ef39c362ea6a07971ed7a4e9b8e99e288956101085f1b92ac0196c81b7d3b",
@@ -22165,6 +23093,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "e79bd7ae689d972569e9c78e295c9ef3d2022143023aa3d9bde8de7422256265",
       "articleKey": "blitzmetrics.com/website-qa-audit",
@@ -22296,6 +23229,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "9b87d9ff9c2df5d89d6dc40b569ab1aaf4bd4429e1921c2943dc1b8fdfc6584c",
@@ -22430,6 +23368,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "9cbf7b54845d16cb285a7fb7ec97c768bfb69bf94acf74bc38e10616c3a99473",
       "articleKey": "blitzmetrics.com/website-qa-audit",
@@ -22561,6 +23504,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "96915d14b28aee73103f8a509b471ed55a3f28549fd2a527aac386b54f398f44",
@@ -22694,6 +23642,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "cdb0ec597403ecc5e81efb77ff1501914b951dd68540067e112382d6602789c0",
       "articleKey": "blitzmetrics.com/website-qa-audit",
@@ -22825,6 +23778,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "0870a836342c4b62303064f2215b46a03d8f209d7fe6b523e26f67ecd022b5c4",
@@ -22958,6 +23916,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "a573887d78de38e321328746a81677bdae2c2036083b09999da79ad86e0bd833",
       "articleKey": "blitzmetrics.com/website-qa-audit",
@@ -23089,6 +24052,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "fe182d21ddd27a330977383b0287e2d91ed74e0ac4a994314302dd44b6faa598",
@@ -23222,6 +24190,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "31ecd8b879e556b7bb308df6b3209856f419ef757f7b0cb4dc255b12f503b8b0",
@@ -23357,6 +24330,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "dce51c39716310660d0ea23ba8b68ffcb51926a6b817a48487edcbb6bee4f640",
       "articleKey": "blitzmetrics.com/how-to-run-weekly-ai-agent-seo-audits-across-all-your-clients",
@@ -23490,6 +24468,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "7fdc77a927296424c4e5a1ddfdf43edfa6985740f4d44020740f02a536bdf472",
@@ -23662,6 +24645,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "2a4deb7806fe0a08d67b67bec2d751fcbd9c4b4529ddf7116b2b76dc28ca8152",
@@ -23933,6 +24921,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "d4e5ecd3f181365ec771d4994b880b4d6c166a65f045fe379e7bd5c36010c36d",
       "articleKey": "blitzmetrics.com/seo-tree",
@@ -24064,6 +25057,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "0b1979cd812510e827fe38990cfa9cd3a08fa3a6aa01c2a773382c6321dbb55b",
@@ -24228,6 +25226,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "8880e6df0dcba159e9c26477a306c1098ffe657d6ccd0983898f8f81a822ca74",
@@ -24395,6 +25398,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "2b6118616cd999657b0cdcfb21b06cd8d8d33027fc0287d833fa7ef1b6ddf08a",
       "articleKey": "blitzmetrics.com/seo-tree",
@@ -24528,6 +25536,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "319e45d01b359a906f9c6a166de99d8c3f0df5982a3424ccc5a63221e2f1c0c8",
       "articleKey": "blitzmetrics.com/seo-tree",
@@ -24659,6 +25672,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "44b23ec0aa8c852b15e28f972c741a5e1faa5f0624086c8fc8b2a0e59bd3ef3d",
@@ -24792,6 +25810,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "4bd30483a8f5557bc51efca277c1b98e4ba472c006d1f1072c12e12a5503ef59",
       "articleKey": "blitzmetrics.com/seo-tree",
@@ -24924,6 +25947,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "2fb76e899bb9863556c4a997aab923674d9a311c641d8950c8b7c8d18f4a878d",
@@ -25087,6 +26115,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "fe4d7dc7a7712e4d85a06a7e990f298030f1df4302809267ea6a778fa060c0d9",
@@ -25376,6 +26409,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "0796d4e6d90a840b8c861d5f36a72e4ed53d4973e8bc3364cbd25689d8513071",
       "articleKey": "blitzmetrics.com/internal-linking",
@@ -25664,6 +26702,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "dda7662b843806f75df9c704d7a941d1d868661ba82bdcf4a3de140ae46aea37",
       "articleKey": "blitzmetrics.com/internal-linking",
@@ -25951,6 +26994,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "62aa597890ee545455fc3ab325dc0ee2b742f692a276cf18cfeabe0c39df0c27",
@@ -26250,6 +27298,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "1bcce8119fd47ee419b2b9fb172e1257a8d06ad06da0a5b075e6d091d86b647f",
       "articleKey": "blitzmetrics.com/internal-linking",
@@ -26548,6 +27601,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "b3f48be68cafa5706a4099ea0e33a8f8848ed7e14cc8cc4b9367268bd569dfea",
       "articleKey": "blitzmetrics.com/internal-linking",
@@ -26806,6 +27864,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "70eae162ba9d42242f7047ac02a5a712c5d40e4ecbb06d45e1c0561915830148",
       "articleKey": "blitzmetrics.com/internal-linking",
@@ -26937,6 +28000,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "96f2fef804356e1ce58645ddd61b8d25f0bd79206bc4bd53009c5491d7ea2faf",
@@ -27072,6 +28140,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "4cfed83686a231d4875382645b58c77846a8f16be3e7526d91132f8a7fc5d156",
       "articleKey": "blitzmetrics.com/money-tree",
@@ -27205,6 +28278,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "9150aa1918999be7343fcd365b8afe83c7aa314febc8b6df027f90e776c2bf70",
@@ -27348,6 +28426,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "4181b88256b87e01e63686fa528046f1c62af8cf0e5f220ffa79e8ce3cf14d2f",
       "articleKey": "blitzmetrics.com/personal-brand",
@@ -27480,6 +28563,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "1d11dc6b45da0439e9a058a569a7a1743e8605cd0083749585a7c4dd97efc0f8",
@@ -27614,6 +28702,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "0585aef39f73399956655c387c0e480adda2c46796ae4b2ab19650d9b0aff04d",
       "articleKey": "blitzmetrics.com/knowledge-panel",
@@ -27746,6 +28839,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "e6abfa58c76ef5746d80f0cf76a2b3b05acdd20ca552b9391a499f106fa85c1b",
@@ -27909,6 +29007,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "e52ab95088bca316403cce18fbf1b7810cf871886e4c3775fba9ed88926dfab4",
@@ -28170,6 +29273,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "3d8d48803b447b69327c234eae66d557fc155288d7168a4ccdfe90e7928c3047",
       "articleKey": "blitzmetrics.com/personal-brand",
@@ -28303,6 +29411,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "50ba6bfb4f7456324e07284d13483631f362bc6a6cc8940136a302c88e776ca5",
       "articleKey": "blitzmetrics.com/personal-brand",
@@ -28435,6 +29548,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "45cf81d04f084b6017998ceaad59377f7153b46f8565d88f56e04abd8436f6f4",
@@ -28598,6 +29716,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "c6a880dda0fda613688c60ef64061226ff0ec2a11cee9e05655c7063fd06fec3",
@@ -28859,6 +29982,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "050e3d7e8850aa9356d42265f69409fedf2c05052cd7579311db6962c79a9a06",
       "articleKey": "blitzmetrics.com/personal-brand",
@@ -28992,6 +30120,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "1d5515c2dbc1d07b2f21a5e8d23b9f9a8f76e328f87cfad785e4202567d9c4ed",
       "articleKey": "blitzmetrics.com/personal-brand",
@@ -29122,6 +30255,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "713216b666fa12db04276cb09c9d81fccabb9bbc4c39ecca5935290f39c610f0",
@@ -29256,6 +30394,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "43cbb55a68147e297c32ab502c1a20c8ef5075b1993fa4612a58a3e0d63fde30",
       "articleKey": "blitzmetrics.com/personal-brand",
@@ -29388,6 +30531,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "4ef5decd8e958a308cc07611a85dab189e56539cbfc9b675e923107e0ef6fe3e",
@@ -29522,6 +30670,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "d7d0952a7662a5c15fb7f2122231847100e9ed5ded56573691667be392f94e41",
       "articleKey": "blitzmetrics.com/personal-brand",
@@ -29654,6 +30807,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "44edc040a6c9337af7f665698fd331b4763764fbd201a6e8e432ea5c6f1200ff",
@@ -29788,6 +30946,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "60157faad88c8ace2e2602b03b0d9972f663d66242bac2938882bcb3263941dc",
       "articleKey": "blitzmetrics.com/personal-brand",
@@ -29921,6 +31084,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "031a4741a06e7d5a7ec07c3446c5fc715ff7e61e7bb45c5fb34c26513d6de3ac",
       "articleKey": "blitzmetrics.com/personal-brand",
@@ -30053,6 +31221,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "377e95adfad0a0acc23f667749d403a0711c062983d523420b89c0e97e7e6293",
@@ -30190,6 +31363,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "a8c0806d03e26013074cb7b7ca606b112b2b32b034cec57dc12a52c4d417e4f7",
       "articleKey": "blitzmetrics.com/thank-you-machine",
@@ -30324,6 +31502,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "6aa1daa0889b78371a14c429c5215e207d05dfce332c623424d7fc6d7831b4b3",
       "articleKey": "blitzmetrics.com/speaker-kit",
@@ -30457,6 +31640,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "ac46d1576605b4284aa9a4775be123b88ee02d9f6a8426822c93e96ed13ce16a",
       "articleKey": "blitzmetrics.com/personal-brand",
@@ -30589,6 +31777,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "8067c1fc31bcf0be97e3780d0dc472d2c2fb22ad9cb2c28cdec9d9da3b24a779",
@@ -30724,6 +31917,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "5c7efeeb6b4dd73c3b81c2b1bd9c04c63fff56b1d74ccbde5afa4022bdda28bc",
       "articleKey": "blitzmetrics.com/personal-brand",
@@ -30857,6 +32055,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "0440e9e34a48150b10ebe4857cae550849a5813de5be06a8e969de9dc4479737",
@@ -31024,6 +32227,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "20d84176417903edc98454b05f4a3f35286d7bf8141273fb35190a183a2f0c30",
@@ -31286,6 +32494,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "fbf99a3ba0ae653c052e8b540e1ae59d4037d19e7668082456213758af0f1e7d",
       "articleKey": "blitzmetrics.com/group-website-request-intake",
@@ -31426,6 +32639,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "7d4618a49eafef387d5e1c3ecf99b3434f01fc4a0f354b596840808d4af90ece",
       "articleKey": null,
@@ -31560,6 +32778,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "86e9e9d8256024d95b1c7db7c791abddd99eb751ca4bccea9cd217d8a4b5de6e",
@@ -31697,6 +32920,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "91ae9a3f31ce7496bd26787e178ae92255b54ff0ff4430d6770bf303e166a13b",
       "articleKey": "blitzmetrics.com/9-triangles-framework-scalable-home-service-businesses",
@@ -31832,6 +33060,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "c160bf0861d2408d6cf9a64cd1f6777cd6129578551d96c3adec734418c3c5cd",
@@ -31969,6 +33202,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "73af89731d87d4edad5a236c672a1287e201ba6ba73e1e0b4b0e6979bec7cedf",
       "articleKey": "blitzmetrics.com/9-triangles-framework-scalable-home-service-businesses",
@@ -32104,6 +33342,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "5b38bbdd9a51b4314f5895adca05dcd05a3fb10a7d29236055b96d96f4f2b0a2",
@@ -32241,6 +33484,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "f315605610697ef5691182fc530bed939df8c02c9b71424ec744bea4361df6da",
       "articleKey": "blitzmetrics.com/9-triangles-framework-scalable-home-service-businesses",
@@ -32377,6 +33625,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "f3909f556cf63ebfad4b47f4a34d95bbb89938f42397416efccaac78b396eea8",
       "articleKey": "blitzmetrics.com/9-triangles-framework-scalable-home-service-businesses",
@@ -32511,6 +33764,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "13b457473105d8daf1760feaba608333a690064bf0e954a6119b0c0d99018106",
       "articleKey": "blitzmetrics.com/topic-wheel",
@@ -32641,6 +33899,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "b2e3323962ce15c6e5798d36b81ce1319720abef139314eec42996ff3c1d6c8b",
@@ -32773,6 +34036,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "bd047b01a82da09aee75b18cee22a84d49c4e7415a7f2b878da9d063ee5f34ad",
       "articleKey": "blitzmetrics.com/topic-wheel",
@@ -32901,6 +34169,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "a2b88b3a8705f3f4dade14db17f61f41ae15f9a0ab9b2e01654d8db6023e771b",
@@ -33037,6 +34310,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "8f995db2559ccce12465f82e3e7b127d65567b12965405c145a060e14c06cfcd",
       "articleKey": "blitzmetrics.com/9-triangles-framework-scalable-home-service-businesses",
@@ -33168,6 +34446,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "2beeae47a5babe8de92c6909307ae13e4b0e6a5799c5051e0a07c3b8f3eb0381",
@@ -33302,6 +34585,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "14c1115343940f9ea7676b55c4d753bfd1ae652b0062447cf483c702ed70b3de",
       "articleKey": "blitzmetrics.com/social-amplification",
@@ -33433,6 +34721,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "eaf28bde8e5437c13b3fae93d244e83256bd4783cdbe49bc03f73bcbf56cbb2b",
@@ -33566,6 +34859,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "b6656e7b7d4f35f8f75eaf1d183ac51513e692a0d446f9d904e4fae43aa8909b",
       "articleKey": "blitzmetrics.com/social-amplification",
@@ -33697,6 +34995,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "12cff8c8c5b29baa850d85b78110e929cd52e3b84e59e68ec797683779dcb84c",
@@ -33830,6 +35133,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "2b5798362bdbba56506ebe8d5ca40a69c1c912949b32cdff48f7df3f0a9f704b",
       "articleKey": "blitzmetrics.com/social-amplification",
@@ -33962,6 +35270,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "a4d4b81106e20dc735ebcc486a33b69d0119176b6745ce49896013c6ff2d6e78",
       "articleKey": "blitzmetrics.com/social-amplification",
@@ -34093,6 +35406,55 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 1,
+      "candidateCount": 1,
+      "records": [
+       {
+        "version": 1,
+        "evidenceId": "historical-67283f8934345f04d0bb68a6",
+        "taskSlugs": [
+         "submit-weekly-maa-report-every-friday"
+        ],
+        "occurrence": {
+         "start": {
+          "precision": "unknown",
+          "value": null
+         },
+         "end": {
+          "precision": "unknown",
+          "value": null
+         }
+        },
+        "recipeRevision": {
+         "state": "unknown",
+         "canonicalURL": null
+        },
+        "observedAt": "2026-10-06T02:58:28.783349+00:00",
+        "outcome": "A weekly business report was posted with Metrics, Analysis and Action, source exports, named owners and due dates. Nineteen selected aggregate checks matched the attached files, with one explicitly marked test submission excluded. Private customer details and figures are withheld.",
+        "review": {
+         "identity": {
+          "state": "pass",
+          "notes": "One dated weekly report and its exact attachment were recovered from the original project thread. Praise for a separate page delivery was not treated as report approval."
+         },
+         "output": {
+          "state": "pass",
+          "notes": "The report and its readable export archive exist. Selected totals reconcile with the stated date ranges and explicit test-row exclusion. This check does not certify every claim or source-system provenance."
+         },
+         "acceptance": {
+          "state": "unknown",
+          "notes": "No report-specific reviewer acceptance was found. A conclusion that direct traffic rules out ad influence is unsupported, so full accuracy acceptance remains open."
+         },
+         "handoff": {
+          "state": "pass",
+          "notes": "The report was posted to its project channel with named next actions and dates. Receipt by a particular reader and completion of those future actions remain unknown."
+         }
+        },
+        "evidenceUrls": [],
+        "privateEvidenceRecorded": true
+       }
+      ]
      },
      "standardVerification": {
       "instructionSourceSha256": "1e6514bd22a94c88f272e7540de693cf212c46d6c8148d2a9fa1d8af129e1e98",
@@ -34228,6 +35590,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "9d0ad9f1151ee6c54b7cd7897d7f58fc29de68b85f4902b549eff85ffecd3338",
@@ -34365,6 +35732,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "5a736657bf34e027527bba29b9a57b9ce7323f67097a16a29b7246e1745bea43",
       "articleKey": "blitzmetrics.com/9-triangles-framework-scalable-home-service-businesses",
@@ -34499,6 +35871,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "662acd5d33748755654d68f6d71e336434258cdceab65ba8ee656d2254ce594e",
       "articleKey": "blitzmetrics.com/topic-wheel",
@@ -34623,6 +36000,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "91f50556e53a37afa86b87e6033888db41968cdf09ecdfde55f5b77d875dd20d",
@@ -34754,6 +36136,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "ccd252a416083c4a743da591edc7e756a83d2456cd5d06b7816ab1728ddbf275",
@@ -34898,6 +36285,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "a039608b4e3f824c468e15a1eba795a4c11f21a7375e237d3570b655096cdd07",
       "articleKey": "localservicespotlight.com/the-success-tracker-how-ai-apprentices-managing-local-service-clients-stay-organized-and-prove-results",
@@ -35032,6 +36424,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "4d1f44f338d8f8dca0fdd6c40bc3033898a729e292bdb6480b8ad62cbfb18da8",
       "articleKey": "localservicespotlight.com/skills-measurement-analytics",
@@ -35165,6 +36562,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "f265a0d08da01d0d4013b1584de06fa2ff22a9abdcabe69ed168146ae73e1d3a",
@@ -35311,6 +36713,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "251ceab46fcdc471ce6a78a92ff57dff236b56cc56ea2fd301dc9ae6fb05645c",
       "articleKey": "blitzmetrics.com/thank-you-machine",
@@ -35446,6 +36853,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "73fd13cf5387b5a4d5fe0ff621d5454ce1f953e56dd783c53c6ffc61f62bf09e",
@@ -35586,6 +36998,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "4de6d70557ec8994de90a2e6516573b6670c33b41936cd4e600c8dce5b71ccc6",
       "articleKey": "blitzmetrics.com/thank-you-machine",
@@ -35722,6 +37139,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "a7b61a9b5a2a882b0459005c3015df1d20c72da4aee48b75e79edef9ef100e10",
@@ -35860,6 +37282,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "d3a859aebfa97738cb9324d9fdde866b5a09f5752b74e5ec97ece7d33159a23a",
       "articleKey": "blitzmetrics.com/thank-you-machine",
@@ -35996,6 +37423,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "c5121ee02d89f966edf13822dc9450f5697d85f9521f70125b5f1f344abde55f",
@@ -36140,6 +37572,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "07ffe3231ef058200e4563e076d1e2b366ad2f7500cf7766d790b470906dd111",
       "articleKey": "blitzmetrics.com/knowledge-system-maintenance",
@@ -36272,6 +37709,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "a3fea85fb5649ee5e8a81a5fd9c2c0e3214f1edcec204f11df6cd1570154b2c8",
@@ -36406,6 +37848,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "9919e609ca7aec250365d2f0a7f00bed6fc792d80280c62243ce7ac2664a019d",
       "articleKey": "blitzmetrics.com/knowledge-system-maintenance",
@@ -36538,6 +37985,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "8c3246e135376a23a604cc8ef87e7af34753810d66edb6083de15d8d9fefe28b",
@@ -36672,6 +38124,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "a1214bbd4179ca414fdd801719371409d83d392a3ac45b9010cf8f29572de308",
       "articleKey": "blitzmetrics.com/knowledge-system-maintenance",
@@ -36805,6 +38262,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "4ea1e3a849f9e79dc244f11d4470e2ec243ad1fa58979c1f9a5200beebad0349",
       "articleKey": "blitzmetrics.com/knowledge-system-maintenance",
@@ -36936,6 +38398,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "6bb5013c42e867c160d27fa1892d368a071112feac444bb12733e1d041407d00",
@@ -37070,6 +38537,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "1342d8cdff2a9fe5304629f4482fe1b8b469f68d3634a42adfe0f1c32f3f3b2c",
       "articleKey": "blitzmetrics.com/knowledge-system-maintenance",
@@ -37202,6 +38674,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "299724839cfe10da4349a95fcf1a05b03e873dbf9a1dfcf32f381a6025930403",
@@ -37336,6 +38813,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "50f08832cdb10985515679357f3a9ca0f3e65d19b27a18ed72eac00292432ba4",
       "articleKey": "blitzmetrics.com/knowledge-system-maintenance",
@@ -37467,6 +38949,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "7b7f49e8c59e6e173d3484d7471fe47474949afe9cd7a1246a9c1848765ae275",
@@ -37601,6 +39088,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "aef7ef2c3bc8827ff71c5ea02150565161d29f10821c6923de220424a00f92e9",
       "articleKey": "blitzmetrics.com/knowledge-system-maintenance",
@@ -37733,6 +39225,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "0c01d314378460d1c76ef87d50438ab543aee70dfe5f0b7ede6528c148f592d5",
@@ -37867,6 +39364,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "13648667021aaf4fb7c25ab744e58213c43faf29553c542f3ef05c274de6931c",
       "articleKey": "blitzmetrics.com/knowledge-system-maintenance",
@@ -37999,6 +39501,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "2005949a9498696756e12c439ef119f6aa2b90fe6fac8901fabf515b81370546",
@@ -38133,6 +39640,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "c6afaa4b4e246d568d70c4549f5bee5f1a897b45bf1398a490518073b144b249",
       "articleKey": "blitzmetrics.com/knowledge-system-maintenance",
@@ -38265,6 +39777,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "3b5978531b3ee1648e8419e7d11a4f40226c84a1690bbcdc4bb71ca791913c3c",
@@ -38399,6 +39916,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "33f2acbf421f3b5247adf39a9c47f867aec8bfee5fb6ed89edf5b920a88ec5a0",
       "articleKey": "blitzmetrics.com/knowledge-system-maintenance",
@@ -38531,6 +40053,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "4f91861cc0b84e6e105860ba3057e2cb564aa31665a9f1d842345ab23703c226",
@@ -38665,6 +40192,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "7ea316bc5d2c6de1fce9148b32c7b07797ecd09ae6fd46a11f2165ca3765ff52",
       "articleKey": "blitzmetrics.com/knowledge-system-maintenance",
@@ -38797,6 +40329,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "aaf4687db1429b87dd9a814ca9dbf5769645df084024b168e0d0b194d89f50d2",
@@ -38931,6 +40468,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "42c83e46dfbdff680bb50b0aae127e9d0edc5208c05af9d4e99602a33bc8bb9f",
       "articleKey": "blitzmetrics.com/knowledge-system-maintenance",
@@ -39063,6 +40605,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "4bb4527a43d359641b9e07ff0d633f9622f4061aae035f37040c293c7871af3e",
@@ -39226,6 +40773,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "8d6c630a81443874a72bbbb3f606d20c61a849f6037df92822d3af6b12acc523",
@@ -39392,6 +40944,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "f7ca11a38cb60c81f86beae4f0b8092fe335c40d7710bdaf6c12c0235f7ab865",
       "articleKey": "blitzmetrics.com/knowledge-system-maintenance",
@@ -39524,6 +41081,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "73e81be87288b2db0aafaac95cf1701a58bbc79c43f866b6db4630a24a0f03fc",
@@ -39659,6 +41221,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "6e3a51975bdf2b25c4ad81c7aaa61bc204da368c21dec2948045baf1656df051",
       "articleKey": "localservicespotlight.com/install",
@@ -39792,6 +41359,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "e5fa30e08fe224bb65a295741988f05f069773d1a76721f3a4ac5a594c748ec0",
@@ -39927,6 +41499,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "f3a8d3f1373d13a823923d2d34bdaacba54970b316cc277e8635b6da4eeb8060",
       "articleKey": "blitzmetrics.com/set-up-cross-agent-shared-memory",
@@ -40060,6 +41637,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "93bdea2c918a65c023282f0a5b796f2a9b4992ea5ebc217c0e1e922879b78e71",
@@ -40579,6 +42161,11 @@
       ],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "609039d529572a9d02b5e2b5847469d5fe7e6138a55c1ebd3c70a716c3a1093a",
       "articleKey": "blitzmetrics.com/skill-publishing-standard",
@@ -40944,6 +42531,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "5929e07c12174f761f4b2c92e6f9319f292a2c5b69f87ce83d1d38baa531430e",
       "articleKey": "blitzmetrics.com/start",
@@ -41077,6 +42669,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "cf3513f809506b374cd4568f98dc7efe6d65609df5bbdd82991bc71acfc27bf0",
@@ -41212,6 +42809,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "4b323d279c8a21abf4cfd6f9f3c8fdc9379d7d972049acc106b74807220edd71",
       "articleKey": "blitzmetrics.com/always-reply",
@@ -41346,6 +42948,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "2af74b472902ffbf037b78b8f7499f2e5f106fe6394119f95592d4e875d0567f",
       "articleKey": "blitzmetrics.com/new-agents-start-here",
@@ -41479,6 +43086,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "c2ca9ac179a2aa9558cd43e7c922f2cea011ddb769fee8ef2c676703cab1a9f3",
@@ -41620,6 +43232,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "66aac5a776faf4a559cf0c52828e7c542c21d40c8cfa397e2b6a27cfd5668159",
       "articleKey": null,
@@ -41750,6 +43367,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "0879b6d7dfe59e2b10f95f3506cd20d851be0ed774672fd83e0fbda9bb69857d",
@@ -41882,6 +43504,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "81d3575812999b9a2a321c6070ad376514ae080ffb2949df8c685d87ba167756",
       "articleKey": null,
@@ -42012,6 +43639,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "114e99407b2762f151af94ae9564c7674914714bafc52e0c1d8418b4a832f31c",
@@ -42144,6 +43776,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "02be3954234df25f6d185cd872d1976eed8bb44576494fc9308e6a3119e54c6a",
       "articleKey": null,
@@ -42274,6 +43911,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "2704734f67270dfa3657e5a03a73ad812951fc3a5ed6244b3474223ae657eafc",
@@ -42406,6 +44048,11 @@
       "acceptanceReviews": [],
       "setupReviews": []
      },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
      "standardVerification": {
       "instructionSourceSha256": "f002cde99ae3d94dcff1efcaf162343a8d50f01c8ef8ea03c1427a8a4be6870f",
       "articleKey": null,
@@ -42536,6 +44183,11 @@
       "executionOutcomes": [],
       "acceptanceReviews": [],
       "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
      },
      "standardVerification": {
       "instructionSourceSha256": "12fed87261ca1185e242b8fc570a3d0c7ad9a014d8977050e084a1c197053a00",
