@@ -311,10 +311,29 @@ function articleLink(t){
   }
   return '<a class="btl-art" href="' + esc(t.article) + '" target="_blank" rel="noopener" title="' + esc(title) + '">' + label + '</a>' + orbit;
 }
+function historicalEvidenceHTML(t, detail){
+  const h = t.historicalDeliveryEvidence;
+  if (!h || !h.candidateCount) return '';
+  let html = '<span class="btl-orbit" title="Older work checked against source records and outputs. Separate from recipe verification and recorded execution counts.">' +
+    fmt(h.count) + ' checked historical ' + (h.count === 1 ? 'delivery' : 'deliveries') + '</span>';
+  if (detail) {
+    html += '<p class="btl-chain">This proof shows what was delivered before the run record was complete. It does not prove that today’s guide was followed or that a new user can complete setup. One delivery can support more than one task.</p><ul>';
+    html += h.records.map(function(r){
+      return '<li>' + esc(r.outcome) + '<br><small>Recipe used: ' + esc(r.recipeRevision.state) +
+        ' · Checked ' + esc(r.observedAt) + '</small><ul>' +
+        ['identity', 'output', 'acceptance', 'handoff'].map(function(k){
+          return '<li><strong>' + esc(k.charAt(0).toUpperCase() + k.slice(1)) + ': ' + esc(r.review[k].state) + '</strong> — ' + esc(r.review[k].notes) + '</li>';
+        }).join('') + '</ul>' +
+        r.evidenceUrls.map(function(url, i){ return ' <a href="' + esc(url) + '" target="_blank" rel="noopener">Output ' + (i + 1) + ' ↗</a>'; }).join('') +
+        (r.privateEvidenceRecorded ? ' · Private source evidence retained' : '') + '</li>';
+    }).join('') + '</ul>';
+  }
+  return html;
+}
 function executionHistoryHTML(t, detail){
   const h = t.executionHistory;
   if (!h || h.status === 'unknown') {
-    return '<span class="btl-orbit is-unknown" title="No run records exist for this task. Meta-article counts and importance scores do not measure execution frequency.">Run frequency unknown</span>';
+    return '<span class="btl-orbit is-unknown" title="No fully specified run records exist for this task. Older delivery evidence, when present, is shown separately.">Run frequency unknown</span>' + historicalEvidenceHTML(t, detail);
   }
   let html = '<span class="btl-orbit" title="Distinct recorded execution IDs. Partial history, separate from published meta-article volume.">' +
     fmt(h.completedRuns) + ' recorded completed ' + (h.completedRuns === 1 ? 'run' : 'runs') + '</span>';
@@ -332,7 +351,7 @@ function executionHistoryHTML(t, detail){
         (r.privateEvidenceRecorded ? ' · Private evidence retained' : '') + '</li>';
     }).join('') + '</ul>';
   }
-  return html;
+  return html + historicalEvidenceHTML(t, detail);
 }
 function rowHTML(t){
   const st = STATUS[t.status] || STATUS.gap;

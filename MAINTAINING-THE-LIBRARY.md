@@ -47,6 +47,10 @@ For each business-value batch, look for an existing authorized business run that
 
 Move written review and real-use verification forward together. A documentation repair may close a written check. Only a real authorized attempt with the exact recipe, accepted output and receiving handoff can close execution checks. Capture that evidence during normal work instead of creating pretend client jobs to fill the ledger. Keep the new-user test separate from an agent rehearsal.
 
+Search existing work before declaring that proof is missing. Read the original project thread, the full email conversation and the delivered output. Match praise or approval to the exact deliverable; approval of a web page does not accept a report posted nearby. Check source exports when a report makes measurable claims, and record exclusions such as a form entry explicitly marked as a test. A direct or unknown traffic source does not prove that an ad had no influence.
+
+Older work may have clear delivery proof but no known start time or saved recipe version. Keep that proof in the execution ledger's historical evidence collection, linked to the existing task slugs. Preserve unknown fields. Count one source job once even when it produced many files or supports several tasks. The dashboard shows this proof separately; importing it does not create a new run, certify today's recipe, prove new-user setup or establish revenue attribution. Keep private conversations, customer data and exports private. Use the next authorized real run to capture the missing evidence at the time the work happens.
+
 Rebuild after each batch. Confirm that `dashboard/verification-queue.json`, `.csv` and `.html` agree, that the changed task moved only when its evidence supports the new state, and that the queue remains linked from the normal dashboard and static library index. A skill-file review hash is separate from the canonical article revision. Shared-hub article volume is not task-level proof unless the audited record names the matching task slug or the hub has only that one mapped task.
 
 Record the five explicit instruction checks from [the Task Library Standard](Task-Library-Standard.md#record-which-instruction-requirements-passed) in the existing instruction review. Preserve any failed or unknown check even when other checks pass. Inspect changed upstream source bytes before renewing an expired review; restoring yesterday's review count is not a reason to approve today's source.
@@ -76,6 +80,7 @@ Keep these measures separate, with a date and source:
 | Instruction requirements checked | The current source has explicit verdicts for opening, recipe, links, evidence and handoff. All five must pass to pass this gate; it does not certify the article or actual use. |
 | Reported complete | The contributor's recorded status; not independent execution proof |
 | Verified real runs | Distinct executions with output and acceptance evidence |
+| Checked historical deliveries | Older source jobs with checked outputs; original timing, recipe use and acceptance may remain unknown. Separate from execution and full-verification counts. |
 | Setup success | A new user loaded the needed files, had access, and completed the first task |
 | Recurring failures | A specific step failed again after a proposed fix |
 | Changed-guide coverage | Required checks passed for each changed guide and affected dependency |

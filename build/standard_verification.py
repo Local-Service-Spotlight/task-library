@@ -440,6 +440,9 @@ def report(tasks, generated_at=None):
             'effortEstimate': None,
             'status': task.get('status'), 'articleUrl': task.get('article'),
             'taskLibraryUrl': task.get('taskLibraryUrl'),
+            'historicalDeliveryCount': (task.get('historicalDeliveryEvidence') or {}).get('count', 0),
+            'historicalEvidenceIds': [item['evidenceId'] for item in
+                                      (task.get('historicalDeliveryEvidence') or {}).get('records', [])],
             'nextAction': task['standardVerification']['nextAction'],
             'standardVerification': task['standardVerification'],
         })
@@ -480,7 +483,7 @@ def write_artifacts(payload, out_dir):
               'category', 'importance', 'revenueEstimate', 'dependencyEstimate',
               'frequencyEstimate', 'valueBasis', 'effortEstimate', 'status', 'articleUrl', 'taskLibraryUrl',
               'unmetStandardGates', 'heldStandardGates', 'unknownStandardGates',
-              'nextAction'] + list(GATE_ORDER)
+              'nextAction', 'historicalDeliveryCount', 'historicalEvidenceIds'] + list(GATE_ORDER)
     with open(csv_path, 'w', encoding='utf-8', newline='') as target:
         writer = csv.DictWriter(target, fieldnames=fields, lineterminator='\n')
         writer.writeheader()
@@ -491,6 +494,7 @@ def write_artifacts(payload, out_dir):
                 'unmetStandardGates': ';'.join(verification['unmetStandardGates']),
                 'heldStandardGates': ';'.join(verification['heldStandardGates']),
                 'unknownStandardGates': ';'.join(verification['unknownStandardGates']),
+                'historicalEvidenceIds': ';'.join(row.get('historicalEvidenceIds', [])),
                 **{gate_id: verification['gates'][gate_id]['state']
                    for gate_id in GATE_ORDER},
             })
@@ -544,7 +548,8 @@ def _html_report(payload):
             f'data-search="{esc((row["slug"] + " " + row["title"] + " " + (row.get("category") or "")).lower())}">'
             f'<td data-label="Queue">{row["queuePosition"]}</td><td data-label="Priority"><strong>{esc(row["priority"])}</strong><br>'
             f'<small>{esc(row["priorityReason"])}</small></td>'
-            f'<td data-label="Task">{title}<br><code>{esc(row["slug"])}</code><br><small>{esc(row.get("category"))}</small></td>'
+            f'<td data-label="Task">{title}<br><code>{esc(row["slug"])}</code><br><small>{esc(row.get("category"))}</small>'
+            + (f'<p>{row["historicalDeliveryCount"]} checked historical delivery record(s). Open the task for proof; this does not pass a verification gate.</p>' if row.get('historicalDeliveryCount') else '') + '</td>'
             f'<td data-label="Estimated value">Revenue role {esc(row.get("revenueEstimate")) or "unknown"}/5<br>'
             f'Dependencies {esc(row.get("dependencyEstimate")) or "unknown"}/5<br>'
             f'Frequency {esc(row.get("frequencyEstimate")) or "unknown"}/5<br>'

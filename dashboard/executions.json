@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "asOf": "2026-10-06T02:09:20.281848+00:00",
+  "asOf": "2026-10-06T03:43:19.011553+00:00",
   "countDefinition": "Distinct recorded execution IDs, separate from meta-article URLs. History is partial; absent history is unknown, not zero. The last-30-day count is a documented lower bound, not total task frequency.",
   "recordedExecutions": 24,
   "completedExecutions": 12,
@@ -865,5 +865,113 @@
         }
       ]
     }
-  ]
+  ],
+  "historicalDeliveryEvidence": {
+    "count": 2,
+    "candidateCount": 2,
+    "records": [
+      {
+        "version": 1,
+        "evidenceId": "historical-84b2c95111073421c11227b6",
+        "taskSlugs": [
+          "upload-processed-video-to-youtube",
+          "step-10-embed-source-video"
+        ],
+        "occurrence": {
+          "start": {
+            "precision": "unknown",
+            "value": null
+          },
+          "end": {
+            "precision": "unknown",
+            "value": null
+          }
+        },
+        "recipeRevision": {
+          "state": "unknown",
+          "canonicalURL": null
+        },
+        "observedAt": "2026-10-06T02:58:28.783349+00:00",
+        "outcome": "One Optimize Live delivery includes five web pages, a full talk and eight Shorts. Current anonymous checks found the intended video embeds on all five pages and matching metadata for all nine videos. This is one historical source job supporting two tasks.",
+        "review": {
+          "identity": {
+            "state": "pass",
+            "notes": "Original project job, delivery thread and output URLs match. Multiple outputs and repeated delivery comments belong to one source job."
+          },
+          "output": {
+            "state": "pass",
+            "notes": "Five page responses contain the intended video ID and expected start parameters; nine video metadata responses identify the expected titles and channel. Playback, visibility settings and full editing quality were not tested."
+          },
+          "acceptance": {
+            "state": "unknown",
+            "notes": "The delivery received acknowledgment. No independent review against the exact recipe used was recovered; gratitude and a completed checkbox do not establish that acceptance."
+          },
+          "handoff": {
+            "state": "pass",
+            "notes": "The completed output list reached the project thread and received acknowledgment. The next reporting request is recorded; its later completion remains unknown."
+          }
+        },
+        "evidenceUrls": [
+          "https://dennisyu.com/optimize/",
+          "https://localservicespotlight.com/why-isaac-hall-has-an-edge-in-ai-marketing-for-plumbers/",
+          "https://jack-allard.com/named-at-optimize-live/",
+          "https://isaac-hall.com/named-at-optimize-live/",
+          "https://markosipila.com/named-at-optimize-live/",
+          "https://www.youtube.com/watch?v=dyJrGllGbn4",
+          "https://www.youtube.com/watch?v=Ww6yDpbkyZA",
+          "https://www.youtube.com/watch?v=oD0Te0_rips",
+          "https://www.youtube.com/watch?v=cNBcEdr_hIY",
+          "https://www.youtube.com/watch?v=oY_Kk5A4Zq8",
+          "https://www.youtube.com/watch?v=bfNrXi_akr0",
+          "https://www.youtube.com/watch?v=7gyOAfD5yTI",
+          "https://www.youtube.com/watch?v=h0kSeES2erE",
+          "https://www.youtube.com/watch?v=ERdAMUq5a8Q"
+        ],
+        "privateEvidenceRecorded": true
+      },
+      {
+        "version": 1,
+        "evidenceId": "historical-67283f8934345f04d0bb68a6",
+        "taskSlugs": [
+          "submit-weekly-maa-report-every-friday"
+        ],
+        "occurrence": {
+          "start": {
+            "precision": "unknown",
+            "value": null
+          },
+          "end": {
+            "precision": "unknown",
+            "value": null
+          }
+        },
+        "recipeRevision": {
+          "state": "unknown",
+          "canonicalURL": null
+        },
+        "observedAt": "2026-10-06T02:58:28.783349+00:00",
+        "outcome": "A weekly business report was posted with Metrics, Analysis and Action, source exports, named owners and due dates. Nineteen selected aggregate checks matched the attached files, with one explicitly marked test submission excluded. Private customer details and figures are withheld.",
+        "review": {
+          "identity": {
+            "state": "pass",
+            "notes": "One dated weekly report and its exact attachment were recovered from the original project thread. Praise for a separate page delivery was not treated as report approval."
+          },
+          "output": {
+            "state": "pass",
+            "notes": "The report and its readable export archive exist. Selected totals reconcile with the stated date ranges and explicit test-row exclusion. This check does not certify every claim or source-system provenance."
+          },
+          "acceptance": {
+            "state": "unknown",
+            "notes": "No report-specific reviewer acceptance was found. A conclusion that direct traffic rules out ad influence is unsupported, so full accuracy acceptance remains open."
+          },
+          "handoff": {
+            "state": "pass",
+            "notes": "The report was posted to its project channel with named next actions and dates. Receipt by a particular reader and completion of those future actions remain unknown."
+          }
+        },
+        "evidenceUrls": [],
+        "privateEvidenceRecorded": true
+      }
+    ]
+  }
 }
