@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>Sam's agents | Set up on your phone</title>
+<meta name="description" content="Sam DeMaio's agent kit: get a free follow-through agent and five helper prompts running on your phone in about five minutes.">
+<meta name="theme-color" content="#13223b">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#13223b; --paper:#ffffff; --tile:#f2f4f7; --line:#d9dee6;
+  --safety:#ffb000; --muted:#4a5568; --go:#0f6b3e; --focus:#1d4ed8;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 18px/1.5 "Barlow",system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:var(--ink)}
+.wrap{max-width:560px;margin:0 auto;padding:0 16px}
+h1,h2,h3{font-family:"Barlow Condensed","Arial Narrow",sans-serif;font-weight:700;line-height:1.05;margin:0}
+h1{font-size:44px;letter-spacing:.2px}
+h2{font-size:30px}
+h3{font-size:24px}
+p{margin:0 0 12px}
+.tape{background:var(--safety);color:var(--ink);transform:rotate(-1.2deg);margin:22px -6px 18px;padding:10px 16px;box-shadow:0 1px 0 rgba(19,34,59,.18);font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:26px;line-height:1.1}
+.hero{padding:18px 0 8px}
+.hero p.lead{font-size:20px}
+.who{display:flex;gap:12px;align-items:center;color:var(--muted);font-size:15px;margin:6px 0 0}
+section.step{border-top:2px solid var(--ink);padding:22px 0 8px}
+.stephead{display:flex;gap:12px;align-items:flex-start;margin-bottom:10px}
+.num{flex:0 0 44px;height:44px;border-radius:50%;background:var(--safety);display:flex;align-items:center;justify-content:center;font:700 26px/1 "Barlow Condensed",sans-serif}
+.btn{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;min-height:58px;margin:10px 0;padding:12px 18px;border-radius:12px;border:2px solid var(--ink);background:var(--ink);color:#fff;font:700 19px/1.2 "Barlow",sans-serif;text-decoration:none;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.btn.alt{background:#fff;color:var(--ink)}
+.btn.small{min-height:48px;font-size:17px}
+.btn:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible{outline:3px solid var(--focus);outline-offset:3px}
+.row{display:flex;gap:10px}
+.row .btn{flex:1}
+.note{color:var(--muted);font-size:15px}
+.ticket{background:var(--tile);border:1px solid var(--line);border-radius:14px;padding:16px;margin:14px 0;position:relative}
+.ticket::before{content:"";position:absolute;left:14px;right:14px;top:-1px;border-top:2px dashed var(--line)}
+.ticket h3{margin-bottom:4px}
+.ticket .what{margin:0 0 6px}
+.ticket .when{font-size:15px;color:var(--muted);margin:0 0 4px}
+details{margin:6px 0 2px}
+summary{cursor:pointer;color:var(--muted);font-size:15px;padding:6px 0}
+pre{white-space:pre-wrap;background:#fff;border:1px solid var(--line);border-radius:10px;padding:12px;font:400 15px/1.45 "Barlow",sans-serif;margin:6px 0 0}
+.links{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:16px;margin:4px 0 8px}
+.lss li{margin:0 0 10px}
+.lss{padding-left:20px;margin:6px 0 10px}
+.toast{position:fixed;left:50%;bottom:20px;transform:translateX(-50%) translateY(140%);background:var(--go);color:#fff;padding:14px 18px;border-radius:12px;font-weight:700;max-width:92vw;text-align:center;transition:transform .25s ease;z-index:9;visibility:hidden}
+.toast.show{transform:translateX(-50%) translateY(0);visibility:visible}
+footer{border-top:2px solid var(--ink);margin-top:26px;padding:18px 0 40px;font-size:15px;color:var(--muted)}
+footer a{color:var(--muted)}
+.hide{display:none}
+@media (prefers-reduced-motion:reduce){.toast{transition:none}.tape{transform:none}}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <header class="hero">
+    <h1>Sam, your agents start here.</h1>
+    <div class="tape" aria-hidden="true">Scan. Install. Paste. Approve.</div>
+    <p class="lead">About five minutes on your phone. The agents do the follow-through. You approve anything that goes out.</p>
+    <p class="note">Your Local Service Spotlight team set this up from your brand audit. Nothing on this page posts, sends or buys anything.</p>
+  </header>
+
+  <section class="step" id="step1">
+    <div class="stephead"><div class="num" aria-hidden="true">1</div><div><h2>Get Muse. It's free.</h2><p class="note">Muse is Meta's personal agent. It keeps working after you close the app and checks with you before it sends anything.</p></div></div>
+    <div id="muse-store">
+      <a class="btn" id="muse-ios" href="https://apps.apple.com/us/app/muse-from-meta/id6760173601">Get Muse for iPhone</a>
+      <a class="btn alt" id="muse-android" href="https://play.google.com/store/apps/details?id=com.facebook.aura">Get Muse for Android</a>
+    </div>
+    <p class="note">Sign in, allow notifications, and connect only what you want it to see (calendar is a good start). Muse is US-only for now. The free plan has weekly limits; paid plans exist if you outgrow it.</p>
+  </section>
+
+  <section class="step" id="step2">
+    <div class="stephead"><div class="num" aria-hidden="true">2</div><div><h2>Give Muse its first job</h2><p class="note">This turns Muse into your follow-through agent: one 10-minute task every weekday morning, a Friday nudge, and a Sunday recap.</p></div></div>
+    <button class="btn" type="button" data-copy="muse">Copy the setup message</button>
+    <a class="btn alt" id="open-muse" href="https://apps.apple.com/us/app/muse-from-meta/id6760173601">Open Muse and paste it</a>
+    <details><summary>Read the message first</summary><pre id="muse-text"></pre></details>
+  </section>
+
+  <section class="step" id="step3">
+    <div class="stephead"><div class="num" aria-hidden="true">3</div><div><h2>Use your five helpers</h2><p class="note">Each button opens Claude with the job already typed in. Claude is free to start. Get the app: <a href="https://apps.apple.com/us/app/claude-by-anthropic/id6473753684">iPhone</a> or <a href="https://play.google.com/store/apps/details?id=com.anthropic.claude">Android</a>. Prefer ChatGPT? Every helper has a ChatGPT button too.</p></div></div>
+    <div id="tickets"></div>
+  </section>
+
+  <section class="step" id="step4">
+    <div class="stephead"><div class="num" aria-hidden="true">4</div><div><h2>Leave the rest to your team</h2><p class="note">Local Service Spotlight already runs these for you. Status lives in your Basecamp Updates thread.</p></div></div>
+    <ul class="lss">
+      <li>Fixing samdemaio.com so Google and AI tools recognize one Sam DeMaio, with a page for the book and a page for speaking.</li>
+      <li>Drafting your Google review reply and your fact sheet, so you only approve.</li>
+      <li>Reviewing the spam links pointing at your sites.</li>
+      <li>Posting your weekly numbers every Friday.</li>
+      <li>Re-checking your search results and AI answers every month.</li>
+    </ul>
+  </section>
+
+  <section class="step" id="later">
+    <h2>Later, if you want more</h2>
+    <p>An always-on ChatGPT agent (OpenAI calls it a dot) runs on its own computer and can work for hours. It needs a ChatGPT Pro plan, which starts at $100 a month, and a one-time setup on a computer. After that you talk to it from the ChatGPT app. Ask your team when you're ready and they'll set it up with you.</p>
+    <p class="note">To install the full Local Service Spotlight skill set on a computer, use <a href="https://localservicespotlight.com/install/">localservicespotlight.com/install</a>.</p>
+  </section>
+
+  <footer>
+    <p>Want to run this audit on your own brand? <a href="../audit/">Start here</a>.</p>
+    <p>Prepared by Local Service Spotlight for Sam DeMaio, October 2026. This page stores nothing. A prompt only leaves your phone when you tap a button, and then it goes to the app you chose.</p>
+  </footer>
+</main>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script>
+(function(){
+  var MUSE = [
+    "You are my follow-through agent. I'm Sam DeMaio. I own Showcase Remodels and One Day Bathrooms in South Jersey, and I wrote the book Trust Built In. My personal site is samdemaio.com.",
+    "",
+    "My goal for the next 90 days: make my name, my book and my company easy to find and easy to trust.",
+    "",
+    "Every weekday at 7:00 am, send me ONE task that takes 10 minutes or less. Go in this order and skip anything I've marked done:",
+    "1. Approve my fact sheet (the year I started, team size, main phone number).",
+    "2. Approve the reply my team drafted to my newest Google review.",
+    "3. Film a one-minute story from my book on my phone, starting with chapter 1.",
+    "4. Post one job-site photo with one lesson I learned.",
+    "5. Ask one happy customer for a Google review.",
+    "6. Thank one podcast host who interviewed me and ask them to share the episode again.",
+    "7. Ask one reader of my book for an honest Amazon review.",
+    "",
+    "Every Friday at 3:00 pm, remind me to read my marketing team's weekly update in Basecamp and answer their one question.",
+    "",
+    "Rules: never post, send, buy or sign anything without my OK. Keep every message short. When I say \"done\", log it and move on. When I say \"skip\", move it to next week. Every Sunday evening, tell me what I finished this week.",
+    "",
+    "Start now: say hi in one sentence and ask what time I usually start my day."
+  ].join("\n");
+
+  var TICKETS = [
+    {id:"story", title:"Book story to posts", what:"Turns one story from Trust Built In, or from this week's job, into a phone video script and two posts.", when:"Use twice a week.",
+     prompt:"I'm Sam DeMaio, owner of Showcase Remodels in South Jersey and author of the book Trust Built In. I'll paste or dictate one story from my book or from a job this week. Turn it into:\n1. A 60-second video script I can film on my phone in one take: a hook in the first five seconds, one lesson, and a question at the end.\n2. An Instagram caption under 125 words.\n3. A LinkedIn post under 150 words.\nKeep my voice: plain, honest, straight-talking contractor. Use only facts I give you. No made-up numbers and no walls of hashtags. Ask me for the story first."},
+    {id:"photo", title:"Job photo to post", what:"Upload a few job photos. Get captions that teach homeowners something, and which one to post first.", when:"Use after any job.",
+     prompt:"I'm Sam DeMaio (Showcase Remodels, South Jersey). I'll upload one to five photos from a job. For each photo, write a caption under 80 words that teaches homeowners one useful thing, such as a material, a mistake to avoid, or what a fair price includes. Plain words, my voice, no hype, and nothing I didn't tell you. Never include a homeowner's name or street. Then tell me which photo to post first and why. Ask me for the photos first."},
+    {id:"review", title:"Answer a Google review", what:"Paste a review and get two replies you can post: one warm, one brief.", when:"Use for every new review, good or bad.",
+     prompt:"I own Showcase Remodels. I'll paste one Google review. Write two replies I can post, each under 80 words: one warm and one brief. Thank the person by first name, answer the specific point they raised, make no excuses, share no private details, and if something is unresolved, invite them to call me directly. Ask me for the review first."},
+    {id:"facts", title:"Confirm my facts", what:"Answers seven quick questions and writes one fact sheet your team can use everywhere.", when:"Use once, then whenever something changes.",
+     prompt:"Help me write one fact sheet my marketing team can use everywhere: my website, Google, directories and AI search. Ask me these one at a time and wait for each answer:\n1. The year I started Showcase Remodels.\n2. How many people work with us today, with employees and trade partners counted separately.\n3. The one main phone number customers should call.\n4. My exact title (owner, founder, CEO or president).\n5. The towns and counties we serve.\n6. The exact title and subtitle of my book.\n7. Anything that is often wrong about me online.\nThen write the fact sheet as a short list I can send to my team in one message."},
+    {id:"check", title:"Check my brand this month", what:"Runs the quick version of your audit: who you are online, your best proof, the gaps, a score and three fixes.", when:"Use on the first of each month.",
+     prompt:"Run a quick personal brand audit of Sam DeMaio, owner of Showcase Remodels and One Day Bathrooms in South Jersey and author of Trust Built In (samdemaio.com, showcaseremodels.com). Use only public sources you can actually open, and list every URL you used.\n1. Identity: confirm it's the right person with two independent facts, and flag anyone with the same name.\n2. Proof: the five strongest pieces of independent proof (press, podcasts, awards, reviews) with links and dates.\n3. Gaps: what a stranger or an AI can't find or gets wrong, such as conflicting facts, missing pages for the book or speaking, or no Knowledge Panel.\n4. Score 0 to 10 each: entity home, media, content, social proof, offer clarity, consistency, momentum, links, search visibility, Knowledge Graph. Give the total out of 100; 80 is a pass.\n5. The three most valuable fixes for the next seven days, who should do each, and how to check it worked.\nLabel every claim OBSERVED (a source shows it), INFERRED (your reasoning) or UNKNOWN (couldn't check). Don't invent numbers. Keep it to one page."}
+  ];
+
+  var ua = navigator.userAgent || "";
+  var isAndroid = /Android/i.test(ua);
+  var isIOS = /iPhone|iPad|iPod/i.test(ua) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+  var MUSE_IOS = "https://apps.apple.com/us/app/muse-from-meta/id6760173601";
+  var MUSE_PLAY = "https://play.google.com/store/apps/details?id=com.facebook.aura";
+  var MUSE_ANDROID_OPEN = "intent://#Intent;package=com.facebook.aura;S.browser_fallback_url=" + encodeURIComponent(MUSE_PLAY) + ";end";
+
+  var iosBtn = document.getElementById("muse-ios"), andBtn = document.getElementById("muse-android");
+  var openMuse = document.getElementById("open-muse");
+  if (isAndroid) { andBtn.className = "btn"; iosBtn.className = "btn alt"; andBtn.parentNode.insertBefore(andBtn, iosBtn); openMuse.href = MUSE_ANDROID_OPEN; }
+  else if (!isIOS) { openMuse.textContent = "Open Muse on your phone and paste it"; }
+
+  document.getElementById("muse-text").textContent = MUSE;
+
+  function enc(s){ return encodeURIComponent(s); }
+  var host = document.getElementById("tickets");
+  TICKETS.forEach(function(t){
+    var d = document.createElement("article");
+    d.className = "ticket"; d.id = "t-" + t.id;
+    d.innerHTML =
+      '<h3></h3><p class="what"></p><p class="when"></p>' +
+      '<a class="btn small" data-kind="claude">Open in Claude</a>' +
+      '<div class="row"><a class="btn alt small" data-kind="chatgpt">Use ChatGPT</a><button type="button" class="btn alt small" data-copy="' + t.id + '">Copy</button></div>' +
+      '<details><summary>Read what it says</summary><pre></pre></details>';
+    d.querySelector("h3").textContent = t.title;
+    d.querySelector(".what").textContent = t.what;
+    d.querySelector(".when").textContent = t.when;
+    d.querySelector('[data-kind="claude"]').href = "https://claude.ai/new?q=" + enc(t.prompt);
+    d.querySelector('[data-kind="chatgpt"]').href = "https://chatgpt.com/?q=" + enc(t.prompt);
+    d.querySelector("pre").textContent = t.prompt;
+    host.appendChild(d);
+  });
+
+  var toast = document.getElementById("toast"), timer;
+  function say(msg){ toast.textContent = msg; toast.classList.add("show"); clearTimeout(timer); timer = setTimeout(function(){ toast.classList.remove("show"); }, 3200); }
+  function fallbackCopy(text){
+    var ta = document.createElement("textarea"); ta.value = text; ta.setAttribute("readonly",""); ta.style.position = "fixed"; ta.style.opacity = "0";
+    document.body.appendChild(ta); ta.select(); ta.setSelectionRange(0, text.length);
+    var ok = false; try { ok = document.execCommand("copy"); } catch(e) {}
+    document.body.removeChild(ta); return ok;
+  }
+  function copy(text, okMsg){
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(text).then(function(){ say(okMsg); }, function(){ say(fallbackCopy(text) ? okMsg : "Copy didn't work. Open 'Read' and press and hold to copy."); });
+    } else { say(fallbackCopy(text) ? okMsg : "Copy didn't work. Open 'Read' and press and hold to copy."); }
+  }
+  document.addEventListener("click", function(e){
+    var b = e.target.closest("[data-copy]"); if (!b) return;
+    var key = b.getAttribute("data-copy");
+    if (key === "muse") { copy(MUSE, "Copied. Now open Muse and paste it."); return; }
+    var t = TICKETS.filter(function(x){ return x.id === key; })[0];
+    if (t) copy(t.prompt, "Copied. Paste it into any AI app.");
+  });
+})();
+</script>
+</body>
+</html>
