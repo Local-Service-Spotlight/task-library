@@ -36,7 +36,7 @@
   "fullyVerifiedTasks": 0,
   "semanticHoldHubs": 3,
   "tasksWithHolds": 19,
-  "tasksWithUnmetGates": 216,
+  "tasksWithUnmetGates": 215,
   "tasksWithUnknownGates": 276,
   "gateCounts": {
    "instructionRevisionReviewed": {
@@ -71,9 +71,9 @@
    },
    "articleSemanticCertification": {
     "pass": 0,
-    "unmet": 1,
+    "unmet": 0,
     "hold": 19,
-    "unknown": 256
+    "unknown": 257
    },
    "taskExampleEvidence": {
     "pass": 10,
@@ -88,10 +88,10 @@
     "unknown": 274
    },
    "acceptedExecution": {
-    "pass": 1,
+    "pass": 0,
     "unmet": 0,
     "hold": 0,
-    "unknown": 275
+    "unknown": 276
    },
    "setupSuccess": {
     "pass": 0,
@@ -101,7 +101,7 @@
    }
   }
  },
- "updated": "October 6, 2026",
+ "updated": "October 7, 2026",
  "factory": {
   "phases": [
    {
@@ -1715,7 +1715,7 @@
  ],
  "executionHistory": {
   "schemaVersion": 1,
-  "asOf": "2026-10-06T16:09:10.463584+00:00",
+  "asOf": "2026-10-07T16:06:04.590664+00:00",
   "countDefinition": "Distinct recorded execution IDs, separate from meta-article URLs. History is partial; absent history is unknown, not zero. The last-30-day count is a documented lower bound, not total task frequency.",
   "recordedExecutions": 24,
   "completedExecutions": 12,
@@ -2582,8 +2582,8 @@
    }
   ],
   "historicalDeliveryEvidence": {
-   "count": 3,
-   "candidateCount": 3,
+   "count": 4,
+   "candidateCount": 4,
    "records": [
     {
      "version": 1,
@@ -2728,6 +2728,52 @@
       }
      },
      "evidenceUrls": [],
+     "privateEvidenceRecorded": true
+    },
+    {
+     "version": 1,
+     "evidenceId": "historical-b47f6ecca9200b904c006ab7",
+     "taskSlugs": [
+      "enhance-existing-articles-before-creating-new-ones"
+     ],
+     "occurrence": {
+      "start": {
+       "precision": "unknown",
+       "value": null
+      },
+      "end": {
+       "precision": "timestamp",
+       "value": "2026-10-06T15:31:30.640704+00:00"
+      }
+     },
+     "recipeRevision": {
+      "state": "unknown",
+      "canonicalURL": null
+     },
+     "observedAt": "2026-10-07T16:03:04.339039+00:00",
+     "outcome": "One existing story was enhanced with source-backed teaching, a captioned one-minute video and a linked program proof section. Independent publication checks accepted the released files. The story, video, poster and program proof section remain exact; the broader program page has since changed. Distribution receiver acceptance is still unconfirmed. This is one historical source job, not a new execution or a verified use of today's recipe.",
+     "review": {
+      "identity": {
+       "state": "pass",
+       "notes": "One original production job and frozen source commit identify all four release files. The story, proof card and media are outputs of that same job, not separate runs."
+      },
+      "output": {
+       "state": "pass",
+       "notes": "Scoped to the enhanced story and supporting proof card/media. Original independent checks passed; fresh story/video/poster hashes and the program proof section match. The rest of the program page changed and is not re-certified."
+      },
+      "acceptance": {
+       "state": "pass",
+       "notes": "Scoped independent publication acceptance: frozen files, source preservation, links and silent media checks. This does not establish current-recipe acceptance, reader comprehension, qualified applications or revenue."
+      },
+      "handoff": {
+       "state": "hold",
+       "notes": "The internal distribution request and receiving worker are recorded. Fresh original-thread readback has no reply. Receiver acceptance and public distribution remain open with the existing owner and follow-up clock."
+      }
+     },
+     "evidenceUrls": [
+      "https://localservicespotlight.com/bryce-clark-digital-marketing-freedom/",
+      "https://localservicespotlight.com/ai-builder-program/#bryce-learning-example"
+     ],
      "privateEvidenceRecorded": true
     }
    ]
@@ -3689,7 +3735,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 241,
+      "queuePosition": 240,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -3827,7 +3873,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 242,
+      "queuePosition": 241,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -5067,7 +5113,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 247,
+      "queuePosition": 246,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -5205,7 +5251,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 255,
+      "queuePosition": 254,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -5343,7 +5389,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 256,
+      "queuePosition": 255,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -5481,7 +5527,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 257,
+      "queuePosition": 256,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -5753,7 +5799,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 239,
+      "queuePosition": 238,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -5949,7 +5995,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 259,
+      "queuePosition": 258,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -6085,7 +6131,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 243,
+      "queuePosition": 242,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -6221,7 +6267,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 240,
+      "queuePosition": 239,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -6357,7 +6403,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 260,
+      "queuePosition": 259,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -6493,7 +6539,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 261,
+      "queuePosition": 260,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -6629,7 +6675,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 238,
+      "queuePosition": 237,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -6767,7 +6813,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 258,
+      "queuePosition": 257,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -6903,7 +6949,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 262,
+      "queuePosition": 261,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -7101,7 +7147,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 263,
+      "queuePosition": 262,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -7237,7 +7283,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 264,
+      "queuePosition": 263,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -7373,7 +7419,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 265,
+      "queuePosition": 264,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -7509,7 +7555,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 244,
+      "queuePosition": 243,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -8009,7 +8055,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 245,
+      "queuePosition": 244,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "nextAction": "The article revision observation is outside the 24-hour freshness window."
@@ -8668,7 +8714,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 246,
+      "queuePosition": 245,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -9393,7 +9439,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 248,
+      "queuePosition": 247,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -9529,7 +9575,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 236,
+      "queuePosition": 235,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -9665,7 +9711,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 249,
+      "queuePosition": 248,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -9801,7 +9847,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 250,
+      "queuePosition": 249,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -9937,7 +9983,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 251,
+      "queuePosition": 250,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -10073,7 +10119,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 252,
+      "queuePosition": 251,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -10405,7 +10451,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 254,
+      "queuePosition": 253,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -13334,7 +13380,7 @@
         "id": "articleSemanticCertification",
         "label": "Article semantic certification",
         "state": "unknown",
-        "reason": "Current article semantic criteria are unknown: owner, sourceEvidence, visualAndLayout, publicationStandards, acceptanceResults.",
+        "reason": "The article revision observation is outside the 24-hour freshness window.",
         "semanticReview": {
          "version": 1,
          "taskSlug": "create-clear-conversion-path",
@@ -14451,7 +14497,7 @@
         "id": "articleSemanticCertification",
         "label": "Article semantic certification",
         "state": "unknown",
-        "reason": "Current article semantic criteria are unknown: owner, sourceEvidence, visualAndLayout, publicationStandards, acceptanceResults.",
+        "reason": "The article revision observation is outside the 24-hour freshness window.",
         "semanticReview": {
          "version": 1,
          "taskSlug": "ensure-working-contact-form-delivers-notifications",
@@ -15292,7 +15338,7 @@
         "id": "articleSemanticCertification",
         "label": "Article semantic certification",
         "state": "unknown",
-        "reason": "Current article semantic criteria are unknown: owner, sourceEvidence, visualAndLayout, publicationStandards, acceptanceResults.",
+        "reason": "The article revision observation is outside the 24-hour freshness window.",
         "semanticReview": {
          "version": 1,
          "taskSlug": "set-up-call-tracking-for-phone-conversions",
@@ -25009,9 +25055,56 @@
       "setupReviews": []
      },
      "historicalDeliveryEvidence": {
-      "count": 0,
-      "candidateCount": 0,
-      "records": []
+      "count": 1,
+      "candidateCount": 1,
+      "records": [
+       {
+        "version": 1,
+        "evidenceId": "historical-b47f6ecca9200b904c006ab7",
+        "taskSlugs": [
+         "enhance-existing-articles-before-creating-new-ones"
+        ],
+        "occurrence": {
+         "start": {
+          "precision": "unknown",
+          "value": null
+         },
+         "end": {
+          "precision": "timestamp",
+          "value": "2026-10-06T15:31:30.640704+00:00"
+         }
+        },
+        "recipeRevision": {
+         "state": "unknown",
+         "canonicalURL": null
+        },
+        "observedAt": "2026-10-07T16:03:04.339039+00:00",
+        "outcome": "One existing story was enhanced with source-backed teaching, a captioned one-minute video and a linked program proof section. Independent publication checks accepted the released files. The story, video, poster and program proof section remain exact; the broader program page has since changed. Distribution receiver acceptance is still unconfirmed. This is one historical source job, not a new execution or a verified use of today's recipe.",
+        "review": {
+         "identity": {
+          "state": "pass",
+          "notes": "One original production job and frozen source commit identify all four release files. The story, proof card and media are outputs of that same job, not separate runs."
+         },
+         "output": {
+          "state": "pass",
+          "notes": "Scoped to the enhanced story and supporting proof card/media. Original independent checks passed; fresh story/video/poster hashes and the program proof section match. The rest of the program page changed and is not re-certified."
+         },
+         "acceptance": {
+          "state": "pass",
+          "notes": "Scoped independent publication acceptance: frozen files, source preservation, links and silent media checks. This does not establish current-recipe acceptance, reader comprehension, qualified applications or revenue."
+         },
+         "handoff": {
+          "state": "hold",
+          "notes": "The internal distribution request and receiving worker are recorded. Fresh original-thread readback has no reply. Receiver acceptance and public distribution remain open with the existing owner and follow-up clock."
+         }
+        },
+        "evidenceUrls": [
+         "https://localservicespotlight.com/bryce-clark-digital-marketing-freedom/",
+         "https://localservicespotlight.com/ai-builder-program/#bryce-learning-example"
+        ],
+        "privateEvidenceRecorded": true
+       }
+      ]
      },
      "standardVerification": {
       "instructionSourceSha256": "d4e5ecd3f181365ec771d4994b880b4d6c166a65f045fe379e7bd5c36010c36d",
@@ -26420,7 +26513,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 271,
+      "queuePosition": 270,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "The article revision observation is outside the 24-hour freshness window."
@@ -26713,7 +26806,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 237,
+      "queuePosition": 236,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "nextAction": "The article revision observation is outside the 24-hour freshness window."
@@ -27006,7 +27099,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 272,
+      "queuePosition": 271,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "The article revision observation is outside the 24-hour freshness window."
@@ -27309,7 +27402,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 273,
+      "queuePosition": 272,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "The article revision observation is outside the 24-hour freshness window."
@@ -27612,7 +27705,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 274,
+      "queuePosition": 273,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "The article revision observation is outside the 24-hour freshness window."
@@ -27905,7 +27998,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 253,
+      "queuePosition": 252,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "The article revision observation is outside the 24-hour freshness window."
@@ -28041,7 +28134,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 276,
+      "queuePosition": 275,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -29176,7 +29269,7 @@
         "id": "articleSemanticCertification",
         "label": "Article semantic certification",
         "state": "unknown",
-        "reason": "Current article semantic criteria are unknown: owner, sourceEvidence, visualAndLayout, publicationStandards, acceptanceResults.",
+        "reason": "The article revision observation is outside the 24-hour freshness window.",
         "semanticReview": {
          "version": 1,
          "taskSlug": "classify-and-offer-knowledge-panel",
@@ -29885,7 +29978,7 @@
         "id": "articleSemanticCertification",
         "label": "Article semantic certification",
         "state": "unknown",
-        "reason": "Current article semantic criteria are unknown: owner, sourceEvidence, visualAndLayout, publicationStandards, acceptanceResults.",
+        "reason": "The article revision observation is outside the 24-hour freshness window.",
         "semanticReview": {
          "version": 1,
          "taskSlug": "establish-entity-identity",
@@ -31681,7 +31774,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 266,
+      "queuePosition": 265,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -32238,7 +32331,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 270,
+      "queuePosition": 269,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -32396,7 +32489,7 @@
         "id": "articleSemanticCertification",
         "label": "Article semantic certification",
         "state": "unknown",
-        "reason": "Current article semantic criteria are unknown: owner, sourceEvidence, visualAndLayout, publicationStandards, acceptanceResults.",
+        "reason": "The article revision observation is outside the 24-hour freshness window.",
         "semanticReview": {
          "version": 1,
          "taskSlug": "deliver-personal-brand-site-from-request",
@@ -33941,7 +34034,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 267,
+      "queuePosition": 266,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -34077,7 +34170,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 268,
+      "queuePosition": 267,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -34213,7 +34306,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 269,
+      "queuePosition": 268,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -36048,7 +36141,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 275,
+      "queuePosition": 274,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -36325,7 +36418,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 235,
+      "queuePosition": 234,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -41122,7 +41215,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 234,
+      "queuePosition": 233,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -42328,8 +42421,8 @@
        "articleSemanticCertification": {
         "id": "articleSemanticCertification",
         "label": "Article semantic certification",
-        "state": "unmet",
-        "reason": "The observed article source hash does not match the reviewed revision.",
+        "state": "unknown",
+        "reason": "The article revision observation is outside the 24-hour freshness window.",
         "semanticReview": {
          "version": 1,
          "taskSlug": "publish-skill-and-task-page",
@@ -42470,8 +42563,8 @@
        "acceptedExecution": {
         "id": "acceptedExecution",
         "label": "Accepted execution result",
-        "state": "pass",
-        "reason": "All named measurable acceptance criteria pass for the separately observed current recipe revision.",
+        "state": "unknown",
+        "reason": "The separate current article revision observation is outside the 24-hour freshness window.",
         "acceptanceReview": {
          "version": 1,
          "reviewId": "first-use-rcf-20261005-2343-independent-acceptance",
@@ -42562,19 +42655,19 @@
         "schedulingCertified": false
        }
       },
-      "unmetStandardGates": [
-       "articleSemanticCertification"
-      ],
+      "unmetStandardGates": [],
       "heldStandardGates": [],
       "unknownStandardGates": [
+       "articleSemanticCertification",
        "taskExampleEvidence",
+       "acceptedExecution",
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 233,
-      "priority": "P1",
-      "priorityReason": "Known standard gap",
-      "nextAction": "The observed article source hash does not match the reviewed revision."
+      "queuePosition": 276,
+      "priority": "P3",
+      "priorityReason": "Missing proof remains",
+      "nextAction": "The article revision observation is outside the 24-hour freshness window."
      }
     },
     {

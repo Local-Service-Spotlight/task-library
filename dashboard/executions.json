@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "asOf": "2026-10-06T16:09:10.463584+00:00",
+  "asOf": "2026-10-07T16:06:04.590664+00:00",
   "countDefinition": "Distinct recorded execution IDs, separate from meta-article URLs. History is partial; absent history is unknown, not zero. The last-30-day count is a documented lower bound, not total task frequency.",
   "recordedExecutions": 24,
   "completedExecutions": 12,
@@ -867,8 +867,8 @@
     }
   ],
   "historicalDeliveryEvidence": {
-    "count": 3,
-    "candidateCount": 3,
+    "count": 4,
+    "candidateCount": 4,
     "records": [
       {
         "version": 1,
@@ -1013,6 +1013,52 @@
           }
         },
         "evidenceUrls": [],
+        "privateEvidenceRecorded": true
+      },
+      {
+        "version": 1,
+        "evidenceId": "historical-b47f6ecca9200b904c006ab7",
+        "taskSlugs": [
+          "enhance-existing-articles-before-creating-new-ones"
+        ],
+        "occurrence": {
+          "start": {
+            "precision": "unknown",
+            "value": null
+          },
+          "end": {
+            "precision": "timestamp",
+            "value": "2026-10-06T15:31:30.640704+00:00"
+          }
+        },
+        "recipeRevision": {
+          "state": "unknown",
+          "canonicalURL": null
+        },
+        "observedAt": "2026-10-07T16:03:04.339039+00:00",
+        "outcome": "One existing story was enhanced with source-backed teaching, a captioned one-minute video and a linked program proof section. Independent publication checks accepted the released files. The story, video, poster and program proof section remain exact; the broader program page has since changed. Distribution receiver acceptance is still unconfirmed. This is one historical source job, not a new execution or a verified use of today's recipe.",
+        "review": {
+          "identity": {
+            "state": "pass",
+            "notes": "One original production job and frozen source commit identify all four release files. The story, proof card and media are outputs of that same job, not separate runs."
+          },
+          "output": {
+            "state": "pass",
+            "notes": "Scoped to the enhanced story and supporting proof card/media. Original independent checks passed; fresh story/video/poster hashes and the program proof section match. The rest of the program page changed and is not re-certified."
+          },
+          "acceptance": {
+            "state": "pass",
+            "notes": "Scoped independent publication acceptance: frozen files, source preservation, links and silent media checks. This does not establish current-recipe acceptance, reader comprehension, qualified applications or revenue."
+          },
+          "handoff": {
+            "state": "hold",
+            "notes": "The internal distribution request and receiving worker are recorded. Fresh original-thread readback has no reply. Receiver acceptance and public distribution remain open with the existing owner and follow-up clock."
+          }
+        },
+        "evidenceUrls": [
+          "https://localservicespotlight.com/bryce-clark-digital-marketing-freedom/",
+          "https://localservicespotlight.com/ai-builder-program/#bryce-learning-example"
+        ],
         "privateEvidenceRecorded": true
       }
     ]
