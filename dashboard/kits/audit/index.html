@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>Run this audit on your own brand | Local Service Spotlight</title>
+<meta name="description" content="Run the quick version of a personal brand audit on your phone in about ten minutes, and see how the full 20-page audit is built.">
+<meta name="theme-color" content="#13223b">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#13223b;--paper:#ffffff;--tile:#f2f4f7;--line:#d9dee6;--safety:#ffb000;--muted:#4a5568;--go:#0f6b3e;--focus:#1d4ed8;--warn:#9a3412}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 18px/1.5 "Barlow",system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:var(--ink)}
+.wrap{max-width:560px;margin:0 auto;padding:0 16px}
+h1,h2,h3{font-family:"Barlow Condensed","Arial Narrow",sans-serif;font-weight:700;line-height:1.05;margin:0}
+h1{font-size:44px}
+h2{font-size:30px;margin-bottom:8px}
+h3{font-size:23px}
+p{margin:0 0 12px}
+.tape{background:var(--safety);transform:rotate(-1.2deg);margin:22px -6px 18px;padding:10px 16px;font:700 26px/1.1 "Barlow Condensed",sans-serif;box-shadow:0 1px 0 rgba(19,34,59,.18)}
+.hero{padding:18px 0 6px}
+.lead{font-size:20px}
+.note{color:var(--muted);font-size:15px}
+section{border-top:2px solid var(--ink);padding:22px 0 8px}
+label{display:block;font-weight:700;margin:14px 0 6px}
+label span{font-weight:400;color:var(--muted)}
+input{width:100%;min-height:54px;border:2px solid var(--line);border-radius:12px;padding:10px 14px;font:400 18px/1.3 "Barlow",sans-serif;color:var(--ink);background:#fff}
+input:focus{border-color:var(--ink)}
+.btn{display:flex;align-items:center;justify-content:center;width:100%;min-height:58px;margin:10px 0;padding:12px 18px;border-radius:12px;border:2px solid var(--ink);background:var(--ink);color:#fff;font:700 19px/1.2 "Barlow",sans-serif;text-decoration:none;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.btn.alt{background:#fff;color:var(--ink)}
+.btn:focus-visible,a:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid var(--focus);outline-offset:3px}
+.err{color:var(--warn);font-weight:700;min-height:1.5em;margin:6px 0 0}
+details{margin:8px 0}
+summary{cursor:pointer;color:var(--muted);font-size:15px;padding:6px 0}
+pre{white-space:pre-wrap;background:var(--tile);border:1px solid var(--line);border-radius:10px;padding:12px;font:400 15px/1.45 "Barlow",sans-serif}
+.get li{margin:0 0 8px}
+.get{padding-left:20px}
+ol.flow{list-style:none;padding:0;margin:8px 0 0;counter-reset:s}
+ol.flow li{position:relative;padding:0 0 18px 58px;counter-increment:s}
+ol.flow li::before{content:counter(s);position:absolute;left:0;top:0;width:42px;height:42px;border-radius:50%;background:var(--safety);display:flex;align-items:center;justify-content:center;font:700 24px/1 "Barlow Condensed",sans-serif}
+ol.flow li::after{content:"";position:absolute;left:20px;top:44px;bottom:2px;border-left:2px dashed var(--line)}
+ol.flow li:last-child::after{display:none}
+ol.flow h3{margin:6px 0 2px}
+.rules{background:var(--tile);border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin:10px 0}
+.rules ul{padding-left:20px;margin:6px 0 0}
+.rules li{margin:0 0 6px}
+.more a{display:block;padding:14px 0;border-bottom:1px solid var(--line);text-decoration:none}
+.more a b{display:block;font-size:19px}
+.more a span{color:var(--muted);font-size:15px}
+.toast{position:fixed;left:50%;bottom:20px;transform:translateX(-50%) translateY(140%);background:var(--go);color:#fff;padding:14px 18px;border-radius:12px;font-weight:700;max-width:92vw;text-align:center;transition:transform .25s ease;z-index:9;visibility:hidden}
+.toast.show{transform:translateX(-50%) translateY(0);visibility:visible}
+footer{border-top:2px solid var(--ink);margin-top:24px;padding:18px 0 40px;font-size:15px;color:var(--muted)}
+@media (prefers-reduced-motion:reduce){.toast{transition:none}.tape{transform:none}}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <header class="hero">
+    <h1>Run this audit on your own brand.</h1>
+    <div class="tape" aria-hidden="true">Type your name. Tap once.</div>
+    <p class="lead">This is the quick version of the method behind the 20-page audit you just saw. It runs in about ten minutes in the AI app you already use, and it costs nothing.</p>
+  </header>
+
+  <section id="run" aria-labelledby="run-h">
+    <h2 id="run-h">Start your quick audit</h2>
+    <form id="f" novalidate>
+      <label for="name">Your name</label>
+      <input id="name" name="name" autocomplete="name" placeholder="First and last name" required>
+      <label for="company">Your company <span>(optional)</span></label>
+      <input id="company" name="company" autocomplete="organization" placeholder="Company name">
+      <label for="site">Your website <span>(optional)</span></label>
+      <input id="site" name="site" inputmode="url" autocomplete="url" placeholder="yourname.com">
+      <label for="who">Who you want to reach <span>(optional)</span></label>
+      <input id="who" name="who" placeholder="For example: homeowners in South Jersey">
+      <p class="err" id="err" role="alert"></p>
+      <a class="btn" id="go-claude" href="https://claude.ai/new">Run it in Claude</a>
+      <a class="btn alt" id="go-chatgpt" href="https://chatgpt.com/">Run it in ChatGPT</a>
+      <button class="btn alt" type="button" id="go-copy">Copy it for Muse or any AI</button>
+    </form>
+    <details><summary>Read the exact instructions it sends</summary><pre id="preview"></pre></details>
+    <p class="note">What you type stays on your phone until you tap a button. Then it goes only to the app you picked. This page saves nothing.</p>
+  </section>
+
+  <section aria-labelledby="get-h">
+    <h2 id="get-h">What you get back</h2>
+    <ul class="get">
+      <li>Proof it found the right person, using two independent facts.</li>
+      <li>Your five strongest pieces of public proof, with links.</li>
+      <li>What strangers and AI tools can't find or get wrong.</li>
+      <li>A score out of 100 across ten areas. 80 is a pass.</li>
+      <li>Three fixes for the next seven days, each with a way to check it worked.</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="how-h">
+    <h2 id="how-h">How the full 20-page audit is built</h2>
+    <p>Seven skills run in order. Each one writes to the same evidence ledger, so every claim in the PDF points back to a source anyone can open.</p>
+    <ol class="flow">
+      <li><h3>Prove who it is</h3><p>Match two independent facts, like company and city, before anything counts.</p></li>
+      <li><h3>Collect the proof</h3><p>Press, podcasts, talks, reviews and books, ranked by how much a stranger would trust them.</p></li>
+      <li><h3>Compare with the buyer you want</h3><p>Find proof that is missing, and proof that exists but is buried.</p></li>
+      <li><h3>Ask the AI tools</h3><p>Run real questions in Google, ChatGPT, Gemini and others, and record the sources they cite.</p></li>
+      <li><h3>Fix the entity home</h3><p>One website that tells Google who you are, with Person data and a Knowledge Graph check.</p></li>
+      <li><h3>Turn real work into content</h3><p>Produce, Process, Post and Promote from recordings and stories you already have.</p></li>
+      <li><h3>Put a dollar a day behind winners</h3><p>Boost only posts that already worked, $1 a day for seven days, then decide.</p></li>
+    </ol>
+    <div class="rules">
+      <h3>The rules that keep it honest</h3>
+      <ul>
+        <li>Every claim is labeled observed, inferred or unknown. Unknown is never counted as zero.</li>
+        <li>Every number links to a row in the evidence ledger.</li>
+        <li>A second reviewer who didn't build it checks the finished PDF.</li>
+        <li>Nothing is posted, bought or changed while researching.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="more" aria-labelledby="more-h">
+    <h2 id="more-h">Go further</h2>
+    <a href="https://localservicespotlight.com/install/"><b>Install all the agents on a computer</b><span>The free Local Service Spotlight skill set for Claude, with setup steps.</span></a>
+    <a href="https://blitzmetrics.com/how-we-audit/"><b>Read how we audit</b><span>Which exam to run and what a pass means.</span></a>
+    <a href="https://localservicespotlight.com/knowledge-graph-explorer/"><b>Check your Knowledge Graph status</b><span>See whether Google has an entity for your name.</span></a>
+    <a href="https://localservicespotlight.com/personal-brand-quick-audit/"><b>Have us run it for you</b><span>A free quick audit from the Local Service Spotlight team.</span></a>
+  </section>
+
+  <footer>
+    <p>Local Service Spotlight, October 2026. The quick version is a starting point, not the full 20-page audit; check its sources before you act on it.</p>
+  </footer>
+</main>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script>
+(function(){
+  var $ = function(id){ return document.getElementById(id); };
+  function clean(s){ return (s || "").replace(/\s+/g, " ").trim().slice(0, 120); }
+  function build(){
+    var name = clean($("name").value), co = clean($("company").value), site = clean($("site").value), who = clean($("who").value);
+    var subject = name || "[your name]";
+    var extra = [];
+    if (co) extra.push("company: " + co);
+    if (site) extra.push("website: " + site);
+    var head = "Run a quick personal brand audit of " + subject + (extra.length ? " (" + extra.join("; ") + ")" : "") + ".";
+    if (who) head += " The people I most want to reach: " + who + ".";
+    return head + "\nUse only public sources you can actually open, and list every URL you used.\n" +
+      "1. Identity: confirm it's the right person with two independent facts, and flag anyone with the same name.\n" +
+      "2. Proof: the five strongest pieces of independent proof (press, podcasts, awards, reviews, books) with links and dates.\n" +
+      "3. Gaps: what a stranger or an AI can't find or gets wrong, such as conflicting facts, a missing personal website, no page for a book or speaking, or no Knowledge Panel.\n" +
+      "4. Score 0 to 10 each: entity home, media, content, social proof, offer clarity, consistency, momentum, links, search visibility, Knowledge Graph. Give the total out of 100; 80 is a pass.\n" +
+      "5. The three most valuable fixes for the next seven days, who should do each, and how to check it worked.\n" +
+      "Label every claim OBSERVED (a source shows it), INFERRED (your reasoning) or UNKNOWN (couldn't check). Don't invent numbers. Keep it to one page.";
+  }
+  function refresh(){
+    var p = build(), q = encodeURIComponent(p);
+    $("go-claude").href = "https://claude.ai/new?q=" + q;
+    $("go-chatgpt").href = "https://chatgpt.com/?q=" + q;
+    $("preview").textContent = p;
+  }
+  ["name","company","site","who"].forEach(function(id){ $(id).addEventListener("input", function(){ $("err").textContent = ""; refresh(); }); });
+  $("f").addEventListener("submit", function(e){ e.preventDefault(); });
+  function needName(e){
+    if (!clean($("name").value)) { if (e) e.preventDefault(); $("err").textContent = "Add your name first."; $("name").focus(); return true; }
+    return false;
+  }
+  $("go-claude").addEventListener("click", needName);
+  $("go-chatgpt").addEventListener("click", needName);
+  var toast = $("toast"), timer;
+  function say(m){ toast.textContent = m; toast.classList.add("show"); clearTimeout(timer); timer = setTimeout(function(){ toast.classList.remove("show"); }, 3200); }
+  function fallbackCopy(text){
+    var ta = document.createElement("textarea"); ta.value = text; ta.setAttribute("readonly",""); ta.style.position = "fixed"; ta.style.opacity = "0";
+    document.body.appendChild(ta); ta.select(); ta.setSelectionRange(0, text.length);
+    var ok = false; try { ok = document.execCommand("copy"); } catch(err) {}
+    document.body.removeChild(ta); return ok;
+  }
+  $("go-copy").addEventListener("click", function(){
+    if (needName()) return;
+    var p = build(), ok = "Copied. Paste it into Muse, Gemini or any AI app.";
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(p).then(function(){ say(ok); }, function(){ say(fallbackCopy(p) ? ok : "Copy didn't work. Open the instructions below and press and hold to copy."); });
+    } else { say(fallbackCopy(p) ? ok : "Copy didn't work. Open the instructions below and press and hold to copy."); }
+  });
+  refresh();
+})();
+</script>
+</body>
+</html>
