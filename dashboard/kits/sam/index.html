@@ -68,7 +68,7 @@ footer a{color:var(--muted)}
   </header>
 
   <section class="step" id="step1">
-    <div class="stephead"><div class="num" aria-hidden="true">1</div><div><h2>Get Muse. It's free.</h2><p class="note">Muse is Meta's personal agent. It keeps working after you close the app and checks with you before it sends anything.</p></div></div>
+    <div class="stephead"><div class="num" aria-hidden="true">1</div><div><h2>Get Muse. It's free.</h2><p class="note">Muse is Meta's personal agent. It keeps working after you close the app, and it checks with you before sensitive steps like sending an email or buying something.</p></div></div>
     <div id="muse-store">
       <a class="btn" id="muse-ios" href="https://apps.apple.com/us/app/muse-from-meta/id6760173601">Get Muse for iPhone</a>
       <a class="btn alt" id="muse-android" href="https://play.google.com/store/apps/details?id=com.facebook.aura">Get Muse for Android</a>
@@ -80,6 +80,7 @@ footer a{color:var(--muted)}
     <div class="stephead"><div class="num" aria-hidden="true">2</div><div><h2>Give Muse its first job</h2><p class="note">This turns Muse into your follow-through agent: one 10-minute task every weekday morning, a Friday nudge, and a Sunday recap.</p></div></div>
     <button class="btn" type="button" data-copy="muse">Copy the setup message</button>
     <a class="btn alt" id="open-muse" href="https://apps.apple.com/us/app/muse-from-meta/id6760173601">Open Muse and paste it</a>
+    <p class="note" id="ios-open-note">On iPhone this opens Muse's App Store page. Tap <b>Open</b> there, then paste.</p>
     <details><summary>Read the message first</summary><pre id="muse-text"></pre></details>
   </section>
 
@@ -157,7 +158,8 @@ footer a{color:var(--muted)}
   var iosBtn = document.getElementById("muse-ios"), andBtn = document.getElementById("muse-android");
   var openMuse = document.getElementById("open-muse");
   if (isAndroid) { andBtn.className = "btn"; iosBtn.className = "btn alt"; andBtn.parentNode.insertBefore(andBtn, iosBtn); openMuse.href = MUSE_ANDROID_OPEN; }
-  else if (!isIOS) { openMuse.textContent = "Open Muse on your phone and paste it"; }
+  if (!isIOS) { var n = document.getElementById("ios-open-note"); if (n) n.style.display = "none"; }
+  if (!isIOS && !isAndroid) { openMuse.textContent = "Open Muse on your phone and paste it"; }
 
   document.getElementById("muse-text").textContent = MUSE;
 
