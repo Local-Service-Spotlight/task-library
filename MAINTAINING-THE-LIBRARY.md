@@ -15,6 +15,14 @@ This is **recursive self-improvement (RSI)**: use what happened in one run to im
 
 Start at the [Task Library Dashboard](https://blitzmetrics.com/task-library-dashboard/). Pick a task that helps your business now. For maintenance work, open the dashboard's per-task verification queue and take the first relevant row. The queue's JSON and CSV exports preserve its deterministic order for another agent. A download gives you instructions; it does not connect accounts, install an app, or start a worker. Library-built ZIPs include `START-HERE.md`. An outside provider's full suite may use different setup instructions; check its README and required files. Check access and try one task before adding a recurring schedule.
 
+## Keep one Content Factory catalog current
+
+Use `build/registry.json` and its maintained skills as the catalog. The existing tracker supplies approved operational owner and workflow status; dashboards, hub counts and downloads are generated projections. Search permanent slugs and normalized article identity before adding work. Hold uncertain candidates for source and overlap review rather than admitting them through a feed.
+
+Before a tracker import, compare the catalog revision with the internal export receipt. Require full catalog coverage, exact stable slugs and `Catalog match` values. Migrate older exports by reconciling each row against the reviewed registry and marking candidates held. Preserve reviewed commit pins and archive URLs through a separate reviewed registry change. Descriptions, flags, client evidence and internal URLs remain outside operational public imports.
+
+Run the existing offline tests and build; compare matched catalog rows, excluded held rows, digest and source revision in `trackerImport`. Record the actual export timestamp privately because an import cannot infer freshness. Verify fetched or cached source state, then read the affected public page and archive after an authorized release. Keep source fetch, contributor completion, article certification and real execution evidence separate. Reuse the existing maintenance route and execution identity; a new chat or retry does not create a task or another run.
+
 ## Start with evidence
 
 Use this process after a real task run, after an upstream instruction or tool changes, or when a reader reports a problem. A scheduled maintenance pass also works through known gaps. The schedule is a separate setup step; this document alone does not activate it.

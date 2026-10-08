@@ -8,14 +8,14 @@ Sources per skill (build/registry.json):
 External fetches are cached in build/.cache/; on fetch failure the last good
 copy is used (with a warning) so a deleted or renamed repo never blanks a skill.
 
-Optional: --tracker-csv <file> overrides status/owner/article per slug from the
-Asset Tracker's published CSV (columns: Slug, Status, Owner, Definitive Article URL).
+Optional: --tracker-csv <file> imports approved public Owner/Status for existing
+canonical Slug values; Catalog match is required. Other columns are ignored.
 
 Usage:
   python3 build/build.py [--tracker-csv tracker.csv] [--out dashboard/data.json]
-Exit code 1 if any skill fails validation (build still writes valid skills).
+Exit code 1 on invalid tracker or skill input, before writing public artifacts.
 """
-import argparse, csv, hashlib, json, os, re, sys, urllib.request
+import argparse, csv, hashlib, io, json, os, re, subprocess, sys, urllib.request
 from collections import Counter
 from datetime import datetime, timezone
 from urllib.parse import urlencode, urlsplit
@@ -142,13 +142,17 @@ def display_title(text, slug):
     return slug.replace('-', ' ').capitalize()
 
 
-def resolve(slug, entry, errors, warnings):
+def resolve(slug, entry, errors, warnings, source_states=None):
     src = entry['source']
+    if source_states is not None:
+        source_states[slug] = 'unavailable'
     if src == 'local':
         path = os.path.join(ROOT, 'skills', folder_of(entry['category']), slug + '.md')
         if not os.path.exists(path):
             errors.append(f'{slug}: local file missing ({os.path.relpath(path, ROOT)})')
             return None
+        if source_states is not None:
+            source_states[slug] = 'local'
         return open(path, encoding='utf-8').read()
 
     m = re.match(r'github:([^/]+)/([^@]+)@([^:]+):(.+)', src)
@@ -167,10 +171,14 @@ def resolve(slug, entry, errors, warnings):
             text = r.read().decode('utf-8')
         os.makedirs(CACHE, exist_ok=True)
         open(cache_file, 'w', encoding='utf-8').write(text)
+        if source_states is not None:
+            source_states[slug] = 'fetched'
         return text
     except Exception as e:
         if os.path.exists(cache_file):
             warnings.append(f'{slug}: fetch failed ({e}); using cached copy')
+            if source_states is not None:
+                source_states[slug] = 'cached'
             return open(cache_file, encoding='utf-8').read()
         errors.append(f'{slug}: fetch failed ({e}) and no cached copy')
         return None
@@ -184,7 +192,7 @@ def validate(slug, entry, text, errors, warnings):
     if entry.get('format') == 'claude-skill':
         # Standard Claude skill: frontmatter has name+description only.
         # Library metadata (category/stage/status/article) comes from the
-        # registry entry (overridable by the tracker CSV), not the file.
+        # registry entry, not the file. Only workflow status is tracker-overridable.
         for k in ('name', 'description'):
             if not fm.get(k):
                 errors.append(f'{slug}: claude-skill missing frontmatter "{k}"')
@@ -933,55 +941,6 @@ def write_meta_orbit_index(data, audits, out_path):
         json.dump(payload, fh, ensure_ascii=False, indent=1)
 
 
-def source_from_repo_url(url, slug):
-    """Turn a pasted GitHub URL into a github:owner/repo@ref:path source.
-
-    Accepts:
-      github:owner/repo@ref:path            (already a source ref — used as-is)
-      https://github.com/owner/repo         -> @main:skills/<slug>/SKILL.md
-      https://github.com/owner/repo/tree/<ref>/<folder>  -> <folder>/SKILL.md
-      https://github.com/owner/repo/blob/<ref>/<file.md> -> that file
-    """
-    url = url.strip().rstrip('/')
-    if url.startswith('github:'):
-        return url
-    m = re.match(r'https?://github\.com/([^/]+)/([^/]+)(?:/(tree|blob)/([^/]+)/(.+))?$', url)
-    if not m:
-        return None
-    owner, repo, kind, ref, path = m.groups()
-    if not kind:
-        return f'github:{owner}/{repo}@main:skills/{slug}/SKILL.md'
-    if kind == 'blob':
-        return f'github:{owner}/{repo}@{ref}:{path}'
-    return f'github:{owner}/{repo}@{ref}:{path}/SKILL.md'
-
-
-def apply_existing_tracker_source(slug, row, registry, errors):
-    """Apply a populated Source Repo cell to a known slug; report malformed input."""
-    src_cell = (row.get('Source Repo') or '').strip()
-    if slug not in registry or not src_cell:
-        return False
-    src = source_from_repo_url(src_cell, slug)
-    if not src:
-        errors.append(f'{slug}: sheet Source Repo not a recognizable GitHub URL: {src_cell}')
-    elif src != registry[slug].get('source'):
-        registry[slug] = dict(registry[slug], source=src, format='claude-skill',
-                              flag='claimed via sheet — hub copy superseded')
-        dl = (row.get('Download URL') or '').strip() or download_from_source(src)
-        if dl:
-            registry[slug]['download'] = dl
-    return True
-
-
-def download_from_source(source):
-    m = re.match(r'github:([^/]+)/([^@]+)@([^:]+):', source or '')
-    if not m:
-        return None
-    owner, repo, ref = m.groups()
-    return f'https://github.com/{owner}/{repo}/archive/refs/heads/{ref}.zip' if not re.fullmatch(r'[0-9a-f]{7,40}', ref) \
-        else f'https://github.com/{owner}/{repo}/archive/{ref}.zip'
-
-
 def write_zip(data, out_dir, fname, note, only_complete):
     import zipfile
     ready = [(c, t) for c in data['categories'] for t in c['tasks']
@@ -1009,6 +968,66 @@ def write_zip(data, out_dir, fname, note, only_complete):
     return len(ready)
 
 
+TRACKER_PUBLIC_FIELDS = frozenset({'Slug', 'Owner', 'Status'})
+TRACKER_STATUSES = {'ready': 'complete', 'complete': 'complete',
+                    'wip': 'needs-work', 'needs-work': 'needs-work', 'gap': 'gap'}
+
+
+def parse_tracker_csv(text, registry):
+    """Validate the entire approved task export before applying any public fields.
+
+    Membership never grants admission: only registry keys can be updated.
+    Diagnostics use row numbers, never private cells, header values or paths.
+    """
+    reader = csv.DictReader(io.StringIO(text.lstrip('\ufeff')), strict=True)
+    try:
+        headers = reader.fieldnames
+    except csv.Error:
+        raise ValueError('tracker CSV is malformed') from None
+    if not headers or not {'Slug', 'Catalog match'}.issubset(headers):
+        raise ValueError('tracker requires Slug and Catalog match headers')
+    if len(headers) != len(set(headers)):
+        raise ValueError('tracker has duplicate headers')
+    overrides, seen, held, count = {}, set(), 0, 0
+    try:
+        for index, row in enumerate(reader, 2):
+            count += 1
+            if None in row or any(value is None for value in row.values()):
+                raise ValueError(f'tracker row {index}: wrong column count')
+            slug = row['Slug'].strip()
+            if not re.fullmatch(r'[a-z0-9]+(?:-+[a-z0-9]+)*', slug):
+                raise ValueError(f'tracker row {index}: invalid or empty Slug')
+            if slug in seen:
+                raise ValueError(f'tracker row {index}: duplicate Slug')
+            seen.add(slug)
+            membership = row['Catalog match'].strip()
+            if membership not in {'catalog', 'held'}:
+                raise ValueError(f'tracker row {index}: missing or unknown Catalog match')
+            if membership == 'held':
+                held += 1
+                continue
+            if slug not in registry:
+                raise ValueError(f'tracker row {index}: catalog Slug absent from registry')
+            public = {key: row.get(key, '').strip() for key in TRACKER_PUBLIC_FIELDS}
+            status = public['Status'].lower()
+            if status and status not in TRACKER_STATUSES:
+                raise ValueError(f'tracker row {index}: unknown Status')
+            owner = public['Owner']
+            if len(owner) > 120 or re.search(r'[<>\x00-\x1f]|https?://|www\.', owner, re.I):
+                raise ValueError(f'tracker row {index}: Owner must be approved display text')
+            overrides[slug] = public
+    except csv.Error:
+        raise ValueError('tracker CSV is malformed') from None
+    if not count:
+        raise ValueError('tracker parsed 0 data rows; refusing empty export')
+    if set(overrides) != set(registry):
+        raise ValueError('tracker is partial: every canonical Slug must have one catalog row')
+    return overrides, {'schemaVersion': 1, 'inputRows': count,
+                       'matchedRows': len(overrides), 'excludedHeldRows': held,
+                       'inputSha256': hashlib.sha256(text.encode('utf-8')).hexdigest(),
+                       'exportedAt': None}
+
+
 def tracker_import_state(tracker_supplied, input_rows, matched_rows, validation_passed):
     """Public-safe import provenance; it says nothing about task verification."""
     if not tracker_supplied:
@@ -1023,6 +1042,7 @@ def tracker_import_state(tracker_supplied, input_rows, matched_rows, validation_
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--tracker-csv')
+    ap.add_argument('--tracker-catalog-commit', help='Expected catalog checkout commit; mismatch fails closed')
     ap.add_argument('--out', default=os.path.join(ROOT, 'dashboard', 'data.json'))
     args = ap.parse_args()
 
@@ -1033,80 +1053,32 @@ def main():
     site = json.load(open(os.path.join(BUILD, 'site-meta.json'), encoding='utf-8'))
 
     overrides = {}
-    tracker_row_count = 0
+    tracker_details = {}
+    if args.tracker_catalog_commit and not args.tracker_csv:
+        sys.exit('ERROR: --tracker-catalog-commit requires --tracker-csv')
     if args.tracker_csv:
-        for row in csv.DictReader(open(args.tracker_csv, encoding='utf-8-sig')):
-            tracker_row_count += 1
-            overrides[row['Slug'].strip()] = row
-        # A tracker was explicitly requested, so zero rows means the fetch broke
-        # upstream - not that there is nothing to apply. Fail loudly instead of
-        # publishing a silently shrunken library.
-        # (2026-08-05: a hung publish-to-web fetch returned 0 bytes, the GitHub
-        #  build reported SUCCESS, and the live dashboard lost 13 skills and every
-        #  owner. Nothing failed anywhere. This guard is that incident.)
-        if not overrides:
-            sys.exit(f"ERROR: --tracker-csv {args.tracker_csv} parsed 0 data rows. "
-                     f"The Asset Tracker fetch failed upstream. Refusing to build "
-                     f"without it rather than shipping a shrunken library.")
+        catalog_commit = subprocess.check_output(
+            ['git', 'rev-parse', 'HEAD'], cwd=ROOT, text=True).strip()
+        if args.tracker_catalog_commit and args.tracker_catalog_commit != catalog_commit:
+            sys.exit('ERROR: tracker catalog commit mismatch; reconcile before importing')
+        try:
+            with open(args.tracker_csv, encoding='utf-8-sig', newline='') as fh:
+                overrides, tracker_details = parse_tracker_csv(fh.read(), registry)
+        except (ValueError, OSError, UnicodeError) as exc:
+            message = str(exc) if isinstance(exc, ValueError) else 'tracker could not be read as UTF-8 CSV'
+            sys.exit('ERROR: ' + message)
+        tracker_details['catalogCommit'] = catalog_commit
+        tracker_details['catalogSha256'] = hashlib.sha256(
+            json.dumps(registry, sort_keys=True).encode('utf-8')).hexdigest()
 
-    # Sheet-first onboarding: a tracker row with a Source Repo link whose slug
-    # is not in the registry becomes a new external skill (format claude-skill).
-    valid_cats = {c['name'] for c in cats_meta}
     errors, warnings = [], []
-    sheet_only = {}   # rows with no source anywhere: rendered as named gap cards
-    for slug, row in list(overrides.items()):
-        src_cell = (row.get('Source Repo') or '').strip()
-        if apply_existing_tracker_source(slug, row, registry, errors):
-            # SHEET WINS: a repo link on an existing row re-points the skill
-            # to the owner's repo; the hub copy is ignored from now on.
-            continue
-        if slug in registry:
-            continue
-        if not src_cell:
-            cat = (row.get('Category') or '').strip()
-            if cat in valid_cats and slug:
-                rec = factory.annotate(slug, cat, (row.get('Stage') or '').strip())
-                sheet_only[slug] = {
-                    'title': (row.get('Task Title') or slug).strip() or slug,
-                    'slug': slug, 'status': 'gap',
-                    'stage': (row.get('Stage') or '—').strip() or '—',
-                    'article': (row.get('Definitive Article URL') or '').strip() or None,
-                    'desc': (row.get('Description') or '').strip(),
-                    'content': '',
-                    'flag': 'defined in sheet — not yet built',
-                    '_sourceSha256': None,
-                    'category': cat,
-                    'importance': rec['importance'], 'freq': rec['freq'],
-                    'revenue': rec['revenue'], 'gating': rec['gating'],
-                    'phase': rec['phase'], 'before': rec['before'],
-                    'after': rec['after'], 'lane': rec['lane'],
-                    'lane_label': rec['lane_label'], 'why': rec['why']}
-                if (row.get('Owner') or '').strip():
-                    sheet_only[slug]['owner'] = row['Owner'].strip()
-            continue
-        src = source_from_repo_url(row['Source Repo'], slug)
-        if not src:
-            errors.append(f'{slug}: sheet Source Repo not a recognizable GitHub URL: {row["Source Repo"]}')
-            continue
-        cat = (row.get('Category') or '').strip()
-        if cat not in valid_cats:
-            errors.append(f'{slug}: sheet Category "{cat}" is not one of the {len(valid_cats)} library categories')
-            continue
-        entry = {'source': src, 'format': 'claude-skill', 'category': cat,
-                 'stage': (row.get('Stage') or '—').strip() or '—',
-                 'status': {'ready': 'complete', 'complete': 'complete', 'wip': 'needs-work', 'needs-work': 'needs-work', 'gap': 'gap'}.get(
-                     (row.get('Status') or '').strip().lower(), 'needs-work'),
-                 'flag': 'added via Asset Tracker sheet'}
-        dl = (row.get('Download URL') or '').strip() or download_from_source(src)
-        if dl:
-            entry['download'] = dl
-        registry[slug] = entry
+    source_states = {}
     by_cat = {c['name'] for c in cats_meta} and {c['name']: [] for c in cats_meta}
     for slug, entry in registry.items():
         if entry.get('article_kind', 'unknown') not in ARTICLE_KINDS:
             errors.append(f'{slug}: unknown article_kind')
             continue
-        text = resolve(slug, entry, errors, warnings)
+        text = resolve(slug, entry, errors, warnings, source_states)
         if text is None:
             continue
         fm = validate(slug, entry, text, errors, warnings)
@@ -1116,9 +1088,7 @@ def main():
         ov = overrides.get(slug)
         if ov:
             s = (ov.get('Status') or '').strip().lower()
-            status = {'ready': 'complete', 'complete': 'complete', 'wip': 'needs-work', 'needs-work': 'needs-work', 'gap': 'gap'}.get(s, status)
-            if (ov.get('Definitive Article URL') or '').strip():
-                art = ov['Definitive Article URL'].strip()   # sheet overrides only when filled; file frontmatter is the default
+            status = TRACKER_STATUSES.get(s, status)
         rec = factory.annotate(slug, entry['category'], fm.get('stage') or '', text)
         content = factory.apply_layer(text.strip(), factory.layer_markdown(slug, rec))
         task = {'title': display_title(text, slug), 'slug': slug, 'status': status,
@@ -1161,9 +1131,6 @@ def main():
             if src in seen_src:
                 warnings.append(f'{slug}: same source file as "{seen_src[src]}" ({src}) — two rows, one file')
             seen_src[src] = slug
-    for slug, t in sheet_only.items():
-        cat = t['category']
-        by_cat[cat].append(t)
     all_tasks = [t for ts in by_cat.values() for t in ts]
     certifications = load_article_certifications()
     validate_article_certifications(all_tasks, certifications)
@@ -1181,15 +1148,14 @@ def main():
         all_tasks, instruction_reviews, meta_audits, normalize_article_url,
         article_evidence=semantic_evidence)
     verification_report = standard_verification.report(verification_queue)
-    # Owner attribution comes ONLY from the Asset Tracker. A tracker that parsed
-    # rows but still yields zero owners is a malformed or partial feed - the same
-    # failure class as above, caught one stage later.
-    if args.tracker_csv and not {t['owner'] for t in all_tasks if t.get('owner')}:
-        sys.exit("ERROR: a tracker CSV was supplied but the build produced 0 owners. "
-                 "The Asset Tracker feed is empty or malformed. Refusing to publish.")
-    built_slugs = {t['slug'] for t in all_tasks}
+    if errors:
+        for error in errors:
+            print('ERROR', error)
+        sys.exit(1)  # Keep the last successful artifacts intact.
     tracker_import = tracker_import_state(
-        bool(args.tracker_csv), tracker_row_count, len(built_slugs.intersection(overrides)), not errors)
+        bool(args.tracker_csv), tracker_details.get('inputRows', 0), len(overrides), True)
+    tracker_import.update(tracker_details)
+    tracker_import['sourceStates'] = dict(Counter(source_states.values()))
     data = {'trackerImport': tracker_import,
             'stats': {'total': len(all_tasks),
                       'complete': sum(t['status'] == 'complete' for t in all_tasks),
@@ -1243,7 +1209,7 @@ def main():
     ninc = factory.write_incomplete_inventory(all_tasks, inv)
     print(f"incomplete inventory: {ninc} rows -> {os.path.relpath(inv, ROOT)}")
 
-    print(f"built {len(all_tasks)}/{len(registry) + len(sheet_only)} skills -> {os.path.relpath(args.out, ROOT)}")
+    print(f"built {len(all_tasks)}/{len(registry)} skills -> {os.path.relpath(args.out, ROOT)}")
     print(f"stats: {data['stats']}")
     for w in warnings:
         print('WARN ', w)

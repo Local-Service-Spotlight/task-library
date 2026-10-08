@@ -1,38 +1,215 @@
-"""Tracker import provenance is separate from task verification."""
+"""Offline tests for canonical membership and operational field authority."""
+import copy
+import csv
+import io
+import json
+from pathlib import Path
+import sys
+import tempfile
 import unittest
+import zipfile
+from unittest.mock import patch
 
-from build import apply_existing_tracker_source, tracker_import_state
+import build
+from build import parse_tracker_csv, tracker_import_state
 
 
 class TrackerImportTests(unittest.TestCase):
-    def test_missing_tracker_is_explicitly_not_configured(self):
-        self.assertEqual(
-            tracker_import_state(False, 0, 0, True),
-            {'state': 'not_configured', 'inputRows': 0, 'matchedRows': 0},
-        )
+    def setUp(self):
+        self.registry = {'known-task': {
+            'source': 'github:example/recipes@' + 'a' * 40 + ':skills/known-task/SKILL.md',
+            'download': 'https://github.com/example/recipes/archive/' + 'a' * 40 + '.zip',
+            'category': 'Strategy & Measurement', 'status': 'needs-work'}}
+        self.headers = ['Slug', 'Catalog match', 'Owner', 'Status']
 
-    def test_loaded_counts_include_unmatched_rows_without_calling_them_task_failures(self):
-        self.assertEqual(
-            tracker_import_state(True, 4, 2, True),
-            {'state': 'loaded', 'inputRows': 4, 'matchedRows': 2},
-        )
+    def csv(self, rows, extra=()):
+        out = io.StringIO()
+        writer = csv.DictWriter(out, fieldnames=self.headers + list(extra))
+        writer.writeheader()
+        writer.writerows(rows)
+        return out.getvalue()
 
-    def test_validation_failure_cannot_claim_loaded(self):
-        self.assertEqual(
-            tracker_import_state(True, 3, 2, False),
-            {'state': 'unknown', 'inputRows': 3, 'matchedRows': 2},
-        )
+    def row(self, **values):
+        return dict({'Slug': 'known-task', 'Catalog match': 'catalog',
+                     'Owner': '', 'Status': ''}, **values)
 
-    def test_malformed_existing_source_is_reported_and_keeps_old_source_only_as_fallback(self):
-        registry = {'known-task': {'source': 'local', 'format': 'task-library'}}
-        errors = []
-        handled = apply_existing_tracker_source(
-            'known-task', {'Source Repo': 'https://example.com/not-github'}, registry, errors)
-        self.assertTrue(handled)
-        self.assertEqual(registry['known-task']['source'], 'local')
-        self.assertEqual(len(errors), 1)
-        self.assertIn('known-task', errors[0])
-        self.assertIn('not a recognizable GitHub URL', errors[0])
+    def test_import_states_preserve_existing_dashboard_contract(self):
+        for supplied, valid, state in [(False, True, 'not_configured'),
+                                      (True, True, 'loaded'), (True, False, 'unknown')]:
+            self.assertEqual(tracker_import_state(supplied, 4, 2, valid),
+                             {'state': state, 'inputRows': 4, 'matchedRows': 2})
+
+    def test_held_rows_cannot_create_or_override_even_known_slug(self):
+        for slug in ['candidate-task', 'known-task']:
+            rows = [self.row(**{'Slug': slug, 'Catalog match': 'held', 'Owner': 'Hidden',
+                               'Status': 'ready'})]
+            registry = {} if slug == 'known-task' else self.registry
+            if registry:
+                rows.insert(0, self.row())
+            overrides, receipt = parse_tracker_csv(self.csv(rows), registry)
+            self.assertNotIn(slug, overrides)
+            self.assertEqual(receipt['excludedHeldRows'], 1)
+        with self.assertRaisesRegex(ValueError, 'partial'):
+            parse_tracker_csv(self.csv([self.row(**{'Catalog match': 'held'})]), self.registry)
+
+    def test_missing_unknown_membership_fail_closed(self):
+        for value in ['', 'ready', 'unknown', 'CATALOG']:
+            with self.subTest(value=value), self.assertRaisesRegex(ValueError, 'Catalog match'):
+                parse_tracker_csv(self.csv([self.row(**{'Catalog match': value})]), self.registry)
+        with self.assertRaisesRegex(ValueError, 'headers'):
+            parse_tracker_csv('Slug,Owner\nknown-task,Someone\n', self.registry)
+
+    def test_duplicates_including_held_and_catalog_fail(self):
+        for membership in ['held', 'catalog']:
+            with self.assertRaisesRegex(ValueError, 'duplicate Slug'):
+                parse_tracker_csv(self.csv([self.row(), self.row(**{'Catalog match': membership})]),
+                                  self.registry)
+
+    def test_empty_invalid_or_mismatched_slug_fail_without_private_values(self):
+        for slug in ['', 'Known-task', 'other-task', 'https://private.invalid/client']:
+            with self.assertRaises(ValueError) as error:
+                parse_tracker_csv(self.csv([self.row(**{'Slug': slug})]), self.registry)
+            self.assertNotIn('private.invalid', str(error.exception))
+
+    def test_allowlist_preserves_reviewed_pins_and_authorized_updates(self):
+        extra = ['Source Repo', 'Download URL', 'Description', 'Flags',
+                 'Definitive Article URL', 'Category', 'Stage', 'Task Title']
+        row = self.row(Owner='Approved Display', Status='ready')
+        row.update({field: 'https://private.invalid/client-secret' for field in extra})
+        row['Source Repo'] = 'https://github.com/example/recipes'
+        row['Download URL'] = 'https://github.com/example/recipes/archive/refs/heads/main.zip'
+        before = copy.deepcopy(self.registry)
+        overrides, receipt = parse_tracker_csv(self.csv([row], extra), self.registry)
+        self.assertEqual(self.registry, before)
+        self.assertEqual(overrides['known-task'], {'Slug': 'known-task',
+                                                  'Owner': 'Approved Display', 'Status': 'ready'})
+        self.assertNotIn('private.invalid', json.dumps([overrides, receipt]))
+        self.assertEqual(len(receipt['inputSha256']), 64)
+        self.assertIsNone(receipt['exportedAt'])
+
+    def test_blank_operational_values_preserve_source_status(self):
+        overrides, _ = parse_tracker_csv(self.csv([self.row()]), self.registry)
+        row = overrides['known-task']
+        self.assertEqual(build.TRACKER_STATUSES.get(row['Status'], 'needs-work'), 'needs-work')
+        self.assertEqual(row['Owner'], '')
+
+    def test_unknown_status_and_non_display_owner_rejected(self):
+        for field, value in [('Status', 'verified'), ('Owner', 'https://private.invalid'),
+                             ('Owner', '<script>'), ('Owner', 'name\nsecret')]:
+            with self.assertRaises(ValueError) as error:
+                parse_tracker_csv(self.csv([self.row(**{field: value})]), self.registry)
+            self.assertNotIn(value, str(error.exception))
+
+    def test_synthetic_full_catalog_and_held_candidates(self):
+        registry = {f'task-{i}': {} for i in range(276)}
+        rows = [self.row(**{'Slug': slug, 'Owner': 'Approved Display' if i < 6 else ''})
+                for i, slug in enumerate(registry)]
+        rows += [self.row(**{'Slug': f'candidate-{i}', 'Catalog match': 'held',
+                            'Owner': 'Hidden', 'Status': 'ready'}) for i in range(12)]
+        overrides, receipt = parse_tracker_csv(self.csv(rows), registry)
+        self.assertEqual(len(overrides), 276)
+        self.assertEqual(receipt['inputRows'], 288)
+        self.assertEqual(receipt['excludedHeldRows'], 12)
+        self.assertEqual(sum(bool(row['Owner']) for row in overrides.values()), 6)
+
+    def test_empty_html_malformed_partial_or_duplicate_headers_fail(self):
+        for text in ['', '<html>Private error</html>', 'Slug,Catalog match\n',
+                     'Slug,Catalog match\nknown-task\n',
+                     'Slug,Catalog match\nknown-task,catalog,extra\n',
+                     'Slug,Catalog match\n"known-task,catalog',
+                     'Slug,Slug,Catalog match\nknown-task,known-task,catalog\n']:
+            with self.subTest(text=text), self.assertRaises(ValueError):
+                parse_tracker_csv(text, self.registry)
+        with self.assertRaisesRegex(ValueError, 'partial'):
+            parse_tracker_csv(self.csv([self.row()]), dict(self.registry, **{'second-task': {}}))
+
+    def test_invalid_import_leaves_last_output_and_never_fetches_sources(self):
+        with tempfile.TemporaryDirectory() as directory:
+            output = Path(directory) / 'data.json'
+            output.write_text('last successful artifact')
+            tracker = Path(directory) / 'private-path.csv'
+            tracker.write_text('Slug,Owner\nknown-task,Private Owner\n')
+            with patch.object(sys, 'argv', ['build.py', '--tracker-csv', str(tracker),
+                                          '--out', str(output)]), patch.object(build, 'resolve') as resolve:
+                with self.assertRaises(SystemExit) as error:
+                    build.main()
+                self.assertNotIn('Private Owner', str(error.exception))
+                self.assertNotIn('private-path', str(error.exception))
+                resolve.assert_not_called()
+            self.assertEqual(output.read_text(), 'last successful artifact')
+
+    def test_authorized_import_reaches_artifacts_without_private_fields_or_pin_changes(self):
+        registry = json.loads((Path(build.BUILD) / 'registry.json').read_text())['skills']
+        pinned_slug = next(slug for slug, entry in registry.items()
+                           if '@86e7acdd22325566203e213b8c0c86e8583576e9:' in entry['source'])
+        pinned_download = registry[pinned_slug]['download']
+        rows = [self.row(**{'Slug': slug, 'Owner': 'Approved Display' if slug == pinned_slug else '',
+                            'Status': 'wip' if slug == pinned_slug else '',
+                            'Source Repo': 'https://github.com/example/recipes',
+                            'Download URL': 'https://private.invalid/secret',
+                            'Description': 'PRIVATE-TRACKER-MARKER',
+                            'Flags': 'PRIVATE-TRACKER-MARKER'}) for slug in registry]
+        rows.append(self.row(**{'Slug': 'held-candidate', 'Catalog match': 'held',
+                                'Owner': 'PRIVATE-TRACKER-MARKER', 'Status': 'ready',
+                                'Source Repo': 'https://private.invalid/candidate'}))
+        rows.append(self.row(**{'Slug': 'source-less-candidate', 'Catalog match': 'held',
+                                'Owner': 'PRIVATE-TRACKER-MARKER', 'Status': 'ready'}))
+
+        def offline_resolve(slug, entry, errors, warnings, states):
+            states[slug] = 'local' if entry['source'] == 'local' else 'cached'
+            if entry['source'] == 'local':
+                return (Path(build.ROOT) / 'skills' / build.folder_of(entry['category']) /
+                        (slug + '.md')).read_text()
+            return ('---\nname: ' + slug + '\ndescription: Synthetic offline fixture.\n---\n'
+                    '# Synthetic fixture\n\nUse the synthetic recipe.\n')
+
+        with tempfile.TemporaryDirectory() as directory:
+            tracker = Path(directory) / 'tracker.csv'
+            tracker.write_text(self.csv(rows, ['Source Repo', 'Download URL', 'Description', 'Flags']))
+            output = Path(directory) / 'data.json'
+            with patch.object(sys, 'argv', ['build.py', '--tracker-csv', str(tracker),
+                                          '--out', str(output)]), \
+                    patch.object(build, 'resolve', side_effect=offline_resolve), \
+                    patch.object(build.factory, 'write_incomplete_inventory', return_value=0), \
+                    patch('builtins.print'):
+                with self.assertRaises(SystemExit) as result:
+                    build.main()
+                self.assertEqual(result.exception.code, 0)
+            data = json.loads(output.read_text())
+            tasks = {task['slug']: task for category in data['categories'] for task in category['tasks']}
+            self.assertEqual(set(tasks), set(registry))
+            self.assertEqual(tasks[pinned_slug]['owner'], 'Approved Display')
+            self.assertEqual(tasks[pinned_slug]['status'], 'needs-work')
+            self.assertEqual(tasks[pinned_slug]['download'], pinned_download)
+            self.assertEqual(data['trackerImport']['excludedHeldRows'], 2)
+            self.assertEqual(data['trackerImport']['matchedRows'], len(registry))
+            self.assertIn('cached', data['trackerImport']['sourceStates'])
+            for artifact in Path(directory).iterdir():
+                if artifact == tracker:
+                    continue
+                if artifact.suffix == '.zip':
+                    with zipfile.ZipFile(artifact) as archive:
+                        content = b'\n'.join(archive.read(name) for name in archive.namelist())
+                else:
+                    content = artifact.read_bytes()
+                self.assertNotIn(b'PRIVATE-TRACKER-MARKER', content)
+                self.assertNotIn(b'private.invalid', content)
+
+    def test_both_workflows_use_shared_import_validation(self):
+        for name in ['build.yml', 'ownership-map.yml']:
+            source = (Path(build.ROOT) / '.github' / 'workflows' / name).read_text()
+            self.assertIn('python3 build/build.py --tracker-csv tracker.csv', source)
+            self.assertIn('curl --fail --silent --show-error --location', source)
+
+
+    def test_expected_catalog_commit_mismatch_fails_before_fetch_or_output(self):
+        with patch.object(sys, 'argv', ['build.py', '--tracker-csv', 'unused',
+                                      '--tracker-catalog-commit', 'b' * 40]), \
+                patch.object(build.subprocess, 'check_output', return_value='a' * 40), \
+                patch.object(build, 'resolve') as resolve:
+            with self.assertRaisesRegex(SystemExit, 'commit mismatch'):
+                build.main()
+            resolve.assert_not_called()
 
 
 if __name__ == '__main__':

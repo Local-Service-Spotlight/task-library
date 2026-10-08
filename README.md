@@ -40,13 +40,11 @@ Task-Library-Standard.md             the spec every skill.md must meet
 
 Use the **Asset Tracker’s Task Library Dashboard tab** to record upkeep ownership when its approved feed is connected. A saved row alone does not prove a public update. Check the dashboard’s team-update notice before relying on this path:
 
-1. Put your `SKILL.md` in your repo at `skills/<slug>/SKILL.md` (standard Claude skill format — `name` + `description` frontmatter, `name` = the slug).
-2. On your skill's row in the sheet: put your name in **Owner**, your repo URL in **Source Repo**, and set **Status** (`wip` while you work it, `ready` when you stand behind it).
-3. Check the next daily or manual build. Confirm that it fetched the intended source, shows your owner and status, and serves the current guide. After registration, keep the method in your own repo; an unsuccessful fetch may leave the prior cached copy visible.
+1. Put your `SKILL.md` in your repo at `skills/<slug>/SKILL.md`, with `name` equal to the permanent slug.
+2. Have the maintained source, exact revision and download reviewed in `build/registry.json` before importing operational updates.
+3. On the existing catalog row, record an approved public display **Owner** and workflow **Status** (`wip`, `ready`, or `gap`). Check the import notice and affected public fields after an authorized release.
 
-The precedence rule: **sheet beats registry beats hub file** — a skill has exactly one live source, and the sheet's Source Repo cell is the switch. The Slug column completes the address, so a bare repo URL is enough when you follow the standard layout; use a deeper `/tree/` or `/blob/` link only if your file lives elsewhere.
-
-`build/registry.json` is maintainer plumbing, not a contributor surface: it holds the hub-resident skills and the advanced cases (commit-SHA pinning, release-asset downloads). Fetch failures fall back to the last good cached copy, so a deleted repo never blanks the dashboard. Private repos need `SKILLS_READ_TOKEN` set in Actions secrets.
+Field authority is explicit: the registry and maintained skill own membership, source, category, stage, article mapping, descriptions, flags and downloads. The approved tracker owns operational Owner and Status. Source changes require a reviewed registry change; a stale tracker URL cannot replace a commit pin. External fetch failures can reuse cached content, so verify the fetched revision separately.
 
 ## Validation
 
@@ -56,11 +54,13 @@ The same build writes `dashboard/verification-queue.html`, `.json` and `.csv`. T
 
 ## Asset Tracker
 
-The Asset Tracker’s *Task Library Dashboard* tab is the maintained source for status, owner and flags. Its import is a separate setup step. A maintainer verifies the intended tab and existing approved feed, then configures `TRACKER_CSV_URL` for the build. Publishing a private sheet or changing access needs the appropriate authority; do not do it just to satisfy a setup check. When no feed is supplied, the build uses saved library records and reports that team updates were not loaded. When a feed is supplied, validation must pass before publication.
+The existing tracker holds operational updates and held candidates. Import only an approved task-tab export with public display owners, or an approved public-safe projection. Import is a separate setup step; this patch does not configure a feed or change sharing.
 
-Check `trackerImport` in the generated data and the dashboard notice, then compare the affected public task fields. A loaded feed does not establish complete coverage, a current source fetch, correct per-task values or accepted execution. Content comes from the maintained repository; sheet-driven source/status/owner overrides apply only when actually imported.
+The parser requires `Slug` and `Catalog match`. Each registry slug must occur exactly once as `catalog`; `held` rows are excluded even if they name a known task. Missing/unknown membership, duplicate/empty/unknown catalog slugs, malformed or partial exports fail before artifacts are written. Only `Slug`, `Owner` and `Status` enter operational overrides. Blank status preserves source status; blank owner remains unassigned. Other tracker columns are ignored, including private descriptions, flags and internal URLs. An approved export must omit private information from allowlisted cells too.
 
-The sheet is also the **onboarding path**: a row whose Slug isn't in the registry but has a Source Repo link can become a new external skill when the intended sheet is imported and its source validates. A successful deployment and exact public readback are still required. See CONTRIBUTING-SKILLS.md.
+`trackerImport` reports import state, schema, matched and excluded counts, input/catalog digests and catalog checkout commit. Export time is unknown (`null`) unless separately recorded in the internal export receipt; build time does not prove export freshness. A loaded import is separate from source fetch, release and accepted execution. Use `--tracker-catalog-commit <full SHA>` to reject an export prepared against another checkout revision.
+
+New tasks and source changes enter through reviewed `build/registry.json` changes, followed by tracker reconciliation. Legacy feeds without membership must migrate before activation; no implicit onboarding or source override remains. See [the maintenance guide](MAINTAINING-THE-LIBRARY.md) and [contributor instructions](CONTRIBUTING-SKILLS.md).
 
 ## SEO
 
@@ -93,6 +93,6 @@ python3 build/build.py          # writes dashboard/data.json + library-index.htm
 
 ## Recorded executions
 
-[EXECUTION-LEDGER.md](EXECUTION-LEDGER.md) defines the additive run ledger and review CLI. Task slugs remain owned by the registry and tracker. Published meta-article volume and expected recurrence used in the importance score are separate from real recorded executions. An absent run history is unknown, not zero.
+[EXECUTION-LEDGER.md](EXECUTION-LEDGER.md) defines the additive run ledger and review CLI. Task slugs remain owned by the registry. Published meta-article volume and expected recurrence used in the importance score are separate from real recorded executions. An absent run history is unknown, not zero.
 
 [Keep the Task Library useful](MAINTAINING-THE-LIBRARY.md) describes the improvement loop: check actual results, repair the maintained recipe, verify the download and public page, and use the next real run to test the lesson. Scheduled maintenance checks changes and known gaps in small batches; it does not certify every task by rerunning a build.
