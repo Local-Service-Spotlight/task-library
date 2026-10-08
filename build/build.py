@@ -1065,7 +1065,8 @@ def main():
             with open(args.tracker_csv, encoding='utf-8-sig', newline='') as fh:
                 overrides, tracker_details = parse_tracker_csv(fh.read(), registry)
         except (ValueError, OSError, UnicodeError) as exc:
-            message = str(exc) if isinstance(exc, ValueError) else 'tracker could not be read as UTF-8 CSV'
+            message = (str(exc) if isinstance(exc, ValueError) and not isinstance(exc, UnicodeError)
+                       else 'tracker could not be read as UTF-8 CSV')
             sys.exit('ERROR: ' + message)
         tracker_details['catalogCommit'] = catalog_commit
         tracker_details['catalogSha256'] = hashlib.sha256(

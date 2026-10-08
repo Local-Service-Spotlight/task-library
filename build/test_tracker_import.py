@@ -202,6 +202,15 @@ class TrackerImportTests(unittest.TestCase):
             self.assertIn('curl --fail --silent --show-error --location', source)
 
 
+    def test_invalid_encoding_never_echoes_private_bytes_or_path(self):
+        with tempfile.TemporaryDirectory() as directory:
+            tracker = Path(directory) / 'private-path.csv'
+            tracker.write_bytes(b'PRIVATE-TRACKER-MARKER' + bytes([255]))
+            with patch.object(sys, 'argv', ['build.py', '--tracker-csv', str(tracker)]):
+                with self.assertRaises(SystemExit) as result:
+                    build.main()
+            self.assertEqual(str(result.exception), 'ERROR: tracker could not be read as UTF-8 CSV')
+
     def test_expected_catalog_commit_mismatch_fails_before_fetch_or_output(self):
         with patch.object(sys, 'argv', ['build.py', '--tracker-csv', 'unused',
                                       '--tracker-catalog-commit', 'b' * 40]), \
