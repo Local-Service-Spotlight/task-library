@@ -9,9 +9,9 @@ status: complete
 
 # Enhance existing articles before creating new ones
 
-Make your best page more useful before you write a rival to it. This guide helps you choose where new facts and stories belong. Start with a search of your site and the page list you keep.
+Help readers find what they need on a page you already have. Use this guide to choose where a new fact, video or story fits. The [SEO Tree maps your site](https://blitzmetrics.com/seo-tree/): it helps you pick the right page and link to the next step.
 
-**The path:** New material → Existing-page search → Improve, support or create decision → Reviewed draft
+**The path:** New proof → Find the right page → Improve or add a story → Check the result → Pass it on
 
 **Start when:** New material or a content request may overlap a topic the site already covers.
 
@@ -29,7 +29,9 @@ Make your best page more useful before you write a rival to it. This guide helps
 4. If the material is a distinct execution, event or case, give it its own supporting story when useful and link it to the owning method. Do not paste a second generic explanation into a competing hub. If no page serves a genuinely distinct core topic, propose a new hub or task recipe with the proper role.
 5. When coverage is fragmented, inventory unique value before proposing consolidation. Use [Review duplicate or weak pages](https://local-service-spotlight.github.io/task-library/?task=remove-duplicate-thin-pages#task-remove-duplicate-thin-pages) for the exact keep/merge/remove decision and destination checks. Two pages that mention the same topic are not automatically duplicates, and a merge proposal is not permission to delete or redirect.
 6. Apply [Article Guidelines](https://localservicespotlight.com/article-guidelines/) to the proposed page: grade-five opening, clear reader value, useful first-screen visual and evidence-backed claims. Keep relevant named proof and strongest credible sources visible; an attractive rewrite that loses real examples has not improved the page.
-7. Save the enhance/support/create decision, exact source diff and receiving owner. Favor proven useful material when allocating work, but use the source’s Greatest Hits ratio as a planning principle, not a fixed performance law or a ban on fresh evidence. Publish only through the actual authorized rail and verify the result.
+7. Save a short decision record: the source material, pages compared, their different reader needs, the chosen page and the reason to improve it or add a distinct story. Record the recipe version you actually used before changing the page. Keep the before/after source and the reviewer’s decision. Spend more time on useful proven material, while leaving room for a real new need.
+8. Publish within the authority already given, using the page owner’s supported method. Open the public result without signing in. Check the exact changed text, retained proof, images and links on a phone and desktop. Record what passed and what remains open; a save message alone is not a checked result.
+9. Give the checked page, decision record and remaining issues to the named receiving task or worker. Ask for acceptance through an authorized channel, or save the pending request for its existing owner. A sent handoff stays open until the receiver confirms it; do not create a second follow-up clock.
 
 ## Definition of done (QA checklist)
 
@@ -38,7 +40,9 @@ Quality assurance (QA) means checking the actual result against its agreed requi
 - [ ] The decision compares actual intent and evidence, with one maintained owner for the same topic.
 - [ ] Distinct task recipes, offers and real supporting stories are not erased just for sharing terms.
 - [ ] The proposed improvement preserves unique facts, media and voice and meets current reading and visual standards.
-- [ ] The exact output, source revision, reviewer evidence and remaining owner action are saved.
+- [ ] One decision record names the compared pages, choice and reason; the starting recipe version, before/after source and separate reviewer decision are saved.
+- [ ] When published, the exact changed text, retained proof, images and links pass anonymous phone/desktop checks.
+- [ ] The receiving task or worker has the checked output and open issues; acceptance or its pending owner is recorded honestly.
 - [ ] For any reader-facing output, the short grade-five opening states the reader’s useful outcome and supporting method or proof. The body delivers that promise; a useful authentic visual appears in the first screen. Retain exact text and quoted reviewer evidence.
 
 ## Example(s)
@@ -47,9 +51,15 @@ Quality assurance (QA) means checking the actual result against its agreed requi
 
 A fictional plumber has a drain-cleaning guide and a new filmed repair. The film adds a useful diagnostic detail, so the team improves that section. The unusual repair also supports a separate dated case story linked to the guide and the real service page. It does not create a second drain-cleaning guide or invent a sales result.
 
+### Checked delivery example
+
+The [Bryce Clark story](https://localservicespotlight.com/bryce-clark-digital-marketing-freedom/) kept its existing address and gained a captioned one-minute video and an audit example. The [AI Builder program proof section](https://localservicespotlight.com/ai-builder-program/#bryce-learning-example) links back to the story. This connects a specific experience to a related offer without creating a second biography.
+
+The [dated review of this enhancement](https://blitzmetrics.com/making-task-guides-easier-to-use/#bryce-proof-followup-20261007) records checked published outputs. The original start time and exact recipe version were not recovered, and the next worker’s acceptance was unconfirmed at that review. This is one historical delivery example; it does not certify this revised recipe, new-user setup or sales results.
+
 ## Handoff and Content Factory context
 
-[Create or update the owning recipe](https://local-service-spotlight.github.io/task-library/?task=create-or-update-a-definitive-article#task-create-or-update-a-definitive-article) receives an accepted recipe change; [Place the accepted links](https://local-service-spotlight.github.io/task-library/?task=step-4-create-links-with-proper-anchor-text-and-placement#task-step-4-create-links-with-proper-anchor-text-and-placement) receives its link plan. The content inventory records the decision and the exact next owner.
+[Create or update the owning recipe](https://local-service-spotlight.github.io/task-library/?task=create-or-update-a-definitive-article#task-create-or-update-a-definitive-article) receives an accepted recipe change; [Place the accepted links](https://local-service-spotlight.github.io/task-library/?task=step-4-create-links-with-proper-anchor-text-and-placement#task-step-4-create-links-with-proper-anchor-text-and-placement) receives its link plan. The content inventory records the decision and the exact next owner. For a story or offer page, the publishing or distribution worker receives its checked URL, source changes, proof and open issues. Keep that handoff open until acceptance is recorded; the next worker may need to correct a link or return an issue before proceeding.
 
 This task supports the [Content Factory: Produce, Process, Post and Promote](https://blitzmetrics.com/content-factory/). Identity, proof, access or coordination can support several stages. Use the real inputs and receiving owner above; this task does not create unrelated transcripts, clips or ads merely because the diagram has four stages.
 
@@ -77,4 +87,4 @@ Reuse the same execution ID for internal checks, revisions, retries and meta wri
 
 The inherited contributor status is `complete`. It is preserved, not promoted by this rewrite. That label alone does not prove document readiness, account access, an actual execution or a client result.
 
-The fictional example teaches the method and does not fill a real-run evidence gap. A named semantic reviewer must check the actual opening, full method, sources and handoff. Check the useful opening visual in the normal rendered guide at the current required desktop and mobile sizes, including 1280 × 800 and 390 × 844. Source readability checks do not prove public presentation or task execution.
+The fictional example teaches the method. The checked historical example demonstrates delivered changes, with its missing recipe and handoff evidence stated above. A named semantic reviewer must check the actual opening, full method, sources and handoff. Check the useful opening visual in the normal rendered guide at the current required desktop and mobile sizes, including 1280 × 800 and 390 × 844. Source readability checks do not prove public presentation or task execution.

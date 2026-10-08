@@ -1915,10 +1915,40 @@
       "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
     },
     "enhance-existing-articles-before-creating-new-ones": {
-      "source_sha256": "d4e5ecd3f181365ec771d4994b880b4d6c166a65f045fe379e7bd5c36010c36d",
-      "reviewed_at": "2026-09-06",
-      "reviewer": "Codex editorial review",
-      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+      "source_sha256": "6de36415ce4c609bf03b06c27f7cd520d94f27ca636d530b41660906510d7cfb",
+      "reviewed_at": "2026-10-08",
+      "reviewer": "Codex root judgment with independent GPT-6 Luna semantic and viewport review",
+      "scope": "Five written-guide checks only. Scoped SEO Tree corrections and linked historical proof reviewed; full topic hub, actual use of this revision, setup and handoff evidence remain separate. See reviews/article-enhancement-2026-10-08.md.",
+      "standards": {
+        "version": 1,
+        "checks": {
+          "opening": {
+            "state": "pass",
+            "reason": "The opening states what the guide does, why it helps, and its connection to the maintained SEO Tree in plain language. The approximate FK grade is 3.27. I inspected the normal rendered desktop and phone screenshots: the five-step diagram is fully in the first viewport, its labels fit, and no horizontal overflow or clipping is visible.",
+            "evidence": "Quote: ‘Help readers find what they need on a page you already have. Use this guide to choose where a new fact, video or story fits. The SEO Tree maps your site: it helps you pick the right page and link to the next step.’ Readability.json: 44 words, 3 sentences, estimated FK grade 3.27 (approximate vowel-group screen). Preview receipts: desktop 1280 × 800, visual box y=327.6 h=187.2; phone 390 × 844, visual box y=481.8 h=203.4; pathInsideViewport=true and overflow=false in both. I visually inspected preview-guide-desktop.png and preview-guide-phone.png."
+          },
+          "recipe": {
+            "state": "pass",
+            "reason": "The trigger, page/source inputs, permissions and owner, search/compare/decision sequence, edit and publication limits, measurable checks, decision record, and accepting handoff are clear enough to repeat. It distinguishes a task recipe from a hub, offer, or distinct case story.",
+            "evidence": "Inputs; Steps 1–9; Definition of done. Step 8 requires work within existing authority and an anonymous public check; Step 9 keeps a sent handoff open until acceptance or records its pending owner."
+          },
+          "links": {
+            "state": "pass",
+            "reason": "Browser fallback returned 200 for all seven filtered BlitzMetrics destinations; direct scripted requests returned 403 for those same destinations. The new knowledge-system-maintenance link returned 200 and its page teaches the upkeep process named in the meta section. Task Library routes returned the app shell, so I matched each exact slug to its title and mapped article in dashboard/data.json instead of treating the shell as proof of the selected guide.",
+            "evidence": "SEO Tree meaning matches the opening’s site-map relationship. Source rows confirm: enhance-existing… → ‘Enhance existing articles before creating new ones’ (/seo-tree); step-1 inventory → internal-linking; map hierarchy → /seo-tree; remove duplicate thin pages → /seo-tree; create/update recipe → definitive-article-guide; step-4 links → internal-linking. Bryce story and program proof-section returned 200; the dated review fragment was found in browser fallback text. maintenance-link.txt returned 200, title ‘How LSS Keeps Its Task Guides Useful’; its opening says to keep guides current, save lessons, and fix the main guide."
+          },
+          "evidence": {
+            "state": "pass",
+            "reason": "The fictional plumber case is labeled. The Bryce case is supported by the dated independent record and states that recipe timing/version and receiver acceptance were unknown; it disclaims current recipe certification, setup, and sales results.",
+            "evidence": "The example says the existing Bryce story gained a captioned one-minute video and audit example, and that the program proof section links back. The source record supports those scoped outputs. It says the original start time and exact recipe version were not recovered and the next worker’s acceptance was unconfirmed. The source review limits acceptance to the released files/proof section, not the whole current program page or business outcomes."
+          },
+          "handoff": {
+            "state": "pass",
+            "reason": "The guide identifies the next recipe task for accepted recipe changes, the link-placement task for a link plan, the story/offer publishing or distribution role, the inventory as the owner record, and the outstanding acceptance state.",
+            "evidence": "‘Create or update the owning recipe’ and ‘Place the accepted links’ are linked receiving tasks. Step 9 says to give the checked page, decision record, and open issues to the named receiver and keep the handoff open until acceptance. Content Factory context states that support work can span stages without inventing unrelated assets."
+          }
+        }
+      }
     },
     "fit-every-new-piece-into-the-tree-structure": {
       "source_sha256": "0b1979cd812510e827fe38990cfa9cd3a08fa3a6aa01c2a773382c6321dbb55b",
