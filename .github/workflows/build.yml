@@ -24,8 +24,8 @@ jobs:
       - name: Run Task Library tests
         run: python3 -m unittest discover -s build -p "test_*.py" -v
 
-      # Pull the Asset Tracker's published-to-web CSV for status/owner overrides
-      # and sheet-onboarded skills. Value is stored as the TRACKER_CSV_URL *secret*.
+      # Activation guard: current CSV-only transport has no bound export receipt.
+      # Configure an approved receipt route and freshness policy in a reviewed change.
       # (Checked in the shell, not in `if:`, because a secret isn't reliably
       #  available to a step-level `if` expression.)
       - name: Fetch Asset Tracker CSV
@@ -33,8 +33,9 @@ jobs:
           TRACKER_CSV_URL: ${{ secrets.TRACKER_CSV_URL }}
         run: |
           if [ -n "$TRACKER_CSV_URL" ]; then
-            curl -sL "$TRACKER_CSV_URL" -o tracker.csv
-            echo "Fetched tracker.csv ($(wc -l < tracker.csv) lines)."
+            echo "ERROR: tracker activation blocked: no approved receipt transport or freshness policy is configured."
+            echo "Review README Asset Tracker contract before enabling imports."
+            exit 1
           else
             echo "TRACKER_CSV_URL secret is empty; building without the sheet."
           fi

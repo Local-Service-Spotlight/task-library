@@ -8,14 +8,14 @@ Sources per skill (build/registry.json):
 External fetches are cached in build/.cache/; on fetch failure the last good
 copy is used (with a warning) so a deleted or renamed repo never blanks a skill.
 
-Optional: --tracker-csv <file> overrides status/owner/article per slug from the
-Asset Tracker's published CSV (columns: Slug, Status, Owner, Definitive Article URL).
+Optional: --tracker-csv <file> imports explicitly approved display owner/Status for existing
+canonical Slug values; Catalog match is required. Other columns are ignored.
 
 Usage:
   python3 build/build.py [--tracker-csv tracker.csv] [--out dashboard/data.json]
-Exit code 1 if any skill fails validation (build still writes valid skills).
+Exit code 1 on invalid tracker or skill input, before writing public artifacts.
 """
-import argparse, csv, hashlib, json, os, re, sys, urllib.request
+import argparse, csv, hashlib, io, json, os, re, subprocess, sys, urllib.request
 from collections import Counter
 from datetime import datetime, timezone
 from urllib.parse import urlencode, urlsplit
@@ -142,13 +142,17 @@ def display_title(text, slug):
     return slug.replace('-', ' ').capitalize()
 
 
-def resolve(slug, entry, errors, warnings):
+def resolve(slug, entry, errors, warnings, source_states=None):
     src = entry['source']
+    if source_states is not None:
+        source_states[slug] = 'unavailable'
     if src == 'local':
         path = os.path.join(ROOT, 'skills', folder_of(entry['category']), slug + '.md')
         if not os.path.exists(path):
             errors.append(f'{slug}: local file missing ({os.path.relpath(path, ROOT)})')
             return None
+        if source_states is not None:
+            source_states[slug] = 'local'
         return open(path, encoding='utf-8').read()
 
     m = re.match(r'github:([^/]+)/([^@]+)@([^:]+):(.+)', src)
@@ -167,10 +171,14 @@ def resolve(slug, entry, errors, warnings):
             text = r.read().decode('utf-8')
         os.makedirs(CACHE, exist_ok=True)
         open(cache_file, 'w', encoding='utf-8').write(text)
+        if source_states is not None:
+            source_states[slug] = 'fetched'
         return text
     except Exception as e:
         if os.path.exists(cache_file):
             warnings.append(f'{slug}: fetch failed ({e}); using cached copy')
+            if source_states is not None:
+                source_states[slug] = 'cached'
             return open(cache_file, encoding='utf-8').read()
         errors.append(f'{slug}: fetch failed ({e}) and no cached copy')
         return None
@@ -184,7 +192,7 @@ def validate(slug, entry, text, errors, warnings):
     if entry.get('format') == 'claude-skill':
         # Standard Claude skill: frontmatter has name+description only.
         # Library metadata (category/stage/status/article) comes from the
-        # registry entry (overridable by the tracker CSV), not the file.
+        # registry entry, not the file. Only workflow status is tracker-overridable.
         for k in ('name', 'description'):
             if not fm.get(k):
                 errors.append(f'{slug}: claude-skill missing frontmatter "{k}"')
@@ -933,55 +941,6 @@ def write_meta_orbit_index(data, audits, out_path):
         json.dump(payload, fh, ensure_ascii=False, indent=1)
 
 
-def source_from_repo_url(url, slug):
-    """Turn a pasted GitHub URL into a github:owner/repo@ref:path source.
-
-    Accepts:
-      github:owner/repo@ref:path            (already a source ref — used as-is)
-      https://github.com/owner/repo         -> @main:skills/<slug>/SKILL.md
-      https://github.com/owner/repo/tree/<ref>/<folder>  -> <folder>/SKILL.md
-      https://github.com/owner/repo/blob/<ref>/<file.md> -> that file
-    """
-    url = url.strip().rstrip('/')
-    if url.startswith('github:'):
-        return url
-    m = re.match(r'https?://github\.com/([^/]+)/([^/]+)(?:/(tree|blob)/([^/]+)/(.+))?$', url)
-    if not m:
-        return None
-    owner, repo, kind, ref, path = m.groups()
-    if not kind:
-        return f'github:{owner}/{repo}@main:skills/{slug}/SKILL.md'
-    if kind == 'blob':
-        return f'github:{owner}/{repo}@{ref}:{path}'
-    return f'github:{owner}/{repo}@{ref}:{path}/SKILL.md'
-
-
-def apply_existing_tracker_source(slug, row, registry, errors):
-    """Apply a populated Source Repo cell to a known slug; report malformed input."""
-    src_cell = (row.get('Source Repo') or '').strip()
-    if slug not in registry or not src_cell:
-        return False
-    src = source_from_repo_url(src_cell, slug)
-    if not src:
-        errors.append(f'{slug}: sheet Source Repo not a recognizable GitHub URL: {src_cell}')
-    elif src != registry[slug].get('source'):
-        registry[slug] = dict(registry[slug], source=src, format='claude-skill',
-                              flag='claimed via sheet — hub copy superseded')
-        dl = (row.get('Download URL') or '').strip() or download_from_source(src)
-        if dl:
-            registry[slug]['download'] = dl
-    return True
-
-
-def download_from_source(source):
-    m = re.match(r'github:([^/]+)/([^@]+)@([^:]+):', source or '')
-    if not m:
-        return None
-    owner, repo, ref = m.groups()
-    return f'https://github.com/{owner}/{repo}/archive/refs/heads/{ref}.zip' if not re.fullmatch(r'[0-9a-f]{7,40}', ref) \
-        else f'https://github.com/{owner}/{repo}/archive/{ref}.zip'
-
-
 def write_zip(data, out_dir, fname, note, only_complete):
     import zipfile
     ready = [(c, t) for c in data['categories'] for t in c['tasks']
@@ -1009,6 +968,151 @@ def write_zip(data, out_dir, fname, note, only_complete):
     return len(ready)
 
 
+TRACKER_PUBLIC_FIELDS = frozenset({'Slug', 'Approved display Owner', 'Status'})
+TRACKER_STATUSES = {'ready': 'complete', 'complete': 'complete',
+                    'wip': 'needs-work', 'needs-work': 'needs-work', 'gap': 'gap'}
+
+
+def parse_tracker_csv(text, registry):
+    """Validate the entire approved task export before applying any public fields.
+
+    Membership never grants admission: only registry keys can be updated.
+    Diagnostics use row numbers, never private cells, header values or paths.
+    """
+    reader = csv.DictReader(io.StringIO(text.lstrip('\ufeff')), strict=True)
+    try:
+        headers = reader.fieldnames
+    except csv.Error:
+        raise ValueError('tracker CSV is malformed') from None
+    if not headers or not (TRACKER_PUBLIC_FIELDS | {'Catalog match'}).issubset(headers):
+        raise ValueError('tracker requires Slug, Catalog match, Approved display Owner and Status headers')
+    if len(headers) != len(set(headers)):
+        raise ValueError('tracker has duplicate headers')
+    overrides, seen, held, count = {}, set(), 0, 0
+    try:
+        for index, row in enumerate(reader, 2):
+            count += 1
+            if None in row or any(value is None for value in row.values()):
+                raise ValueError(f'tracker row {index}: wrong column count')
+            slug = row['Slug'].strip()
+            if not re.fullmatch(r'[a-z0-9]+(?:-+[a-z0-9]+)*', slug):
+                raise ValueError(f'tracker row {index}: invalid or empty Slug')
+            if slug in seen:
+                raise ValueError(f'tracker row {index}: duplicate Slug')
+            seen.add(slug)
+            membership = row['Catalog match'].strip()
+            if membership not in {'catalog', 'held'}:
+                raise ValueError(f'tracker row {index}: missing or unknown Catalog match')
+            if membership == 'held':
+                held += 1
+                continue
+            if slug not in registry:
+                raise ValueError(f'tracker row {index}: catalog Slug absent from registry')
+            public = {key: row.get(key, '').strip() for key in TRACKER_PUBLIC_FIELDS}
+            status = public['Status'].lower()
+            if status and status not in TRACKER_STATUSES:
+                raise ValueError(f'tracker row {index}: unknown Status')
+            owner = public['Approved display Owner']
+            if len(owner) > 120 or re.search(r'[<>\x00-\x1f]|https?://|www\.', owner, re.I):
+                raise ValueError(f'tracker row {index}: Approved display Owner must be display text')
+            overrides[slug] = public
+    except csv.Error:
+        raise ValueError('tracker CSV is malformed') from None
+    if not count:
+        raise ValueError('tracker parsed 0 data rows; refusing empty export')
+    if set(overrides) != set(registry):
+        raise ValueError('tracker is partial: every canonical Slug must have one catalog row')
+    return overrides, {'schemaVersion': 1, 'inputRows': count,
+                       'matchedRows': len(overrides), 'excludedHeldRows': held,
+                       'inputSha256': hashlib.sha256(text.encode('utf-8')).hexdigest(),
+                       'exportedAt': None}
+
+
+def validate_tracker_receipt(receipt, input_bytes, registry, catalog_commit, max_age_seconds,
+                             now=None):
+    """Bind a reviewed export to this checkout, exact bytes and configured freshness.
+
+    The authorized export publisher supplies publication approval in its receipt;
+    syntax or an internal Owner cell never establishes publication consent.
+    """
+    if type(max_age_seconds) is not int or max_age_seconds <= 0:
+        raise ValueError('tracker requires a configured positive --tracker-max-age-seconds policy')
+    required = {'schemaVersion', 'catalogCommit', 'catalogSha256', 'exportedAt',
+                'inputSha256', 'approvedPublicFields'}
+    if not isinstance(receipt, dict) or set(receipt) != required:
+        raise ValueError('tracker receipt requires exactly the documented schema fields')
+    if type(receipt['schemaVersion']) is not int or receipt['schemaVersion'] != 1:
+        raise ValueError('tracker receipt schemaVersion must be 1')
+    if (not isinstance(receipt['catalogCommit'], str) or
+            not re.fullmatch(r'[0-9a-f]{40}', receipt['catalogCommit']) or
+            receipt['catalogCommit'] != catalog_commit):
+        raise ValueError('tracker receipt catalog commit mismatch or missing revision; reconcile before importing')
+    catalog_digest = hashlib.sha256(
+        json.dumps(registry, sort_keys=True).encode('utf-8')).hexdigest()
+    if receipt['catalogSha256'] != catalog_digest:
+        raise ValueError('tracker receipt catalog digest mismatch; reconcile before importing')
+    digest = hashlib.sha256(input_bytes).hexdigest()
+    if receipt['inputSha256'] != digest:
+        raise ValueError('tracker receipt input digest mismatch; obtain the matching reviewed export')
+    approved = receipt['approvedPublicFields']
+    allowed = TRACKER_PUBLIC_FIELDS - {'Slug'}
+    if (not isinstance(approved, list) or any(not isinstance(field, str) for field in approved) or
+            len(approved) != len(set(approved)) or not set(approved).issubset(allowed)):
+        raise ValueError('tracker receipt approvedPublicFields must use the documented allowlist')
+    timestamp = receipt['exportedAt']
+    try:
+        if not isinstance(timestamp, str) or not re.fullmatch(
+                r'\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d+)?Z', timestamp):
+            raise ValueError
+        exported_at = datetime.fromisoformat(timestamp.replace('Z', '+00:00'))
+    except ValueError:
+        raise ValueError('tracker receipt exportedAt must be a dated UTC timestamp ending in Z') from None
+    now = now or datetime.now(timezone.utc)
+    age = (now - exported_at).total_seconds()
+    if age < 0:
+        raise ValueError('tracker receipt is future-dated; reconcile before importing')
+    if age > max_age_seconds:
+        raise ValueError('tracker receipt is stale under the configured freshness policy')
+    return {'schemaVersion': 1, 'catalogCommit': catalog_commit,
+            'catalogSha256': catalog_digest, 'inputSha256': digest,
+            'exportedAt': timestamp, 'maxAgeSeconds': max_age_seconds,
+            'approvedPublicFields': approved}
+
+
+def load_tracker_import(csv_path, receipt_path, max_age_seconds, registry):
+    """The single enabled-import entry point, used by both build workflows."""
+    if not receipt_path:
+        raise ValueError('tracker activation blocked: --tracker-receipt is required')
+    if type(max_age_seconds) is not int or max_age_seconds <= 0:
+        raise ValueError('tracker activation blocked: configure --tracker-max-age-seconds explicitly')
+    try:
+        catalog_commit = subprocess.check_output(
+            ['git', 'rev-parse', '--verify', 'HEAD^{commit}'], cwd=ROOT,
+            text=True, stderr=subprocess.DEVNULL).strip()
+    except (OSError, subprocess.CalledProcessError):
+        raise ValueError('tracker cannot verify the current checkout commit') from None
+    try:
+        with open(csv_path, 'rb') as fh:
+            input_bytes = fh.read()
+        text = input_bytes.decode('utf-8-sig')
+    except (OSError, UnicodeError):
+        raise ValueError('tracker could not be read as UTF-8 CSV') from None
+    try:
+        with open(receipt_path, encoding='utf-8') as fh:
+            receipt = json.load(fh)
+    except (OSError, ValueError):
+        raise ValueError('tracker receipt could not be read as JSON') from None
+    provenance = validate_tracker_receipt(receipt, input_bytes, registry,
+                                           catalog_commit, max_age_seconds)
+    overrides, counts = parse_tracker_csv(text, registry)
+    approved = set(provenance['approvedPublicFields'])
+    for row in overrides.values():
+        if any(row[field] and field not in approved for field in TRACKER_PUBLIC_FIELDS - {'Slug'}):
+            raise ValueError('tracker populated public field lacks explicit receipt approval')
+    counts.update(provenance)
+    return overrides, counts
+
+
 def tracker_import_state(tracker_supplied, input_rows, matched_rows, validation_passed):
     """Public-safe import provenance; it says nothing about task verification."""
     if not tracker_supplied:
@@ -1023,6 +1127,8 @@ def tracker_import_state(tracker_supplied, input_rows, matched_rows, validation_
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--tracker-csv')
+    ap.add_argument('--tracker-receipt', help='Reviewed JSON receipt bound to this checkout and exact CSV bytes')
+    ap.add_argument('--tracker-max-age-seconds', type=int, help='Explicit approved export freshness policy; no default')
     ap.add_argument('--out', default=os.path.join(ROOT, 'dashboard', 'data.json'))
     args = ap.parse_args()
 
@@ -1033,80 +1139,24 @@ def main():
     site = json.load(open(os.path.join(BUILD, 'site-meta.json'), encoding='utf-8'))
 
     overrides = {}
-    tracker_row_count = 0
+    tracker_details = {}
+    if not args.tracker_csv and (args.tracker_receipt or args.tracker_max_age_seconds is not None):
+        sys.exit('ERROR: tracker receipt/policy options require --tracker-csv')
     if args.tracker_csv:
-        for row in csv.DictReader(open(args.tracker_csv, encoding='utf-8-sig')):
-            tracker_row_count += 1
-            overrides[row['Slug'].strip()] = row
-        # A tracker was explicitly requested, so zero rows means the fetch broke
-        # upstream - not that there is nothing to apply. Fail loudly instead of
-        # publishing a silently shrunken library.
-        # (2026-08-05: a hung publish-to-web fetch returned 0 bytes, the GitHub
-        #  build reported SUCCESS, and the live dashboard lost 13 skills and every
-        #  owner. Nothing failed anywhere. This guard is that incident.)
-        if not overrides:
-            sys.exit(f"ERROR: --tracker-csv {args.tracker_csv} parsed 0 data rows. "
-                     f"The Asset Tracker fetch failed upstream. Refusing to build "
-                     f"without it rather than shipping a shrunken library.")
+        try:
+            overrides, tracker_details = load_tracker_import(
+                args.tracker_csv, args.tracker_receipt, args.tracker_max_age_seconds, registry)
+        except ValueError as exc:
+            sys.exit('ERROR: ' + str(exc))
 
-    # Sheet-first onboarding: a tracker row with a Source Repo link whose slug
-    # is not in the registry becomes a new external skill (format claude-skill).
-    valid_cats = {c['name'] for c in cats_meta}
     errors, warnings = [], []
-    sheet_only = {}   # rows with no source anywhere: rendered as named gap cards
-    for slug, row in list(overrides.items()):
-        src_cell = (row.get('Source Repo') or '').strip()
-        if apply_existing_tracker_source(slug, row, registry, errors):
-            # SHEET WINS: a repo link on an existing row re-points the skill
-            # to the owner's repo; the hub copy is ignored from now on.
-            continue
-        if slug in registry:
-            continue
-        if not src_cell:
-            cat = (row.get('Category') or '').strip()
-            if cat in valid_cats and slug:
-                rec = factory.annotate(slug, cat, (row.get('Stage') or '').strip())
-                sheet_only[slug] = {
-                    'title': (row.get('Task Title') or slug).strip() or slug,
-                    'slug': slug, 'status': 'gap',
-                    'stage': (row.get('Stage') or '—').strip() or '—',
-                    'article': (row.get('Definitive Article URL') or '').strip() or None,
-                    'desc': (row.get('Description') or '').strip(),
-                    'content': '',
-                    'flag': 'defined in sheet — not yet built',
-                    '_sourceSha256': None,
-                    'category': cat,
-                    'importance': rec['importance'], 'freq': rec['freq'],
-                    'revenue': rec['revenue'], 'gating': rec['gating'],
-                    'phase': rec['phase'], 'before': rec['before'],
-                    'after': rec['after'], 'lane': rec['lane'],
-                    'lane_label': rec['lane_label'], 'why': rec['why']}
-                if (row.get('Owner') or '').strip():
-                    sheet_only[slug]['owner'] = row['Owner'].strip()
-            continue
-        src = source_from_repo_url(row['Source Repo'], slug)
-        if not src:
-            errors.append(f'{slug}: sheet Source Repo not a recognizable GitHub URL: {row["Source Repo"]}')
-            continue
-        cat = (row.get('Category') or '').strip()
-        if cat not in valid_cats:
-            errors.append(f'{slug}: sheet Category "{cat}" is not one of the {len(valid_cats)} library categories')
-            continue
-        entry = {'source': src, 'format': 'claude-skill', 'category': cat,
-                 'stage': (row.get('Stage') or '—').strip() or '—',
-                 'status': {'ready': 'complete', 'complete': 'complete', 'wip': 'needs-work', 'needs-work': 'needs-work', 'gap': 'gap'}.get(
-                     (row.get('Status') or '').strip().lower(), 'needs-work'),
-                 'flag': 'added via Asset Tracker sheet'}
-        dl = (row.get('Download URL') or '').strip() or download_from_source(src)
-        if dl:
-            entry['download'] = dl
-        registry[slug] = entry
+    source_states = {}
     by_cat = {c['name'] for c in cats_meta} and {c['name']: [] for c in cats_meta}
     for slug, entry in registry.items():
         if entry.get('article_kind', 'unknown') not in ARTICLE_KINDS:
             errors.append(f'{slug}: unknown article_kind')
             continue
-        text = resolve(slug, entry, errors, warnings)
+        text = resolve(slug, entry, errors, warnings, source_states)
         if text is None:
             continue
         fm = validate(slug, entry, text, errors, warnings)
@@ -1116,9 +1166,7 @@ def main():
         ov = overrides.get(slug)
         if ov:
             s = (ov.get('Status') or '').strip().lower()
-            status = {'ready': 'complete', 'complete': 'complete', 'wip': 'needs-work', 'needs-work': 'needs-work', 'gap': 'gap'}.get(s, status)
-            if (ov.get('Definitive Article URL') or '').strip():
-                art = ov['Definitive Article URL'].strip()   # sheet overrides only when filled; file frontmatter is the default
+            status = TRACKER_STATUSES.get(s, status)
         rec = factory.annotate(slug, entry['category'], fm.get('stage') or '', text)
         content = factory.apply_layer(text.strip(), factory.layer_markdown(slug, rec))
         task = {'title': display_title(text, slug), 'slug': slug, 'status': status,
@@ -1141,8 +1189,8 @@ def main():
             task['flag'] = entry['flag']
         if entry.get('download'):
             task['download'] = entry['download']
-        if ov and (ov.get('Owner') or '').strip():
-            task['owner'] = ov['Owner'].strip()
+        if ov and (ov.get('Approved display Owner') or '').strip():
+            task['owner'] = ov['Approved display Owner'].strip()
         if entry['category'] not in by_cat:
             errors.append(f'{slug}: unknown category "{entry["category"]}"')
             continue
@@ -1151,8 +1199,8 @@ def main():
     # governance: ready/wip means someone owns it; unclaimed skills are gaps
     for slug, row in overrides.items():
         st_ = (row.get('Status') or '').strip().lower()
-        if st_ in ('ready', 'wip') and not (row.get('Owner') or '').strip():
-            warnings.append(f'{slug}: sheet says "{st_}" but Owner is blank — unclaimed skills should be "gap"')
+        if st_ in ('ready', 'wip') and not (row.get('Approved display Owner') or '').strip():
+            warnings.append(f'{slug}: sheet says "{st_}" but Approved display Owner is blank — unclaimed skills should be "gap"')
     # one file, one skill: flag rows resolving to the same source file
     seen_src = {}
     for slug, entry in registry.items():
@@ -1161,9 +1209,6 @@ def main():
             if src in seen_src:
                 warnings.append(f'{slug}: same source file as "{seen_src[src]}" ({src}) — two rows, one file')
             seen_src[src] = slug
-    for slug, t in sheet_only.items():
-        cat = t['category']
-        by_cat[cat].append(t)
     all_tasks = [t for ts in by_cat.values() for t in ts]
     certifications = load_article_certifications()
     validate_article_certifications(all_tasks, certifications)
@@ -1181,15 +1226,14 @@ def main():
         all_tasks, instruction_reviews, meta_audits, normalize_article_url,
         article_evidence=semantic_evidence)
     verification_report = standard_verification.report(verification_queue)
-    # Owner attribution comes ONLY from the Asset Tracker. A tracker that parsed
-    # rows but still yields zero owners is a malformed or partial feed - the same
-    # failure class as above, caught one stage later.
-    if args.tracker_csv and not {t['owner'] for t in all_tasks if t.get('owner')}:
-        sys.exit("ERROR: a tracker CSV was supplied but the build produced 0 owners. "
-                 "The Asset Tracker feed is empty or malformed. Refusing to publish.")
-    built_slugs = {t['slug'] for t in all_tasks}
+    if errors:
+        for error in errors:
+            print('ERROR', error)
+        sys.exit(1)  # Keep the last successful artifacts intact.
     tracker_import = tracker_import_state(
-        bool(args.tracker_csv), tracker_row_count, len(built_slugs.intersection(overrides)), not errors)
+        bool(args.tracker_csv), tracker_details.get('inputRows', 0), len(overrides), True)
+    tracker_import.update(tracker_details)
+    tracker_import['sourceStates'] = dict(Counter(source_states.values()))
     data = {'trackerImport': tracker_import,
             'stats': {'total': len(all_tasks),
                       'complete': sum(t['status'] == 'complete' for t in all_tasks),
@@ -1243,7 +1287,7 @@ def main():
     ninc = factory.write_incomplete_inventory(all_tasks, inv)
     print(f"incomplete inventory: {ninc} rows -> {os.path.relpath(inv, ROOT)}")
 
-    print(f"built {len(all_tasks)}/{len(registry) + len(sheet_only)} skills -> {os.path.relpath(args.out, ROOT)}")
+    print(f"built {len(all_tasks)}/{len(registry)} skills -> {os.path.relpath(args.out, ROOT)}")
     print(f"stats: {data['stats']}")
     for w in warnings:
         print('WARN ', w)

@@ -90,8 +90,9 @@ jobs:
           TRACKER_CSV_URL: ${{ secrets.TRACKER_CSV_URL }}
         run: |
           if [ -n "$TRACKER_CSV_URL" ]; then
-            curl -sL "$TRACKER_CSV_URL" -o tracker.csv
-            echo "Fetched tracker.csv ($(wc -l < tracker.csv) lines)."
+            echo "ERROR: tracker activation blocked: no approved receipt transport or freshness policy is configured."
+            echo "Review README Asset Tracker contract before enabling imports."
+            exit 1
           else
             echo "TRACKER_CSV_URL secret is empty; building without the sheet."
           fi

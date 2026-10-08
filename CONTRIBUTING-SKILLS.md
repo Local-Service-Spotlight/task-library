@@ -63,28 +63,28 @@ The difference matters: `main.zip` is whatever your repo looks like right now, m
 
 ---
 
-## Register through the connected Asset Tracker
+## Update the existing Asset Tracker
 
-Use the existing **Task Library Dashboard tab of the Asset Tracker** if you have permission to edit it. Before relying on this path, ask the maintainer to confirm that the build imports that tab’s approved feed. The dashboard’s team-update notice reports whether tracker rows were loaded for that build. If the notice says they were not loaded or the import is unknown, a saved sheet edit is still pending public sync. Do not change sharing or publish a private sheet to clear this step.
+Find the permanent task slug in the existing registry first. New candidates remain held until a maintainer reviews their source, identity and overlap and adds them to `build/registry.json`. A tracker row cannot register a skill or change its source.
 
-Find the existing task row first; add a new row only for a new permanent task name. Fill in:
+For the approved task export, use these fields:
 
 | Column | What to put |
 |---|---|
-| Slug | your skill's name (must match `name` in your SKILL.md frontmatter) |
-| Category | one of the 13 library categories |
-| Status | `ready`, `wip`, or `gap` |
-| Owner | you |
-| Source Repo | your repo URL — `https://github.com/you/your-repo` |
-| Download URL | optional; defaults to your repo's zip archive |
+| Slug | exact existing registry key, matching the skill name |
+| Catalog match | `catalog` for accepted registry members; `held` for candidates |
+| Status | `ready`/`complete`, `wip`/`needs-work`, `gap`, or blank to retain source status |
+| Approved display Owner | separately authorized public display name, or an explicit blank for unassigned |
 
-That's it. The build assumes your SKILL.md is at `skills/<slug>/SKILL.md` in your repo. If it lives elsewhere, paste the deeper link instead — a folder link (`.../tree/main/path/to/skill-folder`) or a direct file link (`.../blob/main/path/to/SKILL.md`) both work. A build with the intended tracker feed can fetch and validate that source. After deployment, compare the public task’s owner, status, source, article and download against your intended values. Errors appear in the build log. A green build alone does not prove the tracker was imported or your change reached readers.
+Require all four headers, even when every operational cell is blank. Export every catalog row exactly once. Held rows are excluded. Extra columns, including Source Repo, Download URL, Description, Flags, category and article URLs, have no import authority. The internal Owner column is ignored; an assignment does not authorize publishing its name. Keep private information out of Approved display Owner and Status too. Confirm the intended tab and approved export route before activation; do not publish a private workbook or alter sharing to satisfy a setup check.
 
-Registering a suite: one row per skill, same Source Repo on each.
+Before activation, an authorized publisher must bind the reviewed export to a dated JSON receipt with current checkout revision, catalog/input digests and approved public fields, and explicitly configure its maximum age. The CSV-only workflows currently block enabled imports until that transport and policy are reviewed. See [the exact receipt contract](README.md#asset-tracker).
 
-## Registering it — the registry way (for pinning and local skills)
+After an authorized release, compare the import notice, affected public fields, actual source revision and downloads. A saved tracker edit or green build does not establish publication or independent verification. See [migration and field authority](README.md#asset-tracker).
 
-The sheet path tracks your `main` branch. If you want to pin a specific commit, use a release download asset, or add a skill that lives *in* the central repo, add an entry to `build/registry.json` instead:
+## Register or change a maintained source
+
+Submit a reviewed `build/registry.json` change for a new task, source move, pinned revision or release download. Reconcile the existing tracker afterward; do not use an operational tracker cell to change a reviewed source:
 
 ```json
 "your-main-skill": {
