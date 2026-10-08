@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "asOf": "2026-10-07T16:06:04.590664+00:00",
+  "asOf": "2026-10-08T15:04:07.399683+00:00",
   "countDefinition": "Distinct recorded execution IDs, separate from meta-article URLs. History is partial; absent history is unknown, not zero. The last-30-day count is a documented lower bound, not total task frequency.",
-  "recordedExecutions": 24,
+  "recordedExecutions": 25,
   "completedExecutions": 12,
   "partialExecutions": 12,
   "executions": [
@@ -864,6 +864,28 @@
           }
         }
       ]
+    },
+    {
+      "executionId": "enhancement-guide-repair-20261008-1446",
+      "taskSlugs": [
+        "route-notes-to-sop-update-protocol-or-directly-to-articles"
+      ],
+      "startedAt": "2026-10-08T14:46:23.616591+00:00",
+      "status": "running",
+      "result": "Routing two recorded lessons into a clearer article-enhancement guide and its existing SEO Tree copy. One bounded maintenance run; independent review and final public checks pending.",
+      "recipeRevisions": {
+        "route-notes-to-sop-update-protocol-or-directly-to-articles": {
+          "articleUrl": "https://blitzmetrics.com/knowledge-system-maintenance/",
+          "sourceSha256": "f1f43f9328c4e4aa313c42b17271f7a245a36bada8c233f1284c0b99c34c6134"
+        }
+      },
+      "evidenceUrls": [
+        "https://blitzmetrics.com/making-task-guides-easier-to-use/"
+      ],
+      "privateEvidenceRecorded": false,
+      "metaArticle": {
+        "status": "draft"
+      }
     }
   ],
   "historicalDeliveryEvidence": {
