@@ -74,9 +74,11 @@ For the approved task export, use these fields:
 | Slug | exact existing registry key, matching the skill name |
 | Catalog match | `catalog` for accepted registry members; `held` for candidates |
 | Status | `ready`/`complete`, `wip`/`needs-work`, `gap`, or blank to retain source status |
-| Owner | approved public display name, or blank for unassigned |
+| Approved display Owner | separately authorized public display name, or an explicit blank for unassigned |
 
-Export every catalog row exactly once. Held rows are excluded. Extra columns, including Source Repo, Download URL, Description, Flags, category and article URLs, have no import authority. Keep private information out of display Owner and Status too. Confirm the intended tab and approved export route before activation; do not publish a private workbook or alter sharing to satisfy a setup check.
+Require all four headers, even when every operational cell is blank. Export every catalog row exactly once. Held rows are excluded. Extra columns, including Source Repo, Download URL, Description, Flags, category and article URLs, have no import authority. The internal Owner column is ignored; an assignment does not authorize publishing its name. Keep private information out of Approved display Owner and Status too. Confirm the intended tab and approved export route before activation; do not publish a private workbook or alter sharing to satisfy a setup check.
+
+Before activation, an authorized publisher must bind the reviewed export to a dated JSON receipt with current checkout revision, catalog/input digests and approved public fields, and explicitly configure its maximum age. The CSV-only workflows currently block enabled imports until that transport and policy are reviewed. See [the exact receipt contract](README.md#asset-tracker).
 
 After an authorized release, compare the import notice, affected public fields, actual source revision and downloads. A saved tracker edit or green build does not establish publication or independent verification. See [migration and field authority](README.md#asset-tracker).
 

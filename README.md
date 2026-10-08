@@ -42,9 +42,9 @@ Use the **Asset Tracker’s Task Library Dashboard tab** to record upkeep owners
 
 1. Put your `SKILL.md` in your repo at `skills/<slug>/SKILL.md`, with `name` equal to the permanent slug.
 2. Have the maintained source, exact revision and download reviewed in `build/registry.json` before importing operational updates.
-3. On the existing catalog row, record an approved public display **Owner** and workflow **Status** (`wip`, `ready`, or `gap`). Check the import notice and affected public fields after an authorized release.
+3. On the existing catalog row, record an explicitly approved **Approved display Owner** and workflow **Status** (`wip`, `ready`, or `gap`). Check the import notice and affected public fields after an authorized release.
 
-Field authority is explicit: the registry and maintained skill own membership, source, category, stage, article mapping, descriptions, flags and downloads. The approved tracker owns operational Owner and Status. Source changes require a reviewed registry change; a stale tracker URL cannot replace a commit pin. External fetch failures can reuse cached content, so verify the fetched revision separately.
+Field authority is explicit: the registry and maintained skill own membership, source, category, stage, article mapping, descriptions, flags and downloads. The approved tracker owns workflow Status; public owner attribution requires the separate Approved display Owner field and publication approval in the export receipt. Source changes require a reviewed registry change; a stale tracker URL cannot replace a commit pin. External fetch failures can reuse cached content, so verify the fetched revision separately.
 
 ## Validation
 
@@ -56,11 +56,30 @@ The same build writes `dashboard/verification-queue.html`, `.json` and `.csv`. T
 
 The existing tracker holds operational updates and held candidates. Import only an approved task-tab export with public display owners, or an approved public-safe projection. Import is a separate setup step; this patch does not configure a feed or change sharing.
 
-The parser requires `Slug` and `Catalog match`. Each registry slug must occur exactly once as `catalog`; `held` rows are excluded even if they name a known task. Missing/unknown membership, duplicate/empty/unknown catalog slugs, malformed or partial exports fail before artifacts are written. Only `Slug`, `Owner` and `Status` enter operational overrides. Blank status preserves source status; blank owner remains unassigned. Other tracker columns are ignored, including private descriptions, flags and internal URLs. An approved export must omit private information from allowlisted cells too.
+The CSV requires all four headers: `Slug`, `Catalog match`, `Approved display Owner`, and `Status`. Explicit blank cells are valid; missing or renamed headers fail. Each registry slug must occur exactly once as `catalog`; `held` rows are excluded even if they name a known task. Missing/unknown membership, duplicate/empty/unknown catalog slugs, malformed or partial exports fail before artifacts are written. Blank status preserves source status; blank display owner remains unassigned. The internal `Owner` column is ignored. Assignment or syntactically valid owner text does not establish publication consent.
 
-`trackerImport` reports import state, schema, matched and excluded counts, input/catalog digests and catalog checkout commit. Export time is unknown (`null`) unless separately recorded in the internal export receipt; build time does not prove export freshness. A loaded import is separate from source fetch, release and accepted execution. Use `--tracker-catalog-commit <full SHA>` to reject an export prepared against another checkout revision.
+Every enabled import also requires `--tracker-receipt <reviewed.json>` and an explicitly approved positive integer `--tracker-max-age-seconds <seconds>`. There is no default freshness window or future-date grace. The receipt must match the checked-out full commit SHA, catalog digest and exact CSV bytes. Missing metadata, mismatch, stale exports or future timestamps block import before source fetch or public writes. Never generate a fresh receipt from an old CSV merely to clear the guard.
 
-New tasks and source changes enter through reviewed `build/registry.json` changes, followed by tracker reconciliation. Legacy feeds without membership must migrate before activation; no implicit onboarding or source override remains. See [the maintenance guide](MAINTAINING-THE-LIBRARY.md) and [contributor instructions](CONTRIBUTING-SKILLS.md).
+The receipt contains exactly these six fields:
+
+```json
+{
+  "schemaVersion": 1,
+  "catalogCommit": "<current full 40-character checkout SHA>",
+  "catalogSha256": "<SHA-256 of json.dumps(registry skills, sort_keys=True).encode('utf-8')>",
+  "exportedAt": "<actual export UTC timestamp, YYYY-MM-DDTHH:MM:SSZ>",
+  "inputSha256": "<SHA-256 of exact exported CSV bytes>",
+  "approvedPublicFields": ["Status", "Approved display Owner"]
+}
+```
+
+An authorized publisher must review the actual export and its publication scope before issuing this receipt. `approvedPublicFields` may contain only `Status` and `Approved display Owner`; a populated public field without corresponding receipt approval fails. Display names must be separately authorized for public publication, not copied from internal assignments. Keep client data, descriptions, flags, private URLs and internal owner names outside public fields. The receipt asserts the publisher's approval and binds it to bytes; it cannot infer consent or authenticate an untrusted receipt. Use an approved controlled export/receipt transport.
+
+`trackerImport` records validated export time, freshness policy, revision/digests, approved fields, matched/excluded counts and local/fetched/cached source counts. A loaded import remains separate from successful source fetch, release and accepted execution.
+
+**Workflow activation is blocked.** Both current workflows have CSV-only transport, with no approved bound receipt route or freshness policy. If `TRACKER_CSV_URL` is nonempty, they stop before fetching. Empty-feed builds continue normally. A separate reviewed activation change must retrieve the matching approved export and receipt through authorized access and pass the required receipt/policy arguments to the shared builder. This patch configures no feed, secrets, policy or transport.
+
+New tasks and source changes enter through reviewed `build/registry.json` changes, followed by tracker reconciliation. Legacy feeds must migrate membership and the explicit public display-owner schema and supply bound dated receipts before activation; no implicit onboarding, owner publication or source override remains. See [the maintenance guide](MAINTAINING-THE-LIBRARY.md) and [contributor instructions](CONTRIBUTING-SKILLS.md).
 
 ## SEO
 
