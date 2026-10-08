@@ -1514,19 +1514,28 @@
       },
       "startedAt": "2026-10-08T14:46:23.616591+00:00",
       "recordedAt": "2026-10-08T14:49:51.625755+00:00",
-      "updatedAt": "2026-10-08T14:49:51.625755+00:00",
-      "status": "running",
-      "result": "Routing two recorded lessons into a clearer article-enhancement guide and its existing SEO Tree copy. One bounded maintenance run; independent review and final public checks pending.",
+      "updatedAt": "2026-10-08T15:37:19.306219+00:00",
+      "status": "completed",
+      "result": "Published a clearer article-enhancement guide, replaced its obsolete SEO Tree copy and corrected related prose. Independent scoped publication acceptance passed; 176 tests, seven public archives and phone/desktop checks passed. Twenty written guides now pass; no full-task, production-use, setup or revenue certification.",
       "evidence": [
         {
           "visibility": "public",
-          "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/"
+          "url": "https://github.com/Local-Service-Spotlight/task-library/pull/77"
+        },
+        {
+          "visibility": "public",
+          "url": "https://blitzmetrics.com/seo-tree/"
+        },
+        {
+          "visibility": "private",
+          "sha256": "64700f9d58691ac198d9d35699b04c2c09b4bdf57d6b63b1649a7999845aa323"
         }
       ],
       "metaArticle": {
-        "status": "draft",
-        "draftSha256": "4156424159fb8e01d356da26ab881cb56ad3bc5d73a378058159e9a89f9a5ad8"
-      }
+        "status": "published",
+        "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#enhancement-guide-repair-20261008-1446"
+      },
+      "finishedAt": "2026-10-08T15:37:19.306219+00:00"
     }
   ],
   "historicalEvidence": [
