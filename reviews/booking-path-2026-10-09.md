@@ -36,6 +36,16 @@ The current form and opening-review task bodies match the earlier checked bodies
 
 ## Release and next use
 
-The remaining release scope includes source publication, anonymous readbacks and affected archive checks for this same maintenance attempt. One maintenance run does not count as executing this subject guide. All prior run history remains intact. The next already-authorized real job must capture its exact recipe, permitted test, actual result and receiving acceptance. Novice-human setup and the separate outer-frame follow-up remain open.
+This same maintenance attempt published the source and passed the anonymous readbacks and affected archive checks recorded below. One maintenance run does not count as executing this subject guide. All prior run history remains intact. The next already-authorized real job must capture its exact recipe, permitted test, actual result and receiving acceptance. Novice-human setup and the separate outer-frame follow-up remain open.
 
-See the [maintenance account](https://blitzmetrics.com/making-task-guides-easier-to-use/#booking-path-checks-20261009-1259). Final release checks are appended here after they occur; this written review alone does not establish deployment.
+See the [maintenance account](https://blitzmetrics.com/making-task-guides-easier-to-use/#booking-path-checks-20261009-1259). The release checks below record observed publication; the earlier written review alone did not establish deployment.
+
+## Published release checks
+
+Checked October 9, 2026, after source PR79 merged as `22dc15aa3b5fff29b993d9005292b60c8bb06ab5` and deployment `37934986785` succeeded. The anonymous source bytes match the reviewed task hash. All six generated runtime projections match the committed source; only generated build timestamps are excluded. All seven published archives pass their task/dependency checks.
+
+The ordinary public Digital Plumbing and maintenance pages now match the exact saved rendered text, media and inline scripts. Their normal cache expired before acceptance; an older cached page was not treated as the new release. Saved parent content hash: `352f3b4430f6bc8ab1dd1096c0e1abf042cfa63948ae20afdb4989be32559a25`. Saved maintenance content hash: `85c401301dc5d8237286307ee186a7d325c6f9e3df64e9ab398624ac84b12206`.
+
+Six actual public phone/desktop component views pass: the task path fits in the first viewport, changed guide text is exact, and no horizontal overflow appears. Media remained muted or blocked. A separate reviewer accepted this scoped documentation release. This does not certify the whole parent hub, a live customer booking or a novice-human setup trial. The library still has 20 written-standard passes and zero fully verified tasks.
+
+The next receiving owner is the operator of the next already-authorized conversion-path job. That job must record its own test and measured acceptance; this maintenance completion does not supply those results.
