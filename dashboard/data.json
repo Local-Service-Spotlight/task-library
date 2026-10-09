@@ -101,7 +101,7 @@
    }
   }
  },
- "updated": "October 8, 2026",
+ "updated": "October 9, 2026",
  "factory": {
   "phases": [
    {
@@ -1715,9 +1715,9 @@
  ],
  "executionHistory": {
   "schemaVersion": 1,
-  "asOf": "2026-10-08T15:37:20.944437+00:00",
+  "asOf": "2026-10-09T13:09:40.021719+00:00",
   "countDefinition": "Distinct recorded execution IDs, separate from meta-article URLs. History is partial; absent history is unknown, not zero. The last-30-day count is a documented lower bound, not total task frequency.",
-  "recordedExecutions": 25,
+  "recordedExecutions": 26,
   "completedExecutions": 13,
   "partialExecutions": 12,
   "executions": [
@@ -2603,6 +2603,29 @@
     "metaArticle": {
      "status": "published",
      "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#enhancement-guide-repair-20261008-1446"
+    }
+   },
+   {
+    "executionId": "booking-path-checks-20261009-1259",
+    "taskSlugs": [
+     "publish-skill-and-task-page"
+    ],
+    "startedAt": "2026-10-09T12:59:27.985957+00:00",
+    "status": "running",
+    "result": "Published revised booking-path checks in owned documentation; final Task Library deployment and public ZIP verification pending. One maintenance run, no live booking or client execution.",
+    "recipeRevisions": {
+     "publish-skill-and-task-page": {
+      "articleUrl": "https://blitzmetrics.com/skill-publishing-standard/",
+      "sourceSha256": "660d6f1abd8678c851c0a08059f27982e8e29b46775ea217a2ae1d6e3ba55537"
+     }
+    },
+    "evidenceUrls": [
+     "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/booking-path-2026-10-09.md"
+    ],
+    "privateEvidenceRecorded": true,
+    "metaArticle": {
+     "status": "published",
+     "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#booking-path-checks-20261009-1259"
     }
    }
   ],
@@ -13262,7 +13285,7 @@
      "article": "https://blitzmetrics.com/digital-plumbing",
      "articleKind": "topic-hub",
      "desc": "Help a visitor take the next useful step. Make the path clear and check where the request lands.",
-     "content": "---\nname: create-clear-conversion-path\ndescription: \"Help a visitor take the next useful step. Make the path clear and check where the request lands.\"\ncategory: Digital Plumbing\nstage: —\ndefinitive_article: /digital-plumbing\nstatus: needs-work\n---\n\n# Create Clear Conversion Path\n\nUse this guide to make it easy for people to ask your business for help. A clear path helps your team get requests it can answer. Next, [check your contact form](https://local-service-spotlight.github.io/task-library/?task=ensure-working-contact-form-delivers-notifications#task-ensure-working-contact-form-delivers-notifications) to make sure those requests reach the right person.\n\n**The path:** Visitor need → Clear action → Working form or call → Team receipt.\n\n**Use this when:** a new page or offer launches, visitors struggle to contact the business, or an existing path needs repair.\n\n## Inputs\n- The page, intended visitor and useful next action from the project’s [Goals, Content, and Targeting](https://blitzmetrics.com/gct-business-strategy/) brief: the goal, source content and people it serves.\n- The actual contact, booking, purchase or download destination and the responsible team. Preserve legitimate privacy, legal and navigation links.\n- Access to the owning page and destination settings, plus the agreed test scope and existing measurement plan if one is in use.\n\n## Starting state and run record\n\nStart with one named page, its intended visitor and action, the current destination, and the person or team that must receive the request. Record the page URL and revision, action label, destination, controlled-test ID and time, device, link/form/call result, receiver evidence, unresolved issue, and next owner. Count clicks, accepted requests, connected calls and qualified leads separately. Compare lead rates only when real baseline and follow-up data use the same lead definition and data source over equal-length windows; traffic mix and season changes can still affect the result. This guide does not estimate sales uplift.\n\n## First-run prompt\n\n> Map the visitor’s path on the supplied page. Improve the main call to action and its destination within the authorized scope. Check the visible result and the actual receiving system separately. Report clicks, submitted requests and received leads as different evidence.\n\n## Steps\n1. Name the page’s intended visitor and desired result in one sentence. Choose the primary action for that journey; a service quote page and a customer-support page can have different valid actions.\n2. Trace the current route from the page to the final destination. Record confusing labels, dead links, repeated questions and unnecessary detours. Do not infer the cause of low lead volume from a page glance alone.\n3. Write a specific action label such as “Request a roof check” rather than a vague “Learn more” when a request is the real next step. State what happens next and any material cost or commitment accurately.\n4. Place the action where it supports the page’s explanation and is reachable on mobile. Keep relevant secondary choices and accessibility controls. The source’s two-click idea is a reachability target, not a rule that every real booking or purchase must finish in two clicks.\n5. Edit the supported page source and destination. Keep required fields limited to the actual business need; preserve necessary consent and disclosures. Use the true service or offer page, following the [Money Tree](https://blitzmetrics.com/money-tree/) when it applies: the site map of posts and the pages where people book or buy.\n6. Test the link and form or booking flow using the authorized controlled test. Check errors, success state and mobile use. Avoid a real charge, booking or message beyond the existing test scope; label that untested portion rather than calling the whole path passed.\n7. Verify receipt in the actual inbox, booking tool or customer system and identify who follows up. A success page or analytics event alone is not proof that the team got the request.\n8. If tracking is in scope, check one appropriate received event per intended action and its consent behavior. Save the route, test evidence and measured result; compare later lead performance only with real comparable data.\n\n## Definition of done (QA checklist)\n\n- [ ] Each money-page opening makes the customer's situation, supported value and next buying step clear in the first 2–3 sentences, with relevant authentic proof; [opening review](https://local-service-spotlight.github.io/task-library/?task=step-7-write-hook-and-establish-context#task-step-7-write-hook-and-establish-context) is recorded, not inferred from a CTA or unmeasured conversion promise\n\n- [ ] The page has an understandable primary action for its intended visitor.\n- [ ] The route reaches the correct destination with no unnecessary dead end.\n- [ ] Phone layout and required fields work, with privacy and accessibility intact.\n- [ ] Visitor success and team receipt have independent evidence or precise open limits.\n- [ ] Tracking and business outcomes are reported separately, with an actual next owner.\n\n## Example(s)\n\n**Fictional teaching example.** Oak Repair’s service page says “Contact,” leading to a menu with four choices. The lesson changes the label to “Request a roof check” and links directly to the quote form. The form explains that the team will reply by the next business day, a promise supplied for this fictional exercise. A mock test record shows one successful submission and one matching receiver entry. The lesson proves how to check a path; it makes no claim about a real lead or conversion-rate increase.\n\n## Handoff and Content Factory context\n\nHand the route record to the named page or lead-response owner. The handoff is ready when that owner confirms the destination and response responsibility against the test ID; if confirmation is missing, record it as pending. Use [ensure working contact form delivers notifications](https://local-service-spotlight.github.io/task-library/?task=ensure-working-contact-form-delivers-notifications#task-ensure-working-contact-form-delivers-notifications) for a form-delivery defect or [add click to call links for mobile](https://local-service-spotlight.github.io/task-library/?task=add-click-to-call-links-for-mobile#task-add-click-to-call-links-for-mobile) for a call-link defect.\n\nThis is a setup check for **Post** in the [Content Factory](https://blitzmetrics.com/content-factory/), the process that turns real stories into useful content. A published page needs a working way for a reader to reach the business. Check that path before **Promote** sends more people to it. Promotion, spend and customer follow-up remain separately scoped work.\n\n## When this runs\n\nRun for a new offer or a material page, form or booking change. Later improvement uses real performance reviews on the agreed cadence; no ads or automatic schedule are created by this guide.\n\n## First-run setup and continuity\n\nOpen the supplied task file and its linked source. Verify the project’s real inputs, account, access and output folder before work. This Markdown file is a guide; it does not install an app, connect an account, supply a subscription or create a schedule. Carry out work already authorized; do not ask for the same approval again. Keep any unsupplied destination or new action outside that scope clearly pending.\n\nSave source IDs, versions, decisions, checked outputs and next owner in the project tracker. Before a retry, check the saved state and other workers’ changes. A model name does not guarantee memory or a running timer. Repeated work needs an actual configured trigger and durable state; one-off work can be started by the prompt above.\n\nKeep agent media muted with volume zero before playback. If mute cannot be verified, use captions, metadata or still frames. State the limit: silent visual checks do not prove spoken-word accuracy or audio quality. Do not start sound through the user’s speakers unless explicitly asked.\n\n## Write up the real run\n\nFor every actual attempt, [write its meta article](https://blitzmetrics.com/meta-article-prompt/) with this recipe and revision, trigger, steps performed, output evidence, measured result, gaps and next owner. Failed, blocked and partial attempts also get a written record. A draft can satisfy writing; publishing it follows the existing job scope.\n\nKeep one stable execution ID across retries and edits. A separately scoped child task may have its own ID linked to its parent. Writing the parent’s meta record is part of that run, not an endless new chain. The [recipe and meta-article guide](https://localservicespotlight.com/meta-articles/) explains this distinction. Teaching examples are not real executions and must not enter the run count.\n\n\n<!-- factory-layer:start -->\n\n## Factory chain (do not treat this as isolated)\n\n- **Phase:** Gate\n- **Importance:** 5/5 `●●●●●` — frequency 4, revenue 5, gating 5 (runs every factory cycle or weekly; ads/revenue path; unblocks a chain (access/plumbing))\n- **Browse earlier task:** `ensure-working-contact-form-delivers-notifications`\n- **Browse later task:** `map-out-one-minute-video-topics-using-topic-wheel`\nThese are nearby tasks in the library. Use this guide’s Inputs and Handoff sections to choose what comes before and after your work. Catalog order does not establish prerequisites or handoffs.\n- **Handoff:** Record only the property IDs, access and checks required by this task in the client register. Pass the verified result to the task that needs it.\n\n## Model routing (same factory, any engine)\n\n- **This task's lane:** `any` — Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.\n- **Single-engine path:** Use the capable AI app you already have. Check its required tools and access before starting. Pass the actual result and proof to the next task.\n- **Optional multi-engine:** A tested local model may draft; a stronger model may review facts and voice. Use supported tools for approved actions. Pick models from observed quality and cost; a model name does not prove it can run this task.\n- **Never** store the working state in one vendor's memory. Files in the Content Library are the bridge.\n\n<!-- factory-layer:end -->\n## Definitive article & links\n\n- Canonical article: https://blitzmetrics.com/digital-plumbing\n- Exact task: [Create Clear Conversion Path](https://local-service-spotlight.github.io/task-library/?task=create-clear-conversion-path#task-create-clear-conversion-path)\n- Writing standard: [Article Guidelines](https://localservicespotlight.com/article-guidelines/)\n- [Digital Plumbing training](https://blitzmetrics.com/digital-plumbing/)\n- [SEO Tree](https://blitzmetrics.com/seo-tree/)\n\n## Review and evidence still needed\n\nThe source contributor status is preserved. It is not certification of this draft or proof of account access, completed work or a live outcome. The worked example teaches the method and is explicitly fictional.\n- The actual owner must supply the intended action, response promise and test scope; no conversion performance has been measured by this draft.",
+     "content": "---\nname: create-clear-conversion-path\ndescription: \"Help a visitor take the next useful step. Make the path clear and check where the request lands.\"\ncategory: Digital Plumbing\nstage: —\ndefinitive_article: /digital-plumbing\nstatus: needs-work\n---\n\n# Create Clear Conversion Path\n\nUse this guide to make it easy for people to ask your business for help. A clear path helps your team get requests it can answer. Next, [check your contact form](https://local-service-spotlight.github.io/task-library/?task=ensure-working-contact-form-delivers-notifications#task-ensure-working-contact-form-delivers-notifications) to make sure those requests reach the right person.\n\n**The path:** Visitor need → Clear action → Usable form, booking or call → Team receipt → Named next owner.\n\n**Use this when:** a new page or offer launches, visitors struggle to contact the business, or an existing path needs repair.\n\n## Inputs\n- The page, intended visitor and useful next action from the project’s [Goals, Content, and Targeting](https://blitzmetrics.com/gct-business-strategy/) brief: the goal, source content and people it serves.\n- The actual contact, booking, purchase or download destination and the responsible team. Preserve legitimate privacy, legal and navigation links.\n- Access to the owning page and destination settings, plus the agreed test scope and existing measurement plan if one is in use.\n\n## Starting state and run record\n\nStart with one named page, its intended visitor and action, the current destination, and the person or team that must receive the request. For appointments, include the approved availability or response promise, its time zone, eligible hosts and the escalation owner when coverage is missing. Record the page URL and revision, action label, destination, controlled-test ID and time, device, link/form/call result, receiver evidence, unresolved issue, and next owner. Count clicks, accepted requests, connected calls and qualified leads separately. Compare lead rates only when real baseline and follow-up data use the same lead definition and data source over equal-length windows; traffic mix and season changes can still affect the result. This guide does not estimate sales uplift.\n\n## First-run prompt\n\n> Map the visitor’s path on the supplied page. Improve the main call to action and its destination within the authorized scope. Check the visible result and the actual receiving system separately. Report clicks, submitted requests and received leads as different evidence.\n\n## Steps\n1. Name the page’s intended visitor and desired result in one sentence. Choose the primary action for that journey; a service quote page and a customer-support page can have different valid actions.\n2. Trace the current route from the page to the final destination. Record confusing labels, dead links, repeated questions and unnecessary detours. Do not infer the cause of low lead volume from a page glance alone.\n3. Write a specific action label such as “Request a roof check” rather than a vague “Learn more” when a request is the real next step. State what happens next and any material cost or commitment accurately.\n4. Place the action where it supports the page’s explanation and is reachable on mobile. Keep relevant secondary choices and accessibility controls. The source’s two-click idea is a reachability target, not a rule that every real booking or purchase must finish in two clicks.\n5. Edit the supported page source and destination. Keep required fields limited to the actual business need; preserve necessary consent and disclosures. Use the true service or offer page, following the [Money Tree](https://blitzmetrics.com/money-tree/) when it applies: the site map of posts and the pages where people book or buy.\n6. Before submitting a booking, compare the earliest selectable appointment with the actual promised window. Save the check time, displayed time zone, first available slot and any empty result. A calendar that loads is not proof that a visitor can book within the promise. Check that required choices are clear and cannot accept contradictory answers; mutually exclusive answers need a single-choice control. Treat a mismatch as a defect, not a reason to silently change the promise, add a host or buy a plan.\n7. Test the link and form or booking flow using the authorized controlled test. Check errors, success state and mobile use. Avoid a real charge, booking or message beyond the existing test scope; label that untested portion rather than calling the whole path passed.\n8. Verify receipt in the actual inbox, booking tool or customer system and identify who follows up. For a tested booking, match its ID to the assigned eligible host, saved answers and required notifications; check cancellation and reminder behavior only within the authorized test scope. A listed host or an empty availability response with an error does not prove staffed coverage. A success page or analytics event alone is not proof that the team got the request.\n9. If tracking is in scope, check one appropriate received event per intended action and its consent behavior. Save the route, test evidence and measured result; compare later lead performance only with real comparable data.\n\n## Definition of done (QA checklist)\n\n- [ ] Each money-page opening makes the customer's situation, supported value and next buying step clear in the first 2–3 sentences, with relevant authentic proof; [opening review](https://local-service-spotlight.github.io/task-library/?task=step-7-write-hook-and-establish-context#task-step-7-write-hook-and-establish-context) is recorded, not inferred from a CTA or unmeasured conversion promise\n\n- [ ] The page has an understandable primary action for its intended visitor.\n- [ ] The route reaches the correct destination with no unnecessary dead end.\n- [ ] Phone layout and required fields work, with privacy and accessibility intact; answers cannot contradict one another.\n- [ ] If booking is offered, the observed slot fits the actual promised window and time zone, or the exact mismatch and coverage owner remain open.\n- [ ] Any controlled booking has matching assignment, answer and receiver evidence. Untested notifications, cancellations or reminders remain explicitly unknown.\n- [ ] Visitor success and team receipt have independent evidence or precise open limits.\n- [ ] Tracking and business outcomes are reported separately, with an actual next owner.\n\n## Example(s)\n\n**Fictional teaching example.** Oak Repair’s service page says “Contact,” leading to a menu with four choices. The lesson changes the label to “Request a roof check” and links directly to the quote form. The form explains that the team will reply by the next business day, a promise supplied for this fictional exercise. A mock test record shows one successful submission and one matching receiver entry. The lesson proves how to check a path; it makes no claim about a real lead or conversion-rate increase.\n\n**Fictional booking example.** A service promises a call within three days, but the first selectable slot is three weeks away. The page loads and the button works, yet this path fails its stated promise. Save the visible dates and time zone, then route the gap to the existing calendar owner. Do not claim a staffing, calendar-sync or subscription cause without checking it. No real appointment was booked in this example.\n\n## Handoff and Content Factory context\n\nHand the route record to the named page or lead-response owner. The handoff is ready when that owner confirms the destination and response responsibility against the test ID; if confirmation is missing, record it as pending. For booking routes, the existing calendar or lead-response owner receives any promise-to-availability gap with the observation and next check. Preserve their existing follow-up record; do not open a duplicate chase or automatically put the business owner into the host rotation. Use [ensure working contact form delivers notifications](https://local-service-spotlight.github.io/task-library/?task=ensure-working-contact-form-delivers-notifications#task-ensure-working-contact-form-delivers-notifications) for a form-delivery defect or [add click to call links for mobile](https://local-service-spotlight.github.io/task-library/?task=add-click-to-call-links-for-mobile#task-add-click-to-call-links-for-mobile) for a call-link defect.\n\nThis is a setup check for **Post** in the [Content Factory](https://blitzmetrics.com/content-factory/), the process that turns real stories into useful content. A published page needs a working way for a reader to reach the business. Check that path before **Promote** sends more people to it. Promotion, spend and customer follow-up remain separately scoped work.\n\n## When this runs\n\nRun for a new offer or a material page, form or booking change. Later improvement uses real performance reviews on the agreed cadence; no ads or automatic schedule are created by this guide.\n\n## First-run setup and continuity\n\nOpen the supplied task file and its linked source. Verify the project’s real inputs, account, access and output folder before work. This Markdown file is a guide; it does not install an app, connect an account, supply a subscription or create a schedule. Carry out work already authorized; do not ask for the same approval again. Keep any unsupplied destination or new action outside that scope clearly pending.\n\nSave source IDs, versions, decisions, checked outputs and next owner in the project tracker. Before a retry, check the saved state and other workers’ changes. A model name does not guarantee memory or a running timer. Repeated work needs an actual configured trigger and durable state; one-off work can be started by the prompt above.\n\nKeep agent media muted with volume zero before playback. If mute cannot be verified, use captions, metadata or still frames. State the limit: silent visual checks do not prove spoken-word accuracy or audio quality. Do not start sound through the user’s speakers unless explicitly asked.\n\n## Write up the real run\n\nFor every actual attempt, [write its meta article](https://blitzmetrics.com/meta-article-prompt/) with this recipe and revision, trigger, steps performed, output evidence, measured result, gaps and next owner. Failed, blocked and partial attempts also get a written record. A draft can satisfy writing; publishing it follows the existing job scope.\n\nKeep one stable execution ID across retries and edits. A separately scoped child task may have its own ID linked to its parent. Writing the parent’s meta record is part of that run, not an endless new chain. The [recipe and meta-article guide](https://localservicespotlight.com/meta-articles/) explains this distinction. Teaching examples are not real executions and must not enter the run count.\n\n\n<!-- factory-layer:start -->\n\n## Factory chain (do not treat this as isolated)\n\n- **Phase:** Gate\n- **Importance:** 5/5 `●●●●●` — frequency 4, revenue 5, gating 5 (runs every factory cycle or weekly; ads/revenue path; unblocks a chain (access/plumbing))\n- **Browse earlier task:** `ensure-working-contact-form-delivers-notifications`\n- **Browse later task:** `map-out-one-minute-video-topics-using-topic-wheel`\nThese are nearby tasks in the library. Use this guide’s Inputs and Handoff sections to choose what comes before and after your work. Catalog order does not establish prerequisites or handoffs.\n- **Handoff:** Record only the property IDs, access and checks required by this task in the client register. Pass the verified result to the task that needs it.\n\n## Model routing (same factory, any engine)\n\n- **This task's lane:** `any` — Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.\n- **Single-engine path:** Use the capable AI app you already have. Check its required tools and access before starting. Pass the actual result and proof to the next task.\n- **Optional multi-engine:** A tested local model may draft; a stronger model may review facts and voice. Use supported tools for approved actions. Pick models from observed quality and cost; a model name does not prove it can run this task.\n- **Never** store the working state in one vendor's memory. Files in the Content Library are the bridge.\n\n<!-- factory-layer:end -->\n## Definitive article & links\n\n- Canonical article: https://blitzmetrics.com/digital-plumbing\n- Exact task: [Create Clear Conversion Path](https://local-service-spotlight.github.io/task-library/?task=create-clear-conversion-path#task-create-clear-conversion-path)\n- Writing standard: [Article Guidelines](https://localservicespotlight.com/article-guidelines/)\n- [Digital Plumbing training](https://blitzmetrics.com/digital-plumbing/)\n- [SEO Tree](https://blitzmetrics.com/seo-tree/)\n\n## Review and evidence still needed\n\nThe source contributor status is preserved. It is not certification of this draft or proof of account access, completed work or a live outcome. The worked example teaches the method and is explicitly fictional.\n- The actual owner must supply the intended action, response promise and test scope; no conversion performance has been measured by this draft.",
      "importance": 5,
      "freq": 4,
      "revenue": 5,
@@ -13274,37 +13297,37 @@
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
      "why": "runs every factory cycle or weekly; ads/revenue path; unblocks a chain (access/plumbing)",
      "instructionReview": {
-      "source_sha256": "121a163c9adbf9d7ddb2354804f1fd29f60843703be8a60228741588c3aed739",
-      "reviewed_at": "2026-10-05",
-      "reviewer": "Codex root with separate GPT-6 Luna written review",
-      "scope": "Exact written method only. Full article, real execution, receiver result and unassisted novice setup remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md",
+      "source_sha256": "f03ac6898485a02e3ca14a75fdaee12f0ad2015afa4ced2b943d457f75965ca2",
+      "reviewed_at": "2026-10-09",
+      "reviewer": "Codex root with independent GPT-6 Luna scope and visual review",
+      "scope": "One exact written conversion-path revision and its article copy. Live booking, full hub semantic certification, accepted outcome and novice setup remain unknown. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/booking-path-2026-10-09.md",
       "standards": {
        "version": 1,
        "checks": {
         "opening": {
          "state": "pass",
-         "reason": "Actual three-sentence opening quoted in release review: plain task, useful business reason and explained linked prerequisite/next step. Rendered guide path inspected at phone and desktop sizes.",
-         "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md"
+         "reason": "Unchanged opening quoted in dated review. Plain task, value and explained form-check connection; current linked guide body read and unchanged. Actual guide phone/desktop path diagram visible.",
+         "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/booking-path-2026-10-09.md"
         },
         "recipe": {
          "state": "pass",
-         "reason": "Starting page/form/provider scope, required access and approved tests, ordered checks, recorded outputs and objective acceptance conditions are explicit.",
-         "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md"
+         "reason": "Adds observed appointment window/time zone, consistent required choices, assigned host and paired receiver checks; respects approved test scope and records unknown live capabilities.",
+         "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/booking-path-2026-10-09.md"
         },
         "links": {
          "state": "pass",
-         "reason": "All20 linked URLs returned200 with normal browser headers; root read relevant owned definitions, linked task bodies and primary source meanings. No definition is linked to an unrelated task.",
-         "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md"
+         "reason": "Existing owned form and opening guides retain identical bodies; relevant Digital Plumbing, Content Factory and GCT destinations returned200 and their meanings were read. No new provider-capability claim.",
+         "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/booking-path-2026-10-09.md"
         },
         "evidence": {
          "state": "pass",
-         "reason": "Fictional examples labeled; actual receipts, provider capability and outcome proof are required before execution can pass. Clicks, accepted requests, calls and qualified leads remain distinct; no sales uplift inferred.",
-         "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md"
+         "reason": "Fictional booking example explicitly labeled; private original source read without transferring setup reports into accepted execution. No booking, message, purchase or client outcome claimed.",
+         "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/booking-path-2026-10-09.md"
         },
         "handoff": {
          "state": "pass",
-         "reason": "Named page/mail/phone/reporting function receives the checked record and confirms it; missing confirmation remains pending. Working contact path belongs before promotion.",
-         "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md"
+         "reason": "Existing calendar/lead-response owner receives exact availability mismatch and next check. Assignment and receipt need test evidence; no duplicate follow-up or automatic business-owner host assignment.",
+         "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/booking-path-2026-10-09.md"
         }
        }
       }
@@ -13330,54 +13353,54 @@
       "records": []
      },
      "standardVerification": {
-      "instructionSourceSha256": "121a163c9adbf9d7ddb2354804f1fd29f60843703be8a60228741588c3aed739",
+      "instructionSourceSha256": "f03ac6898485a02e3ca14a75fdaee12f0ad2015afa4ced2b943d457f75965ca2",
       "articleKey": "blitzmetrics.com/digital-plumbing",
       "gates": {
        "instructionRevisionReviewed": {
         "id": "instructionRevisionReviewed",
         "label": "Exact instruction revision reviewed",
         "state": "pass",
-        "reason": "Current source bytes match the review recorded 2026-10-05. Review scope and limits: Exact written method only. Full article, real execution, receiver result and unassisted novice setup remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md",
-        "reviewedAt": "2026-10-05",
-        "reviewer": "Codex root with separate GPT-6 Luna written review",
-        "sourceSha256": "121a163c9adbf9d7ddb2354804f1fd29f60843703be8a60228741588c3aed739"
+        "reason": "Current source bytes match the review recorded 2026-10-09. Review scope and limits: One exact written conversion-path revision and its article copy. Live booking, full hub semantic certification, accepted outcome and novice setup remain unknown. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/booking-path-2026-10-09.md",
+        "reviewedAt": "2026-10-09",
+        "reviewer": "Codex root with independent GPT-6 Luna scope and visual review",
+        "sourceSha256": "f03ac6898485a02e3ca14a75fdaee12f0ad2015afa4ced2b943d457f75965ca2"
        },
        "instructionStandards": {
         "id": "instructionStandards",
         "label": "Instruction requirements checked",
         "state": "pass",
         "reason": "All five instruction requirements have explicit passing checks for the current source revision.",
-        "reviewedAt": "2026-10-05",
-        "reviewer": "Codex root with separate GPT-6 Luna written review",
-        "reviewScope": "Exact written method only. Full article, real execution, receiver result and unassisted novice setup remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md",
-        "sourceSha256": "121a163c9adbf9d7ddb2354804f1fd29f60843703be8a60228741588c3aed739",
+        "reviewedAt": "2026-10-09",
+        "reviewer": "Codex root with independent GPT-6 Luna scope and visual review",
+        "reviewScope": "One exact written conversion-path revision and its article copy. Live booking, full hub semantic certification, accepted outcome and novice setup remain unknown. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/booking-path-2026-10-09.md",
+        "sourceSha256": "f03ac6898485a02e3ca14a75fdaee12f0ad2015afa4ced2b943d457f75965ca2",
         "standards": {
          "version": 1,
          "checks": {
           "opening": {
            "state": "pass",
-           "reason": "Actual three-sentence opening quoted in release review: plain task, useful business reason and explained linked prerequisite/next step. Rendered guide path inspected at phone and desktop sizes.",
-           "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md"
+           "reason": "Unchanged opening quoted in dated review. Plain task, value and explained form-check connection; current linked guide body read and unchanged. Actual guide phone/desktop path diagram visible.",
+           "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/booking-path-2026-10-09.md"
           },
           "recipe": {
            "state": "pass",
-           "reason": "Starting page/form/provider scope, required access and approved tests, ordered checks, recorded outputs and objective acceptance conditions are explicit.",
-           "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md"
+           "reason": "Adds observed appointment window/time zone, consistent required choices, assigned host and paired receiver checks; respects approved test scope and records unknown live capabilities.",
+           "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/booking-path-2026-10-09.md"
           },
           "links": {
            "state": "pass",
-           "reason": "All20 linked URLs returned200 with normal browser headers; root read relevant owned definitions, linked task bodies and primary source meanings. No definition is linked to an unrelated task.",
-           "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md"
+           "reason": "Existing owned form and opening guides retain identical bodies; relevant Digital Plumbing, Content Factory and GCT destinations returned200 and their meanings were read. No new provider-capability claim.",
+           "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/booking-path-2026-10-09.md"
           },
           "evidence": {
            "state": "pass",
-           "reason": "Fictional examples labeled; actual receipts, provider capability and outcome proof are required before execution can pass. Clicks, accepted requests, calls and qualified leads remain distinct; no sales uplift inferred.",
-           "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md"
+           "reason": "Fictional booking example explicitly labeled; private original source read without transferring setup reports into accepted execution. No booking, message, purchase or client outcome claimed.",
+           "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/booking-path-2026-10-09.md"
           },
           "handoff": {
            "state": "pass",
-           "reason": "Named page/mail/phone/reporting function receives the checked record and confirms it; missing confirmation remains pending. Working contact path belongs before promotion.",
-           "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md"
+           "reason": "Existing calendar/lead-response owner receives exact availability mismatch and next check. Assignment and receipt need test evidence; no duplicate follow-up or automatic business-owner host assignment.",
+           "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/booking-path-2026-10-09.md"
           }
          }
         }
@@ -42075,7 +42098,7 @@
      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=publish-skill-and-task-page#task-publish-skill-and-task-page",
      "executionHistory": {
       "status": "partial",
-      "recordedRuns": 16,
+      "recordedRuns": 17,
       "completedRuns": 12,
       "failedRuns": 0,
       "partialRuns": 4,
@@ -42083,6 +42106,7 @@
       "lastCompletedAt": "2026-10-06T02:06:05.871154+00:00",
       "executionIds": [
        "authority-guides-repair-20261005-2100",
+       "booking-path-checks-20261009-1259",
        "crossref-release-20260927-162402",
        "entity-linking-repair-20260930-0105",
        "first-use-rcf-20261005-2343",
@@ -42195,6 +42219,12 @@
         "status": "completed",
         "startedAt": "2026-10-05T23:43:01Z",
         "finishedAt": "2026-10-06T02:06:05.871154+00:00"
+       },
+       {
+        "executionId": "booking-path-checks-20261009-1259",
+        "status": "running",
+        "startedAt": "2026-10-09T12:59:27.985957+00:00",
+        "finishedAt": null
        }
       ],
       "acceptanceReviews": [
@@ -42638,9 +42668,10 @@
         "id": "recordedExecution",
         "label": "Recorded real execution",
         "state": "pass",
-        "reason": "16 distinct execution ID(s) name this task; outcomes remain separate.",
+        "reason": "17 distinct execution ID(s) name this task; outcomes remain separate.",
         "executionIds": [
          "authority-guides-repair-20261005-2100",
+         "booking-path-checks-20261009-1259",
          "crossref-release-20260927-162402",
          "entity-linking-repair-20260930-0105",
          "first-use-rcf-20261005-2343",

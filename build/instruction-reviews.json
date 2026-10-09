@@ -949,37 +949,37 @@
       "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
     },
     "create-clear-conversion-path": {
-      "source_sha256": "121a163c9adbf9d7ddb2354804f1fd29f60843703be8a60228741588c3aed739",
-      "reviewed_at": "2026-10-05",
-      "reviewer": "Codex root with separate GPT-6 Luna written review",
-      "scope": "Exact written method only. Full article, real execution, receiver result and unassisted novice setup remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md",
+      "source_sha256": "f03ac6898485a02e3ca14a75fdaee12f0ad2015afa4ced2b943d457f75965ca2",
+      "reviewed_at": "2026-10-09",
+      "reviewer": "Codex root with independent GPT-6 Luna scope and visual review",
+      "scope": "One exact written conversion-path revision and its article copy. Live booking, full hub semantic certification, accepted outcome and novice setup remain unknown. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/booking-path-2026-10-09.md",
       "standards": {
         "version": 1,
         "checks": {
           "opening": {
             "state": "pass",
-            "reason": "Actual three-sentence opening quoted in release review: plain task, useful business reason and explained linked prerequisite/next step. Rendered guide path inspected at phone and desktop sizes.",
-            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md"
+            "reason": "Unchanged opening quoted in dated review. Plain task, value and explained form-check connection; current linked guide body read and unchanged. Actual guide phone/desktop path diagram visible.",
+            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/booking-path-2026-10-09.md"
           },
           "recipe": {
             "state": "pass",
-            "reason": "Starting page/form/provider scope, required access and approved tests, ordered checks, recorded outputs and objective acceptance conditions are explicit.",
-            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md"
+            "reason": "Adds observed appointment window/time zone, consistent required choices, assigned host and paired receiver checks; respects approved test scope and records unknown live capabilities.",
+            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/booking-path-2026-10-09.md"
           },
           "links": {
             "state": "pass",
-            "reason": "All20 linked URLs returned200 with normal browser headers; root read relevant owned definitions, linked task bodies and primary source meanings. No definition is linked to an unrelated task.",
-            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md"
+            "reason": "Existing owned form and opening guides retain identical bodies; relevant Digital Plumbing, Content Factory and GCT destinations returned200 and their meanings were read. No new provider-capability claim.",
+            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/booking-path-2026-10-09.md"
           },
           "evidence": {
             "state": "pass",
-            "reason": "Fictional examples labeled; actual receipts, provider capability and outcome proof are required before execution can pass. Clicks, accepted requests, calls and qualified leads remain distinct; no sales uplift inferred.",
-            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md"
+            "reason": "Fictional booking example explicitly labeled; private original source read without transferring setup reports into accepted execution. No booking, message, purchase or client outcome claimed.",
+            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/booking-path-2026-10-09.md"
           },
           "handoff": {
             "state": "pass",
-            "reason": "Named page/mail/phone/reporting function receives the checked record and confirms it; missing confirmation remains pending. Working contact path belongs before promotion.",
-            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md"
+            "reason": "Existing calendar/lead-response owner receives exact availability mismatch and next check. Assignment and receipt need test evidence; no duplicate follow-up or automatic business-owner host assignment.",
+            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/booking-path-2026-10-09.md"
           }
         }
       }

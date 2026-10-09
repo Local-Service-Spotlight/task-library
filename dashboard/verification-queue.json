@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "ordering": "Setup failures and evidence holds first. Within each priority lane, sort by estimated revenue role, dependencies unblocked, frequency and importance before missing-guide status and gap count. Effort and actual income remain unknown.",
-  "generatedAt": "2026-10-08T15:37:20+00:00",
+  "generatedAt": "2026-10-09T13:09:40+00:00",
   "definition": "Per-task standard gates derived from exact instruction reviews, explicit instruction-requirement checks, contributor status, article mapping/catalog holds, exact-revision article semantic reviews, task-attributed examples and the execution ledger. Unknown proof is never turned into a pass.",
   "stats": {
     "tasks": 276,
@@ -2611,54 +2611,54 @@
       "historicalEvidenceIds": [],
       "nextAction": "The contributor status is needs-work; finish and review the guide.",
       "standardVerification": {
-        "instructionSourceSha256": "121a163c9adbf9d7ddb2354804f1fd29f60843703be8a60228741588c3aed739",
+        "instructionSourceSha256": "f03ac6898485a02e3ca14a75fdaee12f0ad2015afa4ced2b943d457f75965ca2",
         "articleKey": "blitzmetrics.com/digital-plumbing",
         "gates": {
           "instructionRevisionReviewed": {
             "id": "instructionRevisionReviewed",
             "label": "Exact instruction revision reviewed",
             "state": "pass",
-            "reason": "Current source bytes match the review recorded 2026-10-05. Review scope and limits: Exact written method only. Full article, real execution, receiver result and unassisted novice setup remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md",
-            "reviewedAt": "2026-10-05",
-            "reviewer": "Codex root with separate GPT-6 Luna written review",
-            "sourceSha256": "121a163c9adbf9d7ddb2354804f1fd29f60843703be8a60228741588c3aed739"
+            "reason": "Current source bytes match the review recorded 2026-10-09. Review scope and limits: One exact written conversion-path revision and its article copy. Live booking, full hub semantic certification, accepted outcome and novice setup remain unknown. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/booking-path-2026-10-09.md",
+            "reviewedAt": "2026-10-09",
+            "reviewer": "Codex root with independent GPT-6 Luna scope and visual review",
+            "sourceSha256": "f03ac6898485a02e3ca14a75fdaee12f0ad2015afa4ced2b943d457f75965ca2"
           },
           "instructionStandards": {
             "id": "instructionStandards",
             "label": "Instruction requirements checked",
             "state": "pass",
             "reason": "All five instruction requirements have explicit passing checks for the current source revision.",
-            "reviewedAt": "2026-10-05",
-            "reviewer": "Codex root with separate GPT-6 Luna written review",
-            "reviewScope": "Exact written method only. Full article, real execution, receiver result and unassisted novice setup remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md",
-            "sourceSha256": "121a163c9adbf9d7ddb2354804f1fd29f60843703be8a60228741588c3aed739",
+            "reviewedAt": "2026-10-09",
+            "reviewer": "Codex root with independent GPT-6 Luna scope and visual review",
+            "reviewScope": "One exact written conversion-path revision and its article copy. Live booking, full hub semantic certification, accepted outcome and novice setup remain unknown. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/booking-path-2026-10-09.md",
+            "sourceSha256": "f03ac6898485a02e3ca14a75fdaee12f0ad2015afa4ced2b943d457f75965ca2",
             "standards": {
               "version": 1,
               "checks": {
                 "opening": {
                   "state": "pass",
-                  "reason": "Actual three-sentence opening quoted in release review: plain task, useful business reason and explained linked prerequisite/next step. Rendered guide path inspected at phone and desktop sizes.",
-                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md"
+                  "reason": "Unchanged opening quoted in dated review. Plain task, value and explained form-check connection; current linked guide body read and unchanged. Actual guide phone/desktop path diagram visible.",
+                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/booking-path-2026-10-09.md"
                 },
                 "recipe": {
                   "state": "pass",
-                  "reason": "Starting page/form/provider scope, required access and approved tests, ordered checks, recorded outputs and objective acceptance conditions are explicit.",
-                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md"
+                  "reason": "Adds observed appointment window/time zone, consistent required choices, assigned host and paired receiver checks; respects approved test scope and records unknown live capabilities.",
+                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/booking-path-2026-10-09.md"
                 },
                 "links": {
                   "state": "pass",
-                  "reason": "All20 linked URLs returned200 with normal browser headers; root read relevant owned definitions, linked task bodies and primary source meanings. No definition is linked to an unrelated task.",
-                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md"
+                  "reason": "Existing owned form and opening guides retain identical bodies; relevant Digital Plumbing, Content Factory and GCT destinations returned200 and their meanings were read. No new provider-capability claim.",
+                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/booking-path-2026-10-09.md"
                 },
                 "evidence": {
                   "state": "pass",
-                  "reason": "Fictional examples labeled; actual receipts, provider capability and outcome proof are required before execution can pass. Clicks, accepted requests, calls and qualified leads remain distinct; no sales uplift inferred.",
-                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md"
+                  "reason": "Fictional booking example explicitly labeled; private original source read without transferring setup reports into accepted execution. No booking, message, purchase or client outcome claimed.",
+                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/booking-path-2026-10-09.md"
                 },
                 "handoff": {
                   "state": "pass",
-                  "reason": "Named page/mail/phone/reporting function receives the checked record and confirms it; missing confirmation remains pending. Working contact path belongs before promotion.",
-                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md"
+                  "reason": "Existing calendar/lead-response owner receives exact availability mismatch and next check. Assignment and receipt need test evidence; no duplicate follow-up or automatic business-owner host assignment.",
+                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/booking-path-2026-10-09.md"
                 }
               }
             }
@@ -33155,9 +33155,10 @@
             "id": "recordedExecution",
             "label": "Recorded real execution",
             "state": "pass",
-            "reason": "16 distinct execution ID(s) name this task; outcomes remain separate.",
+            "reason": "17 distinct execution ID(s) name this task; outcomes remain separate.",
             "executionIds": [
               "authority-guides-repair-20261005-2100",
+              "booking-path-checks-20261009-1259",
               "crossref-release-20260927-162402",
               "entity-linking-repair-20260930-0105",
               "first-use-rcf-20261005-2343",

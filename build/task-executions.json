@@ -1536,6 +1536,37 @@
         "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#enhancement-guide-repair-20261008-1446"
       },
       "finishedAt": "2026-10-08T15:37:19.306219+00:00"
+    },
+    {
+      "executionId": "booking-path-checks-20261009-1259",
+      "taskSlugs": [
+        "publish-skill-and-task-page"
+      ],
+      "recipeRevisions": {
+        "publish-skill-and-task-page": {
+          "articleUrl": "https://blitzmetrics.com/skill-publishing-standard/",
+          "sourceSha256": "660d6f1abd8678c851c0a08059f27982e8e29b46775ea217a2ae1d6e3ba55537"
+        }
+      },
+      "startedAt": "2026-10-09T12:59:27.985957+00:00",
+      "recordedAt": "2026-10-09T13:03:51.007240+00:00",
+      "updatedAt": "2026-10-09T13:09:05.811646+00:00",
+      "status": "running",
+      "result": "Published revised booking-path checks in owned documentation; final Task Library deployment and public ZIP verification pending. One maintenance run, no live booking or client execution.",
+      "metaArticle": {
+        "status": "published",
+        "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#booking-path-checks-20261009-1259"
+      },
+      "evidence": [
+        {
+          "visibility": "public",
+          "url": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/booking-path-2026-10-09.md"
+        },
+        {
+          "visibility": "private",
+          "sha256": "63c05a6acea1f76057e4265cc50906cb5352a2383e7ba46f1abf3fbd9a706ed1"
+        }
+      ]
     }
   ],
   "historicalEvidence": [
