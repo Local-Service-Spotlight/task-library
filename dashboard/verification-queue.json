@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "ordering": "Setup failures and evidence holds first. Within each priority lane, sort by estimated revenue role, dependencies unblocked, frequency and importance before missing-guide status and gap count. Effort and actual income remain unknown.",
-  "generatedAt": "2026-10-09T13:08:52+00:00",
+  "generatedAt": "2026-10-09T13:09:40+00:00",
   "definition": "Per-task standard gates derived from exact instruction reviews, explicit instruction-requirement checks, contributor status, article mapping/catalog holds, exact-revision article semantic reviews, task-attributed examples and the execution ledger. Unknown proof is never turned into a pass.",
   "stats": {
     "tasks": 276,
@@ -12,14 +12,14 @@
     "tasksWithUnknownGates": 276,
     "gateCounts": {
       "instructionRevisionReviewed": {
-        "pass": 274,
-        "unmet": 2,
+        "pass": 275,
+        "unmet": 1,
         "hold": 0,
         "unknown": 0
       },
       "instructionStandards": {
-        "pass": 19,
-        "unmet": 1,
+        "pass": 20,
+        "unmet": 0,
         "hold": 0,
         "unknown": 256
       },
@@ -2609,7 +2609,7 @@
       "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=create-clear-conversion-path#task-create-clear-conversion-path",
       "historicalDeliveryCount": 0,
       "historicalEvidenceIds": [],
-      "nextAction": "The recorded instruction review expired because its source hash no longer matches the current bytes.",
+      "nextAction": "The contributor status is needs-work; finish and review the guide.",
       "standardVerification": {
         "instructionSourceSha256": "f03ac6898485a02e3ca14a75fdaee12f0ad2015afa4ced2b943d457f75965ca2",
         "articleKey": "blitzmetrics.com/digital-plumbing",
@@ -2617,16 +2617,51 @@
           "instructionRevisionReviewed": {
             "id": "instructionRevisionReviewed",
             "label": "Exact instruction revision reviewed",
-            "state": "unmet",
-            "reason": "The recorded instruction review expired because its source hash no longer matches the current bytes.",
+            "state": "pass",
+            "reason": "Current source bytes match the review recorded 2026-10-09. Review scope and limits: One exact written conversion-path revision and its article copy. Live booking, full hub semantic certification, accepted outcome and novice setup remain unknown. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/booking-path-2026-10-09.md",
+            "reviewedAt": "2026-10-09",
+            "reviewer": "Codex root with independent GPT-6 Luna scope and visual review",
             "sourceSha256": "f03ac6898485a02e3ca14a75fdaee12f0ad2015afa4ced2b943d457f75965ca2"
           },
           "instructionStandards": {
             "id": "instructionStandards",
             "label": "Instruction requirements checked",
-            "state": "unmet",
-            "reason": "The recorded instruction-requirements checklist expired because its source hash no longer matches the current bytes.",
-            "sourceSha256": "f03ac6898485a02e3ca14a75fdaee12f0ad2015afa4ced2b943d457f75965ca2"
+            "state": "pass",
+            "reason": "All five instruction requirements have explicit passing checks for the current source revision.",
+            "reviewedAt": "2026-10-09",
+            "reviewer": "Codex root with independent GPT-6 Luna scope and visual review",
+            "reviewScope": "One exact written conversion-path revision and its article copy. Live booking, full hub semantic certification, accepted outcome and novice setup remain unknown. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/booking-path-2026-10-09.md",
+            "sourceSha256": "f03ac6898485a02e3ca14a75fdaee12f0ad2015afa4ced2b943d457f75965ca2",
+            "standards": {
+              "version": 1,
+              "checks": {
+                "opening": {
+                  "state": "pass",
+                  "reason": "Unchanged opening quoted in dated review. Plain task, value and explained form-check connection; current linked guide body read and unchanged. Actual guide phone/desktop path diagram visible.",
+                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/booking-path-2026-10-09.md"
+                },
+                "recipe": {
+                  "state": "pass",
+                  "reason": "Adds observed appointment window/time zone, consistent required choices, assigned host and paired receiver checks; respects approved test scope and records unknown live capabilities.",
+                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/booking-path-2026-10-09.md"
+                },
+                "links": {
+                  "state": "pass",
+                  "reason": "Existing owned form and opening guides retain identical bodies; relevant Digital Plumbing, Content Factory and GCT destinations returned200 and their meanings were read. No new provider-capability claim.",
+                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/booking-path-2026-10-09.md"
+                },
+                "evidence": {
+                  "state": "pass",
+                  "reason": "Fictional booking example explicitly labeled; private original source read without transferring setup reports into accepted execution. No booking, message, purchase or client outcome claimed.",
+                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/booking-path-2026-10-09.md"
+                },
+                "handoff": {
+                  "state": "pass",
+                  "reason": "Existing calendar/lead-response owner receives exact availability mismatch and next check. Assignment and receipt need test evidence; no duplicate follow-up or automatic business-owner host assignment.",
+                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/booking-path-2026-10-09.md"
+                }
+              }
+            }
           },
           "contributorComplete": {
             "id": "contributorComplete",
@@ -2777,8 +2812,6 @@
           }
         },
         "unmetStandardGates": [
-          "instructionRevisionReviewed",
-          "instructionStandards",
           "contributorComplete",
           "articleCatalogGate"
         ],
@@ -2794,7 +2827,7 @@
         "queuePosition": 23,
         "priority": "P1",
         "priorityReason": "Known standard gap",
-        "nextAction": "The recorded instruction review expired because its source hash no longer matches the current bytes."
+        "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {

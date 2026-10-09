@@ -36,6 +36,6 @@ The current form and opening-review task bodies match the earlier checked bodies
 
 ## Release and next use
 
-The source publication, anonymous readbacks and affected archive checks belong to the same maintenance attempt. One maintenance run does not count as executing this subject guide. All prior run history remains intact. The next already-authorized real job must capture its exact recipe, permitted test, actual result and receiving acceptance. Novice-human setup and the separate outer-frame follow-up remain open.
+The remaining release scope includes source publication, anonymous readbacks and affected archive checks for this same maintenance attempt. One maintenance run does not count as executing this subject guide. All prior run history remains intact. The next already-authorized real job must capture its exact recipe, permitted test, actual result and receiving acceptance. Novice-human setup and the separate outer-frame follow-up remain open.
 
 See the [maintenance account](https://blitzmetrics.com/making-task-guides-easier-to-use/#booking-path-checks-20261009-1259). Final release checks are appended here after they occur; this written review alone does not establish deployment.

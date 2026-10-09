@@ -1550,14 +1550,23 @@
       },
       "startedAt": "2026-10-09T12:59:27.985957+00:00",
       "recordedAt": "2026-10-09T13:03:51.007240+00:00",
-      "updatedAt": "2026-10-09T13:03:51.007240+00:00",
+      "updatedAt": "2026-10-09T13:09:05.811646+00:00",
       "status": "running",
-      "result": "One conversion-path guide repair adds promise-to-availability, answer consistency and receiving assignment checks. Final publication and acceptance pending; no live booking or client execution.",
+      "result": "Published revised booking-path checks in owned documentation; final Task Library deployment and public ZIP verification pending. One maintenance run, no live booking or client execution.",
       "metaArticle": {
-        "status": "draft",
-        "draftSha256": "1c0f637e262f1f283e966c171d5ceaf861e6708b42d392f4b8d2a9e51fc5a04a"
+        "status": "published",
+        "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#booking-path-checks-20261009-1259"
       },
-      "evidence": []
+      "evidence": [
+        {
+          "visibility": "public",
+          "url": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/booking-path-2026-10-09.md"
+        },
+        {
+          "visibility": "private",
+          "sha256": "63c05a6acea1f76057e4265cc50906cb5352a2383e7ba46f1abf3fbd9a706ed1"
+        }
+      ]
     }
   ],
   "historicalEvidence": [
