@@ -1536,6 +1536,28 @@
         "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#enhancement-guide-repair-20261008-1446"
       },
       "finishedAt": "2026-10-08T15:37:19.306219+00:00"
+    },
+    {
+      "executionId": "booking-path-checks-20261009-1259",
+      "taskSlugs": [
+        "publish-skill-and-task-page"
+      ],
+      "recipeRevisions": {
+        "publish-skill-and-task-page": {
+          "articleUrl": "https://blitzmetrics.com/skill-publishing-standard/",
+          "sourceSha256": "660d6f1abd8678c851c0a08059f27982e8e29b46775ea217a2ae1d6e3ba55537"
+        }
+      },
+      "startedAt": "2026-10-09T12:59:27.985957+00:00",
+      "recordedAt": "2026-10-09T13:03:51.007240+00:00",
+      "updatedAt": "2026-10-09T13:03:51.007240+00:00",
+      "status": "running",
+      "result": "One conversion-path guide repair adds promise-to-availability, answer consistency and receiving assignment checks. Final publication and acceptance pending; no live booking or client execution.",
+      "metaArticle": {
+        "status": "draft",
+        "draftSha256": "1c0f637e262f1f283e966c171d5ceaf861e6708b42d392f4b8d2a9e51fc5a04a"
+      },
+      "evidence": []
     }
   ],
   "historicalEvidence": [

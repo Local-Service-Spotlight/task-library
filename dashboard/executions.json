@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "asOf": "2026-10-08T15:37:20.944437+00:00",
+  "asOf": "2026-10-09T13:08:52.690979+00:00",
   "countDefinition": "Distinct recorded execution IDs, separate from meta-article URLs. History is partial; absent history is unknown, not zero. The last-30-day count is a documented lower bound, not total task frequency.",
-  "recordedExecutions": 25,
+  "recordedExecutions": 26,
   "completedExecutions": 13,
   "partialExecutions": 12,
   "executions": [
@@ -888,6 +888,26 @@
       "metaArticle": {
         "status": "published",
         "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#enhancement-guide-repair-20261008-1446"
+      }
+    },
+    {
+      "executionId": "booking-path-checks-20261009-1259",
+      "taskSlugs": [
+        "publish-skill-and-task-page"
+      ],
+      "startedAt": "2026-10-09T12:59:27.985957+00:00",
+      "status": "running",
+      "result": "One conversion-path guide repair adds promise-to-availability, answer consistency and receiving assignment checks. Final publication and acceptance pending; no live booking or client execution.",
+      "recipeRevisions": {
+        "publish-skill-and-task-page": {
+          "articleUrl": "https://blitzmetrics.com/skill-publishing-standard/",
+          "sourceSha256": "660d6f1abd8678c851c0a08059f27982e8e29b46775ea217a2ae1d6e3ba55537"
+        }
+      },
+      "evidenceUrls": [],
+      "privateEvidenceRecorded": false,
+      "metaArticle": {
+        "status": "draft"
       }
     }
   ],
