@@ -1550,9 +1550,9 @@
       },
       "startedAt": "2026-10-09T12:59:27.985957+00:00",
       "recordedAt": "2026-10-09T13:03:51.007240+00:00",
-      "updatedAt": "2026-10-09T13:09:05.811646+00:00",
-      "status": "running",
-      "result": "Published revised booking-path checks in owned documentation; final Task Library deployment and public ZIP verification pending. One maintenance run, no live booking or client execution.",
+      "updatedAt": "2026-10-09T13:15:59.120090+00:00",
+      "status": "completed",
+      "result": "Published booking-promise, answer-consistency and receiving-owner checks in one maintained guide and its owned article copy. Exact source, six runtime projections, seven archives and phone/desktop views passed; independent scoped publication review accepted. One documentation maintenance run; no booking, sale, client execution or novice setup proof.",
       "metaArticle": {
         "status": "published",
         "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#booking-path-checks-20261009-1259"
@@ -1565,8 +1565,17 @@
         {
           "visibility": "private",
           "sha256": "63c05a6acea1f76057e4265cc50906cb5352a2383e7ba46f1abf3fbd9a706ed1"
+        },
+        {
+          "visibility": "public",
+          "url": "https://github.com/Local-Service-Spotlight/task-library/pull/79"
+        },
+        {
+          "visibility": "private",
+          "sha256": "32c8e9f06b78dc1eaf22647e5b50c4d678d623d6324d2d203f199c01b4005e67"
         }
-      ]
+      ],
+      "finishedAt": "2026-10-09T13:15:59.120090+00:00"
     }
   ],
   "historicalEvidence": [
