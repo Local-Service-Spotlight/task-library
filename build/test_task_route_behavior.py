@@ -66,8 +66,10 @@ const toast=s=>{message=s},setTimeout=fn=>fn(),reduced=true,normalizeArticleUrl=
         self.assertEqual(got,{'task':'','query':'','visible':['place-links','check-links']})
 
     def test_embedded_reveal_reports_position_only_for_parent_frame(self):
-        got=self.js("const messages=[];const window={self:1,top:2,scrollY:40,parent:{postMessage:(m,o)=>messages.push([m,o])}};"+functions('revealEmbeddedElement')+"revealEmbeddedElement({getBoundingClientRect:()=>({top:80})});window.top=1;revealEmbeddedElement({getBoundingClientRect:()=>({top:9})});process.stdout.write(JSON.stringify(messages));")
-        self.assertEqual(got,[[{'btlRevealY':120},'*']])
+        # Parent adds the iframe's viewport position. Adding child scroll again
+        # reproduces the off-screen reveal when a delayed resize retains scroll.
+        got=self.js("const messages=[];const window={self:1,top:2,scrollY:40,parent:{postMessage:(m,o)=>messages.push([m,o])}};"+functions('revealEmbeddedElement')+"revealEmbeddedElement({getBoundingClientRect:()=>({top:80})});window.scrollY=2200;revealEmbeddedElement({getBoundingClientRect:()=>({top:80})});window.top=1;revealEmbeddedElement({getBoundingClientRect:()=>({top:9})});process.stdout.write(JSON.stringify(messages));")
+        self.assertEqual(got,[[{'btlRevealY':80},'*'],[{'btlRevealY':80},'*']])
 
     def render(self, md):
         helpers="const ESC={'&':'&amp;','<':'&lt;','>':'&gt;','\"':'&quot;',\"'\":'&#39;'};\n"+functions('esc','inline','splitRow','liHtml','buildList','isFactoryMarker','renderMD')

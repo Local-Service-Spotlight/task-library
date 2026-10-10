@@ -708,7 +708,7 @@ function firstRunHTML(t){
 
 function revealEmbeddedElement(node){
   if (window.self === window.top || !node) return;
-  window.parent.postMessage({btlRevealY: Math.max(0, node.getBoundingClientRect().top + window.scrollY)}, '*');
+  window.parent.postMessage({btlRevealY: Math.max(0, node.getBoundingClientRect().top)}, '*');
 }
 
 function openModal(t){
@@ -740,6 +740,8 @@ function openModal(t){
     modal.style.alignItems = 'flex-start';
     const panel = modal.querySelector('.btl-m-panel');
     if (panel){
+      /* The parent needs the final position, not a moving entrance transform. */
+      panel.style.animation = 'none';
       panel.style.marginTop = Math.max(anchorY - 120, 8) + 'px';
       panel.style.maxHeight = cap + 'px';
     }
@@ -747,6 +749,7 @@ function openModal(t){
     document.body.style.overflow = 'hidden';
   }
   modal.hidden = false;
+  if (embedded) window.scrollTo(0, 0);
   mBody.scrollTop = 0;
   mClose.focus({preventScroll:true});
   revealEmbeddedElement(mPanel);
@@ -756,12 +759,20 @@ function closeModal(){
   modal.hidden = true;
   modal.style.position = ''; modal.style.height = ''; modal.style.alignItems = '';
   const panel = modal.querySelector('.btl-m-panel');
-  if (panel){ panel.style.marginTop = ''; panel.style.maxHeight = ''; }
+  if (panel){ panel.style.marginTop = ''; panel.style.maxHeight = ''; panel.style.animation = ''; }
   modalTask = null;
   document.body.style.overflow = prevOverflow;
+  if (window.self !== window.top) window.scrollTo(0, 0);
   if (lastFocus && lastFocus.focus) lastFocus.focus({preventScroll:true});
   revealEmbeddedElement(lastFocus);
 }
+/* Frame height can arrive after a fast click. Recompute in viewport coordinates
+   after that resize, when the browser has clamped the frame scroll position. */
+window.addEventListener('resize', function(){
+  if (window.self === window.top || modal.hidden) return;
+  requestAnimationFrame(function(){ if (!modal.hidden) revealEmbeddedElement(mPanel); });
+});
+
 function trapFocus(e){
   const items = modal.querySelectorAll('button, a[href], summary, textarea, input, select, [tabindex]:not([tabindex="-1"])');
   const list = Array.prototype.filter.call(items, function(n){ return n.offsetParent !== null || n === mBody; });
