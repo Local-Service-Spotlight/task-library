@@ -1715,10 +1715,10 @@
  ],
  "executionHistory": {
   "schemaVersion": 1,
-  "asOf": "2026-10-10T13:16:21.796712+00:00",
+  "asOf": "2026-10-10T13:24:35.017055+00:00",
   "countDefinition": "Distinct recorded execution IDs, separate from meta-article URLs. History is partial; absent history is unknown, not zero. The last-30-day count is a documented lower bound, not total task frequency.",
   "recordedExecutions": 27,
-  "completedExecutions": 14,
+  "completedExecutions": 15,
   "partialExecutions": 12,
   "executions": [
    {
@@ -2636,18 +2636,23 @@
      "publish-skill-and-task-page"
     ],
     "startedAt": "2026-10-10T13:07:49.214927+00:00",
-    "status": "running",
-    "result": "Repair shared Task Library guide visibility after reproduced nested-frame scroll error. This is one publishing maintenance attempt; no subject-guide execution or novice-human setup claim.",
+    "status": "completed",
+    "result": "Published and independently accepted a shared embedded guide visibility repair. Exact public app and six projections, thirty browser gates, seven archives and the public maintenance lesson passed. One publishing maintenance execution; no subject-task execution, novice-human setup or gate promotion.",
     "recipeRevisions": {
      "publish-skill-and-task-page": {
       "articleUrl": "https://blitzmetrics.com/skill-publishing-standard/",
       "sourceSha256": "660d6f1abd8678c851c0a08059f27982e8e29b46775ea217a2ae1d6e3ba55537"
      }
     },
-    "evidenceUrls": [],
+    "finishedAt": "2026-10-10T13:24:23.020931+00:00",
+    "evidenceUrls": [
+     "https://github.com/Local-Service-Spotlight/task-library/pull/81",
+     "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/embedded-guide-visibility-2026-10-10.md"
+    ],
     "privateEvidenceRecorded": true,
     "metaArticle": {
-     "status": "draft"
+     "status": "published",
+     "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#embedded-guide-repair-20261010"
     }
    }
   ],
@@ -42121,11 +42126,11 @@
      "executionHistory": {
       "status": "partial",
       "recordedRuns": 18,
-      "completedRuns": 13,
+      "completedRuns": 14,
       "failedRuns": 0,
       "partialRuns": 4,
-      "completedLast30Days": 13,
-      "lastCompletedAt": "2026-10-09T13:15:59.120090+00:00",
+      "completedLast30Days": 14,
+      "lastCompletedAt": "2026-10-10T13:24:23.020931+00:00",
       "executionIds": [
        "authority-guides-repair-20261005-2100",
        "booking-path-checks-20261009-1259",
@@ -42251,9 +42256,9 @@
        },
        {
         "executionId": "embedded-guide-repair-20261010",
-        "status": "running",
+        "status": "completed",
         "startedAt": "2026-10-10T13:07:49.214927+00:00",
-        "finishedAt": null
+        "finishedAt": "2026-10-10T13:24:23.020931+00:00"
        }
       ],
       "acceptanceReviews": [

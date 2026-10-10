@@ -22,10 +22,20 @@ The fix sends the viewport-relative position, resets residual inner-frame scroll
 
 The controlled failing case must pass with the candidate. Phone and desktop tests cover ordinary and delayed frame heights, two openings, return to the same row after closing, and reading within the guide without moving the outside page. Both Copy guide and Copy first-run prompt must be inside the actual viewport. Actual images are inspected with media muted and volume zero. Direct, unembedded viewing is checked separately.
 
-Final source, browser, public release and archive results are appended only after they are observed. Existing task verification gates and past run history remain separate and unchanged.
+The final source, browser, public release and archive results below were observed after publication. Existing task verification gates and past run history remain separate and unchanged.
 
 ## Next use
 
 The operator of the next already-authorized task still needs to save its inputs, exact recipe, checked output and receiving handoff. This repair removes a navigation obstacle; it does not supply that person's setup or task acceptance evidence.
 
-Candidate evidence: five phone/desktop timing cases, each opened twice, passed viewport, inner-body scrolling and close-to-row checks. The delayed-height fixture changes only the existing report delay from 150 to 800 milliseconds; it is a controlled test, not an ordinary production session. The repeatable browser check is `scripts/check_embedded_reveal.cjs`; run with Playwright available and `candidate` or `public`. Public deployment and separate direct-view acceptance remain pending.
+Candidate evidence: five phone/desktop timing cases, each opened twice, passed viewport, inner-body scrolling and close-to-row checks. The delayed-height fixture changes only the existing report delay from 150 to 800 milliseconds; it is a controlled test, not an ordinary production session. The repeatable browser check is `scripts/check_embedded_reveal.cjs`; run with Playwright available and `candidate` or `public`. The release and direct-view acceptance results are recorded below.
+
+## Observed public release
+
+Source PR81 merged as `8cea393817d411734cbc485a24b30e92a19ccea0`; deployment `38055302328` succeeded. Anonymous `app.js` exactly matches reviewed SHA-256 `4cc78165b5bcab5d565928923b6d1fc8691cb447777509495f78e08cbc66c8ce`. All six runtime projections agree with committed sources, excluding only generated build timestamps. The committed files passed 176 tests. Seven public archives passed; guide and setup payloads are unchanged, with only dated snapshot metadata regenerated.
+
+Ordinary public phone and desktop tests and the controlled slow-height cases passed all 30 open/read/close gates. A separate reviewer also tested delayed close/reopen and standalone phone/desktop views. Media stayed muted or blocked. This checks visibility and navigation, not clipboard transfer, account access, human setup or task execution.
+
+The unchanged WordPress outer source and its anonymous text, media and inline scripts match. The saved maintenance section has SHA-256 `079a562432cbb4eb9259ce9bc405f3c63e6b89bc05aef59c2ce197f9c255027d` for its full article source; ordinary anonymous content matches, and the section's phone/desktop visual fits with no horizontal overflow. Independent review accepted this narrow observed public release. Twenty guides pass written standards; zero tasks are fully verified.
+
+The actual public lesson opens: “We fixed a scroll error that could hide an opened guide. Now its first-step buttons stay in view when the page grows. This helps you start one job in the Task Library, where you choose a guide and check the work.” Its maintained Task Library link was checked through the actual outer page. The body explains the cause, repair, checked states and limits, delivering that specific promise.

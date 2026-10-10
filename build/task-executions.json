@@ -1590,19 +1590,32 @@
       },
       "startedAt": "2026-10-10T13:07:49.214927+00:00",
       "recordedAt": "2026-10-10T13:09:07.189859+00:00",
-      "updatedAt": "2026-10-10T13:09:07.189859+00:00",
-      "status": "running",
-      "result": "Repair shared Task Library guide visibility after reproduced nested-frame scroll error. This is one publishing maintenance attempt; no subject-guide execution or novice-human setup claim.",
+      "updatedAt": "2026-10-10T13:24:23.020931+00:00",
+      "status": "completed",
+      "result": "Published and independently accepted a shared embedded guide visibility repair. Exact public app and six projections, thirty browser gates, seven archives and the public maintenance lesson passed. One publishing maintenance execution; no subject-task execution, novice-human setup or gate promotion.",
       "metaArticle": {
-        "status": "draft",
-        "draftSha256": "6a51ff4307978f9959fbfe83fc1dd817b1c3b52510ede2a0bea9960fccbd3bf4"
+        "status": "published",
+        "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#embedded-guide-repair-20261010"
       },
       "evidence": [
         {
           "visibility": "private",
           "sha256": "42cae34de8a2a2721d1c980e6cd4066fda73e5ae2e68ece2c0898c82ecc7549f"
+        },
+        {
+          "visibility": "public",
+          "url": "https://github.com/Local-Service-Spotlight/task-library/pull/81"
+        },
+        {
+          "visibility": "public",
+          "url": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/embedded-guide-visibility-2026-10-10.md"
+        },
+        {
+          "visibility": "private",
+          "sha256": "82d960827f9333c70bfbe884c67f6a0a1554924a6a92da120bad69dea6861e99"
         }
-      ]
+      ],
+      "finishedAt": "2026-10-10T13:24:23.020931+00:00"
     }
   ],
   "historicalEvidence": [
