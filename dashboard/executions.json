@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "asOf": "2026-10-11T13:18:05.169762+00:00",
+  "asOf": "2026-10-11T13:27:10.663720+00:00",
   "countDefinition": "Distinct recorded execution IDs, separate from meta-article URLs. History is partial; absent history is unknown, not zero. The last-30-day count is a documented lower bound, not total task frequency.",
   "recordedExecutions": 28,
-  "completedExecutions": 15,
+  "completedExecutions": 16,
   "partialExecutions": 12,
   "executions": [
     {
@@ -946,15 +946,19 @@
         "publish-skill-and-task-page"
       ],
       "startedAt": "2026-10-11T13:13:36.970278+00:00",
-      "status": "running",
-      "result": "Revised weekly MAA recipe and matching article rules passed independent scope and preview checks. Exact saved article sources pass; anonymous cache refresh, source release and archive checks remain pending.",
+      "status": "completed",
+      "result": "Published and independently accepted one weekly reporting recipe repair and selected matching article instructions. Exact public source, six dashboard projections, seven archives,176tests and phone/desktop checks pass.21written passes,0fully verified. No client report, new historical import, setup or task acceptance promotion.",
       "recipeRevisions": {
         "publish-skill-and-task-page": {
           "articleUrl": "https://blitzmetrics.com/skill-publishing-standard/",
           "sourceSha256": "660d6f1abd8678c851c0a08059f27982e8e29b46775ea217a2ae1d6e3ba55537"
         }
       },
-      "evidenceUrls": [],
+      "finishedAt": "2026-10-11T13:27:07.121253+00:00",
+      "evidenceUrls": [
+        "https://github.com/Local-Service-Spotlight/task-library/pull/83",
+        "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/weekly-maa-clarity-2026-10-11.md"
+      ],
       "privateEvidenceRecorded": true,
       "metaArticle": {
         "status": "published",
