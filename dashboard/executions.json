@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "asOf": "2026-10-11T13:27:10.663720+00:00",
+  "asOf": "2026-10-11T16:12:50.170259+00:00",
   "countDefinition": "Distinct recorded execution IDs, separate from meta-article URLs. History is partial; absent history is unknown, not zero. The last-30-day count is a documented lower bound, not total task frequency.",
   "recordedExecutions": 28,
   "completedExecutions": 16,
@@ -967,8 +967,8 @@
     }
   ],
   "historicalDeliveryEvidence": {
-    "count": 4,
-    "candidateCount": 4,
+    "count": 5,
+    "candidateCount": 5,
     "records": [
       {
         "version": 1,
@@ -1158,6 +1158,52 @@
         "evidenceUrls": [
           "https://localservicespotlight.com/bryce-clark-digital-marketing-freedom/",
           "https://localservicespotlight.com/ai-builder-program/#bryce-learning-example"
+        ],
+        "privateEvidenceRecorded": true
+      },
+      {
+        "version": 1,
+        "evidenceId": "historical-676fc94d0a3360b42c6f30a0",
+        "taskSlugs": [
+          "step-12-post-article-on-wordpress"
+        ],
+        "occurrence": {
+          "start": {
+            "precision": "unknown",
+            "value": null
+          },
+          "end": {
+            "precision": "unknown",
+            "value": null
+          }
+        },
+        "recipeRevision": {
+          "state": "unknown",
+          "canonicalURL": null
+        },
+        "observedAt": "2026-10-11T16:10:40.174635+00:00",
+        "outcome": "One marketing-agent starter article was published with a three-page PDF and responsive diagrams. Checked public output supports the WordPress publishing task. This historical import is not a new execution, proof of use of the current recipe, or evidence that a reader set up an agent.",
+        "review": {
+          "identity": {
+            "state": "pass",
+            "notes": "One original WordPress publication, post 192300. Its PDF and two responsive diagrams are outputs of the same source job. Original requester authorization and source delivery were checked."
+          },
+          "output": {
+            "state": "pass",
+            "notes": "An independent reviewer opened the live article and PDF. Fresh anonymous checks found all approved article text and links; PDF and both diagrams match their reviewed source bytes exactly."
+          },
+          "acceptance": {
+            "state": "unknown",
+            "notes": "Independent content and delivery checks support the published output. Post-publication requester or host editorial acceptance, indexing, reader use and business results are not established."
+          },
+          "handoff": {
+            "state": "pass",
+            "notes": "Scoped to delivery of the public article and PDF links in the original requester conversation. The live article also links the PDF. Receiving acknowledgment, attendee use and any later promotion remain unknown."
+          }
+        },
+        "evidenceUrls": [
+          "https://digimarcon.com/ai-marketing-agent-starter-plan/",
+          "https://digimarcon.com/wp-content/uploads/2026/10/marketing-agents-starter-guide-digimarcon.pdf"
         ],
         "privateEvidenceRecorded": true
       }

@@ -1979,6 +1979,75 @@
           "notes": "The internal distribution request and receiving worker are recorded. Fresh original-thread readback has no reply. Receiver acceptance and public distribution remain open with the existing owner and follow-up clock."
         }
       }
+    },
+    {
+      "version": 1,
+      "evidenceId": "historical-676fc94d0a3360b42c6f30a0",
+      "sourceIdentitySha256": "676fc94d0a3360b42c6f30a022992f4f50d7588d5c6000c77a74f054da40f905",
+      "taskSlugs": [
+        "step-12-post-article-on-wordpress"
+      ],
+      "occurrence": {
+        "start": {
+          "precision": "unknown",
+          "value": null
+        },
+        "end": {
+          "precision": "unknown",
+          "value": null
+        }
+      },
+      "recipeRevision": {
+        "state": "unknown",
+        "canonicalURL": null,
+        "sourceSha256": null
+      },
+      "observedAt": "2026-10-11T16:10:40.174635+00:00",
+      "recordedAt": "2026-10-11T16:11:59.466749+00:00",
+      "updatedAt": "2026-10-11T16:11:59.466749+00:00",
+      "outcome": "One marketing-agent starter article was published with a three-page PDF and responsive diagrams. Checked public output supports the WordPress publishing task. This historical import is not a new execution, proof of use of the current recipe, or evidence that a reader set up an agent.",
+      "evidence": [
+        {
+          "visibility": "public",
+          "url": "https://digimarcon.com/ai-marketing-agent-starter-plan/"
+        },
+        {
+          "visibility": "public",
+          "url": "https://digimarcon.com/wp-content/uploads/2026/10/marketing-agents-starter-guide-digimarcon.pdf"
+        },
+        {
+          "visibility": "private",
+          "sha256": "192205804d338263fa756ee57b979a32090553a5b06af3123957ca8100051b52"
+        },
+        {
+          "visibility": "private",
+          "sha256": "256346bb318579514bfad6ead265bdd6c56a2b1308fb0345625c02d0de487cd4"
+        },
+        {
+          "visibility": "private",
+          "sha256": "71a01901f3daf97272363c3e21786c7ab20f19e2d47ff62b355fc601ba49670a"
+        }
+      ],
+      "executorCode": "codex-original-publication-worker",
+      "reviewerCode": "codex-independent-proof-review-20261011",
+      "review": {
+        "identity": {
+          "state": "pass",
+          "notes": "One original WordPress publication, post 192300. Its PDF and two responsive diagrams are outputs of the same source job. Original requester authorization and source delivery were checked."
+        },
+        "output": {
+          "state": "pass",
+          "notes": "An independent reviewer opened the live article and PDF. Fresh anonymous checks found all approved article text and links; PDF and both diagrams match their reviewed source bytes exactly."
+        },
+        "acceptance": {
+          "state": "unknown",
+          "notes": "Independent content and delivery checks support the published output. Post-publication requester or host editorial acceptance, indexing, reader use and business results are not established."
+        },
+        "handoff": {
+          "state": "pass",
+          "notes": "Scoped to delivery of the public article and PDF links in the original requester conversation. The live article also links the PDF. Receiving acknowledgment, attendee use and any later promotion remain unknown."
+        }
+      }
     }
   ]
 }

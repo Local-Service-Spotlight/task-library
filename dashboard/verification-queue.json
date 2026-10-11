@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "ordering": "Setup failures and evidence holds first. Within each priority lane, sort by estimated revenue role, dependencies unblocked, frequency and importance before missing-guide status and gap count. Effort and actual income remain unknown.",
-  "generatedAt": "2026-10-11T13:27:10+00:00",
+  "generatedAt": "2026-10-11T16:12:50+00:00",
   "definition": "Per-task standard gates derived from exact instruction reviews, explicit instruction-requirement checks, contributor status, article mapping/catalog holds, exact-revision article semantic reviews, task-attributed examples and the execution ledger. Unknown proof is never turned into a pass.",
   "stats": {
     "tasks": 276,
@@ -27448,8 +27448,10 @@
       "status": "complete",
       "articleUrl": "https://localservicespotlight.com/article-guidelines/",
       "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=step-12-post-article-on-wordpress#task-step-12-post-article-on-wordpress",
-      "historicalDeliveryCount": 0,
-      "historicalEvidenceIds": [],
+      "historicalDeliveryCount": 1,
+      "historicalEvidenceIds": [
+        "historical-676fc94d0a3360b42c6f30a0"
+      ],
       "nextAction": "No exact-revision positive semantic review is recorded for this article.",
       "standardVerification": {
         "instructionSourceSha256": "40a2dd9f31975663518823e89aced2a2b59f0b076fcbc6d780bb9f1e8c9b63f8",
