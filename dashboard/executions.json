@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "asOf": "2026-10-11T13:17:46.486237+00:00",
+  "asOf": "2026-10-11T13:18:05.169762+00:00",
   "countDefinition": "Distinct recorded execution IDs, separate from meta-article URLs. History is partial; absent history is unknown, not zero. The last-30-day count is a documented lower bound, not total task frequency.",
   "recordedExecutions": 28,
   "completedExecutions": 15,
@@ -947,7 +947,7 @@
       ],
       "startedAt": "2026-10-11T13:13:36.970278+00:00",
       "status": "running",
-      "result": "Repairing one weekly reporting recipe and selected matching article instructions; release checks pending. No client report execution.",
+      "result": "Revised weekly MAA recipe and matching article rules passed independent scope and preview checks. Exact saved article sources pass; anonymous cache refresh, source release and archive checks remain pending.",
       "recipeRevisions": {
         "publish-skill-and-task-page": {
           "articleUrl": "https://blitzmetrics.com/skill-publishing-standard/",
@@ -957,7 +957,8 @@
       "evidenceUrls": [],
       "privateEvidenceRecorded": true,
       "metaArticle": {
-        "status": "draft"
+        "status": "published",
+        "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#weekly-maa-clarity-20261011"
       }
     }
   ],

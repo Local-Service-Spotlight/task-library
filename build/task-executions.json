@@ -1630,12 +1630,12 @@
       },
       "startedAt": "2026-10-11T13:13:36.970278+00:00",
       "recordedAt": "2026-10-11T13:13:36.970278+00:00",
-      "updatedAt": "2026-10-11T13:13:36.970278+00:00",
+      "updatedAt": "2026-10-11T13:17:42.382082+00:00",
       "status": "running",
-      "result": "Repairing one weekly reporting recipe and selected matching article instructions; release checks pending. No client report execution.",
+      "result": "Revised weekly MAA recipe and matching article rules passed independent scope and preview checks. Exact saved article sources pass; anonymous cache refresh, source release and archive checks remain pending.",
       "metaArticle": {
-        "status": "draft",
-        "draftSha256": "b372aa7bc073bcf4865c8cdccfe5d547bcfe19337fdbc3b4753062953162b285"
+        "status": "published",
+        "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#weekly-maa-clarity-20261011"
       },
       "evidence": [
         {
