@@ -1616,6 +1616,33 @@
         }
       ],
       "finishedAt": "2026-10-10T13:24:23.020931+00:00"
+    },
+    {
+      "executionId": "weekly-maa-clarity-20261011",
+      "taskSlugs": [
+        "publish-skill-and-task-page"
+      ],
+      "recipeRevisions": {
+        "publish-skill-and-task-page": {
+          "articleUrl": "https://blitzmetrics.com/skill-publishing-standard/",
+          "sourceSha256": "660d6f1abd8678c851c0a08059f27982e8e29b46775ea217a2ae1d6e3ba55537"
+        }
+      },
+      "startedAt": "2026-10-11T13:13:36.970278+00:00",
+      "recordedAt": "2026-10-11T13:13:36.970278+00:00",
+      "updatedAt": "2026-10-11T13:17:42.382082+00:00",
+      "status": "running",
+      "result": "Revised weekly MAA recipe and matching article rules passed independent scope and preview checks. Exact saved article sources pass; anonymous cache refresh, source release and archive checks remain pending.",
+      "metaArticle": {
+        "status": "published",
+        "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#weekly-maa-clarity-20261011"
+      },
+      "evidence": [
+        {
+          "visibility": "private",
+          "sha256": "7a1ef9bb9aaa4b912ff2e092859cff0d989f54f5308bf99331b40476d8be7590"
+        }
+      ]
     }
   ],
   "historicalEvidence": [

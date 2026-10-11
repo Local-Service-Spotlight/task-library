@@ -46,10 +46,10 @@
     "unknown": 0
    },
    "instructionStandards": {
-    "pass": 20,
+    "pass": 21,
     "unmet": 0,
     "hold": 0,
-    "unknown": 256
+    "unknown": 255
    },
    "contributorComplete": {
     "pass": 126,
@@ -101,7 +101,7 @@
    }
   }
  },
- "updated": "October 10, 2026",
+ "updated": "October 11, 2026",
  "factory": {
   "phases": [
    {
@@ -1715,9 +1715,9 @@
  ],
  "executionHistory": {
   "schemaVersion": 1,
-  "asOf": "2026-10-10T13:24:35.017055+00:00",
+  "asOf": "2026-10-11T13:18:05.169762+00:00",
   "countDefinition": "Distinct recorded execution IDs, separate from meta-article URLs. History is partial; absent history is unknown, not zero. The last-30-day count is a documented lower bound, not total task frequency.",
-  "recordedExecutions": 27,
+  "recordedExecutions": 28,
   "completedExecutions": 15,
   "partialExecutions": 12,
   "executions": [
@@ -2653,6 +2653,27 @@
     "metaArticle": {
      "status": "published",
      "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#embedded-guide-repair-20261010"
+    }
+   },
+   {
+    "executionId": "weekly-maa-clarity-20261011",
+    "taskSlugs": [
+     "publish-skill-and-task-page"
+    ],
+    "startedAt": "2026-10-11T13:13:36.970278+00:00",
+    "status": "running",
+    "result": "Revised weekly MAA recipe and matching article rules passed independent scope and preview checks. Exact saved article sources pass; anonymous cache refresh, source release and archive checks remain pending.",
+    "recipeRevisions": {
+     "publish-skill-and-task-page": {
+      "articleUrl": "https://blitzmetrics.com/skill-publishing-standard/",
+      "sourceSha256": "660d6f1abd8678c851c0a08059f27982e8e29b46775ea217a2ae1d6e3ba55537"
+     }
+    },
+    "evidenceUrls": [],
+    "privateEvidenceRecorded": true,
+    "metaArticle": {
+     "status": "published",
+     "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#weekly-maa-clarity-20261011"
     }
    }
   ],
@@ -35692,7 +35713,7 @@
      "article": "https://blitzmetrics.com/how-to-write-weekly-maa-reports-for-local-service-businesses/",
      "articleKind": "task-recipe",
      "desc": "Show a business owner what changed and what the team should do next.",
-     "content": "---\nname: submit-weekly-maa-report-every-friday\ndescription: \"Show a business owner what changed and what the team should do next.\"\ncategory: Strategy & Measurement\nstage: —\ndefinitive_article: https://blitzmetrics.com/how-to-write-weekly-maa-reports-for-local-service-businesses/\nstatus: needs-work\n---\n\n# Submit weekly MAA report every Friday\n\nShow a business owner what changed and what the team should do next. This guide turns the week’s proof into a short report. Start with the same source numbers and the last action list.\n\n**The path:** Verified numbers → Meaning → Owned next actions → Checked delivery\n\n**Start when:** The client’s agreed weekly reporting deadline is due; use Friday only when that is the accepted cadence.\n\n## Inputs\n\n- [Collect verified weekly measurements](https://local-service-spotlight.github.io/task-library/?task=collect-verified-weekly-measurements#task-collect-verified-weekly-measurements) report and the client’s accepted metric definitions, source contract and period.\n- Last report, evidence of actual actions, current business context and named project lead.\n- The agreed reporting day, channel, recipients and sending authority; [the weekly MAA article](https://blitzmetrics.com/how-to-write-weekly-maa-reports-for-local-service-businesses/).\n\n## Steps\n\n1. Read the previous action list and mark actual results. Confirm the current reporting window, timezone, definitions and any approved changes before comparing numbers.\n2. Open with the most useful supported finding, why it matters to this client’s goal and the decision or action it enables. Use two or three grade-five sentences beside a relevant chart or evidence diagram; do not begin with a generic explanation of marketing. Apply the meaning review in [Write the hook and establish context](https://local-service-spotlight.github.io/task-library/?task=step-7-write-hook-and-establish-context#task-step-7-write-hook-and-establish-context) and retain the exact opening text and quoted reviewer evidence in the report receipt.\n3. Lead with qualified calls and leads for a local-service engagement when that is its accepted goal. Keep total calls, qualified calls, booked jobs and revenue separate. Call duration can screen a queue but does not establish qualification.\n4. Show source breakdowns, actual ad spend and cost per defined result, followed by relevant search and website measures. Keep missing sources and attribution limits visible; do not report an unread source as zero.\n5. Explain what is working, what misses its target and what cannot yet be judged. Use [Show what works and what needs review](https://local-service-spotlight.github.io/task-library/?task=show-whats-working-and-what-isnt#task-show-whats-working-and-what-isnt) and [Diagnose weak results](https://local-service-spotlight.github.io/task-library/?task=analyze-why-underperformers-fail#task-analyze-why-underperformers-fail) for supporting detail. Analysis connects facts to a supported reason or testable question rather than merely restating the table.\n6. Write a short priority list of concrete next actions with owner, due date and pass rule. Distinguish changes already verified from proposals and blocked actions. Do not fill a three-action template with invented work.\n7. Check the report’s math, links, dates, privacy and clear grade-five opening. Use the accepted voice and current [Article Guidelines](https://localservicespotlight.com/article-guidelines/) for any public form.\n8. Save and deliver in the exact agreed channel only when sending is authorized. Verify the sent or posted copy and retain its location. A saved draft is still a draft; if delivery is blocked, name that dependency and next owner.\n9. Carry the report and next actions into the Success Tracker and next cycle. Keep the actual scheduler configuration separate from this Friday-named recipe.\n\n## Definition of done (QA checklist)\n\nQuality assurance (QA) means checking the result against its agreed requirements; see the [Article Guidelines](https://localservicespotlight.com/article-guidelines/).\n\n- [ ] The report uses agreed definitions and comparable sourced numbers, with qualification distinct from volume.\n- [ ] Analysis and concrete next actions follow the evidence; unknowns remain visible.\n- [ ] Saved and delivered states are verified separately in the correct destination, or the delivery blocker is explicit.\n\n## Example(s)\n\n**Fictional teaching example. This is not a client result or proof of a completed run.**\n\nA fictional report shows 30 total calls, 12 qualified calls and five bookings under the client’s definitions. It proposes checking six missed calls next. The draft is ready Thursday, but the agreed delivery is Friday in the client’s existing channel. The record stays draft until the authorized send is read back.\n\n## Handoff and Content Factory context\n\n[Update the Success Tracker](https://local-service-spotlight.github.io/task-library/?task=update-client-success-tracker#task-update-client-success-tracker) receives the report and evidence; the next agreed review checks its action list.\n\nThis work supports the [Content Factory: Produce, Process, Post and Promote](https://blitzmetrics.com/content-factory/) across its relevant stages. It uses the actual inputs and next owner above; a strategy or measurement guide does not manufacture transcripts, clips or other unrelated stage outputs.\n\n## Start with an agent\n\nGive the AI worker this recipe, the real Inputs, the desired result and the actions already authorized. Ask for the saved output, source evidence, passed and failed checks, and the next owner. A skill is a set of instructions. Loading it does not prove access, install a scheduled job or complete the work. Use the [current installation guide](https://localservicespotlight.com/install/) only if reusable setup is needed; a ZIP contains instructions and is not an access grant.\n\nUse the actual supported app and verified source access. A model name is not a promise of browser control, memory or unattended work. For recurring work, inspect the real job’s trigger, owner, timezone and observed firing; this recipe creates no schedule. Before any media playback, mute the player and set volume to zero. A silent review does not prove sound was heard.\n\n## Record the real execution\n\nOpen the run record when work begins. Keep one execution ID, the exact starting recipe revision, input sources and actual state. Write a [meta article, the record of one real execution](https://blitzmetrics.com/meta-article-prompt/) with results, checks, failures and next owner. Link it to this task in the [Task Library](https://local-service-spotlight.github.io/task-library/). Writing is required; public release follows existing authority.\n\nReuse the same execution ID for internal reviews, meta writing, revisions and retries. A blocked run stays open with its dependency and owner, without an invented finish time. Keep historical public examples as dated evidence; article counts alone are not verified execution frequency. Use supported findings to propose and verify a recipe improvement.\n\n\n<!-- factory-layer:start -->\n\n## Factory chain (do not treat this as isolated)\n\n- **Phase:** —\n- **Importance:** 4/5 `●●●●○` — frequency 4, revenue 4, gating 2 (runs every factory cycle or weekly; creates the asset ads amplify)\n- **Browse earlier task:** —\n- **Browse later task:** —\nThese are nearby tasks in the library. Use this guide’s Inputs and Handoff sections to choose what comes before and after your work. Catalog order does not establish prerequisites or handoffs.\n- **Handoff:** Save this task’s actual output, source, date and checks where the receiving owner can read them. Follow the Inputs and Handoff sections for its next step.\n\n## Model routing (same factory, any engine)\n\n- **This task's lane:** `any` — Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.\n- **Single-engine path:** Use the capable AI app you already have. Check its required tools and access before starting. Pass the actual result and proof to the next task.\n- **Optional multi-engine:** A tested local model may draft; a stronger model may review facts and voice. Use supported tools for approved actions. Pick models from observed quality and cost; a model name does not prove it can run this task.\n- **Never** store the working state in one vendor's memory. Files in the Content Library are the bridge.\n\n<!-- factory-layer:end -->\n## Definitive article & links\n\n- [Maintained source guide](https://blitzmetrics.com/how-to-write-weekly-maa-reports-for-local-service-businesses/)\n- [This task in the Task Library](https://local-service-spotlight.github.io/task-library/?task=submit-weekly-maa-report-every-friday#task-submit-weekly-maa-report-every-friday)\n- [Article Guidelines](https://localservicespotlight.com/article-guidelines/)\n- [Definitive article and task recipe standard](https://blitzmetrics.com/definitive-article-guide/)\n- [How recipes and run records work together](https://localservicespotlight.com/meta-articles/)\n\n## Review and evidence still needed\n\nThe inherited contributor status is `needs-work`. It is preserved, not promoted by this rewrite. That label alone does not verify document readiness, account access, an actual execution or a client outcome.\n\nA relevant real execution, source evidence, independent reviewer and accepted handoff remain to be recorded. The fictional example teaches the method and does not fill a real-run evidence gap. The opening and full method need a named semantic reviewer; the task-specific path is source guidance, with visible desktop/mobile presentation still to check.",
+     "content": "---\nname: submit-weekly-maa-report-every-friday\ndescription: \"Show a business owner what changed and what the team should do next.\"\ncategory: Strategy & Measurement\nstage: —\ndefinitive_article: https://blitzmetrics.com/how-to-write-weekly-maa-reports-for-local-service-businesses/\nstatus: needs-work\n---\n\n# Submit weekly MAA report every Friday\n\nShow a business owner what changed this week and what to do next. This helps the team choose work that serves the owner’s goal. Use [MAA—Metrics, Analysis, Action](https://blitzmetrics.com/maa/): check the numbers, explain what they mean, and pick the next step.\n\n**The path:** Verified numbers → Meaning → Owned next actions → Checked delivery\n\n**Start when:** The client’s agreed weekly reporting deadline is due; use Friday only when that is the accepted cadence.\n\n## Inputs\n\n- [Collect verified weekly measurements](https://local-service-spotlight.github.io/task-library/?task=collect-verified-weekly-measurements#task-collect-verified-weekly-measurements) report and the client’s accepted metric definitions, source contract and period.\n- Last report, evidence of actual actions, current business context and named project lead.\n- The agreed reporting day, channel, recipients and sending authority; [the weekly MAA article](https://blitzmetrics.com/how-to-write-weekly-maa-reports-for-local-service-businesses/).\n\n## Steps\n\n1. Read the previous action list and mark actual results. Confirm the goal, reporting window, timezone, definitions and any approved changes before comparing numbers. Record when each source was checked and the last complete day it covers. Compare equal, complete periods using the same definitions. If the current week is partial, label it and withhold a week-over-week change until a matching prior window is available. A monthly view may add context, but is not a weekly comparison. If a source revised last week’s number, retain the old figure, revised figure, pull time and reason; do not silently rewrite the earlier report.\n2. Open with the most useful supported finding, why it matters to this client’s goal and the decision or action it enables. Use two or three grade-five sentences beside a relevant chart or evidence diagram; do not begin with a generic explanation of marketing. Apply the meaning review in [Write the hook and establish context](https://local-service-spotlight.github.io/task-library/?task=step-7-write-hook-and-establish-context#task-step-7-write-hook-and-establish-context) and retain the exact opening text and quoted reviewer evidence in the report receipt.\n3. Lead with qualified calls and leads for a local-service engagement when that is its accepted goal. Keep total calls, qualified calls, booked jobs and revenue separate. Call duration can screen a queue but does not establish qualification.\n4. Show source breakdowns, actual ad spend and cost per defined result, followed by relevant search and website measures. Keep missing sources and attribution limits visible; do not report an unread source as zero.\n5. Explain what is working, what misses its target and what cannot yet be judged. Use [Show what works and what needs review](https://local-service-spotlight.github.io/task-library/?task=show-whats-working-and-what-isnt#task-show-whats-working-and-what-isnt) and [Diagnose weak results](https://local-service-spotlight.github.io/task-library/?task=analyze-why-underperformers-fail#task-analyze-why-underperformers-fail) for supporting detail. Analysis connects facts to a supported reason or testable question rather than merely restating the table.\n6. Write a short priority list of concrete next actions with owner, due date and pass rule. Distinguish changes already verified from proposals and blocked actions. Do not fill a three-action template with invented work.\n7. Check the report’s math, links, dates, privacy and clear grade-five opening. Use the accepted voice and current [Article Guidelines](https://localservicespotlight.com/article-guidelines/) for any public form.\n8. Save and deliver in the exact agreed channel only when sending is authorized. Verify the sent or posted copy and retain its location and exact report revision. Record draft, delivered and accepted states separately. A successful post proves delivery, not that the receiver approved the report. Record the receiving owner’s actual acknowledgement or acceptance against this report; otherwise keep acceptance unknown. If delivery is blocked, name that dependency and next owner. Use the existing follow-up process rather than starting a duplicate reminder.\n9. Carry the report and next actions into the Success Tracker and next cycle. Keep the actual scheduler configuration separate from this Friday-named recipe.\n\n## Definition of done (QA checklist)\n\nQuality assurance (QA) means checking the result against its agreed requirements; see the [Article Guidelines](https://localservicespotlight.com/article-guidelines/).\n\n- [ ] The report uses agreed definitions and comparable sourced numbers, with qualification distinct from volume.\n- [ ] Analysis and concrete next actions follow the evidence; unknowns remain visible.\n- [ ] Saved and delivered states are verified separately in the correct destination, or the delivery blocker is explicit.\n- [ ] The source pull time, complete-through date and equal comparison windows are visible; partial periods and revised numbers are labeled.\n- [ ] The report and next actions have a receiving owner. Acceptance cites the exact report and observed reply, or remains unknown.\n\n## Example(s)\n\n**Fictional teaching example. This is not a client result or proof of a completed run.**\n\nA fictional report shows 30 total calls, 12 qualified calls and five bookings under the client’s definitions. It proposes checking six missed calls next. The draft is ready Thursday, but the agreed delivery is Friday in the client’s existing channel. The record stays draft until the authorized send is read back. If search data covers only four complete days, the team does not compare it with seven days and call the difference a decline. It waits for a matching window or marks the comparison unavailable. Once posted, the report is delivered; acceptance remains unknown until the receiver confirms this report.\n\n## Handoff and Content Factory context\n\n[Update the Success Tracker](https://local-service-spotlight.github.io/task-library/?task=update-client-success-tracker#task-update-client-success-tracker) receives the exact report, source links, comparison limits and actions with owners, due dates and pass rules. Name the receiving project lead and record the handoff location. The next agreed review checks what happened to those actions; an assignment alone does not prove they were done.\n\nThis work supports the [Content Factory: Produce, Process, Post and Promote](https://blitzmetrics.com/content-factory/) across its relevant stages. It uses the actual inputs and next owner above; a strategy or measurement guide does not manufacture transcripts, clips or other unrelated stage outputs.\n\n## Start with an agent\n\nGive the AI worker this recipe, the real Inputs, the desired result and the actions already authorized. Ask for the saved output, source evidence, passed and failed checks, and the next owner. A skill is a set of instructions. Loading it does not prove access, install a scheduled job or complete the work. Use the [current installation guide](https://localservicespotlight.com/install/) only if reusable setup is needed; a ZIP contains instructions and is not an access grant.\n\nUse the actual supported app and verified source access. A model name is not a promise of browser control, memory or unattended work. For recurring work, inspect the real job’s trigger, owner, timezone and observed firing; this recipe creates no schedule. Before any media playback, mute the player and set volume to zero. A silent review does not prove sound was heard.\n\n## Record the real execution\n\nOpen the run record when work begins. Keep one execution ID, the exact starting recipe revision, input sources and actual state. Write a [meta article, the record of one real execution](https://blitzmetrics.com/meta-article-prompt/) with results, checks, failures and next owner. Link it to this task in the [Task Library](https://local-service-spotlight.github.io/task-library/). Writing is required; public release follows existing authority.\n\nReuse the same execution ID for internal reviews, meta writing, revisions and retries. A blocked run stays open with its dependency and owner, without an invented finish time. Keep historical public examples as dated evidence; article counts alone are not verified execution frequency. Use supported findings to propose and verify a recipe improvement.\n\n\n<!-- factory-layer:start -->\n\n## Factory chain (do not treat this as isolated)\n\n- **Phase:** —\n- **Importance:** 4/5 `●●●●○` — frequency 4, revenue 4, gating 2 (runs every factory cycle or weekly; creates the asset ads amplify)\n- **Browse earlier task:** —\n- **Browse later task:** —\nThese are nearby tasks in the library. Use this guide’s Inputs and Handoff sections to choose what comes before and after your work. Catalog order does not establish prerequisites or handoffs.\n- **Handoff:** Save this task’s actual output, source, date and checks where the receiving owner can read them. Follow the Inputs and Handoff sections for its next step.\n\n## Model routing (same factory, any engine)\n\n- **This task's lane:** `any` — Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.\n- **Single-engine path:** Use the capable AI app you already have. Check its required tools and access before starting. Pass the actual result and proof to the next task.\n- **Optional multi-engine:** A tested local model may draft; a stronger model may review facts and voice. Use supported tools for approved actions. Pick models from observed quality and cost; a model name does not prove it can run this task.\n- **Never** store the working state in one vendor's memory. Files in the Content Library are the bridge.\n\n<!-- factory-layer:end -->\n## Definitive article & links\n\n- [Maintained source guide](https://blitzmetrics.com/how-to-write-weekly-maa-reports-for-local-service-businesses/)\n- [This task in the Task Library](https://local-service-spotlight.github.io/task-library/?task=submit-weekly-maa-report-every-friday#task-submit-weekly-maa-report-every-friday)\n- [Article Guidelines](https://localservicespotlight.com/article-guidelines/)\n- [Definitive article and task recipe standard](https://blitzmetrics.com/definitive-article-guide/)\n- [How recipes and run records work together](https://localservicespotlight.com/meta-articles/)\n\n## Review and evidence still needed\n\nThe inherited contributor status is `needs-work`. It is preserved, not promoted by this rewrite. That label alone does not verify document readiness, account access, an actual execution or a client outcome.\n\nA relevant real execution, source evidence, independent reviewer and accepted handoff remain to be recorded. The fictional example teaches the method and does not fill a real-run evidence gap. Written and presentation checks are recorded against this exact revision in the library review ledger. Those checks do not supply real-run acceptance or novice setup evidence.",
      "importance": 4,
      "freq": 4,
      "revenue": 4,
@@ -35704,10 +35725,40 @@
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
      "why": "runs every factory cycle or weekly; creates the asset ads amplify",
      "instructionReview": {
-      "source_sha256": "1e6514bd22a94c88f272e7540de693cf212c46d6c8148d2a9fa1d8af129e1e98",
-      "reviewed_at": "2026-09-06",
-      "reviewer": "Codex editorial review",
-      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+      "source_sha256": "5a74190de93ffb6135a7d87d2c54ee00f042a9ed31ccb32fe77b91d1e642753c",
+      "reviewed_at": "2026-10-11",
+      "reviewer": "Codex root with independent GPT-6 Luna exact-source and visual review",
+      "scope": "One written weekly-report recipe and selected synchronized article instructions. Full article certification, actual report execution, account setup and novice use excluded. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/weekly-maa-clarity-2026-10-11.md",
+      "standards": {
+       "version": 1,
+       "checks": {
+        "opening": {
+         "state": "pass",
+         "reason": "Exact quoted lead states task, business value and the linked MAA method in plain language. Current owned destination explains numbers, analysis and next action. Phone and desktop path previews are visible.",
+         "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/weekly-maa-clarity-2026-10-11.md"
+        },
+        "recipe": {
+         "state": "pass",
+         "reason": "Names trigger, accepted goal and definitions, complete-through dates, equal periods, labeled revisions, supported analysis and specific owned actions. Friday depends on agreed cadence.",
+         "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/weekly-maa-clarity-2026-10-11.md"
+        },
+        "links": {
+         "state": "pass",
+         "reason": "MAA, Content Factory and Success Tracker returned200 with ordinary browser headers and destination meanings read. Existing source and next-task links remain maintained references.",
+         "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/weekly-maa-clarity-2026-10-11.md"
+        },
+        "evidence": {
+         "state": "pass",
+         "reason": "Qualification is distinct from call length; partial data and missing sources stay explicit. Fictional example is labeled. Original report thread supplied a lesson; unavailable attachment and absent receiver acceptance are not promoted into proof.",
+         "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/weekly-maa-clarity-2026-10-11.md"
+        },
+        "handoff": {
+         "state": "pass",
+         "reason": "Exact delivered report and source limits go to the named project lead and Success Tracker with owners, dates and pass rules. Draft/delivered/accepted are separate; existing follow-up and next reporting cycle retain ownership.",
+         "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/weekly-maa-clarity-2026-10-11.md"
+        }
+       }
+      }
      },
      "articleState": "wip",
      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=submit-weekly-maa-report-every-friday#task-submit-weekly-maa-report-every-friday",
@@ -35774,24 +35825,57 @@
       ]
      },
      "standardVerification": {
-      "instructionSourceSha256": "1e6514bd22a94c88f272e7540de693cf212c46d6c8148d2a9fa1d8af129e1e98",
+      "instructionSourceSha256": "5a74190de93ffb6135a7d87d2c54ee00f042a9ed31ccb32fe77b91d1e642753c",
       "articleKey": "blitzmetrics.com/how-to-write-weekly-maa-reports-for-local-service-businesses",
       "gates": {
        "instructionRevisionReviewed": {
         "id": "instructionRevisionReviewed",
         "label": "Exact instruction revision reviewed",
         "state": "pass",
-        "reason": "Current source bytes match the review recorded 2026-09-06. Review scope and limits: Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate.",
-        "reviewedAt": "2026-09-06",
-        "reviewer": "Codex editorial review",
-        "sourceSha256": "1e6514bd22a94c88f272e7540de693cf212c46d6c8148d2a9fa1d8af129e1e98"
+        "reason": "Current source bytes match the review recorded 2026-10-11. Review scope and limits: One written weekly-report recipe and selected synchronized article instructions. Full article certification, actual report execution, account setup and novice use excluded. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/weekly-maa-clarity-2026-10-11.md",
+        "reviewedAt": "2026-10-11",
+        "reviewer": "Codex root with independent GPT-6 Luna exact-source and visual review",
+        "sourceSha256": "5a74190de93ffb6135a7d87d2c54ee00f042a9ed31ccb32fe77b91d1e642753c"
        },
        "instructionStandards": {
         "id": "instructionStandards",
         "label": "Instruction requirements checked",
-        "state": "unknown",
-        "reason": "The current exact-byte review has no structured instruction-requirements checklist.",
-        "sourceSha256": "1e6514bd22a94c88f272e7540de693cf212c46d6c8148d2a9fa1d8af129e1e98"
+        "state": "pass",
+        "reason": "All five instruction requirements have explicit passing checks for the current source revision.",
+        "reviewedAt": "2026-10-11",
+        "reviewer": "Codex root with independent GPT-6 Luna exact-source and visual review",
+        "reviewScope": "One written weekly-report recipe and selected synchronized article instructions. Full article certification, actual report execution, account setup and novice use excluded. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/weekly-maa-clarity-2026-10-11.md",
+        "sourceSha256": "5a74190de93ffb6135a7d87d2c54ee00f042a9ed31ccb32fe77b91d1e642753c",
+        "standards": {
+         "version": 1,
+         "checks": {
+          "opening": {
+           "state": "pass",
+           "reason": "Exact quoted lead states task, business value and the linked MAA method in plain language. Current owned destination explains numbers, analysis and next action. Phone and desktop path previews are visible.",
+           "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/weekly-maa-clarity-2026-10-11.md"
+          },
+          "recipe": {
+           "state": "pass",
+           "reason": "Names trigger, accepted goal and definitions, complete-through dates, equal periods, labeled revisions, supported analysis and specific owned actions. Friday depends on agreed cadence.",
+           "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/weekly-maa-clarity-2026-10-11.md"
+          },
+          "links": {
+           "state": "pass",
+           "reason": "MAA, Content Factory and Success Tracker returned200 with ordinary browser headers and destination meanings read. Existing source and next-task links remain maintained references.",
+           "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/weekly-maa-clarity-2026-10-11.md"
+          },
+          "evidence": {
+           "state": "pass",
+           "reason": "Qualification is distinct from call length; partial data and missing sources stay explicit. Fictional example is labeled. Original report thread supplied a lesson; unavailable attachment and absent receiver acceptance are not promoted into proof.",
+           "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/weekly-maa-clarity-2026-10-11.md"
+          },
+          "handoff": {
+           "state": "pass",
+           "reason": "Exact delivered report and source limits go to the named project lead and Success Tracker with owners, dates and pass rules. Draft/delivered/accepted are separate; existing follow-up and next reporting cycle retain ownership.",
+           "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/weekly-maa-clarity-2026-10-11.md"
+          }
+         }
+        }
        },
        "contributorComplete": {
         "id": "contributorComplete",
@@ -35852,7 +35936,6 @@
       ],
       "heldStandardGates": [],
       "unknownStandardGates": [
-       "instructionStandards",
        "articleSemanticCertification",
        "taskExampleEvidence",
        "recordedExecution",
@@ -42125,7 +42208,7 @@
      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=publish-skill-and-task-page#task-publish-skill-and-task-page",
      "executionHistory": {
       "status": "partial",
-      "recordedRuns": 18,
+      "recordedRuns": 19,
       "completedRuns": 14,
       "failedRuns": 0,
       "partialRuns": 4,
@@ -42149,7 +42232,8 @@
        "roster-public-boundary-20260927-210848",
        "task-direct-open-20261002-1404",
        "taxonomy-guide-repair-20261003-1606",
-       "tracker-setup-20260925-000216"
+       "tracker-setup-20260925-000216",
+       "weekly-maa-clarity-20261011"
       ],
       "executionOutcomes": [
        {
@@ -42259,6 +42343,12 @@
         "status": "completed",
         "startedAt": "2026-10-10T13:07:49.214927+00:00",
         "finishedAt": "2026-10-10T13:24:23.020931+00:00"
+       },
+       {
+        "executionId": "weekly-maa-clarity-20261011",
+        "status": "running",
+        "startedAt": "2026-10-11T13:13:36.970278+00:00",
+        "finishedAt": null
        }
       ],
       "acceptanceReviews": [
@@ -42702,7 +42792,7 @@
         "id": "recordedExecution",
         "label": "Recorded real execution",
         "state": "pass",
-        "reason": "18 distinct execution ID(s) name this task; outcomes remain separate.",
+        "reason": "19 distinct execution ID(s) name this task; outcomes remain separate.",
         "executionIds": [
          "authority-guides-repair-20261005-2100",
          "booking-path-checks-20261009-1259",
@@ -42721,7 +42811,8 @@
          "roster-public-boundary-20260927-210848",
          "task-direct-open-20261002-1404",
          "taxonomy-guide-repair-20261003-1606",
-         "tracker-setup-20260925-000216"
+         "tracker-setup-20260925-000216",
+         "weekly-maa-clarity-20261011"
         ],
         "historyStatus": "partial"
        },
