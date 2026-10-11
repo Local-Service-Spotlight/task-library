@@ -39,3 +39,7 @@ Reviewed actual runtime and WordPress wrapper previews at phone390x844 and deskt
 The independent review covers this exact recipe, selected matching article instructions and the new maintenance section. It does not certify every older example, provider UI step or paragraph in the full article. Source and anonymous public parity, affected ZIP dependency checks and deployment acceptance are recorded under the same maintenance execution. Release results follow after they occur.
 
 [Maintenance account](https://blitzmetrics.com/making-task-guides-easier-to-use/#weekly-maa-clarity-20261011).
+
+## Released October 11, 2026
+
+Source PR83 merged at `f59a9f647913fc5dbbc445b43ee0ff67d4b06e30`; deployment38142681130 passed. The exact public recipe and six runtime projections match. All seven public archives passed dependency/content checks;176final-file tests passed. Ordinary anonymous article and maintenance text/media/script parity passed after cache expiry at13:25UTC. Actual phone and desktop views show the changed visuals in the first screen and no horizontal overflow. Independent scoped public acceptance completed before this maintenance run ended. The queue has21written passes and0fully verified tasks. Real task use and novice setup remain separate.
