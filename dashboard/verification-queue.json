@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "ordering": "Setup failures and evidence holds first. Within each priority lane, sort by estimated revenue role, dependencies unblocked, frequency and importance before missing-guide status and gap count. Effort and actual income remain unknown.",
-  "generatedAt": "2026-10-10T13:24:35+00:00",
+  "generatedAt": "2026-10-11T13:17:46+00:00",
   "definition": "Per-task standard gates derived from exact instruction reviews, explicit instruction-requirement checks, contributor status, article mapping/catalog holds, exact-revision article semantic reviews, task-attributed examples and the execution ledger. Unknown proof is never turned into a pass.",
   "stats": {
     "tasks": 276,
@@ -18,10 +18,10 @@
         "unknown": 0
       },
       "instructionStandards": {
-        "pass": 20,
+        "pass": 21,
         "unmet": 0,
         "hold": 0,
-        "unknown": 256
+        "unknown": 255
       },
       "contributorComplete": {
         "pass": 126,
@@ -9249,24 +9249,57 @@
       ],
       "nextAction": "The contributor status is needs-work; finish and review the guide.",
       "standardVerification": {
-        "instructionSourceSha256": "1e6514bd22a94c88f272e7540de693cf212c46d6c8148d2a9fa1d8af129e1e98",
+        "instructionSourceSha256": "5a74190de93ffb6135a7d87d2c54ee00f042a9ed31ccb32fe77b91d1e642753c",
         "articleKey": "blitzmetrics.com/how-to-write-weekly-maa-reports-for-local-service-businesses",
         "gates": {
           "instructionRevisionReviewed": {
             "id": "instructionRevisionReviewed",
             "label": "Exact instruction revision reviewed",
             "state": "pass",
-            "reason": "Current source bytes match the review recorded 2026-09-06. Review scope and limits: Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate.",
-            "reviewedAt": "2026-09-06",
-            "reviewer": "Codex editorial review",
-            "sourceSha256": "1e6514bd22a94c88f272e7540de693cf212c46d6c8148d2a9fa1d8af129e1e98"
+            "reason": "Current source bytes match the review recorded 2026-10-11. Review scope and limits: One written weekly-report recipe and selected synchronized article instructions. Full article certification, actual report execution, account setup and novice use excluded. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/weekly-maa-clarity-2026-10-11.md",
+            "reviewedAt": "2026-10-11",
+            "reviewer": "Codex root with independent GPT-6 Luna exact-source and visual review",
+            "sourceSha256": "5a74190de93ffb6135a7d87d2c54ee00f042a9ed31ccb32fe77b91d1e642753c"
           },
           "instructionStandards": {
             "id": "instructionStandards",
             "label": "Instruction requirements checked",
-            "state": "unknown",
-            "reason": "The current exact-byte review has no structured instruction-requirements checklist.",
-            "sourceSha256": "1e6514bd22a94c88f272e7540de693cf212c46d6c8148d2a9fa1d8af129e1e98"
+            "state": "pass",
+            "reason": "All five instruction requirements have explicit passing checks for the current source revision.",
+            "reviewedAt": "2026-10-11",
+            "reviewer": "Codex root with independent GPT-6 Luna exact-source and visual review",
+            "reviewScope": "One written weekly-report recipe and selected synchronized article instructions. Full article certification, actual report execution, account setup and novice use excluded. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/weekly-maa-clarity-2026-10-11.md",
+            "sourceSha256": "5a74190de93ffb6135a7d87d2c54ee00f042a9ed31ccb32fe77b91d1e642753c",
+            "standards": {
+              "version": 1,
+              "checks": {
+                "opening": {
+                  "state": "pass",
+                  "reason": "Exact quoted lead states task, business value and the linked MAA method in plain language. Current owned destination explains numbers, analysis and next action. Phone and desktop path previews are visible.",
+                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/weekly-maa-clarity-2026-10-11.md"
+                },
+                "recipe": {
+                  "state": "pass",
+                  "reason": "Names trigger, accepted goal and definitions, complete-through dates, equal periods, labeled revisions, supported analysis and specific owned actions. Friday depends on agreed cadence.",
+                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/weekly-maa-clarity-2026-10-11.md"
+                },
+                "links": {
+                  "state": "pass",
+                  "reason": "MAA, Content Factory and Success Tracker returned200 with ordinary browser headers and destination meanings read. Existing source and next-task links remain maintained references.",
+                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/weekly-maa-clarity-2026-10-11.md"
+                },
+                "evidence": {
+                  "state": "pass",
+                  "reason": "Qualification is distinct from call length; partial data and missing sources stay explicit. Fictional example is labeled. Original report thread supplied a lesson; unavailable attachment and absent receiver acceptance are not promoted into proof.",
+                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/weekly-maa-clarity-2026-10-11.md"
+                },
+                "handoff": {
+                  "state": "pass",
+                  "reason": "Exact delivered report and source limits go to the named project lead and Success Tracker with owners, dates and pass rules. Draft/delivered/accepted are separate; existing follow-up and next reporting cycle retain ownership.",
+                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/weekly-maa-clarity-2026-10-11.md"
+                }
+              }
+            }
           },
           "contributorComplete": {
             "id": "contributorComplete",
@@ -9327,7 +9360,6 @@
         ],
         "heldStandardGates": [],
         "unknownStandardGates": [
-          "instructionStandards",
           "articleSemanticCertification",
           "taskExampleEvidence",
           "recordedExecution",
@@ -33155,7 +33187,7 @@
             "id": "recordedExecution",
             "label": "Recorded real execution",
             "state": "pass",
-            "reason": "18 distinct execution ID(s) name this task; outcomes remain separate.",
+            "reason": "19 distinct execution ID(s) name this task; outcomes remain separate.",
             "executionIds": [
               "authority-guides-repair-20261005-2100",
               "booking-path-checks-20261009-1259",
@@ -33174,7 +33206,8 @@
               "roster-public-boundary-20260927-210848",
               "task-direct-open-20261002-1404",
               "taxonomy-guide-repair-20261003-1606",
-              "tracker-setup-20260925-000216"
+              "tracker-setup-20260925-000216",
+              "weekly-maa-clarity-20261011"
             ],
             "historyStatus": "partial"
           },

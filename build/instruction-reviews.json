@@ -1201,10 +1201,40 @@
       "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
     },
     "submit-weekly-maa-report-every-friday": {
-      "source_sha256": "1e6514bd22a94c88f272e7540de693cf212c46d6c8148d2a9fa1d8af129e1e98",
-      "reviewed_at": "2026-09-06",
-      "reviewer": "Codex editorial review",
-      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+      "source_sha256": "5a74190de93ffb6135a7d87d2c54ee00f042a9ed31ccb32fe77b91d1e642753c",
+      "reviewed_at": "2026-10-11",
+      "reviewer": "Codex root with independent GPT-6 Luna exact-source and visual review",
+      "scope": "One written weekly-report recipe and selected synchronized article instructions. Full article certification, actual report execution, account setup and novice use excluded. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/weekly-maa-clarity-2026-10-11.md",
+      "standards": {
+        "version": 1,
+        "checks": {
+          "opening": {
+            "state": "pass",
+            "reason": "Exact quoted lead states task, business value and the linked MAA method in plain language. Current owned destination explains numbers, analysis and next action. Phone and desktop path previews are visible.",
+            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/weekly-maa-clarity-2026-10-11.md"
+          },
+          "recipe": {
+            "state": "pass",
+            "reason": "Names trigger, accepted goal and definitions, complete-through dates, equal periods, labeled revisions, supported analysis and specific owned actions. Friday depends on agreed cadence.",
+            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/weekly-maa-clarity-2026-10-11.md"
+          },
+          "links": {
+            "state": "pass",
+            "reason": "MAA, Content Factory and Success Tracker returned200 with ordinary browser headers and destination meanings read. Existing source and next-task links remain maintained references.",
+            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/weekly-maa-clarity-2026-10-11.md"
+          },
+          "evidence": {
+            "state": "pass",
+            "reason": "Qualification is distinct from call length; partial data and missing sources stay explicit. Fictional example is labeled. Original report thread supplied a lesson; unavailable attachment and absent receiver acceptance are not promoted into proof.",
+            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/weekly-maa-clarity-2026-10-11.md"
+          },
+          "handoff": {
+            "state": "pass",
+            "reason": "Exact delivered report and source limits go to the named project lead and Success Tracker with owners, dates and pass rules. Draft/delivered/accepted are separate; existing follow-up and next reporting cycle retain ownership.",
+            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/weekly-maa-clarity-2026-10-11.md"
+          }
+        }
+      }
     },
     "systematization-content-checklists-software": {
       "source_sha256": "9d0ad9f1151ee6c54b7cd7897d7f58fc29de68b85f4902b549eff85ffecd3338",

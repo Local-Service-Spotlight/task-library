@@ -9,7 +9,7 @@ status: needs-work
 
 # Submit weekly MAA report every Friday
 
-Show a business owner what changed and what the team should do next. This guide turns the week’s proof into a short report. Start with the same source numbers and the last action list.
+Show a business owner what changed this week and what to do next. This helps the team choose work that serves the owner’s goal. Use [MAA—Metrics, Analysis, Action](https://blitzmetrics.com/maa/): check the numbers, explain what they mean, and pick the next step.
 
 **The path:** Verified numbers → Meaning → Owned next actions → Checked delivery
 
@@ -23,14 +23,14 @@ Show a business owner what changed and what the team should do next. This guide 
 
 ## Steps
 
-1. Read the previous action list and mark actual results. Confirm the current reporting window, timezone, definitions and any approved changes before comparing numbers.
+1. Read the previous action list and mark actual results. Confirm the goal, reporting window, timezone, definitions and any approved changes before comparing numbers. Record when each source was checked and the last complete day it covers. Compare equal, complete periods using the same definitions. If the current week is partial, label it and withhold a week-over-week change until a matching prior window is available. A monthly view may add context, but is not a weekly comparison. If a source revised last week’s number, retain the old figure, revised figure, pull time and reason; do not silently rewrite the earlier report.
 2. Open with the most useful supported finding, why it matters to this client’s goal and the decision or action it enables. Use two or three grade-five sentences beside a relevant chart or evidence diagram; do not begin with a generic explanation of marketing. Apply the meaning review in [Write the hook and establish context](https://local-service-spotlight.github.io/task-library/?task=step-7-write-hook-and-establish-context#task-step-7-write-hook-and-establish-context) and retain the exact opening text and quoted reviewer evidence in the report receipt.
 3. Lead with qualified calls and leads for a local-service engagement when that is its accepted goal. Keep total calls, qualified calls, booked jobs and revenue separate. Call duration can screen a queue but does not establish qualification.
 4. Show source breakdowns, actual ad spend and cost per defined result, followed by relevant search and website measures. Keep missing sources and attribution limits visible; do not report an unread source as zero.
 5. Explain what is working, what misses its target and what cannot yet be judged. Use [Show what works and what needs review](https://local-service-spotlight.github.io/task-library/?task=show-whats-working-and-what-isnt#task-show-whats-working-and-what-isnt) and [Diagnose weak results](https://local-service-spotlight.github.io/task-library/?task=analyze-why-underperformers-fail#task-analyze-why-underperformers-fail) for supporting detail. Analysis connects facts to a supported reason or testable question rather than merely restating the table.
 6. Write a short priority list of concrete next actions with owner, due date and pass rule. Distinguish changes already verified from proposals and blocked actions. Do not fill a three-action template with invented work.
 7. Check the report’s math, links, dates, privacy and clear grade-five opening. Use the accepted voice and current [Article Guidelines](https://localservicespotlight.com/article-guidelines/) for any public form.
-8. Save and deliver in the exact agreed channel only when sending is authorized. Verify the sent or posted copy and retain its location. A saved draft is still a draft; if delivery is blocked, name that dependency and next owner.
+8. Save and deliver in the exact agreed channel only when sending is authorized. Verify the sent or posted copy and retain its location and exact report revision. Record draft, delivered and accepted states separately. A successful post proves delivery, not that the receiver approved the report. Record the receiving owner’s actual acknowledgement or acceptance against this report; otherwise keep acceptance unknown. If delivery is blocked, name that dependency and next owner. Use the existing follow-up process rather than starting a duplicate reminder.
 9. Carry the report and next actions into the Success Tracker and next cycle. Keep the actual scheduler configuration separate from this Friday-named recipe.
 
 ## Definition of done (QA checklist)
@@ -40,16 +40,18 @@ Quality assurance (QA) means checking the result against its agreed requirements
 - [ ] The report uses agreed definitions and comparable sourced numbers, with qualification distinct from volume.
 - [ ] Analysis and concrete next actions follow the evidence; unknowns remain visible.
 - [ ] Saved and delivered states are verified separately in the correct destination, or the delivery blocker is explicit.
+- [ ] The source pull time, complete-through date and equal comparison windows are visible; partial periods and revised numbers are labeled.
+- [ ] The report and next actions have a receiving owner. Acceptance cites the exact report and observed reply, or remains unknown.
 
 ## Example(s)
 
 **Fictional teaching example. This is not a client result or proof of a completed run.**
 
-A fictional report shows 30 total calls, 12 qualified calls and five bookings under the client’s definitions. It proposes checking six missed calls next. The draft is ready Thursday, but the agreed delivery is Friday in the client’s existing channel. The record stays draft until the authorized send is read back.
+A fictional report shows 30 total calls, 12 qualified calls and five bookings under the client’s definitions. It proposes checking six missed calls next. The draft is ready Thursday, but the agreed delivery is Friday in the client’s existing channel. The record stays draft until the authorized send is read back. If search data covers only four complete days, the team does not compare it with seven days and call the difference a decline. It waits for a matching window or marks the comparison unavailable. Once posted, the report is delivered; acceptance remains unknown until the receiver confirms this report.
 
 ## Handoff and Content Factory context
 
-[Update the Success Tracker](https://local-service-spotlight.github.io/task-library/?task=update-client-success-tracker#task-update-client-success-tracker) receives the report and evidence; the next agreed review checks its action list.
+[Update the Success Tracker](https://local-service-spotlight.github.io/task-library/?task=update-client-success-tracker#task-update-client-success-tracker) receives the exact report, source links, comparison limits and actions with owners, due dates and pass rules. Name the receiving project lead and record the handoff location. The next agreed review checks what happened to those actions; an assignment alone does not prove they were done.
 
 This work supports the [Content Factory: Produce, Process, Post and Promote](https://blitzmetrics.com/content-factory/) across its relevant stages. It uses the actual inputs and next owner above; a strategy or measurement guide does not manufacture transcripts, clips or other unrelated stage outputs.
 
@@ -77,4 +79,4 @@ Reuse the same execution ID for internal reviews, meta writing, revisions and re
 
 The inherited contributor status is `needs-work`. It is preserved, not promoted by this rewrite. That label alone does not verify document readiness, account access, an actual execution or a client outcome.
 
-A relevant real execution, source evidence, independent reviewer and accepted handoff remain to be recorded. The fictional example teaches the method and does not fill a real-run evidence gap. The opening and full method need a named semantic reviewer; the task-specific path is source guidance, with visible desktop/mobile presentation still to check.
+A relevant real execution, source evidence, independent reviewer and accepted handoff remain to be recorded. The fictional example teaches the method and does not fill a real-run evidence gap. Written and presentation checks are recorded against this exact revision in the library review ledger. Those checks do not supply real-run acceptance or novice setup evidence.
