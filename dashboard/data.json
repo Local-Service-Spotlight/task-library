@@ -1715,10 +1715,10 @@
  ],
  "executionHistory": {
   "schemaVersion": 1,
-  "asOf": "2026-10-12T17:38:18.133805+00:00",
+  "asOf": "2026-10-12T18:24:43.368772+00:00",
   "countDefinition": "Distinct recorded execution IDs, separate from meta-article URLs. History is partial; absent history is unknown, not zero. The last-30-day count is a documented lower bound, not total task frequency.",
   "recordedExecutions": 29,
-  "completedExecutions": 16,
+  "completedExecutions": 17,
   "partialExecutions": 12,
   "executions": [
    {
@@ -2686,20 +2686,23 @@
      "publish-skill-and-task-page"
     ],
     "startedAt": "2026-10-12T17:18:53.182126+00:00",
-    "status": "running",
-    "result": "Repair one WordPress publishing recipe to confirm the live runtime and approved edit source before writing. Source review supports opening, recipe, evidence and handoff; Content Factory link availability and final release checks remain open. No client job or certification promotion.",
+    "status": "completed",
+    "result": "Published one WordPress routing repair: confirm current runtime and approved edit source before writing. Exact public guide/meta bytes, six projections, seven archives,176 tests and phone/desktop checks pass. Content Factory link returned403; written link gate remains unknown.21 written passes,0fully verified. No client job, new historical import or setup claim.",
     "recipeRevisions": {
      "publish-skill-and-task-page": {
       "articleUrl": "https://blitzmetrics.com/skill-publishing-standard/",
       "sourceSha256": "609039d529572a9d02b5e2b5847469d5fe7e6138a55c1ebd3c70a716c3a1093a"
      }
     },
+    "finishedAt": "2026-10-12T18:24:42.880857+00:00",
     "evidenceUrls": [
+     "https://github.com/Local-Service-Spotlight/task-library/pull/86",
      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/wordpress-runtime-routing-2026-10-12.md"
     ],
     "privateEvidenceRecorded": true,
     "metaArticle": {
-     "status": "draft"
+     "status": "published",
+     "url": "https://local-service-spotlight.github.io/task-library/maintenance/wordpress-runtime-routing-2026-10-12.html"
     }
    }
   ],
@@ -42391,11 +42394,11 @@
      "executionHistory": {
       "status": "partial",
       "recordedRuns": 20,
-      "completedRuns": 15,
+      "completedRuns": 16,
       "failedRuns": 0,
       "partialRuns": 4,
-      "completedLast30Days": 15,
-      "lastCompletedAt": "2026-10-11T13:27:07.121253+00:00",
+      "completedLast30Days": 16,
+      "lastCompletedAt": "2026-10-12T18:24:42.880857+00:00",
       "executionIds": [
        "authority-guides-repair-20261005-2100",
        "booking-path-checks-20261009-1259",
@@ -42535,9 +42538,9 @@
        },
        {
         "executionId": "wordpress-runtime-routing-20261012",
-        "status": "running",
+        "status": "completed",
         "startedAt": "2026-10-12T17:18:53.182126+00:00",
-        "finishedAt": null
+        "finishedAt": "2026-10-12T18:24:42.880857+00:00"
        }
       ],
       "acceptanceReviews": [

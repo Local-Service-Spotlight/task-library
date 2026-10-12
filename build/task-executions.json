@@ -1666,23 +1666,28 @@
       },
       "startedAt": "2026-10-12T17:18:53.182126+00:00",
       "recordedAt": "2026-10-12T17:27:00.252923+00:00",
-      "updatedAt": "2026-10-12T17:30:34.820950+00:00",
-      "status": "running",
-      "result": "Repair one WordPress publishing recipe to confirm the live runtime and approved edit source before writing. Source review supports opening, recipe, evidence and handoff; Content Factory link availability and final release checks remain open. No client job or certification promotion.",
+      "updatedAt": "2026-10-12T18:24:42.880857+00:00",
+      "status": "completed",
+      "result": "Published one WordPress routing repair: confirm current runtime and approved edit source before writing. Exact public guide/meta bytes, six projections, seven archives,176 tests and phone/desktop checks pass. Content Factory link returned403; written link gate remains unknown.21 written passes,0fully verified. No client job, new historical import or setup claim.",
       "metaArticle": {
-        "status": "draft",
-        "draftSha256": "395126b767b2949454030b7c19b1d91cc186eb96f9c9f1930098711dc9fe022d"
+        "status": "published",
+        "url": "https://local-service-spotlight.github.io/task-library/maintenance/wordpress-runtime-routing-2026-10-12.html"
       },
       "evidence": [
+        {
+          "visibility": "public",
+          "url": "https://github.com/Local-Service-Spotlight/task-library/pull/86"
+        },
         {
           "visibility": "public",
           "url": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/wordpress-runtime-routing-2026-10-12.md"
         },
         {
           "visibility": "private",
-          "sha256": "959a830b851a9a4882d60037071182fb8a26c6767ef5def91229710a51a603fb"
+          "sha256": "db9b17f28de791d143aefb1e6ffd855e780d42db27d9b73f8503fbeeaebc13b3"
         }
-      ]
+      ],
+      "finishedAt": "2026-10-12T18:24:42.880857+00:00"
     }
   ],
   "historicalEvidence": [
