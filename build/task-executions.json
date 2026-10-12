@@ -1652,6 +1652,37 @@
         }
       ],
       "finishedAt": "2026-10-11T13:27:07.121253+00:00"
+    },
+    {
+      "executionId": "wordpress-runtime-routing-20261012",
+      "taskSlugs": [
+        "publish-skill-and-task-page"
+      ],
+      "recipeRevisions": {
+        "publish-skill-and-task-page": {
+          "articleUrl": "https://blitzmetrics.com/skill-publishing-standard/",
+          "sourceSha256": "609039d529572a9d02b5e2b5847469d5fe7e6138a55c1ebd3c70a716c3a1093a"
+        }
+      },
+      "startedAt": "2026-10-12T17:18:53.182126+00:00",
+      "recordedAt": "2026-10-12T17:27:00.252923+00:00",
+      "updatedAt": "2026-10-12T17:30:34.820950+00:00",
+      "status": "running",
+      "result": "Repair one WordPress publishing recipe to confirm the live runtime and approved edit source before writing. Source review supports opening, recipe, evidence and handoff; Content Factory link availability and final release checks remain open. No client job or certification promotion.",
+      "metaArticle": {
+        "status": "draft",
+        "draftSha256": "395126b767b2949454030b7c19b1d91cc186eb96f9c9f1930098711dc9fe022d"
+      },
+      "evidence": [
+        {
+          "visibility": "public",
+          "url": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/wordpress-runtime-routing-2026-10-12.md"
+        },
+        {
+          "visibility": "private",
+          "sha256": "959a830b851a9a4882d60037071182fb8a26c6767ef5def91229710a51a603fb"
+        }
+      ]
     }
   ],
   "historicalEvidence": [

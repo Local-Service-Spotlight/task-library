@@ -101,7 +101,7 @@
    }
   }
  },
- "updated": "October 11, 2026",
+ "updated": "October 12, 2026",
  "factory": {
   "phases": [
    {
@@ -1715,9 +1715,9 @@
  ],
  "executionHistory": {
   "schemaVersion": 1,
-  "asOf": "2026-10-11T16:12:50.170259+00:00",
+  "asOf": "2026-10-12T17:30:35.190928+00:00",
   "countDefinition": "Distinct recorded execution IDs, separate from meta-article URLs. History is partial; absent history is unknown, not zero. The last-30-day count is a documented lower bound, not total task frequency.",
-  "recordedExecutions": 28,
+  "recordedExecutions": 29,
   "completedExecutions": 16,
   "partialExecutions": 12,
   "executions": [
@@ -2678,6 +2678,28 @@
     "metaArticle": {
      "status": "published",
      "url": "https://blitzmetrics.com/making-task-guides-easier-to-use/#weekly-maa-clarity-20261011"
+    }
+   },
+   {
+    "executionId": "wordpress-runtime-routing-20261012",
+    "taskSlugs": [
+     "publish-skill-and-task-page"
+    ],
+    "startedAt": "2026-10-12T17:18:53.182126+00:00",
+    "status": "running",
+    "result": "Repair one WordPress publishing recipe to confirm the live runtime and approved edit source before writing. Source review supports opening, recipe, evidence and handoff; Content Factory link availability and final release checks remain open. No client job or certification promotion.",
+    "recipeRevisions": {
+     "publish-skill-and-task-page": {
+      "articleUrl": "https://blitzmetrics.com/skill-publishing-standard/",
+      "sourceSha256": "609039d529572a9d02b5e2b5847469d5fe7e6138a55c1ebd3c70a716c3a1093a"
+     }
+    },
+    "evidenceUrls": [
+     "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/wordpress-runtime-routing-2026-10-12.md"
+    ],
+    "privateEvidenceRecorded": true,
+    "metaArticle": {
+     "status": "draft"
     }
    }
   ],
@@ -9599,7 +9621,7 @@
      "article": "https://localservicespotlight.com/article-guidelines/",
      "articleKind": "reference",
      "desc": "Put the finished article on the right WordPress page. Check its layout and save the state the job calls for.",
-     "content": "---\nname: step-12-post-article-on-wordpress\ndescription: \"Put the finished article on the right WordPress page. Check its layout and save the state the job calls for.\"\ncategory: Content Factory — Post\nstage: Post\ndefinitive_article: https://localservicespotlight.com/article-guidelines/\nstatus: complete\n---\n\n# Step 12: Post article on WordPress\n\nA finished draft needs a clear home on the site. This guide helps you put the words, pictures, and video in the right place. Start by checking whether the page already exists, so you can keep its links and history.\n\n**The path:** Prepared article → Correct source record → Layout and checks → Saved or published state.\n\n**Use this when:** A source-checked article has finished Process and is ready to be placed or updated in WordPress.\n\n## Inputs\n- The final source-checked article, [Goals, Content, and Targeting](https://blitzmetrics.com/gct-business-strategy/) brief, visual, rights, links, and video/transcript review evidence.\n- The exact site and existing article URL/ID if any, page role, author, intended categories, and publishing scope.\n- Access to the supported editor or publishing tool. For an existing Page or builder, identify its real save source and preserve it.\n- The media files, approved destination paths, previous revision, and next publisher/reviewer.\n\n## First-run prompt\n\n> Use the exact site, article, source assets and publication scope I provide. Find the canonical record, preserve its supported editor and URL, place the article, and check layout and links. Complete the already-authorized save or publication. Verify saved data and normal visitor content separately, and report the exact remaining issue.\n\n## Steps\n1. Search the site and inventory for the canonical page. Update that record when it already owns the topic. For a genuinely new editorial guide, use a Post and the block editor where appropriate. Preserve an existing Page, builder, URL and supported source; do not rebuild it solely to fit this task.\n2. Save the current source and key fields before an update. Check again before saving so a newer edit is not overwritten. Keep the title, date, author and URL unchanged unless the work explicitly calls for changes.\n3. Place the article in the supported editor. Use one visible H1, clear H2/H3 sections, short paragraphs, and the real speaker’s voice. Confirm the opening says who it helps, why, and the useful result in plain language.\n4. Place the article-specific visual early enough to work in the first desktop and phone screen. Add the real media with descriptive alt text and source/permission notes. A hidden featured-image setting or empty colored box does not meet the visual rule.\n5. Embed the actual source video when the article depends on it. Use [YouTube captions by default](https://local-service-spotlight.github.io/task-library/?task=enable-youtube-captions-by-default#task-enable-youtube-captions-by-default) for the player settings. Keep previews silent; a pasted watch URL, poster alone, or transcript pane is not the finished player.\n6. Verify the pasted body links and named anchors using [entity-linking guide](https://blitzmetrics.com/entity-linking/). Keep owned teaching links, accurate identity destinations, and specific primary proof. For new content, choose a clear stable slug; do not change an established URL just to fit a keyword.\n7. Save a draft when the job is staging work. Complete [categories and tags](https://local-service-spotlight.github.io/task-library/?task=step-13-categorize-post-and-add-tags#task-step-13-categorize-post-and-add-tags), [search metadata](https://local-service-spotlight.github.io/task-library/?task=step-14a-configure-rankmath-seo-plugin#task-step-14a-configure-rankmath-seo-plugin), author and link checks as applicable, then run [Check the full article checklist](https://local-service-spotlight.github.io/task-library/?task=verify-all-items-on-blog-posting-checklist#task-verify-all-items-on-blog-posting-checklist). A plugin step is not a reason to replace an existing supported builder.\n8. If publication/update is already authorized and applicable checks pass, publish through the supported route without asking again. Read back the saved record, then open the normal public URL on desktop and phone. If an approved cache/static publishing step is needed, use the maintained procedure and verify the served result.\n9. Log the exact record, revision, saved state, public URL, visual checks and any pending publication layer. A draft preview, successful API response, or cache-busted copy alone is not proof that ordinary visitors see the change.\n\n## Definition of done (QA checklist)\n\n- [ ] The correct canonical record and supported editor/source are preserved.\n- [ ] The article structure, source facts, media and links survive the transfer.\n- [ ] The useful lead visual is readable at 1440×860 and 390×844; no sideways overflow or first-load autoplay.\n- [ ] Saved draft/published state matches the job, with no unasked URL or content-type change.\n- [ ] When publication is in scope, normal canonical visitor content matches the accepted revision or the exact pending layer is recorded.\n\n## Example(s)\n\n**Fictional teaching example — no WordPress page was changed.** Maple Cycle already has `/repair-quote/` as a Page built with its site’s supported builder. A new source clip improves the same guide.\n\nThe publisher keeps the Page and URL, saves the old source, replaces the relevant explanation, and puts the real photo beside the short opening. The draft preview looks correct. After an authorized update, WordPress reports the new text but a normal visitor still sees the old version.\n\nThe result is “WordPress saved; public delivery pending,” not “published and verified.” The site’s maintained cache/static route owns the next step. A new duplicate Post would not solve that delivery problem.\n\n## Handoff and Content Factory context\n\nThe publisher receives the record ID, source revision, media and check results. Staged work proceeds to the specific unfinished Post task. Verified live work proceeds to the agreed distribution tasks; [Final formatting and QA checks](https://local-service-spotlight.github.io/task-library/?task=step-17-final-formatting-and-qa-checks#task-step-17-final-formatting-and-qa-checks) closes the served-page review.\n\nThis task serves **Post** in the [Content Factory](https://blitzmetrics.com/content-factory/). Produce supplies the source, Process prepares it, Post places and checks it on the agreed channels, and Promote distributes proven work under its own scope. The task’s actual handoff above defines the next step; list order alone does not create a prerequisite.\n\n## When this runs\n\nRun for an initial article or a defined update. No new schedule or standing publisher is installed by this guide.\n\n## First-run setup and continuity\n\nUse the exact account, source, destination and authority recorded for the job. Carry out publication, messages or repairs already authorized once their required checks pass; do not ask for the same approval again. If an action is outside that scope, finish the authorized work and state the specific remaining need. A login, plugin, or task file does not itself grant new authority.\n\nKeep the latest state, record IDs, revisions and next owner in the project tracker or files. Before a retry, check the current saved/sent/published item to avoid duplicates or overwriting another edit. A model has no guaranteed memory, scheduler or account access just because it is called persistent. A future check needs a configured timer or a named person.\n\nKeep all agent media previews muted with volume zero before playback. If this cannot be verified, use captions, metadata or still frames and state what was not tested. No first-load autoplay is part of these page instructions.\n\n## Write up the real run\n\nFor each actual attempt, [write its meta article](https://blitzmetrics.com/meta-article-prompt/) with this exact task, source revision, trigger, work, decisions, evidence, result and next owner. Failed, partial and blocked attempts still get a written record. A private draft is a valid writing outcome; public publication follows the existing scope.\n\nKeep one stable execution ID for the actual task run. Retries, checks and changed artifacts do not add runs. A separately scoped child task may have its own ID linked to its parent; writing the parent’s meta record is part of that same run. The [recipe and meta-article guide](https://localservicespotlight.com/meta-articles/) explains the distinction. Teaching examples below or above are not execution evidence and must not enter the run count.\n\n\n<!-- factory-layer:start -->\n\n## Factory chain (do not treat this as isolated)\n\n- **Phase:** Post\n- **Importance:** 5/5 `●●●●●` — frequency 5, revenue 4, gating 5 (runs every factory cycle or weekly; creates the asset ads amplify; unblocks a chain (access/plumbing))\n- **Browse earlier task:** `process-videos-via-marketscale`\n- **Browse later task:** `set-wordpress-author-to-correct-person`\nThese are nearby tasks in the library. Use this guide’s Inputs and Handoff sections to choose what comes before and after your work. Catalog order does not establish prerequisites or handoffs.\n- **Handoff:** Draft URL or WP post ID, slug, author user ID, featured-image media ID. Promote reads the live URL, not the draft.\n\n## Model routing (same factory, any engine)\n\n- **This task's lane:** `script` — No model. Shell, REST, yt-dlp, Descript export, WP application-password publish.\n- **Single-engine path:** Use the capable AI app you already have. Check its required tools and access before starting. Pass the actual result and proof to the next task.\n- **Optional multi-engine:** A tested local model may draft; a stronger model may review facts and voice. Use supported tools for approved actions. Pick models from observed quality and cost; a model name does not prove it can run this task.\n- **Never** store the working state in one vendor's memory. Files in the Content Library are the bridge.\n\n<!-- factory-layer:end -->\n## Definitive article & links\n\n- Canonical article: https://localservicespotlight.com/article-guidelines/\n- Exact Task Library record: [Step 12: Post article on WordPress](https://local-service-spotlight.github.io/task-library/?task=step-12-post-article-on-wordpress#task-step-12-post-article-on-wordpress)\n- Working writing standard: [Article Guidelines](https://localservicespotlight.com/article-guidelines/)\n- [Task recipe and publishing standard](https://blitzmetrics.com/definitive-article-guide/)\n- [WordPress block-editor controls](https://wordpress.org/documentation/article/wordpress-block-editor/)\n\n## Review and evidence still needed\n\nThe original contributor status in the header is preserved. It does not certify this proposed rewrite or prove that this account, publication, message, player or check has run. Every worked teaching example is explicitly invented; replace it with actual evidence when documenting a real execution.\n- The real supported save/cache/static route and exact publication scope require the target site; this batch did not publish.",
+     "content": "---\nname: step-12-post-article-on-wordpress\ndescription: \"Put the finished article on the right WordPress page. Check its layout and save the state the job calls for.\"\ncategory: Content Factory — Post\nstage: Post\ndefinitive_article: https://localservicespotlight.com/article-guidelines/\nstatus: complete\n---\n\n# Step 12: Post article on WordPress\n\nPut your checked article on the right live page. Check where the site saves its pages first, so your work reaches readers. Use the [article guidelines](https://localservicespotlight.com/article-guidelines/) to check the draft before this step.\n\n**The path:** Check site and edit path → Confirm WordPress fits → Save the right record → Check the public result.\n\n**Use this when:** A source-checked article has finished Process, and current site records confirm that WordPress is its approved editor. A page that was once made in WordPress may now be served as fixed files. Those sites need their own recorded source and release path.\n\n## Before opening an editor\n\nFirst confirm the site, the current source of edits, your allowed action and the tool that can perform it. Keep a dated record of the evidence. A saved login is not proof that this is still the right editor.\n\n| What the current evidence shows | What to do next |\n| --- | --- |\n| Live WordPress is the approved edit path | Follow the WordPress steps below using the existing authorized tool. |\n| A static site serves fixed files, including old WordPress content | Use that site's maintained source and reviewed release process. Stop the WordPress steps here. |\n| The site uses another source, such as Astro | Use its maintained source, preview and authorized deployment process. A source merge alone is not a live release. |\n| The runtime, source or allowed action is unknown or conflicts | Keep checks read-only. Save the exact missing evidence and existing responsible owner. Do not guess a login or ask for a password. |\n\nA 404 means a route was not found; it does not name the hosting company. WordPress-looking HTML, media paths or sitemaps can remain after a static export. Check a working public page and its response headers, then confirm the edit path in the site's maintained records. A retained WordPress origin may be only a backup. Its existence does not grant permission to edit or publish from it.\n\nFor LSS fleet work, use the current website preflight, relationship record, exact domain record and release instructions. Keep those private records private. Do not bypass a held production step, copy the public static site back onto itself, or invent a deployment command. Continue unrelated authorized work while the missing site-specific evidence is resolved.\n\n## Inputs\n- The final source-checked article, [Goals, Content, and Targeting](https://blitzmetrics.com/gct-business-strategy/) brief, visual, rights, links, and video/transcript review evidence.\n- The exact site and existing article URL/ID if any, page role, author, intended categories, and publishing scope.\n- Positive evidence that WordPress is the approved editor for this site now, plus access to the supported tool. For an existing Page or builder, identify its real save source and preserve it.\n- The media files, approved destination paths, previous revision, and next publisher/reviewer.\n\n## First-run prompt\n\n> Use the exact site, article, source assets and publication scope I provide. First verify the current public runtime and approved edit path. If WordPress is not the approved editor or the evidence is unclear, stop the WordPress steps and name the correct route or missing evidence. Otherwise find the canonical record, preserve its supported editor and URL, place the article, and check layout and links. Complete the already-authorized save or publication. Verify saved data and normal visitor content separately, and report the exact remaining issue.\n\n## Steps\n1. Confirm the runtime/edit-path check above passes for WordPress, then search the site and inventory for the canonical page. Update that record when it already owns the topic. For a genuinely new editorial guide, use a Post and the block editor where appropriate. Preserve an existing Page, builder, URL and supported source; do not rebuild it solely to fit this task.\n2. Save the current source and key fields before an update. Check again before saving so a newer edit is not overwritten. Keep the title, date, author and URL unchanged unless the work explicitly calls for changes.\n3. Place the article in the supported editor. Use one visible H1, clear H2/H3 sections, short paragraphs, and the real speaker’s voice. Confirm the opening says who it helps, why, and the useful result in plain language.\n4. Place the article-specific visual early enough to work in the first desktop and phone screen. Add the real media with descriptive alt text and source/permission notes. A hidden featured-image setting or empty colored box does not meet the visual rule.\n5. Embed the actual source video when the article depends on it. Use [YouTube captions by default](https://local-service-spotlight.github.io/task-library/?task=enable-youtube-captions-by-default#task-enable-youtube-captions-by-default) for the player settings. Keep previews silent; a pasted watch URL, poster alone, or transcript pane is not the finished player.\n6. Verify the pasted body links and named anchors using [entity-linking guide](https://blitzmetrics.com/entity-linking/). Keep owned teaching links, accurate identity destinations, and specific primary proof. For new content, choose a clear stable slug; do not change an established URL just to fit a keyword.\n7. Save a draft when the job is staging work. Complete [categories and tags](https://local-service-spotlight.github.io/task-library/?task=step-13-categorize-post-and-add-tags#task-step-13-categorize-post-and-add-tags), [search metadata](https://local-service-spotlight.github.io/task-library/?task=step-14a-configure-rankmath-seo-plugin#task-step-14a-configure-rankmath-seo-plugin), author and link checks as applicable, then run [Check the full article checklist](https://local-service-spotlight.github.io/task-library/?task=verify-all-items-on-blog-posting-checklist#task-verify-all-items-on-blog-posting-checklist). A plugin step is not a reason to replace an existing supported builder.\n8. If publication/update is already authorized and applicable checks pass, publish through the supported route without asking again. Read back the saved record, then open the normal public URL on desktop and phone. If a separate cache or static release is needed, continue only when the current site record explicitly approves that exact source and release route. A retained origin save does not clear a production hold. Otherwise keep the prepared change and record public delivery as pending.\n9. Log the exact record, revision, saved state, public URL, visual checks and any pending publication layer. A draft preview, successful API response, or cache-busted copy alone is not proof that ordinary visitors see the change.\n\n## Definition of done (QA checklist)\n\n- [ ] Current evidence confirms WordPress is the approved editor; static/unknown sites have been routed or held without a WordPress write.\n- [ ] The correct canonical record and supported editor/source are preserved.\n- [ ] The article structure, source facts, media and links survive the transfer.\n- [ ] The useful lead visual is readable at 1440×860 and 390×844; no sideways overflow or first-load autoplay.\n- [ ] Saved draft/published state matches the job, with no unasked URL or content-type change.\n- [ ] When publication is in scope, normal canonical visitor content matches the accepted revision or the exact pending layer is recorded.\n\n## Example(s)\n\n**Fictional teaching example — no site was changed.** Maple Cycle has current evidence that WordPress is its approved editor. It already has `/repair-quote/` as a Page built with its site’s supported builder. A new source clip improves the same guide.\n\nThe publisher keeps the Page and URL, saves the old source, replaces the relevant explanation, and puts the real photo beside the short opening. The draft preview looks correct. After an authorized update, WordPress reports the new text but a normal visitor still sees the old version.\n\nThe result is “WordPress saved; public delivery pending,” not “published and verified.” The site’s currently approved release route owns the next step; if that route is not proved, delivery stays on hold. A new duplicate Post would not solve it.\n\nA second shop has a working static homepage, old WordPress media paths and a login 404. That evidence does not identify WordPress.com or justify a CMS password request. The publisher records the observed state and uses the maintained source/release instructions. Without them, the result is a read-only diagnosis and a named missing gate.\n\n## Handoff and Content Factory context\n\nThe publisher receives the runtime/edit-path evidence, record ID, source revision, media and check results. For a static or unknown site, the existing site-release owner receives the prepared files, exact missing gate and evidence; no WordPress write or new access request is implied. Staged work proceeds to the specific unfinished Post task. Verified live work proceeds to the agreed distribution tasks; [Final formatting and QA checks](https://local-service-spotlight.github.io/task-library/?task=step-17-final-formatting-and-qa-checks#task-step-17-final-formatting-and-qa-checks) closes the served-page review.\n\nThis task serves **Post** in the [Content Factory](https://blitzmetrics.com/content-factory/). Produce supplies the source, Process prepares it, Post places and checks it on the agreed channels, and Promote distributes proven work under its own scope. The task’s actual handoff above defines the next step; list order alone does not create a prerequisite.\n\n## When this runs\n\nRun for an initial article or a defined update. No new schedule or standing publisher is installed by this guide.\n\n## First-run setup and continuity\n\nUse the exact account, source, destination and authority recorded for the job. Carry out publication, messages or repairs already authorized once their required checks pass; do not ask for the same approval again. If an action is outside that scope, finish the authorized work and state the specific remaining need. A login, plugin, or task file does not itself grant new authority.\n\nKeep the latest state, record IDs, revisions and next owner in the project tracker or files. Before a retry, check the current saved/sent/published item to avoid duplicates or overwriting another edit. A model has no guaranteed memory, scheduler or account access just because it is called persistent. A future check needs a configured timer or a named person.\n\nKeep all agent media previews muted with volume zero before playback. If this cannot be verified, use captions, metadata or still frames and state what was not tested. No first-load autoplay is part of these page instructions.\n\n## Write up the real run\n\nFor each actual attempt, [write its meta article](https://blitzmetrics.com/meta-article-prompt/) with this exact task, source revision, trigger, work, decisions, evidence, result and next owner. Failed, partial and blocked attempts still get a written record. A private draft is a valid writing outcome; public publication follows the existing scope.\n\nKeep one stable execution ID for the actual task run. Retries, checks and changed artifacts do not add runs. A separately scoped child task may have its own ID linked to its parent; writing the parent’s meta record is part of that same run. The [recipe and meta-article guide](https://localservicespotlight.com/meta-articles/) explains the distinction. Teaching examples below or above are not execution evidence and must not enter the run count.\n\n\n<!-- factory-layer:start -->\n\n## Factory chain (do not treat this as isolated)\n\n- **Phase:** Post\n- **Importance:** 5/5 `●●●●●` — frequency 5, revenue 4, gating 5 (runs every factory cycle or weekly; creates the asset ads amplify; unblocks a chain (access/plumbing))\n- **Browse earlier task:** `process-videos-via-marketscale`\n- **Browse later task:** `set-wordpress-author-to-correct-person`\nThese are nearby tasks in the library. Use this guide’s Inputs and Handoff sections to choose what comes before and after your work. Catalog order does not establish prerequisites or handoffs.\n- **Handoff:** Draft URL or WP post ID, slug, author user ID, featured-image media ID. Promote reads the live URL, not the draft.\n\n## Model routing (same factory, any engine)\n\n- **This task's lane:** `script` — No model. Shell, REST, yt-dlp, Descript export, WP application-password publish.\n- **Single-engine path:** Use the capable AI app you already have. Check its required tools and access before starting. Pass the actual result and proof to the next task.\n- **Optional multi-engine:** A tested local model may draft; a stronger model may review facts and voice. Use supported tools for approved actions. Pick models from observed quality and cost; a model name does not prove it can run this task.\n- **Never** store the working state in one vendor's memory. Files in the Content Library are the bridge.\n\n<!-- factory-layer:end -->\n## Definitive article & links\n\n- Canonical article: https://localservicespotlight.com/article-guidelines/\n- Exact Task Library record: [Step 12: Post article on WordPress](https://local-service-spotlight.github.io/task-library/?task=step-12-post-article-on-wordpress#task-step-12-post-article-on-wordpress)\n- Working writing standard: [Article Guidelines](https://localservicespotlight.com/article-guidelines/)\n- [Task recipe and publishing standard](https://blitzmetrics.com/definitive-article-guide/)\n- [WordPress block-editor controls](https://wordpress.org/documentation/article/wordpress-block-editor/)\n\n## Review and evidence still needed\n\nThe original contributor status in the header is preserved. It does not certify this proposed rewrite or prove that this account, publication, message, player or check has run. Every worked teaching example is explicitly invented; replace it with actual evidence when documenting a real execution.\n- The real supported save/release route and exact publication scope require the target site. Historical delivery proof does not show that this revised recipe has been used. New-user setup and accepted real use remain unverified.",
      "importance": 5,
      "freq": 5,
      "revenue": 4,
@@ -9611,10 +9633,40 @@
      "lane_label": "No model. Shell, REST, yt-dlp, Descript export, WP application-password publish.",
      "why": "runs every factory cycle or weekly; creates the asset ads amplify; unblocks a chain (access/plumbing)",
      "instructionReview": {
-      "source_sha256": "40a2dd9f31975663518823e89aced2a2b59f0b076fcbc6d780bb9f1e8c9b63f8",
-      "reviewed_at": "2026-09-06",
-      "reviewer": "Codex editorial review",
-      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate."
+      "source_sha256": "b396084027bffb5296b1119dbe58963d1078a429d92b0579c30f8b637e95c969",
+      "reviewed_at": "2026-10-12",
+      "reviewer": "Codex root with separate GPT-6 Luna candidate review",
+      "scope": "Exact written recipe review only; link availability remains open. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/wordpress-runtime-routing-2026-10-12.md",
+      "standards": {
+       "version": 1,
+       "checks": {
+        "opening": {
+         "state": "pass",
+         "reason": "Names the action, benefit and linked draft-check prerequisite in three short sentences; exact words quoted in dated review.",
+         "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/wordpress-runtime-routing-2026-10-12.md"
+        },
+        "recipe": {
+         "state": "pass",
+         "reason": "Requires positive current WordPress edit authority, routes static and unknown sites to existing release owners, and defines inputs, steps and public result checks.",
+         "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/wordpress-runtime-routing-2026-10-12.md"
+        },
+        "links": {
+         "state": "unknown",
+         "reason": "Article Guidelines destination read and supports opening prerequisite; Content Factory destination returned 403 in separate web-reader and anonymous checks. Availability remains unknown.",
+         "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/wordpress-runtime-routing-2026-10-12.md"
+        },
+        "evidence": {
+         "state": "pass",
+         "reason": "Historical delivery stays separate from this revision; fictional examples labelled; login 404 and old WordPress assets are not runtime or edit-authority proof.",
+         "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/wordpress-runtime-routing-2026-10-12.md"
+        },
+        "handoff": {
+         "state": "pass",
+         "reason": "Names current release owner and transfers runtime evidence, prepared files, exact missing gate and saved/public states before downstream distribution.",
+         "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/wordpress-runtime-routing-2026-10-12.md"
+        }
+       }
+      }
      },
      "articleState": "ready",
      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=step-12-post-article-on-wordpress#task-step-12-post-article-on-wordpress",
@@ -9684,24 +9736,57 @@
       ]
      },
      "standardVerification": {
-      "instructionSourceSha256": "40a2dd9f31975663518823e89aced2a2b59f0b076fcbc6d780bb9f1e8c9b63f8",
+      "instructionSourceSha256": "b396084027bffb5296b1119dbe58963d1078a429d92b0579c30f8b637e95c969",
       "articleKey": "localservicespotlight.com/article-guidelines",
       "gates": {
        "instructionRevisionReviewed": {
         "id": "instructionRevisionReviewed",
         "label": "Exact instruction revision reviewed",
         "state": "pass",
-        "reason": "Current source bytes match the review recorded 2026-09-06. Review scope and limits: Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate.",
-        "reviewedAt": "2026-09-06",
-        "reviewer": "Codex editorial review",
-        "sourceSha256": "40a2dd9f31975663518823e89aced2a2b59f0b076fcbc6d780bb9f1e8c9b63f8"
+        "reason": "Current source bytes match the review recorded 2026-10-12. Review scope and limits: Exact written recipe review only; link availability remains open. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/wordpress-runtime-routing-2026-10-12.md",
+        "reviewedAt": "2026-10-12",
+        "reviewer": "Codex root with separate GPT-6 Luna candidate review",
+        "sourceSha256": "b396084027bffb5296b1119dbe58963d1078a429d92b0579c30f8b637e95c969"
        },
        "instructionStandards": {
         "id": "instructionStandards",
         "label": "Instruction requirements checked",
         "state": "unknown",
-        "reason": "The current exact-byte review has no structured instruction-requirements checklist.",
-        "sourceSha256": "40a2dd9f31975663518823e89aced2a2b59f0b076fcbc6d780bb9f1e8c9b63f8"
+        "reason": "Current-revision instruction requirements are unknown: links.",
+        "reviewedAt": "2026-10-12",
+        "reviewer": "Codex root with separate GPT-6 Luna candidate review",
+        "reviewScope": "Exact written recipe review only; link availability remains open. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/wordpress-runtime-routing-2026-10-12.md",
+        "sourceSha256": "b396084027bffb5296b1119dbe58963d1078a429d92b0579c30f8b637e95c969",
+        "standards": {
+         "version": 1,
+         "checks": {
+          "opening": {
+           "state": "pass",
+           "reason": "Names the action, benefit and linked draft-check prerequisite in three short sentences; exact words quoted in dated review.",
+           "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/wordpress-runtime-routing-2026-10-12.md"
+          },
+          "recipe": {
+           "state": "pass",
+           "reason": "Requires positive current WordPress edit authority, routes static and unknown sites to existing release owners, and defines inputs, steps and public result checks.",
+           "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/wordpress-runtime-routing-2026-10-12.md"
+          },
+          "links": {
+           "state": "unknown",
+           "reason": "Article Guidelines destination read and supports opening prerequisite; Content Factory destination returned 403 in separate web-reader and anonymous checks. Availability remains unknown.",
+           "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/wordpress-runtime-routing-2026-10-12.md"
+          },
+          "evidence": {
+           "state": "pass",
+           "reason": "Historical delivery stays separate from this revision; fictional examples labelled; login 404 and old WordPress assets are not runtime or edit-authority proof.",
+           "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/wordpress-runtime-routing-2026-10-12.md"
+          },
+          "handoff": {
+           "state": "pass",
+           "reason": "Names current release owner and transfers runtime evidence, prepared files, exact missing gate and saved/public states before downstream distribution.",
+           "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/wordpress-runtime-routing-2026-10-12.md"
+          }
+         }
+        }
        },
        "contributorComplete": {
         "id": "contributorComplete",
@@ -42305,7 +42390,7 @@
      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=publish-skill-and-task-page#task-publish-skill-and-task-page",
      "executionHistory": {
       "status": "partial",
-      "recordedRuns": 19,
+      "recordedRuns": 20,
       "completedRuns": 15,
       "failedRuns": 0,
       "partialRuns": 4,
@@ -42330,7 +42415,8 @@
        "task-direct-open-20261002-1404",
        "taxonomy-guide-repair-20261003-1606",
        "tracker-setup-20260925-000216",
-       "weekly-maa-clarity-20261011"
+       "weekly-maa-clarity-20261011",
+       "wordpress-runtime-routing-20261012"
       ],
       "executionOutcomes": [
        {
@@ -42446,6 +42532,12 @@
         "status": "completed",
         "startedAt": "2026-10-11T13:13:36.970278+00:00",
         "finishedAt": "2026-10-11T13:27:07.121253+00:00"
+       },
+       {
+        "executionId": "wordpress-runtime-routing-20261012",
+        "status": "running",
+        "startedAt": "2026-10-12T17:18:53.182126+00:00",
+        "finishedAt": null
        }
       ],
       "acceptanceReviews": [
@@ -42889,7 +42981,7 @@
         "id": "recordedExecution",
         "label": "Recorded real execution",
         "state": "pass",
-        "reason": "19 distinct execution ID(s) name this task; outcomes remain separate.",
+        "reason": "20 distinct execution ID(s) name this task; outcomes remain separate.",
         "executionIds": [
          "authority-guides-repair-20261005-2100",
          "booking-path-checks-20261009-1259",
@@ -42909,7 +43001,8 @@
          "task-direct-open-20261002-1404",
          "taxonomy-guide-repair-20261003-1606",
          "tracker-setup-20260925-000216",
-         "weekly-maa-clarity-20261011"
+         "weekly-maa-clarity-20261011",
+         "wordpress-runtime-routing-20261012"
         ],
         "historyStatus": "partial"
        },
