@@ -1,6 +1,6 @@
 ---
 name: step-12-post-article-on-wordpress
-description: "Put the finished article on the right WordPress page. Check its layout and save the state the job calls for."
+description: "Put your checked article on the right live page. Check where the site saves pages so readers get your work. This follows the draft checks in the article guidelines linked above."
 category: Content Factory — Post
 stage: Post
 definitive_article: https://localservicespotlight.com/article-guidelines/

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "ordering": "Setup failures and evidence holds first. Within each priority lane, sort by estimated revenue role, dependencies unblocked, frequency and importance before missing-guide status and gap count. Effort and actual income remain unknown.",
-  "generatedAt": "2026-10-12T17:30:35+00:00",
+  "generatedAt": "2026-10-12T17:38:18+00:00",
   "definition": "Per-task standard gates derived from exact instruction reviews, explicit instruction-requirement checks, contributor status, article mapping/catalog holds, exact-revision article semantic reviews, task-attributed examples and the execution ledger. Unknown proof is never turned into a pass.",
   "stats": {
     "tasks": 276,
@@ -27454,7 +27454,7 @@
       ],
       "nextAction": "No exact-revision positive semantic review is recorded for this article.",
       "standardVerification": {
-        "instructionSourceSha256": "b396084027bffb5296b1119dbe58963d1078a429d92b0579c30f8b637e95c969",
+        "instructionSourceSha256": "39c70a00cf57820b2ac1a88f6b5b4c677fe2e125c081f696fef74104d724654b",
         "articleKey": "localservicespotlight.com/article-guidelines",
         "gates": {
           "instructionRevisionReviewed": {
@@ -27464,7 +27464,7 @@
             "reason": "Current source bytes match the review recorded 2026-10-12. Review scope and limits: Exact written recipe review only; link availability remains open. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/wordpress-runtime-routing-2026-10-12.md",
             "reviewedAt": "2026-10-12",
             "reviewer": "Codex root with separate GPT-6 Luna candidate review",
-            "sourceSha256": "b396084027bffb5296b1119dbe58963d1078a429d92b0579c30f8b637e95c969"
+            "sourceSha256": "39c70a00cf57820b2ac1a88f6b5b4c677fe2e125c081f696fef74104d724654b"
           },
           "instructionStandards": {
             "id": "instructionStandards",
@@ -27474,7 +27474,7 @@
             "reviewedAt": "2026-10-12",
             "reviewer": "Codex root with separate GPT-6 Luna candidate review",
             "reviewScope": "Exact written recipe review only; link availability remains open. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/wordpress-runtime-routing-2026-10-12.md",
-            "sourceSha256": "b396084027bffb5296b1119dbe58963d1078a429d92b0579c30f8b637e95c969",
+            "sourceSha256": "39c70a00cf57820b2ac1a88f6b5b4c677fe2e125c081f696fef74104d724654b",
             "standards": {
               "version": 1,
               "checks": {
