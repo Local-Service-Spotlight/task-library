@@ -1702,23 +1702,28 @@
       "executionId": "content-factory-link-repair-20261013",
       "startedAt": "2026-10-12T21:53:15.698067+00:00",
       "recordedAt": "2026-10-12T21:53:15.698067+00:00",
-      "updatedAt": "2026-10-12T21:53:15.698067+00:00",
-      "status": "running",
-      "result": "Shared Content Factory destination repaired in source; exact release checks pending. Existing proof recovery remains distinct from real task execution and new-user setup.",
+      "updatedAt": "2026-10-12T22:02:47.701819+00:00",
+      "status": "completed",
+      "result": "Published 293 Content Factory link repairs across271guides and three shared surfaces. All274remote source files, six public projections, sevenarchives,176tests and phone/desktop checks pass. One older site delivery and receiving handoff recovered without inventing recipe use;21written passes,0fully verified.",
       "metaArticle": {
-        "status": "draft",
-        "draftSha256": "87cba9cd3bac28ac9b59e17308cfb7c2c5fe701834a8dc2f41a37f611fe9a505"
+        "status": "published",
+        "url": "https://local-service-spotlight.github.io/task-library/maintenance/content-factory-link-2026-10-13.html"
       },
       "evidence": [
+        {
+          "visibility": "public",
+          "url": "https://github.com/Local-Service-Spotlight/task-library/pull/88"
+        },
         {
           "visibility": "public",
           "url": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/content-factory-link-2026-10-13.md"
         },
         {
           "visibility": "private",
-          "sha256": "559bec99fd1f3c2f6668cb8c10659f277ec617161b3996782d3cc06853b96a1d"
+          "sha256": "01a4e045861a9c1bf45d8b7e4f4e20722648301c2eca2b7e6c2cc3f1e68aedcc"
         }
-      ]
+      ],
+      "finishedAt": "2026-10-12T22:02:47.701819+00:00"
     }
   ],
   "historicalEvidence": [
