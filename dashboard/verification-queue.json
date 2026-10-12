@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "ordering": "Setup failures and evidence holds first. Within each priority lane, sort by estimated revenue role, dependencies unblocked, frequency and importance before missing-guide status and gap count. Effort and actual income remain unknown.",
-  "generatedAt": "2026-10-11T16:12:50+00:00",
+  "generatedAt": "2026-10-12T17:38:18+00:00",
   "definition": "Per-task standard gates derived from exact instruction reviews, explicit instruction-requirement checks, contributor status, article mapping/catalog holds, exact-revision article semantic reviews, task-attributed examples and the execution ledger. Unknown proof is never turned into a pass.",
   "stats": {
     "tasks": 276,
@@ -27454,24 +27454,57 @@
       ],
       "nextAction": "No exact-revision positive semantic review is recorded for this article.",
       "standardVerification": {
-        "instructionSourceSha256": "40a2dd9f31975663518823e89aced2a2b59f0b076fcbc6d780bb9f1e8c9b63f8",
+        "instructionSourceSha256": "39c70a00cf57820b2ac1a88f6b5b4c677fe2e125c081f696fef74104d724654b",
         "articleKey": "localservicespotlight.com/article-guidelines",
         "gates": {
           "instructionRevisionReviewed": {
             "id": "instructionRevisionReviewed",
             "label": "Exact instruction revision reviewed",
             "state": "pass",
-            "reason": "Current source bytes match the review recorded 2026-09-06. Review scope and limits: Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate.",
-            "reviewedAt": "2026-09-06",
-            "reviewer": "Codex editorial review",
-            "sourceSha256": "40a2dd9f31975663518823e89aced2a2b59f0b076fcbc6d780bb9f1e8c9b63f8"
+            "reason": "Current source bytes match the review recorded 2026-10-12. Review scope and limits: Exact written recipe review only; link availability remains open. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/wordpress-runtime-routing-2026-10-12.md",
+            "reviewedAt": "2026-10-12",
+            "reviewer": "Codex root with separate GPT-6 Luna candidate review",
+            "sourceSha256": "39c70a00cf57820b2ac1a88f6b5b4c677fe2e125c081f696fef74104d724654b"
           },
           "instructionStandards": {
             "id": "instructionStandards",
             "label": "Instruction requirements checked",
             "state": "unknown",
-            "reason": "The current exact-byte review has no structured instruction-requirements checklist.",
-            "sourceSha256": "40a2dd9f31975663518823e89aced2a2b59f0b076fcbc6d780bb9f1e8c9b63f8"
+            "reason": "Current-revision instruction requirements are unknown: links.",
+            "reviewedAt": "2026-10-12",
+            "reviewer": "Codex root with separate GPT-6 Luna candidate review",
+            "reviewScope": "Exact written recipe review only; link availability remains open. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/wordpress-runtime-routing-2026-10-12.md",
+            "sourceSha256": "39c70a00cf57820b2ac1a88f6b5b4c677fe2e125c081f696fef74104d724654b",
+            "standards": {
+              "version": 1,
+              "checks": {
+                "opening": {
+                  "state": "pass",
+                  "reason": "Names the action, benefit and linked draft-check prerequisite in three short sentences; exact words quoted in dated review.",
+                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/wordpress-runtime-routing-2026-10-12.md"
+                },
+                "recipe": {
+                  "state": "pass",
+                  "reason": "Requires positive current WordPress edit authority, routes static and unknown sites to existing release owners, and defines inputs, steps and public result checks.",
+                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/wordpress-runtime-routing-2026-10-12.md"
+                },
+                "links": {
+                  "state": "unknown",
+                  "reason": "Article Guidelines destination read and supports opening prerequisite; Content Factory destination returned 403 in separate web-reader and anonymous checks. Availability remains unknown.",
+                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/wordpress-runtime-routing-2026-10-12.md"
+                },
+                "evidence": {
+                  "state": "pass",
+                  "reason": "Historical delivery stays separate from this revision; fictional examples labelled; login 404 and old WordPress assets are not runtime or edit-authority proof.",
+                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/wordpress-runtime-routing-2026-10-12.md"
+                },
+                "handoff": {
+                  "state": "pass",
+                  "reason": "Names current release owner and transfers runtime evidence, prepared files, exact missing gate and saved/public states before downstream distribution.",
+                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/wordpress-runtime-routing-2026-10-12.md"
+                }
+              }
+            }
           },
           "contributorComplete": {
             "id": "contributorComplete",
@@ -33189,7 +33222,7 @@
             "id": "recordedExecution",
             "label": "Recorded real execution",
             "state": "pass",
-            "reason": "19 distinct execution ID(s) name this task; outcomes remain separate.",
+            "reason": "20 distinct execution ID(s) name this task; outcomes remain separate.",
             "executionIds": [
               "authority-guides-repair-20261005-2100",
               "booking-path-checks-20261009-1259",
@@ -33209,7 +33242,8 @@
               "task-direct-open-20261002-1404",
               "taxonomy-guide-repair-20261003-1606",
               "tracker-setup-20260925-000216",
-              "weekly-maa-clarity-20261011"
+              "weekly-maa-clarity-20261011",
+              "wordpress-runtime-routing-20261012"
             ],
             "historyStatus": "partial"
           },
