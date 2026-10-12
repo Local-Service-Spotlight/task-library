@@ -51,7 +51,7 @@ A fictional site has two live pages for the same course and a short contact page
 
 An authorized source/route owner receives the exact disposition and recovery plan. [Check the placed links](https://local-service-spotlight.github.io/task-library/?task=step-5-qa-links-against-google-guidelines#task-step-5-qa-links-against-google-guidelines) receives live destination checks; [Measure the accepted change set](https://local-service-spotlight.github.io/task-library/?task=step-6-measure-and-iterate-with-maa#task-step-6-measure-and-iterate-with-maa) receives the accepted release date, affected URLs and known baseline.
 
-This task supports the [Content Factory: Produce, Process, Post and Promote](https://blitzmetrics.com/content-factory/). Identity, proof, access or coordination can support several stages. Use the real inputs and receiving owner above; this task does not create unrelated transcripts, clips or ads merely because the diagram has four stages.
+This task supports the [Content Factory: Produce, Process, Post and Promote](https://localservicespotlight.com/content-factory/). Identity, proof, access or coordination can support several stages. Use the real inputs and receiving owner above; this task does not create unrelated transcripts, clips or ads merely because the diagram has four stages.
 
 ## Start with an agent
 

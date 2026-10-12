@@ -50,7 +50,7 @@ Tracking code can be hard to find when it is spread across a site. This guide he
 
 Give the container version and architecture record to the measurement owner. Use [set up ga4 with internal traffic filtering](https://local-service-spotlight.github.io/task-library/?task=set-up-ga4-with-internal-traffic-filtering#task-set-up-ga4-with-internal-traffic-filtering) for planned Analytics setup, or [install meta pixel with standard events](https://local-service-spotlight.github.io/task-library/?task=install-meta-pixel-with-standard-events#task-install-meta-pixel-with-standard-events) only when that separate measurement is in scope.
 
-This setup supports the [Content Factory](https://blitzmetrics.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. This check does not automatically execute all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
+This setup supports the [Content Factory](https://localservicespotlight.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. This check does not automatically execute all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
 
 ## When this runs
 

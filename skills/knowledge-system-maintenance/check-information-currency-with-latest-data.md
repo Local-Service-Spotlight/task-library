@@ -46,7 +46,7 @@ A fictional help page says a button is called Import. Current official help says
 
 ## Handoff and Content Factory context
 
-This work supports the [Content Factory, our four stages of using real content](https://blitzmetrics.com/content-factory/): Produce → Process → Post → Promote. Use the specific inputs and next task below to place the work; a maintenance task does not manufacture transcripts, clips or other stage outputs it does not call for.
+This work supports the [Content Factory, our four stages of using real content](https://localservicespotlight.com/content-factory/): Produce → Process → Post → Promote. Use the specific inputs and next task below to place the work; a maintenance task does not manufacture transcripts, clips or other stage outputs it does not call for.
 
 [Check links and their meaning](https://local-service-spotlight.github.io/task-library/?task=validate-cross-reference-integrity-across-articles#task-validate-cross-reference-integrity-across-articles) checks the changed page’s references, then [Record the audit result](https://local-service-spotlight.github.io/task-library/?task=update-status-table-in-definitive-article-guide#task-update-status-table-in-definitive-article-guide) records the combined audit result.
 

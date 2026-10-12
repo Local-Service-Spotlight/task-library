@@ -51,7 +51,7 @@ A fictional baker explains why a loaf cracks. A 35-second section contains the f
 
 [Prepare paid creative from proven content](https://local-service-spotlight.github.io/task-library/?task=create-dollar-a-day-ad-creatives-from-best-content#task-create-dollar-a-day-ad-creatives-from-best-content) receives later comparable results; [Check paths to the person’s site](https://local-service-spotlight.github.io/task-library/?task=link-all-content-back-to-personal-brand-site#task-link-all-content-back-to-personal-brand-site) receives the actual post routes.
 
-The source places this task in Process within the [Content Factory: Produce, Process, Post and Promote](https://blitzmetrics.com/content-factory/). Produce captures real sources, Process makes the selected useful assets, Post releases approved work, and Promote distributes proven work. The actual handoff above determines what this task must supply.
+The source places this task in Process within the [Content Factory: Produce, Process, Post and Promote](https://localservicespotlight.com/content-factory/). Produce captures real sources, Process makes the selected useful assets, Post releases approved work, and Promote distributes proven work. The actual handoff above determines what this task must supply.
 
 ## Start with an agent
 

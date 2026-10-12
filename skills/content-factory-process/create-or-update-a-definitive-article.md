@@ -9,7 +9,7 @@ status: needs-work
 
 # Create or update a definitive task article
 
-Use this guide to give your team one clear set of steps for a job. That saves time and helps people check their work. It is part of our [Content Factory](https://blitzmetrics.com/content-factory/): turn what you know into a guide others can use.
+Use this guide to give your team one clear set of steps for a job. That saves time and helps people check their work. It is part of our [Content Factory](https://localservicespotlight.com/content-factory/): turn what you know into a guide others can use.
 
 **The path:** Current owner and source → Usable recipe → Independent checks → Published or staged guide.
 
@@ -60,7 +60,7 @@ The example is labeled teaching material because no customer run has been suppli
 
 The publishing or task owner receives the checked guide and evidence. [Article checklist review](https://local-service-spotlight.github.io/task-library/?task=verify-all-items-on-blog-posting-checklist#task-verify-all-items-on-blog-posting-checklist) and [Final rendered QA](https://local-service-spotlight.github.io/task-library/?task=step-17-final-formatting-and-qa-checks#task-step-17-final-formatting-and-qa-checks) can be components of this parent run; their links do not create separate completions.
 
-Produce supplies the real source. **Process**, this stage of the [Content Factory](https://blitzmetrics.com/content-factory/), turns it into useful finished assets. Post saves or publishes them on the agreed channels. Promote tests and distributes suitable work within its own scope. The handoff above names this task’s actual next step; catalog neighbors alone are not prerequisites.
+Produce supplies the real source. **Process**, this stage of the [Content Factory](https://localservicespotlight.com/content-factory/), turns it into useful finished assets. Post saves or publishes them on the agreed channels. Promote tests and distributes suitable work within its own scope. The handoff above names this task’s actual next step; catalog neighbors alone are not prerequisites.
 
 ## When this runs
 

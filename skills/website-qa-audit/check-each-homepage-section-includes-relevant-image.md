@@ -55,7 +55,7 @@ If the workshop photo is hidden at phone width, desktop success does not pass th
 
 The page owner receives the section map and real asset requests. [Check long stretches of text](https://local-service-spotlight.github.io/task-library/?task=ensure-no-text-only-sections-spanning-full-viewport#task-ensure-no-text-only-sections-spanning-full-viewport) reviews the broader visual rhythm; [Check image text alternatives](https://local-service-spotlight.github.io/task-library/?task=verify-all-images-have-descriptive-alt-text#task-verify-all-images-have-descriptive-alt-text) covers accessibility.
 
-This is a supporting quality check for the [Content Factory](https://blitzmetrics.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. This check does not automatically execute all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
+This is a supporting quality check for the [Content Factory](https://localservicespotlight.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. This check does not automatically execute all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
 
 ## When this runs
 

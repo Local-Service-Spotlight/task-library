@@ -51,7 +51,7 @@ A short video can make your thanks feel personal. This guide helps a business ow
 
 Send the checked files to [Process the Thank-You Clip](https://local-service-spotlight.github.io/task-library/?task=process-through-content-factory#task-process-through-content-factory). Deliver a private message only when that send is within the user’s instructions, then verify the actual sent copy.
 
-This fits the [Content Factory](https://blitzmetrics.com/content-factory/): Produce a true story, Process it into useful files, Post only in the agreed places, and Promote a suitable post when its test has a budget. Each stage passes its checked files and next owner forward.
+This fits the [Content Factory](https://localservicespotlight.com/content-factory/): Produce a true story, Process it into useful files, Post only in the agreed places, and Promote a suitable post when its test has a budget. Each stage passes its checked files and next owner forward.
 
 ## When this runs
 
@@ -75,7 +75,7 @@ A teaching example is not a real execution. Do not count it, a repeated check or
 
 - Exact task: [Record a One-Minute Thank-You Video](https://local-service-spotlight.github.io/task-library/?task=record-one-minute-thank-you-video#task-record-one-minute-thank-you-video)
 - [One-minute video guide](https://blitzmetrics.com/one-minute-video-guide/) — how to record one clear point.
-- [Content Factory](https://blitzmetrics.com/content-factory/) — how the source becomes checked posts.
+- [Content Factory](https://localservicespotlight.com/content-factory/) — how the source becomes checked posts.
 - [Dollar-a-Day guide](https://blitzmetrics.com/dollar-a-day/) — the paid test method; current platform controls still need checking.
 
 ## Review and evidence still needed

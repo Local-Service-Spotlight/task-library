@@ -60,7 +60,7 @@ The sample does not say “customers ask this 20 times a week,” because no rea
 
 The named speaker receives accepted prompts through [Record one-minute videos](https://local-service-spotlight.github.io/task-library/?task=record-one-minute-videos#task-record-one-minute-videos). The editor receives the page map so later articles fit the [SEO Tree](https://blitzmetrics.com/seo-tree/). A missing page is planning work, not a reason to invent a page URL.
 
-This task serves **Produce** in the [Content Factory](https://blitzmetrics.com/content-factory/). Produce makes or prepares source material. Process edits it, Post puts approved work on a channel, and Promote helps it reach people. Only the steps and handoff above are part of this task.
+This task serves **Produce** in the [Content Factory](https://localservicespotlight.com/content-factory/). Produce makes or prepares source material. Process edits it, Post puts approved work on a channel, and Promote helps it reach people. Only the steps and handoff above are part of this task.
 
 ## When this runs
 

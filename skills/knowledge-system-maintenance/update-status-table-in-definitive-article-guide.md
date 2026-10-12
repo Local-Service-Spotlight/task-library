@@ -47,7 +47,7 @@ A fictional audit passes topic and structure, finds a stale price, and cannot op
 
 ## Handoff and Content Factory context
 
-This work supports the [Content Factory, our four stages of using real content](https://blitzmetrics.com/content-factory/): Produce → Process → Post → Promote. Use the specific inputs and next task below to place the work; a maintenance task does not manufacture transcripts, clips or other stage outputs it does not call for.
+This work supports the [Content Factory, our four stages of using real content](https://localservicespotlight.com/content-factory/): Produce → Process → Post → Promote. Use the specific inputs and next task below to place the work; a maintenance task does not manufacture transcripts, clips or other stage outputs it does not call for.
 
 The named article owner handles the specific fixes. [The audit coordinator](https://local-service-spotlight.github.io/task-library/?task=schedule-and-assign-quarterly-auditors#task-schedule-and-assign-quarterly-auditors) receives remaining coverage and overdue-review gaps.
 

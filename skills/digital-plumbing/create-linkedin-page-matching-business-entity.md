@@ -50,7 +50,7 @@ Does your business have a clear home on LinkedIn? This guide helps an owner set 
 
 Give the checked Page link to the business profile owner and to [ensure nap consistency across platforms](https://local-service-spotlight.github.io/task-library/?task=ensure-nap-consistency-across-platforms#task-ensure-nap-consistency-across-platforms) when doing the broader identity check. Use the owned entity-linking method for the business’s website references.
 
-This setup supports the [Content Factory](https://blitzmetrics.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. This check does not automatically execute all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
+This setup supports the [Content Factory](https://localservicespotlight.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. This check does not automatically execute all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
 
 ## When this runs
 

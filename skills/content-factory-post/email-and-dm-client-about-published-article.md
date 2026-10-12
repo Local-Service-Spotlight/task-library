@@ -59,7 +59,7 @@ If only the email has a sent receipt, record “email sent; DM still pending.”
 
 The project owner receives the send references and any pending follow-up. [Share a lesson in the designated group](https://local-service-spotlight.github.io/task-library/?task=share-in-44k-facebook-group#task-share-in-44k-facebook-group) follows only when that group distribution is in the plan; it is not required to prove the client notification was sent.
 
-This task serves **Post** in the [Content Factory](https://blitzmetrics.com/content-factory/). Produce supplies the source, Process prepares it, Post places and checks it on the agreed channels, and Promote distributes proven work under its own scope. The task’s actual handoff above defines the next step; list order alone does not create a prerequisite.
+This task serves **Post** in the [Content Factory](https://localservicespotlight.com/content-factory/). Produce supplies the source, Process prepares it, Post places and checks it on the agreed channels, and Promote distributes proven work under its own scope. The task’s actual handoff above defines the next step; list order alone does not create a prerequisite.
 
 ## When this runs
 

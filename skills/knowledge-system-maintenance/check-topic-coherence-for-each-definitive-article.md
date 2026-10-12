@@ -47,7 +47,7 @@ A fictional bike-repair guide includes a video about a roofing company. The vide
 
 ## Handoff and Content Factory context
 
-This work supports the [Content Factory, our four stages of using real content](https://blitzmetrics.com/content-factory/): Produce → Process → Post → Promote. Use the specific inputs and next task below to place the work; a maintenance task does not manufacture transcripts, clips or other stage outputs it does not call for.
+This work supports the [Content Factory, our four stages of using real content](https://localservicespotlight.com/content-factory/): Produce → Process → Post → Promote. Use the specific inputs and next task below to place the work; a maintenance task does not manufacture transcripts, clips or other stage outputs it does not call for.
 
 [Check the current article structure](https://local-service-spotlight.github.io/task-library/?task=verify-structural-completeness-against-8-step-framework#task-verify-structural-completeness-against-8-step-framework) uses this relevance review; [Record the audit result](https://local-service-spotlight.github.io/task-library/?task=update-status-table-in-definitive-article-guide#task-update-status-table-in-definitive-article-guide) receives findings after all four audit checks.
 

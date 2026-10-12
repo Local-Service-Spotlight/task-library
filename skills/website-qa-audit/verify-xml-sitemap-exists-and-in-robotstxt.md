@@ -53,7 +53,7 @@ The audit follows the declared valid map, rather than disabling and re-enabling 
 
 The search/site owner receives exact missing or stale URL findings. [Check index visibility rules](https://local-service-spotlight.github.io/task-library/?task=ensure-robots-meta-not-blocking-indexing--qa-audit#task-ensure-robots-meta-not-blocking-indexing--qa-audit) verifies a separate reason a listed page may still be excluded.
 
-This is a supporting quality check for the [Content Factory](https://blitzmetrics.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. This check does not automatically execute all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
+This is a supporting quality check for the [Content Factory](https://localservicespotlight.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. This check does not automatically execute all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
 
 ## When this runs
 

@@ -55,7 +55,7 @@ A fictional accountant has a name shared by a musician. The visible card belongs
 
 The person responsible for commercial terms receives the exact proposal for acceptance. The identity reviewer receives a contested case before an offer is sent. After scope approval, [resolve identity facts](https://local-service-spotlight.github.io/task-library/?task=establish-entity-identity#task-establish-entity-identity) or [claim an available panel](https://local-service-spotlight.github.io/task-library/?task=claim-and-verify-knowledge-panel-when-it-appears#task-claim-and-verify-knowledge-panel-when-it-appears) receives the supported route.
 
-This is a qualification gate before the [Content Factory](https://blitzmetrics.com/content-factory/) starts. Once work is accepted, [Establish entity identity](https://local-service-spotlight.github.io/task-library/?task=establish-entity-identity#task-establish-entity-identity) supplies checked facts for later site or schema work. This task produces a sourced route and offer draft; it does not make a content asset.
+This is a qualification gate before the [Content Factory](https://localservicespotlight.com/content-factory/) starts. Once work is accepted, [Establish entity identity](https://local-service-spotlight.github.io/task-library/?task=establish-entity-identity#task-establish-entity-identity) supplies checked facts for later site or schema work. This task produces a sourced route and offer draft; it does not make a content asset.
 
 ## Start with an agent
 

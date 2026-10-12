@@ -49,7 +49,7 @@ A fictional weekly review has three tests. One meets its cost-per-qualified-lead
 
 [Diagnose weak results](https://local-service-spotlight.github.io/task-library/?task=analyze-why-underperformers-fail#task-analyze-why-underperformers-fail) receives evaluated weak cases; [Pause weak tests and scale proven winners](https://local-service-spotlight.github.io/task-library/?task=kill-underperformers-scale-winners#task-kill-underperformers-scale-winners) receives supported decisions and [Write the agreed weekly report](https://local-service-spotlight.github.io/task-library/?task=submit-weekly-maa-report-every-friday#task-submit-weekly-maa-report-every-friday) receives the full picture.
 
-This work supports the [Content Factory: Produce, Process, Post and Promote](https://blitzmetrics.com/content-factory/) across its relevant stages. It uses the actual inputs and next owner above; a strategy or measurement guide does not manufacture transcripts, clips or other unrelated stage outputs.
+This work supports the [Content Factory: Produce, Process, Post and Promote](https://localservicespotlight.com/content-factory/) across its relevant stages. It uses the actual inputs and next owner above; a strategy or measurement guide does not manufacture transcripts, clips or other unrelated stage outputs.
 
 ## Start with an agent
 

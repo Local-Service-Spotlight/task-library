@@ -51,7 +51,7 @@ A fictional safety trainer is accepted for a 20-minute trade event talk. The org
 
 [Capture and hand off permitted event footage](https://local-service-spotlight.github.io/task-library/?task=film-conference-presentations#task-film-conference-presentations) receives actual recording needs; [Turn the source into an article](https://local-service-spotlight.github.io/task-library/?task=repurpose-videos-into-blog-posts-via-content-factory#task-repurpose-videos-into-blog-posts-via-content-factory) receives the available source, and [Check outside proof](https://local-service-spotlight.github.io/task-library/?task=build-third-party-validation#task-build-third-party-validation) receives the checked appearance.
 
-This task supports the [Content Factory: Produce, Process, Post and Promote](https://blitzmetrics.com/content-factory/). Identity, proof, access or coordination can support several stages. Use the real inputs and receiving owner above; this task does not create unrelated transcripts, clips or ads merely because the diagram has four stages.
+This task supports the [Content Factory: Produce, Process, Post and Promote](https://localservicespotlight.com/content-factory/). Identity, proof, access or coordination can support several stages. Use the real inputs and receiving owner above; this task does not create unrelated transcripts, clips or ads merely because the diagram has four stages.
 
 ## Start with an agent
 

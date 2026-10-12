@@ -46,7 +46,7 @@ A fictional note says a report used the wrong week. It proposes a new date check
 
 ## Handoff and Content Factory context
 
-This work supports the [Content Factory, our four stages of using real content](https://blitzmetrics.com/content-factory/): Produce → Process → Post → Promote. Use the specific inputs and next task below to place the work; a maintenance task does not manufacture transcripts, clips or other stage outputs it does not call for.
+This work supports the [Content Factory, our four stages of using real content](https://localservicespotlight.com/content-factory/): Produce → Process → Post → Promote. Use the specific inputs and next task below to place the work; a maintenance task does not manufacture transcripts, clips or other stage outputs it does not call for.
 
 [Tag and queue the proposal](https://local-service-spotlight.github.io/task-library/?task=tag-proposal-with-affected-sop-and-queue-for-review#task-tag-proposal-with-affected-sop-and-queue-for-review) receives method changes; the owning article editor receives evidence additions and reports the actual saved/public result.
 

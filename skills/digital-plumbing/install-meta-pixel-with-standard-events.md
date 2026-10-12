@@ -50,7 +50,7 @@ Do you know which site actions your ads can measure? This guide helps a business
 
 Give the event map and checked data-source ID to the measurement owner. Use [ensure working contact form delivers notifications](https://local-service-spotlight.github.io/task-library/?task=ensure-working-contact-form-delivers-notifications#task-ensure-working-contact-form-delivers-notifications) to verify form delivery or [set up call tracking for phone conversions](https://local-service-spotlight.github.io/task-library/?task=set-up-call-tracking-for-phone-conversions#task-set-up-call-tracking-for-phone-conversions) for real call outcomes. Ad deployment stays in its own authorized task.
 
-This setup supports the [Content Factory](https://blitzmetrics.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. This check does not automatically execute all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
+This setup supports the [Content Factory](https://localservicespotlight.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. This check does not automatically execute all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
 
 ## When this runs
 

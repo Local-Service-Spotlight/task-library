@@ -50,7 +50,7 @@ Some of your posts helped people more than others. This guide helps you choose a
 
 Give the batch report to [run dollar a day campaign on winning content](https://local-service-spotlight.github.io/task-library/?task=run-dollar-a-day-campaign-on-winning-content#task-run-dollar-a-day-campaign-on-winning-content) for any next campaign plan, and to [analyze cost per result and engagement](https://local-service-spotlight.github.io/task-library/?task=analyze-cost-per-result-and-engagement#task-analyze-cost-per-result-and-engagement) for matched scoring. Do not launch the same post twice because both task names apply.
 
-This task is in Promote within the [Content Factory](https://blitzmetrics.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. Use the proof and checked posts from earlier stages; a Promote task does not automatically redo all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
+This task is in Promote within the [Content Factory](https://localservicespotlight.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. Use the proof and checked posts from earlier stages; a Promote task does not automatically redo all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
 
 ## When this runs
 

@@ -57,7 +57,7 @@ In a real post, “I use” needs the owner’s actual method behind it. If only
 
 The firing-check receiver gets any scheduled item, time and timezone. After the first firing is publicly verified, the comment owner gets the checked post and source material. The article owner gets any useful questions for the topic queue. Paid distribution remains a separate task.
 
-This task serves **Post** in the [Content Factory](https://blitzmetrics.com/content-factory/). Produce supplies the source, Process prepares it, Post places and checks it on the agreed channels, and Promote distributes proven work under its own scope. The task’s actual handoff above defines the next step; list order alone does not create a prerequisite.
+This task serves **Post** in the [Content Factory](https://localservicespotlight.com/content-factory/). Produce supplies the source, Process prepares it, Post places and checks it on the agreed channels, and Promote distributes proven work under its own scope. The task’s actual handoff above defines the next step; list order alone does not create a prerequisite.
 
 ## When this runs
 

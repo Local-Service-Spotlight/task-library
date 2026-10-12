@@ -53,7 +53,7 @@ The teaching fix labels them “Alex on LinkedIn” and “Maple Cycle on Linked
 
 The site owner receives the profile map and any identity questions. [Review footer navigation](https://local-service-spotlight.github.io/task-library/?task=verify-footer-includes-social-links-and-secondary-nav#task-verify-footer-includes-social-links-and-secondary-nav) covers the broader footer layout when that task is in scope.
 
-This is a supporting quality check for the [Content Factory](https://blitzmetrics.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. This check does not automatically execute all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
+This is a supporting quality check for the [Content Factory](https://localservicespotlight.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. This check does not automatically execute all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
 
 ## When this runs
 

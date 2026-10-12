@@ -60,7 +60,7 @@ A clear site helps people find the answer and the next useful step. This task he
 
 Pass the checked guide, source revision, real meta record and open evidence list to [Map Content in the SEO Tree](https://local-service-spotlight.github.io/task-library/?task=map-content-hierarchically-root-trunk-branches-leaves#task-map-content-hierarchically-root-trunk-branches-leaves). Make the Task Library point to the verified canonical destination after its publication and review conditions pass.
 
-This documentation job uses Process to turn real source work into a reusable recipe and Post to save and check its release. In the [Content Factory](https://blitzmetrics.com/content-factory/), later real runs supply new meta articles that improve this same recipe. Catalog neighbors are suggestions, not proven prerequisites.
+This documentation job uses Process to turn real source work into a reusable recipe and Post to save and check its release. In the [Content Factory](https://localservicespotlight.com/content-factory/), later real runs supply new meta articles that improve this same recipe. Catalog neighbors are suggestions, not proven prerequisites.
 
 ## When this runs
 

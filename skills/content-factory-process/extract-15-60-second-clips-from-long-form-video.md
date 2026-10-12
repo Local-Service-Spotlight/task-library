@@ -53,7 +53,7 @@ The clip title is “Say when the noise starts.” Its row records original sour
 
 The content owner receives clip files and the source map for [Prepare platform posts](https://local-service-spotlight.github.io/task-library/?task=create-social-media-posts-per-platform#task-create-social-media-posts-per-platform) or [Prepare Dollar a Day creatives](https://local-service-spotlight.github.io/task-library/?task=create-dollar-a-day-ad-creatives#task-create-dollar-a-day-ad-creatives) when appropriate. These are separate scoped deliverables.
 
-Produce supplies the real source. **Process**, this stage of the [Content Factory](https://blitzmetrics.com/content-factory/), turns it into useful finished assets. Post saves or publishes them on the agreed channels. Promote tests and distributes suitable work within its own scope. The handoff above names this task’s actual next step; catalog neighbors alone are not prerequisites.
+Produce supplies the real source. **Process**, this stage of the [Content Factory](https://localservicespotlight.com/content-factory/), turns it into useful finished assets. Post saves or publishes them on the agreed channels. Promote tests and distributes suitable work within its own scope. The handoff above names this task’s actual next step; catalog neighbors alone are not prerequisites.
 
 ## When this runs
 

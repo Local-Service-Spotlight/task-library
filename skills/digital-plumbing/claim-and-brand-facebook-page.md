@@ -50,7 +50,7 @@ People may find an old or wrong Page when they search for your business. This gu
 
 Give the Page ID and verified public link to the profile owner. Continue with [ensure nap consistency across platforms](https://local-service-spotlight.github.io/task-library/?task=ensure-nap-consistency-across-platforms#task-ensure-nap-consistency-across-platforms) for the cross-platform fact check. Use [convert instagram to professional account](https://local-service-spotlight.github.io/task-library/?task=convert-instagram-to-professional-account#task-convert-instagram-to-professional-account) only if an Instagram workflow is part of the plan.
 
-This setup supports the [Content Factory](https://blitzmetrics.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. This check does not automatically execute all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
+This setup supports the [Content Factory](https://localservicespotlight.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. This check does not automatically execute all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
 
 ## When this runs
 

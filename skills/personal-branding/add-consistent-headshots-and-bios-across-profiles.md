@@ -51,7 +51,7 @@ A fictional consultant changes her job title. Her website and two social profile
 
 [Add verified Person markup](https://local-service-spotlight.github.io/task-library/?task=implement-person-schema-with-sameas-links#task-implement-person-schema-with-sameas-links) receives the checked identity facts and profile URLs; the podcast and speaker tasks reuse the approved bio set.
 
-This task supports the [Content Factory: Produce, Process, Post and Promote](https://blitzmetrics.com/content-factory/). Identity, proof, access or coordination can support several stages. Use the real inputs and receiving owner above; this task does not create unrelated transcripts, clips or ads merely because the diagram has four stages.
+This task supports the [Content Factory: Produce, Process, Post and Promote](https://localservicespotlight.com/content-factory/). Identity, proof, access or coordination can support several stages. Use the real inputs and receiving owner above; this task does not create unrelated transcripts, clips or ads merely because the diagram has four stages.
 
 ## Start with an agent
 

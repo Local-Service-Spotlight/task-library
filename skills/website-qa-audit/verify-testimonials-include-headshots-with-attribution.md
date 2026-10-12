@@ -53,7 +53,7 @@ The task remains HOLD for that testimonial until the approved portrait is obtain
 
 The content owner receives the portrait/name inventory and held requests. [Verify full testimonial attribution](https://local-service-spotlight.github.io/task-library/?task=verify-testimonials-with-full-attribution#task-verify-testimonials-with-full-attribution) uses those source records for the remaining trust fields.
 
-This is a supporting quality check for the [Content Factory](https://blitzmetrics.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. This check does not automatically execute all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
+This is a supporting quality check for the [Content Factory](https://localservicespotlight.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. This check does not automatically execute all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
 
 ## When this runs
 

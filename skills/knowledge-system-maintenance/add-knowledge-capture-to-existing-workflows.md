@@ -46,7 +46,7 @@ In a made-up shop, the report review finds a wrong date range. Its new closeout 
 
 ## Handoff and Content Factory context
 
-This work supports the [Content Factory, our four stages of using real content](https://blitzmetrics.com/content-factory/): Produce → Process → Post → Promote. Use the specific inputs and next task below to place the work; a maintenance task does not manufacture transcripts, clips or other stage outputs it does not call for.
+This work supports the [Content Factory, our four stages of using real content](https://localservicespotlight.com/content-factory/): Produce → Process → Post → Promote. Use the specific inputs and next task below to place the work; a maintenance task does not manufacture transcripts, clips or other stage outputs it does not call for.
 
 [Capture a lesson within 24 hours](https://local-service-spotlight.github.io/task-library/?task=generate-knowledge-capture-note-within-24-hours#task-generate-knowledge-capture-note-within-24-hours) receives real lessons; [The distribution owner](https://local-service-spotlight.github.io/task-library/?task=create-knowledge-capture-note-template-and-distribute#task-create-knowledge-capture-note-template-and-distribute) tracks adoption and the next review.
 

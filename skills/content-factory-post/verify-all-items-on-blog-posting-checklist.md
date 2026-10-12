@@ -91,7 +91,7 @@ This sample shows why a checklist needs judgment and evidence. Four checked boxe
 
 The publisher gets the reviewed revision and decision. If it is a draft, [the supported WordPress publication task](https://local-service-spotlight.github.io/task-library/?task=step-12-post-article-on-wordpress#task-step-12-post-article-on-wordpress) completes the authorized publish. [Final formatting and QA checks](https://local-service-spotlight.github.io/task-library/?task=step-17-final-formatting-and-qa-checks#task-step-17-final-formatting-and-qa-checks) checks the final served page and agreed distribution.
 
-This task serves **Post** in the [Content Factory](https://blitzmetrics.com/content-factory/). Produce supplies the source, Process prepares it, Post places and checks it on the agreed channels, and Promote distributes proven work under its own scope. The task’s actual handoff above defines the next step; list order alone does not create a prerequisite.
+This task serves **Post** in the [Content Factory](https://localservicespotlight.com/content-factory/). Produce supplies the source, Process prepares it, Post places and checks it on the agreed channels, and Promote distributes proven work under its own scope. The task’s actual handoff above defines the next step; list order alone does not create a prerequisite.
 
 ## When this runs
 

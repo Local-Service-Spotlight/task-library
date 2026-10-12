@@ -50,7 +50,7 @@ A fictional founder’s information card shows her name but no claim button. The
 
 [Review search and real inquiries](https://local-service-spotlight.github.io/task-library/?task=measure-search-impressions-traffic-inbound-opportunities#task-measure-search-impressions-traffic-inbound-opportunities) receives the observed panel state. [Check identity facts](https://local-service-spotlight.github.io/task-library/?task=establish-entity-identity#task-establish-entity-identity) receives source corrections; the owner retains any pending verification step.
 
-This task supports the [Content Factory: Produce, Process, Post and Promote](https://blitzmetrics.com/content-factory/). Identity, proof, access or coordination can support several stages. Use the real inputs and receiving owner above; this task does not create unrelated transcripts, clips or ads merely because the diagram has four stages.
+This task supports the [Content Factory: Produce, Process, Post and Promote](https://localservicespotlight.com/content-factory/). Identity, proof, access or coordination can support several stages. Use the real inputs and receiving owner above; this task does not create unrelated transcripts, clips or ads merely because the diagram has four stages.
 
 ## Start with an agent
 

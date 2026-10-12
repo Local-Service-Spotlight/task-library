@@ -48,7 +48,7 @@ A fictional plumbing firm offers emergency repair and heater installation in one
 
 [Map HOW topics](https://local-service-spotlight.github.io/task-library/?task=map-how-ring-methods#task-map-how-ring-methods) receives the checked WHAT and service proof.
 
-This work supports Produce in the [Content Factory: Produce, Process, Post and Promote](https://blitzmetrics.com/content-factory/). The selected sources pass to Process, approved outputs go to Post, and useful proven work can enter Promote. The real inputs and handoff above set this task’s scope.
+This work supports Produce in the [Content Factory: Produce, Process, Post and Promote](https://localservicespotlight.com/content-factory/). The selected sources pass to Process, approved outputs go to Post, and useful proven work can enter Promote. The real inputs and handoff above set this task’s scope.
 
 ## Start with an agent
 

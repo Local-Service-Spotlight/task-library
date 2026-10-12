@@ -49,7 +49,7 @@ A fictional repair shop wants readers to know when to stop using a leaking heate
 
 [Plan the next recording session](https://local-service-spotlight.github.io/task-library/?task=use-for-content-planning-and-video-topics#task-use-for-content-planning-and-video-topics) or the assigned article/campaign task receives the brief. [Write the agreed weekly report](https://local-service-spotlight.github.io/task-library/?task=submit-weekly-maa-report-every-friday#task-submit-weekly-maa-report-every-friday) later checks the result against it.
 
-This work supports the [Content Factory: Produce, Process, Post and Promote](https://blitzmetrics.com/content-factory/) across its relevant stages. It uses the actual inputs and next owner above; a strategy or measurement guide does not manufacture transcripts, clips or other unrelated stage outputs.
+This work supports the [Content Factory: Produce, Process, Post and Promote](https://localservicespotlight.com/content-factory/) across its relevant stages. It uses the actual inputs and next owner above; a strategy or measurement guide does not manufacture transcripts, clips or other unrelated stage outputs.
 
 ## Start with an agent
 

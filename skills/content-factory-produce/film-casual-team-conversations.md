@@ -60,7 +60,7 @@ The sample handoff teaches the difference between an idea, a decision, and a mea
 
 The editor receives the source and cut list through [Upload the source to Drive and Descript](https://local-service-spotlight.github.io/task-library/?task=step-1-upload-video-to-google-drive-and-descript#task-step-1-upload-video-to-google-drive-and-descript). [Extract short clips](https://local-service-spotlight.github.io/task-library/?task=extract-15-60-second-clips-from-long-form-video#task-extract-15-60-second-clips-from-long-form-video) may follow once the private-content review has cleared the candidate sections.
 
-This task serves **Produce** in the [Content Factory](https://blitzmetrics.com/content-factory/). Produce makes or prepares source material. Process edits it, Post puts approved work on a channel, and Promote helps it reach people. Only the steps and handoff above are part of this task.
+This task serves **Produce** in the [Content Factory](https://localservicespotlight.com/content-factory/). Produce makes or prepares source material. Process edits it, Post puts approved work on a channel, and Promote helps it reach people. Only the steps and handoff above are part of this task.
 
 ## When this runs
 

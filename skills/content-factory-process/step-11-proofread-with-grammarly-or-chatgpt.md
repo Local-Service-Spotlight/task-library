@@ -53,7 +53,7 @@ The editor accepts “bring you bike” → “bring your bike.” They retain t
 
 The assigned publisher receives the exact checked revision for [Step 12: place the article in WordPress](https://local-service-spotlight.github.io/task-library/?task=step-12-post-article-on-wordpress#task-step-12-post-article-on-wordpress). Outstanding checks remain attached to that handoff.
 
-Produce supplies the real source. **Process**, this stage of the [Content Factory](https://blitzmetrics.com/content-factory/), turns it into useful finished assets. Post saves or publishes them on the agreed channels. Promote tests and distributes suitable work within its own scope. The handoff above names this task’s actual next step; catalog neighbors alone are not prerequisites.
+Produce supplies the real source. **Process**, this stage of the [Content Factory](https://localservicespotlight.com/content-factory/), turns it into useful finished assets. Post saves or publishes them on the agreed channels. Promote tests and distributes suitable work within its own scope. The handoff above names this task’s actual next step; catalog neighbors alone are not prerequisites.
 
 ## When this runs
 

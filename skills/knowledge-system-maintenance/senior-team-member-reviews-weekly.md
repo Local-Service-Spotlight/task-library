@@ -47,7 +47,7 @@ A fictional queue holds three proposals. One is approved but awaits the source o
 
 ## Handoff and Content Factory context
 
-This work supports the [Content Factory, our four stages of using real content](https://blitzmetrics.com/content-factory/): Produce → Process → Post → Promote. Use the specific inputs and next task below to place the work; a maintenance task does not manufacture transcripts, clips or other stage outputs it does not call for.
+This work supports the [Content Factory, our four stages of using real content](https://localservicespotlight.com/content-factory/): Produce → Process → Post → Promote. Use the specific inputs and next task below to place the work; a maintenance task does not manufacture transcripts, clips or other stage outputs it does not call for.
 
 The source owner releases approved changes. [The pattern-review task](https://local-service-spotlight.github.io/task-library/?task=review-past-6-months-of-sop-amendment-proposals-for-patterns#task-review-past-6-months-of-sop-amendment-proposals-for-patterns) uses the retained decisions and timings.
 

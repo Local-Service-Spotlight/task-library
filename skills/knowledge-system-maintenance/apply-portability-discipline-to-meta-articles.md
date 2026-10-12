@@ -46,7 +46,7 @@ A fictional run corrected a transcript in Tool A but failed to upload it. The ap
 
 ## Handoff and Content Factory context
 
-The [Content Factory, our four stages of using real content](https://blitzmetrics.com/content-factory/) runs through Produce → Process → Post → Promote. This review improves a run record in Process; any public release belongs to Post and follows its existing authority. The record can describe work from any stage.
+The [Content Factory, our four stages of using real content](https://localservicespotlight.com/content-factory/) runs through Produce → Process → Post → Promote. This review improves a run record in Process; any public release belongs to Post and follows its existing authority. The record can describe work from any stage.
 
 The record owner keeps the checked revision. Process improvements go to [Tag and queue the proposal](https://local-service-spotlight.github.io/task-library/?task=tag-proposal-with-affected-sop-and-queue-for-review#task-tag-proposal-with-affected-sop-and-queue-for-review); future authors use the maintained meta prompt.
 

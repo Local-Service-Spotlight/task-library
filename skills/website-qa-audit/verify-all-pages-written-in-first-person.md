@@ -55,7 +55,7 @@ The correct audit does not replace every occurrence of Alex’s name with “I.�
 
 The content owner receives exact voice changes and exceptions. [Verify achievement evidence](https://local-service-spotlight.github.io/task-library/?task=verify-achievements-are-evidenced-not-just-claimed#task-verify-achievements-are-evidenced-not-just-claimed) checks the truth of claims that a pronoun edit cannot prove.
 
-This is a supporting quality check for the [Content Factory](https://blitzmetrics.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. This check does not automatically execute all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
+This is a supporting quality check for the [Content Factory](https://localservicespotlight.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. This check does not automatically execute all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
 
 ## When this runs
 

@@ -50,7 +50,7 @@ A small ad test has done well. You want to reach more people without losing cont
 
 Give new-audience ideas to [execute switch boosts to new audiences](https://local-service-spotlight.github.io/task-library/?task=execute-switch-boosts-to-new-audiences#task-execute-switch-boosts-to-new-audiences) and due performance checks to [analyze cost per result and engagement](https://local-service-spotlight.github.io/task-library/?task=analyze-cost-per-result-and-engagement#task-analyze-cost-per-result-and-engagement). The campaign owner controls the total commitment and any further increase.
 
-This task is in Promote within the [Content Factory](https://blitzmetrics.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. Use the proof and checked posts from earlier stages; a Promote task does not automatically redo all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
+This task is in Promote within the [Content Factory](https://localservicespotlight.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. Use the proof and checked posts from earlier stages; a Promote task does not automatically redo all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
 
 ## When this runs
 

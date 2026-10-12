@@ -55,7 +55,7 @@ An attached quote signed only “maplecycle.example” still needs a named speak
 
 The content owner receives accurate visual/caption changes and held proof requests. [Check testimonial headshots](https://local-service-spotlight.github.io/task-library/?task=verify-testimonials-include-headshots-with-attribution#task-verify-testimonials-include-headshots-with-attribution) and [Check full attribution](https://local-service-spotlight.github.io/task-library/?task=verify-testimonials-with-full-attribution#task-verify-testimonials-with-full-attribution) apply to actual praise blocks.
 
-This is a supporting quality check for the [Content Factory](https://blitzmetrics.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. This check does not automatically execute all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
+This is a supporting quality check for the [Content Factory](https://localservicespotlight.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. This check does not automatically execute all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
 
 ## When this runs
 

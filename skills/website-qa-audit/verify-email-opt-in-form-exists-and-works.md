@@ -55,7 +55,7 @@ If the checklist is missing, the task remains partial even though the form and l
 
 The form/email owner receives the exact failed step and test reference. [Check the offer preview](https://local-service-spotlight.github.io/task-library/?task=check-lead-magnet-section-has-visual-mockup#task-check-lead-magnet-section-has-visual-mockup) is a companion visual check, not proof of delivery.
 
-This is a supporting quality check for the [Content Factory](https://blitzmetrics.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. This check does not automatically execute all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
+This is a supporting quality check for the [Content Factory](https://localservicespotlight.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. This check does not automatically execute all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
 
 ## When this runs
 

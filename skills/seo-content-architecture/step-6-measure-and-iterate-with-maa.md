@@ -63,7 +63,7 @@ The [weekly MAA reporting task](https://local-service-spotlight.github.io/task-l
 
 The [link-planning task](https://local-service-spotlight.github.io/task-library/?task=step-3-identify-money-pages-and-orphan-pages#task-step-3-identify-money-pages-and-orphan-pages) receives supported new link proposals. Broken released rows go to QA; missing data go to its actual owner. Each receives only the relevant finding and evidence, with a due point and done check.
 
-In the [Content Factory: Produce, Process, Post and Promote](https://blitzmetrics.com/content-factory/), placement and QA in Post supply the checked release. This review measures what happened afterward and feeds the next Process or Post repair, or a separately authorized Promote decision. It does not start ads or change live pages.
+In the [Content Factory: Produce, Process, Post and Promote](https://localservicespotlight.com/content-factory/), placement and QA in Post supply the checked release. This review measures what happened afterward and feeds the next Process or Post repair, or a separately authorized Promote decision. It does not start ads or change live pages.
 
 ## Start with an agent
 

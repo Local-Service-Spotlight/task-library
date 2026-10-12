@@ -51,7 +51,7 @@ Does your agency site show whom you help and why they should trust you? This gui
 
 Give the site inventory and real contact-test evidence to the operator and site QA owner. Follow the maintained [Website QA Audit](https://blitzmetrics.com/website-qa-audit/) and use [create clear conversion path](https://local-service-spotlight.github.io/task-library/?task=create-clear-conversion-path#task-create-clear-conversion-path) if intake remains confusing. Retain network-source ownership for improvements.
 
-This setup supports the [Content Factory](https://blitzmetrics.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. This check does not automatically execute all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
+This setup supports the [Content Factory](https://localservicespotlight.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. This check does not automatically execute all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
 
 ## When this runs
 

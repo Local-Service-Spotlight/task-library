@@ -55,7 +55,7 @@ The sample map is `Repair quotes guide ↔ inspection story → booking step`. I
 
 The publisher receives the page placement and link evidence, then runs [Check the full article checklist](https://local-service-spotlight.github.io/task-library/?task=verify-all-items-on-blog-posting-checklist#task-verify-all-items-on-blog-posting-checklist). A different page owner gets only the specific pending inbound edit when needed.
 
-This task serves **Post** in the [Content Factory](https://blitzmetrics.com/content-factory/). Produce supplies the source, Process prepares it, Post places and checks it on the agreed channels, and Promote distributes proven work under its own scope. The task’s actual handoff above defines the next step; list order alone does not create a prerequisite.
+This task serves **Post** in the [Content Factory](https://localservicespotlight.com/content-factory/). Produce supplies the source, Process prepares it, Post places and checks it on the agreed channels, and Promote distributes proven work under its own scope. The task’s actual handoff above defines the next step; list order alone does not create a prerequisite.
 
 ## When this runs
 

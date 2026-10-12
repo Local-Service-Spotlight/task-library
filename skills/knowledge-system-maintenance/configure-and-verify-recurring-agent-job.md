@@ -51,7 +51,7 @@ A fictional report job is saved for Monday at 09:00 in the team’s timezone. A 
 
 ## Handoff and Content Factory context
 
-This work supports the [Content Factory, our four stages of using real content](https://blitzmetrics.com/content-factory/): Produce → Process → Post → Promote. Use the specific inputs and next task below to place the work; a maintenance task does not manufacture transcripts, clips or other stage outputs it does not call for.
+This work supports the [Content Factory, our four stages of using real content](https://localservicespotlight.com/content-factory/): Produce → Process → Post → Promote. Use the specific inputs and next task below to place the work; a maintenance task does not manufacture transcripts, clips or other stage outputs it does not call for.
 
 The job owner retains the operating record. Use [the original-thread status task](https://local-service-spotlight.github.io/task-library/?task=reply-with-task-status-in-origin-thread#task-reply-with-task-status-in-origin-thread) for an authorized status reply and review changes before the next firing.
 

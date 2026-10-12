@@ -56,7 +56,7 @@ The maintained speaker-kit article links its documentation meta article and Denn
 
 [Prepare relevant speaking pitches](https://local-service-spotlight.github.io/task-library/?task=secure-guest-appearances-and-speaking-engagements#task-secure-guest-appearances-and-speaking-engagements) receives the checked kit; [Capture the delivered talk](https://local-service-spotlight.github.io/task-library/?task=film-conference-presentations#task-film-conference-presentations) receives only actual booked-event needs.
 
-This task supports the [Content Factory: Produce, Process, Post and Promote](https://blitzmetrics.com/content-factory/). Identity, proof, access or coordination can support several stages. Use the real inputs and receiving owner above; this task does not create unrelated transcripts, clips or ads merely because the diagram has four stages.
+This task supports the [Content Factory: Produce, Process, Post and Promote](https://localservicespotlight.com/content-factory/). Identity, proof, access or coordination can support several stages. Use the real inputs and receiving owner above; this task does not create unrelated transcripts, clips or ads merely because the diagram has four stages.
 
 ## Start with an agent
 

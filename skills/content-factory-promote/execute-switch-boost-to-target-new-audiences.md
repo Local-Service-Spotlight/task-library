@@ -50,7 +50,7 @@ A post has helped one group of people. You want to test whether it helps another
 
 This is the Promote-stage entry to [execute switch boosts to new audiences](https://local-service-spotlight.github.io/task-library/?task=execute-switch-boosts-to-new-audiences#task-execute-switch-boosts-to-new-audiences); use one real test record when the scopes overlap. Qualified pairs can feed [sequence content cold warm conversion](https://local-service-spotlight.github.io/task-library/?task=sequence-content-cold-warm-conversion#task-sequence-content-cold-warm-conversion) or a reviewed budget decision.
 
-This task is in Promote within the [Content Factory](https://blitzmetrics.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. Use the proof and checked posts from earlier stages; a Promote task does not automatically redo all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
+This task is in Promote within the [Content Factory](https://localservicespotlight.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. Use the proof and checked posts from earlier stages; a Promote task does not automatically redo all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
 
 ## When this runs
 

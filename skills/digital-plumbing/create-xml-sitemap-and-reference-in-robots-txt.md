@@ -50,7 +50,7 @@ Search tools need a clear list of the pages you want people to find. This guide 
 
 Give the URL-set comparison to the search owner. Use [ensure robots meta not blocking indexing](https://local-service-spotlight.github.io/task-library/?task=ensure-robots-meta-not-blocking-indexing#task-ensure-robots-meta-not-blocking-indexing) for a conflicting index rule, or [verify google search console and connect to ga4](https://local-service-spotlight.github.io/task-library/?task=verify-google-search-console-and-connect-to-ga4#task-verify-google-search-console-and-connect-to-ga4) for the actual account connection.
 
-This setup supports the [Content Factory](https://blitzmetrics.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. This check does not automatically execute all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
+This setup supports the [Content Factory](https://localservicespotlight.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. This check does not automatically execute all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
 
 ## When this runs
 

@@ -52,7 +52,7 @@ A small ad can test whether a good post helps your business. This guide helps yo
 
 Save the post and ad IDs, dates, spend, measured outcome and next decision in the project report. Use [Metrics, Analysis, Action](https://local-service-spotlight.github.io/task-library/?task=maa-cycle-metrics-analysis-action#task-maa-cycle-metrics-analysis-action) to explain what the numbers support. Add a repeat only through the actual agreed runtime.
 
-This fits the [Content Factory](https://blitzmetrics.com/content-factory/): Produce a true story, Process it into useful files, Post only in the agreed places, and Promote a suitable post when its test has a budget. Each stage passes its checked files and next owner forward.
+This fits the [Content Factory](https://localservicespotlight.com/content-factory/): Produce a true story, Process it into useful files, Post only in the agreed places, and Promote a suitable post when its test has a budget. Each stage passes its checked files and next owner forward.
 
 ## When this runs
 
@@ -76,7 +76,7 @@ A teaching example is not a real execution. Do not count it, a repeated check or
 
 - Exact task: [Test a Thank-You Post With a Small Ad](https://local-service-spotlight.github.io/task-library/?task=boost-with-dollar-a-day#task-boost-with-dollar-a-day)
 - [One-minute video guide](https://blitzmetrics.com/one-minute-video-guide/) — how to record one clear point.
-- [Content Factory](https://blitzmetrics.com/content-factory/) — how the source becomes checked posts.
+- [Content Factory](https://localservicespotlight.com/content-factory/) — how the source becomes checked posts.
 - [Dollar-a-Day guide](https://blitzmetrics.com/dollar-a-day/) — the paid test method; current platform controls still need checking.
 
 ## Review and evidence still needed

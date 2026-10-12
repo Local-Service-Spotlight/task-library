@@ -47,7 +47,7 @@ A fictional test proposal is approved against a test guide, creating a test vers
 
 ## Handoff and Content Factory context
 
-This work supports the [Content Factory, our four stages of using real content](https://blitzmetrics.com/content-factory/): Produce → Process → Post → Promote. Use the specific inputs and next task below to place the work; a maintenance task does not manufacture transcripts, clips or other stage outputs it does not call for.
+This work supports the [Content Factory, our four stages of using real content](https://localservicespotlight.com/content-factory/): Produce → Process → Post → Promote. Use the specific inputs and next task below to place the work; a maintenance task does not manufacture transcripts, clips or other stage outputs it does not call for.
 
 [Review queued changes](https://local-service-spotlight.github.io/task-library/?task=senior-team-member-reviews-weekly#task-senior-team-member-reviews-weekly) handles live proposals; [the later pattern review](https://local-service-spotlight.github.io/task-library/?task=review-past-6-months-of-sop-amendment-proposals-for-patterns#task-review-past-6-months-of-sop-amendment-proposals-for-patterns) reads the retained metadata.
 

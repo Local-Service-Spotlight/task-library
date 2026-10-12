@@ -54,7 +54,7 @@ For a later real job, a source-checked draft may be handed to the publisher. A g
 
 The named reviewer checks the source and draft, then uses [Proofread the complete draft](https://local-service-spotlight.github.io/task-library/?task=step-11-proofread-with-grammarly-or-chatgpt#task-step-11-proofread-with-grammarly-or-chatgpt) and [the supported WordPress task](https://local-service-spotlight.github.io/task-library/?task=step-12-post-article-on-wordpress#task-step-12-post-article-on-wordpress). The harness owner receives specific code defects; repairing those is not proven by this guide.
 
-Produce supplies the real source. **Process**, this stage of the [Content Factory](https://blitzmetrics.com/content-factory/), turns it into useful finished assets. Post saves or publishes them on the agreed channels. Promote tests and distributes suitable work within its own scope. The handoff above names this task’s actual next step; catalog neighbors alone are not prerequisites.
+Produce supplies the real source. **Process**, this stage of the [Content Factory](https://localservicespotlight.com/content-factory/), turns it into useful finished assets. Post saves or publishes them on the agreed channels. Promote tests and distributes suitable work within its own scope. The handoff above names this task’s actual next step; catalog neighbors alone are not prerequisites.
 
 ## When this runs
 

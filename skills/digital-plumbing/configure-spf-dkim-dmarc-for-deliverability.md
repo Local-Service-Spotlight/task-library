@@ -50,7 +50,7 @@ Do your real emails land in spam? This guide helps a business owner set up check
 
 Give the sender matrix and policy decision to the domain and mail owners. Continue with [ensure working contact form delivers notifications](https://local-service-spotlight.github.io/task-library/?task=ensure-working-contact-form-delivers-notifications#task-ensure-working-contact-form-delivers-notifications) for website form delivery, or [set up professional email on domain](https://local-service-spotlight.github.io/task-library/?task=set-up-professional-email-on-domain#task-set-up-professional-email-on-domain) if the mailbox itself is missing.
 
-This setup supports the [Content Factory](https://blitzmetrics.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. This check does not automatically execute all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
+This setup supports the [Content Factory](https://localservicespotlight.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. This check does not automatically execute all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
 
 ## When this runs
 

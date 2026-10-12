@@ -51,7 +51,7 @@ A fictional electrician records an answer about a tripping breaker. The first ta
 
 [Turn the source into an article](https://local-service-spotlight.github.io/task-library/?task=repurpose-videos-into-blog-posts-via-content-factory#task-repurpose-videos-into-blog-posts-via-content-factory) and [Prepare social clips](https://local-service-spotlight.github.io/task-library/?task=create-social-content-from-video-clips#task-create-social-content-from-video-clips) receive the selected source files and their actual acceptance checks.
 
-The source places this task in Produce within the [Content Factory: Produce, Process, Post and Promote](https://blitzmetrics.com/content-factory/). Produce captures real sources, Process makes the selected useful assets, Post releases approved work, and Promote distributes proven work. The actual handoff above determines what this task must supply.
+The source places this task in Produce within the [Content Factory: Produce, Process, Post and Promote](https://localservicespotlight.com/content-factory/). Produce captures real sources, Process makes the selected useful assets, Post releases approved work, and Promote distributes proven work. The actual handoff above determines what this task must supply.
 
 ## Start with an agent
 

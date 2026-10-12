@@ -74,7 +74,7 @@ A second shop has a working static homepage, old WordPress media paths and a log
 
 The publisher receives the runtime/edit-path evidence, record ID, source revision, media and check results. For a static or unknown site, the existing site-release owner receives the prepared files, exact missing gate and evidence; no WordPress write or new access request is implied. Staged work proceeds to the specific unfinished Post task. Verified live work proceeds to the agreed distribution tasks; [Final formatting and QA checks](https://local-service-spotlight.github.io/task-library/?task=step-17-final-formatting-and-qa-checks#task-step-17-final-formatting-and-qa-checks) closes the served-page review.
 
-This task serves **Post** in the [Content Factory](https://blitzmetrics.com/content-factory/). Produce supplies the source, Process prepares it, Post places and checks it on the agreed channels, and Promote distributes proven work under its own scope. The task’s actual handoff above defines the next step; list order alone does not create a prerequisite.
+This task serves **Post** in the [Content Factory](https://localservicespotlight.com/content-factory/). Produce supplies the source, Process prepares it, Post places and checks it on the agreed channels, and Promote distributes proven work under its own scope. The task’s actual handoff above defines the next step; list order alone does not create a prerequisite.
 
 ## When this runs
 

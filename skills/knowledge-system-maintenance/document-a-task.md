@@ -53,7 +53,7 @@ A fictional editor documents a broken booking-link repair. The recipe begins wit
 
 ## Handoff and Content Factory context
 
-The [Content Factory, our four stages of using real content](https://blitzmetrics.com/content-factory/) goes Produce → Process → Post → Promote. Capture the real work in Produce, turn it into a usable recipe in Process, then release and connect the approved guide in Post. The same recipe can support later work in any of the four stages.
+The [Content Factory, our four stages of using real content](https://localservicespotlight.com/content-factory/) goes Produce → Process → Post → Promote. Capture the real work in Produce, turn it into a usable recipe in Process, then release and connect the approved guide in Post. The same recipe can support later work in any of the four stages.
 
 [Publish the skill and task page](https://local-service-spotlight.github.io/task-library/?task=publish-skill-and-task-page#task-publish-skill-and-task-page) receives the guide, example, review findings and exact source revision.
 

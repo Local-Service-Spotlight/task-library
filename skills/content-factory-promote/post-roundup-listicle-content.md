@@ -50,7 +50,7 @@ Your readers may need one place to find your best answers. This guide helps you 
 
 Use [verify all items on blog posting checklist](https://local-service-spotlight.github.io/task-library/?task=verify-all-items-on-blog-posting-checklist#task-verify-all-items-on-blog-posting-checklist) for the relevant final editorial check if that exact task is part of the publishing plan. Give the public URL and initial evidence to [boost top 3 5 facebook posts](https://local-service-spotlight.github.io/task-library/?task=boost-top-3-5-facebook-posts#task-boost-top-3-5-facebook-posts) only after an actual distributed post earns its own signal.
 
-This task is in Promote within the [Content Factory](https://blitzmetrics.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. Use the proof and checked posts from earlier stages; a Promote task does not automatically redo all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
+This task is in Promote within the [Content Factory](https://localservicespotlight.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. Use the proof and checked posts from earlier stages; a Promote task does not automatically redo all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
 
 ## When this runs
 
@@ -76,7 +76,7 @@ Keep one stable execution ID across retries and edits. A separately scoped child
 - Exact task: [Post roundup/listicle content](https://local-service-spotlight.github.io/task-library/?task=post-roundup-listicle-content#task-post-roundup-listicle-content)
 - Writing standard: [Article Guidelines](https://localservicespotlight.com/article-guidelines/)
 - [SEO Tree](https://blitzmetrics.com/seo-tree/)
-- [Content Factory](https://blitzmetrics.com/content-factory/)
+- [Content Factory](https://localservicespotlight.com/content-factory/)
 - [Dollar-a-Day method](https://blitzmetrics.com/dollar-a-day/)
 
 ## Review and evidence still needed

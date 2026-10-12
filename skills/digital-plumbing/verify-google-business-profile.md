@@ -50,7 +50,7 @@ People need to find the right business on Maps. This guide helps you set up and 
 
 Give the confirmed state and Profile ID to the business owner. Once the actual required access and verification are ready, continue with [upload real photos and set business hours](https://local-service-spotlight.github.io/task-library/?task=upload-real-photos-and-set-business-hours#task-upload-real-photos-and-set-business-hours) or [set correct business categories](https://local-service-spotlight.github.io/task-library/?task=set-correct-business-categories#task-set-correct-business-categories) according to the remaining need.
 
-This setup supports the [Content Factory](https://blitzmetrics.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. This check does not automatically execute all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
+This setup supports the [Content Factory](https://localservicespotlight.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. This check does not automatically execute all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
 
 ## When this runs
 

@@ -47,7 +47,7 @@ A fictional new worker finds a website task under an old paying-client project, 
 
 ## Handoff and Content Factory context
 
-This work supports the [Content Factory, our four stages of using real content](https://blitzmetrics.com/content-factory/): Produce → Process → Post → Promote. Use the specific inputs and next task below to place the work; a maintenance task does not manufacture transcripts, clips or other stage outputs it does not call for.
+This work supports the [Content Factory, our four stages of using real content](https://localservicespotlight.com/content-factory/): Produce → Process → Post → Promote. Use the specific inputs and next task below to place the work; a maintenance task does not manufacture transcripts, clips or other stage outputs it does not call for.
 
 The task owner receives the result in the actual project. Use [the shared-memory handoff](https://local-service-spotlight.github.io/task-library/?task=coordinate-agents-with-shared-memory#task-coordinate-agents-with-shared-memory) for the next worker and the original thread for authorized updates.
 

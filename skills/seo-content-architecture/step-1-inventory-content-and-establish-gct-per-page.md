@@ -66,7 +66,7 @@ Add the page purpose, title, dates, source revision, content role, link counts a
 
 Send the package with its scope, date, source revisions, count reconciliation, link-count method, exact opening quotes and review states. Include remaining issues, their next actions and owners. [Review the supported taxonomy](https://local-service-spotlight.github.io/task-library/?task=step-2-fix-categories-and-tags-in-wordpress#task-step-2-fix-categories-and-tags-in-wordpress) uses that inventory to check how pages are grouped. [Plan relevant links and orphan repairs](https://local-service-spotlight.github.io/task-library/?task=step-3-identify-money-pages-and-orphan-pages#task-step-3-identify-money-pages-and-orphan-pages) receives genuine offers and incoming-link gaps; unresolved opening checks stay with their named owner.
 
-This task supports the [Content Factory: Produce, Process, Post and Promote](https://blitzmetrics.com/content-factory/). The list helps plan page work during Process and check links during Post. It uses published pages and their source records; it hands checked page purposes and gaps to taxonomy and link planning. It does not create clips or ads.
+This task supports the [Content Factory: Produce, Process, Post and Promote](https://localservicespotlight.com/content-factory/). The list helps plan page work during Process and check links during Post. It uses published pages and their source records; it hands checked page purposes and gaps to taxonomy and link planning. It does not create clips or ads.
 
 ## Start with an agent
 

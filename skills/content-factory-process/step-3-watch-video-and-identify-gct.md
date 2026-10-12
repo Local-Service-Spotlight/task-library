@@ -56,7 +56,7 @@ A video can cover more than one point. This guide helps you choose the point you
 
 The outline writer receives the GCT brief, article role and timestamp evidence for [Step 4: research and outline](https://local-service-spotlight.github.io/task-library/?task=step-4-research-edit-add-timestamps-and-outline#task-step-4-research-edit-add-timestamps-and-outline).
 
-Produce supplies the real source. **Process**, this stage of the [Content Factory](https://blitzmetrics.com/content-factory/), turns it into useful finished assets. Post saves or publishes them on the agreed channels. Promote tests and distributes suitable work within its own scope. The handoff above names this task’s actual next step; catalog neighbors alone are not prerequisites.
+Produce supplies the real source. **Process**, this stage of the [Content Factory](https://localservicespotlight.com/content-factory/), turns it into useful finished assets. Post saves or publishes them on the agreed channels. Promote tests and distributes suitable work within its own scope. The handoff above names this task’s actual next step; catalog neighbors alone are not prerequisites.
 
 ## When this runs
 

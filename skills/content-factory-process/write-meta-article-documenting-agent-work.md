@@ -56,7 +56,7 @@ The source also references the real `recipe-audit-20260905-080140` parent job. R
 
 The task owner receives the written meta and validated candidate record. The standards owner receives any supported recipe change; [Update the canonical task guide](https://local-service-spotlight.github.io/task-library/?task=create-or-update-a-definitive-article#task-create-or-update-a-definitive-article) is used when a real change is needed, not as an automatic endless meta loop.
 
-Produce supplies the real source. **Process**, this stage of the [Content Factory](https://blitzmetrics.com/content-factory/), turns it into useful finished assets. Post saves or publishes them on the agreed channels. Promote tests and distributes suitable work within its own scope. The handoff above names this task’s actual next step; catalog neighbors alone are not prerequisites.
+Produce supplies the real source. **Process**, this stage of the [Content Factory](https://localservicespotlight.com/content-factory/), turns it into useful finished assets. Post saves or publishes them on the agreed channels. Promote tests and distributes suitable work within its own scope. The handoff above names this task’s actual next step; catalog neighbors alone are not prerequisites.
 
 ## When this runs
 

@@ -51,7 +51,7 @@ A fictional article explains an app, cites that app’s official format specific
 
 [Check the placed links](https://local-service-spotlight.github.io/task-library/?task=step-5-qa-links-against-google-guidelines#task-step-5-qa-links-against-google-guidelines) receives the checked links and unresolved cases. The content owner receives a specific missing-guide request only where no useful owned explanation exists.
 
-This task supports the [Content Factory: Produce, Process, Post and Promote](https://blitzmetrics.com/content-factory/). Identity, proof, access or coordination can support several stages. Use the real inputs and receiving owner above; this task does not create unrelated transcripts, clips or ads merely because the diagram has four stages.
+This task supports the [Content Factory: Produce, Process, Post and Promote](https://localservicespotlight.com/content-factory/). Identity, proof, access or coordination can support several stages. Use the real inputs and receiving owner above; this task does not create unrelated transcripts, clips or ads merely because the diagram has four stages.
 
 ## Start with an agent
 

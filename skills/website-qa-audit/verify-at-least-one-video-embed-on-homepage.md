@@ -53,7 +53,7 @@ The picture does not count as an embed. The teaching fix restores the real inter
 
 The page owner receives the player evidence. [Embed the source video](https://local-service-spotlight.github.io/task-library/?task=step-10-embed-source-video#task-step-10-embed-source-video) handles a missing/incorrect player, while the source owner supplies any required caption or embedding permission.
 
-This is a supporting quality check for the [Content Factory](https://blitzmetrics.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. This check does not automatically execute all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
+This is a supporting quality check for the [Content Factory](https://localservicespotlight.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. This check does not automatically execute all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
 
 ## When this runs
 

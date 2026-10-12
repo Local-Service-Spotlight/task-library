@@ -89,7 +89,7 @@ The editor fixes the table and rechecks the phone view. The page can then pass i
 
 The named promotion/measurement owner receives only verified live links and actual results. [The Facebook boost shortlist](https://local-service-spotlight.github.io/task-library/?task=boost-top-3-5-facebook-posts#task-boost-top-3-5-facebook-posts) applies only to relevant eligible Page posts under its own scope; other unresolved items stay with their actual owner.
 
-This task serves **Post** in the [Content Factory](https://blitzmetrics.com/content-factory/). Produce supplies the source, Process prepares it, Post places and checks it on the agreed channels, and Promote distributes proven work under its own scope. The task’s actual handoff above defines the next step; list order alone does not create a prerequisite.
+This task serves **Post** in the [Content Factory](https://localservicespotlight.com/content-factory/). Produce supplies the source, Process prepares it, Post places and checks it on the agreed channels, and Promote distributes proven work under its own scope. The task’s actual handoff above defines the next step; list order alone does not create a prerequisite.
 
 ## When this runs
 

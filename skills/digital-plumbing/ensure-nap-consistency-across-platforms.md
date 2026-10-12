@@ -50,7 +50,7 @@ Old phone numbers can send people to the wrong place. This guide helps you keep 
 
 Give the maintained identity record to the profile and site owners. Use [add schema markup person localbusiness](https://local-service-spotlight.github.io/task-library/?task=add-schema-markup-person-localbusiness#task-add-schema-markup-person-localbusiness) if machine-readable facts still conflict, or [verify google business profile](https://local-service-spotlight.github.io/task-library/?task=verify-google-business-profile#task-verify-google-business-profile) when Google ownership or verification needs work.
 
-This setup supports the [Content Factory](https://blitzmetrics.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. This check does not automatically execute all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
+This setup supports the [Content Factory](https://localservicespotlight.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. This check does not automatically execute all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
 
 ## When this runs
 

@@ -53,7 +53,7 @@ If the article is still a draft, the tracker says “player verified in draft; p
 
 The proofreader gets the article, source player and real verification limits for [Step 11: proofread the complete draft](https://local-service-spotlight.github.io/task-library/?task=step-11-proofread-with-grammarly-or-chatgpt#task-step-11-proofread-with-grammarly-or-chatgpt).
 
-Produce supplies the real source. **Process**, this stage of the [Content Factory](https://blitzmetrics.com/content-factory/), turns it into useful finished assets. Post saves or publishes them on the agreed channels. Promote tests and distributes suitable work within its own scope. The handoff above names this task’s actual next step; catalog neighbors alone are not prerequisites.
+Produce supplies the real source. **Process**, this stage of the [Content Factory](https://localservicespotlight.com/content-factory/), turns it into useful finished assets. Post saves or publishes them on the agreed channels. Promote tests and distributes suitable work within its own scope. The handoff above names this task’s actual next step; catalog neighbors alone are not prerequisites.
 
 ## When this runs
 

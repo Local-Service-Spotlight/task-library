@@ -50,7 +50,7 @@ A post worked with one group of people. You want to see if it helps another grou
 
 Send the results to [analyze cost per result and engagement](https://local-service-spotlight.github.io/task-library/?task=analyze-cost-per-result-and-engagement#task-analyze-cost-per-result-and-engagement). Proven stage-specific posts can feed [sequence content from awareness to conversion](https://local-service-spotlight.github.io/task-library/?task=sequence-content-from-awareness-to-conversion#task-sequence-content-from-awareness-to-conversion) when eligible audience sources and that next scope exist.
 
-This task is in Promote within the [Content Factory](https://blitzmetrics.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. Use the proof and checked posts from earlier stages; a Promote task does not automatically redo all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
+This task is in Promote within the [Content Factory](https://localservicespotlight.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. Use the proof and checked posts from earlier stages; a Promote task does not automatically redo all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
 
 ## When this runs
 

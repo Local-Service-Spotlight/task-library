@@ -51,7 +51,7 @@ A fictional landscaper records a real patio build. The new case page supports th
 
 [Place the accepted links](https://local-service-spotlight.github.io/task-library/?task=step-4-create-links-with-proper-anchor-text-and-placement#task-step-4-create-links-with-proper-anchor-text-and-placement) receives the exact source-to-target rows. [Publish the checked site directory](https://local-service-spotlight.github.io/task-library/?task=publish-seo-tree-site-directory#task-publish-seo-tree-site-directory) receives the checked role and published URL after release; an unresolved owning topic goes to the content owner.
 
-This task supports the [Content Factory: Produce, Process, Post and Promote](https://blitzmetrics.com/content-factory/). Identity, proof, access or coordination can support several stages. Use the real inputs and receiving owner above; this task does not create unrelated transcripts, clips or ads merely because the diagram has four stages.
+This task supports the [Content Factory: Produce, Process, Post and Promote](https://localservicespotlight.com/content-factory/). Identity, proof, access or coordination can support several stages. Use the real inputs and receiving owner above; this task does not create unrelated transcripts, clips or ads merely because the diagram has four stages.
 
 ## Start with an agent
 

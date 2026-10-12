@@ -53,7 +53,7 @@ The audit records a landing-template phone failure instead of passing the whole 
 
 The site owner receives the template/link map. [Review public profile links](https://local-service-spotlight.github.io/task-library/?task=check-social-profiles-linked-and-prominent#task-check-social-profiles-linked-and-prominent) verifies broader profile discovery; [Check broken destinations](https://local-service-spotlight.github.io/task-library/?task=check-for-broken-links#task-check-for-broken-links) can supply current response evidence.
 
-This is a supporting quality check for the [Content Factory](https://blitzmetrics.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. This check does not automatically execute all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
+This is a supporting quality check for the [Content Factory](https://localservicespotlight.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. This check does not automatically execute all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
 
 ## When this runs
 

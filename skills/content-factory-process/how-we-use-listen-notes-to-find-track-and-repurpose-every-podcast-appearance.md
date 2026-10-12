@@ -53,7 +53,7 @@ The master list adds three appearances, not eight. A show-level Listen Score may
 
 The inventory owner receives verified rows and unresolved leads for [the master appearance inventory](https://local-service-spotlight.github.io/task-library/?task=how-to-inventory-every-podcast-youve-been-on-and-why-its-one-of-the-highest-roi-things-you-can-do#task-how-to-inventory-every-podcast-youve-been-on-and-why-its-one-of-the-highest-roi-things-you-can-do). [Podchaser review](https://local-service-spotlight.github.io/task-library/?task=how-we-use-podchaser-to-amplify-authority-and-repurpose-podcast-content#task-how-we-use-podchaser-to-amplify-authority-and-repurpose-podcast-content) can use those leads while checking each credit independently.
 
-Produce supplies the real source. **Process**, this stage of the [Content Factory](https://blitzmetrics.com/content-factory/), turns it into useful finished assets. Post saves or publishes them on the agreed channels. Promote tests and distributes suitable work within its own scope. The handoff above names this task’s actual next step; catalog neighbors alone are not prerequisites.
+Produce supplies the real source. **Process**, this stage of the [Content Factory](https://localservicespotlight.com/content-factory/), turns it into useful finished assets. Post saves or publishes them on the agreed channels. Promote tests and distributes suitable work within its own scope. The handoff above names this task’s actual next step; catalog neighbors alone are not prerequisites.
 
 ## When this runs
 

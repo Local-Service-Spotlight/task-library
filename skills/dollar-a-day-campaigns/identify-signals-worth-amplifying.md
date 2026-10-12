@@ -50,7 +50,7 @@ You do not need to guess which post to boost. Look for posts that people already
 
 Give the campaign owner the evidence-backed shortlist for [build audience layers](https://local-service-spotlight.github.io/task-library/?task=build-audience-layers#task-build-audience-layers). If useful source content is missing, return to [record one minute videos](https://local-service-spotlight.github.io/task-library/?task=record-one-minute-videos#task-record-one-minute-videos) with the actual questions found in the comments.
 
-This task is in Promote within the [Content Factory](https://blitzmetrics.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. Use the proof and checked posts from earlier stages; a Promote task does not automatically redo all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
+This task is in Promote within the [Content Factory](https://localservicespotlight.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. Use the proof and checked posts from earlier stages; a Promote task does not automatically redo all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
 
 ## When this runs
 

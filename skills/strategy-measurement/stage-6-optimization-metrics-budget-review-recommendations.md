@@ -49,7 +49,7 @@ In a fictional account, 200 clicks cost $100 and produce 10 qualified leads. Cos
 
 [Write the agreed weekly report](https://local-service-spotlight.github.io/task-library/?task=submit-weekly-maa-report-every-friday#task-submit-weekly-maa-report-every-friday) receives the report; the exact phase owner receives each accepted action and its future measurement condition.
 
-This work supports the [Content Factory: Produce, Process, Post and Promote](https://blitzmetrics.com/content-factory/) across its relevant stages. It uses the actual inputs and next owner above; a strategy or measurement guide does not manufacture transcripts, clips or other unrelated stage outputs.
+This work supports the [Content Factory: Produce, Process, Post and Promote](https://localservicespotlight.com/content-factory/) across its relevant stages. It uses the actual inputs and next owner above; a strategy or measurement guide does not manufacture transcripts, clips or other unrelated stage outputs.
 
 ## Start with an agent
 

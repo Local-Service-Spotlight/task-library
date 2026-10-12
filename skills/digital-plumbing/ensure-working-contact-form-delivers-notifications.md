@@ -54,7 +54,7 @@ Start with the supplied form IDs, intended receiver, test marker, approved devic
 
 Hand the paired form and receiver records to the named mail or lead-response owner. The handoff is accepted when that owner confirms the monitored destination and response responsibility for the tested forms; otherwise record acceptance as pending. Use [configure spf dkim dmarc for deliverability](https://local-service-spotlight.github.io/task-library/?task=configure-spf-dkim-dmarc-for-deliverability#task-configure-spf-dkim-dmarc-for-deliverability) for authentication defects or [create clear conversion path](https://local-service-spotlight.github.io/task-library/?task=create-clear-conversion-path#task-create-clear-conversion-path) when the path itself is confusing.
 
-This is a setup check for **Post** in the [Content Factory](https://blitzmetrics.com/content-factory/), the process that turns real stories into useful content. A published page needs a working way for a reader to reach the business. Check that path before **Promote** sends more people to it. Promotion, spend and customer follow-up remain separately scoped work.
+This is a setup check for **Post** in the [Content Factory](https://localservicespotlight.com/content-factory/), the process that turns real stories into useful content. A published page needs a working way for a reader to reach the business. Check that path before **Promote** sends more people to it. Promotion, spend and customer follow-up remain separately scoped work.
 
 ## When this runs
 

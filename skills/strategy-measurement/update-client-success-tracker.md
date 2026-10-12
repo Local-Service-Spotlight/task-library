@@ -49,7 +49,7 @@ A fictional tracker shows a page saved in the CMS, but its public copy is still 
 
 The verified project lead uses the record at the next agreed review; [Write the agreed weekly report](https://local-service-spotlight.github.io/task-library/?task=submit-weekly-maa-report-every-friday#task-submit-weekly-maa-report-every-friday) reads the same history in the next cycle.
 
-This work supports the [Content Factory: Produce, Process, Post and Promote](https://blitzmetrics.com/content-factory/) across its relevant stages. It uses the actual inputs and next owner above; a strategy or measurement guide does not manufacture transcripts, clips or other unrelated stage outputs.
+This work supports the [Content Factory: Produce, Process, Post and Promote](https://localservicespotlight.com/content-factory/) across its relevant stages. It uses the actual inputs and next owner above; a strategy or measurement guide does not manufacture transcripts, clips or other unrelated stage outputs.
 
 ## Start with an agent
 

@@ -53,7 +53,7 @@ The reviewer fixes a genuinely misleading title but records why padding the cont
 
 The content owner receives useful fixes and exact scoring exceptions. [Configure supported search metadata](https://local-service-spotlight.github.io/task-library/?task=step-14a-configure-rankmath-seo-plugin#task-step-14a-configure-rankmath-seo-plugin) addresses setup defects when that is the actual next need.
 
-This is a supporting quality check for the [Content Factory](https://blitzmetrics.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. This check does not automatically execute all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
+This is a supporting quality check for the [Content Factory](https://localservicespotlight.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. This check does not automatically execute all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
 
 ## When this runs
 

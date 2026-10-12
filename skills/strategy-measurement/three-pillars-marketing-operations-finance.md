@@ -48,7 +48,7 @@ A fictional shop has enough booked work but misses three of ten promised dates. 
 
 [Assign the accepted next work](https://local-service-spotlight.github.io/task-library/?task=management-communicate-iterate-delegate#task-management-communicate-iterate-delegate) receives the plan; [Write the agreed weekly report](https://local-service-spotlight.github.io/task-library/?task=submit-weekly-maa-report-every-friday#task-submit-weekly-maa-report-every-friday) receives the function evidence where relevant.
 
-This work supports the [Content Factory: Produce, Process, Post and Promote](https://blitzmetrics.com/content-factory/) across its relevant stages. It uses the actual inputs and next owner above; a strategy or measurement guide does not manufacture transcripts, clips or other unrelated stage outputs.
+This work supports the [Content Factory: Produce, Process, Post and Promote](https://localservicespotlight.com/content-factory/) across its relevant stages. It uses the actual inputs and next owner above; a strategy or measurement guide does not manufacture transcripts, clips or other unrelated stage outputs.
 
 ## Start with an agent
 

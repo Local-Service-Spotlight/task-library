@@ -50,7 +50,7 @@ Your ad needs to reach people who may need your help. This guide helps you choos
 
 Send the reviewed table to [set 1 day budget per ad set](https://local-service-spotlight.github.io/task-library/?task=set-1-day-budget-per-ad-set#task-set-1-day-budget-per-ad-set). The campaign owner resolves audience-source or service-area gaps before the relevant test is funded.
 
-This task is in Promote within the [Content Factory](https://blitzmetrics.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. Use the proof and checked posts from earlier stages; a Promote task does not automatically redo all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
+This task is in Promote within the [Content Factory](https://localservicespotlight.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. Use the proof and checked posts from earlier stages; a Promote task does not automatically redo all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
 
 ## When this runs
 

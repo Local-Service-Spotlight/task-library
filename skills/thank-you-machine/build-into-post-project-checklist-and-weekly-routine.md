@@ -52,7 +52,7 @@ It is easy to forget to thank people when work gets busy. This guide helps your 
 
 Use the log to hand a chosen event to [Find a Real Reason to Say Thanks](https://local-service-spotlight.github.io/task-library/?task=identify-thank-you-triggers#task-identify-thank-you-triggers) and later record its checked output. Send project updates only within the already authorized communication scope.
 
-This fits the [Content Factory](https://blitzmetrics.com/content-factory/): Produce a true story, Process it into useful files, Post only in the agreed places, and Promote a suitable post when its test has a budget. Each stage passes its checked files and next owner forward.
+This fits the [Content Factory](https://localservicespotlight.com/content-factory/): Produce a true story, Process it into useful files, Post only in the agreed places, and Promote a suitable post when its test has a budget. Each stage passes its checked files and next owner forward.
 
 ## When this runs
 
@@ -76,7 +76,7 @@ A teaching example is not a real execution. Do not count it, a repeated check or
 
 - Exact task: [Keep a Simple Thank-You Routine](https://local-service-spotlight.github.io/task-library/?task=build-into-post-project-checklist-and-weekly-routine#task-build-into-post-project-checklist-and-weekly-routine)
 - [One-minute video guide](https://blitzmetrics.com/one-minute-video-guide/) — how to record one clear point.
-- [Content Factory](https://blitzmetrics.com/content-factory/) — how the source becomes checked posts.
+- [Content Factory](https://localservicespotlight.com/content-factory/) — how the source becomes checked posts.
 - [Dollar-a-Day guide](https://blitzmetrics.com/dollar-a-day/) — the paid test method; current platform controls still need checking.
 
 ## Review and evidence still needed

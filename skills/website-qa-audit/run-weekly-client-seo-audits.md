@@ -84,7 +84,7 @@ A written report is still draft until its authorized project-thread post is conf
 
 Each client’s responsible team receives its actual report and prioritized repair list. The next weekly run verifies public fixes. [Write the weekly MAA report](https://local-service-spotlight.github.io/task-library/?task=submit-weekly-maa-report-every-friday#task-submit-weekly-maa-report-every-friday) can use these findings under the client’s agreed cadence; MAA means [Metrics, Analysis, Action](https://blitzmetrics.com/maa/), not automatic separate executions for every report derivative.
 
-This is a supporting quality check for the [Content Factory](https://blitzmetrics.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. This check does not automatically execute all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
+This is a supporting quality check for the [Content Factory](https://localservicespotlight.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. This check does not automatically execute all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
 
 ## When this runs
 

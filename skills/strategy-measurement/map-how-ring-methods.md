@@ -48,7 +48,7 @@ A fictional plumber’s WHAT is home plumbing repair. Its supported HOW topics a
 
 [Map WHY stories and people](https://local-service-spotlight.github.io/task-library/?task=map-why-ring-core-purpose#task-map-why-ring-core-purpose) receives the topics and source gaps.
 
-This work supports Produce in the [Content Factory: Produce, Process, Post and Promote](https://blitzmetrics.com/content-factory/). The selected sources pass to Process, approved outputs go to Post, and useful proven work can enter Promote. The real inputs and handoff above set this task’s scope.
+This work supports Produce in the [Content Factory: Produce, Process, Post and Promote](https://localservicespotlight.com/content-factory/). The selected sources pass to Process, approved outputs go to Post, and useful proven work can enter Promote. The real inputs and handoff above set this task’s scope.
 
 ## Start with an agent
 

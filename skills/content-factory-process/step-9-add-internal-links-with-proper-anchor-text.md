@@ -52,7 +52,7 @@ If the text explains video editing, it first says what Descript does and links t
 
 The editor receives checked links and pending inbound work for [Step 10: embed the source video](https://local-service-spotlight.github.io/task-library/?task=step-10-embed-source-video#task-step-10-embed-source-video). If the source has no video, record that fact and proceed to the next applicable check.
 
-Produce supplies the real source. **Process**, this stage of the [Content Factory](https://blitzmetrics.com/content-factory/), turns it into useful finished assets. Post saves or publishes them on the agreed channels. Promote tests and distributes suitable work within its own scope. The handoff above names this task’s actual next step; catalog neighbors alone are not prerequisites.
+Produce supplies the real source. **Process**, this stage of the [Content Factory](https://localservicespotlight.com/content-factory/), turns it into useful finished assets. Post saves or publishes them on the agreed channels. Promote tests and distributes suitable work within its own scope. The handoff above names this task’s actual next step; catalog neighbors alone are not prerequisites.
 
 ## When this runs
 

@@ -56,7 +56,7 @@ The Instagram card shows “Whole bike / Close-up / When it happens.” Its link
 
 The posting owner receives each prepared package. Use [Post to the Facebook Page](https://local-service-spotlight.github.io/task-library/?task=post-to-facebook-page#task-post-to-facebook-page) and [Post to LinkedIn](https://local-service-spotlight.github.io/task-library/?task=post-to-linkedin#task-post-to-linkedin) for those selected channels. Other channels use their actual maintained account workflow.
 
-Produce supplies the real source. **Process**, this stage of the [Content Factory](https://blitzmetrics.com/content-factory/), turns it into useful finished assets. Post saves or publishes them on the agreed channels. Promote tests and distributes suitable work within its own scope. The handoff above names this task’s actual next step; catalog neighbors alone are not prerequisites.
+Produce supplies the real source. **Process**, this stage of the [Content Factory](https://localservicespotlight.com/content-factory/), turns it into useful finished assets. Post saves or publishes them on the agreed channels. Promote tests and distributes suitable work within its own scope. The handoff above names this task’s actual next step; catalog neighbors alone are not prerequisites.
 
 ## When this runs
 

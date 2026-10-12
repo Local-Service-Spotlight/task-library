@@ -51,7 +51,7 @@ A fictional coach’s interview links to an old home page. Her own recap can be 
 
 [Collect and classify positive mentions](https://local-service-spotlight.github.io/task-library/?task=positive-mentions-harvester#task-positive-mentions-harvester) receives verified outside references; the site/content owner receives unresolved link repairs and the updated [SEO Tree, the map from proof pages to main topics and offers](https://blitzmetrics.com/seo-tree/) map.
 
-The source places this task in Post within the [Content Factory: Produce, Process, Post and Promote](https://blitzmetrics.com/content-factory/). Produce captures real sources, Process makes the selected useful assets, Post releases approved work, and Promote distributes proven work. The actual handoff above determines what this task must supply.
+The source places this task in Post within the [Content Factory: Produce, Process, Post and Promote](https://localservicespotlight.com/content-factory/). Produce captures real sources, Process makes the selected useful assets, Post releases approved work, and Promote distributes proven work. The actual handoff above determines what this task must supply.
 
 ## Start with an agent
 

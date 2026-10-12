@@ -52,7 +52,7 @@ A fictional repair expert records a clear answer about a common leak. The transc
 
 [Prepare social clips](https://local-service-spotlight.github.io/task-library/?task=create-social-content-from-video-clips#task-create-social-content-from-video-clips) receives accepted source segments and the actual article URL when live; [Check paths to the person’s site](https://local-service-spotlight.github.io/task-library/?task=link-all-content-back-to-personal-brand-site#task-link-all-content-back-to-personal-brand-site) checks the new page’s owned paths.
 
-The source places this task in Process within the [Content Factory: Produce, Process, Post and Promote](https://blitzmetrics.com/content-factory/). Produce captures real sources, Process makes the selected useful assets, Post releases approved work, and Promote distributes proven work. The actual handoff above determines what this task must supply.
+The source places this task in Process within the [Content Factory: Produce, Process, Post and Promote](https://localservicespotlight.com/content-factory/). Produce captures real sources, Process makes the selected useful assets, Post releases approved work, and Promote distributes proven work. The actual handoff above determines what this task must supply.
 
 ## Start with an agent
 
