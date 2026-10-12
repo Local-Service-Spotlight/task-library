@@ -56,7 +56,7 @@ A fictional owner first mentions an old domain, then confirms a different domain
 
 The site owner accepts the preview and exact domain plan. The authorized publishing function receives the recorded approval and rollback plan. After public checks pass, [Review search and real inquiries](https://local-service-spotlight.github.io/task-library/?task=measure-search-impressions-traffic-inbound-opportunities#task-measure-search-impressions-traffic-inbound-opportunities) receives the verified URL and actual source connections. The original request remains the parent record.
 
-**[Content Factory](https://blitzmetrics.com/content-factory/) stage: Post.** This task places approved identity content on the owner’s site and checks the served pages and contact path. It does not include paid promotion.
+**[Content Factory](https://localservicespotlight.com/content-factory/) stage: Post.** This task places approved identity content on the owner’s site and checks the served pages and contact path. It does not include paid promotion.
 
 ## Start with an agent
 

@@ -50,7 +50,7 @@ Do your profiles tell the same true story? This guide helps you keep the facts a
 
 Give the approved asset and bio variants to the profile owners. Use [ensure nap consistency across platforms](https://local-service-spotlight.github.io/task-library/?task=ensure-nap-consistency-across-platforms#task-ensure-nap-consistency-across-platforms) for business contact facts or [add schema markup person localbusiness](https://local-service-spotlight.github.io/task-library/?task=add-schema-markup-person-localbusiness#task-add-schema-markup-person-localbusiness) for matching machine-readable identities.
 
-This setup supports the [Content Factory](https://blitzmetrics.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. This check does not automatically execute all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
+This setup supports the [Content Factory](https://localservicespotlight.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. This check does not automatically execute all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
 
 ## When this runs
 

@@ -53,7 +53,7 @@ The founder’s name links to the verified personal home, while the business nam
 
 The content owner receives the accepted routing table. [Follow the canonical entity decision tree](https://local-service-spotlight.github.io/task-library/?task=follow-entity-linking-decision-tree#task-follow-entity-linking-decision-tree) owns the policy; [Check broken targets](https://local-service-spotlight.github.io/task-library/?task=check-for-broken-links#task-check-for-broken-links) verifies destination failures separately.
 
-This is a supporting quality check for the [Content Factory](https://blitzmetrics.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. This check does not automatically execute all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
+This is a supporting quality check for the [Content Factory](https://localservicespotlight.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. This check does not automatically execute all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
 
 ## When this runs
 

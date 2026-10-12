@@ -50,7 +50,7 @@ A fictional guide is merged and its page saved, but the public URL still serves 
 
 ## Handoff and Content Factory context
 
-The [Content Factory, our four stages of using real content](https://blitzmetrics.com/content-factory/) goes Produce → Process → Post → Promote. The source method is prepared and checked in Process. Its authorized page release and links belong to Post. Promotion is a separate decision after the published result is checked.
+The [Content Factory, our four stages of using real content](https://localservicespotlight.com/content-factory/) goes Produce → Process → Post → Promote. The source method is prepared and checked in Process. Its authorized page release and links belong to Post. Promotion is a separate decision after the published result is checked.
 
 The task owner receives the public/draft state and remaining gaps. Consumers use the exact guide; any installed-package update needs its own activation check.
 

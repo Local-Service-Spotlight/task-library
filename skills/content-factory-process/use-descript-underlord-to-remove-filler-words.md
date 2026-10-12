@@ -52,7 +52,7 @@ At another cut, the start of “needs” is clipped. The editor restores the bou
 
 The clip editor receives the checked cut and source map for [Extract short clips](https://local-service-spotlight.github.io/task-library/?task=extract-15-60-second-clips-from-long-form-video#task-extract-15-60-second-clips-from-long-form-video). The article writer can use the faithful transcript; filler removal is not a mandatory prerequisite for all writing.
 
-Produce supplies the real source. **Process**, this stage of the [Content Factory](https://blitzmetrics.com/content-factory/), turns it into useful finished assets. Post saves or publishes them on the agreed channels. Promote tests and distributes suitable work within its own scope. The handoff above names this task’s actual next step; catalog neighbors alone are not prerequisites.
+Produce supplies the real source. **Process**, this stage of the [Content Factory](https://localservicespotlight.com/content-factory/), turns it into useful finished assets. Post saves or publishes them on the agreed channels. Promote tests and distributes suitable work within its own scope. The handoff above names this task’s actual next step; catalog neighbors alone are not prerequisites.
 
 ## When this runs
 

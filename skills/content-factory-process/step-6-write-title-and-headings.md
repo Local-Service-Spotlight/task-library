@@ -53,7 +53,7 @@ A matching description is: “See which bike photos and notes help a shop prepar
 
 The writer uses these fields for [Step 7: write the opening](https://local-service-spotlight.github.io/task-library/?task=step-7-write-hook-and-establish-context#task-step-7-write-hook-and-establish-context). The publisher later enters checked search fields in [Configure search metadata](https://local-service-spotlight.github.io/task-library/?task=step-14a-configure-rankmath-seo-plugin#task-step-14a-configure-rankmath-seo-plugin) when that plugin is used.
 
-Produce supplies the real source. **Process**, this stage of the [Content Factory](https://blitzmetrics.com/content-factory/), turns it into useful finished assets. Post saves or publishes them on the agreed channels. Promote tests and distributes suitable work within its own scope. The handoff above names this task’s actual next step; catalog neighbors alone are not prerequisites.
+Produce supplies the real source. **Process**, this stage of the [Content Factory](https://localservicespotlight.com/content-factory/), turns it into useful finished assets. Post saves or publishes them on the agreed channels. Promote tests and distributes suitable work within its own scope. The handoff above names this task’s actual next step; catalog neighbors alone are not prerequisites.
 
 ## When this runs
 

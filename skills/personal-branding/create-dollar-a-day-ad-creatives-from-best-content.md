@@ -51,7 +51,7 @@ A fictional repair shop has a useful roof-leak clip with strong watch time. Its 
 
 [Prepare the accepted amplification test](https://local-service-spotlight.github.io/task-library/?task=stage-5-amplification-boost-posts-remarketing-ads#task-stage-5-amplification-boost-posts-remarketing-ads) receives the reviewed creative packet; [Review search and real inquiries](https://local-service-spotlight.github.io/task-library/?task=measure-search-impressions-traffic-inbound-opportunities#task-measure-search-impressions-traffic-inbound-opportunities) receives actual results later.
 
-The source places this task in Process within the [Content Factory: Produce, Process, Post and Promote](https://blitzmetrics.com/content-factory/). Produce captures real sources, Process makes the selected useful assets, Post releases approved work, and Promote distributes proven work. The actual handoff above determines what this task must supply.
+The source places this task in Process within the [Content Factory: Produce, Process, Post and Promote](https://localservicespotlight.com/content-factory/). Produce captures real sources, Process makes the selected useful assets, Post releases approved work, and Promote distributes proven work. The actual handoff above determines what this task must supply.
 
 ## Start with an agent
 

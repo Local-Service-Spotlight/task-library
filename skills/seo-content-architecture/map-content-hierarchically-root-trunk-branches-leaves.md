@@ -51,7 +51,7 @@ A fictional consultant has a home page, two services, one method guide and six s
 
 [Publish the checked site directory](https://local-service-spotlight.github.io/task-library/?task=publish-seo-tree-site-directory#task-publish-seo-tree-site-directory) receives the checked structure; [Build the measured Money Tree](https://local-service-spotlight.github.io/task-library/?task=build-money-tree-site-diagram#task-build-money-tree-site-diagram) receives real offer branches and the count scope. [Resolve pages with no incoming path](https://local-service-spotlight.github.io/task-library/?task=identify-and-eliminate-orphan-standalone-articles#task-identify-and-eliminate-orphan-standalone-articles) and [Review duplicate or weak pages](https://local-service-spotlight.github.io/task-library/?task=remove-duplicate-thin-pages#task-remove-duplicate-thin-pages) receive distinct supported findings.
 
-This task supports the [Content Factory: Produce, Process, Post and Promote](https://blitzmetrics.com/content-factory/). Identity, proof, access or coordination can support several stages. Use the real inputs and receiving owner above; this task does not create unrelated transcripts, clips or ads merely because the diagram has four stages.
+This task supports the [Content Factory: Produce, Process, Post and Promote](https://localservicespotlight.com/content-factory/). Identity, proof, access or coordination can support several stages. Use the real inputs and receiving owner above; this task does not create unrelated transcripts, clips or ads merely because the diagram has four stages.
 
 ## Start with an agent
 

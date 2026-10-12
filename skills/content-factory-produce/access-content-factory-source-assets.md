@@ -60,7 +60,7 @@ The sample result is one verified source, one identity question, and one access 
 
 The assigned editor gets the verified source references and use limits. [Upload the source to Drive and Descript](https://local-service-spotlight.github.io/task-library/?task=step-1-upload-video-to-google-drive-and-descript#task-step-1-upload-video-to-google-drive-and-descript) is the common next task; use another processing task only when the assignment names it. The project access owner resolves permissions, not the drafting agent.
 
-This task serves **Produce** in the [Content Factory](https://blitzmetrics.com/content-factory/). Produce makes or prepares source material. Process edits it, Post puts approved work on a channel, and Promote helps it reach people. Only the steps and handoff above are part of this task.
+This task serves **Produce** in the [Content Factory](https://localservicespotlight.com/content-factory/). Produce makes or prepares source material. Process edits it, Post puts approved work on a channel, and Promote helps it reach people. Only the steps and handoff above are part of this task.
 
 ## When this runs
 

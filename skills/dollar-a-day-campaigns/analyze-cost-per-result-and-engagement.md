@@ -50,7 +50,7 @@ You need to know which ads earn their keep. This guide helps you read the cost a
 
 Send stopped candidates to [kill underperforming ads](https://local-service-spotlight.github.io/task-library/?task=kill-underperforming-ads#task-kill-underperforming-ads) and qualified winners to [scale winners by increasing budget gradually](https://local-service-spotlight.github.io/task-library/?task=scale-winners-by-increasing-budget-gradually#task-scale-winners-by-increasing-budget-gradually). The campaign owner receives the report; missing tracking goes to [set up digital plumbing pixels tracking](https://local-service-spotlight.github.io/task-library/?task=set-up-digital-plumbing-pixels-tracking#task-set-up-digital-plumbing-pixels-tracking).
 
-This task is in Promote within the [Content Factory](https://blitzmetrics.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. Use the proof and checked posts from earlier stages; a Promote task does not automatically redo all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
+This task is in Promote within the [Content Factory](https://localservicespotlight.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. Use the proof and checked posts from earlier stages; a Promote task does not automatically redo all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
 
 ## When this runs
 

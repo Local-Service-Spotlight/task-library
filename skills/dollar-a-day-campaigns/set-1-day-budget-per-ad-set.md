@@ -50,7 +50,7 @@ A small ad test needs a clear price. This guide helps you set a starting budget 
 
 Send the priced, checked rows to [run multiple simultaneous tests](https://local-service-spotlight.github.io/task-library/?task=run-multiple-simultaneous-tests#task-run-multiple-simultaneous-tests) or the specific platform setup task. The campaign owner receives any unsupported minimum or total-cost conflict.
 
-This task is in Promote within the [Content Factory](https://blitzmetrics.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. Use the proof and checked posts from earlier stages; a Promote task does not automatically redo all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
+This task is in Promote within the [Content Factory](https://localservicespotlight.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. Use the proof and checked posts from earlier stages; a Promote task does not automatically redo all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
 
 ## When this runs
 

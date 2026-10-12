@@ -50,7 +50,7 @@ Your page and ad tools should stay under the right owner’s control. This guide
 
 Give the checked asset map to [create facebook instagram campaigns with location targeting](https://local-service-spotlight.github.io/task-library/?task=create-facebook-instagram-campaigns-with-location-targeting#task-create-facebook-instagram-campaigns-with-location-targeting) or [boost one minute videos for personal branding](https://local-service-spotlight.github.io/task-library/?task=boost-one-minute-videos-for-personal-branding#task-boost-one-minute-videos-for-personal-branding) when that campaign is in scope. The actual account administrator owns any remaining access step.
 
-This task is in Promote within the [Content Factory](https://blitzmetrics.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. Use the proof and checked posts from earlier stages; a Promote task does not automatically redo all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
+This task is in Promote within the [Content Factory](https://localservicespotlight.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. Use the proof and checked posts from earlier stages; a Promote task does not automatically redo all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
 
 ## When this runs
 

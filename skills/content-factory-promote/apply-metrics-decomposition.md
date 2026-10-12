@@ -50,7 +50,7 @@ Your ad cost changed, but the total does not tell you why. This guide helps you 
 
 Give the worksheet to [compare current vs last period performance](https://local-service-spotlight.github.io/task-library/?task=compare-current-vs-last-period-performance#task-compare-current-vs-last-period-performance) and [list top 3 5 recommendations for next 7 days](https://local-service-spotlight.github.io/task-library/?task=list-top-3-5-recommendations-for-next-7-days#task-list-top-3-5-recommendations-for-next-7-days). The actual site or campaign owner receives any specific verification or repair task.
 
-This task is in Promote within the [Content Factory](https://blitzmetrics.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. Use the proof and checked posts from earlier stages; a Promote task does not automatically redo all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
+This task is in Promote within the [Content Factory](https://localservicespotlight.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. Use the proof and checked posts from earlier stages; a Promote task does not automatically redo all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
 
 ## When this runs
 

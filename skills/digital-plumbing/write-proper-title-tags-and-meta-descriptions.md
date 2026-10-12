@@ -50,7 +50,7 @@ Search results help people choose which page to open. This guide helps a site ow
 
 Give the page-to-purpose map to the content/search owner. Use [ensure robots meta not blocking indexing](https://local-service-spotlight.github.io/task-library/?task=ensure-robots-meta-not-blocking-indexing#task-ensure-robots-meta-not-blocking-indexing) for an eligibility issue or [create xml sitemap and reference in robots txt](https://local-service-spotlight.github.io/task-library/?task=create-xml-sitemap-and-reference-in-robots-txt#task-create-xml-sitemap-and-reference-in-robots-txt) for missing discovery coverage.
 
-This setup supports the [Content Factory](https://blitzmetrics.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. This check does not automatically execute all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
+This setup supports the [Content Factory](https://localservicespotlight.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. This check does not automatically execute all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
 
 ## When this runs
 

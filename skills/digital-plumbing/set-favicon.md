@@ -50,7 +50,7 @@ Does your site’s tab still show the host’s icon? This guide helps a site own
 
 Give the brand asset and icon-source location to the site owner. Use [check favicon is set](https://local-service-spotlight.github.io/task-library/?task=check-favicon-is-set#task-check-favicon-is-set) during future site reviews; a theme change should preserve this setting.
 
-This setup supports the [Content Factory](https://blitzmetrics.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. This check does not automatically execute all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
+This setup supports the [Content Factory](https://localservicespotlight.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. This check does not automatically execute all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
 
 ## When this runs
 

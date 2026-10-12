@@ -53,7 +53,7 @@ The sample Person node omits jobTitle because the source record does not establi
 
 The technical/content owner receives the served graph and remaining identity proof. [Review all applicable profile links](https://local-service-spotlight.github.io/task-library/?task=check-schema-connects-to-all-verified-profiles#task-check-schema-connects-to-all-verified-profiles) handles the broader person-and-business map without combining their identities.
 
-This is a supporting quality check for the [Content Factory](https://blitzmetrics.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. This check does not automatically execute all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
+This is a supporting quality check for the [Content Factory](https://localservicespotlight.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. This check does not automatically execute all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
 
 ## When this runs
 

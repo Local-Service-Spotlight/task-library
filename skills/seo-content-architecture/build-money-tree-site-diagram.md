@@ -91,7 +91,7 @@ A fictional service site has two offers and five posts. Three distinct posts lin
 
 [Prepare the Friday MAA report](https://local-service-spotlight.github.io/task-library/?task=submit-weekly-maa-report-every-friday#task-submit-weekly-maa-report-every-friday) receives the accepted public tree, private evidence when authorized, branch deltas and owned actions. [Plan relevant links and orphan repairs](https://local-service-spotlight.github.io/task-library/?task=step-3-identify-money-pages-and-orphan-pages#task-step-3-identify-money-pages-and-orphan-pages) receives exact structural defects; [Collect verified measurements](https://local-service-spotlight.github.io/task-library/?task=collect-verified-weekly-measurements#task-collect-verified-weekly-measurements) owns missing source connections.
 
-The source places this task in Post within the [Content Factory: Produce, Process, Post and Promote](https://blitzmetrics.com/content-factory/). Produce captures real sources, Process makes the selected useful assets, Post releases approved work, and Promote distributes proven work. The actual handoff above determines what this task must supply.
+The source places this task in Post within the [Content Factory: Produce, Process, Post and Promote](https://localservicespotlight.com/content-factory/). Produce captures real sources, Process makes the selected useful assets, Post releases approved work, and Promote distributes proven work. The actual handoff above determines what this task must supply.
 
 ## Start with an agent
 

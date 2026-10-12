@@ -59,7 +59,7 @@ The sample outline allows 30 seconds for the purpose, 90 for the story, and 60 f
 
 The editor receives the raw story and fact notes through [Upload the source to Drive and Descript](https://local-service-spotlight.github.io/task-library/?task=step-1-upload-video-to-google-drive-and-descript#task-step-1-upload-video-to-google-drive-and-descript). [Create a 3×3 video grid](https://local-service-spotlight.github.io/task-library/?task=create-a-3x3-video-grid#task-create-a-3x3-video-grid) can use the story as planning context, but an existing WHY video does not fill all nine grid cells.
 
-This task serves **Produce** in the [Content Factory](https://blitzmetrics.com/content-factory/). Produce makes or prepares source material. Process edits it, Post puts approved work on a channel, and Promote helps it reach people. Only the steps and handoff above are part of this task.
+This task serves **Produce** in the [Content Factory](https://localservicespotlight.com/content-factory/). Produce makes or prepares source material. Process edits it, Post puts approved work on a channel, and Promote helps it reach people. Only the steps and handoff above are part of this task.
 
 ## When this runs
 

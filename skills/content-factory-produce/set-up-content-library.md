@@ -28,7 +28,7 @@ Good files are hard to use when they sit in phones and chat threads. This guide 
 ## Steps
 1. Confirm the library home with the brand owner. Use the existing approved structure if there is one. Record the location, access owner, scope of files, and limits before moving anything.
 2. Check ownership, not just the name of the parent folder. In My Drive, a brand-owned folder does not make each uploaded file brand-owned. Where the brand has an approved Workspace shared drive, files belong to the organization. If using My Drive, record file owners and resolve the actual ownership plan with the access owner.
-3. Create or map four stage folders: 01-Raw, 02-In-Process, 03-Published, and 04-Promote-Creatives. These reflect the [Content Factory](https://blitzmetrics.com/content-factory/) stages: make source material, edit it, publish it, and then distribute it. Do not mark content published just because it is placed in 03-Published.
+3. Create or map four stage folders: 01-Raw, 02-In-Process, 03-Published, and 04-Promote-Creatives. These reflect the [Content Factory](https://localservicespotlight.com/content-factory/) stages: make source material, edit it, publish it, and then distribute it. Do not mark content published just because it is placed in 03-Published.
 4. Write a short root README. State who owns the library, where new files arrive, how to name them, where the tracker lives, and who takes the next step. Use YYYY-MM-DD-topic-person plus type or take suffix when needed. Keep original names in the tracker to preserve the source trail. Preserve each file extension unless you separately convert the file and verify the result.
 5. Create a tracker with one row per source asset: asset ID, original name, current name, date, source link, topic, [GCT](https://blitzmetrics.com/gct-business-strategy/) notes, owner/permission state, stage, next person, and links to derived work. GCT means the goal, what this file shows, and who it is for.
 6. Inventory the agreed assets before moving them. Copy or move only within the approved scope; do not delete originals or merge duplicate-looking files without checking them. Rename the working copy, file it in the right stage, and log each item. Keep unmatched or inaccessible files on an exception list.
@@ -68,7 +68,7 @@ If the sample intake finds 15 of the 16 planned assets and one phone is unavaila
 
 The intake owner receives the README, file log, and exceptions. The editor tests one source file and starts [Upload the source to Drive and Descript](https://local-service-spotlight.github.io/task-library/?task=step-1-upload-video-to-google-drive-and-descript#task-step-1-upload-video-to-google-drive-and-descript). The existing worker or upload task must use the verified intake path; this guide does not install or activate it.
 
-This task serves **Produce** in the [Content Factory](https://blitzmetrics.com/content-factory/). Produce makes or prepares source material. Process edits it, Post puts approved work on a channel, and Promote helps it reach people. Only the steps and handoff above are part of this task.
+This task serves **Produce** in the [Content Factory](https://localservicespotlight.com/content-factory/). Produce makes or prepares source material. Process edits it, Post puts approved work on a channel, and Promote helps it reach people. Only the steps and handoff above are part of this task.
 
 ## When this runs
 

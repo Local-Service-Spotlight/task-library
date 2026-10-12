@@ -46,7 +46,7 @@ A fictional rollout links the form from three checklists. During two weeks, call
 
 ## Handoff and Content Factory context
 
-This work supports the [Content Factory, our four stages of using real content](https://blitzmetrics.com/content-factory/): Produce → Process → Post → Promote. Use the specific inputs and next task below to place the work; a maintenance task does not manufacture transcripts, clips or other stage outputs it does not call for.
+This work supports the [Content Factory, our four stages of using real content](https://localservicespotlight.com/content-factory/): Produce → Process → Post → Promote. Use the specific inputs and next task below to place the work; a maintenance task does not manufacture transcripts, clips or other stage outputs it does not call for.
 
 Capture owners use [Capture a lesson within 24 hours](https://local-service-spotlight.github.io/task-library/?task=generate-knowledge-capture-note-within-24-hours#task-generate-knowledge-capture-note-within-24-hours); the rollout owner retains adoption evidence and [Draft a process-change proposal](https://local-service-spotlight.github.io/task-library/?task=create-sop-amendment-proposal-500-words#task-create-sop-amendment-proposal-500-words) handles accepted changes.
 

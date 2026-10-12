@@ -50,7 +50,7 @@ Someone helped you, and you want to say thanks in a personal way. This guide hel
 
 Give any authorized public-content candidate to the actual content owner and [record one minute videos](https://local-service-spotlight.github.io/task-library/?task=record-one-minute-videos#task-record-one-minute-videos) or the appropriate Post task. Eligible thank-you moments from [engage with social comments](https://local-service-spotlight.github.io/task-library/?task=engage-with-social-comments#task-engage-with-social-comments) are inputs, not automatic send triggers.
 
-This task is in Promote within the [Content Factory](https://blitzmetrics.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. Use the proof and checked posts from earlier stages; a Promote task does not automatically redo all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
+This task is in Promote within the [Content Factory](https://localservicespotlight.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. Use the proof and checked posts from earlier stages; a Promote task does not automatically redo all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
 
 ## When this runs
 
@@ -76,7 +76,7 @@ Keep one stable execution ID across retries and edits. A separately scoped child
 - Exact task: [Create and send Thank You Machine videos](https://local-service-spotlight.github.io/task-library/?task=create-and-send-thank-you-machine-videos#task-create-and-send-thank-you-machine-videos)
 - Writing standard: [Article Guidelines](https://localservicespotlight.com/article-guidelines/)
 - [One-minute video guide](https://blitzmetrics.com/one-minute-video-guide/)
-- [Content Factory](https://blitzmetrics.com/content-factory/)
+- [Content Factory](https://localservicespotlight.com/content-factory/)
 - [Dollar-a-Day method](https://blitzmetrics.com/dollar-a-day/)
 
 ## Review and evidence still needed

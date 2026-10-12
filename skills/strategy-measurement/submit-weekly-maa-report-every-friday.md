@@ -53,7 +53,7 @@ A fictional report shows 30 total calls, 12 qualified calls and five bookings un
 
 [Update the Success Tracker](https://local-service-spotlight.github.io/task-library/?task=update-client-success-tracker#task-update-client-success-tracker) receives the exact report, source links, comparison limits and actions with owners, due dates and pass rules. Name the receiving project lead and record the handoff location. The next agreed review checks what happened to those actions; an assignment alone does not prove they were done.
 
-This work supports the [Content Factory: Produce, Process, Post and Promote](https://blitzmetrics.com/content-factory/) across its relevant stages. It uses the actual inputs and next owner above; a strategy or measurement guide does not manufacture transcripts, clips or other unrelated stage outputs.
+This work supports the [Content Factory: Produce, Process, Post and Promote](https://localservicespotlight.com/content-factory/) across its relevant stages. It uses the actual inputs and next owner above; a strategy or measurement guide does not manufacture transcripts, clips or other unrelated stage outputs.
 
 ## Start with an agent
 

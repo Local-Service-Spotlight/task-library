@@ -68,7 +68,7 @@ Record the five explicit instruction checks from [the Task Library Standard](Tas
 - Keep the guide, skill, pack, plugin description, and agent setup consistent. A skill supplies instructions; a pack groups skills; a plugin packages app capabilities; an agent uses available tools to do work. A schedule triggers recurring work after setup.
 - Apply the [entity, concept-link and LSS naming rules](Task-Library-Standard.md#entity-destination-rules), including major terms with no link yet. Apply approved example and link choices without disclosing internal account information. Review every public output, including generated downloads and run records, for this boundary.
 - Link concepts through the maintained [SEO Tree](https://blitzmetrics.com/seo-tree/) structure. Preserve official provider links where a step requires that provider or cites primary evidence. Do not substitute an unrelated internal page just to avoid an external link.
-- Show each real task's place in the [Content Factory](https://blitzmetrics.com/content-factory/): its inputs, the stage it serves, checked output, and receiving task. A support task may serve several stages.
+- Show each real task's place in the [Content Factory](https://localservicespotlight.com/content-factory/): its inputs, the stage it serves, checked output, and receiving task. A support task may serve several stages.
 
 ## Measure progress honestly
 

@@ -50,7 +50,7 @@ You have posts that people already find useful. This guide helps you test them w
 
 The campaign report feeds [apply metrics decomposition](https://local-service-spotlight.github.io/task-library/?task=apply-metrics-decomposition#task-apply-metrics-decomposition) when a component needs analysis, [execute switch boost to target new audiences](https://local-service-spotlight.github.io/task-library/?task=execute-switch-boost-to-target-new-audiences#task-execute-switch-boost-to-target-new-audiences) for an eligible new audience, or [sequence content cold warm conversion](https://local-service-spotlight.github.io/task-library/?task=sequence-content-cold-warm-conversion#task-sequence-content-cold-warm-conversion) when a stage path is ready. Choose the actual needed handoff, not all of them by default.
 
-This task is in Promote within the [Content Factory](https://blitzmetrics.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. Use the proof and checked posts from earlier stages; a Promote task does not automatically redo all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
+This task is in Promote within the [Content Factory](https://localservicespotlight.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. Use the proof and checked posts from earlier stages; a Promote task does not automatically redo all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
 
 ## When this runs
 

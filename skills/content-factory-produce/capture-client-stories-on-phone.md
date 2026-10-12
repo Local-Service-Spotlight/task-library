@@ -55,7 +55,7 @@ The teaching permission note says “website story and shop social posts; no pai
 
 The editor receives the files and permission limits. The reviewer uses [Verify testimonials with full attribution](https://local-service-spotlight.github.io/task-library/?task=verify-testimonials-with-full-attribution#task-verify-testimonials-with-full-attribution) before public use. [Upload the source to Drive and Descript](https://local-service-spotlight.github.io/task-library/?task=step-1-upload-video-to-google-drive-and-descript#task-step-1-upload-video-to-google-drive-and-descript) is the source-file handoff; a story is not automatically cleared for ads.
 
-This task serves **Produce** in the [Content Factory](https://blitzmetrics.com/content-factory/). Produce makes or prepares source material. Process edits it, Post puts approved work on a channel, and Promote helps it reach people. Only the steps and handoff above are part of this task.
+This task serves **Produce** in the [Content Factory](https://localservicespotlight.com/content-factory/). Produce makes or prepares source material. Process edits it, Post puts approved work on a channel, and Promote helps it reach people. Only the steps and handoff above are part of this task.
 
 ## When this runs
 

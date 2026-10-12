@@ -50,7 +50,7 @@ Your ad money may be spread across several places. This guide helps you see what
 
 Send the proposal and actual changes to [list top 3 5 recommendations for next 7 days](https://local-service-spotlight.github.io/task-library/?task=list-top-3-5-recommendations-for-next-7-days#task-list-top-3-5-recommendations-for-next-7-days). Any supported increase follows [scale winners by increasing budget gradually](https://local-service-spotlight.github.io/task-library/?task=scale-winners-by-increasing-budget-gradually#task-scale-winners-by-increasing-budget-gradually); the next [compare current vs last period performance](https://local-service-spotlight.github.io/task-library/?task=compare-current-vs-last-period-performance#task-compare-current-vs-last-period-performance) checks its observed result.
 
-This task is in Promote within the [Content Factory](https://blitzmetrics.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. Use the proof and checked posts from earlier stages; a Promote task does not automatically redo all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
+This task is in Promote within the [Content Factory](https://localservicespotlight.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. Use the proof and checked posts from earlier stages; a Promote task does not automatically redo all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
 
 ## When this runs
 

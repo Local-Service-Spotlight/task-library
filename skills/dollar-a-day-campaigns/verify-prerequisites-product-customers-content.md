@@ -50,7 +50,7 @@ Ads help more people see what your business does. Before you spend, check that t
 
 Supported premises go to [set up digital plumbing pixels tracking](https://local-service-spotlight.github.io/task-library/?task=set-up-digital-plumbing-pixels-tracking#task-set-up-digital-plumbing-pixels-tracking) and [identify signals worth amplifying](https://local-service-spotlight.github.io/task-library/?task=identify-signals-worth-amplifying#task-identify-signals-worth-amplifying). The actual business, evidence or content owner receives each named gap before the affected paid step proceeds.
 
-This task is in Promote within the [Content Factory](https://blitzmetrics.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. Use the proof and checked posts from earlier stages; a Promote task does not automatically redo all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
+This task is in Promote within the [Content Factory](https://localservicespotlight.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. Use the proof and checked posts from earlier stages; a Promote task does not automatically redo all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
 
 ## When this runs
 
@@ -79,7 +79,7 @@ Keep one stable execution ID across retries and edits. A separately scoped child
 - [Dollar-a-Day method](https://blitzmetrics.com/dollar-a-day/)
 - [Goals, Content, and Targeting](https://blitzmetrics.com/gct-business-strategy/)
 - [One-minute video guide](https://blitzmetrics.com/one-minute-video-guide/)
-- [Content Factory](https://blitzmetrics.com/content-factory/)
+- [Content Factory](https://localservicespotlight.com/content-factory/)
 
 ## Review and evidence still needed
 

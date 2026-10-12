@@ -55,7 +55,7 @@ If the filter is still Testing, the report says so. A zero in Realtime is not en
 
 The measurement owner receives private configuration evidence and remaining classification work. [Verify the tag container](https://local-service-spotlight.github.io/task-library/?task=verify-gtm-installed-and-firing-on-every-page#task-verify-gtm-installed-and-firing-on-every-page) is relevant if GTM actually delivers these tags; direct supported Google-tag setups are not automatically failures.
 
-This is a supporting quality check for the [Content Factory](https://blitzmetrics.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. This check does not automatically execute all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
+This is a supporting quality check for the [Content Factory](https://localservicespotlight.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. This check does not automatically execute all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
 
 ## When this runs
 

@@ -53,7 +53,7 @@ The installation check can pass while the new event remains preview-only. The re
 
 The measurement owner receives the page/version/tag map. [Verify GA4 receipt and internal-traffic treatment](https://local-service-spotlight.github.io/task-library/?task=verify-ga4-configured-with-internal-traffic-filtered#task-verify-ga4-configured-with-internal-traffic-filtered) handles the Analytics-specific destination checks; other tags use their own scoped tests.
 
-This is a supporting quality check for the [Content Factory](https://blitzmetrics.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. This check does not automatically execute all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
+This is a supporting quality check for the [Content Factory](https://localservicespotlight.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. This check does not automatically execute all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
 
 ## When this runs
 

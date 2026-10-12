@@ -1688,6 +1688,37 @@
         }
       ],
       "finishedAt": "2026-10-12T18:24:42.880857+00:00"
+    },
+    {
+      "taskSlugs": [
+        "publish-skill-and-task-page"
+      ],
+      "recipeRevisions": {
+        "publish-skill-and-task-page": {
+          "articleUrl": "https://blitzmetrics.com/skill-publishing-standard/",
+          "sourceSha256": "609039d529572a9d02b5e2b5847469d5fe7e6138a55c1ebd3c70a716c3a1093a"
+        }
+      },
+      "executionId": "content-factory-link-repair-20261013",
+      "startedAt": "2026-10-12T21:53:15.698067+00:00",
+      "recordedAt": "2026-10-12T21:53:15.698067+00:00",
+      "updatedAt": "2026-10-12T21:53:15.698067+00:00",
+      "status": "running",
+      "result": "Shared Content Factory destination repaired in source; exact release checks pending. Existing proof recovery remains distinct from real task execution and new-user setup.",
+      "metaArticle": {
+        "status": "draft",
+        "draftSha256": "87cba9cd3bac28ac9b59e17308cfb7c2c5fe701834a8dc2f41a37f611fe9a505"
+      },
+      "evidence": [
+        {
+          "visibility": "public",
+          "url": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/content-factory-link-2026-10-13.md"
+        },
+        {
+          "visibility": "private",
+          "sha256": "559bec99fd1f3c2f6668cb8c10659f277ec617161b3996782d3cc06853b96a1d"
+        }
+      ]
     }
   ],
   "historicalEvidence": [
@@ -2082,6 +2113,71 @@
         "handoff": {
           "state": "pass",
           "notes": "Scoped to delivery of the public article and PDF links in the original requester conversation. The live article also links the PDF. Receiving acknowledgment, attendee use and any later promotion remain unknown."
+        }
+      }
+    },
+    {
+      "version": 1,
+      "evidenceId": "historical-277118d625a087d83d91240c",
+      "sourceIdentitySha256": "277118d625a087d83d91240c60c458dad231b2098a32deaa185436e2a0f4a2c1",
+      "taskSlugs": [
+        "deliver-personal-brand-site-from-request"
+      ],
+      "occurrence": {
+        "start": {
+          "precision": "unknown",
+          "value": null
+        },
+        "end": {
+          "precision": "date",
+          "value": "2026-08-22"
+        }
+      },
+      "recipeRevision": {
+        "state": "unknown",
+        "canonicalURL": null,
+        "sourceSha256": null
+      },
+      "observedAt": "2026-10-12T21:56:34.185305+00:00",
+      "recordedAt": "2026-10-12T21:56:34.185305+00:00",
+      "updatedAt": "2026-10-12T21:56:34.185305+00:00",
+      "outcome": "One personal-brand website delivery is supported by its original delivery conversation, a current live output check and the recipient confirming access and taking over further refinement. The current page is a later version; original build timing and recipe use remain unknown.",
+      "evidence": [
+        {
+          "visibility": "public",
+          "url": "https://leithuwaydah.com/"
+        },
+        {
+          "visibility": "private",
+          "sha256": "3aafce6dc3e0d2583a63688942293c3892a768d7dbcf196ab8f7a85ef9f8424c"
+        },
+        {
+          "visibility": "private",
+          "sha256": "836b1164dbfb7b5e5e12bcde60e92fa996d6ab06dea79bdbbf2340e35aee629b"
+        },
+        {
+          "visibility": "private",
+          "sha256": "d4b61049c714288751f8c89f4c57dded176cbd25952415216e81bbe2544fdae7"
+        }
+      ],
+      "executorCode": "historical-site-delivery-06",
+      "reviewerCode": "codex-historical-review-20261013",
+      "review": {
+        "identity": {
+          "state": "pass",
+          "notes": "One original delivery conversation and one site; the follow-up acknowledgment belongs to the same job. Checked against existing ledger identities; no duplicate source job."
+        },
+        "output": {
+          "state": "pass",
+          "notes": "Original delivery names the live personal-brand site. Current normal public page returns200 with six navigation destinations. This proves a surviving site, not exact original page bytes."
+        },
+        "acceptance": {
+          "state": "unknown",
+          "notes": "Recipient confirms setup and access. Every page detail and acceptance against the original or current task recipe were not established."
+        },
+        "handoff": {
+          "state": "pass",
+          "notes": "The recipient explicitly confirms access and takes responsibility for further building and refinement; private exact response retained."
         }
       }
     }

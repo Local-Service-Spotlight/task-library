@@ -55,7 +55,7 @@ After an authorized publish, the same archive should list it among related posts
 
 The publisher receives the saved terms and actual state, then continues with [Configure Rank Math](https://local-service-spotlight.github.io/task-library/?task=step-14a-configure-rankmath-seo-plugin#task-step-14a-configure-rankmath-seo-plugin) where that tool is used.
 
-This task serves **Post** in the [Content Factory](https://blitzmetrics.com/content-factory/). Produce supplies the source, Process prepares it, Post places and checks it on the agreed channels, and Promote distributes proven work under its own scope. The task’s actual handoff above defines the next step; list order alone does not create a prerequisite.
+This task serves **Post** in the [Content Factory](https://localservicespotlight.com/content-factory/). Produce supplies the source, Process prepares it, Post places and checks it on the agreed channels, and Promote distributes proven work under its own scope. The task’s actual handoff above defines the next step; list order alone does not create a prerequisite.
 
 ## When this runs
 

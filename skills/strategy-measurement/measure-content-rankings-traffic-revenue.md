@@ -49,7 +49,7 @@ A fictional page has 500 search impressions,20 clicks and 18 recorded sessions. 
 
 [Show what works and what needs review](https://local-service-spotlight.github.io/task-library/?task=show-whats-working-and-what-isnt#task-show-whats-working-and-what-isnt) and [Write the agreed weekly report](https://local-service-spotlight.github.io/task-library/?task=submit-weekly-maa-report-every-friday#task-submit-weekly-maa-report-every-friday) receive the linked table; the relevant page or tracking task receives the exact defect.
 
-This work supports the [Content Factory: Produce, Process, Post and Promote](https://blitzmetrics.com/content-factory/) across its relevant stages. It uses the actual inputs and next owner above; a strategy or measurement guide does not manufacture transcripts, clips or other unrelated stage outputs.
+This work supports the [Content Factory: Produce, Process, Post and Promote](https://localservicespotlight.com/content-factory/) across its relevant stages. It uses the actual inputs and next owner above; a strategy or measurement guide does not manufacture transcripts, clips or other unrelated stage outputs.
 
 ## Start with an agent
 

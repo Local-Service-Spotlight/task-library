@@ -51,7 +51,7 @@ A tag can help the right person find your thank-you post. This guide helps your 
 
 Save the checked permalink in the gratitude log. If a paid test is useful and authorized, hand the actual post and goal to [Test a Thank-You Post With a Small Ad](https://local-service-spotlight.github.io/task-library/?task=boost-with-dollar-a-day#task-boost-with-dollar-a-day). Otherwise the posted or private result is enough.
 
-This fits the [Content Factory](https://blitzmetrics.com/content-factory/): Produce a true story, Process it into useful files, Post only in the agreed places, and Promote a suitable post when its test has a budget. Each stage passes its checked files and next owner forward.
+This fits the [Content Factory](https://localservicespotlight.com/content-factory/): Produce a true story, Process it into useful files, Post only in the agreed places, and Promote a suitable post when its test has a budget. Each stage passes its checked files and next owner forward.
 
 ## When this runs
 
@@ -75,7 +75,7 @@ A teaching example is not a real execution. Do not count it, a repeated check or
 
 - Exact task: [Tag the Right Person in a Thank-You Post](https://local-service-spotlight.github.io/task-library/?task=tag-the-person-on-social-media#task-tag-the-person-on-social-media)
 - [One-minute video guide](https://blitzmetrics.com/one-minute-video-guide/) — how to record one clear point.
-- [Content Factory](https://blitzmetrics.com/content-factory/) — how the source becomes checked posts.
+- [Content Factory](https://localservicespotlight.com/content-factory/) — how the source becomes checked posts.
 - [Dollar-a-Day guide](https://blitzmetrics.com/dollar-a-day/) — the paid test method; current platform controls still need checking.
 
 ## Review and evidence still needed

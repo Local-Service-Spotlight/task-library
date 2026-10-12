@@ -59,7 +59,7 @@ A proposed section “Prices for every repair” is dropped because neither the 
 
 The assigned writer uses the outline and evidence map for [Step 5: write from the transcript](https://local-service-spotlight.github.io/task-library/?task=step-5-write-article-from-transcript#task-step-5-write-article-from-transcript). Clip editors may reuse original timestamps after checking their chosen source version.
 
-Produce supplies the real source. **Process**, this stage of the [Content Factory](https://blitzmetrics.com/content-factory/), turns it into useful finished assets. Post saves or publishes them on the agreed channels. Promote tests and distributes suitable work within its own scope. The handoff above names this task’s actual next step; catalog neighbors alone are not prerequisites.
+Produce supplies the real source. **Process**, this stage of the [Content Factory](https://localservicespotlight.com/content-factory/), turns it into useful finished assets. Post saves or publishes them on the agreed channels. Promote tests and distributes suitable work within its own scope. The handoff above names this task’s actual next step; catalog neighbors alone are not prerequisites.
 
 ## When this runs
 

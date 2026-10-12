@@ -50,7 +50,7 @@ You want more people in the area you serve to see a useful post. This guide help
 
 Give the campaign owner the saved settings and due dates for [analyze cost per result and engagement](https://local-service-spotlight.github.io/task-library/?task=analyze-cost-per-result-and-engagement#task-analyze-cost-per-result-and-engagement). Route a tracking defect to [set up digital plumbing pixels tracking](https://local-service-spotlight.github.io/task-library/?task=set-up-digital-plumbing-pixels-tracking#task-set-up-digital-plumbing-pixels-tracking); a content defect returns to the content owner before a new test.
 
-This task is in Promote within the [Content Factory](https://blitzmetrics.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. Use the proof and checked posts from earlier stages; a Promote task does not automatically redo all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
+This task is in Promote within the [Content Factory](https://localservicespotlight.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. Use the proof and checked posts from earlier stages; a Promote task does not automatically redo all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
 
 ## When this runs
 

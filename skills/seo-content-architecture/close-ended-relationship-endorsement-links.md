@@ -51,7 +51,7 @@ A fictional agency stops managing a contractor’s marketing. Its team page stil
 
 The relationship owner receives the checked closeout and residual gaps. [Choose the right entity destination](https://local-service-spotlight.github.io/task-library/?task=follow-entity-linking-decision-tree#task-follow-entity-linking-decision-tree) receives any revised public identity rules; a separate authorized access owner handles remaining account roles.
 
-This task supports the [Content Factory: Produce, Process, Post and Promote](https://blitzmetrics.com/content-factory/). Identity, proof, access or coordination can support several stages. Use the real inputs and receiving owner above; this task does not create unrelated transcripts, clips or ads merely because the diagram has four stages.
+This task supports the [Content Factory: Produce, Process, Post and Promote](https://localservicespotlight.com/content-factory/). Identity, proof, access or coordination can support several stages. Use the real inputs and receiving owner above; this task does not create unrelated transcripts, clips or ads merely because the diagram has four stages.
 
 ## Start with an agent
 

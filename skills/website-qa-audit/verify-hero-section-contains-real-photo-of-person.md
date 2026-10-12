@@ -53,7 +53,7 @@ The teaching fix changes the supported focal crop so Alex remains visible at 390
 
 The page owner receives source and viewport evidence. [Check major home-page visuals](https://local-service-spotlight.github.io/task-library/?task=check-each-homepage-section-includes-relevant-image#task-check-each-homepage-section-includes-relevant-image) reviews the sections below; the hero result alone does not pass them.
 
-This is a supporting quality check for the [Content Factory](https://blitzmetrics.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. This check does not automatically execute all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
+This is a supporting quality check for the [Content Factory](https://localservicespotlight.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. This check does not automatically execute all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
 
 ## When this runs
 

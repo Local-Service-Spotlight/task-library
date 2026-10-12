@@ -50,7 +50,7 @@ Your videos need a home people can trust. This guide helps you set up a clear Yo
 
 Give the channel ID and media state to the content owner. Use [upload processed video to youtube](https://local-service-spotlight.github.io/task-library/?task=upload-processed-video-to-youtube#task-upload-processed-video-to-youtube) for later uploads and [add schema markup person localbusiness](https://local-service-spotlight.github.io/task-library/?task=add-schema-markup-person-localbusiness#task-add-schema-markup-person-localbusiness) for a scoped website identity update.
 
-This setup supports the [Content Factory](https://blitzmetrics.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. This check does not automatically execute all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
+This setup supports the [Content Factory](https://localservicespotlight.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. This check does not automatically execute all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
 
 ## When this runs
 

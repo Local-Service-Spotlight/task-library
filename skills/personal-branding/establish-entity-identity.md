@@ -55,7 +55,7 @@ A fictional designer shares her name with an actor. A podcast page names her des
 
 The person responsible for checking identity evidence accepts or returns the exact map revision. After acceptance, [Person schema setup](https://local-service-spotlight.github.io/task-library/?task=implement-person-schema-with-sameas-links#task-implement-person-schema-with-sameas-links) receives only accepted URLs and facts. [Check outside proof](https://local-service-spotlight.github.io/task-library/?task=build-third-party-validation#task-build-third-party-validation) receives unresolved source questions when independent proof is still needed.
 
-**Content Factory stage: Process.** This task turns supplied profile and site evidence into a checked identity map for later page and schema work. The [Content Factory](https://blitzmetrics.com/content-factory/) uses this checked record before Post. This recipe may correct owned fields within existing authority; outside corrections remain with their owner.
+**Content Factory stage: Process.** This task turns supplied profile and site evidence into a checked identity map for later page and schema work. The [Content Factory](https://localservicespotlight.com/content-factory/) uses this checked record before Post. This recipe may correct owned fields within existing authority; outside corrections remain with their owner.
 
 ## Start with an agent
 

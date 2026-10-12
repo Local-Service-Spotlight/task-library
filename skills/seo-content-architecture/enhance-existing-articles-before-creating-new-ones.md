@@ -61,7 +61,7 @@ The [dated review of this enhancement](https://blitzmetrics.com/making-task-guid
 
 [Create or update the owning recipe](https://local-service-spotlight.github.io/task-library/?task=create-or-update-a-definitive-article#task-create-or-update-a-definitive-article) receives an accepted recipe change; [Place the accepted links](https://local-service-spotlight.github.io/task-library/?task=step-4-create-links-with-proper-anchor-text-and-placement#task-step-4-create-links-with-proper-anchor-text-and-placement) receives its link plan. The content inventory records the decision and the exact next owner. For a story or offer page, the publishing or distribution worker receives its checked URL, source changes, proof and open issues. Keep that handoff open until acceptance is recorded; the next worker may need to correct a link or return an issue before proceeding.
 
-This task supports the [Content Factory: Produce, Process, Post and Promote](https://blitzmetrics.com/content-factory/). Identity, proof, access or coordination can support several stages. Use the real inputs and receiving owner above; this task does not create unrelated transcripts, clips or ads merely because the diagram has four stages.
+This task supports the [Content Factory: Produce, Process, Post and Promote](https://localservicespotlight.com/content-factory/). Identity, proof, access or coordination can support several stages. Use the real inputs and receiving owner above; this task does not create unrelated transcripts, clips or ads merely because the diagram has four stages.
 
 ## Start with an agent
 

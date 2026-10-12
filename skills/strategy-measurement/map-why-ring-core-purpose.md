@@ -48,7 +48,7 @@ A fictional roofer has a homeowner’s approved story about a repaired leak and 
 
 [Plan the next recording session](https://local-service-spotlight.github.io/task-library/?task=use-for-content-planning-and-video-topics#task-use-for-content-planning-and-video-topics) receives the story prompts and source rights; the goals task receives any supported purpose clarification.
 
-This work supports Produce in the [Content Factory: Produce, Process, Post and Promote](https://blitzmetrics.com/content-factory/). The selected sources pass to Process, approved outputs go to Post, and useful proven work can enter Promote. The real inputs and handoff above set this task’s scope.
+This work supports Produce in the [Content Factory: Produce, Process, Post and Promote](https://localservicespotlight.com/content-factory/). The selected sources pass to Process, approved outputs go to Post, and useful proven work can enter Promote. The real inputs and handoff above set this task’s scope.
 
 ## Start with an agent
 

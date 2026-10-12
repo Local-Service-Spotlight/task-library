@@ -50,7 +50,7 @@ A page can be live and still tell search tools to leave it out. This guide helps
 
 Give the exact policy and changed source to the site/search owner. Use [create xml sitemap and reference in robots txt](https://local-service-spotlight.github.io/task-library/?task=create-xml-sitemap-and-reference-in-robots-txt#task-create-xml-sitemap-and-reference-in-robots-txt) to check page discovery or the configured deployment owner to prevent a staging-rule recurrence.
 
-This setup supports the [Content Factory](https://blitzmetrics.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. This check does not automatically execute all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
+This setup supports the [Content Factory](https://localservicespotlight.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. This check does not automatically execute all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
 
 ## When this runs
 

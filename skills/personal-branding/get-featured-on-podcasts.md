@@ -51,7 +51,7 @@ A fictional caterer pitches a local show on planning food for outdoor events. Th
 
 [Prepare social clips](https://local-service-spotlight.github.io/task-library/?task=create-social-content-from-video-clips#task-create-social-content-from-video-clips) receives permitted source files; [Collect and classify positive mentions](https://local-service-spotlight.github.io/task-library/?task=positive-mentions-harvester#task-positive-mentions-harvester) receives the verified episode record; the existing relationship owner retains host follow-through.
 
-This task supports the [Content Factory: Produce, Process, Post and Promote](https://blitzmetrics.com/content-factory/). Identity, proof, access or coordination can support several stages. Use the real inputs and receiving owner above; this task does not create unrelated transcripts, clips or ads merely because the diagram has four stages.
+This task supports the [Content Factory: Produce, Process, Post and Promote](https://localservicespotlight.com/content-factory/). Identity, proof, access or coordination can support several stages. Use the real inputs and receiving owner above; this task does not create unrelated transcripts, clips or ads merely because the diagram has four stages.
 
 ## Start with an agent
 

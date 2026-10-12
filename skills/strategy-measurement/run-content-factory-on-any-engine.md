@@ -18,7 +18,7 @@ Use the tools you have to turn real work into content people can trust. This gui
 ## Inputs
 
 - One real recording or source set, use rights, goal, audience and owned page map.
-- [Content Factory: Produce, Process, Post and Promote](https://blitzmetrics.com/content-factory/) current method and the relevant task recipes.
+- [Content Factory: Produce, Process, Post and Promote](https://localservicespotlight.com/content-factory/) current method and the relevant task recipes.
 - Actual supported tools, file access, verified release gates, named owners and the allowed scope for each stage.
 
 ## Steps
@@ -50,7 +50,7 @@ A fictional owner has one recording and an AI app that can read text but cannot 
 
 The next real stage owner receives its exact packet. [Write the agreed weekly report](https://local-service-spotlight.github.io/task-library/?task=submit-weekly-maa-report-every-friday#task-submit-weekly-maa-report-every-friday) receives any measured business results; recipe changes follow the recorded review path.
 
-This recipe coordinates the four stages in the [Content Factory: Produce, Process, Post and Promote](https://blitzmetrics.com/content-factory/). Each stage produces only its actual assigned outputs, and each handoff preserves source evidence and authority.
+This recipe coordinates the four stages in the [Content Factory: Produce, Process, Post and Promote](https://localservicespotlight.com/content-factory/). Each stage produces only its actual assigned outputs, and each handoff preserves source evidence and authority.
 
 ## Start with an agent
 
@@ -66,7 +66,7 @@ Reuse the same execution ID for internal reviews, meta writing, revisions and re
 
 ## Definitive article & links
 
-- [Maintained source guide](https://blitzmetrics.com/content-factory/)
+- [Maintained source guide](https://localservicespotlight.com/content-factory/)
 - [This task in the Task Library](https://local-service-spotlight.github.io/task-library/?task=run-content-factory-on-any-engine#task-run-content-factory-on-any-engine)
 - [Article Guidelines](https://localservicespotlight.com/article-guidelines/)
 - [Definitive article and task recipe standard](https://blitzmetrics.com/definitive-article-guide/)

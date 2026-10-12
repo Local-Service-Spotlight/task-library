@@ -49,7 +49,7 @@ A fictional manager assigns a service-page draft with a real source and a Friday
 
 [Build task competence](https://local-service-spotlight.github.io/task-library/?task=learn-do-teach-apprentice-model#task-learn-do-teach-apprentice-model) handles training needs; [Improve the repeatable process](https://local-service-spotlight.github.io/task-library/?task=systematization-content-checklists-software#task-systematization-content-checklists-software) handles a proven recipe defect.
 
-This work supports the [Content Factory: Produce, Process, Post and Promote](https://blitzmetrics.com/content-factory/) across its relevant stages. It uses the actual inputs and next owner above; a strategy or measurement guide does not manufacture transcripts, clips or other unrelated stage outputs.
+This work supports the [Content Factory: Produce, Process, Post and Promote](https://localservicespotlight.com/content-factory/) across its relevant stages. It uses the actual inputs and next owner above; a strategy or measurement guide does not manufacture transcripts, clips or other unrelated stage outputs.
 
 ## Start with an agent
 

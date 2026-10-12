@@ -51,7 +51,7 @@ A fictional builder has a name domain, three project photos and two approved cus
 
 [Add verified Person markup](https://local-service-spotlight.github.io/task-library/?task=implement-person-schema-with-sameas-links#task-implement-person-schema-with-sameas-links) receives the approved identity graph; [Set up the agreed public profiles](https://local-service-spotlight.github.io/task-library/?task=set-up-professional-social-profiles#task-set-up-professional-social-profiles) receives the site URL. The authorized launch owner receives the checked preview and exact remaining deployment work.
 
-This task supports the [Content Factory: Produce, Process, Post and Promote](https://blitzmetrics.com/content-factory/). Identity, proof, access or coordination can support several stages. Use the real inputs and receiving owner above; this task does not create unrelated transcripts, clips or ads merely because the diagram has four stages.
+This task supports the [Content Factory: Produce, Process, Post and Promote](https://localservicespotlight.com/content-factory/). Identity, proof, access or coordination can support several stages. Use the real inputs and receiving owner above; this task does not create unrelated transcripts, clips or ads merely because the diagram has four stages.
 
 ## Start with an agent
 

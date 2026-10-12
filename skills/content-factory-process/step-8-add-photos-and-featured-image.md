@@ -52,7 +52,7 @@ If a real source photo later shows a mechanic holding a bike wheel, an accurate 
 
 The link editor receives the article, media/source map and any unresolved visual checks for [Step 9: add useful links](https://local-service-spotlight.github.io/task-library/?task=step-9-add-internal-links-with-proper-anchor-text#task-step-9-add-internal-links-with-proper-anchor-text).
 
-Produce supplies the real source. **Process**, this stage of the [Content Factory](https://blitzmetrics.com/content-factory/), turns it into useful finished assets. Post saves or publishes them on the agreed channels. Promote tests and distributes suitable work within its own scope. The handoff above names this task’s actual next step; catalog neighbors alone are not prerequisites.
+Produce supplies the real source. **Process**, this stage of the [Content Factory](https://localservicespotlight.com/content-factory/), turns it into useful finished assets. Post saves or publishes them on the agreed channels. Promote tests and distributes suitable work within its own scope. The handoff above names this task’s actual next step; catalog neighbors alone are not prerequisites.
 
 ## When this runs
 

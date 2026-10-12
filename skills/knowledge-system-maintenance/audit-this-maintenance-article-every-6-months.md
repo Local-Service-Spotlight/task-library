@@ -47,7 +47,7 @@ A fictional six-month review finds two of two planned article audits, six captur
 
 ## Handoff and Content Factory context
 
-This work supports the [Content Factory, our four stages of using real content](https://blitzmetrics.com/content-factory/): Produce → Process → Post → Promote. Use the specific inputs and next task below to place the work; a maintenance task does not manufacture transcripts, clips or other stage outputs it does not call for.
+This work supports the [Content Factory, our four stages of using real content](https://localservicespotlight.com/content-factory/): Produce → Process → Post → Promote. Use the specific inputs and next task below to place the work; a maintenance task does not manufacture transcripts, clips or other stage outputs it does not call for.
 
 [Record the audit result](https://local-service-spotlight.github.io/task-library/?task=update-status-table-in-definitive-article-guide#task-update-status-table-in-definitive-article-guide) records the result. The named maintenance owner handles approved changes and [the next review setup](https://local-service-spotlight.github.io/task-library/?task=schedule-first-6-month-recursive-review#task-schedule-first-6-month-recursive-review) if no cycle exists.
 

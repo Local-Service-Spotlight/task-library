@@ -51,7 +51,7 @@ A fictional firm has three actual topic guides and ten case stories. The opening
 
 [Place future content in the tree](https://local-service-spotlight.github.io/task-library/?task=fit-every-new-piece-into-the-tree-structure#task-fit-every-new-piece-into-the-tree-structure) uses the accepted directory. [Build the measured Money Tree](https://local-service-spotlight.github.io/task-library/?task=build-money-tree-site-diagram#task-build-money-tree-site-diagram) receives the actual offer branches when measured supporting counts are required; the site owner receives the dated release receipt.
 
-The source places this task in Post within the [Content Factory: Produce, Process, Post and Promote](https://blitzmetrics.com/content-factory/). Produce captures real sources, Process makes the selected useful assets, Post releases approved work, and Promote distributes proven work. The actual handoff above determines what this task must supply.
+The source places this task in Post within the [Content Factory: Produce, Process, Post and Promote](https://localservicespotlight.com/content-factory/). Produce captures real sources, Process makes the selected useful assets, Post releases approved work, and Promote distributes proven work. The actual handoff above determines what this task must supply.
 
 ## Start with an agent
 

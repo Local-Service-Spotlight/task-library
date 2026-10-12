@@ -55,7 +55,7 @@ Writing “bike repair shop best bike repair” on all four images would not hel
 
 The page/accessibility owner receives exact placement fixes and unresolved visual facts. [Check image provenance](https://local-service-spotlight.github.io/task-library/?task=ensure-no-stock-images-used#task-ensure-no-stock-images-used) handles source authenticity, which alt wording cannot establish.
 
-This is a supporting quality check for the [Content Factory](https://blitzmetrics.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. This check does not automatically execute all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
+This is a supporting quality check for the [Content Factory](https://localservicespotlight.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. This check does not automatically execute all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
 
 ## When this runs
 

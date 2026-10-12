@@ -9,7 +9,7 @@ status: complete
 
 # Step 7: Write hook and establish context
 
-Help readers see what your page is about and why it matters. A clear start helps them choose their next step. Start with a true point from your source; this step in our [Content Factory](https://blitzmetrics.com/content-factory/) helps turn real work into useful pages.
+Help readers see what your page is about and why it matters. A clear start helps them choose their next step. Start with a true point from your source; this step in our [Content Factory](https://localservicespotlight.com/content-factory/) helps turn real work into useful pages.
 
 **The path:** Real source moment → Reader’s need → Plain promise → Lead visual.
 
@@ -66,7 +66,7 @@ A simple three-part diagram below it reads “Whole bike → Close-up → Short 
 
 The visual editor receives the opening and placement plan for [Step 8: add useful visuals](https://local-service-spotlight.github.io/task-library/?task=step-8-add-photos-and-featured-image#task-step-8-add-photos-and-featured-image).
 
-Produce supplies the real source. **Process**, this stage of the [Content Factory](https://blitzmetrics.com/content-factory/), turns it into useful finished assets. Post saves or publishes them on the agreed channels. Promote tests and distributes suitable work within its own scope. The handoff above names this task’s actual next step; catalog neighbors alone are not prerequisites.
+Produce supplies the real source. **Process**, this stage of the [Content Factory](https://localservicespotlight.com/content-factory/), turns it into useful finished assets. Post saves or publishes them on the agreed channels. Promote tests and distributes suitable work within its own scope. The handoff above names this task’s actual next step; catalog neighbors alone are not prerequisites.
 
 ## When this runs
 

@@ -49,7 +49,7 @@ A fictional shop plans a nine-cell grid but has only eight usable takes. The nin
 
 [Upload the sources for processing](https://local-service-spotlight.github.io/task-library/?task=step-1-upload-video-to-google-drive-and-descript#task-step-1-upload-video-to-google-drive-and-descript) receives files and brief. [Plan targeting](https://local-service-spotlight.github.io/task-library/?task=stage-4-targeting-custom-audiences-lookalikes-remarketing#task-stage-4-targeting-custom-audiences-lookalikes-remarketing) receives the actual available content and gaps.
 
-This work supports Produce in the [Content Factory: Produce, Process, Post and Promote](https://blitzmetrics.com/content-factory/). The selected sources pass to Process, approved outputs go to Post, and useful proven work can enter Promote. The real inputs and handoff above set this task’s scope.
+This work supports Produce in the [Content Factory: Produce, Process, Post and Promote](https://localservicespotlight.com/content-factory/). The selected sources pass to Process, approved outputs go to Post, and useful proven work can enter Promote. The real inputs and handoff above set this task’s scope.
 
 ## Start with an agent
 

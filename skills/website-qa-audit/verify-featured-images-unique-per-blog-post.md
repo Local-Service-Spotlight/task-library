@@ -53,7 +53,7 @@ The teaching plan uses an approved quote-photo example, a real brake close-up an
 
 The editor receives the cover map. [Prepare article photos and featured media](https://local-service-spotlight.github.io/task-library/?task=step-8-add-photos-and-featured-image#task-step-8-add-photos-and-featured-image) supplies missing article assets; [Check home-page article cards](https://local-service-spotlight.github.io/task-library/?task=add-homepage-blog-card-thumbnails#task-add-homepage-blog-card-thumbnails) covers a separate home-page module.
 
-This is a supporting quality check for the [Content Factory](https://blitzmetrics.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. This check does not automatically execute all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
+This is a supporting quality check for the [Content Factory](https://localservicespotlight.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. This check does not automatically execute all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
 
 ## When this runs
 

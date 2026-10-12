@@ -50,7 +50,7 @@ A new reader may need an answer before they are ready to buy. A returning reader
 
 This Promote-stage map uses the same method as [sequence content from awareness to conversion](https://local-service-spotlight.github.io/task-library/?task=sequence-content-from-awareness-to-conversion#task-sequence-content-from-awareness-to-conversion); keep one parent plan when scopes overlap. A supported website-visitor follow-up can go to [set up remarketing ads for landing page abandoners](https://local-service-spotlight.github.io/task-library/?task=set-up-remarketing-ads-for-landing-page-abandoners#task-set-up-remarketing-ads-for-landing-page-abandoners).
 
-This task is in Promote within the [Content Factory](https://blitzmetrics.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. Use the proof and checked posts from earlier stages; a Promote task does not automatically redo all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
+This task is in Promote within the [Content Factory](https://localservicespotlight.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. Use the proof and checked posts from earlier stages; a Promote task does not automatically redo all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
 
 ## When this runs
 

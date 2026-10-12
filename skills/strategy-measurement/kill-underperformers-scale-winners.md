@@ -49,7 +49,7 @@ In a fictional account, a reviewed $7 test misses its agreed goal and is paused.
 
 [Write the agreed weekly report](https://local-service-spotlight.github.io/task-library/?task=submit-weekly-maa-report-every-friday#task-submit-weekly-maa-report-every-friday) receives the action log; the assigned measurement task checks the next agreed window.
 
-This work supports Promote in the [Content Factory: Produce, Process, Post and Promote](https://blitzmetrics.com/content-factory/). It follows the source, editing and publishing work of Produce, Process and Post; the actual campaign evidence feeds the next review.
+This work supports Promote in the [Content Factory: Produce, Process, Post and Promote](https://localservicespotlight.com/content-factory/). It follows the source, editing and publishing work of Produce, Process and Post; the actual campaign evidence feeds the next review.
 
 ## Start with an agent
 

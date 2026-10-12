@@ -55,7 +55,7 @@ The teaching result is “3 known posts; 1 newly proposed inbound placement; pub
 
 The content owner receives the updated topic map and unresolved placements. [Check broken links](https://local-service-spotlight.github.io/task-library/?task=check-for-broken-links#task-check-for-broken-links) verifies link destinations; it does not decide the editorial relevance of every link.
 
-This is a supporting quality check for the [Content Factory](https://blitzmetrics.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. This check does not automatically execute all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
+This is a supporting quality check for the [Content Factory](https://localservicespotlight.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. This check does not automatically execute all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
 
 ## When this runs
 

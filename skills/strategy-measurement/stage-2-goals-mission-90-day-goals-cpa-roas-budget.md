@@ -49,7 +49,7 @@ A fictional owner allows $100 to acquire one new customer, after its cost review
 
 [Prepare source content](https://local-service-spotlight.github.io/task-library/?task=stage-3-content-endorsements-why-video-3x3-grid-library#task-stage-3-content-endorsements-why-video-3x3-grid-library) receives the brief; later stages and [Write the agreed weekly report](https://local-service-spotlight.github.io/task-library/?task=submit-weekly-maa-report-every-friday#task-submit-weekly-maa-report-every-friday) compare results with this same version.
 
-This work supports the [Content Factory: Produce, Process, Post and Promote](https://blitzmetrics.com/content-factory/) across its relevant stages. It uses the actual inputs and next owner above; a strategy or measurement guide does not manufacture transcripts, clips or other unrelated stage outputs.
+This work supports the [Content Factory: Produce, Process, Post and Promote](https://localservicespotlight.com/content-factory/) across its relevant stages. It uses the actual inputs and next owner above; a strategy or measurement guide does not manufacture transcripts, clips or other unrelated stage outputs.
 
 ## Start with an agent
 

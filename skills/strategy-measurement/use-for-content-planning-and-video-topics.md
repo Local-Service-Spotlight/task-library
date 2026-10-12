@@ -49,7 +49,7 @@ A fictional bike shop has five source-backed questions but time for three clips.
 
 [Record the planned clips](https://local-service-spotlight.github.io/task-library/?task=record-one-minute-videos#task-record-one-minute-videos) receives the prompts; [Process the saved source files](https://local-service-spotlight.github.io/task-library/?task=step-1-upload-video-to-google-drive-and-descript#task-step-1-upload-video-to-google-drive-and-descript) receives the actual usable takes.
 
-This work supports Produce in the [Content Factory: Produce, Process, Post and Promote](https://blitzmetrics.com/content-factory/). The selected sources pass to Process, approved outputs go to Post, and useful proven work can enter Promote. The real inputs and handoff above set this task’s scope.
+This work supports Produce in the [Content Factory: Produce, Process, Post and Promote](https://localservicespotlight.com/content-factory/). The selected sources pass to Process, approved outputs go to Post, and useful proven work can enter Promote. The real inputs and handoff above set this task’s scope.
 
 ## Start with an agent
 

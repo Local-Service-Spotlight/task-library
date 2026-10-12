@@ -61,7 +61,7 @@ The draft rejects “Get an exact price in minutes,” because the sample source
 
 The article editor receives the draft and evidence map for [Step 6: write the title and headings](https://local-service-spotlight.github.io/task-library/?task=step-6-write-title-and-headings#task-step-6-write-title-and-headings).
 
-Produce supplies the real source. **Process**, this stage of the [Content Factory](https://blitzmetrics.com/content-factory/), turns it into useful finished assets. Post saves or publishes them on the agreed channels. Promote tests and distributes suitable work within its own scope. The handoff above names this task’s actual next step; catalog neighbors alone are not prerequisites.
+Produce supplies the real source. **Process**, this stage of the [Content Factory](https://localservicespotlight.com/content-factory/), turns it into useful finished assets. Post saves or publishes them on the agreed channels. Promote tests and distributes suitable work within its own scope. The handoff above names this task’s actual next step; catalog neighbors alone are not prerequisites.
 
 ## When this runs
 

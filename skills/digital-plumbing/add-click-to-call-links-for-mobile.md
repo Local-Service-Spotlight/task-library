@@ -50,7 +50,7 @@ Do people have to copy your phone number to call you? This guide helps a site ow
 
 Give the site owner the checked locations. If call attribution is needed next, use [set up call tracking for phone conversions](https://local-service-spotlight.github.io/task-library/?task=set-up-call-tracking-for-phone-conversions#task-set-up-call-tracking-for-phone-conversions). If the dialer works but the call fails, route the receiving-line issue to the actual phone-service owner.
 
-This setup supports the [Content Factory](https://blitzmetrics.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. This check does not automatically execute all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
+This setup supports the [Content Factory](https://localservicespotlight.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. This check does not automatically execute all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
 
 ## When this runs
 

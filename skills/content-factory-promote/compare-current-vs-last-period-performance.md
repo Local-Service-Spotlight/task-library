@@ -50,7 +50,7 @@ You want to know if this week went better than the last. This guide helps you co
 
 Send the checked table to [review budget allocation by channel](https://local-service-spotlight.github.io/task-library/?task=review-budget-allocation-by-channel#task-review-budget-allocation-by-channel) and [list top 3 5 recommendations for next 7 days](https://local-service-spotlight.github.io/task-library/?task=list-top-3-5-recommendations-for-next-7-days#task-list-top-3-5-recommendations-for-next-7-days). Use the existing report owner and agreed weekly day; do not impose Friday when a different cadence was agreed.
 
-This task is in Promote within the [Content Factory](https://blitzmetrics.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. Use the proof and checked posts from earlier stages; a Promote task does not automatically redo all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
+This task is in Promote within the [Content Factory](https://localservicespotlight.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. Use the proof and checked posts from earlier stages; a Promote task does not automatically redo all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
 
 ## When this runs
 

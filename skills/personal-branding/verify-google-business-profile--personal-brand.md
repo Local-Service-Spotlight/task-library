@@ -51,7 +51,7 @@ A fictional online-only coach has a personal website but never meets clients in 
 
 [Set up the agreed public profiles](https://local-service-spotlight.github.io/task-library/?task=set-up-professional-social-profiles#task-set-up-professional-social-profiles) receives the person’s actual profile needs; [Check the person’s identity](https://local-service-spotlight.github.io/task-library/?task=establish-entity-identity#task-establish-entity-identity) receives the business/person distinction and verified business facts.
 
-This task supports the [Content Factory: Produce, Process, Post and Promote](https://blitzmetrics.com/content-factory/). Identity, proof, access or coordination can support several stages. Use the real inputs and receiving owner above; this task does not create unrelated transcripts, clips or ads merely because the diagram has four stages.
+This task supports the [Content Factory: Produce, Process, Post and Promote](https://localservicespotlight.com/content-factory/). Identity, proof, access or coordination can support several stages. Use the real inputs and receiving owner above; this task does not create unrelated transcripts, clips or ads merely because the diagram has four stages.
 
 ## Start with an agent
 

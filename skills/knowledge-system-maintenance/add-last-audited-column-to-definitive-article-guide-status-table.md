@@ -45,7 +45,7 @@ A sample register has three pages: one checked on 2 August with a receipt, one c
 
 ## Handoff and Content Factory context
 
-This work supports the [Content Factory, our four stages of using real content](https://blitzmetrics.com/content-factory/): Produce → Process → Post → Promote. Use the specific inputs and next task below to place the work; a maintenance task does not manufacture transcripts, clips or other stage outputs it does not call for.
+This work supports the [Content Factory, our four stages of using real content](https://localservicespotlight.com/content-factory/): Produce → Process → Post → Promote. Use the specific inputs and next task below to place the work; a maintenance task does not manufacture transcripts, clips or other stage outputs it does not call for.
 
 [Record the audit result](https://local-service-spotlight.github.io/task-library/?task=update-status-table-in-definitive-article-guide#task-update-status-table-in-definitive-article-guide) writes later check results. [Assign auditors](https://local-service-spotlight.github.io/task-library/?task=schedule-and-assign-quarterly-auditors#task-schedule-and-assign-quarterly-auditors) receives rows needing a new check.
 

@@ -55,7 +55,7 @@ Do not append “This does not prove partnership” to the public paragraph. Use
 
 The content owner receives exact accepted wording and missing proof. [Verify social-proof photos](https://local-service-spotlight.github.io/task-library/?task=verify-social-proof-photos-present#task-verify-social-proof-photos-present) checks photo context. Any later repurposing must inherit these evidence limits, not restore a stronger claim.
 
-This is a supporting quality check for the [Content Factory](https://blitzmetrics.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. This check does not automatically execute all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
+This is a supporting quality check for the [Content Factory](https://localservicespotlight.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. This check does not automatically execute all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
 
 ## When this runs
 

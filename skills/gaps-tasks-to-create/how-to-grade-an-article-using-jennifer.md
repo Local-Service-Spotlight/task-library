@@ -60,7 +60,7 @@ A score can help a writer find weak parts of a draft. This task helps you write 
 
 Pass the checked guide, source revision, real meta record and open evidence list to [Grade an Article Using Jennifer](https://local-service-spotlight.github.io/task-library/?task=grade-article-using-jennifer#task-grade-article-using-jennifer). Make the Task Library point to the verified canonical destination after its publication and review conditions pass.
 
-This documentation job uses Process to turn real source work into a reusable recipe and Post to save and check its release. In the [Content Factory](https://blitzmetrics.com/content-factory/), later real runs supply new meta articles that improve this same recipe. Catalog neighbors are suggestions, not proven prerequisites.
+This documentation job uses Process to turn real source work into a reusable recipe and Post to save and check its release. In the [Content Factory](https://localservicespotlight.com/content-factory/), later real runs supply new meta articles that improve this same recipe. Catalog neighbors are suggestions, not proven prerequisites.
 
 ## When this runs
 
@@ -85,7 +85,7 @@ A teaching example is not a real execution. Do not count it, a repeated check or
 - Exact task: [Write or Repair the Jennifer Review Guide](https://local-service-spotlight.github.io/task-library/?task=how-to-grade-an-article-using-jennifer#task-how-to-grade-an-article-using-jennifer)
 - [Definitive article guide](https://blitzmetrics.com/definitive-article-guide/) — reusable recipe standards.
 - [Meta article prompt](https://blitzmetrics.com/meta-article-prompt/) — record the actual work.
-- [Content Factory](https://blitzmetrics.com/content-factory/) — review before posting.
+- [Content Factory](https://localservicespotlight.com/content-factory/) — review before posting.
 - [Article guidelines](https://localservicespotlight.com/article-guidelines/) — the maintained release rules.
 
 ## Review and evidence still needed

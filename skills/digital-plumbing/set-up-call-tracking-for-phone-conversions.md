@@ -55,7 +55,7 @@ Start with the approved business and receiving numbers, provider, source list, a
 
 Hand the routing map to the named phone owner and the state definitions to the reporting owner. The handoff is accepted when the phone owner confirms the receiving line and the reporting owner confirms the event meanings against the test IDs; otherwise leave the relevant acceptance pending. Use [add click to call links for mobile](https://local-service-spotlight.github.io/task-library/?task=add-click-to-call-links-for-mobile#task-add-click-to-call-links-for-mobile) for a broken tap target or [ensure nap consistency across platforms](https://local-service-spotlight.github.io/task-library/?task=ensure-nap-consistency-across-platforms#task-ensure-nap-consistency-across-platforms) for an identity mismatch.
 
-This is a setup check for **Post** in the [Content Factory](https://blitzmetrics.com/content-factory/), the process that turns real stories into useful content. A published page needs a working way for a reader to reach the business. Check that path before **Promote** sends more people to it. Promotion, spend and customer follow-up remain separately scoped work.
+This is a setup check for **Post** in the [Content Factory](https://localservicespotlight.com/content-factory/), the process that turns real stories into useful content. A published page needs a working way for a reader to reach the business. Check that path before **Promote** sends more people to it. Promotion, spend and customer follow-up remain separately scoped work.
 
 ## When this runs
 

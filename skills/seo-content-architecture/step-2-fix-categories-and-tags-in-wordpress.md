@@ -58,7 +58,7 @@ If a fresh read shows `[7, 12, 28]`, do not send the older plan. Reconcile the n
 
 [Plan relevant links and orphan repairs](https://local-service-spotlight.github.io/task-library/?task=step-3-identify-money-pages-and-orphan-pages#task-step-3-identify-money-pages-and-orphan-pages) receives the dated inventory with actual incoming-path counts, the counted scope and extraction date/method, accepted before/after term-ID mapping, saved-source readbacks, tested archive URLs, retrieval query and coverage. It uses the actual page roles and groups to plan useful links. The site/source owner receives any term-removal or routing dependency that remains outside the approved edit.
 
-This task supports the [Content Factory: Produce, Process, Post and Promote](https://blitzmetrics.com/content-factory/). The page inventory supplies the inputs. Reviewing the grouping plan supports Process; saving and checking approved assignments supports Post. The checked mapping then goes to link planning. This support task may span stages; it does not create clips or ads.
+This task supports the [Content Factory: Produce, Process, Post and Promote](https://localservicespotlight.com/content-factory/). The page inventory supplies the inputs. Reviewing the grouping plan supports Process; saving and checking approved assignments supports Post. The checked mapping then goes to link planning. This support task may span stages; it does not create clips or ads.
 
 ## Start with an agent
 

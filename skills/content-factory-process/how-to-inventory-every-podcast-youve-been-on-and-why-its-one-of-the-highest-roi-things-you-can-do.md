@@ -53,7 +53,7 @@ A different episode says “Alex once told me…” but has only the host speaki
 
 The content owner uses permitted priority sources for [Archive and prepare a work copy](https://local-service-spotlight.github.io/task-library/?task=step-1-upload-video-to-google-drive-and-descript#task-step-1-upload-video-to-google-drive-and-descript). Platform-specific discovery can use [Listen Notes inventory](https://local-service-spotlight.github.io/task-library/?task=how-we-use-listen-notes-to-find-track-and-repurpose-every-podcast-appearance#task-how-we-use-listen-notes-to-find-track-and-repurpose-every-podcast-appearance) and [Podchaser credit review](https://local-service-spotlight.github.io/task-library/?task=how-we-use-podchaser-to-amplify-authority-and-repurpose-podcast-content#task-how-we-use-podchaser-to-amplify-authority-and-repurpose-podcast-content) without automatically editing public profiles.
 
-Produce supplies the real source. **Process**, this stage of the [Content Factory](https://blitzmetrics.com/content-factory/), turns it into useful finished assets. Post saves or publishes them on the agreed channels. Promote tests and distributes suitable work within its own scope. The handoff above names this task’s actual next step; catalog neighbors alone are not prerequisites.
+Produce supplies the real source. **Process**, this stage of the [Content Factory](https://localservicespotlight.com/content-factory/), turns it into useful finished assets. Post saves or publishes them on the agreed channels. Promote tests and distributes suitable work within its own scope. The handoff above names this task’s actual next step; catalog neighbors alone are not prerequisites.
 
 ## When this runs
 

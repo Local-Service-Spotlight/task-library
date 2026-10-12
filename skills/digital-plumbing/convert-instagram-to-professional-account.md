@@ -50,7 +50,7 @@ Do you use Instagram for your work but lack the tools you need? This guide helps
 
 Give the account owner the checked profile and actual tool limits. Use [set up consistent headshots and bios across profiles](https://local-service-spotlight.github.io/task-library/?task=set-up-consistent-headshots-and-bios-across-profiles#task-set-up-consistent-headshots-and-bios-across-profiles) for the wider profile set, or [claim and brand facebook page](https://local-service-spotlight.github.io/task-library/?task=claim-and-brand-facebook-page#task-claim-and-brand-facebook-page) when that Page connection is required.
 
-This setup supports the [Content Factory](https://blitzmetrics.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. This check does not automatically execute all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
+This setup supports the [Content Factory](https://localservicespotlight.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. This check does not automatically execute all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
 
 ## When this runs
 

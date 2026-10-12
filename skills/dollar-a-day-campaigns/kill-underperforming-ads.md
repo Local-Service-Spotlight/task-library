@@ -50,7 +50,7 @@ An ad can spend money without doing the job you gave it. This guide helps you st
 
 Send an eligible winner to [scale winners by increasing budget gradually](https://local-service-spotlight.github.io/task-library/?task=scale-winners-by-increasing-budget-gradually#task-scale-winners-by-increasing-budget-gradually). Send measurement gaps to [set up digital plumbing pixels tracking](https://local-service-spotlight.github.io/task-library/?task=set-up-digital-plumbing-pixels-tracking#task-set-up-digital-plumbing-pixels-tracking) and the campaign owner. The content owner gets the specific failed hypothesis for future organic work.
 
-This task is in Promote within the [Content Factory](https://blitzmetrics.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. Use the proof and checked posts from earlier stages; a Promote task does not automatically redo all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
+This task is in Promote within the [Content Factory](https://localservicespotlight.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. Use the proof and checked posts from earlier stages; a Promote task does not automatically redo all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
 
 ## When this runs
 

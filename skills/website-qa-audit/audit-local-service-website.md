@@ -53,7 +53,7 @@ The baseline says “phone target checked; live call untested,” “form delive
 
 The site/business owner receives the baseline and prioritized defects. The exact failed function determines the next task. A proposed migration uses this baseline as acceptance evidence; this local-service guide supports the [Website QA master](https://blitzmetrics.com/website-qa-audit/) and does not become a competing audit trunk.
 
-This is a supporting quality check for the [Content Factory](https://blitzmetrics.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. This check does not automatically execute all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
+This is a supporting quality check for the [Content Factory](https://localservicespotlight.com/content-factory/). Produce gathers real source material; Process makes useful assets; Post places and checks them; Promote distributes suitable work within its own scope. This check does not automatically execute all four stages. Use the actual next step above; catalog neighbors are not prerequisites.
 
 ## When this runs
 

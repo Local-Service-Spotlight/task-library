@@ -55,7 +55,7 @@ Downloading a placeholder with a large file size or renaming a stock image would
 
 The site/page owner receives the checked card pattern and source/public receipts. [Review article covers](https://local-service-spotlight.github.io/task-library/?task=verify-featured-images-unique-per-blog-post#task-verify-featured-images-unique-per-blog-post) supplies missing source assets, while the [Website QA master](https://blitzmetrics.com/website-qa-audit/) governs the resulting page check.
 
-This task’s source placement is **Post** in the [Content Factory](https://blitzmetrics.com/content-factory/). It puts real article assets into an existing public page and checks their delivery. Produce supplies real source media, Process prepares the article/assets, and Promote remains separate. The exact asset and page tasks above define dependencies; catalog order does not.
+This task’s source placement is **Post** in the [Content Factory](https://localservicespotlight.com/content-factory/). It puts real article assets into an existing public page and checks their delivery. Produce supplies real source media, Process prepares the article/assets, and Promote remains separate. The exact asset and page tasks above define dependencies; catalog order does not.
 
 ## When this runs
 
