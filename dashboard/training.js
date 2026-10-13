@@ -2,7 +2,7 @@
 (() => {
   'use strict';
   const $ = id => document.getElementById(id);
-  const state = { data: null, path: null, rows: [], selected: new Set(), minutes: 30, slides: [], slide: 0, sourceWarnings: [] };
+  const state = { data: null, path: null, rows: [], selected: new Set(), minutes: 30, slides: [], slide: 0, presentationReturn: 'present-session', sourceWarnings: [], practice: null, practiceDrafts: new Map(), practiceWarnings: [], practiceProvenance: null };
   const text = value => typeof value === 'string' ? value : '';
   const strings = value => Array.isArray(value) ? value.filter(item => typeof item === 'string') : [];
   function node(tag, className, value) {
@@ -31,6 +31,159 @@
     parent.append(link);
   }
   function taskFor(slug) { return state.data.tasks.find(task => task.slug === slug); }
+  function materialFor(id) { return (state.data.materials || []).find(material => material.id === id); }
+  function pathMaterials() { return (state.data.materials || []).filter(material => strings(material.pathIds).includes(state.path?.id)); }
+  function materialRefs(materials) { return materials.map(material => ({ id: material.id, sha256: text(material.verification?.sha256) || null })); }
+  function materialCard(material) {
+    const card = node('article', 'material-card');
+    card.dataset.material = material.id;
+    const protectedEntry = material.access === 'protected-entry';
+    card.append(node('p', 'eyebrow', material.kind + ' · ' + (protectedEntry ? 'Protected course · public entry only' : 'Public source')),
+      node('h4', '', material.title), node('p', '', text(material.useNote)));
+    const metadata = node('p', 'muted small', 'Source owner: ' + text(material.sourceOwner) + ' · Version: ' + text(material.sourceVersion));
+    const label = protectedEntry ? 'View course information / sign in ↗' : material.kind === 'recording' ? 'Open recording source page ↗' : 'Open ' + material.kind + ' source ↗';
+    const links = node('div', 'material-links');
+    appendLink(links, label, safeLink(material.url));
+    card.append(metadata, links, node('p', 'muted small', 'Link checked: ' + text(material.checkedAt) + ' · HTTP ' + String(material.verification?.status || 'unknown') + '. Access and content can change.'));
+    if (protectedEntry) card.append(node('p', 'material-boundary', 'This public entry does not provide paid lessons, grant enrollment, or verify your account access.'));
+    if (material.kind === 'recording') card.append(node('p', 'material-boundary', 'Opens a separate source tab. Nothing is played here. Keep the source player muted unless you choose to hear it.'));
+    return card;
+  }
+  function renderCatalog() {
+    const materials = state.data.materials || [];
+    $('materials-catalog').hidden = !materials.length;
+    const kind = $('material-kind').value;
+    const filtered = materials.filter(material => kind === 'all' || material.kind === kind);
+    $('materials-count').textContent = filtered.length + ' of ' + materials.length + ' connected sources';
+    $('catalog-materials').replaceChildren(...(filtered.length ? filtered.map(materialCard) : [node('p', 'muted', 'No connected materials of this type yet.')]));
+  }
+  const practiceFields = { firstAttempt: 'practice-first-attempt', checkNotes: 'practice-check-notes', revisedOutput: 'practice-revised-output', nextStep: 'practice-next-step' };
+  const practiceLimits = { firstAttempt: 50000, checkNotes: 30000, revisedOutput: 50000, nextStep: 10000 };
+  function copyPracticeProvenance(value) {
+    return { sessionVersion: value.sessionVersion, recipeSha256: value.recipeSha256, materials: value.materials.map(ref => ({ id: ref.id, sha256: ref.sha256 })) };
+  }
+  function currentPracticeProvenance(session) {
+    return { sessionVersion: text(session.sourceVersion), recipeSha256: text(session.contentSha256), materials: materialRefs(strings(session.materialIds).map(materialFor).filter(Boolean)) };
+  }
+  function savePracticeDraft() {
+    if (!state.practice) return;
+    const draft = {};
+    for (const [key, id] of Object.entries(practiceFields)) draft[key] = $(id).value;
+    state.practiceDrafts.set(state.practice.id, { draft, warnings: [...state.practiceWarnings], provenance: copyPracticeProvenance(state.practiceProvenance || currentPracticeProvenance(state.practice)) });
+  }
+  function updatePractice() {
+    $('download-practice').disabled = !state.practice || ['firstAttempt', 'checkNotes', 'nextStep'].some(key => !$(practiceFields[key]).value.trim());
+    $('practice-source-warning').hidden = !state.practiceWarnings.length;
+    $('practice-source-warning').textContent = state.practiceWarnings.join(' ');
+    savePracticeDraft();
+  }
+  function choosePractice(id) {
+    savePracticeDraft();
+    const session = (state.data.practiceSessions || []).find(item => item.id === id && item.pathId === state.path?.id);
+    state.practice = session || null;
+    $('practice-detail').hidden = !session;
+    $('practice-choice').value = session?.id || '';
+    $('practice-message').textContent = '';
+    if (!session) return;
+    $('practice-title').textContent = session.title;
+    $('practice-goal').textContent = session.goal;
+    $('practice-context').textContent = 'For: ' + session.audience + ' · ' + session.minutes + ' minutes (planning estimate, not an observed learner duration).';
+    $('practice-steps').replaceChildren(...session.steps.map(step => {
+      const item = node('li');
+      item.append(node('h4', '', text(step.title).replace(/^\d+\.\s+/, '')), node('p', '', step.instruction));
+      const links = node('div', 'material-links');
+      for (const material of strings(step.materialIds).map(materialFor).filter(Boolean)) appendLink(links, material.title + ' ↗', safeLink(material.url));
+      item.append(links);
+      return item;
+    }));
+    $('practice-deliverable').textContent = session.deliverable;
+    listInto('practice-checks', strings(session.checks));
+    const prior = state.practiceDrafts.get(session.id);
+    for (const [key, field] of Object.entries(practiceFields)) $(field).value = prior?.draft[key] || '';
+    state.practiceWarnings = [...(prior?.warnings || [])];
+    state.practiceProvenance = copyPracticeProvenance(prior?.provenance || currentPracticeProvenance(session));
+    $('practice-version').textContent = 'Current recipe version: ' + text(session.sourceVersion) + ' · Record source version: ' + state.practiceProvenance.sessionVersion + '. Downloading keeps the record’s original recipe and material hashes; editing your notes does not certify a recheck.';
+    updatePractice();
+  }
+  function renderPathMaterials() {
+    const materials = pathMaterials();
+    $('path-materials').replaceChildren(...(materials.length ? materials.map(materialCard) : [node('p', 'muted', 'No additional materials are connected to this path yet. Its public task guides remain available above.')]));
+    const sessions = (state.data.practiceSessions || []).filter(session => session.pathId === state.path.id);
+    $('practice-section').hidden = !sessions.length;
+    const placeholder = node('option', '', 'Choose a complete practice example');
+    placeholder.value = '';
+    $('practice-choice').replaceChildren(placeholder, ...sessions.map(session => { const option = node('option', '', session.title); option.value = session.id; return option; }));
+    choosePractice('');
+  }
+  function checkMaterialRefs(refs) {
+    if (!Array.isArray(refs) || refs.length > 1000) throw new Error('Invalid material references.');
+    const ids = new Set();
+    for (const ref of refs) {
+      if (!ref || typeof ref !== 'object' || Array.isArray(ref) || Object.keys(ref).some(key => !['id', 'sha256'].includes(key)) || typeof ref.id !== 'string' || !ref.id || ref.id.length > 200 || ids.has(ref.id) || (ref.sha256 !== null && (typeof ref.sha256 !== 'string' || !/^[a-f0-9]{64}$/i.test(ref.sha256)))) throw new Error('Invalid material identity or source hash.');
+      ids.add(ref.id);
+    }
+  }
+  function materialWarnings(refs, currentIds) {
+    const warnings = [];
+    for (const ref of refs) {
+      const current = materialFor(ref.id);
+      if (!current) warnings.push('Material no longer in the current catalog: ' + ref.id + '. No saved link has been used.');
+      else if (!currentIds.includes(ref.id)) warnings.push('Material no longer belongs to this current recipe or path: ' + current.title + '. Review the current selection.');
+      else if (!ref.sha256 || !text(current.verification?.sha256)) warnings.push('Source revision cannot be compared for ' + current.title + '.');
+      else if (ref.sha256 !== current.verification.sha256) warnings.push('Material source changed since this record was saved: ' + current.title + '. Review it again.');
+    }
+    for (const id of currentIds) if (!refs.some(ref => ref.id === id)) warnings.push('New material in the current recipe or path: ' + (materialFor(id)?.title || id) + '. Review it before teaching.');
+    return warnings;
+  }
+  function downloadJSON(value, filename) {
+    const href = URL.createObjectURL(new Blob([JSON.stringify(value, null, 2) + '\n'], { type: 'application/json' }));
+    const link = node('a');
+    link.href = href;
+    link.download = filename;
+    document.body.append(link);
+    link.click();
+    link.remove();
+    window.setTimeout(() => URL.revokeObjectURL(href), 1000);
+  }
+  function downloadPractice() {
+    updatePractice();
+    if ($('download-practice').disabled) return;
+    const session = state.practice;
+    const savedDraft = state.practiceDrafts.get(session.id);
+    downloadJSON({ type: 'task-library-practice', version: 1, sessionId: session.id, ...copyPracticeProvenance(savedDraft.provenance), ...savedDraft.draft }, 'task-library-practice-' + session.id.replace(/[^a-zA-Z0-9_-]/g, '-') + '.json');
+    $('practice-message').textContent = 'Practice record downloaded with its original recipe and material hashes. Reopen the downloaded file below to check that your first attempt, check notes, and next step were preserved. Any source-change warnings still apply; this is not a learner certification.';
+  }
+  async function importPractice(file) {
+    if (!file) return;
+    try {
+      if (file.size > 2 * 1024 * 1024) throw new Error('The practice file is too large.');
+      const saved = JSON.parse(await file.text());
+      const fields = ['type', 'version', 'sessionId', 'sessionVersion', 'recipeSha256', 'materials', ...Object.keys(practiceFields)];
+      if (!saved || typeof saved !== 'object' || Array.isArray(saved) || Object.keys(saved).some(key => !fields.includes(key)) || saved.type !== 'task-library-practice' || saved.version !== 1 || typeof saved.sessionId !== 'string' || saved.sessionId.length > 200 || typeof saved.sessionVersion !== 'string' || saved.sessionVersion.length > 1000 || typeof saved.recipeSha256 !== 'string' || !/^[a-f0-9]{64}$/i.test(saved.recipeSha256)) throw new Error('This is not a supported practice record.');
+      for (const [key, limit] of Object.entries(practiceLimits)) if (typeof saved[key] !== 'string' || saved[key].length > limit || (key !== 'revisedOutput' && !saved[key].trim())) throw new Error('Invalid or missing practice field: ' + key + '.');
+      checkMaterialRefs(saved.materials);
+      const session = (state.data.practiceSessions || []).find(item => item.id === saved.sessionId);
+      if (!session) throw new Error('This practice recipe is not available in the current library. Your current work has not been replaced.');
+      const warnings = materialWarnings(saved.materials, strings(session.materialIds));
+      if (saved.recipeSha256 !== session.contentSha256 || saved.sessionVersion !== session.sourceVersion) warnings.unshift('The practice recipe changed since this record was saved. Your original work is preserved below; compare it with the current steps and checks.');
+      savePracticeDraft();
+      const draft = Object.fromEntries(Object.keys(practiceFields).map(key => [key, saved[key]]));
+      const provenance = copyPracticeProvenance(saved);
+      const existing = state.practiceDrafts.get(session.id);
+      const hasExistingText = existing && Object.values(existing.draft).some(value => value.trim());
+      const differs = existing && (Object.keys(practiceFields).some(key => existing.draft[key] !== draft[key]) || JSON.stringify(existing.provenance) !== JSON.stringify(provenance));
+      if (hasExistingText && differs && !window.confirm('Replace the existing text and saved source versions for this practice session with the imported record? Cancel to keep your current draft. Download it first if you want to keep both.')) {
+        $('practice-message').textContent = 'Practice import canceled. Your existing draft and its source versions are unchanged.';
+        return;
+      }
+      choosePath(session.pathId);
+      state.practiceDrafts.set(session.id, { draft, warnings, provenance });
+      choosePractice(session.id);
+      $('practice-message').textContent = 'Practice record reopened using the current library recipe and material links. Your first attempt, check notes, revised output, and next step are preserved.';
+      $('practice-choice').focus();
+    } catch (error) { $('practice-message').textContent = 'Practice not imported: ' + (error instanceof Error ? error.message : 'Invalid practice file.'); }
+    finally { $('import-practice').value = ''; }
+  }
   function selectedTasks() { return state.rows.filter(slug => state.selected.has(slug)).map(taskFor).filter(Boolean); }
   function sourceStatus(task) {
     return task.status === 'complete' ? 'Contributor-reported complete' : (text(task.status) || 'unknown');
@@ -53,6 +206,8 @@
     return url;
   }
   function choosePath(id, updateRoute = true, moveFocus = false) {
+    savePracticeDraft();
+    state.practice = null;
     const path = state.data.paths.find(item => item.id === id);
     $('route-message').hidden = true;
     if (!path) {
@@ -98,6 +253,7 @@
     $('path-detail').hidden = false;
     renderLessons();
     renderOptions();
+    renderPathMaterials();
     updateSummary();
     if (moveFocus) $('path-title').focus();
   }
@@ -209,6 +365,7 @@
       customized: isCustomized(),
       reviewWarnings: [...(isCustomized() ? ['The original exercise and governing triangle may not fit this customized plan. Review before teaching.'] : []), ...state.sourceWarnings],
       protectedMaterial: 'Paid courses and instructor material remain at their own sources; no access is granted by this plan.',
+      materials: materialRefs(pathMaterials()),
       lessons: selectedTasks().map(task => ({ slug: task.slug, title: task.title, contentSha256: text(task.contentSha256) || null, taskLibraryUrl: taskLink(task), article: safeLink(task.article), sourceStatus: sourceStatus(task) })),
       exercise: { prompt: text(state.path.exercise?.prompt), deliverable: text(state.path.exercise?.deliverable), checks: strings(state.path.exercise?.checks) }
     };
@@ -234,6 +391,21 @@
       return;
     }
     state.slides = [{ kind: 'overview' }, ...selectedTasks().map(task => ({ kind: 'lesson', task })), { kind: 'exercise' }];
+    state.presentationReturn = 'present-session';
+    state.slide = 0;
+    renderSlide();
+    $('presentation').showModal();
+    $('exit-presentation').focus();
+  }
+  function startPracticePresentation() {
+    if (!state.practice) return;
+    if (typeof $('presentation').showModal !== 'function') {
+      $('practice-message').textContent = 'This browser does not support presentation mode. Follow the ordered practice steps on this page.';
+      return;
+    }
+    const recipe = state.practice;
+    state.slides = [{ kind: 'practice-overview', recipe }, ...recipe.steps.map(step => ({ kind: 'practice-step', step })), { kind: 'practice-check', recipe }];
+    state.presentationReturn = 'present-practice';
     state.slide = 0;
     renderSlide();
     $('presentation').showModal();
@@ -245,7 +417,21 @@
     const title = node('h2');
     title.id = 'slide-title';
     const children = [];
-    if (slide.kind === 'overview') {
+    if (slide.kind === 'practice-overview') {
+      title.textContent = slide.recipe.title;
+      children.push(node('p', 'eyebrow', 'Complete practice example'), title, node('p', '', slide.recipe.goal), node('p', '', 'For: ' + slide.recipe.audience), node('p', 'muted', slide.recipe.minutes + ' minutes · planning estimate'), node('p', 'boundary', 'Use fictional or already-public inputs. This example is not proof of learner competence or course completion. Keep the original attempt, check the result, then save and reopen the record.'));
+      if (state.practiceWarnings.length) children.push(node('p', 'plan-warning small', state.practiceWarnings.join(' ')));
+    } else if (slide.kind === 'practice-step') {
+      title.textContent = slide.step.title;
+      const links = node('div', 'slide-links');
+      for (const material of strings(slide.step.materialIds).map(materialFor).filter(Boolean)) appendLink(links, material.title + ' ↗', safeLink(material.url));
+      children.push(node('p', 'eyebrow', 'Follow the source · keep your work'), title, node('p', '', slide.step.instruction), links);
+    } else if (slide.kind === 'practice-check') {
+      title.textContent = 'Check, save, and reopen';
+      const checks = node('ul');
+      checks.append(...strings(slide.recipe.checks).map(check => node('li', '', check)));
+      children.push(node('p', 'eyebrow', 'Practice evidence, not certification'), title, node('p', '', slide.recipe.deliverable), checks, node('p', 'boundary', 'Exit presentation to record your first attempt, check notes, any revision, and one owned next step. Download the practice JSON and reopen that file to verify it was saved.'));
+    } else if (slide.kind === 'overview') {
       title.textContent = state.path.title;
       children.push(node('p', 'eyebrow', 'Session overview'), title, node('p', '', $('session-goal').value), node('p', '', 'For: ' + $('session-audience').value), node('p', 'muted', state.minutes + ' minutes · planning estimate'), node('p', 'boundary', text(state.path.boundary)), node('p', 'muted small', 'Public lessons only. This session does not unlock paid courses, reveal instructor material, or certify training.'));
       if (isCustomized()) children.push(node('p', 'plan-warning small', $('custom-warning').textContent));
@@ -287,7 +473,7 @@
       const object = value => value !== null && typeof value === 'object' && !Array.isArray(value);
       const allowed = (value, fields) => object(value) && Object.keys(value).every(key => fields.includes(key));
       const shortString = (value, limit) => typeof value === 'string' && value.length <= limit;
-      const fields = ['version', 'pathId', 'pathTitle', 'libraryVersion', 'libraryUpdated', 'frameworkVersion', 'frameworkAcceptance', 'governingTriangle', 'audience', 'goal', 'sessionMinutes', 'timingBasis', 'accessBoundary', 'publicOnly', 'customized', 'reviewWarnings', 'protectedMaterial', 'lessons', 'exercise'];
+      const fields = ['version', 'pathId', 'pathTitle', 'libraryVersion', 'libraryUpdated', 'frameworkVersion', 'frameworkAcceptance', 'governingTriangle', 'audience', 'goal', 'sessionMinutes', 'timingBasis', 'accessBoundary', 'publicOnly', 'customized', 'reviewWarnings', 'protectedMaterial', 'lessons', 'exercise', 'materials'];
       if (!allowed(saved, fields) || saved.version !== 1 || saved.publicOnly !== true || !shortString(saved.pathId, 200) || !shortString(saved.audience, 500) || !saved.audience.trim() || !shortString(saved.goal, 2000) || !saved.goal.trim() || ![10, 30, 60].includes(saved.sessionMinutes) || !Array.isArray(saved.lessons) || !saved.lessons.length || saved.lessons.length > 1000) throw new Error('This is not a supported public session plan.');
       for (const key of ['pathTitle', 'governingTriangle', 'timingBasis', 'accessBoundary', 'protectedMaterial']) if (saved[key] !== undefined && !shortString(saved[key], 10000)) throw new Error('Invalid plan field: ' + key + '.');
       if (saved.libraryVersion !== undefined && !(typeof saved.libraryVersion === 'number' && Number.isFinite(saved.libraryVersion)) && !shortString(saved.libraryVersion, 100)) throw new Error('Invalid library version.');
@@ -296,6 +482,7 @@
       if (saved.customized !== undefined && typeof saved.customized !== 'boolean') throw new Error('Invalid customization flag.');
       if (saved.reviewWarnings !== undefined && (!Array.isArray(saved.reviewWarnings) || saved.reviewWarnings.some(value => !shortString(value, 10000)))) throw new Error('Invalid review warnings.');
       if (saved.exercise !== undefined && (!allowed(saved.exercise, ['prompt', 'deliverable', 'checks']) || !shortString(saved.exercise.prompt, 20000) || !shortString(saved.exercise.deliverable, 20000) || !Array.isArray(saved.exercise.checks) || saved.exercise.checks.some(value => !shortString(value, 10000)))) throw new Error('Invalid exercise fields.');
+      if (saved.materials !== undefined) checkMaterialRefs(saved.materials);
       const ids = [];
       for (const lesson of saved.lessons) {
         if (!allowed(lesson, ['slug', 'title', 'contentSha256', 'taskLibraryUrl', 'article', 'sourceStatus']) || !shortString(lesson.slug, 200) || !lesson.slug || (lesson.contentSha256 !== null && lesson.contentSha256 !== undefined && (typeof lesson.contentSha256 !== 'string' || !/^[a-f0-9]{64}$/i.test(lesson.contentSha256)))) throw new Error('Invalid lesson identity or content hash.');
@@ -318,6 +505,8 @@
         else if (!lesson.contentSha256 || !text(current.contentSha256)) state.sourceWarnings.push('Source revision cannot be compared for ' + current.title + '. Read the current guide before teaching.');
         else if (lesson.contentSha256 !== current.contentSha256) state.sourceWarnings.push('Source changed since this plan was saved: ' + current.title + '. Review the current guide.');
       }
+      if (saved.materials !== undefined) state.sourceWarnings.push(...materialWarnings(saved.materials, pathMaterials().map(material => material.id)));
+      else if (pathMaterials().length) state.sourceWarnings.push('This older plan did not pin connected materials. Review the current material sources before teaching.');
       renderLessons();
       renderOptions();
       updateSummary();
@@ -347,11 +536,17 @@
     $('lesson-option').focus();
   });
   $('download-session').addEventListener('click', downloadPlan);
+  $('material-kind').addEventListener('change', renderCatalog);
+  $('practice-choice').addEventListener('change', () => choosePractice($('practice-choice').value));
+  for (const id of Object.values(practiceFields)) $(id).addEventListener('input', updatePractice);
+  $('download-practice').addEventListener('click', downloadPractice);
+  $('present-practice').addEventListener('click', startPracticePresentation);
+  $('import-practice').addEventListener('change', () => importPractice($('import-practice').files[0]));
   $('print-session').addEventListener('click', () => { updateSummary(); if (validSession()) window.print(); });
   $('import-session').addEventListener('change', () => importPlan($('import-session').files[0]));
   $('present-session').addEventListener('click', startPresentation);
   $('exit-presentation').addEventListener('click', () => $('presentation').close());
-  $('presentation').addEventListener('close', () => $('present-session').focus());
+  $('presentation').addEventListener('close', () => $(state.presentationReturn).focus());
   $('previous-slide').addEventListener('click', () => moveSlide(-1));
   $('next-slide').addEventListener('click', () => moveSlide(1));
   $('presentation').addEventListener('keydown', event => {
@@ -364,7 +559,10 @@
     .then(data => {
       if (!data || !Array.isArray(data.paths) || !Array.isArray(data.tasks) || !data.paths.length || data.paths.some(path => !text(path.id) || !text(path.title) || !Array.isArray(path.lessonSlugs)) || data.tasks.some(task => !text(task.slug) || !text(task.title))) throw new Error('Invalid metadata');
       if (new Set(data.paths.map(path => path.id)).size !== data.paths.length || new Set(data.tasks.map(task => task.slug)).size !== data.tasks.length) throw new Error('Duplicate metadata');
+      if (data.materials !== undefined && (!Array.isArray(data.materials) || data.materials.some(material => !text(material.id) || !text(material.title) || !['deck', 'recording', 'exercise', 'workbook', 'course'].includes(material.kind) || !['public', 'protected-entry'].includes(material.access) || !safeLink(material.url) || !Array.isArray(material.pathIds)) || new Set(data.materials.map(material => material.id)).size !== data.materials.length)) throw new Error('Invalid material metadata');
+      if (data.practiceSessions !== undefined && (!Array.isArray(data.practiceSessions) || data.practiceSessions.some(session => !text(session.id) || !text(session.title) || !data.paths.some(path => path.id === session.pathId) || !text(session.sourceVersion) || !/^[a-f0-9]{64}$/i.test(text(session.contentSha256)) || !Array.isArray(session.materialIds) || session.materialIds.some(id => !(data.materials || []).some(material => material.id === id && material.access === 'public')) || !Array.isArray(session.steps) || !session.steps.length || session.steps.some(step => !text(step.title) || !text(step.instruction) || !Array.isArray(step.materialIds) || step.materialIds.some(id => !session.materialIds.includes(id)))) || new Set(data.practiceSessions.map(session => session.id)).size !== data.practiceSessions.length)) throw new Error('Invalid practice recipe metadata');
       state.data = data;
+      renderCatalog();
       $('load-state').hidden = true;
       $('library-stamp').textContent = data.libraryUpdated ? 'Library updated: ' + String(data.libraryUpdated) : 'Library update date not supplied';
       $('path-choices').replaceChildren(...data.paths.map((path, index) => {

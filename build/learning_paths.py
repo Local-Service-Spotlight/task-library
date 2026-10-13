@@ -8,6 +8,7 @@ import json
 import re
 from pathlib import Path
 from urllib.parse import urlsplit, urlencode
+import teaching_materials
 
 TRIANGLES = {
     "SBP": ["Specialist", "Business", "Partner"],
@@ -105,8 +106,10 @@ def compose(data, source):
         if type(item["sessionMinutes"]) is not int or item["sessionMinutes"] not in (10, 30, 60):
             raise ValueError("sessionMinutes: supported planning estimate required")
         result.append(item)
+    materials, sessions = teaching_materials.compose(source, result)
     return {"version": 1, "framework": FRAMEWORK,
             "libraryUpdated": data["updated"], "paths": result,
+            "materials": materials, "practiceSessions": sessions,
             "tasks": sorted(tasks.values(), key=lambda t: t["slug"])}
 
 
