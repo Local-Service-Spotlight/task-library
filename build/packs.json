@@ -41,8 +41,176 @@
         "learn-do-teach-apprentice-model"
       ]
     },
-    { "id": "website-qa", "name": "Website QA Audit", "kind": "category", "emoji": "🔍", "blurb": "Guides for checking website quality.", "category": "website-qa-audit" },
-    { "id": "digital-plumbing", "name": "Digital Plumbing", "kind": "category", "emoji": "🔧", "blurb": "The foundational setup category (tracking, DNS, GBP, schema).", "category": "digital-plumbing" },
-    { "id": "dollar-a-day", "name": "Dollar-a-Day Campaigns", "kind": "category", "emoji": "💵", "blurb": "Every Dollar-a-Day campaign skill.", "category": "dollar-a-day" }
+    {
+      "id": "website-qa",
+      "name": "Website QA Audit",
+      "kind": "category",
+      "emoji": "🔍",
+      "blurb": "Guides for checking website quality.",
+      "category": "website-qa-audit"
+    },
+    {
+      "id": "digital-plumbing",
+      "name": "Digital Plumbing",
+      "kind": "category",
+      "emoji": "🔧",
+      "blurb": "The foundational setup category (tracking, DNS, GBP, schema).",
+      "category": "digital-plumbing"
+    },
+    {
+      "id": "dollar-a-day",
+      "name": "Dollar-a-Day Campaigns",
+      "kind": "category",
+      "emoji": "💵",
+      "blurb": "Every Dollar-a-Day campaign skill.",
+      "category": "dollar-a-day"
+    }
+  ],
+  "learningPaths": [
+    {
+      "id": "implement-agents",
+      "title": "Prepare an agent workflow",
+      "audience": "Business owners and team leads trying one useful AI task",
+      "goal": "Leave with one scoped task brief and a clear way to check its first saved result.",
+      "governingTriangle": "CCS",
+      "prerequisites": [
+        "Bring one small task and approved sample inputs.",
+        "Use the app and account you already have; confirm needed access separately."
+      ],
+      "boundary": "Practice with public or fictional inputs. This path does not install tools, grant access, publish work or start a schedule.",
+      "lessonSlugs": [
+        "gct-goals-content-targeting",
+        "set-up-business-ai-work-environment",
+        "document-a-task",
+        "systematization-content-checklists-software"
+      ],
+      "exercise": {
+        "prompt": "Choose a small draft you can check. Write its allowed input, expected output, pass checks and stop rule. Try it only with inputs you may use; save and reopen the result.",
+        "deliverable": "A task brief plus a checked saved draft, or an exact missing-capability note.",
+        "checks": [
+          "The brief names the result, source, audience and allowed actions.",
+          "Each important claim can be checked against the supplied input.",
+          "The saved output reopens; failures and unknowns stay visible.",
+          "A next owner and handoff are named. No automatic installation or schedule is claimed."
+        ]
+      },
+      "sessionMinutes": 30
+    },
+    {
+      "id": "content-factory",
+      "title": "Run the Content Factory",
+      "audience": "Creators, editors and agency teams turning real source material into useful content",
+      "goal": "Turn one permitted source into an audience-specific opening and a checked editorial handoff.",
+      "governingTriangle": "GCT",
+      "prerequisites": [
+        "Bring one permitted transcript or short source, a title and a draft.",
+        "Know who may approve and publish it; this session stops at the draft."
+      ],
+      "boundary": "Produce → Process → Post → Promote remains the maintained method. This practice covers the brief, draft opening and handoff—not a completed publishing or promotion run.",
+      "lessonSlugs": [
+        "gct-goals-content-targeting",
+        "step-5-write-article-from-transcript",
+        "step-7-write-hook-and-establish-context",
+        "learn-do-teach-apprentice-model"
+      ],
+      "exercise": {
+        "prompt": "Use one allowed source to write a brief and two or three opening sentences. Have a partner trace each factual claim to that source and identify who the piece helps.",
+        "deliverable": "A source-linked brief, draft opening, visual plan and editor handoff.",
+        "checks": [
+          "The goal, source content and intended reader agree.",
+          "The opening says what the reader can do and why it matters.",
+          "Claims and the proposed visual have sources and use permission.",
+          "Draft, approved and published states remain separate."
+        ]
+      },
+      "sessionMinutes": 30
+    },
+    {
+      "id": "running-ads",
+      "title": "Review ads before changing spend",
+      "audience": "Ad operators and agency owners reviewing a small campaign",
+      "goal": "Make one evidence-backed keep, stop, change or hold recommendation without changing an account.",
+      "governingTriangle": "MAA",
+      "prerequisites": [
+        "Bring a permitted dated export or use a clearly fictional example.",
+        "Include the goal, result definition, currency and reporting window."
+      ],
+      "boundary": "Read and recommend only. No campaign launch, account connection, budget change or spending authority is granted by this training.",
+      "lessonSlugs": [
+        "stage-2-goals-mission-90-day-goals-cpa-roas-budget",
+        "collect-verified-weekly-measurements",
+        "analyze-cost-per-result-and-engagement",
+        "maa-cycle-metrics-analysis-action"
+      ],
+      "exercise": {
+        "prompt": "Compare two test rows against the goal set before the test. Recalculate each cost per result. Mark missing inputs as unknown and write one bounded next recommendation.",
+        "deliverable": "A reproducible comparison and a Metrics → Analysis → Action note.",
+        "checks": [
+          "Costs and results use matching periods, definitions and units.",
+          "Zero or missing denominators do not become a zero cost.",
+          "Observed results and possible explanations are separate.",
+          "The recommendation names an owner and the approval needed before spend changes."
+        ]
+      },
+      "sessionMinutes": 30
+    },
+    {
+      "id": "operations",
+      "title": "Run clear team operations",
+      "audience": "Managers and operators handing work between people or agents",
+      "goal": "Give a teammate a task they can understand, check and hand back without guesswork.",
+      "governingTriangle": "CID",
+      "prerequisites": [
+        "Bring one repeat task and a safe example of its output.",
+        "Choose an actual receiving role; confirm acceptance outside this practice."
+      ],
+      "boundary": "Draft the assignment and status update. Sending, new commitments and changing responsibilities follow the team's existing authority.",
+      "lessonSlugs": [
+        "management-communicate-iterate-delegate",
+        "document-a-task",
+        "reply-with-task-status-in-origin-thread",
+        "maa-cycle-metrics-analysis-action"
+      ],
+      "exercise": {
+        "prompt": "Write an assignment with inputs, allowed actions, output, early review and pass checks. Ask a partner to find one ambiguity. Revise it, then draft a truthful status update.",
+        "deliverable": "A revised assignment, review note and unsent status draft.",
+        "checks": [
+          "A fresh reader can identify the starting input and useful output.",
+          "The check judges the result, not just whether steps were attempted.",
+          "The status distinguishes drafted, delivered and accepted.",
+          "The next owner is explicit; acknowledgment is not assumed."
+        ]
+      },
+      "sessionMinutes": 30
+    },
+    {
+      "id": "digital-agency",
+      "title": "Run a digital marketing agency",
+      "audience": "Agency owners choosing the next improvement across marketing, delivery and money",
+      "goal": "Map the agency's strongest supported constraint and choose one bounded improvement.",
+      "governingTriangle": "MOF",
+      "prerequisites": [
+        "Bring permitted summaries for demand, delivery quality and money, or a fictional case.",
+        "Keep client identities, contracts and private financial records out of public sessions."
+      ],
+      "boundary": "This is an agency decision workshop, not a complete paid agency course or advice to change pricing, staffing or contracts. Keep protected courses at their existing source.",
+      "lessonSlugs": [
+        "three-pillars-marketing-operations-finance",
+        "gct-goals-content-targeting",
+        "management-communicate-iterate-delegate",
+        "maa-cycle-metrics-analysis-action"
+      ],
+      "exercise": {
+        "prompt": "Map one measure for Marketing, Operations and Finance. State its source and time window, or mark the gap. Choose the best-supported constraint and propose one small action.",
+        "deliverable": "A three-function map with one sourced constraint, next owner and check.",
+        "checks": [
+          "Marketing, Operations and Finance are all considered without inventing numbers.",
+          "Reported revenue, collected cash, costs and profit are not substituted.",
+          "The constraint is supported or explicitly a hypothesis.",
+          "The action has an owner, a limit and an observable result to review."
+        ]
+      },
+      "sessionMinutes": 30
+    }
   ]
 }

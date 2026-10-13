@@ -28,6 +28,7 @@ import factory  # noqa: E402
 import executions  # noqa: E402
 import standard_verification  # noqa: E402
 import article_semantic_reviews  # noqa: E402
+import learning_paths  # noqa: E402
 
 STAGES = {'Produce', 'Process', 'Post', 'Promote', '—', ''}
 STATUSES = {'complete', 'needs-work', 'gap'}
@@ -1225,7 +1226,11 @@ def main():
         task.pop('_sourceSha256', None)
         task.pop('category', None)
 
+    # Resolve paths against this exact build, fail closed on missing lessons,
+    # and never hand-copy methods or protected teaching files into the paths.
+    learning_paths.compose(data, json.load(open(os.path.join(BUILD, 'packs.json'))))
     os.makedirs(os.path.dirname(args.out), exist_ok=True)
+    learning_paths.write(data, os.path.join(BUILD, 'packs.json'), os.path.dirname(args.out))
     json.dump(data, open(args.out, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
     with open(os.path.join(os.path.dirname(args.out), 'executions.json'), 'w', encoding='utf-8') as fh:
         json.dump(execution_history, fh, ensure_ascii=False, indent=2)
