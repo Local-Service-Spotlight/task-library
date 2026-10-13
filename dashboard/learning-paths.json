@@ -1,0 +1,2692 @@
+{
+  "version": 1,
+  "framework": {
+    "version": "2026-08-06",
+    "acceptanceStatus": "Accepted by framework owner Dennis Yu.",
+    "decisionDate": "2026-08-09",
+    "decisionTimezone": "America/Los_Angeles",
+    "acceptingCommit": "3a82b85071e47a9e4ee336cec854d3e004ff0c5f",
+    "sourceReference": "nine-triangles/references/canonical-framework.md",
+    "triangles": {
+      "SBP": [
+        "Specialist",
+        "Business",
+        "Partner"
+      ],
+      "AEC": [
+        "Audience",
+        "Engagement",
+        "Conversion"
+      ],
+      "GCT": [
+        "Goals",
+        "Content",
+        "Targeting"
+      ],
+      "MAA": [
+        "Metrics",
+        "Analysis",
+        "Action"
+      ],
+      "DDD": [
+        "Do",
+        "Delegate",
+        "Delete"
+      ],
+      "CID": [
+        "Communicate",
+        "Iterate",
+        "Delegate"
+      ],
+      "LDT": [
+        "Learn",
+        "Do",
+        "Teach"
+      ],
+      "CCS": [
+        "Content",
+        "Checklist",
+        "Software"
+      ],
+      "MOF": [
+        "Marketing",
+        "Operations",
+        "Finance"
+      ]
+    }
+  },
+  "libraryUpdated": "October 13, 2026",
+  "paths": [
+    {
+      "id": "implement-agents",
+      "title": "Prepare an agent workflow",
+      "audience": "Business owners and team leads trying one useful AI task",
+      "goal": "Leave with one scoped task brief and a clear way to check its first saved result.",
+      "governingTriangle": "CCS",
+      "prerequisites": [
+        "Bring one small task and approved sample inputs.",
+        "Use the app and account you already have; confirm needed access separately."
+      ],
+      "boundary": "Practice with public or fictional inputs. This path does not install tools, grant access, publish work or start a schedule.",
+      "lessonSlugs": [
+        "gct-goals-content-targeting",
+        "set-up-business-ai-work-environment",
+        "document-a-task",
+        "systematization-content-checklists-software"
+      ],
+      "exercise": {
+        "prompt": "Choose a small draft you can check. Write its allowed input, expected output, pass checks and stop rule. Try it only with inputs you may use; save and reopen the result.",
+        "deliverable": "A task brief plus a checked saved draft, or an exact missing-capability note.",
+        "checks": [
+          "The brief names the result, source, audience and allowed actions.",
+          "Each important claim can be checked against the supplied input.",
+          "The saved output reopens; failures and unknowns stay visible.",
+          "A next owner and handoff are named. No automatic installation or schedule is claimed."
+        ]
+      },
+      "sessionMinutes": 30
+    },
+    {
+      "id": "content-factory",
+      "title": "Run the Content Factory",
+      "audience": "Creators, editors and agency teams turning real source material into useful content",
+      "goal": "Turn one permitted source into an audience-specific opening and a checked editorial handoff.",
+      "governingTriangle": "GCT",
+      "prerequisites": [
+        "Bring one permitted transcript or short source, a title and a draft.",
+        "Know who may approve and publish it; this session stops at the draft."
+      ],
+      "boundary": "Produce → Process → Post → Promote remains the maintained method. This practice covers the brief, draft opening and handoff—not a completed publishing or promotion run.",
+      "lessonSlugs": [
+        "gct-goals-content-targeting",
+        "step-5-write-article-from-transcript",
+        "step-7-write-hook-and-establish-context",
+        "learn-do-teach-apprentice-model"
+      ],
+      "exercise": {
+        "prompt": "Use one allowed source to write a brief and two or three opening sentences. Have a partner trace each factual claim to that source and identify who the piece helps.",
+        "deliverable": "A source-linked brief, draft opening, visual plan and editor handoff.",
+        "checks": [
+          "The goal, source content and intended reader agree.",
+          "The opening says what the reader can do and why it matters.",
+          "Claims and the proposed visual have sources and use permission.",
+          "Draft, approved and published states remain separate."
+        ]
+      },
+      "sessionMinutes": 30
+    },
+    {
+      "id": "running-ads",
+      "title": "Review ads before changing spend",
+      "audience": "Ad operators and agency owners reviewing a small campaign",
+      "goal": "Make one evidence-backed keep, stop, change or hold recommendation without changing an account.",
+      "governingTriangle": "MAA",
+      "prerequisites": [
+        "Bring a permitted dated export or use a clearly fictional example.",
+        "Include the goal, result definition, currency and reporting window."
+      ],
+      "boundary": "Read and recommend only. No campaign launch, account connection, budget change or spending authority is granted by this training.",
+      "lessonSlugs": [
+        "stage-2-goals-mission-90-day-goals-cpa-roas-budget",
+        "collect-verified-weekly-measurements",
+        "analyze-cost-per-result-and-engagement",
+        "maa-cycle-metrics-analysis-action"
+      ],
+      "exercise": {
+        "prompt": "Compare two test rows against the goal set before the test. Recalculate each cost per result. Mark missing inputs as unknown and write one bounded next recommendation.",
+        "deliverable": "A reproducible comparison and a Metrics → Analysis → Action note.",
+        "checks": [
+          "Costs and results use matching periods, definitions and units.",
+          "Zero or missing denominators do not become a zero cost.",
+          "Observed results and possible explanations are separate.",
+          "The recommendation names an owner and the approval needed before spend changes."
+        ]
+      },
+      "sessionMinutes": 30
+    },
+    {
+      "id": "operations",
+      "title": "Run clear team operations",
+      "audience": "Managers and operators handing work between people or agents",
+      "goal": "Give a teammate a task they can understand, check and hand back without guesswork.",
+      "governingTriangle": "CID",
+      "prerequisites": [
+        "Bring one repeat task and a safe example of its output.",
+        "Choose an actual receiving role; confirm acceptance outside this practice."
+      ],
+      "boundary": "Draft the assignment and status update. Sending, new commitments and changing responsibilities follow the team's existing authority.",
+      "lessonSlugs": [
+        "management-communicate-iterate-delegate",
+        "document-a-task",
+        "reply-with-task-status-in-origin-thread",
+        "maa-cycle-metrics-analysis-action"
+      ],
+      "exercise": {
+        "prompt": "Write an assignment with inputs, allowed actions, output, early review and pass checks. Ask a partner to find one ambiguity. Revise it, then draft a truthful status update.",
+        "deliverable": "A revised assignment, review note and unsent status draft.",
+        "checks": [
+          "A fresh reader can identify the starting input and useful output.",
+          "The check judges the result, not just whether steps were attempted.",
+          "The status distinguishes drafted, delivered and accepted.",
+          "The next owner is explicit; acknowledgment is not assumed."
+        ]
+      },
+      "sessionMinutes": 30
+    },
+    {
+      "id": "digital-agency",
+      "title": "Run a digital marketing agency",
+      "audience": "Agency owners choosing the next improvement across marketing, delivery and money",
+      "goal": "Map the agency's strongest supported constraint and choose one bounded improvement.",
+      "governingTriangle": "MOF",
+      "prerequisites": [
+        "Bring permitted summaries for demand, delivery quality and money, or a fictional case.",
+        "Keep client identities, contracts and private financial records out of public sessions."
+      ],
+      "boundary": "This is an agency decision workshop, not a complete paid agency course or advice to change pricing, staffing or contracts. Keep protected courses at their existing source.",
+      "lessonSlugs": [
+        "three-pillars-marketing-operations-finance",
+        "gct-goals-content-targeting",
+        "management-communicate-iterate-delegate",
+        "maa-cycle-metrics-analysis-action"
+      ],
+      "exercise": {
+        "prompt": "Map one measure for Marketing, Operations and Finance. State its source and time window, or mark the gap. Choose the best-supported constraint and propose one small action.",
+        "deliverable": "A three-function map with one sourced constraint, next owner and check.",
+        "checks": [
+          "Marketing, Operations and Finance are all considered without inventing numbers.",
+          "Reported revenue, collected cash, costs and profit are not substituted.",
+          "The constraint is supported or explicitly a hypothesis.",
+          "The action has an owner, a limit and an observable result to review."
+        ]
+      },
+      "sessionMinutes": 30
+    }
+  ],
+  "tasks": [
+    {
+      "slug": "access-content-factory-source-assets",
+      "title": "Access Content Factory source assets",
+      "description": "Get the right access to the photos and videos for your task. Check that you can open the actual files.",
+      "article": "https://blitzmetrics.com/access-content-factory-photos-videos/",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=access-content-factory-source-assets#task-access-content-factory-source-assets",
+      "status": "needs-work",
+      "contentSha256": "57c3e19fece787c65b72bce4d725314c1fc31562b334489cec8dc46117b31067"
+    },
+    {
+      "slug": "add-click-to-call-links-for-mobile",
+      "title": "Add Click-to-Call Links for Mobile",
+      "description": "Make the phone number on your site easy to tap. Check that it opens the right number.",
+      "article": "https://blitzmetrics.com/digital-plumbing",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=add-click-to-call-links-for-mobile#task-add-click-to-call-links-for-mobile",
+      "status": "needs-work",
+      "contentSha256": "29a0dcafd5d54e3fbde3611b8bf99a32467f9a8dea24e5b210dbb78813333ca9"
+    },
+    {
+      "slug": "add-consistent-headshots-and-bios-across-profiles",
+      "title": "Add consistent headshots and bios across profiles",
+      "description": "Help people know they have found the right you.",
+      "article": "https://blitzmetrics.com/personal-brand",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=add-consistent-headshots-and-bios-across-profiles#task-add-consistent-headshots-and-bios-across-profiles",
+      "status": "needs-work",
+      "contentSha256": "5dd7db89dbac31d54a3c2e80305b355c288ed1b83af42621fe514a6336886d8d"
+    },
+    {
+      "slug": "add-homepage-blog-card-thumbnails",
+      "title": "Add homepage blog-card thumbnails",
+      "description": "Show a real photo on each home page article card. Keep the words and links easy to use.",
+      "article": "https://blitzmetrics.com/blog-card-thumbnails-standard/",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=add-homepage-blog-card-thumbnails#task-add-homepage-blog-card-thumbnails",
+      "status": "needs-work",
+      "contentSha256": "edd876dc4a79e28d46865b1c041b239be32b16a3541adf0c3f60a68c7c6352a1"
+    },
+    {
+      "slug": "add-knowledge-capture-to-existing-workflows",
+      "title": "Add Knowledge Capture to existing workflows",
+      "description": "Your team learns things that can save the next person time.",
+      "article": "https://blitzmetrics.com/knowledge-system-maintenance",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=add-knowledge-capture-to-existing-workflows#task-add-knowledge-capture-to-existing-workflows",
+      "status": "gap",
+      "contentSha256": "f0856b3581229eb080125e9293b63e3e0ebc27aeb56e530fc5358c832d34163e"
+    },
+    {
+      "slug": "add-last-audited-column-to-definitive-article-guide-status-table",
+      "title": "Add Last Audited column to Definitive Article Guide status table",
+      "description": "An old green label can hide missed checks.",
+      "article": "https://blitzmetrics.com/knowledge-system-maintenance",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=add-last-audited-column-to-definitive-article-guide-status-table#task-add-last-audited-column-to-definitive-article-guide-status-table",
+      "status": "gap",
+      "contentSha256": "75541196e59c077af9a8d71ca428e021e261cab5347cdaf7b6b0e077e7a672f6"
+    },
+    {
+      "slug": "add-schema-markup-person-localbusiness",
+      "title": "Add Schema Markup (Person/LocalBusiness)",
+      "description": "Help search tools read the facts on your site. Add the right person or business record and check it.",
+      "article": "https://blitzmetrics.com/digital-plumbing",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=add-schema-markup-person-localbusiness#task-add-schema-markup-person-localbusiness",
+      "status": "needs-work",
+      "contentSha256": "855dbfba0c840ae19629b2c528b7e8d63b2cef6d60056abbf0760c5c1a52c792"
+    },
+    {
+      "slug": "analyze-cost-per-result-and-engagement",
+      "title": "Analyze cost per result and engagement",
+      "description": "Check what each ad cost and what it did. Choose the next step from the facts.",
+      "article": "https://blitzmetrics.com/dad",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=analyze-cost-per-result-and-engagement#task-analyze-cost-per-result-and-engagement",
+      "status": "complete",
+      "contentSha256": "8d5553b24132a04d476bb64a5ebcea05a87c4086f33cac0abe299faff88510ca"
+    },
+    {
+      "slug": "analyze-why-underperformers-fail",
+      "title": "Analyze why underperformers fail",
+      "description": "Find out why an ad or page is not doing its job before you change it.",
+      "article": null,
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=analyze-why-underperformers-fail#task-analyze-why-underperformers-fail",
+      "status": "needs-work",
+      "contentSha256": "d7953494ed25dd4d2249de78fa57bad043661fdaf02dd1ba9b7f28fb1e0f016f"
+    },
+    {
+      "slug": "apply-metrics-decomposition",
+      "title": "Apply Metrics Decomposition",
+      "description": "Find which part of the ad path changed. Use the facts to choose the next check.",
+      "article": "https://blitzmetrics.com/social-amplification",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=apply-metrics-decomposition#task-apply-metrics-decomposition",
+      "status": "complete",
+      "contentSha256": "1e23a84f96c7c732bef5e2092cb6943c8edb343660ab06589e421044c3537d70"
+    },
+    {
+      "slug": "apply-portability-discipline-to-meta-articles",
+      "title": "Apply portability discipline to meta-articles",
+      "description": "A good run note helps the next person use what you learned.",
+      "article": "https://blitzmetrics.com/knowledge-system-maintenance",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=apply-portability-discipline-to-meta-articles#task-apply-portability-discipline-to-meta-articles",
+      "status": "needs-work",
+      "contentSha256": "55a1996e468a42326850bd105feb26f4360b660fca2e308f67ddc302532774bc"
+    },
+    {
+      "slug": "audit-internal-links-between-all-blog-posts",
+      "title": "Audit internal links between all blog posts",
+      "description": "Help readers find the next useful page. Check links in each post and fix gaps in the site map.",
+      "article": "https://blitzmetrics.com/website-qa-audit",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=audit-internal-links-between-all-blog-posts#task-audit-internal-links-between-all-blog-posts",
+      "status": "complete",
+      "contentSha256": "4c5d7cbbc1dbe8146cb6abfbc2e401ff6a9c02ee8101d7bc96398f5e1e2e855f"
+    },
+    {
+      "slug": "audit-local-service-website",
+      "title": "Audit a local-service website",
+      "description": "Find what helps or blocks a customer on your site. Leave a clear list of facts, fixes and next owners.",
+      "article": "https://blitzmetrics.com/website-audit-checklist/",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=audit-local-service-website#task-audit-local-service-website",
+      "status": "needs-work",
+      "contentSha256": "3d45e97e4b1681b3d5ba2c799e86cb5a1e1024724f8c4c0f81349c545992bb80"
+    },
+    {
+      "slug": "audit-this-maintenance-article-every-6-months",
+      "title": "Audit this maintenance article every 6 months",
+      "description": "Rules can get old too.",
+      "article": "https://blitzmetrics.com/knowledge-system-maintenance",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=audit-this-maintenance-article-every-6-months#task-audit-this-maintenance-article-every-6-months",
+      "status": "needs-work",
+      "contentSha256": "4cf03254dc4eb29997793342cfeb7f4c44b2f07adfc7cdf1af87c90f9a7374f8"
+    },
+    {
+      "slug": "batch-record-50-raw-clips-in-one-session",
+      "title": "Batch record 50 raw clips in one session",
+      "description": "Plan and film 50 short answers in one session. Match each saved clip to its question.",
+      "article": null,
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=batch-record-50-raw-clips-in-one-session#task-batch-record-50-raw-clips-in-one-session",
+      "status": "needs-work",
+      "contentSha256": "f345fe1ac475cfe152162c1a14a52a98a354fd932c6395d95e9a4569d1156619"
+    },
+    {
+      "slug": "boost-one-minute-videos-for-personal-branding",
+      "title": "Boost one-minute videos for personal branding",
+      "description": "Use a small ad test to share a helpful clip with more of the right people.",
+      "article": "https://blitzmetrics.com/dad",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=boost-one-minute-videos-for-personal-branding#task-boost-one-minute-videos-for-personal-branding",
+      "status": "needs-work",
+      "contentSha256": "94240567c8e2ecca1e2c93d93c3830f4442edb9249882cf9112755d68d7602d9"
+    },
+    {
+      "slug": "boost-top-3-5-facebook-posts",
+      "title": "Boost top 3–5 Facebook posts",
+      "description": "Pick the best posts for a small paid test. Keep the cost and the next check clear.",
+      "article": "https://blitzmetrics.com/social-amplification",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=boost-top-3-5-facebook-posts#task-boost-top-3-5-facebook-posts",
+      "status": "complete",
+      "contentSha256": "84169ddde51e7f7a44852c38cf2ba25f99df8d9d96603590daa4692f4d28a94a"
+    },
+    {
+      "slug": "boost-with-dollar-a-day",
+      "title": "Test a Thank-You Post With a Small Ad",
+      "description": "Test a thank-you post with a small ad. Use this when the goal and budget are set.",
+      "article": "https://blitzmetrics.com/thank-you-machine",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=boost-with-dollar-a-day#task-boost-with-dollar-a-day",
+      "status": "complete",
+      "contentSha256": "6272116ec5b6fe1dc90737343f6fbbf2c71070389e520f7e57b1d5e3cb765fc0"
+    },
+    {
+      "slug": "build-agency-website-for-vertical",
+      "title": "Build an agency website for a vertical",
+      "description": "Build an agency site for the trade you serve. Show real people, useful services and a clear next step.",
+      "article": "https://blitzmetrics.com/agency-site-playbook/",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=build-agency-website-for-vertical#task-build-agency-website-for-vertical",
+      "status": "needs-work",
+      "contentSha256": "2eaa2bf144e5a9935fd33a946f22c4a6a54dc7fd10f2276bda8b91d982e26fb0"
+    },
+    {
+      "slug": "build-and-maintain-ai-knowledge-base",
+      "title": "Build and maintain an AI knowledge base",
+      "description": "Your team should not have to hunt through old chats for key facts.",
+      "article": "https://blitzmetrics.com/how-to-build-use-publish-ai-knowledge-base/",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=build-and-maintain-ai-knowledge-base#task-build-and-maintain-ai-knowledge-base",
+      "status": "needs-work",
+      "contentSha256": "570ee10b9f3757f4311b321908aa72cf1e50a9277cc01ede4005bb2bfb3ca54f"
+    },
+    {
+      "slug": "build-audience-layers",
+      "title": "Build audience layers",
+      "description": "Choose clear groups for an ad test. Keep the goal, cost and limits easy to check.",
+      "article": "https://blitzmetrics.com/dad",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=build-audience-layers#task-build-audience-layers",
+      "status": "complete",
+      "contentSha256": "2005ea533beea91416fbe25153c1c0ec4b161d28d3054e9434294c5a2d729e1b"
+    },
+    {
+      "slug": "build-external-backlinks-from-authoritative-sources",
+      "title": "Build external backlinks from authoritative sources",
+      "description": "Help the right people find and check your work.",
+      "article": "https://blitzmetrics.com/link-building",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=build-external-backlinks-from-authoritative-sources#task-build-external-backlinks-from-authoritative-sources",
+      "status": "needs-work",
+      "contentSha256": "a42b2721c69478ecc7f652797d2031fb8401d412c0d6f2d6395d18111db7569d"
+    },
+    {
+      "slug": "build-into-post-project-checklist-and-weekly-routine",
+      "title": "Keep a Simple Thank-You Routine",
+      "description": "Help your team remember to say thanks. Use this when you want a simple way to track real help and the next step.",
+      "article": "https://blitzmetrics.com/thank-you-machine",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=build-into-post-project-checklist-and-weekly-routine#task-build-into-post-project-checklist-and-weekly-routine",
+      "status": "needs-work",
+      "contentSha256": "cf8febc5c0d3445d6a2c001fec19d6cb804cd1b5d8ec09d0170d623cb6ef629e"
+    },
+    {
+      "slug": "build-money-tree-site-diagram",
+      "title": "Build a Money Tree site diagram",
+      "description": "See which parts of your site help people find what you sell.",
+      "article": "https://blitzmetrics.com/money-tree/",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=build-money-tree-site-diagram#task-build-money-tree-site-diagram",
+      "status": "needs-work",
+      "contentSha256": "17815a04d3f9f156b20a7cdb5c4b2c535455e923a7184f14b86f9dd687c11dde"
+    },
+    {
+      "slug": "build-personal-brand-website",
+      "title": "Build personal brand website",
+      "description": "Give people one place to check who you are and what you do.",
+      "article": "https://blitzmetrics.com/personal-brand",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=build-personal-brand-website#task-build-personal-brand-website",
+      "status": "needs-work",
+      "contentSha256": "827e71c350265aee58ae54a96380a04900d08445fadc06a76441a080d4f575b3"
+    },
+    {
+      "slug": "build-third-party-validation",
+      "title": "Build third-party validation",
+      "description": "Help people check your work with proof from other sources.",
+      "article": "https://blitzmetrics.com/knowledge-panel",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=build-third-party-validation#task-build-third-party-validation",
+      "status": "needs-work",
+      "contentSha256": "3e66e2b6095667774a9758dc803c7777a7c0564b054647517810083bf2beb950"
+    },
+    {
+      "slug": "capture-client-stories-on-phone",
+      "title": "Capture client stories on phone",
+      "description": "Film a client’s own story with clear permission. Save the facts, name, photo, and source files.",
+      "article": null,
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=capture-client-stories-on-phone#task-capture-client-stories-on-phone",
+      "status": "needs-work",
+      "contentSha256": "07774e78a150490e2970cc6ec97cf550fb48dd71485ece836e3a1024eb4e3415"
+    },
+    {
+      "slug": "check-all-cta-buttons-lead-to-correct-destinations",
+      "title": "Check all CTA buttons lead to correct destinations",
+      "description": "Check that each button does what its words say. Find wrong links before a customer gets stuck.",
+      "article": "https://blitzmetrics.com/website-qa-audit",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=check-all-cta-buttons-lead-to-correct-destinations#task-check-all-cta-buttons-lead-to-correct-destinations",
+      "status": "needs-work",
+      "contentSha256": "761f91a12d7d31a721dcb3210e9db0eee5fdcc5f4022347e90b8d7de7ea495cc"
+    },
+    {
+      "slug": "check-each-homepage-section-includes-relevant-image",
+      "title": "Check each homepage section includes relevant image",
+      "description": "Give each main home page section a useful visual. Check that it helps readers on a phone too.",
+      "article": "https://blitzmetrics.com/website-qa-audit",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=check-each-homepage-section-includes-relevant-image#task-check-each-homepage-section-includes-relevant-image",
+      "status": "complete",
+      "contentSha256": "65d1ccdfc90f6087c5856e5f0e8e34c4a8b39585bfe7133f80372f024d618b25"
+    },
+    {
+      "slug": "check-favicon-is-set",
+      "title": "Check favicon is set",
+      "description": "Check the small icon next to your site’s name. Make sure it is clear and uses the right brand.",
+      "article": "https://blitzmetrics.com/website-qa-audit",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=check-favicon-is-set#task-check-favicon-is-set",
+      "status": "needs-work",
+      "contentSha256": "3657ba02dba0e879b86e632f4ce30aaa030d3dc7031f09c709538a38d1a0791e"
+    },
+    {
+      "slug": "check-for-broken-links",
+      "title": "Check for broken links",
+      "description": "Find links that leave readers stuck. Check the cause and fix the right target.",
+      "article": "https://blitzmetrics.com/website-qa-audit",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=check-for-broken-links#task-check-for-broken-links",
+      "status": "complete",
+      "contentSha256": "6fb70fc4f317209cc3bc4bdca8ed08a369ac87c08c3281eff7c18a9fba7d07b2"
+    },
+    {
+      "slug": "check-information-currency-with-latest-data",
+      "title": "Check information currency with latest data",
+      "description": "Old facts can send a customer or teammate down the wrong path.",
+      "article": "https://blitzmetrics.com/knowledge-system-maintenance",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=check-information-currency-with-latest-data#task-check-information-currency-with-latest-data",
+      "status": "needs-work",
+      "contentSha256": "ae8f6f4c1b883c9a461c07b14fc46bc18871c21663f067877e0336bb528ebfa1"
+    },
+    {
+      "slug": "check-lead-magnet-section-has-visual-mockup",
+      "title": "Check lead magnet section has visual mockup",
+      "description": "Show people what they will get from your free offer. Check that the preview matches the real file.",
+      "article": "https://blitzmetrics.com/website-qa-audit",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=check-lead-magnet-section-has-visual-mockup#task-check-lead-magnet-section-has-visual-mockup",
+      "status": "complete",
+      "contentSha256": "40088a0c7ce67c53b03131a8dd84f597e90130321e91c51f2fe1de90adeb6209"
+    },
+    {
+      "slug": "check-meta-description-under-160-chars",
+      "title": "Check meta description under 160 chars",
+      "description": "Give each page a clear short search summary. Check what the live page actually sends.",
+      "article": "https://blitzmetrics.com/website-qa-audit",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=check-meta-description-under-160-chars#task-check-meta-description-under-160-chars",
+      "status": "complete",
+      "contentSha256": "aa9ac15ec345f0aa686a26c2bfe40318aa9ac0e008ff5d8444f41f8a60361a6a"
+    },
+    {
+      "slug": "check-schema-connects-to-all-verified-profiles",
+      "title": "Check schema connects to all verified profiles",
+      "description": "Check that each profile link points to the right person or firm.",
+      "article": "https://blitzmetrics.com/website-qa-audit",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=check-schema-connects-to-all-verified-profiles#task-check-schema-connects-to-all-verified-profiles",
+      "status": "complete",
+      "contentSha256": "59178f5406e6315fdd64268639be20daa08258bfafbe0a15f982a9f73f4b7f90"
+    },
+    {
+      "slug": "check-seo-title-under-60-chars-with-focus-keyword",
+      "title": "Check SEO title under 60 chars with focus keyword",
+      "description": "Check that each page has a clear title. Use words that fit the page and help people choose it.",
+      "article": "https://blitzmetrics.com/website-qa-audit",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=check-seo-title-under-60-chars-with-focus-keyword#task-check-seo-title-under-60-chars-with-focus-keyword",
+      "status": "complete",
+      "contentSha256": "26e9e4c798b279bcfff01b60b906a9ca13d6d7160680477367494240ab090315"
+    },
+    {
+      "slug": "check-social-profiles-linked-and-prominent",
+      "title": "Check social profiles linked and prominent",
+      "description": "Help people find your real public profiles. Check the links and make them easy to use.",
+      "article": "https://blitzmetrics.com/website-qa-audit",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=check-social-profiles-linked-and-prominent#task-check-social-profiles-linked-and-prominent",
+      "status": "complete",
+      "contentSha256": "7a1e97ce469523d82e01997773e60990e2a3e6dcd709a147a28998a1c8941d73"
+    },
+    {
+      "slug": "check-topic-coherence-for-each-definitive-article",
+      "title": "Check topic coherence for each definitive article",
+      "description": "A page should help readers with one clear subject.",
+      "article": "https://blitzmetrics.com/knowledge-system-maintenance",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=check-topic-coherence-for-each-definitive-article#task-check-topic-coherence-for-each-definitive-article",
+      "status": "complete",
+      "contentSha256": "66e4ec1ae791ec16d60ce9c706ecf9cb3871fab458e17bebdffddb4e57ba4299"
+    },
+    {
+      "slug": "claim-and-brand-facebook-page",
+      "title": "Claim and Brand Facebook Page",
+      "description": "Set up the right Facebook Page for your business. Check its name, photos, links and access.",
+      "article": "https://blitzmetrics.com/digital-plumbing",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=claim-and-brand-facebook-page#task-claim-and-brand-facebook-page",
+      "status": "needs-work",
+      "contentSha256": "c3b91ce0ee8fa6f1ecefda9d21e0cc3fcd7046437d14c3090d0383dff2d84b04"
+    },
+    {
+      "slug": "claim-and-verify-knowledge-panel-when-it-appears",
+      "title": "Claim and verify Knowledge Panel when it appears",
+      "description": "Check the facts people see about you on Google.",
+      "article": "https://blitzmetrics.com/knowledge-panel",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=claim-and-verify-knowledge-panel-when-it-appears#task-claim-and-verify-knowledge-panel-when-it-appears",
+      "status": "needs-work",
+      "contentSha256": "58cc37b6f5cb182600c87f0bfc0a95a95510d1eaf10111a35f3dc84ac3704940"
+    },
+    {
+      "slug": "classify-and-offer-knowledge-panel",
+      "title": "Classify and offer Knowledge Panel",
+      "description": "Choose the right next step for your name on Google.",
+      "article": "https://blitzmetrics.com/knowledge-panel",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=classify-and-offer-knowledge-panel#task-classify-and-offer-knowledge-panel",
+      "status": "needs-work",
+      "contentSha256": "58976eff221f4e29890f1a9e765daeb3fefe9504170a0401a0f79bf27caf8ca1"
+    },
+    {
+      "slug": "close-ended-relationship-endorsement-links",
+      "title": "Close endorsement links for an ended relationship",
+      "description": "Keep your site clear about who you work with now.",
+      "article": "https://blitzmetrics.com/when-trust-ends-the-link-ends/",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=close-ended-relationship-endorsement-links#task-close-ended-relationship-endorsement-links",
+      "status": "needs-work",
+      "contentSha256": "4cd53d9ef7dd0c1a91a47c520dd05188d5b599c11650e5187044835d8adcc603"
+    },
+    {
+      "slug": "collect-verified-weekly-measurements",
+      "title": "Collect verified weekly measurements",
+      "description": "See which work brings leads and sales to your business.",
+      "article": "https://localservicespotlight.com/skills-measurement-analytics/",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=collect-verified-weekly-measurements#task-collect-verified-weekly-measurements",
+      "status": "needs-work",
+      "contentSha256": "f3b32b5b915e2b32cd5a73bcbc6b5d291a3e4074756c23d9c325296770b7ae79"
+    },
+    {
+      "slug": "compare-current-vs-last-period-performance",
+      "title": "Compare current vs last period performance",
+      "description": "Compare two fair time spans. Show what changed, what is known and what to check next.",
+      "article": "https://blitzmetrics.com/social-amplification",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=compare-current-vs-last-period-performance#task-compare-current-vs-last-period-performance",
+      "status": "complete",
+      "contentSha256": "21e7b1d4aa150f6835d661803f660a2ce6efcf740f4ce7203a766501f0b50856"
+    },
+    {
+      "slug": "conduct-first-portability-review-of-blog-posting-guidelines",
+      "title": "Conduct first portability review of Blog Posting Guidelines",
+      "description": "Good writing steps should still help when your team changes apps.",
+      "article": "https://blitzmetrics.com/knowledge-system-maintenance",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=conduct-first-portability-review-of-blog-posting-guidelines#task-conduct-first-portability-review-of-blog-posting-guidelines",
+      "status": "gap",
+      "contentSha256": "7e4ff309e91ab3e8b48b322a380398edf9abba5b5db95e27ad07ed8a84e90887"
+    },
+    {
+      "slug": "configure-and-verify-recurring-agent-job",
+      "title": "Configure and verify a recurring agent job",
+      "description": "A task on a calendar has not done the work yet.",
+      "article": "https://blitzmetrics.com/persistent-agents/",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=configure-and-verify-recurring-agent-job#task-configure-and-verify-recurring-agent-job",
+      "status": "needs-work",
+      "contentSha256": "a766db9513f8dd4baaca1a12f74accf9162c3b8e1ef6ad6bb6d325464b6fd96a"
+    },
+    {
+      "slug": "configure-https-with-no-mixed-content",
+      "title": "Configure HTTPS With No Mixed Content",
+      "description": "Make your site use a secure web link. Check that its pictures, forms and pages still work.",
+      "article": "https://blitzmetrics.com/digital-plumbing",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=configure-https-with-no-mixed-content#task-configure-https-with-no-mixed-content",
+      "status": "needs-work",
+      "contentSha256": "4836d26ba60be9e0da299e83a2a911685d2b9fcba83003cdca9895c9944dea94"
+    },
+    {
+      "slug": "configure-spf-dkim-dmarc-for-deliverability",
+      "title": "Configure SPF/DKIM/DMARC for Deliverability",
+      "description": "Help real mail from your business pass sender checks. Test each mail service you use.",
+      "article": null,
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=configure-spf-dkim-dmarc-for-deliverability#task-configure-spf-dkim-dmarc-for-deliverability",
+      "status": "needs-work",
+      "contentSha256": "ed38403ca013b2bd1cca6eae61f21d8d895377c76437329a3b87dc9b1182e001"
+    },
+    {
+      "slug": "content-strategy-90-greatest-hits-10-new",
+      "title": "Content Strategy (90% Greatest Hits, 10% New)",
+      "description": "Get more from content that has worked well.",
+      "article": "https://blitzmetrics.com/9-triangles-framework-scalable-home-service-businesses/",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=content-strategy-90-greatest-hits-10-new#task-content-strategy-90-greatest-hits-10-new",
+      "status": "complete",
+      "contentSha256": "be21ca181e05f6de8e71fae993efe9f80e5653d3437f8b33f36a12e84eb32151"
+    },
+    {
+      "slug": "convert-instagram-to-professional-account",
+      "title": "Convert Instagram to Professional Account",
+      "description": "Set up the right Instagram account type for your work. Check the public profile and its tools.",
+      "article": "https://blitzmetrics.com/digital-plumbing",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=convert-instagram-to-professional-account#task-convert-instagram-to-professional-account",
+      "status": "needs-work",
+      "contentSha256": "954c7d47ffa2cdc69d60b5d34f38e13746be07db2d6fc55fb7dbebfa87f13650"
+    },
+    {
+      "slug": "coordinate-agents-with-shared-memory",
+      "title": "Coordinate agents with shared memory",
+      "description": "Two AI workers should not undo each other’s work.",
+      "article": "https://blitzmetrics.com/set-up-cross-agent-shared-memory/",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=coordinate-agents-with-shared-memory#task-coordinate-agents-with-shared-memory",
+      "status": "needs-work",
+      "contentSha256": "1ad0ff2fbabcde11d394629844b616fcfde365336887de40a8d78ff067e130f7"
+    },
+    {
+      "slug": "create-a-3-minute-why-video",
+      "title": "Create a 3-minute WHY video",
+      "description": "Tell the true story behind your work in a short video. Help a new viewer see who you serve and why.",
+      "article": "https://blitzmetrics.com/social-amplification",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=create-a-3-minute-why-video#task-create-a-3-minute-why-video",
+      "status": "complete",
+      "contentSha256": "8658ff0b6f5c70715ec5015df4f42c0953c8f88469cccc2e352d71acb7f11185"
+    },
+    {
+      "slug": "create-a-3x3-video-grid",
+      "title": "Create a 3×3 video grid",
+      "description": "Plan nine videos across three topics. Give each one a clear purpose and a place in your content plan.",
+      "article": "https://blitzmetrics.com/social-amplification",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=create-a-3x3-video-grid#task-create-a-3x3-video-grid",
+      "status": "complete",
+      "contentSha256": "49d9112d02550a2103632dcae45b2096607b8cbe7f0c91d1199299f9af6e3511"
+    },
+    {
+      "slug": "create-and-send-thank-you-machine-videos",
+      "title": "Create and send Thank You Machine videos",
+      "description": "Make a short, real thank-you. Send or share it only in the way the job calls for.",
+      "article": "https://blitzmetrics.com/thank-you-machine",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=create-and-send-thank-you-machine-videos#task-create-and-send-thank-you-machine-videos",
+      "status": "complete",
+      "contentSha256": "41309ab3a40400585da5affeb78b80abedbfa9cc51cbfe481579bb74a86d8415"
+    },
+    {
+      "slug": "create-clear-conversion-path",
+      "title": "Create Clear Conversion Path",
+      "description": "Help a visitor take the next useful step. Make the path clear and check where the request lands.",
+      "article": "https://blitzmetrics.com/digital-plumbing",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=create-clear-conversion-path#task-create-clear-conversion-path",
+      "status": "needs-work",
+      "contentSha256": "df3c43b2d527ab41df915f678384a2bc8fd98ab2f5c6761e1731871850fb3143"
+    },
+    {
+      "slug": "create-collaborative-content-with-industry-peers",
+      "title": "Create collaborative content with industry peers",
+      "description": "Make one useful piece with someone whose work fits yours.",
+      "article": "https://blitzmetrics.com/personal-brand",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=create-collaborative-content-with-industry-peers#task-create-collaborative-content-with-industry-peers",
+      "status": "needs-work",
+      "contentSha256": "8e6195feecb9e3b7f7eb8487d3930fad4baf77b7030463ce4ca2af9e7b9800e5"
+    },
+    {
+      "slug": "create-dollar-a-day-ad-creatives",
+      "title": "Create Dollar a Day ad creatives",
+      "description": "Turn a useful post into an ad file. Keep its true message and show what test it is ready for.",
+      "article": null,
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=create-dollar-a-day-ad-creatives#task-create-dollar-a-day-ad-creatives",
+      "status": "needs-work",
+      "contentSha256": "da49b89c71ebf4c108eaa45d4ac322bed719c4220207f794b80dcfa66c1666fd"
+    },
+    {
+      "slug": "create-dollar-a-day-ad-creatives-from-best-content",
+      "title": "Create Dollar a Day ad creatives from best content",
+      "description": "Use your best past content to plan the next small ad test.",
+      "article": "https://blitzmetrics.com/personal-brand",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=create-dollar-a-day-ad-creatives-from-best-content#task-create-dollar-a-day-ad-creatives-from-best-content",
+      "status": "needs-work",
+      "contentSha256": "5f07be7be518a9f8a2b36f717997623a83e42502d3c7a081ec5b1c80eaba7c0a"
+    },
+    {
+      "slug": "create-facebook-instagram-campaigns-with-location-targeting",
+      "title": "Create Facebook/Instagram campaigns with location targeting",
+      "description": "Set up a small local ad test with the right post, place, cost and end date.",
+      "article": "https://blitzmetrics.com/dad",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=create-facebook-instagram-campaigns-with-location-targeting#task-create-facebook-instagram-campaigns-with-location-targeting",
+      "status": "needs-work",
+      "contentSha256": "edf1d336b025d251c36d0875c4dc9787080dd96d66d8fde42abda9ad028ac9a4"
+    },
+    {
+      "slug": "create-knowledge-capture-note-template-and-distribute",
+      "title": "Create Knowledge Capture Note template and distribute",
+      "description": "A lesson form helps only if your team can find and use it.",
+      "article": "https://blitzmetrics.com/knowledge-system-maintenance",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=create-knowledge-capture-note-template-and-distribute#task-create-knowledge-capture-note-template-and-distribute",
+      "status": "gap",
+      "contentSha256": "04b4ba61d3d9ebe0a2c9d1744e5fc4fbfed88b2769482b758bf8e52fbccf2229"
+    },
+    {
+      "slug": "create-linkedin-page-matching-business-entity",
+      "title": "Create LinkedIn Page Matching Business Entity",
+      "description": "Give your business the right LinkedIn Page. Check its name, facts, links and account control.",
+      "article": "https://blitzmetrics.com/digital-plumbing",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=create-linkedin-page-matching-business-entity#task-create-linkedin-page-matching-business-entity",
+      "status": "needs-work",
+      "contentSha256": "223033940d2b65c48dc995053b3fba0767e64f33ac54628ea6da8d7f972c5060"
+    },
+    {
+      "slug": "create-new-saved-audiences-from-audience-insights",
+      "title": "Create new saved audiences from Audience Insights",
+      "description": "Use real audience reports to plan a new test. Save clear settings and keep their limits visible.",
+      "article": "https://blitzmetrics.com/social-amplification",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=create-new-saved-audiences-from-audience-insights#task-create-new-saved-audiences-from-audience-insights",
+      "status": "needs-work",
+      "contentSha256": "acbc6ace7f08b61baf9bbf72ef418e7c828f62b66e13e8f513c43153ba40de55"
+    },
+    {
+      "slug": "create-or-update-a-definitive-article",
+      "title": "Create or update a definitive task article",
+      "description": "Build one clear guide for a real task. Show how to do it, check it, and pass the result on.",
+      "article": "https://blitzmetrics.com/definitive-article-guide/",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=create-or-update-a-definitive-article#task-create-or-update-a-definitive-article",
+      "status": "needs-work",
+      "contentSha256": "68e1070c44ee2864a24501849231723d8413569ec37fed3fddb19d6b5378c308"
+    },
+    {
+      "slug": "create-quote-cards-from-strongest-statements",
+      "title": "Create quote cards from strongest statements",
+      "description": "Put a true quote on a clear card. Keep the speaker’s words and name easy to read.",
+      "article": null,
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=create-quote-cards-from-strongest-statements#task-create-quote-cards-from-strongest-statements",
+      "status": "needs-work",
+      "contentSha256": "c9a53e7e9fbd9727ca3a9eaa4ff9b14badd0a6bd901c5fa6bfa79ae1d625acf0"
+    },
+    {
+      "slug": "create-shared-location-for-sop-amendment-proposals",
+      "title": "Create shared location for task guide Amendment Proposals",
+      "description": "Good fixes get lost when they stay in chat.",
+      "article": "https://blitzmetrics.com/knowledge-system-maintenance",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=create-shared-location-for-sop-amendment-proposals#task-create-shared-location-for-sop-amendment-proposals",
+      "status": "gap",
+      "contentSha256": "7193245c65cde48cf2c2fe86fb83f977774df2602d06ed6f262539be05f2ce8d"
+    },
+    {
+      "slug": "create-social-content-from-video-clips",
+      "title": "Create social content from video clips",
+      "description": "Make short clips from your real videos.",
+      "article": "https://blitzmetrics.com/personal-brand",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=create-social-content-from-video-clips#task-create-social-content-from-video-clips",
+      "status": "needs-work",
+      "contentSha256": "1c6199098337fcf92f45fa082438893418e3c7d77e100dadf3579eecbfe9c728"
+    },
+    {
+      "slug": "create-social-media-posts-per-platform",
+      "title": "Create social media posts per platform",
+      "description": "Turn one useful idea into posts for the channels you use. Match the words and media to each place.",
+      "article": null,
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=create-social-media-posts-per-platform#task-create-social-media-posts-per-platform",
+      "status": "needs-work",
+      "contentSha256": "1f5bf46559924e50309a244e69c135e63c9f39821f0f17afff16747a0391eb43"
+    },
+    {
+      "slug": "create-sop-amendment-proposal-500-words",
+      "title": "Create task guide Amendment Proposal (≤500 words)",
+      "description": "If a guide keeps causing trouble, write down the fix.",
+      "article": "https://blitzmetrics.com/knowledge-system-maintenance",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=create-sop-amendment-proposal-500-words#task-create-sop-amendment-proposal-500-words",
+      "status": "complete",
+      "contentSha256": "76b33f75851d72f7c76d67d820eaf68803d859a11a1962f170d4ce4acb3b8f0d"
+    },
+    {
+      "slug": "create-xml-sitemap-and-reference-in-robots-txt",
+      "title": "Create XML Sitemap and Reference in robots.txt",
+      "description": "Make a page list that search tools can read. Check that it lists the right public pages.",
+      "article": null,
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=create-xml-sitemap-and-reference-in-robots-txt#task-create-xml-sitemap-and-reference-in-robots-txt",
+      "status": "needs-work",
+      "contentSha256": "4c1704b128beb4fbc3e4f95c7bf9d39c4a52f606b8d65d2acac5c7076d2690ef"
+    },
+    {
+      "slug": "create-youtube-campaigns-using-aducate-model",
+      "title": "Create YouTube campaigns using ADUCATE model",
+      "description": "Use a helpful video in a small ad test. Check the cost, views and next step.",
+      "article": "https://blitzmetrics.com/dad",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=create-youtube-campaigns-using-aducate-model#task-create-youtube-campaigns-using-aducate-model",
+      "status": "needs-work",
+      "contentSha256": "aa7c5896c8a5179ab65061436105ddbbbcb5ee04f389cd848af0a1b0ea273f2d"
+    },
+    {
+      "slug": "deliver-personal-brand-site-from-request",
+      "title": "Deliver a personal-brand site from a request",
+      "description": "Build a site from the owner’s real request.",
+      "article": "https://blitzmetrics.com/from-one-email-to-a-live-personal-brand-site/",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=deliver-personal-brand-site-from-request#task-deliver-personal-brand-site-from-request",
+      "status": "needs-work",
+      "contentSha256": "c920ba62190b3d8f236b4938ea1ef0c9bb0f3ad67435473eba06e512944c71b0"
+    },
+    {
+      "slug": "document-a-task",
+      "title": "Document a task",
+      "description": "Your team should be able to repeat good work without guessing.",
+      "article": "https://blitzmetrics.com/how-to-document-a-task/",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=document-a-task#task-document-a-task",
+      "status": "needs-work",
+      "contentSha256": "7a2f198046521e5177f1106f5baa029993160ccff6ad350c347b8773690da2f0"
+    },
+    {
+      "slug": "email-and-dm-client-about-published-article",
+      "title": "Email and DM client about published article",
+      "description": "Tell the client their article is live. Send the right links and one clear next step.",
+      "article": "https://localservicespotlight.com/article-guidelines/",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=email-and-dm-client-about-published-article#task-email-and-dm-client-about-published-article",
+      "status": "complete",
+      "contentSha256": "e7f501a66ce400049c99f952e1fa63774c3a0cf285af50fac8985b8ccbb273c6"
+    },
+    {
+      "slug": "enable-youtube-captions-by-default",
+      "title": "Enable YouTube captions by default",
+      "description": "Ask the YouTube player to show its real captions. Keep the page silent when it first opens.",
+      "article": "https://blitzmetrics.com/youtube-captions-on-by-default/",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=enable-youtube-captions-by-default#task-enable-youtube-captions-by-default",
+      "status": "needs-work",
+      "contentSha256": "d01b1e508ff43a9db85662967957592b4767aa2487342d5cd5ae5abe933d0b04"
+    },
+    {
+      "slug": "engage-with-social-comments",
+      "title": "Engage with social comments",
+      "description": "Give useful replies to real questions. Track what needs help and what can become a new topic.",
+      "article": null,
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=engage-with-social-comments#task-engage-with-social-comments",
+      "status": "needs-work",
+      "contentSha256": "7a7d03c7da1b93f26153b9be4b9cc091555141d4a70e2b3de3f91e1b7ff6c50b"
+    },
+    {
+      "slug": "enhance-existing-articles-before-creating-new-ones",
+      "title": "Enhance existing articles before creating new ones",
+      "description": "Make your best page more useful before you write a rival to it.",
+      "article": "https://blitzmetrics.com/seo-tree",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=enhance-existing-articles-before-creating-new-ones#task-enhance-existing-articles-before-creating-new-ones",
+      "status": "complete",
+      "contentSha256": "7c8f71e5e212ca30842594c23beedd07b71b8027d1a8270c2066049114319655"
+    },
+    {
+      "slug": "ensure-nap-consistency-across-platforms",
+      "title": "Ensure NAP Consistency Across Platforms",
+      "description": "Check your name, place and phone on the web. Fix old facts so people can reach you.",
+      "article": "https://blitzmetrics.com/digital-plumbing",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=ensure-nap-consistency-across-platforms#task-ensure-nap-consistency-across-platforms",
+      "status": "needs-work",
+      "contentSha256": "6ba6f921c9a8850e9a4dc55c7221d7ed3c50ab80428ca6ff25e44146118e38f3"
+    },
+    {
+      "slug": "ensure-no-stock-images-used",
+      "title": "Ensure no stock images used",
+      "description": "Use real proof and honest visuals on the site. Find stock stand-ins and photos whose source is not known.",
+      "article": "https://blitzmetrics.com/website-qa-audit",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=ensure-no-stock-images-used#task-ensure-no-stock-images-used",
+      "status": "complete",
+      "contentSha256": "9f68b4eae6092e8c3126e9313e55cc5e89ed2b2bbe0a8082563abdb742b87512"
+    },
+    {
+      "slug": "ensure-no-text-only-sections-spanning-full-viewport",
+      "title": "Ensure no text-only sections spanning full viewport",
+      "description": "Break up long walls of text with useful visuals. Check that the page is clear on a phone too.",
+      "article": "https://blitzmetrics.com/website-qa-audit",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=ensure-no-text-only-sections-spanning-full-viewport#task-ensure-no-text-only-sections-spanning-full-viewport",
+      "status": "complete",
+      "contentSha256": "e74cba67851d6eedf506eb02c7b03b9d42e81e2b40e2d0431e9b00b16d94c631"
+    },
+    {
+      "slug": "ensure-proper-dns-records",
+      "title": "Ensure Proper DNS Records",
+      "description": "Check the records that route your website and email. Fix the wrong ones and keep a clear change log.",
+      "article": null,
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=ensure-proper-dns-records#task-ensure-proper-dns-records",
+      "status": "needs-work",
+      "contentSha256": "c62028b89b16100a0a6c608a2a91d4b4b76c3d5420756c3acf09e036abaa09df"
+    },
+    {
+      "slug": "ensure-robots-meta-not-blocking-indexing",
+      "title": "Ensure Robots Meta Not Blocking Indexing",
+      "description": "Check that public pages can be found by search tools. Keep private pages out on purpose.",
+      "article": null,
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=ensure-robots-meta-not-blocking-indexing#task-ensure-robots-meta-not-blocking-indexing",
+      "status": "needs-work",
+      "contentSha256": "280260d7d3079eab7e5ba7acf104d8f1041f899c4ea8eb9ae15b1ec0bac9e3ed"
+    },
+    {
+      "slug": "ensure-robots-meta-not-blocking-indexing--qa-audit",
+      "title": "Ensure robots meta not blocking indexing",
+      "description": "Check that public pages can be read by search engines. Keep private pages private.",
+      "article": "https://blitzmetrics.com/website-qa-audit",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=ensure-robots-meta-not-blocking-indexing--qa-audit#task-ensure-robots-meta-not-blocking-indexing--qa-audit",
+      "status": "complete",
+      "contentSha256": "1421d932d71c9abe3d9ea2b88d4975ccca34d06da2c8826c3372305f6814c39d"
+    },
+    {
+      "slug": "ensure-site-loads-under-3-seconds-on-mobile",
+      "title": "Ensure Site Loads Under 3 Seconds on Mobile",
+      "description": "Find what slows your site on a phone. Make a small fix and check the result.",
+      "article": "https://blitzmetrics.com/digital-plumbing",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=ensure-site-loads-under-3-seconds-on-mobile#task-ensure-site-loads-under-3-seconds-on-mobile",
+      "status": "needs-work",
+      "contentSha256": "90a391902b9dbc10bf3085f733b12933193e174525ed0e9a1a960e0c687ec65f"
+    },
+    {
+      "slug": "ensure-working-contact-form-delivers-notifications",
+      "title": "Ensure Working Contact Form Delivers Notifications",
+      "description": "Check that a form sends the right request to the right person. Keep proof from both ends.",
+      "article": "https://blitzmetrics.com/digital-plumbing",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=ensure-working-contact-form-delivers-notifications#task-ensure-working-contact-form-delivers-notifications",
+      "status": "needs-work",
+      "contentSha256": "8b2a4d0739d80e35896efe43b6dc05e6a13e3fa9d836b370baade3737d4fb456"
+    },
+    {
+      "slug": "establish-entity-identity",
+      "title": "Establish entity identity",
+      "description": "Make it clear which person a page is about.",
+      "article": "https://blitzmetrics.com/knowledge-panel",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=establish-entity-identity#task-establish-entity-identity",
+      "status": "needs-work",
+      "contentSha256": "5d58408d53752150cc31607c244cf56008e42f59b92bf50b9474fb7dfa384716"
+    },
+    {
+      "slug": "execute-switch-boost-to-target-new-audiences",
+      "title": "Execute switch boost to target new audiences",
+      "description": "Try a strong post with a new group. Keep the old proof and the new test easy to track.",
+      "article": "https://blitzmetrics.com/dad",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=execute-switch-boost-to-target-new-audiences#task-execute-switch-boost-to-target-new-audiences",
+      "status": "needs-work",
+      "contentSha256": "fbc9caf1a5aa6d191bb619c406b1ea26c524d180f808a7d3a1df126390b97bd5"
+    },
+    {
+      "slug": "execute-switch-boosts-to-new-audiences",
+      "title": "Execute switch boosts to new audiences",
+      "description": "Test a proven post with a new group. Keep the old test clear and the new cost small.",
+      "article": "https://blitzmetrics.com/dad",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=execute-switch-boosts-to-new-audiences#task-execute-switch-boosts-to-new-audiences",
+      "status": "needs-work",
+      "contentSha256": "e422fa3a255b1197158abb76aeb0fbb8d9d0a168a05b3f77d0a19da70b8d9f0f"
+    },
+    {
+      "slug": "extract-15-60-second-clips-from-long-form-video",
+      "title": "Extract 15–60 second clips from long-form video",
+      "description": "Cut one useful idea from a long video. Give it clear captions and a link to the source.",
+      "article": null,
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=extract-15-60-second-clips-from-long-form-video#task-extract-15-60-second-clips-from-long-form-video",
+      "status": "needs-work",
+      "contentSha256": "c34210d30064ffd688a37b6ded70612c3833376427e70cefd8618ec96d0e9452"
+    },
+    {
+      "slug": "film-casual-team-conversations",
+      "title": "Film casual team conversations",
+      "description": "Film a real team talk that helps others learn. Mark parts to cut before you pass the file on.",
+      "article": null,
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=film-casual-team-conversations#task-film-casual-team-conversations",
+      "status": "needs-work",
+      "contentSha256": "71bf62332b8250a992ef11da6877307fab475394750d1bb0e084a7dcad8efd59"
+    },
+    {
+      "slug": "film-conference-presentations",
+      "title": "Film conference presentations",
+      "description": "Film a talk with the host’s go-ahead. Save the files and clear notes for the next person.",
+      "article": null,
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=film-conference-presentations#task-film-conference-presentations",
+      "status": "needs-work",
+      "contentSha256": "45a25b230b5df43913331236ec4841d9d13980580820afe6f8968a0ab70ad194"
+    },
+    {
+      "slug": "fit-every-new-piece-into-the-tree-structure",
+      "title": "Fit every new piece into the tree structure",
+      "description": "Help each new page lead readers to the next useful step.",
+      "article": "https://blitzmetrics.com/seo-tree",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=fit-every-new-piece-into-the-tree-structure#task-fit-every-new-piece-into-the-tree-structure",
+      "status": "complete",
+      "contentSha256": "f4943b8e5da90e334a2a8572a02d9fc768149c54c1e5058e43b0caa4361691eb"
+    },
+    {
+      "slug": "follow-entity-linking-decision-tree",
+      "title": "Follow entity linking decision tree",
+      "description": "Help readers reach the right person, business or guide.",
+      "article": "https://blitzmetrics.com/entity-linking/",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=follow-entity-linking-decision-tree#task-follow-entity-linking-decision-tree",
+      "status": "complete",
+      "contentSha256": "ad46ab49887c925c4c3dd6fa3b821440ac6f73630b2977ef47835355e987cc3f"
+    },
+    {
+      "slug": "funnel-levels-audience-engagement-conversion",
+      "title": "Funnel levels (Audience, Engagement, Conversion)",
+      "description": "Judge each piece of marketing by the job it should do.",
+      "article": "https://blitzmetrics.com/9-triangles-framework-scalable-home-service-businesses/",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=funnel-levels-audience-engagement-conversion#task-funnel-levels-audience-engagement-conversion",
+      "status": "complete",
+      "contentSha256": "bcea49fff260ff8a3749ef440d7616aec5e8a810eb50031d5c18a5d2bbdc4dfe"
+    },
+    {
+      "slug": "gct-goals-content-targeting",
+      "title": "GCT (Goals, Content, Targeting)",
+      "description": "Make sure your team knows what its work should achieve and who it should help.",
+      "article": "https://blitzmetrics.com/9-triangles-framework-scalable-home-service-businesses/",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=gct-goals-content-targeting#task-gct-goals-content-targeting",
+      "status": "complete",
+      "contentSha256": "1bbd4ac01fbf8ce3dfdd6791d228fc465c0b1d802e3b201a8a22a59109aa650a"
+    },
+    {
+      "slug": "generate-backlinks-and-entity-mentions",
+      "title": "Generate backlinks and entity mentions",
+      "description": "Help readers find your work from places they already use.",
+      "article": "https://blitzmetrics.com/personal-brand",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=generate-backlinks-and-entity-mentions#task-generate-backlinks-and-entity-mentions",
+      "status": "needs-work",
+      "contentSha256": "1310ca5ef42ac2dce1de68771a5a1099d0e889b291a443f43671fa5d521d9a14"
+    },
+    {
+      "slug": "generate-knowledge-capture-note-within-24-hours",
+      "title": "Generate Knowledge Capture Note within 24 hours",
+      "description": "Save one real lesson in a short note while the facts are fresh.",
+      "article": "https://blitzmetrics.com/knowledge-system-maintenance",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=generate-knowledge-capture-note-within-24-hours#task-generate-knowledge-capture-note-within-24-hours",
+      "status": "needs-work",
+      "contentSha256": "4dac5fe559a6f753f47cd12c1d38b5904a2fc01b222a7d7ef324da73d119b519"
+    },
+    {
+      "slug": "get-featured-on-podcasts",
+      "title": "Get featured on podcasts",
+      "description": "Share your useful work with people who listen to the right shows.",
+      "article": "https://blitzmetrics.com/personal-brand",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=get-featured-on-podcasts#task-get-featured-on-podcasts",
+      "status": "needs-work",
+      "contentSha256": "b80e0c19c04008e3919d973a63d1b773cbd98c6922941c576ee0ac978426cb94"
+    },
+    {
+      "slug": "get-mentioned-in-publications",
+      "title": "Get mentioned in publications",
+      "description": "Help the right readers learn from your real work.",
+      "article": null,
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=get-mentioned-in-publications#task-get-mentioned-in-publications",
+      "status": "needs-work",
+      "contentSha256": "27460e9510c6601059637226f1a5744cdd0d7d78f300e4ca6d6c6d3939ece1db"
+    },
+    {
+      "slug": "google-ads-analyzer",
+      "title": "Google Ads Analyzer (weekly MAA)",
+      "description": "Turn a local service business's Google Ads data into a short weekly report (Metrics, Analysis, Action) that a project lead can act on, drafted under evidence rules and checked by a second agent before anyone sees it; trigger on \"do the MAA for [client]\", \"weekly Google Ads MAA\", \"analyze my Google A",
+      "article": null,
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=google-ads-analyzer#task-google-ads-analyzer",
+      "status": "complete",
+      "contentSha256": "2c45234a980f2da0b6d881d6c1b3723fab0a2fc871b3ccd5d4811e697354634b"
+    },
+    {
+      "slug": "grade-article-using-jennifer",
+      "title": "Grade article using Jennifer",
+      "description": "Check the words and proof in a draft. List what needs a fix.",
+      "article": null,
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=grade-article-using-jennifer#task-grade-article-using-jennifer",
+      "status": "gap",
+      "contentSha256": "524a3aeda82c049f45c827e35e26a3934a6458ef35beda93fc4d83b4c02d7dc1"
+    },
+    {
+      "slug": "how-to-configure-ga4-with-internal-traffic-filtering",
+      "title": "Write or Repair the GA4 Setup Guide",
+      "description": "Write clear steps for clean website counts. Use this when the team needs a checked GA4 setup guide.",
+      "article": null,
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=how-to-configure-ga4-with-internal-traffic-filtering#task-how-to-configure-ga4-with-internal-traffic-filtering",
+      "status": "gap",
+      "contentSha256": "69d56f8884923d9795d147b0842406174465230caa404d2fd2d52e1ed253a204"
+    },
+    {
+      "slug": "how-to-convert-third-person-copy-to-first-person",
+      "title": "Write or Repair the First-Person Copy Guide",
+      "description": "Show how to write in the right voice. Use this when a personal site needs a clear copy guide.",
+      "article": null,
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=how-to-convert-third-person-copy-to-first-person#task-how-to-convert-third-person-copy-to-first-person",
+      "status": "gap",
+      "contentSha256": "f61187a3bc8aed3013809ba99eeb74b7d1d49ff3711064d211ae804a8ba894aa"
+    },
+    {
+      "slug": "how-to-grade-an-article-using-jennifer",
+      "title": "Write or Repair the Jennifer Review Guide",
+      "description": "Write clear steps for a draft review. Use this when the team needs to check a Jennifer grade.",
+      "article": null,
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=how-to-grade-an-article-using-jennifer#task-how-to-grade-an-article-using-jennifer",
+      "status": "gap",
+      "contentSha256": "ed4c31ea5dd66a21f361f6cc87d88cc7f11c454c6dee608f7fe0ea44760b5bda"
+    },
+    {
+      "slug": "how-to-install-and-configure-gtm",
+      "title": "Write or Repair the Tag Manager Guide",
+      "description": "Write clear steps for site tags. Use this when the team needs a checked Tag Manager guide.",
+      "article": null,
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=how-to-install-and-configure-gtm#task-how-to-install-and-configure-gtm",
+      "status": "gap",
+      "contentSha256": "4c571b7bb5203886b7a8149783743949043f30a16569d192da61e6ac998d435c"
+    },
+    {
+      "slug": "how-to-inventory-a-podcast-on-youtube",
+      "title": "How to inventory a podcast on YouTube",
+      "description": "List the talks and interviews on a YouTube channel. Find the useful sources your team can use next.",
+      "article": "https://blitzmetrics.com/how-to-inventory-a-podcast-on-youtube/",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=how-to-inventory-a-podcast-on-youtube#task-how-to-inventory-a-podcast-on-youtube",
+      "status": "complete",
+      "contentSha256": "9905d9461a1a4a6012ed791e39c10a9a644690142b8e795f2aec6433a0b3b5e5"
+    },
+    {
+      "slug": "how-to-inventory-every-podcast-youve-been-on-and-why-its-one-of-the-highest-roi-things-you-can-do",
+      "title": "How to inventory every podcast you've been on",
+      "description": "Bring your podcast visits into one checked list. Keep one row for each real appearance.",
+      "article": "https://blitzmetrics.com/how-to-inventory-every-podcast-youve-been-on-and-why-its-one-of-the-highest-roi-things-you-can-do/",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=how-to-inventory-every-podcast-youve-been-on-and-why-its-one-of-the-highest-roi-things-you-can-do#task-how-to-inventory-every-podcast-youve-been-on-and-why-its-one-of-the-highest-roi-things-you-can-do",
+      "status": "complete",
+      "contentSha256": "27cf3ec5b14dbacca5d5f8b1ea93bd67e7cf01507acca1dd7ae069455c2f45b8"
+    },
+    {
+      "slug": "how-to-map-your-seo-tree-from-scratch",
+      "title": "Write or Repair the SEO Tree Mapping Guide",
+      "description": "Show how pages fit together. Use this when the team needs clear steps to map a website.",
+      "article": null,
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=how-to-map-your-seo-tree-from-scratch#task-how-to-map-your-seo-tree-from-scratch",
+      "status": "gap",
+      "contentSha256": "20e6c786a80b960f44c84cccbd4650335c111eb6e579f03e4cd7915be8c1da30"
+    },
+    {
+      "slug": "how-to-process-videos-via-marketscale",
+      "title": "Write or Repair the MarketScale Video Guide",
+      "description": "Write clear steps for the chosen video tool. Use this when the team needs a MarketScale guide.",
+      "article": null,
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=how-to-process-videos-via-marketscale#task-how-to-process-videos-via-marketscale",
+      "status": "gap",
+      "contentSha256": "a3eb24437e4e0264b2328d2cf2b5de1185b171e9bb718ccafb9f6d37bfa4dbde"
+    },
+    {
+      "slug": "how-to-run-the-ai-business-audit",
+      "title": "Write or Repair the AI Business Audit Guide",
+      "description": "Write clear steps to check a business online. Use this when the team needs a repeatable audit guide.",
+      "article": null,
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=how-to-run-the-ai-business-audit#task-how-to-run-the-ai-business-audit",
+      "status": "gap",
+      "contentSha256": "1034a41804bc93567bb84de01e817eca0b8c997a4329a17e19e3ba1fd87ac821"
+    },
+    {
+      "slug": "how-to-set-up-schema-markup-for-personal-brand-site",
+      "title": "Write or Repair the Person Schema Guide",
+      "description": "Show how to label a person’s site clearly. Use this when the team needs a checked schema guide.",
+      "article": null,
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=how-to-set-up-schema-markup-for-personal-brand-site#task-how-to-set-up-schema-markup-for-personal-brand-site",
+      "status": "gap",
+      "contentSha256": "716385f35b72461bb49d1cd3d9617f9585e5de82dc79c8f8f7a1e7ea893b7b2b"
+    },
+    {
+      "slug": "how-we-use-listen-notes-to-find-track-and-repurpose-every-podcast-appearance",
+      "title": "How we use Listen Notes to find, track, and repurpose every podcast appearance",
+      "description": "Use Listen Notes to find podcast leads. Check each match before it goes in your main list.",
+      "article": "https://blitzmetrics.com/how-we-use-listen-notes-to-find-track-and-repurpose-every-podcast-appearance/",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=how-we-use-listen-notes-to-find-track-and-repurpose-every-podcast-appearance#task-how-we-use-listen-notes-to-find-track-and-repurpose-every-podcast-appearance",
+      "status": "complete",
+      "contentSha256": "93d1801779e3e5158832e35078398ddc60a52cf50fc43c8d16beff9816781fbe"
+    },
+    {
+      "slug": "how-we-use-podchaser-to-amplify-authority-and-repurpose-podcast-content",
+      "title": "How we use Podchaser to amplify authority and repurpose podcast content",
+      "description": "Check the podcast credits listed for a person. Keep real roles and remove false matches from your work list.",
+      "article": "https://blitzmetrics.com/how-we-use-podchaser-to-amplify-authority-and-repurpose-podcast-content/",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=how-we-use-podchaser-to-amplify-authority-and-repurpose-podcast-content#task-how-we-use-podchaser-to-amplify-authority-and-repurpose-podcast-content",
+      "status": "complete",
+      "contentSha256": "7af2550bba7183cff013f7511d982e16648d7ea10988ee0fd546649185859e01"
+    },
+    {
+      "slug": "identify-and-eliminate-orphan-standalone-articles",
+      "title": "Identify and eliminate orphan/standalone articles",
+      "description": "Help readers find useful pages that your site has left out.",
+      "article": "https://blitzmetrics.com/seo-tree",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=identify-and-eliminate-orphan-standalone-articles#task-identify-and-eliminate-orphan-standalone-articles",
+      "status": "needs-work",
+      "contentSha256": "1ea04793e4780b6ba515f01f231826ef01363d814d9bf2999d1447154550bf32"
+    },
+    {
+      "slug": "identify-signals-worth-amplifying",
+      "title": "Identify signals worth amplifying",
+      "description": "Find posts that helped people. Use that proof to choose what to boost.",
+      "article": "https://blitzmetrics.com/dad",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=identify-signals-worth-amplifying#task-identify-signals-worth-amplifying",
+      "status": "complete",
+      "contentSha256": "8aa73c17d688ccc32972a4f55c6fbc3c21e526da54d74818ca0a4deb851afb57"
+    },
+    {
+      "slug": "identify-thank-you-triggers",
+      "title": "Find a Real Reason to Say Thanks",
+      "description": "Use a real good deed to plan a clear thank-you. Start when someone has helped you or your team.",
+      "article": "https://blitzmetrics.com/thank-you-machine",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=identify-thank-you-triggers#task-identify-thank-you-triggers",
+      "status": "complete",
+      "contentSha256": "3b4f2f4c18637df8c958970fd627ab7adec3299842453070fcb83f413893b3b5"
+    },
+    {
+      "slug": "implement-person-schema-with-sameas-links",
+      "title": "Implement Person schema with sameAs links",
+      "description": "Help search tools tell which profiles belong to you.",
+      "article": "https://blitzmetrics.com/personal-brand",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=implement-person-schema-with-sameas-links#task-implement-person-schema-with-sameas-links",
+      "status": "needs-work",
+      "contentSha256": "03662987243dc4a32ade9e11dd52264329d7dc503e86f9a203b4987d902aff5a"
+    },
+    {
+      "slug": "implement-technical-schema-markup",
+      "title": "Implement technical schema markup",
+      "description": "Keep the facts on your site clear as your work changes.",
+      "article": "https://blitzmetrics.com/knowledge-panel",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=implement-technical-schema-markup#task-implement-technical-schema-markup",
+      "status": "needs-work",
+      "contentSha256": "e44a719502d186b26a3013010597e8e271feecfa2c7354cfbff20a929b937063"
+    },
+    {
+      "slug": "install-canonical-skill-packs",
+      "title": "Install the canonical skill packs",
+      "description": "You can try one useful task before adding more tools.",
+      "article": "https://localservicespotlight.com/install/",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=install-canonical-skill-packs#task-install-canonical-skill-packs",
+      "status": "needs-work",
+      "contentSha256": "6191005c6b3c81d74e5391bb719a69762babe906d21efcdfd4b4d9e3d723b450"
+    },
+    {
+      "slug": "install-google-tag-manager-container",
+      "title": "Install Google Tag Manager Container",
+      "description": "Set up the tag box your site needs. Check the live version and each tag you mean to use.",
+      "article": null,
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=install-google-tag-manager-container#task-install-google-tag-manager-container",
+      "status": "gap",
+      "contentSha256": "7035dddfe703950c316bc25d1204fef1e5c2068fa0006e5cdd1190872f89509b"
+    },
+    {
+      "slug": "install-local-qwen",
+      "title": "Install local Qwen",
+      "description": "A local AI worker can help draft text on your Mac.",
+      "article": "https://blitzmetrics.com/install-local-qwen/",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=install-local-qwen#task-install-local-qwen",
+      "status": "needs-work",
+      "contentSha256": "60b64c41344093630ad96f1000c222c2406710ed986f5735a56e9c7224a6727d"
+    },
+    {
+      "slug": "install-meta-pixel-with-standard-events",
+      "title": "Install Meta Pixel With Standard Events",
+      "description": "Set up the Meta web tags your plan needs. Check that each real action sends the right event.",
+      "article": null,
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=install-meta-pixel-with-standard-events#task-install-meta-pixel-with-standard-events",
+      "status": "gap",
+      "contentSha256": "6d9adb6ea5cc8c51745ce01e76b4b3a343040eb08889148b171c1a169edd0c9a"
+    },
+    {
+      "slug": "keep-speaker-bureau-profile-bookable",
+      "title": "Keep speaker bureau profile bookable",
+      "description": "Give event hosts the facts they need to book your talk.",
+      "article": "https://blitzmetrics.com/speaker-kit",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=keep-speaker-bureau-profile-bookable#task-keep-speaker-bureau-profile-bookable",
+      "status": "complete",
+      "contentSha256": "58724befc52c1ac78305d8db8200cc2d951b006ac0a43bc30d445fa7e4cf1184"
+    },
+    {
+      "slug": "kill-underperformers-scale-winners",
+      "title": "Kill underperformers, scale winners",
+      "description": "Put ad funds behind results you can prove.",
+      "article": "https://blitzmetrics.com/9-triangles-framework-scalable-home-service-businesses/",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=kill-underperformers-scale-winners#task-kill-underperformers-scale-winners",
+      "status": "complete",
+      "contentSha256": "a9eae3f3094df4a9a5db775b880bfdae31e589249e4c39b64db841524300a1e6"
+    },
+    {
+      "slug": "kill-underperforming-ads",
+      "title": "Kill underperforming ads",
+      "description": "Stop ads that miss the agreed goal. Save the result so the next test can learn from it.",
+      "article": "https://blitzmetrics.com/dad",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=kill-underperforming-ads#task-kill-underperforming-ads",
+      "status": "complete",
+      "contentSha256": "b32ade65c00f290808ea96d771eb21ad039294af646b85cc986bcde633efa9cb"
+    },
+    {
+      "slug": "learn-do-teach-apprentice-model",
+      "title": "Learn, Do, Teach apprentice model",
+      "description": "Help a teammate learn a job well enough to show someone else.",
+      "article": "https://blitzmetrics.com/9-triangles-framework-scalable-home-service-businesses/",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=learn-do-teach-apprentice-model#task-learn-do-teach-apprentice-model",
+      "status": "complete",
+      "contentSha256": "d88f979b6158ca03feb417a328f26135e4f05451176604e08d13438ac012fb1f"
+    },
+    {
+      "slug": "link-all-content-back-to-personal-brand-site",
+      "title": "Link all content back to personal brand site",
+      "description": "Help readers reach the right next page from your work.",
+      "article": "https://blitzmetrics.com/personal-brand",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=link-all-content-back-to-personal-brand-site#task-link-all-content-back-to-personal-brand-site",
+      "status": "needs-work",
+      "contentSha256": "37f45d25350a55f4a096d501a77be630ef9e2417815b0e6900ccbab72c804fa6"
+    },
+    {
+      "slug": "link-leaves-to-branches-branches-to-trunk",
+      "title": "Link leaves to branches, branches to trunk",
+      "description": "Link each story to the guide or service it helps prove.",
+      "article": "https://blitzmetrics.com/seo-tree",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=link-leaves-to-branches-branches-to-trunk#task-link-leaves-to-branches-branches-to-trunk",
+      "status": "complete",
+      "contentSha256": "384702a775acadfa13841eaf4a63baf025fbd07c80d8b7263bc5511553fc833d"
+    },
+    {
+      "slug": "list-top-3-5-recommendations-for-next-7-days",
+      "title": "List top 3–5 recommendations for next 7 days",
+      "description": "Turn the week’s facts into a short work list. Give each step an owner and a clear check.",
+      "article": "https://blitzmetrics.com/social-amplification",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=list-top-3-5-recommendations-for-next-7-days#task-list-top-3-5-recommendations-for-next-7-days",
+      "status": "complete",
+      "contentSha256": "1591149abfe412816df8f5a717ecba7777345defe221e477a3600833594d5439"
+    },
+    {
+      "slug": "maa-cycle-metrics-analysis-action",
+      "title": "MAA cycle (Metrics, Analysis, Action)",
+      "description": "Turn reports into a clear next step for your team.",
+      "article": "https://blitzmetrics.com/9-triangles-framework-scalable-home-service-businesses/",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=maa-cycle-metrics-analysis-action#task-maa-cycle-metrics-analysis-action",
+      "status": "complete",
+      "contentSha256": "5efe5324b53a0d1bf51540dd1091fdbeb02d40cdea03385cf393d19bfc9a7512"
+    },
+    {
+      "slug": "maintain-canonical-honor-and-story-leaves",
+      "title": "Maintain a canonical honor and story leaves",
+      "description": "Keep one useful page about a real working bond. Link each true story to that page.",
+      "article": "https://blitzmetrics.com/one-canonical-honor/",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=maintain-canonical-honor-and-story-leaves#task-maintain-canonical-honor-and-story-leaves",
+      "status": "needs-work",
+      "contentSha256": "341bbf3a76058310f6c047a1aec070d59b7296d13d1c9e73fb756d7820b5ae64"
+    },
+    {
+      "slug": "manage-group-member-website-request",
+      "title": "Manage a group member website request",
+      "description": "Keep each member’s site request from getting lost.",
+      "article": "https://blitzmetrics.com/group-website-request-intake/",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=manage-group-member-website-request#task-manage-group-member-website-request",
+      "status": "needs-work",
+      "contentSha256": "1b83b7ccaf86bb01402e9ce7b766f1c214f26db4ffdef4ba7f6bfd3974847f47"
+    },
+    {
+      "slug": "management-communicate-iterate-delegate",
+      "title": "Management (Communicate, Iterate, Delegate)",
+      "description": "Help your team finish the right work without late surprises.",
+      "article": "https://blitzmetrics.com/9-triangles-framework-scalable-home-service-businesses/",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=management-communicate-iterate-delegate#task-management-communicate-iterate-delegate",
+      "status": "complete",
+      "contentSha256": "2f61158b73c7a39ccf27cea5540ccff6c48d533286fc7c496ea48641b1434d7d"
+    },
+    {
+      "slug": "map-content-hierarchically-root-trunk-branches-leaves",
+      "title": "Map content hierarchically (root → trunk → branches → leaves)",
+      "description": "Give readers a clear path through the pages you already have.",
+      "article": "https://blitzmetrics.com/seo-tree",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=map-content-hierarchically-root-trunk-branches-leaves#task-map-content-hierarchically-root-trunk-branches-leaves",
+      "status": "complete",
+      "contentSha256": "9d0b73998e220092e0c4205f646d7dd67560f47f1938f25342f8060c01a2cdc6"
+    },
+    {
+      "slug": "map-how-ring-methods",
+      "title": "Map HOW ring (methods)",
+      "description": "Show the topics your business knows well.",
+      "article": "https://blitzmetrics.com/topic-wheel",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=map-how-ring-methods#task-map-how-ring-methods",
+      "status": "complete",
+      "contentSha256": "16fe93d00a44e904a85a38e34c90d75eee722a4e3288c1920efe3d2362468c34"
+    },
+    {
+      "slug": "map-out-one-minute-video-topics-using-topic-wheel",
+      "title": "Map out one-minute video topics using Topic Wheel",
+      "description": "Pick what to film next. Use your offer, key topics, and true stories to make a short list.",
+      "article": "https://blitzmetrics.com/topic-wheel",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=map-out-one-minute-video-topics-using-topic-wheel#task-map-out-one-minute-video-topics-using-topic-wheel",
+      "status": "complete",
+      "contentSha256": "1896437562c644dfdb7fc7f263af7761846086ee1cb128c6d36dc3409fa44ee4"
+    },
+    {
+      "slug": "map-what-ring-specific-content",
+      "title": "Map the WHAT offer at the center",
+      "description": "Make it clear what your business sells before you plan more content.",
+      "article": "https://blitzmetrics.com/topic-wheel",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=map-what-ring-specific-content#task-map-what-ring-specific-content",
+      "status": "complete",
+      "contentSha256": "db3e5664563ddd00fbf544fde69a0b9c4397eea58ae43563c292241e1c8d8bf4"
+    },
+    {
+      "slug": "map-why-ring-core-purpose",
+      "title": "Map WHY stories in the outer ring",
+      "description": "Use real stories to show why people trust your work.",
+      "article": "https://blitzmetrics.com/topic-wheel",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=map-why-ring-core-purpose#task-map-why-ring-core-purpose",
+      "status": "complete",
+      "contentSha256": "baec055d5039ba96377b1cbad73a2b0477bc6ebc31d644f2e7dab8cf00df2275"
+    },
+    {
+      "slug": "measure-ai-citations-for-brand",
+      "title": "Measure AI citations for a brand",
+      "description": "See what AI tools say when people look for a business like yours.",
+      "article": "https://blitzmetrics.com/how-to-track-if-ai-cites-you/",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=measure-ai-citations-for-brand#task-measure-ai-citations-for-brand",
+      "status": "needs-work",
+      "contentSha256": "9bbc46304f9058a4b8301a194d3c4b7a6aed1635de32ebbbc618222ccfb669c0"
+    },
+    {
+      "slug": "measure-content-rankings-traffic-revenue",
+      "title": "Measure content → rankings → traffic → revenue",
+      "description": "See where content stops doing its job.",
+      "article": null,
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=measure-content-rankings-traffic-revenue#task-measure-content-rankings-traffic-revenue",
+      "status": "needs-work",
+      "contentSha256": "1cf1bb25ccd95b0d50375508ff9b0dfc6faa410862da2c06c1902ba2b654409a"
+    },
+    {
+      "slug": "measure-search-impressions-traffic-inbound-opportunities",
+      "title": "Measure: search impressions, traffic, inbound opportunities",
+      "description": "See whether people find your work and get in touch.",
+      "article": "https://blitzmetrics.com/knowledge-panel",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=measure-search-impressions-traffic-inbound-opportunities#task-measure-search-impressions-traffic-inbound-opportunities",
+      "status": "needs-work",
+      "contentSha256": "870599cb12c302d58b7c3a5e82a71c4fc9a7a43d21761ec8f863d3e4b545695c"
+    },
+    {
+      "slug": "onboard-agent-for-first-scoped-task",
+      "title": "Onboard an agent for its first scoped task",
+      "description": "A new AI worker needs the same clear brief as a new teammate.",
+      "article": "https://blitzmetrics.com/new-agents-start-here/",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=onboard-agent-for-first-scoped-task#task-onboard-agent-for-first-scoped-task",
+      "status": "needs-work",
+      "contentSha256": "b68bfd41fba984ff1b54e3643649a8bf29d081508a8b31b4041c0a06efbffa28"
+    },
+    {
+      "slug": "personal-efficiency-do-delegate-delete",
+      "title": "Personal Efficiency (Do, Delegate, Delete)",
+      "description": "Clear the next step for work that lands in your inbox.",
+      "article": "https://blitzmetrics.com/9-triangles-framework-scalable-home-service-businesses/",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=personal-efficiency-do-delegate-delete#task-personal-efficiency-do-delegate-delete",
+      "status": "complete",
+      "contentSha256": "3df807120173b5abda6016999ceea8fb177653da989dc33df73fa695c90e73c7"
+    },
+    {
+      "slug": "place-content-on-seo-tree-with-proper-links",
+      "title": "Place content on SEO Tree with proper links",
+      "description": "Give each page a clear home on your site. Add useful links to its main guide and related pages.",
+      "article": "https://blitzmetrics.com/seo-tree",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=place-content-on-seo-tree-with-proper-links#task-place-content-on-seo-tree-with-proper-links",
+      "status": "complete",
+      "contentSha256": "68d6db7f25a96a9b684fb6a9b89b2633bbbfd526299a67e3d310fac9a4364d1f"
+    },
+    {
+      "slug": "positive-mentions-harvester",
+      "title": "Positive Mentions Harvester",
+      "description": "Find and check praise for a person or firm.",
+      "article": "https://blitzmetrics.com/how-to-collect-organize-positive-mentions-to-build-authority/",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=positive-mentions-harvester#task-positive-mentions-harvester",
+      "status": "complete",
+      "contentSha256": "4ab3886848df80d2a111f97252729f3573800b298099014c435e23ac15560e62"
+    },
+    {
+      "slug": "post-roundup-listicle-content",
+      "title": "Post roundup/listicle content",
+      "description": "Make one helpful page from strong past posts. Link readers to the full guides they need.",
+      "article": null,
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=post-roundup-listicle-content#task-post-roundup-listicle-content",
+      "status": "needs-work",
+      "contentSha256": "b092358952884f2f1871d82d5d42c70b91a968b40d808a292482c5c3b6670725"
+    },
+    {
+      "slug": "post-to-facebook-page",
+      "title": "Post to Facebook page",
+      "description": "Share a useful article or clip from the right business Page. Check the post and save its link.",
+      "article": null,
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=post-to-facebook-page#task-post-to-facebook-page",
+      "status": "needs-work",
+      "contentSha256": "3aeba9f3adf3e7d5dec3bdd1c8fda01ba88c8460bfc93523435d8917cfca1996"
+    },
+    {
+      "slug": "post-to-linkedin",
+      "title": "Post to LinkedIn",
+      "description": "Share one useful lesson on LinkedIn. Use the right profile or Page and save the live link.",
+      "article": null,
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=post-to-linkedin#task-post-to-linkedin",
+      "status": "needs-work",
+      "contentSha256": "bc1f4b248be18d780b15448b229f7956cfa86e73410e59d4ccfbaf8163e35253"
+    },
+    {
+      "slug": "process-through-content-factory",
+      "title": "Process the Thank-You Clip",
+      "description": "Make the files you need from a thank-you clip. Use this when the clip is checked and you know who should see it.",
+      "article": "https://blitzmetrics.com/thank-you-machine",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=process-through-content-factory#task-process-through-content-factory",
+      "status": "complete",
+      "contentSha256": "fa7583a56b4ff3ad76da6b7f0b89d92ec69a46720bb8bb7ffbbddbd50a6b510e"
+    },
+    {
+      "slug": "process-videos-via-marketscale",
+      "title": "Process videos via MarketScale",
+      "description": "Send a clear video brief to MarketScale. Check the returned cut and save the files your team needs.",
+      "article": null,
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=process-videos-via-marketscale#task-process-videos-via-marketscale",
+      "status": "gap",
+      "contentSha256": "73f8bddf353928d1b392140449bd536fa0608f86ba8046c3ebc3dc072c3d2b69"
+    },
+    {
+      "slug": "provide-knowledge-capture-note-template",
+      "title": "Provide Knowledge Capture Note template",
+      "description": "Make a short form that helps your team save and use a lesson from its work.",
+      "article": "https://blitzmetrics.com/knowledge-system-maintenance",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=provide-knowledge-capture-note-template#task-provide-knowledge-capture-note-template",
+      "status": "gap",
+      "contentSha256": "4bbab3dbb71ddcdb7c3a3e313fc433cee20ad8f3668d68acdd392e08034a96dd"
+    },
+    {
+      "slug": "publish-seo-tree-site-directory",
+      "title": "Publish an SEO Tree site directory",
+      "description": "Help readers see what your site covers and where to go next.",
+      "article": "https://blitzmetrics.com/seo-tree-site-directory/",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=publish-seo-tree-site-directory#task-publish-seo-tree-site-directory",
+      "status": "needs-work",
+      "contentSha256": "419a5d6c41be8d9c85915d3e90c5a94e3e712b785c2378135c3495c662ea98b0"
+    },
+    {
+      "slug": "publish-skill-and-task-page",
+      "title": "Publish a skill and its task page",
+      "description": "A useful guide should be easy for people and AI to find.",
+      "article": "https://blitzmetrics.com/skill-publishing-standard/",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=publish-skill-and-task-page#task-publish-skill-and-task-page",
+      "status": "complete",
+      "contentSha256": "230f3362ac9954852a0464f27e17ec1843d14d25fca7bbbc2b7451e4710f0316"
+    },
+    {
+      "slug": "record-one-minute-thank-you-video",
+      "title": "Record a One-Minute Thank-You Video",
+      "description": "Make a short thank-you clip. Use this when you have a real deed to thank someone for.",
+      "article": "https://blitzmetrics.com/thank-you-machine",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=record-one-minute-thank-you-video#task-record-one-minute-thank-you-video",
+      "status": "complete",
+      "contentSha256": "741f414ead3c40fd8aa572b0369d3c13ccba324be7b8d6d16735062e4428c026"
+    },
+    {
+      "slug": "record-one-minute-videos",
+      "title": "Record one-minute videos",
+      "description": "Use a phone to answer one real customer question. Save the clip so your team can use it.",
+      "article": "https://blitzmetrics.com/one-minute-video-guide",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=record-one-minute-videos#task-record-one-minute-videos",
+      "status": "complete",
+      "contentSha256": "aa616bae040668860af5c45ea646f31535bedfe13e25e53a0555feedb4effbc1"
+    },
+    {
+      "slug": "record-one-minute-videos-answering-customer-questions",
+      "title": "Record one-minute videos answering customer questions",
+      "description": "Film one short clip to help your clients.",
+      "article": "https://blitzmetrics.com/personal-brand",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=record-one-minute-videos-answering-customer-questions#task-record-one-minute-videos-answering-customer-questions",
+      "status": "needs-work",
+      "contentSha256": "43b097c80c0768295983444b414aac6319583b75a8075bb8315447c4069c24ad"
+    },
+    {
+      "slug": "record-screen-shares-of-real-audits",
+      "title": "Record screen shares of real audits",
+      "description": "Record a real review of approved work. Show what you checked, what you found, and what needs to happen next.",
+      "article": null,
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=record-screen-shares-of-real-audits#task-record-screen-shares-of-real-audits",
+      "status": "needs-work",
+      "contentSha256": "7139bad420007e93aa57af6484134be07c0f89866d68c3a91b3c34020274e1fe"
+    },
+    {
+      "slug": "register-personal-name-domain",
+      "title": "Register personal name domain",
+      "description": "Give your work a web address you control.",
+      "article": "https://blitzmetrics.com/personal-brand",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=register-personal-name-domain#task-register-personal-name-domain",
+      "status": "needs-work",
+      "contentSha256": "65e16325aa72513647c3bd66cf7715ddac9c3028cf55f8a9d6c5bc0abdeaeb97"
+    },
+    {
+      "slug": "remove-duplicate-thin-pages",
+      "title": "Remove duplicate thin pages",
+      "description": "Keep your best page and the useful facts it holds.",
+      "article": "https://blitzmetrics.com/seo-tree",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=remove-duplicate-thin-pages#task-remove-duplicate-thin-pages",
+      "status": "needs-work",
+      "contentSha256": "bcefe70005d420ef0e5844f26991b102f8ba909c78b88693ba387496324de224"
+    },
+    {
+      "slug": "replace-ai-looking-content-with-real-eeat",
+      "title": "Replace AI-looking content with real EEAT",
+      "description": "Help readers see the real work behind your claims.",
+      "article": "https://blitzmetrics.com/seo-tree",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=replace-ai-looking-content-with-real-eeat#task-replace-ai-looking-content-with-real-eeat",
+      "status": "needs-work",
+      "contentSha256": "16327f4b2fd0485f1b4af294fa135a692758da8dca743af93aba477ec720c571"
+    },
+    {
+      "slug": "reply-with-task-status-in-origin-thread",
+      "title": "Reply with task status in the original thread",
+      "description": "People should not have to chase you to learn where a job stands.",
+      "article": "https://blitzmetrics.com/always-reply/",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=reply-with-task-status-in-origin-thread#task-reply-with-task-status-in-origin-thread",
+      "status": "needs-work",
+      "contentSha256": "460512d095f3e4ce66017385df53b20dc599765a66cb387563518f0aa7b68531"
+    },
+    {
+      "slug": "repurpose-videos-into-blog-posts-via-content-factory",
+      "title": "Repurpose videos into blog posts via Content Factory",
+      "description": "Make a clear page from a real video.",
+      "article": "https://blitzmetrics.com/personal-brand",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=repurpose-videos-into-blog-posts-via-content-factory#task-repurpose-videos-into-blog-posts-via-content-factory",
+      "status": "needs-work",
+      "contentSha256": "4157dcc58a885304d48b8a4cc2e9b22683ec5ab7d6f7d064b6d2a2328918fdd9"
+    },
+    {
+      "slug": "review-budget-allocation-by-channel",
+      "title": "Review budget allocation by channel",
+      "description": "Check where ad money went and what it did. Plan any change from the same goal and real costs.",
+      "article": "https://blitzmetrics.com/social-amplification",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=review-budget-allocation-by-channel#task-review-budget-allocation-by-channel",
+      "status": "needs-work",
+      "contentSha256": "9aa80dcc3dd2d5dab5803283fe9aca154bc1a461e2df6369ea5634d4c26cddcf"
+    },
+    {
+      "slug": "review-existing-sops-for-portability-compliance",
+      "title": "Review existing task guides for portability compliance",
+      "description": "Your team should keep its know-how when an app changes.",
+      "article": "https://blitzmetrics.com/knowledge-system-maintenance",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=review-existing-sops-for-portability-compliance#task-review-existing-sops-for-portability-compliance",
+      "status": "needs-work",
+      "contentSha256": "6cc61cb302c43438b5f085f2d4e02a65d64536742b1000bb462e185caf5d7315"
+    },
+    {
+      "slug": "review-past-6-months-of-sop-amendment-proposals-for-patterns",
+      "title": "Review past 6 months of task guide Amendment Proposals for patterns",
+      "description": "Repeated fixes can show where a guide needs more work.",
+      "article": "https://blitzmetrics.com/knowledge-system-maintenance",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=review-past-6-months-of-sop-amendment-proposals-for-patterns#task-review-past-6-months-of-sop-amendment-proposals-for-patterns",
+      "status": "needs-work",
+      "contentSha256": "eb3b4b329c50f7036b1e25495ca2ace4d8b48dd02f7abdbffaea94ce610804c0"
+    },
+    {
+      "slug": "route-notes-to-sop-update-protocol-or-directly-to-articles",
+      "title": "Route notes to task guide Update Protocol or directly to articles",
+      "description": "A saved lesson still needs to reach the right guide.",
+      "article": "https://blitzmetrics.com/knowledge-system-maintenance",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=route-notes-to-sop-update-protocol-or-directly-to-articles#task-route-notes-to-sop-update-protocol-or-directly-to-articles",
+      "status": "needs-work",
+      "contentSha256": "c7e3e806e3a1b1ad9c200bba938d572970486f8df88f96188a263cdf3e1dde74"
+    },
+    {
+      "slug": "run-content-factory-on-any-engine",
+      "title": "Run the Content Factory with your available tools",
+      "description": "Use the tools you have to turn real work into content people can trust.",
+      "article": "https://blitzmetrics.com/content-factory",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=run-content-factory-on-any-engine#task-run-content-factory-on-any-engine",
+      "status": "complete",
+      "contentSha256": "613d11b5ded142401400d6f552a2e1ca8733209993e79d309566bf4c5bec6353"
+    },
+    {
+      "slug": "run-dollar-a-day-campaign-on-winning-content",
+      "title": "Run Dollar a Day campaign on winning content",
+      "description": "Use small ad tests on strong posts. Check the results and keep control of the money.",
+      "article": "https://blitzmetrics.com/dad",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=run-dollar-a-day-campaign-on-winning-content#task-run-dollar-a-day-campaign-on-winning-content",
+      "status": "complete",
+      "contentSha256": "5aee57b8831fbcea33dd6739cd5c322676cbf172b6be036fc8d31ef59c3fbb80"
+    },
+    {
+      "slug": "run-multiple-simultaneous-tests",
+      "title": "Run multiple simultaneous tests",
+      "description": "Run a few small ad tests with clear limits. Compare the same goal when each test ends.",
+      "article": "https://blitzmetrics.com/dad",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=run-multiple-simultaneous-tests#task-run-multiple-simultaneous-tests",
+      "status": "complete",
+      "contentSha256": "a354dca05720af49efb04216acf31de0ecd567a364134be80f13c7a10788c24e"
+    },
+    {
+      "slug": "run-overnight-local-writer",
+      "title": "Run overnight local writer",
+      "description": "Use a local model to draft from your saved source. Check one small job before you leave a batch running.",
+      "article": "https://blitzmetrics.com/overnight-content-worker",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=run-overnight-local-writer#task-run-overnight-local-writer",
+      "status": "complete",
+      "contentSha256": "5a935c3c99c6061aad6b7bdefbbcc860acf8c87c670aa5d0915d709d6cf317ea"
+    },
+    {
+      "slug": "run-thank-you-machine-for-every-interaction",
+      "title": "Run Thank You Machine for every interaction",
+      "description": "Let people know how their help mattered.",
+      "article": "https://blitzmetrics.com/thank-you-machine",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=run-thank-you-machine-for-every-interaction#task-run-thank-you-machine-for-every-interaction",
+      "status": "complete",
+      "contentSha256": "4a627825648020b22b62da723532f6f785b11f3aa98d9b00285c5693e8da42e8"
+    },
+    {
+      "slug": "run-twitter-x-promotion-for-thought-leader-threads",
+      "title": "Run Twitter/X promotion for thought leader threads",
+      "description": "Share a strong post with a wider group. Test the cost and keep the real result.",
+      "article": null,
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=run-twitter-x-promotion-for-thought-leader-threads#task-run-twitter-x-promotion-for-thought-leader-threads",
+      "status": "needs-work",
+      "contentSha256": "c5468dd838c0cda44f4bfba346dde46a05ef0be0dd8407a14d4ea1b7a43fcb12"
+    },
+    {
+      "slug": "run-weekly-client-seo-audits",
+      "title": "Run weekly client SEO audits",
+      "description": "Check client sites each week and track what changed. Give the right team clear findings and next steps.",
+      "article": "https://blitzmetrics.com/how-to-run-weekly-ai-agent-seo-audits-across-all-your-clients/",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=run-weekly-client-seo-audits#task-run-weekly-client-seo-audits",
+      "status": "needs-work",
+      "contentSha256": "b1fe4bffefd237d9241d674269786df28819752abb80fd3c9ce97a81450e9cfd"
+    },
+    {
+      "slug": "scale-winners-by-increasing-budget-gradually",
+      "title": "Scale winners by increasing budget gradually",
+      "description": "Give a strong ad a careful next test. Cut back if the cost no longer meets the goal.",
+      "article": "https://blitzmetrics.com/dad",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=scale-winners-by-increasing-budget-gradually#task-scale-winners-by-increasing-budget-gradually",
+      "status": "complete",
+      "contentSha256": "86ebf509b91459e0432922ee5f1bc9cb957d5d99437366144192abbc194b28cc"
+    },
+    {
+      "slug": "schedule-and-assign-quarterly-auditors",
+      "title": "Schedule and assign quarterly auditors",
+      "description": "A page can drift if no one owns its next check.",
+      "article": "https://blitzmetrics.com/knowledge-system-maintenance",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=schedule-and-assign-quarterly-auditors#task-schedule-and-assign-quarterly-auditors",
+      "status": "gap",
+      "contentSha256": "02e7fdf0785e3488e160e49bffc60e81ee708e8c02bbc4043ba3c8fcdb9eeb86"
+    },
+    {
+      "slug": "schedule-first-6-month-recursive-review",
+      "title": "Schedule first 6-month recursive review",
+      "description": "Your guide system needs a date to check itself.",
+      "article": "https://blitzmetrics.com/knowledge-system-maintenance",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=schedule-first-6-month-recursive-review#task-schedule-first-6-month-recursive-review",
+      "status": "gap",
+      "contentSha256": "537b0c198514c1ce582ed2adb06d7ad5c2717f59fa874c21be693352783ccc14"
+    },
+    {
+      "slug": "schedule-first-quarterly-audit-cycle",
+      "title": "Schedule first quarterly audit cycle",
+      "description": "The first page review needs more than a date on a calendar.",
+      "article": "https://blitzmetrics.com/knowledge-system-maintenance",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=schedule-first-quarterly-audit-cycle#task-schedule-first-quarterly-audit-cycle",
+      "status": "gap",
+      "contentSha256": "6fdaa7cefd3926132e7296f58957ad82ff6e76536c2062a6e2e65393eff8ed1e"
+    },
+    {
+      "slug": "secure-guest-appearances-and-speaking-engagements",
+      "title": "Secure guest appearances and speaking engagements",
+      "description": "Find a stage where your work can help the room.",
+      "article": "https://blitzmetrics.com/personal-brand",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=secure-guest-appearances-and-speaking-engagements#task-secure-guest-appearances-and-speaking-engagements",
+      "status": "needs-work",
+      "contentSha256": "421f3e5bd65d8ba9dbc9bd85fe9dc28de36a0cbe4ae47ca678929dccce565d3f"
+    },
+    {
+      "slug": "senior-team-member-reviews-weekly",
+      "title": "Senior team member reviews weekly",
+      "description": "A proposed fix needs a clear answer and a next step.",
+      "article": "https://blitzmetrics.com/knowledge-system-maintenance",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=senior-team-member-reviews-weekly#task-senior-team-member-reviews-weekly",
+      "status": "needs-work",
+      "contentSha256": "ba8c9b9304d332c51a175596d9b1f643556ba83bcca25ef7e1722381622dc33c"
+    },
+    {
+      "slug": "separate-methodology-layer-what-why-from-implementation-layer-how",
+      "title": "Separate methodology layer (what/why) from implementation layer (how)",
+      "description": "A tool may change while the job stays the same.",
+      "article": "https://blitzmetrics.com/knowledge-system-maintenance",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=separate-methodology-layer-what-why-from-implementation-layer-how#task-separate-methodology-layer-what-why-from-implementation-layer-how",
+      "status": "needs-work",
+      "contentSha256": "e676f5b77e9489fbabf0b4ab3bca3955bc38547d109b5e5520c6646b6d5e63da"
+    },
+    {
+      "slug": "sequence-content-cold-warm-conversion",
+      "title": "Sequence content: cold → warm → conversion",
+      "description": "Put useful posts in a clear order. Match each one to what the reader needs next.",
+      "article": "https://blitzmetrics.com/dad",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=sequence-content-cold-warm-conversion#task-sequence-content-cold-warm-conversion",
+      "status": "needs-work",
+      "contentSha256": "01ce09a919ac6779f355b3229ec6e0e129fb0f788a5a10ab1d5938b856cd515f"
+    },
+    {
+      "slug": "sequence-content-from-awareness-to-conversion",
+      "title": "Sequence content from awareness to conversion",
+      "description": "Give each post a clear job. Help people learn, see proof and take a useful next step.",
+      "article": "https://blitzmetrics.com/dad",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=sequence-content-from-awareness-to-conversion#task-sequence-content-from-awareness-to-conversion",
+      "status": "needs-work",
+      "contentSha256": "be687e22f2776d39778c603aed8c6036ce5b403ecf3ba5ccab7072c3bd1b522b"
+    },
+    {
+      "slug": "set-1-day-budget-per-ad-set",
+      "title": "Set $1/day budget per ad set",
+      "description": "Price a small ad test before it starts. Check the real spend limit and the end date.",
+      "article": "https://blitzmetrics.com/dad",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=set-1-day-budget-per-ad-set#task-set-1-day-budget-per-ad-set",
+      "status": "complete",
+      "contentSha256": "676c589ed8ef8091649576e66f1c856317f6e2dbabf6ff40dbb7679acd281683"
+    },
+    {
+      "slug": "set-correct-business-categories",
+      "title": "Set Correct Business Categories",
+      "description": "Pick the business type that fits your real work. Check what you saved and what is live.",
+      "article": "https://blitzmetrics.com/digital-plumbing",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=set-correct-business-categories#task-set-correct-business-categories",
+      "status": "needs-work",
+      "contentSha256": "ecd538cb498ffefafe7a4944471ff7733598d95cc697ddaef2f7695dd32f2c4b"
+    },
+    {
+      "slug": "set-favicon",
+      "title": "Set Favicon",
+      "description": "Put your own small brand icon on the site. Check that it is clear in a browser tab.",
+      "article": null,
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=set-favicon#task-set-favicon",
+      "status": "needs-work",
+      "contentSha256": "12362a52cedd8d1004c68f09802d7d424bf7716df44d0d1b4d43771ce81fae94"
+    },
+    {
+      "slug": "set-up-business-ai-work-environment",
+      "title": "Set up a business AI work environment",
+      "description": "You do not need a whole system to try useful AI work.",
+      "article": "https://blitzmetrics.com/start/",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=set-up-business-ai-work-environment#task-set-up-business-ai-work-environment",
+      "status": "needs-work",
+      "contentSha256": "8ac5244c2b9682d5f190e2862b8437082e692f5636f6cc0495e31587d6bd291d"
+    },
+    {
+      "slug": "set-up-call-tracking-for-phone-conversions",
+      "title": "Set Up Call Tracking for Phone Conversions",
+      "description": "Track calls from your site without losing the right phone route. Check the call and its record.",
+      "article": "https://blitzmetrics.com/digital-plumbing",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=set-up-call-tracking-for-phone-conversions#task-set-up-call-tracking-for-phone-conversions",
+      "status": "needs-work",
+      "contentSha256": "2903fc0228c13a6498bd50c7d7432e6cd8a6267a21064999076c01a8f561a396"
+    },
+    {
+      "slug": "set-up-consistent-headshots-and-bios-across-profiles",
+      "title": "Set Up Consistent Headshots and Bios Across Profiles",
+      "description": "Use the right photo and true story on each profile. Keep a clear source for future edits.",
+      "article": null,
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=set-up-consistent-headshots-and-bios-across-profiles#task-set-up-consistent-headshots-and-bios-across-profiles",
+      "status": "needs-work",
+      "contentSha256": "61b97659cd67e513c7298f068a8dd6e39cf931fd8492f438510c76778de2a6a3"
+    },
+    {
+      "slug": "set-up-content-library",
+      "title": "Set up Content Library",
+      "description": "Put your source files and finished work in one clear home. Build a log so the next person can find and use them.",
+      "article": "https://blitzmetrics.com/social-amplification",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=set-up-content-library#task-set-up-content-library",
+      "status": "needs-work",
+      "contentSha256": "f96e38c13cd2ec2dba763353aff5114efff5bced9a475a93d0057617be997b8b"
+    },
+    {
+      "slug": "set-up-digital-plumbing-pixels-tracking",
+      "title": "Set up digital plumbing (pixels, tracking)",
+      "description": "Check that an ad result can be traced. Fix the missing part before you rely on the count.",
+      "article": "https://blitzmetrics.com/dad",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=set-up-digital-plumbing-pixels-tracking#task-set-up-digital-plumbing-pixels-tracking",
+      "status": "complete",
+      "contentSha256": "3e19176200f5560fa2335e2b662b86e883f8521cdb732eb4b03464600b919c36"
+    },
+    {
+      "slug": "set-up-ga4-with-internal-traffic-filtering",
+      "title": "Set Up GA4 With Internal Traffic Filtering",
+      "description": "Set up your site’s visit reports. Test the rule that keeps team visits out of the final count.",
+      "article": null,
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=set-up-ga4-with-internal-traffic-filtering#task-set-up-ga4-with-internal-traffic-filtering",
+      "status": "gap",
+      "contentSha256": "c95f64b98ca369537bc49cf5e6277dd124a93444a7d89fa9dfee9bbaeba133ec"
+    },
+    {
+      "slug": "set-up-meta-business-manager-and-public-figure-pages",
+      "title": "Set up Meta Business Manager and Public Figure pages",
+      "description": "Check who owns the ad tools and the public page. Set up only the parts the job needs.",
+      "article": "https://blitzmetrics.com/dad",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=set-up-meta-business-manager-and-public-figure-pages#task-set-up-meta-business-manager-and-public-figure-pages",
+      "status": "needs-work",
+      "contentSha256": "693da6fa09e02227cc1cbe009a687d8322b887412f1cb54a712b24a1cbd9b75b"
+    },
+    {
+      "slug": "set-up-professional-email-on-domain",
+      "title": "Set Up Professional Email on Domain",
+      "description": "Set up mail at your business web address. Check that it sends, arrives and reaches the right team.",
+      "article": null,
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=set-up-professional-email-on-domain#task-set-up-professional-email-on-domain",
+      "status": "needs-work",
+      "contentSha256": "fc60d8ffd2d870195fbceca32e1aa1a4864792456a7901ea3a941ee59a21e75b"
+    },
+    {
+      "slug": "set-up-professional-social-profiles",
+      "title": "Set up professional social profiles",
+      "description": "Help people find the real you on the sites they use.",
+      "article": "https://blitzmetrics.com/personal-brand",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=set-up-professional-social-profiles#task-set-up-professional-social-profiles",
+      "status": "needs-work",
+      "contentSha256": "72164f1edae24437935c5bc829fa1fc5b4a7b809fb62e241487b456e446ef41c"
+    },
+    {
+      "slug": "set-up-remarketing-ads-for-landing-page-abandoners",
+      "title": "Set up remarketing ads for landing page abandoners",
+      "description": "Plan a useful follow-up for past site visitors. Check the audience, cost and real result first.",
+      "article": "https://blitzmetrics.com/social-amplification",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=set-up-remarketing-ads-for-landing-page-abandoners#task-set-up-remarketing-ads-for-landing-page-abandoners",
+      "status": "needs-work",
+      "contentSha256": "d34bf73fc407e024955cc77ef9bc6bfd1955cb682c44d82bf7f78e717b88ad1a"
+    },
+    {
+      "slug": "set-up-sop-amendment-proposal-tracking-system",
+      "title": "Set up task guide Amendment Proposal tracking system",
+      "description": "Your team needs to know which fixes are waiting and which are live.",
+      "article": "https://blitzmetrics.com/knowledge-system-maintenance",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=set-up-sop-amendment-proposal-tracking-system#task-set-up-sop-amendment-proposal-tracking-system",
+      "status": "gap",
+      "contentSha256": "1fa7e851697a1bb7be19dfe372dc0bc53815650df8cb80100642215d5a8354b0"
+    },
+    {
+      "slug": "set-up-special-project-workspace",
+      "title": "Set up a Special Project workspace",
+      "description": "A free project still needs a clear goal and owner.",
+      "article": "https://blitzmetrics.com/special-project/",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=set-up-special-project-workspace#task-set-up-special-project-workspace",
+      "status": "needs-work",
+      "contentSha256": "5b94a0ae25d59189da3e4f67977c304a6abe10d0c06a360bd9534aaf5cbabff0"
+    },
+    {
+      "slug": "set-up-tiktok-campaigns",
+      "title": "Set up TikTok campaigns",
+      "description": "Plan a small TikTok ad test at its real price. Use a strong clip and check the result.",
+      "article": "https://blitzmetrics.com/dad",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=set-up-tiktok-campaigns#task-set-up-tiktok-campaigns",
+      "status": "needs-work",
+      "contentSha256": "9465a91cf3e2db670cf463af870e753aa8820e73942e8f8362157ac5215adfd9"
+    },
+    {
+      "slug": "set-up-youtube-channel-with-proper-branding",
+      "title": "Set Up YouTube Channel With Proper Branding",
+      "description": "Set up a clear YouTube home for your real videos. Check the brand, links and first video state.",
+      "article": "https://blitzmetrics.com/digital-plumbing",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=set-up-youtube-channel-with-proper-branding#task-set-up-youtube-channel-with-proper-branding",
+      "status": "needs-work",
+      "contentSha256": "7634959e66c32e27e375caf0cb397f4f3e5e2fbd955f6cb0fa70223a0c15e248"
+    },
+    {
+      "slug": "set-wordpress-author-to-correct-person",
+      "title": "Set WordPress author to correct person",
+      "description": "Put the right name on the article. Check the saved author and the name readers see.",
+      "article": null,
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=set-wordpress-author-to-correct-person#task-set-wordpress-author-to-correct-person",
+      "status": "needs-work",
+      "contentSha256": "9c4f83dba8820f36186679a481a6ab414697a107817626451f69dac790924de2"
+    },
+    {
+      "slug": "share-in-44k-facebook-group",
+      "title": "Share in 44K Facebook group",
+      "description": "Share a useful lesson in the right Facebook group. Follow its rules and check whether the post is live.",
+      "article": "https://localservicespotlight.com/article-guidelines/",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=share-in-44k-facebook-group#task-share-in-44k-facebook-group",
+      "status": "complete",
+      "contentSha256": "8e23b56d25e014f4e4c609b51cbbe1e4f005e93d2c77f28b64a634571c36e7b5"
+    },
+    {
+      "slug": "show-whats-working-and-what-isnt",
+      "title": "Show what's working and what isn't",
+      "description": "Give your team a clear view of which work helps and which needs a closer look.",
+      "article": null,
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=show-whats-working-and-what-isnt#task-show-whats-working-and-what-isnt",
+      "status": "needs-work",
+      "contentSha256": "a3ab3067a97e36b7b941d4a9bb898634e91b507fd6d59b1126a8310788f1fb38"
+    },
+    {
+      "slug": "stage-1-plumbing-fb-ads-google-ads-analytics",
+      "title": "Stage 1: Plumbing (FB Ads, Google Ads, Analytics)",
+      "description": "Make sure your business can see what its marketing does.",
+      "article": "https://blitzmetrics.com/social-amplification",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=stage-1-plumbing-fb-ads-google-ads-analytics#task-stage-1-plumbing-fb-ads-google-ads-analytics",
+      "status": "complete",
+      "contentSha256": "599e83564fd4ee5819e517d0910b8b1034ade7bbdbc65c1dc26382864dd0aacc"
+    },
+    {
+      "slug": "stage-2-goals-mission-90-day-goals-cpa-roas-budget",
+      "title": "Stage 2: Goals (mission, 90-day goals, CPA/ROAS, budget)",
+      "description": "Choose a goal your business can afford and serve.",
+      "article": "https://blitzmetrics.com/social-amplification",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=stage-2-goals-mission-90-day-goals-cpa-roas-budget#task-stage-2-goals-mission-90-day-goals-cpa-roas-budget",
+      "status": "complete",
+      "contentSha256": "f0f9340c7f1b1102e9e133f2ea856b9044fc81f3e76bac048478a8640cd95aac"
+    },
+    {
+      "slug": "stage-3-content-endorsements-why-video-3x3-grid-library",
+      "title": "Stage 3: Content (endorsements, WHY video, 3×3 grid, library)",
+      "description": "Give your team real stories and proof to share.",
+      "article": "https://blitzmetrics.com/social-amplification",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=stage-3-content-endorsements-why-video-3x3-grid-library#task-stage-3-content-endorsements-why-video-3x3-grid-library",
+      "status": "complete",
+      "contentSha256": "96f89f41c749ff857ba03de22304fc597483d884f7971d5bc3c5d31df03470f5"
+    },
+    {
+      "slug": "stage-4-targeting-custom-audiences-lookalikes-remarketing",
+      "title": "Stage 4: Targeting (custom audiences, lookalikes, remarketing)",
+      "description": "Help the right people see content that fits their needs.",
+      "article": "https://blitzmetrics.com/social-amplification",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=stage-4-targeting-custom-audiences-lookalikes-remarketing#task-stage-4-targeting-custom-audiences-lookalikes-remarketing",
+      "status": "complete",
+      "contentSha256": "ac2c32a369239b83cf00a5bb990e051bbc2521c3138573bae751380a11f3d1db"
+    },
+    {
+      "slug": "stage-5-amplification-boost-posts-remarketing-ads",
+      "title": "Stage 5: Amplification (boost posts, remarketing ads)",
+      "description": "Use small ad tests to give proven content more reach.",
+      "article": "https://blitzmetrics.com/social-amplification",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=stage-5-amplification-boost-posts-remarketing-ads#task-stage-5-amplification-boost-posts-remarketing-ads",
+      "status": "complete",
+      "contentSha256": "17c6559b3ef3d558ada6333dc8616f8ae50d359d7886a6f5e7c6d7b6c5410081"
+    },
+    {
+      "slug": "stage-6-optimization-metrics-budget-review-recommendations",
+      "title": "Stage 6: Optimization (metrics, budget review, recommendations)",
+      "description": "Use the latest results to choose the next useful change.",
+      "article": "https://blitzmetrics.com/social-amplification",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=stage-6-optimization-metrics-budget-review-recommendations#task-stage-6-optimization-metrics-budget-review-recommendations",
+      "status": "complete",
+      "contentSha256": "e502c27de2b1b952ff94df84a3007ba84dda5d91fb0e0ed84461f31d6bf30538"
+    },
+    {
+      "slug": "step-1-inventory-content-and-establish-gct-per-page",
+      "title": "Step 1: List pages and their purpose",
+      "description": "Know what each page is for before you change its links.",
+      "article": "https://blitzmetrics.com/internal-linking",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=step-1-inventory-content-and-establish-gct-per-page#task-step-1-inventory-content-and-establish-gct-per-page",
+      "status": "complete",
+      "contentSha256": "d81e71554bbb25d118c934c7ef780288e0e92262593fcb90c6631ec0f240bf02"
+    },
+    {
+      "slug": "step-1-upload-video-to-google-drive-and-descript",
+      "title": "Step 1: Upload video to Google Drive and Descript",
+      "description": "Put your source video in a safe shared folder. Set up a work copy so the editor can start.",
+      "article": "https://localservicespotlight.com/article-guidelines/",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=step-1-upload-video-to-google-drive-and-descript#task-step-1-upload-video-to-google-drive-and-descript",
+      "status": "complete",
+      "contentSha256": "577a7280c07ed9a0f89f5430628331e5447c70d41a3cb2ac6f074f02b24cf91e"
+    },
+    {
+      "slug": "step-10-embed-source-video",
+      "title": "Step 10: Embed source video",
+      "description": "Put the real source video beside your article. Make it clear, easy to view, and ready for captions.",
+      "article": "https://localservicespotlight.com/article-guidelines/",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=step-10-embed-source-video#task-step-10-embed-source-video",
+      "status": "complete",
+      "contentSha256": "b23d20c3baa71ee78d08958de401becb6970047d790236652125d86112e57d08"
+    },
+    {
+      "slug": "step-11-proofread-with-grammarly-or-chatgpt",
+      "title": "Step 11: Proofread with Grammarly or ChatGPT",
+      "description": "Check the whole draft for clear words and true facts. Fix mistakes while keeping the real voice.",
+      "article": "https://localservicespotlight.com/article-guidelines/",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=step-11-proofread-with-grammarly-or-chatgpt#task-step-11-proofread-with-grammarly-or-chatgpt",
+      "status": "complete",
+      "contentSha256": "026954c3698422f5e25823fa72ac5d3ac889ada1456cb8a93cac65e772078577"
+    },
+    {
+      "slug": "step-12-post-article-on-wordpress",
+      "title": "Step 12: Post article on WordPress",
+      "description": "Put your checked article on the right live page. Check where the site saves pages so readers get your work. This follows the draft checks in the article guidelines linked above.",
+      "article": "https://localservicespotlight.com/article-guidelines/",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=step-12-post-article-on-wordpress#task-step-12-post-article-on-wordpress",
+      "status": "complete",
+      "contentSha256": "d17a35d10921937c06bb9ffb5a551176c7dd0690a2854b659d131f2671cf340d"
+    },
+    {
+      "slug": "step-13-categorize-post-and-add-tags",
+      "title": "Step 13: Categorize post and add tags",
+      "description": "Put a post in the right topic group. Reuse clear tags so readers can find related work.",
+      "article": "https://localservicespotlight.com/article-guidelines/",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=step-13-categorize-post-and-add-tags#task-step-13-categorize-post-and-add-tags",
+      "status": "complete",
+      "contentSha256": "c51b5ca3717a0ce9a6443b1637c05613562b464bc05ff2fa035c806cec0358e5"
+    },
+    {
+      "slug": "step-14a-configure-rankmath-seo-plugin",
+      "title": "Step 14a: Configure RankMath SEO plugin",
+      "description": "Set a clear search title and page summary. Use Rank Math to find issues without stuffing in extra words.",
+      "article": "https://localservicespotlight.com/article-guidelines/",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=step-14a-configure-rankmath-seo-plugin#task-step-14a-configure-rankmath-seo-plugin",
+      "status": "complete",
+      "contentSha256": "7685e9481058f50dd7fa9778474d4f3c8141691a6cef4f1babe713b16b8f6314"
+    },
+    {
+      "slug": "step-14b-run-linkwhisper-for-internal-links",
+      "title": "Step 14b: Run LinkWhisper for internal links",
+      "description": "Review link ideas from Link Whisper. Add only the links that help a reader, then check them on the page.",
+      "article": "https://localservicespotlight.com/article-guidelines/",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=step-14b-run-linkwhisper-for-internal-links#task-step-14b-run-linkwhisper-for-internal-links",
+      "status": "complete",
+      "contentSha256": "768f30ca63a90c7ea3750183b875a4b18f7b8f5b58d4b48d84ae36cefce2342c"
+    },
+    {
+      "slug": "step-17-final-formatting-and-qa-checks",
+      "title": "Step 17: Final formatting and QA checks",
+      "description": "Check the page people see. Test its links and layout, then pass on the facts and next steps.",
+      "article": "https://localservicespotlight.com/article-guidelines/",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=step-17-final-formatting-and-qa-checks#task-step-17-final-formatting-and-qa-checks",
+      "status": "complete",
+      "contentSha256": "59857d95b4be552d086b05fdb1d61e083336fc24961756a4ad9caf5ddfe4fb21"
+    },
+    {
+      "slug": "step-2-fix-categories-and-tags-in-wordpress",
+      "title": "Step 2: Fix categories and tags in WordPress",
+      "description": "Help readers browse your posts in groups that make sense.",
+      "article": "https://blitzmetrics.com/internal-linking",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=step-2-fix-categories-and-tags-in-wordpress#task-step-2-fix-categories-and-tags-in-wordpress",
+      "status": "complete",
+      "contentSha256": "84ce418e30786c9d744a6ddc7d3a9be98f9d69079b6fa0dad0b860e6806c0f47"
+    },
+    {
+      "slug": "step-2-transcribe-video-using-descript",
+      "title": "Step 2: Transcribe video using Descript",
+      "description": "Turn speech into checked text. Fix names and words so the article says what the speaker meant.",
+      "article": "https://localservicespotlight.com/article-guidelines/",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=step-2-transcribe-video-using-descript#task-step-2-transcribe-video-using-descript",
+      "status": "complete",
+      "contentSha256": "3f2b571759f4e0d30836ba614f63975ca26d0fc212fd2861415187364b9f6c01"
+    },
+    {
+      "slug": "step-3-identify-money-pages-and-orphan-pages",
+      "title": "Step 3: Identify money pages and orphan pages",
+      "description": "Find good pages that are hard to reach.",
+      "article": "https://blitzmetrics.com/internal-linking",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=step-3-identify-money-pages-and-orphan-pages#task-step-3-identify-money-pages-and-orphan-pages",
+      "status": "complete",
+      "contentSha256": "dac056b33334675e47d6d3c8a6d666c23d4c56077ffa0c8c9945dc56fc681dc3"
+    },
+    {
+      "slug": "step-3-watch-video-and-identify-gct",
+      "title": "Step 3: Watch video and identify GCT",
+      "description": "Choose who the article helps and what it should do. Base the plan on the real video.",
+      "article": "https://localservicespotlight.com/article-guidelines/",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=step-3-watch-video-and-identify-gct#task-step-3-watch-video-and-identify-gct",
+      "status": "complete",
+      "contentSha256": "951b35d37316ed0a4d308ae04f563d2e6515483a7f4ef244ef30350da513df0a"
+    },
+    {
+      "slug": "step-4-create-links-with-proper-anchor-text-and-placement",
+      "title": "Step 4: Create links with proper anchor text and placement",
+      "description": "Put useful next steps where readers need them.",
+      "article": "https://blitzmetrics.com/internal-linking",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=step-4-create-links-with-proper-anchor-text-and-placement#task-step-4-create-links-with-proper-anchor-text-and-placement",
+      "status": "complete",
+      "contentSha256": "8efe1db66a5de615f1c8794cc8a2ef7ddb3f85eb6d73232c30ff61bd05259bea"
+    },
+    {
+      "slug": "step-4-research-edit-add-timestamps-and-outline",
+      "title": "Step 4: Research, edit, add timestamps and outline",
+      "description": "Build a clear plan from your source. Add time marks and checked facts before you write.",
+      "article": "https://localservicespotlight.com/article-guidelines/",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=step-4-research-edit-add-timestamps-and-outline#task-step-4-research-edit-add-timestamps-and-outline",
+      "status": "complete",
+      "contentSha256": "e31f7e44a344960aa6609746846be70f94de8e89de999a20e96a0852efcc3238"
+    },
+    {
+      "slug": "step-5-qa-links-against-google-guidelines",
+      "title": "Step 5: QA links against Google guidelines",
+      "description": "Check that each new link helps readers reach the right page.",
+      "article": "https://blitzmetrics.com/internal-linking",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=step-5-qa-links-against-google-guidelines#task-step-5-qa-links-against-google-guidelines",
+      "status": "complete",
+      "contentSha256": "7984869144adb01d294236e118cdea5cdff647679943a06b819b3fd750c5c4f5"
+    },
+    {
+      "slug": "step-5-write-article-from-transcript",
+      "title": "Step 5: Write article from transcript",
+      "description": "Turn your source into a useful article. Keep the real voice, facts, and story.",
+      "article": "https://localservicespotlight.com/article-guidelines/",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=step-5-write-article-from-transcript#task-step-5-write-article-from-transcript",
+      "status": "complete",
+      "contentSha256": "3be9257dc89f1db0ffb70be2b02aff80e1a800d1fdf9160471d3d75abd6e510c"
+    },
+    {
+      "slug": "step-6-measure-and-iterate-with-maa",
+      "title": "Step 6: Measure and iterate with MAA",
+      "description": "See what changed when your new links went live.",
+      "article": "https://blitzmetrics.com/internal-linking",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=step-6-measure-and-iterate-with-maa#task-step-6-measure-and-iterate-with-maa",
+      "status": "complete",
+      "contentSha256": "9716740b56b9c74e40156504bc68d15c4cd549a0461ac2cc339338a268fe68cd"
+    },
+    {
+      "slug": "step-6-write-title-and-headings",
+      "title": "Step 6: Write title and headings",
+      "description": "Write a clear title and useful section names. Help readers see what your page will teach.",
+      "article": "https://localservicespotlight.com/article-guidelines/",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=step-6-write-title-and-headings#task-step-6-write-title-and-headings",
+      "status": "complete",
+      "contentSha256": "4cd13fb8dadb9f6c54363079e80422e75e1924694d88fa9ed081a5fa6dcb2731"
+    },
+    {
+      "slug": "step-7-write-hook-and-establish-context",
+      "title": "Step 7: Write hook and establish context",
+      "description": "Write an opening that says who the page helps and why. Start with a real, useful point.",
+      "article": "https://localservicespotlight.com/article-guidelines/",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=step-7-write-hook-and-establish-context#task-step-7-write-hook-and-establish-context",
+      "status": "complete",
+      "contentSha256": "464fa86747786c5cb3a986caeafc47d0b32f438891480e09c598e0215848b2ce"
+    },
+    {
+      "slug": "step-8-add-photos-and-featured-image",
+      "title": "Step 8: Add photos and featured image",
+      "description": "Add real pictures or a clear diagram. Show the reader what the article means.",
+      "article": "https://localservicespotlight.com/article-guidelines/",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=step-8-add-photos-and-featured-image#task-step-8-add-photos-and-featured-image",
+      "status": "complete",
+      "contentSha256": "ce572fede75c541a3165da929e0908134bd555855499cbb69e8b019dc5f235bf"
+    },
+    {
+      "slug": "step-9-add-internal-links-with-proper-anchor-text",
+      "title": "Step 9: Add internal links with proper anchor text",
+      "description": "Link readers to the right guides and people. Use clear words that explain where each link goes.",
+      "article": "https://localservicespotlight.com/article-guidelines/",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=step-9-add-internal-links-with-proper-anchor-text#task-step-9-add-internal-links-with-proper-anchor-text",
+      "status": "complete",
+      "contentSha256": "ff20a48515abf06969a04eb93c373480ad9ef3b8c31afe28ed0311d83e70fde4"
+    },
+    {
+      "slug": "submit-weekly-maa-report-every-friday",
+      "title": "Submit weekly MAA report every Friday",
+      "description": "Show a business owner what changed and what the team should do next.",
+      "article": "https://blitzmetrics.com/how-to-write-weekly-maa-reports-for-local-service-businesses/",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=submit-weekly-maa-report-every-friday#task-submit-weekly-maa-report-every-friday",
+      "status": "needs-work",
+      "contentSha256": "fac27e5f5adc5fb5b8a177b696eae604c87c35a18b6209fcc74420afb7a3e69f"
+    },
+    {
+      "slug": "systematization-content-checklists-software",
+      "title": "Systematization (Content → Checklists → Software)",
+      "description": "Turn a job your team knows into steps others can use.",
+      "article": "https://blitzmetrics.com/9-triangles-framework-scalable-home-service-businesses/",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=systematization-content-checklists-software#task-systematization-content-checklists-software",
+      "status": "complete",
+      "contentSha256": "ae09352a24512da76d2015cfd3f5b7d52bfee8281824de47721ce7a3806d168f"
+    },
+    {
+      "slug": "tag-proposal-with-affected-sop-and-queue-for-review",
+      "title": "Tag proposal with affected task guide and queue for review",
+      "description": "A good fix is easy to miss if it reaches the wrong list.",
+      "article": "https://blitzmetrics.com/knowledge-system-maintenance",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=tag-proposal-with-affected-sop-and-queue-for-review#task-tag-proposal-with-affected-sop-and-queue-for-review",
+      "status": "needs-work",
+      "contentSha256": "9c520a6e91c93599ffe537790bd846170ec6b8457ec2fb3b24d513a83d37868c"
+    },
+    {
+      "slug": "tag-the-person-on-social-media",
+      "title": "Tag the Right Person in a Thank-You Post",
+      "description": "Tag the right person in a thank-you post. Use this when the post is ready to share.",
+      "article": "https://blitzmetrics.com/thank-you-machine",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=tag-the-person-on-social-media#task-tag-the-person-on-social-media",
+      "status": "complete",
+      "contentSha256": "d65673d6f7aa301f941cb70fd6619822232690a3fbb2956764a19cce13de2b7d"
+    },
+    {
+      "slug": "test-mobile-load-time-under-3-seconds",
+      "title": "Test mobile load time under 3 seconds",
+      "description": "Find slow pages on a phone. Save clear speed results and the next fix to check.",
+      "article": "https://blitzmetrics.com/website-qa-audit",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=test-mobile-load-time-under-3-seconds#task-test-mobile-load-time-under-3-seconds",
+      "status": "complete",
+      "contentSha256": "be102ac6dd438b4ee9dd5a17b464480dbf53fc336843208ecfac114f069afb14"
+    },
+    {
+      "slug": "three-pillars-marketing-operations-finance",
+      "title": "Three Pillars (Marketing, Operations, Finance)",
+      "description": "See which part of the business needs help first.",
+      "article": "https://blitzmetrics.com/9-triangles-framework-scalable-home-service-businesses/",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=three-pillars-marketing-operations-finance#task-three-pillars-marketing-operations-finance",
+      "status": "complete",
+      "contentSha256": "8a7157b4a9e06707fc5c0cc17b74f3e31a2858bf3f9b9a1dce32566495faf8cd"
+    },
+    {
+      "slug": "update-client-success-tracker",
+      "title": "Update a client Success Tracker",
+      "description": "Keep the client’s work and results easy to find.",
+      "article": "https://localservicespotlight.com/the-success-tracker-how-ai-apprentices-managing-local-service-clients-stay-organized-and-prove-results/",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=update-client-success-tracker#task-update-client-success-tracker",
+      "status": "needs-work",
+      "contentSha256": "b1fb01a12824b2b2f93923745b5ab78a30bd94c125a522f018a3112f334e3158"
+    },
+    {
+      "slug": "update-status-table-in-definitive-article-guide",
+      "title": "Update status table in Definitive Article Guide",
+      "description": "A page can look done while key checks are missing.",
+      "article": "https://blitzmetrics.com/knowledge-system-maintenance",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=update-status-table-in-definitive-article-guide#task-update-status-table-in-definitive-article-guide",
+      "status": "needs-work",
+      "contentSha256": "ca6749e45a194502fab7eb6a919d97beaf609b67a5e95f6db80793b9c41f1b11"
+    },
+    {
+      "slug": "upload-processed-video-to-youtube",
+      "title": "Upload processed video to YouTube",
+      "description": "Put the finished video on the right YouTube channel. Set its real details and check the chosen viewing state.",
+      "article": null,
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=upload-processed-video-to-youtube#task-upload-processed-video-to-youtube",
+      "status": "needs-work",
+      "contentSha256": "e33e1c1dc1c2fd4c4d0e4386a9efd7291e4152a6730a7d592de742ab1195bbcd"
+    },
+    {
+      "slug": "upload-real-photos-and-set-business-hours",
+      "title": "Upload Real Photos and Set Business Hours",
+      "description": "Show real business photos and the right opening hours. Check what people can see on Google.",
+      "article": "https://blitzmetrics.com/digital-plumbing",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=upload-real-photos-and-set-business-hours#task-upload-real-photos-and-set-business-hours",
+      "status": "needs-work",
+      "contentSha256": "b3abae709c69cfa89809d2efc68cf79976bb0b9b81da0cc4e5eac4736e206851"
+    },
+    {
+      "slug": "use-descript-underlord-to-remove-filler-words",
+      "title": "Use Descript Underlord to remove filler words",
+      "description": "Trim speech that gets in the way. Keep words and pauses that help the speaker sound natural.",
+      "article": "https://localservicespotlight.com/article-guidelines/",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=use-descript-underlord-to-remove-filler-words#task-use-descript-underlord-to-remove-filler-words",
+      "status": "complete",
+      "contentSha256": "75b84a5e8310d85c9b7e4feed44d9ee1c3e256ac2075dde05979b6a269329a0e"
+    },
+    {
+      "slug": "use-dollar-a-day-to-influence-media-coverage",
+      "title": "Use Dollar a Day to influence media coverage",
+      "description": "Share useful proof with the right readers. Keep a clear record of real press links.",
+      "article": "https://blitzmetrics.com/dad",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=use-dollar-a-day-to-influence-media-coverage#task-use-dollar-a-day-to-influence-media-coverage",
+      "status": "needs-work",
+      "contentSha256": "4b9aa137832cb9b86fdc58e1b06a4f2e252fc51cd702b56619018c89cb4028a1"
+    },
+    {
+      "slug": "use-for-content-planning-and-video-topics",
+      "title": "Use for content planning and video topics",
+      "description": "Make a useful plan for your next set of clips.",
+      "article": "https://blitzmetrics.com/topic-wheel",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=use-for-content-planning-and-video-topics#task-use-for-content-planning-and-video-topics",
+      "status": "complete",
+      "contentSha256": "ad62cd3d8db1b03ec7211fc93e432548d96720b56a9521caeab7e443f30828de"
+    },
+    {
+      "slug": "use-proper-anchor-text-3-6-words-descriptive",
+      "title": "Use proper anchor text (3–6 words, descriptive)",
+      "description": "Help readers know where a link will take them.",
+      "article": "https://blitzmetrics.com/internal-linking",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=use-proper-anchor-text-3-6-words-descriptive#task-use-proper-anchor-text-3-6-words-descriptive",
+      "status": "complete",
+      "contentSha256": "590e1a2343f532c9496f63d33dad76ff45d6c225de17138da4088a28c8fe057e"
+    },
+    {
+      "slug": "validate-cross-reference-integrity-across-articles",
+      "title": "Validate cross-reference integrity across articles",
+      "description": "A link should take people to the help its words promise.",
+      "article": "https://blitzmetrics.com/knowledge-system-maintenance",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=validate-cross-reference-integrity-across-articles#task-validate-cross-reference-integrity-across-articles",
+      "status": "needs-work",
+      "contentSha256": "a806fb019125cfbb76cb835477291514d4c6f62dc558ae8a6ce37451f93ede41"
+    },
+    {
+      "slug": "verify-achievements-are-evidenced-not-just-claimed",
+      "title": "Verify achievements are evidenced, not just claimed",
+      "description": "Check the proof behind each claim. Keep real stories and remove claims the facts cannot support.",
+      "article": "https://blitzmetrics.com/website-qa-audit",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=verify-achievements-are-evidenced-not-just-claimed#task-verify-achievements-are-evidenced-not-just-claimed",
+      "status": "complete",
+      "contentSha256": "073e46545fcfb08a961fcb20c7c74156be7e165d278e6c9191b8d5c19a9bb454"
+    },
+    {
+      "slug": "verify-all-images-have-descriptive-alt-text",
+      "title": "Verify all images have descriptive alt text",
+      "description": "Help people who cannot see an image get its point. Check each image where it is used.",
+      "article": "https://blitzmetrics.com/website-qa-audit",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=verify-all-images-have-descriptive-alt-text#task-verify-all-images-have-descriptive-alt-text",
+      "status": "complete",
+      "contentSha256": "07dcfec1e08d465592eaf53ef8f53167f92e9fe3724ccd32fb41a7701840c94e"
+    },
+    {
+      "slug": "verify-all-items-on-blog-posting-checklist",
+      "title": "Verify all items on Blog Posting checklist",
+      "description": "Check the article with the current rules. Save what you found and name the work still left to do.",
+      "article": "https://localservicespotlight.com/article-guidelines/",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=verify-all-items-on-blog-posting-checklist#task-verify-all-items-on-blog-posting-checklist",
+      "status": "complete",
+      "contentSha256": "aa3a7eaf7c8465e8d0dc624a5a2aa63b1407fbcddcc35f6c1b461d12fe894be3"
+    },
+    {
+      "slug": "verify-all-pages-written-in-first-person",
+      "title": "Verify all pages written in first person",
+      "description": "Help a personal site sound like its owner. Keep quotes and formal bios in their proper voice.",
+      "article": "https://blitzmetrics.com/website-qa-audit",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=verify-all-pages-written-in-first-person#task-verify-all-pages-written-in-first-person",
+      "status": "complete",
+      "contentSha256": "28920a914a8eb6d5bc84e4e5c2c721dc002156e42ee311c44878c725e72de9fc"
+    },
+    {
+      "slug": "verify-at-least-one-video-embed-on-homepage",
+      "title": "Verify at least one video embed on homepage",
+      "description": "Check the real video on the home page. Make sure people can view it there and read its captions.",
+      "article": "https://blitzmetrics.com/website-qa-audit",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=verify-at-least-one-video-embed-on-homepage#task-verify-at-least-one-video-embed-on-homepage",
+      "status": "complete",
+      "contentSha256": "7b9d2be4410a7f30b269c296bc98930fefc7a53252472b27ee8a1fbd27e3ff90"
+    },
+    {
+      "slug": "verify-domain-ownership-and-registrar-access",
+      "title": "Verify Domain Ownership and Registrar Access",
+      "description": "Find who controls your web address. Check account access, renewal and the place that holds its records.",
+      "article": "https://blitzmetrics.com/digital-plumbing",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=verify-domain-ownership-and-registrar-access#task-verify-domain-ownership-and-registrar-access",
+      "status": "needs-work",
+      "contentSha256": "448e6592188d47f21bab5244a2e8223c6d8827a049dc52605db5635247c71670"
+    },
+    {
+      "slug": "verify-email-opt-in-form-exists-and-works",
+      "title": "Verify email opt-in form exists and works",
+      "description": "Check that a sign-up form does what it promises. Trace a test from the page to the right inbox.",
+      "article": "https://blitzmetrics.com/website-qa-audit",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=verify-email-opt-in-form-exists-and-works#task-verify-email-opt-in-form-exists-and-works",
+      "status": "complete",
+      "contentSha256": "367705d0a41bb07333c9f4c9f990e11b4213996b5b1f64381d6f3995b2be5eef"
+    },
+    {
+      "slug": "verify-entity-linking-follows-decision-tree",
+      "title": "Verify entity linking follows decision tree",
+      "description": "Send readers to the right source for each name or idea. Keep each topic tied to its main guide.",
+      "article": "https://blitzmetrics.com/website-qa-audit",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=verify-entity-linking-follows-decision-tree#task-verify-entity-linking-follows-decision-tree",
+      "status": "complete",
+      "contentSha256": "db82a27203ec3e8cd88c3cd4e1043d80bd9a44c34040427eb9dd97aa1efc61d4"
+    },
+    {
+      "slug": "verify-featured-images-unique-per-blog-post",
+      "title": "Verify featured images unique per blog post",
+      "description": "Give each post its own clear image. Find blank cards and covers that all look the same.",
+      "article": "https://blitzmetrics.com/website-qa-audit",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=verify-featured-images-unique-per-blog-post#task-verify-featured-images-unique-per-blog-post",
+      "status": "complete",
+      "contentSha256": "161ad3d2ed20a56d623ca5558d30c5fa3ce76655b86a4688fdb335d3232bb38e"
+    },
+    {
+      "slug": "verify-footer-includes-social-links-and-secondary-nav",
+      "title": "Verify footer includes social links and secondary nav",
+      "description": "Give readers useful links at the end of a page. Check the footer on a phone and a large screen.",
+      "article": "https://blitzmetrics.com/website-qa-audit",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=verify-footer-includes-social-links-and-secondary-nav#task-verify-footer-includes-social-links-and-secondary-nav",
+      "status": "complete",
+      "contentSha256": "61ab857381a00392b5c5bd9aed9750e68855f193bc421f00c720e493d0b29f36"
+    },
+    {
+      "slug": "verify-ga4-configured-with-internal-traffic-filtered",
+      "title": "Verify GA4 configured with internal traffic filtered",
+      "description": "Keep team visits from skewing site reports. Check the right data source and test the filter with care.",
+      "article": "https://blitzmetrics.com/website-qa-audit",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=verify-ga4-configured-with-internal-traffic-filtered#task-verify-ga4-configured-with-internal-traffic-filtered",
+      "status": "complete",
+      "contentSha256": "60b84c57f8f2fcd7acc5f58efc378ca5f9821fd5a1e65a7fc6773766bd6d5143"
+    },
+    {
+      "slug": "verify-google-business-profile",
+      "title": "Verify Google Business Profile",
+      "description": "Set up the right business page on Google. Check who can use it and what is still due.",
+      "article": "https://blitzmetrics.com/digital-plumbing",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=verify-google-business-profile#task-verify-google-business-profile",
+      "status": "complete",
+      "contentSha256": "91b44828a7c0039e45234e4b063906c476e207e159661c60925a54130fc47449"
+    },
+    {
+      "slug": "verify-google-business-profile--personal-brand",
+      "title": "Verify Google Business Profile",
+      "description": "Help people find your local firm.",
+      "article": "https://blitzmetrics.com/personal-brand",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=verify-google-business-profile--personal-brand#task-verify-google-business-profile--personal-brand",
+      "status": "needs-work",
+      "contentSha256": "fa17bcfd6215d0c10d7c1ac2355d83efcca053850d487d1b3437cc96a8e679d0"
+    },
+    {
+      "slug": "verify-google-business-profile-is-verified",
+      "title": "Verify Google Business Profile is verified",
+      "description": "Check your firm’s profile. Find out who owns it and if the public facts are right.",
+      "article": "https://blitzmetrics.com/website-qa-audit",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=verify-google-business-profile-is-verified#task-verify-google-business-profile-is-verified",
+      "status": "complete",
+      "contentSha256": "3ea940f4ef672f36433c78b31a4cd64eae2f297ae78bd3d960ca2fd476bf267c"
+    },
+    {
+      "slug": "verify-google-search-console-and-connect-to-ga4",
+      "title": "Verify Google Search Console and Connect to GA4",
+      "description": "Connect your search reports to the right site. Link them to your visit reports when that is in your plan.",
+      "article": "https://blitzmetrics.com/digital-plumbing",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=verify-google-search-console-and-connect-to-ga4#task-verify-google-search-console-and-connect-to-ga4",
+      "status": "needs-work",
+      "contentSha256": "453b65fb8a30b37e04a962396cbfe5ab72545e40b189bfac47eb93babb5dc787"
+    },
+    {
+      "slug": "verify-gtm-installed-and-firing-on-every-page",
+      "title": "Verify GTM installed and firing on every page",
+      "description": "Check that the site loads the right tag tool. Then check the tags and where their data goes.",
+      "article": "https://blitzmetrics.com/website-qa-audit",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=verify-gtm-installed-and-firing-on-every-page#task-verify-gtm-installed-and-firing-on-every-page",
+      "status": "complete",
+      "contentSha256": "ef8e11ecb1dc9599b10a82c8ee54a7cdec157dde7a19b4ee45fd47860a1bdbc9"
+    },
+    {
+      "slug": "verify-hero-section-contains-real-photo-of-person",
+      "title": "Verify hero section contains real photo of person",
+      "description": "Let people see who is behind a personal site. Check that the real photo stays clear on a phone.",
+      "article": "https://blitzmetrics.com/website-qa-audit",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=verify-hero-section-contains-real-photo-of-person#task-verify-hero-section-contains-real-photo-of-person",
+      "status": "complete",
+      "contentSha256": "2dfa8d3f03ff386ddee2d0fb2f7f9649ab78c82786cb0788606e2f2d2d04c2ec"
+    },
+    {
+      "slug": "verify-https-with-no-mixed-content",
+      "title": "Verify HTTPS with no mixed content",
+      "description": "Check that pages and their files use safe web links. Find the exact source of a browser warning.",
+      "article": "https://blitzmetrics.com/website-qa-audit",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=verify-https-with-no-mixed-content#task-verify-https-with-no-mixed-content",
+      "status": "complete",
+      "contentSha256": "8a1a99afcff933d9ca86fe2fce3d1eecbc5fd048a7a3062084616689235788b6"
+    },
+    {
+      "slug": "verify-meta-pixel-installed-with-lead-events",
+      "title": "Verify Meta pixel installed with lead events",
+      "description": "Check that the right site events reach the right ad account. Keep a click separate from a real lead.",
+      "article": "https://blitzmetrics.com/website-qa-audit",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=verify-meta-pixel-installed-with-lead-events#task-verify-meta-pixel-installed-with-lead-events",
+      "status": "complete",
+      "contentSha256": "c52e095269effc31986abf3037d484279093215e309121d6e7209b05ccb8d293"
+    },
+    {
+      "slug": "verify-minimum-5-distinct-images-on-homepage",
+      "title": "Verify minimum 5 distinct images on homepage",
+      "description": "Count the useful images on a personal home page. Make sure five real visuals can be seen on a phone too.",
+      "article": "https://blitzmetrics.com/website-qa-audit",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=verify-minimum-5-distinct-images-on-homepage#task-verify-minimum-5-distinct-images-on-homepage",
+      "status": "complete",
+      "contentSha256": "e70e55240245ba230e7101836c3a251a270d5621a41799891871fad19b5c855c"
+    },
+    {
+      "slug": "verify-person-schema-with-sameas-links",
+      "title": "Verify Person schema with sameAs links",
+      "description": "Check the site data about a real person. Link it to the same person’s trusted public pages.",
+      "article": "https://blitzmetrics.com/website-qa-audit",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=verify-person-schema-with-sameas-links#task-verify-person-schema-with-sameas-links",
+      "status": "needs-work",
+      "contentSha256": "02312e47bf14fb60016d245159adb973711393259b10c70b24cba7fc63bc4a12"
+    },
+    {
+      "slug": "verify-prerequisites-product-customers-content",
+      "title": "Verify prerequisites (product, customers, content)",
+      "description": "Check what you sell and the proof that it helps. Do this before you pay for ads.",
+      "article": "https://blitzmetrics.com/dad",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=verify-prerequisites-product-customers-content#task-verify-prerequisites-product-customers-content",
+      "status": "complete",
+      "contentSha256": "f0f37614c8c041b2df8824190e8622b3af027d19148a6091666980d7f87c87e9"
+    },
+    {
+      "slug": "verify-rank-math-score-above-70-on-every-page",
+      "title": "Verify Rank Math score above 70 on every page",
+      "description": "Use the SEO score to find useful fixes. Keep facts and clear writing ahead of points.",
+      "article": "https://blitzmetrics.com/website-qa-audit",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=verify-rank-math-score-above-70-on-every-page#task-verify-rank-math-score-above-70-on-every-page",
+      "status": "complete",
+      "contentSha256": "13260d857e6fed227951948bffbec0bd12297445f01063ec7296c3d9db731442"
+    },
+    {
+      "slug": "verify-social-proof-photos-present",
+      "title": "Verify social proof photos present",
+      "description": "Show the real source behind a proof section. Keep photos and claims tied to what actually happened.",
+      "article": "https://blitzmetrics.com/website-qa-audit",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=verify-social-proof-photos-present#task-verify-social-proof-photos-present",
+      "status": "complete",
+      "contentSha256": "9c69fd74e0b40fcbd44a3fdba5071b2924e2b052f33715658e7ecdd314d96f9b"
+    },
+    {
+      "slug": "verify-structural-completeness-against-8-step-framework",
+      "title": "Check structure against the current article guidelines",
+      "description": "A clear guide should help you do the job and check the result.",
+      "article": "https://blitzmetrics.com/knowledge-system-maintenance",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=verify-structural-completeness-against-8-step-framework#task-verify-structural-completeness-against-8-step-framework",
+      "status": "complete",
+      "contentSha256": "8e0727fffb07dac88fc0e86a4a00e18098fd2207cde945556a01345af5954b47"
+    },
+    {
+      "slug": "verify-testimonials-include-headshots-with-attribution",
+      "title": "Verify testimonials include headshots with attribution",
+      "description": "Check the person behind each quote. Use a real approved photo and a full name.",
+      "article": "https://blitzmetrics.com/website-qa-audit",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=verify-testimonials-include-headshots-with-attribution#task-verify-testimonials-include-headshots-with-attribution",
+      "status": "complete",
+      "contentSha256": "18644c05714ee91c453e2d872361be3dd9eab4124e8ac7f61176d6445cdbf01e"
+    },
+    {
+      "slug": "verify-testimonials-with-full-attribution",
+      "title": "Verify testimonials with full attribution",
+      "description": "Check who said each quote and where it came from. Hold praise that lacks the facts readers need.",
+      "article": "https://blitzmetrics.com/website-qa-audit",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=verify-testimonials-with-full-attribution#task-verify-testimonials-with-full-attribution",
+      "status": "complete",
+      "contentSha256": "e3618f24ba52e703031b1c2a640ceb28f5151d42947fe0838840cd18a6777949"
+    },
+    {
+      "slug": "verify-wordpress-author-set-to-site-owner-name",
+      "title": "Verify WordPress author set to site owner name",
+      "description": "Check that each byline names the right author. Keep real guest writers and fix default account names.",
+      "article": "https://blitzmetrics.com/website-qa-audit",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=verify-wordpress-author-set-to-site-owner-name#task-verify-wordpress-author-set-to-site-owner-name",
+      "status": "complete",
+      "contentSha256": "412e35ff48e31a7f14394420fc89e3871f9751618002e0cc12a8553853a83bfa"
+    },
+    {
+      "slug": "verify-xml-sitemap-exists-and-in-robotstxt",
+      "title": "Verify XML sitemap exists and in robots.txt",
+      "description": "Check the map that helps search tools find pages. Use the real map address and the right page list.",
+      "article": "https://blitzmetrics.com/website-qa-audit",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=verify-xml-sitemap-exists-and-in-robotstxt#task-verify-xml-sitemap-exists-and-in-robotstxt",
+      "status": "complete",
+      "contentSha256": "e4d0be7453c935055404dafafabfd5392077f2c797ff7c0d247a40fa7a0a0883"
+    },
+    {
+      "slug": "write-email-newsletter-from-video-key-insight",
+      "title": "Write email newsletter from video key insight",
+      "description": "Write one useful email from a real video. Give readers a clear lesson and a next step.",
+      "article": null,
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=write-email-newsletter-from-video-key-insight#task-write-email-newsletter-from-video-key-insight",
+      "status": "needs-work",
+      "contentSha256": "a64683deabc3b220cfa96605c6290dca7bc0bcd4aedaa1d93b10b9baf4da79aa"
+    },
+    {
+      "slug": "write-meta-article-documenting-agent-work",
+      "title": "Write a meta article documenting a task execution",
+      "description": "Write what happened when a task ran. Link the work, the checks, and the next step.",
+      "article": "https://blitzmetrics.com/meta-article-prompt/",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=write-meta-article-documenting-agent-work#task-write-meta-article-documenting-agent-work",
+      "status": "complete",
+      "contentSha256": "b0e457b65f344539275344a0232722285c1f6ecf5889cf19a1d71f38dae791b3"
+    },
+    {
+      "slug": "write-proper-title-tags-and-meta-descriptions",
+      "title": "Write Proper Title Tags and Meta Descriptions",
+      "description": "Write clear page titles and search summaries. Make each one match the page it describes.",
+      "article": "https://blitzmetrics.com/digital-plumbing",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=write-proper-title-tags-and-meta-descriptions#task-write-proper-title-tags-and-meta-descriptions",
+      "status": "needs-work",
+      "contentSha256": "62e3ff8e43d027340867ce844155dfba03da10c5bc94b14655551d0d43db23bf"
+    }
+  ]
+}

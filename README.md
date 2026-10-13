@@ -17,7 +17,15 @@ New here? Open a guide on the [Task Library Dashboard](https://blitzmetrics.com/
 
 Hub-and-spoke skill library. This repo is the **hub**: the registry, the dashboard, and the default home for skill files. Skills can also live in their owner's own repo (the **spokes**) — the build pulls them in at build time.
 
-## Layout
+## Teach a group
+
+Use the [teaching paths](https://local-service-spotlight.github.io/task-library/training.html)
+to choose a starting lesson sequence, adapt its audience and goal, and save a
+source-linked session plan. The browser presentation uses the same public guides;
+paid courses and instructor answers keep their existing access controls.
+See [the path contract and remaining asset-consolidation work](TRAINING-PATHS.md).
+
+## Source layout
 
 ```
 skills/<category-folder>/<slug>.md   skill files that live in this repo ("local")
