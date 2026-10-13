@@ -69,10 +69,11 @@ reference without invented path mappings.
 ## Public and protected material
 
 Dennis chose public paths and public lessons with protected course material.
-This release projects only existing public task metadata plus public path briefs.
-It does not read private workshop inventories, lead rows, paid lessons,
+This release projects public task metadata, path briefs, and a reviewed,
+link-only material catalog. It does not copy lead rows, paid lessons,
 instructor keys or offline packs. Browser presentation mode has no privileged
-instructor view. It is safe to share only because it carries public metadata.
+instructor view. A protected course entry is only its public information page;
+the library does not authenticate, enroll, fetch or unlock course lessons.
 
 Protected materials stay at their existing authorized source. Hiding a field in
 CSS or JavaScript is not access control. Do not add paid/instructor contents,
@@ -80,7 +81,44 @@ private URLs, tokens, or client examples to this public repository or its JSON.
 A future protected viewer must use the existing authentication and permission
 boundary before fetching its files, never a public bundle with hidden answers.
 
-## Register existing workshop and presentation assets next
+## Connected materials and a complete practice session
+
+The first reviewed batch connects seven existing sources: the JVA R3 public
+slide PDF, participant workbook and inputs; the Tampa operator exercise; the
+Content Factory page with its existing recordings; the Content Marketing
+Course public entry; and the generic DigiMarCon agent starter PDF. Their
+original audience and reuse limits stay visible. These are maintained source
+links, not rehosted files or a claim that all training is now consolidated.
+The recording page is linked without embedding or autoplay. Playback,
+captions and paid-course entitlement are not certified by a successful link check.
+
+`build/packs.json` also owns `teachingMaterials` and `practiceSessions`.
+`build/teaching_materials.py` validates allowed fields, public hosts, access
+tiers, source checksums and cross-references. A public practice session cannot
+depend on a protected course. The catalog must never contain signed/private
+URLs or lesson bodies, even when the browser would not display them.
+
+On the Content Factory path, choose **A checked campaign bundle from fictional
+inputs** under **Run a practice session**. Read and save the existing Tampa
+task card, then present its six practice steps. Use the complete S1–S4 input
+with an assistant and editor you already have. Bring back all seven requested
+files; check claims, word ranges, the proposed test and the job's authority
+boundaries. Keep the first attempt before any correction.
+
+The separate practice record saves the first attempt, check notes, revised
+output and one owned next step. Download it before closing or reloading the
+tab, then reopen it to verify persistence. The record is local only: there is
+no automatic save, server upload or account. It complements, not replaces,
+the seven exercise files. Use only fictional or already-public inputs.
+Imported records keep their original recipe and material provenance on
+re-export; changed-source warnings are not cleared by merely saving again.
+Replacing different unsaved work requires explicit confirmation.
+
+The 60-minute label is a planning estimate, not a measured human completion
+time. A simulated assistant rehearsal and browser persistence test do not
+establish learner mastery, campaign results, course access or teacher acceptance.
+
+## Register more existing assets
 
 Keep the existing master and paired participant/instructor release workflow.
 Before attaching an existing deck, recording, exercise or course segment, resolve:
@@ -94,8 +132,8 @@ Before attaching an existing deck, recording, exercise or course segment, resolv
 
 An old public download, internal review, or organizer approval is not current
 cross-audience permission or curriculum adoption. Held conference review decks
-are not exposed here. Adding these assets is unfinished consolidation work,
-not something the five paths silently complete.
+are not exposed here. Broader consolidation, rights checks and human learning
+trials remain ongoing work; the first batch does not silently complete them.
 
 ## Tests and release
 
@@ -110,7 +148,8 @@ A merged commit is not a successful Pages deployment; open the live result.
 With Playwright already available, run the portable browser regression:
 `node scripts/check_training_ui.cjs <training.html URL> [evidence directory]`.
 It checks desktop/phone layout, every path, a simulated deployed subpath,
-actual plan download/reopen, untrusted imported links, print and keyboard/focus
+actual plan and practice-record download/reopen, retained source provenance,
+overwrite protection, untrusted imported links, print and keyboard/focus
 controls. It mutes audio and permits only the chosen origin; it does not submit
 forms or certify remote article content, screen-reader use or physical printing.
 

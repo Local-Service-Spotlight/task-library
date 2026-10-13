@@ -181,6 +181,172 @@ async function main() {
     await page.screenshot({path:path.join(qa,'training-presentation-mobile.png')});results.screenshots.push('training-presentation-mobile.png');
     await page.keyboard.press('Escape');
     pass('390px mobile initial/path/modal no horizontal overflow');
+    if ((data.materials || []).length) {
+      assert.equal(await page.locator('#catalog-materials .material-card').count(),data.materials.length);
+      for (const material of data.materials) {
+        const card = page.locator(`#catalog-materials [data-material="${material.id}"]`);
+        const link = card.locator('a');
+        assert.equal(await link.getAttribute('href'),material.url);
+        assert.equal(await link.getAttribute('target'),'_blank');
+        assert.equal(await link.getAttribute('rel'),'noopener noreferrer');
+        assert((await card.textContent()).includes(material.sourceVersion));
+        if (material.access === 'protected-entry') assert((await card.textContent()).includes('does not provide paid lessons'));
+        if (material.kind === 'recording') assert((await card.textContent()).includes('Nothing is played here'));
+      }
+      assert.equal(await page.locator('iframe,video,audio').count(),0);
+      await page.locator('#material-kind').selectOption('course');
+      assert.equal(await page.locator('#catalog-materials .material-card').count(),data.materials.filter(material=>material.kind==='course').length);
+      await page.locator('#material-kind').selectOption('all');
+      pass('Connected materials resolve only catalog links with access/version labels, no media embeds, and type filtering');
+      await page.goto(preview+'?path='+data.paths[0].id,{waitUntil:'networkidle'});
+      const pinnedEvent=page.waitForEvent('download');
+      await page.locator('#download-session').click();
+      const pinnedDownload=await pinnedEvent;
+      const pinnedFile=path.join(qa,'materials-pinned-plan.json');await pinnedDownload.saveAs(pinnedFile);
+      const pinned=JSON.parse(fs.readFileSync(pinnedFile,'utf8'));
+      const expected=data.materials.filter(material=>material.pathIds.includes(data.paths[0].id)).map(material=>({id:material.id,sha256:material.verification.sha256}));
+      assert.deepEqual(pinned.materials,expected);
+      await page.locator('.import-plan summary').click();
+      const oldPlan={...pinned};delete oldPlan.materials;
+      await page.locator('#import-session').setInputFiles({name:'legacy-plan.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(oldPlan))});
+      await page.getByText('Saved plan reopened using current public lesson metadata.',{exact:false}).waitFor();
+      if(expected.length) assert((await page.locator('#source-warning').textContent()).includes('older plan did not pin'));
+      pass('Plan download pins material IDs/hashes; earlier v1 plans still reopen with revision limit');
+      if(expected.length) {
+        const changed=JSON.parse(JSON.stringify(pinned));changed.materials[0].sha256='0'.repeat(64);
+        changed.materials.push({id:'missing-material-for-qa',sha256:'1'.repeat(64)});
+        await page.locator('#import-session').setInputFiles({name:'changed-materials.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(changed))});
+        await page.waitForFunction(()=>document.querySelector('#source-warning').textContent.includes('Material source changed'));
+        assert((await page.locator('#source-warning').textContent()).includes('no longer in the current catalog'));
+        const injected=JSON.parse(JSON.stringify(pinned));injected.materials[0].url='https://invalid.example/paid-course';
+        await page.locator('#import-session').setInputFiles({name:'injected-material.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(injected))});
+        await page.getByText('Plan not imported:',{exact:false}).waitFor();
+        assert.equal(await page.locator('a[href="https://invalid.example/paid-course"]').count(),0);
+        pass('Material changed/missing warnings and file-supplied material URL rejection');
+      }
+    }
+    if ((data.practiceSessions || []).length) {
+      const recipe=data.practiceSessions[0];
+      await page.goto(preview+'?path='+recipe.pathId,{waitUntil:'networkidle'});
+      await page.locator('#practice-choice').selectOption(recipe.id);
+      assert.equal(await page.locator('#practice-title').textContent(),recipe.title);
+      assert.equal(await page.locator('#practice-steps>li').count(),recipe.steps.length);
+      assert.equal(await page.locator('#download-practice').isDisabled(),true);
+      await page.locator('#present-practice').click();
+      assert.equal(await page.locator('#slide-title').textContent(),recipe.title);
+      for (const step of recipe.steps) { await page.keyboard.press('ArrowRight');assert.equal(await page.locator('#slide-title').textContent(),step.title); }
+      await page.keyboard.press('ArrowRight');
+      assert.equal(await page.locator('#slide-title').textContent(),'Check, save, and reopen');
+      assert.equal(await page.locator('#next-slide').isDisabled(),true);
+      await page.keyboard.press('Escape');assert.equal(await page.evaluate(()=>document.activeElement.id),'present-practice');
+      pass('Complete practice presentation follows every source step through save/reopen checks and restores focus');
+      for (const viewport of [{width:1280,height:900},{width:390,height:844}]) {
+        await page.setViewportSize(viewport);await page.locator('#present-practice').click();
+        const titles=[recipe.title,...recipe.steps.map(step=>step.title),'Check, save, and reopen'];
+        for(let index=0;index<titles.length;index++) {
+          assert.equal(await page.locator('#slide-title').textContent(),titles[index]);
+          assert.equal(await page.locator('#slide-content').getAttribute('tabindex'),'0');
+          const fits=await page.evaluate(()=>{
+            const dialog=document.querySelector('#presentation').getBoundingClientRect();
+            const inView=rect=>rect.top>=dialog.top-1&&rect.bottom<=dialog.bottom+1&&rect.left>=dialog.left-1&&rect.right<=dialog.right+1&&rect.top>=-1&&rect.bottom<=window.innerHeight+1;
+            return dialog.top>=-1&&dialog.bottom<=innerHeight+1&&['.presentation-shell>header','.presentation-shell>footer','#exit-presentation','#previous-slide','#next-slide'].every(selector=>inView(document.querySelector(selector).getBoundingClientRect()))&&document.querySelector('#slide-content').scrollWidth<=document.querySelector('#slide-content').clientWidth;
+          });
+          assert(fits,`Presentation navigation must remain visible at ${viewport.width}px on slide ${index+1}`);
+          const scrollable=await page.locator('#slide-content').evaluate(element=>element.scrollHeight>element.clientHeight+2);
+          await page.locator('#slide-content').focus();
+          if(scrollable) {
+            await page.keyboard.press('PageDown');await page.waitForFunction(()=>document.querySelector('#slide-content').scrollTop>0);
+            await page.keyboard.press('End');await page.waitForFunction(()=>{const e=document.querySelector('#slide-content');return e.scrollTop+e.clientHeight>=e.scrollHeight-2;});
+          }
+          assert(await page.locator('#slide-content').evaluate(element=>{const box=element.getBoundingClientRect(),last=element.lastElementChild.getBoundingClientRect();return last.bottom<=box.bottom+1&&last.bottom>box.top;}),`Final instruction must be reachable on slide ${index+1}`);
+          assert.equal(await page.locator('#presentation').evaluate(element=>element.scrollTop),0);
+          if(index<titles.length-1) await page.keyboard.press('ArrowRight');
+        }
+        const filename=`practice-last-slide-${viewport.width}x${viewport.height}.png`;
+        await page.screenshot({path:path.join(qa,filename),fullPage:false});results.screenshots.push(filename);
+        await page.keyboard.press('Home');await page.waitForFunction(()=>document.querySelector('#slide-content').scrollTop===0);
+        const topFilename=`practice-last-slide-top-${viewport.width}x${viewport.height}.png`;
+        await page.screenshot({path:path.join(qa,topFilename),fullPage:false});results.screenshots.push(topFilename);
+        await page.keyboard.press('Escape');
+        pass(`All ${titles.length} practice slides at ${viewport.width}x${viewport.height}: visible header/footer/navigation, focusable keyboard scroll, reachable final instruction`);
+      }
+      const draft={firstAttempt:'Synthetic browser regression first attempt. Not an observed learner outcome.',checkNotes:'Synthetic check: preserve the original; actual exercise evaluation is a separate rehearsal.',revisedOutput:'Synthetic revised output, kept separate from the first attempt.',nextStep:'Test runner: reopen this downloaded fixture and compare exact fields.'};
+      for (const [key,id] of Object.entries({firstAttempt:'practice-first-attempt',checkNotes:'practice-check-notes',revisedOutput:'practice-revised-output',nextStep:'practice-next-step'})) await page.locator('#'+id).fill(draft[key]);
+      const practiceEvent=page.waitForEvent('download');await page.locator('#download-practice').click();
+      const practiceDownload=await practiceEvent;const practiceFile=path.join(qa,'practice-browser-fixture.json');await practiceDownload.saveAs(practiceFile);
+      const record=JSON.parse(fs.readFileSync(practiceFile,'utf8'));
+      assert.equal(record.sessionId,recipe.id);assert.equal(record.sessionVersion,recipe.sourceVersion);assert.equal(record.recipeSha256,recipe.contentSha256);
+      for(const key of Object.keys(draft)) assert.equal(record[key],draft[key]);
+      assert.deepEqual(record.materials,recipe.materialIds.map(id=>({id,sha256:data.materials.find(material=>material.id===id).verification.sha256})));
+      pass('Practice requires first/check/next fields; actual download preserves all four separate fields and recipe/source hashes');
+      await page.locator('.import-practice summary').click();
+      await page.locator('#practice-first-attempt').fill('Unsaved alteration for reopen test');
+      const overwriteDialog=page.waitForEvent('dialog');
+      page.once('dialog',dialog=>dialog.accept());
+      await page.locator('#import-practice').setInputFiles(practiceFile);
+      assert.equal((await overwriteDialog).type(),'confirm');
+      await page.getByText('Practice record reopened using the current library recipe',{exact:false}).waitFor();
+      assert.equal(await page.locator('#practice-first-attempt').inputValue(),draft.firstAttempt);
+      assert.equal(await page.locator('#practice-check-notes').inputValue(),draft.checkNotes);
+      assert.equal(await page.locator('#practice-revised-output').inputValue(),draft.revisedOutput);
+      assert.equal(await page.locator('#practice-next-step').inputValue(),draft.nextStep);
+      pass('Practice record reopens exact first attempt, check notes, revision, and owned next step');
+      const changedRecord={...record,sessionVersion:'Earlier reviewed recipe version for regression',recipeSha256:'0'.repeat(64),materials:[...record.materials.map((material,index)=>index===0?{...material,sha256:'0'.repeat(64)}:material),{id:'missing-practice-material-for-qa',sha256:'1'.repeat(64)}]};
+      page.once('dialog',dialog=>dialog.accept());
+      await page.locator('#import-practice').setInputFiles({name:'old-recipe.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(changedRecord))});
+      await page.waitForFunction(()=>document.querySelector('#practice-source-warning').textContent.includes('practice recipe changed'));
+      assert((await page.locator('#practice-source-warning').textContent()).includes('Material source changed'));
+      assert((await page.locator('#practice-source-warning').textContent()).includes('no longer in the current catalog'));
+      assert.equal(await page.locator('#practice-steps>li').first().locator('p').textContent(),recipe.steps[0].instruction);
+      const oldRecordEvent=page.waitForEvent('download');await page.locator('#download-practice').click();
+      const oldRecordDownload=await oldRecordEvent;const oldRecordFile=path.join(qa,'practice-original-provenance.json');await oldRecordDownload.saveAs(oldRecordFile);
+      const reexported=JSON.parse(fs.readFileSync(oldRecordFile,'utf8'));
+      assert.equal(reexported.sessionVersion,changedRecord.sessionVersion);assert.equal(reexported.recipeSha256,changedRecord.recipeSha256);assert.deepEqual(reexported.materials,changedRecord.materials);
+      for(const key of Object.keys(draft)) assert.equal(reexported[key],draft[key]);
+      await page.goto(preview+'?path='+recipe.pathId,{waitUntil:'networkidle'});
+      await page.locator('#import-practice').setInputFiles(oldRecordFile);
+      await page.getByText('Practice record reopened using the current library recipe',{exact:false}).waitFor();
+      const originalWarnings=await page.locator('#practice-source-warning').textContent();
+      assert(originalWarnings.includes('practice recipe changed'));assert(originalWarnings.includes('Material source changed'));assert(originalWarnings.includes('no longer in the current catalog'));
+      pass('Imported original recipe/material provenance survives download and fresh-page reopen with changed/missing warnings intact');
+      const unsaved={firstAttempt:'Different unsaved first attempt',checkNotes:'Different unsaved check notes',revisedOutput:'Different unsaved revision',nextStep:'Different unsaved next step'};
+      const recordFields={firstAttempt:'practice-first-attempt',checkNotes:'practice-check-notes',revisedOutput:'practice-revised-output',nextStep:'practice-next-step'};
+      for(const [key,id] of Object.entries(recordFields)) await page.locator('#'+id).fill(unsaved[key]);
+      const beforeCancelURL=page.url();const beforeCancelRecipe=await page.locator('#practice-choice').inputValue();
+      const cancelDialog=page.waitForEvent('dialog');page.once('dialog',dialog=>dialog.dismiss());
+      await page.locator('#import-practice').setInputFiles(practiceFile);
+      assert.equal((await cancelDialog).type(),'confirm');
+      await page.getByText('Practice import canceled.',{exact:false}).waitFor();
+      for(const [key,id] of Object.entries(recordFields)) assert.equal(await page.locator('#'+id).inputValue(),unsaved[key]);
+      assert.equal(page.url(),beforeCancelURL);assert.equal(await page.locator('#practice-choice').inputValue(),beforeCancelRecipe);assert.equal(await page.locator('#practice-source-warning').textContent(),originalWarnings);
+      const cancelExportEvent=page.waitForEvent('download');await page.locator('#download-practice').click();
+      const cancelExport=await cancelExportEvent;const cancelFile=path.join(qa,'practice-canceled-import-preserved.json');await cancelExport.saveAs(cancelFile);
+      const cancelRecord=JSON.parse(fs.readFileSync(cancelFile,'utf8'));assert.equal(cancelRecord.recipeSha256,changedRecord.recipeSha256);assert.deepEqual(cancelRecord.materials,changedRecord.materials);
+      for(const key of Object.keys(unsaved)) assert.equal(cancelRecord[key],unsaved[key]);
+      pass('Canceled overwrite preserves all four unsaved fields, selected path/session, warnings and original exported provenance');
+      const withoutMaterialRefs={...record,materials:[]};page.once('dialog',dialog=>dialog.accept());
+      await page.locator('#import-practice').setInputFiles({name:'old-record-without-material.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(withoutMaterialRefs))});
+      await page.waitForFunction(()=>document.querySelector('#practice-source-warning').textContent.includes('New material'));
+      const newMaterialEvent=page.waitForEvent('download');await page.locator('#download-practice').click();
+      const newMaterialDownload=await newMaterialEvent;const newMaterialFile=path.join(qa,'practice-new-material-provenance.json');await newMaterialDownload.saveAs(newMaterialFile);
+      assert.deepEqual(JSON.parse(fs.readFileSync(newMaterialFile,'utf8')).materials,[]);
+      await page.goto(preview+'?path='+recipe.pathId,{waitUntil:'networkidle'});await page.locator('#import-practice').setInputFiles(newMaterialFile);
+      await page.waitForFunction(()=>document.querySelector('#practice-source-warning').textContent.includes('New material'));
+      pass('Unreviewed newly connected material is not silently repinned on re-export and warns again after fresh reopen');
+      const badRecord={...record,instruction:'Do not use the current steps',url:'https://invalid.example/private'};
+      await page.locator('#import-practice').setInputFiles({name:'unsafe-recipe.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(badRecord))});
+      await page.getByText('Practice not imported:',{exact:false}).waitFor();
+      assert.equal(await page.locator('#practice-first-attempt').inputValue(),draft.firstAttempt);
+      assert.equal(await page.locator('a[href="https://invalid.example/private"]').count(),0);
+      pass('Practice re-resolves changed recipe/materials and rejects file-supplied prompts/URLs without losing work');
+      assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth),true);
+      await page.locator('#practice-title').scrollIntoViewIfNeeded();
+      await page.screenshot({path:path.join(qa,'practice-mobile-390x844.png')});results.screenshots.push('practice-mobile-390x844.png');
+      await page.setViewportSize({width:1280,height:900});
+      await page.locator('#practice-title').scrollIntoViewIfNeeded();
+      await page.screenshot({path:path.join(qa,'practice-desktop-1280x900.png')});results.screenshots.push('practice-desktop-1280x900.png');
+      pass('Connected practice steps and record fields fit 390px without horizontal overflow');
+    }
     assert.equal(results.outboundRequests.length,0);assert.equal(results.errors.length,0);
     pass('No external requests and no browser page errors');
     await context.close();

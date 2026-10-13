@@ -203,6 +203,211 @@
       "sessionMinutes": 30
     }
   ],
+  "materials": [
+    {
+      "id": "jva-r3-slides",
+      "title": "JVA workshop slides — September 29 R3",
+      "kind": "deck",
+      "access": "public",
+      "url": "https://dennisyu.com/jva/assets/JVA-Workshop-Slides-2026-09-29-R3.pdf",
+      "sourceOwner": "Dennis Yu / existing JVA workshop source owner",
+      "sourceVersion": "JVA-CLUB-ADMIN-2026.09.29-R3; frozen public PDF",
+      "checkedAt": "2026-10-13T18:41:06.681Z",
+      "useNote": "Link as the original JVA club-operations deck/reference. Preserve the event/audience and source version; not a generic Hypergrowth deck or accepted new event cut.",
+      "pathIds": [
+        "operations"
+      ],
+      "verification": {
+        "method": "anonymous-get",
+        "status": 200,
+        "sha256": "52aaaccf6c978553f89e941b98282e624376229720ac5a6a1c14a9d040baa428"
+      }
+    },
+    {
+      "id": "jva-r3-participant-workbook",
+      "title": "JVA participant workbook — September 29 R3",
+      "kind": "workbook",
+      "access": "public",
+      "url": "https://dennisyu.com/jva/assets/JVA-Participant-Workbook-2026-09-29-R3.pdf",
+      "sourceOwner": "Dennis Yu / existing JVA workshop source owner",
+      "sourceVersion": "JVA-CLUB-ADMIN-2026.09.29-R3; frozen public participant workbook",
+      "checkedAt": "2026-10-13T18:41:08.906Z",
+      "useNote": "Link with the matching public R3 deck and synthetic input file; keep instructor/offline pack separate.",
+      "pathIds": [
+        "operations"
+      ],
+      "verification": {
+        "method": "anonymous-get",
+        "status": 200,
+        "sha256": "eadc38abe9f4541db49cc251a5e55b49732d4ce6357d547ecae3be8b2eddd76b"
+      }
+    },
+    {
+      "id": "jva-r3-participant-inputs",
+      "title": "JVA participant inputs — R3",
+      "kind": "exercise",
+      "access": "public",
+      "url": "https://dennisyu.com/jva/assets/participant-inputs.txt",
+      "sourceOwner": "Dennis Yu / existing JVA workshop source owner",
+      "sourceVersion": "Public TXT replacement preserving R3 participant input members",
+      "checkedAt": "2026-10-13T18:41:11.772Z",
+      "useNote": "Link as matching club-workshop inputs. Use synthetic data; do not import athlete or minor records.",
+      "pathIds": [
+        "operations"
+      ],
+      "verification": {
+        "method": "anonymous-get",
+        "status": 200,
+        "sha256": "e6fd27077df35e53208920466a150830faa9c6a15af1740af26e5066faf83bee"
+      }
+    },
+    {
+      "id": "tampa-operator-lab",
+      "title": "One Offer. One Source. One Measured Test.",
+      "kind": "exercise",
+      "access": "public",
+      "url": "https://dennisyu.com/tampa/task-card.md",
+      "sourceOwner": "Dennis Yu / existing Tampa workshop source owner",
+      "sourceVersion": "TAMPA-OPERATOR-LAB-2026.1; September 28, 2026",
+      "checkedAt": "2026-10-13T18:41:12.217Z",
+      "useNote": "Use exact original synthetic inputs S1-S4 and task instructions for the complete session rehearsal. Preserve first response, seven filenames, word ranges, source IDs, booking placeholder and draft-only limits.",
+      "pathIds": [
+        "content-factory",
+        "implement-agents",
+        "running-ads",
+        "digital-agency"
+      ],
+      "verification": {
+        "method": "anonymous-get",
+        "status": 200,
+        "sha256": "e25c6ad99d58827ec6fb6df30a58fd31840a13d117a573621ae5e2e9b882b99d"
+      }
+    },
+    {
+      "id": "content-factory-recordings",
+      "title": "Content Factory recordings and four-stage guide",
+      "kind": "recording",
+      "access": "public",
+      "url": "https://localservicespotlight.com/content-factory/",
+      "sourceOwner": "Local Service Spotlight public guide; original video channels retain recordings",
+      "sourceVersion": "Public page byte snapshot checked October 14 Singapore",
+      "checkedAt": "2026-10-13T18:41:12.576Z",
+      "useNote": "Link the existing first-party page containing recordings. Do not download, rehost, silently repurpose or claim playback acceptance. Includes The Content Factory (DigitalMarketer) and The Marketing Mechanic Framework (Dennis Yu). Playback and captions have not been tested.",
+      "pathIds": [
+        "content-factory"
+      ],
+      "verification": {
+        "method": "anonymous-get",
+        "status": 200,
+        "sha256": "00f2850f4d05058c3904e67277422ebb0b1c1825b9ebc49565f966be578ee499"
+      }
+    },
+    {
+      "id": "content-marketing-course-entry",
+      "title": "Content Marketing Course — public information",
+      "kind": "course",
+      "access": "protected-entry",
+      "url": "https://blitzmetrics.com/cmc/",
+      "sourceOwner": "BlitzMetrics / existing Content Marketing Course owner",
+      "sourceVersion": "Public course-information page snapshot checked October 14 Singapore",
+      "checkedAt": "2026-10-13T18:49:34.050Z",
+      "useNote": "Expose only this existing public course information page. Follow the original course provider for enrollment/login. Leave paid course lessons and instructor material at their existing protected sources.",
+      "pathIds": [
+        "content-factory",
+        "digital-agency"
+      ],
+      "verification": {
+        "method": "anonymous-get",
+        "status": 200,
+        "sha256": "5c0efee3278a0c6241c8269d2f70bbfdb9a69dcf9ad4825a6a5c92a8f982249b"
+      }
+    },
+    {
+      "id": "digimarcon-agent-starter",
+      "title": "Marketing Agents Starter Guide — DigiMarCon",
+      "kind": "workbook",
+      "access": "public",
+      "url": "https://digimarcon.com/wp-content/uploads/2026/10/marketing-agents-starter-guide-digimarcon.pdf",
+      "sourceOwner": "Existing DigiMarCon starter guide owner; Dennis Yu teaching content",
+      "sourceVersion": "Published three-page starter reviewed October 10; exact unchanged PDF bytes",
+      "checkedAt": "2026-10-13T18:42:12.521Z",
+      "useNote": "Link the original public generic starter; preserve DigiMarCon attribution and named-example context. Do not recast as the final Hypergrowth deck/workbook or copy examples into another audience edition.",
+      "pathIds": [
+        "implement-agents"
+      ],
+      "verification": {
+        "method": "anonymous-get",
+        "status": 200,
+        "sha256": "c7fc99b9fc7608b9c473e4887306aa0821bea3416704eefa13355402e474c3bc"
+      }
+    }
+  ],
+  "practiceSessions": [
+    {
+      "id": "tampa-campaign-rehearsal",
+      "title": "A checked campaign bundle from fictional inputs",
+      "pathId": "content-factory",
+      "audience": "Agency and content operators using the original Tampa fictional exercise",
+      "goal": "Save and check a seven-file campaign draft bundle without sending, publishing or spending.",
+      "minutes": 60,
+      "sourceVersion": "Library session 2026-10-14.1; TAMPA-OPERATOR-LAB-2026.1 unchanged",
+      "materialIds": [
+        "tampa-operator-lab"
+      ],
+      "steps": [
+        {
+          "title": "1. Prepare the workspace",
+          "instruction": "Open the original Tampa task card below. Save it locally. Use your existing assistant and an editor or file workspace. Use only its fictional S1–S4 inputs. No account setup or paid course access is required.",
+          "materialIds": [
+            "tampa-operator-lab"
+          ]
+        },
+        {
+          "title": "2. Learn the task and its boundaries",
+          "instruction": "Read the assignment, S1–S4, seven required filenames and copyable prompt in full. Explain the audience, one offer and next action. Name the unsupported proposed claim in S4 and why the pilot notes cannot prove customer results. This is the Process stage; Post and Promote remain proposals.",
+          "materialIds": [
+            "tampa-operator-lab"
+          ]
+        },
+        {
+          "title": "3. Make and preserve the first attempt",
+          "instruction": "Give your assistant the complete task card, including the prompt. Save the unedited response as 00-first-response.txt before requesting corrections. Produce the six other named files. If file tools are unavailable, copy each named section into your editor and save it yourself; record that assistance.",
+          "materialIds": [
+            "tampa-operator-lab"
+          ]
+        },
+        {
+          "title": "4. Check all seven outputs",
+          "instruction": "Open every saved file. Compare claims with S1–S4, count each draft's words, inspect the one proposed test and job card, and check the booking placeholder and no-live-action boundary. Record failures as well as passes. Use the checks below and the full source instructions.",
+          "materialIds": [
+            "tampa-operator-lab"
+          ]
+        },
+        {
+          "title": "5. Revise without erasing the evidence",
+          "instruction": "Keep the first attempt unchanged. Save any corrected files in a separate revised folder and note what changed. Ask another reviewer to check the work when available; label self-check and independent review separately. A passing self-check alone does not establish teaching success.",
+          "materialIds": []
+        },
+        {
+          "title": "6. Save, reopen and hand off",
+          "instruction": "Keep the seven files as the actual deliverables. In the practice record below, retain the first response, checks, revision or no-correction note, and one next owner/action. Download the record, clear or leave this page, then reopen it and the output files. Explain one rejected claim and one remaining permission gate to your reviewer. Downloaded records stay on your device and may contain your text; use fictional or approved public inputs only.",
+          "materialIds": []
+        }
+      ],
+      "deliverable": "Seven files from the task card plus a locally downloaded/reopened practice record. Keep the first response and any revisions separate. A saved record documents a rehearsal; it does not certify a learner or prove a campaign ran.",
+      "checks": [
+        "All seven exact source filenames are saved and reopened; original first response is preserved.",
+        "GCT names one audience, the single fictional offer and the correct next action; all factual claims cite S1–S4.",
+        "Claim ledger distinguishes supported, qualified and omitted claims; the doubled-lead guarantee is rejected and pilot limitations remain explicit.",
+        "VSL 60–90 words, email 100–150 words, JV introduction 70–110 words; each has a different purpose and the required booking-link placeholder.",
+        "Exactly one proposed test has a primary outcome, denominator, proposed threshold, owner, permission gates, measurement caveats and stop condition.",
+        "Agent job lists trigger, allowed inputs, all seven outputs, acceptance checks, reviewer/owner, exceptions, private/shared boundary and source version.",
+        "Receipt reports only observed actions; no live sending, publishing, spend, connection, installation, schedule, revenue or learner mastery is invented.",
+        "Reopened practice record preserves first attempt, check notes, revision and next action; changed-source warnings are reviewed."
+      ],
+      "contentSha256": "3512cca7f5276fe2c90da49a4ad8e98c2d96b241d7d4c93a6511eef877d3cf85"
+    }
+  ],
   "tasks": [
     {
       "slug": "access-content-factory-source-assets",
