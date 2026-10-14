@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-10-14T16:42:04+00:00",
+ "generatedAt": "2026-10-14T18:07:25+00:00",
  "countDefinition": "Verified meta-article sources explicitly classified by the recorded evidence method and linked to the normalized canonical hub. Unknown is never coerced to zero.",
  "strengthBands": [
   {
@@ -36,7 +36,7 @@
  ],
  "stats": {
   "articleHubs": 53,
-  "definitiveArticles": 14,
+  "definitiveArticles": 15,
   "verifiedMetaArticles": 88,
   "metaOrbitHubsWithEvidence": 13,
   "metaOrbitHubsUnknown": 40
@@ -495,10 +495,10 @@
   {
    "key": "blitzmetrics.com/from-one-email-to-a-live-personal-brand-site",
    "url": "https://blitzmetrics.com/from-one-email-to-a-live-personal-brand-site/",
-   "state": "wip",
+   "state": "ready",
    "articleKind": "task-recipe",
    "taskCount": 1,
-   "completeTaskCount": 0,
+   "completeTaskCount": 1,
    "importance": 3,
    "importanceTotal": 3,
    "taskSlugs": [

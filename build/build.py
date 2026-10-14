@@ -398,7 +398,9 @@ def adapt_strength_manifest(raw, path, evidence_url=None):
         adapted.append({
             'hub_url': hub_url,
             'meta_count_status': hub.get('metaCountStatus'),
-            'audited': audited,
+            # A new hub audit must not renew unchanged historical audits.
+            'audited': valid_review_date(hub.get('metaAuditedAt', audited),
+                                         f'{where}.metaAuditedAt'),
             'evidence_source_url': source,
             'evidence_method': definition.strip(),
             'records': adapted_records,

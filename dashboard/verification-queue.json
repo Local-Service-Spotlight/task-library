@@ -1,15 +1,15 @@
 {
   "schemaVersion": 1,
   "ordering": "Setup failures and evidence holds first. Within each priority lane, sort by estimated revenue role, dependencies unblocked, frequency and importance before missing-guide status and gap count. Effort and actual income remain unknown.",
-  "generatedAt": "2026-10-14T16:42:04+00:00",
+  "generatedAt": "2026-10-14T18:07:25+00:00",
   "definition": "Per-task standard gates derived from exact instruction reviews, explicit instruction-requirement checks, contributor status, article mapping/catalog holds, exact-revision article semantic reviews, task-attributed examples and the execution ledger. Unknown proof is never turned into a pass.",
   "stats": {
     "tasks": 276,
     "fullyVerifiedTasks": 0,
     "proofSummary": {
       "definition": "Dated output proof, separate from current-recipe acceptance and every full-verification gate. Recorded acceptance counts distinct completed execution IDs with a latest all-pass independent review per task/run; scope is limited to its named criteria. Historical proof counts distinct source jobs, never new runs. Historical acceptance requires identity, output and acceptance pass; handoff is reported separately.",
-      "recordedAcceptedOutputCount": 5,
-      "recordedAcceptedReviewCount": 5,
+      "recordedAcceptedOutputCount": 6,
+      "recordedAcceptedReviewCount": 6,
       "acceptedRecordedOutputs": [
         {
           "version": 1,
@@ -317,6 +317,80 @@
           "executionId": "proof-resolution-20261014",
           "finishedAt": "2026-10-14T16:38:03.477390+00:00",
           "result": "Fixed five visible Content Factory links and matching copied guide in owned post109504; guarded native save and ordinary anonymous parity passed. Published accepted-proof summaries and corrected same historical source acceptance without creating a job. Public source/projections match; seven archives and phone/desktop entry checks pass; 224 tests and independent source review pass. Full task certification and novice-human setup remain unproven."
+        },
+        {
+          "version": 1,
+          "reviewId": "site-guide-seo-placement-20261015-independent-result-1",
+          "taskSlug": "place-content-on-seo-tree-with-proper-links",
+          "canonicalURL": "https://blitzmetrics.com/seo-tree",
+          "recipeSourceSha256": "b40c6815df1774c5570ad4a567abc8f203f661d7584a485d7840132f921b8df7",
+          "representation": "wordpress-content-html",
+          "instructionSourceSha256": "5ac2d7126d8cc3ff38f02d2bf87076f700dfd1d067b4f4951cba53a031bf408b",
+          "reviewedAt": "2026-10-14T18:04:31.307917+00:00",
+          "reviewer": "Codex independent site/link result-review function",
+          "nextHandoff": "The root publisher receives this scoped result review and finalizes the current execution/meta record. The full article-checklist function retains the child short-route hold and other article gates. No inbound placement is pending; no historical site-delivery, whole-parent certification or novice-human claim is created.",
+          "criteria": {
+            "result": {
+              "state": "pass",
+              "expectedResult": "Place the published site-delivery recipe beneath the existing Personal Branding topic home with one useful inward body link, while preserving the child’s existing useful links up.",
+              "observedResult": "One requested placement is delivered: one new parent body link under Phase 1: Digital Plumbing reaches the canonical site-delivery guide; two existing child body links return to the same Personal Branding parent. Saved source matches the accepted candidate and normal anonymous parent body matches saved rendering. No inbound edit remains pending.",
+              "sourceUrl": "https://blitzmetrics.com/seo-tree",
+              "sourcePrivateEvidenceRecorded": false,
+              "evidenceUrls": [
+                "https://blitzmetrics.com/personal-brand/",
+                "https://blitzmetrics.com/from-one-email-to-a-live-personal-brand-site/"
+              ],
+              "privateEvidenceRecorded": true
+            },
+            "meaning": {
+              "state": "pass",
+              "expectedResult": "Choose the actual topic owner and describe the child’s task accurately with a descriptive anchor at the reader’s relevant step; avoid competing hubs and forced or unrelated reciprocal links.",
+              "observedResult": "The topic hub introduces site/domain infrastructure in Phase 1. The five-word anchor “personal brand site delivery guide” leads to a request-to-preview/domain-plan/launch-check recipe. Its paragraph preserves open owner actions and verified-live criteria. The child’s source-selection and topic-context links back are useful explanations, not a fabricated same-task completion claim.",
+              "sourceUrl": "https://blitzmetrics.com/seo-tree",
+              "sourcePrivateEvidenceRecorded": false,
+              "evidenceUrls": [
+                "https://blitzmetrics.com/personal-brand/",
+                "https://blitzmetrics.com/from-one-email-to-a-live-personal-brand-site/"
+              ],
+              "privateEvidenceRecorded": true
+            },
+            "sourcePreservation": {
+              "state": "pass",
+              "expectedResult": "Save only the accepted paragraph through the native source, prove exact before/candidate/saved identity, preserve unrelated metadata and prevent concurrent source loss.",
+              "observedResult": "The saved raw parent hash 103ee57a5ef547bbeaddde222ccf5eea05ce2bef44a0c1f09c6ca2f59f85ba95 equals the candidate. Removing the single exact added paragraph reproduces every baseline byte at 6627793dfc225b39a5df40b417f6051bd12a331b406e8b77068215d17ec9c590. All compared identity/title/status/date/author/media/taxonomy/meta fields are unchanged. The child source remains 2065bc…db7e.",
+              "sourceUrl": "https://blitzmetrics.com/seo-tree",
+              "sourcePrivateEvidenceRecorded": false,
+              "evidenceUrls": [],
+              "privateEvidenceRecorded": true
+            },
+            "linkHealth": {
+              "state": "pass",
+              "expectedResult": "Open the ordinary public source and final target, verify placed body links and contextual location, and exercise the new link at phone/desktop layouts without a cache bypass or unsafe media playback.",
+              "observedResult": "Normal public captures return 200 for both canonical pages. Public body has one inward link in Phase 1 and two upward links; parity excludes only documented automatic rendering attributes/markers. Root’s actual 1280×800 and 390×844 browser checks show the paragraph readable with no horizontal overflow. Phone click opened the canonical child; Back returned to the source. No media played.",
+              "sourceUrl": "https://blitzmetrics.com/seo-tree",
+              "sourcePrivateEvidenceRecorded": false,
+              "evidenceUrls": [
+                "https://blitzmetrics.com/personal-brand/",
+                "https://blitzmetrics.com/from-one-email-to-a-live-personal-brand-site/"
+              ],
+              "privateEvidenceRecorded": true
+            },
+            "handoff": {
+              "state": "pass",
+              "expectedResult": "Record the actual page roles, primary parent, inbound source, links and checked state, then deliver exact saved/public evidence and remaining issues to the full article-checklist/result review function.",
+              "observedResult": "The current execution, placement plan and dated public receipt identify the topic hub, site-delivery recipe, exact source/target and 1-down/2-up checked relation. This independent result-review function has read the final saved bodies and receipts and returned the scoped acceptance to root. Full article checks retain unrelated holds. The draft meta still needs its stale “checks pending” sentence updated before ledger insertion.",
+              "sourceUrl": "https://blitzmetrics.com/seo-tree",
+              "sourcePrivateEvidenceRecorded": false,
+              "evidenceUrls": [
+                "https://blitzmetrics.com/personal-brand/",
+                "https://blitzmetrics.com/from-one-email-to-a-live-personal-brand-site/"
+              ],
+              "privateEvidenceRecorded": true
+            }
+          },
+          "executionId": "site-guide-seo-placement-20261015",
+          "finishedAt": "2026-10-14T18:01:10.697074+00:00",
+          "result": "Placed the site-delivery guide under its Personal Branding topic home. One new parent body link and two existing child return links reach checked public pages; exact saved source and phone/desktop checks pass. Handed the placement record to independent checklist review. This is one owned SEO placement, not site delivery or beginner use."
         }
       ],
       "historicalVerifiedOutputCount": 6,
@@ -339,9 +413,9 @@
         "historical-b47f6ecca9200b904c006ab7"
       ]
     },
-    "semanticHoldHubs": 3,
-    "tasksWithHolds": 19,
-    "tasksWithUnmetGates": 216,
+    "semanticHoldHubs": 4,
+    "tasksWithHolds": 20,
+    "tasksWithUnmetGates": 215,
     "tasksWithUnknownGates": 276,
     "gateCounts": {
       "instructionRevisionReviewed": {
@@ -351,14 +425,14 @@
         "unknown": 0
       },
       "instructionStandards": {
-        "pass": 22,
+        "pass": 23,
         "unmet": 0,
         "hold": 0,
-        "unknown": 254
+        "unknown": 253
       },
       "contributorComplete": {
-        "pass": 126,
-        "unmet": 150,
+        "pass": 127,
+        "unmet": 149,
         "hold": 0,
         "unknown": 0
       },
@@ -369,16 +443,16 @@
         "unknown": 0
       },
       "articleCatalogGate": {
-        "pass": 43,
-        "unmet": 214,
+        "pass": 44,
+        "unmet": 213,
         "hold": 19,
         "unknown": 0
       },
       "articleSemanticCertification": {
-        "pass": 0,
+        "pass": 1,
         "unmet": 0,
-        "hold": 19,
-        "unknown": 257
+        "hold": 20,
+        "unknown": 255
       },
       "taskExampleEvidence": {
         "pass": 10,
@@ -387,16 +461,16 @@
         "unknown": 266
       },
       "recordedExecution": {
-        "pass": 4,
+        "pass": 5,
         "unmet": 0,
         "hold": 0,
-        "unknown": 272
+        "unknown": 271
       },
       "acceptedExecution": {
-        "pass": 1,
+        "pass": 2,
         "unmet": 1,
         "hold": 0,
-        "unknown": 274
+        "unknown": 273
       },
       "setupSuccess": {
         "pass": 0,
@@ -2951,6 +3025,336 @@
     },
     {
       "queuePosition": 20,
+      "priority": "P0",
+      "priorityReason": "Explicit evidence hold",
+      "slug": "deliver-personal-brand-site-from-request",
+      "title": "Deliver a personal-brand site from a request",
+      "category": "Personal Branding",
+      "importance": 3,
+      "revenueEstimate": 3,
+      "dependencyEstimate": 2,
+      "frequencyEstimate": 3,
+      "valueBasis": "Editorial estimate from build/factory.py; not measured income, demand or use.",
+      "effortEstimate": null,
+      "status": "complete",
+      "articleUrl": "https://blitzmetrics.com/from-one-email-to-a-live-personal-brand-site/",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=deliver-personal-brand-site-from-request#task-deliver-personal-brand-site-from-request",
+      "historicalDeliveryCount": 1,
+      "historicalEvidenceIds": [
+        "historical-277118d625a087d83d91240c"
+      ],
+      "proofSummary": {
+        "definition": "Dated output proof, separate from current-recipe acceptance and every full-verification gate. Recorded acceptance counts distinct completed execution IDs with a latest all-pass independent review per task/run; scope is limited to its named criteria. Historical proof counts distinct source jobs, never new runs. Historical acceptance requires identity, output and acceptance pass; handoff is reported separately.",
+        "recordedAcceptedOutputCount": 0,
+        "recordedAcceptedReviewCount": 0,
+        "acceptedRecordedOutputs": [],
+        "historicalVerifiedOutputCount": 1,
+        "historicalAcceptedOutputCount": 1,
+        "historicalIdentityOutputOnlyCount": 0,
+        "historicalAcceptedHandoffPassCount": 1,
+        "historicalAcceptedHandoffHoldCount": 0,
+        "historicalAcceptedHandoffUnresolvedCount": 0,
+        "historicalVerifiedEvidenceIds": [
+          "historical-277118d625a087d83d91240c"
+        ],
+        "historicalAcceptedEvidenceIds": [
+          "historical-277118d625a087d83d91240c"
+        ]
+      },
+      "historicalDeliveryEvidence": {
+        "count": 1,
+        "candidateCount": 1,
+        "records": [
+          {
+            "version": 1,
+            "evidenceId": "historical-277118d625a087d83d91240c",
+            "taskSlugs": [
+              "deliver-personal-brand-site-from-request"
+            ],
+            "occurrence": {
+              "start": {
+                "precision": "unknown",
+                "value": null
+              },
+              "end": {
+                "precision": "date",
+                "value": "2026-08-22"
+              }
+            },
+            "recipeRevision": {
+              "state": "unknown",
+              "canonicalURL": null
+            },
+            "observedAt": "2026-10-14T16:13:04.878652+00:00",
+            "outcome": "One personal-brand website delivery is supported by its original delivery conversation, a current live output check and the recipient confirming access and taking over further refinement. The current page is a later version; original build timing and recipe use remain unknown.",
+            "review": {
+              "identity": {
+                "state": "pass",
+                "notes": "One original delivery conversation and one site; the follow-up acknowledgment belongs to the same job. Checked against existing ledger identities; no duplicate source job."
+              },
+              "output": {
+                "state": "pass",
+                "notes": "Original delivery names the live personal-brand site. Current normal public page returns200 with six navigation destinations. This proves a surviving site, not exact original page bytes."
+              },
+              "acceptance": {
+                "state": "pass",
+                "notes": "Recipient accepted site and companion-page setup, confirmed existing editing access, and took responsibility for continued building/refinement. This covers setup/access/transfer only, not all page/design criteria, original source-byte parity, current-recipe acceptance or novice setup."
+              },
+              "handoff": {
+                "state": "pass",
+                "notes": "The recipient explicitly confirms access and takes responsibility for further building and refinement; private exact response retained."
+              }
+            },
+            "evidenceUrls": [
+              "https://leithuwaydah.com/"
+            ],
+            "privateEvidenceRecorded": true
+          }
+        ]
+      },
+      "nextAction": "Current article semantic criteria are hold: publicationStandards.",
+      "standardVerification": {
+        "instructionSourceSha256": "66415ee2457f5f27eca9ce7e1520d4256b5036d5f94e7bae249078d6c423dd08",
+        "articleKey": "blitzmetrics.com/from-one-email-to-a-live-personal-brand-site",
+        "gates": {
+          "instructionRevisionReviewed": {
+            "id": "instructionRevisionReviewed",
+            "label": "Exact instruction revision reviewed",
+            "state": "pass",
+            "reason": "Current source bytes match the review recorded 2026-10-15. Review scope and limits: Five written instruction checks only. Inspected exact two-line status/review-copy diff; existing opening, method, sources, examples and handoff are unchanged. Previous five semantic instruction verdicts retained with explicit incremental review. Article certification, actual current-recipe execution, installation, scheduling and novice-human setup remain separate.",
+            "reviewedAt": "2026-10-15",
+            "reviewer": "Codex independent review, configured gpt-6.1-sol high",
+            "sourceSha256": "66415ee2457f5f27eca9ce7e1520d4256b5036d5f94e7bae249078d6c423dd08"
+          },
+          "instructionStandards": {
+            "id": "instructionStandards",
+            "label": "Instruction requirements checked",
+            "state": "pass",
+            "reason": "All five instruction requirements have explicit passing checks for the current source revision.",
+            "reviewedAt": "2026-10-15",
+            "reviewer": "Codex independent review, configured gpt-6.1-sol high",
+            "reviewScope": "Five written instruction checks only. Inspected exact two-line status/review-copy diff; existing opening, method, sources, examples and handoff are unchanged. Previous five semantic instruction verdicts retained with explicit incremental review. Article certification, actual current-recipe execution, installation, scheduling and novice-human setup remain separate.",
+            "sourceSha256": "66415ee2457f5f27eca9ce7e1520d4256b5036d5f94e7bae249078d6c423dd08",
+            "standards": {
+              "version": 1,
+              "checks": {
+                "opening": {
+                  "state": "pass",
+                  "reason": "Exact opening quoted in review: task, practical reason and explained owned connection. First-screen diagram and opening checked in phone and desktop article previews. Readability diagnostic saved; actual meaning judged separately.",
+                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+                },
+                "recipe": {
+                  "state": "pass",
+                  "reason": "Trigger, source/access inputs, ordered steps, countable result record, acceptance and real scope are explicit. Setup, access, one task and optional schedule stay separate.",
+                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+                },
+                "links": {
+                  "state": "pass",
+                  "reason": "Owned prerequisite and receiving-task bodies read; normal destination checks succeeded. Empty GBP course replaced with the relevant maintained task; primary Google and DNS sources support provider claims.",
+                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+                },
+                "evidence": {
+                  "state": "pass",
+                  "reason": "Unsupported Google guarantees and site-launch assumptions removed. False identity matches excluded; examples fictional; actual approved terms, domain configuration, output checks and receiver evidence required.",
+                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+                },
+                "handoff": {
+                  "state": "pass",
+                  "reason": "Exact proposal, identity map or site record goes to a required reviewer/owner. Assignment is a prerequisite, not a claim of staffed roles. Qualification precedes delivery; Process identity feeds Post site work.",
+                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
+                }
+              }
+            }
+          },
+          "contributorComplete": {
+            "id": "contributorComplete",
+            "label": "Contributor reports guide complete",
+            "state": "pass",
+            "reason": "The contributor status is complete; this is a source claim, not execution proof."
+          },
+          "articleMapped": {
+            "id": "articleMapped",
+            "label": "Canonical article mapped",
+            "state": "pass",
+            "reason": "The task maps to a normalized canonical article URL.",
+            "articleUrl": "https://blitzmetrics.com/from-one-email-to-a-live-personal-brand-site/"
+          },
+          "articleCatalogGate": {
+            "id": "articleCatalogGate",
+            "label": "Article catalog gate",
+            "state": "pass",
+            "reason": "Every task mapped to this hub is contributor-complete and no reviewed hold is active. This is catalog readiness only."
+          },
+          "articleSemanticCertification": {
+            "id": "articleSemanticCertification",
+            "label": "Article semantic certification",
+            "state": "hold",
+            "reason": "Current article semantic criteria are hold: publicationStandards.",
+            "semanticReview": {
+              "version": 1,
+              "taskSlug": "deliver-personal-brand-site-from-request",
+              "canonicalURL": "https://blitzmetrics.com/from-one-email-to-a-live-personal-brand-site/",
+              "sourceSha256": "2065bc25288a74e8a431918caa77912e1e160852d831e1c92e52fca06168db7e",
+              "representation": "wordpress-content-html",
+              "reviewedAt": "2026-10-14T18:05:06.675695Z",
+              "reviewer": "Codex independent semantic review, configured gpt-6.1-sol high",
+              "criteria": {
+                "openingContext": {
+                  "state": "pass",
+                  "reason": "The three plain sentences name the task and value, then link a useful source connection: “Start with the personal brand guide to choose the facts and photos for the page.” Its maintained guide teaches identity, site, real work and outside proof. Approximate opening diagnostic 3.46; body supplies site and launch checks.",
+                  "evidenceRefs": [
+                    "sha256:2065bc25288a74e8a431918caa77912e1e160852d831e1c92e52fca06168db7e",
+                    "https://blitzmetrics.com/personal-brand/"
+                  ]
+                },
+                "roleScope": {
+                  "state": "pass",
+                  "reason": "“Site delivery guide · Personal Branding” declares a recipe: full request, checked preview, exact domain plan, authorized launch and verified handoff. Group intake is conditional; the build task supplies content. Preview, configured and live states remain distinct.",
+                  "evidenceRefs": [
+                    "sha256:2065bc25288a74e8a431918caa77912e1e160852d831e1c92e52fca06168db7e",
+                    "https://blitzmetrics.com/from-one-email-to-a-live-personal-brand-site/"
+                  ]
+                },
+                "owner": {
+                  "state": "pass",
+                  "reason": "“Local Service Spotlight maintains this site-delivery recipe.” “Guide author Dennis Yu” links his verified personal home. This supports maintainer and author identity without treating the uploading account as authorship proof.",
+                  "evidenceRefs": [
+                    "sha256:2065bc25288a74e8a431918caa77912e1e160852d831e1c92e52fca06168db7e",
+                    "https://dennisyu.com/"
+                  ]
+                },
+                "steps": {
+                  "state": "pass",
+                  "reason": "“The eight steps” provide trigger, sourced facts/media, usable domain/DNS access, checked preview, exact before/after/rollback, owner decision, scoped deployment and normal public tests. “For each checked public URL, record the response code, HTTPS result, phone and desktop result, and contact-path result.” Preview is interim.",
+                  "evidenceRefs": [
+                    "sha256:2065bc25288a74e8a431918caa77912e1e160852d831e1c92e52fca06168db7e",
+                    "https://blitzmetrics.com/from-one-email-to-a-live-personal-brand-site/"
+                  ]
+                },
+                "links": {
+                  "state": "pass",
+                  "reason": "Current public task data and actual renderer select the named exact task rows/fragments; maintained destination bodies teach the stated roles. Personal-brand owns identity/proof/site planning; group intake stays conditional; QA is before launch or major change. The public parent/child placement now supplies relevant body links, with its execution acceptance recorded separately.",
+                  "evidenceRefs": [
+                    "sha256:2065bc25288a74e8a431918caa77912e1e160852d831e1c92e52fca06168db7e",
+                    "sha256:418d98f30396270042e68bf2d5ac59aa41b4d129c83e651163950570929ec0df",
+                    "sha256:dd8325396f960faf053df105b298b4dff987990add588182f2a4fe132f0ec073",
+                    "https://blitzmetrics.com/personal-brand/",
+                    "https://localservicespotlight.com/article-guidelines/"
+                  ]
+                },
+                "sourceEvidence": {
+                  "state": "pass",
+                  "reason": "“Leith Uwaydah’s personal brand site is a surviving output from an August 2026 site-delivery job.” The linked real output and privately retained original source support historical setup/transfer only. The article preserves later-page revisions and explicitly keeps original recipe use/full launch checks unverified. It claims no current-recipe run or novice success.",
+                  "evidenceRefs": [
+                    "sha256:2065bc25288a74e8a431918caa77912e1e160852d831e1c92e52fca06168db7e",
+                    "https://leithuwaydah.com/"
+                  ]
+                },
+                "handoffContext": {
+                  "state": "pass",
+                  "reason": "“This recipe serves Post in the Content Factory.” The lower map highlights Post; source facts/photos and preview feed launch. “The publishing owner receives the approved launch plan.” After public checks the measurement task receives the verified URL and actual connected sources; open issues and one parent run ID remain visible.",
+                  "evidenceRefs": [
+                    "sha256:2065bc25288a74e8a431918caa77912e1e160852d831e1c92e52fca06168db7e",
+                    "https://localservicespotlight.com/content-factory/",
+                    "https://local-service-spotlight.github.io/task-library/?task=measure-search-impressions-traffic-inbound-opportunities#task-measure-search-impressions-traffic-inbound-opportunities"
+                  ]
+                },
+                "visualAndLayout": {
+                  "state": "pass",
+                  "reason": "Reviewed the dated live-browser QA record: root inspected actual anonymous CSS1280x800 and390x844 screenshots, a readable four-step lead diagram and plain opening, plus lower Content Factory map with Post highlighted and launch/measurement handoff. No horizontal overflow; no media played. This verdict relies on that observed visual receipt, not SVG existence or a claimed novice test.",
+                  "evidenceRefs": [
+                    "sha256:2065bc25288a74e8a431918caa77912e1e160852d831e1c92e52fca06168db7e",
+                    "sha256:1302ecb94d1349da011505ab433ea71ad058e2ce32699a041c920dedbc362737",
+                    "sha256:b542b02f5c07ceb0dae8f20bf65aeec51d80b3b8f4db889b7c7ad39df9471df7",
+                    "https://blitzmetrics.com/from-one-email-to-a-live-personal-brand-site/"
+                  ]
+                },
+                "publicationStandards": {
+                  "state": "hold",
+                  "reason": "Current guide retains sourced identity/output/conference proof, useful audit CTA, structured prose, correct canonical and136-character description. The captured served title is62 characters; a later metadata save removes the suffix but normal public readback is pending. Required short memorable alias remains unexecuted after automatic approval timeouts. These publication issues keep the page WIP; no alias or Definitive claim is made.",
+                  "evidenceRefs": [
+                    "sha256:2065bc25288a74e8a431918caa77912e1e160852d831e1c92e52fca06168db7e",
+                    "sha256:cfc319052bb01089f2aa2d4af63103bfab22d95c40a0176a5f2afafda28464fe",
+                    "https://blitzmetrics.com/from-one-email-to-a-live-personal-brand-site/",
+                    "https://localservicespotlight.com/personal-brand-quick-audit/",
+                    "https://digimarcon.com/How-to-Become-Well-Known-in-Your-industry-Even-if-Youre-Not-a-Big-Deal/"
+                  ]
+                },
+                "acceptanceResults": {
+                  "state": "pass",
+                  "reason": "Scoped independent acceptance of this published guide revision: exact stored bytes, normal anonymous body parity, observed desktop/phone visuals, linked input/launch/check handoff and preserved historical-output limits are supported. Publication-standard issues remain explicitly held. This accepts checked guide delivery, not a new client site launch, use of the current recipe or an unassisted novice-human result.",
+                  "evidenceRefs": [
+                    "sha256:2065bc25288a74e8a431918caa77912e1e160852d831e1c92e52fca06168db7e",
+                    "sha256:b542b02f5c07ceb0dae8f20bf65aeec51d80b3b8f4db889b7c7ad39df9471df7",
+                    "sha256:1302ecb94d1349da011505ab433ea71ad058e2ce32699a041c920dedbc362737",
+                    "https://leithuwaydah.com/"
+                  ]
+                }
+              }
+            },
+            "revisionObservation": {
+              "version": 1,
+              "taskSlug": "deliver-personal-brand-site-from-request",
+              "canonicalURL": "https://blitzmetrics.com/from-one-email-to-a-live-personal-brand-site/",
+              "sourceSha256": "2065bc25288a74e8a431918caa77912e1e160852d831e1c92e52fca06168db7e",
+              "representation": "wordpress-content-html",
+              "observedAt": "2026-10-14T18:06:45.124599Z",
+              "observer": "codex-root-separate-post-review-native-and-public-readback",
+              "state": "observed",
+              "reason": "Fresh authenticated native content hash matches the exact reviewed revision after the independent review. Ordinary canonical public URL returns HTTP200; saved rendered/public parity and actual viewport receipt retained separately. No execution or novice inference.",
+              "evidenceRefs": [
+                "https://blitzmetrics.com/from-one-email-to-a-live-personal-brand-site/",
+                "sha256:23eb01c864758ae42b6444ec4588c68c5e3de531713d3baf957812c1466d78ab"
+              ]
+            }
+          },
+          "taskExampleEvidence": {
+            "id": "taskExampleEvidence",
+            "label": "Task-attributed example evidence",
+            "state": "unknown",
+            "reason": "No source-backed example audit exists for the mapped hub."
+          },
+          "recordedExecution": {
+            "id": "recordedExecution",
+            "label": "Recorded real execution",
+            "state": "unknown",
+            "reason": "No execution ledger record names this task. Historical run frequency is unknown."
+          },
+          "acceptedExecution": {
+            "id": "acceptedExecution",
+            "label": "Accepted execution result",
+            "state": "unknown",
+            "reason": "No structured acceptance review is recorded for the current canonical article revision. A completed run label is not acceptance."
+          },
+          "setupSuccess": {
+            "id": "setupSuccess",
+            "label": "New-user setup success",
+            "state": "unknown",
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
+          }
+        },
+        "unmetStandardGates": [],
+        "heldStandardGates": [
+          "articleSemanticCertification"
+        ],
+        "unknownStandardGates": [
+          "taskExampleEvidence",
+          "recordedExecution",
+          "acceptedExecution",
+          "setupSuccess"
+        ],
+        "fullyVerified": false,
+        "queuePosition": 20,
+        "priority": "P0",
+        "priorityReason": "Explicit evidence hold",
+        "nextAction": "Current article semantic criteria are hold: publicationStandards."
+      }
+    },
+    {
+      "queuePosition": 21,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "how-to-install-and-configure-gtm",
@@ -3074,14 +3478,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 20,
+        "queuePosition": 21,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "No valid canonical article URL is mapped for this task."
       }
     },
     {
-      "queuePosition": 21,
+      "queuePosition": 22,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "install-google-tag-manager-container",
@@ -3205,14 +3609,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 21,
+        "queuePosition": 22,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "No valid canonical article URL is mapped for this task."
       }
     },
     {
-      "queuePosition": 22,
+      "queuePosition": 23,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "install-meta-pixel-with-standard-events",
@@ -3336,14 +3740,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 22,
+        "queuePosition": 23,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "No valid canonical article URL is mapped for this task."
       }
     },
     {
-      "queuePosition": 23,
+      "queuePosition": 24,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "create-clear-conversion-path",
@@ -3594,14 +3998,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 23,
+        "queuePosition": 24,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 24,
+      "queuePosition": 25,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "ensure-working-contact-form-delivers-notifications",
@@ -3852,14 +4256,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 24,
+        "queuePosition": 25,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 25,
+      "queuePosition": 26,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "set-up-remarketing-ads-for-landing-page-abandoners",
@@ -3983,14 +4387,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 25,
+        "queuePosition": 26,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 26,
+      "queuePosition": 27,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "set-up-digital-plumbing-pixels-tracking",
@@ -4113,14 +4517,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 26,
+        "queuePosition": 27,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 27,
+      "queuePosition": 28,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "stage-1-plumbing-fb-ads-google-ads-analytics",
@@ -4243,14 +4647,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 27,
+        "queuePosition": 28,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 28,
+      "queuePosition": 29,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "stage-4-targeting-custom-audiences-lookalikes-remarketing",
@@ -4373,14 +4777,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 28,
+        "queuePosition": 29,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 29,
+      "queuePosition": 30,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "verify-gtm-installed-and-firing-on-every-page",
@@ -4503,14 +4907,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 29,
+        "queuePosition": 30,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 30,
+      "queuePosition": 31,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "verify-meta-pixel-installed-with-lead-events",
@@ -4633,14 +5037,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 30,
+        "queuePosition": 31,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 31,
+      "queuePosition": 32,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "claim-and-brand-facebook-page",
@@ -4764,14 +5168,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 31,
+        "queuePosition": 32,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 32,
+      "queuePosition": 33,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "set-up-meta-business-manager-and-public-figure-pages",
@@ -4895,14 +5299,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 32,
+        "queuePosition": 33,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 33,
+      "queuePosition": 34,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "verify-prerequisites-product-customers-content",
@@ -5025,14 +5429,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 33,
+        "queuePosition": 34,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 34,
+      "queuePosition": 35,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "create-dollar-a-day-ad-creatives",
@@ -5156,14 +5560,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 34,
+        "queuePosition": 35,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "No valid canonical article URL is mapped for this task."
       }
     },
     {
-      "queuePosition": 35,
+      "queuePosition": 36,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "create-facebook-instagram-campaigns-with-location-targeting",
@@ -5287,14 +5691,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 35,
+        "queuePosition": 36,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 36,
+      "queuePosition": 37,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "sequence-content-cold-warm-conversion",
@@ -5418,14 +5822,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 36,
+        "queuePosition": 37,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 37,
+      "queuePosition": 38,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "sequence-content-from-awareness-to-conversion",
@@ -5549,14 +5953,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 37,
+        "queuePosition": 38,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 38,
+      "queuePosition": 39,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "identify-signals-worth-amplifying",
@@ -5679,14 +6083,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 38,
+        "queuePosition": 39,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 39,
+      "queuePosition": 40,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "kill-underperforming-ads",
@@ -5809,14 +6213,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 39,
+        "queuePosition": 40,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 40,
+      "queuePosition": 41,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "run-dollar-a-day-campaign-on-winning-content",
@@ -5939,14 +6343,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 40,
+        "queuePosition": 41,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 41,
+      "queuePosition": 42,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "set-1-day-budget-per-ad-set",
@@ -6069,14 +6473,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 41,
+        "queuePosition": 42,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 42,
+      "queuePosition": 43,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "create-new-saved-audiences-from-audience-insights",
@@ -6200,14 +6604,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 42,
+        "queuePosition": 43,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 43,
+      "queuePosition": 44,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "build-audience-layers",
@@ -6330,14 +6734,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 43,
+        "queuePosition": 44,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 44,
+      "queuePosition": 45,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "set-up-call-tracking-for-phone-conversions",
@@ -6588,14 +6992,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 44,
+        "queuePosition": 45,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 45,
+      "queuePosition": 46,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "post-to-facebook-page",
@@ -6719,14 +7123,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 45,
+        "queuePosition": 46,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "No valid canonical article URL is mapped for this task."
       }
     },
     {
-      "queuePosition": 46,
+      "queuePosition": 47,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "boost-one-minute-videos-for-personal-branding",
@@ -6850,14 +7254,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 46,
+        "queuePosition": 47,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 47,
+      "queuePosition": 48,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "create-dollar-a-day-ad-creatives-from-best-content",
@@ -6981,14 +7385,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 47,
+        "queuePosition": 48,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 48,
+      "queuePosition": 49,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "execute-switch-boost-to-target-new-audiences",
@@ -7112,14 +7516,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 48,
+        "queuePosition": 49,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 49,
+      "queuePosition": 50,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "execute-switch-boosts-to-new-audiences",
@@ -7243,14 +7647,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 49,
+        "queuePosition": 50,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 50,
+      "queuePosition": 51,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "use-dollar-a-day-to-influence-media-coverage",
@@ -7374,14 +7778,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 50,
+        "queuePosition": 51,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 51,
+      "queuePosition": 52,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "boost-top-3-5-facebook-posts",
@@ -7504,14 +7908,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 51,
+        "queuePosition": 52,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 52,
+      "queuePosition": 53,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "scale-winners-by-increasing-budget-gradually",
@@ -7634,14 +8038,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 52,
+        "queuePosition": 53,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 53,
+      "queuePosition": 54,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "stage-5-amplification-boost-posts-remarketing-ads",
@@ -7764,14 +8168,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 53,
+        "queuePosition": 54,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 54,
+      "queuePosition": 55,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "engage-with-social-comments",
@@ -7895,14 +8299,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 54,
+        "queuePosition": 55,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "No valid canonical article URL is mapped for this task."
       }
     },
     {
-      "queuePosition": 55,
+      "queuePosition": 56,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "post-roundup-listicle-content",
@@ -8026,14 +8430,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 55,
+        "queuePosition": 56,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "No valid canonical article URL is mapped for this task."
       }
     },
     {
-      "queuePosition": 56,
+      "queuePosition": 57,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "run-twitter-x-promotion-for-thought-leader-threads",
@@ -8157,14 +8561,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 56,
+        "queuePosition": 57,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "No valid canonical article URL is mapped for this task."
       }
     },
     {
-      "queuePosition": 57,
+      "queuePosition": 58,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "review-budget-allocation-by-channel",
@@ -8288,14 +8692,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 57,
+        "queuePosition": 58,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 58,
+      "queuePosition": 59,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "analyze-cost-per-result-and-engagement",
@@ -8418,14 +8822,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 58,
+        "queuePosition": 59,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 59,
+      "queuePosition": 60,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "compare-current-vs-last-period-performance",
@@ -8548,14 +8952,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 59,
+        "queuePosition": 60,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 60,
+      "queuePosition": 61,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "list-top-3-5-recommendations-for-next-7-days",
@@ -8678,14 +9082,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 60,
+        "queuePosition": 61,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 61,
+      "queuePosition": 62,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "run-multiple-simultaneous-tests",
@@ -8808,14 +9212,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 61,
+        "queuePosition": 62,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 62,
+      "queuePosition": 63,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "verify-google-search-console-and-connect-to-ga4",
@@ -8939,14 +9343,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 62,
+        "queuePosition": 63,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 63,
+      "queuePosition": 64,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "verify-wordpress-author-set-to-site-owner-name",
@@ -9069,14 +9473,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 63,
+        "queuePosition": 64,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 64,
+      "queuePosition": 65,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "how-to-configure-ga4-with-internal-traffic-filtering",
@@ -9200,14 +9604,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 64,
+        "queuePosition": 65,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "No valid canonical article URL is mapped for this task."
       }
     },
     {
-      "queuePosition": 65,
+      "queuePosition": 66,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "set-up-ga4-with-internal-traffic-filtering",
@@ -9331,14 +9735,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 65,
+        "queuePosition": 66,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "No valid canonical article URL is mapped for this task."
       }
     },
     {
-      "queuePosition": 66,
+      "queuePosition": 67,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "verify-ga4-configured-with-internal-traffic-filtered",
@@ -9461,14 +9865,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 66,
+        "queuePosition": 67,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 67,
+      "queuePosition": 68,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "grade-article-using-jennifer",
@@ -9592,14 +9996,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 67,
+        "queuePosition": 68,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "No valid canonical article URL is mapped for this task."
       }
     },
     {
-      "queuePosition": 68,
+      "queuePosition": 69,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "how-to-grade-an-article-using-jennifer",
@@ -9723,14 +10127,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 68,
+        "queuePosition": 69,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "No valid canonical article URL is mapped for this task."
       }
     },
     {
-      "queuePosition": 69,
+      "queuePosition": 70,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "extract-15-60-second-clips-from-long-form-video",
@@ -9854,14 +10258,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 69,
+        "queuePosition": 70,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "No valid canonical article URL is mapped for this task."
       }
     },
     {
-      "queuePosition": 70,
+      "queuePosition": 71,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "place-content-on-seo-tree-with-proper-links",
@@ -9882,9 +10286,84 @@
       ],
       "proofSummary": {
         "definition": "Dated output proof, separate from current-recipe acceptance and every full-verification gate. Recorded acceptance counts distinct completed execution IDs with a latest all-pass independent review per task/run; scope is limited to its named criteria. Historical proof counts distinct source jobs, never new runs. Historical acceptance requires identity, output and acceptance pass; handoff is reported separately.",
-        "recordedAcceptedOutputCount": 0,
-        "recordedAcceptedReviewCount": 0,
-        "acceptedRecordedOutputs": [],
+        "recordedAcceptedOutputCount": 1,
+        "recordedAcceptedReviewCount": 1,
+        "acceptedRecordedOutputs": [
+          {
+            "version": 1,
+            "reviewId": "site-guide-seo-placement-20261015-independent-result-1",
+            "taskSlug": "place-content-on-seo-tree-with-proper-links",
+            "canonicalURL": "https://blitzmetrics.com/seo-tree",
+            "recipeSourceSha256": "b40c6815df1774c5570ad4a567abc8f203f661d7584a485d7840132f921b8df7",
+            "representation": "wordpress-content-html",
+            "instructionSourceSha256": "5ac2d7126d8cc3ff38f02d2bf87076f700dfd1d067b4f4951cba53a031bf408b",
+            "reviewedAt": "2026-10-14T18:04:31.307917+00:00",
+            "reviewer": "Codex independent site/link result-review function",
+            "nextHandoff": "The root publisher receives this scoped result review and finalizes the current execution/meta record. The full article-checklist function retains the child short-route hold and other article gates. No inbound placement is pending; no historical site-delivery, whole-parent certification or novice-human claim is created.",
+            "criteria": {
+              "result": {
+                "state": "pass",
+                "expectedResult": "Place the published site-delivery recipe beneath the existing Personal Branding topic home with one useful inward body link, while preserving the child’s existing useful links up.",
+                "observedResult": "One requested placement is delivered: one new parent body link under Phase 1: Digital Plumbing reaches the canonical site-delivery guide; two existing child body links return to the same Personal Branding parent. Saved source matches the accepted candidate and normal anonymous parent body matches saved rendering. No inbound edit remains pending.",
+                "sourceUrl": "https://blitzmetrics.com/seo-tree",
+                "sourcePrivateEvidenceRecorded": false,
+                "evidenceUrls": [
+                  "https://blitzmetrics.com/personal-brand/",
+                  "https://blitzmetrics.com/from-one-email-to-a-live-personal-brand-site/"
+                ],
+                "privateEvidenceRecorded": true
+              },
+              "meaning": {
+                "state": "pass",
+                "expectedResult": "Choose the actual topic owner and describe the child’s task accurately with a descriptive anchor at the reader’s relevant step; avoid competing hubs and forced or unrelated reciprocal links.",
+                "observedResult": "The topic hub introduces site/domain infrastructure in Phase 1. The five-word anchor “personal brand site delivery guide” leads to a request-to-preview/domain-plan/launch-check recipe. Its paragraph preserves open owner actions and verified-live criteria. The child’s source-selection and topic-context links back are useful explanations, not a fabricated same-task completion claim.",
+                "sourceUrl": "https://blitzmetrics.com/seo-tree",
+                "sourcePrivateEvidenceRecorded": false,
+                "evidenceUrls": [
+                  "https://blitzmetrics.com/personal-brand/",
+                  "https://blitzmetrics.com/from-one-email-to-a-live-personal-brand-site/"
+                ],
+                "privateEvidenceRecorded": true
+              },
+              "sourcePreservation": {
+                "state": "pass",
+                "expectedResult": "Save only the accepted paragraph through the native source, prove exact before/candidate/saved identity, preserve unrelated metadata and prevent concurrent source loss.",
+                "observedResult": "The saved raw parent hash 103ee57a5ef547bbeaddde222ccf5eea05ce2bef44a0c1f09c6ca2f59f85ba95 equals the candidate. Removing the single exact added paragraph reproduces every baseline byte at 6627793dfc225b39a5df40b417f6051bd12a331b406e8b77068215d17ec9c590. All compared identity/title/status/date/author/media/taxonomy/meta fields are unchanged. The child source remains 2065bc…db7e.",
+                "sourceUrl": "https://blitzmetrics.com/seo-tree",
+                "sourcePrivateEvidenceRecorded": false,
+                "evidenceUrls": [],
+                "privateEvidenceRecorded": true
+              },
+              "linkHealth": {
+                "state": "pass",
+                "expectedResult": "Open the ordinary public source and final target, verify placed body links and contextual location, and exercise the new link at phone/desktop layouts without a cache bypass or unsafe media playback.",
+                "observedResult": "Normal public captures return 200 for both canonical pages. Public body has one inward link in Phase 1 and two upward links; parity excludes only documented automatic rendering attributes/markers. Root’s actual 1280×800 and 390×844 browser checks show the paragraph readable with no horizontal overflow. Phone click opened the canonical child; Back returned to the source. No media played.",
+                "sourceUrl": "https://blitzmetrics.com/seo-tree",
+                "sourcePrivateEvidenceRecorded": false,
+                "evidenceUrls": [
+                  "https://blitzmetrics.com/personal-brand/",
+                  "https://blitzmetrics.com/from-one-email-to-a-live-personal-brand-site/"
+                ],
+                "privateEvidenceRecorded": true
+              },
+              "handoff": {
+                "state": "pass",
+                "expectedResult": "Record the actual page roles, primary parent, inbound source, links and checked state, then deliver exact saved/public evidence and remaining issues to the full article-checklist/result review function.",
+                "observedResult": "The current execution, placement plan and dated public receipt identify the topic hub, site-delivery recipe, exact source/target and 1-down/2-up checked relation. This independent result-review function has read the final saved bodies and receipts and returned the scoped acceptance to root. Full article checks retain unrelated holds. The draft meta still needs its stale “checks pending” sentence updated before ledger insertion.",
+                "sourceUrl": "https://blitzmetrics.com/seo-tree",
+                "sourcePrivateEvidenceRecorded": false,
+                "evidenceUrls": [
+                  "https://blitzmetrics.com/personal-brand/",
+                  "https://blitzmetrics.com/from-one-email-to-a-live-personal-brand-site/"
+                ],
+                "privateEvidenceRecorded": true
+              }
+            },
+            "executionId": "site-guide-seo-placement-20261015",
+            "finishedAt": "2026-10-14T18:01:10.697074+00:00",
+            "result": "Placed the site-delivery guide under its Personal Branding topic home. One new parent body link and two existing child return links reach checked public pages; exact saved source and phone/desktop checks pass. Handed the placement record to independent checklist review. This is one owned SEO placement, not site delivery or beginner use."
+          }
+        ],
         "historicalVerifiedOutputCount": 1,
         "historicalAcceptedOutputCount": 1,
         "historicalIdentityOutputOnlyCount": 0,
@@ -9949,24 +10428,57 @@
       },
       "nextAction": "At least one task mapped to this hub is not contributor-complete.",
       "standardVerification": {
-        "instructionSourceSha256": "f9f912dce2ca38f31015c6f6aa6568c0411ee8b7233498a3216608b8d141438c",
+        "instructionSourceSha256": "5ac2d7126d8cc3ff38f02d2bf87076f700dfd1d067b4f4951cba53a031bf408b",
         "articleKey": "blitzmetrics.com/seo-tree",
         "gates": {
           "instructionRevisionReviewed": {
             "id": "instructionRevisionReviewed",
             "label": "Exact instruction revision reviewed",
             "state": "pass",
-            "reason": "Current source bytes match the review recorded 2026-10-13. Review scope and limits: Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate. Destination-only revision: existing prose and check verdicts retained after exact diff inspection; current Content Factory target and relationship checked. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/content-factory-link-2026-10-13.md",
-            "reviewedAt": "2026-10-13",
-            "reviewer": "Codex incremental destination review with independent GPT-6 Luna review",
-            "sourceSha256": "f9f912dce2ca38f31015c6f6aa6568c0411ee8b7233498a3216608b8d141438c"
+            "reason": "Current source bytes match the review recorded 2026-10-15. Review scope and limits: All five written instruction requirements independently pass for the exact revised placement guide, including linked opening, partial inbound-placement rule, limited historical example, corrected fictional/historical footer, current public task routes and real Post handoff. Historical acceptance does not certify current recipe execution or novice setup.",
+            "reviewedAt": "2026-10-15",
+            "reviewer": "Codex independent review, configured gpt-6.1-sol high",
+            "sourceSha256": "5ac2d7126d8cc3ff38f02d2bf87076f700dfd1d067b4f4951cba53a031bf408b"
           },
           "instructionStandards": {
             "id": "instructionStandards",
             "label": "Instruction requirements checked",
-            "state": "unknown",
-            "reason": "The current exact-byte review has no structured instruction-requirements checklist.",
-            "sourceSha256": "f9f912dce2ca38f31015c6f6aa6568c0411ee8b7233498a3216608b8d141438c"
+            "state": "pass",
+            "reason": "All five instruction requirements have explicit passing checks for the current source revision.",
+            "reviewedAt": "2026-10-15",
+            "reviewer": "Codex independent review, configured gpt-6.1-sol high",
+            "reviewScope": "All five written instruction requirements independently pass for the exact revised placement guide, including linked opening, partial inbound-placement rule, limited historical example, corrected fictional/historical footer, current public task routes and real Post handoff. Historical acceptance does not certify current recipe execution or novice setup.",
+            "sourceSha256": "5ac2d7126d8cc3ff38f02d2bf87076f700dfd1d067b4f4951cba53a031bf408b",
+            "standards": {
+              "version": 1,
+              "checks": {
+                "opening": {
+                  "state": "pass",
+                  "reason": "The three plain sentences state the findability problem, useful link placement and first action; the third links the maintained SEO Tree concept map. Heuristic FK grade 4.20 is a diagnostic, not evidence of novice success. This task places an already prepared page; the rendered page visual remains a separate output check.",
+                  "evidence": "A useful page can still be hard to find. This guide helps you connect it to the main topic and the next thing a reader needs. Start with the [SEO Tree topic map](https://blitzmetrics.com/seo-tree/) to find the page that already owns that topic."
+                },
+                "recipe": {
+                  "state": "pass",
+                  "reason": "Trigger, page/map/GCT inputs, actual edit authority, role/parent decision, ordered changes, final-destination checks and inventory output are repeatable. A pending required inbound edit is explicitly partial. No installation or schedule is inferred.",
+                  "evidence": "Inputs; First-run prompt; Steps 1-8; Definition of done; If a required inbound edit is pending, report a partial placement with its owner and next action. Do not call that result fully connected."
+                },
+                "links": {
+                  "state": "pass",
+                  "reason": "Current HTTP200 public dataset and renderer were independently read. All nine exact task query/fragment URLs match their actual deployed task records; renderer selects the exact slug and opens its row. Maintained guide bodies support the named GCT, entity, process, article-checklist and meta-record relationships. Content Factory stage-3-post exists and explains this Post handoff. Historical directory source supports the limited example.",
+                  "evidence": "https://local-service-spotlight.github.io/task-library/data.json sha256:418d98f30396270042e68bf2d5ac59aa41b4d129c83e651163950570929ec0df; https://local-service-spotlight.github.io/task-library/app.js sha256:dd8325396f960faf053df105b298b4dff987990add588182f2a4fe132f0ec073; https://localservicespotlight.com/content-factory/#stage-3-post; https://westerntradingpost.com/collector-guides/"
+                },
+                "evidence": {
+                  "state": "pass",
+                  "reason": "Fictional Maple Cycle remains labeled. One checked historical Collector Guides delivery is added with precise accepted navigation/editability and missing-return-link/original-revision limits. The guide requires real-run records and does not count teaching/review derivatives as new executions.",
+                  "evidence": "Checked historical example — limited navigation acceptance; Write up the real run. The recorded check found no upward directory links in the five guide bodies. The original recipe revision and full link inventory were not recovered."
+                },
+                "handoff": {
+                  "state": "pass",
+                  "reason": "The publisher/checklist receives the placement and link evidence; a different page owner receives an exact pending inbound edit. The guide correctly serves Post after Process preparation; neighboring list order does not invent prerequisites.",
+                  "evidence": "The publisher receives the page placement and link evidence, then runs Check the full article checklist. A different page owner gets only the specific pending inbound edit when needed."
+                }
+              }
+            }
           },
           "contributorComplete": {
             "id": "contributorComplete",
@@ -9990,8 +10502,127 @@
           "articleSemanticCertification": {
             "id": "articleSemanticCertification",
             "label": "Article semantic certification",
-            "state": "unknown",
-            "reason": "No exact-revision positive semantic review is recorded for this article."
+            "state": "pass",
+            "reason": "All ten semantic criteria pass for the separately observed current article revision.",
+            "semanticReview": {
+              "version": 1,
+              "taskSlug": "place-content-on-seo-tree-with-proper-links",
+              "canonicalURL": "https://blitzmetrics.com/seo-tree",
+              "sourceSha256": "b40c6815df1774c5570ad4a567abc8f203f661d7584a485d7840132f921b8df7",
+              "representation": "wordpress-content-html",
+              "reviewedAt": "2026-10-14T18:05:06.675695Z",
+              "reviewer": "Codex independent semantic review, configured gpt-6.1-sol high",
+              "criteria": {
+                "openingContext": {
+                  "state": "pass",
+                  "reason": "“Help people find the right page on your site, then take the next step. The SEO Tree maps your stories, guides and business pages. Use it to place stories from the Content Factory, our steps to make and share content.” This names navigation value, topic-map mechanism and a real process connection. The maintained Content Factory body explicitly teaches connected repurposed assets.",
+                  "evidenceRefs": [
+                    "sha256:b40c6815df1774c5570ad4a567abc8f203f661d7584a485d7840132f921b8df7",
+                    "https://localservicespotlight.com/content-factory/"
+                  ]
+                },
+                "roleScope": {
+                  "state": "pass",
+                  "reason": "The page remains a topic hub/framework. It teaches page relationships and links separate operational tasks; no page-wide Definitive SOP or current recipe execution claim is made.",
+                  "evidenceRefs": [
+                    "sha256:b40c6815df1774c5570ad4a567abc8f203f661d7584a485d7840132f921b8df7",
+                    "https://blitzmetrics.com/seo-tree/"
+                  ]
+                },
+                "owner": {
+                  "state": "pass",
+                  "reason": "Local Service Spotlight is the maintained owner under the checked master naming rule; the candidate names that owner and retains the established canonical SEO Tree address. No new owner or migration is invented.",
+                  "evidenceRefs": [
+                    "sha256:b40c6815df1774c5570ad4a567abc8f203f661d7584a485d7840132f921b8df7",
+                    "https://blitzmetrics.com/seo-tree/"
+                  ]
+                },
+                "steps": {
+                  "state": "pass",
+                  "reason": "The framework covers parent/detail/peer relationships, distinct page versus enhancement, real proof, relevant links and the mapped operational guides. Placement’s trigger, inputs, authorized edits, checked link log and checklist handoff are scoped to its maintained task instead of forcing a recipe label on this hub.",
+                  "evidenceRefs": [
+                    "sha256:b40c6815df1774c5570ad4a567abc8f203f661d7584a485d7840132f921b8df7",
+                    "https://local-service-spotlight.github.io/task-library/?task=place-content-on-seo-tree-with-proper-links#task-place-content-on-seo-tree-with-proper-links"
+                  ]
+                },
+                "links": {
+                  "state": "pass",
+                  "reason": "Independently read current public task records and renderer: all nine exact task query/fragment links match the deployed intended guides. Canonical LSS Content Factory and actual Post fragment teach the stated handoff; GCT/entity/writing/meta guides support their named uses. Direct output, identity and primary Google links retain their actual purposes; obsolete copied SOPs and process aliases were removed.",
+                  "evidenceRefs": [
+                    "sha256:b40c6815df1774c5570ad4a567abc8f203f661d7584a485d7840132f921b8df7",
+                    "sha256:418d98f30396270042e68bf2d5ac59aa41b4d129c83e651163950570929ec0df",
+                    "sha256:dd8325396f960faf053df105b298b4dff987990add588182f2a4fe132f0ec073",
+                    "https://blitzmetrics.com/entity-linking/",
+                    "https://localservicespotlight.com/content-factory/#stage-3-post"
+                  ]
+                },
+                "sourceEvidence": {
+                  "state": "pass",
+                  "reason": "The recorded teaching, real screenshots and direct historical examples are retained. Unsupported numeric/ranking/algorithm/motive claims were removed or made an explicit historical illustration. Collector evidence supports only named navigation and recipient-confirmed editing; missing return links and original recipe identity remain explicit.",
+                  "evidenceRefs": [
+                    "sha256:b40c6815df1774c5570ad4a567abc8f203f661d7584a485d7840132f921b8df7",
+                    "https://westerntradingpost.com/collector-guides/",
+                    "sha256:8804f67b72951e24ac6ef45950432eb37516c497962348917b348b8d667447e0",
+                    "sha256:af63b0301f36ad5da2cad593c2019a38547c9b7666b4e99c19d8b9bbc4ddf758"
+                  ]
+                },
+                "handoffContext": {
+                  "state": "pass",
+                  "reason": "Prepared page and current topic map feed placement in Post. Saved page/link log/pending inbound owner feed the real full-article checklist. Related hub tasks stay optional job choices, and in-progress sibling tasks retain their status.",
+                  "evidenceRefs": [
+                    "sha256:b40c6815df1774c5570ad4a567abc8f203f661d7584a485d7840132f921b8df7",
+                    "https://localservicespotlight.com/content-factory/#stage-3-post"
+                  ]
+                },
+                "visualAndLayout": {
+                  "state": "pass",
+                  "reason": "Reviewed the dated real-browser QA record at actual CSS1280x800 and390x844: root inspected the readable article-specific three-level first-screen diagram, plain opening, hierarchy SVG and lower Post handoff. The phone opening continues below the visible diagram. No empty hero or horizontal overflow was observed; existing media stayed silent. The recorded observation supplies this visual verdict.",
+                  "evidenceRefs": [
+                    "sha256:b40c6815df1774c5570ad4a567abc8f203f661d7584a485d7840132f921b8df7",
+                    "sha256:1302ecb94d1349da011505ab433ea71ad058e2ce32699a041c920dedbc362737",
+                    "sha256:b542b02f5c07ceb0dae8f20bf65aeec51d80b3b8f4db889b7c7ad39df9471df7",
+                    "https://blitzmetrics.com/seo-tree/"
+                  ]
+                },
+                "publicationStandards": {
+                  "state": "pass",
+                  "reason": "Native metadata save and final anonymous HTML agree: title56 characters, meta description138, correct short /seo-tree/ canonical, Dennis Yu byline and no Definitive badge. H2/H3 structure, preserved real training/photos/screenshots, scoped recipient-accepted example and relevant AI Builder Program CTA were checked. Unsupported algorithm/ranking/numeric/private-status claims were corrected; shared-hub catalog readiness remains separate.",
+                  "evidenceRefs": [
+                    "sha256:b40c6815df1774c5570ad4a567abc8f203f661d7584a485d7840132f921b8df7",
+                    "sha256:c142b94f9cb26506564f7d195a66cd1df5eb7848d83139ca96a399d7631eb00b",
+                    "sha256:5afc723ae429e72c8f77c9b31671c6a82d610920f01592e843d33b328ff85a90",
+                    "https://localservicespotlight.com/ai-builder-program/",
+                    "https://developers.google.com/search/docs/crawling-indexing/links-crawlable",
+                    "https://developers.google.com/search/docs/fundamentals/creating-helpful-content"
+                  ]
+                },
+                "acceptanceResults": {
+                  "state": "pass",
+                  "reason": "Scoped independent acceptance of the exact published topic-framework revision: checked native/public parity, actual rendered visual receipt, corrected framework/task links, final metadata and evidence-limited collector example support guide delivery. The historical recipient accepted navigation and editing only. No current placement execution, novice success, search gain or shared-hub full certification is inferred from this article review.",
+                  "evidenceRefs": [
+                    "sha256:b40c6815df1774c5570ad4a567abc8f203f661d7584a485d7840132f921b8df7",
+                    "sha256:b542b02f5c07ceb0dae8f20bf65aeec51d80b3b8f4db889b7c7ad39df9471df7",
+                    "sha256:1302ecb94d1349da011505ab433ea71ad058e2ce32699a041c920dedbc362737",
+                    "sha256:8804f67b72951e24ac6ef45950432eb37516c497962348917b348b8d667447e0"
+                  ]
+                }
+              }
+            },
+            "revisionObservation": {
+              "version": 1,
+              "taskSlug": "place-content-on-seo-tree-with-proper-links",
+              "canonicalURL": "https://blitzmetrics.com/seo-tree",
+              "sourceSha256": "b40c6815df1774c5570ad4a567abc8f203f661d7584a485d7840132f921b8df7",
+              "representation": "wordpress-content-html",
+              "observedAt": "2026-10-14T18:06:48.823671Z",
+              "observer": "codex-root-separate-post-review-native-and-public-readback",
+              "state": "observed",
+              "reason": "Fresh authenticated native content hash matches the exact reviewed revision after the independent review. Ordinary canonical public URL returns HTTP200; saved rendered/public parity and actual viewport receipt retained separately. No execution or novice inference.",
+              "evidenceRefs": [
+                "https://blitzmetrics.com/seo-tree",
+                "sha256:e57bb19f7e584f087d7b842e21fc772f0a5b5b70ec70c2c37b45422c26237f81"
+              ]
+            }
           },
           "taskExampleEvidence": {
             "id": "taskExampleEvidence",
@@ -10002,14 +10633,105 @@
           "recordedExecution": {
             "id": "recordedExecution",
             "label": "Recorded real execution",
-            "state": "unknown",
-            "reason": "No execution ledger record names this task. Historical run frequency is unknown."
+            "state": "pass",
+            "reason": "1 distinct execution ID(s) name this task; outcomes remain separate.",
+            "executionIds": [
+              "site-guide-seo-placement-20261015"
+            ],
+            "historyStatus": "partial"
           },
           "acceptedExecution": {
             "id": "acceptedExecution",
             "label": "Accepted execution result",
-            "state": "unknown",
-            "reason": "No structured acceptance review is recorded for the current canonical article revision. A completed run label is not acceptance."
+            "state": "pass",
+            "reason": "All named measurable acceptance criteria pass for the separately observed current recipe revision.",
+            "acceptanceReview": {
+              "version": 1,
+              "reviewId": "site-guide-seo-placement-20261015-independent-result-1",
+              "taskSlug": "place-content-on-seo-tree-with-proper-links",
+              "canonicalURL": "https://blitzmetrics.com/seo-tree",
+              "recipeSourceSha256": "b40c6815df1774c5570ad4a567abc8f203f661d7584a485d7840132f921b8df7",
+              "representation": "wordpress-content-html",
+              "instructionSourceSha256": "5ac2d7126d8cc3ff38f02d2bf87076f700dfd1d067b4f4951cba53a031bf408b",
+              "reviewedAt": "2026-10-14T18:04:31.307917+00:00",
+              "reviewer": "Codex independent site/link result-review function",
+              "nextHandoff": "The root publisher receives this scoped result review and finalizes the current execution/meta record. The full article-checklist function retains the child short-route hold and other article gates. No inbound placement is pending; no historical site-delivery, whole-parent certification or novice-human claim is created.",
+              "criteria": {
+                "result": {
+                  "state": "pass",
+                  "expectedResult": "Place the published site-delivery recipe beneath the existing Personal Branding topic home with one useful inward body link, while preserving the child’s existing useful links up.",
+                  "observedResult": "One requested placement is delivered: one new parent body link under Phase 1: Digital Plumbing reaches the canonical site-delivery guide; two existing child body links return to the same Personal Branding parent. Saved source matches the accepted candidate and normal anonymous parent body matches saved rendering. No inbound edit remains pending.",
+                  "sourceUrl": "https://blitzmetrics.com/seo-tree",
+                  "sourcePrivateEvidenceRecorded": false,
+                  "evidenceUrls": [
+                    "https://blitzmetrics.com/personal-brand/",
+                    "https://blitzmetrics.com/from-one-email-to-a-live-personal-brand-site/"
+                  ],
+                  "privateEvidenceRecorded": true
+                },
+                "meaning": {
+                  "state": "pass",
+                  "expectedResult": "Choose the actual topic owner and describe the child’s task accurately with a descriptive anchor at the reader’s relevant step; avoid competing hubs and forced or unrelated reciprocal links.",
+                  "observedResult": "The topic hub introduces site/domain infrastructure in Phase 1. The five-word anchor “personal brand site delivery guide” leads to a request-to-preview/domain-plan/launch-check recipe. Its paragraph preserves open owner actions and verified-live criteria. The child’s source-selection and topic-context links back are useful explanations, not a fabricated same-task completion claim.",
+                  "sourceUrl": "https://blitzmetrics.com/seo-tree",
+                  "sourcePrivateEvidenceRecorded": false,
+                  "evidenceUrls": [
+                    "https://blitzmetrics.com/personal-brand/",
+                    "https://blitzmetrics.com/from-one-email-to-a-live-personal-brand-site/"
+                  ],
+                  "privateEvidenceRecorded": true
+                },
+                "sourcePreservation": {
+                  "state": "pass",
+                  "expectedResult": "Save only the accepted paragraph through the native source, prove exact before/candidate/saved identity, preserve unrelated metadata and prevent concurrent source loss.",
+                  "observedResult": "The saved raw parent hash 103ee57a5ef547bbeaddde222ccf5eea05ce2bef44a0c1f09c6ca2f59f85ba95 equals the candidate. Removing the single exact added paragraph reproduces every baseline byte at 6627793dfc225b39a5df40b417f6051bd12a331b406e8b77068215d17ec9c590. All compared identity/title/status/date/author/media/taxonomy/meta fields are unchanged. The child source remains 2065bc…db7e.",
+                  "sourceUrl": "https://blitzmetrics.com/seo-tree",
+                  "sourcePrivateEvidenceRecorded": false,
+                  "evidenceUrls": [],
+                  "privateEvidenceRecorded": true
+                },
+                "linkHealth": {
+                  "state": "pass",
+                  "expectedResult": "Open the ordinary public source and final target, verify placed body links and contextual location, and exercise the new link at phone/desktop layouts without a cache bypass or unsafe media playback.",
+                  "observedResult": "Normal public captures return 200 for both canonical pages. Public body has one inward link in Phase 1 and two upward links; parity excludes only documented automatic rendering attributes/markers. Root’s actual 1280×800 and 390×844 browser checks show the paragraph readable with no horizontal overflow. Phone click opened the canonical child; Back returned to the source. No media played.",
+                  "sourceUrl": "https://blitzmetrics.com/seo-tree",
+                  "sourcePrivateEvidenceRecorded": false,
+                  "evidenceUrls": [
+                    "https://blitzmetrics.com/personal-brand/",
+                    "https://blitzmetrics.com/from-one-email-to-a-live-personal-brand-site/"
+                  ],
+                  "privateEvidenceRecorded": true
+                },
+                "handoff": {
+                  "state": "pass",
+                  "expectedResult": "Record the actual page roles, primary parent, inbound source, links and checked state, then deliver exact saved/public evidence and remaining issues to the full article-checklist/result review function.",
+                  "observedResult": "The current execution, placement plan and dated public receipt identify the topic hub, site-delivery recipe, exact source/target and 1-down/2-up checked relation. This independent result-review function has read the final saved bodies and receipts and returned the scoped acceptance to root. Full article checks retain unrelated holds. The draft meta still needs its stale “checks pending” sentence updated before ledger insertion.",
+                  "sourceUrl": "https://blitzmetrics.com/seo-tree",
+                  "sourcePrivateEvidenceRecorded": false,
+                  "evidenceUrls": [
+                    "https://blitzmetrics.com/personal-brand/",
+                    "https://blitzmetrics.com/from-one-email-to-a-live-personal-brand-site/"
+                  ],
+                  "privateEvidenceRecorded": true
+                }
+              },
+              "executionId": "site-guide-seo-placement-20261015"
+            },
+            "revisionObservation": {
+              "version": 1,
+              "taskSlug": "place-content-on-seo-tree-with-proper-links",
+              "canonicalURL": "https://blitzmetrics.com/seo-tree",
+              "sourceSha256": "b40c6815df1774c5570ad4a567abc8f203f661d7584a485d7840132f921b8df7",
+              "representation": "wordpress-content-html",
+              "observedAt": "2026-10-14T18:06:48.823671Z",
+              "observer": "codex-root-separate-post-review-native-and-public-readback",
+              "state": "observed",
+              "reason": "Fresh authenticated native content hash matches the exact reviewed revision after the independent review. Ordinary canonical public URL returns HTTP200; saved rendered/public parity and actual viewport receipt retained separately. No execution or novice inference.",
+              "evidenceRefs": [
+                "https://blitzmetrics.com/seo-tree",
+                "sha256:e57bb19f7e584f087d7b842e21fc772f0a5b5b70ec70c2c37b45422c26237f81"
+              ]
+            }
           },
           "setupSuccess": {
             "id": "setupSuccess",
@@ -10026,22 +10748,18 @@
         ],
         "heldStandardGates": [],
         "unknownStandardGates": [
-          "instructionStandards",
-          "articleSemanticCertification",
           "taskExampleEvidence",
-          "recordedExecution",
-          "acceptedExecution",
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 70,
+        "queuePosition": 71,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 71,
+      "queuePosition": 72,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "upload-processed-video-to-youtube",
@@ -10229,14 +10947,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 71,
+        "queuePosition": 72,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "No valid canonical article URL is mapped for this task."
       }
     },
     {
-      "queuePosition": 72,
+      "queuePosition": 73,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "create-social-media-posts-per-platform",
@@ -10360,14 +11078,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 72,
+        "queuePosition": 73,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "No valid canonical article URL is mapped for this task."
       }
     },
     {
-      "queuePosition": 73,
+      "queuePosition": 74,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "post-to-linkedin",
@@ -10491,14 +11209,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 73,
+        "queuePosition": 74,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "No valid canonical article URL is mapped for this task."
       }
     },
     {
-      "queuePosition": 74,
+      "queuePosition": 75,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "create-linkedin-page-matching-business-entity",
@@ -10622,14 +11340,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 74,
+        "queuePosition": 75,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 75,
+      "queuePosition": 76,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "create-youtube-campaigns-using-aducate-model",
@@ -10753,14 +11471,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 75,
+        "queuePosition": 76,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 76,
+      "queuePosition": 77,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "enable-youtube-captions-by-default",
@@ -10884,14 +11602,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 76,
+        "queuePosition": 77,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 77,
+      "queuePosition": 78,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "set-up-tiktok-campaigns",
@@ -11015,14 +11733,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 77,
+        "queuePosition": 78,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 78,
+      "queuePosition": 79,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "set-up-youtube-channel-with-proper-branding",
@@ -11146,14 +11864,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 78,
+        "queuePosition": 79,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 79,
+      "queuePosition": 80,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "submit-weekly-maa-report-every-friday",
@@ -11357,14 +12075,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 79,
+        "queuePosition": 80,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 80,
+      "queuePosition": 81,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "apply-metrics-decomposition",
@@ -11487,14 +12205,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 80,
+        "queuePosition": 81,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 81,
+      "queuePosition": 82,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "stage-2-goals-mission-90-day-goals-cpa-roas-budget",
@@ -11617,14 +12335,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 81,
+        "queuePosition": 82,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 82,
+      "queuePosition": 83,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "stage-6-optimization-metrics-budget-review-recommendations",
@@ -11747,14 +12465,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 82,
+        "queuePosition": 83,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 83,
+      "queuePosition": 84,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "film-conference-presentations",
@@ -11878,14 +12596,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 83,
+        "queuePosition": 84,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "No valid canonical article URL is mapped for this task."
       }
     },
     {
-      "queuePosition": 84,
+      "queuePosition": 85,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "set-wordpress-author-to-correct-person",
@@ -12009,14 +12727,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 84,
+        "queuePosition": 85,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "No valid canonical article URL is mapped for this task."
       }
     },
     {
-      "queuePosition": 85,
+      "queuePosition": 86,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "set-up-content-library",
@@ -12140,14 +12858,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 85,
+        "queuePosition": 86,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 86,
+      "queuePosition": 87,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "ensure-robots-meta-not-blocking-indexing",
@@ -12271,14 +12989,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 86,
+        "queuePosition": 87,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "No valid canonical article URL is mapped for this task."
       }
     },
     {
-      "queuePosition": 87,
+      "queuePosition": 88,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "ensure-robots-meta-not-blocking-indexing--qa-audit",
@@ -12401,14 +13119,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 87,
+        "queuePosition": 88,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 88,
+      "queuePosition": 89,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "verify-domain-ownership-and-registrar-access",
@@ -12532,14 +13250,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 88,
+        "queuePosition": 89,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 89,
+      "queuePosition": 90,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "ensure-proper-dns-records",
@@ -12663,14 +13381,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 89,
+        "queuePosition": 90,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "No valid canonical article URL is mapped for this task."
       }
     },
     {
-      "queuePosition": 90,
+      "queuePosition": 91,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "configure-https-with-no-mixed-content",
@@ -12794,14 +13512,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 90,
+        "queuePosition": 91,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 91,
+      "queuePosition": 92,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "register-personal-name-domain",
@@ -12925,14 +13643,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 91,
+        "queuePosition": 92,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 92,
+      "queuePosition": 93,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "verify-https-with-no-mixed-content",
@@ -13055,14 +13773,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 92,
+        "queuePosition": 93,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 93,
+      "queuePosition": 94,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "create-xml-sitemap-and-reference-in-robots-txt",
@@ -13186,14 +13904,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 93,
+        "queuePosition": 94,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "No valid canonical article URL is mapped for this task."
       }
     },
     {
-      "queuePosition": 94,
+      "queuePosition": 95,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "configure-spf-dkim-dmarc-for-deliverability",
@@ -13317,14 +14035,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 94,
+        "queuePosition": 95,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "No valid canonical article URL is mapped for this task."
       }
     },
     {
-      "queuePosition": 95,
+      "queuePosition": 96,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "set-up-professional-email-on-domain",
@@ -13448,14 +14166,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 95,
+        "queuePosition": 96,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "No valid canonical article URL is mapped for this task."
       }
     },
     {
-      "queuePosition": 96,
+      "queuePosition": 97,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "batch-record-50-raw-clips-in-one-session",
@@ -13579,14 +14297,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 96,
+        "queuePosition": 97,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "No valid canonical article URL is mapped for this task."
       }
     },
     {
-      "queuePosition": 97,
+      "queuePosition": 98,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "how-to-set-up-schema-markup-for-personal-brand-site",
@@ -13710,14 +14428,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 97,
+        "queuePosition": 98,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "No valid canonical article URL is mapped for this task."
       }
     },
     {
-      "queuePosition": 98,
+      "queuePosition": 99,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "set-up-consistent-headshots-and-bios-across-profiles",
@@ -13841,14 +14559,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 98,
+        "queuePosition": 99,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "No valid canonical article URL is mapped for this task."
       }
     },
     {
-      "queuePosition": 99,
+      "queuePosition": 100,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "add-click-to-call-links-for-mobile",
@@ -13972,14 +14690,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 99,
+        "queuePosition": 100,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 100,
+      "queuePosition": 101,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "add-schema-markup-person-localbusiness",
@@ -14103,14 +14821,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 100,
+        "queuePosition": 101,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 101,
+      "queuePosition": 102,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "build-agency-website-for-vertical",
@@ -14234,14 +14952,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 101,
+        "queuePosition": 102,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 102,
+      "queuePosition": 103,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "claim-and-verify-knowledge-panel-when-it-appears",
@@ -14365,14 +15083,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 102,
+        "queuePosition": 103,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 103,
+      "queuePosition": 104,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "classify-and-offer-knowledge-panel",
@@ -14623,14 +15341,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 103,
+        "queuePosition": 104,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 104,
+      "queuePosition": 105,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "convert-instagram-to-professional-account",
@@ -14754,14 +15472,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 104,
+        "queuePosition": 105,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 105,
+      "queuePosition": 106,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "ensure-site-loads-under-3-seconds-on-mobile",
@@ -14885,14 +15603,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 105,
+        "queuePosition": 106,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 106,
+      "queuePosition": 107,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "implement-person-schema-with-sameas-links",
@@ -15016,14 +15734,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 106,
+        "queuePosition": 107,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 107,
+      "queuePosition": 108,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "implement-technical-schema-markup",
@@ -15147,14 +15865,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 107,
+        "queuePosition": 108,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 108,
+      "queuePosition": 109,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "set-correct-business-categories",
@@ -15278,14 +15996,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 108,
+        "queuePosition": 109,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 109,
+      "queuePosition": 110,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "upload-real-photos-and-set-business-hours",
@@ -15409,14 +16127,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 109,
+        "queuePosition": 110,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 110,
+      "queuePosition": 111,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "verify-person-schema-with-sameas-links",
@@ -15540,14 +16258,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 110,
+        "queuePosition": 111,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 111,
+      "queuePosition": 112,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "write-proper-title-tags-and-meta-descriptions",
@@ -15671,14 +16389,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 111,
+        "queuePosition": 112,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 112,
+      "queuePosition": 113,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "check-schema-connects-to-all-verified-profiles",
@@ -15801,14 +16519,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 112,
+        "queuePosition": 113,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 113,
+      "queuePosition": 114,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "verify-google-business-profile",
@@ -15931,14 +16649,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 113,
+        "queuePosition": 114,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 114,
+      "queuePosition": 115,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "process-videos-via-marketscale",
@@ -16062,14 +16780,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 114,
+        "queuePosition": 115,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "No valid canonical article URL is mapped for this task."
       }
     },
     {
-      "queuePosition": 115,
+      "queuePosition": 116,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "capture-client-stories-on-phone",
@@ -16193,14 +16911,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 115,
+        "queuePosition": 116,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "No valid canonical article URL is mapped for this task."
       }
     },
     {
-      "queuePosition": 116,
+      "queuePosition": 117,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "create-quote-cards-from-strongest-statements",
@@ -16324,14 +17042,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 116,
+        "queuePosition": 117,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "No valid canonical article URL is mapped for this task."
       }
     },
     {
-      "queuePosition": 117,
+      "queuePosition": 118,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "write-email-newsletter-from-video-key-insight",
@@ -16455,14 +17173,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 117,
+        "queuePosition": 118,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "No valid canonical article URL is mapped for this task."
       }
     },
     {
-      "queuePosition": 118,
+      "queuePosition": 119,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "create-or-update-a-definitive-article",
@@ -16734,14 +17452,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 118,
+        "queuePosition": 119,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 119,
+      "queuePosition": 120,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "maintain-canonical-honor-and-story-leaves",
@@ -16865,14 +17583,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 119,
+        "queuePosition": 120,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 120,
+      "queuePosition": 121,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "analyze-why-underperformers-fail",
@@ -16996,14 +17714,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 120,
+        "queuePosition": 121,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "No valid canonical article URL is mapped for this task."
       }
     },
     {
-      "queuePosition": 121,
+      "queuePosition": 122,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "film-casual-team-conversations",
@@ -17127,14 +17845,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 121,
+        "queuePosition": 122,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "No valid canonical article URL is mapped for this task."
       }
     },
     {
-      "queuePosition": 122,
+      "queuePosition": 123,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "get-mentioned-in-publications",
@@ -17258,14 +17976,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 122,
+        "queuePosition": 123,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "No valid canonical article URL is mapped for this task."
       }
     },
     {
-      "queuePosition": 123,
+      "queuePosition": 124,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "google-ads-analyzer",
@@ -17387,14 +18105,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 123,
+        "queuePosition": 124,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The recorded instruction review expired because its source hash no longer matches the current bytes."
       }
     },
     {
-      "queuePosition": 124,
+      "queuePosition": 125,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "measure-content-rankings-traffic-revenue",
@@ -17518,14 +18236,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 124,
+        "queuePosition": 125,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "No valid canonical article URL is mapped for this task."
       }
     },
     {
-      "queuePosition": 125,
+      "queuePosition": 126,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "record-screen-shares-of-real-audits",
@@ -17649,14 +18367,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 125,
+        "queuePosition": 126,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "No valid canonical article URL is mapped for this task."
       }
     },
     {
-      "queuePosition": 126,
+      "queuePosition": 127,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "show-whats-working-and-what-isnt",
@@ -17780,14 +18498,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 126,
+        "queuePosition": 127,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "No valid canonical article URL is mapped for this task."
       }
     },
     {
-      "queuePosition": 127,
+      "queuePosition": 128,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "access-content-factory-source-assets",
@@ -17911,14 +18629,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 127,
+        "queuePosition": 128,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 128,
+      "queuePosition": 129,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "add-consistent-headshots-and-bios-across-profiles",
@@ -18042,14 +18760,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 128,
+        "queuePosition": 129,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 129,
+      "queuePosition": 130,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "build-external-backlinks-from-authoritative-sources",
@@ -18310,14 +19028,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 129,
+        "queuePosition": 130,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 130,
+      "queuePosition": 131,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "build-money-tree-site-diagram",
@@ -18441,14 +19159,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 130,
+        "queuePosition": 131,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 131,
+      "queuePosition": 132,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "build-personal-brand-website",
@@ -18604,14 +19322,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 131,
+        "queuePosition": 132,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 132,
+      "queuePosition": 133,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "build-third-party-validation",
@@ -18735,14 +19453,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 132,
+        "queuePosition": 133,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 133,
+      "queuePosition": 134,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "close-ended-relationship-endorsement-links",
@@ -18866,14 +19584,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 133,
+        "queuePosition": 134,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 134,
+      "queuePosition": 135,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "collect-verified-weekly-measurements",
@@ -18997,14 +19715,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 134,
+        "queuePosition": 135,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 135,
+      "queuePosition": 136,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "create-collaborative-content-with-industry-peers",
@@ -19128,14 +19846,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 135,
+        "queuePosition": 136,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 136,
+      "queuePosition": 137,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "create-social-content-from-video-clips",
@@ -19252,316 +19970,6 @@
         "heldStandardGates": [],
         "unknownStandardGates": [
           "instructionStandards",
-          "articleSemanticCertification",
-          "taskExampleEvidence",
-          "recordedExecution",
-          "acceptedExecution",
-          "setupSuccess"
-        ],
-        "fullyVerified": false,
-        "queuePosition": 136,
-        "priority": "P1",
-        "priorityReason": "Known standard gap",
-        "nextAction": "The contributor status is needs-work; finish and review the guide."
-      }
-    },
-    {
-      "queuePosition": 137,
-      "priority": "P1",
-      "priorityReason": "Known standard gap",
-      "slug": "deliver-personal-brand-site-from-request",
-      "title": "Deliver a personal-brand site from a request",
-      "category": "Personal Branding",
-      "importance": 3,
-      "revenueEstimate": 3,
-      "dependencyEstimate": 2,
-      "frequencyEstimate": 3,
-      "valueBasis": "Editorial estimate from build/factory.py; not measured income, demand or use.",
-      "effortEstimate": null,
-      "status": "needs-work",
-      "articleUrl": "https://blitzmetrics.com/from-one-email-to-a-live-personal-brand-site/",
-      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=deliver-personal-brand-site-from-request#task-deliver-personal-brand-site-from-request",
-      "historicalDeliveryCount": 1,
-      "historicalEvidenceIds": [
-        "historical-277118d625a087d83d91240c"
-      ],
-      "proofSummary": {
-        "definition": "Dated output proof, separate from current-recipe acceptance and every full-verification gate. Recorded acceptance counts distinct completed execution IDs with a latest all-pass independent review per task/run; scope is limited to its named criteria. Historical proof counts distinct source jobs, never new runs. Historical acceptance requires identity, output and acceptance pass; handoff is reported separately.",
-        "recordedAcceptedOutputCount": 0,
-        "recordedAcceptedReviewCount": 0,
-        "acceptedRecordedOutputs": [],
-        "historicalVerifiedOutputCount": 1,
-        "historicalAcceptedOutputCount": 1,
-        "historicalIdentityOutputOnlyCount": 0,
-        "historicalAcceptedHandoffPassCount": 1,
-        "historicalAcceptedHandoffHoldCount": 0,
-        "historicalAcceptedHandoffUnresolvedCount": 0,
-        "historicalVerifiedEvidenceIds": [
-          "historical-277118d625a087d83d91240c"
-        ],
-        "historicalAcceptedEvidenceIds": [
-          "historical-277118d625a087d83d91240c"
-        ]
-      },
-      "historicalDeliveryEvidence": {
-        "count": 1,
-        "candidateCount": 1,
-        "records": [
-          {
-            "version": 1,
-            "evidenceId": "historical-277118d625a087d83d91240c",
-            "taskSlugs": [
-              "deliver-personal-brand-site-from-request"
-            ],
-            "occurrence": {
-              "start": {
-                "precision": "unknown",
-                "value": null
-              },
-              "end": {
-                "precision": "date",
-                "value": "2026-08-22"
-              }
-            },
-            "recipeRevision": {
-              "state": "unknown",
-              "canonicalURL": null
-            },
-            "observedAt": "2026-10-14T16:13:04.878652+00:00",
-            "outcome": "One personal-brand website delivery is supported by its original delivery conversation, a current live output check and the recipient confirming access and taking over further refinement. The current page is a later version; original build timing and recipe use remain unknown.",
-            "review": {
-              "identity": {
-                "state": "pass",
-                "notes": "One original delivery conversation and one site; the follow-up acknowledgment belongs to the same job. Checked against existing ledger identities; no duplicate source job."
-              },
-              "output": {
-                "state": "pass",
-                "notes": "Original delivery names the live personal-brand site. Current normal public page returns200 with six navigation destinations. This proves a surviving site, not exact original page bytes."
-              },
-              "acceptance": {
-                "state": "pass",
-                "notes": "Recipient accepted site and companion-page setup, confirmed existing editing access, and took responsibility for continued building/refinement. This covers setup/access/transfer only, not all page/design criteria, original source-byte parity, current-recipe acceptance or novice setup."
-              },
-              "handoff": {
-                "state": "pass",
-                "notes": "The recipient explicitly confirms access and takes responsibility for further building and refinement; private exact response retained."
-              }
-            },
-            "evidenceUrls": [
-              "https://leithuwaydah.com/"
-            ],
-            "privateEvidenceRecorded": true
-          }
-        ]
-      },
-      "nextAction": "The contributor status is needs-work; finish and review the guide.",
-      "standardVerification": {
-        "instructionSourceSha256": "705a14ae2d6b495c569641f4099bf85b5a451385ef403cf015b12b009ccbcf26",
-        "articleKey": "blitzmetrics.com/from-one-email-to-a-live-personal-brand-site",
-        "gates": {
-          "instructionRevisionReviewed": {
-            "id": "instructionRevisionReviewed",
-            "label": "Exact instruction revision reviewed",
-            "state": "pass",
-            "reason": "Current source bytes match the review recorded 2026-10-13. Review scope and limits: Five written checks only. Article certification, accepted execution and novice setup remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md Destination-only revision: existing prose and check verdicts retained after exact diff inspection; current Content Factory target and relationship checked. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/content-factory-link-2026-10-13.md",
-            "reviewedAt": "2026-10-13",
-            "reviewer": "Codex incremental destination review with independent GPT-6 Luna review",
-            "sourceSha256": "705a14ae2d6b495c569641f4099bf85b5a451385ef403cf015b12b009ccbcf26"
-          },
-          "instructionStandards": {
-            "id": "instructionStandards",
-            "label": "Instruction requirements checked",
-            "state": "pass",
-            "reason": "All five instruction requirements have explicit passing checks for the current source revision.",
-            "reviewedAt": "2026-10-13",
-            "reviewer": "Codex incremental destination review with independent GPT-6 Luna review",
-            "reviewScope": "Five written checks only. Article certification, accepted execution and novice setup remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md Destination-only revision: existing prose and check verdicts retained after exact diff inspection; current Content Factory target and relationship checked. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/content-factory-link-2026-10-13.md",
-            "sourceSha256": "705a14ae2d6b495c569641f4099bf85b5a451385ef403cf015b12b009ccbcf26",
-            "standards": {
-              "version": 1,
-              "checks": {
-                "opening": {
-                  "state": "pass",
-                  "reason": "Exact opening quoted in review: task, practical reason and explained owned connection. First-screen diagram and opening checked in phone and desktop article previews. Readability diagnostic saved; actual meaning judged separately.",
-                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
-                },
-                "recipe": {
-                  "state": "pass",
-                  "reason": "Trigger, source/access inputs, ordered steps, countable result record, acceptance and real scope are explicit. Setup, access, one task and optional schedule stay separate.",
-                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
-                },
-                "links": {
-                  "state": "pass",
-                  "reason": "Owned prerequisite and receiving-task bodies read; normal destination checks succeeded. Empty GBP course replaced with the relevant maintained task; primary Google and DNS sources support provider claims.",
-                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
-                },
-                "evidence": {
-                  "state": "pass",
-                  "reason": "Unsupported Google guarantees and site-launch assumptions removed. False identity matches excluded; examples fictional; actual approved terms, domain configuration, output checks and receiver evidence required.",
-                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
-                },
-                "handoff": {
-                  "state": "pass",
-                  "reason": "Exact proposal, identity map or site record goes to a required reviewer/owner. Assignment is a prerequisite, not a claim of staffed roles. Qualification precedes delivery; Process identity feeds Post site work.",
-                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
-                }
-              }
-            }
-          },
-          "contributorComplete": {
-            "id": "contributorComplete",
-            "label": "Contributor reports guide complete",
-            "state": "unmet",
-            "reason": "The contributor status is needs-work; finish and review the guide."
-          },
-          "articleMapped": {
-            "id": "articleMapped",
-            "label": "Canonical article mapped",
-            "state": "pass",
-            "reason": "The task maps to a normalized canonical article URL.",
-            "articleUrl": "https://blitzmetrics.com/from-one-email-to-a-live-personal-brand-site/"
-          },
-          "articleCatalogGate": {
-            "id": "articleCatalogGate",
-            "label": "Article catalog gate",
-            "state": "unmet",
-            "reason": "At least one task mapped to this hub is not contributor-complete."
-          },
-          "articleSemanticCertification": {
-            "id": "articleSemanticCertification",
-            "label": "Article semantic certification",
-            "state": "unknown",
-            "reason": "The article revision observation is outside the 24-hour freshness window.",
-            "semanticReview": {
-              "version": 1,
-              "taskSlug": "deliver-personal-brand-site-from-request",
-              "canonicalURL": "https://blitzmetrics.com/from-one-email-to-a-live-personal-brand-site/",
-              "sourceSha256": "8b79aceba7d540c82f8090a7a5de44d1bb773d5002c74ee06fb27834cbfa369e",
-              "representation": "wordpress-content-html",
-              "reviewedAt": "2026-10-05T21:32:21.939389Z",
-              "reviewer": "Codex root final title and status-label correction; unchanged method independently reviewed",
-              "criteria": {
-                "openingContext": {
-                  "state": "pass",
-                  "reason": "Actual first paragraph quoted below; plain useful work, reason and owned personal-brand prerequisite, with source meaning checked.",
-                  "evidenceRefs": [
-                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
-                  ]
-                },
-                "roleScope": {
-                  "state": "pass",
-                  "reason": "Single site-delivery recipe or six-task Knowledge Panel topic hub; registry and public copy agree.",
-                  "evidenceRefs": [
-                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
-                  ]
-                },
-                "owner": {
-                  "state": "unknown",
-                  "reason": "Canonical ongoing upkeep owner not established by this scoped release.",
-                  "evidenceRefs": [
-                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
-                  ]
-                },
-                "steps": {
-                  "state": "pass",
-                  "reason": "Reviewed body now agrees with the current source recipe; old Google and DNS contradictions removed.",
-                  "evidenceRefs": [
-                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
-                  ]
-                },
-                "links": {
-                  "state": "pass",
-                  "reason": "Owned conceptual and prerequisite meanings checked; current source copies and primary-provider references checked.",
-                  "evidenceRefs": [
-                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
-                  ]
-                },
-                "sourceEvidence": {
-                  "state": "unknown",
-                  "reason": "No new independently accepted offer, identity audit or site launch is supplied by documentation work.",
-                  "evidenceRefs": [
-                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
-                  ]
-                },
-                "handoffContext": {
-                  "state": "pass",
-                  "reason": "Named required reviewer or publisher, exact artifact and accepting record, plus specific Content Factory relationship.",
-                  "evidenceRefs": [
-                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
-                  ]
-                },
-                "visualAndLayout": {
-                  "state": "unknown",
-                  "reason": "Previews passed; final anonymous source and full public rendered checks tracked separately before any certification.",
-                  "evidenceRefs": [
-                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
-                  ]
-                },
-                "publicationStandards": {
-                  "state": "unknown",
-                  "reason": "Title shortened below60characters and misleading Definitive Guide label removed. Full taxonomy, SEO plugin fields and author evidence remain unverified.",
-                  "evidenceRefs": [
-                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
-                  ]
-                },
-                "acceptanceResults": {
-                  "state": "unknown",
-                  "reason": "No accepted real task execution or novice setup trial; article publication is not their substitute.",
-                  "evidenceRefs": [
-                    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md"
-                  ]
-                }
-              }
-            },
-            "revisionObservation": {
-              "version": 1,
-              "taskSlug": "deliver-personal-brand-site-from-request",
-              "canonicalURL": "https://blitzmetrics.com/from-one-email-to-a-live-personal-brand-site/",
-              "sourceSha256": "8b79aceba7d540c82f8090a7a5de44d1bb773d5002c74ee06fb27834cbfa369e",
-              "representation": "wordpress-content-html",
-              "observedAt": "2026-10-05T21:32:22.537643Z",
-              "observer": "Codex separate final source read",
-              "state": "observed",
-              "reason": "Only title/excerpt and unearned definitive label changed; recipe body and opening unchanged. Exact final source read back.",
-              "evidenceRefs": [
-                "sha256:688471a030c3d00c445a6f12c1ba6c32b712fdfee56105f564a2eb5ee8f940cc"
-              ]
-            }
-          },
-          "taskExampleEvidence": {
-            "id": "taskExampleEvidence",
-            "label": "Task-attributed example evidence",
-            "state": "unknown",
-            "reason": "No source-backed example audit exists for the mapped hub."
-          },
-          "recordedExecution": {
-            "id": "recordedExecution",
-            "label": "Recorded real execution",
-            "state": "unknown",
-            "reason": "No execution ledger record names this task. Historical run frequency is unknown."
-          },
-          "acceptedExecution": {
-            "id": "acceptedExecution",
-            "label": "Accepted execution result",
-            "state": "unknown",
-            "reason": "No structured acceptance review is recorded for the current canonical article revision. A completed run label is not acceptance."
-          },
-          "setupSuccess": {
-            "id": "setupSuccess",
-            "label": "New-user setup success",
-            "state": "unknown",
-            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
-            "supportedRoute": "manual-guide",
-            "installationCertified": false,
-            "schedulingCertified": false
-          }
-        },
-        "unmetStandardGates": [
-          "contributorComplete",
-          "articleCatalogGate"
-        ],
-        "heldStandardGates": [],
-        "unknownStandardGates": [
           "articleSemanticCertification",
           "taskExampleEvidence",
           "recordedExecution",
@@ -32846,7 +33254,7 @@
             "id": "recordedExecution",
             "label": "Recorded real execution",
             "state": "pass",
-            "reason": "23 distinct execution ID(s) name this task; outcomes remain separate.",
+            "reason": "24 distinct execution ID(s) name this task; outcomes remain separate.",
             "executionIds": [
               "authority-guides-repair-20261005-2100",
               "booking-path-checks-20261009-1259",
@@ -32869,6 +33277,7 @@
               "task-direct-open-20261002-1404",
               "taxonomy-guide-repair-20261003-1606",
               "tracker-setup-20260925-000216",
+              "two-task-certification-20261015",
               "weekly-maa-clarity-20261011",
               "wordpress-runtime-routing-20261012"
             ],

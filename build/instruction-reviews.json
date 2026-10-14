@@ -145,15 +145,39 @@
       }
     },
     "place-content-on-seo-tree-with-proper-links": {
-      "source_sha256": "f9f912dce2ca38f31015c6f6aa6568c0411ee8b7233498a3216608b8d141438c",
-      "reviewed_at": "2026-10-13",
-      "reviewer": "Codex incremental destination review with independent GPT-6 Luna review",
-      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate. Destination-only revision: existing prose and check verdicts retained after exact diff inspection; current Content Factory target and relationship checked. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/content-factory-link-2026-10-13.md",
-      "incrementalReview": {
-        "beforeSourceSha256": "953166073f0d98c82a3788534cdfed2a990f00436461f3bc6c0c61616b0c26e2",
-        "previousReviewDate": "2026-09-06",
-        "change": "Only the Content Factory teaching URL changed; no step, example, opening, status or acceptance changed.",
-        "review": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/content-factory-link-2026-10-13.md"
+      "source_sha256": "5ac2d7126d8cc3ff38f02d2bf87076f700dfd1d067b4f4951cba53a031bf408b",
+      "reviewed_at": "2026-10-15",
+      "reviewer": "Codex independent review, configured gpt-6.1-sol high",
+      "scope": "All five written instruction requirements independently pass for the exact revised placement guide, including linked opening, partial inbound-placement rule, limited historical example, corrected fictional/historical footer, current public task routes and real Post handoff. Historical acceptance does not certify current recipe execution or novice setup.",
+      "standards": {
+        "version": 1,
+        "checks": {
+          "opening": {
+            "state": "pass",
+            "reason": "The three plain sentences state the findability problem, useful link placement and first action; the third links the maintained SEO Tree concept map. Heuristic FK grade 4.20 is a diagnostic, not evidence of novice success. This task places an already prepared page; the rendered page visual remains a separate output check.",
+            "evidence": "A useful page can still be hard to find. This guide helps you connect it to the main topic and the next thing a reader needs. Start with the [SEO Tree topic map](https://blitzmetrics.com/seo-tree/) to find the page that already owns that topic."
+          },
+          "recipe": {
+            "state": "pass",
+            "reason": "Trigger, page/map/GCT inputs, actual edit authority, role/parent decision, ordered changes, final-destination checks and inventory output are repeatable. A pending required inbound edit is explicitly partial. No installation or schedule is inferred.",
+            "evidence": "Inputs; First-run prompt; Steps 1-8; Definition of done; If a required inbound edit is pending, report a partial placement with its owner and next action. Do not call that result fully connected."
+          },
+          "links": {
+            "state": "pass",
+            "reason": "Current HTTP200 public dataset and renderer were independently read. All nine exact task query/fragment URLs match their actual deployed task records; renderer selects the exact slug and opens its row. Maintained guide bodies support the named GCT, entity, process, article-checklist and meta-record relationships. Content Factory stage-3-post exists and explains this Post handoff. Historical directory source supports the limited example.",
+            "evidence": "https://local-service-spotlight.github.io/task-library/data.json sha256:418d98f30396270042e68bf2d5ac59aa41b4d129c83e651163950570929ec0df; https://local-service-spotlight.github.io/task-library/app.js sha256:dd8325396f960faf053df105b298b4dff987990add588182f2a4fe132f0ec073; https://localservicespotlight.com/content-factory/#stage-3-post; https://westerntradingpost.com/collector-guides/"
+          },
+          "evidence": {
+            "state": "pass",
+            "reason": "Fictional Maple Cycle remains labeled. One checked historical Collector Guides delivery is added with precise accepted navigation/editability and missing-return-link/original-revision limits. The guide requires real-run records and does not count teaching/review derivatives as new executions.",
+            "evidence": "Checked historical example — limited navigation acceptance; Write up the real run. The recorded check found no upward directory links in the five guide bodies. The original recipe revision and full link inventory were not recovered."
+          },
+          "handoff": {
+            "state": "pass",
+            "reason": "The publisher/checklist receives the placement and link evidence; a different page owner receives an exact pending inbound edit. The guide correctly serves Post after Process preparation; neighboring list order does not invent prerequisites.",
+            "evidence": "The publisher receives the page placement and link evidence, then runs Check the full article checklist. A different page owner gets only the specific pending inbound edit when needed."
+          }
+        }
       }
     },
     "post-to-facebook-page": {
@@ -2857,10 +2881,10 @@
       }
     },
     "deliver-personal-brand-site-from-request": {
-      "source_sha256": "705a14ae2d6b495c569641f4099bf85b5a451385ef403cf015b12b009ccbcf26",
-      "reviewed_at": "2026-10-13",
-      "reviewer": "Codex incremental destination review with independent GPT-6 Luna review",
-      "scope": "Five written checks only. Article certification, accepted execution and novice setup remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/authority-guides-2026-10-05.md Destination-only revision: existing prose and check verdicts retained after exact diff inspection; current Content Factory target and relationship checked. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/content-factory-link-2026-10-13.md",
+      "source_sha256": "66415ee2457f5f27eca9ce7e1520d4256b5036d5f94e7bae249078d6c423dd08",
+      "reviewed_at": "2026-10-15",
+      "reviewer": "Codex independent review, configured gpt-6.1-sol high",
+      "scope": "Five written instruction checks only. Inspected exact two-line status/review-copy diff; existing opening, method, sources, examples and handoff are unchanged. Previous five semantic instruction verdicts retained with explicit incremental review. Article certification, actual current-recipe execution, installation, scheduling and novice-human setup remain separate.",
       "standards": {
         "version": 1,
         "checks": {
@@ -2892,10 +2916,9 @@
         }
       },
       "incrementalReview": {
-        "beforeSourceSha256": "20d84176417903edc98454b05f4a3f35286d7bf8141273fb35190a183a2f0c30",
-        "previousReviewDate": "2026-10-05",
-        "change": "Only the Content Factory teaching URL changed; no step, example, opening, status or acceptance changed.",
-        "review": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/content-factory-link-2026-10-13.md"
+        "beforeSourceSha256": "705a14ae2d6b495c569641f4099bf85b5a451385ef403cf015b12b009ccbcf26",
+        "previousReviewDate": "2026-10-13",
+        "change": "Only contributor status needs-work to complete and written-review wording changed. The recipe, examples, opening, links and handoff remain byte-for-byte unchanged."
       }
     },
     "establish-entity-identity": {

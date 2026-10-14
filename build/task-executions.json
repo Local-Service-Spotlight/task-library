@@ -1876,6 +1876,155 @@
           "reviewedAt": "2026-10-14T16:39:00Z"
         }
       ]
+    },
+    {
+      "executionId": "two-task-certification-20261015",
+      "taskSlugs": [
+        "publish-skill-and-task-page"
+      ],
+      "recipeRevisions": {
+        "publish-skill-and-task-page": {
+          "articleUrl": "https://blitzmetrics.com/skill-publishing-standard/",
+          "sourceSha256": "660d6f1abd8678c851c0a08059f27982e8e29b46775ea217a2ae1d6e3ba55537"
+        }
+      },
+      "startedAt": "2026-10-14T17:10:41.497809+00:00",
+      "recordedAt": "2026-10-14T17:58:12.612070+00:00",
+      "updatedAt": "2026-10-14T17:58:12.612080+00:00",
+      "status": "running",
+      "result": "Published and reviewed two owned task articles. Library evidence release and actual human beginner test are pending; documentation review does not execute site delivery.",
+      "metaArticle": {
+        "status": "draft",
+        "draftSha256": "fd7c6758f97ae4659a3b8eb81065eec94e57479dbfc81d9bff3c23b42148b280"
+      },
+      "evidence": [
+        {
+          "visibility": "private",
+          "sha256": "d7bee1c3ba44acf0d6070c0fbe394b6c4a65015cdce3b3ff8699bf8129710e48"
+        }
+      ]
+    },
+    {
+      "executionId": "site-guide-seo-placement-20261015",
+      "parentExecutionId": "two-task-certification-20261015",
+      "taskSlugs": [
+        "place-content-on-seo-tree-with-proper-links"
+      ],
+      "recipeRevisions": {
+        "place-content-on-seo-tree-with-proper-links": {
+          "articleUrl": "https://blitzmetrics.com/seo-tree",
+          "sourceSha256": "b40c6815df1774c5570ad4a567abc8f203f661d7584a485d7840132f921b8df7"
+        }
+      },
+      "startedAt": "2026-10-14T17:58:12.712239+00:00",
+      "recordedAt": "2026-10-14T17:58:12.712239+00:00",
+      "updatedAt": "2026-10-14T18:07:23.774491+00:00",
+      "status": "completed",
+      "result": "Placed the site-delivery guide under its Personal Branding topic home. One new parent body link and two existing child return links reach checked public pages; exact saved source and phone/desktop checks pass. Handed the placement record to independent checklist review. This is one owned SEO placement, not site delivery or beginner use.",
+      "metaArticle": {
+        "status": "draft",
+        "draftSha256": "bfdd3d4bff95a4ac67b32758745e981d422369f4a8c20ece363d5135918b646d"
+      },
+      "evidence": [
+        {
+          "visibility": "private",
+          "sha256": "94a278dbedd8b97616c1cbfdc39e4b55974aebe4780b97c246022042ca7e53f0"
+        },
+        {
+          "visibility": "public",
+          "url": "https://blitzmetrics.com/personal-brand/"
+        },
+        {
+          "visibility": "public",
+          "url": "https://blitzmetrics.com/from-one-email-to-a-live-personal-brand-site/"
+        },
+        {
+          "visibility": "private",
+          "sha256": "0ae435e518eacf33dc110984dfe4f469415739d4f0d88f41e8b076f2c2c92c3f"
+        },
+        {
+          "visibility": "private",
+          "sha256": "eee0f760d8cf63213cb43fac56f0cb11b75a41e764fe22615b906860ff3c89e1"
+        }
+      ],
+      "finishedAt": "2026-10-14T18:01:10.697074+00:00",
+      "acceptanceReviews": [
+        {
+          "version": 1,
+          "reviewId": "site-guide-seo-placement-20261015-independent-result-1",
+          "taskSlug": "place-content-on-seo-tree-with-proper-links",
+          "canonicalURL": "https://blitzmetrics.com/seo-tree",
+          "recipeSourceSha256": "b40c6815df1774c5570ad4a567abc8f203f661d7584a485d7840132f921b8df7",
+          "representation": "wordpress-content-html",
+          "instructionSourceSha256": "5ac2d7126d8cc3ff38f02d2bf87076f700dfd1d067b4f4951cba53a031bf408b",
+          "reviewedAt": "2026-10-14T18:04:31.307917+00:00",
+          "reviewer": "Codex independent site/link result-review function",
+          "executor": "Codex root publishing function",
+          "nextHandoff": "The root publisher receives this scoped result review and finalizes the current execution/meta record. The full article-checklist function retains the child short-route hold and other article gates. No inbound placement is pending; no historical site-delivery, whole-parent certification or novice-human claim is created.",
+          "criteria": {
+            "result": {
+              "state": "pass",
+              "expectedResult": "Place the published site-delivery recipe beneath the existing Personal Branding topic home with one useful inward body link, while preserving the child\u2019s existing useful links up.",
+              "observedResult": "One requested placement is delivered: one new parent body link under Phase 1: Digital Plumbing reaches the canonical site-delivery guide; two existing child body links return to the same Personal Branding parent. Saved source matches the accepted candidate and normal anonymous parent body matches saved rendering. No inbound edit remains pending.",
+              "sourceRef": "https://blitzmetrics.com/seo-tree",
+              "evidenceRefs": [
+                "https://blitzmetrics.com/personal-brand/",
+                "https://blitzmetrics.com/from-one-email-to-a-live-personal-brand-site/",
+                "sha256:103ee57a5ef547bbeaddde222ccf5eea05ce2bef44a0c1f09c6ca2f59f85ba95",
+                "sha256:7af4c5a444d4e697810713f2bbe036ed6e240ea9792e79eb901e02c4da28ebc5"
+              ]
+            },
+            "meaning": {
+              "state": "pass",
+              "expectedResult": "Choose the actual topic owner and describe the child\u2019s task accurately with a descriptive anchor at the reader\u2019s relevant step; avoid competing hubs and forced or unrelated reciprocal links.",
+              "observedResult": "The topic hub introduces site/domain infrastructure in Phase 1. The five-word anchor \u201cpersonal brand site delivery guide\u201d leads to a request-to-preview/domain-plan/launch-check recipe. Its paragraph preserves open owner actions and verified-live criteria. The child\u2019s source-selection and topic-context links back are useful explanations, not a fabricated same-task completion claim.",
+              "sourceRef": "https://blitzmetrics.com/seo-tree",
+              "evidenceRefs": [
+                "https://blitzmetrics.com/personal-brand/",
+                "https://blitzmetrics.com/from-one-email-to-a-live-personal-brand-site/",
+                "sha256:103ee57a5ef547bbeaddde222ccf5eea05ce2bef44a0c1f09c6ca2f59f85ba95",
+                "sha256:2065bc25288a74e8a431918caa77912e1e160852d831e1c92e52fca06168db7e"
+              ]
+            },
+            "sourcePreservation": {
+              "state": "pass",
+              "expectedResult": "Save only the accepted paragraph through the native source, prove exact before/candidate/saved identity, preserve unrelated metadata and prevent concurrent source loss.",
+              "observedResult": "The saved raw parent hash 103ee57a5ef547bbeaddde222ccf5eea05ce2bef44a0c1f09c6ca2f59f85ba95 equals the candidate. Removing the single exact added paragraph reproduces every baseline byte at 6627793dfc225b39a5df40b417f6051bd12a331b406e8b77068215d17ec9c590. All compared identity/title/status/date/author/media/taxonomy/meta fields are unchanged. The child source remains 2065bc\u2026db7e.",
+              "sourceRef": "https://blitzmetrics.com/seo-tree",
+              "evidenceRefs": [
+                "sha256:103ee57a5ef547bbeaddde222ccf5eea05ce2bef44a0c1f09c6ca2f59f85ba95",
+                "sha256:6627793dfc225b39a5df40b417f6051bd12a331b406e8b77068215d17ec9c590",
+                "sha256:2065bc25288a74e8a431918caa77912e1e160852d831e1c92e52fca06168db7e"
+              ]
+            },
+            "linkHealth": {
+              "state": "pass",
+              "expectedResult": "Open the ordinary public source and final target, verify placed body links and contextual location, and exercise the new link at phone/desktop layouts without a cache bypass or unsafe media playback.",
+              "observedResult": "Normal public captures return 200 for both canonical pages. Public body has one inward link in Phase 1 and two upward links; parity excludes only documented automatic rendering attributes/markers. Root\u2019s actual 1280\u00d7800 and 390\u00d7844 browser checks show the paragraph readable with no horizontal overflow. Phone click opened the canonical child; Back returned to the source. No media played.",
+              "sourceRef": "https://blitzmetrics.com/seo-tree",
+              "evidenceRefs": [
+                "https://blitzmetrics.com/personal-brand/",
+                "https://blitzmetrics.com/from-one-email-to-a-live-personal-brand-site/",
+                "sha256:7af4c5a444d4e697810713f2bbe036ed6e240ea9792e79eb901e02c4da28ebc5",
+                "sha256:1302ecb94d1349da011505ab433ea71ad058e2ce32699a041c920dedbc362737"
+              ]
+            },
+            "handoff": {
+              "state": "pass",
+              "expectedResult": "Record the actual page roles, primary parent, inbound source, links and checked state, then deliver exact saved/public evidence and remaining issues to the full article-checklist/result review function.",
+              "observedResult": "The current execution, placement plan and dated public receipt identify the topic hub, site-delivery recipe, exact source/target and 1-down/2-up checked relation. This independent result-review function has read the final saved bodies and receipts and returned the scoped acceptance to root. Full article checks retain unrelated holds. The draft meta still needs its stale \u201cchecks pending\u201d sentence updated before ledger insertion.",
+              "sourceRef": "https://blitzmetrics.com/seo-tree",
+              "evidenceRefs": [
+                "https://blitzmetrics.com/personal-brand/",
+                "https://blitzmetrics.com/from-one-email-to-a-live-personal-brand-site/",
+                "sha256:103ee57a5ef547bbeaddde222ccf5eea05ce2bef44a0c1f09c6ca2f59f85ba95",
+                "sha256:7af4c5a444d4e697810713f2bbe036ed6e240ea9792e79eb901e02c4da28ebc5",
+                "sha256:1302ecb94d1349da011505ab433ea71ad058e2ce32699a041c920dedbc362737"
+              ]
+            }
+          }
+        }
+      ]
     }
   ],
   "historicalEvidence": [
