@@ -1715,10 +1715,10 @@
  ],
  "executionHistory": {
   "schemaVersion": 1,
-  "asOf": "2026-10-14T01:19:40.783598+00:00",
+  "asOf": "2026-10-14T01:25:12.954248+00:00",
   "countDefinition": "Distinct recorded execution IDs, separate from meta-article URLs. History is partial; absent history is unknown, not zero. The last-30-day count is a documented lower bound, not total task frequency.",
   "recordedExecutions": 31,
-  "completedExecutions": 18,
+  "completedExecutions": 19,
   "partialExecutions": 12,
   "executions": [
    {
@@ -2736,20 +2736,23 @@
      "publish-skill-and-task-page"
     ],
     "startedAt": "2026-10-14T01:05:03.771394+00:00",
-    "status": "running",
-    "result": "Improving one site-build recipe with explicit evidence and receiving acceptance; public release pending. This is documentation maintenance, not a site launch.",
+    "status": "completed",
+    "result": "Published one site-build recipe with plain linked opening, measured result record, owner decision and receiving acknowledgment. Exact-source independent review,216tests,7public archives,6deployed projections and phone/desktop checks passed. Written passes22;fullyverified0. No client execution or new historical job.",
     "recipeRevisions": {
      "publish-skill-and-task-page": {
       "articleUrl": "https://blitzmetrics.com/skill-publishing-standard/",
       "sourceSha256": "a5f8e0c27993597db9cdf606efb6bf3128c4ffbfe20f8ef72dbb4fe0f610a686"
      }
     },
+    "finishedAt": "2026-10-14T01:24:58.852983+00:00",
     "evidenceUrls": [
-     "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/site-build-proof-2026-10-14.md"
+     "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/site-build-proof-2026-10-14.md",
+     "https://github.com/Local-Service-Spotlight/task-library/pull/93"
     ],
-    "privateEvidenceRecorded": false,
+    "privateEvidenceRecorded": true,
     "metaArticle": {
-     "status": "draft"
+     "status": "published",
+     "url": "https://local-service-spotlight.github.io/task-library/maintenance/site-build-proof-2026-10-14.html"
     }
    }
   ],
@@ -44136,11 +44139,11 @@
      "executionHistory": {
       "status": "partial",
       "recordedRuns": 22,
-      "completedRuns": 17,
+      "completedRuns": 18,
       "failedRuns": 0,
       "partialRuns": 4,
-      "completedLast30Days": 17,
-      "lastCompletedAt": "2026-10-12T22:02:47.701819+00:00",
+      "completedLast30Days": 18,
+      "lastCompletedAt": "2026-10-14T01:24:58.852983+00:00",
       "executionIds": [
        "authority-guides-repair-20261005-2100",
        "booking-path-checks-20261009-1259",
@@ -44294,9 +44297,9 @@
        },
        {
         "executionId": "site-build-proof-recipe-20261014",
-        "status": "running",
+        "status": "completed",
         "startedAt": "2026-10-14T01:05:03.771394+00:00",
-        "finishedAt": null
+        "finishedAt": "2026-10-14T01:24:58.852983+00:00"
        }
       ],
       "acceptanceReviews": [
