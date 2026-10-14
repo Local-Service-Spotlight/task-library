@@ -1443,8 +1443,8 @@
       "description": "Help readers find useful pages that your site has left out.",
       "article": "https://blitzmetrics.com/seo-tree",
       "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=identify-and-eliminate-orphan-standalone-articles#task-identify-and-eliminate-orphan-standalone-articles",
-      "status": "needs-work",
-      "contentSha256": "1ea04793e4780b6ba515f01f231826ef01363d814d9bf2999d1447154550bf32"
+      "status": "complete",
+      "contentSha256": "6914e1f1319cdda66cd1608a87c2494051b8818692f1d5457249f6d32f2b559d"
     },
     {
       "slug": "identify-signals-worth-amplifying",
@@ -1848,8 +1848,8 @@
       "description": "Keep your best page and the useful facts it holds.",
       "article": "https://blitzmetrics.com/seo-tree",
       "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=remove-duplicate-thin-pages#task-remove-duplicate-thin-pages",
-      "status": "needs-work",
-      "contentSha256": "bcefe70005d420ef0e5844f26991b102f8ba909c78b88693ba387496324de224"
+      "status": "complete",
+      "contentSha256": "cad16c59292573884549aef432bca178d371986c537105ab3a751c667d176949"
     },
     {
       "slug": "replace-ai-looking-content-with-real-eeat",
@@ -1857,8 +1857,8 @@
       "description": "Help readers see the real work behind your claims.",
       "article": "https://blitzmetrics.com/seo-tree",
       "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=replace-ai-looking-content-with-real-eeat#task-replace-ai-looking-content-with-real-eeat",
-      "status": "needs-work",
-      "contentSha256": "16327f4b2fd0485f1b4af294fa135a692758da8dca743af93aba477ec720c571"
+      "status": "complete",
+      "contentSha256": "96494699425b3beb8b2186cc577f0f2af190f2eb06a89da368b25aaea6e42cb4"
     },
     {
       "slug": "reply-with-task-status-in-origin-thread",

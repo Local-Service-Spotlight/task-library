@@ -4,12 +4,12 @@ description: "Keep your best page and the useful facts it holds."
 category: SEO & Content Architecture
 stage: —
 definitive_article: /seo-tree
-status: needs-work
+status: complete
 ---
 
 # Remove duplicate thin pages
 
-Keep your best page and the useful facts it holds. This guide checks weak or repeated pages and plans what to keep, join or remove. Start with the pages that seem to serve the same need and read what each one adds.
+Help readers find one useful answer and keep the facts they need. This guide checks which pages to keep, join or remove. Use the [SEO Tree map](https://blitzmetrics.com/seo-tree/) to choose the page that best serves each need.
 
 **The path:** Suspect URLs → Intent and evidence review → Keep or change proposal → Guarded release checks
 
@@ -51,7 +51,7 @@ A fictional site has two live pages for the same course and a short contact page
 
 An authorized source/route owner receives the exact disposition and recovery plan. [Check the placed links](https://local-service-spotlight.github.io/task-library/?task=step-5-qa-links-against-google-guidelines#task-step-5-qa-links-against-google-guidelines) receives live destination checks; [Measure the accepted change set](https://local-service-spotlight.github.io/task-library/?task=step-6-measure-and-iterate-with-maa#task-step-6-measure-and-iterate-with-maa) receives the accepted release date, affected URLs and known baseline.
 
-This task supports the [Content Factory: Produce, Process, Post and Promote](https://localservicespotlight.com/content-factory/). Identity, proof, access or coordination can support several stages. Use the real inputs and receiving owner above; this task does not create unrelated transcripts, clips or ads merely because the diagram has four stages.
+This task supports Process and Post in the [Content Factory](https://localservicespotlight.com/content-factory/). Process checks the page and its proof; Post saves the approved change and checks the live result. The receiving owner and evidence above define the next task. Promotion and traffic measurement use the accepted page under their own scope.
 
 ## Start with an agent
 
@@ -80,6 +80,6 @@ Reuse the same execution ID for internal checks, revisions, retries and meta wri
 
 ## Review and evidence still needed
 
-The inherited contributor status is `needs-work`. It is preserved, not promoted by this rewrite. That label alone does not prove document readiness, account access, an actual execution or a client result.
+The contributor label describes the written guide. It does not prove account access, an actual execution or a client result. Exact-revision written review is recorded separately from actual use.
 
-The fictional example teaches the method and does not fill a real-run evidence gap. A named semantic reviewer must check the actual opening, full method, sources and handoff. Check the useful opening visual in the normal rendered guide at the current required desktop and mobile sizes, including 1280 × 800 and 390 × 844. Source readability checks do not prove public presentation or task execution.
+The fictional example teaches the method and does not fill a real-run evidence gap. The exact written review records the actual opening, full method, sources and handoff. Check the useful opening visual in the normal rendered guide at the current required desktop and mobile sizes, including 1280 × 800 and 390 × 844. Source readability checks do not prove public presentation or task execution.

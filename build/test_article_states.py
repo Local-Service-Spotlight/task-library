@@ -437,16 +437,16 @@ class BuiltArticleInventory(unittest.TestCase):
 
     def test_current_inventory_has_exact_derived_counts(self):
         self.assertEqual(self.data['stats']['articleHubs'], 53)
-        self.assertEqual(self.data['stats']['definitiveArticles'], 15)
+        self.assertEqual(self.data['stats']['definitiveArticles'], 16)
 
         tasks = copy.deepcopy(self.tasks)
         derived = task_build.derive_article_states(tasks)
-        self.assertEqual(derived, {'articleHubs': 53, 'definitiveArticles': 15})
+        self.assertEqual(derived, {'articleHubs': 53, 'definitiveArticles': 16})
 
     def test_registered_recipes_keep_wip_and_ledger_backed_history(self):
         by_slug = {t['slug']: t for t in self.tasks}
         self.assertEqual(self.data['stats']['total'], 276)
-        self.assertEqual(self.data['stats']['complete'], 127)
+        self.assertEqual(self.data['stats']['complete'], 130)
         self.assertEqual(self.data['stats']['gaps'], 23)
         for slug in ('create-or-update-a-definitive-article', 'document-a-task', 'install-local-qwen',
                      'submit-weekly-maa-report-every-friday'):
@@ -613,7 +613,7 @@ class BuiltArticleInventory(unittest.TestCase):
         self.assertEqual(self.data['stats']['metaOrbitHubsWithEvidence'], 14)
         self.assertEqual(self.data['stats']['metaOrbitHubsUnknown'], 39)
         self.assertEqual({key for key, hub in hubs.items()
-                          if hub['state'] == 'ready'}, set(expected) | {'blitzmetrics.com/skill-publishing-standard', 'blitzmetrics.com/from-one-email-to-a-live-personal-brand-site'})
+                          if hub['state'] == 'ready'}, set(expected) | {'blitzmetrics.com/skill-publishing-standard', 'blitzmetrics.com/from-one-email-to-a-live-personal-brand-site', 'blitzmetrics.com/seo-tree'})
         for key, (count, tier) in expected.items():
             with self.subTest(hub=key):
                 self.assertEqual(hubs[key]['metaCountStatus'], 'verified')
@@ -627,7 +627,7 @@ class BuiltArticleInventory(unittest.TestCase):
                             and key != 'blitzmetrics.com/seo-tree'))
         self.assertEqual(hubs['blitzmetrics.com/seo-tree']['metaCountStatus'], 'partial')
         self.assertEqual(hubs['blitzmetrics.com/seo-tree']['metaArticleCount'], 1)
-        self.assertEqual(hubs['blitzmetrics.com/seo-tree']['state'], 'wip')
+        self.assertEqual(hubs['blitzmetrics.com/seo-tree']['state'], 'ready')
         self.assertNotIn('blitzmetrics.com/blog-posting-guidelines', hubs)
 
         new_meta = 'https://blitzmetrics.com/how-we-made-definitive-article-strength-measurable/'

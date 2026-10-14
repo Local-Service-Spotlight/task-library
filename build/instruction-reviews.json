@@ -170,7 +170,7 @@
           "evidence": {
             "state": "pass",
             "reason": "Fictional Maple Cycle remains labeled. One checked historical Collector Guides delivery is added with precise accepted navigation/editability and missing-return-link/original-revision limits. The guide requires real-run records and does not count teaching/review derivatives as new executions.",
-            "evidence": "Checked historical example — limited navigation acceptance; Write up the real run. The recorded check found no upward directory links in the five guide bodies. The original recipe revision and full link inventory were not recovered."
+            "evidence": "Checked historical example \u2014 limited navigation acceptance; Write up the real run. The recorded check found no upward directory links in the five guide bodies. The original recipe revision and full link inventory were not recovered."
           },
           "handoff": {
             "state": "pass",
@@ -3562,27 +3562,27 @@
           "opening": {
             "state": "pass",
             "reason": "The opening states what the guide does, why it helps, and its connection to the maintained SEO Tree in plain language. The approximate FK grade is 3.27. I inspected the normal rendered desktop and phone screenshots: the five-step diagram is fully in the first viewport, its labels fit, and no horizontal overflow or clipping is visible.",
-            "evidence": "Quote: ‘Help readers find what they need on a page you already have. Use this guide to choose where a new fact, video or story fits. The SEO Tree maps your site: it helps you pick the right page and link to the next step.’ Readability.json: 44 words, 3 sentences, estimated FK grade 3.27 (approximate vowel-group screen). Preview receipts: desktop 1280 × 800, visual box y=327.6 h=187.2; phone 390 × 844, visual box y=481.8 h=203.4; pathInsideViewport=true and overflow=false in both. I visually inspected preview-guide-desktop.png and preview-guide-phone.png."
+            "evidence": "Quote: \u2018Help readers find what they need on a page you already have. Use this guide to choose where a new fact, video or story fits. The SEO Tree maps your site: it helps you pick the right page and link to the next step.\u2019 Readability.json: 44 words, 3 sentences, estimated FK grade 3.27 (approximate vowel-group screen). Preview receipts: desktop 1280 \u00d7 800, visual box y=327.6 h=187.2; phone 390 \u00d7 844, visual box y=481.8 h=203.4; pathInsideViewport=true and overflow=false in both. I visually inspected preview-guide-desktop.png and preview-guide-phone.png."
           },
           "recipe": {
             "state": "pass",
             "reason": "The trigger, page/source inputs, permissions and owner, search/compare/decision sequence, edit and publication limits, measurable checks, decision record, and accepting handoff are clear enough to repeat. It distinguishes a task recipe from a hub, offer, or distinct case story.",
-            "evidence": "Inputs; Steps 1–9; Definition of done. Step 8 requires work within existing authority and an anonymous public check; Step 9 keeps a sent handoff open until acceptance or records its pending owner."
+            "evidence": "Inputs; Steps 1\u20139; Definition of done. Step 8 requires work within existing authority and an anonymous public check; Step 9 keeps a sent handoff open until acceptance or records its pending owner."
           },
           "links": {
             "state": "pass",
             "reason": "Browser fallback returned 200 for all seven filtered BlitzMetrics destinations; direct scripted requests returned 403 for those same destinations. The new knowledge-system-maintenance link returned 200 and its page teaches the upkeep process named in the meta section. Task Library routes returned the app shell, so I matched each exact slug to its title and mapped article in dashboard/data.json instead of treating the shell as proof of the selected guide.",
-            "evidence": "SEO Tree meaning matches the opening’s site-map relationship. Source rows confirm: enhance-existing… → ‘Enhance existing articles before creating new ones’ (/seo-tree); step-1 inventory → internal-linking; map hierarchy → /seo-tree; remove duplicate thin pages → /seo-tree; create/update recipe → definitive-article-guide; step-4 links → internal-linking. Bryce story and program proof-section returned 200; the dated review fragment was found in browser fallback text. maintenance-link.txt returned 200, title ‘How LSS Keeps Its Task Guides Useful’; its opening says to keep guides current, save lessons, and fix the main guide."
+            "evidence": "SEO Tree meaning matches the opening\u2019s site-map relationship. Source rows confirm: enhance-existing\u2026 \u2192 \u2018Enhance existing articles before creating new ones\u2019 (/seo-tree); step-1 inventory \u2192 internal-linking; map hierarchy \u2192 /seo-tree; remove duplicate thin pages \u2192 /seo-tree; create/update recipe \u2192 definitive-article-guide; step-4 links \u2192 internal-linking. Bryce story and program proof-section returned 200; the dated review fragment was found in browser fallback text. maintenance-link.txt returned 200, title \u2018How LSS Keeps Its Task Guides Useful\u2019; its opening says to keep guides current, save lessons, and fix the main guide."
           },
           "evidence": {
             "state": "pass",
             "reason": "The fictional plumber case is labeled. The Bryce case is supported by the dated independent record and states that recipe timing/version and receiver acceptance were unknown; it disclaims current recipe certification, setup, and sales results.",
-            "evidence": "The example says the existing Bryce story gained a captioned one-minute video and audit example, and that the program proof section links back. The source record supports those scoped outputs. It says the original start time and exact recipe version were not recovered and the next worker’s acceptance was unconfirmed. The source review limits acceptance to the released files/proof section, not the whole current program page or business outcomes."
+            "evidence": "The example says the existing Bryce story gained a captioned one-minute video and audit example, and that the program proof section links back. The source record supports those scoped outputs. It says the original start time and exact recipe version were not recovered and the next worker\u2019s acceptance was unconfirmed. The source review limits acceptance to the released files/proof section, not the whole current program page or business outcomes."
           },
           "handoff": {
             "state": "pass",
             "reason": "The guide identifies the next recipe task for accepted recipe changes, the link-placement task for a link plan, the story/offer publishing or distribution role, the inventory as the owner record, and the outstanding acceptance state.",
-            "evidence": "‘Create or update the owning recipe’ and ‘Place the accepted links’ are linked receiving tasks. Step 9 says to give the checked page, decision record, and open issues to the named receiver and keep the handoff open until acceptance. Content Factory context states that support work can span stages without inventing unrelated assets."
+            "evidence": "\u2018Create or update the owning recipe\u2019 and \u2018Place the accepted links\u2019 are linked receiving tasks. Step 9 says to give the checked page, decision record, and open issues to the named receiver and keep the handoff open until acceptance. Content Factory context states that support work can span stages without inventing unrelated assets."
           }
         }
       },
@@ -3648,15 +3648,39 @@
       }
     },
     "identify-and-eliminate-orphan-standalone-articles": {
-      "source_sha256": "1e34827c89f7fa4df9869b0b5d09467a5ccc3c7194f893f36153ff70bf851a3c",
-      "reviewed_at": "2026-10-13",
-      "reviewer": "Codex incremental destination review with independent GPT-6 Luna review",
-      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate. Destination-only revision: existing prose and check verdicts retained after exact diff inspection; current Content Factory target and relationship checked. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/content-factory-link-2026-10-13.md",
-      "incrementalReview": {
-        "beforeSourceSha256": "2b6118616cd999657b0cdcfb21b06cd8d8d33027fc0287d833fa7ef1b6ddf08a",
-        "previousReviewDate": "2026-09-06",
-        "change": "Only the Content Factory teaching URL changed; no step, example, opening, status or acceptance changed.",
-        "review": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/content-factory-link-2026-10-13.md"
+      "source_sha256": "dae84e76e5723a75e43c7b598484d674f27a8c7f5d64b0e12f37b67ce2da293b",
+      "reviewed_at": "2026-10-15",
+      "reviewer": "Codex independent written review, configured gpt-6.1-sol high",
+      "scope": "All five written instruction requirements pass for exact candidate bytes. Full method, destructive-change safeguards, actual destination meanings, fictional-example honesty and receiving evidence reviewed. Actual unchanged-layout Chrome candidate preview checked at1280x800/390x844. No source application, public delivery, real client execution, novice use, installation or schedule is inferred. Public exact-revision review: https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/seo-hub-supporting-guides-2026-10-15.md",
+      "standards": {
+        "version": 1,
+        "checks": {
+          "opening": {
+            "state": "pass",
+            "reason": "Exact three-sentence opening explains the reader outcome, method and useful linked first action; the full method delivers its promise. Reviewed actual Chrome preview at CSS1280x800 and390x844 in unchanged deployed layout: initial purpose and four relevant path cards are readable; actual linked body opening was separately brought into view and matched candidate. No observed horizontal overflow. Preview does not prove public delivery or real use.",
+            "evidence": "Help readers find good pages they cannot reach. This guide finds missing links and shows where to add them. Use the [SEO Tree map](https://blitzmetrics.com/seo-tree/) to give each page a home and a clear path to it. Body: Find useful published pages without a measured incoming route, then connect, retain a deliberate exception or route an exact consolidation/removal review. The body delivers this with a CMS/sitemap/crawl reconciliation, distinct incoming/outgoing counts, legitimate functional exceptions, authorized repairs and an honest recrawl."
+          },
+          "recipe": {
+            "state": "pass",
+            "reason": "Trigger requires inventory and bounded crawl. Source/map/access inputs, incoming-path definition, per-page disposition, current-source guarded edits and recrawl make the result repeatable. Coverage gaps prevent false zero-orphan results; useful navigation and utility/campaign exceptions remain valid. Installation/access/scheduling are separate.",
+            "evidence": "Steps1-7; Inputs; Definition of done. \u201cAn outgoing link from the orphan does not itself create an incoming route.\u201d \u201cDo not claim \u2018zero orphans\u2019 when the inventory or rendered crawl remains incomplete.\u201d"
+          },
+          "links": {
+            "state": "pass",
+            "reason": "Fresh normal-browser-UA captures return200 and their meanings were read. SEO Tree owns topic relationships; Article Guidelines owns claim/visual checks; prerequisite inventory/map and receiving placement/QA/MAA tasks match actual inputs and outputs. Agent/skill/install references separate a recipe from tools, access and a configured job. Google primary guidance supports method limits; exact deployed task routes were checked.",
+            "evidence": "https://blitzmetrics.com/seo-tree/; https://localservicespotlight.com/article-guidelines/; https://localservicespotlight.com/content-factory/; https://blitzmetrics.com/build-agents/; https://localservicespotlight.com/plugin/; https://localservicespotlight.com/install/; exact task-route records and captured body meanings; primary method references."
+          },
+          "evidence": {
+            "state": "pass",
+            "reason": "The repair-story/thank-you example is explicitly fictional. It distinguishes one connected content page from a justified campaign exception. Required records retain source/coverage/authority and no real-run or ranking proof is invented. A relevant replacement is required for redirects; an appropriate not-found result remains valid when none exists.",
+            "evidence": "\u201cFictional teaching example. This is not a client result or proof of a completed run.\u201d Step3 preserves utility/campaign roles; step5 refuses an irrelevant nearest-hub redirect; Google site-move/removal guidance supports relevant replacement versus404/410."
+          },
+          "handoff": {
+            "state": "pass",
+            "reason": "Approved incoming rows go to the named placement function and exact overlap/disposition candidates go to consolidation review. The accepted released change set and crawl coverage go to measurement. Real receiver/evidence defines the handoff; Process analysis and Post release are explicitly explained rather than inferred from a station list.",
+            "evidence": "Handoff and Content Factory context: placement receives approved incoming-link rows; consolidation receives reviewed candidates; measurement receives actual released changes and crawl coverage."
+          }
+        }
       }
     },
     "link-leaves-to-branches-branches-to-trunk": {
@@ -3696,27 +3720,75 @@
       }
     },
     "remove-duplicate-thin-pages": {
-      "source_sha256": "72d22e41a589832e8ebe63eb3eb2f05d18a3b649c409deb185dd80561f6590b1",
-      "reviewed_at": "2026-10-13",
-      "reviewer": "Codex incremental destination review with independent GPT-6 Luna review",
-      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate. Destination-only revision: existing prose and check verdicts retained after exact diff inspection; current Content Factory target and relationship checked. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/content-factory-link-2026-10-13.md",
-      "incrementalReview": {
-        "beforeSourceSha256": "4bd30483a8f5557bc51efca277c1b98e4ba472c006d1f1072c12e12a5503ef59",
-        "previousReviewDate": "2026-09-06",
-        "change": "Only the Content Factory teaching URL changed; no step, example, opening, status or acceptance changed.",
-        "review": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/content-factory-link-2026-10-13.md"
+      "source_sha256": "f197ff47b9a565d2e0e3c661dec9dbfa2c3d6e17880c51ee57deecb9c45d9468",
+      "reviewed_at": "2026-10-15",
+      "reviewer": "Codex independent written review, configured gpt-6.1-sol high",
+      "scope": "All five written instruction requirements pass for exact candidate bytes. Full method, destructive-change safeguards, actual destination meanings, fictional-example honesty and receiving evidence reviewed. Actual unchanged-layout Chrome candidate preview checked at1280x800/390x844. No source application, public delivery, real client execution, novice use, installation or schedule is inferred. Public exact-revision review: https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/seo-hub-supporting-guides-2026-10-15.md",
+      "standards": {
+        "version": 1,
+        "checks": {
+          "opening": {
+            "state": "pass",
+            "reason": "Exact three-sentence opening explains the reader outcome, method and useful linked first action; the full method delivers its promise. Reviewed actual Chrome preview at CSS1280x800 and390x844 in unchanged deployed layout: initial purpose and four relevant path cards are readable; actual linked body opening was separately brought into view and matched candidate. No observed horizontal overflow. Preview does not prove public delivery or real use.",
+            "evidence": "Help readers find one useful answer and keep the facts they need. This guide checks which pages to keep, join or remove. Use the [SEO Tree map](https://blitzmetrics.com/seo-tree/) to choose the page that best serves each need. Body: Choose one useful answer where intent really overlaps while retaining facts/media/functions. Seven steps deliver review by intent, unique-material preservation, keep/improve/merge/canonical-review/remove choices, an exact authorized routing plan, recovery evidence and live old/new checks."
+          },
+          "recipe": {
+            "state": "pass",
+            "reason": "Trigger and inventory/map/source inputs identify suspects without treating word count as a verdict. Exact authorized disposition, source owner/recovery copy, protected unique material, meaningful route map and old/new live-function checks give a repeatable measurable contract. A canonical hint does not delete content or guarantee Google selection.",
+            "evidence": "Inputs; Steps1-7; Definition of done. \u201cMissing measurement is unknown, not proof that a page has no value.\u201d \u201cThe existing source/redirect owner, recovery copy and explicit authority for the exact consolidation, deletion or route change.\u201d"
+          },
+          "links": {
+            "state": "pass",
+            "reason": "Fresh normal-browser-UA captures return200 and their meanings were read. SEO Tree owns topic relationships; Article Guidelines owns claim/visual checks; prerequisite inventory/map and receiving placement/QA/MAA tasks match actual inputs and outputs. Agent/skill/install references separate a recipe from tools, access and a configured job. Google primary guidance supports method limits; exact deployed task routes were checked.",
+            "evidence": "https://blitzmetrics.com/seo-tree/; https://localservicespotlight.com/article-guidelines/; https://localservicespotlight.com/content-factory/; https://blitzmetrics.com/build-agents/; https://localservicespotlight.com/plugin/; https://localservicespotlight.com/install/; exact task-route records and captured body meanings; primary method references."
+          },
+          "evidence": {
+            "state": "pass",
+            "reason": "The course/contact example is explicitly fictional and preserves a distinct contact function and unique interview. No real consolidation or ranking result is claimed. Permanent redirects require a relevant replacement; no equivalent may correctly use404/410. Exact source guards, recovery, loop/chain avoidance and old/new checks retain destruction safeguards.",
+            "evidence": "Fictional teaching example; Steps2,4-7 preserve media/attribution/functions. Google canonical guidance supports signals rather than guarantees; site-move guidance supports relevant replacements, no irrelevant redirects and404/410 for removed content."
+          },
+          "handoff": {
+            "state": "pass",
+            "reason": "The authorized source/route owner receives exact disposition and recovery plan; link QA receives actual live destination checks; measurement receives accepted release date, affected URLs and known baseline. Process evaluates source value; Post saves/checks approved changes. The guide creates no permission, scheduler or compulsory promotion.",
+            "evidence": "Handoff and Content Factory context; exact disposition/recovery plan \u2192 source/route owner; live destination checks \u2192 link QA; accepted date/URLs/baseline \u2192 measurement."
+          }
+        }
       }
     },
     "replace-ai-looking-content-with-real-eeat": {
-      "source_sha256": "d4173a0862d93d65d5e2b8f2563673a8a5f57a860a29bc43c4869cc1afefbe37",
-      "reviewed_at": "2026-10-13",
-      "reviewer": "Codex incremental destination review with independent GPT-6 Luna review",
-      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate. Destination-only revision: existing prose and check verdicts retained after exact diff inspection; current Content Factory target and relationship checked. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/content-factory-link-2026-10-13.md",
-      "incrementalReview": {
-        "beforeSourceSha256": "2fb76e899bb9863556c4a997aab923674d9a311c641d8950c8b7c8d18f4a878d",
-        "previousReviewDate": "2026-09-06",
-        "change": "Only the Content Factory teaching URL changed; no step, example, opening, status or acceptance changed.",
-        "review": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/content-factory-link-2026-10-13.md"
+      "source_sha256": "3feae344b94e1262d33c5148c9bb3c380cb265c41fa7ef2432ee92ca83226913",
+      "reviewed_at": "2026-10-15",
+      "reviewer": "Codex independent written review, configured gpt-6.1-sol high",
+      "scope": "All five written instruction requirements pass for exact candidate bytes. Full method, destructive-change safeguards, actual destination meanings, fictional-example honesty and receiving evidence reviewed. Actual unchanged-layout Chrome candidate preview checked at1280x800/390x844. No source application, public delivery, real client execution, novice use, installation or schedule is inferred. Public exact-revision review: https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/seo-hub-supporting-guides-2026-10-15.md",
+      "standards": {
+        "version": 1,
+        "checks": {
+          "opening": {
+            "state": "pass",
+            "reason": "Exact three-sentence opening explains the reader outcome, method and useful linked first action; the full method delivers its promise. Reviewed actual Chrome preview at CSS1280x800 and390x844 in unchanged deployed layout: initial purpose and four relevant path cards are readable; actual linked body opening was separately brought into view and matched candidate. No observed horizontal overflow. Preview does not prove public delivery or real use.",
+            "evidence": "Help readers see the proof behind your claims. This guide turns vague text into facts they can check. Use our [article guide](https://localservicespotlight.com/article-guidelines/) to match each claim with a real source and make the page clear. Body: Turn vague claims into inspectable facts, with the reader\u2019s useful context and actual evidence. The body supplies claim-to-source mapping, narrowing/removal when proof is absent, truthful author voice, dated attributed examples, relevant visuals and observed before/after checks."
+          },
+          "recipe": {
+            "state": "pass",
+            "reason": "The trigger is vague/unsupported content regardless of authorship tool. Exact source/author/reader/GCT, permissions/dates and builder/media constraints feed seven ordered steps and measurable claim/visual checks. Unsupported proof is removed/narrowed; first person is authorized and sourced. A rewrite itself does not prove ranking lift or create account access/scheduling.",
+            "evidence": "Inputs; Steps1-7; Definition of done. \u201cDo not claim to detect AI authorship from writing style.\u201d \u201cNever invent an \u2018I did this\u2019 experience.\u201d \u201cA more credible page is not by itself proof of a measured ranking lift.\u201d"
+          },
+          "links": {
+            "state": "pass",
+            "reason": "Fresh normal-browser-UA captures return200 and their meanings were read. SEO Tree owns topic relationships; Article Guidelines owns claim/visual checks; prerequisite inventory/map and receiving placement/QA/MAA tasks match actual inputs and outputs. Agent/skill/install references separate a recipe from tools, access and a configured job. Google primary guidance supports method limits; exact deployed task routes were checked.",
+            "evidence": "https://blitzmetrics.com/seo-tree/; https://localservicespotlight.com/article-guidelines/; https://localservicespotlight.com/content-factory/; https://blitzmetrics.com/build-agents/; https://localservicespotlight.com/plugin/; https://localservicespotlight.com/install/; exact task-route records and captured body meanings; primary method references."
+          },
+          "evidence": {
+            "state": "pass",
+            "reason": "The builder/project/comment example is explicitly fictional and limits the hypothetical evidence to one job. Real claims require named subject, source, date, rights and precise scope; estimates/future plans stay separate. Author voice/testimonials/results cannot be invented, and unrelated trophy names do not supply evidence.",
+            "evidence": "Fictional teaching example; Steps1-6; Google people-first guidance supports experience/expertise/authoritativeness/trustworthiness and accurate authorship. One approved comment cannot prove top-builder status or revenue gains."
+          },
+          "handoff": {
+            "state": "pass",
+            "reason": "The existing owning-page function receives related hub improvements; opening/context receives exact text and evidence; the page owner receives reviewed source and remaining proof gaps; measurement receives only actual released changes. Process proof/rewrite and Post source/render checks are explained explicitly, with no unsolicited promotion or schedule.",
+            "evidence": "Handoff and Content Factory context: exact opening/evidence \u2192 opening review; reviewed source/gaps \u2192 page owner; only actual released changes \u2192 measurement."
+          }
+        }
       }
     },
     "step-1-inventory-content-and-establish-gct-per-page": {

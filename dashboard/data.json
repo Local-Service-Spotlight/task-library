@@ -6,12 +6,12 @@
  },
  "stats": {
   "total": 276,
-  "complete": 127,
+  "complete": 130,
   "reviewedInstructions": 275,
-  "needsWork": 126,
+  "needsWork": 123,
   "gaps": 23,
   "articleHubs": 53,
-  "definitiveArticles": 15,
+  "definitiveArticles": 16,
   "verifiedMetaArticles": 89,
   "metaOrbitHubsWithEvidence": 14,
   "metaOrbitHubsUnknown": 39,
@@ -443,7 +443,7 @@
   },
   "semanticHoldHubs": 4,
   "tasksWithHolds": 20,
-  "tasksWithUnmetGates": 215,
+  "tasksWithUnmetGates": 207,
   "tasksWithUnknownGates": 276,
   "gateCounts": {
    "instructionRevisionReviewed": {
@@ -453,14 +453,14 @@
     "unknown": 0
    },
    "instructionStandards": {
-    "pass": 23,
+    "pass": 26,
     "unmet": 0,
     "hold": 0,
-    "unknown": 253
+    "unknown": 250
    },
    "contributorComplete": {
-    "pass": 127,
-    "unmet": 149,
+    "pass": 130,
+    "unmet": 146,
     "hold": 0,
     "unknown": 0
    },
@@ -471,8 +471,8 @@
     "unknown": 0
    },
    "articleCatalogGate": {
-    "pass": 44,
-    "unmet": 213,
+    "pass": 52,
+    "unmet": 205,
     "hold": 19,
     "unknown": 0
    },
@@ -1598,10 +1598,10 @@
   {
    "key": "blitzmetrics.com/seo-tree",
    "url": "https://blitzmetrics.com/seo-tree",
-   "state": "wip",
+   "state": "ready",
    "articleKind": "topic-hub",
    "taskCount": 8,
-   "completeTaskCount": 5,
+   "completeTaskCount": 8,
    "importance": 5,
    "importanceTotal": 26,
    "taskSlugs": [
@@ -2136,7 +2136,7 @@
  ],
  "executionHistory": {
   "schemaVersion": 1,
-  "asOf": "2026-10-14T18:21:51.077883+00:00",
+  "asOf": "2026-10-14T19:00:02.449612+00:00",
   "proofSummary": {
    "definition": "Dated output proof, separate from current-recipe acceptance and every full-verification gate. Recorded acceptance counts distinct completed execution IDs with a latest all-pass independent review per task/run; scope is limited to its named criteria. Historical proof counts distinct source jobs, never new runs. Historical acceptance requires identity, output and acceptance pass; handoff is reported separately.",
    "recordedAcceptedOutputCount": 6,
@@ -2545,7 +2545,7 @@
    ]
   },
   "countDefinition": "Distinct recorded execution IDs, separate from meta-article URLs. History is partial; absent history is unknown, not zero. The last-30-day count is a documented lower bound, not total task frequency.",
-  "recordedExecutions": 34,
+  "recordedExecutions": 35,
   "completedExecutions": 21,
   "partialExecutions": 13,
   "executions": [
@@ -3792,6 +3792,26 @@
       }
      }
     ]
+   },
+   {
+    "executionId": "seo-hub-supporting-guides-20261015",
+    "taskSlugs": [
+     "publish-skill-and-task-page"
+    ],
+    "startedAt": "2026-10-14T18:48:03.095058+00:00",
+    "status": "running",
+    "result": "Review three existing SEO hub supporting guides. Original methods retained; exact current publishing and SEO sources observed unchanged. No orphan-removal, deletion, rewriting client page or beginner execution is claimed. Independent review and publication pending.",
+    "recipeRevisions": {
+     "publish-skill-and-task-page": {
+      "articleUrl": "https://blitzmetrics.com/skill-publishing-standard/",
+      "sourceSha256": "660d6f1abd8678c851c0a08059f27982e8e29b46775ea217a2ae1d6e3ba55537"
+     }
+    },
+    "evidenceUrls": [],
+    "privateEvidenceRecorded": true,
+    "metaArticle": {
+     "status": "draft"
+    }
    }
   ],
   "historicalDeliveryEvidence": {
@@ -4241,7 +4261,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 97,
+      "queuePosition": 96,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "No valid canonical article URL is mapped for this task."
@@ -4397,7 +4417,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 116,
+      "queuePosition": 115,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "No valid canonical article URL is mapped for this task."
@@ -4554,7 +4574,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 155,
+      "queuePosition": 151,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -4711,7 +4731,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 156,
+      "queuePosition": 152,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -4867,7 +4887,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 122,
+      "queuePosition": 121,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "No valid canonical article URL is mapped for this task."
@@ -5023,7 +5043,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 84,
+      "queuePosition": 83,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "No valid canonical article URL is mapped for this task."
@@ -5179,7 +5199,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 241,
+      "queuePosition": 234,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -5337,7 +5357,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 242,
+      "queuePosition": 235,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -5493,7 +5513,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 126,
+      "queuePosition": 125,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "No valid canonical article URL is mapped for this task."
@@ -5651,7 +5671,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 86,
+      "queuePosition": 85,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -5810,7 +5830,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 128,
+      "queuePosition": 127,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -6131,7 +6151,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 117,
+      "queuePosition": 116,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "No valid canonical article URL is mapped for this task."
@@ -6287,7 +6307,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 73,
+      "queuePosition": 72,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "No valid canonical article URL is mapped for this task."
@@ -6757,7 +6777,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 247,
+      "queuePosition": 240,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -6915,7 +6935,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 255,
+      "queuePosition": 248,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -7073,7 +7093,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 256,
+      "queuePosition": 249,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -7231,7 +7251,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 257,
+      "queuePosition": 250,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -7387,7 +7407,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 115,
+      "queuePosition": 114,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "No valid canonical article URL is mapped for this task."
@@ -7543,7 +7563,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 239,
+      "queuePosition": 232,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -7761,7 +7781,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 259,
+      "queuePosition": 252,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -7917,7 +7937,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 243,
+      "queuePosition": 236,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -8073,7 +8093,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 240,
+      "queuePosition": 233,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -8229,7 +8249,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 260,
+      "queuePosition": 253,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -8385,7 +8405,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 261,
+      "queuePosition": 254,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -8541,7 +8561,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 238,
+      "queuePosition": 231,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -8699,7 +8719,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 258,
+      "queuePosition": 251,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -8855,7 +8875,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 262,
+      "queuePosition": 255,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -9073,7 +9093,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 263,
+      "queuePosition": 256,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -9229,7 +9249,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 264,
+      "queuePosition": 257,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -9385,7 +9405,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 265,
+      "queuePosition": 258,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -9541,7 +9561,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 244,
+      "queuePosition": 237,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -9697,7 +9717,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 118,
+      "queuePosition": 117,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "No valid canonical article URL is mapped for this task."
@@ -10081,7 +10101,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 245,
+      "queuePosition": 238,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "nextAction": "The article revision observation is outside the 24-hour freshness window."
@@ -10476,7 +10496,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 119,
+      "queuePosition": 118,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -10629,7 +10649,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 120,
+      "queuePosition": 119,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -10794,7 +10814,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 246,
+      "queuePosition": 239,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -10855,7 +10875,7 @@
        }
       }
      },
-     "articleState": "wip",
+     "articleState": "ready",
      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=place-content-on-seo-tree-with-proper-links#task-place-content-on-seo-tree-with-proper-links",
      "executionHistory": {
       "status": "partial",
@@ -11163,8 +11183,8 @@
        "articleCatalogGate": {
         "id": "articleCatalogGate",
         "label": "Article catalog gate",
-        "state": "unmet",
-        "reason": "At least one task mapped to this hub is not contributor-complete."
+        "state": "pass",
+        "reason": "Every task mapped to this hub is contributor-complete and no reviewed hold is active. This is catalog readiness only."
        },
        "articleSemanticCertification": {
         "id": "articleSemanticCertification",
@@ -11414,18 +11434,16 @@
         "schedulingCertified": false
        }
       },
-      "unmetStandardGates": [
-       "articleCatalogGate"
-      ],
+      "unmetStandardGates": [],
       "heldStandardGates": [],
       "unknownStandardGates": [
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 71,
-      "priority": "P1",
-      "priorityReason": "Known standard gap",
-      "nextAction": "At least one task mapped to this hub is not contributor-complete."
+      "queuePosition": 230,
+      "priority": "P2",
+      "priorityReason": "Importance 5; missing proof remains",
+      "nextAction": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified."
      }
     },
     {
@@ -11734,7 +11752,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 74,
+      "queuePosition": 73,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "No valid canonical article URL is mapped for this task."
@@ -11890,7 +11908,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 85,
+      "queuePosition": 84,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "No valid canonical article URL is mapped for this task."
@@ -12046,7 +12064,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 248,
+      "queuePosition": 241,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -12314,7 +12332,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 236,
+      "queuePosition": 228,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -12470,7 +12488,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 249,
+      "queuePosition": 242,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -12626,7 +12644,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 250,
+      "queuePosition": 243,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -12782,7 +12800,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 251,
+      "queuePosition": 244,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -12938,7 +12956,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 252,
+      "queuePosition": 245,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -13156,7 +13174,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 72,
+      "queuePosition": 71,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "No valid canonical article URL is mapped for this task."
@@ -13312,7 +13330,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 254,
+      "queuePosition": 247,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -13471,7 +13489,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 77,
+      "queuePosition": 76,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -13637,7 +13655,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 81,
+      "queuePosition": 80,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -15696,7 +15714,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 100,
+      "queuePosition": 99,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -15854,7 +15872,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 101,
+      "queuePosition": 100,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -16170,7 +16188,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 91,
+      "queuePosition": 90,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -16326,7 +16344,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 95,
+      "queuePosition": 94,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "No valid canonical article URL is mapped for this task."
@@ -16484,7 +16502,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 105,
+      "queuePosition": 104,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -16957,7 +16975,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 75,
+      "queuePosition": 74,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -17113,7 +17131,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 94,
+      "queuePosition": 93,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "No valid canonical article URL is mapped for this task."
@@ -17271,7 +17289,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 198,
+      "queuePosition": 190,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -17427,7 +17445,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 90,
+      "queuePosition": 89,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "No valid canonical article URL is mapped for this task."
@@ -17583,7 +17601,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 87,
+      "queuePosition": 86,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "No valid canonical article URL is mapped for this task."
@@ -17741,7 +17759,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 106,
+      "queuePosition": 105,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -18526,7 +18544,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 109,
+      "queuePosition": 108,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -18682,7 +18700,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 196,
+      "queuePosition": 188,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "No valid canonical article URL is mapped for this task."
@@ -19153,7 +19171,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 99,
+      "queuePosition": 98,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "No valid canonical article URL is mapped for this task."
@@ -19465,7 +19483,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 96,
+      "queuePosition": 95,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "No valid canonical article URL is mapped for this task."
@@ -19623,7 +19641,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 79,
+      "queuePosition": 78,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -19781,7 +19799,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 110,
+      "queuePosition": 109,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -19939,7 +19957,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 89,
+      "queuePosition": 88,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -20096,7 +20114,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 114,
+      "queuePosition": 113,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -20412,7 +20430,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 112,
+      "queuePosition": 111,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -20571,7 +20589,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 102,
+      "queuePosition": 101,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -21368,7 +21386,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 76,
+      "queuePosition": 75,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -23098,7 +23116,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 78,
+      "queuePosition": 77,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -23579,7 +23597,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 166,
+      "queuePosition": 158,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -23737,7 +23755,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 164,
+      "queuePosition": 156,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -23894,7 +23912,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 167,
+      "queuePosition": 159,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -24052,7 +24070,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 197,
+      "queuePosition": 189,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -24412,7 +24430,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 168,
+      "queuePosition": 160,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -24569,7 +24587,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 169,
+      "queuePosition": 161,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -24726,7 +24744,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 170,
+      "queuePosition": 162,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -24883,7 +24901,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 113,
+      "queuePosition": 112,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -25040,7 +25058,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 171,
+      "queuePosition": 163,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -25197,7 +25215,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 172,
+      "queuePosition": 164,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -25354,7 +25372,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 173,
+      "queuePosition": 165,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -25511,7 +25529,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 174,
+      "queuePosition": 166,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -25669,7 +25687,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 88,
+      "queuePosition": 87,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -25826,7 +25844,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 175,
+      "queuePosition": 167,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -25983,7 +26001,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 176,
+      "queuePosition": 168,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -26140,7 +26158,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 177,
+      "queuePosition": 169,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -26297,7 +26315,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 178,
+      "queuePosition": 170,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -26454,7 +26472,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 179,
+      "queuePosition": 171,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -26611,7 +26629,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 180,
+      "queuePosition": 172,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -26768,7 +26786,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 181,
+      "queuePosition": 173,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -26925,7 +26943,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 182,
+      "queuePosition": 174,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -27082,7 +27100,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 183,
+      "queuePosition": 175,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -27396,7 +27414,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 184,
+      "queuePosition": 176,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -27710,7 +27728,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 185,
+      "queuePosition": 177,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -27867,7 +27885,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 93,
+      "queuePosition": 92,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -28181,7 +28199,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 186,
+      "queuePosition": 178,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -28339,7 +28357,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 111,
+      "queuePosition": 110,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -28496,7 +28514,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 187,
+      "queuePosition": 179,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -28653,7 +28671,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 188,
+      "queuePosition": 180,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -28810,7 +28828,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 189,
+      "queuePosition": 181,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -28967,7 +28985,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 190,
+      "queuePosition": 182,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -29281,7 +29299,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 191,
+      "queuePosition": 183,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -29440,7 +29458,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 163,
+      "queuePosition": 155,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -29599,7 +29617,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 165,
+      "queuePosition": 157,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -29758,7 +29776,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 162,
+      "queuePosition": 154,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -30092,7 +30110,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 130,
+      "queuePosition": 129,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -30159,7 +30177,7 @@
        "review": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/content-factory-link-2026-10-13.md"
       }
      },
-     "articleState": "wip",
+     "articleState": "ready",
      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=enhance-existing-articles-before-creating-new-ones#task-enhance-existing-articles-before-creating-new-ones",
      "executionHistory": {
       "status": "unknown",
@@ -30313,8 +30331,8 @@
        "articleCatalogGate": {
         "id": "articleCatalogGate",
         "label": "Article catalog gate",
-        "state": "unmet",
-        "reason": "At least one task mapped to this hub is not contributor-complete."
+        "state": "pass",
+        "reason": "Every task mapped to this hub is contributor-complete and no reviewed hold is active. This is catalog readiness only."
        },
        "articleSemanticCertification": {
         "id": "articleSemanticCertification",
@@ -30351,9 +30369,7 @@
         "schedulingCertified": false
        }
       },
-      "unmetStandardGates": [
-       "articleCatalogGate"
-      ],
+      "unmetStandardGates": [],
       "heldStandardGates": [],
       "unknownStandardGates": [
        "articleSemanticCertification",
@@ -30363,10 +30379,10 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 157,
-      "priority": "P1",
-      "priorityReason": "Known standard gap",
-      "nextAction": "At least one task mapped to this hub is not contributor-complete."
+      "queuePosition": 259,
+      "priority": "P3",
+      "priorityReason": "Missing proof remains",
+      "nextAction": "No exact-revision positive semantic review is recorded for this article."
      }
     },
     {
@@ -30400,7 +30416,7 @@
        "review": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/content-factory-link-2026-10-13.md"
       }
      },
-     "articleState": "wip",
+     "articleState": "ready",
      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=fit-every-new-piece-into-the-tree-structure#task-fit-every-new-piece-into-the-tree-structure",
      "executionHistory": {
       "status": "unknown",
@@ -30470,8 +30486,8 @@
        "articleCatalogGate": {
         "id": "articleCatalogGate",
         "label": "Article catalog gate",
-        "state": "unmet",
-        "reason": "At least one task mapped to this hub is not contributor-complete."
+        "state": "pass",
+        "reason": "Every task mapped to this hub is contributor-complete and no reviewed hold is active. This is catalog readiness only."
        },
        "articleSemanticCertification": {
         "id": "articleSemanticCertification",
@@ -30508,9 +30524,7 @@
         "schedulingCertified": false
        }
       },
-      "unmetStandardGates": [
-       "articleCatalogGate"
-      ],
+      "unmetStandardGates": [],
       "heldStandardGates": [],
       "unknownStandardGates": [
        "instructionStandards",
@@ -30521,10 +30535,10 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 158,
-      "priority": "P1",
-      "priorityReason": "Known standard gap",
-      "nextAction": "At least one task mapped to this hub is not contributor-complete."
+      "queuePosition": 260,
+      "priority": "P3",
+      "priorityReason": "Missing proof remains",
+      "nextAction": "No exact-revision positive semantic review is recorded for this article."
      }
     },
     {
@@ -30753,12 +30767,12 @@
     {
      "title": "Identify and eliminate orphan/standalone articles",
      "slug": "identify-and-eliminate-orphan-standalone-articles",
-     "status": "needs-work",
+     "status": "complete",
      "stage": "—",
      "article": "https://blitzmetrics.com/seo-tree",
      "articleKind": "topic-hub",
      "desc": "Help readers find useful pages that your site has left out.",
-     "content": "---\nname: identify-and-eliminate-orphan-standalone-articles\ndescription: \"Help readers find useful pages that your site has left out.\"\ncategory: SEO & Content Architecture\nstage: —\ndefinitive_article: /seo-tree\nstatus: needs-work\n---\n\n# Identify and eliminate orphan/standalone articles\n\nHelp readers find useful pages that your site has left out. This guide checks pages with no link leading to them and plans the right fix. Start with the full page list, then compare it with the links people can follow.\n\n**The path:** All published URLs → Incoming-path check → Keep, connect or review → Fresh crawl\n\n**Start when:** A full published-URL inventory and a bounded internal-link crawl are available for the agreed site.\n\n## Inputs\n\n- [Inventory pages and their purpose](https://local-service-spotlight.github.io/task-library/?task=step-1-inventory-content-and-establish-gct-per-page#task-step-1-inventory-content-and-establish-gct-per-page) with source and crawl coverage, including pages a link-only crawl may miss.\n- [Map actual content roles](https://local-service-spotlight.github.io/task-library/?task=map-content-hierarchically-root-trunk-branches-leaves#task-map-content-hierarchically-root-trunk-branches-leaves) with actual page roles, parents, incoming body links and site navigation.\n- Current content sources and valuable facts/media, search data if available, and authority for exact edits or removals.\n\n## Steps\n\n1. Reconcile the published CMS list, sitemap and crawl before flagging orphans. A crawler that follows only existing links can miss the very pages being sought. Record excluded content types, private pages and failed fetches, and keep inaccessible records unknown rather than treating them as zero-link pages.\n2. For each published URL, distinguish incoming internal links, outgoing links and a mapped parent. A page with no detected incoming path is an orphan candidate within the measured scope even if its category or parent is known. Check both body links and usable navigation, recording which definition the count uses.\n3. Read each candidate for reader purpose, unique evidence, business function and current relevance. Choose connect, improve, consolidate-review, remove-review or intentionally unlisted with a reason. Utility or campaign pages may have a valid limited role; absence from the main topic tree alone is not permission to delete them.\n4. For a useful content page, add a natural incoming link from its relevant existing hub or other suitable page, with a short explanation of its value. Add the page’s own parent or service link where useful. An outgoing link from the orphan does not itself create an incoming route.\n5. For overlapping or weak pages, pass unique material and an exact proposed disposition to [Review duplicate or weak pages](https://local-service-spotlight.github.io/task-library/?task=remove-duplicate-thin-pages#task-remove-duplicate-thin-pages). Redirect only when the reviewed replacement truly serves the old intent; no equivalent replacement may require a proper not-found response. Do not hide unresolved decisions behind an irrelevant nearest-hub redirect.\n6. Apply only the authorized content and routing changes through their maintained sources, with current-source guards and retained media. Verify the real link in the normal rendered body and the destination’s actual response. A saved row or category reassignment is not evidence that a reader can reach the page.\n7. Re-crawl the agreed scope and compare each original candidate with the new incoming paths. Report connected pages, deliberate exceptions, merges/removals and remaining failures separately. Update the content map and owner list; do not claim “zero orphans” when the inventory or rendered crawl remains incomplete.\n\n## Definition of done (QA checklist)\n\nQuality assurance (QA) means checking the actual result against its agreed requirements. Follow the [Article Guidelines](https://localservicespotlight.com/article-guidelines/).\n\n- [ ] The inventory includes unlinked published pages, and the incoming-link definition and coverage are stated.\n- [ ] Each accepted connection is a verified incoming path from a relevant live page.\n- [ ] Exceptions and destructive decisions have explicit reasons and authority; no blanket redirect or false zero-orphan claim is used.\n- [ ] The exact output, source revision, reviewer evidence and remaining owner action are saved.\n- [ ] For any reader-facing output, the short grade-five opening states the reader’s useful outcome and supporting method or proof. The body delivers that promise; a useful authentic visual appears in the first screen. Retain exact text and quoted reviewer evidence.\n\n## Example(s)\n\n**Fictional teaching example. This is not a client result or proof of a completed run.**\n\nA fictional site has a useful repair story and an unlisted thank-you page. Neither appears in the body-link crawl. The guide adds an incoming story link from the repair hub and checks it live. The thank-you page has an intentional campaign role and stays separately noted. The report shows one repaired content orphan and one justified exception.\n\n## Handoff and Content Factory context\n\n[Place the accepted links](https://local-service-spotlight.github.io/task-library/?task=step-4-create-links-with-proper-anchor-text-and-placement#task-step-4-create-links-with-proper-anchor-text-and-placement) receives approved incoming-link rows; [Review duplicate or weak pages](https://local-service-spotlight.github.io/task-library/?task=remove-duplicate-thin-pages#task-remove-duplicate-thin-pages) receives reviewed consolidation candidates. [Measure the accepted change set](https://local-service-spotlight.github.io/task-library/?task=step-6-measure-and-iterate-with-maa#task-step-6-measure-and-iterate-with-maa) receives the actual released changes and crawl coverage.\n\nThis task supports the [Content Factory: Produce, Process, Post and Promote](https://localservicespotlight.com/content-factory/). Identity, proof, access or coordination can support several stages. Use the real inputs and receiving owner above; this task does not create unrelated transcripts, clips or ads merely because the diagram has four stages.\n\n## Start with an agent\n\nGive the [AI worker](https://blitzmetrics.com/build-agents/) this recipe, the real inputs, desired result and actions already authorized. Ask for the saved output, sources, checks and next owner. A [skill is a written recipe](https://localservicespotlight.com/plugin/); loading one does not prove account access or perform the task. Use the [installation guide](https://localservicespotlight.com/install/) if reusable setup is needed. A ZIP is a source snapshot, not an access grant or automatic update.\n\nUse the app’s actual supported tools and verified file/account access. Keep a missing human verification step with its real owner. Recurring work needs its own configured job, trigger, timezone and observed result; this guide creates no schedule. Before any media playback, mute the player and set its volume to zero. If silence cannot be verified first, use captions, frames, metadata or another silent check.\n\n## Record the real execution\n\nOpen the run record when work begins. Keep one execution ID, starting recipe revision, real inputs and current state. Write the [meta article, the record of this execution](https://blitzmetrics.com/meta-article-prompt/) with actual steps, results, checks, failures and next owner. Writing is required; public release follows existing authority. Link it to this recipe and the [Task Library](https://local-service-spotlight.github.io/task-library/).\n\nReuse the same execution ID for internal checks, revisions, retries and meta writing. A blocked run stays open with its dependency and owner, without an invented finish time. Dated public examples and distinct verified execution counts remain separate. Propose the smallest source-backed recipe improvement when the actual evidence reveals a defect.\n\n\n<!-- factory-layer:start -->\n\n## Factory chain (do not treat this as isolated)\n\n- **Phase:** —\n- **Importance:** 3/5 `●●●○○` — frequency 3, revenue 3, gating 2 (supporting)\n- **Browse earlier task:** —\n- **Browse later task:** —\nThese are nearby tasks in the library. Use this guide’s Inputs and Handoff sections to choose what comes before and after your work. Catalog order does not establish prerequisites or handoffs.\n- **Handoff:** Save this task’s actual output, source, date and checks where the receiving owner can read them. Follow the Inputs and Handoff sections for its next step.\n\n## Model routing (same factory, any engine)\n\n- **This task's lane:** `any` — Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.\n- **Single-engine path:** Use the capable AI app you already have. Check its required tools and access before starting. Pass the actual result and proof to the next task.\n- **Optional multi-engine:** A tested local model may draft; a stronger model may review facts and voice. Use supported tools for approved actions. Pick models from observed quality and cost; a model name does not prove it can run this task.\n- **Never** store the working state in one vendor's memory. Files in the Content Library are the bridge.\n\n<!-- factory-layer:end -->\n## Definitive article & links\n\n- [Maintained source guide](https://blitzmetrics.com/seo-tree/)\n- [This task in the Task Library](https://local-service-spotlight.github.io/task-library/?task=identify-and-eliminate-orphan-standalone-articles#task-identify-and-eliminate-orphan-standalone-articles)\n- [Article Guidelines](https://localservicespotlight.com/article-guidelines/)\n- [Definitive article and task recipe standard](https://blitzmetrics.com/definitive-article-guide/)\n- [How recipes and run records fit together](https://localservicespotlight.com/meta-articles/)\n\n### Primary method references\n\n- [Google’s site-move and removed-content guidance](https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes)\n\n## Review and evidence still needed\n\nThe inherited contributor status is `needs-work`. It is preserved, not promoted by this rewrite. That label alone does not prove document readiness, account access, an actual execution or a client result.\n\nThe fictional example teaches the method and does not fill a real-run evidence gap. A named semantic reviewer must check the actual opening, full method, sources and handoff. Check the useful opening visual in the normal rendered guide at the current required desktop and mobile sizes, including 1280 × 800 and 390 × 844. Source readability checks do not prove public presentation or task execution.",
+     "content": "---\nname: identify-and-eliminate-orphan-standalone-articles\ndescription: \"Help readers find useful pages that your site has left out.\"\ncategory: SEO & Content Architecture\nstage: —\ndefinitive_article: /seo-tree\nstatus: complete\n---\n\n# Identify and eliminate orphan/standalone articles\n\nHelp readers find good pages they cannot reach. This guide finds missing links and shows where to add them. Use the [SEO Tree map](https://blitzmetrics.com/seo-tree/) to give each page a home and a clear path to it.\n\n**The path:** All published URLs → Incoming-path check → Keep, connect or review → Fresh crawl\n\n**Start when:** A full published-URL inventory and a bounded internal-link crawl are available for the agreed site.\n\n## Inputs\n\n- [Inventory pages and their purpose](https://local-service-spotlight.github.io/task-library/?task=step-1-inventory-content-and-establish-gct-per-page#task-step-1-inventory-content-and-establish-gct-per-page) with source and crawl coverage, including pages a link-only crawl may miss.\n- [Map actual content roles](https://local-service-spotlight.github.io/task-library/?task=map-content-hierarchically-root-trunk-branches-leaves#task-map-content-hierarchically-root-trunk-branches-leaves) with actual page roles, parents, incoming body links and site navigation.\n- Current content sources and valuable facts/media, search data if available, and authority for exact edits or removals.\n\n## Steps\n\n1. Reconcile the published CMS list, sitemap and crawl before flagging orphans. A crawler that follows only existing links can miss the very pages being sought. Record excluded content types, private pages and failed fetches, and keep inaccessible records unknown rather than treating them as zero-link pages.\n2. For each published URL, distinguish incoming internal links, outgoing links and a mapped parent. A page with no detected incoming path is an orphan candidate within the measured scope even if its category or parent is known. Check both body links and usable navigation, recording which definition the count uses.\n3. Read each candidate for reader purpose, unique evidence, business function and current relevance. Choose connect, improve, consolidate-review, remove-review or intentionally unlisted with a reason. Utility or campaign pages may have a valid limited role; absence from the main topic tree alone is not permission to delete them.\n4. For a useful content page, add a natural incoming link from its relevant existing hub or other suitable page, with a short explanation of its value. Add the page’s own parent or service link where useful. An outgoing link from the orphan does not itself create an incoming route.\n5. For overlapping or weak pages, pass unique material and an exact proposed disposition to [Review duplicate or weak pages](https://local-service-spotlight.github.io/task-library/?task=remove-duplicate-thin-pages#task-remove-duplicate-thin-pages). Redirect only when the reviewed replacement truly serves the old intent; no equivalent replacement may require a proper not-found response. Do not hide unresolved decisions behind an irrelevant nearest-hub redirect.\n6. Apply only the authorized content and routing changes through their maintained sources, with current-source guards and retained media. Verify the real link in the normal rendered body and the destination’s actual response. A saved row or category reassignment is not evidence that a reader can reach the page.\n7. Re-crawl the agreed scope and compare each original candidate with the new incoming paths. Report connected pages, deliberate exceptions, merges/removals and remaining failures separately. Update the content map and owner list; do not claim “zero orphans” when the inventory or rendered crawl remains incomplete.\n\n## Definition of done (QA checklist)\n\nQuality assurance (QA) means checking the actual result against its agreed requirements. Follow the [Article Guidelines](https://localservicespotlight.com/article-guidelines/).\n\n- [ ] The inventory includes unlinked published pages, and the incoming-link definition and coverage are stated.\n- [ ] Each accepted connection is a verified incoming path from a relevant live page.\n- [ ] Exceptions and destructive decisions have explicit reasons and authority; no blanket redirect or false zero-orphan claim is used.\n- [ ] The exact output, source revision, reviewer evidence and remaining owner action are saved.\n- [ ] For any reader-facing output, the short grade-five opening states the reader’s useful outcome and supporting method or proof. The body delivers that promise; a useful authentic visual appears in the first screen. Retain exact text and quoted reviewer evidence.\n\n## Example(s)\n\n**Fictional teaching example. This is not a client result or proof of a completed run.**\n\nA fictional site has a useful repair story and an unlisted thank-you page. Neither appears in the body-link crawl. The guide adds an incoming story link from the repair hub and checks it live. The thank-you page has an intentional campaign role and stays separately noted. The report shows one repaired content orphan and one justified exception.\n\n## Handoff and Content Factory context\n\n[Place the accepted links](https://local-service-spotlight.github.io/task-library/?task=step-4-create-links-with-proper-anchor-text-and-placement#task-step-4-create-links-with-proper-anchor-text-and-placement) receives approved incoming-link rows; [Review duplicate or weak pages](https://local-service-spotlight.github.io/task-library/?task=remove-duplicate-thin-pages#task-remove-duplicate-thin-pages) receives reviewed consolidation candidates. [Measure the accepted change set](https://local-service-spotlight.github.io/task-library/?task=step-6-measure-and-iterate-with-maa#task-step-6-measure-and-iterate-with-maa) receives the actual released changes and crawl coverage.\n\nThis task supports Process and Post in the [Content Factory](https://localservicespotlight.com/content-factory/). Process checks the page and its proof; Post saves the approved change and checks the live result. The receiving owner and evidence above define the next task. Promotion and traffic measurement use the accepted page under their own scope.\n\n## Start with an agent\n\nGive the [AI worker](https://blitzmetrics.com/build-agents/) this recipe, the real inputs, desired result and actions already authorized. Ask for the saved output, sources, checks and next owner. A [skill is a written recipe](https://localservicespotlight.com/plugin/); loading one does not prove account access or perform the task. Use the [installation guide](https://localservicespotlight.com/install/) if reusable setup is needed. A ZIP is a source snapshot, not an access grant or automatic update.\n\nUse the app’s actual supported tools and verified file/account access. Keep a missing human verification step with its real owner. Recurring work needs its own configured job, trigger, timezone and observed result; this guide creates no schedule. Before any media playback, mute the player and set its volume to zero. If silence cannot be verified first, use captions, frames, metadata or another silent check.\n\n## Record the real execution\n\nOpen the run record when work begins. Keep one execution ID, starting recipe revision, real inputs and current state. Write the [meta article, the record of this execution](https://blitzmetrics.com/meta-article-prompt/) with actual steps, results, checks, failures and next owner. Writing is required; public release follows existing authority. Link it to this recipe and the [Task Library](https://local-service-spotlight.github.io/task-library/).\n\nReuse the same execution ID for internal checks, revisions, retries and meta writing. A blocked run stays open with its dependency and owner, without an invented finish time. Dated public examples and distinct verified execution counts remain separate. Propose the smallest source-backed recipe improvement when the actual evidence reveals a defect.\n\n\n<!-- factory-layer:start -->\n\n## Factory chain (do not treat this as isolated)\n\n- **Phase:** —\n- **Importance:** 3/5 `●●●○○` — frequency 3, revenue 3, gating 2 (supporting)\n- **Browse earlier task:** —\n- **Browse later task:** —\nThese are nearby tasks in the library. Use this guide’s Inputs and Handoff sections to choose what comes before and after your work. Catalog order does not establish prerequisites or handoffs.\n- **Handoff:** Save this task’s actual output, source, date and checks where the receiving owner can read them. Follow the Inputs and Handoff sections for its next step.\n\n## Model routing (same factory, any engine)\n\n- **This task's lane:** `any` — Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.\n- **Single-engine path:** Use the capable AI app you already have. Check its required tools and access before starting. Pass the actual result and proof to the next task.\n- **Optional multi-engine:** A tested local model may draft; a stronger model may review facts and voice. Use supported tools for approved actions. Pick models from observed quality and cost; a model name does not prove it can run this task.\n- **Never** store the working state in one vendor's memory. Files in the Content Library are the bridge.\n\n<!-- factory-layer:end -->\n## Definitive article & links\n\n- [Maintained source guide](https://blitzmetrics.com/seo-tree/)\n- [This task in the Task Library](https://local-service-spotlight.github.io/task-library/?task=identify-and-eliminate-orphan-standalone-articles#task-identify-and-eliminate-orphan-standalone-articles)\n- [Article Guidelines](https://localservicespotlight.com/article-guidelines/)\n- [Definitive article and task recipe standard](https://blitzmetrics.com/definitive-article-guide/)\n- [How recipes and run records fit together](https://localservicespotlight.com/meta-articles/)\n\n### Primary method references\n\n- [Google’s site-move and removed-content guidance](https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes)\n\n## Review and evidence still needed\n\nThe contributor label describes the written guide. It does not prove account access, an actual execution or a client result. Exact-revision written review is recorded separately from actual use.\n\nThe fictional example teaches the method and does not fill a real-run evidence gap. The exact written review records the actual opening, full method, sources and handoff. Check the useful opening visual in the normal rendered guide at the current required desktop and mobile sizes, including 1280 × 800 and 390 × 844. Source readability checks do not prove public presentation or task execution.",
      "importance": 3,
      "freq": 3,
      "revenue": 3,
@@ -30770,18 +30784,42 @@
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
      "why": "supporting",
      "instructionReview": {
-      "source_sha256": "1e34827c89f7fa4df9869b0b5d09467a5ccc3c7194f893f36153ff70bf851a3c",
-      "reviewed_at": "2026-10-13",
-      "reviewer": "Codex incremental destination review with independent GPT-6 Luna review",
-      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate. Destination-only revision: existing prose and check verdicts retained after exact diff inspection; current Content Factory target and relationship checked. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/content-factory-link-2026-10-13.md",
-      "incrementalReview": {
-       "beforeSourceSha256": "2b6118616cd999657b0cdcfb21b06cd8d8d33027fc0287d833fa7ef1b6ddf08a",
-       "previousReviewDate": "2026-09-06",
-       "change": "Only the Content Factory teaching URL changed; no step, example, opening, status or acceptance changed.",
-       "review": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/content-factory-link-2026-10-13.md"
+      "source_sha256": "dae84e76e5723a75e43c7b598484d674f27a8c7f5d64b0e12f37b67ce2da293b",
+      "reviewed_at": "2026-10-15",
+      "reviewer": "Codex independent written review, configured gpt-6.1-sol high",
+      "scope": "All five written instruction requirements pass for exact candidate bytes. Full method, destructive-change safeguards, actual destination meanings, fictional-example honesty and receiving evidence reviewed. Actual unchanged-layout Chrome candidate preview checked at1280x800/390x844. No source application, public delivery, real client execution, novice use, installation or schedule is inferred. Public exact-revision review: https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/seo-hub-supporting-guides-2026-10-15.md",
+      "standards": {
+       "version": 1,
+       "checks": {
+        "opening": {
+         "state": "pass",
+         "reason": "Exact three-sentence opening explains the reader outcome, method and useful linked first action; the full method delivers its promise. Reviewed actual Chrome preview at CSS1280x800 and390x844 in unchanged deployed layout: initial purpose and four relevant path cards are readable; actual linked body opening was separately brought into view and matched candidate. No observed horizontal overflow. Preview does not prove public delivery or real use.",
+         "evidence": "Help readers find good pages they cannot reach. This guide finds missing links and shows where to add them. Use the [SEO Tree map](https://blitzmetrics.com/seo-tree/) to give each page a home and a clear path to it. Body: Find useful published pages without a measured incoming route, then connect, retain a deliberate exception or route an exact consolidation/removal review. The body delivers this with a CMS/sitemap/crawl reconciliation, distinct incoming/outgoing counts, legitimate functional exceptions, authorized repairs and an honest recrawl."
+        },
+        "recipe": {
+         "state": "pass",
+         "reason": "Trigger requires inventory and bounded crawl. Source/map/access inputs, incoming-path definition, per-page disposition, current-source guarded edits and recrawl make the result repeatable. Coverage gaps prevent false zero-orphan results; useful navigation and utility/campaign exceptions remain valid. Installation/access/scheduling are separate.",
+         "evidence": "Steps1-7; Inputs; Definition of done. “An outgoing link from the orphan does not itself create an incoming route.” “Do not claim ‘zero orphans’ when the inventory or rendered crawl remains incomplete.”"
+        },
+        "links": {
+         "state": "pass",
+         "reason": "Fresh normal-browser-UA captures return200 and their meanings were read. SEO Tree owns topic relationships; Article Guidelines owns claim/visual checks; prerequisite inventory/map and receiving placement/QA/MAA tasks match actual inputs and outputs. Agent/skill/install references separate a recipe from tools, access and a configured job. Google primary guidance supports method limits; exact deployed task routes were checked.",
+         "evidence": "https://blitzmetrics.com/seo-tree/; https://localservicespotlight.com/article-guidelines/; https://localservicespotlight.com/content-factory/; https://blitzmetrics.com/build-agents/; https://localservicespotlight.com/plugin/; https://localservicespotlight.com/install/; exact task-route records and captured body meanings; primary method references."
+        },
+        "evidence": {
+         "state": "pass",
+         "reason": "The repair-story/thank-you example is explicitly fictional. It distinguishes one connected content page from a justified campaign exception. Required records retain source/coverage/authority and no real-run or ranking proof is invented. A relevant replacement is required for redirects; an appropriate not-found result remains valid when none exists.",
+         "evidence": "“Fictional teaching example. This is not a client result or proof of a completed run.” Step3 preserves utility/campaign roles; step5 refuses an irrelevant nearest-hub redirect; Google site-move/removal guidance supports relevant replacement versus404/410."
+        },
+        "handoff": {
+         "state": "pass",
+         "reason": "Approved incoming rows go to the named placement function and exact overlap/disposition candidates go to consolidation review. The accepted released change set and crawl coverage go to measurement. Real receiver/evidence defines the handoff; Process analysis and Post release are explicitly explained rather than inferred from a station list.",
+         "evidence": "Handoff and Content Factory context: placement receives approved incoming-link rows; consolidation receives reviewed candidates; measurement receives actual released changes and crawl coverage."
+        }
+       }
       }
      },
-     "articleState": "wip",
+     "articleState": "ready",
      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=identify-and-eliminate-orphan-standalone-articles#task-identify-and-eliminate-orphan-standalone-articles",
      "executionHistory": {
       "status": "unknown",
@@ -30816,30 +30854,63 @@
       "historicalAcceptedEvidenceIds": []
      },
      "standardVerification": {
-      "instructionSourceSha256": "1e34827c89f7fa4df9869b0b5d09467a5ccc3c7194f893f36153ff70bf851a3c",
+      "instructionSourceSha256": "dae84e76e5723a75e43c7b598484d674f27a8c7f5d64b0e12f37b67ce2da293b",
       "articleKey": "blitzmetrics.com/seo-tree",
       "gates": {
        "instructionRevisionReviewed": {
         "id": "instructionRevisionReviewed",
         "label": "Exact instruction revision reviewed",
         "state": "pass",
-        "reason": "Current source bytes match the review recorded 2026-10-13. Review scope and limits: Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate. Destination-only revision: existing prose and check verdicts retained after exact diff inspection; current Content Factory target and relationship checked. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/content-factory-link-2026-10-13.md",
-        "reviewedAt": "2026-10-13",
-        "reviewer": "Codex incremental destination review with independent GPT-6 Luna review",
-        "sourceSha256": "1e34827c89f7fa4df9869b0b5d09467a5ccc3c7194f893f36153ff70bf851a3c"
+        "reason": "Current source bytes match the review recorded 2026-10-15. Review scope and limits: All five written instruction requirements pass for exact candidate bytes. Full method, destructive-change safeguards, actual destination meanings, fictional-example honesty and receiving evidence reviewed. Actual unchanged-layout Chrome candidate preview checked at1280x800/390x844. No source application, public delivery, real client execution, novice use, installation or schedule is inferred. Public exact-revision review: https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/seo-hub-supporting-guides-2026-10-15.md",
+        "reviewedAt": "2026-10-15",
+        "reviewer": "Codex independent written review, configured gpt-6.1-sol high",
+        "sourceSha256": "dae84e76e5723a75e43c7b598484d674f27a8c7f5d64b0e12f37b67ce2da293b"
        },
        "instructionStandards": {
         "id": "instructionStandards",
         "label": "Instruction requirements checked",
-        "state": "unknown",
-        "reason": "The current exact-byte review has no structured instruction-requirements checklist.",
-        "sourceSha256": "1e34827c89f7fa4df9869b0b5d09467a5ccc3c7194f893f36153ff70bf851a3c"
+        "state": "pass",
+        "reason": "All five instruction requirements have explicit passing checks for the current source revision.",
+        "reviewedAt": "2026-10-15",
+        "reviewer": "Codex independent written review, configured gpt-6.1-sol high",
+        "reviewScope": "All five written instruction requirements pass for exact candidate bytes. Full method, destructive-change safeguards, actual destination meanings, fictional-example honesty and receiving evidence reviewed. Actual unchanged-layout Chrome candidate preview checked at1280x800/390x844. No source application, public delivery, real client execution, novice use, installation or schedule is inferred. Public exact-revision review: https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/seo-hub-supporting-guides-2026-10-15.md",
+        "sourceSha256": "dae84e76e5723a75e43c7b598484d674f27a8c7f5d64b0e12f37b67ce2da293b",
+        "standards": {
+         "version": 1,
+         "checks": {
+          "opening": {
+           "state": "pass",
+           "reason": "Exact three-sentence opening explains the reader outcome, method and useful linked first action; the full method delivers its promise. Reviewed actual Chrome preview at CSS1280x800 and390x844 in unchanged deployed layout: initial purpose and four relevant path cards are readable; actual linked body opening was separately brought into view and matched candidate. No observed horizontal overflow. Preview does not prove public delivery or real use.",
+           "evidence": "Help readers find good pages they cannot reach. This guide finds missing links and shows where to add them. Use the [SEO Tree map](https://blitzmetrics.com/seo-tree/) to give each page a home and a clear path to it. Body: Find useful published pages without a measured incoming route, then connect, retain a deliberate exception or route an exact consolidation/removal review. The body delivers this with a CMS/sitemap/crawl reconciliation, distinct incoming/outgoing counts, legitimate functional exceptions, authorized repairs and an honest recrawl."
+          },
+          "recipe": {
+           "state": "pass",
+           "reason": "Trigger requires inventory and bounded crawl. Source/map/access inputs, incoming-path definition, per-page disposition, current-source guarded edits and recrawl make the result repeatable. Coverage gaps prevent false zero-orphan results; useful navigation and utility/campaign exceptions remain valid. Installation/access/scheduling are separate.",
+           "evidence": "Steps1-7; Inputs; Definition of done. “An outgoing link from the orphan does not itself create an incoming route.” “Do not claim ‘zero orphans’ when the inventory or rendered crawl remains incomplete.”"
+          },
+          "links": {
+           "state": "pass",
+           "reason": "Fresh normal-browser-UA captures return200 and their meanings were read. SEO Tree owns topic relationships; Article Guidelines owns claim/visual checks; prerequisite inventory/map and receiving placement/QA/MAA tasks match actual inputs and outputs. Agent/skill/install references separate a recipe from tools, access and a configured job. Google primary guidance supports method limits; exact deployed task routes were checked.",
+           "evidence": "https://blitzmetrics.com/seo-tree/; https://localservicespotlight.com/article-guidelines/; https://localservicespotlight.com/content-factory/; https://blitzmetrics.com/build-agents/; https://localservicespotlight.com/plugin/; https://localservicespotlight.com/install/; exact task-route records and captured body meanings; primary method references."
+          },
+          "evidence": {
+           "state": "pass",
+           "reason": "The repair-story/thank-you example is explicitly fictional. It distinguishes one connected content page from a justified campaign exception. Required records retain source/coverage/authority and no real-run or ranking proof is invented. A relevant replacement is required for redirects; an appropriate not-found result remains valid when none exists.",
+           "evidence": "“Fictional teaching example. This is not a client result or proof of a completed run.” Step3 preserves utility/campaign roles; step5 refuses an irrelevant nearest-hub redirect; Google site-move/removal guidance supports relevant replacement versus404/410."
+          },
+          "handoff": {
+           "state": "pass",
+           "reason": "Approved incoming rows go to the named placement function and exact overlap/disposition candidates go to consolidation review. The accepted released change set and crawl coverage go to measurement. Real receiver/evidence defines the handoff; Process analysis and Post release are explicitly explained rather than inferred from a station list.",
+           "evidence": "Handoff and Content Factory context: placement receives approved incoming-link rows; consolidation receives reviewed candidates; measurement receives actual released changes and crawl coverage."
+          }
+         }
+        }
        },
        "contributorComplete": {
         "id": "contributorComplete",
         "label": "Contributor reports guide complete",
-        "state": "unmet",
-        "reason": "The contributor status is needs-work; finish and review the guide."
+        "state": "pass",
+        "reason": "The contributor status is complete; this is a source claim, not execution proof."
        },
        "articleMapped": {
         "id": "articleMapped",
@@ -30851,8 +30922,8 @@
        "articleCatalogGate": {
         "id": "articleCatalogGate",
         "label": "Article catalog gate",
-        "state": "unmet",
-        "reason": "At least one task mapped to this hub is not contributor-complete."
+        "state": "pass",
+        "reason": "Every task mapped to this hub is contributor-complete and no reviewed hold is active. This is catalog readiness only."
        },
        "articleSemanticCertification": {
         "id": "articleSemanticCertification",
@@ -30889,13 +30960,9 @@
         "schedulingCertified": false
        }
       },
-      "unmetStandardGates": [
-       "contributorComplete",
-       "articleCatalogGate"
-      ],
+      "unmetStandardGates": [],
       "heldStandardGates": [],
       "unknownStandardGates": [
-       "instructionStandards",
        "articleSemanticCertification",
        "taskExampleEvidence",
        "recordedExecution",
@@ -30903,10 +30970,10 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 141,
-      "priority": "P1",
-      "priorityReason": "Known standard gap",
-      "nextAction": "The contributor status is needs-work; finish and review the guide."
+      "queuePosition": 261,
+      "priority": "P3",
+      "priorityReason": "Missing proof remains",
+      "nextAction": "No exact-revision positive semantic review is recorded for this article."
      }
     },
     {
@@ -30940,7 +31007,7 @@
        "review": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/content-factory-link-2026-10-13.md"
       }
      },
-     "articleState": "wip",
+     "articleState": "ready",
      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=link-leaves-to-branches-branches-to-trunk#task-link-leaves-to-branches-branches-to-trunk",
      "executionHistory": {
       "status": "unknown",
@@ -31010,8 +31077,8 @@
        "articleCatalogGate": {
         "id": "articleCatalogGate",
         "label": "Article catalog gate",
-        "state": "unmet",
-        "reason": "At least one task mapped to this hub is not contributor-complete."
+        "state": "pass",
+        "reason": "Every task mapped to this hub is contributor-complete and no reviewed hold is active. This is catalog readiness only."
        },
        "articleSemanticCertification": {
         "id": "articleSemanticCertification",
@@ -31048,9 +31115,7 @@
         "schedulingCertified": false
        }
       },
-      "unmetStandardGates": [
-       "articleCatalogGate"
-      ],
+      "unmetStandardGates": [],
       "heldStandardGates": [],
       "unknownStandardGates": [
        "instructionStandards",
@@ -31061,10 +31126,10 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 159,
-      "priority": "P1",
-      "priorityReason": "Known standard gap",
-      "nextAction": "At least one task mapped to this hub is not contributor-complete."
+      "queuePosition": 263,
+      "priority": "P3",
+      "priorityReason": "Missing proof remains",
+      "nextAction": "No exact-revision positive semantic review is recorded for this article."
      }
     },
     {
@@ -31098,7 +31163,7 @@
        "review": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/content-factory-link-2026-10-13.md"
       }
      },
-     "articleState": "wip",
+     "articleState": "ready",
      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=map-content-hierarchically-root-trunk-branches-leaves#task-map-content-hierarchically-root-trunk-branches-leaves",
      "executionHistory": {
       "status": "unknown",
@@ -31168,8 +31233,8 @@
        "articleCatalogGate": {
         "id": "articleCatalogGate",
         "label": "Article catalog gate",
-        "state": "unmet",
-        "reason": "At least one task mapped to this hub is not contributor-complete."
+        "state": "pass",
+        "reason": "Every task mapped to this hub is contributor-complete and no reviewed hold is active. This is catalog readiness only."
        },
        "articleSemanticCertification": {
         "id": "articleSemanticCertification",
@@ -31206,9 +31271,7 @@
         "schedulingCertified": false
        }
       },
-      "unmetStandardGates": [
-       "articleCatalogGate"
-      ],
+      "unmetStandardGates": [],
       "heldStandardGates": [],
       "unknownStandardGates": [
        "instructionStandards",
@@ -31219,21 +31282,21 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 160,
-      "priority": "P1",
-      "priorityReason": "Known standard gap",
-      "nextAction": "At least one task mapped to this hub is not contributor-complete."
+      "queuePosition": 264,
+      "priority": "P3",
+      "priorityReason": "Missing proof remains",
+      "nextAction": "No exact-revision positive semantic review is recorded for this article."
      }
     },
     {
      "title": "Remove duplicate thin pages",
      "slug": "remove-duplicate-thin-pages",
-     "status": "needs-work",
+     "status": "complete",
      "stage": "—",
      "article": "https://blitzmetrics.com/seo-tree",
      "articleKind": "topic-hub",
      "desc": "Keep your best page and the useful facts it holds.",
-     "content": "---\nname: remove-duplicate-thin-pages\ndescription: \"Keep your best page and the useful facts it holds.\"\ncategory: SEO & Content Architecture\nstage: —\ndefinitive_article: /seo-tree\nstatus: needs-work\n---\n\n# Remove duplicate thin pages\n\nKeep your best page and the useful facts it holds. This guide checks weak or repeated pages and plans what to keep, join or remove. Start with the pages that seem to serve the same need and read what each one adds.\n\n**The path:** Suspect URLs → Intent and evidence review → Keep or change proposal → Guarded release checks\n\n**Start when:** The content inventory has identified possible duplicate intent or pages with little useful original value.\n\n## Inputs\n\n- [Inventory pages and their purpose](https://local-service-spotlight.github.io/task-library/?task=step-1-inventory-content-and-establish-gct-per-page#task-step-1-inventory-content-and-establish-gct-per-page) and [Map actual content roles](https://local-service-spotlight.github.io/task-library/?task=map-content-hierarchically-root-trunk-branches-leaves#task-map-content-hierarchically-root-trunk-branches-leaves) with current roles, links and possible overlap.\n- Exact current source, media, search/referral data when available, business function and useful facts for every affected URL.\n- The existing source/redirect owner, recovery copy and explicit authority for the exact consolidation, deletion or route change.\n\n## Steps\n\n1. Treat similar titles, low word counts and repeated phrases as review signals, not verdicts. Read each page’s actual promise, audience, method, proof and business function. A short contact page, service page and detailed how-to can all be useful; shared terms do not make them interchangeable.\n2. Identify the owning intent and any genuinely equivalent URLs. List unique facts, examples, links, media, attribution, comments or conversion functions that a change must preserve. Review available search and referral evidence with its period and limits; missing measurement is unknown, not proof that a page has no value.\n3. Choose keep, improve, merge, canonical-review or remove for each exact URL, with a reason and owner. A canonical hint can identify a preferred duplicate representation but does not itself delete content or guarantee the selected search URL. Avoid turning every overlapping story into a competing-hub problem.\n4. For a merge, place the useful unique material into the true equivalent destination and review the new whole page. Preserve source ownership, relevant media and claims; do not copy unsupported assertions merely because they existed in the old draft. Verify that the replacement serves what old visitors expected.\n5. Prepare a precise route map. Use a permanent redirect when content has moved to a relevant replacement; if removed content has no equivalent, an appropriate 404 or 410 may be correct. An unrelated closest-hub redirect can mislead readers and be treated as a soft error. Never create a redirect loop or chain as a shortcut.\n6. Apply authorized source and routing changes in the agreed sequence with current-source guards and recovery evidence. Update controlled internal links to the final relevant targets and verify generated sitemap behavior through the maintained tool. A sitemap refresh or canonical tag does not guarantee Google has reprocessed the change.\n7. Check the normal old and new URLs, actual content/media, statuses, canonical signals and important page functions. Re-crawl affected links and record what changed, what remains pending and the observation date. Pass the accepted change set to measurement; do not claim that consolidation automatically raised rankings.\n\n## Definition of done (QA checklist)\n\nQuality assurance (QA) means checking the actual result against its agreed requirements. Follow the [Article Guidelines](https://localservicespotlight.com/article-guidelines/).\n\n- [ ] Each disposition follows actual intent, value and source evidence, not a word-count threshold.\n- [ ] Unique useful material, media, attribution and business function are preserved in the approved result.\n- [ ] Every redirect has a relevant replacement, and old/new normal responses and links are checked.\n- [ ] The exact output, source revision, reviewer evidence and remaining owner action are saved.\n- [ ] For any reader-facing output, the short grade-five opening states the reader’s useful outcome and supporting method or proof. The body delivers that promise; a useful authentic visual appears in the first screen. Retain exact text and quoted reviewer evidence.\n\n## Example(s)\n\n**Fictional teaching example. This is not a client result or proof of a completed run.**\n\nA fictional site has two live pages for the same course and a short contact page. One course page contains a unique teacher interview, so the team preserves it in the main course page before proposing a redirect. The contact page remains because it serves a different need. The report records a reviewed consolidation, not three automatic deletions.\n\n## Handoff and Content Factory context\n\nAn authorized source/route owner receives the exact disposition and recovery plan. [Check the placed links](https://local-service-spotlight.github.io/task-library/?task=step-5-qa-links-against-google-guidelines#task-step-5-qa-links-against-google-guidelines) receives live destination checks; [Measure the accepted change set](https://local-service-spotlight.github.io/task-library/?task=step-6-measure-and-iterate-with-maa#task-step-6-measure-and-iterate-with-maa) receives the accepted release date, affected URLs and known baseline.\n\nThis task supports the [Content Factory: Produce, Process, Post and Promote](https://localservicespotlight.com/content-factory/). Identity, proof, access or coordination can support several stages. Use the real inputs and receiving owner above; this task does not create unrelated transcripts, clips or ads merely because the diagram has four stages.\n\n## Start with an agent\n\nGive the [AI worker](https://blitzmetrics.com/build-agents/) this recipe, the real inputs, desired result and actions already authorized. Ask for the saved output, sources, checks and next owner. A [skill is a written recipe](https://localservicespotlight.com/plugin/); loading one does not prove account access or perform the task. Use the [installation guide](https://localservicespotlight.com/install/) if reusable setup is needed. A ZIP is a source snapshot, not an access grant or automatic update.\n\nUse the app’s actual supported tools and verified file/account access. Keep a missing human verification step with its real owner. Recurring work needs its own configured job, trigger, timezone and observed result; this guide creates no schedule. Before any media playback, mute the player and set its volume to zero. If silence cannot be verified first, use captions, frames, metadata or another silent check.\n\n## Record the real execution\n\nOpen the run record when work begins. Keep one execution ID, starting recipe revision, real inputs and current state. Write the [meta article, the record of this execution](https://blitzmetrics.com/meta-article-prompt/) with actual steps, results, checks, failures and next owner. Writing is required; public release follows existing authority. Link it to this recipe and the [Task Library](https://local-service-spotlight.github.io/task-library/).\n\nReuse the same execution ID for internal checks, revisions, retries and meta writing. A blocked run stays open with its dependency and owner, without an invented finish time. Dated public examples and distinct verified execution counts remain separate. Propose the smallest source-backed recipe improvement when the actual evidence reveals a defect.\n\n\n<!-- factory-layer:start -->\n\n## Factory chain (do not treat this as isolated)\n\n- **Phase:** —\n- **Importance:** 3/5 `●●●○○` — frequency 3, revenue 3, gating 2 (supporting)\n- **Browse earlier task:** —\n- **Browse later task:** —\nThese are nearby tasks in the library. Use this guide’s Inputs and Handoff sections to choose what comes before and after your work. Catalog order does not establish prerequisites or handoffs.\n- **Handoff:** Save this task’s actual output, source, date and checks where the receiving owner can read them. Follow the Inputs and Handoff sections for its next step.\n\n## Model routing (same factory, any engine)\n\n- **This task's lane:** `any` — Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.\n- **Single-engine path:** Use the capable AI app you already have. Check its required tools and access before starting. Pass the actual result and proof to the next task.\n- **Optional multi-engine:** A tested local model may draft; a stronger model may review facts and voice. Use supported tools for approved actions. Pick models from observed quality and cost; a model name does not prove it can run this task.\n- **Never** store the working state in one vendor's memory. Files in the Content Library are the bridge.\n\n<!-- factory-layer:end -->\n## Definitive article & links\n\n- [Maintained source guide](https://blitzmetrics.com/seo-tree/)\n- [This task in the Task Library](https://local-service-spotlight.github.io/task-library/?task=remove-duplicate-thin-pages#task-remove-duplicate-thin-pages)\n- [Article Guidelines](https://localservicespotlight.com/article-guidelines/)\n- [Definitive article and task recipe standard](https://blitzmetrics.com/definitive-article-guide/)\n- [How recipes and run records fit together](https://localservicespotlight.com/meta-articles/)\n\n### Primary method references\n\n- [Google’s duplicate URL guidance](https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls)\n- [Google’s site-move and removed-content guidance](https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes)\n\n## Review and evidence still needed\n\nThe inherited contributor status is `needs-work`. It is preserved, not promoted by this rewrite. That label alone does not prove document readiness, account access, an actual execution or a client result.\n\nThe fictional example teaches the method and does not fill a real-run evidence gap. A named semantic reviewer must check the actual opening, full method, sources and handoff. Check the useful opening visual in the normal rendered guide at the current required desktop and mobile sizes, including 1280 × 800 and 390 × 844. Source readability checks do not prove public presentation or task execution.",
+     "content": "---\nname: remove-duplicate-thin-pages\ndescription: \"Keep your best page and the useful facts it holds.\"\ncategory: SEO & Content Architecture\nstage: —\ndefinitive_article: /seo-tree\nstatus: complete\n---\n\n# Remove duplicate thin pages\n\nHelp readers find one useful answer and keep the facts they need. This guide checks which pages to keep, join or remove. Use the [SEO Tree map](https://blitzmetrics.com/seo-tree/) to choose the page that best serves each need.\n\n**The path:** Suspect URLs → Intent and evidence review → Keep or change proposal → Guarded release checks\n\n**Start when:** The content inventory has identified possible duplicate intent or pages with little useful original value.\n\n## Inputs\n\n- [Inventory pages and their purpose](https://local-service-spotlight.github.io/task-library/?task=step-1-inventory-content-and-establish-gct-per-page#task-step-1-inventory-content-and-establish-gct-per-page) and [Map actual content roles](https://local-service-spotlight.github.io/task-library/?task=map-content-hierarchically-root-trunk-branches-leaves#task-map-content-hierarchically-root-trunk-branches-leaves) with current roles, links and possible overlap.\n- Exact current source, media, search/referral data when available, business function and useful facts for every affected URL.\n- The existing source/redirect owner, recovery copy and explicit authority for the exact consolidation, deletion or route change.\n\n## Steps\n\n1. Treat similar titles, low word counts and repeated phrases as review signals, not verdicts. Read each page’s actual promise, audience, method, proof and business function. A short contact page, service page and detailed how-to can all be useful; shared terms do not make them interchangeable.\n2. Identify the owning intent and any genuinely equivalent URLs. List unique facts, examples, links, media, attribution, comments or conversion functions that a change must preserve. Review available search and referral evidence with its period and limits; missing measurement is unknown, not proof that a page has no value.\n3. Choose keep, improve, merge, canonical-review or remove for each exact URL, with a reason and owner. A canonical hint can identify a preferred duplicate representation but does not itself delete content or guarantee the selected search URL. Avoid turning every overlapping story into a competing-hub problem.\n4. For a merge, place the useful unique material into the true equivalent destination and review the new whole page. Preserve source ownership, relevant media and claims; do not copy unsupported assertions merely because they existed in the old draft. Verify that the replacement serves what old visitors expected.\n5. Prepare a precise route map. Use a permanent redirect when content has moved to a relevant replacement; if removed content has no equivalent, an appropriate 404 or 410 may be correct. An unrelated closest-hub redirect can mislead readers and be treated as a soft error. Never create a redirect loop or chain as a shortcut.\n6. Apply authorized source and routing changes in the agreed sequence with current-source guards and recovery evidence. Update controlled internal links to the final relevant targets and verify generated sitemap behavior through the maintained tool. A sitemap refresh or canonical tag does not guarantee Google has reprocessed the change.\n7. Check the normal old and new URLs, actual content/media, statuses, canonical signals and important page functions. Re-crawl affected links and record what changed, what remains pending and the observation date. Pass the accepted change set to measurement; do not claim that consolidation automatically raised rankings.\n\n## Definition of done (QA checklist)\n\nQuality assurance (QA) means checking the actual result against its agreed requirements. Follow the [Article Guidelines](https://localservicespotlight.com/article-guidelines/).\n\n- [ ] Each disposition follows actual intent, value and source evidence, not a word-count threshold.\n- [ ] Unique useful material, media, attribution and business function are preserved in the approved result.\n- [ ] Every redirect has a relevant replacement, and old/new normal responses and links are checked.\n- [ ] The exact output, source revision, reviewer evidence and remaining owner action are saved.\n- [ ] For any reader-facing output, the short grade-five opening states the reader’s useful outcome and supporting method or proof. The body delivers that promise; a useful authentic visual appears in the first screen. Retain exact text and quoted reviewer evidence.\n\n## Example(s)\n\n**Fictional teaching example. This is not a client result or proof of a completed run.**\n\nA fictional site has two live pages for the same course and a short contact page. One course page contains a unique teacher interview, so the team preserves it in the main course page before proposing a redirect. The contact page remains because it serves a different need. The report records a reviewed consolidation, not three automatic deletions.\n\n## Handoff and Content Factory context\n\nAn authorized source/route owner receives the exact disposition and recovery plan. [Check the placed links](https://local-service-spotlight.github.io/task-library/?task=step-5-qa-links-against-google-guidelines#task-step-5-qa-links-against-google-guidelines) receives live destination checks; [Measure the accepted change set](https://local-service-spotlight.github.io/task-library/?task=step-6-measure-and-iterate-with-maa#task-step-6-measure-and-iterate-with-maa) receives the accepted release date, affected URLs and known baseline.\n\nThis task supports Process and Post in the [Content Factory](https://localservicespotlight.com/content-factory/). Process checks the page and its proof; Post saves the approved change and checks the live result. The receiving owner and evidence above define the next task. Promotion and traffic measurement use the accepted page under their own scope.\n\n## Start with an agent\n\nGive the [AI worker](https://blitzmetrics.com/build-agents/) this recipe, the real inputs, desired result and actions already authorized. Ask for the saved output, sources, checks and next owner. A [skill is a written recipe](https://localservicespotlight.com/plugin/); loading one does not prove account access or perform the task. Use the [installation guide](https://localservicespotlight.com/install/) if reusable setup is needed. A ZIP is a source snapshot, not an access grant or automatic update.\n\nUse the app’s actual supported tools and verified file/account access. Keep a missing human verification step with its real owner. Recurring work needs its own configured job, trigger, timezone and observed result; this guide creates no schedule. Before any media playback, mute the player and set its volume to zero. If silence cannot be verified first, use captions, frames, metadata or another silent check.\n\n## Record the real execution\n\nOpen the run record when work begins. Keep one execution ID, starting recipe revision, real inputs and current state. Write the [meta article, the record of this execution](https://blitzmetrics.com/meta-article-prompt/) with actual steps, results, checks, failures and next owner. Writing is required; public release follows existing authority. Link it to this recipe and the [Task Library](https://local-service-spotlight.github.io/task-library/).\n\nReuse the same execution ID for internal checks, revisions, retries and meta writing. A blocked run stays open with its dependency and owner, without an invented finish time. Dated public examples and distinct verified execution counts remain separate. Propose the smallest source-backed recipe improvement when the actual evidence reveals a defect.\n\n\n<!-- factory-layer:start -->\n\n## Factory chain (do not treat this as isolated)\n\n- **Phase:** —\n- **Importance:** 3/5 `●●●○○` — frequency 3, revenue 3, gating 2 (supporting)\n- **Browse earlier task:** —\n- **Browse later task:** —\nThese are nearby tasks in the library. Use this guide’s Inputs and Handoff sections to choose what comes before and after your work. Catalog order does not establish prerequisites or handoffs.\n- **Handoff:** Save this task’s actual output, source, date and checks where the receiving owner can read them. Follow the Inputs and Handoff sections for its next step.\n\n## Model routing (same factory, any engine)\n\n- **This task's lane:** `any` — Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.\n- **Single-engine path:** Use the capable AI app you already have. Check its required tools and access before starting. Pass the actual result and proof to the next task.\n- **Optional multi-engine:** A tested local model may draft; a stronger model may review facts and voice. Use supported tools for approved actions. Pick models from observed quality and cost; a model name does not prove it can run this task.\n- **Never** store the working state in one vendor's memory. Files in the Content Library are the bridge.\n\n<!-- factory-layer:end -->\n## Definitive article & links\n\n- [Maintained source guide](https://blitzmetrics.com/seo-tree/)\n- [This task in the Task Library](https://local-service-spotlight.github.io/task-library/?task=remove-duplicate-thin-pages#task-remove-duplicate-thin-pages)\n- [Article Guidelines](https://localservicespotlight.com/article-guidelines/)\n- [Definitive article and task recipe standard](https://blitzmetrics.com/definitive-article-guide/)\n- [How recipes and run records fit together](https://localservicespotlight.com/meta-articles/)\n\n### Primary method references\n\n- [Google’s duplicate URL guidance](https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls)\n- [Google’s site-move and removed-content guidance](https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes)\n\n## Review and evidence still needed\n\nThe contributor label describes the written guide. It does not prove account access, an actual execution or a client result. Exact-revision written review is recorded separately from actual use.\n\nThe fictional example teaches the method and does not fill a real-run evidence gap. The exact written review records the actual opening, full method, sources and handoff. Check the useful opening visual in the normal rendered guide at the current required desktop and mobile sizes, including 1280 × 800 and 390 × 844. Source readability checks do not prove public presentation or task execution.",
      "importance": 3,
      "freq": 3,
      "revenue": 3,
@@ -31245,18 +31308,42 @@
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
      "why": "supporting",
      "instructionReview": {
-      "source_sha256": "72d22e41a589832e8ebe63eb3eb2f05d18a3b649c409deb185dd80561f6590b1",
-      "reviewed_at": "2026-10-13",
-      "reviewer": "Codex incremental destination review with independent GPT-6 Luna review",
-      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate. Destination-only revision: existing prose and check verdicts retained after exact diff inspection; current Content Factory target and relationship checked. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/content-factory-link-2026-10-13.md",
-      "incrementalReview": {
-       "beforeSourceSha256": "4bd30483a8f5557bc51efca277c1b98e4ba472c006d1f1072c12e12a5503ef59",
-       "previousReviewDate": "2026-09-06",
-       "change": "Only the Content Factory teaching URL changed; no step, example, opening, status or acceptance changed.",
-       "review": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/content-factory-link-2026-10-13.md"
+      "source_sha256": "f197ff47b9a565d2e0e3c661dec9dbfa2c3d6e17880c51ee57deecb9c45d9468",
+      "reviewed_at": "2026-10-15",
+      "reviewer": "Codex independent written review, configured gpt-6.1-sol high",
+      "scope": "All five written instruction requirements pass for exact candidate bytes. Full method, destructive-change safeguards, actual destination meanings, fictional-example honesty and receiving evidence reviewed. Actual unchanged-layout Chrome candidate preview checked at1280x800/390x844. No source application, public delivery, real client execution, novice use, installation or schedule is inferred. Public exact-revision review: https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/seo-hub-supporting-guides-2026-10-15.md",
+      "standards": {
+       "version": 1,
+       "checks": {
+        "opening": {
+         "state": "pass",
+         "reason": "Exact three-sentence opening explains the reader outcome, method and useful linked first action; the full method delivers its promise. Reviewed actual Chrome preview at CSS1280x800 and390x844 in unchanged deployed layout: initial purpose and four relevant path cards are readable; actual linked body opening was separately brought into view and matched candidate. No observed horizontal overflow. Preview does not prove public delivery or real use.",
+         "evidence": "Help readers find one useful answer and keep the facts they need. This guide checks which pages to keep, join or remove. Use the [SEO Tree map](https://blitzmetrics.com/seo-tree/) to choose the page that best serves each need. Body: Choose one useful answer where intent really overlaps while retaining facts/media/functions. Seven steps deliver review by intent, unique-material preservation, keep/improve/merge/canonical-review/remove choices, an exact authorized routing plan, recovery evidence and live old/new checks."
+        },
+        "recipe": {
+         "state": "pass",
+         "reason": "Trigger and inventory/map/source inputs identify suspects without treating word count as a verdict. Exact authorized disposition, source owner/recovery copy, protected unique material, meaningful route map and old/new live-function checks give a repeatable measurable contract. A canonical hint does not delete content or guarantee Google selection.",
+         "evidence": "Inputs; Steps1-7; Definition of done. “Missing measurement is unknown, not proof that a page has no value.” “The existing source/redirect owner, recovery copy and explicit authority for the exact consolidation, deletion or route change.”"
+        },
+        "links": {
+         "state": "pass",
+         "reason": "Fresh normal-browser-UA captures return200 and their meanings were read. SEO Tree owns topic relationships; Article Guidelines owns claim/visual checks; prerequisite inventory/map and receiving placement/QA/MAA tasks match actual inputs and outputs. Agent/skill/install references separate a recipe from tools, access and a configured job. Google primary guidance supports method limits; exact deployed task routes were checked.",
+         "evidence": "https://blitzmetrics.com/seo-tree/; https://localservicespotlight.com/article-guidelines/; https://localservicespotlight.com/content-factory/; https://blitzmetrics.com/build-agents/; https://localservicespotlight.com/plugin/; https://localservicespotlight.com/install/; exact task-route records and captured body meanings; primary method references."
+        },
+        "evidence": {
+         "state": "pass",
+         "reason": "The course/contact example is explicitly fictional and preserves a distinct contact function and unique interview. No real consolidation or ranking result is claimed. Permanent redirects require a relevant replacement; no equivalent may correctly use404/410. Exact source guards, recovery, loop/chain avoidance and old/new checks retain destruction safeguards.",
+         "evidence": "Fictional teaching example; Steps2,4-7 preserve media/attribution/functions. Google canonical guidance supports signals rather than guarantees; site-move guidance supports relevant replacements, no irrelevant redirects and404/410 for removed content."
+        },
+        "handoff": {
+         "state": "pass",
+         "reason": "The authorized source/route owner receives exact disposition and recovery plan; link QA receives actual live destination checks; measurement receives accepted release date, affected URLs and known baseline. Process evaluates source value; Post saves/checks approved changes. The guide creates no permission, scheduler or compulsory promotion.",
+         "evidence": "Handoff and Content Factory context; exact disposition/recovery plan → source/route owner; live destination checks → link QA; accepted date/URLs/baseline → measurement."
+        }
+       }
       }
      },
-     "articleState": "wip",
+     "articleState": "ready",
      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=remove-duplicate-thin-pages#task-remove-duplicate-thin-pages",
      "executionHistory": {
       "status": "unknown",
@@ -31291,30 +31378,63 @@
       "historicalAcceptedEvidenceIds": []
      },
      "standardVerification": {
-      "instructionSourceSha256": "72d22e41a589832e8ebe63eb3eb2f05d18a3b649c409deb185dd80561f6590b1",
+      "instructionSourceSha256": "f197ff47b9a565d2e0e3c661dec9dbfa2c3d6e17880c51ee57deecb9c45d9468",
       "articleKey": "blitzmetrics.com/seo-tree",
       "gates": {
        "instructionRevisionReviewed": {
         "id": "instructionRevisionReviewed",
         "label": "Exact instruction revision reviewed",
         "state": "pass",
-        "reason": "Current source bytes match the review recorded 2026-10-13. Review scope and limits: Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate. Destination-only revision: existing prose and check verdicts retained after exact diff inspection; current Content Factory target and relationship checked. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/content-factory-link-2026-10-13.md",
-        "reviewedAt": "2026-10-13",
-        "reviewer": "Codex incremental destination review with independent GPT-6 Luna review",
-        "sourceSha256": "72d22e41a589832e8ebe63eb3eb2f05d18a3b649c409deb185dd80561f6590b1"
+        "reason": "Current source bytes match the review recorded 2026-10-15. Review scope and limits: All five written instruction requirements pass for exact candidate bytes. Full method, destructive-change safeguards, actual destination meanings, fictional-example honesty and receiving evidence reviewed. Actual unchanged-layout Chrome candidate preview checked at1280x800/390x844. No source application, public delivery, real client execution, novice use, installation or schedule is inferred. Public exact-revision review: https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/seo-hub-supporting-guides-2026-10-15.md",
+        "reviewedAt": "2026-10-15",
+        "reviewer": "Codex independent written review, configured gpt-6.1-sol high",
+        "sourceSha256": "f197ff47b9a565d2e0e3c661dec9dbfa2c3d6e17880c51ee57deecb9c45d9468"
        },
        "instructionStandards": {
         "id": "instructionStandards",
         "label": "Instruction requirements checked",
-        "state": "unknown",
-        "reason": "The current exact-byte review has no structured instruction-requirements checklist.",
-        "sourceSha256": "72d22e41a589832e8ebe63eb3eb2f05d18a3b649c409deb185dd80561f6590b1"
+        "state": "pass",
+        "reason": "All five instruction requirements have explicit passing checks for the current source revision.",
+        "reviewedAt": "2026-10-15",
+        "reviewer": "Codex independent written review, configured gpt-6.1-sol high",
+        "reviewScope": "All five written instruction requirements pass for exact candidate bytes. Full method, destructive-change safeguards, actual destination meanings, fictional-example honesty and receiving evidence reviewed. Actual unchanged-layout Chrome candidate preview checked at1280x800/390x844. No source application, public delivery, real client execution, novice use, installation or schedule is inferred. Public exact-revision review: https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/seo-hub-supporting-guides-2026-10-15.md",
+        "sourceSha256": "f197ff47b9a565d2e0e3c661dec9dbfa2c3d6e17880c51ee57deecb9c45d9468",
+        "standards": {
+         "version": 1,
+         "checks": {
+          "opening": {
+           "state": "pass",
+           "reason": "Exact three-sentence opening explains the reader outcome, method and useful linked first action; the full method delivers its promise. Reviewed actual Chrome preview at CSS1280x800 and390x844 in unchanged deployed layout: initial purpose and four relevant path cards are readable; actual linked body opening was separately brought into view and matched candidate. No observed horizontal overflow. Preview does not prove public delivery or real use.",
+           "evidence": "Help readers find one useful answer and keep the facts they need. This guide checks which pages to keep, join or remove. Use the [SEO Tree map](https://blitzmetrics.com/seo-tree/) to choose the page that best serves each need. Body: Choose one useful answer where intent really overlaps while retaining facts/media/functions. Seven steps deliver review by intent, unique-material preservation, keep/improve/merge/canonical-review/remove choices, an exact authorized routing plan, recovery evidence and live old/new checks."
+          },
+          "recipe": {
+           "state": "pass",
+           "reason": "Trigger and inventory/map/source inputs identify suspects without treating word count as a verdict. Exact authorized disposition, source owner/recovery copy, protected unique material, meaningful route map and old/new live-function checks give a repeatable measurable contract. A canonical hint does not delete content or guarantee Google selection.",
+           "evidence": "Inputs; Steps1-7; Definition of done. “Missing measurement is unknown, not proof that a page has no value.” “The existing source/redirect owner, recovery copy and explicit authority for the exact consolidation, deletion or route change.”"
+          },
+          "links": {
+           "state": "pass",
+           "reason": "Fresh normal-browser-UA captures return200 and their meanings were read. SEO Tree owns topic relationships; Article Guidelines owns claim/visual checks; prerequisite inventory/map and receiving placement/QA/MAA tasks match actual inputs and outputs. Agent/skill/install references separate a recipe from tools, access and a configured job. Google primary guidance supports method limits; exact deployed task routes were checked.",
+           "evidence": "https://blitzmetrics.com/seo-tree/; https://localservicespotlight.com/article-guidelines/; https://localservicespotlight.com/content-factory/; https://blitzmetrics.com/build-agents/; https://localservicespotlight.com/plugin/; https://localservicespotlight.com/install/; exact task-route records and captured body meanings; primary method references."
+          },
+          "evidence": {
+           "state": "pass",
+           "reason": "The course/contact example is explicitly fictional and preserves a distinct contact function and unique interview. No real consolidation or ranking result is claimed. Permanent redirects require a relevant replacement; no equivalent may correctly use404/410. Exact source guards, recovery, loop/chain avoidance and old/new checks retain destruction safeguards.",
+           "evidence": "Fictional teaching example; Steps2,4-7 preserve media/attribution/functions. Google canonical guidance supports signals rather than guarantees; site-move guidance supports relevant replacements, no irrelevant redirects and404/410 for removed content."
+          },
+          "handoff": {
+           "state": "pass",
+           "reason": "The authorized source/route owner receives exact disposition and recovery plan; link QA receives actual live destination checks; measurement receives accepted release date, affected URLs and known baseline. Process evaluates source value; Post saves/checks approved changes. The guide creates no permission, scheduler or compulsory promotion.",
+           "evidence": "Handoff and Content Factory context; exact disposition/recovery plan → source/route owner; live destination checks → link QA; accepted date/URLs/baseline → measurement."
+          }
+         }
+        }
        },
        "contributorComplete": {
         "id": "contributorComplete",
         "label": "Contributor reports guide complete",
-        "state": "unmet",
-        "reason": "The contributor status is needs-work; finish and review the guide."
+        "state": "pass",
+        "reason": "The contributor status is complete; this is a source claim, not execution proof."
        },
        "articleMapped": {
         "id": "articleMapped",
@@ -31326,8 +31446,8 @@
        "articleCatalogGate": {
         "id": "articleCatalogGate",
         "label": "Article catalog gate",
-        "state": "unmet",
-        "reason": "At least one task mapped to this hub is not contributor-complete."
+        "state": "pass",
+        "reason": "Every task mapped to this hub is contributor-complete and no reviewed hold is active. This is catalog readiness only."
        },
        "articleSemanticCertification": {
         "id": "articleSemanticCertification",
@@ -31364,13 +31484,9 @@
         "schedulingCertified": false
        }
       },
-      "unmetStandardGates": [
-       "contributorComplete",
-       "articleCatalogGate"
-      ],
+      "unmetStandardGates": [],
       "heldStandardGates": [],
       "unknownStandardGates": [
-       "instructionStandards",
        "articleSemanticCertification",
        "taskExampleEvidence",
        "recordedExecution",
@@ -31378,21 +31494,21 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 148,
-      "priority": "P1",
-      "priorityReason": "Known standard gap",
-      "nextAction": "The contributor status is needs-work; finish and review the guide."
+      "queuePosition": 269,
+      "priority": "P3",
+      "priorityReason": "Missing proof remains",
+      "nextAction": "No exact-revision positive semantic review is recorded for this article."
      }
     },
     {
      "title": "Replace AI-looking content with real EEAT",
      "slug": "replace-ai-looking-content-with-real-eeat",
-     "status": "needs-work",
+     "status": "complete",
      "stage": "—",
      "article": "https://blitzmetrics.com/seo-tree",
      "articleKind": "topic-hub",
      "desc": "Help readers see the real work behind your claims.",
-     "content": "---\nname: replace-ai-looking-content-with-real-eeat\ndescription: \"Help readers see the real work behind your claims.\"\ncategory: SEO & Content Architecture\nstage: —\ndefinitive_article: /seo-tree\nstatus: needs-work\n---\n\n# Replace AI-looking content with real EEAT\n\nHelp readers see the real work behind your claims. This guide adds clear facts and proof they can check to vague pages. Start with the page’s main promise and the true sources that support it.\n\n**The path:** Page promise → Verified proof file → Focused rewrite → Claim and visual checks\n\n**Start when:** A page has vague claims, weak evidence or poor reader context, regardless of which tool or person drafted it.\n\n## Inputs\n\n- The exact current page/source, named author, intended reader and [Goals, Content, Targeting: the result, source material and people served](https://blitzmetrics.com/gct-business-strategy/).\n- Real recordings, project facts, public-safe screenshots, approved photos and attributable independent proof; permissions and dates.\n- Current [Article Guidelines](https://localservicespotlight.com/article-guidelines/), the page’s role and its existing media, links and source/builder constraints.\n\n## Steps\n\n1. Read the actual page and mark unclear promises, unsupported outcomes, generic filler and a text-heavy first screen. Do not claim to detect AI authorship from writing style. The repair target is usefulness and evidence: identify the precise claim or explanation that needs better support.\n2. Build a source file that ties each important claim to an actual record, scope, date and named subject. Separate observed results from estimates, examples and future plans. If the needed proof does not exist, narrow or remove the claim and assign the evidence gap instead of inventing a testimonial or number.\n3. Choose the strongest relevant credible proof and explain what it establishes. E-E-A-T means experience, expertise, authoritativeness and trustworthiness; use the [owned SEO Tree guide](https://blitzmetrics.com/seo-tree/) for the site’s proof approach. A famous but unrelated name does not substitute for evidence of this page’s method.\n4. Rewrite the opening in two or three grade-five sentences about the reader’s situation, useful outcome and how the page helps. Preserve the real author’s voice. Use first person for an authorized account of that person’s own work; attribute others’ words and never invent an “I did this” experience.\n5. Improve the body with specific method, named examples, dates and measured results where actually supported. Retain valuable source material and strongest relevant endorsements with clear attribution, highest credible authority first. A neutral appearance remains an appearance and historic proof retains its date.\n6. Replace generic illustrative filler with a meaningful real photo, source screenshot or evidence-backed diagram where it helps. Put a useful visual in the first screen, preserve rights and descriptive alt text, and keep relevant existing media. Do not manufacture a project scene or treat every useful diagram as a missing photograph.\n7. Check the exact revised claims against their sources, then review the normal desktop/mobile page after authorized release. Save the before/after revision, quoted semantic review and remaining gaps. Pass any actual traffic or inquiry comparison to [Metrics, Analysis, Action: what happened, why and what to do](https://blitzmetrics.com/maa/); a more credible page is not by itself proof of a measured ranking lift.\n\n## Definition of done (QA checklist)\n\nQuality assurance (QA) means checking the actual result against its agreed requirements. Follow the [Article Guidelines](https://localservicespotlight.com/article-guidelines/).\n\n- [ ] The page’s key promises are supported, narrowed or removed; no AI-authorship diagnosis or fictional result is asserted.\n- [ ] Real voice, named examples, strongest relevant credibility and attribution remain clear.\n- [ ] The opening and meaningful lead visual help the reader, and actual source and rendered checks are recorded.\n- [ ] The exact output, source revision, reviewer evidence and remaining owner action are saved.\n- [ ] For any reader-facing output, the short grade-five opening states the reader’s useful outcome and supporting method or proof. The body delivers that promise; a useful authentic visual appears in the first screen. Retain exact text and quoted reviewer evidence.\n\n## Example(s)\n\n**Fictional teaching example. This is not a client result or proof of a completed run.**\n\nA fictional builder’s page says it is “the best” without proof. The source file has a real project photo and a customer’s approved comment about meeting a deadline. The rewrite explains that specific job and links its method. It does not turn one comment into a claim of being the top builder or invent a revenue gain.\n\n## Handoff and Content Factory context\n\n[Improve the existing owning page](https://local-service-spotlight.github.io/task-library/?task=enhance-existing-articles-before-creating-new-ones#task-enhance-existing-articles-before-creating-new-ones) receives related hub improvements; [Review the opening and context](https://local-service-spotlight.github.io/task-library/?task=step-7-write-hook-and-establish-context#task-step-7-write-hook-and-establish-context) receives exact opening text and evidence. The page owner gets the reviewed source and remaining proof gaps; [Measure the accepted change set](https://local-service-spotlight.github.io/task-library/?task=step-6-measure-and-iterate-with-maa#task-step-6-measure-and-iterate-with-maa) receives only actual released changes.\n\nThis task supports the [Content Factory: Produce, Process, Post and Promote](https://localservicespotlight.com/content-factory/). Identity, proof, access or coordination can support several stages. Use the real inputs and receiving owner above; this task does not create unrelated transcripts, clips or ads merely because the diagram has four stages.\n\n## Start with an agent\n\nGive the [AI worker](https://blitzmetrics.com/build-agents/) this recipe, the real inputs, desired result and actions already authorized. Ask for the saved output, sources, checks and next owner. A [skill is a written recipe](https://localservicespotlight.com/plugin/); loading one does not prove account access or perform the task. Use the [installation guide](https://localservicespotlight.com/install/) if reusable setup is needed. A ZIP is a source snapshot, not an access grant or automatic update.\n\nUse the app’s actual supported tools and verified file/account access. Keep a missing human verification step with its real owner. Recurring work needs its own configured job, trigger, timezone and observed result; this guide creates no schedule. Before any media playback, mute the player and set its volume to zero. If silence cannot be verified first, use captions, frames, metadata or another silent check.\n\n## Record the real execution\n\nOpen the run record when work begins. Keep one execution ID, starting recipe revision, real inputs and current state. Write the [meta article, the record of this execution](https://blitzmetrics.com/meta-article-prompt/) with actual steps, results, checks, failures and next owner. Writing is required; public release follows existing authority. Link it to this recipe and the [Task Library](https://local-service-spotlight.github.io/task-library/).\n\nReuse the same execution ID for internal checks, revisions, retries and meta writing. A blocked run stays open with its dependency and owner, without an invented finish time. Dated public examples and distinct verified execution counts remain separate. Propose the smallest source-backed recipe improvement when the actual evidence reveals a defect.\n\n\n<!-- factory-layer:start -->\n\n## Factory chain (do not treat this as isolated)\n\n- **Phase:** —\n- **Importance:** 3/5 `●●●○○` — frequency 3, revenue 3, gating 2 (supporting)\n- **Browse earlier task:** —\n- **Browse later task:** —\nThese are nearby tasks in the library. Use this guide’s Inputs and Handoff sections to choose what comes before and after your work. Catalog order does not establish prerequisites or handoffs.\n- **Handoff:** Save this task’s actual output, source, date and checks where the receiving owner can read them. Follow the Inputs and Handoff sections for its next step.\n\n## Model routing (same factory, any engine)\n\n- **This task's lane:** `any` — Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.\n- **Single-engine path:** Use the capable AI app you already have. Check its required tools and access before starting. Pass the actual result and proof to the next task.\n- **Optional multi-engine:** A tested local model may draft; a stronger model may review facts and voice. Use supported tools for approved actions. Pick models from observed quality and cost; a model name does not prove it can run this task.\n- **Never** store the working state in one vendor's memory. Files in the Content Library are the bridge.\n\n<!-- factory-layer:end -->\n## Definitive article & links\n\n- [Maintained source guide](https://blitzmetrics.com/seo-tree/)\n- [This task in the Task Library](https://local-service-spotlight.github.io/task-library/?task=replace-ai-looking-content-with-real-eeat#task-replace-ai-looking-content-with-real-eeat)\n- [Article Guidelines](https://localservicespotlight.com/article-guidelines/)\n- [Definitive article and task recipe standard](https://blitzmetrics.com/definitive-article-guide/)\n- [How recipes and run records fit together](https://localservicespotlight.com/meta-articles/)\n\n### Primary method references\n\n- [Google’s people-first content guidance](https://developers.google.com/search/docs/fundamentals/creating-helpful-content)\n\n## Review and evidence still needed\n\nThe inherited contributor status is `needs-work`. It is preserved, not promoted by this rewrite. That label alone does not prove document readiness, account access, an actual execution or a client result.\n\nThe fictional example teaches the method and does not fill a real-run evidence gap. A named semantic reviewer must check the actual opening, full method, sources and handoff. Check the useful opening visual in the normal rendered guide at the current required desktop and mobile sizes, including 1280 × 800 and 390 × 844. Source readability checks do not prove public presentation or task execution.",
+     "content": "---\nname: replace-ai-looking-content-with-real-eeat\ndescription: \"Help readers see the real work behind your claims.\"\ncategory: SEO & Content Architecture\nstage: —\ndefinitive_article: /seo-tree\nstatus: complete\n---\n\n# Replace AI-looking content with real EEAT\n\nHelp readers see the proof behind your claims. This guide turns vague text into facts they can check. Use our [article guide](https://localservicespotlight.com/article-guidelines/) to match each claim with a real source and make the page clear.\n\n**The path:** Page promise → Verified proof file → Focused rewrite → Claim and visual checks\n\n**Start when:** A page has vague claims, weak evidence or poor reader context, regardless of which tool or person drafted it.\n\n## Inputs\n\n- The exact current page/source, named author, intended reader and [Goals, Content, Targeting: the result, source material and people served](https://blitzmetrics.com/gct-business-strategy/).\n- Real recordings, project facts, public-safe screenshots, approved photos and attributable independent proof; permissions and dates.\n- Current [Article Guidelines](https://localservicespotlight.com/article-guidelines/), the page’s role and its existing media, links and source/builder constraints.\n\n## Steps\n\n1. Read the actual page and mark unclear promises, unsupported outcomes, generic filler and a text-heavy first screen. Do not claim to detect AI authorship from writing style. The repair target is usefulness and evidence: identify the precise claim or explanation that needs better support.\n2. Build a source file that ties each important claim to an actual record, scope, date and named subject. Separate observed results from estimates, examples and future plans. If the needed proof does not exist, narrow or remove the claim and assign the evidence gap instead of inventing a testimonial or number.\n3. Choose the strongest relevant credible proof and explain what it establishes. E-E-A-T means experience, expertise, authoritativeness and trustworthiness; use the [owned SEO Tree guide](https://blitzmetrics.com/seo-tree/) for the site’s proof approach. A famous but unrelated name does not substitute for evidence of this page’s method.\n4. Rewrite the opening in two or three grade-five sentences about the reader’s situation, useful outcome and how the page helps. Preserve the real author’s voice. Use first person for an authorized account of that person’s own work; attribute others’ words and never invent an “I did this” experience.\n5. Improve the body with specific method, named examples, dates and measured results where actually supported. Retain valuable source material and strongest relevant endorsements with clear attribution, highest credible authority first. A neutral appearance remains an appearance and historic proof retains its date.\n6. Replace generic illustrative filler with a meaningful real photo, source screenshot or evidence-backed diagram where it helps. Put a useful visual in the first screen, preserve rights and descriptive alt text, and keep relevant existing media. Do not manufacture a project scene or treat every useful diagram as a missing photograph.\n7. Check the exact revised claims against their sources, then review the normal desktop/mobile page after authorized release. Save the before/after revision, quoted semantic review and remaining gaps. Pass any actual traffic or inquiry comparison to [Metrics, Analysis, Action: what happened, why and what to do](https://blitzmetrics.com/maa/); a more credible page is not by itself proof of a measured ranking lift.\n\n## Definition of done (QA checklist)\n\nQuality assurance (QA) means checking the actual result against its agreed requirements. Follow the [Article Guidelines](https://localservicespotlight.com/article-guidelines/).\n\n- [ ] The page’s key promises are supported, narrowed or removed; no AI-authorship diagnosis or fictional result is asserted.\n- [ ] Real voice, named examples, strongest relevant credibility and attribution remain clear.\n- [ ] The opening and meaningful lead visual help the reader, and actual source and rendered checks are recorded.\n- [ ] The exact output, source revision, reviewer evidence and remaining owner action are saved.\n- [ ] For any reader-facing output, the short grade-five opening states the reader’s useful outcome and supporting method or proof. The body delivers that promise; a useful authentic visual appears in the first screen. Retain exact text and quoted reviewer evidence.\n\n## Example(s)\n\n**Fictional teaching example. This is not a client result or proof of a completed run.**\n\nA fictional builder’s page says it is “the best” without proof. The source file has a real project photo and a customer’s approved comment about meeting a deadline. The rewrite explains that specific job and links its method. It does not turn one comment into a claim of being the top builder or invent a revenue gain.\n\n## Handoff and Content Factory context\n\n[Improve the existing owning page](https://local-service-spotlight.github.io/task-library/?task=enhance-existing-articles-before-creating-new-ones#task-enhance-existing-articles-before-creating-new-ones) receives related hub improvements; [Review the opening and context](https://local-service-spotlight.github.io/task-library/?task=step-7-write-hook-and-establish-context#task-step-7-write-hook-and-establish-context) receives exact opening text and evidence. The page owner gets the reviewed source and remaining proof gaps; [Measure the accepted change set](https://local-service-spotlight.github.io/task-library/?task=step-6-measure-and-iterate-with-maa#task-step-6-measure-and-iterate-with-maa) receives only actual released changes.\n\nThis task supports Process and Post in the [Content Factory](https://localservicespotlight.com/content-factory/). Process checks the page and its proof; Post saves the approved change and checks the live result. The receiving owner and evidence above define the next task. Promotion and traffic measurement use the accepted page under their own scope.\n\n## Start with an agent\n\nGive the [AI worker](https://blitzmetrics.com/build-agents/) this recipe, the real inputs, desired result and actions already authorized. Ask for the saved output, sources, checks and next owner. A [skill is a written recipe](https://localservicespotlight.com/plugin/); loading one does not prove account access or perform the task. Use the [installation guide](https://localservicespotlight.com/install/) if reusable setup is needed. A ZIP is a source snapshot, not an access grant or automatic update.\n\nUse the app’s actual supported tools and verified file/account access. Keep a missing human verification step with its real owner. Recurring work needs its own configured job, trigger, timezone and observed result; this guide creates no schedule. Before any media playback, mute the player and set its volume to zero. If silence cannot be verified first, use captions, frames, metadata or another silent check.\n\n## Record the real execution\n\nOpen the run record when work begins. Keep one execution ID, starting recipe revision, real inputs and current state. Write the [meta article, the record of this execution](https://blitzmetrics.com/meta-article-prompt/) with actual steps, results, checks, failures and next owner. Writing is required; public release follows existing authority. Link it to this recipe and the [Task Library](https://local-service-spotlight.github.io/task-library/).\n\nReuse the same execution ID for internal checks, revisions, retries and meta writing. A blocked run stays open with its dependency and owner, without an invented finish time. Dated public examples and distinct verified execution counts remain separate. Propose the smallest source-backed recipe improvement when the actual evidence reveals a defect.\n\n\n<!-- factory-layer:start -->\n\n## Factory chain (do not treat this as isolated)\n\n- **Phase:** —\n- **Importance:** 3/5 `●●●○○` — frequency 3, revenue 3, gating 2 (supporting)\n- **Browse earlier task:** —\n- **Browse later task:** —\nThese are nearby tasks in the library. Use this guide’s Inputs and Handoff sections to choose what comes before and after your work. Catalog order does not establish prerequisites or handoffs.\n- **Handoff:** Save this task’s actual output, source, date and checks where the receiving owner can read them. Follow the Inputs and Handoff sections for its next step.\n\n## Model routing (same factory, any engine)\n\n- **This task's lane:** `any` — Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.\n- **Single-engine path:** Use the capable AI app you already have. Check its required tools and access before starting. Pass the actual result and proof to the next task.\n- **Optional multi-engine:** A tested local model may draft; a stronger model may review facts and voice. Use supported tools for approved actions. Pick models from observed quality and cost; a model name does not prove it can run this task.\n- **Never** store the working state in one vendor's memory. Files in the Content Library are the bridge.\n\n<!-- factory-layer:end -->\n## Definitive article & links\n\n- [Maintained source guide](https://blitzmetrics.com/seo-tree/)\n- [This task in the Task Library](https://local-service-spotlight.github.io/task-library/?task=replace-ai-looking-content-with-real-eeat#task-replace-ai-looking-content-with-real-eeat)\n- [Article Guidelines](https://localservicespotlight.com/article-guidelines/)\n- [Definitive article and task recipe standard](https://blitzmetrics.com/definitive-article-guide/)\n- [How recipes and run records fit together](https://localservicespotlight.com/meta-articles/)\n\n### Primary method references\n\n- [Google’s people-first content guidance](https://developers.google.com/search/docs/fundamentals/creating-helpful-content)\n\n## Review and evidence still needed\n\nThe contributor label describes the written guide. It does not prove account access, an actual execution or a client result. Exact-revision written review is recorded separately from actual use.\n\nThe fictional example teaches the method and does not fill a real-run evidence gap. The exact written review records the actual opening, full method, sources and handoff. Check the useful opening visual in the normal rendered guide at the current required desktop and mobile sizes, including 1280 × 800 and 390 × 844. Source readability checks do not prove public presentation or task execution.",
      "importance": 3,
      "freq": 3,
      "revenue": 3,
@@ -31404,18 +31520,42 @@
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
      "why": "supporting",
      "instructionReview": {
-      "source_sha256": "d4173a0862d93d65d5e2b8f2563673a8a5f57a860a29bc43c4869cc1afefbe37",
-      "reviewed_at": "2026-10-13",
-      "reviewer": "Codex incremental destination review with independent GPT-6 Luna review",
-      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate. Destination-only revision: existing prose and check verdicts retained after exact diff inspection; current Content Factory target and relationship checked. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/content-factory-link-2026-10-13.md",
-      "incrementalReview": {
-       "beforeSourceSha256": "2fb76e899bb9863556c4a997aab923674d9a311c641d8950c8b7c8d18f4a878d",
-       "previousReviewDate": "2026-09-06",
-       "change": "Only the Content Factory teaching URL changed; no step, example, opening, status or acceptance changed.",
-       "review": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/content-factory-link-2026-10-13.md"
+      "source_sha256": "3feae344b94e1262d33c5148c9bb3c380cb265c41fa7ef2432ee92ca83226913",
+      "reviewed_at": "2026-10-15",
+      "reviewer": "Codex independent written review, configured gpt-6.1-sol high",
+      "scope": "All five written instruction requirements pass for exact candidate bytes. Full method, destructive-change safeguards, actual destination meanings, fictional-example honesty and receiving evidence reviewed. Actual unchanged-layout Chrome candidate preview checked at1280x800/390x844. No source application, public delivery, real client execution, novice use, installation or schedule is inferred. Public exact-revision review: https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/seo-hub-supporting-guides-2026-10-15.md",
+      "standards": {
+       "version": 1,
+       "checks": {
+        "opening": {
+         "state": "pass",
+         "reason": "Exact three-sentence opening explains the reader outcome, method and useful linked first action; the full method delivers its promise. Reviewed actual Chrome preview at CSS1280x800 and390x844 in unchanged deployed layout: initial purpose and four relevant path cards are readable; actual linked body opening was separately brought into view and matched candidate. No observed horizontal overflow. Preview does not prove public delivery or real use.",
+         "evidence": "Help readers see the proof behind your claims. This guide turns vague text into facts they can check. Use our [article guide](https://localservicespotlight.com/article-guidelines/) to match each claim with a real source and make the page clear. Body: Turn vague claims into inspectable facts, with the reader’s useful context and actual evidence. The body supplies claim-to-source mapping, narrowing/removal when proof is absent, truthful author voice, dated attributed examples, relevant visuals and observed before/after checks."
+        },
+        "recipe": {
+         "state": "pass",
+         "reason": "The trigger is vague/unsupported content regardless of authorship tool. Exact source/author/reader/GCT, permissions/dates and builder/media constraints feed seven ordered steps and measurable claim/visual checks. Unsupported proof is removed/narrowed; first person is authorized and sourced. A rewrite itself does not prove ranking lift or create account access/scheduling.",
+         "evidence": "Inputs; Steps1-7; Definition of done. “Do not claim to detect AI authorship from writing style.” “Never invent an ‘I did this’ experience.” “A more credible page is not by itself proof of a measured ranking lift.”"
+        },
+        "links": {
+         "state": "pass",
+         "reason": "Fresh normal-browser-UA captures return200 and their meanings were read. SEO Tree owns topic relationships; Article Guidelines owns claim/visual checks; prerequisite inventory/map and receiving placement/QA/MAA tasks match actual inputs and outputs. Agent/skill/install references separate a recipe from tools, access and a configured job. Google primary guidance supports method limits; exact deployed task routes were checked.",
+         "evidence": "https://blitzmetrics.com/seo-tree/; https://localservicespotlight.com/article-guidelines/; https://localservicespotlight.com/content-factory/; https://blitzmetrics.com/build-agents/; https://localservicespotlight.com/plugin/; https://localservicespotlight.com/install/; exact task-route records and captured body meanings; primary method references."
+        },
+        "evidence": {
+         "state": "pass",
+         "reason": "The builder/project/comment example is explicitly fictional and limits the hypothetical evidence to one job. Real claims require named subject, source, date, rights and precise scope; estimates/future plans stay separate. Author voice/testimonials/results cannot be invented, and unrelated trophy names do not supply evidence.",
+         "evidence": "Fictional teaching example; Steps1-6; Google people-first guidance supports experience/expertise/authoritativeness/trustworthiness and accurate authorship. One approved comment cannot prove top-builder status or revenue gains."
+        },
+        "handoff": {
+         "state": "pass",
+         "reason": "The existing owning-page function receives related hub improvements; opening/context receives exact text and evidence; the page owner receives reviewed source and remaining proof gaps; measurement receives only actual released changes. Process proof/rewrite and Post source/render checks are explained explicitly, with no unsolicited promotion or schedule.",
+         "evidence": "Handoff and Content Factory context: exact opening/evidence → opening review; reviewed source/gaps → page owner; only actual released changes → measurement."
+        }
+       }
       }
      },
-     "articleState": "wip",
+     "articleState": "ready",
      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=replace-ai-looking-content-with-real-eeat#task-replace-ai-looking-content-with-real-eeat",
      "executionHistory": {
       "status": "unknown",
@@ -31450,30 +31590,63 @@
       "historicalAcceptedEvidenceIds": []
      },
      "standardVerification": {
-      "instructionSourceSha256": "d4173a0862d93d65d5e2b8f2563673a8a5f57a860a29bc43c4869cc1afefbe37",
+      "instructionSourceSha256": "3feae344b94e1262d33c5148c9bb3c380cb265c41fa7ef2432ee92ca83226913",
       "articleKey": "blitzmetrics.com/seo-tree",
       "gates": {
        "instructionRevisionReviewed": {
         "id": "instructionRevisionReviewed",
         "label": "Exact instruction revision reviewed",
         "state": "pass",
-        "reason": "Current source bytes match the review recorded 2026-10-13. Review scope and limits: Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate. Destination-only revision: existing prose and check verdicts retained after exact diff inspection; current Content Factory target and relationship checked. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/content-factory-link-2026-10-13.md",
-        "reviewedAt": "2026-10-13",
-        "reviewer": "Codex incremental destination review with independent GPT-6 Luna review",
-        "sourceSha256": "d4173a0862d93d65d5e2b8f2563673a8a5f57a860a29bc43c4869cc1afefbe37"
+        "reason": "Current source bytes match the review recorded 2026-10-15. Review scope and limits: All five written instruction requirements pass for exact candidate bytes. Full method, destructive-change safeguards, actual destination meanings, fictional-example honesty and receiving evidence reviewed. Actual unchanged-layout Chrome candidate preview checked at1280x800/390x844. No source application, public delivery, real client execution, novice use, installation or schedule is inferred. Public exact-revision review: https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/seo-hub-supporting-guides-2026-10-15.md",
+        "reviewedAt": "2026-10-15",
+        "reviewer": "Codex independent written review, configured gpt-6.1-sol high",
+        "sourceSha256": "3feae344b94e1262d33c5148c9bb3c380cb265c41fa7ef2432ee92ca83226913"
        },
        "instructionStandards": {
         "id": "instructionStandards",
         "label": "Instruction requirements checked",
-        "state": "unknown",
-        "reason": "The current exact-byte review has no structured instruction-requirements checklist.",
-        "sourceSha256": "d4173a0862d93d65d5e2b8f2563673a8a5f57a860a29bc43c4869cc1afefbe37"
+        "state": "pass",
+        "reason": "All five instruction requirements have explicit passing checks for the current source revision.",
+        "reviewedAt": "2026-10-15",
+        "reviewer": "Codex independent written review, configured gpt-6.1-sol high",
+        "reviewScope": "All five written instruction requirements pass for exact candidate bytes. Full method, destructive-change safeguards, actual destination meanings, fictional-example honesty and receiving evidence reviewed. Actual unchanged-layout Chrome candidate preview checked at1280x800/390x844. No source application, public delivery, real client execution, novice use, installation or schedule is inferred. Public exact-revision review: https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/seo-hub-supporting-guides-2026-10-15.md",
+        "sourceSha256": "3feae344b94e1262d33c5148c9bb3c380cb265c41fa7ef2432ee92ca83226913",
+        "standards": {
+         "version": 1,
+         "checks": {
+          "opening": {
+           "state": "pass",
+           "reason": "Exact three-sentence opening explains the reader outcome, method and useful linked first action; the full method delivers its promise. Reviewed actual Chrome preview at CSS1280x800 and390x844 in unchanged deployed layout: initial purpose and four relevant path cards are readable; actual linked body opening was separately brought into view and matched candidate. No observed horizontal overflow. Preview does not prove public delivery or real use.",
+           "evidence": "Help readers see the proof behind your claims. This guide turns vague text into facts they can check. Use our [article guide](https://localservicespotlight.com/article-guidelines/) to match each claim with a real source and make the page clear. Body: Turn vague claims into inspectable facts, with the reader’s useful context and actual evidence. The body supplies claim-to-source mapping, narrowing/removal when proof is absent, truthful author voice, dated attributed examples, relevant visuals and observed before/after checks."
+          },
+          "recipe": {
+           "state": "pass",
+           "reason": "The trigger is vague/unsupported content regardless of authorship tool. Exact source/author/reader/GCT, permissions/dates and builder/media constraints feed seven ordered steps and measurable claim/visual checks. Unsupported proof is removed/narrowed; first person is authorized and sourced. A rewrite itself does not prove ranking lift or create account access/scheduling.",
+           "evidence": "Inputs; Steps1-7; Definition of done. “Do not claim to detect AI authorship from writing style.” “Never invent an ‘I did this’ experience.” “A more credible page is not by itself proof of a measured ranking lift.”"
+          },
+          "links": {
+           "state": "pass",
+           "reason": "Fresh normal-browser-UA captures return200 and their meanings were read. SEO Tree owns topic relationships; Article Guidelines owns claim/visual checks; prerequisite inventory/map and receiving placement/QA/MAA tasks match actual inputs and outputs. Agent/skill/install references separate a recipe from tools, access and a configured job. Google primary guidance supports method limits; exact deployed task routes were checked.",
+           "evidence": "https://blitzmetrics.com/seo-tree/; https://localservicespotlight.com/article-guidelines/; https://localservicespotlight.com/content-factory/; https://blitzmetrics.com/build-agents/; https://localservicespotlight.com/plugin/; https://localservicespotlight.com/install/; exact task-route records and captured body meanings; primary method references."
+          },
+          "evidence": {
+           "state": "pass",
+           "reason": "The builder/project/comment example is explicitly fictional and limits the hypothetical evidence to one job. Real claims require named subject, source, date, rights and precise scope; estimates/future plans stay separate. Author voice/testimonials/results cannot be invented, and unrelated trophy names do not supply evidence.",
+           "evidence": "Fictional teaching example; Steps1-6; Google people-first guidance supports experience/expertise/authoritativeness/trustworthiness and accurate authorship. One approved comment cannot prove top-builder status or revenue gains."
+          },
+          "handoff": {
+           "state": "pass",
+           "reason": "The existing owning-page function receives related hub improvements; opening/context receives exact text and evidence; the page owner receives reviewed source and remaining proof gaps; measurement receives only actual released changes. Process proof/rewrite and Post source/render checks are explained explicitly, with no unsolicited promotion or schedule.",
+           "evidence": "Handoff and Content Factory context: exact opening/evidence → opening review; reviewed source/gaps → page owner; only actual released changes → measurement."
+          }
+         }
+        }
        },
        "contributorComplete": {
         "id": "contributorComplete",
         "label": "Contributor reports guide complete",
-        "state": "unmet",
-        "reason": "The contributor status is needs-work; finish and review the guide."
+        "state": "pass",
+        "reason": "The contributor status is complete; this is a source claim, not execution proof."
        },
        "articleMapped": {
         "id": "articleMapped",
@@ -31485,8 +31658,8 @@
        "articleCatalogGate": {
         "id": "articleCatalogGate",
         "label": "Article catalog gate",
-        "state": "unmet",
-        "reason": "At least one task mapped to this hub is not contributor-complete."
+        "state": "pass",
+        "reason": "Every task mapped to this hub is contributor-complete and no reviewed hold is active. This is catalog readiness only."
        },
        "articleSemanticCertification": {
         "id": "articleSemanticCertification",
@@ -31523,13 +31696,9 @@
         "schedulingCertified": false
        }
       },
-      "unmetStandardGates": [
-       "contributorComplete",
-       "articleCatalogGate"
-      ],
+      "unmetStandardGates": [],
       "heldStandardGates": [],
       "unknownStandardGates": [
-       "instructionStandards",
        "articleSemanticCertification",
        "taskExampleEvidence",
        "recordedExecution",
@@ -31537,10 +31706,10 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 149,
-      "priority": "P1",
-      "priorityReason": "Known standard gap",
-      "nextAction": "The contributor status is needs-work; finish and review the guide."
+      "queuePosition": 270,
+      "priority": "P3",
+      "priorityReason": "Missing proof remains",
+      "nextAction": "No exact-revision positive semantic review is recorded for this article."
      }
     },
     {
@@ -32163,7 +32332,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 237,
+      "queuePosition": 229,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "nextAction": "The article revision observation is outside the 24-hour freshness window."
@@ -33435,7 +33604,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 253,
+      "queuePosition": 246,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "The article revision observation is outside the 24-hour freshness window."
@@ -33750,7 +33919,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 146,
+      "queuePosition": 144,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -33909,7 +34078,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 131,
+      "queuePosition": 130,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -34068,7 +34237,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 134,
+      "queuePosition": 133,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -34235,7 +34404,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 129,
+      "queuePosition": 128,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -34449,7 +34618,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 132,
+      "queuePosition": 131,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -34607,7 +34776,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 133,
+      "queuePosition": 132,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -34765,7 +34934,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 103,
+      "queuePosition": 102,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -35080,7 +35249,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 104,
+      "queuePosition": 103,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -35238,7 +35407,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 136,
+      "queuePosition": 135,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -35554,7 +35723,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 137,
+      "queuePosition": 136,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -35869,7 +36038,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 138,
+      "queuePosition": 137,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -36027,7 +36196,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 139,
+      "queuePosition": 138,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -36185,7 +36354,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 140,
+      "queuePosition": 139,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -36341,7 +36510,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 123,
+      "queuePosition": 122,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "No valid canonical article URL is mapped for this task."
@@ -36499,7 +36668,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 107,
+      "queuePosition": 106,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -36657,7 +36826,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 108,
+      "queuePosition": 107,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -36815,7 +36984,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 142,
+      "queuePosition": 140,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -36973,7 +37142,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 145,
+      "queuePosition": 143,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -37131,7 +37300,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 147,
+      "queuePosition": 145,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -37289,7 +37458,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 92,
+      "queuePosition": 91,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -37447,7 +37616,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 150,
+      "queuePosition": 146,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -37767,7 +37936,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 266,
+      "queuePosition": 262,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -37925,7 +38094,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 151,
+      "queuePosition": 147,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -38083,7 +38252,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 152,
+      "queuePosition": 148,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -38242,7 +38411,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 154,
+      "queuePosition": 150,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -38398,7 +38567,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 270,
+      "queuePosition": 268,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -38942,7 +39111,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 143,
+      "queuePosition": 141,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -39107,7 +39276,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 121,
+      "queuePosition": 120,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "No valid canonical article URL is mapped for this task."
@@ -40390,7 +40559,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 267,
+      "queuePosition": 265,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -40546,7 +40715,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 268,
+      "queuePosition": 266,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -40702,7 +40871,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 269,
+      "queuePosition": 267,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -40858,7 +41027,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 125,
+      "queuePosition": 124,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "No valid canonical article URL is mapped for this task."
@@ -41175,7 +41344,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 127,
+      "queuePosition": 126,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "No valid canonical article URL is mapped for this task."
@@ -41489,7 +41658,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 82,
+      "queuePosition": 81,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -41646,7 +41815,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 161,
+      "queuePosition": 153,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -42117,7 +42286,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 83,
+      "queuePosition": 82,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -42383,7 +42552,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 80,
+      "queuePosition": 79,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -43005,7 +43174,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 124,
+      "queuePosition": 123,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The recorded instruction review expired because its source hash no longer matches the current bytes."
@@ -43172,7 +43341,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 235,
+      "queuePosition": 227,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -43331,7 +43500,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 153,
+      "queuePosition": 149,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -43490,7 +43659,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 135,
+      "queuePosition": 134,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -43649,7 +43818,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 144,
+      "queuePosition": 142,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -44798,7 +44967,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 199,
+      "queuePosition": 191,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is gap; finish and review the guide."
@@ -44956,7 +45125,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 200,
+      "queuePosition": 192,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is gap; finish and review the guide."
@@ -45114,7 +45283,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 209,
+      "queuePosition": 201,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -45272,7 +45441,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 210,
+      "queuePosition": 202,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -45430,7 +45599,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 212,
+      "queuePosition": 204,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -45587,7 +45756,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 231,
+      "queuePosition": 223,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -45745,7 +45914,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 201,
+      "queuePosition": 193,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is gap; finish and review the guide."
@@ -45903,7 +46072,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 202,
+      "queuePosition": 194,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is gap; finish and review the guide."
@@ -46061,7 +46230,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 203,
+      "queuePosition": 195,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is gap; finish and review the guide."
@@ -46218,7 +46387,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 232,
+      "queuePosition": 224,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -46370,7 +46539,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 216,
+      "queuePosition": 208,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -46522,7 +46691,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 204,
+      "queuePosition": 196,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is gap; finish and review the guide."
@@ -46680,7 +46849,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 221,
+      "queuePosition": 213,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -46838,7 +47007,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 222,
+      "queuePosition": 214,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -47008,7 +47177,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 223,
+      "queuePosition": 215,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -47166,7 +47335,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 205,
+      "queuePosition": 197,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is gap; finish and review the guide."
@@ -47324,7 +47493,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 206,
+      "queuePosition": 198,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is gap; finish and review the guide."
@@ -47482,7 +47651,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 207,
+      "queuePosition": 199,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is gap; finish and review the guide."
@@ -47640,7 +47809,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 224,
+      "queuePosition": 216,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -47798,7 +47967,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 225,
+      "queuePosition": 217,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -47956,7 +48125,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 208,
+      "queuePosition": 200,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is gap; finish and review the guide."
@@ -48114,7 +48283,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 228,
+      "queuePosition": 220,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -48272,7 +48441,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 229,
+      "queuePosition": 221,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -48492,7 +48661,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 230,
+      "queuePosition": 222,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -48649,7 +48818,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 234,
+      "queuePosition": 226,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -48808,7 +48977,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 215,
+      "queuePosition": 207,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -48967,7 +49136,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 217,
+      "queuePosition": 209,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -49126,7 +49295,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 211,
+      "queuePosition": 203,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -49285,7 +49454,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 214,
+      "queuePosition": 206,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -49444,7 +49613,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 213,
+      "queuePosition": 205,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -49516,7 +49685,7 @@
      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=publish-skill-and-task-page#task-publish-skill-and-task-page",
      "executionHistory": {
       "status": "partial",
-      "recordedRuns": 24,
+      "recordedRuns": 25,
       "completedRuns": 19,
       "failedRuns": 0,
       "partialRuns": 5,
@@ -49540,6 +49709,7 @@
        "publisher-completion-20260927-134412",
        "revenue-path-repair-20261005-1855",
        "roster-public-boundary-20260927-210848",
+       "seo-hub-supporting-guides-20261015",
        "site-build-proof-recipe-20261014",
        "task-direct-open-20261002-1404",
        "taxonomy-guide-repair-20261003-1606",
@@ -49692,6 +49862,12 @@
         "status": "partial",
         "startedAt": "2026-10-14T17:10:41.497809+00:00",
         "finishedAt": "2026-10-14T18:21:20.969655+00:00"
+       },
+       {
+        "executionId": "seo-hub-supporting-guides-20261015",
+        "status": "running",
+        "startedAt": "2026-10-14T18:48:03.095058+00:00",
+        "finishedAt": null
        }
       ],
       "acceptanceReviews": [
@@ -50397,7 +50573,7 @@
         "id": "recordedExecution",
         "label": "Recorded real execution",
         "state": "pass",
-        "reason": "24 distinct execution ID(s) name this task; outcomes remain separate.",
+        "reason": "25 distinct execution ID(s) name this task; outcomes remain separate.",
         "executionIds": [
          "authority-guides-repair-20261005-2100",
          "booking-path-checks-20261009-1259",
@@ -50416,6 +50592,7 @@
          "publisher-completion-20260927-134412",
          "revenue-path-repair-20261005-1855",
          "roster-public-boundary-20260927-210848",
+         "seo-hub-supporting-guides-20261015",
          "site-build-proof-recipe-20261014",
          "task-direct-open-20261002-1404",
          "taxonomy-guide-repair-20261003-1606",
@@ -50517,7 +50694,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 233,
+      "queuePosition": 225,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The acceptance review instruction hash no longer matches the current task instruction."
@@ -50676,7 +50853,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 226,
+      "queuePosition": 218,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -50835,7 +51012,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 227,
+      "queuePosition": 219,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -50994,7 +51171,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 220,
+      "queuePosition": 212,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -51153,7 +51330,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 219,
+      "queuePosition": 211,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -51312,7 +51489,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 218,
+      "queuePosition": 210,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -51633,7 +51810,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 192,
+      "queuePosition": 184,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "No valid canonical article URL is mapped for this task."
@@ -52101,7 +52278,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 193,
+      "queuePosition": 185,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "No valid canonical article URL is mapped for this task."
@@ -52257,7 +52434,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 194,
+      "queuePosition": 186,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "No valid canonical article URL is mapped for this task."
@@ -52413,7 +52590,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 195,
+      "queuePosition": 187,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "No valid canonical article URL is mapped for this task."
@@ -52569,7 +52746,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 98,
+      "queuePosition": 97,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "No valid canonical article URL is mapped for this task."

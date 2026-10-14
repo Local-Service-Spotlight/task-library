@@ -4,12 +4,12 @@ description: "Help readers find useful pages that your site has left out."
 category: SEO & Content Architecture
 stage: —
 definitive_article: /seo-tree
-status: needs-work
+status: complete
 ---
 
 # Identify and eliminate orphan/standalone articles
 
-Help readers find useful pages that your site has left out. This guide checks pages with no link leading to them and plans the right fix. Start with the full page list, then compare it with the links people can follow.
+Help readers find good pages they cannot reach. This guide finds missing links and shows where to add them. Use the [SEO Tree map](https://blitzmetrics.com/seo-tree/) to give each page a home and a clear path to it.
 
 **The path:** All published URLs → Incoming-path check → Keep, connect or review → Fresh crawl
 
@@ -51,7 +51,7 @@ A fictional site has a useful repair story and an unlisted thank-you page. Neith
 
 [Place the accepted links](https://local-service-spotlight.github.io/task-library/?task=step-4-create-links-with-proper-anchor-text-and-placement#task-step-4-create-links-with-proper-anchor-text-and-placement) receives approved incoming-link rows; [Review duplicate or weak pages](https://local-service-spotlight.github.io/task-library/?task=remove-duplicate-thin-pages#task-remove-duplicate-thin-pages) receives reviewed consolidation candidates. [Measure the accepted change set](https://local-service-spotlight.github.io/task-library/?task=step-6-measure-and-iterate-with-maa#task-step-6-measure-and-iterate-with-maa) receives the actual released changes and crawl coverage.
 
-This task supports the [Content Factory: Produce, Process, Post and Promote](https://localservicespotlight.com/content-factory/). Identity, proof, access or coordination can support several stages. Use the real inputs and receiving owner above; this task does not create unrelated transcripts, clips or ads merely because the diagram has four stages.
+This task supports Process and Post in the [Content Factory](https://localservicespotlight.com/content-factory/). Process checks the page and its proof; Post saves the approved change and checks the live result. The receiving owner and evidence above define the next task. Promotion and traffic measurement use the accepted page under their own scope.
 
 ## Start with an agent
 
@@ -79,6 +79,6 @@ Reuse the same execution ID for internal checks, revisions, retries and meta wri
 
 ## Review and evidence still needed
 
-The inherited contributor status is `needs-work`. It is preserved, not promoted by this rewrite. That label alone does not prove document readiness, account access, an actual execution or a client result.
+The contributor label describes the written guide. It does not prove account access, an actual execution or a client result. Exact-revision written review is recorded separately from actual use.
 
-The fictional example teaches the method and does not fill a real-run evidence gap. A named semantic reviewer must check the actual opening, full method, sources and handoff. Check the useful opening visual in the normal rendered guide at the current required desktop and mobile sizes, including 1280 × 800 and 390 × 844. Source readability checks do not prove public presentation or task execution.
+The fictional example teaches the method and does not fill a real-run evidence gap. The exact written review records the actual opening, full method, sources and handoff. Check the useful opening visual in the normal rendered guide at the current required desktop and mobile sizes, including 1280 × 800 and 390 × 844. Source readability checks do not prove public presentation or task execution.
