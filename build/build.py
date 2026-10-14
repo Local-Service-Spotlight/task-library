@@ -15,7 +15,7 @@ Usage:
   python3 build/build.py [--tracker-csv tracker.csv] [--out dashboard/data.json]
 Exit code 1 if any skill fails validation (build still writes valid skills).
 """
-import argparse, csv, hashlib, json, os, re, sys, urllib.request
+import argparse, csv, hashlib, json, os, re, shutil, sys, urllib.request
 from collections import Counter
 from datetime import datetime, timezone
 from urllib.parse import urlencode, urlsplit
@@ -1023,6 +1023,16 @@ def tracker_import_state(tracker_supplied, input_rows, matched_rows, validation_
     return {'state': state, 'inputRows': input_rows, 'matchedRows': matched_rows}
 
 
+def write_dashboard_app(out_dir):
+    """Release the maintained UI beside the requested data.json output."""
+    source = os.path.join(ROOT, 'app.js')
+    target = os.path.join(os.path.abspath(out_dir or '.'), 'app.js')
+    os.makedirs(os.path.dirname(target), exist_ok=True)
+    if os.path.realpath(source) != os.path.realpath(target):
+        shutil.copyfile(source, target)
+    return target
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--tracker-csv')
@@ -1231,19 +1241,21 @@ def main():
     # Resolve paths against this exact build, fail closed on missing lessons,
     # and never hand-copy methods or protected teaching files into the paths.
     learning_paths.compose(data, json.load(open(os.path.join(BUILD, 'packs.json'))))
-    os.makedirs(os.path.dirname(args.out), exist_ok=True)
-    learning_paths.write(data, os.path.join(BUILD, 'packs.json'), os.path.dirname(args.out))
+    out_dir = os.path.dirname(os.path.abspath(args.out))
+    os.makedirs(out_dir, exist_ok=True)
+    write_dashboard_app(out_dir)
+    learning_paths.write(data, os.path.join(BUILD, 'packs.json'), out_dir)
     json.dump(data, open(args.out, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
-    with open(os.path.join(os.path.dirname(args.out), 'executions.json'), 'w', encoding='utf-8') as fh:
+    with open(os.path.join(out_dir, 'executions.json'), 'w', encoding='utf-8') as fh:
         json.dump(execution_history, fh, ensure_ascii=False, indent=2)
     write_meta_orbit_index(
         data, meta_audits,
-        os.path.join(os.path.dirname(args.out), 'meta-orbits.json'))
-    write_library_index(data, os.path.join(os.path.dirname(args.out), 'library-index.html'))
-    standard_verification.write_artifacts(verification_report, os.path.dirname(args.out))
-    nall = write_zip(data, os.path.dirname(args.out), 'TaskLibrary-Skills-all.zip',
+        os.path.join(out_dir, 'meta-orbits.json'))
+    write_library_index(data, os.path.join(out_dir, 'library-index.html'))
+    standard_verification.write_artifacts(verification_report, out_dir)
+    nall = write_zip(data, out_dir, 'TaskLibrary-Skills-all.zip',
                      'All registered guide files. Dated snapshot; includes contributor-reported complete, needs-work and gap entries.', False)
-    nready = write_zip(data, os.path.dirname(args.out), 'TaskLibrary-Skills-ready.zip',
+    nready = write_zip(data, out_dir, 'TaskLibrary-Skills-ready.zip',
                        'Guides with contributor-reported complete status. Owner sign-off, independent review and actual execution are not established by this label.', True)
     print(f'zips: all={nall}, ready={nready}')
     inv = os.path.join(ROOT, "INCOMPLETE-INVENTORY.md")

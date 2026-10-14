@@ -3,9 +3,35 @@ from pathlib import Path
 import re
 import shutil
 import subprocess
+import tempfile
 import unittest
+from unittest.mock import patch
+
+import build as task_build
 
 ROOT = Path(__file__).resolve().parents[1]
+
+
+class DashboardRelease(unittest.TestCase):
+    def test_served_script_matches_maintained_source_and_has_acceptance_summary(self):
+        maintained = (ROOT / 'app.js').read_bytes()
+        served = (ROOT / 'dashboard' / 'app.js').read_bytes()
+        self.assertEqual(served, maintained, 'Pages serves dashboard/app.js; rebuild it from the maintained root script')
+        self.assertIn(b'function proofSummaryHTML', served)
+        self.assertIn(b'recorded jobs have accepted results', served)
+        self.assertIn("s.src = 'app.js'", (ROOT / 'dashboard' / 'index.html').read_text())
+
+    def test_build_replaces_stale_script_in_custom_output_directory(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            output = Path(temporary) / 'custom-release'
+            output.mkdir()
+            target = output / 'app.js'
+            target.write_text('stale released UI')
+            self.assertEqual(Path(task_build.write_dashboard_app(output)), target)
+            self.assertEqual(target.read_bytes(), (ROOT / 'app.js').read_bytes())
+            with patch.object(task_build, 'ROOT', str(output)):
+                self.assertEqual(Path(task_build.write_dashboard_app(output)), target)
+                self.assertEqual(target.read_bytes(), (ROOT / 'app.js').read_bytes())
 
 
 @unittest.skipUnless(shutil.which('node'), 'Node is needed for direct UI function evaluation')
@@ -32,7 +58,9 @@ process.stdout.write(JSON.stringify({accepted,summary,historical:executionHistor
         return json.loads(subprocess.check_output(['node', '-e', script], text=True))
 
     def test_source_ui_shows_dated_scope_beside_current_failure_and_handoff_hold(self):
-        result = self.run_ui('app.js')
+        source_result = self.run_ui('app.js')
+        result = self.run_ui('dashboard/app.js')
+        self.assertEqual(result, source_result)
         self.assertIn('1 recorded job has an accepted result', result['accepted'])
         self.assertIn('Accepted 2026-09-01', result['accepted'])
         self.assertIn('Current recipe acceptance: unmet', result['accepted'])
