@@ -2489,6 +2489,20 @@
    "evidenceRefs": [
     "sha256:d37b0b58c3d05c51b5d2fc414f21b43d960cc2d9d1277196cbc4ad0e47454139"
    ]
+  },
+  {
+   "version": 1,
+   "taskSlug": "check-for-broken-links",
+   "canonicalURL": "https://blitzmetrics.com/website-qa-audit",
+   "sourceSha256": "3a0dcacf864a33f52b95c8246c40cb2029c4644c005f7454c8a6a6f384880148",
+   "representation": "wordpress-content-html",
+   "observedAt": "2026-10-14T16:40:00.139340Z",
+   "observer": "Codex separate post-acceptance authenticated source read",
+   "state": "observed",
+   "reason": "Exact scoped broken-link recipe remains unchanged after independent result and receiving handoff acceptance. No novice or whole-site certification is implied.",
+   "evidenceRefs": [
+    "sha256:8586cf535a3e30b423851070c3cc3838c5e2658d8c9da13d525f1409dc5f9588"
+   ]
   }
  ]
 }
