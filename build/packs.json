@@ -166,6 +166,26 @@
       }
     },
     {
+      "id": "bbb-local-business-workshop",
+      "title": "BBB local-business workshop — June 2020 recording page",
+      "kind": "recording",
+      "access": "public",
+      "url": "https://localservicespotlight.com/bbb-workshop/",
+      "sourceOwner": "Dennis Yu / Local Service Spotlight public page; original recording attributed by the page to Better Business Bureau",
+      "sourceVersion": "June 18, 2020 workshop; source page dated August 15, 2026; HTML snapshot checked October 14, 2026",
+      "checkedAt": "2026-10-14T01:16:06Z",
+      "useNote": "Original BBB local-business workshop with ad-test and content-library examples. Historical reference, not current ad-launch instructions. Keep named examples at the source; do not copy or rehost them. Playback and captions are untested. Verify current platform rules and obtain approval before any spend.",
+      "pathIds": [
+        "running-ads",
+        "digital-agency"
+      ],
+      "verification": {
+        "method": "anonymous-get",
+        "status": 200,
+        "sha256": "926134b5e8510667e9e76afc3f3fac9733f23d03794f78186693868241ed75ab"
+      }
+    },
+    {
       "id": "content-marketing-course-entry",
       "title": "Content Marketing Course — public information",
       "kind": "course",
