@@ -92,6 +92,15 @@ links, not rehosted files or a claim that all training is now consolidated.
 The recording page is linked without embedding or autoplay. Playback,
 captions and paid-course entitlement are not certified by a successful link check.
 
+The next source addition links the original **June 2020 BBB local-business
+workshop recording page** from the ad-review and agency-leadership paths.
+It is a historical reference for ad-test and content-library examples, not a
+current ad-launch recipe. The original page keeps its audience, named examples
+and recording attribution. No recording or example is copied into this library;
+playback and captions remain untested. Current platform rules and spending
+approval still apply. This brings the selected catalog to eight source links,
+not eight completed courses or a complete inventory.
+
 `build/packs.json` also owns `teachingMaterials` and `practiceSessions`.
 `build/teaching_materials.py` validates allowed fields, public hosts, access
 tiers, source checksums and cross-references. A public practice session cannot
