@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-10-14T18:07:25+00:00",
+ "generatedAt": "2026-10-14T18:21:51+00:00",
  "countDefinition": "Verified meta-article sources explicitly classified by the recorded evidence method and linked to the normalized canonical hub. Unknown is never coerced to zero.",
  "strengthBands": [
   {
@@ -37,9 +37,9 @@
  "stats": {
   "articleHubs": 53,
   "definitiveArticles": 15,
-  "verifiedMetaArticles": 88,
-  "metaOrbitHubsWithEvidence": 13,
-  "metaOrbitHubsUnknown": 40
+  "verifiedMetaArticles": 89,
+  "metaOrbitHubsWithEvidence": 14,
+  "metaOrbitHubsUnknown": 39
  },
  "hubs": [
   {
@@ -2280,17 +2280,45 @@
     "remove-duplicate-thin-pages",
     "replace-ai-looking-content-with-real-eeat"
    ],
-   "metaArticleCount": null,
-   "metaCountStatus": "unknown",
-   "metaOrbitStrength": null,
-   "metaOrbitTier": "Unknown",
-   "metaArticles": [],
-   "taskMetaCounts": null,
-   "tasksWithMeta": null,
-   "taskCoverage": null,
-   "priorityCoverage": null,
+   "metaArticleCount": 1,
+   "metaCountStatus": "partial",
+   "metaOrbitStrength": 1,
+   "metaOrbitTier": "Emerging",
+   "metaArticles": [
+    "https://local-service-spotlight.github.io/task-library/maintenance/site-guide-seo-placement-2026-10-15.html"
+   ],
+   "taskMetaCounts": {
+    "place-content-on-seo-tree-with-proper-links": 1,
+    "enhance-existing-articles-before-creating-new-ones": 0,
+    "fit-every-new-piece-into-the-tree-structure": 0,
+    "identify-and-eliminate-orphan-standalone-articles": 0,
+    "link-leaves-to-branches-branches-to-trunk": 0,
+    "map-content-hierarchically-root-trunk-branches-leaves": 0,
+    "remove-duplicate-thin-pages": 0,
+    "replace-ai-looking-content-with-real-eeat": 0
+   },
+   "tasksWithMeta": 1,
+   "taskCoverage": 0.125,
+   "priorityCoverage": 0.19230769230769232,
    "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?article=https%3A%2F%2Fblitzmetrics.com%2Fseo-tree",
-   "records": []
+   "metaOrbitAudited": "2026-10-14",
+   "metaOrbitEvidenceUrl": "https://local-service-spotlight.github.io/task-library/meta-orbits.json",
+   "metaOrbitEvidenceMethod": "One published post that documents a completed observable run whose main deliverable materially executes this hub, is explicitly classified by taxonomy or authored meta language, and links to the exact canonical hub in task-specific narrative or receipt. Shared maps, compliance tables, related-reading lists, indexes, instructions, archives, self-links and incidental cross-links do not count. Each post has one reviewed primary parent.",
+   "records": [
+    {
+     "sourceUrl": "https://local-service-spotlight.github.io/task-library/maintenance/site-guide-seo-placement-2026-10-15.html",
+     "hubUrl": "https://blitzmetrics.com/seo-tree",
+     "evidenceMethod": "Anonymous published meta exact-byte comparison, task-specific canonical links, exact current recipe and independently accepted saved/public placement result. Phone and desktop opening inspected.",
+     "counted": true,
+     "reason": "One published record of one completed current-recipe placement. Names only this task; sibling tasks, novice use and site delivery are not certified.",
+     "taskSlugs": [
+      "place-content-on-seo-tree-with-proper-links"
+     ],
+     "title": "Connect a task guide to its topic home",
+     "taxonomyEvidence": [],
+     "primaryParentHub": "https://blitzmetrics.com/seo-tree"
+    }
+   ]
   },
   {
    "key": "blitzmetrics.com/seo-tree-site-directory",
