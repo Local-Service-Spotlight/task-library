@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-10-14T18:21:51+00:00",
+ "generatedAt": "2026-10-14T19:00:02+00:00",
  "countDefinition": "Verified meta-article sources explicitly classified by the recorded evidence method and linked to the normalized canonical hub. Unknown is never coerced to zero.",
  "strengthBands": [
   {
@@ -36,7 +36,7 @@
  ],
  "stats": {
   "articleHubs": 53,
-  "definitiveArticles": 15,
+  "definitiveArticles": 16,
   "verifiedMetaArticles": 89,
   "metaOrbitHubsWithEvidence": 14,
   "metaOrbitHubsUnknown": 39
@@ -2264,10 +2264,10 @@
   {
    "key": "blitzmetrics.com/seo-tree",
    "url": "https://blitzmetrics.com/seo-tree",
-   "state": "wip",
+   "state": "ready",
    "articleKind": "topic-hub",
    "taskCount": 8,
-   "completeTaskCount": 5,
+   "completeTaskCount": 8,
    "importance": 5,
    "importanceTotal": 26,
    "taskSlugs": [

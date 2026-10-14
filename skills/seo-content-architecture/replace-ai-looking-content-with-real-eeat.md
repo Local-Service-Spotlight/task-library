@@ -4,12 +4,12 @@ description: "Help readers see the real work behind your claims."
 category: SEO & Content Architecture
 stage: —
 definitive_article: /seo-tree
-status: needs-work
+status: complete
 ---
 
 # Replace AI-looking content with real EEAT
 
-Help readers see the real work behind your claims. This guide adds clear facts and proof they can check to vague pages. Start with the page’s main promise and the true sources that support it.
+Help readers see the proof behind your claims. This guide turns vague text into facts they can check. Use our [article guide](https://localservicespotlight.com/article-guidelines/) to match each claim with a real source and make the page clear.
 
 **The path:** Page promise → Verified proof file → Focused rewrite → Claim and visual checks
 
@@ -51,7 +51,7 @@ A fictional builder’s page says it is “the best” without proof. The source
 
 [Improve the existing owning page](https://local-service-spotlight.github.io/task-library/?task=enhance-existing-articles-before-creating-new-ones#task-enhance-existing-articles-before-creating-new-ones) receives related hub improvements; [Review the opening and context](https://local-service-spotlight.github.io/task-library/?task=step-7-write-hook-and-establish-context#task-step-7-write-hook-and-establish-context) receives exact opening text and evidence. The page owner gets the reviewed source and remaining proof gaps; [Measure the accepted change set](https://local-service-spotlight.github.io/task-library/?task=step-6-measure-and-iterate-with-maa#task-step-6-measure-and-iterate-with-maa) receives only actual released changes.
 
-This task supports the [Content Factory: Produce, Process, Post and Promote](https://localservicespotlight.com/content-factory/). Identity, proof, access or coordination can support several stages. Use the real inputs and receiving owner above; this task does not create unrelated transcripts, clips or ads merely because the diagram has four stages.
+This task supports Process and Post in the [Content Factory](https://localservicespotlight.com/content-factory/). Process checks the page and its proof; Post saves the approved change and checks the live result. The receiving owner and evidence above define the next task. Promotion and traffic measurement use the accepted page under their own scope.
 
 ## Start with an agent
 
@@ -79,6 +79,6 @@ Reuse the same execution ID for internal checks, revisions, retries and meta wri
 
 ## Review and evidence still needed
 
-The inherited contributor status is `needs-work`. It is preserved, not promoted by this rewrite. That label alone does not prove document readiness, account access, an actual execution or a client result.
+The contributor label describes the written guide. It does not prove account access, an actual execution or a client result. Exact-revision written review is recorded separately from actual use.
 
-The fictional example teaches the method and does not fill a real-run evidence gap. A named semantic reviewer must check the actual opening, full method, sources and handoff. Check the useful opening visual in the normal rendered guide at the current required desktop and mobile sizes, including 1280 × 800 and 390 × 844. Source readability checks do not prove public presentation or task execution.
+The fictional example teaches the method and does not fill a real-run evidence gap. The exact written review records the actual opening, full method, sources and handoff. Check the useful opening visual in the normal rendered guide at the current required desktop and mobile sizes, including 1280 × 800 and 390 × 844. Source readability checks do not prove public presentation or task execution.

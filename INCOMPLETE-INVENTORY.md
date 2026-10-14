@@ -2,13 +2,13 @@
 
 Generated from `build/build.py` after scoring in `build/factory.py`.
 
-Library: **276** tasks — 127 complete, 126 needs-work, 23 gaps.
+Library: **276** tasks — 130 complete, 123 needs-work, 23 gaps.
 
 Importance distribution: 5★=75, 4★=43, 3★=115, 2★=43, 1★=0
 
 Scoring: `importance = max(frequency, revenue, gating)`. Ads, pixels, GSC, Descript, WP-author, and Meta BM are 5s even when the task is small, because they unblock the line.
 
-Incomplete: **149**. This file is the work order. Do not re-sample.
+Incomplete: **146**. This file is the work order. Do not re-sample.
 
 | ★ | Status | Phase | Category | Slug | Lane | Why |
 |---|---|---|---|---|---|---|
@@ -97,7 +97,6 @@ Incomplete: **149**. This file is the work order. Do not re-sample.
 | 3 | needs-work | — |  | `generate-backlinks-and-entity-mentions` | judgment | supporting |
 | 3 | needs-work | — |  | `get-featured-on-podcasts` | any | supporting |
 | 3 | needs-work | — |  | `get-mentioned-in-publications` | any | supporting |
-| 3 | needs-work | — |  | `identify-and-eliminate-orphan-standalone-articles` | any | supporting |
 | 3 | needs-work | — |  | `implement-person-schema-with-sameas-links` | any | supporting |
 | 3 | needs-work | — |  | `implement-technical-schema-markup` | any | supporting |
 | 3 | needs-work | Post |  | `link-all-content-back-to-personal-brand-site` | any | supporting |
@@ -108,8 +107,6 @@ Incomplete: **149**. This file is the work order. Do not re-sample.
 | 3 | needs-work | Post |  | `publish-seo-tree-site-directory` | any | supporting |
 | 3 | needs-work | Produce |  | `record-one-minute-videos-answering-customer-questions` | any | supporting |
 | 3 | needs-work | Produce |  | `record-screen-shares-of-real-audits` | any | supporting |
-| 3 | needs-work | — |  | `remove-duplicate-thin-pages` | any | supporting |
-| 3 | needs-work | — |  | `replace-ai-looking-content-with-real-eeat` | any | supporting |
 | 3 | needs-work | Process |  | `repurpose-videos-into-blog-posts-via-content-factory` | any | supporting |
 | 3 | needs-work | — |  | `run-weekly-client-seo-audits` | any | supporting |
 | 3 | needs-work | — |  | `secure-guest-appearances-and-speaking-engagements` | any | supporting |
