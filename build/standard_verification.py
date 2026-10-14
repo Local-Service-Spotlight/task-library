@@ -11,6 +11,7 @@ from collections import Counter
 from datetime import datetime, timedelta, timezone
 
 import article_semantic_reviews
+import executions
 
 
 GATE_ORDER = (
@@ -443,6 +444,8 @@ def report(tasks, generated_at=None):
             'historicalDeliveryCount': (task.get('historicalDeliveryEvidence') or {}).get('count', 0),
             'historicalEvidenceIds': [item['evidenceId'] for item in
                                       (task.get('historicalDeliveryEvidence') or {}).get('records', [])],
+            'proofSummary': task.get('proofSummary') or executions.proof_summary([], []),
+            'historicalDeliveryEvidence': task.get('historicalDeliveryEvidence') or {},
             'nextAction': task['standardVerification']['nextAction'],
             'standardVerification': task['standardVerification'],
         })
@@ -459,6 +462,9 @@ def report(tasks, generated_at=None):
         'stats': {
             'tasks': len(tasks),
             'fullyVerifiedTasks': sum(t['standardVerification']['fullyVerified'] for t in tasks),
+            'proofSummary': executions.proof_summary(
+                [item for task in tasks for item in (task.get('proofSummary') or {}).get('acceptedRecordedOutputs', [])],
+                [item for task in tasks for item in (task.get('historicalDeliveryEvidence') or {}).get('records', [])]),
             'semanticHoldHubs': len({normalize for t in tasks
                                      if t['standardVerification']['gates']['articleSemanticCertification']['state'] == 'hold'
                                      for normalize in [t['standardVerification'].get('articleKey')] if normalize}),
@@ -483,7 +489,11 @@ def write_artifacts(payload, out_dir):
               'category', 'importance', 'revenueEstimate', 'dependencyEstimate',
               'frequencyEstimate', 'valueBasis', 'effortEstimate', 'status', 'articleUrl', 'taskLibraryUrl',
               'unmetStandardGates', 'heldStandardGates', 'unknownStandardGates',
-              'nextAction', 'historicalDeliveryCount', 'historicalEvidenceIds'] + list(GATE_ORDER)
+              'nextAction', 'historicalDeliveryCount', 'historicalEvidenceIds',
+              'recordedAcceptedOutputCount', 'recordedAcceptedReviewCount', 'acceptedRecordedOutputs',
+              'historicalAcceptedOutputCount', 'historicalIdentityOutputOnlyCount',
+              'historicalAcceptedHandoffPassCount', 'historicalAcceptedHandoffHoldCount',
+              'historicalAcceptedHandoffUnresolvedCount', 'historicalAcceptedEvidenceIds'] + list(GATE_ORDER)
     with open(csv_path, 'w', encoding='utf-8', newline='') as target:
         writer = csv.DictWriter(target, fieldnames=fields, lineterminator='\n')
         writer.writeheader()
@@ -495,11 +505,55 @@ def write_artifacts(payload, out_dir):
                 'heldStandardGates': ';'.join(verification['heldStandardGates']),
                 'unknownStandardGates': ';'.join(verification['unknownStandardGates']),
                 'historicalEvidenceIds': ';'.join(row.get('historicalEvidenceIds', [])),
+                **{key: row['proofSummary'][key] for key in fields if key in row['proofSummary']},
+                'acceptedRecordedOutputs': json.dumps(row['proofSummary']['acceptedRecordedOutputs'], ensure_ascii=False),
+                'historicalAcceptedEvidenceIds': ';'.join(row['proofSummary']['historicalAcceptedEvidenceIds']),
                 **{gate_id: verification['gates'][gate_id]['state']
                    for gate_id in GATE_ORDER},
             })
     with open(html_path, 'w', encoding='utf-8') as target:
         target.write(_html_report(payload))
+
+
+def _proof_html(summary, historical=None, detail=False):
+    esc = lambda value: html.escape(str(value or ''), quote=True)
+    text = (f'{summary["recordedAcceptedOutputCount"]} recorded jobs have accepted results. '
+            f'{summary["historicalVerifiedOutputCount"]} older deliveries have checked outputs; '
+            f'{summary["historicalAcceptedOutputCount"]} were accepted for the scope described below. '
+            f'{summary["historicalIdentityOutputOnlyCount"]} have identity/output proof without recorded acceptance. '
+            f'Handoff for accepted older deliveries: {summary["historicalAcceptedHandoffPassCount"]} pass, '
+            f'{summary["historicalAcceptedHandoffHoldCount"]} held, '
+            f'{summary["historicalAcceptedHandoffUnresolvedCount"]} unresolved.')
+    output = f'<p>{esc(text)} Dated proof does not pass a verification gate or certify today’s recipe or novice use.</p>'
+    if not detail:
+        return output
+    items = []
+    for review in summary['acceptedRecordedOutputs']:
+        criteria = []
+        for name, item in review['criteria'].items():
+            links = ''.join(f' <a href="{esc(url)}">Evidence {number + 1}</a>'
+                            for number, url in enumerate(item['evidenceUrls']))
+            source = f' <a href="{esc(item["sourceUrl"])}">Source requirement</a>' if item['sourceUrl'] else ''
+            private = ' Private proof retained.' if item['privateEvidenceRecorded'] or item['sourcePrivateEvidenceRecorded'] else ''
+            criteria.append(f'<li>{esc(name)}: {esc(item["state"])} — Expected: {esc(item["expectedResult"])} '
+                            f'Observed: {esc(item["observedResult"])}.{source}{links}{private}</li>')
+        items.append(f'<li><strong>Accepted recorded output</strong> · {esc(review["reviewedAt"])} · '
+                     f'<code>{esc(review["executionId"])}</code><br>{esc(review["result"])}'
+                     f'<br>Scope: named criteria below; handoff: {esc(review["nextHandoff"])}'
+                     f'<details><summary>Exact recipe and instruction identities</summary><small style="overflow-wrap:anywhere">Recipe: {esc(review["canonicalURL"])} · {esc(review["representation"])} · '
+                     f'<code>{esc(review["recipeSourceSha256"])}</code>; instruction: '
+                     f'<code>{esc(review["instructionSourceSha256"])}</code></small></details><ul>{"".join(criteria)}</ul></li>')
+    for item in (historical or {}).get('records', []):
+        if item['evidenceId'] not in summary['historicalVerifiedEvidenceIds']:
+            continue
+        items.append(f'<li><strong>Historical output</strong> · checked {esc(item["observedAt"])}<br>'
+                     f'{esc(item["outcome"])}<br>Acceptance: {esc(item["review"]["acceptance"]["state"])} — '
+                     f'{esc(item["review"]["acceptance"]["notes"])}<br>Handoff: '
+                     f'{esc(item["review"]["handoff"]["state"])} — {esc(item["review"]["handoff"]["notes"])}'
+                     f'<br>Original recipe: {esc(item["recipeRevision"]["state"])}</li>')
+    if items:
+        output += f'<details><summary>Read dated output proof and scope</summary><ul>{"".join(items)}</ul></details>'
+    return output
 
 
 def _html_report(payload):
@@ -549,7 +603,10 @@ def _html_report(payload):
             f'<td data-label="Queue">{row["queuePosition"]}</td><td data-label="Priority"><strong>{esc(row["priority"])}</strong><br>'
             f'<small>{esc(row["priorityReason"])}</small></td>'
             f'<td data-label="Task">{title}<br><code>{esc(row["slug"])}</code><br><small>{esc(row.get("category"))}</small>'
-            + (f'<p>{row["historicalDeliveryCount"]} checked historical delivery record(s). Open the task for proof; this does not pass a verification gate.</p>' if row.get('historicalDeliveryCount') else '') + '</td>'
+            + (_proof_html(row['proofSummary'], row['historicalDeliveryEvidence'], detail=True) +
+               f'<p><strong>Current recipe acceptance: {esc(verification["gates"]["acceptedExecution"]["state"])}</strong> — '
+               f'{esc(verification["gates"]["acceptedExecution"]["reason"])}</p>'
+               if row['proofSummary']['recordedAcceptedOutputCount'] or row.get('historicalDeliveryCount') else '') + '</td>'
             f'<td data-label="Estimated value">Revenue role {esc(row.get("revenueEstimate")) or "unknown"}/5<br>'
             f'Dependencies {esc(row.get("dependencyEstimate")) or "unknown"}/5<br>'
             f'Frequency {esc(row.get("frequencyEstimate")) or "unknown"}/5<br>'
@@ -576,6 +633,8 @@ def _html_report(payload):
 <p class="lead">Use this list to find which work guides in the <a href="./">Task Library</a> still need checks before your team relies on them. It shows what we know, what is missing, and what to check next. These checks help keep the Task Library useful as each real job teaches us more.</p>
 <ol class="process" aria-label="How real work improves a guide"><li>Read guide</li><li>Try task</li><li>Check result</li><li>Improve guide</li></ol>
 <p><strong>{stats['fullyVerifiedTasks']} of {stats['tasks']} tasks currently pass every check.</strong> A guide can be listed and reviewed while its real result or first-user setup is still unknown. Generated {esc(payload['generatedAt'])}. Download the <a href="verification-queue.json">JSON report</a> or <a href="verification-queue.csv">CSV queue</a>.</p>
+{_proof_html(stats['proofSummary'])}
+<p>Current recipe acceptance: {stats['gateCounts']['acceptedExecution']['pass']} task(s) pass. A beginner used the guide without help: {stats['gateCounts']['setupSuccess']['pass']} task(s) pass. Installation and scheduling are not certified by these checks.</p>
 <p>Choose work that helps the business earn or keep revenue. Within each priority lane, this list now puts the estimated revenue role and the work it unlocks ahead of the number of missing checks. These are planning estimates, not proof of sales. Before choosing a batch, compare the next fix with the current offer, demand, available access and effort. Follow the <a href="https://github.com/Local-Service-Spotlight/task-library/blob/main/MAINTAINING-THE-LIBRARY.md">maintenance guide</a> to record that choice and its evidence.</p>
 <section class="summary" aria-labelledby="gate-summary"><h2 id="gate-summary">Gate counts</h2><ul>{''.join(gate_cards)}</ul></section>
 <section class="filters" aria-label="Queue filters"><label>Search tasks<input id="search" type="search" autocomplete="off" placeholder="Name, slug or category"></label><label>Priority<select id="priority"><option value="">All priorities</option><option>P0</option><option>P1</option><option>P2</option><option>P3</option></select></label><label>Evidence state<select id="state"><option value="">All states</option><option value="hold">Has a hold</option><option value="unmet">Has an unmet gate</option><option value="unknown">Has an unknown gate</option><option value="pass">Has a passing gate</option></select></label><p id="shown" aria-live="polite"></p></section>

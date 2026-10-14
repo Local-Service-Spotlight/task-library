@@ -225,6 +225,10 @@ Write the meta article for every real execution. A meta article documents what a
 
 The `before`/`after` dashboard station suggestions are generated neighbors, not source-verified prerequisites. Label actual prerequisite, input reference, companion, child and downstream links by their real role and condition. Do not expand every task under a referenced hub into a prerequisite list.
 
+## Dated output proof
+
+The dashboard and verification queue also show independently accepted recorded outputs and checked historical source jobs, derived from the existing ledger. These dated claims retain their named output scope, review dates and handoff limitations. Historical acceptance requires identity, output and acceptance pass; identity/output-only proof and handoff holds appear separately. Source jobs and recorded executions are distinct counts, deduplicated globally even when one job supports multiple tasks. These summaries do not change any full-verification gate or certify the current recipe, unassisted novice use, installation or scheduling. See [the execution schema](EXECUTION-LEDGER.md#read-dated-acceptance-beside-current-verification).
+
 ## Per-task verification queue
 
 Use the generated [standard verification queue](https://local-service-spotlight.github.io/task-library/verification-queue.html) to choose the next review. Its JSON and CSV exports are generated from the same resolved source files, registry, article evidence and execution ledger as the dashboard. Do not hand-edit queue rows.

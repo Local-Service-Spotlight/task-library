@@ -70,6 +70,49 @@ def observation(source_hash='a' * 64, observed='2026-09-15T12:00:00Z', state='ob
 
 
 class StandardVerificationTests(unittest.TestCase):
+    def test_output_summaries_agree_in_json_csv_html_and_do_not_promote_shared_hub(self):
+        import csv
+        from test_executions import historical
+        current = task('first-task'); sibling = task('second-task', status='needs-work')
+        current['articleState'] = sibling['articleState'] = 'wip'
+        run = execution(); run['acceptanceReviews'] = [acceptance()]
+        old = historical(); old['taskSlugs'] = ['first-task', 'second-task']
+        old['review']['handoff']['state'] = 'hold'
+        tasks = [current, sibling]
+        public = executions.attach(tasks, [run], datetime(2026, 9, 16, tzinfo=timezone.utc), [old])
+        verification.derive(tasks, {t['slug']: t['instructionReview'] for t in tasks}, {},
+                            task_build.normalize_article_url,
+                            article_evidence={'semanticReviews': [], 'revisionObservations': []})
+        payload = verification.report(tasks)
+        self.assertEqual(payload['stats']['proofSummary'], public['proofSummary'])
+        self.assertEqual(payload['stats']['proofSummary']['historicalAcceptedOutputCount'], 1)
+        self.assertEqual(payload['stats']['proofSummary']['recordedAcceptedOutputCount'], 1)
+        self.assertFalse(current['standardVerification']['fullyVerified'])
+        self.assertEqual(current['standardVerification']['gates']['articleCatalogGate']['state'], 'unmet')
+        self.assertEqual(current['standardVerification']['gates']['setupSuccess']['state'], 'unknown')
+        with tempfile.TemporaryDirectory() as out:
+            verification.write_artifacts(payload, out)
+            saved = json.loads((Path(out) / 'verification-queue.json').read_text())
+            self.assertEqual(saved['stats']['proofSummary'], public['proofSummary'])
+            with open(Path(out) / 'verification-queue.csv') as source:
+                exported = {row['slug']: row for row in csv.DictReader(source)}
+            self.assertEqual(exported['first-task']['recordedAcceptedOutputCount'], '1')
+            self.assertEqual(exported['second-task']['recordedAcceptedOutputCount'], '0')
+            self.assertEqual(exported['first-task']['historicalAcceptedHandoffHoldCount'], '1')
+            self.assertEqual(json.loads(exported['first-task']['acceptedRecordedOutputs']), current['proofSummary']['acceptedRecordedOutputs'])
+            rendered = (Path(out) / 'verification-queue.html').read_text()
+            self.assertIn('2026-09-15T11:30:00Z', rendered)
+            self.assertIn('Scope: named criteria', rendered)
+            self.assertIn('1 were accepted for the scope described below', rendered)
+            self.assertIn('Handoff: hold', rendered)
+            self.assertIn('Current recipe acceptance: 0 task(s) pass', rendered)
+            self.assertIn('Expected: A checked result exists', rendered)
+            self.assertIn('https://example.com/result/', rendered)
+            self.assertIn('overflow-wrap:anywhere', rendered)
+            for private in (old['sourceIdentitySha256'], old['evidence'][0]['sha256'], old['executorCode'], old['reviewerCode']):
+                self.assertNotIn(private, json.dumps(saved))
+                self.assertNotIn(private, rendered)
+
     def derive(self, tasks, audits=None, records=None, reviews=None):
         records = records or []
         executions.attach(tasks, records, datetime(2026, 9, 16, tzinfo=timezone.utc))
@@ -299,6 +342,7 @@ class StandardVerificationTests(unittest.TestCase):
         self.assertEqual(self.derive_acceptance(current, [r], [observation('c' * 64)])['state'], 'unmet')
         current = task('first-task')
         self.assertEqual(self.derive_acceptance(current, [r], [observation(observed='2026-09-14T11:00:00Z')])['state'], 'unknown')
+        self.assertEqual(current['proofSummary']['recordedAcceptedOutputCount'], 1)
         r['acceptanceReviews'][0]['criteria']['result']['state'] = 'hold'
         current = task('first-task')
         self.assertEqual(self.derive_acceptance(current, [r], [observation()])['state'], 'hold')
@@ -309,6 +353,7 @@ class StandardVerificationTests(unittest.TestCase):
         current = task('first-task')
         gate = self.derive_acceptance(current, [accepted, partial], [observation()])
         self.assertEqual(gate['state'], 'unmet')
+        self.assertEqual(current['proofSummary']['recordedAcceptedOutputCount'], 1)
 
     def test_overlapping_later_attempt_cannot_inherit_older_completion(self):
         accepted = execution(); accepted['acceptanceReviews'] = [acceptance()]
@@ -354,6 +399,7 @@ class StandardVerificationTests(unittest.TestCase):
         current = task('first-task'); current['_sourceSha256'] = 'd' * 64
         gate = self.derive_acceptance(current, [r], [observation()])
         self.assertEqual(gate['state'], 'unmet')
+        self.assertEqual(current['proofSummary']['recordedAcceptedOutputCount'], 1)
         self.assertEqual(current['standardVerification']['gates']['setupSuccess']['state'], 'unknown')
         current = task('first-task', article='https://example.com/other/')
         gate = self.derive_acceptance(current, [r], [observation()])
@@ -362,7 +408,9 @@ class StandardVerificationTests(unittest.TestCase):
     def test_partial_correction_and_later_blocked_cannot_pass(self):
         r = execution(); r['acceptanceReviews'] = [acceptance()]
         r['status'] = 'partial'
-        self.assertEqual(self.derive_acceptance(task('first-task'), [r], [observation()])['state'], 'unmet')
+        current = task('first-task')
+        self.assertEqual(self.derive_acceptance(current, [r], [observation()])['state'], 'unmet')
+        self.assertEqual(current['proofSummary']['recordedAcceptedOutputCount'], 0)
         r['status'] = 'completed'
         blocked = execution(); blocked.update(executionId='later-blocked', status='blocked',
             startedAt='2026-09-15T12:30:00Z', recordedAt='2026-09-15T12:30:00Z', updatedAt='2026-09-15T12:30:00Z')

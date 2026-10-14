@@ -71,6 +71,9 @@ function buildList(items, ordered){
     return li;
   }).join('') + '</' + tag + '>';
 }
+function isFactoryMarker(line){
+  return /^\s*<!-- factory-layer:(?:start|end) -->\s*$/.test(line);
+}
 function renderMD(src){
   const out = [];
   const lines = String(src == null ? '' : src).replace(/\r\n?/g, '\n').split('\n');
@@ -86,7 +89,7 @@ function renderMD(src){
         if (m) rows.push('<div class="fm-row"><span class="fm-k">' + esc(m[1]) + '</span><span class="fm-v">' + inline(m[2].replace(/^["']|["']$/g, '')) + '</span></div>');
         else if (lines[k].trim()) rows.push('<div class="fm-row"><span class="fm-k"></span><span class="fm-v">' + inline(lines[k].trim()) + '</span></div>');
       }
-      if (rows.length) out.push('<div class="btl-fm"><div class="fm-t">skill.md frontmatter</div>' + rows.join('') + '</div>');
+      if (rows.length) out.push('<details class="btl-fm"><summary class="fm-t">Source fields for this guide</summary>' + rows.join('') + '</details>');
       i = j + 1;
     }
   }
@@ -102,6 +105,8 @@ function renderMD(src){
       out.push('<pre><code>' + esc(buf.join('\n')) + '</code></pre>');
       continue;
     }
+    /* Build delimiters are source bookkeeping, not reader instructions. */
+    if (isFactoryMarker(L)){ i++; continue; }
     /* heading */
     m = L.match(/^(#{1,6})\s+(.*)$/);
     if (m){
@@ -140,7 +145,7 @@ function renderMD(src){
       while (i < lines.length){
         const mm = lines[i].match(re);
         if (mm){ items.push({ ind: mm[1].length, txt: mm[3] }); i++; }
-        else if (lines[i].trim() && /^\s{2,}/.test(lines[i]) && items.length){ items[items.length - 1].txt += ' ' + lines[i].trim(); i++; }
+        else if (lines[i].trim() && !isFactoryMarker(lines[i]) && /^\s{2,}/.test(lines[i]) && items.length){ items[items.length - 1].txt += ' ' + lines[i].trim(); i++; }
         else break;
       }
       out.push(buildList(items, ordered));
@@ -148,7 +153,7 @@ function renderMD(src){
     }
     /* paragraph */
     const buf = [L]; i++;
-    while (i < lines.length && lines[i].trim() &&
+    while (i < lines.length && lines[i].trim() && !isFactoryMarker(lines[i]) &&
            !/^(#{1,6}\s|\s*```|\s*>|\s*(?:[-*+]|\d+[.)])\s|\s*(?:-{3,}|\*{3,}|_{3,})\s*$)/.test(lines[i]) &&
            !(lines[i].indexOf('|') !== -1 && /^\s*\|?[\s:|-]+\|?\s*$/.test(lines[i + 1] || '') && /-/.test(lines[i + 1] || ''))){
       buf.push(lines[i]); i++;
@@ -169,7 +174,9 @@ if (!DATA || !DATA.categories || !DATA.categories.length){
 /* ============================================================
    Enrich data once: ids, lowercase haystacks, provenance flags
    ============================================================ */
-const byId = {};
+const byId = Object.create(null);
+const bySlug = Object.create(null);
+const byArticle = Object.create(null);
 const hubByArticle = Object.create(null);
 function normalizeArticleUrl(url){
   try {
@@ -196,15 +203,21 @@ DATA.categories.forEach(function(c, ci){
     t._qa = /definition of done/i.test(content);
     t._exampleCount = null;
     t._exampleStatus = 'unknown';
-    const articleKey = normalizeArticleUrl(t.article);
-    t._hub = articleKey ? (hubByArticle[articleKey] || null) : null;
-    if (t._hub && t._hub.taskMetaCounts &&
-        Object.prototype.hasOwnProperty.call(t._hub.taskMetaCounts, t.slug)){
-      t._exampleCount = Number(t._hub.taskMetaCounts[t.slug]);
-      t._exampleStatus = t._hub.metaCountStatus || 'unknown';
-    }
     t._vis = true;
     byId[t._id] = t;
+    if (t.slug) bySlug[t.slug] = t;
+    const articleKey = normalizeArticleUrl(t.article);
+    if (articleKey){
+      t._articleKey = articleKey;
+      t._hub = hubByArticle[articleKey] || null;
+      if (t._hub && t._hub.taskMetaCounts &&
+          Object.prototype.hasOwnProperty.call(t._hub.taskMetaCounts, t.slug)){
+        t._exampleCount = Number(t._hub.taskMetaCounts[t.slug]);
+        t._exampleStatus = t._hub.metaCountStatus || 'unknown';
+      }
+      if (!byArticle[articleKey]) byArticle[articleKey] = [];
+      byArticle[articleKey].push(t);
+    }
   });
 });
 
@@ -212,7 +225,15 @@ DATA.categories.forEach(function(c, ci){
    Hero, footer, stats, health bar
    ============================================================ */
 const dl = el('#btl-dl');
-if (DATA.bundleUrl){ dl.href = DATA.bundleUrl; dl.textContent = '⬇ Download ' + (DATA.stats.total || 0) + ' guides + first steps (.zip)'; } else { dl.hidden = true; }
+if (DATA.bundleUrl){
+  dl.href = DATA.bundleUrl;
+  dl.textContent = '⬇ All ' + (DATA.stats.total || 0) + ' guides + first steps (.zip)';
+  var readyLink = document.createElement('a');
+  readyLink.href = 'TaskLibrary-Skills-ready.zip';
+  readyLink.className = 'btl-btn';
+  readyLink.textContent = 'Reported complete (' + (DATA.stats.complete || 0) + ') + first steps ⬇';
+  el('#btl-download-options').appendChild(readyLink);
+} else { dl.hidden = true; }
 const metaBtn = el('#btl-meta');
 if (DATA.metaArticleUrl){ metaBtn.href = DATA.metaArticleUrl; metaBtn.hidden = false; }
 el('#btl-updated').textContent = DATA.updated || '—';
@@ -224,6 +245,10 @@ if (DATA.metaArticleUrl){
 }
 
 const S = DATA.stats || {};
+const reviewedStatsValid = Number.isInteger(S.reviewedInstructions) && S.reviewedInstructions >= 0 &&
+  Number.isInteger(S.total) && S.total >= S.reviewedInstructions;
+el('#btl-reviewed-count').textContent = reviewedStatsValid ? fmt(S.reviewedInstructions) : '—';
+el('#btl-reviewed-total').textContent = reviewedStatsValid ? fmt(S.total) : '—';
 function countUp(node, val){
   if (reduced || !val){ node.textContent = fmt(val); return; }
   const t0 = performance.now(), dur = 950;
@@ -236,9 +261,9 @@ function countUp(node, val){
 }
 const cards = [
   { k:'total',              label:'Total tasks',         cls:'c-total', icon:'🗂️' },
-  { k:'complete',           label:'Reported complete',               cls:'c-ok',    icon:'✅', chip:'complete' },
-  { k:'needsWork',          label:'Needs work',                 cls:'c-warn',  icon:'🛠️', chip:'needs-work' },
-  { k:'gaps',               label:'Gap',           cls:'c-bad',   icon:'⛳', chip:'gap' },
+  { k:'complete',           label:'Reported complete',            cls:'c-ok',    icon:'✅', chip:'complete' },
+  { k:'needsWork',          label:'Needs work',          cls:'c-warn',  icon:'🛠️', chip:'needs-work' },
+  { k:'gaps',               label:'Gaps',                cls:'c-bad',   icon:'⛳', chip:'gap' },
   { k:'owners',             label:'Owners recorded',              cls:'c-art',   icon:'👤' },
   { k:'categories',         label:'Categories',          cls:'c-cat',   icon:'🧭' }
 ];
@@ -264,9 +289,50 @@ cards.forEach(function(c){ countUp(el('[data-stat="' + c.k + '"]'), S[c.k] || 0)
     '<span class="hb-bad" style="width:' + pc(bad) + '%" title="Gaps: ' + bad + '"></span>';
   el('#btl-health-pct').textContent = Math.round(ok / total * 100) + '% reported complete';
   el('#btl-health-legend').innerHTML =
-    '<span><span class="d d-ok"></span><b>' + fmt(ok) + '</b> complete</span>' +
+    '<span><span class="d d-ok"></span><b>' + fmt(ok) + '</b> reported complete</span>' +
     '<span><span class="d d-warn"></span><b>' + fmt(warn) + '</b> needs work</span>' +
     '<span><span class="d d-bad"></span><b>' + fmt(bad) + '</b> gaps</span>';
+  const verification = DATA.verificationSummary || {};
+  if (verification.proofSummary) {
+    const gates = verification.gateCounts || {};
+    el('#btl-health-legend').insertAdjacentHTML('afterend',
+      '<section aria-label="Dated delivery proof and current verification"><p><strong>' + fmt(verification.fullyVerifiedTasks) +
+      ' tasks pass every current standard gate.</strong> Current recipe acceptance: ' + fmt((gates.acceptedExecution || {}).pass) +
+      ' tasks. A beginner used the guide without help: ' + fmt((gates.setupSuccess || {}).pass) + ' tasks.</p>' +
+      proofSummaryHTML(verification.proofSummary) + '</section>');
+  }
+})();
+
+(function factoryUI(){
+  const F = DATA.factory || {};
+  const phases = F.phases || [];
+  const host = el('#btl-phases');
+  if (host){
+    const counts = {};
+    DATA.categories.forEach(function(c){
+      c.tasks.forEach(function(t){
+        const p = t.phase || '—';
+        counts[p] = (counts[p] || 0) + 1;
+      });
+    });
+    host.innerHTML = phases.map(function(p){
+      return '<button type="button" class="btl-phase" data-phase="' + esc(p.id) + '" style="--pc:' + esc(p.color || '#4f8cff') + '" aria-pressed="false">' +
+        '<div class="pn">' + esc(p.label) + '</div>' +
+        '<div class="pb">' + esc(p.blurb) + '</div>' +
+        '<div class="pc">' + fmt(counts[p.id] || 0) + ' tasks</div></button>';
+    }).join('');
+  }
+  const rt = el('#btl-routing');
+  if (rt && F.doctrine){
+    rt.innerHTML = '<strong>Single-engine path.</strong> ' + esc(F.doctrine) +
+      (F.scoring ? ' <strong>Scoring:</strong> ' + esc(F.scoring) : '');
+  }
+  const lanes = el('#btl-lanes');
+  if (lanes && F.lanes){
+    lanes.innerHTML = Object.keys(F.lanes).map(function(k){
+      return '<div class="btl-lane"><div class="lk">' + esc(k) + '</div><div class="lv">' + esc(F.lanes[k]) + '</div></div>';
+    }).join('');
+  }
 })();
 
 /* ============================================================
@@ -274,9 +340,12 @@ cards.forEach(function(c){ countUp(el('[data-stat="' + c.k + '"]'), S[c.k] || 0)
    ============================================================ */
 const CHIPS = [
   { key:'all',        label:'All',        cls:'' },
-  { key:'complete',   label:'Reported complete',      cls:'ch-ok' },
-  { key:'needs-work', label:'Needs work',        cls:'ch-warn' },
-  { key:'gap',        label:'Gap',  cls:'ch-bad' }
+  { key:'reviewed',   label:'Steps reviewed', cls:'ch-ok' },
+  { key:'complete',   label:'Reported complete',   cls:'ch-ok' },
+  { key:'needs-work', label:'Needs work', cls:'ch-warn' },
+  { key:'gap',        label:'Gaps',       cls:'ch-bad' },
+  { key:'vol5',       label:'★5 only',    cls:'ch-vol' },
+  { key:'vol4',       label:'★4+',        cls:'ch-vol' }
 ];
 el('#btl-chips').innerHTML = CHIPS.map(function(c){
   return '<button type="button" class="btl-chip ' + c.cls + '" data-chip="' + c.key + '" aria-pressed="' + (c.key === 'all') + '">' +
@@ -286,6 +355,13 @@ el('#btl-chips').innerHTML = CHIPS.map(function(c){
 /* ============================================================
    Category sections (rows render lazily on first expand)
    ============================================================ */
+function volBar(n){
+  n = Math.max(1, Math.min(5, Number(n) || 1));
+  let html = '<span class="btl-vol" data-n="' + n + '" title="Importance ' + n + '/5 — max of estimated recurrence, ads/revenue, and gating; not observed run frequency">';
+  for (let i = 1; i <= 5; i++) html += '<i' + (i <= n ? ' class="on"' : '') + '></i>';
+  html += '<span class="btl-vol-n">' + n + '</span></span>';
+  return html;
+}
 function articleLink(t){
   if (!t.article) return '';
   const orbitData = t._hub || t;
@@ -311,12 +387,45 @@ function articleLink(t){
   }
   return '<a class="btl-art" href="' + esc(t.article) + '" target="_blank" rel="noopener" title="' + esc(title) + '">' + label + '</a>' + orbit;
 }
+function proofSummaryHTML(p){
+  if (!p) return '';
+  return '<p class="btl-chain"><strong>' + fmt(p.recordedAcceptedOutputCount) + ' recorded jobs have accepted results.</strong> ' +
+    fmt(p.historicalVerifiedOutputCount) + ' older deliveries have checked outputs; ' + fmt(p.historicalAcceptedOutputCount) +
+    ' were accepted for the scope described below. ' + fmt(p.historicalIdentityOutputOnlyCount) + ' have identity/output proof without recorded acceptance. ' +
+    'Handoff for accepted older deliveries: ' + fmt(p.historicalAcceptedHandoffPassCount) + ' pass, ' +
+    fmt(p.historicalAcceptedHandoffHoldCount) + ' held, ' + fmt(p.historicalAcceptedHandoffUnresolvedCount) +
+    ' unresolved. Counts describe dated output scope; current recipe and novice checks remain separate. Installation and scheduling are not certified.</p>';
+}
+function acceptedOutputHTML(t, detail){
+  const p = t.proofSummary;
+  if (!p || !p.recordedAcceptedOutputCount) return '';
+  let html = '<span class="btl-orbit" title="Completed recorded runs with an independent all-pass review for the named output scope. This dated proof does not certify today’s recipe.">' +
+    fmt(p.recordedAcceptedOutputCount) + ' recorded ' + (p.recordedAcceptedOutputCount === 1 ? 'job has an accepted result' : 'jobs have accepted results') + '</span>';
+  if (detail) {
+    const current = ((t.standardVerification || {}).gates || {}).acceptedExecution;
+    html += '<p class="btl-chain">Dated acceptance covers only the criteria recorded below. An instruction change, stale observation or later unsuccessful run can block current recipe acceptance while an earlier accepted output remains recorded.' +
+      (current ? ' <strong>Current recipe acceptance: ' + esc(current.state) + '</strong> — ' + esc(current.reason) : ' Current recipe acceptance: unknown.') + '</p><ul>';
+    html += p.acceptedRecordedOutputs.map(function(r){
+      return '<li><strong>Accepted ' + esc(r.reviewedAt) + '</strong> · <code>' + esc(r.executionId) + '</code><br>' +
+        esc(r.result) + '<br>Scope: named criteria; handoff: ' + esc(r.nextHandoff) +
+        '<details><summary>Exact recipe and instruction identities</summary><small style="overflow-wrap:anywhere">Recipe: ' + esc(r.canonicalURL) + ' · ' + esc(r.representation) + ' · <code>' + esc(r.recipeSourceSha256) +
+        '</code>; instruction: <code>' + esc(r.instructionSourceSha256) + '</code></small></details><ul>' +
+        Object.keys(r.criteria).map(function(k){ const c=r.criteria[k]; return '<li><strong>' + esc(k) + ': ' + esc(c.state) + '</strong> — ' +
+          'Expected: ' + esc(c.expectedResult) + ' Observed: ' + esc(c.observedResult) +
+          (c.sourceUrl ? ' <a href="' + esc(c.sourceUrl) + '" target="_blank" rel="noopener">Source requirement ↗</a>' : '') +
+          (c.evidenceUrls || []).map(function(url, i){return ' <a href="' + esc(url) + '" target="_blank" rel="noopener">Evidence ' + (i + 1) + ' ↗</a>';}).join('') +
+          (c.privateEvidenceRecorded || c.sourcePrivateEvidenceRecorded ? ' · Private proof retained' : '') + '</li>'; }).join('') + '</ul></li>';
+    }).join('') + '</ul>';
+  }
+  return html;
+}
 function historicalEvidenceHTML(t, detail){
   const h = t.historicalDeliveryEvidence;
   if (!h || !h.candidateCount) return '';
   let html = '<span class="btl-orbit" title="Older work checked against source records and outputs. Separate from recipe verification and recorded execution counts.">' +
     fmt(h.count) + ' checked historical ' + (h.count === 1 ? 'delivery' : 'deliveries') + '</span>';
   if (detail) {
+    html += proofSummaryHTML(t.proofSummary);
     html += '<p class="btl-chain">This proof shows what was delivered before the run record was complete. It does not prove that today’s guide was followed or that a new user can complete setup. One delivery can support more than one task.</p><ul>';
     html += h.records.map(function(r){
       return '<li>' + esc(r.outcome) + '<br><small>Recipe used: ' + esc(r.recipeRevision.state) +
@@ -351,11 +460,12 @@ function executionHistoryHTML(t, detail){
         (r.privateEvidenceRecorded ? ' · Private evidence retained' : '') + '</li>';
     }).join('') + '</ul>';
   }
-  return html + historicalEvidenceHTML(t, detail);
+  return html + acceptedOutputHTML(t, detail) + historicalEvidenceHTML(t, detail);
 }
 function rowHTML(t){
   const st = STATUS[t.status] || STATUS.gap;
   let badges = '<span class="btl-tag tag-sop" title="Step-by-step SOP included">SOP</span>';
+  if (t.instructionReview) badges += '<span class="btl-tag tag-sop" title="' + esc(t.instructionReview.scope) + '">Steps reviewed ' + esc(t.instructionReview.reviewed_at) + '</span>';
   if (t._qa) badges += '<span class="btl-tag tag-qa" title="Has a Definition of Done QA gate">QA</span>';
   if (t._exampleCount == null){
     badges += '<span class="btl-tag tag-ex is-unknown" title="No verified task-level example assignment is recorded; unknown is not zero">Examples unknown</span>';
@@ -364,19 +474,31 @@ function rowHTML(t){
     badges += '<span class="btl-tag tag-ex" title="Derived from verified meta-article source records">' +
       (t._exampleCount ? fmt(t._exampleCount) + examplePlus + ' verified ' + (t._exampleCount === 1 ? 'example' : 'examples') : 'Examples 0') + '</span>';
   }
+  if (t.lane) badges += '<span class="btl-tag tag-sop" title="' + esc(t.lane_label || t.lane) + '">' + esc(t.lane) + '</span>';
   const stage = (t.stage && t.stage !== '—') ? '<span class="btl-stage">' + esc(t.stage) + '</span>' : '';
   const art = articleLink(t) + executionHistoryHTML(t, false) +
     (t.download ? '<a class="btl-art" href="' + esc(t.download) + '" target="_blank" rel="noopener">Download full skill suite ⬇</a>' : '');
+  let chain = '';
+  if (t.before || t.after || t.phase){
+    chain = '<p class="btl-chain">' +
+      (t.phase ? '<b>' + esc(t.phase) + '</b> · ' : '') +
+      (t.before ? 'Browse earlier task <button type="button" data-goto="' + esc(t.before) + '">' + esc(t.before) + '</button>' : '') +
+      (t.before && t.after ? ' → ' : '') +
+      (t.after ? 'Browse later task <button type="button" data-goto="' + esc(t.after) + '">' + esc(t.after) + '</button>' : '') +
+      '<br>These are nearby tasks in the library. Use the guide’s Inputs and Handoff sections to choose what comes before and after your work.</p>';
+  }
   return '<article class="btl-row" id="task-' + esc(t.slug) + '" data-id="' + t._id + '" data-slug="' + esc(t.slug) + '">' +
     '<span class="btl-dot dot-' + esc(t.status) + '" aria-hidden="true"></span>' +
     '<div class="btl-row-main">' +
       '<div class="btl-row-top"><h4 class="btl-row-title">' + esc(t.title) + '</h4>' +
+        volBar(t.importance) +
         '<span class="btl-status st-' + esc(t.status) + '">' + st.label + '</span>' + stage + '</div>' +
       (t.desc ? '<p class="btl-row-desc">' + esc(t.desc) + '</p>' : '') +
+      chain +
       '<div class="btl-row-meta">' + badges + art + '</div>' +
     '</div>' +
     '<div class="btl-row-actions">' +
-      '<button type="button" class="btl-mini btl-view" data-view="' + t._id + '">View skill</button>' +
+      '<button type="button" class="btl-mini btl-view" data-view="' + t._id + '">Open guide</button>' +
       '<button type="button" class="btl-mini" data-copy="' + t._id + '">Copy</button>' +
     '</div></article>';
 }
@@ -405,7 +527,7 @@ function ensureRendered(ci){
 /* ============================================================
    Filtering engine — search (incl. full skill.md text) + chips
    ============================================================ */
-const state = { q: '', status: 'all', open: new Set(), userClosed: new Set() };
+const state = { q: '', status: 'all', open: new Set(), userClosed: new Set(), phase: 'all', minImp: 0, articleKey: '', taskSlug: '' };
 const qInput = el('#btl-q'), clearBtn = el('#btl-clear'), resline = el('#btl-resline'), emptyBox = el('#btl-empty');
 
 function setOpen(ci, open){
@@ -416,7 +538,19 @@ function setOpen(ci, open){
   head.setAttribute('aria-expanded', open ? 'true' : 'false');
   body.hidden = !open;
 }
-function filterActive(){ return !!(state.q.trim() || state.status !== 'all'); }
+function filterActive(){ return !!(state.q.trim() || state.status !== 'all' || state.phase !== 'all' || state.minImp > 0 || state.articleKey); }
+
+function statusMatch(t){
+  if (state.status === 'all') return true;
+  if (state.status === 'reviewed') return !!t.instructionReview;
+  if (state.status === 'vol5') return (t.importance || 0) >= 5;
+  if (state.status === 'vol4') return (t.importance || 0) >= 4;
+  return t.status === state.status;
+}
+function phaseMatch(t){
+  if (state.phase === 'all') return true;
+  return (t.phase || t.stage) === state.phase;
+}
 
 function applyFilters(){
   const q = state.q.trim().toLowerCase();
@@ -429,9 +563,16 @@ function applyFilters(){
     let catMatch = 0;
     c.tasks.forEach(function(t){
       total++;
-      const qok = !q || t._hay.indexOf(q) !== -1;
-      if (qok){ counts.all++; counts[t.status] = (counts[t.status] || 0) + 1; }
-      t._vis = qok && (state.status === 'all' || t.status === state.status);
+      const qok = state.taskSlug ? t.slug === state.taskSlug : (!q || t._hay.indexOf(q) !== -1);
+      if (qok){
+        counts.all++;
+        if (t.instructionReview) counts.reviewed = (counts.reviewed || 0) + 1;
+        counts[t.status] = (counts[t.status] || 0) + 1;
+        if ((t.importance || 0) >= 5) counts.vol5 = (counts.vol5 || 0) + 1;
+        if ((t.importance || 0) >= 4) counts.vol4 = (counts.vol4 || 0) + 1;
+      }
+      const articleOk = !state.articleKey || t._articleKey === state.articleKey;
+      t._vis = qok && articleOk && statusMatch(t) && phaseMatch(t);
       if (t._vis){ catMatch++; shown++; }
     });
     c._match = catMatch;
@@ -461,7 +602,7 @@ function applyFilters(){
 
   resline.innerHTML = (!active)
     ? '<b>' + fmt(total) + '</b> tasks across <b>' + fmt(DATA.categories.length) + '</b> categories — search runs through the full text of every skill.md'
-    : '<b>' + fmt(shown) + '</b> of <b>' + fmt(total) + '</b> tasks match' + (q ? ' “' + esc(state.q.trim()) + '”' : '') + (state.status !== 'all' ? ' · status: ' + (STATUS[state.status] ? STATUS[state.status].label.toLowerCase() : state.status) : '');
+    : '<b>' + fmt(shown) + '</b> of <b>' + fmt(total) + '</b> tasks match' + (q ? ' “' + esc(state.q.trim()) + '”' : '') + (state.articleKey ? ' · article hub: ' + esc(state.articleKey) : '') + (state.status !== 'all' ? ' · ' + (STATUS[state.status] ? STATUS[state.status].label.toLowerCase() : state.status) : '') + (state.phase !== 'all' ? ' · phase: ' + esc(state.phase) : '');
   emptyBox.hidden = shown !== 0;
 }
 
@@ -471,9 +612,60 @@ function syncChips(){
     if (b) b.setAttribute('aria-pressed', state.status === ch.key ? 'true' : 'false');
   });
 }
+function syncPhases(){
+  root.querySelectorAll('[data-phase]').forEach(function(b){
+    b.setAttribute('aria-pressed', state.phase === b.getAttribute('data-phase') ? 'true' : 'false');
+  });
+}
+function gotoSlug(slug){
+  const t = Object.prototype.hasOwnProperty.call(bySlug, slug) ? bySlug[slug] : null;
+  if (!t){ toast('No skill named ' + slug + ' in this build'); return; }
+  closeModal();
+  state.articleKey = ''; state.taskSlug = slug;
+  state.q = slug; qInput.value = slug; clearBtn.hidden = false;
+  state.status = 'all'; state.phase = 'all'; state.minImp = 0;
+  state.userClosed.delete(t._cat._ci);
+  syncChips(); syncPhases(); applyFilters();
+  ensureRendered(t._cat._ci);
+  const row = el('[data-slug="' + slug + '"]');
+  if (row){
+    row.scrollIntoView({behavior: reduced ? 'auto' : 'smooth', block:'center'});
+    const opener = row.querySelector('[data-view]');
+    if (opener) opener.focus({preventScroll:true});
+  }
+  openModal(t);
+}
+function gotoArticle(url){
+  const key = normalizeArticleUrl(url);
+  const mapped = key && Object.prototype.hasOwnProperty.call(byArticle, key) ? byArticle[key] : null;
+  if (!mapped || !mapped.length){ toast('No article hub named ' + url + ' in this build'); return; }
+  closeModal();
+  state.taskSlug = ''; state.q = ''; qInput.value = ''; clearBtn.hidden = false;
+  state.articleKey = key; state.status = 'all'; state.phase = 'all';
+  syncChips(); syncPhases(); applyFilters();
+  mapped.forEach(function(t){ ensureRendered(t._cat._ci); });
+  const first = el('[data-slug="' + mapped[0].slug + '"]');
+  if (first){
+    first.scrollIntoView({behavior:'smooth', block:'center'});
+    first.style.outline = '2px solid #4f8cff';
+    setTimeout(function(){ first.style.outline = ''; }, 1600);
+  }
+}
+function routeFromUrl(){
+  try {
+    const params = new URLSearchParams(window.location.search);
+    return { task: params.get('task') || '', article: params.get('article') || '' };
+  } catch(e) { return {task:'', article:''}; }
+}
+window.addEventListener('message', function(e){
+  if (e.origin !== 'https://blitzmetrics.com') return;
+  if (e.data && typeof e.data.btlTask === 'string') gotoSlug(e.data.btlTask);
+  if (e.data && typeof e.data.btlArticle === 'string') gotoArticle(e.data.btlArticle);
+});
 function resetFilters(){
+  state.taskSlug = '';
   state.q = ''; qInput.value = ''; clearBtn.hidden = true;
-  state.status = 'all'; syncChips(); applyFilters();
+  state.status = 'all'; state.phase = 'all'; state.articleKey = ''; syncChips(); syncPhases(); applyFilters();
 }
 
 /* ============================================================
@@ -520,6 +712,46 @@ const modal = el('#btl-modal'), mPanel = root.querySelector('.btl-m-panel'),
       mSub = el('#btl-m-sub'), mBody = el('#btl-m-body'),
       mCopy = el('#btl-m-copy'), mClose = root.querySelector('.btl-m-close');
 let modalTask = null, lastFocus = null, prevOverflow = '';
+el('#btl-m-start').addEventListener('click', function(){ if (modalTask) copyText(starterPrompt(modalTask), 'First-run prompt and guide copied'); });
+
+function starterPrompt(t){
+  return 'Help me with this task: ' + (t.title || t.slug || 'selected task') + '.\n' +
+    'My business and the result I want: [fill in].\n' +
+    'My source files or facts: [add links or attach files].\n' +
+    'For article work, include the current title, full body, intended readers, and goal.\n' +
+    'Save the result here: [fill in].\n' +
+    'Actions already approved: [fill in].\n' +
+    'Work already started? Attach its saved record, or say “new job.”\n' +
+    'Read the guide below. Explain the value and first step in plain words. Check the starting condition, inputs, and required account access. Name any exact missing item. If the guide is missing or unclear, say what needs fixing.\n' +
+    'Use the task-specific first-run prompt when provided. Start with one draft or read-only check. Confirm the scope before a step that publishes, sends, spends, changes access, or sets a schedule. Do the work already covered by my instructions.\n' +
+    'Check the output against the guide. Save the result, evidence, missing checks, and next owner or task in the stated location. Retain the same execution ID when continuing an unfinished run or retrying it. Write one meta article for this real run with its execution ID and link to the recipe. Do not call a draft, download, or teaching example a completed production result. Schedule repeated work only when I ask for it, and verify its first firing.\n\n' +
+    'Task: ' + (t.taskLibraryUrl || 'https://local-service-spotlight.github.io/task-library/?task=' + encodeURIComponent(t.slug || '') + '#task-' + encodeURIComponent(t.slug || '')) + '\n\nGUIDE\n' +
+    (t.content || 'Guide missing: ask for the maintained instructions before doing this task.');
+}
+function firstRunHTML(t){
+  const missingExample = /example (?:needed|to be added)|examples?[^\n]{0,30}(?:coming soon|placeholder)|run the meta.article prompt after (?:the )?first real run/i.test(t.content || '');
+  const path = (t.content || '').match(/^\*\*The path:\*\*\s*(.+)$/m);
+  const steps = path ? path[1].replace(/\.$/, '').split(/\s*→\s*/) : [];
+  const diagram = steps.length > 1 && steps.length <= 7 ?
+    '<figure class="btl-task-path" aria-label="The path for this task"><ol>' + steps.map(function(step){ return '<li>' + esc(step) + '</li>'; }).join('') + '</ol><figcaption>The path in this guide</figcaption></figure>' : '';
+  return '<section class="btl-first-run" aria-label="Start this task"><h2>Try it once</h2>' +
+    (t.desc ? '<p>' + esc(t.desc) + '</p>' : '') + diagram +
+    '<p>Copy the first-run prompt above. Paste it into your AI app. Add your files and facts, then follow the checks below.</p>' +
+    '<details class="btl-prompt-preview"><summary>View or save the first-run prompt</summary><p>If copying does not work, save this text file and give it to your AI app, or select the text below.</p>' +
+    '<a class="btl-art" download="' + esc(t.slug || 'task') + '-first-run.txt" href="data:text/plain;charset=utf-8,' + encodeURIComponent(starterPrompt(t)) + '">Save first-run prompt (.txt)</a>' +
+    '<textarea readonly rows="7" aria-label="First-run prompt text">' + esc(starterPrompt(t)) + '</textarea><button class="btl-btn-small" data-select-prompt>Select prompt text</button></details>' +
+    (missingExample ? '<p><b>This guide still asks for an example.</b></p>' : '') +
+    '<p>Need app or account setup? Use the <a href="https://localservicespotlight.com/install/" target="_blank" rel="noopener">setup guide</a>. Test one run before you set work to repeat.</p>' +
+    '<details><summary>Review and guide status</summary>' +
+    (t.instructionReview ? '<p><b>Steps reviewed.</b> The instructions and teaching example were checked on ' + esc(t.instructionReview.reviewed_at) + '. Check your own result before using it.</p>' : '') +
+    '<p>' + esc((STATUS[t.status] || STATUS.gap).label) +
+    '. This is a contributor claim; independent guide review is not supplied by that label. Your installation and account access are not checked here. A copied guide is reference material. A schedule is needed only for work you choose to repeat.</p></details></section>';
+}
+
+function revealEmbeddedElement(node){
+  if (window.self === window.top || !node) return;
+  window.parent.postMessage({btlRevealY: Math.max(0, node.getBoundingClientRect().top)}, '*');
+}
 
 function openModal(t){
   if (!t) return;
@@ -527,13 +759,16 @@ function openModal(t){
   lastFocus = document.activeElement;
   const st = STATUS[t.status] || STATUS.gap;
   mMeta.innerHTML = '<span class="btl-status st-' + esc(t.status) + '">' + st.label + '</span>' +
+    volBar(t.importance) +
     '<span class="btl-m-cat">' + esc((t._cat.icon ? t._cat.icon + ' ' : '') + t._cat.name) + '</span>' +
-    ((t.stage && t.stage !== '—') ? '<span class="btl-stage">' + esc(t.stage) + '</span>' : '');
+    ((t.stage && t.stage !== '—') ? '<span class="btl-stage">' + esc(t.stage) + '</span>' : '') +
+    (t.lane ? '<span class="btl-stage">' + esc(t.lane) + '</span>' : '');
   mTitle.textContent = t.title;
   mSub.innerHTML = '<code class="btl-slug">' + esc(t.slug || 'skill') + '.skill.md</code>' +
     articleLink(t) +
     (t.download ? '<a class="btl-art" href="' + esc(t.download) + '" target="_blank" rel="noopener">Download full skill suite ⬇</a>' : '');
-  mBody.innerHTML = '<section aria-label="Recorded execution history">' + executionHistoryHTML(t, true) + '</section>' + renderMD(t.content || '*No skill.md captured yet — this task is a gap to close on the next run of the loop.*');
+  mBody.innerHTML = firstRunHTML(t) + '<details class="btl-run-details"><summary>Run history and delivery proof</summary>' + executionHistoryHTML(t, true) + '</details>' +
+    renderMD(t.content || '*No skill.md captured yet — this task is a gap to close on the next run of the loop.*');
   prevOverflow = document.body.style.overflow;
   const embedded = window.self !== window.top;
   if (embedded){
@@ -547,6 +782,8 @@ function openModal(t){
     modal.style.alignItems = 'flex-start';
     const panel = modal.querySelector('.btl-m-panel');
     if (panel){
+      /* The parent needs the final position, not a moving entrance transform. */
+      panel.style.animation = 'none';
       panel.style.marginTop = Math.max(anchorY - 120, 8) + 'px';
       panel.style.maxHeight = cap + 'px';
     }
@@ -554,21 +791,32 @@ function openModal(t){
     document.body.style.overflow = 'hidden';
   }
   modal.hidden = false;
+  if (embedded) window.scrollTo(0, 0);
   mBody.scrollTop = 0;
-  mClose.focus();
+  mClose.focus({preventScroll:true});
+  revealEmbeddedElement(mPanel);
 }
 function closeModal(){
   if (modal.hidden) return;
   modal.hidden = true;
   modal.style.position = ''; modal.style.height = ''; modal.style.alignItems = '';
   const panel = modal.querySelector('.btl-m-panel');
-  if (panel){ panel.style.marginTop = ''; panel.style.maxHeight = ''; }
+  if (panel){ panel.style.marginTop = ''; panel.style.maxHeight = ''; panel.style.animation = ''; }
   modalTask = null;
   document.body.style.overflow = prevOverflow;
-  if (lastFocus && lastFocus.focus) lastFocus.focus();
+  if (window.self !== window.top) window.scrollTo(0, 0);
+  if (lastFocus && lastFocus.focus) lastFocus.focus({preventScroll:true});
+  revealEmbeddedElement(lastFocus);
 }
+/* Frame height can arrive after a fast click. Recompute in viewport coordinates
+   after that resize, when the browser has clamped the frame scroll position. */
+window.addEventListener('resize', function(){
+  if (window.self === window.top || modal.hidden) return;
+  requestAnimationFrame(function(){ if (!modal.hidden) revealEmbeddedElement(mPanel); });
+});
+
 function trapFocus(e){
-  const items = modal.querySelectorAll('button, a[href], [tabindex]:not([tabindex="-1"])');
+  const items = modal.querySelectorAll('button, a[href], summary, textarea, input, select, [tabindex]:not([tabindex="-1"])');
   const list = Array.prototype.filter.call(items, function(n){ return n.offsetParent !== null || n === mBody; });
   if (!list.length) return;
   const first = list[0], last = list[list.length - 1];
@@ -580,6 +828,7 @@ function trapFocus(e){
    Events — one delegated listener keeps the DOM light
    ============================================================ */
 root.addEventListener('click', function(e){
+  if (e.target.closest('[data-select-prompt]')){ const prompt = mBody.querySelector('.btl-prompt-preview textarea'); if (prompt){ prompt.focus(); prompt.select(); } return; }
   const view = e.target.closest('[data-view]');
   if (view){ openModal(byId[view.getAttribute('data-view')]); return; }
 
@@ -609,6 +858,19 @@ root.addEventListener('click', function(e){
     syncChips(); applyFilters();
     return;
   }
+  const ph = e.target.closest('[data-phase]');
+  if (ph){
+    const id = ph.getAttribute('data-phase');
+    state.phase = state.phase === id ? 'all' : id;
+    syncPhases(); applyFilters();
+    const chips = el('#btl-chips'); if (chips) chips.scrollIntoView({behavior:'smooth', block:'center'});
+    return;
+  }
+  const go = e.target.closest('[data-goto]');
+  if (go){
+    gotoSlug(go.getAttribute('data-goto'));
+    return;
+  }
 
   if (e.target.closest('#btl-expand')){
     state.userClosed.clear();
@@ -624,7 +886,7 @@ root.addEventListener('click', function(e){
   }
   if (e.target.closest('#btl-reset')){ resetFilters(); return; }
   if (e.target.closest('#btl-clear')){
-    state.q = ''; qInput.value = ''; clearBtn.hidden = true;
+    state.taskSlug = ''; state.q = ''; state.articleKey = ''; qInput.value = ''; clearBtn.hidden = true;
     applyFilters(); qInput.focus();
     return;
   }
@@ -636,11 +898,15 @@ root.addEventListener('click', function(e){
 });
 
 qInput.addEventListener('input', debounce(function(){
+  state.taskSlug = '';
+  state.articleKey = '';
   state.q = qInput.value;
   clearBtn.hidden = !qInput.value;
   applyFilters();
 }, 120));
 qInput.addEventListener('search', function(){
+  state.taskSlug = '';
+  state.articleKey = '';
   state.q = qInput.value;
   clearBtn.hidden = !qInput.value;
   applyFilters();
@@ -655,5 +921,11 @@ document.addEventListener('keydown', function(e){
 /* ============================================================
    Go
    ============================================================ */
+// Keep a query typed while data.json and this script were still loading.
+state.q = qInput.value;
+clearBtn.hidden = !qInput.value;
 applyFilters();
+const linkedRoute = routeFromUrl();
+if (linkedRoute.task) gotoSlug(linkedRoute.task);
+else if (linkedRoute.article) gotoArticle(linkedRoute.article);
 })();

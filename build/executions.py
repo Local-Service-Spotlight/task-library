@@ -608,6 +608,65 @@ def public_setup_review(review):
     return {key: copy.deepcopy(review[key]) for key in SETUP_PUBLIC_FIELDS} | {'criteria': criteria}
 
 
+def accepted_recorded_outputs(records, task_slug=None):
+    """Dated acceptance of recorded outputs, never a current-recipe gate.
+
+    A correction to the run or a newer review of the same run/task controls
+    its claim. A different later unsuccessful run does not erase old delivery.
+    Call only with validated records; public projections retain the allowlist.
+    """
+    accepted = []
+    for record in records:
+        if record['status'] != 'completed':
+            continue
+        latest = {}
+        for review in record.get('acceptanceReviews', ()):
+            slug = review['taskSlug']
+            if task_slug is not None and slug != task_slug:
+                continue
+            when = timestamp(review['reviewedAt'], 'reviewedAt')
+            if slug not in latest or when > latest[slug][0]:
+                latest[slug] = (when, [review])
+            elif when == latest[slug][0]:
+                latest[slug][1].append(review)
+        for _, reviews in latest.values():
+            if len(reviews) != 1:
+                continue
+            review = reviews[0]
+            if all(item['state'] == 'pass' for item in review['criteria'].values()):
+                accepted.append(dict(public_acceptance_review(review),
+                                     executionId=record['executionId'],
+                                     finishedAt=record['finishedAt'], result=record['result']))
+    return sorted(accepted, key=lambda item: (timestamp(item['reviewedAt'], 'reviewedAt'), item['executionId'], item['taskSlug']))
+
+
+def proof_summary(accepted_outputs, historical_records):
+    """Aggregate public-safe proof by stable IDs, including shared task mappings."""
+    accepted = {(item['executionId'], item['reviewId']): item for item in accepted_outputs}
+    historical = {item['evidenceId']: item for item in historical_records}
+    verified = [item for item in historical.values()
+                if item.get('review', {}).get('identity', {}).get('state') == 'pass' and
+                item.get('review', {}).get('output', {}).get('state') == 'pass']
+    historical_accepted = [item for item in verified if item['review']['acceptance']['state'] == 'pass']
+    return {
+        'definition': ('Dated output proof, separate from current-recipe acceptance and every full-verification gate. '
+                       'Recorded acceptance counts distinct completed execution IDs with a latest all-pass independent review per task/run; '
+                       'scope is limited to its named criteria. Historical proof counts distinct source jobs, never new runs. '
+                       'Historical acceptance requires identity, output and acceptance pass; handoff is reported separately.'),
+        'recordedAcceptedOutputCount': len({item['executionId'] for item in accepted.values()}),
+        'recordedAcceptedReviewCount': len(accepted),
+        'acceptedRecordedOutputs': sorted(accepted.values(), key=lambda item: (item['reviewedAt'], item['executionId'], item['reviewId'])),
+        'historicalVerifiedOutputCount': len(verified),
+        'historicalAcceptedOutputCount': len(historical_accepted),
+        'historicalIdentityOutputOnlyCount': len(verified) - len(historical_accepted),
+        'historicalAcceptedHandoffPassCount': sum(item['review']['handoff']['state'] == 'pass' for item in historical_accepted),
+        'historicalAcceptedHandoffHoldCount': sum(item['review']['handoff']['state'] == 'hold' for item in historical_accepted),
+        'historicalAcceptedHandoffUnresolvedCount': sum(item['review']['handoff']['state'] in {'unknown', 'unmet'} for item in historical_accepted),
+        'historicalVerifiedEvidenceIds': sorted(item['evidenceId'] for item in verified),
+        'historicalAcceptedEvidenceIds': sorted(item['evidenceId'] for item in historical_accepted),
+    }
+
+
 def check_times_not_future(records, now):
     for record in records:
         for key in ('startedAt', 'finishedAt', 'recordedAt', 'updatedAt'):
@@ -667,7 +726,11 @@ def attach(tasks, records, as_of=None, historical_evidence=None):
             'count': verified_outputs,
             'candidateCount': len(task_history),
             'records': [public_historical_record(item) for item in task_history]}
+        task['proofSummary'] = proof_summary(accepted_recorded_outputs(runs, task['slug']),
+                                             task['historicalDeliveryEvidence']['records'])
     return {'schemaVersion': 1, 'asOf': now.isoformat(),
+            'proofSummary': proof_summary(accepted_recorded_outputs(records),
+                                          [public_historical_record(item) for item in historical]),
             'countDefinition': 'Distinct recorded execution IDs, separate from meta-article URLs. History is partial; absent history is unknown, not zero. The last-30-day count is a documented lower bound, not total task frequency.',
             'recordedExecutions': len(records) if records else None,
             'completedExecutions': sum(r['status'] == 'completed' for r in records) if records else None,

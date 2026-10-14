@@ -68,6 +68,12 @@ The full review also requires `version: 1`, `reviewId`, `taskSlug`, `canonicalUR
 
 A legacy CLI update that omits `acceptanceReviews` preserves the existing reviews. Unlinked acceptance reviews may be replaced through a reviewed correction that keeps Git history. Acceptance reviews referenced by saved setup reviews are immutable; retain them and add a new review ID for a correction. Do not erase failed checks to obtain a pass.
 
+## Read dated acceptance beside current verification
+
+The generated `proofSummary` derives from this ledger; it adds no runs or registry. Independently accepted recorded outputs count distinct completed execution IDs with an all-pass independent review, using the latest review for each task in that run. The saved date, exact recipe/instruction identities, named criteria, result and handoff describe the accepted scope. Correcting that run to partial or recording a newer failing review removes its accepted-output claim. A later unsuccessful run, changed instructions or an expired current observation blocks current applicability without erasing an earlier accepted output.
+
+Historical source jobs count once globally even when they support multiple task slugs. Identity/output proof and acceptance pass are separate counts. Historical acceptance requires identity, output and acceptance pass; handoff passes, holds and unresolved states remain visible separately. A handoff hold does not imply an accepted end-to-end workflow. Original timing and recipe unknowns remain unknown. None of these dated summaries passes a current-recipe, novice or full-verification gate.
+
 ## Record a first-use setup review
 
 Use `setupReviews` to show what happened when someone tried a downloaded guide for the first time. This helps us fix the steps that caused trouble. It connects setup evidence to the same task execution and its accepted result; it creates no second run or registry.
