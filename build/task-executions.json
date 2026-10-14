@@ -1724,6 +1724,33 @@
         }
       ],
       "finishedAt": "2026-10-12T22:02:47.701819+00:00"
+    },
+    {
+      "executionId": "site-build-proof-recipe-20261014",
+      "taskSlugs": [
+        "publish-skill-and-task-page"
+      ],
+      "recipeRevisions": {
+        "publish-skill-and-task-page": {
+          "articleUrl": "https://blitzmetrics.com/skill-publishing-standard/",
+          "sourceSha256": "a5f8e0c27993597db9cdf606efb6bf3128c4ffbfe20f8ef72dbb4fe0f610a686"
+        }
+      },
+      "startedAt": "2026-10-14T01:05:03.771394+00:00",
+      "recordedAt": "2026-10-14T01:05:03.771394+00:00",
+      "updatedAt": "2026-10-14T01:05:03.771394+00:00",
+      "status": "running",
+      "result": "Improving one site-build recipe with explicit evidence and receiving acceptance; public release pending. This is documentation maintenance, not a site launch.",
+      "metaArticle": {
+        "status": "draft",
+        "draftSha256": "53dbbe43587549fd97353727aa365f4ac269d386bad5903337cfd9358e47a976"
+      },
+      "evidence": [
+        {
+          "visibility": "public",
+          "url": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/site-build-proof-2026-10-14.md"
+        }
+      ]
     }
   ],
   "historicalEvidence": [

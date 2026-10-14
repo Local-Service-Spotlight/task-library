@@ -2719,15 +2719,39 @@
       }
     },
     "build-personal-brand-website": {
-      "source_sha256": "79cd8d22ddf23e922bfb9814e50acb8cadf49a4360cd8b93697b7699fb329f73",
-      "reviewed_at": "2026-10-13",
-      "reviewer": "Codex incremental destination review with independent GPT-6 Luna review",
-      "scope": "Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate. Destination-only revision: existing prose and check verdicts retained after exact diff inspection; current Content Factory target and relationship checked. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/content-factory-link-2026-10-13.md",
-      "incrementalReview": {
-        "beforeSourceSha256": "1d11dc6b45da0439e9a058a569a7a1743e8605cd0083749585a7c4dd97efc0f8",
-        "previousReviewDate": "2026-09-06",
-        "change": "Only the Content Factory teaching URL changed; no step, example, opening, status or acceptance changed.",
-        "review": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/content-factory-link-2026-10-13.md"
+      "source_sha256": "75465adfd9df2ae3a748101a87ffb71385374fb61196d4463f370f77b767c870",
+      "reviewed_at": "2026-10-14",
+      "reviewer": "Codex root with independent GPT-6.1 Sol high-effort source review",
+      "scope": "Five written criteria only; no article, client execution or novice setup certification. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/site-build-proof-2026-10-14.md",
+      "standards": {
+        "version": 1,
+        "checks": {
+          "opening": {
+            "state": "pass",
+            "reason": "Quoted first3sentences explain a clear site, trust through real facts, and the linked delivery task. Heuristic grade4.16; actual phone/desktop visual inspected.",
+            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/site-build-proof-2026-10-14.md"
+          },
+          "recipe": {
+            "state": "pass",
+            "reason": "Trigger, inputs, seven steps and measured record table make preview, launch and checked live state distinct. No access or schedule is created.",
+            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/site-build-proof-2026-10-14.md"
+          },
+          "links": {
+            "state": "pass",
+            "reason": "All task identities checked; receiving source read. Thirteen teaching destinations read by HTTP/browser. Narrow conceptual relationships supported; complete destination certification separate.",
+            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/site-build-proof-2026-10-14.md"
+          },
+          "evidence": {
+            "state": "pass",
+            "reason": "Fictional example stays labeled; no real run or saving invented. Older receipts keep unknown recipe, timing and checks.",
+            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/site-build-proof-2026-10-14.md"
+          },
+          "handoff": {
+            "state": "pass",
+            "reason": "Exact preview revision, owner decision, named receiver, open issues and acknowledgment required. Pending handoff remains pending.",
+            "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/site-build-proof-2026-10-14.md"
+          }
+        }
       }
     },
     "build-third-party-validation": {

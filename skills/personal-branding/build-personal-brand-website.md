@@ -9,7 +9,7 @@ status: needs-work
 
 # Build personal brand website
 
-Give people one place to check who you are and what you do. This guide helps you build a site with real work, clear facts and a way to reach you. Start with the name you use and proof you can share.
+Build one clear site so people can see who you are, what you do and how to reach you. Use your real work and checked facts to earn trust. Use the [site delivery guide](https://local-service-spotlight.github.io/task-library/?task=deliver-personal-brand-site-from-request#task-deliver-personal-brand-site-from-request) to check the preview with its owner before it goes live.
 
 **The path:** Facts + real proof → Site preview → Content and function checks → Approved launch
 
@@ -49,7 +49,23 @@ A fictional builder has a name domain, three project photos and two approved cus
 
 ## Handoff and Content Factory context
 
-[Add verified Person markup](https://local-service-spotlight.github.io/task-library/?task=implement-person-schema-with-sameas-links#task-implement-person-schema-with-sameas-links) receives the approved identity graph; [Set up the agreed public profiles](https://local-service-spotlight.github.io/task-library/?task=set-up-professional-social-profiles#task-set-up-professional-social-profiles) receives the site URL. The authorized launch owner receives the checked preview and exact remaining deployment work.
+[Add verified Person markup](https://local-service-spotlight.github.io/task-library/?task=implement-person-schema-with-sameas-links#task-implement-person-schema-with-sameas-links) receives the approved identity graph; [Set up the agreed public profiles](https://local-service-spotlight.github.io/task-library/?task=set-up-professional-social-profiles#task-set-up-professional-social-profiles) receives the site URL. The named launch owner receives the checked preview, the acceptance record below and each open issue. The [site delivery guide](https://local-service-spotlight.github.io/task-library/?task=deliver-personal-brand-site-from-request#task-deliver-personal-brand-site-from-request) uses that record for domain planning, launch and live checks.
+
+## Save the checks and owner's decision
+
+Keep one delivery record in the original request. Include:
+
+| Record | What to save |
+|---|---|
+| Source | Request ID, recipe revision, fact and media sources, exact preview URL and source revision. |
+| Page checks | Each tested URL and response code; HTTPS result; actual desktop and phone sizes; screenshot and visible result for each size. Count the checked URLs against the URLs in scope. |
+| Contact path | The action tested and its observed destination. If a form test is authorized, retain the delivered test receipt. A button opening or a success message alone does not prove delivery. Otherwise mark delivery UNKNOWN and name the next owner. |
+| Domain and mail | Link the domain plan and any scoped mail check. Keep untested mail continuity UNKNOWN. This build recipe does not grant DNS, mailbox or access-change authority. |
+| Decision | Name the authorized person who accepts the preview. Save their accept, reject or change request against the exact preview URL and revision, with its date and source. A sent link alone is not acceptance. |
+| Receiving handoff | Name the launch owner and receiving task. Record acknowledgment of the exact preview revision and unresolved issues. Without acknowledgment, keep the handoff pending; do not call the site launched. |
+
+A receipt for an older site can support what it actually records. If the original recipe version, timing or measured checks are missing, keep those fields UNKNOWN. Do not turn that receipt into proof that today's recipe passed.
+
 
 This task supports the [Content Factory: Produce, Process, Post and Promote](https://localservicespotlight.com/content-factory/). Identity, proof, access or coordination can support several stages. Use the real inputs and receiving owner above; this task does not create unrelated transcripts, clips or ads merely because the diagram has four stages.
 
