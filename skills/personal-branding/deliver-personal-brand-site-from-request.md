@@ -4,7 +4,7 @@ description: "Build a site from the owner’s real request."
 category: Personal Branding
 stage: Post
 definitive_article: https://blitzmetrics.com/from-one-email-to-a-live-personal-brand-site/
-status: needs-work
+status: complete
 ---
 
 # Deliver a personal-brand site from a request
@@ -80,6 +80,6 @@ Reuse the same execution ID for internal checks, revisions, retries and meta wri
 
 ## Review and evidence still needed
 
-The inherited contributor status is `needs-work`. It is preserved, not promoted by this rewrite. That label alone does not prove document readiness, account access, an actual execution or a client result.
+These instructions passed a written review. Use the Task Library to see the separate article, execution and setup evidence. A written review does not prove account access, an actual execution or a client result.
 
 The fictional example teaches the method and does not fill a real-run evidence gap. A named semantic reviewer must check the actual opening, full method, sources and handoff. Check the useful opening visual in the normal rendered guide at the current required desktop and mobile sizes, including 1280 × 800 and 390 × 844. Source readability checks do not prove public presentation or task execution.

@@ -2,13 +2,13 @@
 
 Generated from `build/build.py` after scoring in `build/factory.py`.
 
-Library: **276** tasks — 126 complete, 127 needs-work, 23 gaps.
+Library: **276** tasks — 127 complete, 126 needs-work, 23 gaps.
 
 Importance distribution: 5★=75, 4★=43, 3★=115, 2★=43, 1★=0
 
 Scoring: `importance = max(frequency, revenue, gating)`. Ads, pixels, GSC, Descript, WP-author, and Meta BM are 5s even when the task is small, because they unblock the line.
 
-Incomplete: **150**. This file is the work order. Do not re-sample.
+Incomplete: **149**. This file is the work order. Do not re-sample.
 
 | ★ | Status | Phase | Category | Slug | Lane | Why |
 |---|---|---|---|---|---|---|
@@ -91,7 +91,6 @@ Incomplete: **150**. This file is the work order. Do not re-sample.
 | 3 | needs-work | Gate |  | `convert-instagram-to-professional-account` | any | supporting |
 | 3 | needs-work | — |  | `create-collaborative-content-with-industry-peers` | any | supporting |
 | 3 | needs-work | Process |  | `create-social-content-from-video-clips` | any | supporting |
-| 3 | needs-work | Post |  | `deliver-personal-brand-site-from-request` | any | supporting |
 | 3 | needs-work | Gate |  | `ensure-site-loads-under-3-seconds-on-mobile` | any | supporting |
 | 3 | needs-work | Process |  | `establish-entity-identity` | judgment | supporting |
 | 3 | needs-work | Produce |  | `film-casual-team-conversations` | any | supporting |

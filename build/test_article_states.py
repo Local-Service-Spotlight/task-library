@@ -327,6 +327,17 @@ class MetaOrbitEvidenceSchema(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, 'conflicting'):
                 task_build.load_article_meta_orbits(self.write_manifest(raw, tmp))
 
+    def test_new_hub_audit_does_not_refresh_other_hub_dates(self):
+        raw = json.load(open(os.path.join(ROOT, 'build', 'article-meta-orbits.json'), encoding='utf-8'))
+        old = task_build.adapt_strength_manifest(raw, 'fixture')['hubs']
+        raw['hubs'][0]['metaAuditedAt'] = '2026-10-14'
+        updated = task_build.adapt_strength_manifest(raw, 'fixture')['hubs']
+        self.assertEqual(updated[0]['audited'], '2026-10-14')
+        self.assertEqual([h['audited'] for h in updated[1:]], [h['audited'] for h in old[1:]])
+        raw['hubs'][0]['metaAuditedAt'] = '2026-99-99'
+        with self.assertRaises(ValueError):
+            task_build.adapt_strength_manifest(raw, 'fixture')
+
     def test_article_role_does_not_promote_readiness_and_conflicts_fail(self):
         tasks = [{'slug': 'one', 'article': 'https://example.com/hub/',
                   'status': 'needs-work', 'articleKind': 'task-recipe'}]

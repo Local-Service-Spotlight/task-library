@@ -9,7 +9,7 @@ status: complete
 
 # Place content on SEO Tree with proper links
 
-A useful page can still be hard to find. This guide helps you connect it to the main topic and the next thing a reader needs. Start by finding the page that already owns that topic.
+A useful page can still be hard to find. This guide helps you connect it to the main topic and the next thing a reader needs. Start with the [SEO Tree topic map](https://blitzmetrics.com/seo-tree/) to find the page that already owns that topic.
 
 **The path:** Page’s purpose → Main topic owner → Useful links both ways → Checked map.
 
@@ -43,6 +43,8 @@ A useful page can still be hard to find. This guide helps you connect it to the 
 - [ ] New links and named anchors reach the intended content; no unsupported duplicate hub or redirect alias was made.
 - [ ] The inventory records the actual placement and verification state.
 
+If a required inbound edit is pending, report a partial placement with its owner and next action. Do not call that result fully connected.
+
 ## Example(s)
 
 **Fictional teaching example — no site was edited.** Maple Cycle has a main “Repair quotes” guide and a smaller story, “What happened when a photo missed the bent part.”
@@ -50,6 +52,12 @@ A useful page can still be hard to find. This guide helps you connect it to the 
 The story links up with “how our repair quotes work.” The guide links down with “a quote changed after inspection” beside the section explaining why photos are only a starting point. A booking page is linked where the reader is ready to arrange a visit.
 
 The sample map is `Repair quotes guide ↔ inspection story → booking step`. It does not link every page to every other page. If the guide’s editor has not yet saved the inbound link, the story’s inventory row says “upward link checked; inbound edit pending,” not “fully connected.”
+
+### Checked historical example — limited navigation acceptance
+
+The [Western Trading Post collector directory](https://westerntradingpost.com/collector-guides/) connects readers to five maker guides and related shopping and selling pages. In October 2026, the recipient accepted the dropdown menus, clickable directory and native BigCommerce text/link editing. This is one delivery, not six separate runs.
+
+The recorded check found no upward directory links in the five guide bodies. The original recipe revision and full link inventory were not recovered. This example proves the named navigation features and recipient-confirmed editability; it does not prove every present checklist item, current recipe use, new-user success or search/revenue gains.
 
 ## Handoff and Content Factory context
 
@@ -77,7 +85,7 @@ Keep one stable execution ID for the actual task run. Retries, checks and change
 
 ## Definitive article & links
 
-- Canonical article: https://blitzmetrics.com/seo-tree
+- Canonical article: https://blitzmetrics.com/seo-tree/
 - Exact Task Library record: [Place content on SEO Tree with proper links](https://local-service-spotlight.github.io/task-library/?task=place-content-on-seo-tree-with-proper-links#task-place-content-on-seo-tree-with-proper-links)
 - Working writing standard: [Article Guidelines](https://localservicespotlight.com/article-guidelines/)
 - [SEO Tree: give a page its right topic home](https://blitzmetrics.com/seo-tree/)
@@ -85,5 +93,5 @@ Keep one stable execution ID for the actual task run. Retries, checks and change
 
 ## Review and evidence still needed
 
-The original contributor status in the header is preserved. It does not certify this proposed rewrite or prove that this account, publication, message, player or check has run. Every worked teaching example is explicitly invented; replace it with actual evidence when documenting a real execution.
+The original contributor status in the header is preserved. It does not certify this proposed rewrite or prove that this account, publication, message, player or check has run. The Maple Cycle teaching example is fictional. The checked historical collector example supports only its named navigation and recipient-confirmed editing scope. Current-recipe execution and new-user use still need their own evidence.
 - The live site map and authorized inbound source edits must be verified for the real page.

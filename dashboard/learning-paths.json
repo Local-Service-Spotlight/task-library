@@ -1065,8 +1065,8 @@
       "description": "Build a site from the owner’s real request.",
       "article": "https://blitzmetrics.com/from-one-email-to-a-live-personal-brand-site/",
       "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=deliver-personal-brand-site-from-request#task-deliver-personal-brand-site-from-request",
-      "status": "needs-work",
-      "contentSha256": "c920ba62190b3d8f236b4938ea1ef0c9bb0f3ad67435473eba06e512944c71b0"
+      "status": "complete",
+      "contentSha256": "38fde957fe19c892fc6f9b336f59253764511a297db8bc056271374980715dd0"
     },
     {
       "slug": "document-a-task",
@@ -1714,7 +1714,7 @@
       "article": "https://blitzmetrics.com/seo-tree",
       "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=place-content-on-seo-tree-with-proper-links#task-place-content-on-seo-tree-with-proper-links",
       "status": "complete",
-      "contentSha256": "68d6db7f25a96a9b684fb6a9b89b2633bbbfd526299a67e3d310fac9a4364d1f"
+      "contentSha256": "33e42014e277fdf01a0b255dfad44a822a14bb306abacd7026b786184ac6c9e1"
     },
     {
       "slug": "positive-mentions-harvester",
