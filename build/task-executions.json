@@ -1769,7 +1769,7 @@
       ],
       "recipeRevisions": {
         "check-for-broken-links": {
-          "articleUrl": "https://blitzmetrics.com/website-qa-audit/",
+          "articleUrl": "https://blitzmetrics.com/website-qa-audit",
           "sourceSha256": "3a0dcacf864a33f52b95c8246c40cb2029c4644c005f7454c8a6a6f384880148"
         },
         "publish-skill-and-task-page": {
@@ -1779,17 +1779,101 @@
       },
       "startedAt": "2026-10-14T16:08:33.518776+00:00",
       "recordedAt": "2026-10-14T16:08:33.518776+00:00",
-      "updatedAt": "2026-10-14T16:08:33.518776+00:00",
-      "status": "running",
-      "result": "Scoped owned-article Content Factory link repair and Task Library proof publication in progress. Existing source jobs retain their identities; no client job or beginner trial is created.",
+      "updatedAt": "2026-10-14T16:41:32.271434+00:00",
+      "status": "completed",
+      "result": "Fixed five visible Content Factory links and matching copied guide in owned post109504; guarded native save and ordinary anonymous parity passed. Published accepted-proof summaries and corrected same historical source acceptance without creating a job. Public source/projections match; seven archives and phone/desktop entry checks pass; 224 tests and independent source review pass. Full task certification and novice-human setup remain unproven.",
       "metaArticle": {
-        "status": "draft",
-        "draftSha256": "4a2f62ed79fdf3c65cd12553ca5ebaabe23946037a1a3eb977262e0c7b5294c2"
+        "status": "published",
+        "url": "https://local-service-spotlight.github.io/task-library/maintenance/proof-resolution-2026-10-14.html"
       },
       "evidence": [
         {
           "visibility": "private",
           "sha256": "4191fccb702c23546d7c59151940d3d4355ae99a2ea61a6735cc850cccfaacb3"
+        },
+        {
+          "visibility": "public",
+          "url": "https://blitzmetrics.com/from-one-email-to-a-live-personal-brand-site/"
+        },
+        {
+          "visibility": "public",
+          "url": "https://github.com/Local-Service-Spotlight/task-library/pull/96"
+        },
+        {
+          "visibility": "private",
+          "sha256": "f3a6a080610f22cc6c4fb89d5b5a20fbddf4526548fe3dd2a386ee3eba34751b"
+        },
+        {
+          "visibility": "private",
+          "sha256": "665786802861ba21a0cc49f787b8a55a3896d5c1a401b7b6d8deb74f66964138"
+        },
+        {
+          "visibility": "private",
+          "sha256": "d5c825e23aeb528fa65f20bed9eec644dc21690ece65e507046f2307b55331bb"
+        },
+        {
+          "visibility": "private",
+          "sha256": "2f9e0b9b771a1ef226049456b97c89dd3fd9fdcf2793b3da4c49aad4f6345155"
+        }
+      ],
+      "finishedAt": "2026-10-14T16:38:03.477390+00:00",
+      "acceptanceReviews": [
+        {
+          "version": 1,
+          "reviewId": "proof-resolution-20261014-broken-links-independent-1",
+          "taskSlug": "check-for-broken-links",
+          "canonicalURL": "https://blitzmetrics.com/website-qa-audit",
+          "recipeSourceSha256": "3a0dcacf864a33f52b95c8246c40cb2029c4644c005f7454c8a6a6f384880148",
+          "representation": "wordpress-content-html",
+          "instructionSourceSha256": "58692df57dd4cf30997450214fb01df49bf87da93e0281213099ccc473bf4ead",
+          "reviewer": "codex-independent-qa-20261014",
+          "executor": "codex-root-proof-resolution-20261014",
+          "nextHandoff": "The current Codex task owner closes the existing link-repair record and its public receipt; Task Library maintenance retains unrelated global-script, semantic, novice and migration limits.",
+          "criteria": {
+            "scopeAndCause": {
+              "state": "pass",
+              "expectedResult": "Name the checked page and link inventory, distinguish restrictions from broken destinations, and avoid a whole-site coverage claim.",
+              "observedResult": "The named article scope contains five Content Factory hrefs and one embedded guide copy. The base reference is corrected to the verified maintained guide. HTTP errors/access restrictions are not treated as proof of404; other page links and the separate global placeholder script are outside scope.",
+              "sourceRef": "https://blitzmetrics.com/website-qa-audit/",
+              "evidenceRefs": [
+                "sha256:70e25144d2020806d0acefdc82f4f6f4739e95e26a558f369a6225cb7039a059",
+                "sha256:f3a6a080610f22cc6c4fb89d5b5a20fbddf4526548fe3dd2a386ee3eba34751b"
+              ]
+            },
+            "result": {
+              "state": "pass",
+              "expectedResult": "Repair the five agreed article links and embedded copy without unrelated or concurrent source loss; preserve post identity and metadata.",
+              "observedResult": "Presave content matches the original. Stored post109504 body exactly matches six reviewed URL-base replacements at SHA404a17f721ea1fe36a08428ee5fae1c32cd7190c01c30943bd7cf65a11661501. Title, status, slug, URL, original date, featured media and taxonomy are preserved.",
+              "sourceRef": "https://blitzmetrics.com/website-qa-audit/",
+              "evidenceRefs": [
+                "https://blitzmetrics.com/from-one-email-to-a-live-personal-brand-site/",
+                "sha256:70e25144d2020806d0acefdc82f4f6f4739e95e26a558f369a6225cb7039a059"
+              ]
+            },
+            "normalPublicDestinations": {
+              "state": "pass",
+              "expectedResult": "Fresh normal public source contains exactly the repaired hrefs and copied guide, with relevant destination and valid named fragments.",
+              "observedResult": "Captured normal article response HTTP200 shows exactly five expected LSS hrefs, zero old bases in article content and the corrected guide copy. Target HTTPS200 contains all four matching stage IDs/headings. Rendered body parity preserves everything except six bases and automatic cross-domain link attributes.",
+              "sourceRef": "https://blitzmetrics.com/website-qa-audit/",
+              "evidenceRefs": [
+                "https://blitzmetrics.com/from-one-email-to-a-live-personal-brand-site/",
+                "https://localservicespotlight.com/content-factory/",
+                "sha256:f3a6a080610f22cc6c4fb89d5b5a20fbddf4526548fe3dd2a386ee3eba34751b"
+              ]
+            },
+            "handoff": {
+              "state": "pass",
+              "expectedResult": "Deliver the exact changed-page findings, receipts, remaining scope limits and next action to the existing task/content maintenance owner.",
+              "observedResult": "Verified native/public article receipts and explicit limits were delivered directly to the current Codex task owner. Published review/meta and the existing queue retain this bounded repair and next maintenance route. The global script, migration, novice and semantic limits remain separate; no new job or follow-up clock was created.",
+              "sourceRef": "https://blitzmetrics.com/website-qa-audit/",
+              "evidenceRefs": [
+                "sha256:70e25144d2020806d0acefdc82f4f6f4739e95e26a558f369a6225cb7039a059",
+                "sha256:f3a6a080610f22cc6c4fb89d5b5a20fbddf4526548fe3dd2a386ee3eba34751b",
+                "https://local-service-spotlight.github.io/task-library/maintenance/proof-resolution-2026-10-14.html"
+              ]
+            }
+          },
+          "reviewedAt": "2026-10-14T16:39:00Z"
         }
       ]
     }
