@@ -55,7 +55,7 @@
       ]
     }
   },
-  "libraryUpdated": "October 13, 2026",
+  "libraryUpdated": "October 14, 2026",
   "paths": [
     {
       "id": "implement-agents",
@@ -652,7 +652,7 @@
       "article": "https://blitzmetrics.com/personal-brand",
       "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=build-personal-brand-website#task-build-personal-brand-website",
       "status": "needs-work",
-      "contentSha256": "827e71c350265aee58ae54a96380a04900d08445fadc06a76441a080d4f575b3"
+      "contentSha256": "08a14f520247bfe6525987d7ad3f1433b5d250a836aafcc3a893a8160912b848"
     },
     {
       "slug": "build-third-party-validation",

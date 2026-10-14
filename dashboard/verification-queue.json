@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "ordering": "Setup failures and evidence holds first. Within each priority lane, sort by estimated revenue role, dependencies unblocked, frequency and importance before missing-guide status and gap count. Effort and actual income remain unknown.",
-  "generatedAt": "2026-10-13T16:44:26+00:00",
+  "generatedAt": "2026-10-14T01:25:12+00:00",
   "definition": "Per-task standard gates derived from exact instruction reviews, explicit instruction-requirement checks, contributor status, article mapping/catalog holds, exact-revision article semantic reviews, task-attributed examples and the execution ledger. Unknown proof is never turned into a pass.",
   "stats": {
     "tasks": 276,
@@ -18,10 +18,10 @@
         "unknown": 0
       },
       "instructionStandards": {
-        "pass": 21,
+        "pass": 22,
         "unmet": 0,
         "hold": 0,
-        "unknown": 255
+        "unknown": 254
       },
       "contributorComplete": {
         "pass": 126,
@@ -15508,24 +15508,57 @@
       "historicalEvidenceIds": [],
       "nextAction": "The contributor status is needs-work; finish and review the guide.",
       "standardVerification": {
-        "instructionSourceSha256": "79cd8d22ddf23e922bfb9814e50acb8cadf49a4360cd8b93697b7699fb329f73",
+        "instructionSourceSha256": "75465adfd9df2ae3a748101a87ffb71385374fb61196d4463f370f77b767c870",
         "articleKey": "blitzmetrics.com/personal-brand",
         "gates": {
           "instructionRevisionReviewed": {
             "id": "instructionRevisionReviewed",
             "label": "Exact instruction revision reviewed",
             "state": "pass",
-            "reason": "Current source bytes match the review recorded 2026-10-13. Review scope and limits: Instructions, source checks, teaching example and handoff reviewed. Real-run evidence and article certification remain separate. Destination-only revision: existing prose and check verdicts retained after exact diff inspection; current Content Factory target and relationship checked. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/content-factory-link-2026-10-13.md",
-            "reviewedAt": "2026-10-13",
-            "reviewer": "Codex incremental destination review with independent GPT-6 Luna review",
-            "sourceSha256": "79cd8d22ddf23e922bfb9814e50acb8cadf49a4360cd8b93697b7699fb329f73"
+            "reason": "Current source bytes match the review recorded 2026-10-14. Review scope and limits: Five written criteria only; no article, client execution or novice setup certification. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/site-build-proof-2026-10-14.md",
+            "reviewedAt": "2026-10-14",
+            "reviewer": "Codex root with independent GPT-6.1 Sol high-effort source review",
+            "sourceSha256": "75465adfd9df2ae3a748101a87ffb71385374fb61196d4463f370f77b767c870"
           },
           "instructionStandards": {
             "id": "instructionStandards",
             "label": "Instruction requirements checked",
-            "state": "unknown",
-            "reason": "The current exact-byte review has no structured instruction-requirements checklist.",
-            "sourceSha256": "79cd8d22ddf23e922bfb9814e50acb8cadf49a4360cd8b93697b7699fb329f73"
+            "state": "pass",
+            "reason": "All five instruction requirements have explicit passing checks for the current source revision.",
+            "reviewedAt": "2026-10-14",
+            "reviewer": "Codex root with independent GPT-6.1 Sol high-effort source review",
+            "reviewScope": "Five written criteria only; no article, client execution or novice setup certification. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/site-build-proof-2026-10-14.md",
+            "sourceSha256": "75465adfd9df2ae3a748101a87ffb71385374fb61196d4463f370f77b767c870",
+            "standards": {
+              "version": 1,
+              "checks": {
+                "opening": {
+                  "state": "pass",
+                  "reason": "Quoted first3sentences explain a clear site, trust through real facts, and the linked delivery task. Heuristic grade4.16; actual phone/desktop visual inspected.",
+                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/site-build-proof-2026-10-14.md"
+                },
+                "recipe": {
+                  "state": "pass",
+                  "reason": "Trigger, inputs, seven steps and measured record table make preview, launch and checked live state distinct. No access or schedule is created.",
+                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/site-build-proof-2026-10-14.md"
+                },
+                "links": {
+                  "state": "pass",
+                  "reason": "All task identities checked; receiving source read. Thirteen teaching destinations read by HTTP/browser. Narrow conceptual relationships supported; complete destination certification separate.",
+                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/site-build-proof-2026-10-14.md"
+                },
+                "evidence": {
+                  "state": "pass",
+                  "reason": "Fictional example stays labeled; no real run or saving invented. Older receipts keep unknown recipe, timing and checks.",
+                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/site-build-proof-2026-10-14.md"
+                },
+                "handoff": {
+                  "state": "pass",
+                  "reason": "Exact preview revision, owner decision, named receiver, open issues and acknowledgment required. Pending handoff remains pending.",
+                  "evidence": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/site-build-proof-2026-10-14.md"
+                }
+              }
+            }
           },
           "contributorComplete": {
             "id": "contributorComplete",
@@ -15586,7 +15619,6 @@
         ],
         "heldStandardGates": [],
         "unknownStandardGates": [
-          "instructionStandards",
           "articleSemanticCertification",
           "taskExampleEvidence",
           "recordedExecution",
@@ -27414,7 +27446,7 @@
             "id": "recordedExecution",
             "label": "Recorded real execution",
             "state": "pass",
-            "reason": "21 distinct execution ID(s) name this task; outcomes remain separate.",
+            "reason": "22 distinct execution ID(s) name this task; outcomes remain separate.",
             "executionIds": [
               "authority-guides-repair-20261005-2100",
               "booking-path-checks-20261009-1259",
@@ -27432,6 +27464,7 @@
               "publisher-completion-20260927-134412",
               "revenue-path-repair-20261005-1855",
               "roster-public-boundary-20260927-210848",
+              "site-build-proof-recipe-20261014",
               "task-direct-open-20261002-1404",
               "taxonomy-guide-repair-20261003-1606",
               "tracker-setup-20260925-000216",
