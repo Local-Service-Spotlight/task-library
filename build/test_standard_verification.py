@@ -290,7 +290,7 @@ class StandardVerificationTests(unittest.TestCase):
         self.assertEqual(
             payload['stats']['semanticHoldHubs'],
             len({task['standardVerification']['articleKey'] for task in tasks
-                 if task.get('articleStateReason')}))
+                 if task['standardVerification']['gates']['articleSemanticCertification']['state'] == 'hold'}))
         self.assertEqual(counts['instructionRevisionReviewed']['pass'],
                          sum(bool(task.get('instructionReview')) for task in tasks))
         self.assertEqual(counts['contributorComplete']['pass'],
@@ -299,7 +299,13 @@ class StandardVerificationTests(unittest.TestCase):
                          sum(bool(task.get('article')) for task in tasks))
         self.assertEqual(counts['articleCatalogGate']['pass'],
                          sum(task.get('articleState') == 'ready' for task in tasks))
-        self.assertEqual(counts['articleSemanticCertification']['pass'], 0)
+        as_of = datetime.fromisoformat(payload['generatedAt'].replace('Z', '+00:00'))
+        semantic_evidence = task_build.load_article_semantic_evidence()
+        expected_semantic_passes = sum(
+            not row.get('articleStateReason') and
+            verification.article_semantic_reviews.evaluate(row, semantic_evidence, now=as_of)['state'] == 'pass'
+            for row in tasks if row.get('article'))
+        self.assertEqual(counts['articleSemanticCertification']['pass'], expected_semantic_passes)
         exact_examples = {
             slug for hub in data['articleHubs'] for slug, count in
             (hub.get('taskMetaCounts') or {}).items() if count > 0}

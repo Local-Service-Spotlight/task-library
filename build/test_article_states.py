@@ -437,21 +437,29 @@ class BuiltArticleInventory(unittest.TestCase):
 
     def test_current_inventory_has_exact_derived_counts(self):
         self.assertEqual(self.data['stats']['articleHubs'], 53)
-        self.assertEqual(self.data['stats']['definitiveArticles'], 14)
+        self.assertEqual(self.data['stats']['definitiveArticles'], 15)
 
         tasks = copy.deepcopy(self.tasks)
         derived = task_build.derive_article_states(tasks)
-        self.assertEqual(derived, {'articleHubs': 53, 'definitiveArticles': 14})
+        self.assertEqual(derived, {'articleHubs': 53, 'definitiveArticles': 15})
 
     def test_registered_recipes_keep_wip_and_ledger_backed_history(self):
         by_slug = {t['slug']: t for t in self.tasks}
         self.assertEqual(self.data['stats']['total'], 276)
-        self.assertEqual(self.data['stats']['complete'], 126)
+        self.assertEqual(self.data['stats']['complete'], 127)
         self.assertEqual(self.data['stats']['gaps'], 23)
         for slug in ('create-or-update-a-definitive-article', 'document-a-task', 'install-local-qwen',
-                     'submit-weekly-maa-report-every-friday', 'deliver-personal-brand-site-from-request'):
+                     'submit-weekly-maa-report-every-friday'):
             self.assertEqual(by_slug[slug]['status'], 'needs-work')
             self.assertEqual(by_slug[slug]['articleState'], 'wip')
+        delivery = by_slug['deliver-personal-brand-site-from-request']
+        self.assertEqual(delivery['status'], 'complete')
+        self.assertEqual(delivery['articleState'], 'ready')
+        # Contributor/catalog readiness cannot erase the exact article hold
+        # or fabricate real use by a beginner.
+        self.assertEqual(delivery['standardVerification']['gates']['articleSemanticCertification']['state'], 'hold')
+        self.assertEqual(delivery['standardVerification']['gates']['setupSuccess']['state'], 'unknown')
+        self.assertFalse(delivery['standardVerification']['fullyVerified'])
         linked = by_slug['follow-entity-linking-decision-tree']
         self.assertEqual(linked['status'], 'complete')
         self.assertEqual(linked['articleState'], 'wip')
@@ -605,7 +613,7 @@ class BuiltArticleInventory(unittest.TestCase):
         self.assertEqual(self.data['stats']['metaOrbitHubsWithEvidence'], 13)
         self.assertEqual(self.data['stats']['metaOrbitHubsUnknown'], 40)
         self.assertEqual({key for key, hub in hubs.items()
-                          if hub['state'] == 'ready'}, set(expected) | {'blitzmetrics.com/skill-publishing-standard'})
+                          if hub['state'] == 'ready'}, set(expected) | {'blitzmetrics.com/skill-publishing-standard', 'blitzmetrics.com/from-one-email-to-a-live-personal-brand-site'})
         for key, (count, tier) in expected.items():
             with self.subTest(hub=key):
                 self.assertEqual(hubs[key]['metaCountStatus'], 'verified')
