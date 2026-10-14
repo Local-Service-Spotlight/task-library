@@ -860,6 +860,8 @@ def write_library_index(data, out_path):
         f'It shows the recorded gate evidence and next review for all {verification_stats["tasks"]} tasks. '
         f'<strong>{verification_stats["fullyVerifiedTasks"]} currently pass every gate</strong>; '
         f'unknown proof remains visible instead of becoming a green status.</p>')
+    if verification_stats.get('proofSummary'):
+        L.append(standard_verification._proof_html(verification_stats['proofSummary']))
     for c in data['categories']:
         L.append(f"<h2>{html_escape(c['name'])}</h2>")
         L.append(f"<p>{html_escape(c['description'])}</p>")

@@ -65,6 +65,76 @@ def historical(evidence_hash='b' * 64, identity_hash='e' * 64):
 
 
 class ExecutionLedgerTests(unittest.TestCase):
+    def test_dated_accepted_counts_dedupe_shared_jobs_and_preserve_handoff_holds(self):
+        run = record()
+        run['taskSlugs'] = ['first-task', 'second-task']
+        run['recipeRevisions']['second-task'] = copy.deepcopy(run['recipeRevisions']['first-task'])
+        run['acceptanceReviews'] = [acceptance(), acceptance(reviewId='review-002', taskSlug='second-task')]
+        old = historical()
+        old['taskSlugs'] = ['first-task', 'second-task']
+        old['review']['handoff']['state'] = 'hold'
+        output_only = historical(identity_hash='f' * 64)
+        output_only['review']['acceptance']['state'] = 'unknown'
+        tasks = [{'slug': slug} for slug in KNOWN]
+        public = executions.attach(tasks, [run], NOW, [old, output_only])
+        proof = public['proofSummary']
+        self.assertEqual(proof['recordedAcceptedOutputCount'], 1)
+        self.assertEqual(proof['recordedAcceptedReviewCount'], 2)
+        self.assertEqual(proof['historicalVerifiedOutputCount'], 2)
+        self.assertEqual(proof['historicalAcceptedOutputCount'], 1)
+        self.assertEqual(proof['historicalIdentityOutputOnlyCount'], 1)
+        self.assertEqual(proof['historicalAcceptedHandoffHoldCount'], 1)
+        self.assertEqual(proof['historicalAcceptedHandoffPassCount'], 0)
+        self.assertEqual(public['recordedExecutions'], 1)
+        for task in tasks:
+            expected = int(task['slug'] != 'untracked-task')
+            self.assertEqual(task['proofSummary']['recordedAcceptedOutputCount'], expected)
+            self.assertEqual(task['proofSummary']['historicalAcceptedOutputCount'], expected)
+        duplicated = executions.proof_summary(proof['acceptedRecordedOutputs'] * 2,
+                                              public['historicalDeliveryEvidence']['records'] * 2)
+        self.assertEqual(duplicated, proof)
+
+    def test_partial_correction_and_latest_review_fail_closed_for_dated_acceptance(self):
+        run = record(); run['acceptanceReviews'] = [acceptance()]
+        for state in ('partial', 'failed', 'cancelled'):
+            run['status'] = state
+            public = executions.attach([{'slug': 'first-task'}], [run], NOW)
+            self.assertEqual(public['proofSummary']['recordedAcceptedOutputCount'], 0)
+        run['status'] = 'completed'
+        corrected = acceptance(reviewId='review-002', reviewedAt='2026-09-02T11:00:00Z')
+        corrected['criteria']['handoff']['state'] = 'hold'
+        run['updatedAt'] = corrected['reviewedAt']
+        run['acceptanceReviews'].append(corrected)
+        public = executions.attach([{'slug': 'first-task'}], [run], NOW)
+        self.assertEqual(public['proofSummary']['recordedAcceptedOutputCount'], 0)
+        self.assertEqual(len(public['executions'][0]['acceptanceReviews']), 2)
+
+    def test_dated_acceptance_uses_public_allowlist_for_private_review_evidence(self):
+        run = record(); review = acceptance()
+        review['criteria']['result']['sourceRef'] = 'sha256:' + 'e' * 64
+        review['criteria']['result']['evidenceRefs'] = ['sha256:' + 'f' * 64]
+        run['acceptanceReviews'] = [review]
+        public = executions.attach([{'slug': 'first-task'}], [run], NOW)
+        text = json.dumps(public['proofSummary'])
+        self.assertNotIn('e' * 64, text)
+        self.assertNotIn('f' * 64, text)
+        self.assertNotIn(review['executor'], text)
+        projected = public['proofSummary']['acceptedRecordedOutputs'][0]
+        self.assertTrue(projected['criteria']['result']['sourcePrivateEvidenceRecorded'])
+        self.assertTrue(projected['criteria']['result']['privateEvidenceRecorded'])
+        self.assertEqual(projected['instructionSourceSha256'], review['instructionSourceSha256'])
+
+    def test_tied_latest_reviews_for_same_run_task_cannot_supply_dated_acceptance(self):
+        run = record()
+        passed = acceptance()
+        conflicting = acceptance(reviewId='review-002', reviewedAt='2026-09-01T12:00:00+01:00')
+        conflicting['criteria']['result']['state'] = 'unmet'
+        for reviews in ([passed, conflicting], [conflicting, passed]):
+            run['acceptanceReviews'] = reviews
+            self.assertEqual(executions.accepted_recorded_outputs([run]), [])
+            with self.assertRaisesRegex(ValueError, 'distinct task and review timestamps'):
+                executions.attach([{'slug': 'first-task'}], [run], NOW)
+
     def setUp(self):
         self.tmp = tempfile.TemporaryDirectory()
         self.addCleanup(self.tmp.cleanup)
@@ -175,6 +245,8 @@ class ExecutionLedgerTests(unittest.TestCase):
         self.assertEqual(projection['completedExecutions'], None)
         self.assertEqual(projection['historicalDeliveryEvidence']['count'], 1)
         self.assertEqual(projection['historicalDeliveryEvidence']['candidateCount'], 1)
+        self.assertEqual(projection['proofSummary']['historicalAcceptedOutputCount'], 1)
+        self.assertEqual(projection['proofSummary']['recordedAcceptedOutputCount'], 0)
         self.assertEqual(tasks[0]['executionHistory']['recordedRuns'], None)
         self.assertEqual(tasks[0]['executionHistory']['completedLast30Days'], None)
         self.assertEqual(tasks[0]['historicalDeliveryEvidence']['count'], 1)
@@ -233,6 +305,7 @@ class ExecutionLedgerTests(unittest.TestCase):
         projected_tasks = [{'slug': 'first-task'}, {'slug': 'second-task'}]
         projected = executions.attach(projected_tasks, executions.load(self.path, KNOWN), NOW)
         self.assertEqual(projected['historicalDeliveryEvidence']['count'], 1)
+        self.assertEqual(projected['proofSummary']['historicalAcceptedOutputCount'], 1)
         self.assertEqual([task['historicalDeliveryEvidence']['count'] for task in projected_tasks], [1, 1])
         self.assertEqual(projected['recordedExecutions'], None)
 

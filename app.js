@@ -267,6 +267,15 @@ cards.forEach(function(c){ countUp(el('[data-stat="' + c.k + '"]'), S[c.k] || 0)
     '<span><span class="d d-ok"></span><b>' + fmt(ok) + '</b> complete</span>' +
     '<span><span class="d d-warn"></span><b>' + fmt(warn) + '</b> needs work</span>' +
     '<span><span class="d d-bad"></span><b>' + fmt(bad) + '</b> gaps</span>';
+  const verification = DATA.verificationSummary || {};
+  if (verification.proofSummary) {
+    const gates = verification.gateCounts || {};
+    el('#btl-health-legend').insertAdjacentHTML('afterend',
+      '<section aria-label="Dated delivery proof and current verification"><p><strong>' + fmt(verification.fullyVerifiedTasks) +
+      ' tasks pass every current standard gate.</strong> Current recipe acceptance: ' + fmt((gates.acceptedExecution || {}).pass) +
+      ' tasks. A beginner used the guide without help: ' + fmt((gates.setupSuccess || {}).pass) + ' tasks.</p>' +
+      proofSummaryHTML(verification.proofSummary) + '</section>');
+  }
 })();
 
 /* ============================================================
@@ -311,12 +320,45 @@ function articleLink(t){
   }
   return '<a class="btl-art" href="' + esc(t.article) + '" target="_blank" rel="noopener" title="' + esc(title) + '">' + label + '</a>' + orbit;
 }
+function proofSummaryHTML(p){
+  if (!p) return '';
+  return '<p class="btl-chain"><strong>' + fmt(p.recordedAcceptedOutputCount) + ' recorded jobs have accepted results.</strong> ' +
+    fmt(p.historicalVerifiedOutputCount) + ' older deliveries have checked outputs; ' + fmt(p.historicalAcceptedOutputCount) +
+    ' were accepted for the scope described below. ' + fmt(p.historicalIdentityOutputOnlyCount) + ' have identity/output proof without recorded acceptance. ' +
+    'Handoff for accepted older deliveries: ' + fmt(p.historicalAcceptedHandoffPassCount) + ' pass, ' +
+    fmt(p.historicalAcceptedHandoffHoldCount) + ' held, ' + fmt(p.historicalAcceptedHandoffUnresolvedCount) +
+    ' unresolved. Counts describe dated output scope; current recipe and novice checks remain separate. Installation and scheduling are not certified.</p>';
+}
+function acceptedOutputHTML(t, detail){
+  const p = t.proofSummary;
+  if (!p || !p.recordedAcceptedOutputCount) return '';
+  let html = '<span class="btl-orbit" title="Completed recorded runs with an independent all-pass review for the named output scope. This dated proof does not certify today’s recipe.">' +
+    fmt(p.recordedAcceptedOutputCount) + ' recorded ' + (p.recordedAcceptedOutputCount === 1 ? 'job has an accepted result' : 'jobs have accepted results') + '</span>';
+  if (detail) {
+    const current = ((t.standardVerification || {}).gates || {}).acceptedExecution;
+    html += '<p class="btl-chain">Dated acceptance covers only the criteria recorded below. An instruction change, stale observation or later unsuccessful run can block current recipe acceptance while an earlier accepted output remains recorded.' +
+      (current ? ' <strong>Current recipe acceptance: ' + esc(current.state) + '</strong> — ' + esc(current.reason) : ' Current recipe acceptance: unknown.') + '</p><ul>';
+    html += p.acceptedRecordedOutputs.map(function(r){
+      return '<li><strong>Accepted ' + esc(r.reviewedAt) + '</strong> · <code>' + esc(r.executionId) + '</code><br>' +
+        esc(r.result) + '<br>Scope: named criteria; handoff: ' + esc(r.nextHandoff) +
+        '<details><summary>Exact recipe and instruction identities</summary><small style="overflow-wrap:anywhere">Recipe: ' + esc(r.canonicalURL) + ' · ' + esc(r.representation) + ' · <code>' + esc(r.recipeSourceSha256) +
+        '</code>; instruction: <code>' + esc(r.instructionSourceSha256) + '</code></small></details><ul>' +
+        Object.keys(r.criteria).map(function(k){ const c=r.criteria[k]; return '<li><strong>' + esc(k) + ': ' + esc(c.state) + '</strong> — ' +
+          'Expected: ' + esc(c.expectedResult) + ' Observed: ' + esc(c.observedResult) +
+          (c.sourceUrl ? ' <a href="' + esc(c.sourceUrl) + '" target="_blank" rel="noopener">Source requirement ↗</a>' : '') +
+          (c.evidenceUrls || []).map(function(url, i){return ' <a href="' + esc(url) + '" target="_blank" rel="noopener">Evidence ' + (i + 1) + ' ↗</a>';}).join('') +
+          (c.privateEvidenceRecorded || c.sourcePrivateEvidenceRecorded ? ' · Private proof retained' : '') + '</li>'; }).join('') + '</ul></li>';
+    }).join('') + '</ul>';
+  }
+  return html;
+}
 function historicalEvidenceHTML(t, detail){
   const h = t.historicalDeliveryEvidence;
   if (!h || !h.candidateCount) return '';
   let html = '<span class="btl-orbit" title="Older work checked against source records and outputs. Separate from recipe verification and recorded execution counts.">' +
     fmt(h.count) + ' checked historical ' + (h.count === 1 ? 'delivery' : 'deliveries') + '</span>';
   if (detail) {
+    html += proofSummaryHTML(t.proofSummary);
     html += '<p class="btl-chain">This proof shows what was delivered before the run record was complete. It does not prove that today’s guide was followed or that a new user can complete setup. One delivery can support more than one task.</p><ul>';
     html += h.records.map(function(r){
       return '<li>' + esc(r.outcome) + '<br><small>Recipe used: ' + esc(r.recipeRevision.state) +
@@ -351,7 +393,7 @@ function executionHistoryHTML(t, detail){
         (r.privateEvidenceRecorded ? ' · Private evidence retained' : '') + '</li>';
     }).join('') + '</ul>';
   }
-  return html + historicalEvidenceHTML(t, detail);
+  return html + acceptedOutputHTML(t, detail) + historicalEvidenceHTML(t, detail);
 }
 function rowHTML(t){
   const st = STATUS[t.status] || STATUS.gap;
