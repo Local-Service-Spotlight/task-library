@@ -1738,19 +1738,28 @@
       },
       "startedAt": "2026-10-14T01:05:03.771394+00:00",
       "recordedAt": "2026-10-14T01:05:03.771394+00:00",
-      "updatedAt": "2026-10-14T01:05:03.771394+00:00",
-      "status": "running",
-      "result": "Improving one site-build recipe with explicit evidence and receiving acceptance; public release pending. This is documentation maintenance, not a site launch.",
+      "updatedAt": "2026-10-14T01:24:58.852983+00:00",
+      "status": "completed",
+      "result": "Published one site-build recipe with plain linked opening, measured result record, owner decision and receiving acknowledgment. Exact-source independent review,216tests,7public archives,6deployed projections and phone/desktop checks passed. Written passes22;fullyverified0. No client execution or new historical job.",
       "metaArticle": {
-        "status": "draft",
-        "draftSha256": "53dbbe43587549fd97353727aa365f4ac269d386bad5903337cfd9358e47a976"
+        "status": "published",
+        "url": "https://local-service-spotlight.github.io/task-library/maintenance/site-build-proof-2026-10-14.html"
       },
       "evidence": [
         {
           "visibility": "public",
           "url": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/site-build-proof-2026-10-14.md"
+        },
+        {
+          "visibility": "public",
+          "url": "https://github.com/Local-Service-Spotlight/task-library/pull/93"
+        },
+        {
+          "visibility": "private",
+          "sha256": "32f754e4e1068af63b24fa5ce3ba89a8f28f09fb87e22cdb17a7b422e09db3ca"
         }
-      ]
+      ],
+      "finishedAt": "2026-10-14T01:24:58.852983+00:00"
     }
   ],
   "historicalEvidence": [
