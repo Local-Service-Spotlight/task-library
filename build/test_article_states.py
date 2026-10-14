@@ -609,9 +609,9 @@ class BuiltArticleInventory(unittest.TestCase):
         }
         hubs = {hub['key']: hub for hub in self.data['articleHubs']}
 
-        self.assertEqual(self.data['stats']['verifiedMetaArticles'], 88)
-        self.assertEqual(self.data['stats']['metaOrbitHubsWithEvidence'], 13)
-        self.assertEqual(self.data['stats']['metaOrbitHubsUnknown'], 40)
+        self.assertEqual(self.data['stats']['verifiedMetaArticles'], 89)
+        self.assertEqual(self.data['stats']['metaOrbitHubsWithEvidence'], 14)
+        self.assertEqual(self.data['stats']['metaOrbitHubsUnknown'], 39)
         self.assertEqual({key for key, hub in hubs.items()
                           if hub['state'] == 'ready'}, set(expected) | {'blitzmetrics.com/skill-publishing-standard', 'blitzmetrics.com/from-one-email-to-a-live-personal-brand-site'})
         for key, (count, tier) in expected.items():
@@ -620,9 +620,14 @@ class BuiltArticleInventory(unittest.TestCase):
                 self.assertEqual(hubs[key]['metaArticleCount'], count)
                 self.assertEqual(hubs[key]['metaOrbitTier'], tier)
         self.assertTrue(all(hub['metaCountStatus'] == 'unknown'
-                            for hub in hubs.values() if hub['state'] == 'wip'))
+                            for key, hub in hubs.items() if hub['state'] == 'wip'
+                            and key != 'blitzmetrics.com/seo-tree'))
         self.assertTrue(all(hub['metaArticleCount'] is None
-                            for hub in hubs.values() if hub['state'] == 'wip'))
+                            for key, hub in hubs.items() if hub['state'] == 'wip'
+                            and key != 'blitzmetrics.com/seo-tree'))
+        self.assertEqual(hubs['blitzmetrics.com/seo-tree']['metaCountStatus'], 'partial')
+        self.assertEqual(hubs['blitzmetrics.com/seo-tree']['metaArticleCount'], 1)
+        self.assertEqual(hubs['blitzmetrics.com/seo-tree']['state'], 'wip')
         self.assertNotIn('blitzmetrics.com/blog-posting-guidelines', hubs)
 
         new_meta = 'https://blitzmetrics.com/how-we-made-definitive-article-strength-measurable/'

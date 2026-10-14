@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "ordering": "Setup failures and evidence holds first. Within each priority lane, sort by estimated revenue role, dependencies unblocked, frequency and importance before missing-guide status and gap count. Effort and actual income remain unknown.",
-  "generatedAt": "2026-10-14T18:07:25+00:00",
+  "generatedAt": "2026-10-14T18:21:51+00:00",
   "definition": "Per-task standard gates derived from exact instruction reviews, explicit instruction-requirement checks, contributor status, article mapping/catalog holds, exact-revision article semantic reviews, task-attributed examples and the execution ledger. Unknown proof is never turned into a pass.",
   "stats": {
     "tasks": 276,
@@ -455,10 +455,10 @@
         "unknown": 255
       },
       "taskExampleEvidence": {
-        "pass": 10,
+        "pass": 11,
         "unmet": 0,
         "hold": 0,
-        "unknown": 266
+        "unknown": 265
       },
       "recordedExecution": {
         "pass": 5,
@@ -10627,8 +10627,12 @@
           "taskExampleEvidence": {
             "id": "taskExampleEvidence",
             "label": "Task-attributed example evidence",
-            "state": "unknown",
-            "reason": "No source-backed example audit exists for the mapped hub."
+            "state": "pass",
+            "reason": "1 audited example URL(s) are attributable to this task.",
+            "exampleUrls": [
+              "https://local-service-spotlight.github.io/task-library/maintenance/site-guide-seo-placement-2026-10-15.html"
+            ],
+            "auditedAt": "2026-10-14"
           },
           "recordedExecution": {
             "id": "recordedExecution",
@@ -10748,7 +10752,6 @@
         ],
         "heldStandardGates": [],
         "unknownStandardGates": [
-          "taskExampleEvidence",
           "setupSuccess"
         ],
         "fullyVerified": false,
@@ -20590,7 +20593,8 @@
             "id": "taskExampleEvidence",
             "label": "Task-attributed example evidence",
             "state": "unknown",
-            "reason": "No source-backed example audit exists for the mapped hub."
+            "reason": "The hub has historical example volume, but no audited record attributes an example to this task slug.",
+            "auditedAt": "2026-10-14"
           },
           "recordedExecution": {
             "id": "recordedExecution",
@@ -21507,7 +21511,8 @@
             "id": "taskExampleEvidence",
             "label": "Task-attributed example evidence",
             "state": "unknown",
-            "reason": "No source-backed example audit exists for the mapped hub."
+            "reason": "The hub has historical example volume, but no audited record attributes an example to this task slug.",
+            "auditedAt": "2026-10-14"
           },
           "recordedExecution": {
             "id": "recordedExecution",
@@ -21638,7 +21643,8 @@
             "id": "taskExampleEvidence",
             "label": "Task-attributed example evidence",
             "state": "unknown",
-            "reason": "No source-backed example audit exists for the mapped hub."
+            "reason": "The hub has historical example volume, but no audited record attributes an example to this task slug.",
+            "auditedAt": "2026-10-14"
           },
           "recordedExecution": {
             "id": "recordedExecution",
@@ -22770,7 +22776,8 @@
             "id": "taskExampleEvidence",
             "label": "Task-attributed example evidence",
             "state": "unknown",
-            "reason": "No source-backed example audit exists for the mapped hub."
+            "reason": "The hub has historical example volume, but no audited record attributes an example to this task slug.",
+            "auditedAt": "2026-10-14"
           },
           "recordedExecution": {
             "id": "recordedExecution",
@@ -22899,7 +22906,8 @@
             "id": "taskExampleEvidence",
             "label": "Task-attributed example evidence",
             "state": "unknown",
-            "reason": "No source-backed example audit exists for the mapped hub."
+            "reason": "The hub has historical example volume, but no audited record attributes an example to this task slug.",
+            "auditedAt": "2026-10-14"
           },
           "recordedExecution": {
             "id": "recordedExecution",
@@ -23029,7 +23037,8 @@
             "id": "taskExampleEvidence",
             "label": "Task-attributed example evidence",
             "state": "unknown",
-            "reason": "No source-backed example audit exists for the mapped hub."
+            "reason": "The hub has historical example volume, but no audited record attributes an example to this task slug.",
+            "auditedAt": "2026-10-14"
           },
           "recordedExecution": {
             "id": "recordedExecution",
@@ -23159,7 +23168,8 @@
             "id": "taskExampleEvidence",
             "label": "Task-attributed example evidence",
             "state": "unknown",
-            "reason": "No source-backed example audit exists for the mapped hub."
+            "reason": "The hub has historical example volume, but no audited record attributes an example to this task slug.",
+            "auditedAt": "2026-10-14"
           },
           "recordedExecution": {
             "id": "recordedExecution",

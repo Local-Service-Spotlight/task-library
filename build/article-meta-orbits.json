@@ -244,7 +244,7 @@
       "countedMetaMissingExplicitTaxonomy": 54
     },
     "primaryAuditSource": "orbit-audit-primary.json",
-    "uniqueCountedPrimaryMetaArticles": 88
+    "uniqueCountedPrimaryMetaArticles": 89
   },
   "hubs": [
     {
@@ -2298,6 +2298,88 @@
           "evidenceMethod": "reviewed primary-parent classification plus exact canonical URL in editable post body",
           "counted": true,
           "reason": "Counted: published meta/worked-example post; completed run materially executes this hub and the authored body links directly to it."
+        }
+      ]
+    },
+    {
+      "url": "https://blitzmetrics.com/seo-tree",
+      "label": "SEO Tree",
+      "kind": "Topic framework",
+      "domain": "blitzmetrics.com",
+      "endpoint": "posts",
+      "postId": 102787,
+      "wordpressSha256": "b40c6815df1774c5570ad4a567abc8f203f661d7584a485d7840132f921b8df7",
+      "taskLibrarySourceUrl": "https://blitzmetrics.com/seo-tree",
+      "taskCount": 8,
+      "taskImportanceTotal": 26,
+      "tasks": [
+        {
+          "slug": "place-content-on-seo-tree-with-proper-links",
+          "title": "Place content on SEO Tree with proper links",
+          "importance": 5
+        },
+        {
+          "slug": "enhance-existing-articles-before-creating-new-ones",
+          "title": "Enhance existing articles before creating new ones",
+          "importance": 3
+        },
+        {
+          "slug": "fit-every-new-piece-into-the-tree-structure",
+          "title": "Fit every new piece into the tree structure",
+          "importance": 3
+        },
+        {
+          "slug": "identify-and-eliminate-orphan-standalone-articles",
+          "title": "Identify and eliminate orphan/standalone articles",
+          "importance": 3
+        },
+        {
+          "slug": "link-leaves-to-branches-branches-to-trunk",
+          "title": "Link leaves to branches, branches to trunk",
+          "importance": 3
+        },
+        {
+          "slug": "map-content-hierarchically-root-trunk-branches-leaves",
+          "title": "Map content hierarchically (root \u2192 trunk \u2192 branches \u2192 leaves)",
+          "importance": 3
+        },
+        {
+          "slug": "remove-duplicate-thin-pages",
+          "title": "Remove duplicate thin pages",
+          "importance": 3
+        },
+        {
+          "slug": "replace-ai-looking-content-with-real-eeat",
+          "title": "Replace AI-looking content with real EEAT",
+          "importance": 3
+        }
+      ],
+      "metaAuditedAt": "2026-10-14",
+      "metaCountStatus": "partial",
+      "metaArticleCount": 1,
+      "strength": {
+        "score": 1,
+        "label": "Emerging",
+        "band": "1-2"
+      },
+      "metaArticles": [
+        {
+          "url": "https://local-service-spotlight.github.io/task-library/maintenance/site-guide-seo-placement-2026-10-15.html",
+          "sourceUrl": "https://local-service-spotlight.github.io/task-library/maintenance/site-guide-seo-placement-2026-10-15.html",
+          "hubUrl": "https://blitzmetrics.com/seo-tree",
+          "title": "Connect a task guide to its topic home",
+          "taxonomyEvidence": [],
+          "explicitMetaTaxonomy": false,
+          "explicitMetaLanguage": true,
+          "primaryParentHub": "https://blitzmetrics.com/seo-tree",
+          "taskSlugs": [
+            "place-content-on-seo-tree-with-proper-links"
+          ],
+          "executionId": "site-guide-seo-placement-20261015",
+          "evidenceMethod": "Anonymous published meta exact-byte comparison, task-specific canonical links, exact current recipe and independently accepted saved/public placement result. Phone and desktop opening inspected.",
+          "counted": true,
+          "reason": "One published record of one completed current-recipe placement. Names only this task; sibling tasks, novice use and site delivery are not certified.",
+          "firstObservedAt": "2026-10-14T18:19:13.292950+00:00"
         }
       ]
     }

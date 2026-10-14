@@ -1890,19 +1890,24 @@
       },
       "startedAt": "2026-10-14T17:10:41.497809+00:00",
       "recordedAt": "2026-10-14T17:58:12.612070+00:00",
-      "updatedAt": "2026-10-14T17:58:12.612080+00:00",
-      "status": "running",
-      "result": "Published and reviewed two owned task articles. Library evidence release and actual human beginner test are pending; documentation review does not execute site delivery.",
+      "updatedAt": "2026-10-14T18:21:20.969655+00:00",
+      "status": "partial",
+      "result": "Both owned guides and current instruction reviews are published; exact public release and seven archives pass. SEO placement has a separate completed and accepted child execution. Full two-task certification remains incomplete: real novice use, current-recipe site delivery, site short route and three shared SEO-hub task gaps remain. Operations has the existing human-test request; no participant acceptance or human attempt is claimed.",
       "metaArticle": {
-        "status": "draft",
-        "draftSha256": "fd7c6758f97ae4659a3b8eb81065eec94e57479dbfc81d9bff3c23b42148b280"
+        "status": "published",
+        "url": "https://local-service-spotlight.github.io/task-library/maintenance/two-task-certification-2026-10-15.html"
       },
       "evidence": [
         {
           "visibility": "private",
           "sha256": "d7bee1c3ba44acf0d6070c0fbe394b6c4a65015cdce3b3ff8699bf8129710e48"
+        },
+        {
+          "visibility": "private",
+          "sha256": "f26460ffe735d8f79438016f4558649a1e79f23adfadf77d32ea61f5f917dae9"
         }
-      ]
+      ],
+      "finishedAt": "2026-10-14T18:21:20.969655+00:00"
     },
     {
       "executionId": "site-guide-seo-placement-20261015",
@@ -1918,12 +1923,12 @@
       },
       "startedAt": "2026-10-14T17:58:12.712239+00:00",
       "recordedAt": "2026-10-14T17:58:12.712239+00:00",
-      "updatedAt": "2026-10-14T18:07:23.774491+00:00",
+      "updatedAt": "2026-10-14T18:21:20.969655+00:00",
       "status": "completed",
       "result": "Placed the site-delivery guide under its Personal Branding topic home. One new parent body link and two existing child return links reach checked public pages; exact saved source and phone/desktop checks pass. Handed the placement record to independent checklist review. This is one owned SEO placement, not site delivery or beginner use.",
       "metaArticle": {
-        "status": "draft",
-        "draftSha256": "bfdd3d4bff95a4ac67b32758745e981d422369f4a8c20ece363d5135918b646d"
+        "status": "published",
+        "url": "https://local-service-spotlight.github.io/task-library/maintenance/site-guide-seo-placement-2026-10-15.html"
       },
       "evidence": [
         {
@@ -1945,6 +1950,10 @@
         {
           "visibility": "private",
           "sha256": "eee0f760d8cf63213cb43fac56f0cb11b75a41e764fe22615b906860ff3c89e1"
+        },
+        {
+          "visibility": "private",
+          "sha256": "f26460ffe735d8f79438016f4558649a1e79f23adfadf77d32ea61f5f917dae9"
         }
       ],
       "finishedAt": "2026-10-14T18:01:10.697074+00:00",
