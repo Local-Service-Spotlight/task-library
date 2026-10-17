@@ -85,5 +85,5 @@ Keep one stable execution ID across retries and edits. A separately scoped child
 
 ## Review and evidence still needed
 
-The source contributor status is preserved. It is not certification of this draft or proof of account access, completed work or a live outcome. The worked example teaches the method and is explicitly fictional.
+Contributor status records that these written instructions are complete. It is not proof of account access, completed work or a live outcome. The worked example teaches the method and is explicitly fictional.
 - Real receiver evidence and authorized downstream test effects must be supplied; this authoring pass submitted no form or message.

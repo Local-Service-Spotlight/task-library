@@ -457,7 +457,12 @@ class BuiltArticleInventory(unittest.TestCase):
         self.assertEqual(delivery['articleState'], 'ready')
         # Contributor/catalog readiness cannot erase the exact article hold
         # or fabricate real use by a beginner.
-        self.assertEqual(delivery['standardVerification']['gates']['articleSemanticCertification']['state'], 'hold')
+        semantic = delivery['standardVerification']['gates']['articleSemanticCertification']
+        self.assertEqual(semantic['semanticReview']['criteria']['publicationStandards']['state'], 'hold')
+        # A dated source observation expires without erasing its stored hold.
+        self.assertIn(semantic['state'], ('hold', 'unknown'))
+        if semantic['state'] == 'unknown':
+            self.assertEqual(semantic['reason'], 'The article revision observation is outside the 24-hour freshness window.')
         self.assertEqual(delivery['standardVerification']['gates']['setupSuccess']['state'], 'unknown')
         self.assertFalse(delivery['standardVerification']['fullyVerified'])
         linked = by_slug['follow-entity-linking-decision-tree']

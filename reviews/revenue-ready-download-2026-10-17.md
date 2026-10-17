@@ -4,7 +4,7 @@ This repair helps readers find the guides for a clear contact path and a working
 
 ## Exact change and scope
 
-Only `status: needs-work` becomes `status: complete` in two locally maintained guides. Their entire bodies, openings, diagrams, steps, links, fictional examples and acceptance criteria remain byte-for-byte unchanged. Both already have all five written requirements marked pass in the October 13 exact-revision reviews. Those verdicts and their dated evidence are retained, not claimed as new article or link observations.
+`status: needs-work` becomes `status: complete` in two locally maintained guides. Their evidence note now explains that contributor status records complete instructions. Openings, diagrams, steps, links, fictional examples and acceptance criteria remain byte-for-byte unchanged. Both already have all five written requirements marked pass in the October 13 exact-revision reviews. Those verdicts and their dated evidence are retained, not claimed as new article or link observations.
 
 The [Task Library Standard](../Task-Library-Standard.md#what-a-ready-document-proves) defines complete as the contributor's instructions-complete claim. Actual execution, source observations, acceptance and novice use are separate. Their unknown or held gates stay untouched. The ready ZIP previously omitted both because selection uses contributor status. This repair changes eligibility; actual archive inclusion still requires a release check.
 
@@ -18,5 +18,5 @@ Existing source reviews inspected linked destination meanings and phone/desktop 
 
 ## Revision identities
 
-- `create-clear-conversion-path`: `a7ab85e8cb4a794fc4821966fc6115e681cd1dcd3684f920b8bcabc64fed99a0` → `27386317f14279e1d70b8b577dc8de395c677d00dc111eec4ae24846dc71f39e`; entire body unchanged.
-- `ensure-working-contact-form-delivers-notifications`: `e92b767a0a175475c6e478008a05171783773a84443feeb7807e4a427757692d` → `a9ad4bf43c5e3b3a830736df3aeb2f096b63ed4c0a8688d1b2fc3267d8f7dbe9`; entire body unchanged.
+- `create-clear-conversion-path`: `a7ab85e8cb4a794fc4821966fc6115e681cd1dcd3684f920b8bcabc64fed99a0` → `cf69ce3f3bc32f6e009f7f1a20bc09a2d1d232195a2538be7521e982b1a629e7`; only contributor status and its evidence note changed.
+- `ensure-working-contact-form-delivers-notifications`: `e92b767a0a175475c6e478008a05171783773a84443feeb7807e4a427757692d` → `ee8b5f159bcee7bf1fa76e30c0f1351b2b1fe59b7dd9faab76e2bf7f1a2ad870`; only contributor status and its evidence note changed.

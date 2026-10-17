@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "ordering": "Setup failures and evidence holds first. Within each priority lane, sort by estimated revenue role, dependencies unblocked, frequency and importance before missing-guide status and gap count. Effort and actual income remain unknown.",
-  "generatedAt": "2026-10-17T01:14:56+00:00",
+  "generatedAt": "2026-10-17T01:22:13+00:00",
   "definition": "Per-task standard gates derived from exact instruction reviews, explicit instruction-requirement checks, contributor status, article mapping/catalog holds, exact-revision article semantic reviews, task-attributed examples and the execution ledger. Unknown proof is never turned into a pass.",
   "stats": {
     "tasks": 276,
@@ -3586,17 +3586,17 @@
       },
       "nextAction": "At least one task mapped to this hub is not contributor-complete.",
       "standardVerification": {
-        "instructionSourceSha256": "27386317f14279e1d70b8b577dc8de395c677d00dc111eec4ae24846dc71f39e",
+        "instructionSourceSha256": "cf69ce3f3bc32f6e009f7f1a20bc09a2d1d232195a2538be7521e982b1a629e7",
         "articleKey": "blitzmetrics.com/digital-plumbing",
         "gates": {
           "instructionRevisionReviewed": {
             "id": "instructionRevisionReviewed",
             "label": "Exact instruction revision reviewed",
             "state": "pass",
-            "reason": "Current source bytes match the review recorded 2026-10-17. Review scope and limits: One exact written conversion-path revision and its article copy. Live booking, full hub semantic certification, accepted outcome and novice setup remain unknown. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/booking-path-2026-10-09.md Destination-only revision: existing prose and check verdicts retained after exact diff inspection; current Content Factory target and relationship checked. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/content-factory-link-2026-10-13.md Status-only reconciliation on 2026-10-17: exact entire body unchanged; existing five written verdicts retained. Contributor instructions-complete label now matches that review. No new article/source freshness, result, novice or schedule evidence. See reviews/revenue-ready-download-2026-10-17.md.",
+            "reason": "Current source bytes match the review recorded 2026-10-17. Review scope and limits: One exact written conversion-path revision and its article copy. Live booking, full hub semantic certification, accepted outcome and novice setup remain unknown. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/booking-path-2026-10-09.md Destination-only revision: existing prose and check verdicts retained after exact diff inspection; current Content Factory target and relationship checked. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/content-factory-link-2026-10-13.md Contributor-label and evidence-note reconciliation on 2026-10-17: method, opening, visuals, links, examples and acceptance unchanged; existing five written verdicts retained. Contributor instructions-complete label now matches that review. No new article/source freshness, result, novice or schedule evidence. See reviews/revenue-ready-download-2026-10-17.md.",
             "reviewedAt": "2026-10-17",
-            "reviewer": "Codex status-only reconciliation; prior independent written verdicts retained",
-            "sourceSha256": "27386317f14279e1d70b8b577dc8de395c677d00dc111eec4ae24846dc71f39e"
+            "reviewer": "Codex contributor-label and evidence-note reconciliation; prior independent written verdicts retained",
+            "sourceSha256": "cf69ce3f3bc32f6e009f7f1a20bc09a2d1d232195a2538be7521e982b1a629e7"
           },
           "instructionStandards": {
             "id": "instructionStandards",
@@ -3604,9 +3604,9 @@
             "state": "pass",
             "reason": "All five instruction requirements have explicit passing checks for the current source revision.",
             "reviewedAt": "2026-10-17",
-            "reviewer": "Codex status-only reconciliation; prior independent written verdicts retained",
-            "reviewScope": "One exact written conversion-path revision and its article copy. Live booking, full hub semantic certification, accepted outcome and novice setup remain unknown. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/booking-path-2026-10-09.md Destination-only revision: existing prose and check verdicts retained after exact diff inspection; current Content Factory target and relationship checked. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/content-factory-link-2026-10-13.md Status-only reconciliation on 2026-10-17: exact entire body unchanged; existing five written verdicts retained. Contributor instructions-complete label now matches that review. No new article/source freshness, result, novice or schedule evidence. See reviews/revenue-ready-download-2026-10-17.md.",
-            "sourceSha256": "27386317f14279e1d70b8b577dc8de395c677d00dc111eec4ae24846dc71f39e",
+            "reviewer": "Codex contributor-label and evidence-note reconciliation; prior independent written verdicts retained",
+            "reviewScope": "One exact written conversion-path revision and its article copy. Live booking, full hub semantic certification, accepted outcome and novice setup remain unknown. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/booking-path-2026-10-09.md Destination-only revision: existing prose and check verdicts retained after exact diff inspection; current Content Factory target and relationship checked. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/content-factory-link-2026-10-13.md Contributor-label and evidence-note reconciliation on 2026-10-17: method, opening, visuals, links, examples and acceptance unchanged; existing five written verdicts retained. Contributor instructions-complete label now matches that review. No new article/source freshness, result, novice or schedule evidence. See reviews/revenue-ready-download-2026-10-17.md.",
+            "sourceSha256": "cf69ce3f3bc32f6e009f7f1a20bc09a2d1d232195a2538be7521e982b1a629e7",
             "standards": {
               "version": 1,
               "checks": {
@@ -3843,17 +3843,17 @@
       },
       "nextAction": "At least one task mapped to this hub is not contributor-complete.",
       "standardVerification": {
-        "instructionSourceSha256": "a9ad4bf43c5e3b3a830736df3aeb2f096b63ed4c0a8688d1b2fc3267d8f7dbe9",
+        "instructionSourceSha256": "ee8b5f159bcee7bf1fa76e30c0f1351b2b1fe59b7dd9faab76e2bf7f1a2ad870",
         "articleKey": "blitzmetrics.com/digital-plumbing",
         "gates": {
           "instructionRevisionReviewed": {
             "id": "instructionRevisionReviewed",
             "label": "Exact instruction revision reviewed",
             "state": "pass",
-            "reason": "Current source bytes match the review recorded 2026-10-17. Review scope and limits: Exact written method only. Full article, real execution, receiver result and unassisted novice setup remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md Destination-only revision: existing prose and check verdicts retained after exact diff inspection; current Content Factory target and relationship checked. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/content-factory-link-2026-10-13.md Status-only reconciliation on 2026-10-17: exact entire body unchanged; existing five written verdicts retained. Contributor instructions-complete label now matches that review. No new article/source freshness, result, novice or schedule evidence. See reviews/revenue-ready-download-2026-10-17.md.",
+            "reason": "Current source bytes match the review recorded 2026-10-17. Review scope and limits: Exact written method only. Full article, real execution, receiver result and unassisted novice setup remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md Destination-only revision: existing prose and check verdicts retained after exact diff inspection; current Content Factory target and relationship checked. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/content-factory-link-2026-10-13.md Contributor-label and evidence-note reconciliation on 2026-10-17: method, opening, visuals, links, examples and acceptance unchanged; existing five written verdicts retained. Contributor instructions-complete label now matches that review. No new article/source freshness, result, novice or schedule evidence. See reviews/revenue-ready-download-2026-10-17.md.",
             "reviewedAt": "2026-10-17",
-            "reviewer": "Codex status-only reconciliation; prior independent written verdicts retained",
-            "sourceSha256": "a9ad4bf43c5e3b3a830736df3aeb2f096b63ed4c0a8688d1b2fc3267d8f7dbe9"
+            "reviewer": "Codex contributor-label and evidence-note reconciliation; prior independent written verdicts retained",
+            "sourceSha256": "ee8b5f159bcee7bf1fa76e30c0f1351b2b1fe59b7dd9faab76e2bf7f1a2ad870"
           },
           "instructionStandards": {
             "id": "instructionStandards",
@@ -3861,9 +3861,9 @@
             "state": "pass",
             "reason": "All five instruction requirements have explicit passing checks for the current source revision.",
             "reviewedAt": "2026-10-17",
-            "reviewer": "Codex status-only reconciliation; prior independent written verdicts retained",
-            "reviewScope": "Exact written method only. Full article, real execution, receiver result and unassisted novice setup remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md Destination-only revision: existing prose and check verdicts retained after exact diff inspection; current Content Factory target and relationship checked. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/content-factory-link-2026-10-13.md Status-only reconciliation on 2026-10-17: exact entire body unchanged; existing five written verdicts retained. Contributor instructions-complete label now matches that review. No new article/source freshness, result, novice or schedule evidence. See reviews/revenue-ready-download-2026-10-17.md.",
-            "sourceSha256": "a9ad4bf43c5e3b3a830736df3aeb2f096b63ed4c0a8688d1b2fc3267d8f7dbe9",
+            "reviewer": "Codex contributor-label and evidence-note reconciliation; prior independent written verdicts retained",
+            "reviewScope": "Exact written method only. Full article, real execution, receiver result and unassisted novice setup remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md Destination-only revision: existing prose and check verdicts retained after exact diff inspection; current Content Factory target and relationship checked. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/content-factory-link-2026-10-13.md Contributor-label and evidence-note reconciliation on 2026-10-17: method, opening, visuals, links, examples and acceptance unchanged; existing five written verdicts retained. Contributor instructions-complete label now matches that review. No new article/source freshness, result, novice or schedule evidence. See reviews/revenue-ready-download-2026-10-17.md.",
+            "sourceSha256": "ee8b5f159bcee7bf1fa76e30c0f1351b2b1fe59b7dd9faab76e2bf7f1a2ad870",
             "standards": {
               "version": 1,
               "checks": {
