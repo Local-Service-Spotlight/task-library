@@ -4,7 +4,7 @@ description: "Check that a form sends the right request to the right person. Kee
 category: Digital Plumbing
 stage: —
 definitive_article: /digital-plumbing
-status: needs-work
+status: complete
 ---
 
 # Ensure Working Contact Form Delivers Notifications

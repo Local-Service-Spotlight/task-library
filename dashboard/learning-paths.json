@@ -55,7 +55,7 @@
       ]
     }
   },
-  "libraryUpdated": "October 14, 2026",
+  "libraryUpdated": "October 17, 2026",
   "paths": [
     {
       "id": "implement-agents",
@@ -921,8 +921,8 @@
       "description": "Help a visitor take the next useful step. Make the path clear and check where the request lands.",
       "article": "https://blitzmetrics.com/digital-plumbing",
       "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=create-clear-conversion-path#task-create-clear-conversion-path",
-      "status": "needs-work",
-      "contentSha256": "df3c43b2d527ab41df915f678384a2bc8fd98ab2f5c6761e1731871850fb3143"
+      "status": "complete",
+      "contentSha256": "f5b683946163f351df899d1a6e95391e7279b9e322fcbd6eefbb3816a6f2037e"
     },
     {
       "slug": "create-collaborative-content-with-industry-peers",
@@ -1182,8 +1182,8 @@
       "description": "Check that a form sends the right request to the right person. Keep proof from both ends.",
       "article": "https://blitzmetrics.com/digital-plumbing",
       "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=ensure-working-contact-form-delivers-notifications#task-ensure-working-contact-form-delivers-notifications",
-      "status": "needs-work",
-      "contentSha256": "8b2a4d0739d80e35896efe43b6dc05e6a13e3fa9d836b370baade3737d4fb456"
+      "status": "complete",
+      "contentSha256": "ac6624be75f4c9780982d6397d4d886bc916964d178c4a2236751950560ee25d"
     },
     {
       "slug": "establish-entity-identity",

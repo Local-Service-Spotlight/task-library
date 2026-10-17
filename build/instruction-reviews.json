@@ -1783,10 +1783,10 @@
       }
     },
     "create-clear-conversion-path": {
-      "source_sha256": "a7ab85e8cb4a794fc4821966fc6115e681cd1dcd3684f920b8bcabc64fed99a0",
-      "reviewed_at": "2026-10-13",
-      "reviewer": "Codex incremental destination review with independent GPT-6 Luna review",
-      "scope": "One exact written conversion-path revision and its article copy. Live booking, full hub semantic certification, accepted outcome and novice setup remain unknown. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/booking-path-2026-10-09.md Destination-only revision: existing prose and check verdicts retained after exact diff inspection; current Content Factory target and relationship checked. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/content-factory-link-2026-10-13.md",
+      "source_sha256": "27386317f14279e1d70b8b577dc8de395c677d00dc111eec4ae24846dc71f39e",
+      "reviewed_at": "2026-10-17",
+      "reviewer": "Codex status-only reconciliation; prior independent written verdicts retained",
+      "scope": "One exact written conversion-path revision and its article copy. Live booking, full hub semantic certification, accepted outcome and novice setup remain unknown. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/booking-path-2026-10-09.md Destination-only revision: existing prose and check verdicts retained after exact diff inspection; current Content Factory target and relationship checked. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/content-factory-link-2026-10-13.md Status-only reconciliation on 2026-10-17: exact entire body unchanged; existing five written verdicts retained. Contributor instructions-complete label now matches that review. No new article/source freshness, result, novice or schedule evidence. See reviews/revenue-ready-download-2026-10-17.md.",
       "standards": {
         "version": 1,
         "checks": {
@@ -1818,10 +1818,10 @@
         }
       },
       "incrementalReview": {
-        "beforeSourceSha256": "f03ac6898485a02e3ca14a75fdaee12f0ad2015afa4ced2b943d457f75965ca2",
-        "previousReviewDate": "2026-10-09",
-        "change": "Only the Content Factory teaching URL changed; no step, example, opening, status or acceptance changed.",
-        "review": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/content-factory-link-2026-10-13.md"
+        "beforeSourceSha256": "a7ab85e8cb4a794fc4821966fc6115e681cd1dcd3684f920b8bcabc64fed99a0",
+        "previousReviewDate": "2026-10-13",
+        "change": "Only frontmatter status changes needs-work to complete; body, links, examples, setup and acceptance unchanged.",
+        "review": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-ready-download-2026-10-17.md"
       }
     },
     "create-linkedin-page-matching-business-entity": {
@@ -1897,10 +1897,10 @@
       }
     },
     "ensure-working-contact-form-delivers-notifications": {
-      "source_sha256": "e92b767a0a175475c6e478008a05171783773a84443feeb7807e4a427757692d",
-      "reviewed_at": "2026-10-13",
-      "reviewer": "Codex incremental destination review with independent GPT-6 Luna review",
-      "scope": "Exact written method only. Full article, real execution, receiver result and unassisted novice setup remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md Destination-only revision: existing prose and check verdicts retained after exact diff inspection; current Content Factory target and relationship checked. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/content-factory-link-2026-10-13.md",
+      "source_sha256": "a9ad4bf43c5e3b3a830736df3aeb2f096b63ed4c0a8688d1b2fc3267d8f7dbe9",
+      "reviewed_at": "2026-10-17",
+      "reviewer": "Codex status-only reconciliation; prior independent written verdicts retained",
+      "scope": "Exact written method only. Full article, real execution, receiver result and unassisted novice setup remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md Destination-only revision: existing prose and check verdicts retained after exact diff inspection; current Content Factory target and relationship checked. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/content-factory-link-2026-10-13.md Status-only reconciliation on 2026-10-17: exact entire body unchanged; existing five written verdicts retained. Contributor instructions-complete label now matches that review. No new article/source freshness, result, novice or schedule evidence. See reviews/revenue-ready-download-2026-10-17.md.",
       "standards": {
         "version": 1,
         "checks": {
@@ -1932,10 +1932,10 @@
         }
       },
       "incrementalReview": {
-        "beforeSourceSha256": "7657464979ae461cf4f7a4ec061e8417a3c38af7cba2709c46a06d9318f508e0",
-        "previousReviewDate": "2026-10-05",
-        "change": "Only the Content Factory teaching URL changed; no step, example, opening, status or acceptance changed.",
-        "review": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/content-factory-link-2026-10-13.md"
+        "beforeSourceSha256": "e92b767a0a175475c6e478008a05171783773a84443feeb7807e4a427757692d",
+        "previousReviewDate": "2026-10-13",
+        "change": "Only frontmatter status changes needs-work to complete; body, links, examples, setup and acceptance unchanged.",
+        "review": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-ready-download-2026-10-17.md"
       }
     },
     "install-google-tag-manager-container": {
