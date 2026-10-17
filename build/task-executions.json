@@ -2092,19 +2092,36 @@
       },
       "startedAt": "2026-10-17T01:12:44.970786+00:00",
       "recordedAt": "2026-10-17T01:14:17.820451+00:00",
-      "updatedAt": "2026-10-17T01:20:18.650103+00:00",
-      "status": "running",
-      "result": "Corrected two stale contributor labels and their evidence note so already-reviewed inquiry guides can enter the ready ZIP. Method unchanged; publication and archive verification pending. Saved October14 publishing recipe used; current anonymous article read returned403. No form test, client delivery, or novice pass.",
+      "updatedAt": "2026-10-17T01:34:13.359411+00:00",
+      "status": "completed",
+      "result": "Published two already-reviewed inquiry guides in the ready download after correcting contributor labels and clarifying their evidence note. Independent release acceptance,225 tests, phone/desktop public layout and seven archive member comparisons passed. Frozen beginner-test members are unchanged.26 written passes and0 fully verified tasks remain. This is one maintenance execution, not a form test, client result or novice success.",
       "metaArticle": {
-        "status": "draft",
-        "draftSha256": "d2b7ae2dca9441310a33991725ff7c0879b65b544c84d2f21b7dff3c0bc4ce45"
+        "status": "published",
+        "url": "https://local-service-spotlight.github.io/task-library/maintenance/revenue-ready-download-2026-10-17.html"
       },
       "evidence": [
         {
           "visibility": "private",
           "sha256": "c4fb8ff89a63c97e7bd021cdf0eaa2fe029c72404f5ce2a6c6527a9fd6827a4c"
+        },
+        {
+          "visibility": "private",
+          "sha256": "b67ad33c6a3bc831d8c8f1dd5cc077d193b4a4043e68a2175d2ccf83e67f40c2"
+        },
+        {
+          "visibility": "private",
+          "sha256": "f70cdc459c2fb3045c929825ecf16bb8ec90190bd2cc547d0bfa95df5dd2eba9"
+        },
+        {
+          "visibility": "private",
+          "sha256": "edc972c58b13dedfcb4f82dee48e1907604b4971be24d95e837729298f8e8e93"
+        },
+        {
+          "visibility": "private",
+          "sha256": "5ca2f065aa7b0996a5a5c9291f9cda50c30b599fcf532e5e00a26723557698ea"
         }
-      ]
+      ],
+      "finishedAt": "2026-10-17T01:34:13.359411+00:00"
     }
   ],
   "historicalEvidence": [
