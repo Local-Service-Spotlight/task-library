@@ -3829,10 +3829,12 @@
       "sourceSha256": "660d6f1abd8678c851c0a08059f27982e8e29b46775ea217a2ae1d6e3ba55537"
      }
     },
+    "finishedAt": "2026-10-14T19:09:46.819601+00:00",
     "evidenceUrls": [],
     "privateEvidenceRecorded": true,
     "metaArticle": {
-     "status": "draft"
+     "status": "published",
+     "url": "https://local-service-spotlight.github.io/task-library/maintenance/seo-hub-supporting-guides-2026-10-15.html"
     }
    }
   ],
