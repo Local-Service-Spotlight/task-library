@@ -2,13 +2,13 @@
 
 Generated from `build/build.py` after scoring in `build/factory.py`.
 
-Library: **276** tasks — 130 complete, 123 needs-work, 23 gaps.
+Library: **276** tasks — 132 complete, 121 needs-work, 23 gaps.
 
 Importance distribution: 5★=75, 4★=43, 3★=115, 2★=43, 1★=0
 
 Scoring: `importance = max(frequency, revenue, gating)`. Ads, pixels, GSC, Descript, WP-author, and Meta BM are 5s even when the task is small, because they unblock the line.
 
-Incomplete: **146**. This file is the work order. Do not re-sample.
+Incomplete: **144**. This file is the work order. Do not re-sample.
 
 | ★ | Status | Phase | Category | Slug | Lane | Why |
 |---|---|---|---|---|---|---|
@@ -22,7 +22,6 @@ Incomplete: **146**. This file is the work order. Do not re-sample.
 | 5 | needs-work | Promote |  | `boost-one-minute-videos-for-personal-branding` | computer | runs every factory cycle or weekly; ads/revenue path |
 | 5 | needs-work | Gate |  | `claim-and-brand-facebook-page` | any | ads/revenue path; unblocks a chain (access/plumbing) |
 | 5 | needs-work | Gate |  | `configure-https-with-no-mixed-content` | script | unblocks a chain (access/plumbing) |
-| 5 | needs-work | Gate |  | `create-clear-conversion-path` | any | runs every factory cycle or weekly; ads/revenue path; unblocks a chain (access/plumbing) |
 | 5 | needs-work | Process |  | `create-dollar-a-day-ad-creatives` | any | runs every factory cycle or weekly; ads/revenue path; gates a phase |
 | 5 | needs-work | Process |  | `create-dollar-a-day-ad-creatives-from-best-content` | computer | runs every factory cycle or weekly; ads/revenue path |
 | 5 | needs-work | Promote |  | `create-facebook-instagram-campaigns-with-location-targeting` | computer | runs every factory cycle or weekly; ads/revenue path; gates a phase |
@@ -31,7 +30,6 @@ Incomplete: **146**. This file is the work order. Do not re-sample.
 | 5 | needs-work | Promote |  | `engage-with-social-comments` | computer | runs every factory cycle or weekly; ads/revenue path |
 | 5 | needs-work | Gate |  | `ensure-proper-dns-records` | script | unblocks a chain (access/plumbing) |
 | 5 | needs-work | Gate |  | `ensure-robots-meta-not-blocking-indexing` | script | runs every factory cycle or weekly; unblocks a chain (access/plumbing) |
-| 5 | needs-work | Gate |  | `ensure-working-contact-form-delivers-notifications` | any | runs every factory cycle or weekly; ads/revenue path; unblocks a chain (access/plumbing) |
 | 5 | needs-work | Promote |  | `execute-switch-boost-to-target-new-audiences` | computer | runs every factory cycle or weekly; ads/revenue path |
 | 5 | needs-work | Promote |  | `execute-switch-boosts-to-new-audiences` | computer | runs every factory cycle or weekly; ads/revenue path |
 | 5 | needs-work | Process |  | `extract-15-60-second-clips-from-long-form-video` | computer | runs every factory cycle or weekly; creates the asset ads amplify |

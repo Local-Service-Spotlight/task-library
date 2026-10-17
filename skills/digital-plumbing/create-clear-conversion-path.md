@@ -4,7 +4,7 @@ description: "Help a visitor take the next useful step. Make the path clear and 
 category: Digital Plumbing
 stage: —
 definitive_article: /digital-plumbing
-status: needs-work
+status: complete
 ---
 
 # Create Clear Conversion Path
@@ -91,5 +91,5 @@ Keep one stable execution ID across retries and edits. A separately scoped child
 
 ## Review and evidence still needed
 
-The source contributor status is preserved. It is not certification of this draft or proof of account access, completed work or a live outcome. The worked example teaches the method and is explicitly fictional.
+Contributor status records that these written instructions are complete. It is not proof of account access, completed work or a live outcome. The worked example teaches the method and is explicitly fictional.
 - The actual owner must supply the intended action, response promise and test scope; no conversion performance has been measured by this draft.

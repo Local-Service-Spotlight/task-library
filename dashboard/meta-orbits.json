@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-10-14T19:09:56+00:00",
+ "generatedAt": "2026-10-17T01:27:55+00:00",
  "countDefinition": "Verified meta-article sources explicitly classified by the recorded evidence method and linked to the normalized canonical hub. Unknown is never coerced to zero.",
  "strengthBands": [
   {
@@ -431,7 +431,7 @@
    "state": "wip",
    "articleKind": "topic-hub",
    "taskCount": 18,
-   "completeTaskCount": 1,
+   "completeTaskCount": 3,
    "importance": 5,
    "importanceTotal": 69,
    "taskSlugs": [

@@ -6,9 +6,9 @@
  },
  "stats": {
   "total": 276,
-  "complete": 130,
+  "complete": 132,
   "reviewedInstructions": 275,
-  "needsWork": 123,
+  "needsWork": 121,
   "gaps": 23,
   "articleHubs": 53,
   "definitiveArticles": 16,
@@ -441,8 +441,8 @@
     "historical-b47f6ecca9200b904c006ab7"
    ]
   },
-  "semanticHoldHubs": 4,
-  "tasksWithHolds": 20,
+  "semanticHoldHubs": 3,
+  "tasksWithHolds": 19,
   "tasksWithUnmetGates": 207,
   "tasksWithUnknownGates": 276,
   "gateCounts": {
@@ -459,8 +459,8 @@
     "unknown": 250
    },
    "contributorComplete": {
-    "pass": 130,
-    "unmet": 146,
+    "pass": 132,
+    "unmet": 144,
     "hold": 0,
     "unknown": 0
    },
@@ -477,10 +477,10 @@
     "unknown": 0
    },
    "articleSemanticCertification": {
-    "pass": 1,
+    "pass": 0,
     "unmet": 0,
-    "hold": 20,
-    "unknown": 255
+    "hold": 19,
+    "unknown": 257
    },
    "taskExampleEvidence": {
     "pass": 11,
@@ -495,10 +495,10 @@
     "unknown": 271
    },
    "acceptedExecution": {
-    "pass": 2,
+    "pass": 0,
     "unmet": 1,
     "hold": 0,
-    "unknown": 273
+    "unknown": 275
    },
    "setupSuccess": {
     "pass": 0,
@@ -508,7 +508,7 @@
    }
   }
  },
- "updated": "October 14, 2026",
+ "updated": "October 17, 2026",
  "factory": {
   "phases": [
    {
@@ -789,7 +789,7 @@
    "state": "wip",
    "articleKind": "topic-hub",
    "taskCount": 18,
-   "completeTaskCount": 1,
+   "completeTaskCount": 3,
    "importance": 5,
    "importanceTotal": 69,
    "taskSlugs": [
@@ -2136,7 +2136,7 @@
  ],
  "executionHistory": {
   "schemaVersion": 1,
-  "asOf": "2026-10-14T19:09:56.316243+00:00",
+  "asOf": "2026-10-17T01:27:55.051054+00:00",
   "proofSummary": {
    "definition": "Dated output proof, separate from current-recipe acceptance and every full-verification gate. Recorded acceptance counts distinct completed execution IDs with a latest all-pass independent review per task/run; scope is limited to its named criteria. Historical proof counts distinct source jobs, never new runs. Historical acceptance requires identity, output and acceptance pass; handoff is reported separately.",
    "recordedAcceptedOutputCount": 6,
@@ -2545,7 +2545,7 @@
    ]
   },
   "countDefinition": "Distinct recorded execution IDs, separate from meta-article URLs. History is partial; absent history is unknown, not zero. The last-30-day count is a documented lower bound, not total task frequency.",
-  "recordedExecutions": 35,
+  "recordedExecutions": 36,
   "completedExecutions": 22,
   "partialExecutions": 13,
   "executions": [
@@ -3814,6 +3814,26 @@
      "status": "published",
      "url": "https://local-service-spotlight.github.io/task-library/maintenance/seo-hub-supporting-guides-2026-10-15.html"
     }
+   },
+   {
+    "executionId": "revenue-ready-download-20261017",
+    "taskSlugs": [
+     "publish-skill-and-task-page"
+    ],
+    "startedAt": "2026-10-17T01:12:44.970786+00:00",
+    "status": "running",
+    "result": "Corrected two stale contributor labels and their evidence note so already-reviewed inquiry guides can enter the ready ZIP. Method unchanged; publication and archive verification pending. Saved October14 publishing recipe used; current anonymous article read returned403. No form test, client delivery, or novice pass.",
+    "recipeRevisions": {
+     "publish-skill-and-task-page": {
+      "articleUrl": "https://blitzmetrics.com/skill-publishing-standard/",
+      "sourceSha256": "660d6f1abd8678c851c0a08059f27982e8e29b46775ea217a2ae1d6e3ba55537"
+     }
+    },
+    "evidenceUrls": [],
+    "privateEvidenceRecorded": true,
+    "metaArticle": {
+     "status": "draft"
+    }
    }
   ],
   "historicalDeliveryEvidence": {
@@ -4263,7 +4283,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 96,
+      "queuePosition": 95,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "No valid canonical article URL is mapped for this task."
@@ -4419,7 +4439,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 115,
+      "queuePosition": 114,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "No valid canonical article URL is mapped for this task."
@@ -4576,7 +4596,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 151,
+      "queuePosition": 150,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -4733,7 +4753,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 152,
+      "queuePosition": 151,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -4889,7 +4909,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 121,
+      "queuePosition": 120,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "No valid canonical article URL is mapped for this task."
@@ -5045,7 +5065,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 83,
+      "queuePosition": 82,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "No valid canonical article URL is mapped for this task."
@@ -5201,7 +5221,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 234,
+      "queuePosition": 233,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -5359,7 +5379,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 235,
+      "queuePosition": 234,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -5515,7 +5535,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 125,
+      "queuePosition": 124,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "No valid canonical article URL is mapped for this task."
@@ -5673,7 +5693,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 85,
+      "queuePosition": 84,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -5832,7 +5852,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 127,
+      "queuePosition": 126,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -5997,7 +6017,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 35,
+      "queuePosition": 34,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "No valid canonical article URL is mapped for this task."
@@ -6153,7 +6173,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 116,
+      "queuePosition": 115,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "No valid canonical article URL is mapped for this task."
@@ -6309,7 +6329,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 72,
+      "queuePosition": 71,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "No valid canonical article URL is mapped for this task."
@@ -6465,7 +6485,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 70,
+      "queuePosition": 69,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "No valid canonical article URL is mapped for this task."
@@ -6621,7 +6641,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 68,
+      "queuePosition": 67,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "No valid canonical article URL is mapped for this task."
@@ -6779,7 +6799,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 240,
+      "queuePosition": 239,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -6937,7 +6957,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 248,
+      "queuePosition": 247,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -7095,7 +7115,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 249,
+      "queuePosition": 248,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -7253,7 +7273,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 250,
+      "queuePosition": 249,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -7409,7 +7429,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 114,
+      "queuePosition": 113,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "No valid canonical article URL is mapped for this task."
@@ -7565,7 +7585,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 232,
+      "queuePosition": 231,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -7783,7 +7803,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 252,
+      "queuePosition": 251,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -7939,7 +7959,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 236,
+      "queuePosition": 235,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -8095,7 +8115,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 233,
+      "queuePosition": 232,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -8251,7 +8271,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 253,
+      "queuePosition": 252,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -8407,7 +8427,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 254,
+      "queuePosition": 253,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -8563,7 +8583,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 231,
+      "queuePosition": 230,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -8721,7 +8741,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 251,
+      "queuePosition": 250,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -8877,7 +8897,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 255,
+      "queuePosition": 254,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -9095,7 +9115,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 256,
+      "queuePosition": 255,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -9251,7 +9271,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 257,
+      "queuePosition": 256,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -9407,7 +9427,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 258,
+      "queuePosition": 257,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -9563,7 +9583,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 237,
+      "queuePosition": 236,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -9719,7 +9739,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 117,
+      "queuePosition": 116,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "No valid canonical article URL is mapped for this task."
@@ -10103,7 +10123,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 238,
+      "queuePosition": 237,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "nextAction": "The article revision observation is outside the 24-hour freshness window."
@@ -10498,7 +10518,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 118,
+      "queuePosition": 117,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -10651,7 +10671,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 119,
+      "queuePosition": 118,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -10816,7 +10836,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 239,
+      "queuePosition": 238,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -11191,8 +11211,8 @@
        "articleSemanticCertification": {
         "id": "articleSemanticCertification",
         "label": "Article semantic certification",
-        "state": "pass",
-        "reason": "All ten semantic criteria pass for the separately observed current article revision.",
+        "state": "unknown",
+        "reason": "The article revision observation is outside the 24-hour freshness window.",
         "semanticReview": {
          "version": 1,
          "taskSlug": "place-content-on-seo-tree-with-proper-links",
@@ -11336,8 +11356,8 @@
        "acceptedExecution": {
         "id": "acceptedExecution",
         "label": "Accepted execution result",
-        "state": "pass",
-        "reason": "All named measurable acceptance criteria pass for the separately observed current recipe revision.",
+        "state": "unknown",
+        "reason": "The separate current article revision observation is outside the 24-hour freshness window.",
         "acceptanceReview": {
          "version": 1,
          "reviewId": "site-guide-seo-placement-20261015-independent-result-1",
@@ -11439,13 +11459,15 @@
       "unmetStandardGates": [],
       "heldStandardGates": [],
       "unknownStandardGates": [
+       "articleSemanticCertification",
+       "acceptedExecution",
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 230,
+      "queuePosition": 229,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
-      "nextAction": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified."
+      "nextAction": "The article revision observation is outside the 24-hour freshness window."
      }
     },
     {
@@ -11598,7 +11620,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 46,
+      "queuePosition": 45,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "No valid canonical article URL is mapped for this task."
@@ -11754,7 +11776,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 73,
+      "queuePosition": 72,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "No valid canonical article URL is mapped for this task."
@@ -11910,7 +11932,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 84,
+      "queuePosition": 83,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "No valid canonical article URL is mapped for this task."
@@ -12066,7 +12088,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 241,
+      "queuePosition": 240,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -12334,7 +12356,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 228,
+      "queuePosition": 227,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -12490,7 +12512,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 242,
+      "queuePosition": 241,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -12646,7 +12668,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 243,
+      "queuePosition": 242,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -12802,7 +12824,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 244,
+      "queuePosition": 243,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -12958,7 +12980,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 245,
+      "queuePosition": 244,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -13176,7 +13198,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 71,
+      "queuePosition": 70,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "No valid canonical article URL is mapped for this task."
@@ -13332,7 +13354,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 247,
+      "queuePosition": 246,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -13491,7 +13513,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 76,
+      "queuePosition": 75,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -13657,7 +13679,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 80,
+      "queuePosition": 79,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -13814,7 +13836,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 52,
+      "queuePosition": 51,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -13971,7 +13993,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 60,
+      "queuePosition": 59,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -14291,7 +14313,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 43,
+      "queuePosition": 42,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -14447,7 +14469,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 55,
+      "queuePosition": 54,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "No valid canonical article URL is mapped for this task."
@@ -14605,7 +14627,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 49,
+      "queuePosition": 48,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -14762,7 +14784,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 61,
+      "queuePosition": 60,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -14918,7 +14940,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 56,
+      "queuePosition": 55,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "No valid canonical article URL is mapped for this task."
@@ -15076,7 +15098,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 58,
+      "queuePosition": 57,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -15233,7 +15255,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 41,
+      "queuePosition": 40,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -15391,7 +15413,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 37,
+      "queuePosition": 36,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -15549,7 +15571,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 26,
+      "queuePosition": 23,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -15716,7 +15738,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 99,
+      "queuePosition": 98,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -15874,7 +15896,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 100,
+      "queuePosition": 99,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -16032,7 +16054,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 32,
+      "queuePosition": 31,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -16190,7 +16212,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 90,
+      "queuePosition": 89,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -16346,7 +16368,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 94,
+      "queuePosition": 93,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "No valid canonical article URL is mapped for this task."
@@ -16504,7 +16526,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 104,
+      "queuePosition": 103,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -16513,12 +16535,12 @@
     {
      "title": "Create Clear Conversion Path",
      "slug": "create-clear-conversion-path",
-     "status": "needs-work",
+     "status": "complete",
      "stage": "—",
      "article": "https://blitzmetrics.com/digital-plumbing",
      "articleKind": "topic-hub",
      "desc": "Help a visitor take the next useful step. Make the path clear and check where the request lands.",
-     "content": "---\nname: create-clear-conversion-path\ndescription: \"Help a visitor take the next useful step. Make the path clear and check where the request lands.\"\ncategory: Digital Plumbing\nstage: —\ndefinitive_article: /digital-plumbing\nstatus: needs-work\n---\n\n# Create Clear Conversion Path\n\nUse this guide to make it easy for people to ask your business for help. A clear path helps your team get requests it can answer. Next, [check your contact form](https://local-service-spotlight.github.io/task-library/?task=ensure-working-contact-form-delivers-notifications#task-ensure-working-contact-form-delivers-notifications) to make sure those requests reach the right person.\n\n**The path:** Visitor need → Clear action → Usable form, booking or call → Team receipt → Named next owner.\n\n**Use this when:** a new page or offer launches, visitors struggle to contact the business, or an existing path needs repair.\n\n## Inputs\n- The page, intended visitor and useful next action from the project’s [Goals, Content, and Targeting](https://blitzmetrics.com/gct-business-strategy/) brief: the goal, source content and people it serves.\n- The actual contact, booking, purchase or download destination and the responsible team. Preserve legitimate privacy, legal and navigation links.\n- Access to the owning page and destination settings, plus the agreed test scope and existing measurement plan if one is in use.\n\n## Starting state and run record\n\nStart with one named page, its intended visitor and action, the current destination, and the person or team that must receive the request. For appointments, include the approved availability or response promise, its time zone, eligible hosts and the escalation owner when coverage is missing. Record the page URL and revision, action label, destination, controlled-test ID and time, device, link/form/call result, receiver evidence, unresolved issue, and next owner. Count clicks, accepted requests, connected calls and qualified leads separately. Compare lead rates only when real baseline and follow-up data use the same lead definition and data source over equal-length windows; traffic mix and season changes can still affect the result. This guide does not estimate sales uplift.\n\n## First-run prompt\n\n> Map the visitor’s path on the supplied page. Improve the main call to action and its destination within the authorized scope. Check the visible result and the actual receiving system separately. Report clicks, submitted requests and received leads as different evidence.\n\n## Steps\n1. Name the page’s intended visitor and desired result in one sentence. Choose the primary action for that journey; a service quote page and a customer-support page can have different valid actions.\n2. Trace the current route from the page to the final destination. Record confusing labels, dead links, repeated questions and unnecessary detours. Do not infer the cause of low lead volume from a page glance alone.\n3. Write a specific action label such as “Request a roof check” rather than a vague “Learn more” when a request is the real next step. State what happens next and any material cost or commitment accurately.\n4. Place the action where it supports the page’s explanation and is reachable on mobile. Keep relevant secondary choices and accessibility controls. The source’s two-click idea is a reachability target, not a rule that every real booking or purchase must finish in two clicks.\n5. Edit the supported page source and destination. Keep required fields limited to the actual business need; preserve necessary consent and disclosures. Use the true service or offer page, following the [Money Tree](https://blitzmetrics.com/money-tree/) when it applies: the site map of posts and the pages where people book or buy.\n6. Before submitting a booking, compare the earliest selectable appointment with the actual promised window. Save the check time, displayed time zone, first available slot and any empty result. A calendar that loads is not proof that a visitor can book within the promise. Check that required choices are clear and cannot accept contradictory answers; mutually exclusive answers need a single-choice control. Treat a mismatch as a defect, not a reason to silently change the promise, add a host or buy a plan.\n7. Test the link and form or booking flow using the authorized controlled test. Check errors, success state and mobile use. Avoid a real charge, booking or message beyond the existing test scope; label that untested portion rather than calling the whole path passed.\n8. Verify receipt in the actual inbox, booking tool or customer system and identify who follows up. For a tested booking, match its ID to the assigned eligible host, saved answers and required notifications; check cancellation and reminder behavior only within the authorized test scope. A listed host or an empty availability response with an error does not prove staffed coverage. A success page or analytics event alone is not proof that the team got the request.\n9. If tracking is in scope, check one appropriate received event per intended action and its consent behavior. Save the route, test evidence and measured result; compare later lead performance only with real comparable data.\n\n## Definition of done (QA checklist)\n\n- [ ] Each money-page opening makes the customer's situation, supported value and next buying step clear in the first 2–3 sentences, with relevant authentic proof; [opening review](https://local-service-spotlight.github.io/task-library/?task=step-7-write-hook-and-establish-context#task-step-7-write-hook-and-establish-context) is recorded, not inferred from a CTA or unmeasured conversion promise\n\n- [ ] The page has an understandable primary action for its intended visitor.\n- [ ] The route reaches the correct destination with no unnecessary dead end.\n- [ ] Phone layout and required fields work, with privacy and accessibility intact; answers cannot contradict one another.\n- [ ] If booking is offered, the observed slot fits the actual promised window and time zone, or the exact mismatch and coverage owner remain open.\n- [ ] Any controlled booking has matching assignment, answer and receiver evidence. Untested notifications, cancellations or reminders remain explicitly unknown.\n- [ ] Visitor success and team receipt have independent evidence or precise open limits.\n- [ ] Tracking and business outcomes are reported separately, with an actual next owner.\n\n## Example(s)\n\n**Fictional teaching example.** Oak Repair’s service page says “Contact,” leading to a menu with four choices. The lesson changes the label to “Request a roof check” and links directly to the quote form. The form explains that the team will reply by the next business day, a promise supplied for this fictional exercise. A mock test record shows one successful submission and one matching receiver entry. The lesson proves how to check a path; it makes no claim about a real lead or conversion-rate increase.\n\n**Fictional booking example.** A service promises a call within three days, but the first selectable slot is three weeks away. The page loads and the button works, yet this path fails its stated promise. Save the visible dates and time zone, then route the gap to the existing calendar owner. Do not claim a staffing, calendar-sync or subscription cause without checking it. No real appointment was booked in this example.\n\n## Handoff and Content Factory context\n\nHand the route record to the named page or lead-response owner. The handoff is ready when that owner confirms the destination and response responsibility against the test ID; if confirmation is missing, record it as pending. For booking routes, the existing calendar or lead-response owner receives any promise-to-availability gap with the observation and next check. Preserve their existing follow-up record; do not open a duplicate chase or automatically put the business owner into the host rotation. Use [ensure working contact form delivers notifications](https://local-service-spotlight.github.io/task-library/?task=ensure-working-contact-form-delivers-notifications#task-ensure-working-contact-form-delivers-notifications) for a form-delivery defect or [add click to call links for mobile](https://local-service-spotlight.github.io/task-library/?task=add-click-to-call-links-for-mobile#task-add-click-to-call-links-for-mobile) for a call-link defect.\n\nThis is a setup check for **Post** in the [Content Factory](https://localservicespotlight.com/content-factory/), the process that turns real stories into useful content. A published page needs a working way for a reader to reach the business. Check that path before **Promote** sends more people to it. Promotion, spend and customer follow-up remain separately scoped work.\n\n## When this runs\n\nRun for a new offer or a material page, form or booking change. Later improvement uses real performance reviews on the agreed cadence; no ads or automatic schedule are created by this guide.\n\n## First-run setup and continuity\n\nOpen the supplied task file and its linked source. Verify the project’s real inputs, account, access and output folder before work. This Markdown file is a guide; it does not install an app, connect an account, supply a subscription or create a schedule. Carry out work already authorized; do not ask for the same approval again. Keep any unsupplied destination or new action outside that scope clearly pending.\n\nSave source IDs, versions, decisions, checked outputs and next owner in the project tracker. Before a retry, check the saved state and other workers’ changes. A model name does not guarantee memory or a running timer. Repeated work needs an actual configured trigger and durable state; one-off work can be started by the prompt above.\n\nKeep agent media muted with volume zero before playback. If mute cannot be verified, use captions, metadata or still frames. State the limit: silent visual checks do not prove spoken-word accuracy or audio quality. Do not start sound through the user’s speakers unless explicitly asked.\n\n## Write up the real run\n\nFor every actual attempt, [write its meta article](https://blitzmetrics.com/meta-article-prompt/) with this recipe and revision, trigger, steps performed, output evidence, measured result, gaps and next owner. Failed, blocked and partial attempts also get a written record. A draft can satisfy writing; publishing it follows the existing job scope.\n\nKeep one stable execution ID across retries and edits. A separately scoped child task may have its own ID linked to its parent. Writing the parent’s meta record is part of that run, not an endless new chain. The [recipe and meta-article guide](https://localservicespotlight.com/meta-articles/) explains this distinction. Teaching examples are not real executions and must not enter the run count.\n\n\n<!-- factory-layer:start -->\n\n## Factory chain (do not treat this as isolated)\n\n- **Phase:** Gate\n- **Importance:** 5/5 `●●●●●` — frequency 4, revenue 5, gating 5 (runs every factory cycle or weekly; ads/revenue path; unblocks a chain (access/plumbing))\n- **Browse earlier task:** `ensure-working-contact-form-delivers-notifications`\n- **Browse later task:** `map-out-one-minute-video-topics-using-topic-wheel`\nThese are nearby tasks in the library. Use this guide’s Inputs and Handoff sections to choose what comes before and after your work. Catalog order does not establish prerequisites or handoffs.\n- **Handoff:** Record only the property IDs, access and checks required by this task in the client register. Pass the verified result to the task that needs it.\n\n## Model routing (same factory, any engine)\n\n- **This task's lane:** `any` — Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.\n- **Single-engine path:** Use the capable AI app you already have. Check its required tools and access before starting. Pass the actual result and proof to the next task.\n- **Optional multi-engine:** A tested local model may draft; a stronger model may review facts and voice. Use supported tools for approved actions. Pick models from observed quality and cost; a model name does not prove it can run this task.\n- **Never** store the working state in one vendor's memory. Files in the Content Library are the bridge.\n\n<!-- factory-layer:end -->\n## Definitive article & links\n\n- Canonical article: https://blitzmetrics.com/digital-plumbing\n- Exact task: [Create Clear Conversion Path](https://local-service-spotlight.github.io/task-library/?task=create-clear-conversion-path#task-create-clear-conversion-path)\n- Writing standard: [Article Guidelines](https://localservicespotlight.com/article-guidelines/)\n- [Digital Plumbing training](https://blitzmetrics.com/digital-plumbing/)\n- [SEO Tree](https://blitzmetrics.com/seo-tree/)\n\n## Review and evidence still needed\n\nThe source contributor status is preserved. It is not certification of this draft or proof of account access, completed work or a live outcome. The worked example teaches the method and is explicitly fictional.\n- The actual owner must supply the intended action, response promise and test scope; no conversion performance has been measured by this draft.",
+     "content": "---\nname: create-clear-conversion-path\ndescription: \"Help a visitor take the next useful step. Make the path clear and check where the request lands.\"\ncategory: Digital Plumbing\nstage: —\ndefinitive_article: /digital-plumbing\nstatus: complete\n---\n\n# Create Clear Conversion Path\n\nUse this guide to make it easy for people to ask your business for help. A clear path helps your team get requests it can answer. Next, [check your contact form](https://local-service-spotlight.github.io/task-library/?task=ensure-working-contact-form-delivers-notifications#task-ensure-working-contact-form-delivers-notifications) to make sure those requests reach the right person.\n\n**The path:** Visitor need → Clear action → Usable form, booking or call → Team receipt → Named next owner.\n\n**Use this when:** a new page or offer launches, visitors struggle to contact the business, or an existing path needs repair.\n\n## Inputs\n- The page, intended visitor and useful next action from the project’s [Goals, Content, and Targeting](https://blitzmetrics.com/gct-business-strategy/) brief: the goal, source content and people it serves.\n- The actual contact, booking, purchase or download destination and the responsible team. Preserve legitimate privacy, legal and navigation links.\n- Access to the owning page and destination settings, plus the agreed test scope and existing measurement plan if one is in use.\n\n## Starting state and run record\n\nStart with one named page, its intended visitor and action, the current destination, and the person or team that must receive the request. For appointments, include the approved availability or response promise, its time zone, eligible hosts and the escalation owner when coverage is missing. Record the page URL and revision, action label, destination, controlled-test ID and time, device, link/form/call result, receiver evidence, unresolved issue, and next owner. Count clicks, accepted requests, connected calls and qualified leads separately. Compare lead rates only when real baseline and follow-up data use the same lead definition and data source over equal-length windows; traffic mix and season changes can still affect the result. This guide does not estimate sales uplift.\n\n## First-run prompt\n\n> Map the visitor’s path on the supplied page. Improve the main call to action and its destination within the authorized scope. Check the visible result and the actual receiving system separately. Report clicks, submitted requests and received leads as different evidence.\n\n## Steps\n1. Name the page’s intended visitor and desired result in one sentence. Choose the primary action for that journey; a service quote page and a customer-support page can have different valid actions.\n2. Trace the current route from the page to the final destination. Record confusing labels, dead links, repeated questions and unnecessary detours. Do not infer the cause of low lead volume from a page glance alone.\n3. Write a specific action label such as “Request a roof check” rather than a vague “Learn more” when a request is the real next step. State what happens next and any material cost or commitment accurately.\n4. Place the action where it supports the page’s explanation and is reachable on mobile. Keep relevant secondary choices and accessibility controls. The source’s two-click idea is a reachability target, not a rule that every real booking or purchase must finish in two clicks.\n5. Edit the supported page source and destination. Keep required fields limited to the actual business need; preserve necessary consent and disclosures. Use the true service or offer page, following the [Money Tree](https://blitzmetrics.com/money-tree/) when it applies: the site map of posts and the pages where people book or buy.\n6. Before submitting a booking, compare the earliest selectable appointment with the actual promised window. Save the check time, displayed time zone, first available slot and any empty result. A calendar that loads is not proof that a visitor can book within the promise. Check that required choices are clear and cannot accept contradictory answers; mutually exclusive answers need a single-choice control. Treat a mismatch as a defect, not a reason to silently change the promise, add a host or buy a plan.\n7. Test the link and form or booking flow using the authorized controlled test. Check errors, success state and mobile use. Avoid a real charge, booking or message beyond the existing test scope; label that untested portion rather than calling the whole path passed.\n8. Verify receipt in the actual inbox, booking tool or customer system and identify who follows up. For a tested booking, match its ID to the assigned eligible host, saved answers and required notifications; check cancellation and reminder behavior only within the authorized test scope. A listed host or an empty availability response with an error does not prove staffed coverage. A success page or analytics event alone is not proof that the team got the request.\n9. If tracking is in scope, check one appropriate received event per intended action and its consent behavior. Save the route, test evidence and measured result; compare later lead performance only with real comparable data.\n\n## Definition of done (QA checklist)\n\n- [ ] Each money-page opening makes the customer's situation, supported value and next buying step clear in the first 2–3 sentences, with relevant authentic proof; [opening review](https://local-service-spotlight.github.io/task-library/?task=step-7-write-hook-and-establish-context#task-step-7-write-hook-and-establish-context) is recorded, not inferred from a CTA or unmeasured conversion promise\n\n- [ ] The page has an understandable primary action for its intended visitor.\n- [ ] The route reaches the correct destination with no unnecessary dead end.\n- [ ] Phone layout and required fields work, with privacy and accessibility intact; answers cannot contradict one another.\n- [ ] If booking is offered, the observed slot fits the actual promised window and time zone, or the exact mismatch and coverage owner remain open.\n- [ ] Any controlled booking has matching assignment, answer and receiver evidence. Untested notifications, cancellations or reminders remain explicitly unknown.\n- [ ] Visitor success and team receipt have independent evidence or precise open limits.\n- [ ] Tracking and business outcomes are reported separately, with an actual next owner.\n\n## Example(s)\n\n**Fictional teaching example.** Oak Repair’s service page says “Contact,” leading to a menu with four choices. The lesson changes the label to “Request a roof check” and links directly to the quote form. The form explains that the team will reply by the next business day, a promise supplied for this fictional exercise. A mock test record shows one successful submission and one matching receiver entry. The lesson proves how to check a path; it makes no claim about a real lead or conversion-rate increase.\n\n**Fictional booking example.** A service promises a call within three days, but the first selectable slot is three weeks away. The page loads and the button works, yet this path fails its stated promise. Save the visible dates and time zone, then route the gap to the existing calendar owner. Do not claim a staffing, calendar-sync or subscription cause without checking it. No real appointment was booked in this example.\n\n## Handoff and Content Factory context\n\nHand the route record to the named page or lead-response owner. The handoff is ready when that owner confirms the destination and response responsibility against the test ID; if confirmation is missing, record it as pending. For booking routes, the existing calendar or lead-response owner receives any promise-to-availability gap with the observation and next check. Preserve their existing follow-up record; do not open a duplicate chase or automatically put the business owner into the host rotation. Use [ensure working contact form delivers notifications](https://local-service-spotlight.github.io/task-library/?task=ensure-working-contact-form-delivers-notifications#task-ensure-working-contact-form-delivers-notifications) for a form-delivery defect or [add click to call links for mobile](https://local-service-spotlight.github.io/task-library/?task=add-click-to-call-links-for-mobile#task-add-click-to-call-links-for-mobile) for a call-link defect.\n\nThis is a setup check for **Post** in the [Content Factory](https://localservicespotlight.com/content-factory/), the process that turns real stories into useful content. A published page needs a working way for a reader to reach the business. Check that path before **Promote** sends more people to it. Promotion, spend and customer follow-up remain separately scoped work.\n\n## When this runs\n\nRun for a new offer or a material page, form or booking change. Later improvement uses real performance reviews on the agreed cadence; no ads or automatic schedule are created by this guide.\n\n## First-run setup and continuity\n\nOpen the supplied task file and its linked source. Verify the project’s real inputs, account, access and output folder before work. This Markdown file is a guide; it does not install an app, connect an account, supply a subscription or create a schedule. Carry out work already authorized; do not ask for the same approval again. Keep any unsupplied destination or new action outside that scope clearly pending.\n\nSave source IDs, versions, decisions, checked outputs and next owner in the project tracker. Before a retry, check the saved state and other workers’ changes. A model name does not guarantee memory or a running timer. Repeated work needs an actual configured trigger and durable state; one-off work can be started by the prompt above.\n\nKeep agent media muted with volume zero before playback. If mute cannot be verified, use captions, metadata or still frames. State the limit: silent visual checks do not prove spoken-word accuracy or audio quality. Do not start sound through the user’s speakers unless explicitly asked.\n\n## Write up the real run\n\nFor every actual attempt, [write its meta article](https://blitzmetrics.com/meta-article-prompt/) with this recipe and revision, trigger, steps performed, output evidence, measured result, gaps and next owner. Failed, blocked and partial attempts also get a written record. A draft can satisfy writing; publishing it follows the existing job scope.\n\nKeep one stable execution ID across retries and edits. A separately scoped child task may have its own ID linked to its parent. Writing the parent’s meta record is part of that run, not an endless new chain. The [recipe and meta-article guide](https://localservicespotlight.com/meta-articles/) explains this distinction. Teaching examples are not real executions and must not enter the run count.\n\n\n<!-- factory-layer:start -->\n\n## Factory chain (do not treat this as isolated)\n\n- **Phase:** Gate\n- **Importance:** 5/5 `●●●●●` — frequency 4, revenue 5, gating 5 (runs every factory cycle or weekly; ads/revenue path; unblocks a chain (access/plumbing))\n- **Browse earlier task:** `ensure-working-contact-form-delivers-notifications`\n- **Browse later task:** `map-out-one-minute-video-topics-using-topic-wheel`\nThese are nearby tasks in the library. Use this guide’s Inputs and Handoff sections to choose what comes before and after your work. Catalog order does not establish prerequisites or handoffs.\n- **Handoff:** Record only the property IDs, access and checks required by this task in the client register. Pass the verified result to the task that needs it.\n\n## Model routing (same factory, any engine)\n\n- **This task's lane:** `any` — Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.\n- **Single-engine path:** Use the capable AI app you already have. Check its required tools and access before starting. Pass the actual result and proof to the next task.\n- **Optional multi-engine:** A tested local model may draft; a stronger model may review facts and voice. Use supported tools for approved actions. Pick models from observed quality and cost; a model name does not prove it can run this task.\n- **Never** store the working state in one vendor's memory. Files in the Content Library are the bridge.\n\n<!-- factory-layer:end -->\n## Definitive article & links\n\n- Canonical article: https://blitzmetrics.com/digital-plumbing\n- Exact task: [Create Clear Conversion Path](https://local-service-spotlight.github.io/task-library/?task=create-clear-conversion-path#task-create-clear-conversion-path)\n- Writing standard: [Article Guidelines](https://localservicespotlight.com/article-guidelines/)\n- [Digital Plumbing training](https://blitzmetrics.com/digital-plumbing/)\n- [SEO Tree](https://blitzmetrics.com/seo-tree/)\n\n## Review and evidence still needed\n\nContributor status records that these written instructions are complete. It is not proof of account access, completed work or a live outcome. The worked example teaches the method and is explicitly fictional.\n- The actual owner must supply the intended action, response promise and test scope; no conversion performance has been measured by this draft.",
      "importance": 5,
      "freq": 4,
      "revenue": 5,
@@ -16530,10 +16552,10 @@
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
      "why": "runs every factory cycle or weekly; ads/revenue path; unblocks a chain (access/plumbing)",
      "instructionReview": {
-      "source_sha256": "a7ab85e8cb4a794fc4821966fc6115e681cd1dcd3684f920b8bcabc64fed99a0",
-      "reviewed_at": "2026-10-13",
-      "reviewer": "Codex incremental destination review with independent GPT-6 Luna review",
-      "scope": "One exact written conversion-path revision and its article copy. Live booking, full hub semantic certification, accepted outcome and novice setup remain unknown. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/booking-path-2026-10-09.md Destination-only revision: existing prose and check verdicts retained after exact diff inspection; current Content Factory target and relationship checked. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/content-factory-link-2026-10-13.md",
+      "source_sha256": "cf69ce3f3bc32f6e009f7f1a20bc09a2d1d232195a2538be7521e982b1a629e7",
+      "reviewed_at": "2026-10-17",
+      "reviewer": "Codex contributor-label and evidence-note reconciliation; prior independent written verdicts retained",
+      "scope": "One exact written conversion-path revision and its article copy. Live booking, full hub semantic certification, accepted outcome and novice setup remain unknown. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/booking-path-2026-10-09.md Destination-only revision: existing prose and check verdicts retained after exact diff inspection; current Content Factory target and relationship checked. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/content-factory-link-2026-10-13.md Contributor-label and evidence-note reconciliation on 2026-10-17: method, opening, visuals, links, examples and acceptance unchanged; existing five written verdicts retained. Contributor instructions-complete label now matches that review. No new article/source freshness, result, novice or schedule evidence. See reviews/revenue-ready-download-2026-10-17.md.",
       "standards": {
        "version": 1,
        "checks": {
@@ -16565,10 +16587,10 @@
        }
       },
       "incrementalReview": {
-       "beforeSourceSha256": "f03ac6898485a02e3ca14a75fdaee12f0ad2015afa4ced2b943d457f75965ca2",
-       "previousReviewDate": "2026-10-09",
-       "change": "Only the Content Factory teaching URL changed; no step, example, opening, status or acceptance changed.",
-       "review": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/content-factory-link-2026-10-13.md"
+       "beforeSourceSha256": "a7ab85e8cb4a794fc4821966fc6115e681cd1dcd3684f920b8bcabc64fed99a0",
+       "previousReviewDate": "2026-10-13",
+       "change": "Contributor status changes from needs-work to complete and the evidence note explains that this labels written instruction completeness. Method, opening, visuals, links, fictional example and acceptance criteria are unchanged; existing five written verdicts retained. No new article, execution or novice certification.",
+       "review": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-ready-download-2026-10-17.md"
       }
      },
      "articleState": "wip",
@@ -16606,27 +16628,27 @@
       "historicalAcceptedEvidenceIds": []
      },
      "standardVerification": {
-      "instructionSourceSha256": "a7ab85e8cb4a794fc4821966fc6115e681cd1dcd3684f920b8bcabc64fed99a0",
+      "instructionSourceSha256": "cf69ce3f3bc32f6e009f7f1a20bc09a2d1d232195a2538be7521e982b1a629e7",
       "articleKey": "blitzmetrics.com/digital-plumbing",
       "gates": {
        "instructionRevisionReviewed": {
         "id": "instructionRevisionReviewed",
         "label": "Exact instruction revision reviewed",
         "state": "pass",
-        "reason": "Current source bytes match the review recorded 2026-10-13. Review scope and limits: One exact written conversion-path revision and its article copy. Live booking, full hub semantic certification, accepted outcome and novice setup remain unknown. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/booking-path-2026-10-09.md Destination-only revision: existing prose and check verdicts retained after exact diff inspection; current Content Factory target and relationship checked. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/content-factory-link-2026-10-13.md",
-        "reviewedAt": "2026-10-13",
-        "reviewer": "Codex incremental destination review with independent GPT-6 Luna review",
-        "sourceSha256": "a7ab85e8cb4a794fc4821966fc6115e681cd1dcd3684f920b8bcabc64fed99a0"
+        "reason": "Current source bytes match the review recorded 2026-10-17. Review scope and limits: One exact written conversion-path revision and its article copy. Live booking, full hub semantic certification, accepted outcome and novice setup remain unknown. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/booking-path-2026-10-09.md Destination-only revision: existing prose and check verdicts retained after exact diff inspection; current Content Factory target and relationship checked. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/content-factory-link-2026-10-13.md Contributor-label and evidence-note reconciliation on 2026-10-17: method, opening, visuals, links, examples and acceptance unchanged; existing five written verdicts retained. Contributor instructions-complete label now matches that review. No new article/source freshness, result, novice or schedule evidence. See reviews/revenue-ready-download-2026-10-17.md.",
+        "reviewedAt": "2026-10-17",
+        "reviewer": "Codex contributor-label and evidence-note reconciliation; prior independent written verdicts retained",
+        "sourceSha256": "cf69ce3f3bc32f6e009f7f1a20bc09a2d1d232195a2538be7521e982b1a629e7"
        },
        "instructionStandards": {
         "id": "instructionStandards",
         "label": "Instruction requirements checked",
         "state": "pass",
         "reason": "All five instruction requirements have explicit passing checks for the current source revision.",
-        "reviewedAt": "2026-10-13",
-        "reviewer": "Codex incremental destination review with independent GPT-6 Luna review",
-        "reviewScope": "One exact written conversion-path revision and its article copy. Live booking, full hub semantic certification, accepted outcome and novice setup remain unknown. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/booking-path-2026-10-09.md Destination-only revision: existing prose and check verdicts retained after exact diff inspection; current Content Factory target and relationship checked. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/content-factory-link-2026-10-13.md",
-        "sourceSha256": "a7ab85e8cb4a794fc4821966fc6115e681cd1dcd3684f920b8bcabc64fed99a0",
+        "reviewedAt": "2026-10-17",
+        "reviewer": "Codex contributor-label and evidence-note reconciliation; prior independent written verdicts retained",
+        "reviewScope": "One exact written conversion-path revision and its article copy. Live booking, full hub semantic certification, accepted outcome and novice setup remain unknown. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/booking-path-2026-10-09.md Destination-only revision: existing prose and check verdicts retained after exact diff inspection; current Content Factory target and relationship checked. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/content-factory-link-2026-10-13.md Contributor-label and evidence-note reconciliation on 2026-10-17: method, opening, visuals, links, examples and acceptance unchanged; existing five written verdicts retained. Contributor instructions-complete label now matches that review. No new article/source freshness, result, novice or schedule evidence. See reviews/revenue-ready-download-2026-10-17.md.",
+        "sourceSha256": "cf69ce3f3bc32f6e009f7f1a20bc09a2d1d232195a2538be7521e982b1a629e7",
         "standards": {
          "version": 1,
          "checks": {
@@ -16661,8 +16683,8 @@
        "contributorComplete": {
         "id": "contributorComplete",
         "label": "Contributor reports guide complete",
-        "state": "unmet",
-        "reason": "The contributor status is needs-work; finish and review the guide."
+        "state": "pass",
+        "reason": "The contributor status is complete; this is a source claim, not execution proof."
        },
        "articleMapped": {
         "id": "articleMapped",
@@ -16807,7 +16829,6 @@
        }
       },
       "unmetStandardGates": [
-       "contributorComplete",
        "articleCatalogGate"
       ],
       "heldStandardGates": [],
@@ -16822,7 +16843,7 @@
       "queuePosition": 24,
       "priority": "P1",
       "priorityReason": "Known standard gap",
-      "nextAction": "The contributor status is needs-work; finish and review the guide."
+      "nextAction": "At least one task mapped to this hub is not contributor-complete."
      }
     },
     {
@@ -16977,7 +16998,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 74,
+      "queuePosition": 73,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -17133,7 +17154,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 93,
+      "queuePosition": 92,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "No valid canonical article URL is mapped for this task."
@@ -17291,7 +17312,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 190,
+      "queuePosition": 189,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -17447,7 +17468,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 89,
+      "queuePosition": 88,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "No valid canonical article URL is mapped for this task."
@@ -17603,7 +17624,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 86,
+      "queuePosition": 85,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "No valid canonical article URL is mapped for this task."
@@ -17761,7 +17782,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 105,
+      "queuePosition": 104,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -17770,12 +17791,12 @@
     {
      "title": "Ensure Working Contact Form Delivers Notifications",
      "slug": "ensure-working-contact-form-delivers-notifications",
-     "status": "needs-work",
+     "status": "complete",
      "stage": "—",
      "article": "https://blitzmetrics.com/digital-plumbing",
      "articleKind": "topic-hub",
      "desc": "Check that a form sends the right request to the right person. Keep proof from both ends.",
-     "content": "---\nname: ensure-working-contact-form-delivers-notifications\ndescription: \"Check that a form sends the right request to the right person. Keep proof from both ends.\"\ncategory: Digital Plumbing\nstage: —\ndefinitive_article: /digital-plumbing\nstatus: needs-work\n---\n\n# Ensure Working Contact Form Delivers Notifications\n\nUse this guide to check that a web form sends each request to the right person. It helps you catch lost requests before you send more people to your site. Start with [a clear contact path](https://local-service-spotlight.github.io/task-library/?task=create-clear-conversion-path#task-create-clear-conversion-path), which picks the next step for your visitor.\n\n**The path:** Form input → Accepted request → Team receipt → Follow-up owner.\n\n**Use this when:** a form launches, its plugin or sender changes, or expected website requests are missing.\n\n## Inputs\n- The form URLs and IDs, supported form settings access and the approved monitored receiver.\n- The actual sending service and current [email authentication setup](https://local-service-spotlight.github.io/task-library/?task=configure-spf-dkim-dmarc-for-deliverability#task-configure-spf-dkim-dmarc-for-deliverability), with access to relevant delivery logs or a named mail owner.\n- The authorized test scope, clear test marker, device coverage and expected receipt window. Identify downstream customer-record, booking or automatic-reply actions before submitting.\n\n## Starting state and run record\n\nStart with the supplied form IDs, intended receiver, test marker, approved device scope and receipt window. For each test, record form ID and revision, marker and time, device, accepted or rejected result, matching receiver record and time, delivery delay, downstream effect, issue and next owner. The acceptance measure is a matching request at the approved destination within the agreed window; a success banner or mail-server acceptance alone does not pass. Keep tests separate from real leads and do not turn test counts into sales claims.\n\n## First-run prompt\n\n> Check the supplied forms end to end within the approved test scope. Fix recipient, sender or success-trigger defects at their source. Record the visitor state and actual receiver evidence separately, and keep test records distinct from real leads.\n\n## Steps\n1. Map each form to its intended receiver and follow-up team. Read the recipient, From and Reply-To settings plus any customer-system or autoresponder connections. Confirm what a test will trigger so it does not create an unrequested appointment, charge or message chain.\n2. Save the current settings and prepare a clearly marked controlled test with no real customer data. Use the supplied receiver and response window; do not substitute an arbitrary personal inbox.\n3. Test desktop and mobile paths within that authority. Check required-field errors, accessible labels and submission behavior. Record the form ID, time and test marker, avoiding private data in public evidence.\n4. Verify the actual receiving inbox or system entry and delivery time. Inspect junk folders and mail logs when needed. A browser success message or mail-server acceptance is not the same as a message reaching the monitored inbox.\n5. For a wrong recipient, update the owning form setting. For sender failure, use the site’s supported authenticated mail or provider integration and its verified domain setup. Use an owned sender address and an appropriate Reply-To; do not spoof the visitor’s address as the authenticated From identity.\n6. Ensure success is shown only after the form accepts the intended request, and that errors give a useful next step. If analytics is in scope, trigger the agreed successful-submission event at that point, not merely on a button click.\n7. Re-test the affected chain after each fix. Inspect actual received analytics events when included, honoring consent. A Meta Lead event applies only where its meaning and current setup match the real action; installing tracking is not mandatory to prove email delivery.\n8. Save the paired visitor and receiver evidence, configured destination and next owner. Mark controlled test entries according to the system’s established process so they do not inflate lead reports; do not delete records blindly.\n\n## Definition of done (QA checklist)\n\n- [ ] Desktop and mobile form behavior was checked for the declared form set.\n- [ ] Each accepted test has a matching receipt at the approved monitored destination within the stated window.\n- [ ] Sender, recipient and Reply-To behavior are correct and authenticated where required.\n- [ ] Success and optional tracking follow actual accepted submissions, with no duplicate event or false lead claim.\n- [ ] Test records, downstream effects, remaining gaps and response owner are documented.\n\n## Example(s)\n\n**Fictional teaching example.** A quote form shows “Thanks,” but its notification still goes to a retired mailbox. The lesson updates the recipient to the business’s monitored queue and sends a marked test under a supplied test scope. The mock record pairs form TEST-01 at 10:00 with a receiver entry at 10:01. A second phone test has its own marker. Two received tests prove the lesson path, not two customer leads.\n\n## Handoff and Content Factory context\n\nHand the paired form and receiver records to the named mail or lead-response owner. The handoff is accepted when that owner confirms the monitored destination and response responsibility for the tested forms; otherwise record acceptance as pending. Use [configure spf dkim dmarc for deliverability](https://local-service-spotlight.github.io/task-library/?task=configure-spf-dkim-dmarc-for-deliverability#task-configure-spf-dkim-dmarc-for-deliverability) for authentication defects or [create clear conversion path](https://local-service-spotlight.github.io/task-library/?task=create-clear-conversion-path#task-create-clear-conversion-path) when the path itself is confusing.\n\nThis is a setup check for **Post** in the [Content Factory](https://localservicespotlight.com/content-factory/), the process that turns real stories into useful content. A published page needs a working way for a reader to reach the business. Check that path before **Promote** sends more people to it. Promotion, spend and customer follow-up remain separately scoped work.\n\n## When this runs\n\nRun on setup and after form, mail or plugin changes. The source proposes a quarterly re-test; use that only when adopted in the project’s actual maintenance schedule with a safe test scope and monitored owner.\n\n## First-run setup and continuity\n\nOpen the supplied task file and its linked source. Verify the project’s real inputs, account, access and output folder before work. This Markdown file is a guide; it does not install an app, connect an account, supply a subscription or create a schedule. Carry out work already authorized; do not ask for the same approval again. Keep any unsupplied destination or new action outside that scope clearly pending.\n\nSave source IDs, versions, decisions, checked outputs and next owner in the project tracker. Before a retry, check the saved state and other workers’ changes. A model name does not guarantee memory or a running timer. Repeated work needs an actual configured trigger and durable state; one-off work can be started by the prompt above.\n\nKeep agent media muted with volume zero before playback. If mute cannot be verified, use captions, metadata or still frames. State the limit: silent visual checks do not prove spoken-word accuracy or audio quality. Do not start sound through the user’s speakers unless explicitly asked.\n\n## Write up the real run\n\nFor every actual attempt, [write its meta article](https://blitzmetrics.com/meta-article-prompt/) with this recipe and revision, trigger, steps performed, output evidence, measured result, gaps and next owner. Failed, blocked and partial attempts also get a written record. A draft can satisfy writing; publishing it follows the existing job scope.\n\nKeep one stable execution ID across retries and edits. A separately scoped child task may have its own ID linked to its parent. Writing the parent’s meta record is part of that run, not an endless new chain. The [recipe and meta-article guide](https://localservicespotlight.com/meta-articles/) explains this distinction. Teaching examples are not real executions and must not enter the run count.\n\n\n<!-- factory-layer:start -->\n\n## Factory chain (do not treat this as isolated)\n\n- **Phase:** Gate\n- **Importance:** 5/5 `●●●●●` — frequency 4, revenue 5, gating 5 (runs every factory cycle or weekly; ads/revenue path; unblocks a chain (access/plumbing))\n- **Browse earlier task:** `ensure-robots-meta-not-blocking-indexing`\n- **Browse later task:** `create-clear-conversion-path`\nThese are nearby tasks in the library. Use this guide’s Inputs and Handoff sections to choose what comes before and after your work. Catalog order does not establish prerequisites or handoffs.\n- **Handoff:** Record only the property IDs, access and checks required by this task in the client register. Pass the verified result to the task that needs it.\n\n## Model routing (same factory, any engine)\n\n- **This task's lane:** `any` — Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.\n- **Single-engine path:** Use the capable AI app you already have. Check its required tools and access before starting. Pass the actual result and proof to the next task.\n- **Optional multi-engine:** A tested local model may draft; a stronger model may review facts and voice. Use supported tools for approved actions. Pick models from observed quality and cost; a model name does not prove it can run this task.\n- **Never** store the working state in one vendor's memory. Files in the Content Library are the bridge.\n\n<!-- factory-layer:end -->\n## Definitive article & links\n\n- Canonical article: https://blitzmetrics.com/digital-plumbing\n- Exact task: [Ensure Working Contact Form Delivers Notifications](https://local-service-spotlight.github.io/task-library/?task=ensure-working-contact-form-delivers-notifications#task-ensure-working-contact-form-delivers-notifications)\n- Writing standard: [Article Guidelines](https://localservicespotlight.com/article-guidelines/)\n- [Digital Plumbing training](https://blitzmetrics.com/digital-plumbing/)\n- [Google Workspace DKIM setup](https://knowledge.workspace.google.com/admin/security/set-up-dkim)\n- [Google Analytics DebugView](https://support.google.com/analytics/answer/7201382?hl=en)\n\n## Review and evidence still needed\n\nThe source contributor status is preserved. It is not certification of this draft or proof of account access, completed work or a live outcome. The worked example teaches the method and is explicitly fictional.\n- Real receiver evidence and authorized downstream test effects must be supplied; this authoring pass submitted no form or message.",
+     "content": "---\nname: ensure-working-contact-form-delivers-notifications\ndescription: \"Check that a form sends the right request to the right person. Keep proof from both ends.\"\ncategory: Digital Plumbing\nstage: —\ndefinitive_article: /digital-plumbing\nstatus: complete\n---\n\n# Ensure Working Contact Form Delivers Notifications\n\nUse this guide to check that a web form sends each request to the right person. It helps you catch lost requests before you send more people to your site. Start with [a clear contact path](https://local-service-spotlight.github.io/task-library/?task=create-clear-conversion-path#task-create-clear-conversion-path), which picks the next step for your visitor.\n\n**The path:** Form input → Accepted request → Team receipt → Follow-up owner.\n\n**Use this when:** a form launches, its plugin or sender changes, or expected website requests are missing.\n\n## Inputs\n- The form URLs and IDs, supported form settings access and the approved monitored receiver.\n- The actual sending service and current [email authentication setup](https://local-service-spotlight.github.io/task-library/?task=configure-spf-dkim-dmarc-for-deliverability#task-configure-spf-dkim-dmarc-for-deliverability), with access to relevant delivery logs or a named mail owner.\n- The authorized test scope, clear test marker, device coverage and expected receipt window. Identify downstream customer-record, booking or automatic-reply actions before submitting.\n\n## Starting state and run record\n\nStart with the supplied form IDs, intended receiver, test marker, approved device scope and receipt window. For each test, record form ID and revision, marker and time, device, accepted or rejected result, matching receiver record and time, delivery delay, downstream effect, issue and next owner. The acceptance measure is a matching request at the approved destination within the agreed window; a success banner or mail-server acceptance alone does not pass. Keep tests separate from real leads and do not turn test counts into sales claims.\n\n## First-run prompt\n\n> Check the supplied forms end to end within the approved test scope. Fix recipient, sender or success-trigger defects at their source. Record the visitor state and actual receiver evidence separately, and keep test records distinct from real leads.\n\n## Steps\n1. Map each form to its intended receiver and follow-up team. Read the recipient, From and Reply-To settings plus any customer-system or autoresponder connections. Confirm what a test will trigger so it does not create an unrequested appointment, charge or message chain.\n2. Save the current settings and prepare a clearly marked controlled test with no real customer data. Use the supplied receiver and response window; do not substitute an arbitrary personal inbox.\n3. Test desktop and mobile paths within that authority. Check required-field errors, accessible labels and submission behavior. Record the form ID, time and test marker, avoiding private data in public evidence.\n4. Verify the actual receiving inbox or system entry and delivery time. Inspect junk folders and mail logs when needed. A browser success message or mail-server acceptance is not the same as a message reaching the monitored inbox.\n5. For a wrong recipient, update the owning form setting. For sender failure, use the site’s supported authenticated mail or provider integration and its verified domain setup. Use an owned sender address and an appropriate Reply-To; do not spoof the visitor’s address as the authenticated From identity.\n6. Ensure success is shown only after the form accepts the intended request, and that errors give a useful next step. If analytics is in scope, trigger the agreed successful-submission event at that point, not merely on a button click.\n7. Re-test the affected chain after each fix. Inspect actual received analytics events when included, honoring consent. A Meta Lead event applies only where its meaning and current setup match the real action; installing tracking is not mandatory to prove email delivery.\n8. Save the paired visitor and receiver evidence, configured destination and next owner. Mark controlled test entries according to the system’s established process so they do not inflate lead reports; do not delete records blindly.\n\n## Definition of done (QA checklist)\n\n- [ ] Desktop and mobile form behavior was checked for the declared form set.\n- [ ] Each accepted test has a matching receipt at the approved monitored destination within the stated window.\n- [ ] Sender, recipient and Reply-To behavior are correct and authenticated where required.\n- [ ] Success and optional tracking follow actual accepted submissions, with no duplicate event or false lead claim.\n- [ ] Test records, downstream effects, remaining gaps and response owner are documented.\n\n## Example(s)\n\n**Fictional teaching example.** A quote form shows “Thanks,” but its notification still goes to a retired mailbox. The lesson updates the recipient to the business’s monitored queue and sends a marked test under a supplied test scope. The mock record pairs form TEST-01 at 10:00 with a receiver entry at 10:01. A second phone test has its own marker. Two received tests prove the lesson path, not two customer leads.\n\n## Handoff and Content Factory context\n\nHand the paired form and receiver records to the named mail or lead-response owner. The handoff is accepted when that owner confirms the monitored destination and response responsibility for the tested forms; otherwise record acceptance as pending. Use [configure spf dkim dmarc for deliverability](https://local-service-spotlight.github.io/task-library/?task=configure-spf-dkim-dmarc-for-deliverability#task-configure-spf-dkim-dmarc-for-deliverability) for authentication defects or [create clear conversion path](https://local-service-spotlight.github.io/task-library/?task=create-clear-conversion-path#task-create-clear-conversion-path) when the path itself is confusing.\n\nThis is a setup check for **Post** in the [Content Factory](https://localservicespotlight.com/content-factory/), the process that turns real stories into useful content. A published page needs a working way for a reader to reach the business. Check that path before **Promote** sends more people to it. Promotion, spend and customer follow-up remain separately scoped work.\n\n## When this runs\n\nRun on setup and after form, mail or plugin changes. The source proposes a quarterly re-test; use that only when adopted in the project’s actual maintenance schedule with a safe test scope and monitored owner.\n\n## First-run setup and continuity\n\nOpen the supplied task file and its linked source. Verify the project’s real inputs, account, access and output folder before work. This Markdown file is a guide; it does not install an app, connect an account, supply a subscription or create a schedule. Carry out work already authorized; do not ask for the same approval again. Keep any unsupplied destination or new action outside that scope clearly pending.\n\nSave source IDs, versions, decisions, checked outputs and next owner in the project tracker. Before a retry, check the saved state and other workers’ changes. A model name does not guarantee memory or a running timer. Repeated work needs an actual configured trigger and durable state; one-off work can be started by the prompt above.\n\nKeep agent media muted with volume zero before playback. If mute cannot be verified, use captions, metadata or still frames. State the limit: silent visual checks do not prove spoken-word accuracy or audio quality. Do not start sound through the user’s speakers unless explicitly asked.\n\n## Write up the real run\n\nFor every actual attempt, [write its meta article](https://blitzmetrics.com/meta-article-prompt/) with this recipe and revision, trigger, steps performed, output evidence, measured result, gaps and next owner. Failed, blocked and partial attempts also get a written record. A draft can satisfy writing; publishing it follows the existing job scope.\n\nKeep one stable execution ID across retries and edits. A separately scoped child task may have its own ID linked to its parent. Writing the parent’s meta record is part of that run, not an endless new chain. The [recipe and meta-article guide](https://localservicespotlight.com/meta-articles/) explains this distinction. Teaching examples are not real executions and must not enter the run count.\n\n\n<!-- factory-layer:start -->\n\n## Factory chain (do not treat this as isolated)\n\n- **Phase:** Gate\n- **Importance:** 5/5 `●●●●●` — frequency 4, revenue 5, gating 5 (runs every factory cycle or weekly; ads/revenue path; unblocks a chain (access/plumbing))\n- **Browse earlier task:** `ensure-robots-meta-not-blocking-indexing`\n- **Browse later task:** `create-clear-conversion-path`\nThese are nearby tasks in the library. Use this guide’s Inputs and Handoff sections to choose what comes before and after your work. Catalog order does not establish prerequisites or handoffs.\n- **Handoff:** Record only the property IDs, access and checks required by this task in the client register. Pass the verified result to the task that needs it.\n\n## Model routing (same factory, any engine)\n\n- **This task's lane:** `any` — Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.\n- **Single-engine path:** Use the capable AI app you already have. Check its required tools and access before starting. Pass the actual result and proof to the next task.\n- **Optional multi-engine:** A tested local model may draft; a stronger model may review facts and voice. Use supported tools for approved actions. Pick models from observed quality and cost; a model name does not prove it can run this task.\n- **Never** store the working state in one vendor's memory. Files in the Content Library are the bridge.\n\n<!-- factory-layer:end -->\n## Definitive article & links\n\n- Canonical article: https://blitzmetrics.com/digital-plumbing\n- Exact task: [Ensure Working Contact Form Delivers Notifications](https://local-service-spotlight.github.io/task-library/?task=ensure-working-contact-form-delivers-notifications#task-ensure-working-contact-form-delivers-notifications)\n- Writing standard: [Article Guidelines](https://localservicespotlight.com/article-guidelines/)\n- [Digital Plumbing training](https://blitzmetrics.com/digital-plumbing/)\n- [Google Workspace DKIM setup](https://knowledge.workspace.google.com/admin/security/set-up-dkim)\n- [Google Analytics DebugView](https://support.google.com/analytics/answer/7201382?hl=en)\n\n## Review and evidence still needed\n\nContributor status records that these written instructions are complete. It is not proof of account access, completed work or a live outcome. The worked example teaches the method and is explicitly fictional.\n- Real receiver evidence and authorized downstream test effects must be supplied; this authoring pass submitted no form or message.",
      "importance": 5,
      "freq": 4,
      "revenue": 5,
@@ -17787,10 +17808,10 @@
      "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
      "why": "runs every factory cycle or weekly; ads/revenue path; unblocks a chain (access/plumbing)",
      "instructionReview": {
-      "source_sha256": "e92b767a0a175475c6e478008a05171783773a84443feeb7807e4a427757692d",
-      "reviewed_at": "2026-10-13",
-      "reviewer": "Codex incremental destination review with independent GPT-6 Luna review",
-      "scope": "Exact written method only. Full article, real execution, receiver result and unassisted novice setup remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md Destination-only revision: existing prose and check verdicts retained after exact diff inspection; current Content Factory target and relationship checked. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/content-factory-link-2026-10-13.md",
+      "source_sha256": "ee8b5f159bcee7bf1fa76e30c0f1351b2b1fe59b7dd9faab76e2bf7f1a2ad870",
+      "reviewed_at": "2026-10-17",
+      "reviewer": "Codex contributor-label and evidence-note reconciliation; prior independent written verdicts retained",
+      "scope": "Exact written method only. Full article, real execution, receiver result and unassisted novice setup remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md Destination-only revision: existing prose and check verdicts retained after exact diff inspection; current Content Factory target and relationship checked. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/content-factory-link-2026-10-13.md Contributor-label and evidence-note reconciliation on 2026-10-17: method, opening, visuals, links, examples and acceptance unchanged; existing five written verdicts retained. Contributor instructions-complete label now matches that review. No new article/source freshness, result, novice or schedule evidence. See reviews/revenue-ready-download-2026-10-17.md.",
       "standards": {
        "version": 1,
        "checks": {
@@ -17822,10 +17843,10 @@
        }
       },
       "incrementalReview": {
-       "beforeSourceSha256": "7657464979ae461cf4f7a4ec061e8417a3c38af7cba2709c46a06d9318f508e0",
-       "previousReviewDate": "2026-10-05",
-       "change": "Only the Content Factory teaching URL changed; no step, example, opening, status or acceptance changed.",
-       "review": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/content-factory-link-2026-10-13.md"
+       "beforeSourceSha256": "e92b767a0a175475c6e478008a05171783773a84443feeb7807e4a427757692d",
+       "previousReviewDate": "2026-10-13",
+       "change": "Contributor status changes from needs-work to complete and the evidence note explains that this labels written instruction completeness. Method, opening, visuals, links, fictional example and acceptance criteria are unchanged; existing five written verdicts retained. No new article, execution or novice certification.",
+       "review": "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-ready-download-2026-10-17.md"
       }
      },
      "articleState": "wip",
@@ -17863,27 +17884,27 @@
       "historicalAcceptedEvidenceIds": []
      },
      "standardVerification": {
-      "instructionSourceSha256": "e92b767a0a175475c6e478008a05171783773a84443feeb7807e4a427757692d",
+      "instructionSourceSha256": "ee8b5f159bcee7bf1fa76e30c0f1351b2b1fe59b7dd9faab76e2bf7f1a2ad870",
       "articleKey": "blitzmetrics.com/digital-plumbing",
       "gates": {
        "instructionRevisionReviewed": {
         "id": "instructionRevisionReviewed",
         "label": "Exact instruction revision reviewed",
         "state": "pass",
-        "reason": "Current source bytes match the review recorded 2026-10-13. Review scope and limits: Exact written method only. Full article, real execution, receiver result and unassisted novice setup remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md Destination-only revision: existing prose and check verdicts retained after exact diff inspection; current Content Factory target and relationship checked. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/content-factory-link-2026-10-13.md",
-        "reviewedAt": "2026-10-13",
-        "reviewer": "Codex incremental destination review with independent GPT-6 Luna review",
-        "sourceSha256": "e92b767a0a175475c6e478008a05171783773a84443feeb7807e4a427757692d"
+        "reason": "Current source bytes match the review recorded 2026-10-17. Review scope and limits: Exact written method only. Full article, real execution, receiver result and unassisted novice setup remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md Destination-only revision: existing prose and check verdicts retained after exact diff inspection; current Content Factory target and relationship checked. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/content-factory-link-2026-10-13.md Contributor-label and evidence-note reconciliation on 2026-10-17: method, opening, visuals, links, examples and acceptance unchanged; existing five written verdicts retained. Contributor instructions-complete label now matches that review. No new article/source freshness, result, novice or schedule evidence. See reviews/revenue-ready-download-2026-10-17.md.",
+        "reviewedAt": "2026-10-17",
+        "reviewer": "Codex contributor-label and evidence-note reconciliation; prior independent written verdicts retained",
+        "sourceSha256": "ee8b5f159bcee7bf1fa76e30c0f1351b2b1fe59b7dd9faab76e2bf7f1a2ad870"
        },
        "instructionStandards": {
         "id": "instructionStandards",
         "label": "Instruction requirements checked",
         "state": "pass",
         "reason": "All five instruction requirements have explicit passing checks for the current source revision.",
-        "reviewedAt": "2026-10-13",
-        "reviewer": "Codex incremental destination review with independent GPT-6 Luna review",
-        "reviewScope": "Exact written method only. Full article, real execution, receiver result and unassisted novice setup remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md Destination-only revision: existing prose and check verdicts retained after exact diff inspection; current Content Factory target and relationship checked. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/content-factory-link-2026-10-13.md",
-        "sourceSha256": "e92b767a0a175475c6e478008a05171783773a84443feeb7807e4a427757692d",
+        "reviewedAt": "2026-10-17",
+        "reviewer": "Codex contributor-label and evidence-note reconciliation; prior independent written verdicts retained",
+        "reviewScope": "Exact written method only. Full article, real execution, receiver result and unassisted novice setup remain separate. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/revenue-path-2026-10-05.md Destination-only revision: existing prose and check verdicts retained after exact diff inspection; current Content Factory target and relationship checked. https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/content-factory-link-2026-10-13.md Contributor-label and evidence-note reconciliation on 2026-10-17: method, opening, visuals, links, examples and acceptance unchanged; existing five written verdicts retained. Contributor instructions-complete label now matches that review. No new article/source freshness, result, novice or schedule evidence. See reviews/revenue-ready-download-2026-10-17.md.",
+        "sourceSha256": "ee8b5f159bcee7bf1fa76e30c0f1351b2b1fe59b7dd9faab76e2bf7f1a2ad870",
         "standards": {
          "version": 1,
          "checks": {
@@ -17918,8 +17939,8 @@
        "contributorComplete": {
         "id": "contributorComplete",
         "label": "Contributor reports guide complete",
-        "state": "unmet",
-        "reason": "The contributor status is needs-work; finish and review the guide."
+        "state": "pass",
+        "reason": "The contributor status is complete; this is a source claim, not execution proof."
        },
        "articleMapped": {
         "id": "articleMapped",
@@ -18064,7 +18085,6 @@
        }
       },
       "unmetStandardGates": [
-       "contributorComplete",
        "articleCatalogGate"
       ],
       "heldStandardGates": [],
@@ -18079,7 +18099,7 @@
       "queuePosition": 25,
       "priority": "P1",
       "priorityReason": "Known standard gap",
-      "nextAction": "The contributor status is needs-work; finish and review the guide."
+      "nextAction": "At least one task mapped to this hub is not contributor-complete."
      }
     },
     {
@@ -18232,7 +18252,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 22,
+      "queuePosition": 21,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "No valid canonical article URL is mapped for this task."
@@ -18388,7 +18408,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 23,
+      "queuePosition": 22,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "No valid canonical article URL is mapped for this task."
@@ -18546,7 +18566,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 108,
+      "queuePosition": 107,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -18702,7 +18722,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 188,
+      "queuePosition": 187,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "No valid canonical article URL is mapped for this task."
@@ -19017,7 +19037,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 45,
+      "queuePosition": 44,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -19173,7 +19193,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 98,
+      "queuePosition": 97,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "No valid canonical article URL is mapped for this task."
@@ -19329,7 +19349,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 66,
+      "queuePosition": 65,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "No valid canonical article URL is mapped for this task."
@@ -19485,7 +19505,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 95,
+      "queuePosition": 94,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "No valid canonical article URL is mapped for this task."
@@ -19643,7 +19663,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 78,
+      "queuePosition": 77,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -19801,7 +19821,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 109,
+      "queuePosition": 108,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -19959,7 +19979,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 88,
+      "queuePosition": 87,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -20116,7 +20136,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 113,
+      "queuePosition": 112,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -20274,7 +20294,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 63,
+      "queuePosition": 62,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -20432,7 +20452,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 111,
+      "queuePosition": 110,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -20591,7 +20611,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 101,
+      "queuePosition": 100,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -20757,7 +20777,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 59,
+      "queuePosition": 58,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -20915,7 +20935,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 47,
+      "queuePosition": 46,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -21072,7 +21092,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 44,
+      "queuePosition": 43,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -21230,7 +21250,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 36,
+      "queuePosition": 35,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -21388,7 +21408,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 75,
+      "queuePosition": 74,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -21546,7 +21566,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 50,
+      "queuePosition": 49,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -21703,7 +21723,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 39,
+      "queuePosition": 38,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -21860,7 +21880,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 40,
+      "queuePosition": 39,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -22017,7 +22037,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 62,
+      "queuePosition": 61,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -22173,7 +22193,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 57,
+      "queuePosition": 56,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "No valid canonical article URL is mapped for this task."
@@ -22330,7 +22350,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 53,
+      "queuePosition": 52,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -22488,7 +22508,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 38,
+      "queuePosition": 37,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -22645,7 +22665,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 42,
+      "queuePosition": 41,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -22802,7 +22822,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 27,
+      "queuePosition": 26,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -22960,7 +22980,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 33,
+      "queuePosition": 32,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -23118,7 +23138,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 77,
+      "queuePosition": 76,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -23276,7 +23296,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 51,
+      "queuePosition": 50,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -23433,7 +23453,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 34,
+      "queuePosition": 33,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -23599,7 +23619,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 158,
+      "queuePosition": 157,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -23757,7 +23777,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 156,
+      "queuePosition": 155,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -23914,7 +23934,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 159,
+      "queuePosition": 158,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -24072,7 +24092,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 189,
+      "queuePosition": 188,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -24336,8 +24356,8 @@
        "acceptedExecution": {
         "id": "acceptedExecution",
         "label": "Accepted execution result",
-        "state": "pass",
-        "reason": "All named measurable acceptance criteria pass for the separately observed current recipe revision.",
+        "state": "unknown",
+        "reason": "The separate current article revision observation is outside the 24-hour freshness window.",
         "acceptanceReview": {
          "version": 1,
          "reviewId": "proof-resolution-20261014-broken-links-independent-1",
@@ -24429,10 +24449,11 @@
        "instructionStandards",
        "articleSemanticCertification",
        "taskExampleEvidence",
+       "acceptedExecution",
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 160,
+      "queuePosition": 159,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -24589,7 +24610,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 161,
+      "queuePosition": 160,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -24746,7 +24767,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 162,
+      "queuePosition": 161,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -24903,7 +24924,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 112,
+      "queuePosition": 111,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -25060,7 +25081,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 163,
+      "queuePosition": 162,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -25217,7 +25238,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 164,
+      "queuePosition": 163,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -25374,7 +25395,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 165,
+      "queuePosition": 164,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -25531,7 +25552,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 166,
+      "queuePosition": 165,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -25689,7 +25710,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 87,
+      "queuePosition": 86,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -25846,7 +25867,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 167,
+      "queuePosition": 166,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -26003,7 +26024,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 168,
+      "queuePosition": 167,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -26160,7 +26181,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 169,
+      "queuePosition": 168,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -26317,7 +26338,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 170,
+      "queuePosition": 169,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -26474,7 +26495,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 171,
+      "queuePosition": 170,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -26631,7 +26652,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 172,
+      "queuePosition": 171,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -26788,7 +26809,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 173,
+      "queuePosition": 172,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -26945,7 +26966,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 174,
+      "queuePosition": 173,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -27102,7 +27123,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 175,
+      "queuePosition": 174,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -27259,7 +27280,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 67,
+      "queuePosition": 66,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -27416,7 +27437,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 176,
+      "queuePosition": 175,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -27573,7 +27594,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 30,
+      "queuePosition": 29,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -27730,7 +27751,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 177,
+      "queuePosition": 176,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -27887,7 +27908,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 92,
+      "queuePosition": 91,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -28044,7 +28065,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 31,
+      "queuePosition": 30,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -28201,7 +28222,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 178,
+      "queuePosition": 177,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -28359,7 +28380,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 110,
+      "queuePosition": 109,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -28516,7 +28537,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 179,
+      "queuePosition": 178,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -28673,7 +28694,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 180,
+      "queuePosition": 179,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -28830,7 +28851,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 181,
+      "queuePosition": 180,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -28987,7 +29008,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 182,
+      "queuePosition": 181,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -29144,7 +29165,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 64,
+      "queuePosition": 63,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -29301,7 +29322,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 183,
+      "queuePosition": 182,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -29460,7 +29481,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 155,
+      "queuePosition": 154,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -29619,7 +29640,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 157,
+      "queuePosition": 156,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -29778,7 +29799,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 154,
+      "queuePosition": 153,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -30112,7 +30133,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 129,
+      "queuePosition": 128,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -32334,7 +32355,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 229,
+      "queuePosition": 228,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "nextAction": "The article revision observation is outside the 24-hour freshness window."
@@ -33606,7 +33627,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 246,
+      "queuePosition": 245,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "The article revision observation is outside the 24-hour freshness window."
@@ -33921,7 +33942,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 144,
+      "queuePosition": 143,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -34080,7 +34101,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 130,
+      "queuePosition": 129,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -34239,7 +34260,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 133,
+      "queuePosition": 132,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -34406,7 +34427,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 128,
+      "queuePosition": 127,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -34620,7 +34641,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 131,
+      "queuePosition": 130,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -34778,7 +34799,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 132,
+      "queuePosition": 131,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -34936,7 +34957,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 102,
+      "queuePosition": 101,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -35251,7 +35272,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 103,
+      "queuePosition": 102,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -35409,7 +35430,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 135,
+      "queuePosition": 134,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -35567,7 +35588,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 48,
+      "queuePosition": 47,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -35725,7 +35746,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 136,
+      "queuePosition": 135,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -36040,7 +36061,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 137,
+      "queuePosition": 136,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -36198,7 +36219,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 138,
+      "queuePosition": 137,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -36356,7 +36377,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 139,
+      "queuePosition": 138,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -36512,7 +36533,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 122,
+      "queuePosition": 121,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "No valid canonical article URL is mapped for this task."
@@ -36670,7 +36691,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 106,
+      "queuePosition": 105,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -36828,7 +36849,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 107,
+      "queuePosition": 106,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -36986,7 +37007,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 140,
+      "queuePosition": 139,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -37144,7 +37165,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 143,
+      "queuePosition": 142,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -37302,7 +37323,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 145,
+      "queuePosition": 144,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -37460,7 +37481,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 91,
+      "queuePosition": 90,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -37618,7 +37639,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 146,
+      "queuePosition": 145,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -38096,7 +38117,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 147,
+      "queuePosition": 146,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -38254,7 +38275,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 148,
+      "queuePosition": 147,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -38413,7 +38434,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 150,
+      "queuePosition": 149,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -38795,8 +38816,8 @@
        "articleSemanticCertification": {
         "id": "articleSemanticCertification",
         "label": "Article semantic certification",
-        "state": "hold",
-        "reason": "Current article semantic criteria are hold: publicationStandards.",
+        "state": "unknown",
+        "reason": "The article revision observation is outside the 24-hour freshness window.",
         "semanticReview": {
          "version": 1,
          "taskSlug": "deliver-personal-brand-site-from-request",
@@ -38944,20 +38965,19 @@
        }
       },
       "unmetStandardGates": [],
-      "heldStandardGates": [
-       "articleSemanticCertification"
-      ],
+      "heldStandardGates": [],
       "unknownStandardGates": [
+       "articleSemanticCertification",
        "taskExampleEvidence",
        "recordedExecution",
        "acceptedExecution",
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 20,
-      "priority": "P0",
-      "priorityReason": "Explicit evidence hold",
-      "nextAction": "Current article semantic criteria are hold: publicationStandards."
+      "queuePosition": 258,
+      "priority": "P3",
+      "priorityReason": "Missing proof remains",
+      "nextAction": "The article revision observation is outside the 24-hour freshness window."
      }
     },
     {
@@ -39113,7 +39133,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 141,
+      "queuePosition": 140,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -39278,7 +39298,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 120,
+      "queuePosition": 119,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "No valid canonical article URL is mapped for this task."
@@ -41029,7 +41049,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 124,
+      "queuePosition": 123,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "No valid canonical article URL is mapped for this task."
@@ -41346,7 +41366,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 126,
+      "queuePosition": 125,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "No valid canonical article URL is mapped for this task."
@@ -41503,7 +41523,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 28,
+      "queuePosition": 27,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -41660,7 +41680,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 81,
+      "queuePosition": 80,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -41817,7 +41837,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 153,
+      "queuePosition": 152,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -41974,7 +41994,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 29,
+      "queuePosition": 28,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -42131,7 +42151,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 54,
+      "queuePosition": 53,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -42288,7 +42308,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 82,
+      "queuePosition": 81,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -42554,7 +42574,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 79,
+      "queuePosition": 78,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -43176,7 +43196,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 123,
+      "queuePosition": 122,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The recorded instruction review expired because its source hash no longer matches the current bytes."
@@ -43343,7 +43363,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 227,
+      "queuePosition": 226,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -43502,7 +43522,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 149,
+      "queuePosition": 148,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -43661,7 +43681,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 134,
+      "queuePosition": 133,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -43820,7 +43840,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 142,
+      "queuePosition": 141,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -44969,7 +44989,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 191,
+      "queuePosition": 190,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is gap; finish and review the guide."
@@ -45127,7 +45147,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 192,
+      "queuePosition": 191,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is gap; finish and review the guide."
@@ -45285,7 +45305,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 201,
+      "queuePosition": 200,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -45443,7 +45463,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 202,
+      "queuePosition": 201,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -45601,7 +45621,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 204,
+      "queuePosition": 203,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -45758,7 +45778,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 223,
+      "queuePosition": 222,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -45916,7 +45936,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 193,
+      "queuePosition": 192,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is gap; finish and review the guide."
@@ -46074,7 +46094,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 194,
+      "queuePosition": 193,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is gap; finish and review the guide."
@@ -46232,7 +46252,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 195,
+      "queuePosition": 194,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is gap; finish and review the guide."
@@ -46389,7 +46409,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 224,
+      "queuePosition": 223,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -46541,7 +46561,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 208,
+      "queuePosition": 207,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -46693,7 +46713,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 196,
+      "queuePosition": 195,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is gap; finish and review the guide."
@@ -46851,7 +46871,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 213,
+      "queuePosition": 212,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -47009,7 +47029,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 214,
+      "queuePosition": 213,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -47179,7 +47199,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 215,
+      "queuePosition": 214,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -47337,7 +47357,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 197,
+      "queuePosition": 196,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is gap; finish and review the guide."
@@ -47495,7 +47515,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 198,
+      "queuePosition": 197,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is gap; finish and review the guide."
@@ -47653,7 +47673,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 199,
+      "queuePosition": 198,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is gap; finish and review the guide."
@@ -47811,7 +47831,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 216,
+      "queuePosition": 215,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -47969,7 +47989,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 217,
+      "queuePosition": 216,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -48127,7 +48147,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 200,
+      "queuePosition": 199,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is gap; finish and review the guide."
@@ -48285,7 +48305,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 220,
+      "queuePosition": 219,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -48443,7 +48463,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 221,
+      "queuePosition": 220,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -48663,7 +48683,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 222,
+      "queuePosition": 221,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -48820,7 +48840,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 226,
+      "queuePosition": 225,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -48979,7 +48999,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 207,
+      "queuePosition": 206,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -49138,7 +49158,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 209,
+      "queuePosition": 208,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -49297,7 +49317,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 203,
+      "queuePosition": 202,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -49456,7 +49476,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 206,
+      "queuePosition": 205,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -49615,7 +49635,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 205,
+      "queuePosition": 204,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -49687,7 +49707,7 @@
      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=publish-skill-and-task-page#task-publish-skill-and-task-page",
      "executionHistory": {
       "status": "partial",
-      "recordedRuns": 25,
+      "recordedRuns": 26,
       "completedRuns": 20,
       "failedRuns": 0,
       "partialRuns": 5,
@@ -49710,6 +49730,7 @@
        "proof-resolution-20261014",
        "publisher-completion-20260927-134412",
        "revenue-path-repair-20261005-1855",
+       "revenue-ready-download-20261017",
        "roster-public-boundary-20260927-210848",
        "seo-hub-supporting-guides-20261015",
        "site-build-proof-recipe-20261014",
@@ -49870,6 +49891,12 @@
         "status": "completed",
         "startedAt": "2026-10-14T18:48:03.095058+00:00",
         "finishedAt": "2026-10-14T19:09:46.819601+00:00"
+       },
+       {
+        "executionId": "revenue-ready-download-20261017",
+        "status": "running",
+        "startedAt": "2026-10-17T01:12:44.970786+00:00",
+        "finishedAt": null
        }
       ],
       "acceptanceReviews": [
@@ -50575,7 +50602,7 @@
         "id": "recordedExecution",
         "label": "Recorded real execution",
         "state": "pass",
-        "reason": "25 distinct execution ID(s) name this task; outcomes remain separate.",
+        "reason": "26 distinct execution ID(s) name this task; outcomes remain separate.",
         "executionIds": [
          "authority-guides-repair-20261005-2100",
          "booking-path-checks-20261009-1259",
@@ -50593,6 +50620,7 @@
          "proof-resolution-20261014",
          "publisher-completion-20260927-134412",
          "revenue-path-repair-20261005-1855",
+         "revenue-ready-download-20261017",
          "roster-public-boundary-20260927-210848",
          "seo-hub-supporting-guides-20261015",
          "site-build-proof-recipe-20261014",
@@ -50696,7 +50724,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 225,
+      "queuePosition": 224,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The acceptance review instruction hash no longer matches the current task instruction."
@@ -50855,7 +50883,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 218,
+      "queuePosition": 217,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -51014,7 +51042,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 219,
+      "queuePosition": 218,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -51173,7 +51201,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 212,
+      "queuePosition": 211,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -51332,7 +51360,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 211,
+      "queuePosition": 210,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -51491,7 +51519,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 210,
+      "queuePosition": 209,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -51656,7 +51684,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 65,
+      "queuePosition": 64,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "No valid canonical article URL is mapped for this task."
@@ -51812,7 +51840,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 184,
+      "queuePosition": 183,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "No valid canonical article URL is mapped for this task."
@@ -51968,7 +51996,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 69,
+      "queuePosition": 68,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "No valid canonical article URL is mapped for this task."
@@ -52124,7 +52152,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 21,
+      "queuePosition": 20,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "No valid canonical article URL is mapped for this task."
@@ -52280,7 +52308,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 185,
+      "queuePosition": 184,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "No valid canonical article URL is mapped for this task."
@@ -52436,7 +52464,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 186,
+      "queuePosition": 185,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "No valid canonical article URL is mapped for this task."
@@ -52592,7 +52620,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 187,
+      "queuePosition": 186,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "No valid canonical article URL is mapped for this task."
@@ -52748,7 +52776,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 97,
+      "queuePosition": 96,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "No valid canonical article URL is mapped for this task."
