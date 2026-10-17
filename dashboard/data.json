@@ -2136,7 +2136,7 @@
  ],
  "executionHistory": {
   "schemaVersion": 1,
-  "asOf": "2026-10-17T01:27:55.051054+00:00",
+  "asOf": "2026-10-17T01:34:19.885898+00:00",
   "proofSummary": {
    "definition": "Dated output proof, separate from current-recipe acceptance and every full-verification gate. Recorded acceptance counts distinct completed execution IDs with a latest all-pass independent review per task/run; scope is limited to its named criteria. Historical proof counts distinct source jobs, never new runs. Historical acceptance requires identity, output and acceptance pass; handoff is reported separately.",
    "recordedAcceptedOutputCount": 6,
@@ -2546,7 +2546,7 @@
   },
   "countDefinition": "Distinct recorded execution IDs, separate from meta-article URLs. History is partial; absent history is unknown, not zero. The last-30-day count is a documented lower bound, not total task frequency.",
   "recordedExecutions": 36,
-  "completedExecutions": 22,
+  "completedExecutions": 23,
   "partialExecutions": 13,
   "executions": [
    {
@@ -3821,18 +3821,20 @@
      "publish-skill-and-task-page"
     ],
     "startedAt": "2026-10-17T01:12:44.970786+00:00",
-    "status": "running",
-    "result": "Corrected two stale contributor labels and their evidence note so already-reviewed inquiry guides can enter the ready ZIP. Method unchanged; publication and archive verification pending. Saved October14 publishing recipe used; current anonymous article read returned403. No form test, client delivery, or novice pass.",
+    "status": "completed",
+    "result": "Published two already-reviewed inquiry guides in the ready download after correcting contributor labels and clarifying their evidence note. Independent release acceptance,225 tests, phone/desktop public layout and seven archive member comparisons passed. Frozen beginner-test members are unchanged.26 written passes and0 fully verified tasks remain. This is one maintenance execution, not a form test, client result or novice success.",
     "recipeRevisions": {
      "publish-skill-and-task-page": {
       "articleUrl": "https://blitzmetrics.com/skill-publishing-standard/",
       "sourceSha256": "660d6f1abd8678c851c0a08059f27982e8e29b46775ea217a2ae1d6e3ba55537"
      }
     },
+    "finishedAt": "2026-10-17T01:34:13.359411+00:00",
     "evidenceUrls": [],
     "privateEvidenceRecorded": true,
     "metaArticle": {
-     "status": "draft"
+     "status": "published",
+     "url": "https://local-service-spotlight.github.io/task-library/maintenance/revenue-ready-download-2026-10-17.html"
     }
    }
   ],
@@ -49708,11 +49710,11 @@
      "executionHistory": {
       "status": "partial",
       "recordedRuns": 26,
-      "completedRuns": 20,
+      "completedRuns": 21,
       "failedRuns": 0,
       "partialRuns": 5,
-      "completedLast30Days": 20,
-      "lastCompletedAt": "2026-10-14T19:09:46.819601+00:00",
+      "completedLast30Days": 21,
+      "lastCompletedAt": "2026-10-17T01:34:13.359411+00:00",
       "executionIds": [
        "authority-guides-repair-20261005-2100",
        "booking-path-checks-20261009-1259",
@@ -49894,9 +49896,9 @@
        },
        {
         "executionId": "revenue-ready-download-20261017",
-        "status": "running",
+        "status": "completed",
         "startedAt": "2026-10-17T01:12:44.970786+00:00",
-        "finishedAt": null
+        "finishedAt": "2026-10-17T01:34:13.359411+00:00"
        }
       ],
       "acceptanceReviews": [
