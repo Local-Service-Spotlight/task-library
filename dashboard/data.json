@@ -2143,7 +2143,7 @@
  ],
  "executionHistory": {
   "schemaVersion": 1,
-  "asOf": "2026-10-19T01:19:08.173154+00:00",
+  "asOf": "2026-10-19T01:22:19.462878+00:00",
   "proofSummary": {
    "definition": "Dated output proof, separate from current-recipe acceptance and every full-verification gate. Recorded acceptance counts distinct completed execution IDs with a latest all-pass independent review per task/run; scope is limited to its named criteria. Historical proof counts distinct source jobs, never new runs. Historical acceptance requires identity, output and acceptance pass; handoff is reported separately.",
    "recordedAcceptedOutputCount": 6,
@@ -2553,7 +2553,7 @@
   },
   "countDefinition": "Distinct recorded execution IDs, separate from meta-article URLs. History is partial; absent history is unknown, not zero. The last-30-day count is a documented lower bound, not total task frequency.",
   "recordedExecutions": 37,
-  "completedExecutions": 23,
+  "completedExecutions": 24,
   "partialExecutions": 13,
   "executions": [
    {
@@ -3850,14 +3850,15 @@
      "publish-skill-and-task-page"
     ],
     "startedAt": "2026-10-19T01:10:05.819912+00:00",
-    "status": "running",
-    "result": "Published and checked one source-backed historical handoff example; supplemental mapping and final projections prepared for release. No new site delivery or beginner result.",
+    "status": "completed",
+    "result": "Published a checked historical site-handoff case and mapped it only to the site-delivery example gate. Fixed reproduced subsecond queue timestamp rounding without weakening future checks.226 tests, independent review, public phone/desktop inspection and all seven archive member comparisons passed. Existing historical identities and every current-recipe, acceptance and novice setup gate remain unchanged.",
     "recipeRevisions": {
      "publish-skill-and-task-page": {
       "articleUrl": "https://blitzmetrics.com/skill-publishing-standard/",
       "sourceSha256": "660d6f1abd8678c851c0a08059f27982e8e29b46775ea217a2ae1d6e3ba55537"
      }
     },
+    "finishedAt": "2026-10-19T01:22:01.536676+00:00",
     "evidenceUrls": [
      "https://local-service-spotlight.github.io/task-library/maintenance/historical-site-handoff-2026-10-19.html"
     ],
@@ -49742,11 +49743,11 @@
      "executionHistory": {
       "status": "partial",
       "recordedRuns": 27,
-      "completedRuns": 21,
+      "completedRuns": 22,
       "failedRuns": 0,
       "partialRuns": 5,
-      "completedLast30Days": 21,
-      "lastCompletedAt": "2026-10-17T01:34:13.359411+00:00",
+      "completedLast30Days": 22,
+      "lastCompletedAt": "2026-10-19T01:22:01.536676+00:00",
       "executionIds": [
        "authority-guides-repair-20261005-2100",
        "booking-path-checks-20261009-1259",
@@ -49935,9 +49936,9 @@
        },
        {
         "executionId": "historical-site-case-20261019",
-        "status": "running",
+        "status": "completed",
         "startedAt": "2026-10-19T01:10:05.819912+00:00",
-        "finishedAt": null
+        "finishedAt": "2026-10-19T01:22:01.536676+00:00"
        }
       ],
       "acceptanceReviews": [
