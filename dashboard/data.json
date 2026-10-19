@@ -12,9 +12,9 @@
   "gaps": 23,
   "articleHubs": 53,
   "definitiveArticles": 16,
-  "verifiedMetaArticles": 89,
-  "metaOrbitHubsWithEvidence": 14,
-  "metaOrbitHubsUnknown": 39,
+  "verifiedMetaArticles": 90,
+  "metaOrbitHubsWithEvidence": 15,
+  "metaOrbitHubsUnknown": 38,
   "owners": 0,
   "categories": 13,
   "importance": {
@@ -483,10 +483,10 @@
     "unknown": 257
    },
    "taskExampleEvidence": {
-    "pass": 11,
+    "pass": 12,
     "unmet": 0,
     "hold": 0,
-    "unknown": 265
+    "unknown": 264
    },
    "recordedExecution": {
     "pass": 5,
@@ -508,7 +508,7 @@
    }
   }
  },
- "updated": "October 17, 2026",
+ "updated": "October 19, 2026",
  "factory": {
   "phases": [
    {
@@ -860,16 +860,23 @@
    "taskSlugs": [
     "deliver-personal-brand-site-from-request"
    ],
-   "metaArticleCount": null,
-   "metaCountStatus": "unknown",
-   "metaOrbitStrength": null,
-   "metaOrbitTier": "Unknown",
-   "metaArticles": [],
-   "taskMetaCounts": null,
-   "tasksWithMeta": null,
-   "taskCoverage": null,
-   "priorityCoverage": null,
-   "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?article=https%3A%2F%2Fblitzmetrics.com%2Ffrom-one-email-to-a-live-personal-brand-site%2F"
+   "metaArticleCount": 1,
+   "metaCountStatus": "partial",
+   "metaOrbitStrength": 1,
+   "metaOrbitTier": "Emerging",
+   "metaArticles": [
+    "https://local-service-spotlight.github.io/task-library/maintenance/historical-site-handoff-2026-10-19.html"
+   ],
+   "taskMetaCounts": {
+    "deliver-personal-brand-site-from-request": 1
+   },
+   "tasksWithMeta": 1,
+   "taskCoverage": 1.0,
+   "priorityCoverage": 1.0,
+   "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?article=https%3A%2F%2Fblitzmetrics.com%2Ffrom-one-email-to-a-live-personal-brand-site%2F",
+   "metaOrbitAudited": "2026-10-19",
+   "metaOrbitEvidenceUrl": "https://local-service-spotlight.github.io/task-library/meta-orbits.json",
+   "metaOrbitEvidenceMethod": "One published post that documents a completed observable run whose main deliverable materially executes this hub, is explicitly classified by taxonomy or authored meta language, and links to the exact canonical hub in task-specific narrative or receipt. Shared maps, compliance tables, related-reading lists, indexes, instructions, archives, self-links and incidental cross-links do not count. Each post has one reviewed primary parent."
   },
   {
    "key": "blitzmetrics.com/group-website-request-intake",
@@ -2136,7 +2143,7 @@
  ],
  "executionHistory": {
   "schemaVersion": 1,
-  "asOf": "2026-10-17T01:34:19.885898+00:00",
+  "asOf": "2026-10-19T01:19:08.173154+00:00",
   "proofSummary": {
    "definition": "Dated output proof, separate from current-recipe acceptance and every full-verification gate. Recorded acceptance counts distinct completed execution IDs with a latest all-pass independent review per task/run; scope is limited to its named criteria. Historical proof counts distinct source jobs, never new runs. Historical acceptance requires identity, output and acceptance pass; handoff is reported separately.",
    "recordedAcceptedOutputCount": 6,
@@ -2545,7 +2552,7 @@
    ]
   },
   "countDefinition": "Distinct recorded execution IDs, separate from meta-article URLs. History is partial; absent history is unknown, not zero. The last-30-day count is a documented lower bound, not total task frequency.",
-  "recordedExecutions": 36,
+  "recordedExecutions": 37,
   "completedExecutions": 23,
   "partialExecutions": 13,
   "executions": [
@@ -3835,6 +3842,28 @@
     "metaArticle": {
      "status": "published",
      "url": "https://local-service-spotlight.github.io/task-library/maintenance/revenue-ready-download-2026-10-17.html"
+    }
+   },
+   {
+    "executionId": "historical-site-case-20261019",
+    "taskSlugs": [
+     "publish-skill-and-task-page"
+    ],
+    "startedAt": "2026-10-19T01:10:05.819912+00:00",
+    "status": "running",
+    "result": "Published and checked one source-backed historical handoff example; supplemental mapping and final projections prepared for release. No new site delivery or beginner result.",
+    "recipeRevisions": {
+     "publish-skill-and-task-page": {
+      "articleUrl": "https://blitzmetrics.com/skill-publishing-standard/",
+      "sourceSha256": "660d6f1abd8678c851c0a08059f27982e8e29b46775ea217a2ae1d6e3ba55537"
+     }
+    },
+    "evidenceUrls": [
+     "https://local-service-spotlight.github.io/task-library/maintenance/historical-site-handoff-2026-10-19.html"
+    ],
+    "privateEvidenceRecorded": true,
+    "metaArticle": {
+     "status": "withheld"
     }
    }
   ],
@@ -38941,8 +38970,12 @@
        "taskExampleEvidence": {
         "id": "taskExampleEvidence",
         "label": "Task-attributed example evidence",
-        "state": "unknown",
-        "reason": "No source-backed example audit exists for the mapped hub."
+        "state": "pass",
+        "reason": "1 audited example URL(s) are attributable to this task.",
+        "exampleUrls": [
+         "https://local-service-spotlight.github.io/task-library/maintenance/historical-site-handoff-2026-10-19.html"
+        ],
+        "auditedAt": "2026-10-19"
        },
        "recordedExecution": {
         "id": "recordedExecution",
@@ -38970,7 +39003,6 @@
       "heldStandardGates": [],
       "unknownStandardGates": [
        "articleSemanticCertification",
-       "taskExampleEvidence",
        "recordedExecution",
        "acceptedExecution",
        "setupSuccess"
@@ -49709,7 +49741,7 @@
      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=publish-skill-and-task-page#task-publish-skill-and-task-page",
      "executionHistory": {
       "status": "partial",
-      "recordedRuns": 26,
+      "recordedRuns": 27,
       "completedRuns": 21,
       "failedRuns": 0,
       "partialRuns": 5,
@@ -49723,6 +49755,7 @@
        "embedded-guide-repair-20261010",
        "entity-linking-repair-20260930-0105",
        "first-use-rcf-20261005-2343",
+       "historical-site-case-20261019",
        "internal-linking-repair-20261001-1405",
        "inventory-guide-repair-20261002-1610",
        "link-building-repair-20261001-1307",
@@ -49899,6 +49932,12 @@
         "status": "completed",
         "startedAt": "2026-10-17T01:12:44.970786+00:00",
         "finishedAt": "2026-10-17T01:34:13.359411+00:00"
+       },
+       {
+        "executionId": "historical-site-case-20261019",
+        "status": "running",
+        "startedAt": "2026-10-19T01:10:05.819912+00:00",
+        "finishedAt": null
        }
       ],
       "acceptanceReviews": [
@@ -50604,7 +50643,7 @@
         "id": "recordedExecution",
         "label": "Recorded real execution",
         "state": "pass",
-        "reason": "26 distinct execution ID(s) name this task; outcomes remain separate.",
+        "reason": "27 distinct execution ID(s) name this task; outcomes remain separate.",
         "executionIds": [
          "authority-guides-repair-20261005-2100",
          "booking-path-checks-20261009-1259",
@@ -50613,6 +50652,7 @@
          "embedded-guide-repair-20261010",
          "entity-linking-repair-20260930-0105",
          "first-use-rcf-20261005-2343",
+         "historical-site-case-20261019",
          "internal-linking-repair-20261001-1405",
          "inventory-guide-repair-20261002-1610",
          "link-building-repair-20261001-1307",

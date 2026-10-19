@@ -2122,6 +2122,37 @@
         }
       ],
       "finishedAt": "2026-10-17T01:34:13.359411+00:00"
+    },
+    {
+      "executionId": "historical-site-case-20261019",
+      "taskSlugs": [
+        "publish-skill-and-task-page"
+      ],
+      "recipeRevisions": {
+        "publish-skill-and-task-page": {
+          "articleUrl": "https://blitzmetrics.com/skill-publishing-standard/",
+          "sourceSha256": "660d6f1abd8678c851c0a08059f27982e8e29b46775ea217a2ae1d6e3ba55537"
+        }
+      },
+      "startedAt": "2026-10-19T01:10:05.819912+00:00",
+      "recordedAt": "2026-10-19T01:14:49.414914+00:00",
+      "updatedAt": "2026-10-19T01:17:08.111844+00:00",
+      "status": "running",
+      "result": "Published and checked one source-backed historical handoff example; supplemental mapping and final projections prepared for release. No new site delivery or beginner result.",
+      "metaArticle": {
+        "status": "withheld",
+        "draftSha256": "7b040cffb4038014b7e0ebd3fa961487ca90f56ba51efdebf9fb92df23ed7a67"
+      },
+      "evidence": [
+        {
+          "visibility": "private",
+          "sha256": "8af92ae530e079fb30a5374e700b4a17969ccae4ab31ef10a70b50ddd6d3d411"
+        },
+        {
+          "visibility": "public",
+          "url": "https://local-service-spotlight.github.io/task-library/maintenance/historical-site-handoff-2026-10-19.html"
+        }
+      ]
     }
   ],
   "historicalEvidence": [

@@ -2382,6 +2382,53 @@
           "firstObservedAt": "2026-10-14T18:19:13.292950+00:00"
         }
       ]
+    },
+    {
+      "url": "https://blitzmetrics.com/from-one-email-to-a-live-personal-brand-site/",
+      "label": "Personal-brand site delivery",
+      "kind": "Task recipe",
+      "domain": "blitzmetrics.com",
+      "taskLibrarySourceUrl": "https://blitzmetrics.com/from-one-email-to-a-live-personal-brand-site/",
+      "taskCount": 1,
+      "taskImportanceTotal": 3,
+      "tasks": [
+        {
+          "slug": "deliver-personal-brand-site-from-request",
+          "title": "Deliver a personal-brand site from a request",
+          "importance": 3
+        }
+      ],
+      "metaAuditedAt": "2026-10-19",
+      "metaCountStatus": "partial",
+      "metaArticleCount": 1,
+      "strength": {
+        "score": 1,
+        "label": "Emerging",
+        "band": "1-2"
+      },
+      "metaArticles": [
+        {
+          "url": "https://local-service-spotlight.github.io/task-library/maintenance/historical-site-handoff-2026-10-19.html",
+          "sourceUrl": "https://local-service-spotlight.github.io/task-library/maintenance/historical-site-handoff-2026-10-19.html",
+          "hubUrl": "https://blitzmetrics.com/from-one-email-to-a-live-personal-brand-site/",
+          "title": "A site owner needs the keys",
+          "taxonomyEvidence": [],
+          "explicitMetaTaxonomy": false,
+          "explicitMetaLanguage": true,
+          "primaryParentHub": "https://blitzmetrics.com/from-one-email-to-a-live-personal-brand-site/",
+          "taskSlugs": [
+            "deliver-personal-brand-site-from-request"
+          ],
+          "historicalEvidenceId": "historical-277118d625a087d83d91240c",
+          "supplementalAudit": true,
+          "primaryCorpusMember": false,
+          "sourceSha256": "5def4f3aab63684a59e2f864e093f6436a4a2e8a7fe8b416c8f9fb3dba25b735",
+          "evidenceMethod": "Supplemental historical example outside the original WordPress corpus. Independent content/privacy/eligibility review; exact anonymous published HTML and actual phone/desktop rendering checked. Original delivery and recipient setup/access/transfer response checked privately.",
+          "counted": true,
+          "reason": "One published account of one existing historical site handoff. Original start, recipe and page bytes unknown; full current-recipe acceptance and novice use not established. No source-job or site-execution increment. Primary WordPress corpus inventory and statistics unchanged.",
+          "firstObservedAt": "2026-10-19T01:15:12.592805+00:00"
+        }
+      ]
     }
   ]
 }

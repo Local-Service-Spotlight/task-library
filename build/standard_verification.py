@@ -420,7 +420,8 @@ def _next_action(verification):
 
 def report(tasks, generated_at=None):
     """Return a compact public queue; full guide content stays in data.json."""
-    generated_at = generated_at or datetime.now(timezone.utc).isoformat(timespec='seconds')
+    # Preserve subsecond source updates; rounding can make a real prior write appear future.
+    generated_at = generated_at or datetime.now(timezone.utc).isoformat()
     gate_counts = {}
     for gate_id in GATE_ORDER:
         counts = Counter(t['standardVerification']['gates'][gate_id]['state'] for t in tasks)
