@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "asOf": "2026-10-17T01:34:19.885898+00:00",
+  "asOf": "2026-10-19T01:17:08.475546+00:00",
   "proofSummary": {
     "definition": "Dated output proof, separate from current-recipe acceptance and every full-verification gate. Recorded acceptance counts distinct completed execution IDs with a latest all-pass independent review per task/run; scope is limited to its named criteria. Historical proof counts distinct source jobs, never new runs. Historical acceptance requires identity, output and acceptance pass; handoff is reported separately.",
     "recordedAcceptedOutputCount": 6,
@@ -409,7 +409,7 @@
     ]
   },
   "countDefinition": "Distinct recorded execution IDs, separate from meta-article URLs. History is partial; absent history is unknown, not zero. The last-30-day count is a documented lower bound, not total task frequency.",
-  "recordedExecutions": 36,
+  "recordedExecutions": 37,
   "completedExecutions": 23,
   "partialExecutions": 13,
   "executions": [
@@ -1699,6 +1699,28 @@
       "metaArticle": {
         "status": "published",
         "url": "https://local-service-spotlight.github.io/task-library/maintenance/revenue-ready-download-2026-10-17.html"
+      }
+    },
+    {
+      "executionId": "historical-site-case-20261019",
+      "taskSlugs": [
+        "publish-skill-and-task-page"
+      ],
+      "startedAt": "2026-10-19T01:10:05.819912+00:00",
+      "status": "running",
+      "result": "Published and checked one source-backed historical handoff example; supplemental mapping and final projections prepared for release. No new site delivery or beginner result.",
+      "recipeRevisions": {
+        "publish-skill-and-task-page": {
+          "articleUrl": "https://blitzmetrics.com/skill-publishing-standard/",
+          "sourceSha256": "660d6f1abd8678c851c0a08059f27982e8e29b46775ea217a2ae1d6e3ba55537"
+        }
+      },
+      "evidenceUrls": [
+        "https://local-service-spotlight.github.io/task-library/maintenance/historical-site-handoff-2026-10-19.html"
+      ],
+      "privateEvidenceRecorded": true,
+      "metaArticle": {
+        "status": "withheld"
       }
     }
   ],

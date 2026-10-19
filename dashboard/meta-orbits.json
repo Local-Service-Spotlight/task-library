@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-10-17T01:34:19+00:00",
+ "generatedAt": "2026-10-19T01:17:08+00:00",
  "countDefinition": "Verified meta-article sources explicitly classified by the recorded evidence method and linked to the normalized canonical hub. Unknown is never coerced to zero.",
  "strengthBands": [
   {
@@ -37,9 +37,9 @@
  "stats": {
   "articleHubs": 53,
   "definitiveArticles": 16,
-  "verifiedMetaArticles": 89,
-  "metaOrbitHubsWithEvidence": 14,
-  "metaOrbitHubsUnknown": 39
+  "verifiedMetaArticles": 90,
+  "metaOrbitHubsWithEvidence": 15,
+  "metaOrbitHubsUnknown": 38
  },
  "hubs": [
   {
@@ -504,17 +504,38 @@
    "taskSlugs": [
     "deliver-personal-brand-site-from-request"
    ],
-   "metaArticleCount": null,
-   "metaCountStatus": "unknown",
-   "metaOrbitStrength": null,
-   "metaOrbitTier": "Unknown",
-   "metaArticles": [],
-   "taskMetaCounts": null,
-   "tasksWithMeta": null,
-   "taskCoverage": null,
-   "priorityCoverage": null,
+   "metaArticleCount": 1,
+   "metaCountStatus": "partial",
+   "metaOrbitStrength": 1,
+   "metaOrbitTier": "Emerging",
+   "metaArticles": [
+    "https://local-service-spotlight.github.io/task-library/maintenance/historical-site-handoff-2026-10-19.html"
+   ],
+   "taskMetaCounts": {
+    "deliver-personal-brand-site-from-request": 1
+   },
+   "tasksWithMeta": 1,
+   "taskCoverage": 1.0,
+   "priorityCoverage": 1.0,
    "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?article=https%3A%2F%2Fblitzmetrics.com%2Ffrom-one-email-to-a-live-personal-brand-site%2F",
-   "records": []
+   "metaOrbitAudited": "2026-10-19",
+   "metaOrbitEvidenceUrl": "https://local-service-spotlight.github.io/task-library/meta-orbits.json",
+   "metaOrbitEvidenceMethod": "One published post that documents a completed observable run whose main deliverable materially executes this hub, is explicitly classified by taxonomy or authored meta language, and links to the exact canonical hub in task-specific narrative or receipt. Shared maps, compliance tables, related-reading lists, indexes, instructions, archives, self-links and incidental cross-links do not count. Each post has one reviewed primary parent.",
+   "records": [
+    {
+     "sourceUrl": "https://local-service-spotlight.github.io/task-library/maintenance/historical-site-handoff-2026-10-19.html",
+     "hubUrl": "https://blitzmetrics.com/from-one-email-to-a-live-personal-brand-site/",
+     "evidenceMethod": "Supplemental historical example outside the original WordPress corpus. Independent content/privacy/eligibility review; exact anonymous published HTML and actual phone/desktop rendering checked. Original delivery and recipient setup/access/transfer response checked privately.",
+     "counted": true,
+     "reason": "One published account of one existing historical site handoff. Original start, recipe and page bytes unknown; full current-recipe acceptance and novice use not established. No source-job or site-execution increment. Primary WordPress corpus inventory and statistics unchanged.",
+     "taskSlugs": [
+      "deliver-personal-brand-site-from-request"
+     ],
+     "title": "A site owner needs the keys",
+     "taxonomyEvidence": [],
+     "primaryParentHub": "https://blitzmetrics.com/from-one-email-to-a-live-personal-brand-site/"
+    }
+   ]
   },
   {
    "key": "blitzmetrics.com/group-website-request-intake",

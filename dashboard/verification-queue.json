@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "ordering": "Setup failures and evidence holds first. Within each priority lane, sort by estimated revenue role, dependencies unblocked, frequency and importance before missing-guide status and gap count. Effort and actual income remain unknown.",
-  "generatedAt": "2026-10-17T01:34:19+00:00",
+  "generatedAt": "2026-10-19T01:17:08+00:00",
   "definition": "Per-task standard gates derived from exact instruction reviews, explicit instruction-requirement checks, contributor status, article mapping/catalog holds, exact-revision article semantic reviews, task-attributed examples and the execution ledger. Unknown proof is never turned into a pass.",
   "stats": {
     "tasks": 276,
@@ -455,10 +455,10 @@
         "unknown": 257
       },
       "taskExampleEvidence": {
-        "pass": 11,
+        "pass": 12,
         "unmet": 0,
         "hold": 0,
-        "unknown": 265
+        "unknown": 264
       },
       "recordedExecution": {
         "pass": 5,
@@ -31431,7 +31431,7 @@
             "id": "recordedExecution",
             "label": "Recorded real execution",
             "state": "pass",
-            "reason": "26 distinct execution ID(s) name this task; outcomes remain separate.",
+            "reason": "27 distinct execution ID(s) name this task; outcomes remain separate.",
             "executionIds": [
               "authority-guides-repair-20261005-2100",
               "booking-path-checks-20261009-1259",
@@ -31440,6 +31440,7 @@
               "embedded-guide-repair-20261010",
               "entity-linking-repair-20260930-0105",
               "first-use-rcf-20261005-2343",
+              "historical-site-case-20261019",
               "internal-linking-repair-20261001-1405",
               "inventory-guide-repair-20261002-1610",
               "link-building-repair-20261001-1307",
@@ -37128,8 +37129,12 @@
           "taskExampleEvidence": {
             "id": "taskExampleEvidence",
             "label": "Task-attributed example evidence",
-            "state": "unknown",
-            "reason": "No source-backed example audit exists for the mapped hub."
+            "state": "pass",
+            "reason": "1 audited example URL(s) are attributable to this task.",
+            "exampleUrls": [
+              "https://local-service-spotlight.github.io/task-library/maintenance/historical-site-handoff-2026-10-19.html"
+            ],
+            "auditedAt": "2026-10-19"
           },
           "recordedExecution": {
             "id": "recordedExecution",
@@ -37157,7 +37162,6 @@
         "heldStandardGates": [],
         "unknownStandardGates": [
           "articleSemanticCertification",
-          "taskExampleEvidence",
           "recordedExecution",
           "acceptedExecution",
           "setupSuccess"
