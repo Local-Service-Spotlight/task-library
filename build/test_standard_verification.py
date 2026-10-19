@@ -5,6 +5,7 @@ from pathlib import Path
 import sys
 import tempfile
 import unittest
+from unittest.mock import patch
 
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
@@ -279,6 +280,16 @@ class StandardVerificationTests(unittest.TestCase):
             self.assertEqual(exported['revenueEstimate'], '5')
             self.assertEqual(exported['effortEstimate'], '')
             self.assertEqual(exported['valueBasis'], row['valueBasis'])
+
+    def test_report_time_preserves_same_second_evidence_without_accepting_future(self):
+        now = datetime(2026, 10, 19, 1, 0, 0, 750000, tzinfo=timezone.utc)
+        with patch.object(verification, 'datetime') as clock:
+            clock.now.return_value = now
+            payload = verification.report([])
+        as_of = datetime.fromisoformat(payload['generatedAt'])
+        executions.check_times_not_future([{'updatedAt': '2026-10-19T01:00:00.500000+00:00'}], as_of)
+        with self.assertRaisesRegex(ValueError, 'future'):
+            executions.check_times_not_future([{'updatedAt': '2026-10-19T01:00:00.900000+00:00'}], as_of)
 
     def test_checked_in_queue_matches_current_evidence_boundaries(self):
         payload = json.loads((HERE.parent / 'dashboard' / 'verification-queue.json').read_text())
