@@ -2136,12 +2136,12 @@
       },
       "startedAt": "2026-10-19T01:10:05.819912+00:00",
       "recordedAt": "2026-10-19T01:14:49.414914+00:00",
-      "updatedAt": "2026-10-19T01:17:08.111844+00:00",
-      "status": "running",
-      "result": "Published and checked one source-backed historical handoff example; supplemental mapping and final projections prepared for release. No new site delivery or beginner result.",
+      "updatedAt": "2026-10-19T01:22:01.536676+00:00",
+      "status": "completed",
+      "result": "Published a checked historical site-handoff case and mapped it only to the site-delivery example gate. Fixed reproduced subsecond queue timestamp rounding without weakening future checks.226 tests, independent review, public phone/desktop inspection and all seven archive member comparisons passed. Existing historical identities and every current-recipe, acceptance and novice setup gate remain unchanged.",
       "metaArticle": {
         "status": "withheld",
-        "draftSha256": "7b040cffb4038014b7e0ebd3fa961487ca90f56ba51efdebf9fb92df23ed7a67"
+        "draftSha256": "684835e5680ab63ad3d403e69fdbf7b1e72b2a6121f43cf176bbfc79d0f4fe42"
       },
       "evidence": [
         {
@@ -2151,8 +2151,13 @@
         {
           "visibility": "public",
           "url": "https://local-service-spotlight.github.io/task-library/maintenance/historical-site-handoff-2026-10-19.html"
+        },
+        {
+          "visibility": "private",
+          "sha256": "9b8a69a5928f0a3ee7bcf9e7a4a428fe75f408d144a8cdfca73201856da909ae"
         }
-      ]
+      ],
+      "finishedAt": "2026-10-19T01:22:01.536676+00:00"
     }
   ],
   "historicalEvidence": [
