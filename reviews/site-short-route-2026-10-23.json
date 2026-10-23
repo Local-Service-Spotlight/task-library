@@ -1,0 +1,40 @@
+{
+  "scope": "Short-route and public-title follow-up; no new execution or beginner test",
+  "completedAt": "2026-10-23T05:52:57.979822+00:00",
+  "sourceSha256": "2065bc25288a74e8a431918caa77912e1e160852d831e1c92e52fca06168db7e",
+  "aliasChecks": [
+    {
+      "url": "https://blitzmetrics.com/site-delivery/",
+      "status": 301,
+      "location": "https://blitzmetrics.com/from-one-email-to-a-live-personal-brand-site/",
+      "title": null
+    },
+    {
+      "url": "https://blitzmetrics.com/site-delivery",
+      "status": 301,
+      "location": "https://blitzmetrics.com/from-one-email-to-a-live-personal-brand-site/",
+      "title": null
+    },
+    {
+      "url": "https://blitzmetrics.com/from-one-email-to-a-live-personal-brand-site/",
+      "status": 200,
+      "location": null,
+      "title": "Build a Personal Brand Site from a Real Request"
+    }
+  ],
+  "canonicalUnchanged": true,
+  "postReviewObservation": {
+    "observedAt": "2026-10-23T05:57:20.828695Z",
+    "canonicalURL": "https://blitzmetrics.com/from-one-email-to-a-live-personal-brand-site/",
+    "sourceSha256": "2065bc25288a74e8a431918caa77912e1e160852d831e1c92e52fca06168db7e",
+    "publicStatus": 200,
+    "publicBodyMatchesStoredRendered": true,
+    "publicBodyNormalization": "Same documented normalization as October15: whitespace/entities; automatic anchor target/rel and image loading attrs; hidden editorial marker and original publication footer. All text, link URLs, media alt/src, styles and SVG retained.",
+    "publicSha256": "733310cee0dee7a70e927d2e9192b5c524f20a548c0c37e7ffa983f90a162aba",
+    "openingConnectionSourceSha256": "103ee57a5ef547bbeaddde222ccf5eea05ce2bef44a0c1f09c6ca2f59f85ba95",
+    "openingConnectionUnchangedSinceAcceptedPlacement": true,
+    "canonicalSourceUnchanged": true
+  },
+  "independentDisposition": "PASS after actual post-review readback; prior content and layout acceptance retained",
+  "independentReviewSha256": "ab54f6ccd2a05737808afd5850b91d3164870fc594896f77712384b4f357b412"
+}

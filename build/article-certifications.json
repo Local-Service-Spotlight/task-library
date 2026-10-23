@@ -198,7 +198,7 @@
     }
    },
    "reviewedAt": "2026-09-21T02:52:08.726122Z",
-   "reviewer": "Codex — independent Terra source review with root corrections; source-only scope"
+   "reviewer": "Codex \u2014 independent Terra source review with root corrections; source-only scope"
   },
   {
    "version": 1,
@@ -2104,7 +2104,7 @@
    "criteria": {
     "openingContext": {
      "state": "pass",
-     "reason": "The three plain sentences name the task and value, then link a useful source connection: “Start with the personal brand guide to choose the facts and photos for the page.” Its maintained guide teaches identity, site, real work and outside proof. Approximate opening diagnostic 3.46; body supplies site and launch checks.",
+     "reason": "The three plain sentences name the task and value, then link a useful source connection: \u201cStart with the personal brand guide to choose the facts and photos for the page.\u201d Its maintained guide teaches identity, site, real work and outside proof. Approximate opening diagnostic 3.46; body supplies site and launch checks.",
      "evidenceRefs": [
       "sha256:2065bc25288a74e8a431918caa77912e1e160852d831e1c92e52fca06168db7e",
       "https://blitzmetrics.com/personal-brand/"
@@ -2112,7 +2112,7 @@
     },
     "roleScope": {
      "state": "pass",
-     "reason": "“Site delivery guide · Personal Branding” declares a recipe: full request, checked preview, exact domain plan, authorized launch and verified handoff. Group intake is conditional; the build task supplies content. Preview, configured and live states remain distinct.",
+     "reason": "\u201cSite delivery guide \u00b7 Personal Branding\u201d declares a recipe: full request, checked preview, exact domain plan, authorized launch and verified handoff. Group intake is conditional; the build task supplies content. Preview, configured and live states remain distinct.",
      "evidenceRefs": [
       "sha256:2065bc25288a74e8a431918caa77912e1e160852d831e1c92e52fca06168db7e",
       "https://blitzmetrics.com/from-one-email-to-a-live-personal-brand-site/"
@@ -2120,7 +2120,7 @@
     },
     "owner": {
      "state": "pass",
-     "reason": "“Local Service Spotlight maintains this site-delivery recipe.” “Guide author Dennis Yu” links his verified personal home. This supports maintainer and author identity without treating the uploading account as authorship proof.",
+     "reason": "\u201cLocal Service Spotlight maintains this site-delivery recipe.\u201d \u201cGuide author Dennis Yu\u201d links his verified personal home. This supports maintainer and author identity without treating the uploading account as authorship proof.",
      "evidenceRefs": [
       "sha256:2065bc25288a74e8a431918caa77912e1e160852d831e1c92e52fca06168db7e",
       "https://dennisyu.com/"
@@ -2128,7 +2128,7 @@
     },
     "steps": {
      "state": "pass",
-     "reason": "“The eight steps” provide trigger, sourced facts/media, usable domain/DNS access, checked preview, exact before/after/rollback, owner decision, scoped deployment and normal public tests. “For each checked public URL, record the response code, HTTPS result, phone and desktop result, and contact-path result.” Preview is interim.",
+     "reason": "\u201cThe eight steps\u201d provide trigger, sourced facts/media, usable domain/DNS access, checked preview, exact before/after/rollback, owner decision, scoped deployment and normal public tests. \u201cFor each checked public URL, record the response code, HTTPS result, phone and desktop result, and contact-path result.\u201d Preview is interim.",
      "evidenceRefs": [
       "sha256:2065bc25288a74e8a431918caa77912e1e160852d831e1c92e52fca06168db7e",
       "https://blitzmetrics.com/from-one-email-to-a-live-personal-brand-site/"
@@ -2147,7 +2147,7 @@
     },
     "sourceEvidence": {
      "state": "pass",
-     "reason": "“Leith Uwaydah’s personal brand site is a surviving output from an August 2026 site-delivery job.” The linked real output and privately retained original source support historical setup/transfer only. The article preserves later-page revisions and explicitly keeps original recipe use/full launch checks unverified. It claims no current-recipe run or novice success.",
+     "reason": "\u201cLeith Uwaydah\u2019s personal brand site is a surviving output from an August 2026 site-delivery job.\u201d The linked real output and privately retained original source support historical setup/transfer only. The article preserves later-page revisions and explicitly keeps original recipe use/full launch checks unverified. It claims no current-recipe run or novice success.",
      "evidenceRefs": [
       "sha256:2065bc25288a74e8a431918caa77912e1e160852d831e1c92e52fca06168db7e",
       "https://leithuwaydah.com/"
@@ -2155,7 +2155,7 @@
     },
     "handoffContext": {
      "state": "pass",
-     "reason": "“This recipe serves Post in the Content Factory.” The lower map highlights Post; source facts/photos and preview feed launch. “The publishing owner receives the approved launch plan.” After public checks the measurement task receives the verified URL and actual connected sources; open issues and one parent run ID remain visible.",
+     "reason": "\u201cThis recipe serves Post in the Content Factory.\u201d The lower map highlights Post; source facts/photos and preview feed launch. \u201cThe publishing owner receives the approved launch plan.\u201d After public checks the measurement task receives the verified URL and actual connected sources; open issues and one parent run ID remain visible.",
      "evidenceRefs": [
       "sha256:2065bc25288a74e8a431918caa77912e1e160852d831e1c92e52fca06168db7e",
       "https://localservicespotlight.com/content-factory/",
@@ -2206,7 +2206,7 @@
    "criteria": {
     "openingContext": {
      "state": "pass",
-     "reason": "“Help people find the right page on your site, then take the next step. The SEO Tree maps your stories, guides and business pages. Use it to place stories from the Content Factory, our steps to make and share content.” This names navigation value, topic-map mechanism and a real process connection. The maintained Content Factory body explicitly teaches connected repurposed assets.",
+     "reason": "\u201cHelp people find the right page on your site, then take the next step. The SEO Tree maps your stories, guides and business pages. Use it to place stories from the Content Factory, our steps to make and share content.\u201d This names navigation value, topic-map mechanism and a real process connection. The maintained Content Factory body explicitly teaches connected repurposed assets.",
      "evidenceRefs": [
       "sha256:b40c6815df1774c5570ad4a567abc8f203f661d7584a485d7840132f921b8df7",
       "https://localservicespotlight.com/content-factory/"
@@ -2230,7 +2230,7 @@
     },
     "steps": {
      "state": "pass",
-     "reason": "The framework covers parent/detail/peer relationships, distinct page versus enhancement, real proof, relevant links and the mapped operational guides. Placement’s trigger, inputs, authorized edits, checked link log and checklist handoff are scoped to its maintained task instead of forcing a recipe label on this hub.",
+     "reason": "The framework covers parent/detail/peer relationships, distinct page versus enhancement, real proof, relevant links and the mapped operational guides. Placement\u2019s trigger, inputs, authorized edits, checked link log and checklist handoff are scoped to its maintained task instead of forcing a recipe label on this hub.",
      "evidenceRefs": [
       "sha256:b40c6815df1774c5570ad4a567abc8f203f661d7584a485d7840132f921b8df7",
       "https://local-service-spotlight.github.io/task-library/?task=place-content-on-seo-tree-with-proper-links#task-place-content-on-seo-tree-with-proper-links"
@@ -2298,6 +2298,106 @@
      ]
     }
    }
+  },
+  {
+   "version": 1,
+   "taskSlug": "deliver-personal-brand-site-from-request",
+   "canonicalURL": "https://blitzmetrics.com/from-one-email-to-a-live-personal-brand-site/",
+   "representation": "wordpress-content-html",
+   "sourceSha256": "2065bc25288a74e8a431918caa77912e1e160852d831e1c92e52fca06168db7e",
+   "reviewedAt": "2026-10-23T05:55:39.276063Z",
+   "reviewer": "Codex scoped publication follow-up; prior independent source review retained",
+   "criteria": {
+    "openingContext": {
+     "state": "pass",
+     "reason": "The three plain sentences name the task and value, then link a useful source connection: \u201cStart with the personal brand guide to choose the facts and photos for the page.\u201d Its maintained guide teaches identity, site, real work and outside proof. Approximate opening diagnostic 3.46; body supplies site and launch checks.",
+     "evidenceRefs": [
+      "sha256:2065bc25288a74e8a431918caa77912e1e160852d831e1c92e52fca06168db7e",
+      "https://blitzmetrics.com/personal-brand/"
+     ]
+    },
+    "roleScope": {
+     "state": "pass",
+     "reason": "\u201cSite delivery guide \u00b7 Personal Branding\u201d declares a recipe: full request, checked preview, exact domain plan, authorized launch and verified handoff. Group intake is conditional; the build task supplies content. Preview, configured and live states remain distinct.",
+     "evidenceRefs": [
+      "sha256:2065bc25288a74e8a431918caa77912e1e160852d831e1c92e52fca06168db7e",
+      "https://blitzmetrics.com/from-one-email-to-a-live-personal-brand-site/"
+     ]
+    },
+    "owner": {
+     "state": "pass",
+     "reason": "\u201cLocal Service Spotlight maintains this site-delivery recipe.\u201d \u201cGuide author Dennis Yu\u201d links his verified personal home. This supports maintainer and author identity without treating the uploading account as authorship proof.",
+     "evidenceRefs": [
+      "sha256:2065bc25288a74e8a431918caa77912e1e160852d831e1c92e52fca06168db7e",
+      "https://dennisyu.com/"
+     ]
+    },
+    "steps": {
+     "state": "pass",
+     "reason": "\u201cThe eight steps\u201d provide trigger, sourced facts/media, usable domain/DNS access, checked preview, exact before/after/rollback, owner decision, scoped deployment and normal public tests. \u201cFor each checked public URL, record the response code, HTTPS result, phone and desktop result, and contact-path result.\u201d Preview is interim.",
+     "evidenceRefs": [
+      "sha256:2065bc25288a74e8a431918caa77912e1e160852d831e1c92e52fca06168db7e",
+      "https://blitzmetrics.com/from-one-email-to-a-live-personal-brand-site/"
+     ]
+    },
+    "links": {
+     "state": "pass",
+     "reason": "Current public task data and actual renderer select the named exact task rows/fragments; maintained destination bodies teach the stated roles. Personal-brand owns identity/proof/site planning; group intake stays conditional; QA is before launch or major change. The public parent/child placement now supplies relevant body links, with its execution acceptance recorded separately.",
+     "evidenceRefs": [
+      "sha256:2065bc25288a74e8a431918caa77912e1e160852d831e1c92e52fca06168db7e",
+      "sha256:418d98f30396270042e68bf2d5ac59aa41b4d129c83e651163950570929ec0df",
+      "sha256:dd8325396f960faf053df105b298b4dff987990add588182f2a4fe132f0ec073",
+      "https://blitzmetrics.com/personal-brand/",
+      "https://localservicespotlight.com/article-guidelines/"
+     ]
+    },
+    "sourceEvidence": {
+     "state": "pass",
+     "reason": "\u201cLeith Uwaydah\u2019s personal brand site is a surviving output from an August 2026 site-delivery job.\u201d The linked real output and privately retained original source support historical setup/transfer only. The article preserves later-page revisions and explicitly keeps original recipe use/full launch checks unverified. It claims no current-recipe run or novice success.",
+     "evidenceRefs": [
+      "sha256:2065bc25288a74e8a431918caa77912e1e160852d831e1c92e52fca06168db7e",
+      "https://leithuwaydah.com/"
+     ]
+    },
+    "handoffContext": {
+     "state": "pass",
+     "reason": "\u201cThis recipe serves Post in the Content Factory.\u201d The lower map highlights Post; source facts/photos and preview feed launch. \u201cThe publishing owner receives the approved launch plan.\u201d After public checks the measurement task receives the verified URL and actual connected sources; open issues and one parent run ID remain visible.",
+     "evidenceRefs": [
+      "sha256:2065bc25288a74e8a431918caa77912e1e160852d831e1c92e52fca06168db7e",
+      "https://localservicespotlight.com/content-factory/",
+      "https://local-service-spotlight.github.io/task-library/?task=measure-search-impressions-traffic-inbound-opportunities#task-measure-search-impressions-traffic-inbound-opportunities"
+     ]
+    },
+    "visualAndLayout": {
+     "state": "pass",
+     "reason": "Reviewed the dated live-browser QA record: root inspected actual anonymous CSS1280x800 and390x844 screenshots, a readable four-step lead diagram and plain opening, plus lower Content Factory map with Post highlighted and launch/measurement handoff. No horizontal overflow; no media played. This verdict relies on that observed visual receipt, not SVG existence or a claimed novice test.",
+     "evidenceRefs": [
+      "sha256:2065bc25288a74e8a431918caa77912e1e160852d831e1c92e52fca06168db7e",
+      "sha256:1302ecb94d1349da011505ab433ea71ad058e2ce32699a041c920dedbc362737",
+      "sha256:b542b02f5c07ceb0dae8f20bf65aeec51d80b3b8f4db889b7c7ad39df9471df7",
+      "https://blitzmetrics.com/from-one-email-to-a-live-personal-brand-site/"
+     ]
+    },
+    "publicationStandards": {
+     "state": "pass",
+     "reason": "The normal public title is 47 characters and the 136-character description and canonical tag remain correct. Both /site-delivery slash variants return exact301 to the canonical guide, which returns200 directly. Native body and metadata are unchanged. This closes only the prior title-readback/short-route hold; unchanged criteria retain their cited prior review. No client execution or novice proof is inferred.",
+     "evidenceRefs": [
+      "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/site-short-route-2026-10-23.md",
+      "https://blitzmetrics.com/site-delivery/",
+      "sha256:2065bc25288a74e8a431918caa77912e1e160852d831e1c92e52fca06168db7e"
+     ]
+    },
+    "acceptanceResults": {
+     "state": "pass",
+     "reason": "Prior scoped independent acceptance of the unchanged published guide remains valid: stored bytes, anonymous parity, observed phone/desktop visuals and historical-output limits. The later short-route/title follow-up closes only publication issues. This accepts the guide, not a client site launch, current-recipe site execution or unassisted novice-human result.",
+     "evidenceRefs": [
+      "sha256:2065bc25288a74e8a431918caa77912e1e160852d831e1c92e52fca06168db7e",
+      "sha256:b542b02f5c07ceb0dae8f20bf65aeec51d80b3b8f4db889b7c7ad39df9471df7",
+      "sha256:1302ecb94d1349da011505ab433ea71ad058e2ce32699a041c920dedbc362737",
+      "https://leithuwaydah.com/"
+     ]
+    }
+   }
   }
  ],
  "revisionObservations": [
@@ -2323,7 +2423,7 @@
    "representation": "wordpress-content-html",
    "sourceSha256": "1952b6ead82a6a9aa0d0f96f0e976b34c957351fe155fe8ddd56b6fc7e767fde",
    "observedAt": "2026-09-21T02:58:47.228010Z",
-   "observer": "Codex — authenticated WordPress source read after editorial review",
+   "observer": "Codex \u2014 authenticated WordPress source read after editorial review",
    "state": "observed",
    "reason": "A separate fresh source read matched the reviewed raw content bytes. It does not measure rendered layout, metadata or business results.",
    "evidenceRefs": [
@@ -2738,6 +2838,23 @@
    "evidenceRefs": [
     "https://blitzmetrics.com/seo-tree",
     "sha256:e57bb19f7e584f087d7b842e21fc772f0a5b5b70ec70c2c37b45422c26237f81"
+   ]
+  },
+  {
+   "version": 1,
+   "taskSlug": "deliver-personal-brand-site-from-request",
+   "canonicalURL": "https://blitzmetrics.com/from-one-email-to-a-live-personal-brand-site/",
+   "sourceSha256": "2065bc25288a74e8a431918caa77912e1e160852d831e1c92e52fca06168db7e",
+   "representation": "wordpress-content-html",
+   "observedAt": "2026-10-23T05:57:20.828695Z",
+   "observer": "codex-root-scoped-post-route-source-readback",
+   "state": "observed",
+   "reason": "Separate post-review native GET matches the reviewed body. Ordinary canonical public body also matches saved rendering under documented transforms; exact metadata/alias checks remain separate. No execution or novice inference.",
+   "evidenceRefs": [
+    "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/site-short-route-2026-10-23.md",
+    "https://blitzmetrics.com/site-delivery/",
+    "sha256:2065bc25288a74e8a431918caa77912e1e160852d831e1c92e52fca06168db7e",
+    "sha256:00be28ba297dc07b732d2b7cdde74031e8986af0fb1644290654fc7e60c3f365"
    ]
   }
  ]

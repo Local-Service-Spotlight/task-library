@@ -477,10 +477,10 @@
     "unknown": 0
    },
    "articleSemanticCertification": {
-    "pass": 0,
+    "pass": 1,
     "unmet": 0,
     "hold": 19,
-    "unknown": 257
+    "unknown": 256
    },
    "taskExampleEvidence": {
     "pass": 12,
@@ -508,7 +508,7 @@
    }
   }
  },
- "updated": "October 19, 2026",
+ "updated": "October 23, 2026",
  "factory": {
   "phases": [
    {
@@ -2143,7 +2143,7 @@
  ],
  "executionHistory": {
   "schemaVersion": 1,
-  "asOf": "2026-10-19T01:22:19.462878+00:00",
+  "asOf": "2026-10-23T05:58:21.873413+00:00",
   "proofSummary": {
    "definition": "Dated output proof, separate from current-recipe acceptance and every full-verification gate. Recorded acceptance counts distinct completed execution IDs with a latest all-pass independent review per task/run; scope is limited to its named criteria. Historical proof counts distinct source jobs, never new runs. Historical acceptance requires identity, output and acceptance pass; handoff is reported separately.",
    "recordedAcceptedOutputCount": 6,
@@ -38848,16 +38848,16 @@
        "articleSemanticCertification": {
         "id": "articleSemanticCertification",
         "label": "Article semantic certification",
-        "state": "unknown",
-        "reason": "The article revision observation is outside the 24-hour freshness window.",
+        "state": "pass",
+        "reason": "All ten semantic criteria pass for the separately observed current article revision.",
         "semanticReview": {
          "version": 1,
          "taskSlug": "deliver-personal-brand-site-from-request",
          "canonicalURL": "https://blitzmetrics.com/from-one-email-to-a-live-personal-brand-site/",
          "sourceSha256": "2065bc25288a74e8a431918caa77912e1e160852d831e1c92e52fca06168db7e",
          "representation": "wordpress-content-html",
-         "reviewedAt": "2026-10-14T18:05:06.675695Z",
-         "reviewer": "Codex independent semantic review, configured gpt-6.1-sol high",
+         "reviewedAt": "2026-10-23T05:55:39.276063Z",
+         "reviewer": "Codex scoped publication follow-up; prior independent source review retained",
          "criteria": {
           "openingContext": {
            "state": "pass",
@@ -38930,19 +38930,17 @@
            ]
           },
           "publicationStandards": {
-           "state": "hold",
-           "reason": "Current guide retains sourced identity/output/conference proof, useful audit CTA, structured prose, correct canonical and136-character description. The captured served title is62 characters; a later metadata save removes the suffix but normal public readback is pending. Required short memorable alias remains unexecuted after automatic approval timeouts. These publication issues keep the page WIP; no alias or Definitive claim is made.",
+           "state": "pass",
+           "reason": "The normal public title is 47 characters and the 136-character description and canonical tag remain correct. Both /site-delivery slash variants return exact301 to the canonical guide, which returns200 directly. Native body and metadata are unchanged. This closes only the prior title-readback/short-route hold; unchanged criteria retain their cited prior review. No client execution or novice proof is inferred.",
            "evidenceRefs": [
-            "sha256:2065bc25288a74e8a431918caa77912e1e160852d831e1c92e52fca06168db7e",
-            "sha256:cfc319052bb01089f2aa2d4af63103bfab22d95c40a0176a5f2afafda28464fe",
-            "https://blitzmetrics.com/from-one-email-to-a-live-personal-brand-site/",
-            "https://localservicespotlight.com/personal-brand-quick-audit/",
-            "https://digimarcon.com/How-to-Become-Well-Known-in-Your-industry-Even-if-Youre-Not-a-Big-Deal/"
+            "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/site-short-route-2026-10-23.md",
+            "https://blitzmetrics.com/site-delivery/",
+            "sha256:2065bc25288a74e8a431918caa77912e1e160852d831e1c92e52fca06168db7e"
            ]
           },
           "acceptanceResults": {
            "state": "pass",
-           "reason": "Scoped independent acceptance of this published guide revision: exact stored bytes, normal anonymous body parity, observed desktop/phone visuals, linked input/launch/check handoff and preserved historical-output limits are supported. Publication-standard issues remain explicitly held. This accepts checked guide delivery, not a new client site launch, use of the current recipe or an unassisted novice-human result.",
+           "reason": "Prior scoped independent acceptance of the unchanged published guide remains valid: stored bytes, anonymous parity, observed phone/desktop visuals and historical-output limits. The later short-route/title follow-up closes only publication issues. This accepts the guide, not a client site launch, current-recipe site execution or unassisted novice-human result.",
            "evidenceRefs": [
             "sha256:2065bc25288a74e8a431918caa77912e1e160852d831e1c92e52fca06168db7e",
             "sha256:b542b02f5c07ceb0dae8f20bf65aeec51d80b3b8f4db889b7c7ad39df9471df7",
@@ -38958,13 +38956,15 @@
          "canonicalURL": "https://blitzmetrics.com/from-one-email-to-a-live-personal-brand-site/",
          "sourceSha256": "2065bc25288a74e8a431918caa77912e1e160852d831e1c92e52fca06168db7e",
          "representation": "wordpress-content-html",
-         "observedAt": "2026-10-14T18:06:45.124599Z",
-         "observer": "codex-root-separate-post-review-native-and-public-readback",
+         "observedAt": "2026-10-23T05:57:20.828695Z",
+         "observer": "codex-root-scoped-post-route-source-readback",
          "state": "observed",
-         "reason": "Fresh authenticated native content hash matches the exact reviewed revision after the independent review. Ordinary canonical public URL returns HTTP200; saved rendered/public parity and actual viewport receipt retained separately. No execution or novice inference.",
+         "reason": "Separate post-review native GET matches the reviewed body. Ordinary canonical public body also matches saved rendering under documented transforms; exact metadata/alias checks remain separate. No execution or novice inference.",
          "evidenceRefs": [
-          "https://blitzmetrics.com/from-one-email-to-a-live-personal-brand-site/",
-          "sha256:23eb01c864758ae42b6444ec4588c68c5e3de531713d3baf957812c1466d78ab"
+          "https://github.com/Local-Service-Spotlight/task-library/blob/main/reviews/site-short-route-2026-10-23.md",
+          "https://blitzmetrics.com/site-delivery/",
+          "sha256:2065bc25288a74e8a431918caa77912e1e160852d831e1c92e52fca06168db7e",
+          "sha256:00be28ba297dc07b732d2b7cdde74031e8986af0fb1644290654fc7e60c3f365"
          ]
         }
        },
@@ -39003,7 +39003,6 @@
       "unmetStandardGates": [],
       "heldStandardGates": [],
       "unknownStandardGates": [
-       "articleSemanticCertification",
        "recordedExecution",
        "acceptedExecution",
        "setupSuccess"
@@ -39012,7 +39011,7 @@
       "queuePosition": 258,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
-      "nextAction": "The article revision observation is outside the 24-hour freshness window."
+      "nextAction": "No execution ledger record names this task. Historical run frequency is unknown."
      }
     },
     {
