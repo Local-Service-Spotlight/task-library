@@ -455,12 +455,19 @@ class BuiltArticleInventory(unittest.TestCase):
         delivery = by_slug['deliver-personal-brand-site-from-request']
         self.assertEqual(delivery['status'], 'complete')
         self.assertEqual(delivery['articleState'], 'ready')
-        # Contributor/catalog readiness cannot erase the exact article hold
-        # or fabricate real use by a beginner.
+        # The accepted short-route repair closes publication only; catalog
+        # readiness still cannot fabricate a site delivery or beginner use.
         semantic = delivery['standardVerification']['gates']['articleSemanticCertification']
-        self.assertEqual(semantic['semanticReview']['criteria']['publicationStandards']['state'], 'hold')
-        # A dated source observation expires without erasing its stored hold.
-        self.assertIn(semantic['state'], ('hold', 'unknown'))
+        self.assertEqual(semantic['semanticReview']['criteria']['publicationStandards']['state'], 'pass')
+        # A dated source observation expires without erasing the scoped review.
+        self.assertIn(semantic['state'], ('pass', 'unknown'))
+        for gate in ('recordedExecution', 'acceptedExecution'):
+            self.assertEqual(delivery['standardVerification']['gates'][gate]['state'], 'unknown')
+        with open(os.path.join(HERE, 'article-certifications.json'), encoding='utf-8') as fh:
+            earlier_reviews = json.load(fh)['semanticReviews']
+        self.assertTrue(any(row['taskSlug'] == delivery['slug']
+                            and row['criteria']['publicationStandards']['state'] == 'hold'
+                            for row in earlier_reviews))
         if semantic['state'] == 'unknown':
             self.assertEqual(semantic['reason'], 'The article revision observation is outside the 24-hour freshness window.')
         self.assertEqual(delivery['standardVerification']['gates']['setupSuccess']['state'], 'unknown')

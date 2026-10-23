@@ -37,3 +37,7 @@ Operations received a request to identify a real first-time participant and exis
 ## Remaining limits
 
 No full verification badge is granted without all required evidence. The site short route, actual beginner attempts, site-delivery execution under the current recipe and unfinished shared-hub tasks remain separately visible. No access, spending, client contact or deployment-authority change occurred.
+
+## October 23 publication follow-up
+
+The [short-route review](site-short-route-2026-10-23.md) closes the previously unexecuted alias and confirms the 47-character title in ordinary public HTML. The canonical article body is unchanged. Earlier hold statements above describe the October 15 state; current recipe execution and actual beginner evidence remain separate and incomplete. No new execution is counted.
