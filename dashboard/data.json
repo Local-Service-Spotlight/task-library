@@ -5,10 +5,10 @@
   "matchedRows": 0
  },
  "stats": {
-  "total": 276,
+  "total": 277,
   "complete": 132,
   "reviewedInstructions": 275,
-  "needsWork": 121,
+  "needsWork": 122,
   "gaps": 23,
   "articleHubs": 53,
   "definitiveArticles": 16,
@@ -20,7 +20,7 @@
   "importance": {
    "1": 0,
    "2": 43,
-   "3": 115,
+   "3": 116,
    "4": 43,
    "5": 75
   },
@@ -32,7 +32,7 @@
  "metaOrbitUrl": "https://local-service-spotlight.github.io/task-library/meta-orbits.json",
  "verificationQueueUrl": "verification-queue.html",
  "verificationSummary": {
-  "tasks": 276,
+  "tasks": 277,
   "fullyVerifiedTasks": 0,
   "proofSummary": {
    "definition": "Dated output proof, separate from current-recipe acceptance and every full-verification gate. Recorded acceptance counts distinct completed execution IDs with a latest all-pass independent review per task/run; scope is limited to its named criteria. Historical proof counts distinct source jobs, never new runs. Historical acceptance requires identity, output and acceptance pass; handoff is reported separately.",
@@ -443,12 +443,12 @@
   },
   "semanticHoldHubs": 3,
   "tasksWithHolds": 19,
-  "tasksWithUnmetGates": 207,
-  "tasksWithUnknownGates": 276,
+  "tasksWithUnmetGates": 208,
+  "tasksWithUnknownGates": 277,
   "gateCounts": {
    "instructionRevisionReviewed": {
     "pass": 275,
-    "unmet": 1,
+    "unmet": 2,
     "hold": 0,
     "unknown": 0
    },
@@ -456,59 +456,59 @@
     "pass": 26,
     "unmet": 0,
     "hold": 0,
-    "unknown": 250
+    "unknown": 251
    },
    "contributorComplete": {
     "pass": 132,
-    "unmet": 144,
+    "unmet": 145,
     "hold": 0,
     "unknown": 0
    },
    "articleMapped": {
-    "pass": 234,
+    "pass": 235,
     "unmet": 42,
     "hold": 0,
     "unknown": 0
    },
    "articleCatalogGate": {
     "pass": 52,
-    "unmet": 205,
+    "unmet": 206,
     "hold": 19,
     "unknown": 0
    },
    "articleSemanticCertification": {
-    "pass": 1,
+    "pass": 0,
     "unmet": 0,
     "hold": 19,
-    "unknown": 256
+    "unknown": 258
    },
    "taskExampleEvidence": {
     "pass": 12,
     "unmet": 0,
     "hold": 0,
-    "unknown": 264
+    "unknown": 265
    },
    "recordedExecution": {
     "pass": 5,
     "unmet": 0,
     "hold": 0,
-    "unknown": 271
+    "unknown": 272
    },
    "acceptedExecution": {
     "pass": 0,
     "unmet": 1,
     "hold": 0,
-    "unknown": 275
+    "unknown": 276
    },
    "setupSuccess": {
     "pass": 0,
     "unmet": 0,
     "hold": 0,
-    "unknown": 276
+    "unknown": 277
    }
   }
  },
- "updated": "October 23, 2026",
+ "updated": "October 31, 2026",
  "factory": {
   "phases": [
    {
@@ -1232,17 +1232,18 @@
    "url": "https://blitzmetrics.com/knowledge-panel",
    "state": "wip",
    "articleKind": "topic-hub",
-   "taskCount": 6,
+   "taskCount": 7,
    "completeTaskCount": 0,
    "importance": 3,
-   "importanceTotal": 18,
+   "importanceTotal": 21,
    "taskSlugs": [
     "build-third-party-validation",
     "claim-and-verify-knowledge-panel-when-it-appears",
     "classify-and-offer-knowledge-panel",
     "establish-entity-identity",
     "implement-technical-schema-markup",
-    "measure-search-impressions-traffic-inbound-opportunities"
+    "measure-search-impressions-traffic-inbound-opportunities",
+    "run-network-wikidata-kp-audit"
    ],
    "metaArticleCount": null,
    "metaCountStatus": "unknown",
@@ -2143,7 +2144,7 @@
  ],
  "executionHistory": {
   "schemaVersion": 1,
-  "asOf": "2026-10-23T05:58:21.873413+00:00",
+  "asOf": "2026-10-31T07:28:17.198878+00:00",
   "proofSummary": {
    "definition": "Dated output proof, separate from current-recipe acceptance and every full-verification gate. Recorded acceptance counts distinct completed execution IDs with a latest all-pass independent review per task/run; scope is limited to its named criteria. Historical proof counts distinct source jobs, never new runs. Historical acceptance requires identity, output and acceptance pass; handoff is reported separately.",
    "recordedAcceptedOutputCount": 6,
@@ -4628,7 +4629,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 150,
+      "queuePosition": 151,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -4785,7 +4786,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 151,
+      "queuePosition": 152,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -5253,7 +5254,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 233,
+      "queuePosition": 234,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -5411,7 +5412,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 234,
+      "queuePosition": 235,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -5884,7 +5885,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 126,
+      "queuePosition": 127,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -6831,7 +6832,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 239,
+      "queuePosition": 240,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -6989,7 +6990,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 247,
+      "queuePosition": 248,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -7147,7 +7148,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 248,
+      "queuePosition": 249,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -7305,7 +7306,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 249,
+      "queuePosition": 250,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -7617,7 +7618,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 231,
+      "queuePosition": 232,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -7835,7 +7836,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 251,
+      "queuePosition": 252,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -7991,7 +7992,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 235,
+      "queuePosition": 236,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -8147,7 +8148,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 232,
+      "queuePosition": 233,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -8303,7 +8304,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 252,
+      "queuePosition": 253,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -8459,7 +8460,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 253,
+      "queuePosition": 254,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -8615,7 +8616,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 230,
+      "queuePosition": 231,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -8773,7 +8774,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 250,
+      "queuePosition": 251,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -8929,7 +8930,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 254,
+      "queuePosition": 255,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -9147,7 +9148,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 255,
+      "queuePosition": 256,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -9303,7 +9304,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 256,
+      "queuePosition": 257,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -9459,7 +9460,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 257,
+      "queuePosition": 258,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -9615,7 +9616,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 236,
+      "queuePosition": 237,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -10155,7 +10156,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 237,
+      "queuePosition": 238,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "nextAction": "The article revision observation is outside the 24-hour freshness window."
@@ -10868,7 +10869,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 238,
+      "queuePosition": 239,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -11496,7 +11497,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 229,
+      "queuePosition": 230,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "nextAction": "The article revision observation is outside the 24-hour freshness window."
@@ -12120,7 +12121,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 240,
+      "queuePosition": 241,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -12388,7 +12389,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 227,
+      "queuePosition": 228,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -12544,7 +12545,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 241,
+      "queuePosition": 242,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -12700,7 +12701,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 242,
+      "queuePosition": 243,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -12856,7 +12857,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 243,
+      "queuePosition": 244,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -13012,7 +13013,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 244,
+      "queuePosition": 245,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -13386,7 +13387,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 246,
+      "queuePosition": 247,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -17344,7 +17345,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 189,
+      "queuePosition": 190,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -18754,7 +18755,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 187,
+      "queuePosition": 188,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "No valid canonical article URL is mapped for this task."
@@ -23651,7 +23652,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 157,
+      "queuePosition": 158,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -23809,7 +23810,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 155,
+      "queuePosition": 156,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -23966,7 +23967,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 158,
+      "queuePosition": 159,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -24124,7 +24125,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 188,
+      "queuePosition": 189,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -24485,7 +24486,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 159,
+      "queuePosition": 160,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -24642,7 +24643,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 160,
+      "queuePosition": 161,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -24799,7 +24800,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 161,
+      "queuePosition": 162,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -25113,7 +25114,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 162,
+      "queuePosition": 163,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -25270,7 +25271,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 163,
+      "queuePosition": 164,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -25427,7 +25428,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 164,
+      "queuePosition": 165,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -25584,7 +25585,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 165,
+      "queuePosition": 166,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -25899,7 +25900,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 166,
+      "queuePosition": 167,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -26056,7 +26057,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 167,
+      "queuePosition": 168,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -26213,7 +26214,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 168,
+      "queuePosition": 169,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -26370,7 +26371,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 169,
+      "queuePosition": 170,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -26527,7 +26528,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 170,
+      "queuePosition": 171,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -26684,7 +26685,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 171,
+      "queuePosition": 172,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -26841,7 +26842,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 172,
+      "queuePosition": 173,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -26998,7 +26999,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 173,
+      "queuePosition": 174,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -27155,7 +27156,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 174,
+      "queuePosition": 175,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -27469,7 +27470,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 175,
+      "queuePosition": 176,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -27783,7 +27784,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 176,
+      "queuePosition": 177,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -28254,7 +28255,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 177,
+      "queuePosition": 178,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -28569,7 +28570,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 178,
+      "queuePosition": 179,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -28726,7 +28727,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 179,
+      "queuePosition": 180,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -28883,7 +28884,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 180,
+      "queuePosition": 181,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -29040,7 +29041,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 181,
+      "queuePosition": 182,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -29354,7 +29355,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 182,
+      "queuePosition": 183,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -29513,7 +29514,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 154,
+      "queuePosition": 155,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -29672,7 +29673,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 156,
+      "queuePosition": 157,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -29831,7 +29832,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 153,
+      "queuePosition": 154,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -30165,7 +30166,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 128,
+      "queuePosition": 129,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -30434,7 +30435,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 259,
+      "queuePosition": 260,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -30590,7 +30591,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 260,
+      "queuePosition": 261,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -31025,7 +31026,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 261,
+      "queuePosition": 262,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -31181,7 +31182,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 263,
+      "queuePosition": 264,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -31337,7 +31338,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 264,
+      "queuePosition": 265,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -31549,7 +31550,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 269,
+      "queuePosition": 270,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -31761,7 +31762,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 270,
+      "queuePosition": 271,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -32074,7 +32075,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 271,
+      "queuePosition": 272,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "The article revision observation is outside the 24-hour freshness window."
@@ -32387,7 +32388,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 228,
+      "queuePosition": 229,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "nextAction": "The article revision observation is outside the 24-hour freshness window."
@@ -32700,7 +32701,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 272,
+      "queuePosition": 273,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "The article revision observation is outside the 24-hour freshness window."
@@ -33023,7 +33024,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 273,
+      "queuePosition": 274,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "The article revision observation is outside the 24-hour freshness window."
@@ -33346,7 +33347,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 274,
+      "queuePosition": 275,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "The article revision observation is outside the 24-hour freshness window."
@@ -33659,7 +33660,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 245,
+      "queuePosition": 246,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "The article revision observation is outside the 24-hour freshness window."
@@ -33815,7 +33816,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 276,
+      "queuePosition": 277,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -33974,7 +33975,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 143,
+      "queuePosition": 144,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -34133,7 +34134,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 129,
+      "queuePosition": 130,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -34292,7 +34293,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 132,
+      "queuePosition": 133,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -34459,7 +34460,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 127,
+      "queuePosition": 128,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -34673,7 +34674,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 130,
+      "queuePosition": 131,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -34831,7 +34832,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 131,
+      "queuePosition": 132,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -35462,7 +35463,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 134,
+      "queuePosition": 135,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -35778,7 +35779,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 135,
+      "queuePosition": 136,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -36093,7 +36094,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 136,
+      "queuePosition": 137,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -36251,7 +36252,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 137,
+      "queuePosition": 138,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -36409,7 +36410,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 138,
+      "queuePosition": 139,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -37039,7 +37040,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 139,
+      "queuePosition": 140,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -37197,7 +37198,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 142,
+      "queuePosition": 143,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -37355,7 +37356,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 144,
+      "queuePosition": 145,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -37671,10 +37672,155 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 145,
+      "queuePosition": 146,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
+     }
+    },
+    {
+     "title": "Run a Network Wikidata & Knowledge Panel audit",
+     "slug": "run-network-wikidata-kp-audit",
+     "status": "needs-work",
+     "stage": "—",
+     "article": "https://blitzmetrics.com/knowledge-panel",
+     "articleKind": "topic-hub",
+     "desc": "Keep a shared roster of people scored for Wikidata, Knowledge Panel, and Person schema — reviewed weekly.",
+     "content": "---\nname: run-network-wikidata-kp-audit\ndescription: \"Keep a shared roster of people scored for Wikidata, Knowledge Panel, and Person schema — reviewed weekly.\"\ncategory: Personal Branding\nstage: —\ndefinitive_article: /knowledge-panel\nstatus: needs-work\n---\n\n# Run a Network Wikidata & Knowledge Panel audit\n\nKeep one shared sheet for everyone in a network you care about. Each week, check Wikidata, Knowledge Graph / Knowledge Panel, Person schema, and canonical articles — fix what you control, queue what needs the person, and log the change.\n\n**The path:** Shared roster → Tiered weekly pass → Proactive fixes we control → Claims with the person → Weekly Log\n\n**Start when:** You have a Network Audit spreadsheet (or are ready to create one from the Playbook pattern) and an assigned Tracker / Ops owner.\n\n## Inputs\n\n- Canonical Network Audit sheet with tabs: Network Audit, Playbook & Owners, Weekly Log.\n  - Worked example: [Network Audit — Wikidata & Knowledge Panel Tracker](https://docs.google.com/spreadsheets/d/15O3sN3KC_sqM7_oB8Gz7Q4w3w1ED4TNZNvtJJ34L0Ks/edit)\n- Skill: [network-wikidata-kp-audit](https://github.com/dennisyu/local-service-spotlight-skills) (folder `skills/network-wikidata-kp-audit/`)\n- Related tasks: [Implement Person schema with sameAs links](https://local-service-spotlight.github.io/task-library/?task=implement-person-schema-with-sameas-links#task-implement-person-schema-with-sameas-links), [Claim and verify Knowledge Panel when it appears](https://local-service-spotlight.github.io/task-library/?task=claim-and-verify-knowledge-panel-when-it-appears#task-claim-and-verify-knowledge-panel-when-it-appears), [Classify and offer Knowledge Panel](https://local-service-spotlight.github.io/task-library/?task=classify-and-offer-knowledge-panel#task-classify-and-offer-knowledge-panel)\n- Fleet setup note (worked example): `agent-notes/2026-10-25-happy-network-wikidata-audit-sheet.md` on Local-Service-Spotlight/agent-runtime\n\n## Steps\n\n1. Read the Playbook & Owners tab. Confirm who owns Claims, Client ops, Content, Tracker/Ops, and personal-brand schema. Do not invent owners.\n2. Open Network Audit. Sort by Tier, then Status. Cap a weekly batch (finish one batch before another). Tier 1 Unverified first.\n3. For each person in the batch: fill or refresh QID, Wikipedia/Grokipedia, KGMID + confidence, panel live/claimed, Person schema, sameAs, Top Gap, Last/Next Check. Label Unverified when a two-key check is incomplete.\n4. Proactive lane (no person required): Person schema + sameAs on sites you control; canonical articles; verified mention gathering; sourced Wikidata proposals only. Never invent facts.\n5. Claims lane: queue Waiting on person for the Claims owner. Do not fake a claim or submit without the person.\n6. Append Weekly Log lines with date, who/system, what changed, evidence URL or cell, and next step.\n7. Surface to the network owner only: a verified win, a blocker that needs the person, or a decision only they can make. No process chatter.\n8. Save an agent-note after a substantive pass. Keep Happy/Ops Monday sheet sweep ownership separate from the personal-brand schema lane.\n\n## Definition of done (QA checklist)\n\nQuality assurance (QA) means checking the actual result against its agreed requirements. Follow the [Article Guidelines](https://localservicespotlight.com/article-guidelines/).\n\n- [ ] Every person touched this week has OBSERVED sheet fields or an explicit Unverified label with the missing check named.\n- [ ] Two-key rule held for any Missing/Failed claim (two independent checks, one at the canonical destination).\n- [ ] No invented QID, KGMID, notability, or claim outcome.\n- [ ] Weekly Log has one verified line per meaningful change.\n- [ ] Schema/canonical drafts on controlled sites are staged with owner yes before live inject when required.\n- [ ] For any reader-facing output, the short grade-five opening states the reader’s useful outcome; a useful authentic visual appears in the first screen.\n\n## Example(s)\n\n**Fictional teaching example. This is not a client result or proof of a completed run.**\n\nA fictional advisor network has 40 people on a Network Audit sheet. Monday, Ops sorts Tier 1 and finds three Unverified KIDs. The personal-brand desk live-checks two sites they control: one missing Person schema gets a staged JSON-LD draft; one already has schema and only needs a Weekly Log “no change” note. A third person is claim-ready and moves to Waiting on person for the Claims owner. Nothing is invented on Wikidata.\n\n## Handoff and Content Factory context\n\n[Implement Person schema with sameAs links](https://local-service-spotlight.github.io/task-library/?task=implement-person-schema-with-sameas-links#task-implement-person-schema-with-sameas-links) receives schema gaps on controlled sites. [Claim and verify Knowledge Panel when it appears](https://local-service-spotlight.github.io/task-library/?task=claim-and-verify-knowledge-panel-when-it-appears#task-claim-and-verify-knowledge-panel-when-it-appears) receives claim-ready people. Tracker/Ops keeps the sheet current.\n\nThis task supports the [Content Factory: Produce, Process, Post and Promote](https://localservicespotlight.com/content-factory/) as a **support / measurement** task for entity health across a roster. It does not create unrelated transcripts, clips, or ads merely because the diagram has four stages.\n\n## Start with an agent\n\nGive the [AI worker](https://blitzmetrics.com/build-agents/) this recipe, the sheet URL, authorized edit access, the skill `network-wikidata-kp-audit`, and which lane they own (Tracker sweep vs personal-brand schema). Ask for updated rows, Weekly Log lines, staged drafts, and next owner. Recurring work needs its own configured job, trigger, timezone, and observed result; this guide creates no schedule by itself.\n\n## Record the real execution\n\nOpen the run record when work begins. Keep one execution ID, starting recipe revision, real inputs and current state. Write the [meta article, the record of this execution](https://blitzmetrics.com/meta-article-prompt/) with actual steps, results, checks, failures and next owner. Writing is required; public release follows existing authority. Link it to this recipe and the [Task Library](https://local-service-spotlight.github.io/task-library/).\n\n\n<!-- factory-layer:start -->\n\n## Factory chain (do not treat this as isolated)\n\n- **Phase:** —\n- **Importance:** 3/5 `●●●○○` — frequency 3, revenue 3, gating 2 (supporting)\n- **Browse earlier task:** —\n- **Browse later task:** —\nThese are nearby tasks in the library. Use this guide’s Inputs and Handoff sections to choose what comes before and after your work. Catalog order does not establish prerequisites or handoffs.\n- **Handoff:** Save this task’s actual output, source, date and checks where the receiving owner can read them. Follow the Inputs and Handoff sections for its next step.\n\n## Model routing (same factory, any engine)\n\n- **This task's lane:** `any` — Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.\n- **Single-engine path:** Use the capable AI app you already have. Check its required tools and access before starting. Pass the actual result and proof to the next task.\n- **Optional multi-engine:** A tested local model may draft; a stronger model may review facts and voice. Use supported tools for approved actions. Pick models from observed quality and cost; a model name does not prove it can run this task.\n- **Never** store the working state in one vendor's memory. Files in the Content Library are the bridge.\n\n<!-- factory-layer:end -->\n## Definitive article & links\n\n- [Maintained source guide (Knowledge Panel)](https://blitzmetrics.com/knowledge-panel/)\n- [This task in the Task Library](https://local-service-spotlight.github.io/task-library/?task=run-network-wikidata-kp-audit#task-run-network-wikidata-kp-audit)\n- [Article Guidelines](https://localservicespotlight.com/article-guidelines/)\n- [Definitive article and task recipe standard](https://blitzmetrics.com/definitive-article-guide/)\n- [How recipes and run records fit together](https://localservicespotlight.com/meta-articles/)\n\n### Primary method references\n\n- Skill `network-wikidata-kp-audit` in dennisyu/local-service-spotlight-skills\n- Skill `knowledge-panel-entity-seo`\n- [Schema.org sameAs](https://schema.org/sameAs)\n\n## Review and evidence still needed\n\nThe contributor status is `needs-work`. It is preserved until a named semantic reviewer checks the opening, full method, sources, and handoff, and a real authorized run fills the execution ledger. The fictional example teaches the method and does not fill a real-run evidence gap.",
+     "importance": 3,
+     "freq": 3,
+     "revenue": 3,
+     "gating": 2,
+     "phase": "—",
+     "before": null,
+     "after": null,
+     "lane": "any",
+     "lane_label": "Any capable chat model (Claude, ChatGPT, Grok, Gemini). SOP following, drafts, checklists.",
+     "why": "supporting",
+     "articleState": "wip",
+     "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=run-network-wikidata-kp-audit#task-run-network-wikidata-kp-audit",
+     "executionHistory": {
+      "status": "unknown",
+      "recordedRuns": null,
+      "completedRuns": null,
+      "failedRuns": null,
+      "partialRuns": null,
+      "completedLast30Days": null,
+      "lastCompletedAt": null,
+      "executionIds": [],
+      "executionOutcomes": [],
+      "acceptanceReviews": [],
+      "setupReviews": []
+     },
+     "historicalDeliveryEvidence": {
+      "count": 0,
+      "candidateCount": 0,
+      "records": []
+     },
+     "proofSummary": {
+      "definition": "Dated output proof, separate from current-recipe acceptance and every full-verification gate. Recorded acceptance counts distinct completed execution IDs with a latest all-pass independent review per task/run; scope is limited to its named criteria. Historical proof counts distinct source jobs, never new runs. Historical acceptance requires identity, output and acceptance pass; handoff is reported separately.",
+      "recordedAcceptedOutputCount": 0,
+      "recordedAcceptedReviewCount": 0,
+      "acceptedRecordedOutputs": [],
+      "historicalVerifiedOutputCount": 0,
+      "historicalAcceptedOutputCount": 0,
+      "historicalIdentityOutputOnlyCount": 0,
+      "historicalAcceptedHandoffPassCount": 0,
+      "historicalAcceptedHandoffHoldCount": 0,
+      "historicalAcceptedHandoffUnresolvedCount": 0,
+      "historicalVerifiedEvidenceIds": [],
+      "historicalAcceptedEvidenceIds": []
+     },
+     "standardVerification": {
+      "instructionSourceSha256": "ce95d03c6a52bd0848ad205248353bcbede9292da4cf284cb8301a6d022ad3a4",
+      "articleKey": "blitzmetrics.com/knowledge-panel",
+      "gates": {
+       "instructionRevisionReviewed": {
+        "id": "instructionRevisionReviewed",
+        "label": "Exact instruction revision reviewed",
+        "state": "unmet",
+        "reason": "No exact-byte instruction review is recorded for this task.",
+        "sourceSha256": "ce95d03c6a52bd0848ad205248353bcbede9292da4cf284cb8301a6d022ad3a4"
+       },
+       "instructionStandards": {
+        "id": "instructionStandards",
+        "label": "Instruction requirements checked",
+        "state": "unknown",
+        "reason": "No current exact-byte instruction-requirements checklist is recorded.",
+        "sourceSha256": "ce95d03c6a52bd0848ad205248353bcbede9292da4cf284cb8301a6d022ad3a4"
+       },
+       "contributorComplete": {
+        "id": "contributorComplete",
+        "label": "Contributor reports guide complete",
+        "state": "unmet",
+        "reason": "The contributor status is needs-work; finish and review the guide."
+       },
+       "articleMapped": {
+        "id": "articleMapped",
+        "label": "Canonical article mapped",
+        "state": "pass",
+        "reason": "The task maps to a normalized canonical article URL.",
+        "articleUrl": "https://blitzmetrics.com/knowledge-panel"
+       },
+       "articleCatalogGate": {
+        "id": "articleCatalogGate",
+        "label": "Article catalog gate",
+        "state": "unmet",
+        "reason": "At least one task mapped to this hub is not contributor-complete."
+       },
+       "articleSemanticCertification": {
+        "id": "articleSemanticCertification",
+        "label": "Article semantic certification",
+        "state": "unknown",
+        "reason": "No exact-revision positive semantic review is recorded for this article."
+       },
+       "taskExampleEvidence": {
+        "id": "taskExampleEvidence",
+        "label": "Task-attributed example evidence",
+        "state": "unknown",
+        "reason": "No source-backed example audit exists for the mapped hub."
+       },
+       "recordedExecution": {
+        "id": "recordedExecution",
+        "label": "Recorded real execution",
+        "state": "unknown",
+        "reason": "No execution ledger record names this task. Historical run frequency is unknown."
+       },
+       "acceptedExecution": {
+        "id": "acceptedExecution",
+        "label": "Accepted execution result",
+        "state": "unknown",
+        "reason": "No structured acceptance review is recorded for the current canonical article revision. A completed run label is not acceptance."
+       },
+       "setupSuccess": {
+        "id": "setupSuccess",
+        "label": "New-user setup success",
+        "state": "unknown",
+        "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+        "supportedRoute": "manual-guide",
+        "installationCertified": false,
+        "schedulingCertified": false
+       }
+      },
+      "unmetStandardGates": [
+       "instructionRevisionReviewed",
+       "contributorComplete",
+       "articleCatalogGate"
+      ],
+      "heldStandardGates": [],
+      "unknownStandardGates": [
+       "instructionStandards",
+       "articleSemanticCertification",
+       "taskExampleEvidence",
+       "recordedExecution",
+       "acceptedExecution",
+       "setupSuccess"
+      ],
+      "fullyVerified": false,
+      "queuePosition": 125,
+      "priority": "P1",
+      "priorityReason": "Known standard gap",
+      "nextAction": "No exact-byte instruction review is recorded for this task."
      }
     },
     {
@@ -37991,7 +38137,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 262,
+      "queuePosition": 263,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -38149,7 +38295,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 146,
+      "queuePosition": 147,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -38307,7 +38453,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 147,
+      "queuePosition": 148,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -38466,7 +38612,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 149,
+      "queuePosition": 150,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -38622,7 +38768,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 268,
+      "queuePosition": 269,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -38848,8 +38994,8 @@
        "articleSemanticCertification": {
         "id": "articleSemanticCertification",
         "label": "Article semantic certification",
-        "state": "pass",
-        "reason": "All ten semantic criteria pass for the separately observed current article revision.",
+        "state": "unknown",
+        "reason": "The article revision observation is outside the 24-hour freshness window.",
         "semanticReview": {
          "version": 1,
          "taskSlug": "deliver-personal-brand-site-from-request",
@@ -39003,15 +39149,16 @@
       "unmetStandardGates": [],
       "heldStandardGates": [],
       "unknownStandardGates": [
+       "articleSemanticCertification",
        "recordedExecution",
        "acceptedExecution",
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 258,
+      "queuePosition": 259,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
-      "nextAction": "No execution ledger record names this task. Historical run frequency is unknown."
+      "nextAction": "The article revision observation is outside the 24-hour freshness window."
      }
     },
     {
@@ -39167,7 +39314,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 140,
+      "queuePosition": 141,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -40615,7 +40762,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 265,
+      "queuePosition": 266,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -40771,7 +40918,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 266,
+      "queuePosition": 267,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -40927,7 +41074,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 267,
+      "queuePosition": 268,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -41400,7 +41547,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 125,
+      "queuePosition": 126,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "No valid canonical article URL is mapped for this task."
@@ -41871,7 +42018,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 152,
+      "queuePosition": 153,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -43086,7 +43233,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 275,
+      "queuePosition": 276,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -43397,7 +43544,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 226,
+      "queuePosition": 227,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "nextAction": "No exact-revision positive semantic review is recorded for this article."
@@ -43556,7 +43703,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 148,
+      "queuePosition": 149,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -43715,7 +43862,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 133,
+      "queuePosition": 134,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -43874,7 +44021,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 141,
+      "queuePosition": 142,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -45023,7 +45170,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 190,
+      "queuePosition": 191,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is gap; finish and review the guide."
@@ -45181,7 +45328,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 191,
+      "queuePosition": 192,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is gap; finish and review the guide."
@@ -45339,7 +45486,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 200,
+      "queuePosition": 201,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -45497,7 +45644,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 201,
+      "queuePosition": 202,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -45655,7 +45802,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 203,
+      "queuePosition": 204,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -45812,7 +45959,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 222,
+      "queuePosition": 223,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -45970,7 +46117,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 192,
+      "queuePosition": 193,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is gap; finish and review the guide."
@@ -46128,7 +46275,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 193,
+      "queuePosition": 194,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is gap; finish and review the guide."
@@ -46286,7 +46433,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 194,
+      "queuePosition": 195,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is gap; finish and review the guide."
@@ -46443,7 +46590,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 223,
+      "queuePosition": 224,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -46595,7 +46742,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 207,
+      "queuePosition": 208,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -46747,7 +46894,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 195,
+      "queuePosition": 196,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is gap; finish and review the guide."
@@ -46905,7 +47052,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 212,
+      "queuePosition": 213,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -47063,7 +47210,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 213,
+      "queuePosition": 214,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -47233,7 +47380,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 214,
+      "queuePosition": 215,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -47391,7 +47538,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 196,
+      "queuePosition": 197,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is gap; finish and review the guide."
@@ -47549,7 +47696,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 197,
+      "queuePosition": 198,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is gap; finish and review the guide."
@@ -47707,7 +47854,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 198,
+      "queuePosition": 199,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is gap; finish and review the guide."
@@ -47865,7 +48012,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 215,
+      "queuePosition": 216,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -48023,7 +48170,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 216,
+      "queuePosition": 217,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -48181,7 +48328,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 199,
+      "queuePosition": 200,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is gap; finish and review the guide."
@@ -48339,7 +48486,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 219,
+      "queuePosition": 220,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -48497,7 +48644,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 220,
+      "queuePosition": 221,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -48717,7 +48864,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 221,
+      "queuePosition": 222,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -48874,7 +49021,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 225,
+      "queuePosition": 226,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "At least one task mapped to this hub is not contributor-complete."
@@ -49033,7 +49180,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 206,
+      "queuePosition": 207,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -49192,7 +49339,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 208,
+      "queuePosition": 209,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -49351,7 +49498,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 202,
+      "queuePosition": 203,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -49510,7 +49657,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 205,
+      "queuePosition": 206,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -49669,7 +49816,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 204,
+      "queuePosition": 205,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -49745,7 +49892,7 @@
       "completedRuns": 22,
       "failedRuns": 0,
       "partialRuns": 5,
-      "completedLast30Days": 22,
+      "completedLast30Days": 20,
       "lastCompletedAt": "2026-10-19T01:22:01.536676+00:00",
       "executionIds": [
        "authority-guides-repair-20261005-2100",
@@ -50766,7 +50913,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 224,
+      "queuePosition": 225,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The acceptance review instruction hash no longer matches the current task instruction."
@@ -50925,7 +51072,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 217,
+      "queuePosition": 218,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -51084,7 +51231,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 218,
+      "queuePosition": 219,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -51243,7 +51390,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 211,
+      "queuePosition": 212,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -51402,7 +51549,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 210,
+      "queuePosition": 211,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -51561,7 +51708,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 209,
+      "queuePosition": 210,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "The contributor status is needs-work; finish and review the guide."
@@ -51882,7 +52029,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 183,
+      "queuePosition": 184,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "No valid canonical article URL is mapped for this task."
@@ -52350,7 +52497,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 184,
+      "queuePosition": 185,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "No valid canonical article URL is mapped for this task."
@@ -52506,7 +52653,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 185,
+      "queuePosition": 186,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "No valid canonical article URL is mapped for this task."
@@ -52662,7 +52809,7 @@
        "setupSuccess"
       ],
       "fullyVerified": false,
-      "queuePosition": 186,
+      "queuePosition": 187,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "nextAction": "No valid canonical article URL is mapped for this task."
