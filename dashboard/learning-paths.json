@@ -55,7 +55,7 @@
       ]
     }
   },
-  "libraryUpdated": "October 23, 2026",
+  "libraryUpdated": "October 31, 2026",
   "paths": [
     {
       "id": "implement-agents",
@@ -1940,6 +1940,15 @@
       "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=run-multiple-simultaneous-tests#task-run-multiple-simultaneous-tests",
       "status": "complete",
       "contentSha256": "a354dca05720af49efb04216acf31de0ecd567a364134be80f13c7a10788c24e"
+    },
+    {
+      "slug": "run-network-wikidata-kp-audit",
+      "title": "Run a Network Wikidata & Knowledge Panel audit",
+      "description": "Keep a shared roster of people scored for Wikidata, Knowledge Panel, and Person schema — reviewed weekly.",
+      "article": "https://blitzmetrics.com/knowledge-panel",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=run-network-wikidata-kp-audit#task-run-network-wikidata-kp-audit",
+      "status": "needs-work",
+      "contentSha256": "d60593a5877f642d2a88a1ad541486c118b3d13bcb31f98f674ed62c7844cb66"
     },
     {
       "slug": "run-overnight-local-writer",

@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
   "ordering": "Setup failures and evidence holds first. Within each priority lane, sort by estimated revenue role, dependencies unblocked, frequency and importance before missing-guide status and gap count. Effort and actual income remain unknown.",
-  "generatedAt": "2026-10-23T05:58:21.882127+00:00",
+  "generatedAt": "2026-10-31T07:28:17.211537+00:00",
   "definition": "Per-task standard gates derived from exact instruction reviews, explicit instruction-requirement checks, contributor status, article mapping/catalog holds, exact-revision article semantic reviews, task-attributed examples and the execution ledger. Unknown proof is never turned into a pass.",
   "stats": {
-    "tasks": 276,
+    "tasks": 277,
     "fullyVerifiedTasks": 0,
     "proofSummary": {
       "definition": "Dated output proof, separate from current-recipe acceptance and every full-verification gate. Recorded acceptance counts distinct completed execution IDs with a latest all-pass independent review per task/run; scope is limited to its named criteria. Historical proof counts distinct source jobs, never new runs. Historical acceptance requires identity, output and acceptance pass; handoff is reported separately.",
@@ -415,12 +415,12 @@
     },
     "semanticHoldHubs": 3,
     "tasksWithHolds": 19,
-    "tasksWithUnmetGates": 207,
-    "tasksWithUnknownGates": 276,
+    "tasksWithUnmetGates": 208,
+    "tasksWithUnknownGates": 277,
     "gateCounts": {
       "instructionRevisionReviewed": {
         "pass": 275,
-        "unmet": 1,
+        "unmet": 2,
         "hold": 0,
         "unknown": 0
       },
@@ -428,55 +428,55 @@
         "pass": 26,
         "unmet": 0,
         "hold": 0,
-        "unknown": 250
+        "unknown": 251
       },
       "contributorComplete": {
         "pass": 132,
-        "unmet": 144,
+        "unmet": 145,
         "hold": 0,
         "unknown": 0
       },
       "articleMapped": {
-        "pass": 234,
+        "pass": 235,
         "unmet": 42,
         "hold": 0,
         "unknown": 0
       },
       "articleCatalogGate": {
         "pass": 52,
-        "unmet": 205,
+        "unmet": 206,
         "hold": 19,
         "unknown": 0
       },
       "articleSemanticCertification": {
-        "pass": 1,
+        "pass": 0,
         "unmet": 0,
         "hold": 19,
-        "unknown": 256
+        "unknown": 258
       },
       "taskExampleEvidence": {
         "pass": 12,
         "unmet": 0,
         "hold": 0,
-        "unknown": 264
+        "unknown": 265
       },
       "recordedExecution": {
         "pass": 5,
         "unmet": 0,
         "hold": 0,
-        "unknown": 271
+        "unknown": 272
       },
       "acceptedExecution": {
         "pass": 0,
         "unmet": 1,
         "hold": 0,
-        "unknown": 275
+        "unknown": 276
       },
       "setupSuccess": {
         "pass": 0,
         "unmet": 0,
         "hold": 0,
-        "unknown": 276
+        "unknown": 277
       }
     }
   },
@@ -17551,6 +17551,136 @@
       "queuePosition": 125,
       "priority": "P1",
       "priorityReason": "Known standard gap",
+      "slug": "run-network-wikidata-kp-audit",
+      "title": "Run a Network Wikidata & Knowledge Panel audit",
+      "category": "Personal Branding",
+      "importance": 3,
+      "revenueEstimate": 3,
+      "dependencyEstimate": 2,
+      "frequencyEstimate": 3,
+      "valueBasis": "Editorial estimate from build/factory.py; not measured income, demand or use.",
+      "effortEstimate": null,
+      "status": "needs-work",
+      "articleUrl": "https://blitzmetrics.com/knowledge-panel",
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=run-network-wikidata-kp-audit#task-run-network-wikidata-kp-audit",
+      "historicalDeliveryCount": 0,
+      "historicalEvidenceIds": [],
+      "proofSummary": {
+        "definition": "Dated output proof, separate from current-recipe acceptance and every full-verification gate. Recorded acceptance counts distinct completed execution IDs with a latest all-pass independent review per task/run; scope is limited to its named criteria. Historical proof counts distinct source jobs, never new runs. Historical acceptance requires identity, output and acceptance pass; handoff is reported separately.",
+        "recordedAcceptedOutputCount": 0,
+        "recordedAcceptedReviewCount": 0,
+        "acceptedRecordedOutputs": [],
+        "historicalVerifiedOutputCount": 0,
+        "historicalAcceptedOutputCount": 0,
+        "historicalIdentityOutputOnlyCount": 0,
+        "historicalAcceptedHandoffPassCount": 0,
+        "historicalAcceptedHandoffHoldCount": 0,
+        "historicalAcceptedHandoffUnresolvedCount": 0,
+        "historicalVerifiedEvidenceIds": [],
+        "historicalAcceptedEvidenceIds": []
+      },
+      "historicalDeliveryEvidence": {
+        "count": 0,
+        "candidateCount": 0,
+        "records": []
+      },
+      "nextAction": "No exact-byte instruction review is recorded for this task.",
+      "standardVerification": {
+        "instructionSourceSha256": "ce95d03c6a52bd0848ad205248353bcbede9292da4cf284cb8301a6d022ad3a4",
+        "articleKey": "blitzmetrics.com/knowledge-panel",
+        "gates": {
+          "instructionRevisionReviewed": {
+            "id": "instructionRevisionReviewed",
+            "label": "Exact instruction revision reviewed",
+            "state": "unmet",
+            "reason": "No exact-byte instruction review is recorded for this task.",
+            "sourceSha256": "ce95d03c6a52bd0848ad205248353bcbede9292da4cf284cb8301a6d022ad3a4"
+          },
+          "instructionStandards": {
+            "id": "instructionStandards",
+            "label": "Instruction requirements checked",
+            "state": "unknown",
+            "reason": "No current exact-byte instruction-requirements checklist is recorded.",
+            "sourceSha256": "ce95d03c6a52bd0848ad205248353bcbede9292da4cf284cb8301a6d022ad3a4"
+          },
+          "contributorComplete": {
+            "id": "contributorComplete",
+            "label": "Contributor reports guide complete",
+            "state": "unmet",
+            "reason": "The contributor status is needs-work; finish and review the guide."
+          },
+          "articleMapped": {
+            "id": "articleMapped",
+            "label": "Canonical article mapped",
+            "state": "pass",
+            "reason": "The task maps to a normalized canonical article URL.",
+            "articleUrl": "https://blitzmetrics.com/knowledge-panel"
+          },
+          "articleCatalogGate": {
+            "id": "articleCatalogGate",
+            "label": "Article catalog gate",
+            "state": "unmet",
+            "reason": "At least one task mapped to this hub is not contributor-complete."
+          },
+          "articleSemanticCertification": {
+            "id": "articleSemanticCertification",
+            "label": "Article semantic certification",
+            "state": "unknown",
+            "reason": "No exact-revision positive semantic review is recorded for this article."
+          },
+          "taskExampleEvidence": {
+            "id": "taskExampleEvidence",
+            "label": "Task-attributed example evidence",
+            "state": "unknown",
+            "reason": "No source-backed example audit exists for the mapped hub."
+          },
+          "recordedExecution": {
+            "id": "recordedExecution",
+            "label": "Recorded real execution",
+            "state": "unknown",
+            "reason": "No execution ledger record names this task. Historical run frequency is unknown."
+          },
+          "acceptedExecution": {
+            "id": "acceptedExecution",
+            "label": "Accepted execution result",
+            "state": "unknown",
+            "reason": "No structured acceptance review is recorded for the current canonical article revision. A completed run label is not acceptance."
+          },
+          "setupSuccess": {
+            "id": "setupSuccess",
+            "label": "New-user setup success",
+            "state": "unknown",
+            "reason": "No structured receipt shows a novice human loaded the needed files, had access and completed this task successfully. Installation and scheduling are not certified.",
+            "supportedRoute": "manual-guide",
+            "installationCertified": false,
+            "schedulingCertified": false
+          }
+        },
+        "unmetStandardGates": [
+          "instructionRevisionReviewed",
+          "contributorComplete",
+          "articleCatalogGate"
+        ],
+        "heldStandardGates": [],
+        "unknownStandardGates": [
+          "instructionStandards",
+          "articleSemanticCertification",
+          "taskExampleEvidence",
+          "recordedExecution",
+          "acceptedExecution",
+          "setupSuccess"
+        ],
+        "fullyVerified": false,
+        "queuePosition": 125,
+        "priority": "P1",
+        "priorityReason": "Known standard gap",
+        "nextAction": "No exact-byte instruction review is recorded for this task."
+      }
+    },
+    {
+      "queuePosition": 126,
+      "priority": "P1",
+      "priorityReason": "Known standard gap",
       "slug": "show-whats-working-and-what-isnt",
       "title": "Show what's working and what isn't",
       "category": "Strategy & Measurement",
@@ -17672,14 +17802,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 125,
+        "queuePosition": 126,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "No valid canonical article URL is mapped for this task."
       }
     },
     {
-      "queuePosition": 126,
+      "queuePosition": 127,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "access-content-factory-source-assets",
@@ -17803,14 +17933,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 126,
+        "queuePosition": 127,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 127,
+      "queuePosition": 128,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "add-consistent-headshots-and-bios-across-profiles",
@@ -17934,14 +18064,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 127,
+        "queuePosition": 128,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 128,
+      "queuePosition": 129,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "build-external-backlinks-from-authoritative-sources",
@@ -18202,14 +18332,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 128,
+        "queuePosition": 129,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 129,
+      "queuePosition": 130,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "build-money-tree-site-diagram",
@@ -18333,14 +18463,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 129,
+        "queuePosition": 130,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 130,
+      "queuePosition": 131,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "build-personal-brand-website",
@@ -18496,14 +18626,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 130,
+        "queuePosition": 131,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 131,
+      "queuePosition": 132,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "build-third-party-validation",
@@ -18627,14 +18757,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 131,
+        "queuePosition": 132,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 132,
+      "queuePosition": 133,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "close-ended-relationship-endorsement-links",
@@ -18758,14 +18888,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 132,
+        "queuePosition": 133,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 133,
+      "queuePosition": 134,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "collect-verified-weekly-measurements",
@@ -18889,14 +19019,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 133,
+        "queuePosition": 134,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 134,
+      "queuePosition": 135,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "create-collaborative-content-with-industry-peers",
@@ -19020,14 +19150,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 134,
+        "queuePosition": 135,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 135,
+      "queuePosition": 136,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "create-social-content-from-video-clips",
@@ -19151,14 +19281,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 135,
+        "queuePosition": 136,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 136,
+      "queuePosition": 137,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "establish-entity-identity",
@@ -19409,14 +19539,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 136,
+        "queuePosition": 137,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 137,
+      "queuePosition": 138,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "generate-backlinks-and-entity-mentions",
@@ -19540,14 +19670,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 137,
+        "queuePosition": 138,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 138,
+      "queuePosition": 139,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "get-featured-on-podcasts",
@@ -19671,14 +19801,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 138,
+        "queuePosition": 139,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 139,
+      "queuePosition": 140,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "link-all-content-back-to-personal-brand-site",
@@ -19802,14 +19932,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 139,
+        "queuePosition": 140,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 140,
+      "queuePosition": 141,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "manage-group-member-website-request",
@@ -19933,14 +20063,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 140,
+        "queuePosition": 141,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 141,
+      "queuePosition": 142,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "measure-ai-citations-for-brand",
@@ -20064,14 +20194,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 141,
+        "queuePosition": 142,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 142,
+      "queuePosition": 143,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "measure-search-impressions-traffic-inbound-opportunities",
@@ -20195,14 +20325,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 142,
+        "queuePosition": 143,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 143,
+      "queuePosition": 144,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "publish-seo-tree-site-directory",
@@ -20326,14 +20456,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 143,
+        "queuePosition": 144,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 144,
+      "queuePosition": 145,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "record-one-minute-videos-answering-customer-questions",
@@ -20457,14 +20587,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 144,
+        "queuePosition": 145,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 145,
+      "queuePosition": 146,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "repurpose-videos-into-blog-posts-via-content-factory",
@@ -20588,14 +20718,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 145,
+        "queuePosition": 146,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 146,
+      "queuePosition": 147,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "secure-guest-appearances-and-speaking-engagements",
@@ -20719,14 +20849,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 146,
+        "queuePosition": 147,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 147,
+      "queuePosition": 148,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "set-up-professional-social-profiles",
@@ -20850,14 +20980,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 147,
+        "queuePosition": 148,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 148,
+      "queuePosition": 149,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "update-client-success-tracker",
@@ -20981,14 +21111,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 148,
+        "queuePosition": 149,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 149,
+      "queuePosition": 150,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "verify-google-business-profile--personal-brand",
@@ -21112,14 +21242,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 149,
+        "queuePosition": 150,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 150,
+      "queuePosition": 151,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "create-a-3-minute-why-video",
@@ -21242,14 +21372,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 150,
+        "queuePosition": 151,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 151,
+      "queuePosition": 152,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "create-a-3x3-video-grid",
@@ -21372,14 +21502,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 151,
+        "queuePosition": 152,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 152,
+      "queuePosition": 153,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "stage-3-content-endorsements-why-video-3x3-grid-library",
@@ -21502,14 +21632,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 152,
+        "queuePosition": 153,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 153,
+      "queuePosition": 154,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "add-homepage-blog-card-thumbnails",
@@ -21633,14 +21763,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 153,
+        "queuePosition": 154,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 154,
+      "queuePosition": 155,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "audit-local-service-website",
@@ -21764,14 +21894,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 154,
+        "queuePosition": 155,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 155,
+      "queuePosition": 156,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "check-all-cta-buttons-lead-to-correct-destinations",
@@ -21895,14 +22025,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 155,
+        "queuePosition": 156,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 156,
+      "queuePosition": 157,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "run-weekly-client-seo-audits",
@@ -22026,14 +22156,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 156,
+        "queuePosition": 157,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 157,
+      "queuePosition": 158,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "audit-internal-links-between-all-blog-posts",
@@ -22156,14 +22286,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 157,
+        "queuePosition": 158,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 158,
+      "queuePosition": 159,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "check-each-homepage-section-includes-relevant-image",
@@ -22286,14 +22416,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 158,
+        "queuePosition": 159,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 159,
+      "queuePosition": 160,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "check-for-broken-links",
@@ -22552,14 +22682,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 159,
+        "queuePosition": 160,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 160,
+      "queuePosition": 161,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "check-lead-magnet-section-has-visual-mockup",
@@ -22682,14 +22812,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 160,
+        "queuePosition": 161,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 161,
+      "queuePosition": 162,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "check-meta-description-under-160-chars",
@@ -22812,14 +22942,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 161,
+        "queuePosition": 162,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 162,
+      "queuePosition": 163,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "check-seo-title-under-60-chars-with-focus-keyword",
@@ -22942,14 +23072,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 162,
+        "queuePosition": 163,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 163,
+      "queuePosition": 164,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "check-social-profiles-linked-and-prominent",
@@ -23072,14 +23202,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 163,
+        "queuePosition": 164,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 164,
+      "queuePosition": 165,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "ensure-no-stock-images-used",
@@ -23202,14 +23332,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 164,
+        "queuePosition": 165,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 165,
+      "queuePosition": 166,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "ensure-no-text-only-sections-spanning-full-viewport",
@@ -23332,14 +23462,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 165,
+        "queuePosition": 166,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 166,
+      "queuePosition": 167,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "test-mobile-load-time-under-3-seconds",
@@ -23462,14 +23592,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 166,
+        "queuePosition": 167,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 167,
+      "queuePosition": 168,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "verify-achievements-are-evidenced-not-just-claimed",
@@ -23592,14 +23722,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 167,
+        "queuePosition": 168,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 168,
+      "queuePosition": 169,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "verify-all-images-have-descriptive-alt-text",
@@ -23722,14 +23852,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 168,
+        "queuePosition": 169,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 169,
+      "queuePosition": 170,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "verify-all-pages-written-in-first-person",
@@ -23852,14 +23982,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 169,
+        "queuePosition": 170,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 170,
+      "queuePosition": 171,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "verify-at-least-one-video-embed-on-homepage",
@@ -23982,14 +24112,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 170,
+        "queuePosition": 171,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 171,
+      "queuePosition": 172,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "verify-email-opt-in-form-exists-and-works",
@@ -24112,14 +24242,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 171,
+        "queuePosition": 172,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 172,
+      "queuePosition": 173,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "verify-entity-linking-follows-decision-tree",
@@ -24242,14 +24372,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 172,
+        "queuePosition": 173,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 173,
+      "queuePosition": 174,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "verify-featured-images-unique-per-blog-post",
@@ -24372,14 +24502,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 173,
+        "queuePosition": 174,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 174,
+      "queuePosition": 175,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "verify-footer-includes-social-links-and-secondary-nav",
@@ -24502,14 +24632,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 174,
+        "queuePosition": 175,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 175,
+      "queuePosition": 176,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "verify-google-business-profile-is-verified",
@@ -24632,14 +24762,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 175,
+        "queuePosition": 176,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 176,
+      "queuePosition": 177,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "verify-hero-section-contains-real-photo-of-person",
@@ -24762,14 +24892,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 176,
+        "queuePosition": 177,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 177,
+      "queuePosition": 178,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "verify-minimum-5-distinct-images-on-homepage",
@@ -24892,14 +25022,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 177,
+        "queuePosition": 178,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 178,
+      "queuePosition": 179,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "verify-rank-math-score-above-70-on-every-page",
@@ -25022,14 +25152,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 178,
+        "queuePosition": 179,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 179,
+      "queuePosition": 180,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "verify-social-proof-photos-present",
@@ -25152,14 +25282,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 179,
+        "queuePosition": 180,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 180,
+      "queuePosition": 181,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "verify-testimonials-include-headshots-with-attribution",
@@ -25282,14 +25412,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 180,
+        "queuePosition": 181,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 181,
+      "queuePosition": 182,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "verify-testimonials-with-full-attribution",
@@ -25412,14 +25542,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 181,
+        "queuePosition": 182,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 182,
+      "queuePosition": 183,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "verify-xml-sitemap-exists-and-in-robotstxt",
@@ -25542,14 +25672,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 182,
+        "queuePosition": 183,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 183,
+      "queuePosition": 184,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "how-to-convert-third-person-copy-to-first-person",
@@ -25673,14 +25803,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 183,
+        "queuePosition": 184,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "No valid canonical article URL is mapped for this task."
       }
     },
     {
-      "queuePosition": 184,
+      "queuePosition": 185,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "how-to-map-your-seo-tree-from-scratch",
@@ -25804,14 +25934,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 184,
+        "queuePosition": 185,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "No valid canonical article URL is mapped for this task."
       }
     },
     {
-      "queuePosition": 185,
+      "queuePosition": 186,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "how-to-process-videos-via-marketscale",
@@ -25935,14 +26065,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 185,
+        "queuePosition": 186,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "No valid canonical article URL is mapped for this task."
       }
     },
     {
-      "queuePosition": 186,
+      "queuePosition": 187,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "how-to-run-the-ai-business-audit",
@@ -26066,14 +26196,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 186,
+        "queuePosition": 187,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "No valid canonical article URL is mapped for this task."
       }
     },
     {
-      "queuePosition": 187,
+      "queuePosition": 188,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "set-favicon",
@@ -26197,14 +26327,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 187,
+        "queuePosition": 188,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "No valid canonical article URL is mapped for this task."
       }
     },
     {
-      "queuePosition": 188,
+      "queuePosition": 189,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "check-favicon-is-set",
@@ -26328,14 +26458,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 188,
+        "queuePosition": 189,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 189,
+      "queuePosition": 190,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "ensure-nap-consistency-across-platforms",
@@ -26459,14 +26589,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 189,
+        "queuePosition": 190,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 190,
+      "queuePosition": 191,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "add-knowledge-capture-to-existing-workflows",
@@ -26590,14 +26720,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 190,
+        "queuePosition": 191,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is gap; finish and review the guide."
       }
     },
     {
-      "queuePosition": 191,
+      "queuePosition": 192,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "add-last-audited-column-to-definitive-article-guide-status-table",
@@ -26721,14 +26851,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 191,
+        "queuePosition": 192,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is gap; finish and review the guide."
       }
     },
     {
-      "queuePosition": 192,
+      "queuePosition": 193,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "conduct-first-portability-review-of-blog-posting-guidelines",
@@ -26852,14 +26982,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 192,
+        "queuePosition": 193,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is gap; finish and review the guide."
       }
     },
     {
-      "queuePosition": 193,
+      "queuePosition": 194,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "create-knowledge-capture-note-template-and-distribute",
@@ -26983,14 +27113,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 193,
+        "queuePosition": 194,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is gap; finish and review the guide."
       }
     },
     {
-      "queuePosition": 194,
+      "queuePosition": 195,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "create-shared-location-for-sop-amendment-proposals",
@@ -27114,14 +27244,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 194,
+        "queuePosition": 195,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is gap; finish and review the guide."
       }
     },
     {
-      "queuePosition": 195,
+      "queuePosition": 196,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "provide-knowledge-capture-note-template",
@@ -27245,14 +27375,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 195,
+        "queuePosition": 196,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is gap; finish and review the guide."
       }
     },
     {
-      "queuePosition": 196,
+      "queuePosition": 197,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "schedule-and-assign-quarterly-auditors",
@@ -27376,14 +27506,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 196,
+        "queuePosition": 197,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is gap; finish and review the guide."
       }
     },
     {
-      "queuePosition": 197,
+      "queuePosition": 198,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "schedule-first-6-month-recursive-review",
@@ -27507,14 +27637,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 197,
+        "queuePosition": 198,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is gap; finish and review the guide."
       }
     },
     {
-      "queuePosition": 198,
+      "queuePosition": 199,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "schedule-first-quarterly-audit-cycle",
@@ -27638,14 +27768,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 198,
+        "queuePosition": 199,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is gap; finish and review the guide."
       }
     },
     {
-      "queuePosition": 199,
+      "queuePosition": 200,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "set-up-sop-amendment-proposal-tracking-system",
@@ -27769,14 +27899,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 199,
+        "queuePosition": 200,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is gap; finish and review the guide."
       }
     },
     {
-      "queuePosition": 200,
+      "queuePosition": 201,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "apply-portability-discipline-to-meta-articles",
@@ -27900,14 +28030,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 200,
+        "queuePosition": 201,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 201,
+      "queuePosition": 202,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "audit-this-maintenance-article-every-6-months",
@@ -28031,14 +28161,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 201,
+        "queuePosition": 202,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 202,
+      "queuePosition": 203,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "build-and-maintain-ai-knowledge-base",
@@ -28162,14 +28292,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 202,
+        "queuePosition": 203,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 203,
+      "queuePosition": 204,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "check-information-currency-with-latest-data",
@@ -28293,14 +28423,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 203,
+        "queuePosition": 204,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 204,
+      "queuePosition": 205,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "configure-and-verify-recurring-agent-job",
@@ -28424,14 +28554,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 204,
+        "queuePosition": 205,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 205,
+      "queuePosition": 206,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "coordinate-agents-with-shared-memory",
@@ -28555,14 +28685,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 205,
+        "queuePosition": 206,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 206,
+      "queuePosition": 207,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "document-a-task",
@@ -28686,14 +28816,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 206,
+        "queuePosition": 207,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 207,
+      "queuePosition": 208,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "generate-knowledge-capture-note-within-24-hours",
@@ -28817,14 +28947,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 207,
+        "queuePosition": 208,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 208,
+      "queuePosition": 209,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "install-canonical-skill-packs",
@@ -28948,14 +29078,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 208,
+        "queuePosition": 209,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 209,
+      "queuePosition": 210,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "install-local-qwen",
@@ -29079,14 +29209,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 209,
+        "queuePosition": 210,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 210,
+      "queuePosition": 211,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "onboard-agent-for-first-scoped-task",
@@ -29210,14 +29340,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 210,
+        "queuePosition": 211,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 211,
+      "queuePosition": 212,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "reply-with-task-status-in-origin-thread",
@@ -29341,14 +29471,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 211,
+        "queuePosition": 212,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 212,
+      "queuePosition": 213,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "review-existing-sops-for-portability-compliance",
@@ -29472,14 +29602,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 212,
+        "queuePosition": 213,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 213,
+      "queuePosition": 214,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "review-past-6-months-of-sop-amendment-proposals-for-patterns",
@@ -29603,14 +29733,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 213,
+        "queuePosition": 214,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 214,
+      "queuePosition": 215,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "route-notes-to-sop-update-protocol-or-directly-to-articles",
@@ -29737,14 +29867,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 214,
+        "queuePosition": 215,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 215,
+      "queuePosition": 216,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "senior-team-member-reviews-weekly",
@@ -29868,14 +29998,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 215,
+        "queuePosition": 216,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 216,
+      "queuePosition": 217,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "separate-methodology-layer-what-why-from-implementation-layer-how",
@@ -29999,14 +30129,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 216,
+        "queuePosition": 217,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 217,
+      "queuePosition": 218,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "set-up-business-ai-work-environment",
@@ -30130,14 +30260,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 217,
+        "queuePosition": 218,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 218,
+      "queuePosition": 219,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "set-up-special-project-workspace",
@@ -30261,14 +30391,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 218,
+        "queuePosition": 219,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 219,
+      "queuePosition": 220,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "tag-proposal-with-affected-sop-and-queue-for-review",
@@ -30392,14 +30522,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 219,
+        "queuePosition": 220,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 220,
+      "queuePosition": 221,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "update-status-table-in-definitive-article-guide",
@@ -30523,14 +30653,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 220,
+        "queuePosition": 221,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 221,
+      "queuePosition": 222,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "validate-cross-reference-integrity-across-articles",
@@ -30686,14 +30816,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 221,
+        "queuePosition": 222,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The contributor status is needs-work; finish and review the guide."
       }
     },
     {
-      "queuePosition": 222,
+      "queuePosition": 223,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "check-topic-coherence-for-each-definitive-article",
@@ -30816,14 +30946,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 222,
+        "queuePosition": 223,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 223,
+      "queuePosition": 224,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "create-sop-amendment-proposal-500-words",
@@ -30946,14 +31076,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 223,
+        "queuePosition": 224,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 224,
+      "queuePosition": 225,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "publish-skill-and-task-page",
@@ -31554,14 +31684,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 224,
+        "queuePosition": 225,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "The acceptance review instruction hash no longer matches the current task instruction."
       }
     },
     {
-      "queuePosition": 225,
+      "queuePosition": 226,
       "priority": "P1",
       "priorityReason": "Known standard gap",
       "slug": "verify-structural-completeness-against-8-step-framework",
@@ -31684,14 +31814,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 225,
+        "queuePosition": 226,
         "priority": "P1",
         "priorityReason": "Known standard gap",
         "nextAction": "At least one task mapped to this hub is not contributor-complete."
       }
     },
     {
-      "queuePosition": 226,
+      "queuePosition": 227,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "slug": "run-content-factory-on-any-engine",
@@ -31824,14 +31954,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 226,
+        "queuePosition": 227,
         "priority": "P2",
         "priorityReason": "Importance 5; missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 227,
+      "queuePosition": 228,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "slug": "step-12-post-article-on-wordpress",
@@ -32037,14 +32167,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 227,
+        "queuePosition": 228,
         "priority": "P2",
         "priorityReason": "Importance 5; missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 228,
+      "queuePosition": 229,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "slug": "step-2-fix-categories-and-tags-in-wordpress",
@@ -32293,14 +32423,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 228,
+        "queuePosition": 229,
         "priority": "P2",
         "priorityReason": "Importance 5; missing proof remains",
         "nextAction": "The article revision observation is outside the 24-hour freshness window."
       }
     },
     {
-      "queuePosition": 229,
+      "queuePosition": 230,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "slug": "place-content-on-seo-tree-with-proper-links",
@@ -32790,14 +32920,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 229,
+        "queuePosition": 230,
         "priority": "P2",
         "priorityReason": "Importance 5; missing proof remains",
         "nextAction": "The article revision observation is outside the 24-hour freshness window."
       }
     },
     {
-      "queuePosition": 230,
+      "queuePosition": 231,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "slug": "step-5-write-article-from-transcript",
@@ -32919,14 +33049,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 230,
+        "queuePosition": 231,
         "priority": "P2",
         "priorityReason": "Importance 5; missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 231,
+      "queuePosition": 232,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "slug": "step-1-upload-video-to-google-drive-and-descript",
@@ -33048,14 +33178,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 231,
+        "queuePosition": 232,
         "priority": "P2",
         "priorityReason": "Importance 5; missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 232,
+      "queuePosition": 233,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "slug": "step-2-transcribe-video-using-descript",
@@ -33177,14 +33307,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 232,
+        "queuePosition": 233,
         "priority": "P2",
         "priorityReason": "Importance 5; missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 233,
+      "queuePosition": 234,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "slug": "map-out-one-minute-video-topics-using-topic-wheel",
@@ -33306,14 +33436,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 233,
+        "queuePosition": 234,
         "priority": "P2",
         "priorityReason": "Importance 5; missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 234,
+      "queuePosition": 235,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "slug": "record-one-minute-videos",
@@ -33437,14 +33567,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 234,
+        "queuePosition": 235,
         "priority": "P2",
         "priorityReason": "Importance 5; missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 235,
+      "queuePosition": 236,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "slug": "step-11-proofread-with-grammarly-or-chatgpt",
@@ -33566,14 +33696,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 235,
+        "queuePosition": 236,
         "priority": "P2",
         "priorityReason": "Importance 5; missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 236,
+      "queuePosition": 237,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "slug": "use-descript-underlord-to-remove-filler-words",
@@ -33695,14 +33825,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 236,
+        "queuePosition": 237,
         "priority": "P2",
         "priorityReason": "Importance 5; missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 237,
+      "queuePosition": 238,
       "priority": "P2",
       "priorityReason": "Importance 5; missing proof remains",
       "slug": "write-meta-article-documenting-agent-work",
@@ -34022,14 +34152,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 237,
+        "queuePosition": 238,
         "priority": "P2",
         "priorityReason": "Importance 5; missing proof remains",
         "nextAction": "The article revision observation is outside the 24-hour freshness window."
       }
     },
     {
-      "queuePosition": 238,
+      "queuePosition": 239,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "slug": "email-and-dm-client-about-published-article",
@@ -34151,14 +34281,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 238,
+        "queuePosition": 239,
         "priority": "P3",
         "priorityReason": "Missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 239,
+      "queuePosition": 240,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "slug": "how-to-inventory-a-podcast-on-youtube",
@@ -34282,14 +34412,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 239,
+        "queuePosition": 240,
         "priority": "P3",
         "priorityReason": "Missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 240,
+      "queuePosition": 241,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "slug": "share-in-44k-facebook-group",
@@ -34411,14 +34541,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 240,
+        "queuePosition": 241,
         "priority": "P3",
         "priorityReason": "Missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 241,
+      "queuePosition": 242,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "slug": "step-13-categorize-post-and-add-tags",
@@ -34540,14 +34670,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 241,
+        "queuePosition": 242,
         "priority": "P3",
         "priorityReason": "Missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 242,
+      "queuePosition": 243,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "slug": "step-14a-configure-rankmath-seo-plugin",
@@ -34669,14 +34799,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 242,
+        "queuePosition": 243,
         "priority": "P3",
         "priorityReason": "Missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 243,
+      "queuePosition": 244,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "slug": "step-14b-run-linkwhisper-for-internal-links",
@@ -34798,14 +34928,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 243,
+        "queuePosition": 244,
         "priority": "P3",
         "priorityReason": "Missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 244,
+      "queuePosition": 245,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "slug": "step-17-final-formatting-and-qa-checks",
@@ -34927,14 +35057,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 244,
+        "queuePosition": 245,
         "priority": "P3",
         "priorityReason": "Missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 245,
+      "queuePosition": 246,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "slug": "step-6-measure-and-iterate-with-maa",
@@ -35183,14 +35313,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 245,
+        "queuePosition": 246,
         "priority": "P3",
         "priorityReason": "Missing proof remains",
         "nextAction": "The article revision observation is outside the 24-hour freshness window."
       }
     },
     {
-      "queuePosition": 246,
+      "queuePosition": 247,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "slug": "verify-all-items-on-blog-posting-checklist",
@@ -35312,14 +35442,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 246,
+        "queuePosition": 247,
         "priority": "P3",
         "priorityReason": "Missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 247,
+      "queuePosition": 248,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "slug": "how-to-inventory-every-podcast-youve-been-on-and-why-its-one-of-the-highest-roi-things-you-can-do",
@@ -35443,14 +35573,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 247,
+        "queuePosition": 248,
         "priority": "P3",
         "priorityReason": "Missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 248,
+      "queuePosition": 249,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "slug": "how-we-use-listen-notes-to-find-track-and-repurpose-every-podcast-appearance",
@@ -35574,14 +35704,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 248,
+        "queuePosition": 249,
         "priority": "P3",
         "priorityReason": "Missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 249,
+      "queuePosition": 250,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "slug": "how-we-use-podchaser-to-amplify-authority-and-repurpose-podcast-content",
@@ -35705,14 +35835,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 249,
+        "queuePosition": 250,
         "priority": "P3",
         "priorityReason": "Missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 250,
+      "queuePosition": 251,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "slug": "run-overnight-local-writer",
@@ -35836,14 +35966,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 250,
+        "queuePosition": 251,
         "priority": "P3",
         "priorityReason": "Missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 251,
+      "queuePosition": 252,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "slug": "step-10-embed-source-video",
@@ -36029,14 +36159,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 251,
+        "queuePosition": 252,
         "priority": "P3",
         "priorityReason": "Missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 252,
+      "queuePosition": 253,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "slug": "step-3-watch-video-and-identify-gct",
@@ -36158,14 +36288,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 252,
+        "queuePosition": 253,
         "priority": "P3",
         "priorityReason": "Missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 253,
+      "queuePosition": 254,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "slug": "step-4-research-edit-add-timestamps-and-outline",
@@ -36287,14 +36417,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 253,
+        "queuePosition": 254,
         "priority": "P3",
         "priorityReason": "Missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 254,
+      "queuePosition": 255,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "slug": "step-6-write-title-and-headings",
@@ -36416,14 +36546,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 254,
+        "queuePosition": 255,
         "priority": "P3",
         "priorityReason": "Missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 255,
+      "queuePosition": 256,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "slug": "step-7-write-hook-and-establish-context",
@@ -36577,14 +36707,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 255,
+        "queuePosition": 256,
         "priority": "P3",
         "priorityReason": "Missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 256,
+      "queuePosition": 257,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "slug": "step-8-add-photos-and-featured-image",
@@ -36706,14 +36836,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 256,
+        "queuePosition": 257,
         "priority": "P3",
         "priorityReason": "Missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 257,
+      "queuePosition": 258,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "slug": "step-9-add-internal-links-with-proper-anchor-text",
@@ -36835,14 +36965,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 257,
+        "queuePosition": 258,
         "priority": "P3",
         "priorityReason": "Missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 258,
+      "queuePosition": 259,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "slug": "deliver-personal-brand-site-from-request",
@@ -36930,7 +37060,7 @@
           }
         ]
       },
-      "nextAction": "No execution ledger record names this task. Historical run frequency is unknown.",
+      "nextAction": "The article revision observation is outside the 24-hour freshness window.",
       "standardVerification": {
         "instructionSourceSha256": "66415ee2457f5f27eca9ce7e1520d4256b5036d5f94e7bae249078d6c423dd08",
         "articleKey": "blitzmetrics.com/from-one-email-to-a-live-personal-brand-site",
@@ -37006,8 +37136,8 @@
           "articleSemanticCertification": {
             "id": "articleSemanticCertification",
             "label": "Article semantic certification",
-            "state": "pass",
-            "reason": "All ten semantic criteria pass for the separately observed current article revision.",
+            "state": "unknown",
+            "reason": "The article revision observation is outside the 24-hour freshness window.",
             "semanticReview": {
               "version": 1,
               "taskSlug": "deliver-personal-brand-site-from-request",
@@ -37161,19 +37291,20 @@
         "unmetStandardGates": [],
         "heldStandardGates": [],
         "unknownStandardGates": [
+          "articleSemanticCertification",
           "recordedExecution",
           "acceptedExecution",
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 258,
+        "queuePosition": 259,
         "priority": "P3",
         "priorityReason": "Missing proof remains",
-        "nextAction": "No execution ledger record names this task. Historical run frequency is unknown."
+        "nextAction": "The article revision observation is outside the 24-hour freshness window."
       }
     },
     {
-      "queuePosition": 259,
+      "queuePosition": 260,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "slug": "enhance-existing-articles-before-creating-new-ones",
@@ -37380,14 +37511,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 259,
+        "queuePosition": 260,
         "priority": "P3",
         "priorityReason": "Missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 260,
+      "queuePosition": 261,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "slug": "fit-every-new-piece-into-the-tree-structure",
@@ -37509,14 +37640,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 260,
+        "queuePosition": 261,
         "priority": "P3",
         "priorityReason": "Missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 261,
+      "queuePosition": 262,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "slug": "identify-and-eliminate-orphan-standalone-articles",
@@ -37670,14 +37801,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 261,
+        "queuePosition": 262,
         "priority": "P3",
         "priorityReason": "Missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 262,
+      "queuePosition": 263,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "slug": "keep-speaker-bureau-profile-bookable",
@@ -37801,14 +37932,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 262,
+        "queuePosition": 263,
         "priority": "P3",
         "priorityReason": "Missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 263,
+      "queuePosition": 264,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "slug": "link-leaves-to-branches-branches-to-trunk",
@@ -37930,14 +38061,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 263,
+        "queuePosition": 264,
         "priority": "P3",
         "priorityReason": "Missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 264,
+      "queuePosition": 265,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "slug": "map-content-hierarchically-root-trunk-branches-leaves",
@@ -38059,14 +38190,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 264,
+        "queuePosition": 265,
         "priority": "P3",
         "priorityReason": "Missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 265,
+      "queuePosition": 266,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "slug": "map-how-ring-methods",
@@ -38188,14 +38319,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 265,
+        "queuePosition": 266,
         "priority": "P3",
         "priorityReason": "Missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 266,
+      "queuePosition": 267,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "slug": "map-what-ring-specific-content",
@@ -38317,14 +38448,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 266,
+        "queuePosition": 267,
         "priority": "P3",
         "priorityReason": "Missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 267,
+      "queuePosition": 268,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "slug": "map-why-ring-core-purpose",
@@ -38446,14 +38577,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 267,
+        "queuePosition": 268,
         "priority": "P3",
         "priorityReason": "Missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 268,
+      "queuePosition": 269,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "slug": "positive-mentions-harvester",
@@ -38580,14 +38711,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 268,
+        "queuePosition": 269,
         "priority": "P3",
         "priorityReason": "Missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 269,
+      "queuePosition": 270,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "slug": "remove-duplicate-thin-pages",
@@ -38741,14 +38872,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 269,
+        "queuePosition": 270,
         "priority": "P3",
         "priorityReason": "Missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 270,
+      "queuePosition": 271,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "slug": "replace-ai-looking-content-with-real-eeat",
@@ -38902,14 +39033,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 270,
+        "queuePosition": 271,
         "priority": "P3",
         "priorityReason": "Missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 271,
+      "queuePosition": 272,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "slug": "step-1-inventory-content-and-establish-gct-per-page",
@@ -39158,14 +39289,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 271,
+        "queuePosition": 272,
         "priority": "P3",
         "priorityReason": "Missing proof remains",
         "nextAction": "The article revision observation is outside the 24-hour freshness window."
       }
     },
     {
-      "queuePosition": 272,
+      "queuePosition": 273,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "slug": "step-3-identify-money-pages-and-orphan-pages",
@@ -39414,14 +39545,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 272,
+        "queuePosition": 273,
         "priority": "P3",
         "priorityReason": "Missing proof remains",
         "nextAction": "The article revision observation is outside the 24-hour freshness window."
       }
     },
     {
-      "queuePosition": 273,
+      "queuePosition": 274,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "slug": "step-4-create-links-with-proper-anchor-text-and-placement",
@@ -39680,14 +39811,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 273,
+        "queuePosition": 274,
         "priority": "P3",
         "priorityReason": "Missing proof remains",
         "nextAction": "The article revision observation is outside the 24-hour freshness window."
       }
     },
     {
-      "queuePosition": 274,
+      "queuePosition": 275,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "slug": "step-5-qa-links-against-google-guidelines",
@@ -39946,14 +40077,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 274,
+        "queuePosition": 275,
         "priority": "P3",
         "priorityReason": "Missing proof remains",
         "nextAction": "The article revision observation is outside the 24-hour freshness window."
       }
     },
     {
-      "queuePosition": 275,
+      "queuePosition": 276,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "slug": "use-for-content-planning-and-video-topics",
@@ -40075,14 +40206,14 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 275,
+        "queuePosition": 276,
         "priority": "P3",
         "priorityReason": "Missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."
       }
     },
     {
-      "queuePosition": 276,
+      "queuePosition": 277,
       "priority": "P3",
       "priorityReason": "Missing proof remains",
       "slug": "use-proper-anchor-text-3-6-words-descriptive",
@@ -40204,7 +40335,7 @@
           "setupSuccess"
         ],
         "fullyVerified": false,
-        "queuePosition": 276,
+        "queuePosition": 277,
         "priority": "P3",
         "priorityReason": "Missing proof remains",
         "nextAction": "No exact-revision positive semantic review is recorded for this article."

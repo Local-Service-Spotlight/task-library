@@ -445,9 +445,14 @@ class BuiltArticleInventory(unittest.TestCase):
 
     def test_registered_recipes_keep_wip_and_ledger_backed_history(self):
         by_slug = {t['slug']: t for t in self.tasks}
-        self.assertEqual(self.data['stats']['total'], 276)
+        self.assertEqual(self.data['stats']['total'], 277)
         self.assertEqual(self.data['stats']['complete'], 132)
         self.assertEqual(self.data['stats']['gaps'], 23)
+        network = by_slug['run-network-wikidata-kp-audit']
+        self.assertEqual(network['status'], 'needs-work')
+        self.assertEqual(network['article'], 'https://blitzmetrics.com/knowledge-panel')
+        self.assertEqual(network['articleState'], 'wip')
+        self.assertEqual(network['articleKind'], 'topic-hub')
         for slug in ('create-or-update-a-definitive-article', 'document-a-task', 'install-local-qwen',
                      'submit-weekly-maa-report-every-friday'):
             self.assertEqual(by_slug[slug]['status'], 'needs-work')

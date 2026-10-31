@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-10-23T05:58:21+00:00",
+ "generatedAt": "2026-10-31T07:28:17+00:00",
  "countDefinition": "Verified meta-article sources explicitly classified by the recorded evidence method and linked to the normalized canonical hub. Unknown is never coerced to zero.",
  "strengthBands": [
   {
@@ -1053,17 +1053,18 @@
    "url": "https://blitzmetrics.com/knowledge-panel",
    "state": "wip",
    "articleKind": "topic-hub",
-   "taskCount": 6,
+   "taskCount": 7,
    "completeTaskCount": 0,
    "importance": 3,
-   "importanceTotal": 18,
+   "importanceTotal": 21,
    "taskSlugs": [
     "build-third-party-validation",
     "claim-and-verify-knowledge-panel-when-it-appears",
     "classify-and-offer-knowledge-panel",
     "establish-entity-identity",
     "implement-technical-schema-markup",
-    "measure-search-impressions-traffic-inbound-opportunities"
+    "measure-search-impressions-traffic-inbound-opportunities",
+    "run-network-wikidata-kp-audit"
    ],
    "metaArticleCount": null,
    "metaCountStatus": "unknown",
