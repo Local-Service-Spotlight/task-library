@@ -568,6 +568,10 @@
   $('next-slide').addEventListener('click', () => moveSlide(1));
   $('presentation').addEventListener('keydown', event => {
     if (event.altKey || event.ctrlKey || event.metaKey || ['INPUT', 'TEXTAREA', 'SELECT'].includes(event.target.tagName)) return;
+    if (event.target === $('slide-content') && (event.key === 'Home' || event.key === 'End')) {
+      event.preventDefault();
+      $('slide-content').scrollTo({top: event.key === 'Home' ? 0 : $('slide-content').scrollHeight, behavior: 'instant'});
+    }
     if (event.key === 'ArrowRight' || event.key === 'ArrowLeft') { event.preventDefault(); moveSlide(event.key === 'ArrowRight' ? 1 : -1); }
   });
   window.addEventListener('popstate', () => { if (state.data) choosePath(routeId(), false); });

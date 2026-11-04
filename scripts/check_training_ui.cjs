@@ -347,6 +347,22 @@ async function main() {
       await page.screenshot({path:path.join(qa,'practice-desktop-1280x900.png')});results.screenshots.push('practice-desktop-1280x900.png');
       pass('Connected practice steps and record fields fit 390px without horizontal overflow');
     }
+    for (const width of [1280,390]) {
+      await page.setViewportSize({width,height:900});
+      await page.goto(preview+'?path=operations',{waitUntil:'networkidle'});
+      await page.locator('#present-session').click();
+      while (await page.locator('#next-slide').isEnabled()) await page.locator('#next-slide').click();
+      await page.locator('#slide-content').focus();
+      for (let repeat=0;repeat<3;repeat++) {
+        await page.keyboard.press('End');
+        await page.waitForFunction(()=>{const e=document.querySelector('#slide-content');return e.scrollTop+e.clientHeight>=e.scrollHeight-2;});
+        await page.keyboard.press('Home');
+        await page.waitForFunction(()=>document.querySelector('#slide-content').scrollTop===0);
+        assert.equal(await page.evaluate(()=>document.activeElement.id),'slide-content');
+      }
+      await page.keyboard.press('Escape');
+    }
+    pass('Operations final exercise: three immediate End/Home round trips preserve text focus at desktop and mobile widths');
     assert.equal(results.outboundRequests.length,0);assert.equal(results.errors.length,0);
     pass('No external requests and no browser page errors');
     await context.close();
