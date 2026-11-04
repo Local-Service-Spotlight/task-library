@@ -18,6 +18,17 @@
       return ['http:', 'https:'].includes(url.protocol) ? url.href : null;
     } catch (_) { return null; }
   }
+  function safeExampleLink(value) {
+    const href = safeLink(value);
+    if (!href) return null;
+    try {
+      const url = new URL(href);
+      return url.origin === 'https://local-service-spotlight.github.io' &&
+        !url.username && !url.password && !url.port &&
+        /^\/task-library\/maintenance\/[a-z0-9-]+\.html$/.test(url.pathname) &&
+        !url.search && !url.hash ? href : null;
+    } catch (_) { return null; }
+  }
   function taskLink(task) {
     return safeLink(task.taskLibraryUrl) || new URL('./?task=' + encodeURIComponent(task.slug), window.location.href).href;
   }
@@ -283,6 +294,9 @@
       const meta = node('div', 'lesson-meta');
       appendLink(meta, 'Open task guide ↗', taskLink(task));
       appendLink(meta, 'Read article ↗', safeLink(task.article));
+      for (const example of strings(task.supplementalExampleUrls)) {
+        appendLink(meta, 'Historical case (not current-recipe or learner proof) ↗', safeExampleLink(example));
+      }
       meta.append(node('span', 'source-status', 'Source status: ' + sourceStatus(task)));
       copy.append(meta);
       top.append(label, copy);
@@ -442,6 +456,9 @@
       const links = node('div', 'slide-links');
       appendLink(links, 'Open task guide ↗', taskLink(task));
       appendLink(links, 'Read article ↗', safeLink(task.article));
+      for (const example of strings(task.supplementalExampleUrls)) {
+        appendLink(links, 'Historical case (not current-recipe or learner proof) ↗', safeExampleLink(example));
+      }
       children.push(node('p', 'eyebrow', 'Read the source · try the task · show the result'), title, node('p', '', text(task.description)), node('span', 'source-status', 'Source status: ' + sourceStatus(task) + ' · not learner acceptance or training certification'), links, node('p', 'boundary', 'Follow the maintained guide at its source. This slide is a lesson reference, not a substitute for its steps.'));
     } else {
       title.textContent = 'Practice, then check';

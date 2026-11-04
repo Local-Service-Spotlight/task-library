@@ -55,7 +55,7 @@
       ]
     }
   },
-  "libraryUpdated": "October 23, 2026",
+  "libraryUpdated": "November 4, 2026",
   "paths": [
     {
       "id": "implement-agents",
@@ -159,16 +159,19 @@
         "management-communicate-iterate-delegate",
         "document-a-task",
         "reply-with-task-status-in-origin-thread",
-        "maa-cycle-metrics-analysis-action"
+        "maa-cycle-metrics-analysis-action",
+        "deliver-personal-brand-site-from-request"
       ],
       "exercise": {
-        "prompt": "Write an assignment with inputs, allowed actions, output, early review and pass checks. Ask a partner to find one ambiguity. Revise it, then draft a truthful status update.",
-        "deliverable": "A revised assignment, review note and unsent status draft.",
+        "prompt": "Optional case-reading preface (not required for the exercise): Read the linked historical handoff case as source context only; do not treat it as current-recipe or learner proof, and do not reuse its named facts. Then complete the exercise: Write an assignment with inputs, allowed actions, output, early review and pass checks. Ask a partner to find one ambiguity. Revise it, then draft a truthful status update.",
+        "deliverable": "A revised assignment, review note and unsent status draft. An optional brief historical case note may be added.",
         "checks": [
           "A fresh reader can identify the starting input and useful output.",
           "The check judges the result, not just whether steps were attempted.",
           "The status distinguishes drafted, delivered and accepted.",
-          "The next owner is explicit; acknowledgment is not assumed."
+          "The next owner is explicit; acknowledgment is not assumed.",
+          "If the optional case note is used, keep it source-bounded: the original recipe, full design acceptance and novice setup/use remain unknown.",
+          "Use fictional or permitted fresh inputs only. Do not take site, DNS, account-access or publishing actions as part of this exercise."
         ]
       },
       "sessionMinutes": 30
@@ -1066,7 +1069,10 @@
       "article": "https://blitzmetrics.com/from-one-email-to-a-live-personal-brand-site/",
       "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=deliver-personal-brand-site-from-request#task-deliver-personal-brand-site-from-request",
       "status": "complete",
-      "contentSha256": "38fde957fe19c892fc6f9b336f59253764511a297db8bc056271374980715dd0"
+      "contentSha256": "38fde957fe19c892fc6f9b336f59253764511a297db8bc056271374980715dd0",
+      "supplementalExampleUrls": [
+        "https://local-service-spotlight.github.io/task-library/maintenance/historical-site-handoff-2026-10-19.html"
+      ]
     },
     {
       "slug": "document-a-task",
@@ -1318,7 +1324,7 @@
       "article": null,
       "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=google-ads-analyzer#task-google-ads-analyzer",
       "status": "complete",
-      "contentSha256": "2c45234a980f2da0b6d881d6c1b3723fab0a2fc871b3ccd5d4811e697354634b"
+      "contentSha256": "6f78bc3ec59c825b10212bbfd4db763cfe9471789e7db0c33fa3ba66f70c2d31"
     },
     {
       "slug": "grade-article-using-jennifer",
@@ -1714,7 +1720,10 @@
       "article": "https://blitzmetrics.com/seo-tree",
       "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=place-content-on-seo-tree-with-proper-links#task-place-content-on-seo-tree-with-proper-links",
       "status": "complete",
-      "contentSha256": "33e42014e277fdf01a0b255dfad44a822a14bb306abacd7026b786184ac6c9e1"
+      "contentSha256": "33e42014e277fdf01a0b255dfad44a822a14bb306abacd7026b786184ac6c9e1",
+      "supplementalExampleUrls": [
+        "https://local-service-spotlight.github.io/task-library/maintenance/site-guide-seo-placement-2026-10-15.html"
+      ]
     },
     {
       "slug": "positive-mentions-harvester",

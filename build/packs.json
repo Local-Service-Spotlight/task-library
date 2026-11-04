@@ -393,16 +393,19 @@
         "management-communicate-iterate-delegate",
         "document-a-task",
         "reply-with-task-status-in-origin-thread",
-        "maa-cycle-metrics-analysis-action"
+        "maa-cycle-metrics-analysis-action",
+        "deliver-personal-brand-site-from-request"
       ],
       "exercise": {
-        "prompt": "Write an assignment with inputs, allowed actions, output, early review and pass checks. Ask a partner to find one ambiguity. Revise it, then draft a truthful status update.",
-        "deliverable": "A revised assignment, review note and unsent status draft.",
+        "prompt": "Optional case-reading preface (not required for the exercise): Read the linked historical handoff case as source context only; do not treat it as current-recipe or learner proof, and do not reuse its named facts. Then complete the exercise: Write an assignment with inputs, allowed actions, output, early review and pass checks. Ask a partner to find one ambiguity. Revise it, then draft a truthful status update.",
+        "deliverable": "A revised assignment, review note and unsent status draft. An optional brief historical case note may be added.",
         "checks": [
           "A fresh reader can identify the starting input and useful output.",
           "The check judges the result, not just whether steps were attempted.",
           "The status distinguishes drafted, delivered and accepted.",
-          "The next owner is explicit; acknowledgment is not assumed."
+          "The next owner is explicit; acknowledgment is not assumed.",
+          "If the optional case note is used, keep it source-bounded: the original recipe, full design acceptance and novice setup/use remain unknown.",
+          "Use fictional or permitted fresh inputs only. Do not take site, DNS, account-access or publishing actions as part of this exercise."
         ]
       },
       "sessionMinutes": 30
