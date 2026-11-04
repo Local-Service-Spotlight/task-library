@@ -568,9 +568,13 @@
   $('next-slide').addEventListener('click', () => moveSlide(1));
   $('presentation').addEventListener('keydown', event => {
     if (event.altKey || event.ctrlKey || event.metaKey || ['INPUT', 'TEXTAREA', 'SELECT'].includes(event.target.tagName)) return;
-    if (event.target === $('slide-content') && (event.key === 'Home' || event.key === 'End')) {
+    if (event.target === $('slide-content') && ['Home', 'End', 'PageUp', 'PageDown'].includes(event.key)) {
       event.preventDefault();
-      $('slide-content').scrollTo({top: event.key === 'Home' ? 0 : $('slide-content').scrollHeight, behavior: 'instant'});
+      const content = $('slide-content');
+      const last = Math.max(0, content.scrollHeight - content.clientHeight);
+      const top = event.key === 'Home' ? 0 : event.key === 'End' ? last
+        : content.scrollTop + content.clientHeight * (event.key === 'PageDown' ? 0.9 : -0.9);
+      content.scrollTo({top: Math.min(last, Math.max(0, top)), behavior: 'instant'});
     }
     if (event.key === 'ArrowRight' || event.key === 'ArrowLeft') { event.preventDefault(); moveSlide(event.key === 'ArrowRight' ? 1 : -1); }
   });
