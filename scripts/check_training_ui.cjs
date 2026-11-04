@@ -265,6 +265,8 @@ async function main() {
         const filename=`practice-last-slide-${viewport.width}x${viewport.height}.png`;
         await page.screenshot({path:path.join(qa,filename),fullPage:false});results.screenshots.push(filename);
         await page.keyboard.press('Home');await page.waitForFunction(()=>document.querySelector('#slide-content').scrollTop===0);
+        await page.waitForTimeout(350);
+        assert(await page.locator('#slide-content').evaluate(e=>{const box=e.getBoundingClientRect(),title=document.querySelector('#slide-title').getBoundingClientRect();return e.scrollTop===0&&title.top>=box.top&&title.bottom<=box.bottom;}),'Practice Home position must stay at the visible title');
         const topFilename=`practice-last-slide-top-${viewport.width}x${viewport.height}.png`;
         await page.screenshot({path:path.join(qa,topFilename),fullPage:false});results.screenshots.push(topFilename);
         await page.keyboard.press('Escape');
@@ -354,15 +356,23 @@ async function main() {
       while (await page.locator('#next-slide').isEnabled()) await page.locator('#next-slide').click();
       await page.locator('#slide-content').focus();
       for (let repeat=0;repeat<3;repeat++) {
+        await page.keyboard.press('PageDown');
+        const down=await page.locator('#slide-content').evaluate(e=>e.scrollTop);
+        assert(down>0,'PageDown must move the long exercise');
+        await page.keyboard.press('PageUp');
+        assert((await page.locator('#slide-content').evaluate(e=>e.scrollTop))<down,'PageUp must move back');
+        await page.keyboard.press('PageDown');
         await page.keyboard.press('End');
         await page.waitForFunction(()=>{const e=document.querySelector('#slide-content');return e.scrollTop+e.clientHeight>=e.scrollHeight-2;});
         await page.keyboard.press('Home');
         await page.waitForFunction(()=>document.querySelector('#slide-content').scrollTop===0);
+        await page.waitForTimeout(350);
+        assert(await page.locator('#slide-content').evaluate(e=>{const box=e.getBoundingClientRect(),title=document.querySelector('#slide-title').getBoundingClientRect();return e.scrollTop===0&&title.top>=box.top&&title.bottom<=box.bottom;}),'Operations Home position must stay at the visible title');
         assert.equal(await page.evaluate(()=>document.activeElement.id),'slide-content');
       }
       await page.keyboard.press('Escape');
     }
-    pass('Operations final exercise: three immediate End/Home round trips preserve text focus at desktop and mobile widths');
+    pass('Operations final exercise: PageDown/PageUp move; three PageDown/End/Home cycles settle at visible title with text focus at desktop and mobile widths');
     assert.equal(results.outboundRequests.length,0);assert.equal(results.errors.length,0);
     pass('No external requests and no browser page errors');
     await context.close();
