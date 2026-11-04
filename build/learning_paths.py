@@ -33,6 +33,36 @@ FRAMEWORK = {
 PATH_FIELDS = {"id", "title", "audience", "goal", "governingTriangle",
                "prerequisites", "boundary", "lessonSlugs", "exercise", "sessionMinutes"}
 SLUG = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
+TASK_LIBRARY_ORIGIN = "https://local-service-spotlight.github.io"
+TASK_LIBRARY_PATH = "/task-library/"
+
+
+def audited_example_urls(task):
+    """Allow only task-attributed, audited examples under the Task Library maintenance path."""
+    verification = task.get("standardVerification")
+    gates = verification.get("gates") if isinstance(verification, dict) else None
+    evidence = gates.get("taskExampleEvidence") if isinstance(gates, dict) else None
+    if not isinstance(evidence, dict) or evidence.get("state") != "pass":
+        return []
+    candidates = evidence.get("exampleUrls")
+    if not isinstance(candidates, list):
+        return []
+    allowed = []
+    for candidate in candidates:
+        if not isinstance(candidate, str):
+            continue
+        try:
+            parsed = urlsplit(candidate)
+            valid = (parsed.scheme == "https" and parsed.netloc == "local-service-spotlight.github.io"
+                     and parsed.username is None and parsed.password is None
+                     and parsed.port is None and parsed.path.startswith(TASK_LIBRARY_PATH + "maintenance/")
+                     and re.fullmatch(r"/task-library/maintenance/[a-z0-9-]+\.html", parsed.path)
+                     and not parsed.query and not parsed.fragment)
+        except ValueError:
+            valid = False
+        if valid:
+            allowed.append(candidate)
+    return list(dict.fromkeys(allowed))
 
 
 def text(value, label):
@@ -70,7 +100,7 @@ def compose(data, source):
                 raise ValueError(f"invalid or duplicate task slug: {slug}")
             # Do not copy task internals, source credentials, reviews or arbitrary
             # newly added fields into this public projection.
-            tasks[slug] = {
+            projection = {
                 "slug": slug,
                 "title": text(task["title"], "title"),
                 "description": text(task["desc"], "description"),
@@ -81,6 +111,10 @@ def compose(data, source):
                 "status": task["status"],
                 "contentSha256": hashlib.sha256(task["content"].encode()).hexdigest(),
             }
+            examples = audited_example_urls(task)
+            if examples:
+                projection["supplementalExampleUrls"] = examples
+            tasks[slug] = projection
     result, ids = [], set()
     for item in paths:
         if set(item) != PATH_FIELDS:

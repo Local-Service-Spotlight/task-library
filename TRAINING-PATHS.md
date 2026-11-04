@@ -43,6 +43,15 @@ or a claim that every guide is complete.
    the method; Do needs checked work; Teach needs another learner's checked result.
    Proposed improvements return to the owning recipe once, through review.
 
+The operations path includes `deliver-personal-brand-site-from-request` with an
+optional, source-linked historical case note alongside its existing assignment,
+partner review and status-draft exercise. The case link is a historical source,
+not current-recipe or learner proof; its original recipe, full design acceptance
+and novice setup/use remain unknown. Keep the original four exercise checks and
+use only fictional or otherwise permitted fresh inputs. Do not perform site,
+DNS, account-access or publishing actions. The existing 30-minute label remains
+a planning estimate, not a site-build completion time.
+
 ## Nine Triangles application
 
 The exact labels use accepted operational version **2026-08-06**, as documented
