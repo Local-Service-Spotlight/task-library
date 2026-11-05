@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>Personal brand poster kit | Local Service Spotlight</title>
+<meta name="description" content="Make an 18 x 24 inch poster of someone's real story, where every fact can be checked and every photo has an owner who said yes.">
+<meta name="theme-color" content="#17181c">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#17181c;--paper:#ffffff;--tile:#f4f1ea;--line:#ddd6c9;--accent:#e2b43b;--muted:#4f4b44;--go:#0f6b3e;--focus:#1d4ed8}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 18px/1.5 "Barlow",system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:var(--ink)}
+.wrap{max-width:600px;margin:0 auto;padding:0 16px}
+h1,h2,h3{font-family:"Barlow Condensed","Arial Narrow",sans-serif;font-weight:700;line-height:1.05;margin:0}
+h1{font-size:44px}
+h2{font-size:30px;margin-bottom:8px}
+h3{font-size:22px}
+p{margin:0 0 12px}
+.hero{padding:18px 0 6px}
+.tape{background:var(--accent);transform:rotate(-1.2deg);margin:20px -6px 16px;padding:10px 16px;font:700 25px/1.1 "Barlow Condensed",sans-serif}
+.lead{font-size:20px}
+.note{color:var(--muted);font-size:15px}
+section{border-top:2px solid var(--ink);padding:22px 0 8px}
+.files{list-style:none;padding:0;margin:8px 0 0}
+.files li{border-bottom:1px solid var(--line);padding:12px 0}
+.files a{font-weight:700;font-size:19px}
+.files span{display:block;color:var(--muted);font-size:15px}
+.btn{display:flex;align-items:center;justify-content:center;width:100%;min-height:58px;margin:10px 0;padding:12px 18px;border-radius:12px;border:2px solid var(--ink);background:var(--ink);color:#fff;font:700 19px/1.2 "Barlow",sans-serif;text-decoration:none;cursor:pointer}
+.btn.alt{background:#fff;color:var(--ink)}
+.btn:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid var(--focus);outline-offset:3px}
+details{margin:8px 0}
+summary{cursor:pointer;color:var(--muted);font-size:15px;padding:6px 0}
+pre{white-space:pre-wrap;background:var(--tile);border:1px solid var(--line);border-radius:10px;padding:12px;font:400 15px/1.45 "Barlow",sans-serif}
+ol.flow{list-style:none;padding:0;margin:8px 0 0;counter-reset:s}
+ol.flow li{position:relative;padding:0 0 16px 56px;counter-increment:s}
+ol.flow li::before{content:counter(s);position:absolute;left:0;top:0;width:40px;height:40px;border-radius:50%;background:var(--accent);display:flex;align-items:center;justify-content:center;font:700 23px/1 "Barlow Condensed",sans-serif}
+ol.flow h3{margin:6px 0 2px}
+.rules{background:var(--tile);border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin:10px 0}
+.rules ul{padding-left:20px;margin:6px 0 0}
+.rules li{margin:0 0 6px}
+.more a{display:block;padding:14px 0;border-bottom:1px solid var(--line);text-decoration:none}
+.more a b{display:block;font-size:19px}
+.more a span{color:var(--muted);font-size:15px}
+.toast{position:fixed;left:50%;bottom:20px;transform:translateX(-50%) translateY(140%);background:var(--go);color:#fff;padding:14px 18px;border-radius:12px;font-weight:700;max-width:92vw;text-align:center;transition:transform .25s ease;z-index:9;visibility:hidden}
+.toast.show{transform:translateX(-50%) translateY(0);visibility:visible}
+footer{border-top:2px solid var(--ink);margin-top:24px;padding:18px 0 40px;font-size:15px;color:var(--muted)}
+@media (prefers-reduced-motion:reduce){.toast{transition:none}.tape{transform:none}}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <header class="hero">
+    <h1>Make an 18 x 24 poster of someone's real story.</h1>
+    <div class="tape" aria-hidden="true">Every fact checkable. Every photo owned.</div>
+    <p class="lead">This kit turns a person's public record into a poster they can frame: their story, their stages, the people they work with and what clients said. The script refuses to print a fact without a source or a photo without an owner who said yes.</p>
+  </header>
+
+  <section aria-labelledby="files-h">
+    <h2 id="files-h">What's in the kit</h2>
+    <ul class="files">
+      <li><a href="poster-template-18x24.html">poster-template-18x24.html</a><span>The 18 x 24 in artboard. Every empty slot shows as a pink box, so nothing unfinished can ship.</span></li>
+      <li><a href="render_poster.py">render_poster.py</a><span>Fills the template, checks it and writes the print PDF and preview with a version number and date in the name. It never overwrites an earlier version.</span></li>
+      <li><a href="facts-template.csv">facts-template.csv</a><span>One row per printed fact, with its source, who is making the claim and the date you checked it.</span></li>
+      <li><a href="photos-template.csv">photos-template.csv</a><span>One row per photo: who owns it, where the permission is kept, the original file and its size.</span></li>
+      <li><a href="QA-CHECKLIST.md">QA-CHECKLIST.md</a><span>What to check before printing, and which checks the script runs for you.</span></li>
+      <li><a href="PROMPT.txt">PROMPT.txt</a><span>The whole recipe as instructions to paste into an AI app.</span></li>
+    </ul>
+    <p class="note">The script needs Python with Playwright and pypdf: <code>pip install playwright pypdf</code>, then <code>python3 -m playwright install chromium</code>.</p>
+  </section>
+
+  <section aria-labelledby="run-h">
+    <h2 id="run-h">Run it with an AI</h2>
+    <p>Open the recipe in your AI app, then replace the name and website in brackets before you send it.</p>
+    <a class="btn" id="go-claude" href="https://claude.ai/new">Open in Claude</a>
+    <a class="btn alt" id="go-chatgpt" href="https://chatgpt.com/">Open in ChatGPT</a>
+    <button class="btn alt" type="button" id="go-copy">Copy the full recipe</button>
+    <details><summary>Read the full recipe</summary><pre id="full">Make an 18 x 24 inch personal brand poster for [SUBJECT NAME] ([THEIR WEBSITE]). It should tell their real story, and every fact on it must be one a stranger can check.
+
+Use the free kit at https://local-service-spotlight.github.io/task-library/kits/poster/ : poster-template-18x24.html, render_poster.py, facts-template.csv, photos-template.csv and QA-CHECKLIST.md. The full recipe is the Task Library task "make-a-personal-brand-poster".
+
+Work in this order and stop to show me your work after steps 3 and 6.
+
+1. Collect the public record. Use only sources you can open: their own site and About page, their company's site and team page, their media and speaking lists, their published posts and books. Write down every URL.
+
+2. Pick a theme from their real story, not a generic one. For example, a former pilot who now coaches sales teams could get a flight log, and a chef who now owns restaurants could get a menu. If no true theme exists, use a plain one. Never invent.
+
+3. Fill facts.csv, one row per printed fact: the exact text, who is making the claim (subject, counted, reported, third-party or design), the source URL, what the source says, the date you checked, and status verified.
+   - Keep the company's published claims apart from numbers you counted yourself.
+   - Remove duplicates before counting. An episode posted as audio and as video counts once, and a short clip is not an interview.
+   - Match titles to their own About page. When sources disagree, note it.
+   - Label results that clients reported to them as their report, not audited case studies.
+   - Use the narrowest verb the source supports for each person ("Had him on [show]"). Never "friend" or "mentor" unless the source says so.
+   - Drop anything you cannot source, even if it sounds good.
+
+4. Fill photos.csv. Before a photo goes on the poster, record who owns it, where the permission is kept, the exact file and its original pixel width. A photo found on a public post is not permission. Use the client's own photos or get the owner's written OK. Never pull photos of other public figures off the web. Ask the client's team for photos they own.
+
+5. Render a proof: python3 render_poster.py --template poster-template-18x24.html --facts facts.csv --photos photos.csv --subject "[NAME]" --deliverable "[POSTER NAME]" --version 1 --date [YYYY-MM-DD] --draft
+   Fix every FAIL. Read each WARN at 100 percent zoom.
+
+6. Render the final without --draft. It must pass: exactly 18 x 24 in (1296 x 1728 pt), fonts embedded, no text under 9 pt, text at least 0.5 in from every edge, photos at 150 ppi or more counted on the original pixels, and a PDF title with the version and date. Every new version gets a new number. Never overwrite an earlier file.
+
+7. Give me the PDF, the preview PNG, the QA JSON and the fact sheet, plus a list of anything the client's team must confirm, such as name spellings and photo permissions. Do not send anything to print until the client approves the proof.
+
+8. Write a short run record: what you made, every version and what changed in it, the checks and their results, what is still open, and who acts next.</pre></details>
+    <p class="note">This page saves nothing and sends nothing. A recipe leaves your phone only when you tap a button, and only to the app you picked.</p>
+  </section>
+
+  <section aria-labelledby="how-h">
+    <h2 id="how-h">How it works</h2>
+    <ol class="flow">
+      <li><h3>Collect the record</h3><p>Their own site, company site, media and speaking lists and posts. Write down every link.</p></li>
+      <li><h3>Find the theme in their story</h3><p>A former pilot who now coaches sales teams might get a flight log; a chef who owns restaurants, a menu. If there is no true theme, keep it plain.</p></li>
+      <li><h3>Fill the fact sheet</h3><p>Their claims and your counts stay apart. Duplicates come out. Each person gets the narrowest true verb.</p></li>
+      <li><h3>Clear every photo</h3><p>Record the owner and the permission first. Use the client's own photos or the owner's written OK.</p></li>
+      <li><h3>Proof, fix, then print</h3><p>A draft first, then a final that passes size, fonts, margins and resolution, with a new version number each time.</p></li>
+    </ol>
+    <div class="rules">
+      <h3>The rules that keep it honest</h3>
+      <ul>
+        <li>A number without a source comes off the poster.</li>
+        <li>Results a client reported are labeled as their report, not an audited case study.</li>
+        <li>A photo found on a public post is not permission.</li>
+        <li>The client's team approves the proof before anything is printed.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="more" aria-labelledby="more-h">
+    <h2 id="more-h">Go further</h2>
+    <a href="https://local-service-spotlight.github.io/task-library/?task=make-a-personal-brand-poster#task-make-a-personal-brand-poster"><b>Read the full recipe in the Task Library</b><span>Steps, inputs, checks and who receives the finished poster.</span></a>
+    <a href="https://localservicespotlight.com/personal-brand-quick-audit/"><b>Get a free check of your public proof</b><span>The Local Service Spotlight Quick Audit shows what of your record is easy to find, and what is not.</span></a>
+  </section>
+
+  <footer>
+    <p>Local Service Spotlight, November 2026. The kit makes a proof you can check; a person still approves it before it is printed.</p>
+  </footer>
+</main>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script>
+(function(){
+  var $ = function(id){ return document.getElementById(id); };
+  var short = "Make an 18 x 24 inch personal brand poster for [SUBJECT NAME] ([THEIR WEBSITE]). Use the free kit at https://local-service-spotlight.github.io/task-library/kits/poster/ (template, render_poster.py, facts and photo sheets, QA checklist).\n" +
+    "1. Collect facts only from public sources you can open: their own site, company site, media and speaking lists, posts. List every URL.\n" +
+    "2. Pick a theme from their real story. Never invent one.\n" +
+    "3. Fill facts.csv: one row per printed fact with its source URL and the date checked. Keep the company's claims apart from numbers you counted. Remove duplicates. Label client-reported results as their report. Use the narrowest true verb for each person.\n" +
+    "4. Fill photos.csv: record each photo's owner and where the permission is kept. A photo found on a public post is not permission. Use the client's own photos or get the owner's written OK.\n" +
+    "5. Render a --draft, fix every FAIL, then render the final with a new version number and date. Never overwrite an earlier version.\n" +
+    "6. It must be exactly 18 x 24 in with fonts embedded, no text under 9 pt, text 0.5 in from the edges and photos at 150+ ppi.\n" +
+    "Show me the fact sheet with sources before you design anything, and do not print until the client approves the proof.";
+  var q = encodeURIComponent(short);
+  $("go-claude").href = "https://claude.ai/new?q=" + q;
+  $("go-chatgpt").href = "https://chatgpt.com/?q=" + q;
+  var toast = $("toast"), timer;
+  function say(m){ toast.textContent = m; toast.classList.add("show"); clearTimeout(timer); timer = setTimeout(function(){ toast.classList.remove("show"); }, 3200); }
+  function fallbackCopy(text){
+    var ta = document.createElement("textarea"); ta.value = text; ta.setAttribute("readonly",""); ta.style.position = "fixed"; ta.style.opacity = "0";
+    document.body.appendChild(ta); ta.select(); ta.setSelectionRange(0, text.length);
+    var ok = false; try { ok = document.execCommand("copy"); } catch(err) {}
+    document.body.removeChild(ta); return ok;
+  }
+  $("go-copy").addEventListener("click", function(){
+    var p = $("full").textContent, ok = "Copied. Paste it into Claude, ChatGPT or any AI app.";
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(p).then(function(){ say(ok); }, function(){ say(fallbackCopy(p) ? ok : "Copy didn't work. Open the recipe above and press and hold to copy."); });
+    } else { say(fallbackCopy(p) ? ok : "Copy didn't work. Open the recipe above and press and hold to copy."); }
+  });
+})();
+</script>
+</body>
+</html>

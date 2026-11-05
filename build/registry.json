@@ -863,6 +863,12 @@
    "category": "Personal Branding",
    "article_kind": "task-recipe"
   },
+  "make-a-personal-brand-poster": {
+   "source": "local",
+   "category": "Personal Branding",
+   "article_kind": "task-recipe",
+   "flag": "Definitive article written, pending publication at blitzmetrics.com/personal-brand-poster/; kit at dashboard/kits/poster/"
+  },
   "secure-guest-appearances-and-speaking-engagements": {
    "source": "local",
    "category": "Personal Branding",

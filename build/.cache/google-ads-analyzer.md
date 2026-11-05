@@ -3,7 +3,7 @@ name: google-ads-analyzer
 description: Turn a local service business's Google Ads data into a short weekly report (Metrics, Analysis, Action) that a project lead can act on, drafted under evidence rules and checked by a second agent before anyone sees it; trigger on "do the MAA for [client]", "weekly Google Ads MAA", "analyze my Google Ads", "Google Ads audit", an uploaded Google Ads export, or a scheduled weekly run.
 category: Strategy & Measurement
 stage: —
-definitive_article: https://localservicespotlight.com/google-ads-maa-agent/ (live since 2026-07-10; revision for the 1.5.0 process drafted 2026-09-15 at docs/definitive-article/google-ads-analyzer.md, awaiting publish)
+definitive_article: https://localservicespotlight.com/google-ads-maa-agent/ (published 2026-07-10; revised in place for the 1.5.0 process on 2026-09-15)
 status: needs-work
 ---
 
@@ -170,10 +170,9 @@ into dry-run scripts and writes the ledger change-log row when they run.
 ## Definitive article & links
 
 - Definitive article: https://localservicespotlight.com/google-ads-maa-agent/
-  (The Google Ads MAA Agent, published 2026-07-10, fetched and read
-  2026-09-15). It describes the pre-1.5.0 pipeline; the in-place revision for
-  the five-stage process is at `docs/definitive-article/google-ads-analyzer.md`
-  and replaces the page body on publish, same URL. Parent hub:
+  (The Google Ads MAA Agent, published 2026-07-10, revised in place for the
+  five-stage process on 2026-09-15 and read back live). The source of the
+  live body is `docs/definitive-article/google-ads-analyzer.md`. Parent hub:
   https://blitzmetrics.com/maa/ . Sibling that stubs the Google Ads row this
   task feeds: https://blitzmetrics.com/inside-the-weekly-maa-report/ .
 - In this repo: `README.md` (what the suite is), `WALKTHROUGH.md` (end-to-end
@@ -1161,11 +1160,13 @@ action item that the downstream skill can execute immediately when the user
 
 | Condition Detected | Dispatch To | Hand Off |
 |---|---|---|
-| Below Average Ad Relevance or Expected CTR on keywords with >$50/week spend | **google-ads-copy-optimizer** | Ad group name, current headlines/descriptions, top search terms for that ad group, QS component breakdown |
+| Below Average Ad Relevance or Expected CTR on keywords with >$50/week spend | **google-ads-copy-optimizer** | Ad group name, current headlines/descriptions, top search terms for that ad group, QS component breakdown. From 1.6.0 the optimizer builds its own fact sheet from the client's website and reads 90-day search terms and earlier copy tests itself; the hand-off only has to name the ad group and the trigger |
 | Waste terms identified totaling >10% of campaign spend | **google-ads-change-scripts** | List of terms to negate, match types, campaign name, estimated weekly savings |
 | Below Average Landing Page Experience on keywords with meaningful spend, OR strong CTR + zero conversions for 2+ weeks | **google-ads-lp-auditor** | Landing page URL, current ad copy (headlines + descriptions), QS component data, campaign context (business, target CPA, conversion action, audience) |
 | Ad group restructure recommended (e.g., keyword needs its own ad group) | **google-ads-change-scripts** | Keywords to move, source/destination ad group names, match types |
 | Ad rated POOR or AVERAGE strength | **google-ads-copy-optimizer** | Current headlines/descriptions, ad strength rating, ad group's top search terms |
+| A live ad claims something the client's website contradicts (a size, service, price or review figure), found by the copy optimizer's fact check or by the analyzer | **google-ads-copy-optimizer** (correction) | Ad ID, the contradicted line, the page that contradicts it. Foundation-level: exempt from gates 1 and 2 |
+| Headline or description assets rated LOW in `ad_group_ad_asset_view` on two consecutive cycles (from the watch list) | **google-ads-copy-optimizer** | Ad group, the LOW assets, top search terms, earlier copy tests from the change log |
 
 **How to write a dispatch in the Action section:**
 

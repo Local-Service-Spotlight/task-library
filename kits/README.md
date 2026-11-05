@@ -8,6 +8,7 @@ They are published from `dashboard/kits/<slug>/index.html` by the normal Build &
 |---|---|---|
 | Sam DeMaio's agents | https://local-service-spotlight.github.io/task-library/kits/sam/ | Sam DeMaio Personal Brand Audit v1.2, page 20 (QR) |
 | Run this audit on your own brand | https://local-service-spotlight.github.io/task-library/kits/audit/ | Sam DeMaio Personal Brand Audit v1.2, page 19 (QR); stage handout |
+| Personal brand poster kit | https://local-service-spotlight.github.io/task-library/kits/poster/ | Not yet printed anywhere. Unlike the phone kits, it also holds the working files: the 18 x 24 template, `render_poster.py`, the fact and photo sheets, the QA checklist and `PROMPT.txt` (task `make-a-personal-brand-poster`) |
 
 ## Rules for kit pages
 

@@ -1,0 +1,149 @@
+fact_id,zone,printed_text,claim_owner,source_url,source_says,checked_on,status,notes
+brand.line,masthead,,subject,,,,,"Company or practice name exactly as they write it, including any registered mark."
+brand.urls,masthead,,subject,,,,,Their own domains only.
+theme.title,masthead,,subject,,,,,"A title taken from their real story, such as a title they use on stage. Cite where they use it. If it is your own design line, use claim_owner design."
+subject.name,masthead,,subject,,,,,Full name as on their own site.
+subject.role,masthead,,subject,,,,,Title exactly as their About page or company team page gives it.
+subject.story,masthead,,subject,,,,,"One sentence. Every job title, employer and year must match the source. If two sources disagree, use the subject's own page and note the other."
+quote.text,masthead,,subject,,,,,"Their own words, verbatim, from a post, talk or book you can link."
+quote.source,masthead,,subject,,,,,"Where and how they said it, e.g. A RULE, AS NAME POSTED IT."
+hero.caption,masthead,,third-party,,,,,"Event, place and year as the organizer or photographer published them."
+journey.label,journey,,design,,,,,"Theme word for the timeline, e.g. THE FLIGHT PATH."
+journey.1.when,journey,,subject,,,,,"One dated step per item, each with its own source. Mark unused steps omit."
+journey.1.what,journey,,subject,,,,,"One dated step per item, each with its own source. Mark unused steps omit."
+journey.2.when,journey,,subject,,,,,"One dated step per item, each with its own source. Mark unused steps omit."
+journey.2.what,journey,,subject,,,,,"One dated step per item, each with its own source. Mark unused steps omit."
+journey.3.when,journey,,subject,,,,,"One dated step per item, each with its own source. Mark unused steps omit."
+journey.3.what,journey,,subject,,,,,"One dated step per item, each with its own source. Mark unused steps omit."
+journey.4.when,journey,,subject,,,,,"One dated step per item, each with its own source. Mark unused steps omit."
+journey.4.what,journey,,subject,,,,,"One dated step per item, each with its own source. Mark unused steps omit."
+journey.5.when,journey,,subject,,,,,"One dated step per item, each with its own source. Mark unused steps omit."
+journey.5.what,journey,,subject,,,,,"One dated step per item, each with its own source. Mark unused steps omit."
+journey.6.when,journey,,subject,,,,,"One dated step per item, each with its own source. Mark unused steps omit."
+journey.6.what,journey,,subject,,,,,"One dated step per item, each with its own source. Mark unused steps omit."
+journey.7.when,journey,,subject,,,,,"One dated step per item, each with its own source. Mark unused steps omit."
+journey.7.what,journey,,subject,,,,,"One dated step per item, each with its own source. Mark unused steps omit."
+journey.8.when,journey,,subject,,,,,"One dated step per item, each with its own source. Mark unused steps omit."
+journey.8.what,journey,,subject,,,,,"One dated step per item, each with its own source. Mark unused steps omit."
+journey.9.when,journey,,subject,,,,,"One dated step per item, each with its own source. Mark unused steps omit."
+journey.9.what,journey,,subject,,,,,"One dated step per item, each with its own source. Mark unused steps omit."
+journey.next.when,journey,,subject,,,,,"One dated step per item, each with its own source. Mark unused steps omit."
+journey.next.what,journey,,subject,,,,,"One dated step per item, each with its own source. Mark unused steps omit."
+band.published.label,proof-band,,design,,,,,"Say whose claims these are, e.g. COMPANY · AS PUBLISHED."
+band.published.1.value,proof-band,,subject,,,,,"Their own published claim, copied exactly. Do not round up or restate."
+band.published.1.what,proof-band,,subject,,,,,"Their own published claim, copied exactly. Do not round up or restate."
+band.published.2.value,proof-band,,subject,,,,,"Their own published claim, copied exactly. Do not round up or restate."
+band.published.2.what,proof-band,,subject,,,,,"Their own published claim, copied exactly. Do not round up or restate."
+band.published.3.value,proof-band,,subject,,,,,"Their own published claim, copied exactly. Do not round up or restate."
+band.published.3.what,proof-band,,subject,,,,,"Their own published claim, copied exactly. Do not round up or restate."
+band.published.4.value,proof-band,,subject,,,,,"Their own published claim, copied exactly. Do not round up or restate."
+band.published.4.what,proof-band,,subject,,,,,"Their own published claim, copied exactly. Do not round up or restate."
+band.counted.label,proof-band,,design,,,,,"Say these are your counts, e.g. NAME · ON THE PUBLIC RECORD."
+band.counted.1.value,proof-band,,counted,,,,,A number you counted yourself from public records. Remove duplicates first (one episode posted as audio and video is one).
+band.counted.1.what,proof-band,,counted,,,,,A number you counted yourself from public records. Remove duplicates first (one episode posted as audio and video is one).
+band.counted.2.value,proof-band,,counted,,,,,A number you counted yourself from public records. Remove duplicates first (one episode posted as audio and video is one).
+band.counted.2.what,proof-band,,counted,,,,,A number you counted yourself from public records. Remove duplicates first (one episode posted as audio and video is one).
+band.counted.3.value,proof-band,,counted,,,,,A number you counted yourself from public records. Remove duplicates first (one episode posted as audio and video is one).
+band.counted.3.what,proof-band,,counted,,,,,A number you counted yourself from public records. Remove duplicates first (one episode posted as audio and video is one).
+band.counted.4.value,proof-band,,counted,,,,,A number you counted yourself from public records. Remove duplicates first (one episode posted as audio and video is one).
+band.counted.4.what,proof-band,,counted,,,,,A number you counted yourself from public records. Remove duplicates first (one episode posted as audio and video is one).
+places.kicker,places,,design,,,,,Zone heading or table header.
+places.heading,places,,design,,,,,Zone heading or table header.
+places.head.code,places,,design,,,,,Zone heading or table header.
+places.head.place,places,,design,,,,,Zone heading or table header.
+places.head.what,places,,design,,,,,Zone heading or table header.
+places.1.code,places,,subject,,,,,"Code (airport or short code), place, and the stage, room or job with year. Cite the event page."
+places.1.place,places,,subject,,,,,"Code (airport or short code), place, and the stage, room or job with year. Cite the event page."
+places.1.what,places,,subject,,,,,"Code (airport or short code), place, and the stage, room or job with year. Cite the event page."
+places.2.code,places,,subject,,,,,"Code (airport or short code), place, and the stage, room or job with year. Cite the event page."
+places.2.place,places,,subject,,,,,"Code (airport or short code), place, and the stage, room or job with year. Cite the event page."
+places.2.what,places,,subject,,,,,"Code (airport or short code), place, and the stage, room or job with year. Cite the event page."
+places.3.code,places,,subject,,,,,"Code (airport or short code), place, and the stage, room or job with year. Cite the event page."
+places.3.place,places,,subject,,,,,"Code (airport or short code), place, and the stage, room or job with year. Cite the event page."
+places.3.what,places,,subject,,,,,"Code (airport or short code), place, and the stage, room or job with year. Cite the event page."
+places.4.code,places,,subject,,,,,"Code (airport or short code), place, and the stage, room or job with year. Cite the event page."
+places.4.place,places,,subject,,,,,"Code (airport or short code), place, and the stage, room or job with year. Cite the event page."
+places.4.what,places,,subject,,,,,"Code (airport or short code), place, and the stage, room or job with year. Cite the event page."
+places.5.code,places,,subject,,,,,"Code (airport or short code), place, and the stage, room or job with year. Cite the event page."
+places.5.place,places,,subject,,,,,"Code (airport or short code), place, and the stage, room or job with year. Cite the event page."
+places.5.what,places,,subject,,,,,"Code (airport or short code), place, and the stage, room or job with year. Cite the event page."
+places.6.code,places,,subject,,,,,"Code (airport or short code), place, and the stage, room or job with year. Cite the event page."
+places.6.place,places,,subject,,,,,"Code (airport or short code), place, and the stage, room or job with year. Cite the event page."
+places.6.what,places,,subject,,,,,"Code (airport or short code), place, and the stage, room or job with year. Cite the event page."
+places.7.code,places,,subject,,,,,"Code (airport or short code), place, and the stage, room or job with year. Cite the event page."
+places.7.place,places,,subject,,,,,"Code (airport or short code), place, and the stage, room or job with year. Cite the event page."
+places.7.what,places,,subject,,,,,"Code (airport or short code), place, and the stage, room or job with year. Cite the event page."
+places.8.code,places,,subject,,,,,"Code (airport or short code), place, and the stage, room or job with year. Cite the event page."
+places.8.place,places,,subject,,,,,"Code (airport or short code), place, and the stage, room or job with year. Cite the event page."
+places.8.what,places,,subject,,,,,"Code (airport or short code), place, and the stage, room or job with year. Cite the event page."
+places.also,places,,subject,,,,,"Other stages on one line, each sourced in notes."
+results.kicker,results,,design,,,,,"Zone heading, e.g. What clients reported to NAME."
+results.heading,results,,design,,,,,"Zone heading, e.g. What clients reported to NAME."
+results.disclosure,results,,design,,,,,Required when any result is client-reported: whose report it is and that it is not an audited case study.
+results.1.label,results,,reported,,,,,A result as the subject reported it. Keep the client unnamed unless the client agreed. Link the post.
+results.1.value,results,,reported,,,,,A result as the subject reported it. Keep the client unnamed unless the client agreed. Link the post.
+results.1.what,results,,reported,,,,,A result as the subject reported it. Keep the client unnamed unless the client agreed. Link the post.
+results.2.label,results,,reported,,,,,A result as the subject reported it. Keep the client unnamed unless the client agreed. Link the post.
+results.2.value,results,,reported,,,,,A result as the subject reported it. Keep the client unnamed unless the client agreed. Link the post.
+results.2.what,results,,reported,,,,,A result as the subject reported it. Keep the client unnamed unless the client agreed. Link the post.
+results.3.label,results,,reported,,,,,A result as the subject reported it. Keep the client unnamed unless the client agreed. Link the post.
+results.3.value,results,,reported,,,,,A result as the subject reported it. Keep the client unnamed unless the client agreed. Link the post.
+results.3.what,results,,reported,,,,,A result as the subject reported it. Keep the client unnamed unless the client agreed. Link the post.
+results.4.label,results,,reported,,,,,A result as the subject reported it. Keep the client unnamed unless the client agreed. Link the post.
+results.4.value,results,,reported,,,,,A result as the subject reported it. Keep the client unnamed unless the client agreed. Link the post.
+results.4.what,results,,reported,,,,,A result as the subject reported it. Keep the client unnamed unless the client agreed. Link the post.
+results.5.label,results,,reported,,,,,A result as the subject reported it. Keep the client unnamed unless the client agreed. Link the post.
+results.5.value,results,,reported,,,,,A result as the subject reported it. Keep the client unnamed unless the client agreed. Link the post.
+results.5.what,results,,reported,,,,,A result as the subject reported it. Keep the client unnamed unless the client agreed. Link the post.
+people.kicker,people,,design,,,,,Zone heading.
+people.heading,people,,design,,,,,Zone heading.
+people.1.name,people,,third-party,,,,,Name spelled as the source spells it.
+people.1.verb,people,,third-party,,,,,"The narrowest verb the source supports, e.g. Had him on SHOW. Never friend, partner or mentor unless the source says so."
+people.2.name,people,,third-party,,,,,Name spelled as the source spells it.
+people.2.verb,people,,third-party,,,,,"The narrowest verb the source supports, e.g. Had him on SHOW. Never friend, partner or mentor unless the source says so."
+people.3.name,people,,third-party,,,,,Name spelled as the source spells it.
+people.3.verb,people,,third-party,,,,,"The narrowest verb the source supports, e.g. Had him on SHOW. Never friend, partner or mentor unless the source says so."
+people.4.name,people,,third-party,,,,,Name spelled as the source spells it.
+people.4.verb,people,,third-party,,,,,"The narrowest verb the source supports, e.g. Had him on SHOW. Never friend, partner or mentor unless the source says so."
+people.5.name,people,,third-party,,,,,Name spelled as the source spells it.
+people.5.verb,people,,third-party,,,,,"The narrowest verb the source supports, e.g. Had him on SHOW. Never friend, partner or mentor unless the source says so."
+people.6.name,people,,third-party,,,,,Name spelled as the source spells it.
+people.6.verb,people,,third-party,,,,,"The narrowest verb the source supports, e.g. Had him on SHOW. Never friend, partner or mentor unless the source says so."
+people.7.name,people,,third-party,,,,,Name spelled as the source spells it.
+people.7.verb,people,,third-party,,,,,"The narrowest verb the source supports, e.g. Had him on SHOW. Never friend, partner or mentor unless the source says so."
+people.8.name,people,,third-party,,,,,Name spelled as the source spells it.
+people.8.verb,people,,third-party,,,,,"The narrowest verb the source supports, e.g. Had him on SHOW. Never friend, partner or mentor unless the source says so."
+people.9.name,people,,third-party,,,,,Name spelled as the source spells it.
+people.9.verb,people,,third-party,,,,,"The narrowest verb the source supports, e.g. Had him on SHOW. Never friend, partner or mentor unless the source says so."
+people.10.name,people,,third-party,,,,,Name spelled as the source spells it.
+people.10.verb,people,,third-party,,,,,"The narrowest verb the source supports, e.g. Had him on SHOW. Never friend, partner or mentor unless the source says so."
+people.11.name,people,,third-party,,,,,Name spelled as the source spells it.
+people.11.verb,people,,third-party,,,,,"The narrowest verb the source supports, e.g. Had him on SHOW. Never friend, partner or mentor unless the source says so."
+people.12.name,people,,third-party,,,,,Name spelled as the source spells it.
+people.12.verb,people,,third-party,,,,,"The narrowest verb the source supports, e.g. Had him on SHOW. Never friend, partner or mentor unless the source says so."
+team.label,team,,design,,,,,Team zone label.
+team.1.name,team,,subject,,,,,Name and role as the company team page lists them.
+team.1.role,team,,subject,,,,,Name and role as the company team page lists them.
+team.2.name,team,,subject,,,,,Name and role as the company team page lists them.
+team.2.role,team,,subject,,,,,Name and role as the company team page lists them.
+team.3.name,team,,subject,,,,,Name and role as the company team page lists them.
+team.3.role,team,,subject,,,,,Name and role as the company team page lists them.
+quotes.kicker,quotes,,design,,,,,Zone heading.
+quotes.heading,quotes,,design,,,,,Zone heading.
+quotes.1.text,quotes,,third-party,,,,,Exact words from a named person. Link the post or review.
+quotes.1.name,quotes,,third-party,,,,,"Name, then role or company as the source gives it."
+quotes.1.context,quotes,,third-party,,,,,"Name, then role or company as the source gives it."
+quotes.2.text,quotes,,third-party,,,,,Exact words from a named person. Link the post or review.
+quotes.2.name,quotes,,third-party,,,,,"Name, then role or company as the source gives it."
+quotes.2.context,quotes,,third-party,,,,,"Name, then role or company as the source gives it."
+quotes.3.text,quotes,,third-party,,,,,Exact words from a named person. Link the post or review.
+quotes.3.name,quotes,,third-party,,,,,"Name, then role or company as the source gives it."
+quotes.3.context,quotes,,third-party,,,,,"Name, then role or company as the source gives it."
+quotes.4.text,quotes,,third-party,,,,,Exact words from a named person. Link the post or review.
+quotes.4.name,quotes,,third-party,,,,,"Name, then role or company as the source gives it."
+quotes.4.context,quotes,,third-party,,,,,"Name, then role or company as the source gives it."
+foot.stages.label,footer,,design,,,,,Footer row label.
+foot.stages,footer,,subject,,,,,Only names they have shown publicly or have permission to show.
+foot.teams.label,footer,,design,,,,,Footer row label.
+foot.teams,footer,,subject,,,,,Only names they have shown publicly or have permission to show.
+foot.sources,footer,,design,,,,,"Every source with its date, trademark notes, photo credits, who compiled it and when. Keep it 0.5 in from the bottom edge."
