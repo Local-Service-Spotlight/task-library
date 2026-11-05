@@ -35,7 +35,7 @@ Use this before anything goes to print. `render_poster.py` checks the items mark
 - [ ] One page at exactly the print size: 18 x 24 in is 1296 x 1728 pt. **(auto)**
 - [ ] All fonts embedded. **(auto)**
 - [ ] The PDF title carries the version and date. **(auto)**
-- [ ] Ask the printer about bleed (many ask for 0.125 in past the trim when colour runs to the edge) and colour (CMYK) before you order.
+- [ ] Ask the printer about bleed (many ask for 0.125 in past the trim when color runs to the edge) and color (CMYK) before you order.
 
 ## Files and approval
 
