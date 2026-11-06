@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="600" height="800" role="img" aria-labelledby="anat-title anat-desc" font-family="Arial, Helvetica, sans-serif">
+  <title id="anat-title">Anatomy of an 18 by 24 inch personal brand poster</title>
+  <desc id="anat-desc">Seven zones from top to bottom. 1 Masthead: name, a title from their real story, a one-sentence story, a quote in their own words, a photo they own, and a timeline. 2 Proof band: their published claims on the left, numbers we counted on the right. 3 Places: a map and a log of stages. 4 Results clients reported, labeled as the subject's report. 5 People with the narrowest true verb, plus the team. 6 Quotes in exact words from named people. 7 Footer with every source and date, kept half an inch from the edge.</desc>
+  <rect width="600" height="800" fill="#F6F3EC"/>
+  <!-- 1 masthead -->
+  <rect x="0" y="0" width="600" height="262" fill="#17181C"/>
+  <rect x="380" y="34" width="196" height="138" fill="#3a3832" stroke="#E2B43B" stroke-width="2" stroke-dasharray="6 5"/>
+  <text x="478" y="98" text-anchor="middle" fill="#E2B43B" font-size="19" font-weight="700">A PHOTO</text>
+  <text x="478" y="122" text-anchor="middle" fill="#E2B43B" font-size="19" font-weight="700">THEY OWN</text>
+  <text x="26" y="58" fill="#E2B43B" font-size="26" font-weight="700">1  MASTHEAD</text>
+  <text x="26" y="94" fill="#F6F3EC" font-size="21">Name, and a title</text>
+  <text x="26" y="120" fill="#F6F3EC" font-size="21">from their real story</text>
+  <text x="26" y="154" fill="#D9D4C9" font-size="21">One-sentence story</text>
+  <text x="26" y="180" fill="#D9D4C9" font-size="21">A quote in their words</text>
+  <line x1="26" y1="214" x2="574" y2="214" stroke="#E2B43B" stroke-width="3"/>
+  <g fill="#E2B43B"><circle cx="26" cy="214" r="6"/><circle cx="135" cy="214" r="6"/><circle cx="244" cy="214" r="6"/><circle cx="353" cy="214" r="6"/><circle cx="462" cy="214" r="6"/><circle cx="571" cy="214" r="6" fill="#17181C" stroke="#E2B43B" stroke-width="3"/></g>
+  <text x="26" y="246" fill="#D9D4C9" font-size="20">Timeline: dated steps, then NEXT</text>
+  <!-- 2 proof band -->
+  <rect x="0" y="262" width="600" height="60" fill="#E2B43B"/>
+  <line x1="300" y1="270" x2="300" y2="314" stroke="#17181C" stroke-width="2"/>
+  <text x="26" y="290" fill="#17181C" font-size="20" font-weight="700">2  THEIR CLAIMS</text>
+  <text x="26" y="312" fill="#17181C" font-size="18">as they publish them</text>
+  <text x="314" y="290" fill="#17181C" font-size="20" font-weight="700">OUR COUNTS</text>
+  <text x="314" y="312" fill="#17181C" font-size="18">from the public record</text>
+  <!-- 3 places -->
+  <rect x="26" y="340" width="232" height="140" fill="#E6DFD2"/>
+  <path d="M60 440 Q 120 380 200 400" fill="none" stroke="#17181C" stroke-width="2" stroke-dasharray="7 5"/>
+  <path d="M200 400 Q 150 430 90 456" fill="none" stroke="#17181C" stroke-width="2" stroke-dasharray="7 5"/>
+  <circle cx="200" cy="400" r="9" fill="#17181C" stroke="#E2B43B" stroke-width="3"/>
+  <text x="276" y="368" fill="#17181C" font-size="24" font-weight="700">3  PLACES</text>
+  <text x="276" y="398" fill="#17181C" font-size="20">Map and a log of</text>
+  <text x="276" y="422" fill="#17181C" font-size="20">stages, each with</text>
+  <text x="276" y="446" fill="#17181C" font-size="20">its year and source</text>
+  <line x1="276" y1="466" x2="574" y2="466" stroke="#D7CFC1" stroke-width="2"/>
+  <!-- 4 results -->
+  <line x1="26" y1="502" x2="574" y2="502" stroke="#17181C" stroke-width="3"/>
+  <text x="26" y="534" fill="#17181C" font-size="24" font-weight="700">4  RESULTS CLIENTS REPORTED</text>
+  <text x="26" y="564" fill="#17181C" font-size="20">Labeled as their report,</text>
+  <text x="26" y="588" fill="#17181C" font-size="20">not an audited case study</text>
+  <rect x="352" y="548" width="222" height="16" fill="#E9E3D8"/><rect x="352" y="548" width="180" height="16" fill="#A87500"/>
+  <rect x="352" y="574" width="222" height="16" fill="#E9E3D8"/><rect x="352" y="574" width="140" height="16" fill="#A87500"/>
+  <!-- 5 people + 6 quotes -->
+  <line x1="26" y1="612" x2="574" y2="612" stroke="#17181C" stroke-width="3"/>
+  <text x="26" y="644" fill="#17181C" font-size="24" font-weight="700">5  PEOPLE</text>
+  <text x="26" y="672" fill="#17181C" font-size="20">Narrowest true verb:</text>
+  <text x="26" y="696" fill="#17181C" font-size="20">"Had her on [show]"</text>
+  <g fill="#ddd6c9" stroke="#E2B43B" stroke-width="3"><circle cx="44" cy="722" r="13"/><circle cx="84" cy="722" r="13"/><circle cx="124" cy="722" r="13"/></g>
+  <text x="148" y="729" fill="#5E5A52" font-size="19">+ the team</text>
+  <line x1="302" y1="626" x2="302" y2="736" stroke="#D7CFC1" stroke-width="2"/>
+  <text x="320" y="644" fill="#17181C" font-size="24" font-weight="700">6  QUOTES</text>
+  <text x="320" y="672" fill="#17181C" font-size="20">Exact words from</text>
+  <text x="320" y="696" fill="#17181C" font-size="20">a named person,</text>
+  <text x="320" y="720" fill="#17181C" font-size="20">with a link</text>
+  <!-- 7 footer -->
+  <rect x="0" y="746" width="600" height="54" fill="#17181C"/>
+  <text x="26" y="770" fill="#E2B43B" font-size="20" font-weight="700">7  FOOTER</text>
+  <text x="140" y="770" fill="#F6F3EC" font-size="18">Every source, date and photo credit</text>
+  <!-- safe margin -->
+  <rect x="17" y="17" width="566" height="766" fill="none" stroke="#D1006F" stroke-width="2" stroke-dasharray="4 6"/>
+  <text x="583" y="794" text-anchor="end" fill="#D1006F" font-size="15" font-weight="700">0.5 in safe margin</text>
+</svg>

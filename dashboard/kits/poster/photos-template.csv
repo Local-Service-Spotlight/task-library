@@ -1,0 +1,7 @@
+photo_id,file,kind,who_or_what,event_place_date,owner,permission_status,permission_record,source_url,source_file_url,native_px_w,camera_original,shows_outside_people,alt,caption_or_credit,sha256,checked_on,notes
+hero,,photo,,,,,,,,,,,,,,,"A real moment of their work (stage, job site, classroom). Before it goes on the poster, record who owns it and where their permission is kept. A photo found on a public post is not permission: use the client's own photos, or get the owner's written OK. Put the exact file you downloaded in source_file_url and the original file's pixel width in native_px_w. Set camera_original yes only for a file straight from the camera; the script confirms it from the camera data. Never enlarge a small file and call it print quality."
+portrait,,photo,,,,,,,,,,,,,,,"A clear head-and-shoulders photo of the subject, ideally from their own team or About page (owner: their company) or supplied by their team."
+places-map,,diagram,,,,own-work,,,,,,no,,,,,A map or diagram you drew from public data. Name the data source in notes. Vector (SVG) prints sharp at any size. A map is optional: the kit has no map tool. Draw one as SVG (for example with d3-geo and us-atlas) or mark this row omit.
+team.1,,photo,,,,,,,,,,,,,,,Team photos the company owns (its own team page) or supplied by the team. Mark the row omit if there is no team zone.
+team.2,,photo,,,,,,,,,,,,,,,
+team.3,,photo,,,,,,,,,,,,,,,

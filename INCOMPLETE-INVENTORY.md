@@ -2,13 +2,13 @@
 
 Generated from `build/build.py` after scoring in `build/factory.py`.
 
-Library: **276** tasks — 132 complete, 121 needs-work, 23 gaps.
+Library: **277** tasks — 132 complete, 121 needs-work, 24 gaps.
 
-Importance distribution: 5★=75, 4★=43, 3★=115, 2★=43, 1★=0
+Importance distribution: 5★=75, 4★=43, 3★=116, 2★=43, 1★=0
 
 Scoring: `importance = max(frequency, revenue, gating)`. Ads, pixels, GSC, Descript, WP-author, and Meta BM are 5s even when the task is small, because they unblock the line.
 
-Incomplete: **144**. This file is the work order. Do not re-sample.
+Incomplete: **145**. This file is the work order. Do not re-sample.
 
 | ★ | Status | Phase | Category | Slug | Lane | Why |
 |---|---|---|---|---|---|---|
@@ -68,6 +68,7 @@ Incomplete: **144**. This file is the work order. Do not re-sample.
 | 4 | needs-work | Post |  | `upload-processed-video-to-youtube` | any | runs every factory cycle or weekly; creates the asset ads amplify |
 | 4 | needs-work | Process |  | `write-email-newsletter-from-video-key-insight` | any | runs every factory cycle or weekly |
 | 3 | gap | — |  | `how-to-set-up-schema-markup-for-personal-brand-site` | any | supporting |
+| 3 | gap | Process |  | `make-a-personal-brand-poster` | any | supporting |
 | 3 | needs-work | Produce |  | `access-content-factory-source-assets` | any | supporting |
 | 3 | needs-work | Gate |  | `add-click-to-call-links-for-mobile` | any | supporting |
 | 3 | needs-work | — |  | `add-consistent-headshots-and-bios-across-profiles` | any | supporting |
