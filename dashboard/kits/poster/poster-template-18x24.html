@@ -14,10 +14,17 @@
   - Every text slot has data-fact="<id>". render_poster.py fills it from facts.csv.
   - Every photo slot is <img data-photo="<id>">. render_poster.py fills it from photos.csv.
   - A slot nobody filled shows a pink dashed box. A final render refuses to run while one is left,
-    so slot hints can never reach a printed poster.
+    so slot hints, [FILL: ...] placeholders and empty photo boxes can never reach a printed poster.
   - To drop an item (a timeline step, a person, a quote), mark one of its facts "omit" in facts.csv.
-    The whole data-item it sits in is removed and the row closes up.
-  - Change the look with the --brand variables below. Keep text inside the 0.5 in frame margin.
+    The whole data-item it sits in is removed and the row closes up. Marking the hero photo omit
+    removes the whole hero block: photo, portrait and caption.
+  - Each photo box names its photo with data-slot-for. A draft never places a photo whose
+    permission is not on record; its box stays empty and says why.
+  - data-zone marks the zones, so the QA receipt records where each one sits (useful for crops).
+  - The masthead, proof band and footer grow with their text; the body gives up the space, and the
+    overflow check fails if the body no longer fits.
+  - Change the look with the --brand variables below. A final render fails any text within 0.5 in
+    of the edge, because a frame covers it.
   - Mark small print (sources, legends, credits) with data-fineprint so the type check reads it as such.
 -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -49,9 +56,10 @@ html,body{margin:0;padding:0;background:#ffffff}
 .fine{font-family:var(--mono);font-size:12px;line-height:1.5}
 
 /* 1. MASTHEAD: who this is, in their own story's words */
-.mast{height:756px;background:var(--ink);color:var(--on-ink);padding:48px 72px 30px;display:flex;flex-direction:column}
+.mast{min-height:756px;flex:none;background:var(--ink);color:var(--on-ink);padding:48px 72px 30px;display:flex;flex-direction:column}
 .mast-top{display:flex;justify-content:space-between;align-items:baseline;font-family:var(--mono);font-weight:500;font-size:14px;letter-spacing:.16em;color:var(--on-ink-muted)}
 .mast-grid{display:grid;grid-template-columns:minmax(0,1fr) 600px;column-gap:76px;margin-top:28px}
+.mast-grid:not(:has(.hero)){grid-template-columns:minmax(0,1fr)}
 .theme-title{font-family:var(--mono);font-weight:600;font-size:17px;letter-spacing:.26em;color:var(--accent)}
 .name{margin-top:8px;font-family:var(--display);font-weight:800;font-size:146px;line-height:.92;color:var(--on-ink);white-space:nowrap}
 .role{margin-top:8px;font-family:var(--display);font-weight:600;font-size:34px;line-height:1.15;color:var(--accent)}
@@ -64,7 +72,7 @@ html,body{margin:0;padding:0;background:#ffffff}
 .hero-box{position:relative;width:600px;height:416px}
 .hero-box img[data-photo="hero"]{display:block;width:600px;height:416px;object-fit:cover;object-position:50% 40%}
 .hero-box img[data-photo="portrait"]{position:absolute;left:-70px;bottom:-58px;width:196px;height:196px;border-radius:50%;border:6px solid var(--accent);box-shadow:0 0 0 7px var(--ink);object-fit:cover}
-.hero-caption{margin-top:14px;font-family:var(--mono);font-size:13px;letter-spacing:.1em;color:var(--on-ink-muted);text-align:right}
+.hero-caption{margin-top:14px;padding-left:150px;font-family:var(--mono);font-size:13px;letter-spacing:.1em;color:var(--on-ink-muted);text-align:right}
 .journey{margin-top:30px}
 .journey ol{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(0,1fr);border-top:2px solid var(--accent);margin-top:16px}
 .journey li{position:relative;padding:20px 16px 0 0}
@@ -75,7 +83,7 @@ html,body{margin:0;padding:0;background:#ffffff}
 .journey .what{margin-top:6px;font-size:15px;line-height:1.32;color:#D9D4C9}
 
 /* 2. PROOF BAND: their published claims on the left, what we counted on the right */
-.band{height:172px;background:var(--accent);color:var(--ink);padding:19px 72px 16px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
+.band{min-height:172px;flex:none;background:var(--accent);color:var(--ink);padding:19px 72px 16px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
 .band .half{padding-right:36px}
 .band .half+.half{padding:0 0 0 36px;border-left:2px solid var(--ink)}
 .band .label{font-family:var(--mono);font-weight:600;font-size:13px;letter-spacing:.22em}
@@ -89,6 +97,7 @@ html,body{margin:0;padding:0;background:#ffffff}
 .zone-head h2{font-family:var(--display);font-weight:700;font-size:38px;line-height:1}
 .zone-head .note{margin-left:auto;max-width:600px;text-align:right;font-family:var(--mono);font-size:12.5px;line-height:1.45;color:var(--muted)}
 .places-grid{margin-top:14px;display:grid;grid-template-columns:700px minmax(0,1fr);column-gap:44px}
+.places-grid:not(:has(.places-figure)){grid-template-columns:minmax(0,1fr)}
 .places-figure{width:700px;height:405px;background:#ECE6DA}
 .places-figure img{display:block;width:700px;height:405px;object-fit:contain}
 .log-row{display:grid;grid-template-columns:54px 126px minmax(0,1fr);column-gap:12px;align-items:baseline;padding:5px 0;border-bottom:1px solid var(--rule)}
@@ -108,19 +117,20 @@ html,body{margin:0;padding:0;background:#ffffff}
 .person .who{font-family:var(--display);font-weight:700;font-size:19px;line-height:1.05}
 .person .verb{margin-top:3px;font-size:13.5px;line-height:1.25;color:var(--muted)}
 .team{margin-top:14px;padding-top:11px;border-top:1px solid var(--rule)}
+.team .note{margin-top:4px;font-size:13.5px;line-height:1.3;color:var(--muted)}
 .team-row{margin-top:9px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));column-gap:18px;align-items:center}
 .member{display:grid;grid-template-columns:58px minmax(0,1fr);column-gap:11px;align-items:center}
 .member img{display:block;width:58px;height:58px;border-radius:50%;border:3px solid var(--accent);object-fit:cover}
 .member .who{font-family:var(--display);font-weight:700;font-size:19px;line-height:1.05}
 .member .what{margin-top:2px;font-size:13.5px;line-height:1.25;color:var(--muted)}
 .quotes{margin-top:16px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:28px;row-gap:20px}
-.quotes blockquote{font-style:italic;font-size:17px;line-height:1.34}
+.quotes blockquote{font-style:italic;font-size:17px;line-height:1.34;white-space:pre-line}
 .quotes figcaption{margin-top:8px}
 .quotes .who{font-family:var(--display);font-weight:700;font-size:17px}
 .quotes .ctx{font-family:var(--mono);font-size:12px;letter-spacing:.06em;color:var(--muted)}
 
 /* 4. FOOTER: credits and the sources line, kept 0.5 in from the bottom edge */
-.foot{height:180px;background:var(--ink);color:var(--on-ink);padding:20px 72px 48px;display:flex;flex-direction:column;gap:9px}
+.foot{min-height:180px;flex:none;background:var(--ink);color:var(--on-ink);padding:20px 72px 48px;display:flex;flex-direction:column;gap:9px}
 .foot .row{display:grid;grid-template-columns:236px minmax(0,1fr);column-gap:18px;align-items:baseline}
 .foot .row .label{font-family:var(--mono);font-weight:600;font-size:12px;letter-spacing:.2em;color:var(--accent)}
 .foot .row .list{font-family:var(--display);font-weight:600;font-size:19px;line-height:1.3;letter-spacing:.06em}
@@ -133,13 +143,15 @@ html,body{margin:0;padding:0;background:#ffffff}
 .slot-photo img[data-photo="portrait"]:not([src]),.member img:not([src]){visibility:visible;background:#ddd6c9}
 .slot-photo::after{content:attr(data-slot-label);position:absolute;inset:auto 0 0 0;padding:6px 8px;font:600 13px/1.3 var(--mono);color:var(--slot);background:rgba(255,255,255,.85)}
 .slot-photo.filled::after{content:none}
+.slot-photo.filled{background:none}
+.poster img[data-blocked]{visibility:visible!important;outline:3px dashed var(--slot);outline-offset:-3px;background:#f6d6e7}
 .hero-box.slot-photo,.places-figure.slot-photo{position:relative}
 </style>
 </head>
 <body>
 <main class="poster" data-print-size="18x24">
 
-<section class="mast on-ink">
+<section class="mast on-ink" data-zone="masthead">
   <div class="mast-top">
     <span data-fact="brand.line">⟦brand.line · company or practice name, as they write it⟧</span>
     <span data-fact="brand.urls">⟦brand.urls · their own domains⟧</span>
@@ -158,12 +170,12 @@ html,body{margin:0;padding:0;background:#ffffff}
         </div>
       </figure>
     </div>
-    <div class="hero">
-      <div class="hero-box slot-photo" data-slot-label="PHOTO · hero · a real moment of their work">
+    <div class="hero" data-item>
+      <div class="hero-box slot-photo" data-slot-for="hero" data-slot-label="PHOTO · hero · a real moment of their work">
         <img data-photo="hero" alt="">
-        <img data-photo="portrait" alt="">
+        <img data-photo="portrait" data-item alt="">
       </div>
-      <div class="hero-caption" data-fineprint data-fact="hero.caption">⟦hero.caption · event · place · year⟧</div>
+      <div class="hero-caption" data-item data-fineprint data-fact="hero.caption">⟦hero.caption · event · place · year⟧</div>
     </div>
   </div>
   <div class="journey">
@@ -183,7 +195,7 @@ html,body{margin:0;padding:0;background:#ffffff}
   </div>
 </section>
 
-<section class="band">
+<section class="band" data-zone="proof-band">
   <div class="half">
     <div class="label" data-fineprint data-fact="band.published.label">⟦band.published.label · COMPANY · AS PUBLISHED⟧</div>
     <div class="stats">
@@ -206,10 +218,10 @@ html,body{margin:0;padding:0;background:#ffffff}
 
 <section class="body">
 
-  <div>
+  <div data-zone="places">
     <div class="zone-head"><div class="kicker" data-fact="places.kicker">⟦places.kicker⟧</div><h2 data-fact="places.heading">⟦places.heading · where they have worked or spoken⟧</h2></div>
     <div class="places-grid">
-      <div class="places-figure slot-photo" data-slot-label="MAP OR DIAGRAM · places-map">
+      <div class="places-figure slot-photo" data-item data-slot-for="places-map" data-slot-label="MAP OR DIAGRAM · places-map">
         <img data-photo="places-map" alt="">
       </div>
       <div>
@@ -222,12 +234,13 @@ html,body{margin:0;padding:0;background:#ffffff}
         <div class="log-row" data-item><span class="code" data-fact="places.6.code">⟦code⟧</span><span class="place" data-fact="places.6.place">⟦place⟧</span><span class="what" data-fact="places.6.what">⟦stage, room or job, with year⟧</span></div>
         <div class="log-row" data-item><span class="code" data-fact="places.7.code">⟦code⟧</span><span class="place" data-fact="places.7.place">⟦place⟧</span><span class="what" data-fact="places.7.what">⟦stage, room or job, with year⟧</span></div>
         <div class="log-row" data-item><span class="code" data-fact="places.8.code">⟦code⟧</span><span class="place" data-fact="places.8.place">⟦place⟧</span><span class="what" data-fact="places.8.what">⟦stage, room or job, with year⟧</span></div>
+        <div class="log-row" data-item><span class="code" data-fact="places.9.code">⟦code⟧</span><span class="place" data-fact="places.9.place">⟦place⟧</span><span class="what" data-fact="places.9.what">⟦stage, room or job, with year⟧</span></div>
         <p class="places-also" data-item data-fact="places.also">⟦places.also · other stages, one line⟧</p>
       </div>
     </div>
   </div>
 
-  <div data-item>
+  <div data-item data-zone="results">
     <div class="zone-head"><div class="kicker" data-fact="results.kicker">⟦results.kicker⟧</div><h2 data-fact="results.heading">⟦results.heading · e.g. What clients reported to NAME⟧</h2><div class="note" data-fineprint data-fact="results.disclosure">⟦results.disclosure · whose report this is, and that it is not an audited case study⟧</div></div>
     <div class="results">
       <div class="result" data-item><div class="label" data-fineprint data-fact="results.1.label">⟦LABEL⟧</div><div class="value" data-fact="results.1.value">⟦value⟧</div><div class="what" data-fact="results.1.what">⟦who reported it, in plain words⟧</div></div>
@@ -235,11 +248,12 @@ html,body{margin:0;padding:0;background:#ffffff}
       <div class="result" data-item><div class="label" data-fineprint data-fact="results.3.label">⟦LABEL⟧</div><div class="value" data-fact="results.3.value">⟦value⟧</div><div class="what" data-fact="results.3.what">⟦who reported it, in plain words⟧</div></div>
       <div class="result" data-item><div class="label" data-fineprint data-fact="results.4.label">⟦LABEL⟧</div><div class="value" data-fact="results.4.value">⟦value⟧</div><div class="what" data-fact="results.4.what">⟦who reported it, in plain words⟧</div></div>
       <div class="result" data-item><div class="label" data-fineprint data-fact="results.5.label">⟦LABEL⟧</div><div class="value" data-fact="results.5.value">⟦value⟧</div><div class="what" data-fact="results.5.what">⟦who reported it, in plain words⟧</div></div>
+      <div class="result" data-item><div class="label" data-fineprint data-fact="results.6.label">⟦LABEL⟧</div><div class="value" data-fact="results.6.value">⟦value⟧</div><div class="what" data-fact="results.6.what">⟦who reported it, in plain words⟧</div></div>
     </div>
   </div>
 
   <div class="people-quotes">
-    <div>
+    <div data-zone="people">
       <div class="zone-head"><div class="kicker" data-fact="people.kicker">⟦people.kicker⟧</div><h2 data-fact="people.heading">⟦people.heading · e.g. Coaches, hosts and partners⟧</h2></div>
       <div class="people">
         <div class="person" data-item><div class="who" data-fact="people.1.name">⟦name⟧</div><div class="verb" data-fact="people.1.verb">⟦narrowest true verb⟧</div></div>
@@ -257,6 +271,7 @@ html,body{margin:0;padding:0;background:#ffffff}
       </div>
       <div class="team" data-item>
         <div class="kicker" data-fineprint data-fact="team.label">⟦team.label · THE TEAM⟧</div>
+        <div class="note" data-item data-fact="team.note">⟦team.note · optional line, e.g. others who teach beside them⟧</div>
         <div class="team-row">
           <div class="member" data-item><img data-photo="team.1" alt=""><div><div class="who" data-fact="team.1.name">⟦name⟧</div><div class="what" data-fineprint data-fact="team.1.role">⟦role as their company lists it⟧</div></div></div>
           <div class="member" data-item><img data-photo="team.2" alt=""><div><div class="who" data-fact="team.2.name">⟦name⟧</div><div class="what" data-fineprint data-fact="team.2.role">⟦role as their company lists it⟧</div></div></div>
@@ -264,7 +279,7 @@ html,body{margin:0;padding:0;background:#ffffff}
         </div>
       </div>
     </div>
-    <div>
+    <div data-zone="quotes">
       <div class="zone-head"><div class="kicker" data-fact="quotes.kicker">⟦quotes.kicker⟧</div><h2 data-fact="quotes.heading">⟦quotes.heading · e.g. What owners and partners said⟧</h2></div>
       <div class="quotes">
         <figure data-item><blockquote data-fact="quotes.1.text">⟦exact words, named person⟧</blockquote><figcaption><span class="who" data-fact="quotes.1.name">⟦name⟧</span> <span class="ctx" data-fineprint data-fact="quotes.1.context">⟦· ROLE OR COMPANY⟧</span></figcaption></figure>
@@ -277,7 +292,7 @@ html,body{margin:0;padding:0;background:#ffffff}
 
 </section>
 
-<section class="foot on-ink">
+<section class="foot on-ink" data-zone="footer">
   <div class="row" data-item><div class="label" data-fineprint data-fact="foot.stages.label">⟦STAGES, PARTNERS, MEDIA⟧</div><div class="list" data-fact="foot.stages">⟦names separated by · one line or two⟧</div></div>
   <div class="row" data-item><div class="label" data-fineprint data-fact="foot.teams.label">⟦TEAMS TRAINED OR CLIENTS⟧</div><div class="list" data-fact="foot.teams">⟦names they have permission to show⟧</div></div>
   <div class="fine sources" data-fineprint data-fact="foot.sources">⟦foot.sources · trademarks, every source with its date, photo credits, who compiled it and when⟧</div>

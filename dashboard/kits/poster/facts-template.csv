@@ -1,13 +1,13 @@
 fact_id,zone,printed_text,claim_owner,source_url,source_says,checked_on,status,notes
-brand.line,masthead,,subject,,,,,"Company or practice name exactly as they write it, including any registered mark."
+brand.line,masthead,,subject,,,,,"Company or practice name exactly as they write it, including any registered mark. Status: verified once you have opened the source and found the words; pending-release when the source page is not live yet (render with --live-check after it is); omit to drop the item."
 brand.urls,masthead,,subject,,,,,Their own domains only.
-theme.title,masthead,,subject,,,,,"A title taken from their real story, such as a title they use on stage. Cite where they use it. If it is your own design line, use claim_owner design."
+theme.title,masthead,,subject,,,,,"A title taken from their real story, such as a title they use on stage. Cite where they use it. If it is your own design line, use claim_owner design, and make sure it does not read like a title, nickname or award they have not used publicly."
 subject.name,masthead,,subject,,,,,Full name as on their own site.
 subject.role,masthead,,subject,,,,,Title exactly as their About page or company team page gives it.
 subject.story,masthead,,subject,,,,,"One sentence. Every job title, employer and year must match the source. If two sources disagree, use the subject's own page and note the other."
 quote.text,masthead,,subject,,,,,"Their own words, verbatim, from a post, talk or book you can link."
 quote.source,masthead,,subject,,,,,"Where and how they said it, e.g. A RULE, AS NAME POSTED IT."
-hero.caption,masthead,,third-party,,,,,"Event, place and year as the organizer or photographer published them."
+hero.caption,masthead,,third-party,,,,,"Event, place and year as the organizer or photographer published them. Until you know them, write [FILL: event · place · year]; a final render refuses any [FILL: ...] text."
 journey.label,journey,,design,,,,,"Theme word for the timeline, e.g. THE FLIGHT PATH."
 journey.1.when,journey,,subject,,,,,"One dated step per item, each with its own source. Mark unused steps omit."
 journey.1.what,journey,,subject,,,,,"One dated step per item, each with its own source. Mark unused steps omit."
@@ -76,6 +76,9 @@ places.7.what,places,,subject,,,,,"Code (airport or short code), place, and the 
 places.8.code,places,,subject,,,,,"Code (airport or short code), place, and the stage, room or job with year. Cite the event page."
 places.8.place,places,,subject,,,,,"Code (airport or short code), place, and the stage, room or job with year. Cite the event page."
 places.8.what,places,,subject,,,,,"Code (airport or short code), place, and the stage, room or job with year. Cite the event page."
+places.9.code,places,,subject,,,,,"Code (airport or short code), place, and the stage, room or job with year. Cite the event page."
+places.9.place,places,,subject,,,,,"Code (airport or short code), place, and the stage, room or job with year. Cite the event page."
+places.9.what,places,,subject,,,,,"Code (airport or short code), place, and the stage, room or job with year. Cite the event page."
 places.also,places,,subject,,,,,"Other stages on one line, each sourced in notes."
 results.kicker,results,,design,,,,,"Zone heading, e.g. What clients reported to NAME."
 results.heading,results,,design,,,,,"Zone heading, e.g. What clients reported to NAME."
@@ -95,6 +98,9 @@ results.4.what,results,,reported,,,,,A result as the subject reported it. Keep t
 results.5.label,results,,reported,,,,,A result as the subject reported it. Keep the client unnamed unless the client agreed. Link the post.
 results.5.value,results,,reported,,,,,A result as the subject reported it. Keep the client unnamed unless the client agreed. Link the post.
 results.5.what,results,,reported,,,,,A result as the subject reported it. Keep the client unnamed unless the client agreed. Link the post.
+results.6.label,results,,reported,,,,,A result as the subject reported it. Keep the client unnamed unless the client agreed. Link the post.
+results.6.value,results,,reported,,,,,A result as the subject reported it. Keep the client unnamed unless the client agreed. Link the post.
+results.6.what,results,,reported,,,,,A result as the subject reported it. Keep the client unnamed unless the client agreed. Link the post.
 people.kicker,people,,design,,,,,Zone heading.
 people.heading,people,,design,,,,,Zone heading.
 people.1.name,people,,third-party,,,,,Name spelled as the source spells it.
@@ -122,6 +128,7 @@ people.11.verb,people,,third-party,,,,,"The narrowest verb the source supports, 
 people.12.name,people,,third-party,,,,,Name spelled as the source spells it.
 people.12.verb,people,,third-party,,,,,"The narrowest verb the source supports, e.g. Had him on SHOW. Never friend, partner or mentor unless the source says so."
 team.label,team,,design,,,,,Team zone label.
+team.note,team,,subject,,,,,"Optional line under the team label, such as other coaches who teach beside them. Mark omit if unused."
 team.1.name,team,,subject,,,,,Name and role as the company team page lists them.
 team.1.role,team,,subject,,,,,Name and role as the company team page lists them.
 team.2.name,team,,subject,,,,,Name and role as the company team page lists them.

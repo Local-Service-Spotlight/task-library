@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "ordering": "Setup failures and evidence holds first. Within each priority lane, sort by estimated revenue role, dependencies unblocked, frequency and importance before missing-guide status and gap count. Effort and actual income remain unknown.",
-  "generatedAt": "2026-11-05T20:57:08.078010+00:00",
+  "generatedAt": "2026-11-06T00:46:07.052526+00:00",
   "definition": "Per-task standard gates derived from exact instruction reviews, explicit instruction-requirement checks, contributor status, article mapping/catalog holds, exact-revision article semantic reviews, task-attributed examples and the execution ledger. Unknown proof is never turned into a pass.",
   "stats": {
     "tasks": 277,
@@ -16802,7 +16802,7 @@
       },
       "nextAction": "No exact-byte instruction review is recorded for this task.",
       "standardVerification": {
-        "instructionSourceSha256": "6037974ea7fc855e8179af801bf8e40d8efff652efe0ec4464f3d76402867a03",
+        "instructionSourceSha256": "e60c2c764cb37c73ad1fadcea399ee9491ec4c945b41728ec816bf5ebb475eda",
         "articleKey": null,
         "gates": {
           "instructionRevisionReviewed": {
@@ -16810,14 +16810,14 @@
             "label": "Exact instruction revision reviewed",
             "state": "unmet",
             "reason": "No exact-byte instruction review is recorded for this task.",
-            "sourceSha256": "6037974ea7fc855e8179af801bf8e40d8efff652efe0ec4464f3d76402867a03"
+            "sourceSha256": "e60c2c764cb37c73ad1fadcea399ee9491ec4c945b41728ec816bf5ebb475eda"
           },
           "instructionStandards": {
             "id": "instructionStandards",
             "label": "Instruction requirements checked",
             "state": "unknown",
             "reason": "No current exact-byte instruction-requirements checklist is recorded.",
-            "sourceSha256": "6037974ea7fc855e8179af801bf8e40d8efff652efe0ec4464f3d76402867a03"
+            "sourceSha256": "e60c2c764cb37c73ad1fadcea399ee9491ec4c945b41728ec816bf5ebb475eda"
           },
           "contributorComplete": {
             "id": "contributorComplete",
