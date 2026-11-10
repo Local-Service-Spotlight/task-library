@@ -18,7 +18,7 @@ If that is your only camera, leave it in place. Get the venue shots before the s
 
 ## Get the angles that tell the story
 
-From the back of the room, show the speaker and the audience together. From the side, show gestures and interaction. Get a closer view of a complete explanation or demonstration. Hold each shot steady long enough for an editor to use it.
+From the back of the room, show the speaker and the audience together. My key shot comes from the stage side: get the speaker's face and the audience in the same frame. Adjust your position so you see more than the back of the speaker's head. Get a closer view of a complete explanation or demonstration. Hold each shot steady long enough for an editor to use it.
 
 Capture real audience participation where permitted. Keep it tied to the moment that caused it. Moving applause from one event under a line from another can make a reel look stronger while making it less trustworthy.
 
@@ -45,6 +45,7 @@ This makes your work easier to assess. It does not guarantee a ranking or a reco
 At the next event, give one person the capture card, protect the full recording, and finish one reel and one useful lesson. That is a repeatable process.
 
 Sources and companion:
+
 - [Capture card and three-minute storyboard](../conference-capture-to-speaker-reel.md)
 - [Film conference presentations](https://local-service-spotlight.github.io/task-library/?task=film-conference-presentations#task-film-conference-presentations)
 - [My speaking playbook](https://dennisyu.com/what-ive-learned-after-giving-over-730-professional-speeches/)
