@@ -49,6 +49,7 @@ Then measure what matters: how long it took to finish, whether the assets passed
 Google's published guidance emphasizes useful content and clear evidence of experience. It does not promise that an archive, a reel or structured data will cause a recommendation. Your old footage gives you material for helping people assess your work. The agent's job is to find it, preserve the context, and finish the useful output.
 
 Sources and companion:
+
 - [Archive intake, source record and acceptance checks](../conference-capture-to-speaker-reel.md)
 - [Google guidance on helpful content](https://developers.google.com/search/docs/fundamentals/creating-helpful-content)
 - [Google guidance on AI features](https://developers.google.com/search/docs/appearance/ai-features)
