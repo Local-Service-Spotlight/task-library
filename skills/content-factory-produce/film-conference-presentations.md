@@ -73,17 +73,7 @@ Pass the index and source files to the existing upload and editing tasks below. 
 
 ## Three-minute training companion
 
-The companion should teach the route from capture to a finished speaker reel using the same real source files:
-
-| Runtime | Show |
-|---|---|
-| 00:00–00:15 | A finished reel moment, then the raw shot it came from; name the lesson. |
-| 00:15–00:40 | Permissions, audio check and the one-phone or two-phone setup. |
-| 00:40–01:25 | The shot angles above, labeled over real examples. Keep the full-talk camera running. |
-| 01:25–01:50 | Follow-up question, permitted comment and speaker debrief. |
-| 01:50–02:20 | The same files arriving in the intake index with source times and missing shots. |
-| 02:20–02:45 | A short before-and-after edit: useful teaching, event context and accurately attributed feedback. |
-| 02:45–03:00 | The reel's permitted reuse on a speaking page, plus a teaching clip and source-linked article; show their actual status. |
+Use the [capture-to-speaker-reel companion](../../docs/conference-capture-to-speaker-reel.md#the-three-minute-teaching-film) as the single detailed 180-second storyboard. It follows the same real files from before/during/after capture to source indexing, an accurately edited reel and useful derivatives. Label the angles over actual examples and keep every output's real status visible.
 
 The three-minute training video and the speaker's promotional reel are separate deliverables. Reuse this capture package for both, keeping each derivative tied to its original source range. The editor follows the current [YouTube podcast editing standards](https://dennisyu.com/youtube-podcast-editing-standards/) and checks that every visual matches the words. Existing video of a person speaking takes priority over a still image; do not fill a missing scene with invented event footage.
 
