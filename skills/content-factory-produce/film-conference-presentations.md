@@ -36,6 +36,59 @@ A talk can hold lessons worth sharing after the event. This guide helps a speake
 8. Add useful audience questions to the [Topic Wheel](https://blitzmetrics.com/topic-wheel/) topic queue with their event source. They may support a HOW topic or a story; they are not automatically the WHAT offer.
 9. Send the indexed package to [Upload the source to Drive and Descript](https://local-service-spotlight.github.io/task-library/?task=step-1-upload-video-to-google-drive-and-descript#task-step-1-upload-video-to-google-drive-and-descript). Let the editor choose supported teaching clips and keep the event rights attached to every derivative.
 
+## Capture the scenes the editor will need
+
+Keep one camera on the talk. Use the plan below to add useful views without losing the recording.
+
+| Setup | During the talk | Before and after |
+|---|---|---|
+| One phone | Leave it stable on the speaker with the tested audio. Do not stop the talk to collect another angle. | Capture the room, setup and short interviews before or after. Ask for permitted official footage to fill an angle gap. |
+| Two phones, one operator | Phone A stays fixed for the talk. The operator uses Phone B for short supporting views from permitted positions. Check that A is still recording. | Use B for the speaker's preparation and debrief; keep A's original files intact. |
+| Two operators | One owns the full talk and audio. The second follows the shot list and records when each view was taken. | Agree who captures the host, speaker and permitted attendee or organizer comments. |
+
+Use steady shots of about 8–12 seconds for supporting scenes, with a brief still hold at each end. This is a capture target, not a reason to interrupt someone or stage a reaction.
+
+| When | Scene and angle | What the scene helps show |
+|---|---|---|
+| Before | Wide view of the venue and event sign; room and stage from the back | Where this session happened. Keep private information out of frame. |
+| Before | Speaker preparing, mic check and a short explanation to camera | How the speaker prepares and what the audience is there to learn. |
+| Opening | Host introduction, then the speaker walking on | The actual introduction in its original context. Keep the host's words with their source. |
+| During | Stable front view of the speaker; medium framing with room for gestures | Clear teaching clips and a usable main recording. |
+| During, second camera only | Side or three-quarter view; include the slide only when readable and permitted | A different view of the same lesson, with its time noted for synchronization. |
+| During, second camera only | Rear-of-room wide shot showing speaker and room together | The scale and setting visible in that shot. Do not infer attendance totals from it. |
+| During, when permitted | Speaker with audience from an allowed stage-side position; actual listening, laughter or questions | The interaction that occurred. Do not move a reaction to another statement or event to imply a response that did not happen. |
+| After | Speaker answering allowed follow-up questions | Specific expertise and the questions people still need answered. |
+| After | Short organizer or attendee comment, with name, role and permission | Their own words about what they learned or observed. Do not script praise or imply a wider endorsement. |
+| After | Speaker's 30–60 second debrief: what was asked, what worked, what to improve | A practical lesson for the next capture and new Topic Wheel ideas. |
+
+Before leaving, compare these scenes with the actual files. Mark each as captured, missing, not allowed, or not attempted. Check file duration and picture; record whether audio was checked through a permitted method. A file appearing in a phone album is not proof that its cloud upload is complete.
+
+## Add older footage to the same intake
+
+For an older event, search the existing Content Library and approved iCloud Photos, Google Photos, Drive, editor projects and organizer deliveries by person, event, city and date range. Use the signed-in access already available. When a source cannot be accessed, record its location and the exact missing access step, then keep working on the available sources.
+
+Keep one row per source asset: source link or file ID, original filename, recording date (or unknown), event and person with verification source, duration, useful time ranges, angle, rights and original-file location. Preserve the master and work on a copy. A matching filename or a transcript mention alone does not verify the face, date or event. Identify duplicate exports before making another edit; keep the best available original with the other copies linked to it.
+
+Pass the index and source files to the existing upload and editing tasks below. This capture task prepares the evidence; it does not certify a reel, publish a clip, or claim that old footage improved search or AI recommendations.
+
+## Three-minute training companion
+
+The companion should teach the route from capture to a finished speaker reel using the same real source files:
+
+| Runtime | Show |
+|---|---|
+| 00:00–00:15 | A finished reel moment, then the raw shot it came from; name the lesson. |
+| 00:15–00:40 | Permissions, audio check and the one-phone or two-phone setup. |
+| 00:40–01:25 | The shot angles above, labeled over real examples. Keep the full-talk camera running. |
+| 01:25–01:50 | Follow-up question, permitted comment and speaker debrief. |
+| 01:50–02:20 | The same files arriving in the intake index with source times and missing shots. |
+| 02:20–02:45 | A short before-and-after edit: useful teaching, event context and accurately attributed feedback. |
+| 02:45–03:00 | The reel's permitted reuse on a speaking page, plus a teaching clip and source-linked article; show their actual status. |
+
+The three-minute training video and the speaker's promotional reel are separate deliverables. Reuse this capture package for both, keeping each derivative tied to its original source range. The editor follows the current [YouTube podcast editing standards](https://dennisyu.com/youtube-podcast-editing-standards/) and checks that every visual matches the words. Existing video of a person speaking takes priority over a still image; do not fill a missing scene with invented event footage.
+
+George Aare is the requested next example. At this revision, his source upload and the finished training video have not been verified. Add the real source IDs, timestamps, checked cuts and result only after the files are accessible and inspected. The fictional example below remains a teaching example.
+
 ## Definition of done (QA checklist)
 
 - [ ] The organizer’s allowed recording and reuse scope is recorded.
@@ -43,6 +96,8 @@ A talk can hold lessons worth sharing after the event. This guide helps a speake
 - [ ] Intro and allowed Q&A sections are indexed, without inflating an introduction into a wider endorsement.
 - [ ] Usable pictures, sound-review evidence, and approved supporting images are present, or missing items are named.
 - [ ] Files and allowed question notes are saved and handed to the editor.
+- [ ] The scene list marks captured, missing, not allowed and not attempted views; extra angles did not interrupt the main recording.
+- [ ] Any older footage keeps its original source, verified context, rights, useful ranges and duplicate links in the intake.
 
 ## Example(s)
 
