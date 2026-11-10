@@ -21,7 +21,7 @@ Before the session, confirm the organizer's recording and reuse rules. Test stor
 | Host introduction | Fixed camera facing host and stage | Complete permitted introduction | Exact third-party wording, with context |
 | Full talk master | Stable front/center or clear diagonal position | Continuous permitted talk; keep speaker visible and voice intelligible | Source for teaching clips and accurate quotations |
 | Wide room view | Back of room, over shoulders toward stage | 5–10 seconds per shot with speaker and room in frame | Scale and setting, only to the extent visible |
-| Side angle | Stage side or side aisle where allowed | Stable speaker profile plus audience or screen | Delivery, gestures and a second editing angle |
+| Face and audience together | From the stage side, diagonally across the speaker where allowed | Keep the speaker's face and the audience in the same frame, rather than only the back of the speaker's head | Dennis's key reel shot: delivery and the real room together |
 | Teaching detail | Closer view from an allowed position | A complete 20–60-second explanation, demonstration or example | Actual expertise and a standalone lesson |
 | Audience response | Cleared audience from side/rear | A genuine reaction or participation with its original context | Engagement without manufactured applause |
 | Question and answer | Cleared questioner or speaker-only answer | Complete question/answer when permitted; identify missing context | Real audience needs and follow-up topics |
@@ -47,13 +47,15 @@ This is the target storyboard for the complete new demonstration. The existing n
 | 00:00–00:15 | Finished reel excerpt, then its source shots | “When you speak at a conference, collect enough footage to show what happened and what you taught. Here are the shots I want, and how they become a speaker reel.” |
 | 00:15–00:35 | Venue, agenda and backstage context | “Start before the talk. Record the event and your session title. Get a short explanation of whom you are helping. Keep the date and source with the files.” |
 | 00:35–01:00 | Camera position and real audio setup | “Keep one camera steady for the full talk. Check the sound before the room fills. With one phone, protect that recording. With a second camera, collect the other angles.” |
-| 01:00–01:35 | Front, back, side and close views, labeled | “Get a clear front view. From the back, show the speaker and the room together. From the side, show delivery and participation. Move closer for a useful explanation. Hold each shot still.” |
+| 01:00–01:35 | Front, back, side and close views, labeled | “Get a clear front view. From the back, show the speaker and the room together. From the stage side, get the speaker's face and audience in the same frame. Move closer for a useful explanation. Hold each shot still.” |
 | 01:35–01:55 | Host introduction, real reaction and Q&A | “Save the host's introduction and the permitted questions. Keep reactions tied to what happened. Each useful answer can become its own teaching video.” |
 | 01:55–02:15 | Specific feedback and speaker debrief | “Afterward, ask what someone will use from the session. Record a short debrief while the lesson is fresh. Keep permission with any feedback you plan to publish.” |
 | 02:15–02:40 | Originals, transcript and source-linked timeline | “Save the originals. Give every clip its event, source and timecode. Choose a strong teaching moment, add the room and the second angle, and use feedback only for what it actually says.” |
 | 02:40–03:00 | Finished reel, vertical lesson, article and speaker page | “Now use the same evidence in a reel, a short lesson and an article that answers the question. Link the article to the video and your speaking page. Track the inquiries and bookings that follow.” |
 
 The timeline totals 180 seconds. This is proposed narration, not a verbatim transcript or a record of completed filming. Use Dennis's actual narration where it fits. If the words or coverage are absent, record them later or revise the segment. Do not synthesize a testimonial, event, audience or source quotation to fill a gap.
+
+The existing Dennis training demonstrates the face-and-audience angle at source 03:14–04:23 in “Assembling Your Speaker Reel.” The complete source runs about 4 minutes 34 seconds. Its recut must preserve complete sentences and distinguish source time from the edited timeline.
 
 ## Build the speaker reel
 
