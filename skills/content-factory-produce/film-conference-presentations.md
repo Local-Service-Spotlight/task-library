@@ -56,7 +56,7 @@ Use steady shots of about 8–12 seconds for supporting scenes, with a brief sti
 | During | Stable front view of the speaker; medium framing with room for gestures | Clear teaching clips and a usable main recording. |
 | During, second camera only | Side or three-quarter view; include the slide only when readable and permitted | A different view of the same lesson, with its time noted for synchronization. |
 | During, second camera only | Rear-of-room wide shot showing speaker and room together | The scale and setting visible in that shot. Do not infer attendance totals from it. |
-| During, when permitted | Speaker with audience from an allowed stage-side position; actual listening, laughter or questions | The interaction that occurred. Do not move a reaction to another statement or event to imply a response that did not happen. |
+| During, second camera only and when permitted | From an allowed stage-side diagonal, keep the speaker's face and the audience together in frame; actual listening, laughter or questions | The interaction that occurred. Do not move a reaction to another statement or event to imply a response that did not happen. |
 | After | Speaker answering allowed follow-up questions | Specific expertise and the questions people still need answered. |
 | After | Short organizer or attendee comment, with name, role and permission | Their own words about what they learned or observed. Do not script praise or imply a wider endorsement. |
 | After | Speaker's 30–60 second debrief: what was asked, what worked, what to improve | A practical lesson for the next capture and new Topic Wheel ideas. |
@@ -73,7 +73,7 @@ Pass the index and source files to the existing upload and editing tasks below. 
 
 ## Three-minute training companion
 
-Use the [capture-to-speaker-reel companion](../../docs/conference-capture-to-speaker-reel.md#the-three-minute-teaching-film) as the single detailed 180-second storyboard. It follows the same real files from before/during/after capture to source indexing, an accurately edited reel and useful derivatives. Label the angles over actual examples and keep every output's real status visible.
+Use the [capture-to-speaker-reel companion](https://github.com/Local-Service-Spotlight/task-library/blob/main/docs/conference-capture-to-speaker-reel.md#the-three-minute-teaching-film) as the single detailed 180-second storyboard. It follows the same real files from before/during/after capture to source indexing, an accurately edited reel and useful derivatives. Label the angles over actual examples and keep every output's real status visible.
 
 The three-minute training video and the speaker's promotional reel are separate deliverables. Reuse this capture package for both, keeping each derivative tied to its original source range. The editor follows the current [YouTube podcast editing standards](https://dennisyu.com/youtube-podcast-editing-standards/) and checks that every visual matches the words. Existing video of a person speaking takes priority over a still image; do not fill a missing scene with invented event footage.
 
