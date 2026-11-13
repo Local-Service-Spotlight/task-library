@@ -101,6 +101,7 @@ Keep one stable execution ID across retries and edits. A separately scoped child
 The source contributor status is preserved. It is not certification of this draft or proof of account access, completed work or a live outcome. The worked example teaches the method and is explicitly fictional.
 - Actual account confirmation and first-data evidence are still required. The source’s historical client incident remains a lesson about coverage, not a recreated current execution count.
 
+- [Bing Webmaster Tools Checklist](https://blitzmetrics.com/bing-webmaster-tools-checklist/)
 - [Bing site verification](https://www.bing.com/webmasters/help/add-and-verify-site-12184f8b)
 - [Bing sitemap processing](https://www.bing.com/webmasters/help/sitemaps-3b5cf6ed)
 - [Bing URL Inspection](https://www.bing.com/webmasters/help/url-inspection-55a30305)
