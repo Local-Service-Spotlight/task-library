@@ -34,11 +34,27 @@ Do you know which searches bring people to your site? This guide helps an owner 
 7. Check the saved link and report collection visibility; publish the Search Console collection from the Analytics Library when that report configuration is included. Query data availability depends on actual collection and processing. A new low-traffic site need not produce queries within 48 hours of setup.
 8. Save the property identifiers, scope, verification method, sitemap status, link and first observed data date when one exists. Search Console provides observation; it is not a technical requirement for a page to be indexed. A missing Analytics link does not create a blanket prohibition on unrelated already-authorized publishing.
 
+## Set up Bing Webmaster Tools alongside Google Search Console
+
+Use both search consoles by default for owned sites and managed sites with
+approved search administration. In the intended Bing account, check for the exact
+existing property before adding anything. Reuse it if verified. If it is absent,
+import only the selected, already verified Google Search Console property when
+that connection is approved, or use another supported ownership method. Read back
+Bing verification and the submitted, imported or discovered sitemap record. Add
+the current public sitemap only when it is missing. Inspect the canonical homepage
+and one priority URL in each engine and record their observed indexing state.
+Keep a dated per-engine record with property scope, role, method, sitemap processing,
+URLs inspected, statuses and owner or next check. A sitemap submission is a
+separate observation from indexed URLs. Keep the GA4 product-link checks above
+specific to Google Search Console.
+
 ## Definition of done (QA checklist)
 
 - [ ] The correct site set and property scope are recorded from actual work, not only hosting inventory.
 - [ ] Verification and usable access have actual account evidence.
-- [ ] The real sitemap has a truthful public/submitted/processed state.
+- [ ] The real sitemap has a truthful public/submitted/processed state for each engine.
+- [ ] Bing has an authenticated verification and URL inspection receipt or a scoped blocker.
 - [ ] Any Analytics link uses matching pages and the required roles, without unintended link changes.
 - [ ] Visible reports, available data and unobserved results are distinct; no automatic indexing or universal publication gate is claimed.
 
@@ -84,3 +100,8 @@ Keep one stable execution ID across retries and edits. A separately scoped child
 
 The source contributor status is preserved. It is not certification of this draft or proof of account access, completed work or a live outcome. The worked example teaches the method and is explicitly fictional.
 - Actual account confirmation and first-data evidence are still required. The source’s historical client incident remains a lesson about coverage, not a recreated current execution count.
+
+- [Bing Webmaster Tools Checklist](https://blitzmetrics.com/bing-webmaster-tools-checklist/)
+- [Bing site verification](https://www.bing.com/webmasters/help/add-and-verify-site-12184f8b)
+- [Bing sitemap processing](https://www.bing.com/webmasters/help/sitemaps-3b5cf6ed)
+- [Bing URL Inspection](https://www.bing.com/webmasters/help/url-inspection-55a30305)

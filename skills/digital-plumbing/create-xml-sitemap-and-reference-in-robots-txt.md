@@ -18,7 +18,7 @@ Search tools need a clear list of the pages you want people to find. This guide 
 ## Inputs
 - The canonical hostname and intended public, indexable pages, with drafts, private pages and deliberate exclusions identified.
 - The actual sitemap owner: CMS, SEO plugin or generator, plus supported access to its settings and robots.txt source.
-- The correct Search Console property and submission access if account submission is in scope. Public sitemap work does not itself prove that access.
+- The correct Google Search Console and Bing Webmaster Tools properties and submission access if account submission is in scope. Public sitemap work does not itself prove that access.
 
 ## First-run prompt
 
@@ -32,7 +32,7 @@ Search tools need a clear list of the pages you want people to find. This guide 
 5. Compare the sitemap URLs with the intended set. Resolve missing key pages, broken destinations and stale hostnames at their owning source. A cross-host sitemap arrangement requires its actual supported verification setup; do not silently accept or reject it by string matching.
 6. Add or correct the Sitemap declaration in the served robots.txt using the real complete sitemap URL. Preserve existing rules and the actual virtual or physical file source. A robots reference helps discovery but does not itself submit or index anything.
 7. Open the ordinary public robots and sitemap URLs again. Check status, parseability and coverage after any supported cache refresh. Machine-readable files need valid machine content; they are not editorial pages requiring a lead image.
-8. If submission is included, submit the real sitemap in the correct Search Console property and record its actual pending or processed result. Investigate reported fetch errors. Search Console success does not guarantee that every listed page is indexed.
+8. If submission is included, check the exact property in Google Search Console and Bing Webmaster Tools. Reuse an existing valid submitted, imported or discovered entry, or submit the verified public sitemap when absent. Record each engine’s actual pending or processed result, fetch errors and reported URL count. Use URL Inspection for the homepage and a priority canonical page and record indexing separately from sitemap processing.
 
 ## Definition of done (QA checklist)
 
@@ -83,3 +83,5 @@ Keep one stable execution ID across retries and edits. A separately scoped child
 
 The source contributor status is preserved. It is not certification of this draft or proof of account access, completed work or a live outcome. The worked example teaches the method and is explicitly fictional.
 - No dedicated canonical article is mapped in this source record. Actual intended-page policy and generator access must be supplied for execution.
+
+- [Bing sitemap formats and processing](https://www.bing.com/webmasters/help/sitemaps-3b5cf6ed)
