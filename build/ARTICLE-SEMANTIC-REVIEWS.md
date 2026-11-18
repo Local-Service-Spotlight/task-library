@@ -30,8 +30,8 @@ Each review has `sourceSha256`, an RFC3339 UTC `reviewedAt`, `reviewer`, and exa
 5. `links` — requirement 4: related concepts and entities route to the intended maintained destinations.
 6. `sourceEvidence` — requirement 3: verified real examples explain what each source proves and preserve incomplete results.
 7. `handoffContext` — requirements 2 and 8: the Content Factory position, actual inputs, checked output, remaining issues and receiving task or owner are clear.
-8. `visualAndLayout` — requirement 8: an article-specific first-screen visual and lower task context were checked in the actual phone and desktop layouts.
-9. `publicationStandards` — requirements 5, 6, 7 and 9: CTA, short URL, title/meta/structure/voice/entity rules, and evidenced E-E-A-T are checked.
+8. `visualAndLayout` — requirement 8: the first-screen visual and required map, adjacent text equivalent, and lower task context were checked in the actual phone (390 × 844) and desktop (1440 × 860) layouts.
+9. `publicationStandards` — requirements 5, 6, 7, 9 and 10: check the CTA where applicable, stable recipe address or hub alias, editorial rules, third-party evidence and Agent details. For applicable pages, cite the exact section with the identifiers, source and revision, public-safe access, destination verification and known failure modes. If those fields remain unchecked, record `unknown`; use `unmet` for a confirmed omission.
 10. `acceptanceResults` — acceptance evidence is tied to the exact article revision and stays separate from a published or contributor-complete label.
 
 Each criterion has exactly `state`, `reason`, and `evidenceRefs`. State is `pass`, `unmet`, `hold`, or `unknown`. A review hash cannot prove that the same bytes are still current.
@@ -42,7 +42,7 @@ Each observation has RFC3339 UTC `observedAt`, `observer`, `state`, `reason`, an
 
 The article semantic gate uses the newest review and newest matching task/URL/representation observation. It remains `unknown` when the observation is missing, failed, older than the review, in the future, or more than 24 hours old. A fresh observation with a different hash is `unmet`. Only a fresh separate observation of the same representation and hash lets all ten criterion states determine the gate. An existing URL-level hold always wins.
 
-The ten checks cover all nine definitive-article requirements plus the explicit owner and exact-revision acceptance controls. None of the earlier six generic checks can stand in for the opening, first-screen visual and rendered layout, Content Factory handoff, or publication requirements.
+Use the ten checks to record evidence for the current published requirements and the explicit owner and exact-revision acceptance controls. Re-review prior certifications for the current requirements before renewing a live revision observation. An older verdict cannot establish that a newly required field was reviewed.
 
 The 24-hour window is intentionally finite: yesterday's page capture cannot silently certify today's daily build. CI does not fetch the live page. Add a new observation only after an authorized tool or reviewer captures and hashes the named representation.
 

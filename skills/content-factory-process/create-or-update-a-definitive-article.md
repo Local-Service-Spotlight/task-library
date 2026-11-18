@@ -18,7 +18,7 @@ Use this guide to give your team one clear set of steps for a job. That saves ti
 ## Inputs
 - The task, existing canonical owner URL/source revision and declared page role.
 - Actual source material, examples and permissions, plus a brief naming the goal, source content and audience: [Goals, Content, and Targeting (GCT)](https://blitzmetrics.com/gct-business-strategy/).
-- Maintained [Article Guidelines](https://localservicespotlight.com/article-guidelines/), the Task Library and actual prerequisite outputs/access.
+- Maintained [Article Guidelines](https://localservicespotlight.com/article-guidelines/), the [ten Definitive Article requirements](https://blitzmetrics.com/definitive-article-guide/), the Task Library and checked prerequisite outputs and access.
 - The supported CMS/builder or repository source, edit/publication scope, independent reviewer and next owner.
 
 ## First-run prompt
@@ -32,10 +32,18 @@ Use this guide to give your team one clear set of steps for a job. That saves ti
 4. Write the full task contract: trigger/start, inputs/access, true prerequisite outputs, ordered decisions, measurable deliverable, acceptance checks and the actual next task/owner. Fix bad old steps rather than preserving them inside a new template.
 5. Include a useful worked example. Prefer relevant verified run evidence; when none exists, label a concrete teaching example as fictional and keep the real-run evidence gap explicit. Neither a fictional result nor a contributor label certifies execution.
 6. Connect the page to its actual SEO Tree parent, useful proof stories and next guides. Verify every new target and named anchor. Keep a needed primary proof/download/sign-in link where its purpose is clear, without routing every tool explanation to the provider.
-7. Preserve the canonical URL, existing Page/builder and original proof media. Change source type, redirects or identity only where the job authorizes it. Stage exact before/after files and protect newer concurrent changes.
-8. Place the lower Content Factory map after the main task explanation, showing true inputs/handoff and stage. Keep the topic lead visual distinct. Check the applicable article standards and have an independent reviewer inspect meaning and source fidelity.
-9. Publish/update through the supported route when already authorized and checks pass, or finish the reviewable draft when staging is the scope. Read back the saved source and normal public canonical URL separately. Check meaningful lead visibility/no overflow at 1280×800 and 390×844, including first paint without JavaScript, with silent media and evidence tied to the final revision.
-10. Write this actual execution’s meta, register its real state through the existing ledger rail, and give the next owner the artifact, acceptance evidence and gaps. Certification requires actual semantic review and evidence; authoring or registration alone does not promote the source status.
+7. Bind the permanent slug to the maintained GitHub recipe revision and existing canonical URL. For a new recipe, reserve its dedicated slug with the owner after checking for an existing exact recipe. Use the current site publishing source and preserve original proof media. Stage the exact preimage and candidate with a rollback owner and protect concurrent edits.
+8. Use a topic-specific lead visual in served markup. For a connected subject, show the real dependencies, feedback and SEO Tree placement in the map, link useful nodes, and put the text equivalent directly below it. Show the Content Factory context lower down with the real stage, prerequisite, output and handoff. Add relevant third-party evidence and the Agent details section before the FAQ and footer. Have an independent reviewer check meaning, source fidelity and all applicable requirements.
+9. Publish/update through the supported route when already authorized and checks pass, or finish the reviewable draft when staging is the scope. Read back the saved source and normal public canonical URL separately. Check meaningful lead visibility/no overflow at 1440×860 and 390×844, including first paint without JavaScript, with silent media and evidence tied to the final revision.
+10. Write the meta article for the actual attempt and record its state under one execution ID. Give the next owner the checked artifact, evidence and open gaps. For a verified lesson that changes the recipe, update the GitHub source, article steps and Agent details. Update the checklist that would have caught the issue and name the software check that detects staleness, its owner and trigger. Then check the library card, first-run prompt and download against the new revision as each surface is released.
+
+## Agent details for the article you produce
+
+1. Record the exact Task Library slug, canonical URL, SEO Tree parent and GitHub recipe revision.
+2. Link the maintained skill or equivalent at that revision. Use the current GitHub recipe to resolve any difference with a projection.
+3. Describe the approved system and access type in public-safe terms. Keep account details and login mechanics in the internal runbook.
+4. Name the destination and what a reviewer must see there. Save the readback, checked links, viewport evidence when applicable and execution ID.
+5. Describe observed failure modes as symptom, check and fix. Carry forward any unverified issue with its next check.
 
 ## Opening meaning review
 
@@ -47,7 +55,8 @@ Save the exact opening and artifact revision in the existing run receipt. Have t
 
 - [ ] One canonical owner and correct page role are preserved.
 - [ ] The full useful recipe, grade-5 opening and worked example are source-grounded; real-run gaps remain explicit. The first two or three sentences explain what, why and a useful linked connection.
-- [ ] Owned links, lead visual, lower context and supported publishing source are checked.
+- [ ] The canonical article, exact task link, GitHub source revision, visual and text equivalent, and all five Agent details fields agree.
+- [ ] The release follows the supported publishing source. Any card, first-run prompt or download awaiting sync has an explicit pending state.
 - [ ] Independent review and actual save/public evidence match the final revision, with truthful execution/meta state.
 
 ## Example(s)
