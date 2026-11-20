@@ -55,7 +55,7 @@
       ]
     }
   },
-  "libraryUpdated": "November 4, 2026",
+  "libraryUpdated": "November 6, 2026",
   "paths": [
     {
       "id": "implement-agents",
@@ -1604,6 +1604,15 @@
       "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=maintain-canonical-honor-and-story-leaves#task-maintain-canonical-honor-and-story-leaves",
       "status": "needs-work",
       "contentSha256": "341bbf3a76058310f6c047a1aec070d59b7296d13d1c9e73fb756d7820b5ae64"
+    },
+    {
+      "slug": "make-a-personal-brand-poster",
+      "title": "Make a personal brand poster",
+      "description": "Turn a person's public record into an 18 x 24 inch poster they can frame, where every fact has a source and every photo has an owner who said yes.",
+      "article": null,
+      "taskLibraryUrl": "https://local-service-spotlight.github.io/task-library/?task=make-a-personal-brand-poster#task-make-a-personal-brand-poster",
+      "status": "gap",
+      "contentSha256": "e11643d0a57a34e2cc13726112e561270e8f664802aa89b44a90bd5dc4782df4"
     },
     {
       "slug": "manage-group-member-website-request",

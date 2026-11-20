@@ -1,0 +1,31 @@
+Make an 18 x 24 inch personal brand poster for [SUBJECT NAME] ([THEIR WEBSITE]). It should tell their real story, and every fact on it must be one a stranger can check.
+
+Use the free kit at https://local-service-spotlight.github.io/task-library/kits/poster/ : poster-template-18x24.html, render_poster.py, facts-template.csv, photos-template.csv and QA-CHECKLIST.md. Copy facts-template.csv to facts.csv and photos-template.csv to photos.csv before you fill them. The full recipe is the Task Library task "make-a-personal-brand-poster".
+
+The render steps need a computer with Python 3.9+, Playwright with Chromium, pypdf, Pillow and numpy. Most chat apps cannot run them. If you cannot run code with a browser, do steps 1 to 4 with me, then hand the sheets to someone who can.
+
+Work in this order and stop to show me your work after steps 3 and 6.
+
+1. Collect the public record. Use only sources you can open: their own site and About page, their company's site and team page, their media and speaking lists, their published posts and books. Write down every URL.
+
+2. Pick a theme from their real story, not a generic one. For example, a former pilot who now coaches sales teams could get a flight log, and a chef who now owns restaurants could get a menu. If no true theme exists, use a plain one. Never invent a title, nickname or award. A theme line is design, so it must not read like a title they have not used.
+
+3. Fill facts.csv, one row per printed fact: the exact text, who is making the claim (subject, counted, reported, third-party or design), the source URL, the words the source says, the date you checked, and a status. Use verified after you open the source and find the words. Use pending-release when the page is not live yet; the final render checks it with --live-check.
+   - Keep the company's published claims apart from numbers you counted yourself.
+   - Remove duplicates before counting. An episode posted as audio and as video counts once, and a short clip is not an interview.
+   - Match titles to their own About page. When sources disagree, note it.
+   - Label results that clients reported to them as their report, not audited case studies.
+   - Use the narrowest verb the source supports for each person ("Had him on [show]"). Never "friend" or "mentor" unless the source says so.
+   - Drop anything you cannot source, even if it sounds good. Write [FILL: what is missing] for a value you are still waiting for; the final render refuses it.
+
+4. Fill photos.csv. Before a photo goes on the poster, record who owns it, where the permission is kept, the exact file, and either the original file's pixel width (native_px_w) or camera_original yes for a file straight from the camera. A photo found on a public post is not permission. Use the client's own photos or get the owner's written OK. Never pull photos of other public figures off the web. Ask the client's team for photos they own. If the right photo has no permission yet, do not print. Wait for the owner's written OK, or use a photo the client owns.
+   A map is optional. The kit has no map tool: draw one as SVG, or mark the places-map row omit.
+
+5. Render a proof: python3 render_poster.py --template poster-template-18x24.html --facts facts.csv --photos photos.csv --subject "[NAME]" --deliverable "[POSTER NAME]" --version 1 --date [YYYY-MM-DD] --draft
+   A draft never places a photo without permission. Fix every FAIL. Read each WARN at 100 percent zoom.
+
+6. Render the final without --draft. It must pass: exactly 18 x 24 in (1296 x 1728 pt), fonts embedded, no text under 9 pt, no text within 0.5 in of any edge, photos at 240 ppi counted on the original pixels (150 to 239 warns, under 150 fails), no [FILL: ...] placeholder or empty photo box, and a PDF title with the version and date. Every new version gets a new number. Never overwrite an earlier file. If the printer asks for bleed, add --bleed 0.125. The kit makes RGB files, so ask the printer about color.
+
+7. Give me the PDF, the preview PNG, the QA JSON and the fact sheet, plus a list of anything the client's team must confirm, such as name spellings and photo permissions. Do not send anything to print until the client approves the proof.
+
+8. Write a short run record: what you made, every version and what changed in it, the checks and their results, what is still open, and who acts next.
